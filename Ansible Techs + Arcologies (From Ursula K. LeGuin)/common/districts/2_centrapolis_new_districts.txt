@@ -1,0 +1,185 @@
+district_arcology_coordination = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = city_world_central
+		from = {
+			is_regular_empire = yes
+		}
+	}
+	potential = {
+		uses_district_set = city_world_central
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_organic_housing
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			volatile_motes = 50
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ansible_coordinator_add = 6
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_ansible_coordinator_effect_desc
+	}
+}
+
+district_arcology_culture = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = city_world_central
+		from = {
+			is_regular_empire = yes
+		}
+	}
+	potential = {
+		uses_district_set = city_world_central
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_organic_housing
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			exotic_gases = 50
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_culture_worker_add = 6
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_culture_worker_effect_desc
+	}
+}
+
+district_arcology_media = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	show_on_uncolonized = {
+		uses_district_set = city_world_central
+		from = {
+			is_regular_empire = yes
+			NOT = {
+				has_civic = civic_dystopian_society
+			}
+		}
+	}
+	potential = {
+		uses_district_set = city_world_central
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+			NOT = {
+				has_civic = civic_dystopian_society
+			}
+		}
+	}
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_organic_housing
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			exotic_gases = 50
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_mass_entertainer_add = 6
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_mass_entertainer_effect_desc
+	}
+}

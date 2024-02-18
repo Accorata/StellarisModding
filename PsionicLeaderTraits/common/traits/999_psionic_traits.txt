@@ -1,0 +1,595 @@
+leader_trait_mind_of_the_people = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_champion_of_the_people"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			OR = {
+				has_trait = subclass_official_economy_councilor
+				has_governor_subclass = yes
+			}
+		}
+	}
+	planet_modifier = {
+		empire_size_pops_mult = -0.1
+	}
+	sector_modifier = {
+		empire_size_pops_mult = -0.05
+	}
+	councilor_modifier = {
+		empire_size_pops_mult = -0.03
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_shroud_empath = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_diplo_weight"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_official_diplomacy_councilor
+		}
+	}
+	councilor_modifier = {
+		shroud_delve_cooldown = -0.1
+		shroud_delve_cost = -0.2
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+# leader_trait_conduit_of_the_people = {
+# 	starting_ruler_trait = yes
+# 	#orgins = { teachers_of_the_shroud }
+# 	cost = 1
+# 	veteran_class_locked_trait = yes
+# 	inline_script = {
+# 		script = trait/icon_psionic
+# 		CLASS = leader
+# 		ICON = "GFX_leader_trait_psionic"
+# 		RARITY = veteran
+# 		COUNCIL = no
+# 		TIER = none
+# 	}
+# 	# galcom_modifier = {
+# 	# 	diplo_weight_pops_mult = 0.20
+# 	# }
+# 	# federation_modifier = {
+# 	# 	federation_experience_add = 0.5
+# 	# }
+# 	councilor_modifier = {
+# 		empire_size_pops_mult = -0.03
+# 	}
+# 	leader_potential_add = {
+# 		OR = { has_trait = leader_trait_psionic has_trait = leader_trait_chosen}
+# 		has_trait = subclass_official_delegate
+# 	}
+# 	leader_class = {
+# 		official
+# 	}
+#   selectable_weight = {
+# 	weight = 250
+# 	modifier = {
+# 		OR = {
+# 			has_trait = leader_trait_chosen
+# 			has_trait = leader_trait_composer_chosen
+# 			has_trait = leader_trait_instrument_chosen
+# 			has_trait = leader_trait_eater_chosen
+# 			has_trait = leader_trait_whisperers_chosen
+# 		}
+# 		factor = 3
+# 	}
+# }
+# }
+leader_trait_sights_from_beyond = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_scout"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_commander_councilor
+		}
+	}
+	councilor_modifier = {
+		add_base_country_intel = 5
+		ship_cloaking_detection_add = 1
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_shrouded_cloak = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_lethargic"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	prerequisites = {
+		tech_cloaking_1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_first_contact_dlc = yes
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		ship_cloaking_strength_add = 2
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_one_with_troops = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_army_veteran"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_commander_general
+		}
+	}
+	modifier = {
+		ship_disengage_opportunities_add = 1
+	}
+	army_modifier = {
+		army_morale = 0.3
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_one_with_space = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_academic_astral_rift_expert"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.1
+		ship_jumpdrive_cooldown_mult = -0.1
+	}
+	prerequisites = {
+		OR = {
+			tech_jump_drive_1
+			tech_psi_jump_drive_1
+		}
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_lucid_dreaming = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_mindfulness"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.1
+		species_leader_exp_gain = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_scientist_explorer
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+leader_trait_mind_body_mastery = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_shroud_preacher"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_astral_rift_clues_add = 1
+		ship_anomaly_generation_chance_mult = 0.1
+	}
+	prerequisites = {
+		tech_rift_sphere
+	}
+	leader_potential_add = {
+		has_astral_planes_dlc = yes
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			has_trait = subclass_scientist_scholar
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+# Negative Traits #
+leader_trait_zro_adict = {
+	negative = yes
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_substance_abuser"
+		COUNCIL = no
+		TIER = 1
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = sr_zro
+		AMOUNT = 1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			trait_is_crisis_faction_check = no
+		}
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			species = {
+				OR = {
+					has_trait = trait_decadent
+					has_trait = trait_wasteful
+				}
+			}
+			factor = @species_trait_weight_mult
+		}
+	}
+}
+
+leader_trait_zro_adict_2 = {
+	negative = yes
+	replace_traits = {
+		leader_trait_zro_adict
+	}
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_substance_abuser"
+		COUNCIL = no
+		TIER = 2
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.1
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = sr_zro
+		AMOUNT = 3
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	selectable_weight = @tier2_negative_trait_weight
+}
+
+leader_trait_out_of_body_experience = {
+	negative = yes
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_traumatized"
+		COUNCIL = yes
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = 0.1
+		species_leader_exp_gain = -0.25
+	}
+	councilor_modifier = {
+		category_psionics_draw_chance_mult = 0.25
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	leader_potential_add = {
+		owner = {
+			is_gestalt = no
+		}
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		modifier = {
+			OR = {
+				has_trait = leader_trait_psionic
+				has_trait = leader_trait_chosen
+			}
+			factor = 0
+		}
+	}
+}
+
+# Destiny Traits #
+leader_trait_psionic_being = {
+	immortal_leaders = yes
+	destiny_trait = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_chosen"
+		RARITY = paragon
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.25
+	}
+	planet_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 1
+	}
+	sector_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.5
+	}
+	leader_potential_add = {
+		OR = {
+			has_trait = leader_trait_psionic
+			has_trait = leader_trait_chosen
+		}
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
+# leader_trait_caller_of_planes_beyond = {
+# starting_ruler_trait = yes
+# #orgins = { teachers_of_the_shroud }
+# cost = 1
+# 	destiny_trait = yes
+# 	inline_script = {
+# 		script = trait/icon_psionic
+# 		CLASS = leader
+# 		ICON = "GFX_leader_trait_planar_theorist"
+# 		RARITY = paragon
+# 		COUNCIL = yes
+# 		TIER = none
+# 	}
+# 	councilor_modifier = {
+# 		shroud_delve_cooldown = -0.1
+# 		shroud_delve_cost = -0.2
+# 	}
+# 	leader_potential_add = {
+# 		AND = {
+# 			has_astral_planes_dlc = yes
+# 			OR = { has_trait = leader_trait_psionic has_trait = leader_trait_chosen}
+# 			# has_trait = scientuist....
+# 		}
+# 	}
+# 	leader_class = { scientist }
+# 	background_icon = "GFX_leader_background_destiny_1"
+# }

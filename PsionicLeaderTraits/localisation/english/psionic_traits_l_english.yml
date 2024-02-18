@@ -1,0 +1,32 @@
+﻿l_english:
+# Official Traits
+  leader_trait_mind_of_the_people:0 "Mind of the People"
+  leader_trait_mind_of_the_people_desc:0 "This leaders psionic abilities weave through the minds of the empire simplifying bureaucratic upkeep."
+  leader_trait_shroud_empath:0 "Shroud Empath"
+  leader_trait_shroud_empath_desc:0 "This leader has formed a strong connection with the beings of the Shroud enabling easier entries into this mysterious realm."
+#  leader_trait_conduit_of_the_people:0 "Conduit of the People"
+#  leader_trait_conduit_of_the_people_desc:0 "..."
+# Commander traits
+  leader_trait_sights_from_beyond:0 "Sights from Beyond"
+  leader_trait_sights_from_beyond_desc:0 "This leader is prone to psychic dreams that often reveal true insights beyond their purvue."
+  leader_trait_shrouded_cloak:0 "Shrouded Cloak"
+  leader_trait_shrouded_cloak_desc:0 "This leader has learned how to weave psionic energy to cloak their ships."
+  leader_trait_one_with_troops:0 "One with the Troops"
+  leader_trait_one_with_troops_desc:0 "This leaders mental presence greatly amplyfies any of their subordinates morale."
+# Scientist Traits
+  leader_trait_one_with_space:0 "Of Space and Time"
+  leader_trait_one_with_space_desc:0 "This leaders psionic power grants them minor manipulations of spacetime itself."
+  leader_trait_lucid_dreaming:0 "Lucid Dreaming"
+  leader_trait_lucid_dreaming_desc:0 "This leaders powerful dreams grant them both increased serenity and an avenue to explore the limits of their mind."
+  leader_trait_mind_body_mastery:0 "Mind Body Mastery"
+  leader_trait_mind_body_mastery_desc:0 "This leader is one with both body and mind."
+# Negative Traits
+  leader_trait_zro_adict:0 "Zro Adict"
+  leader_trait_zro_adict_desc:0 "The addictive powers of zro have manifested in this leader."
+  leader_trait_zro_adict_2:0 "$leader_trait_zro_adict$ II
+  leader_trait_zro_adict_desc:0 "The addictive powers of zro have grown greatly in this leader, but have started to strengthen this leader's ability."
+  leader_trait_out_of_body_experience:0 "Out of Body Experience"
+  leader_trait_out_of_body_experience_desc:0 "This leader was prone to an exceptionally scarring out of body experience."
+# Destiny Traits
+  leader_trait_psionic_being:0 "Psionic Being"
+  leader_trait_psionic_being_desc:0 "This leaders mind has ascended into the Shroud, living there as an immortal entity."
