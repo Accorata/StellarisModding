@@ -65,6 +65,42 @@ leader_trait_patron_of_research = {
 	}
 }
 
+leader_trait_eru_science_communicator = {
+	starting_ruler_trait = yes
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_collaborator"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_erudite
+			has_trait = subclass_official_diplomacy_councilor
+			owner = {
+				NOR = {
+					is_homicidal = yes
+					has_valid_civic = civic_inwards_perfection
+				}
+			}
+		}
+	}
+	councilor_modifier = {
+		research_sharing_mult = 0.10
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
 leader_trait_impeccable_mentor = {
 	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes

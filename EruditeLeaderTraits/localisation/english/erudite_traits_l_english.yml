@@ -5,7 +5,8 @@
 # Official Traits
   leader_trait_patron_of_research:0 "Patron of Research"
   leader_trait_patron_of_research_desc:0 "This leader cares deeply about the .."
-  
+  leader_trait_eru_science_communicator:0 "Science Communicator"
+  leader_trait_eru_science_communicator_desc:0 "..."
 # Commander traits
   leader_trait_impeccable_mentor:0 "Impeccable Mentor"
   leader_trait_impeccable_mentor_desc:0 "This leader excels at translating their experience in war to the next generation of pilots and soldiers, readying them for the times ahead."
@@ -13,7 +14,6 @@
   leader_trait_pinpoint_accuracy_desc:0 "..."
   leader_trait_unparalleled_strategics:0 "Unparalleled Strategics"
   leader_trait_unparalleled_strategics_desc:0 "..."
-  
 # Scientist Traits
   leader_trait_genetic_visionary:0 "Genetic Visionary"
   leader_trait_genetic_visionary_desc:0 "..."
@@ -21,9 +21,7 @@
   leader_trait_efficient_surveys_desc:0 "..."
   leader_trait_enhanced_perception:0 "Enhanced Perception"
   leader_trait_enhanced_perception_desc:0 "..."
-  
 # Negative Traits
-  
 # Destiny Traits
   leader_trait_unbound_intellect:0 "Unbound Intellect"
   leader_trait_unbound_intellect_desc:0 "..."
