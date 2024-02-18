@@ -89,8 +89,8 @@ leader_trait_eru_science_communicator = {
 		}
 	}
 	councilor_modifier = {
-		scientist_exp_gain = 0.1
 		research_sharing_mult = 0.05
+		scientist_exp_gain = 0.1
 	}
 	leader_class = {
 		official
