@@ -1,5 +1,4 @@
 leader_trait_logistics_insights = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -34,7 +33,6 @@ leader_trait_logistics_insights = {
 }
 
 leader_trait_patron_of_research = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -51,7 +49,7 @@ leader_trait_patron_of_research = {
 		}
 	}
 	councilor_modifier = {
-		planet_jobs_research_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.05
 	}
@@ -66,7 +64,6 @@ leader_trait_patron_of_research = {
 }
 
 leader_trait_eru_science_communicator = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -103,7 +100,6 @@ leader_trait_eru_science_communicator = {
 }
 
 leader_trait_impeccable_mentor = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -134,7 +130,6 @@ leader_trait_impeccable_mentor = {
 }
 
 leader_trait_pinpoint_accuracy = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -165,7 +160,6 @@ leader_trait_pinpoint_accuracy = {
 }
 
 leader_trait_unparalleled_strategics = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -196,7 +190,6 @@ leader_trait_unparalleled_strategics = {
 }
 
 leader_trait_genetic_visionary = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -229,7 +222,6 @@ leader_trait_genetic_visionary = {
 }
 
 leader_trait_efficient_surveys = {
-	starting_ruler_trait = yes
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -260,8 +252,6 @@ leader_trait_efficient_surveys = {
 }
 
 leader_trait_enhanced_perception = {
-	starting_ruler_trait = yes
-	#change
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -299,7 +289,6 @@ leader_trait_enhanced_perception = {
 
 # Destiny Traits #
 leader_trait_unbound_intellect = {
-	starting_ruler_trait = yes
 	destiny_trait = yes
 	inline_script = {
 		script = trait/icon
