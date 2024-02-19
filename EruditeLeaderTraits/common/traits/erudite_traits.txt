@@ -218,6 +218,18 @@ leader_trait_genetic_visionary = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		modifier = {
+			has_trait = leader_trait_expertise_biology
+			factor = 2
+		}
+		modifier = {
+			has_trait = leader_trait_expertise_biology_2
+			factor = 4
+		}
+		modifier = {
+			has_trait = leader_trait_expertise_biology_3
+			factor = 8
+		}
 	}
 }
 
