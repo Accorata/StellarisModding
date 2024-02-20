@@ -3,6 +3,6 @@ tags={
 	"Leaders"
 	"Gameplay"
 }
-name="EruditeLeaderTraits"\
+name="Erudite Leader Traits"
 picture="thumbnail.png"
 supported_version="3.10.4"
