@@ -320,7 +320,7 @@ country_event = {
 				}
 				event_target:kidnapped_pop = {
 					set_citizenship_type = {
-						country = ROOT
+						country = root
 						type = citizenship_slavery
 					}
 				}
