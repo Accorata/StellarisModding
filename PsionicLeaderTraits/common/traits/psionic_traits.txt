@@ -1,5 +1,5 @@
 leader_trait_mind_of_the_people = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -52,7 +52,7 @@ leader_trait_mind_of_the_people = {
 }
 
 leader_trait_shroud_empath = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -95,10 +95,7 @@ leader_trait_shroud_empath = {
 }
 
 # leader_trait_conduit_of_the_people = {
-# 	starting_ruler_trait = yes
-# 	#orgins = { teachers_of_the_shroud }
-# 	cost = 1
-# 	veteran_class_locked_trait = yes
+# 	leader_trait_type = veteran
 # 	inline_script = {
 # 		script = trait/icon_psionic
 # 		CLASS = leader
@@ -107,38 +104,44 @@ leader_trait_shroud_empath = {
 # 		COUNCIL = no
 # 		TIER = none
 # 	}
-# 	# galcom_modifier = {
-# 	# 	diplo_weight_pops_mult = 0.20
-# 	# }
-# 	# federation_modifier = {
-# 	# 	federation_experience_add = 0.5
-# 	# }
-# 	councilor_modifier = {
-# 		empire_size_pops_mult = -0.03
+# 	triggered_galcom_modifier = {
+# 		potential = {
+# 			is_ruler = no
+# 		}
+# 		diplo_weight_pops_mult = 0.1
+# 	}
+# 	triggered_federation_modifier = {
+# 		potential = {
+# 			is_ruler = no
+# 		}
+# 		federation_experience_add = 0.5
 # 	}
 # 	leader_potential_add = {
-# 		OR = { has_trait = leader_trait_psionic has_trait = leader_trait_chosen}
+# 		OR = {
+# 			has_trait = leader_trait_psionic
+# 			has_trait = leader_trait_chosen
+# 		}
 # 		has_trait = subclass_official_delegate
 # 	}
 # 	leader_class = {
 # 		official
 # 	}
-#   selectable_weight = {
-# 	weight = 250
-# 	modifier = {
-# 		OR = {
-# 			has_trait = leader_trait_chosen
-# 			has_trait = leader_trait_composer_chosen
-# 			has_trait = leader_trait_instrument_chosen
-# 			has_trait = leader_trait_eater_chosen
-# 			has_trait = leader_trait_whisperers_chosen
+# 	selectable_weight = {
+# 		weight = 250
+# 		modifier = {
+# 			OR = {
+# 				has_trait = leader_trait_chosen
+# 				has_trait = leader_trait_composer_chosen
+# 				has_trait = leader_trait_instrument_chosen
+# 				has_trait = leader_trait_eater_chosen
+# 				has_trait = leader_trait_whisperers_chosen
+# 			}
+# 			factor = 3
 # 		}
-# 		factor = 3
 # 	}
 # }
-# }
 leader_trait_sights_from_beyond = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -181,7 +184,7 @@ leader_trait_sights_from_beyond = {
 }
 
 leader_trait_shrouded_cloak = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -227,7 +230,7 @@ leader_trait_shrouded_cloak = {
 }
 
 leader_trait_one_with_troops = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -272,7 +275,7 @@ leader_trait_one_with_troops = {
 }
 
 leader_trait_one_with_space = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -321,7 +324,7 @@ leader_trait_one_with_space = {
 }
 
 leader_trait_lucid_dreaming = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -364,7 +367,7 @@ leader_trait_lucid_dreaming = {
 }
 
 leader_trait_mind_body_mastery = {
-	veteran_class_locked_trait = yes
+	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -412,7 +415,7 @@ leader_trait_mind_body_mastery = {
 
 # Negative Traits #
 leader_trait_zro_adict = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_substance_abuser"
@@ -453,7 +456,7 @@ leader_trait_zro_adict = {
 }
 
 leader_trait_zro_adict_2 = {
-	negative = yes
+	leader_trait_type = negative
 	replace_traits = {
 		leader_trait_zro_adict
 	}
@@ -480,9 +483,9 @@ leader_trait_zro_adict_2 = {
 }
 
 leader_trait_out_of_body_experience = {
-	negative = yes
+	leader_trait_type = negative
 	inline_script = {
-		script = trait/icon_negative
+		script = trait/icon_negative_no_tiers
 		ICON = "GFX_leader_trait_traumatized"
 		COUNCIL = yes
 		TIER = none
@@ -519,7 +522,7 @@ leader_trait_out_of_body_experience = {
 # Destiny Traits #
 leader_trait_psionic_being = {
 	immortal_leaders = yes
-	destiny_trait = yes
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
@@ -570,7 +573,7 @@ leader_trait_psionic_being = {
 # starting_ruler_trait = yes
 # #orgins = { teachers_of_the_shroud }
 # cost = 1
-# 	destiny_trait = yes
+# 	leader_trait_type = destiny
 # 	inline_script = {
 # 		script = trait/icon_psionic
 # 		CLASS = leader
