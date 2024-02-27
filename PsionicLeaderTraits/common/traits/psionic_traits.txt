@@ -94,52 +94,53 @@ leader_trait_shroud_empath = {
 	}
 }
 
-# leader_trait_conduit_of_the_people = {
-# 	leader_trait_type = veteran
-# 	inline_script = {
-# 		script = trait/icon_psionic
-# 		CLASS = leader
-# 		ICON = "GFX_leader_trait_psionic"
-# 		RARITY = veteran
-# 		COUNCIL = no
-# 		TIER = none
-# 	}
-# 	triggered_galcom_modifier = {
-# 		potential = {
-# 			is_ruler = no
-# 		}
-# 		diplo_weight_pops_mult = 0.1
-# 	}
-# 	triggered_federation_modifier = {
-# 		potential = {
-# 			is_ruler = no
-# 		}
-# 		federation_experience_add = 0.5
-# 	}
-# 	leader_potential_add = {
-# 		OR = {
-# 			has_trait = leader_trait_psionic
-# 			has_trait = leader_trait_chosen
-# 		}
-# 		has_trait = subclass_official_delegate
-# 	}
-# 	leader_class = {
-# 		official
-# 	}
-# 	selectable_weight = {
-# 		weight = 250
-# 		modifier = {
-# 			OR = {
-# 				has_trait = leader_trait_chosen
-# 				has_trait = leader_trait_composer_chosen
-# 				has_trait = leader_trait_instrument_chosen
-# 				has_trait = leader_trait_eater_chosen
-# 				has_trait = leader_trait_whisperers_chosen
-# 			}
-# 			factor = 3
-# 		}
-# 	}
-# }
+leader_trait_conduit_of_the_people = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_commanding_presence"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		diplo_weight_pops_mult = 0.1
+	}
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		federation_experience_add = 0.5
+	}
+	leader_potential_add = {
+		OR = {
+			has_trait = leader_trait_psionic
+			has_trait = leader_trait_chosen
+		}
+		has_trait = subclass_official_delegate
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			OR = {
+				has_trait = leader_trait_chosen
+				has_trait = leader_trait_composer_chosen
+				has_trait = leader_trait_instrument_chosen
+				has_trait = leader_trait_eater_chosen
+				has_trait = leader_trait_whisperers_chosen
+			}
+			factor = 3
+		}
+	}
+}
+
 leader_trait_sights_from_beyond = {
 	leader_trait_type = veteran
 	inline_script = {

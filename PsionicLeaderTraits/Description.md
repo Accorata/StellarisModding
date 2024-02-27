@@ -1,5 +1,7 @@
 [h1] Psionic Leader Traits [/h1]
 
+UPDATED FOR 3.11
+
 Psionic Leader Traits is a small mod that adds many new veteran traits (and a couple of destiny and negative traits) that are available to any Psionic leader. I hoped to represent psionic concepts (mind reader to precognition to generalized consciousness) that certain Sci-Fi stories delve into and bring those ideas, however basic, into the framework of Stellaris.
 
 These leader traits are weighted to be somewhat rare and balanced to be slightly more powerful than an average trait, however like any leader trait, their effectiveness will vary on the current strategy.
@@ -27,6 +29,10 @@ The list of traits and their effects is as follows:
 
 [b]Shroud Empath[/b] (Available to Ambassadors)
   Councilor: 10% shroud delve cooldown, -20% shroud delve cost
+
+[b]Conduit of the People[/b] (Available to Delegates)
+  GalCom: 10% diplomatic weight from pops
+  Federation: +0.5 federation experience
 
 [b]Sights From Beyond[/b] (Available to Strategists)
   Councilor: +5 base intel, +1 cloaking detection
