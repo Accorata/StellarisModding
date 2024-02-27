@@ -1,5 +1,7 @@
 [h1] Erudite Leader Traits [/h1]
 
+UPDATED FOR 3.11
+
 Erudite Leader Traits is a small mod that adds many new veteran traits (and a destiny trait) that are available to any Erudite leader. The aim was to build upon the ascension paths to allow for more diverse roleplay/thematics and some new gameplay elements.
 
 These leader traits are weighted to be somewhat rare and balanced to be slightly more powerful than an average trait, however like any leader trait, their effectiveness will vary on the current strategy.
