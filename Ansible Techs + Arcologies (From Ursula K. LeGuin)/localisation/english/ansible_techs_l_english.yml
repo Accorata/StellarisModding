@@ -1,0 +1,27 @@
+﻿l_english:
+## Physics Techs
+# Ansible
+  tech_ansible:0 "Ansible Theory"
+  tech_ansible_desc:0 "Further understanding of quantum coupling interactions may allow us to realize our dream of an ansible, a machine allowing instantaneous communication regardless of distance."
+# Corporate Relays
+  tech_corporate_relays:0 "Corporate Relays"
+  tech_corporate_relays_desc:0 "No longer will we be limited to distance to limit transaction times. Our ansibles will usher in a new age of economic prosperity."
+## Engineering Techs
+# Centralopolis
+  tech_centrapolis:0 "Galactic Coordination Center"
+  tech_centrapolis_desc:0 "§HUnlocks Decision:§! $decision_centrapolis$"
+## Society Techs
+# Ansible Envoy Communications
+  tech_ansible_comms:0 "Interstellar Envoys"
+  tech_ansible_comms_desc:0 "Through the development of the portable ansible, our envoys can now utilize this technology to easily transmit messages to other nations."
+# Doctrine: Ansible Communications
+  tech_doctrine_navy_size_5:0 "Doctrine: Ansible Communications"
+  tech_doctrine_navy_size_5_desc:0 "Instantaneaos orders allow our navy to be expanded further with minimal cost to logistical command."
+# Galactic Propaganda
+  tech_galactic_propaganda:0 "Galactic Propaganda"
+  tech_galactic_propaganda_desc:0 "Our ansible network allows for one more outlet that our government can utilize to influence the populace."
+# Radicalized Factions
+  tech_radicalized_factions:0 "Radicalized Factions"
+  tech_radicalized_factions_desc:0 "Increased engagement to news brought about by our ansible networks has radicalized our factions, increasing their centralization but making their demands harder to meet."
+
+
