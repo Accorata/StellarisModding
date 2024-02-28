@@ -1,0 +1,29 @@
+leader_trait_thorough_annihilation = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_warlike"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_general
+		}
+	}
+	army_modifier = {
+		army_morale_damage_mult = 0.05
+		army_collateral_damage_mult = 1
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
