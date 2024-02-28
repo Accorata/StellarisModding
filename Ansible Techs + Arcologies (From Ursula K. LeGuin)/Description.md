@@ -1,5 +1,7 @@
 [h1] Ansible Technologies and Arcologies (From Ursula K LeGuin) [/h1]
 
+UPDATED FOR 3.11
+
 Stellaris lacks one of the most iconic Sci-Fi elements seen in galaxy-spanning stories: the ansible, a tool for infinite-range instantaneous communication first coined by prolific writer Ursula K LeGuin.
 
 This mod adds new techs all branching from Ansible Theory all with custom art, and it adds a new type of ecumenopolis called a centrapolis which replaces production arcologies with arcologies that provide new jobs that give empire-wide benefits and becomes a must-have in any sprawling empire. 
@@ -37,7 +39,7 @@ The list of techs and their effects is as follows:
   Base: -20% war exhaustion
 
 [b]Doctrine: Ansible Communications[/b] [i]Tier 4, Military Theory[/i] (Requires Ansible + Doctrine: Fleet Liaisons)
-  Base: +30 naval cap
+  Base: +25 naval cap
 
 [h2] Contact [/h2]
 
