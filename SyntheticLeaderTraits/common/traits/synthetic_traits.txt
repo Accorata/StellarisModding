@@ -1,3 +1,35 @@
+leader_trait_mainframe_integration = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_financial"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		ship_evasion_add = 15
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.15
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
 leader_trait_thorough_annihilation = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -25,5 +57,47 @@ leader_trait_thorough_annihilation = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+	}
+}
+
+leader_trait_introspective_revisions = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_magnifying_glass"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		robot
+		upkeep
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			has_trait = leader_trait_inquisitive
+			factor = 2
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_2
+			factor = 3
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_3
+			factor = 4
+		}
 	}
 }
