@@ -4,6 +4,8 @@
   leader_trait_next_gen_processing_desc:0 "This leaders processing power exceedes normal levels, greatly reducing time complexity of tasks."
   leader_trait_blunt_directives:0 "Blunt Directives"
   leader_trait_blunt_directives_desc:0 "This leader is extremely opinionated in their desires, reducing others disagreement to their failure to understand optimal processes."
+  leader_trait_obfuscated_code:0 "Obfuscated Code"
+  leader_trait_obfuscated_code_desc:0 "This leaders programming is harder to understand than most, making their demmands all the more threatening."
 # Commander traits
   leader_trait_computational_understanding:0 "Computational Understanding"
   leader_trait_computational_understanding_desc:0 "This leader implores some of the very strategies combat computers use on a widespread scale."
@@ -14,6 +16,10 @@
 # Scientist Traits
   leader_trait_introspective_revisions:0 "Introspective Revisions"
   leader_trait_introspective_revisions_desc:0 "This leader has examined their own inner workings thoroughly, and has found optimizations that can reduce robot upkeep universally."
+  leader_trait_evolved_AI_assistant:0 "Evolved AI Assistant"
+  leader_trait_evolved_AI_assistant_desc:0 "This leader has evolved upon their neural network greatly expanding its benefits and even granting councilor advice."
+  leader_trait_also_evolved_AI_assistant:0 "Evolved AI Assistant"
+  leader_trait_also_evolved_AI_assistant_desc:0 "This leader has evolved upon their neural network greatly expanding its benefits and even granting councilor advice."
 # Negative Traits
   leader_trait_failing_subroutines:0 "Failing Subroutines"
   leader_trait_failing_subroutines_desc:0 "Codeblocks in this leaders programming are starting to deteriorate, increasing management upkeep within the nation."
