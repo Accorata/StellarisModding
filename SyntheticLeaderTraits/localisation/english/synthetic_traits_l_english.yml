@@ -1,6 +1,7 @@
 ﻿l_english:
 # Official Traits
-  
+  leader_trait_next_gen_processing:0 "Next-Gen Processing"
+  leader_trait_next_gen_processing_desc:0 "This leaders processing power exceedes normal levels, greatly reducing time complexity of tasks."
 # Commander traits
   leader_trait_mainframe_integration:0 "Mainframe Integration"
   leader_trait_mainframe_integration_desc:0 "This leader taps their network directly into their fleet, giving them realtime reactions and activating their self-preservation subroutines."
@@ -10,6 +11,7 @@
   leader_trait_introspective_revisions:0 "Introspective Revisions"
   leader_trait_introspective_revisions_desc:0 "This leader has examined their own inner workings thoroughly, and has found optimizations that can reduce robot upkeep universally."
 # Negative Traits
-  
+  leader_trait_failing_subroutines:0 "Failing Subroutines"
+  leader_trait_failing_subroutines_desc:0 "Codeblocks in this leaders programming are starting to deteriorate, increasing management upkeep within the nation."
 # Destiny Traits
   
