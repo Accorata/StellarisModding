@@ -27,6 +27,70 @@ leader_trait_next_gen_processing = {
 	}
 }
 
+leader_trait_blunt_directives = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_opinionated"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_official_diplomacy_councilor
+			owner = {
+				NOT = {
+					is_homicidal = yes
+				}
+			}
+		}
+	}
+	councilor_modifier = {
+		country_claim_influence_cost_mult = -0.2
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_computational_understanding = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_reverse_engineer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_councilor
+		}
+	}
+	councilor_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
 leader_trait_mainframe_integration = {
 	leader_trait_type = veteran
 	inline_script = {

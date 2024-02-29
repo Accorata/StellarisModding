@@ -2,7 +2,11 @@
 # Official Traits
   leader_trait_next_gen_processing:0 "Next-Gen Processing"
   leader_trait_next_gen_processing_desc:0 "This leaders processing power exceedes normal levels, greatly reducing time complexity of tasks."
+  leader_trait_blunt_directives:0 "Blunt Directives"
+  leader_trait_blunt_directives_desc:0 "This leader is extremely opinionated in their desires, reducing others disagreement to their failure to understand optimal processes."
 # Commander traits
+  leader_trait_computational_understanding:0 "Computational Understanding"
+  leader_trait_computational_understanding_desc:0 "This leader implores some of the very strategies combat computers use on a widespread scale."
   leader_trait_mainframe_integration:0 "Mainframe Integration"
   leader_trait_mainframe_integration_desc:0 "This leader taps their network directly into their fleet, giving them realtime reactions and activating their self-preservation subroutines."
   leader_trait_thorough_annihilation:0 "Thorough Annihilation"
