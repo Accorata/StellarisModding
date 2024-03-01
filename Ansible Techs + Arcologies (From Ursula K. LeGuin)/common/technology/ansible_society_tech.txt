@@ -194,3 +194,4 @@ tech_radicalized_factions = {
 	}
 	ai_weight = {
 	}
+}
