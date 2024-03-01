@@ -274,7 +274,7 @@ leader_trait_evolved_AI_assistant = {
 		CLASS = leader
 		ICON = "GFX_leader_trait_sapient_AI_assistant"
 		RARITY = veteran
-		COUNCIL = no
+		COUNCIL = triggered
 		TIER = none
 	}
 	modifier = {
@@ -314,7 +314,7 @@ leader_trait_also_evolved_AI_assistant = {
 		CLASS = leader
 		ICON = "GFX_leader_trait_sapient_AI_assistant"
 		RARITY = veteran
-		COUNCIL = no
+		COUNCIL = triggered
 		TIER = none
 	}
 	modifier = {
@@ -381,7 +381,7 @@ leader_trait_ex_machina = {
 	inline_script = {
 		script = trait/icon
 		CLASS = leader
-		ICON = "GFX_leader_trait_deep_connections"
+		ICON = "GFX_leader_trait_synthetic"
 		RARITY = paragon
 		COUNCIL = yes
 		TIER = none

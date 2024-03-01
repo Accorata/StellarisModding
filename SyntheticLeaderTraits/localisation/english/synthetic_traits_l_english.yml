@@ -1,7 +1,7 @@
 ﻿l_english:
 # Official Traits
-  leader_trait_age_of_machines:0 "Age of Machines"
-  leader_trait_age_of_machines_desc:0 "This leader brings upon an age of artifical networks and new destinies."
+  leader_trait_age_of_machines:0 "Endless Drive"
+  leader_trait_age_of_machines_desc:0 "This leader never hesitates, always taking steps to build a better future."
   leader_trait_next_gen_processing:0 "Next-Gen Processing"
   leader_trait_next_gen_processing_desc:0 "This leaders processing power exceedes normal levels, greatly reducing time complexity of tasks."
   leader_trait_blunt_directives:0 "Blunt Directives"
