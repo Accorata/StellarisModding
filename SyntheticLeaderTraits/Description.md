@@ -21,7 +21,7 @@ NOT achievement compatible ([i]Only UI mods that don't change features can be[/i
 
 The list of traits and their effects is as follows:
 
-[b]Age of Machines[/b] (Available to Commissioners, Urbanists, and Analysts)
+[b]Endless Drive[/b] (Available to Commissioners, Urbanists, and Analysts)
   Planet: +10% production from robots, +10% mechanical pop assembly speed
   Sector: +5% production from robots, +5% mechanical pop assembly speed
 
