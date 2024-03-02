@@ -1,0 +1,41 @@
+leader_trait_former_colonist = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.15
+	}
+	sector_modifier = {
+		planet_building_build_speed_mult = 0.075
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_colony_development_speed_mult = 0.1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		planet_building_build_speed_mult = 0.05
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_new_worlds_research_speed_mult = 0.01
+		category_new_worlds_draw_chance_mult = 0.05
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}

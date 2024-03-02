@@ -9,16 +9,26 @@ country_event = {
 		}
 	}
 	immediate = {
-		change_background_job = servant
+		# change_background_job = servant
 		if = {
 			limit = {
 				from = {
-					has_background_job = servant
+					has_background_job = colonist
 				}
 			}
 		}
 		from = {
-			add_trait_no_notify = leader_trait_synthetic
+			add_trait_no_notify = leader_trait_former_colonist
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = telepath
+				}
+			}
+		}
+		from = {
+			add_trait_no_notify = leader_trait_former_telepath
 		}
 	}
 }
