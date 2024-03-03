@@ -1,6 +1,6 @@
-namespace = great_leaders
+namespace = great_leaders_explorer
 country_event = {
-	id = great_leaders.0
+	id = great_leaders_explorer.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
