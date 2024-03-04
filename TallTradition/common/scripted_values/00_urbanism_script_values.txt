@@ -1,4 +1,0 @@
-planet_pop_num = {
-	add = 1
-	# add = trigger:num_pops
-}
