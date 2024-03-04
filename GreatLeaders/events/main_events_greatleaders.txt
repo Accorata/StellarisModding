@@ -4,6 +4,9 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		trigger = {
+			is_country_type = default
+		}
 	}
 	immediate = {
 		set_variable = {
@@ -28,12 +31,12 @@ country_event = {
 		}
 		# Per stragist (level irrelevant)
 		every_owned_leader = {
-			if = {
-				limit = {
-					has_trait = subclass_commander_councilor
-				}
+			limit = {
+				has_trait = subclass_commander_councilor
+			}
+			root = {
 				change_variable = {
-					which = owner.greatleaders_strategist_points
+					which = greatleaders_strategist_points
 					value = 1
 				}
 			}
