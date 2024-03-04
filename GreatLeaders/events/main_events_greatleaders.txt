@@ -20,7 +20,59 @@ country_event = {
 
 country_event = {
 	id = great_leaders.0
-	hide_window = no #yes
+	hide_window = yes
+	is_triggered_only = yes
+	# trigger = {
+	# 	is_country_type = default
+	# }
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = { has_country_flag = pirates_spawned }
+			}
+			country_event = {
+				id = great_leaders.1
+			}
+			# Per stragist (level irrelevant)
+			# every_owned_leader = {
+			# 	limit = {
+			# 		has_trait = subclass_commander_councilor
+			# 	}
+			# 	# @abc = trigger:has_skill
+			# 	root = {
+			# 		change_variable = {
+			# 			which = greatleaders_strategist_points
+			# 			value = 1
+			# 		}
+			# 		# change_variable = {
+			# 		# 	which = greatleaders_strategist_points
+			# 		# 	value = trigger:has_skill					#hmm
+			# 		# }
+			# 		# change_variable = {
+			# 		# 	which = greatleaders_strategist_points
+			# 		# 	value = @abc					#hmm
+			# 		# }
+			# 	}
+			# 	# change_variable = {
+			# 	# 	which = owner.greatleaders_strategist_points
+			# 	# 	value = 2
+			# 	# }
+			# 	# change_variable = {
+			# 	# 	which = root.greatleaders_strategist_points
+			# 	# 	value = 5
+			# 	# }
+			# 	# change_variable = {
+			# 	# 	which = greatleaders_strategist_points
+			# 	# 	value = 10
+			# 	# }
+			# }
+		}
+	}
+}
+
+country_event = {
+	id = great_leaders.1
+	hide_window = no	#yes
 	is_triggered_only = yes
 	# trigger = {
 	# 	is_country_type = default
@@ -30,38 +82,5 @@ country_event = {
 			which = greatleaders_explorer_points
 			value = 3
 		}
-		# Per stragist (level irrelevant)
-		# every_owned_leader = {
-		# 	limit = {
-		# 		has_trait = subclass_commander_councilor
-		# 	}
-		# 	# @abc = trigger:has_skill
-		# 	root = {
-		# 		change_variable = {
-		# 			which = greatleaders_strategist_points
-		# 			value = 1
-		# 		}
-		# 		# change_variable = {
-		# 		# 	which = greatleaders_strategist_points
-		# 		# 	value = trigger:has_skill					#hmm
-		# 		# }
-		# 		# change_variable = {
-		# 		# 	which = greatleaders_strategist_points
-		# 		# 	value = @abc					#hmm
-		# 		# }
-		# 	}
-		# 	# change_variable = {
-		# 	# 	which = owner.greatleaders_strategist_points
-		# 	# 	value = 2
-		# 	# }
-		# 	# change_variable = {
-		# 	# 	which = root.greatleaders_strategist_points
-		# 	# 	value = 5
-		# 	# }
-		# 	# change_variable = {
-		# 	# 	which = greatleaders_strategist_points
-		# 	# 	value = 10
-		# 	# }
-		# }
 	}
 }

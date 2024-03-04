@@ -2,16 +2,18 @@
 on_game_start_country = {
 	events = {
 		great_leaders.100		# Sets up leader variables
+		great_leaders.1		#??
 	}
 }
 
-# on_yearly_pulse = {
-# 	events = {
-# 		great_leaders.0
-# 	}
-# }
-on_monthly_pulse = {
+on_yearly_pulse_country = {
 	events = {
 		great_leaders.0
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		great_leaders.1
 	}
 }
