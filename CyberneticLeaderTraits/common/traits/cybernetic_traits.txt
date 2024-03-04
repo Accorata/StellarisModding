@@ -1,0 +1,121 @@
+leader_trait_city_interfaces = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_waste_management_specialist"		#
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_governor_subclass = yes
+		}
+	}
+	planet_modifier = {
+		empire_size_districts_mult = -0.4
+	}
+	sector_modifier = {
+		empire_size_districts_mult = -0.2
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_one_with_the_machine = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "GFX_leader_trait_intellectual"		##
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_official_economy_councilor
+		}
+	}
+	councilor_modifier = {
+		planet_pop_assembly_mult = 0.05
+		planet_building_build_speed_mult = 0.15
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_predictive_algorithms = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "GFX_leader_trait_resolution_category_commerce_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_official_diplomacy_councilor
+		}
+	}
+	councilor_modifier = {
+		country_trade_fee = -0.03
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_terrain_retrofitting = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_waste_management_specialist"		#
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_commander_general
+		}
+	}
+	self_modifier = {
+		planet_combat_width_add = 2
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
