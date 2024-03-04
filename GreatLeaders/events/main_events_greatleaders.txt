@@ -1,0 +1,66 @@
+namespace = great_leaders
+country_event = {
+	id = great_leaders.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		trigger = {
+			is_country_type = default
+		}
+	}
+	immediate = {
+		set_variable = {
+			which = greatleaders_explorer_points
+			value = 0
+		}
+		set_variable = {
+			which = greatleaders_strategist_points
+			value = 0
+		}
+	}
+}
+
+country_event = {
+	id = great_leaders.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		change_variable = {
+			which = greatleaders_explorer_points
+			value = 3
+		}
+		# Per stragist (level irrelevant)
+		every_owned_leader = {
+			limit = {
+				has_trait = subclass_commander_councilor
+			}
+			@abc = trigger:has_skill
+			root = {
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = 1
+				}
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = trigger:has_skill					#hmm
+				}
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = @abc					#hmm
+				}
+			}
+			# change_variable = {
+			# 	which = owner.greatleaders_strategist_points
+			# 	value = 2
+			# }
+			# change_variable = {
+			# 	which = root.greatleaders_strategist_points
+			# 	value = 5
+			# }
+			# change_variable = {
+			# 	which = greatleaders_strategist_points
+			# 	value = 10
+			# }
+		}
+	}
+}
