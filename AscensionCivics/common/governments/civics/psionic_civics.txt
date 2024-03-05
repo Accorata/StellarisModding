@@ -1,31 +1,40 @@
 civic_beyond_the_veil = {
-	modification = no
+	modification = yes
+	cost = 1
 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 	potential = {
 		#has_active_tradition = tr_psionics_finish
+	}
+	pickable_at_start = no	#yes
+	possible = {
+		has_active_tradition = tr_psionics_finish
+		ethics = {
+			OR = {
+				value = ethic_fanatic_spiritualist
+				value = ethic_spiritualist
+			}
+		}
 	}
 	random_weight = {
 		base = 0
 	}
 	#forced_happiness = yes
 	modifier = {
-		planet_jobs_physics_research_produces_add = -1
-		planet_jobs_society_research_produces_add = 2
-		planet_jobs_engineering_research_produces_add = -1
-	}
-	triggered_modifier = {
-		potential = {
-			has_relic = r_zro_crystal
-		}
+		planet_researchers_society_research_produces_add = 2
+		planet_researchers_physics_research_produces_add = -1
+		planet_researchers_engineering_research_produces_add = -1
 		shroud_delve_cooldown = -0.25
 	}
-	triggered_modifier = {
-		potential = {
-			NOT = {
-				has_relic = r_zro_crystal
-			}
+	swap_type = {
+		trigger = {
+			has_relic = r_zro_crystal
 		}
-		shroud_delve_cooldown = -0.125
+		modifier = {
+			planet_researchers_society_research_produces_add = 2
+			planet_researchers_physics_research_produces_add = -1
+			planet_researchers_engineering_research_produces_add = -1
+			shroud_delve_cooldown = -0.125
+		}
 	}
 	# adds ascendant psionic trait to pops
 }
