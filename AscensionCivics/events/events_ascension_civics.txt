@@ -1,0 +1,11 @@
+namespace = ascension_civics
+country_event = {
+	id = ascension_civics.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_beyond_the_veil
+	}
+	immediate = {
+	}
+}

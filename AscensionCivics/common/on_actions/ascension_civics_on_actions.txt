@@ -1,0 +1,6 @@
+on_post_government_changed = {
+	events = {
+		ascension_civics.10 # Add ascendant psionic to psionic pops
+		# Remove ascendant psionic from pops
+	}
+}
