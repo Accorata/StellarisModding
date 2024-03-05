@@ -1,0 +1,85 @@
+@stickiness = 10
+
+# Centrapolis
+col_central_mix = {
+	icon = GFX_colony_type_urban
+	potential = {
+		uses_district_set = city_world_central
+		is_capital = no
+	}
+	planet_modifier = {
+		planet_structures_upkeep_mult = -0.25
+		empire_size_pops_mult = -0.1
+	}
+	weight_modifier = {
+		modifier = {
+			add = @stickiness
+			has_designation = col_central_mix
+		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_arcology_housing_central
+			}
+			mode = add
+			mult = 6
+		}
+	}
+}
+
+# Centrapolis Research
+col_central_research = {
+	icon = GFX_colony_type_research
+	potential = {
+		uses_district_set = city_world_central
+		is_capital = no
+	}
+	planet_modifier = {
+		planet_building_research_lab_1_build_speed_mult = 0.25
+		planet_researchers_upkeep_mult = -0.2
+	}
+	weight_modifier = {
+		modifier = {
+			add = @stickiness
+			has_designation = col_central_research
+		}
+		complex_trigger_modifier = {
+			trigger = count_owned_pop
+			parameters = {
+				limit = {
+					has_research_job = yes
+				}
+			}
+			mode = add
+			mult = 3
+		}
+	}
+}
+
+# col_central_unity = {
+# 	icon = GFX_colony_type_bureaucratic
+# 	potential = {
+# 		uses_district_set = city_world_central
+# 		is_capital = no
+# 	}
+# 	planet_modifier = {
+# 		planet_building_research_lab_1_build_speed_mult = 0.25
+# 		planet_researchers_upkeep_mult = -0.2
+# 	}
+# 	weight_modifier = {
+# 		modifier = {
+# 			add = @stickiness
+# 			has_designation = col_central_research
+# 		}
+# 		complex_trigger_modifier = {
+# 			trigger = count_owned_pop
+# 			parameters = {
+# 				limit = {
+# 					has_research_job = yes
+# 				}
+# 			}
+# 			mode = add
+# 			mult = 3
+# 		}
+# 	}
+# }

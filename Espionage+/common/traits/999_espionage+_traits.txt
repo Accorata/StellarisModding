@@ -1,0 +1,37 @@
+leader_trait_active_backdoor = {
+	negative = yes
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_espionage_chapter_icon_security"
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip = leader_trait_active_backdoor_tooltip
+	force_councilor_trait = yes	
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = no
+	notify_on_gained = yes
+}
+
+leader_trait_questionable_loyalties = {
+	negative = yes
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_espionage_chapter_icon_security" # to be changed
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip = leader_trait_questionable_loyalties_tooltip
+	force_councilor_trait = yes	
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = no
+	notify_on_gained = yes
+}

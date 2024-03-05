@@ -1,0 +1,50 @@
+leader_trait_former_noble = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		ruler_skill_add = 1
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			leader_class = official
+		}
+		diplo_weight_mult = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_executive = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = energy_credits
+		AMOUNT = 2
+	}
+	councilor_modifier = {
+		commercial_pact_mult = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}

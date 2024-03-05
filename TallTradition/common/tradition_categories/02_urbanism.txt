@@ -1,0 +1,35 @@
+tradition_urbanism = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_urbanism_adopt"
+	finish_bonus = "tr_urbanism_finish"
+	traditions = {
+		"tr_urbanism_planetwide_infrastruture"
+		"tr_urbanism_highrises"
+		"tr_urbanism_city_life"
+		"tr_urbanism_galactic_centers"
+		"tr_urbanism_local_bureaucracy"
+	}
+	potential = {
+		#is_regular_empire = yes
+		# will change later
+	}
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 2
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 0.1
+			has_origin = origin_void_dwellers
+		}
+		modifier = {
+			factor = 0.5
+			has_tradition = tr_expansion_colonization_fever
+		}
+	}
+}
