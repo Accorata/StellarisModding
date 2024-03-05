@@ -1,7 +1,7 @@
 trait_ascendant_psionic = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	icon = "gfx/interface/icons/traits/trait_ascendant_psionic.dds"
 	initial = no
 	randomized = no
 	forced_happiness = yes
