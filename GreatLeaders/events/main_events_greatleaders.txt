@@ -33,8 +33,22 @@ country_event = {
 			limit = {
 				has_trait = subclass_commander_councilor
 			}
+			save_event_target_as = event_leader
 			# @abc = trigger:has_skill
 			root = {
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = event_target:event_leader:has_skill
+				}
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = event_target:event_leader:trigger:has_skill
+				}
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = event_target:event_leader.trigger:has_skill
+				}
+				#trying other options
 				change_variable = {
 					which = greatleaders_strategist_points
 					value = 1

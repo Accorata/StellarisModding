@@ -1,24 +1,23 @@
 namespace = great_leaders_explorer
 country_event = {
 	id = great_leaders_explorer.0
-	hide_window = no
+	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 	}
 	immediate = {
 		# hidden_effect = {
-			
 		# }
 		random_list = {
 			1 = {
-				country_event = {
-					id = utopia.3020
-				}
+				# country_event = {
+				# 	id = utopia.3020
+				# }
 			}
 		}
 		random_owned_leader = {
 			limit = {
-				has_trait = subclass_commander_councilor #explorer
+				has_trait = subclass_commander_councilor				#explorer
 			}
 			leader_event = {
 				id = great_leaders_explorer.1
@@ -31,23 +30,31 @@ leader_event = {
 	id = great_leaders_explorer.1
 	title = great_leaders_explorer.1.name
 	desc = great_leaders_explorer.1.desc
-	picture = GFX_evt_busy_spaceport	#...
+	picture = GFX_evt_alien_planet
 	show_sound = event_default
 	is_triggered_only = yes
 	event_window_type = leader_story
-	event_picture_background = "GFX_leader_recruitment_bg_renowned"	#...
+	event_picture_background = "GFX_leader_recruitment_bg_renowned"
 	picture_event_data = {
-		portrait = root		#...
+		portrait = root
 	}
 	trigger = {
 		exists = owner
-		owner = {
-			exists = capital_scope
+	}
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				1 = {
+					#save_event_target_as = 1000
+				}
+			}
 		}
 	}
 	option = {
 		name = paragon.40120.a
-
+		country_event = {
+			id = utopia.3020
+		}
 	}
 	option = {
 		name = paragon.40120.b
