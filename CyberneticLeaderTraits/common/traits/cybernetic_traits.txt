@@ -215,3 +215,93 @@ leader_trait_terrain_retrofitting = {
 		weight = 250
 	}
 }
+
+leader_trait_generalized_learning_algorithms = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_micromanager"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.02
+		species_leader_exp_gain = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_electronic_mind_meld = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_galvanizer"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_speed_mult = 0.2
+		ship_anomaly_generation_chance_mult = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_scientist_explorer
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_multi_tool_appendages = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_bureaucratic"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_archaeological_site_excavation_speed_mult = 0.05
+		ship_archaeological_site_clues_add = 1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_cyborg
+			has_trait = subclass_scientist_scholar
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}

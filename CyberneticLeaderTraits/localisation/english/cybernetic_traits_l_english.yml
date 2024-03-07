@@ -16,7 +16,12 @@
   leader_trait_terrain_retrofitting:0 "Terrain Retrofitting"
   leader_trait_terrain_retrofitting_desc:0 "..."
 # Scientist Traits
-  
+  leader_trait_generalized_learning_algorithms:0 "Generalized Learning Algorithms"
+  leader_trait_generalized_learning_algorithms_desc:0 "..."
+  leader_trait_electronic_mind_meld:0 "Electronic Mind Meld"
+  leader_trait_electronic_mind_meld_desc:0 "..."
+  leader_trait_multi_tool_appendages:0 "Mult-tool Appendages"
+  leader_trait_multi_tool_appendages_desc:0 "..."
 # Negative Traits
   
 # Destiny Traits
