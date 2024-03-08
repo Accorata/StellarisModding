@@ -1,0 +1,63 @@
+leader_trait_machine_crusader = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_crusader"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip = leader_trait_machine_crusader_effect
+	initial = no
+	randomized = no
+}
+
+leader_trait_machine_crusader_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		"leader_trait_machine_crusader"
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_crusader"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip = leader_trait_machine_crusader_2_effect
+}
+
+leader_trait_machine_crusader_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		"leader_trait_machine_crusader_2"
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_crusader"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	fleet_modifier = {
+		ship_weapon_damage = 0.1
+		ship_fire_rate_mult = 0.1
+	}
+	army_modifier = {
+		army_damage_mult = 0.1
+		army_collateral_damage_mult = 0.5
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip = leader_trait_machine_crusader_2_effect
+}

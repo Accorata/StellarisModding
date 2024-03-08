@@ -1,4 +1,5 @@
 namespace = ascension_civics
+# On post government change
 country_event = {
 	id = ascension_civics.10
 	hide_window = yes
@@ -22,6 +23,7 @@ country_event = {
 	}
 }
 
+# On post government change
 country_event = {
 	id = ascension_civics.11
 	hide_window = yes
@@ -46,6 +48,7 @@ country_event = {
 	}
 }
 
+# ...
 country_event = {
 	id = ascension_civics.20
 	hide_window = yes
@@ -66,6 +69,123 @@ country_event = {
 						}
 					}
 					add_trait = trait_infectious
+				}
+			}
+		}
+	}
+}
+
+# On destroying enemy ship.
+country_event = {
+	id = ascension_civics.50
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROM = {
+			if = {
+				limit = {
+					exists = fleet.leader
+				}
+				fleet.leader = {
+					# Machine Crusader I / II
+					if = {
+						limit = {
+							has_trait_tier1or2or3 = {
+								TRAIT = leader_trait_machine_crusader
+							}
+							ROOT.FROM = {
+								# Owner of losing ship.
+								is_default_or_fallen = yes
+							}
+						}
+						ROOT = {
+							if = {
+								limit = {
+									PREV = {
+										has_trait = leader_trait_machine_crusader
+									}
+								}
+								add_resource = {
+									unity = @trait_crusader_fleet_amt
+								}
+								add_resource = {
+									alloys = @trait_shipbreaker_amt
+								}
+							}
+							else = {
+								add_resource = {
+									unity = @trait_crusader_2_fleet_amt
+								}
+								add_resource = {
+									alloys = @trait_shipbreaker_2_amt
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# On army killed in combat.
+country_event = {
+	id = ascension_civics.51
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROMFROM = {
+			# Planet where ground combat is taking place.
+			# Check if dead army is a defensive army.
+			if = {
+				limit = {
+					any_ground_combat_defender = {
+						is_same_value = ROOT.FROM
+						exists = species
+						species = {
+							is_robotic = no
+						}
+					}
+				}
+				# Check if attacking army has general with Crusader trait.
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_machine_crusader
+								has_trait = leader_trait_machine_crusader_2
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+			}
+		}
+		# If attacking army has a leader with Crusader trait, award Unity.
+		if = {
+			limit = {
+				exists = event_target:attacking_general
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:attacking_general = {
+							has_trait = leader_trait_machine_crusader
+						}
+					}
+					add_resource = {
+						unity = 25						# Tier 1
+						alloys = 5						# Tier 1
+					}
+				}
+				else = {
+					add_resource = {
+						unity = 40						# Tier 2
+						alloys = 8						# Tier 2
+					}
 				}
 			}
 		}

@@ -1,6 +1,19 @@
 on_post_government_changed = {
 	events = {
-		ascension_civics.10 # Add ascendant psionic to psionic pops
+		ascension_civics.10		# Add ascendant psionic to psionic pops
 		# Remove ascendant psionic from pops
+	}
+}
+
+on_ship_destroyed_perp = {
+	events = {
+		ascension_civics.50		# On ship destroyed machine crusader traits.
+	}
+}
+
+#An army has been killed in ground combat
+on_army_killed_in_combat = {
+	events = {
+		ascension_civics.51		# On organic army destroyed machine crusader traits.
 	}
 }
