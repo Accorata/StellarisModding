@@ -56,3 +56,20 @@ trait_ascendant_psionic = {
 		}
 	}
 }
+
+trait_infectious = {
+	cost = -3
+	potential_crossbreeding_chance = 0.9
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		pop_growth_speed = -0.2
+	}
+	slave_cost = {
+		energy = -3000
+	}
+}
