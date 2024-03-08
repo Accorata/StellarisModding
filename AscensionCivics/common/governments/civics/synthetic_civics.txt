@@ -1,11 +1,12 @@
 civic_bioform_eliminator = {
 	pickable_at_start = no
 	possible = {
-		has_active_tradition = tr_psionics_finish #synth
+		has_active_tradition = tr_psionics_finish		#synth
 	}
 	random_weight = {
 		base = 0
 	}
+	# on add - adds leader_trait_machine_crusader - check to see if this effect works on biological armies
 	description = civic_tooltip_bioform_eliminator_effects
 	modifier = {
 		country_starbase_influence_cost_mult = -0.3
@@ -14,4 +15,5 @@ civic_bioform_eliminator = {
 		country_naval_cap_mult = 0.33
 	}
 }
+
 #civic_machine_terminator
