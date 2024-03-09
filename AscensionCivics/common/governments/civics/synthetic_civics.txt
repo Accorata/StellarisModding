@@ -1,4 +1,6 @@
 civic_bioform_eliminator = {
+	modification = yes
+	cost = 1
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish		#synth

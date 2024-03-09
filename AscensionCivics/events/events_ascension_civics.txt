@@ -238,3 +238,35 @@ country_event = {
 		}
 	}
 }
+
+# Bioform Eliminator: purging pops yields unity
+planet_event = {
+	id = ascension_civics.53
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			has_valid_civic = civic_bioform_eliminator
+		}
+		exists = fromfrom #crisis.202 can remove the last pop
+		FROMFROM = {
+			NOR = {
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
+			}
+		}
+		is_controlled_by = FROM
+	}
+
+	immediate = {
+		FROM = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 2
+				min = 5
+				max = 100
+			}
+		}
+	}
+}

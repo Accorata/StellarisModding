@@ -22,6 +22,16 @@ on_army_killed_in_combat = {
 # A leader is added to the leader pool, available for recruitment
 on_added_to_leader_pool = {
 	events = {
-		ascension_civics.100		# Additional traits from civics
+		ascension_civics.100		# Additional traits from civics (machine crusader for bioform eliminator)
+	}
+}
+
+# A pop has finished purging
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_purged = {
+	events = {
+		ascension_civics.53		# Gain resources for bioform eliminators
 	}
 }
