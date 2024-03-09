@@ -1,4 +1,6 @@
 ﻿l_english:
 # Synthetic
-
-  civic_tooltip_bioform_eliminator_effects:13 "Cannot engage in §YDiplomacy§! with organic species!\nCannot access the §YGalactic Market§!\nHas the §Y'Purification'§! casus belli on organic species\nGains £unity£ §YUnity§! from assimilating or purging organic £pop£ Pops\nMay use §Y$bombardment_armageddon$§! bombardment stance\n" #machine crusader leader traits
+  civic_bioform_eliminator:0 "Bioform Eliminators"
+  civic_bioform_eliminator_desc:0 "..."
+  civic_tooltip_bioform_eliminator_effects:13 "Cannot engage in §YDiplomacy§! with organic species!\nCannot access the §YGalactic Market§!\n§Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\nHas the §Y'Purification'§! casus belli on organic species\nGains £unity£ §YUnity§! from assimilating or purging organic £pop£ Pops\nMay use §Y$bombardment_armageddon$§! bombardment stance\n" #machine crusader leader traits
+# Psionic

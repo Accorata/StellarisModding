@@ -1,4 +1,31 @@
 namespace = ascension_civics
+# A leader is added to the leader pool, available for recruitment
+country_event = {
+	id = ascension_civics.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = spawning_renowned_leader
+		}
+	}
+	immediate = {
+		# Bioform Eliminators
+		# Adds the Machine Crusader trait
+		if = {
+			limit = {
+				has_valid_civic = civic_bioform_eliminator
+				from = {
+					leader_class = commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_machine_crusader
+			}
+		}
+	}
+}
+
 # On post government change
 country_event = {
 	id = ascension_civics.10
@@ -114,10 +141,10 @@ country_event = {
 							}
 							else = {
 								add_resource = {
-									unity = @trait_crusader_2_fleet_amt
+									unity = @trait_crusader_2_fleet_amt									#Tier 2/3
 								}
 								add_resource = {
-									alloys = @trait_shipbreaker_2_amt
+									alloys = @trait_shipbreaker_2_amt									#Tier 2/3
 								}
 							}
 						}
@@ -164,7 +191,7 @@ country_event = {
 				}
 			}
 		}
-		# If attacking army has a leader with Crusader trait, award Unity.
+		# If attacking army has a leader with Machine Crusader trait, award Unity and Alloys.
 		if = {
 			limit = {
 				exists = event_target:attacking_general
@@ -183,11 +210,31 @@ country_event = {
 				}
 				else = {
 					add_resource = {
-						unity = 40						# Tier 2
-						alloys = 8						# Tier 2
+						unity = 40						# Tier 2/3
+						alloys = 8						# Tier 2/3
 					}
 				}
 			}
+		}
+	}
+}
+
+# On post government change
+country_event = {
+	id = ascension_civics.52
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_bioform_eliminator
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = renowned_leader
+				}
+			}
+			add_trait_no_notify = leader_trait_machine_crusader
 		}
 	}
 }

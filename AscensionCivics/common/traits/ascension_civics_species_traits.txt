@@ -48,15 +48,10 @@ trait_ascendant_psionic = {
 				has_building = building_order_keep
 			}
 		}
-		modifier = {
-			subtract = 1.5
-			from.owner = {
-				has_ascension_perk = ap_the_flesh_is_weak
-			}
-		}
 	}
 }
 
+# need to add it to pops gained after (place in assimilation) for above trait
 trait_infectious = {
 	cost = -3
 	potential_crossbreeding_chance = 0.9

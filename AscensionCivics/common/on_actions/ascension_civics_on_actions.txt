@@ -1,7 +1,8 @@
 on_post_government_changed = {
 	events = {
 		ascension_civics.10		# Add ascendant psionic to psionic pops
-		# Remove ascendant psionic from pops
+		ascension_civics.11		# Remove ascendant psionic from pops
+		ascension_civics.52		# Add machine crusader trait to commanders
 	}
 }
 
@@ -15,5 +16,12 @@ on_ship_destroyed_perp = {
 on_army_killed_in_combat = {
 	events = {
 		ascension_civics.51		# On organic army destroyed machine crusader traits.
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+on_added_to_leader_pool = {
+	events = {
+		ascension_civics.100		# Additional traits from civics
 	}
 }
