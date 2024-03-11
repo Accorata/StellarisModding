@@ -26,14 +26,13 @@ building_psi_tower = {
 		}
 	}
 	planet_modifier = {
-		#job_telepath_add = 2 #Upgraded psi corps?
+		job_politician_add = 2
 		job_telepath_per_pop = 0.1
-		#planet_stability_add = 5
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 500
+			minerals = 1000
 		}
 		upkeep = {
 			energy = @b2_upkeep
