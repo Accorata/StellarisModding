@@ -38,3 +38,18 @@ civic_beyond_the_veil = {
 	}
 	# adds ascendant psionic trait to pops
 }
+
+civic_telepathic_empire = {
+	modification = yes
+	cost = 1
+	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	pickable_at_start = no
+	possible = {
+		has_active_tradition = tr_psionics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+	}
+}
