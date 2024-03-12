@@ -3,6 +3,10 @@ civic_bioform_eliminator = {
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish		#synth
+		NOT = {
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_fanatic_purifiers
+		}
 	}
 	random_weight = {
 		base = 0
