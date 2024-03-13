@@ -12,7 +12,8 @@ councilor_bioform_eliminator = {
 	}
 	civic = civic_bioform_eliminator
 	modifier = {
-		country_war_exhaustion_mult = -0.03
+		army_morale_damage_mult = 0.025
+		country_war_exhaustion_mult = -0.025
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

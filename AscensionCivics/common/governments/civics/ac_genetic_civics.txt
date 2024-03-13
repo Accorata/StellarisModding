@@ -1,0 +1,13 @@
+civic_bioship_integration = {
+	modification = yes
+	pickable_at_start = no
+	possible = {
+		has_active_tradition = tr_genetics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_bioship_integration_effects
+	modifier = {
+	}
+}

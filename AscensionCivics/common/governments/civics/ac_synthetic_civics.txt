@@ -20,3 +20,18 @@ civic_bioform_eliminator = {
 		country_naval_cap_mult = 0.33
 	}
 }
+
+civic_synthetic_celestials = {
+	modification = yes
+	pickable_at_start = no
+	possible = {
+		has_active_tradition = tr_synthetics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		megastructure_build_speed_mult = 0.25
+		country_megastructure_build_cap_add = 1
+	}
+}

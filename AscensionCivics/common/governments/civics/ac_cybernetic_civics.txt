@@ -1,0 +1,13 @@
+civic_living_cities = {
+	modification = yes
+	pickable_at_start = no
+	possible = {
+		has_active_tradition = tr_cybernetics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_living_cities_effects
+	modifier = {
+	}
+}
