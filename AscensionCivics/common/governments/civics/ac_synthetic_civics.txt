@@ -3,7 +3,7 @@ civic_bioform_eliminator = {
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_synthetics_finish
-		NOT = {
+		NOR = {
 			has_valid_civic = civic_machine_terminator
 			has_valid_civic = civic_fanatic_purifiers
 		}
@@ -20,5 +20,3 @@ civic_bioform_eliminator = {
 		country_naval_cap_mult = 0.33
 	}
 }
-
-#civic_machine_terminator

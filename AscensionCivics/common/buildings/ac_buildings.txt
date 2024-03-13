@@ -39,6 +39,9 @@ building_psi_tower = {
 		}
 	}
 	triggered_desc = {
+		text = job_politician_effect_desc
+	}
+	triggered_desc = {
 		text = job_telepath_effect_desc
 	}
 }

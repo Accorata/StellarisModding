@@ -1,7 +1,7 @@
 civic_beyond_the_veil = {
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
-	pickable_at_start = no	#yes
+	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish
 		ethics = {
@@ -37,7 +37,7 @@ civic_beyond_the_veil = {
 
 civic_telepathic_empire = {
 	modification = yes
-	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	icon = "gfx/interface/icons/governments/civics/civic_telepathic_empire.dds"
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish
@@ -45,7 +45,7 @@ civic_telepathic_empire = {
 	random_weight = {
 		base = 0
 	}
-	description = civic_tooltip_bioform_eliminator_effects
+	description = civic_tooltip_telepathic_empire_effects
 	modifier = {
 		# reduces political power of non-psionics?
 		planet_stability_add = 5

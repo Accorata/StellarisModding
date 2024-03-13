@@ -4,6 +4,8 @@
   civic_bioform_eliminator_desc:0 "..."
   civic_tooltip_bioform_eliminator_effects:13 "Cannot access the §YGalactic Market§!\n§Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\nHas the §Y'Bioform Elimination'§! casus belli on organic species\nGains £unity£ §YUnity§! from assimilating or purging organic £pop£ Pops\nMay use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
 # no market, and no unity assimilating yet
+  councilor_bioform_eliminator:0 "Flayer of Flesh"
+  councilor_bioform_eliminator_desc:0 "..."
   cb_ac_bio_elimination:0 "Bioform Elimination"
   cb_ac_bio_elimination_desc:0 "..."
   cb_ac_machine_containment:0 "Containment"
