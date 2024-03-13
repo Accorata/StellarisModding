@@ -1,2 +1,19 @@
 # Synthetic
+
 # Psionic
+councilor_telepathic_empire = {
+	leader_class = { official }
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			has_trait = leader_trait_psionic
+		}
+	}
+	civic = civic_telepathic_empire
+	modifier = {
+		empire_size_pops_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
