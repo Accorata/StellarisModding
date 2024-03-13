@@ -19,7 +19,9 @@
 # Psionic
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "..."
-  civic_tooltip_beyond_the_veil_effects:13 "..."
+  civic_tooltip_beyond_the_veil_effects:13 "All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait removing all material desire and granting complete happiness."
+  trait_ascendant_psionic:0 "Ascendant Psionic"
+  trait_ascendant_psionic_desc:0 "..."
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This ..."

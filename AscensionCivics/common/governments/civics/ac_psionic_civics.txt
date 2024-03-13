@@ -14,25 +14,24 @@ civic_beyond_the_veil = {
 	random_weight = {
 		base = 0
 	}
-	#forced_happiness = yes
+	description = civic_tooltip_beyond_the_veil_effects
 	modifier = {
+		shroud_delve_cooldown = -0.25
 		planet_researchers_society_research_produces_add = 2
 		planet_researchers_physics_research_produces_add = -1
 		planet_researchers_engineering_research_produces_add = -1
-		shroud_delve_cooldown = -0.25
 	}
 	swap_type = {
 		trigger = {
 			has_relic = r_zro_crystal
 		}
 		modifier = {
+			shroud_delve_cooldown = -0.125
 			planet_researchers_society_research_produces_add = 2
 			planet_researchers_physics_research_produces_add = -1
 			planet_researchers_engineering_research_produces_add = -1
-			shroud_delve_cooldown = -0.125
 		}
 	}
-	# adds ascendant psionic trait to pops
 }
 
 civic_telepathic_empire = {
