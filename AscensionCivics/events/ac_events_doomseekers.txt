@@ -1,0 +1,127 @@
+namespace = ascension_civics
+@necessary_avatar_points = 12 # Once a year
+# On post government change
+country_event = {
+	id = ascension_civics.200
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_doomseekers
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = ac_avatars_summoned
+				}
+			}
+			set_variable = {
+				which = ac_avatars_summoned
+				value = 0
+			}
+		}
+		set_variable = {
+			which = ac_avatar_progress
+			value = 0
+		}
+	}
+}
+
+# On monthly pulse
+country_event = {
+	id = ascension_civics.201
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_doomseekers
+	}
+	immediate = {
+		change_variable = {
+			which = ac_avatar_progress
+			value = 1
+		}
+		every_owned_starbase = {
+
+		}
+		if = {
+			limit = {
+				check_variable_arithmetic = {
+					which = ac_avatar_progress
+					value >= @necessary_avatar_points
+				}
+			}
+			country_event = {
+				id = ascension_civics.202
+			}
+			subtract_variable = {
+				which = ac_avatar_progress
+				value = @necessary_avatar_points
+			}
+		}
+	}
+}
+# From monthly pulse counting avatar progress
+country_event = {
+	id = ascension_civics.202
+	is_triggered_only = yes
+	immediate = {
+		# every_owned_starbase = {
+
+		# }
+		if = {
+			limit = { NOT = { exists = event_target:shroud_country } }
+			create_country = {
+				name = "NAME_Creatures_of_the_Shroud"
+				type = shroud_spirits
+				flag = {
+					icon = {
+						category = "special"
+						file = "the_shroud.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"dark_purple"
+						"black"
+						"null"
+						"null"
+					}
+				}
+			}
+			last_created_country = {
+				establish_communications_no_message = root
+				save_global_event_target_as = shroud_country
+			}
+		}
+		random_system_within_border = {
+			save_event_target_as = shroud_spawn_system
+			random_system_planet = { save_event_target_as = shroud_spawn_planet }
+		}
+		random_system_within_border = {
+			limit = {
+				#starbase with specific building?
+			}
+			save_event_target_as = shroud_spawn_system
+			random_system_planet = { save_event_target_as = shroud_spawn_planet }
+		}
+		create_fleet = {
+			name = "NAME_Corrupted_Avatar"
+			settings = {
+				spawn_debris = no
+				is_boss = yes
+			}
+			effect = {
+				set_owner = event_target:shroud_country
+				create_ship = {
+					name = "NAME_Corrupted_Avatar"
+					design = "NAME_Corrupted_Avatar"
+				}
+				set_location = event_target:shroud_spawn_planet
+				set_fleet_stance = neutral
+				set_aggro_range_measure_from = return_point
+				set_aggro_range = 300
+			}
+		}
+	}
+}
