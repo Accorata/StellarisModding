@@ -1,5 +1,5 @@
 namespace = ascension_civics
-@necessary_avatar_points = 12 # Once a year
+@necessary_avatar_points = 12# Once a year
 # On post government change
 country_event = {
 	id = ascension_civics.200
@@ -40,7 +40,15 @@ country_event = {
 			value = 1
 		}
 		every_owned_starbase = {
-
+			limit = {
+				has_starbase_building = ac_avatar_caller
+			}
+			ROOT = {
+				change_variable = {
+					which = ac_avatar_progress
+					value = 1
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -59,16 +67,18 @@ country_event = {
 		}
 	}
 }
-# From monthly pulse counting avatar progress
+
+# From monthly pulse counting avatar progress - summon an avatar
 country_event = {
 	id = ascension_civics.202
 	is_triggered_only = yes
 	immediate = {
-		# every_owned_starbase = {
-
-		# }
 		if = {
-			limit = { NOT = { exists = event_target:shroud_country } }
+			limit = {
+				NOT = {
+					exists = event_target:shroud_country
+				}
+			}
 			create_country = {
 				name = "NAME_Creatures_of_the_Shroud"
 				type = shroud_spirits
@@ -77,11 +87,11 @@ country_event = {
 						category = "special"
 						file = "the_shroud.dds"
 					}
-					background= {
+					background = {
 						category = "backgrounds"
 						file = "00_solid.dds"
 					}
-					colors={
+					colors = {
 						"dark_purple"
 						"black"
 						"null"
@@ -96,32 +106,87 @@ country_event = {
 		}
 		random_system_within_border = {
 			save_event_target_as = shroud_spawn_system
-			random_system_planet = { save_event_target_as = shroud_spawn_planet }
+			random_system_planet = {
+				save_event_target_as = shroud_spawn_planet
+			}
 		}
 		random_system_within_border = {
 			limit = {
-				#starbase with specific building?
+				starbase = {
+					has_starbase_building = ac_avatar_caller
+				}
 			}
 			save_event_target_as = shroud_spawn_system
-			random_system_planet = { save_event_target_as = shroud_spawn_planet }
+			random_system_planet = {
+				save_event_target_as = shroud_spawn_planet
+			}
 		}
 		create_fleet = {
-			name = "NAME_Corrupted_Avatar"
+			name = "NAME_Shroud_Manifestation"			#"NAME_Corrupted_Avatar"
 			settings = {
 				spawn_debris = no
 				is_boss = yes
 			}
 			effect = {
 				set_owner = event_target:shroud_country
+				# create_ship = {
+				# 	name = "NAME_Corrupted_Avatar"
+				# 	design = "NAME_Corrupted_Avatar"
+				# }
 				create_ship = {
-					name = "NAME_Corrupted_Avatar"
-					design = "NAME_Corrupted_Avatar"
+					name = "NAME_Fragment"
+					design = "NAME_Shroud_Manifestation"
 				}
 				set_location = event_target:shroud_spawn_planet
-				set_fleet_stance = neutral
-				set_aggro_range_measure_from = return_point
-				set_aggro_range = 300
+				#set_fleet_stance = neutral
 			}
 		}
 	}
 }
+
+# On random yearly pulse
+country_event = {
+	id = ascension_civics.210
+	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_doomseekers
+		exists = event_target:shroud_country
+		# global flag no invasion
+	}
+	immediate = {
+		every_country = {
+			limit = {
+				country = event_target:shroud_country
+			}
+			country_event = {
+				id = ascension_civics.211
+			}
+		}
+	}
+}
+country_event = {
+	id = ascension_civics.211
+	is_triggered_only = yes
+	trigger = {
+		country = event_target:shroud_country
+		# global flag no invasion
+	}
+	immediate = {
+		random_system = {
+			save_event_target = ac_moved_star
+		}
+		every_owned_fleet = {
+			auto_move_to_planet = { 
+				target = ac_moved_star.star
+				clear_auto_move_on_arrival = yes 
+			}
+		}
+	}
+}
+
+# every_fleet = {
+# 	set_fleet_stance = aggressive
+# }
+# every_playable_country = {
+# 	set_hostile = event_target:shroud_country
+# }
