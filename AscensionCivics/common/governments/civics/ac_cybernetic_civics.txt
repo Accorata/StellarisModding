@@ -11,3 +11,17 @@ civic_living_cities = {
 	modifier = {
 	}
 }
+
+civic_cyberlife = {
+	modification = yes
+	pickable_at_start = no
+	possible = {
+		has_active_tradition = tr_cybernetics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_cyberlife_effects
+	modifier = {
+	}
+}

@@ -156,6 +156,18 @@ country_event = {
 				set_fleet_stance = neutral
 			}
 		}
+		#?
+		create_message = {
+			type = MESSAGE_SHROUD_BREACH
+			localization = MESSAGE_SHROUD_BREACH_DESC
+			days = 1
+			target = root
+			variable = {
+				type = name
+				localization = COUNTRY
+				scope = root
+			}
+		}
 	}
 }
 

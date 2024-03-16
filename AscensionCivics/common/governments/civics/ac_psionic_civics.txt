@@ -46,7 +46,6 @@ civic_telepathic_empire = {
 	}
 	description = civic_tooltip_telepathic_empire_effects
 	modifier = {
-		# reduces political power of non-psionics?
 		planet_stability_add = 5
 	}
 }

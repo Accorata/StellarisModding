@@ -1,12 +1,12 @@
 tech_ac_doom_foretold = {
-	cost = @tier5cost2
+	cost = @tier5cost1
 	area = society
 	tier = 5
 	category = { psionics }
 	ai_update_type = all
 	is_rare = yes
 	prerequisites = { "tech_psionic_theory" }
-	weight = @tier5weight2
+	weight = @tier5weight1
 	is_dangerous = yes
 	is_reverse_engineerable = no
 
@@ -19,7 +19,7 @@ tech_ac_doom_foretold = {
 	}
 
 	weight_modifier = {
-		factor = 10
+		factor = 1
 		modifier = {
 			factor = 3
 			check_variable_arithmetic = {
