@@ -1,6 +1,6 @@
 # Synthetic
 councilor_bioform_eliminator = {
-	leader_class = { official commander}
+	leader_class = { official commander }
 	is_leader_possible = {
 		AND = {
 			OR = {
@@ -31,6 +31,21 @@ councilor_telepathic_empire = {
 	civic = civic_telepathic_empire
 	modifier = {
 		empire_size_pops_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_doomseekers = {
+	leader_class = { official commander scientist }
+	is_leader_possible = {
+		has_trait = leader_trait_psionic
+	}
+	civic = civic_doomseekers
+	modifier = {
+		planet_stability_add = -2
+		country_unity_produces_mult = -0.05
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
