@@ -6,6 +6,6 @@
   building_psi_tower_plural:0 "Psionic Conduits"
   building_psi_tower_desc:0 "..."
 
-  ac_avatar_caller:0 "?"
-  ac_avatar_caller_desc:0 "..."
+  ac_avatar_caller:0 "Beacon of the End"
+  ac_avatar_caller_desc:0 "This mini tear into the fabric of the Shroud allows for a clearer path through the chaos, drawing the great end ever closer."
   sm_ac_avatar_caller_desc_modifier:0 "..."

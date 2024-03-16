@@ -1,7 +1,7 @@
 ﻿l_english:
 # Synthetic
   civic_bioform_eliminator:0 "Bioform Eliminators"
-  civic_bioform_eliminator_desc:0 "..."
+  civic_bioform_eliminator_desc:0 "Whether it be to establish the supremacy of our machine forms or enlighten others into the fold, it is clear that the bygone relic of organic life must be purged from this galaxy."
   civic_tooltip_bioform_eliminator_effects:13 "Cannot access the §YGalactic Market§!\n§Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\nHas the §Y$cb_ac_bio_elimination$§! casus belli on organic species\nGains £unity£ §YUnity§! from assimilating or purging organic £pop£ Pops\nMay use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
 # no market, and no unity assimilating yet
   councilor_bioform_eliminator:0 "Flayer of Flesh"
@@ -18,8 +18,8 @@
 
 # Psionic
   civic_beyond_the_veil:0 "Beyond the Veil"
-  civic_beyond_the_veil_desc:0 "..."
-  civic_tooltip_beyond_the_veil_effects:13 "All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait removing all material desire and granting complete happiness."
+  civic_beyond_the_veil_desc:0 "To see the entrance of the Shroud as the goal is for the weakminded. We will acsend beyond all others, embracing psionic duality and casting off all material desire for the sake of true enlightenment!"
+  civic_tooltip_beyond_the_veil_effects:13 "All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness."
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
 
@@ -30,9 +30,9 @@
   councilor_telepathic_empire_desc:0 "..."
 
   civic_doomseekers:0 "Doomseekers"
-  civic_doomseekers_desc:0 "..."
+  civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. And we embrace that end, that Great End!"
   civic_tooltip_doomseekers_effects:0 "..."
-  councilor_doomseekers:0 "Of the Void"
+  councilor_doomseekers:0 "Seer of the Great End"
   councilor_doomseekers_desc:0 "..."
 
 # Cybernetic
