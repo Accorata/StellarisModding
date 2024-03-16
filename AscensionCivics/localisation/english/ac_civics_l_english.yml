@@ -34,6 +34,9 @@
   civic_tooltip_doomseekers_effects:0 "..."
   councilor_doomseekers:0 "Seer of the Great End"
   councilor_doomseekers_desc:0 "..."
+  tech_ac_doom_foretold:0 "Doom Foretold"
+  tech_ac_doom_foretold_desc:0 "..."
+  tech_ac_doom_foretold_effect:1 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5 Stability§!\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
 
 # Cybernetic
   civic_living_cities:0 "Living Cities"

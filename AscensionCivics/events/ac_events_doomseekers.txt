@@ -30,6 +30,7 @@ country_event = {
 # On monthly pulse
 country_event = {
 	id = ascension_civics.201
+	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_valid_civic = civic_doomseekers
@@ -38,6 +39,15 @@ country_event = {
 		change_variable = {
 			which = ac_avatar_progress
 			value = 1
+		}
+		if = {
+			limit = {
+				has_tech = "tech_ac_doom_foretold"
+			}
+			change_variable = {
+				which = ac_avatar_progress
+				value = 2
+			}
 		}
 		every_owned_starbase = {
 			limit = {
@@ -64,6 +74,10 @@ country_event = {
 				which = ac_avatar_progress
 				value = @necessary_avatar_points
 			}
+			change_variable = {
+				which = ac_avatars_summoned
+				value = 1
+			}
 		}
 	}
 }
@@ -71,6 +85,7 @@ country_event = {
 # From monthly pulse counting avatar progress - summon an avatar
 country_event = {
 	id = ascension_civics.202
+	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		if = {
@@ -138,7 +153,7 @@ country_event = {
 					design = "NAME_Shroud_Manifestation"
 				}
 				set_location = event_target:shroud_spawn_planet
-				#set_fleet_stance = neutral
+				set_fleet_stance = neutral
 			}
 		}
 	}
@@ -148,6 +163,7 @@ country_event = {
 country_event = {
 	id = ascension_civics.210
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		has_valid_civic = civic_doomseekers
 		exists = event_target:shroud_country
@@ -167,6 +183,7 @@ country_event = {
 country_event = {
 	id = ascension_civics.211
 	is_triggered_only = yes
+	hide_window = yes
 	trigger = {
 		country = event_target:shroud_country
 		# global flag no invasion
