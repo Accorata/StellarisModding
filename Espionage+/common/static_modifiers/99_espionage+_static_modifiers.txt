@@ -1,0 +1,5 @@
+stolen_from = {
+	country_base_energy_produces_add = value:energy_stolen
+}
+
+# not base

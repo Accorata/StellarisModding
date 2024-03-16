@@ -1,0 +1,8 @@
+﻿l_english:
+# Galactic Centers
+  decision_create_galactic_center:0 "Create Galactic Center"
+  decision_create_galactic_center_desc:0 "Rerouting exports and imports as well as redesigning central architecture should boost the efficiency of this planet."
+  galactic_center:0 "Galactic Center"
+  galactic_center_desc:0 "This planet serves as a central point in our empire, responsible for an increased percentage of both production and costs of our empure." # replace our empire with actual empire name?
+
+ 
