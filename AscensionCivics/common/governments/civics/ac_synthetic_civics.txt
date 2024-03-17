@@ -26,6 +26,12 @@ civic_synthetic_celestials = {
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_synthetics_finish
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+			}
+		}
 	}
 	random_weight = {
 		base = 0

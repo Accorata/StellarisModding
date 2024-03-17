@@ -40,6 +40,7 @@ civic_telepathic_empire = {
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish
+		has_tech = tech_telepathy
 	}
 	random_weight = {
 		base = 0
@@ -71,6 +72,12 @@ civic_shroud_renouncers = {
 	pickable_at_start = no
 	possible = {
 		has_active_tradition = tr_psionics_finish
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+			}
+		}
 	}
 	random_weight = {
 		base = 0

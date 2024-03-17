@@ -279,3 +279,21 @@ planet_event = {
 		}
 	}
 }
+
+#On post government change #testing !!!
+country_event = {
+	id = ascension_civics.60
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		capital = {
+			add_modifier = {
+				modifier = {
+					planet_pop_assembly_add = 1
+				}
+				mult = trigger:num_pops
+				clear_on_owner_change = yes
+			}
+		}
+	}
+}

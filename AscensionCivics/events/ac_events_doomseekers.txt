@@ -1,5 +1,5 @@
 namespace = ascension_civics
-@necessary_avatar_points = 12# Once a year
+@necessary_avatar_points = 12 # Once a year
 # On post government change
 country_event = {
 	id = ascension_civics.200
