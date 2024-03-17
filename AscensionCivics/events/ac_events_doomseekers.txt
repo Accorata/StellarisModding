@@ -213,9 +213,28 @@ country_event = {
 	}
 }
 
+planet_event = {
+	id = ascension_civics.220
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		change_pc = { 
+			class = pc_shrouded
+		}
+		create_ambient_object = {
+			type = psi_storm_1
+			location = this
+			#scale = 0.5
+		}
+		# I dont even know
+	}
+}
+
 # every_fleet = {
 # 	set_fleet_stance = aggressive
 # }
 # every_playable_country = {
 # 	set_hostile = event_target:shroud_country
 # }
+
+
