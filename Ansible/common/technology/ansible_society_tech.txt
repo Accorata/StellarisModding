@@ -16,7 +16,7 @@ tech_ansible_comms = {
 	modifier = {
 		diplo_weight_mult = 0.1
 		envoy_improve_relations_mult = 0.5
-		# envoy_harm_relations_mult = 0.5
+		country_insult_efficiency = 0.5
 	}
 	weight_modifier = {
 		factor = 0.5

@@ -33,7 +33,7 @@ The list of techs and their effects is as follows:
   Base: +100% unity from factions, -10% faction approval
 
 [b]Interstellar Envoys[/b] [i]Tier 4, Statecraft[/i] (Requires Ansible + Intellerstellar Economics)
-  Base: +10% diplomatic weight, +50% to improving and decreasing relations
+  Base: +10% diplomatic weight, +50% to improving relations and insult efficiency
 
 [b]Galactic Propaganda[/b] [i]Tier 4, Military Theory[/i] (Requires Ansible + Galactic Campaigns)
   Base: -20% war exhaustion
