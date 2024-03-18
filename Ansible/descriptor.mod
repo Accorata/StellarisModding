@@ -1,4 +1,4 @@
-version="3.10.4"
+version="3.11.2"
 tags={
 	"Gameplay"
 	"Technologies"
@@ -6,5 +6,5 @@ tags={
 }
 name="Ansible Techs + Arcologies (From Ursula K. LeGuin)"
 picture="thumbnail.png"
-supported_version="3.10.4"
+supported_version="3.11.2"
 remote_file_id="3158823973"
