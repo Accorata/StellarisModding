@@ -1,6 +1,7 @@
-version="3.10.4"
+version="3.11.2"
 tags={
 	"Graphics"
 }
-name="PsionicChosenTraits"
-supported_version="3.10.4"
+name="Destiny Chosen Traits"
+picture="thumbnail.png"
+supported_version="3.11.2"
