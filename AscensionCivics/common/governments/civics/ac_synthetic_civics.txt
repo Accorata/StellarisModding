@@ -2,10 +2,21 @@ civic_bioform_eliminator = {
 	modification = yes
 	pickable_at_start = no
 	possible = {
-		has_active_tradition = tr_synthetics_finish
-		NOR = {
-			has_valid_civic = civic_machine_terminator
-			has_valid_civic = civic_fanatic_purifiers
+		# has_active_tradition = tr_synthetics_finish
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_fanatic_purifiers
+			}
+		}
+		species_class = {
+			OR = {
+				value = FUN
+				value = PLANT
+			}
+		}
+		traditions = {
+			value = tr_synthetics_finish
 		}
 	}
 	random_weight = {
