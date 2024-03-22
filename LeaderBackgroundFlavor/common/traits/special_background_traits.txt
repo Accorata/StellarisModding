@@ -175,6 +175,108 @@ leader_trait_former_chemist = {
 		category_materials_research_speed_mult = 0.01
 		category_materials_draw_chance_mult = 0.05
 	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_volatile_motes_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_volatile_motes_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_explosive_weapon_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_translucer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_rare_crystals_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_rare_crystals_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_kinetic_weapon_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_gas_refiner = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_exotic_gases_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_exotic_gases_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_energy_weapon_damage_mult = 0.1
+	}
 	leader_class = {
 		commander
 		scientist
