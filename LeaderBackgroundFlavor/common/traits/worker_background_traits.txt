@@ -104,11 +104,10 @@ leader_trait_former_angler = {
 		TIER = none
 	}
 	planet_modifier = {
-		planet_anglers_upkeep_mult = -0.2
+		planet_farmers_food_produces_mult = 0.2
 	}
 	sector_modifier = {
-		# planet_anglers_upkeep_mult = -0.1
-		planet_farmers_upkeep_mult = -0.1
+		planet_farmers_food_produces_mult = 0.1
 	}
 	self_modifier = {
 		leader_lifespan_add = 3
@@ -215,6 +214,96 @@ leader_trait_former_scrap_miner = {
 	sector_modifier = {
 		planet_miners_alloys_produces_mult = 0.1
 		planet_miners_minerals_produces_mult = 0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = -3
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_crystal_miner = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	planet_modifier = {
+		planet_sr_miners_produces_mult = 0.1
+	}
+	sector_modifier = {
+		planet_sr_miners_produces_mult = 0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = -3
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_gas_extractor = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	planet_modifier = {
+		planet_sr_miners_produces_mult = 0.1
+	}
+	sector_modifier = {
+		planet_sr_miners_produces_mult = 0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = -3
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_mote_harvester = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	planet_modifier = {
+		planet_sr_miners_produces_mult = 0.1
+	}
+	sector_modifier = {
+		planet_sr_miners_produces_mult = 0.05
 	}
 	self_modifier = {
 		leader_lifespan_add = -3

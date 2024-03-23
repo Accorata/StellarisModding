@@ -68,6 +68,7 @@ leader_trait_former_head_researcher = {
 }
 
 # Knight or Knight Commander / Lord Commander
+leader_trait_former_knight = {
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
@@ -109,3 +110,22 @@ leader_trait_former_head_researcher = {
 	}
 }
 
+leader_trait_former_government_employee = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		council_agenda_progress_speed = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
