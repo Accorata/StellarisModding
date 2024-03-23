@@ -9,16 +9,47 @@ country_event = {
 		}
 	}
 	immediate = {
-		# change_background_job = servant
+		# Workers
 		if = {
 			limit = {
 				from = {
 					has_background_job = colonist
 				}
 			}
+			from = {
+				add_trait_no_notify = leader_trait_former_colonist
+			}
 		}
-		from = {
-			add_trait_no_notify = leader_trait_former_colonist
+		if = {
+			limit = {
+				from = {
+					has_background_job = farmer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_farmer
+			}
+		}
+		# Specialists
+		if = {
+			limit = {
+				from = {
+					has_background_job = chemist
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chemist
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = bureaucrat
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_bureaucrat
+			}
 		}
 		if = {
 			limit = {
@@ -26,9 +57,60 @@ country_event = {
 					has_background_job = telepath
 				}
 			}
+			from = {
+				add_trait_no_notify = leader_trait_former_telepath
+			}
 		}
-		from = {
-			add_trait_no_notify = leader_trait_former_telepath
+		if = {
+			limit = {
+				from = {
+					has_background_job = researcher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_researcher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = government_employee
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_government_employee
+			}
+		}
+		# Rulers
+		if = {
+			limit = {
+				from = {
+					has_background_job = noble
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_noble
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = executive
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_executive
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = head_researcher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_head_researcher
+			}
 		}
 	}
 }

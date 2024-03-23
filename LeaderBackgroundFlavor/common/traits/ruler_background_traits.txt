@@ -48,3 +48,21 @@ leader_trait_former_executive = {
 		official
 	}
 }
+
+leader_trait_former_head_researcher = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.01
+	}
+	leader_class = {
+		scientist
+	}
+}

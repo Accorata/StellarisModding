@@ -3074,23 +3074,23 @@ set_random_scientist_background_effect = {
 	random_list = {
 		1 = {
 			change_background_job = chemist
-			add_trait_no_notify = leader_trait_former_chemist
+			#add_trait_no_notify = leader_trait_former_chemist
 		}
 		1 = {
 			change_background_job = head_researcher
-			add_trait_no_notify = leader_trait_former_head_researcher
+			#add_trait_no_notify = leader_trait_former_head_researcher
 		}
 		1 = {
 			change_background_job = researcher
-			add_trait_no_notify = leader_trait_former_researcher
+			#add_trait_no_notify = leader_trait_former_researcher
 		}
 		1 = {
 			change_background_job = government_employee
-			add_trait_no_notify = leader_trait_former_government_employee
+			#add_trait_no_notify = leader_trait_former_government_employee
 		}
 		1 = {
 			change_background_job = clerk
-			add_trait_no_notify = leader_trait_former_clerk
+			#add_trait_no_notify = leader_trait_former_clerk
 		}
 	}
 }
