@@ -297,3 +297,16 @@ country_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = ascension_civics.61
+	hide_window = no
+	is_triggered_only = yes
+	immediate = {
+		add_modifier = {
+			modifier = ac_testing
+			mult = trigger:num_pops
+			clear_on_owner_change = yes
+		}
+	}
+}
