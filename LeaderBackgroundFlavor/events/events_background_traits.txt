@@ -9,6 +9,107 @@ country_event = {
 		}
 	}
 	immediate = {
+		# Commanders
+		if = {
+			limit = {
+				from = {
+					has_background_job = captain
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_captain
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_navigator
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_navigator
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = principal_pilot
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_principal_pilot
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = ship_weapons_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_ship_weapons_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = ship_logistics_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_ship_logistics_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = special_operations_commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_special_operations_commander
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = commanding_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_commanding_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_supply_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_supply_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = intelligence_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_intelligence_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_security_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_security_officer
+			}
+		}
 		# Workers
 		if = {
 			limit = {
@@ -39,6 +140,26 @@ country_event = {
 			}
 			from = {
 				add_trait_no_notify = leader_trait_former_chemist
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = translucer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_translucer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = gas_refiner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_gas_refiner
 			}
 		}
 		if = {
