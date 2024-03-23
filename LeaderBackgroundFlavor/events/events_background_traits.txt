@@ -131,6 +131,16 @@ country_event = {
 				add_trait_no_notify = leader_trait_former_farmer
 			}
 		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = angler
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_angler
+			}
+		}
 		# Specialists
 		if = {
 			limit = {
@@ -170,6 +180,26 @@ country_event = {
 			}
 			from = {
 				add_trait_no_notify = leader_trait_former_bureaucrat
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = preacher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_preacher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = entertainer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_entertainer
 			}
 		}
 		if = {

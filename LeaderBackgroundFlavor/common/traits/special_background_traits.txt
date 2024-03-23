@@ -326,3 +326,29 @@ leader_trait_former_government_employee = {
 		scientist
 	}
 }
+
+leader_trait_former_entertainer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_amenities_add = 1
+	}
+	planet_modifier = {
+		planet_amenities_add = 4
+	}
+	sector_modifier = {
+		planet_amenities_add = 2
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}

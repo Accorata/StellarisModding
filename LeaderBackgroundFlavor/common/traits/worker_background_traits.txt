@@ -92,3 +92,29 @@ leader_trait_former_clerk = {
 		official
 	}
 }
+
+leader_trait_former_angler = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_anglers_upkeep_mult = -0.2
+	}
+	sector_modifier = {
+		planet_anglers_upkeep_mult = -0.1
+	}
+	self_modifier = {
+		leader_lifespan_add = 3
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
