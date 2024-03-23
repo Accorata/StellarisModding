@@ -98,8 +98,8 @@ leader_trait_former_angler = {
 	inline_script = {
 		script = trait/icon
 		CLASS = leader
-		ICON = "GFX_leader_trait_generic_background"
-		RARITY = veteran
+		ICON = "gfx/interface/icons/jobs/job_angler.dds"
+		RARITY = abc
 		COUNCIL = no
 		TIER = none
 	}
