@@ -66,3 +66,47 @@ leader_trait_former_head_researcher = {
 		scientist
 	}
 }
+
+# Knight or Knight Commander
+leader_trait_former_knight = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = physics_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = engineering_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = society_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = value:knights_unity_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = alloys
+		AMOUNT = 1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+

@@ -141,6 +141,16 @@ country_event = {
 				add_trait_no_notify = leader_trait_former_angler
 			}
 		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = squire
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_squire
+			}
+		}
 		# Specialists
 		if = {
 			limit = {
@@ -232,6 +242,16 @@ country_event = {
 				add_trait_no_notify = leader_trait_former_government_employee
 			}
 		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = knight
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_knight
+			}
+		}
 		# Rulers
 		if = {
 			limit = {
@@ -261,6 +281,16 @@ country_event = {
 			}
 			from = {
 				add_trait_no_notify = leader_trait_former_head_researcher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = knight_commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_knight
 			}
 		}
 	}

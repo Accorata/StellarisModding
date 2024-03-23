@@ -118,3 +118,29 @@ leader_trait_former_angler = {
 		official
 	}
 }
+
+leader_trait_former_squire = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	planet_modifier = {
+		planet_knights_produces_mult = 0.04
+	}
+	sector_modifier = {
+		planet_knights_produces_mult = 0.02
+	}
+	councilor_modifier = {
+		planet_knights_produces_mult = 0.01
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
