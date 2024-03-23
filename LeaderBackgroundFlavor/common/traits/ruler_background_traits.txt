@@ -67,8 +67,7 @@ leader_trait_former_head_researcher = {
 	}
 }
 
-# Knight or Knight Commander
-leader_trait_former_knight = {
+# Knight or Knight Commander / Lord Commander
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon

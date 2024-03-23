@@ -144,6 +144,36 @@ country_event = {
 		if = {
 			limit = {
 				from = {
+					has_background_job = puddle_technician
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_puddle_technician
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = miner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_miner
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = scrap_miner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_scrap_miner
+			}
+		}
+		if = {
+			limit = {
+				from = {
 					has_background_job = squire
 				}
 			}
@@ -210,6 +240,16 @@ country_event = {
 			}
 			from = {
 				add_trait_no_notify = leader_trait_former_entertainer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = duelist
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_duelist
 			}
 		}
 		if = {
