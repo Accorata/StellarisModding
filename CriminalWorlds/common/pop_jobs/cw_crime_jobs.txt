@@ -24,10 +24,6 @@ cw_bribed_enforcer = {
 	resources = {
 		category = planet_enforcers
 		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_active_tradition = tr_domination_judgment_corps }
-			}
 			energy = 8
 		}
 	}
@@ -48,9 +44,6 @@ cw_bribed_enforcer = {
 	planet_modifier = {
 		planet_crime_add = 5
 		planet_stability_add = 1
-	}
-
-	planet_modifier = {
 		branch_office_criminal_syndicate_value_add = 10
 	}
 

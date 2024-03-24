@@ -1,0 +1,9 @@
+﻿l_english:
+# Jobs
+  cw_bribed_enforcer:0 "Bribed Enforcer"
+  cw_bribed_enforcer_desc:0 "..."
+  mod_job_cw_bribed_enforcer_add:0 "Bribed Enforcer Jobs:"
+
+# Planet Modifiers
+  cw_corruption_I:0 "Corruption I"
+  cw_corruption_I_desc:0 "..."
