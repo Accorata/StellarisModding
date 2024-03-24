@@ -19,7 +19,10 @@ planet_event = {
 	}
 
 	immediate = {
-		add_modifier = { modifier = cw_corruption_I days = 3600 }
+		add_modifier = { 
+			modifier = cw_corruption_I 
+			days = 3600 
+		}
 		set_timed_planet_flag = {
 			flag = planet_crime_flag
 			days = 3600
@@ -29,7 +32,10 @@ planet_event = {
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = { modifier = cw_corruption_I days = 3600 }
+			add_modifier = { 
+				modifier = cw_corruption_I 
+				days = 3600 
+			}
 		}
 	}
 }

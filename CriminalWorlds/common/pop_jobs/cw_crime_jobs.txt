@@ -24,7 +24,7 @@ cw_bribed_enforcer = {
 	resources = {
 		category = planet_enforcers
 		produces = {
-			energy = 8
+			energy = 6
 		}
 	}
 

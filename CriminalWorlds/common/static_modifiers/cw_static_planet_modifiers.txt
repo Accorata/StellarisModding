@@ -3,5 +3,5 @@ cw_corruption_I = {
 	job_cw_bribed_enforcer_add = 1
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
-	icon_frame = 3
+	icon_frame = 2
 }

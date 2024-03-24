@@ -23,7 +23,9 @@ event = {
 					}
 				}
 			}
-			country_event = { id = criminal_worlds.2 }
+			country_event = { 
+				id = criminal_worlds.2 
+			}
 		}
 		every_playable_country = {
 			limit = {
@@ -72,9 +74,13 @@ country_event = {
 				10 = {
 					modifier = {
 						factor = 0
-						NOT = { has_modifier = cw_corruption_I }
+						has_modifier = cw_corruption_I
 					}
-					planet_event = { id = criminal_worlds.10 days = 1 } #random = 300
+					planet_event = { 
+						id = criminal_worlds.10
+						days = 1 
+						#random = 300
+					}
 				}
 			}
 		}
