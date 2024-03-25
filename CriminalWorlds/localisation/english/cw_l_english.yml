@@ -1,7 +1,7 @@
 ﻿l_english:
 # Jobs
   cw_bribed_enforcer:0 "Bribed Enforcer"
-  cw_bribed_enforcer_desc:0 "..."
+  cw_bribed_enforcer_desc:0 "These enforcers have fallen into the pockets of the criminal organizations they were supposed to fight."
   job_cw_bribed_enforcer:0 "Bribed Enforcer"
   job_cw_bribed_enforcer_plural:0 "Bribed Enforcers"
   mod_job_cw_bribed_enforcer_add:0 "Bribed Enforcer Jobs:"
@@ -9,3 +9,5 @@
 # Planet Modifiers
   cw_corruption_I:0 "Corruption I"
   cw_corruption_I_desc:0 "..."
+  cw_illegal_freeports:0 "Illegal Freeports"
+  cw_illegal_freeports_desc:0 "A number of criminal safe havens are located here attracting a less than desirable croud."

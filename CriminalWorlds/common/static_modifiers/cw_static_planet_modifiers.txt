@@ -5,3 +5,11 @@ cw_corruption_I = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
 	icon_frame = 2
 }
+
+cw_illegal_freeports = {
+	planet_immigration_pull_add = 10
+	job_criminal_add = 2
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_smugglers_in_bar.dds" #test
+	icon_frame = 2
+}

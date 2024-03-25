@@ -1,4 +1,7 @@
 ﻿l_english:
 # Bribed Enforcer
-  criminal_worlds.10.name:0 "abc"
-  criminal_worlds.10.desc:0 "..."
+  criminal_worlds.10.name:0 "Bribed Enforcers on [Root.GetName]"
+  criminal_worlds.10.desc:0 "The number of arrests on [Root.GetName] have dropped off even as crime rises. It wouldn't be unreasonable to assume that some of our enforcers tasked with taking down these criminal networks have fallen into the pockets of the very organizations they were supposed to fight.\n\nClearly they need a return to their moral principles and a larger force may be needed to root out this problem."
+# Illegal Freeports
+  criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
+  criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
