@@ -85,13 +85,45 @@ country_event = {
 				10 = {
 					modifier = {
 						factor = 0
-						NOR = {
+						NOT = {
 							has_modifier = cw_corruption_1
+						}
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							num_assigned_jobs = {
+								job = enforcer
+								value >= 1
+							}
 							has_available_jobs = enforcer
 						}
 					}
 					planet_event = { 
 						id = criminal_worlds.11
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_corruption_2
+						}
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							num_assigned_jobs = {
+								job = politican
+								value >= 1
+							}
+							has_available_jobs = politican
+						}
+					}
+					planet_event = { 
+						id = criminal_worlds.12
 						days = 1
 						random = 300
 					}

@@ -14,6 +14,16 @@ cw_corruption_2 = {
 	icon_frame = 2
 }
 
+cw_corruption_3 = {
+	job_politican_add = -1
+	job_cw_bribed_politican_add = 1
+	job_enforcer_add = -2
+	job_cw_bribed_enforcer_add = 2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
+	icon_frame = 2
+}
+
 cw_illegal_freeports = {
 	planet_immigration_pull_add = 10
 	job_criminal_add = 2
