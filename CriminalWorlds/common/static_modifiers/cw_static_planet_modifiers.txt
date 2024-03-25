@@ -1,6 +1,14 @@
-cw_corruption_I = {
+cw_corruption_1 = {
 	job_enforcer_add = -1
 	job_cw_bribed_enforcer_add = 1
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
+	icon_frame = 2
+}
+
+cw_corruption_2 = {
+	job_enforcer_add = -2
+	job_cw_bribed_enforcer_add = 2
 	
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
 	icon_frame = 2

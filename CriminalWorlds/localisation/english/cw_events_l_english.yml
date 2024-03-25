@@ -1,7 +1,9 @@
 ﻿l_english:
-# Bribed Enforcer
+# Corruption 1-2
   criminal_worlds.10.name:0 "Bribed Enforcers on [Root.GetName]"
   criminal_worlds.10.desc:0 "The number of arrests on [Root.GetName] have dropped off even as crime rises. It wouldn't be unreasonable to assume that some of our enforcers tasked with taking down these criminal networks have fallen into the pockets of the very organizations they were supposed to fight.\n\nClearly they need a return to their moral principles and a larger force may be needed to root out this problem."
+  criminal_worlds.11.name:0 "Extended Corruption on [Root.GetName]"
+  criminal_worlds.11.desc:0 "Whether these are new developments or have always been the case, it appears the system of bribery on [Root.GetName] is much larger than originally assumed. We assumed these corrupt enforcers would be brought to justice upon discovery but after throughly reviewing their internal documents, it seems even their superiors are also upon the payroll of the criminal networks and are happy to cover up the corruption.\n\nIt's even unclear whether the arrests we originally made when we discovered this corruption were legitimate or just innocent enforcers thrown under the bus by the higher ups."
 # Illegal Freeports
   criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
   criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
