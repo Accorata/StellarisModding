@@ -20,7 +20,7 @@ leader_trait_criminal_relations = {
 	}
 	planet_modifier = {
 		planet_crime_add = 10
-		pop_category_criminals_energy_produces_add = 1
+		pop_category_criminals_unity_produces_add = 1
 	}
 	sector_modifier = {
 		planet_crime_add = 5

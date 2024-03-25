@@ -4,7 +4,12 @@
   cw_bribed_enforcer_desc:0 "These enforcers have fallen into the pockets of the criminal organizations they were supposed to fight."
   job_cw_bribed_enforcer:0 "Bribed Enforcer"
   job_cw_bribed_enforcer_plural:0 "Bribed Enforcers"
-  mod_job_cw_bribed_enforcer_add:0 "Bribed Enforcer Jobs:"
+  mod_job_cw_bribed_enforcer_add:0 "Bribed Enforcer Jobs"
+  cw_bribed_politician:0 "Bribed Politician"
+  cw_bribed_politician_desc:0 "..."
+  job_cw_bribed_politician:0 "Bribed Politician"
+  job_cw_bribed_politician_plural:0 "Bribed Politicians"
+  mod_job_cw_bribed_politician_add:0 "Bribed Politician Jobs"
 
 # Planet Modifiers
   cw_corruption_1:0 "Corruption I"

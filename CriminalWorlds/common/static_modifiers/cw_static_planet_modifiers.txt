@@ -15,8 +15,8 @@ cw_corruption_2 = {
 }
 
 cw_corruption_3 = {
-	job_politican_add = -1
-	job_cw_bribed_politican_add = 1
+	job_politician_add = -1
+	job_cw_bribed_politician_add = 1
 	job_enforcer_add = -2
 	job_cw_bribed_enforcer_add = 2
 	
