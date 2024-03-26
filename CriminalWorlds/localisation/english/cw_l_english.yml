@@ -10,6 +10,11 @@
   job_cw_bribed_politician:0 "Bribed Politician"
   job_cw_bribed_politician_plural:0 "Bribed Politicians"
   mod_job_cw_bribed_politician_add:0 "Bribed Politician Jobs"
+  cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
+  cw_rogue_shipbuilder_desc:0 "..."
+  job_cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
+  job_cw_rogue_shipbuilder_plural:0 "Rogue Shipbuilders"
+  mod_job_cw_rogue_shipbuilder_add:0 "Rogue Shipbuilder Jobs"
 
 # Planet Modifiers
   cw_corruption_1:0 "Corruption I"
@@ -20,6 +25,8 @@
   cw_corruption_3_desc:0 "..."
   cw_illegal_freeports:0 "Illegal Freeports"
   cw_illegal_freeports_desc:0 "A number of criminal safe havens are located here attracting a less than desirable croud."
+  cw_criminal_shipyards:0 "Criminal Shipyards"
+  cw_criminal_shipyards_desc:0 "..."
 
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"

@@ -163,3 +163,43 @@ planet_event = {
 		}
 	}
 }
+
+# Criminal Shipyards
+planet_event = {
+	id = criminal_worlds.21
+	title = criminal_worlds.21.name
+	desc = criminal_worlds.21.desc
+	picture = GFX_evt_space_hangar
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = criminal_underworld
+	}
+
+	immediate = {
+		add_modifier = { 
+			modifier = cw_criminal_shipyards 
+			days = 3600 
+		}
+		set_timed_planet_flag = {
+			flag = planet_crime_flag
+			days = 3600
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			add_modifier = { 
+				modifier = cw_criminal_shipyards
+				days = 3600 
+			}
+		}
+	}
+}

@@ -139,6 +139,17 @@ country_event = {
 						random = 300
 					}
 				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_shipyards
+					}
+					planet_event = { 
+						id = criminal_worlds.21
+						days = 1
+						random = 300
+					}
+				}
 			}
 		}
 	}
