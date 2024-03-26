@@ -4,3 +4,9 @@ on_yearly_pulse = {
 		criminal_worlds.1		# Criminal Worlds Crime Events
 	}
 }
+
+on_monthly_pulse = {
+	events = {
+		criminal_worlds.23		# Checks for criminal shipbuilders
+	}
+}
