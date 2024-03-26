@@ -70,7 +70,7 @@ country_event = {
 				}
 			}
 			random_list = {
-				20 = {}
+				30 = {}
 				10 = {
 					modifier = {
 						factor = 0
@@ -122,6 +122,10 @@ country_event = {
 							has_available_jobs = politican
 						}
 					}
+					modifier = {
+						factor = 2.5
+						has_modifier = mob_rule
+					}
 					planet_event = { 
 						id = criminal_worlds.12
 						days = 1
@@ -144,8 +148,29 @@ country_event = {
 						factor = 0
 						has_modifier = cw_criminal_shipyards
 					}
+					modifier = {
+						factor = 2
+						has_modifier = mob_rule
+					}
 					planet_event = { 
 						id = criminal_worlds.21
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_criminal_shipyards
+						}
+					}
+					modifier = {
+						factor = 2
+						has_modifier = mob_rule
+					}
+					planet_event = { 
+						id = criminal_worlds.22
 						days = 1
 						random = 300
 					}

@@ -10,5 +10,7 @@
   criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
   criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
 # Criminal Shipyards
-  criminal_worlds.21.name:0 "Criminal Shipyards on [Root.GetName]"
+  criminal_worlds.21.name:0 "$cw_criminal_shipyards$ on [Root.GetName]"
 	criminal_worlds.21.desc:0 "..."
+  criminal_worlds.22.name:0 "$cw_criminal_shipyards_2$ on [Root.GetName]"
+	criminal_worlds.22.desc:0 "..."
