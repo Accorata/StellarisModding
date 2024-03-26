@@ -24,6 +24,16 @@ cw_corruption_3 = {
 	icon_frame = 2
 }
 
+cw_corruption_3_megacorp = {
+	job_executive_add = -1
+	job_cw_bribed_politician_add = 1 # bribed executive?
+	job_enforcer_add = -2
+	job_cw_bribed_enforcer_add = 2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
+	icon_frame = 2
+}
+
 cw_illegal_freeports = {
 	planet_immigration_pull_add = 10
 	job_criminal_add = 2

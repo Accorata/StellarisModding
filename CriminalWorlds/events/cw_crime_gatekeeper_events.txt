@@ -132,6 +132,33 @@ country_event = {
 						random = 300
 					}
 				}
+				10 = { # For megacorps (worker coops are immune)
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_corruption_2
+						}
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							num_assigned_jobs = {
+								job = executive
+								value >= 1
+							}
+							has_available_jobs = executive
+						}
+					}
+					modifier = {
+						factor = 2.5
+						has_modifier = mob_rule
+					}
+					planet_event = { 
+						id = criminal_worlds.13
+						days = 1
+						random = 300
+					}
+				}
 				10 = {
 					modifier = {
 						factor = 0

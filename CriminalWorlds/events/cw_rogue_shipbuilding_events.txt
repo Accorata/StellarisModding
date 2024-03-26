@@ -48,16 +48,16 @@ country_event = {
 					value >= 1
 				}
 			}
-			export_trigger_value_to_variable = {
-				trigger = num_assigned_jobs
-				parameters = {
-					job = cw_rogue_shipbuilder
-				}
-				variable = cw_rogue_shipbuilder_job_num
-			}
+			# export_trigger_value_to_variable = {
+			# 	trigger = num_assigned_jobs
+			# 	parameters = {
+			# 		job = cw_rogue_shipbuilder
+			# 	}
+			# 	variable = cw_rogue_shipbuilder_job_num
+			# }
 			change_variable = {
 				which = cw_rogue_ship_progress
-				value = cw_rogue_shipbuilder_job_num
+				value = 1 #cw_rogue_shipbuilder_job_num
 			}
 		}
 		if = {
