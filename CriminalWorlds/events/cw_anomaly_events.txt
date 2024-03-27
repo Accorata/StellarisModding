@@ -1,0 +1,30 @@
+namespace = cw_anomaly
+
+ship_event = {
+	id = cw_anomaly.1
+	title = cw_anomaly.1.name
+	desc = cw_anomaly.1.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_excavation_team
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.1.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier1materialreward
+				min = @tier1materialmin
+				max = @tier1materialmax
+			}
+		}
+	}
+}

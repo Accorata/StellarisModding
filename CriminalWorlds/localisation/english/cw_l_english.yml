@@ -17,7 +17,7 @@
   mod_job_cw_rogue_shipbuilder_add:0 "Rogue Shipbuilder Jobs"
 
   planet_cw_bribed:0 "Bribed Officials"
-  planet_cw_shipbuilders:0 "Shipbuilders"
+  planet_cw_shipbuilders:0 "Shipbuilder Jobs"
 
 # Planet Modifiers
   cw_corruption_1:0 "Corruption I"

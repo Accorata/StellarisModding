@@ -1,3 +1,5 @@
+namespace = criminal_worlds
+
 # On monthly pulse
 country_event = {
 	id = criminal_worlds.23
@@ -8,14 +10,14 @@ country_event = {
 			limit = {
 				NOT = { has_ethic = ethic_gestalt_consciousness }
 				any_owned_planet = {
-					# OR = {
-					# 	has_modifier = cw_criminal_shipyards
-					# 	has_modifier = cw_criminal_shipyards_2
-					# }
-					num_assigned_jobs = {
-						job = cw_rogue_shipbuilder
-						value >= 1
+					OR = {
+						has_modifier = cw_criminal_shipyards
+						has_modifier = cw_criminal_shipyards_2
 					}
+					# num_assigned_jobs = {
+					# 	job = cw_rogue_shipbuilder
+					# 	value >= 1
+					# }
 				}
 			}
 			country_event = { 
@@ -43,9 +45,13 @@ country_event = {
 		}
 		every_owned_planet = {
 			limit = {
-				num_assigned_jobs = {
-					job = cw_rogue_shipbuilder
-					value >= 1
+				# num_assigned_jobs = {
+				# 	job = cw_rogue_shipbuilder
+				# 	value >= 1
+				# }
+				OR = {
+					has_modifier = cw_criminal_shipyards
+					has_modifier = cw_criminal_shipyards_2
 				}
 			}
 			# export_trigger_value_to_variable = {
@@ -116,9 +122,13 @@ country_event = {
 		}
 		random_owned_planet = {
 			limit = {
-				num_assigned_jobs = {
-					job = cw_rogue_shipbuilder
-					value >= 1
+				# num_assigned_jobs = {
+				# 	job = cw_rogue_shipbuilder
+				# 	value >= 1
+				# }
+				OR = {
+					has_modifier = cw_criminal_shipyards
+					has_modifier = cw_criminal_shipyards_2
 				}
 			}
 			save_event_target_as = criminal_fleet_spawn_planet

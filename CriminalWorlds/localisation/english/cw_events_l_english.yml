@@ -6,6 +6,8 @@
   criminal_worlds.11.desc:0 "Whether these are new developments or have always been the case, it appears the system of bribery on [Root.GetName] is much larger than originally assumed. We hoped these corrupt enforcers would be brought to justice upon discovery but after throughly reviewing their internal documents, it seems even their superiors are also upon the payroll of the criminal networks and are happy to cover up the corruption.\n\nIt's even unclear whether the arrests we originally made when we discovered this corruption were legitimate or just innocent enforcers thrown under the bus by the higher ups."
   criminal_worlds.12.name:0 "Political Corruption on [Root.GetName]"
   criminal_worlds.12.desc:0 "..."
+  criminal_worlds.13.name:0 "$criminal_worlds.12.name$"
+  criminal_worlds.13.desc:0 "..."
 # Illegal Freeports
   criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
   criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
@@ -14,3 +16,9 @@
 	criminal_worlds.21.desc:0 "..."
   criminal_worlds.22.name:0 "$cw_criminal_shipyards_2$ on [Root.GetName]"
 	criminal_worlds.22.desc:0 "..."
+# Criminal Stockpile Anomoly
+  cw_criminal_stockpile_cat:0 "Radio Chatter"
+  cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
+  cw_anomaly.1.name:0 "Criminal Hideout"
+  cw_anomaly.1.desc:0 "It appears a small band of pirates have been hiding out here, using this asteriod as a stockpile for their gains. They offered little resistance when discovered as they clearly weren't expecting anyone to find them.\n\nWe've arrested them and confiscated their resources."
+  cw_anomaly.1.a:0 "Excellent" # maybe add an option to execute for authoritarian which provides attraction?/-crime
