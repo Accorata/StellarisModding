@@ -7,17 +7,25 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		every_playable_country = {
+			set_variable = {
+				which = cw_testing
+				value = 0
+			}
 			limit = {
-				NOT = { has_ethic = ethic_gestalt_consciousness }
-				any_owned_planet = {
-					OR = {
-						has_modifier = cw_criminal_shipyards
-						has_modifier = cw_criminal_shipyards_2
+				AND = {
+					NOT = { 
+						has_ethic = ethic_gestalt_consciousness 
 					}
-					# num_assigned_jobs = {
-					# 	job = cw_rogue_shipbuilder
-					# 	value >= 1
-					# }
+					any_owned_planet = {
+						OR = {
+							has_modifier = cw_criminal_shipyards
+							has_modifier = cw_criminal_shipyards_2
+						}
+						# num_assigned_jobs = {
+						# 	job = cw_rogue_shipbuilder
+						# 	value >= 1
+						# }
+					}
 				}
 			}
 			country_event = { 
@@ -61,9 +69,11 @@ country_event = {
 			# 	}
 			# 	variable = cw_rogue_shipbuilder_job_num
 			# }
-			change_variable = {
-				which = cw_rogue_ship_progress
-				value = 1 #cw_rogue_shipbuilder_job_num
+			owner = {
+				change_variable = {
+					which = cw_rogue_ship_progress
+					value = 1 #cw_rogue_shipbuilder_job_num
+				}
 			}
 		}
 		if = {

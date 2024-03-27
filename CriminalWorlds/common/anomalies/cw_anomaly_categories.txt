@@ -1,7 +1,7 @@
 # Criminal Stockpile (Asteroid)
 cw_criminal_stockpile_cat = {
 	picture = GFX_evt_ice_asteroids
-	level = 2
+	level = 3
 
 	spawn_chance = {
 		modifier = {
