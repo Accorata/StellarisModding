@@ -10,7 +10,10 @@ cw_criminal_stockpile_cat = {
 		}
 	}
 
-	on_success = cw_anomaly.1
+	on_success = {
+		1 = cw_anomaly.1
+		1 = cw_anomaly.2
+	}
 }
 
 # Ruined Undercity
@@ -25,5 +28,5 @@ cw_ruined_undercity_cat = {
 		}
 	}
 
-	on_success = cw_anomaly.2
+	on_success = cw_anomaly.3
 }
