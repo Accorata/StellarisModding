@@ -15,6 +15,11 @@
   job_cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
   job_cw_rogue_shipbuilder_plural:0 "Rogue Shipbuilders"
   mod_job_cw_rogue_shipbuilder_add:0 "Rogue Shipbuilder Jobs"
+  cw_underworlder:0 "Underdweller"
+  cw_underworlder_desc:0 "These pops live below the depths of society, beyond the scope of laws and regulation. Here, anything is possible."
+  job_cw_underworlder:0 "Underdweller"
+  job_cw_underworlder_plural:0 "Underdwellers"
+  mod_job_cw_underworlder_add:0 "Underdweller Jobs"
 
   planet_cw_bribed:0 "Bribed Officials"
   planet_cw_shipbuilders:0 "Shipbuilder Jobs"
@@ -34,6 +39,8 @@
   cw_criminal_shipyards_desc:0 "..."
   cw_criminal_shipyards_2:0 "Illegal Assembly Yards"
   cw_criminal_shipyards_2_desc:0 "..."
+  cw_ruined_undercity:0 "Ruined Undercity"
+  cw_ruined_undercity_desc:0 "These ancient remains lie within this planet's crust. Such unregulated areas are bound to attract a certain percentage of the population."
 
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"

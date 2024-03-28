@@ -22,3 +22,9 @@
   cw_anomaly.1.name:0 "Criminal Hideout"
   cw_anomaly.1.desc:0 "It appears a small band of pirates have been hiding out here, using this asteriod as a stockpile for their gains. They offered little resistance when discovered as they clearly weren't expecting anyone to find them.\n\nWe've arrested them and confiscated their resources."
   cw_anomaly.1.a:0 "Excellent" # maybe add an option to execute for authoritarian which provides attraction?/-crime
+# Ruined Undercity Anomaly
+  cw_ruined_undercity_cat:0 "Subterranean Readings"
+  cw_ruined_undercity_cat_desc:0 "Our sensors have detected underground areas beneath the crust of [Root.GetName]. Further investigations is needed."
+  cw_anomaly.2.name:0 "Ruined Undercity"
+  cw_anomaly.2.desc:0 "Below the surface level of [Root.GetName], our explorers have uncovered an ancient city that lies submerged under years of material deposition. The city seems to be the remains of a non-space faring civilization that died off for unknown reasons. However these remains aren't primitive and still in decent conditions, creating a network of tunnels beneath the surface of [Root.GetName]."
+  cw_anomaly.2.a:0 "Interesting"
