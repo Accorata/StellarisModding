@@ -1,3 +1,0 @@
-ac_testing = {
-	planet_pop_assembly_add = 1
-}
