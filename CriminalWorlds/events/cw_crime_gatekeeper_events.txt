@@ -82,7 +82,7 @@ country_event = {
 						random = 300
 					}
 				}
-				10 = {
+				15 = {
 					modifier = {
 						factor = 0
 						NOT = {
@@ -105,7 +105,7 @@ country_event = {
 						random = 300
 					}
 				}
-				10 = {
+				20 = {
 					modifier = {
 						factor = 0
 						NOT = {
@@ -132,7 +132,7 @@ country_event = {
 						random = 300
 					}
 				}
-				10 = { # For megacorps (worker coops are immune)
+				20 = { # For megacorps (worker coops are immune)
 					modifier = {
 						factor = 0
 						NOT = {
@@ -185,7 +185,7 @@ country_event = {
 						random = 300
 					}
 				}
-				10 = {
+				15 = {
 					modifier = {
 						factor = 0
 						NOT = {

@@ -5,17 +5,19 @@
   criminal_worlds.11.name:0 "Extended Corruption on [Root.GetName]"
   criminal_worlds.11.desc:0 "Whether these are new developments or have always been the case, it appears the system of bribery on [Root.GetName] is much larger than originally assumed. We hoped these corrupt enforcers would be brought to justice upon discovery but after throughly reviewing their internal documents, it seems even their superiors are also upon the payroll of the criminal networks and are happy to cover up the corruption.\n\nIt's even unclear whether the arrests we originally made when we discovered this corruption were legitimate or just innocent enforcers thrown under the bus by the higher ups."
   criminal_worlds.12.name:0 "Political Corruption on [Root.GetName]"
-  criminal_worlds.12.desc:0 "..."
+  criminal_worlds.12.desc:0 "The sources of our crime troubles have become clear.\n\nIt's not just an internalized system of corruption within our enforcers, the corruption goes all the way to the top. The very politicians that we've put in place have abandoned our population, turning to the pursuit of profit over justice. This corruption is far larger than any of our estimates and is going to take a true effort to take it down."
   criminal_worlds.13.name:0 "$criminal_worlds.12.name$"
-  criminal_worlds.13.desc:0 "..."
+  criminal_worlds.13.desc:0 "$criminal_worlds.12.desc$"
 # Illegal Freeports
   criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
   criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
 # Criminal Shipyards
   criminal_worlds.21.name:0 "$cw_criminal_shipyards$ on [Root.GetName]"
-	criminal_worlds.21.desc:0 "..."
+	criminal_worlds.21.desc:0 "It seems that for the criminal organizations, control of [Root.GetName] is not enough. Enforcers have discovered multiple cases of stolen alloy transports. They suspect weapons are being maunfactured elsewhere on [Root.GetName].\n\nA number of planetside rogue shipyards are now building the criminals a new fleet. We better hope they are just as interested in protecting [Root.GetName] as we are."
   criminal_worlds.22.name:0 "$cw_criminal_shipyards_2$ on [Root.GetName]"
-	criminal_worlds.22.desc:0 "..."
+	criminal_worlds.22.desc:0 "The operations have expanded. No longer do the organizations rely purely on stolen alloys: now entire factories are under their control for this purpose alone. Shipyards of real size can now be found, and their influence is beyond the control of local authority.\n\nFurther enforcement seems to be the only  way to regain our own sovereignity over [Root.GetName] and reclaim ship construction."
+  criminal_worlds.22.a:0 "Arrest them all!"
+  criminal_worlds.22.b:0 "At least they're not harming anyone"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

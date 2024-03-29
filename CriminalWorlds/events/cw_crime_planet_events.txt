@@ -277,7 +277,17 @@ planet_event = {
 	}
 
 	option = {
-		name = UNFORTUNATE
+		name = criminal_worlds.22.a
+		tooltip = {
+			remove_modifier = cw_criminal_shipyards 
+			add_modifier = { 
+				modifier = cw_criminal_shipyards_2
+				days = 3600 
+			}
+		}
+	}
+	option = {
+		name = criminal_worlds.22.b
 		tooltip = {
 			remove_modifier = cw_criminal_shipyards 
 			add_modifier = { 
