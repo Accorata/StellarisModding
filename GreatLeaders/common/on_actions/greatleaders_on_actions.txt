@@ -1,0 +1,18 @@
+# No scope, like on_game_start
+on_game_start_country = {
+	events = {
+		great_leaders.100		# Sets up leader variables
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		great_leaders.0		#Adds leader variables based on subclasses
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		great_leaders.0		#will go away -for testing
+	}
+}

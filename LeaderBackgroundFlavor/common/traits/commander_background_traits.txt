@@ -1,0 +1,190 @@
+leader_trait_former_captain = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_weapon_damage = 0.01
+	}
+	army_modifier = {
+		army_morale = 0.1
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_chief_navigator = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_speed_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_principal_pilot = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_emergency_ftl_mult = -0.05
+		ship_speed_mult = 0.1
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_ship_weapons_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.02
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_ship_logistics_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_hull_regen_add_perc = 0.001
+		ship_orbit_upkeep_mult = -0.05
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_special_operations_commander = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		intel_gain_speed = 0.05
+		army_experience_gain_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_commanding_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		army_morale = 0.05
+		army_experience_gain_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_chief_supply_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	army_modifier = {
+		armies_upkeep_mult = -0.25
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_intelligence_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		add_base_country_intel = 2
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_former_chief_security_officer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		defense_armies_add = 1
+		army_defense_damage_mult = 0.1
+	}
+	sector_modifier = {
+		army_defense_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+	}
+}

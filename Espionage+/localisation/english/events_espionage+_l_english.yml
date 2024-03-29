@@ -1,0 +1,46 @@
+﻿l_english:
+## Espionage Events
+# Install Backdoor
+  operation_install_backdoor:0 "Install Backdoor"
+  operation_install_backdoor_desc:0 "By hacking into the brain functionality of this country's leader, we can implant a backdoor giving us great insights into their encryption."
+  operation_install_backdoor_on_success:1 "Their ruler, §Y[target.ruler.GetName]§!, will gain a trait giving them §Y-3§! Encryption from us until removed."
+  operation_expanded.100.name:0 "Access Programming Directives"
+  operation_expanded.100.desc:0 "We've located a vulnerablity in §Y[from.target.GetName]§!'s defenses. If our agents access their programming directives, security protocols can be disabled."
+  operation_expanded.101.name:0 "Deactivate Firewalls"
+  operation_expanded.101.desc:1 "Numerous security protocols are in place in order to protect §Y[target.ruler.GetTitle]§! §Y[target.ruler.GetName]§! but with our inside surveillance, our operatives can begin work on taking them down."
+  operation_expanded.102.name:0 "Plant Malware"
+  operation_expanded.102.desc:0 "Our netrunners are now in motion. It shouldn't be too long before our backdoor is ready to fire."
+  operation_expanded.103.name:0 "Activate Spyware"
+  operation_expanded.103.desc:1 "Our spyware has been planted in §Y[target.ruler.GetTitle]§! §Y[target.ruler.GetName]§!. Now activating it is all that remains to be done."
+  operation_expanded.106.name:0 "Backdoor is Operational"
+  operation_expanded.106.desc:0 "Until enemy operatives are able to reconfigure their systems or remove our vulnerability from any place of power, our spyware should greatly assist any spy operations."
+  operation_expanded.107.name:0 "Ruler Hacked!"
+  operation_expanded.107.desc:0 "Foreign operatives have hacked §Y[ruler.GetTitle]§! §Y[ruler.GetName]§!, installing a backdoor that until pruned will give them great advantages against our encryption."
+  operation_expanded.107.desc.regular:1 "Foreign operatives have hacked the electronical pathways of §Y[ruler.GetTitle]§! §Y[ruler.GetName]§!, installing a backdoor that will give them great advantages against our encryption as long as they are on the council."
+# Corrupt Loyalties
+  operation_corrupt_loyalties:0 "Corrupt Loyalties"
+  operation_corrupt_loyalties_desc:0 "Through bribes and influence of ethics, we can turn one of their leaders in favor of our cause, resulting in a new flow of resources..."
+  operation_corrupt_loyalties_on_success:0 "One of their councilors will gain a trait which steals 5% of their monthly energy credits when on the council."
+  operation_expanded.200.name:0 "Survey Possible Defectors"
+  operation_expanded.200.desc:0 "..."
+  operation_expanded.201.name:0 "Establish Communications"
+  operation_expanded.201.desc:1 "We've found a target who seems ... , §Y[(...).GetTitle]§! §Y[(...).GetName]§!. Now our operatives move in to..."
+  operation_expanded.202.name:0 "Convince Their Leader"
+  operation_expanded.202.desc:1 "Convince .gettitle .getname..."
+  operation_expanded.205.name:0 "Leader Has Been Swayed"
+  operation_expanded.205.desc:0 "..."
+# Abduct Pops
+  operation_expanded.300.name:0 "Coordinate Exit Strategy" 
+  operation_expanded.300.desc:0 "..."
+  operation_expanded.301.name:1 "Infiltrate Planet ..." #top number of pops
+  operation_expanded.301.desc:0 "..."
+  operation_expanded.302.name:0 "Capture Populace"
+  operation_expanded.302.desc:0 "..."
+  operation_expanded.305.name:0 "Pops Abducted"
+  operation_expanded.305.desc:0 "..."
+# Spark Insurrection
+
+
+
+
+ 

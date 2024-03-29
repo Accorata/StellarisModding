@@ -1,0 +1,12 @@
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		criminal_worlds.1		# Criminal Worlds Crime Events
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		criminal_worlds.23		# Checks for criminal shipbuilders
+	}
+}

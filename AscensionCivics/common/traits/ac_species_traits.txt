@@ -1,0 +1,70 @@
+trait_ascendant_psionic = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	icon = "gfx/interface/icons/traits/trait_ascendant_psionic.dds"
+	initial = no
+	randomized = no
+	forced_happiness = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	modifier = {
+		# planet_jobs_physics_research_produces_mult = 0.1
+		# planet_jobs_society_research_produces_mult = 0.1
+		# planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.2
+		species_leader_exp_gain = 0.1
+	}
+	slave_cost = {
+		energy = 2000
+	}
+	assembly_score = {
+		base = 1.5
+		modifier = {
+			add = 0.5
+			from = {
+				has_research_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_unity_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_building = building_order_keep
+			}
+		}
+	}
+}
+
+# need to add it to pops gained after (place in assimilation) for above trait
+trait_infectious = {
+	cost = -3
+	potential_crossbreeding_chance = 0.9
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		pop_growth_speed = -0.2
+	}
+	slave_cost = {
+		energy = -3000
+	}
+}

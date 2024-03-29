@@ -1,0 +1,39 @@
+ac_avatar_caller = {
+	icon = "GFX_starbase_zroni_storm_caster"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_valid_civic = civic_doomseekers }
+		is_normal_starbase = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			sr_zro = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_zro = 1
+		}
+	}
+
+	system_modifier = {
+		planet_stability_add = -5
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			has_tech = "tech_ac_doom_foretold"
+		}
+		planet_stability_add = -5
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+
+	custom_tooltip = sm_ac_avatar_caller_desc_modifier
+}

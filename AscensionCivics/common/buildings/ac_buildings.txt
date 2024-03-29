@@ -1,0 +1,47 @@
+# Telepathic Empire
+building_psi_tower = {
+	base_buildtime = @b2_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			has_valid_civic = civic_telepathic_empire
+		}
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = {
+				has_valid_civic = civic_telepathic_empire
+			}
+		}
+	}
+	planet_modifier = {
+		job_politician_add = 2
+		job_telepath_per_pop = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	triggered_desc = {
+		text = job_politician_effect_desc
+	}
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}
