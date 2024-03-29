@@ -32,3 +32,13 @@
   cw_anomaly.3.name:0 "Ruined Undercity"
   cw_anomaly.3.desc:0 "Below the surface level of [Root.GetName], our explorers have uncovered an ancient city that lies submerged under years of material deposition. The city seems to be the remains of a non-space faring civilization that died off for unknown reasons. However these remains aren't primitive and still in decent conditions, creating a network of tunnels beneath the surface of [Root.GetName]."
   cw_anomaly.3.a:0 "Interesting"
+# Sinister Dreams Anomaly
+  cw_sinister_dreams_cat:0 "Sinister Dreams"
+  cw_sinister_dreams_cat_desc:0 "The crew of our science ship have reported sinister dreams that would refuse to diminish. Continual visions that showed them their pasts and worryingly, maybe their futures.\n\nThey swear [Root.GetName] is haunted by spirits of some evil nature, or that their is some great evil that lurks there. Further analysis might shine a brighter light on their experiences."
+  cw_anomaly.4.name:0 "Dark Whispers"
+  cw_anomaly.4.desc:0 "The crew wasn't wrong. While [Root.GetLeaderName] isn't sure what, they do feel the same evil, and it doesn't show any signs of stopping.\n\nUpon this news reaching the scientific body of the nation, some call for further study and a research base on [Root.GetName]. Others say they'll never step near."
+  cw_anomaly.4.a:0 "Disturbing"
+  cw_anomaly.4.b:0 "Further Psionic Knowledge"
+  cw_anomaly.5.name:0 "Mental Illusions"
+  cw_anomaly.5.desc:0 "It seems [Root.GetLeaderName] was experiencing a wave of strong psionic dreams. There seems to be no correlation to [Root.GetName], however this psionic experience has helped our scientists delve into this interesting field of research. Hopefully further advancements will explain the crews visions."
+  cw_anomaly.5.a:0 "Interesting"

@@ -35,9 +35,9 @@
   cw_corruption_3_megacorp_desc:0 "..."
   cw_illegal_freeports:0 "Illegal Freeports"
   cw_illegal_freeports_desc:0 "A number of criminal safe havens are located here attracting a less than desirable croud."
-  cw_criminal_shipyards:0 "Criminal Shipyards"
+  cw_criminal_shipyards:0 "Illegal Assembly Yards"
   cw_criminal_shipyards_desc:0 "..."
-  cw_criminal_shipyards_2:0 "Illegal Assembly Yards"
+  cw_criminal_shipyards_2:0 "Criminal Shipyards"
   cw_criminal_shipyards_2_desc:0 "..."
   cw_ruined_undercity:0 "Ruined Undercity"
   cw_ruined_undercity_desc:0 "These ancient remains lie within this planet's crust. Such unregulated areas are bound to attract a certain percentage of the population."
@@ -45,6 +45,8 @@
   cw_underground_slums_1_desc:0 "..."
   cw_underground_slums_2:0 "Underground Slums II"
   cw_underground_slums_2_desc:0 "..."
+  cw_dark_whispers:0 "Dark Whispers"
+  cw_dark_whispers_desc:0 "..."
 
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"

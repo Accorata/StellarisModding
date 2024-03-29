@@ -69,12 +69,81 @@ ship_event = {
 
 	is_triggered_only = yes
 
+	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
+
 	option = {
 		name = cw_anomaly.3.a
 		from = {
 			add_modifier = {
 				modifier = cw_ruined_undercity
 				days = -1
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.4
+	title = cw_anomaly.4.name
+	desc = cw_anomaly.4.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_alien_planet #evil
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.4.a
+		from = {
+			add_modifier = {
+				modifier = cw_dark_whispers
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = cw_anomaly.4.b
+		trigger = {
+			leader = {
+				OR = {
+					has_trait = leader_trait_psionic
+					has_trait = leader_trait_chosen
+					has_trait = leader_trait_expertise_psionics
+					has_trait = leader_trait_expertise_psionics_2
+					has_trait = leader_trait_expertise_psionics_3
+				}
+			}
+		}
+		from = {
+			add_modifier = {
+				modifier = cw_dark_whispers
+				days = -1
+			}
+		}
+		leader = {
+			add_trait = leader_trait_maniacal
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.5
+	title = cw_anomaly.5.name
+	desc = cw_anomaly.5.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_alien_planet #?
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.5.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
 			}
 		}
 	}
