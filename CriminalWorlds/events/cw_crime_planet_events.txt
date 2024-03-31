@@ -211,7 +211,7 @@ planet_event = {
 	id = criminal_worlds.21
 	title = criminal_worlds.21.name
 	desc = criminal_worlds.21.desc
-	picture = GFX_evt_space_hangar
+	picture = GFX_evt_ship_offloading_cargo
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
@@ -250,7 +250,7 @@ planet_event = {
 	id = criminal_worlds.22
 	title = criminal_worlds.22.name
 	desc = criminal_worlds.22.desc
-	picture = GFX_evt_space_hangar
+	picture = GFX_evt_ship_offloading_cargo
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
@@ -293,6 +293,70 @@ planet_event = {
 			add_modifier = { 
 				modifier = cw_criminal_shipyards_2
 				days = 3600 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.30
+	title = criminal_worlds.30.name
+	desc = criminal_worlds.30.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		add_modifier = { 
+			modifier = cw_underground_slums_1 
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			add_modifier = { 
+				modifier = cw_underground_slums_1 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.31
+	title = criminal_worlds.31.name
+	desc = criminal_worlds.31.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_underground_slums_1
+	}
+
+	immediate = {
+		remove_modifier = cw_underground_slums_1
+		add_modifier = { 
+			modifier = cw_underground_slums_2 
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			remove_modifier = cw_underground_slums_1
+			add_modifier = { 
+				modifier = cw_underground_slums_2 
 			}
 		}
 	}

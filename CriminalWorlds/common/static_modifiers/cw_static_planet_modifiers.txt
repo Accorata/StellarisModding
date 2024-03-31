@@ -84,6 +84,6 @@ cw_dark_whispers = {
 	planet_crime_add = 10
 	planet_jobs_society_research_produces_mult = 0.10
 
-	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds" #change
+	icon = "gfx/interface/icons/planet_modifiers/pm_dead_god.dds"
 	icon_frame = 2
 }

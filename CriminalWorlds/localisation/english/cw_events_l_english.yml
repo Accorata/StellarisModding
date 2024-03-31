@@ -18,6 +18,11 @@
 	criminal_worlds.22.desc:0 "The operations have expanded. No longer do the organizations rely purely on stolen alloys: now entire factories are under their control for this purpose alone. Shipyards of real size can now be found, and their influence is beyond the control of local authority.\n\nFurther enforcement seems to be the only  way to regain our own sovereignity over [Root.GetName] and reclaim ship construction."
   criminal_worlds.22.a:0 "Arrest them all!"
   criminal_worlds.22.b:0 "At least they're not harming anyone"
+# Underground Slums
+  criminal_worlds.30.name:0 "Underground Slums appear on [Root.GetName]"
+	criminal_worlds.30.desc:0 "..."
+  criminal_worlds.31.name:0 "Underground Slums increase on [Root.GetName]"
+	criminal_worlds.31.desc:0 "..."
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

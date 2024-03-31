@@ -52,7 +52,6 @@ event = {
 country_event = {
 	id = criminal_worlds.2
 	hide_window = yes
-
 	is_triggered_only = yes
 
 	immediate = {
@@ -206,3 +205,71 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = criminal_worlds.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_planet = {
+			free_housing < 0
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_housing < 0
+			}
+			random_list = {
+				5 = {}
+				15 = {
+					planet_event = { 
+						id = criminal_worlds.6
+					}
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		free_housing < 0
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOR = {
+					has_modifier = cw_underground_slums_1
+					has_modifier = cw_underground_slums_2
+				}
+			}
+			planet_event = { 
+				id = criminal_worlds.30
+				days = 1
+				random = 10
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_1
+			}
+			planet_event = { 
+				id = criminal_worlds.31
+				days = 1
+				random = 10
+			}
+		}
+	}
+
+}
+
+
+

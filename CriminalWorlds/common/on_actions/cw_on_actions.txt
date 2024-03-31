@@ -7,6 +7,7 @@ on_yearly_pulse = {
 
 on_monthly_pulse_country = {
 	events = {
+		criminal_worlds.5		# Criminal Worlds Housing Events
 		criminal_worlds.24		# Checks for criminal shipbuilders
 	}
 }
