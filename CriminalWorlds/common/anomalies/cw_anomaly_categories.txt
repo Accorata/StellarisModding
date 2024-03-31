@@ -33,7 +33,7 @@ cw_ruined_undercity_cat = {
 
 # Sinister Dreams
 cw_sinister_dreams_cat = {
-	picture = GFX_evt_ice_asteroids #
+	picture = GFX_evt_zro_2
 	level = 3
 
 	spawn_chance = {

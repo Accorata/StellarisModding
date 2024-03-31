@@ -1,44 +1,25 @@
 namespace = criminal_worlds
 
+@rogue_ship_progress_needed = 15
+
 # On monthly pulse
-country_event = {
-	id = criminal_worlds.23
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		# every_playable_country = {
-			set_variable = {
-				which = cw_testing
-				value = 0
-			}
-			limit = {
-				AND = {
-					NOT = { 
-						has_ethic = ethic_gestalt_consciousness 
-					}
-					any_owned_planet = {
-						OR = {
-							has_modifier = cw_criminal_shipyards
-							has_modifier = cw_criminal_shipyards_2
-						}
-						# num_assigned_jobs = {
-						# 	job = cw_rogue_shipbuilder
-						# 	value >= 1
-						# }
-					}
-				}
-			}
-			country_event = { 
-				id = criminal_worlds.24
-			}
-		# }
-	}
-}
-		
 country_event = {
 	id = criminal_worlds.24
 	hide_window = yes
 	is_triggered_only = yes
+	trigger = {
+		AND = {
+			NOT = { 
+				has_ethic = ethic_gestalt_consciousness 
+			}
+			any_owned_planet = {
+				OR = {
+					has_modifier = cw_criminal_shipyards
+					has_modifier = cw_criminal_shipyards_2
+				}
+			}
+		}
+	}
 	immediate = {
 		if = {
 			limit = {
@@ -70,6 +51,15 @@ country_event = {
 			# 	variable = cw_rogue_shipbuilder_job_num
 			# }
 			owner = {
+				if = {
+					limit = {
+						has_modifier = cw_criminal_shipyards_2
+					}
+					change_variable = {
+						which = cw_rogue_ship_progress
+						value = 1.5 #cw_rogue_shipbuilder_job_num
+					}
+				}
 				change_variable = {
 					which = cw_rogue_ship_progress
 					value = 1 #cw_rogue_shipbuilder_job_num
@@ -80,7 +70,7 @@ country_event = {
 			limit = {
 				check_variable_arithmetic = {
 					which = cw_rogue_ship_progress
-					value >= 5
+					value >= @rogue_ship_progress_needed
 				}
 			}
 			country_event = {
@@ -88,7 +78,7 @@ country_event = {
 			}
 			subtract_variable = {
 				which = cw_rogue_ship_progress
-				value = 5
+				value = @rogue_ship_progress_needed
 			}
 		}
 	}
@@ -147,7 +137,7 @@ country_event = {
 		create_fleet = {
 			name = "NAME_Pirate_Fleet"
 			effect = {
-				set_owner = root
+				set_owner = event_target:criminal_enterprise
 				create_pirate_ships_0 = yes
 				set_location = event_target:criminal_fleet_spawn_planet
 			}
@@ -167,6 +157,5 @@ country_event = {
 		# 		set_location = event_target:criminal_fleet_spawn_planet
 		# 		set_fleet_stance = neutral
 		# 	}
-		# }
 	}
 }

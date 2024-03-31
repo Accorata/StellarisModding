@@ -79,7 +79,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.10
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				15 = {
@@ -102,7 +102,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.11
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				20 = {
@@ -129,7 +129,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.12
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				20 = { # For megacorps (worker coops are immune)
@@ -156,7 +156,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.13
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				10 = {
@@ -167,7 +167,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.20
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				10 = {
@@ -182,7 +182,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.21
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 				15 = {
@@ -199,7 +199,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.22
 						days = 1
-						random = 300
+						#random = 300
 					}
 				}
 			}

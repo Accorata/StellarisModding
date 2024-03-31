@@ -5,8 +5,8 @@ on_yearly_pulse = {
 	}
 }
 
-on_monthly_pulse_country = { #trying this now
+on_monthly_pulse_country = {
 	events = {
-		criminal_worlds.23		# Checks for criminal shipbuilders
+		criminal_worlds.24		# Checks for criminal shipbuilders
 	}
 }
