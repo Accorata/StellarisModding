@@ -35,6 +35,14 @@
   criminal_worlds.33.name:0 " on [Root.GetName]"
 	criminal_worlds.33.desc:0 "..."
   criminal_worlds.33.a:0 "This needs to stop."
+# Black Market Relic
+  criminal_worlds.34.name:0 "Rumored Dealings on [Root.GetName]"
+	criminal_worlds.34.desc:0 "Within the network of black markets on [Root.GetName], local authorities have recieved an anonymous tip from someone who claims to have heard of a powerful item up for sale. Details are incredibly sparse, and it's unclear how legitimate this source is.\n\nOur enforcers are already tied up with the regular criminal dealings, but passed this up the chain if we are interested in deploying our own efforts to confirm or deny this tip."
+  criminal_worlds.34.a:0 "Survey local rumors on [Root.GetName]"
+  criminal_worlds.34.b:0 "There are more important things than this"
+  criminal_worlds.35.name:0 "Surveys Complete!"
+	criminal_worlds.35.desc:0 "..."
+  criminal_worlds.35.a:0 "Retrieve this contraband!"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

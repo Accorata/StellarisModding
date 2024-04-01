@@ -420,6 +420,7 @@ planet_event = {
 	}
 }
 
+# Smuggled Relic Chain
 planet_event = {
 	id = criminal_worlds.34
 	title = criminal_worlds.34.name
@@ -432,11 +433,9 @@ planet_event = {
 
 	option = {
 		name = criminal_worlds.34.a
-		tooltip = {
-			begin_event_chain = {
-				event_chain = cw_smuggled_relic_chain
-				target = root
-			}
+		begin_event_chain = {
+			event_chain = cw_smuggled_relic_chain
+			target = root
 		}
 		enable_special_project = {
 			name = "cw_smuggled_relic_project_1"
@@ -456,3 +455,25 @@ planet_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = criminal_worlds.35
+	title = criminal_worlds.35.name
+	desc = criminal_worlds.35.desc
+	picture = GFX_evt_black_market
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+
+	option = {
+		name = criminal_worlds.35.a
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_2"
+			location = this
+			owner = root
+		}
+	}
+}
+
+# starbase

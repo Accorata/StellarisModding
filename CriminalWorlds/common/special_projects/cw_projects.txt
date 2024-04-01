@@ -1,0 +1,50 @@
+special_project = {
+	key = "cw_smuggled_relic_project_1"
+	cost = 1000
+	tech_department = society_technology
+	picture = GFX_evt_black_market
+	icon = "gfx/interface/icons/situation_log/situation_log_scanning_beam.dds"
+	location = yes
+
+	event_scope = planet_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		planet_event = {
+			id = criminal_worlds.35
+		}
+	}
+}
+
+special_project = {
+	key = "cw_smuggled_relic_project_2"
+	cost = 0
+	days_to_research = 80
+	tech_department = society_technology
+	picture = GFX_evt_black_market
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	location = yes
+	timelimit = 1080
+
+	event_scope = planet_event
+
+	requirements = {
+		shipclass_transport = 2
+	}
+
+	on_success = {
+		planet_event = {
+
+		}
+	}
+
+	on_fail = {
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+		}
+	}
+}

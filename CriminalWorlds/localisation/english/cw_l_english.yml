@@ -62,6 +62,12 @@
 # Country
   NAME_cw_criminal_enterprise:0 "Criminal Enterprises"
 
+# Special Projects
+  cw_smuggled_relic_project_1_name:0 "Survey Rumors on [Root.GetName]"
+  cw_smuggled_relic_project_1_desc:0 "..."
+  cw_smuggled_relic_project_2_name:0 "Retrieve Contraband"
+  cw_smuggled_relic_project_2_desc:0 "..."
+
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"
   leader_trait_criminal_relations_desc:0 "..."
