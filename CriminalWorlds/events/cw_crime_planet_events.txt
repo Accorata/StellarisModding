@@ -520,8 +520,8 @@ planet_event = {
 
 	option = {
 		name = criminal_worlds.37.a
-		end_event_chain = cw_smuggled_relic_chain
-		# relic + analyze artifact tech
+		end_event_chain = cw_smuggled_relic_chain # doesn't end
+		# relic + analyze artifact tech 
 	}
 }
 
@@ -537,7 +537,7 @@ planet_event = {
 
 	option = {
 		name = criminal_worlds.37.a
-		end_event_chain = cw_smuggled_relic_chain
+		end_event_chain = cw_smuggled_relic_chain # doesn't end
 		# precursor insight + analyze artifact tech
 	}
 }

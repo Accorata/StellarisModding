@@ -263,6 +263,12 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.6
 					}
+					modifier = {
+						factor = 0
+						owner = {
+							is_subterranean_empire = yes
+						}
+					}
 				}
 			}
 		}

@@ -32,7 +32,7 @@
 	criminal_worlds.32.desc:0 "..."
   criminal_worlds.32.a:0 "Worrying"
 # Criminal Speaches
-  criminal_worlds.33.name:0 " on [Root.GetName]"
+  criminal_worlds.33.name:0 "Infamous Criminals on [Root.GetName]"
 	criminal_worlds.33.desc:0 "..."
   criminal_worlds.33.a:0 "This needs to stop."
 # Black Market Relic

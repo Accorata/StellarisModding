@@ -42,33 +42,33 @@
   cw_ruined_undercity:0 "Ruined Undercity"
   cw_ruined_undercity_desc:0 "These ancient remains lie within this planet's crust. Such unregulated areas are bound to attract a certain percentage of the population."
   cw_underground_slums_1:0 "Underground Slums"
-  cw_underground_slums_1_desc:0 "..."
+  cw_underground_slums_1_desc:0 "Due to limited housing, part of this planet's population has moved into underground sewars."
   cw_underground_slums_2:0 "Underground Slums II"
-  cw_underground_slums_2_desc:0 "..."
+  cw_underground_slums_2_desc:0 "$cw_underground_slums_1_desc$"
   cw_dark_whispers:0 "Dark Whispers"
   cw_dark_whispers_desc:0 "All on the planet hears them. Some listen."
   cw_mercenary_fighters:0 "Mercenary Fighters"
-  cw_mercenary_fighters_desc:0 "..."
+  cw_mercenary_fighters_desc:0 "This planet is home to groups of mercenaries who work for whoever pays them the most."
   cw_mercenary_fighters_tooltip:0 "Stability: §R-5%§!\nCan recruit $cw_mercenary_army_plural$."
-  cw_open_crime:0 "Criminal Speaches"
-  cw_open_crime_desc:0 "..."
+  cw_open_crime:0 "Infamous Criminals"
+  cw_open_crime_desc:0 "Several criminal figures are quite notorious, and openly speak about their 'acheivements.'"
   cw_open_crime_other_planets:0 "$cw_open_crime$"
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
   cw_mercenary_army_plural:0 "Mercenary Armies"
-  cw_mercenary_army_desc:0 "..."
+  cw_mercenary_army_desc:0 "A ragtag group who fights for one thing and one thing only: wealth."
 
 # Country
   NAME_cw_criminal_enterprise:0 "Criminal Enterprises"
 
 # Special Projects
   cw_smuggled_relic_project_1:0 "Survey Rumors on [Root.GetName]"
-  cw_smuggled_relic_project_1_desc:0 "..."
+  cw_smuggled_relic_project_1_DESC:0 "..."
   cw_smuggled_relic_project_2:0 "Retrieve Contraband"
-  cw_smuggled_relic_project_2_desc:0 "..."
+  cw_smuggled_relic_project_2_DESC:0 "..."
   cw_smuggled_relic_project_3:0 "Analyze Artifacts"
-  cw_smuggled_relic_project_3_desc:0 "..."
+  cw_smuggled_relic_project_3_DESC:0 "..."
 
 # Event Chains
   cw_smuggled_relic_chain_title:0 "Rumored Artifact"
