@@ -1,0 +1,50 @@
+on_post_government_changed = {
+	events = {
+		ascension_civics.10		# Add ascendant psionic to psionic pops
+		ascension_civics.11		# Remove ascendant psionic from pops
+		ascension_civics.52		# Add machine crusader trait to commanders and -200 opinion for organics hopefully
+		ascension_civics.200	# Setup variable for doomseeker shroud incursion
+	}
+}
+
+on_ship_destroyed_perp = {
+	events = {
+		ascension_civics.50		# On ship destroyed machine crusader traits.
+	}
+}
+
+#An army has been killed in ground combat
+on_army_killed_in_combat = {
+	events = {
+		ascension_civics.51		# On organic army destroyed machine crusader traits.
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+on_added_to_leader_pool = {
+	events = {
+		ascension_civics.100		# Additional traits from civics (machine crusader for bioform eliminator)
+	}
+}
+
+# A pop has finished purging
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_purged = {
+	events = {
+		ascension_civics.53		# Gain resources for bioform eliminators
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		ascension_civics.201		# Increase doomseeker variable to spawn avatars
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		ascension_civics.210		# Set random convergence location for 50% of avatars
+	}
+}
