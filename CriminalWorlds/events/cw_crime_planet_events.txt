@@ -419,3 +419,40 @@ planet_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = criminal_worlds.34
+	title = criminal_worlds.34.name
+	desc = criminal_worlds.34.desc
+	picture = GFX_evt_black_market
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+
+	option = {
+		name = criminal_worlds.34.a
+		tooltip = {
+			begin_event_chain = {
+				event_chain = cw_smuggled_relic_chain
+				target = root
+			}
+		}
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_1"
+			location = this
+			owner = root
+		}
+	}
+	option = {
+		name = criminal_worlds.34.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+		}
+	}
+}
