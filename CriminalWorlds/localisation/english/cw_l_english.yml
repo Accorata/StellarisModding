@@ -47,6 +47,15 @@
   cw_underground_slums_2_desc:0 "..."
   cw_dark_whispers:0 "Dark Whispers"
   cw_dark_whispers_desc:0 "All on the planet hears them. Some listen."
+  cw_mercenary_fighters:0 "Mercenary Fighters"
+  cw_mercenary_fighters_desc:0 "..."
+  cw_mercenary_fighters_tooltip:0 "Can recruit $cw_mercenary_army_plural$" #temp
+
+# Armies
+  cw_mercenary_army:0 "Mercenary Army"
+  cw_mercenary_army_plural:0 "Mercenary Armies"
+  cw_mercenary_army_desc:0 "..."
+  cw_mercenary_army_tooltip:0 "uh oh"
 
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"

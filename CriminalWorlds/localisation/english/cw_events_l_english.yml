@@ -19,7 +19,7 @@
   criminal_worlds.22.a:0 "Arrest them all!"
   criminal_worlds.22.b:0 "At least they're not harming anyone"
 # Criminal Fleet Appears
-  criminal_worlds.26.name:0 "Syndicate Fleet being constructed above [Root.GetName]"
+  criminal_worlds.26.name:0 "Syndicate Fleet constructed above [Root.GetName]"
   criminal_worlds.26.desc:0 "The rogue shipbuilders on [Root.GetName] have constructed their first batch of ships, that now occupy the airspace above the planet. At the moment, they remain passive in stance and action, but we are unsure of what may happen next.\n\nThey are at the moment only a small force, but as long as the operations on [Root.GetName] continue, who knows how large they'll get."
   criminal_worlds.26.a:0 "Concerning"
 # Underground Slums
@@ -27,6 +27,10 @@
 	criminal_worlds.30.desc:0 "..."
   criminal_worlds.31.name:0 "Underground Slums increase on [Root.GetName]"
 	criminal_worlds.31.desc:0 "..."
+# Mercenary Fighters
+  criminal_worlds.32.name:0 "Mercenary Fighters on [Root.GetName]"
+	criminal_worlds.32.desc:0 "..."
+  criminal_worlds.32.a:0 "Worrying"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

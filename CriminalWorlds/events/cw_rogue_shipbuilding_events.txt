@@ -1,6 +1,6 @@
 namespace = criminal_worlds
 
-@rogue_ship_progress_needed = 15
+@rogue_ship_progress_needed = 30
 
 # On monthly pulse
 country_event = {
@@ -50,16 +50,19 @@ country_event = {
 			# 	}
 			# 	variable = cw_rogue_shipbuilder_job_num
 			# }
-			owner = {
-				if = {
-					limit = {
-						has_modifier = cw_criminal_shipyards_2
-					}
+			
+			if = {
+				limit = {
+					has_modifier = cw_criminal_shipyards_2
+				}
+				owner = {
 					change_variable = {
 						which = cw_rogue_ship_progress
-						value = 1.5 #cw_rogue_shipbuilder_job_num
+						value = 2 #cw_rogue_shipbuilder_job_num
 					}
 				}
+			}
+			owner = {
 				change_variable = {
 					which = cw_rogue_ship_progress
 					value = 1 #cw_rogue_shipbuilder_job_num
@@ -89,19 +92,6 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = cw_criminal_fleet_on_@root
-				}
-			}
-			set_country_flag = cw_criminal_fleet_on_@root
-			root = {
-				planet_event = {
-					id = criminal_worlds.26
-				}
-			}
-		}
 		if = {
 			limit = {
 				NOT = {
@@ -147,29 +137,43 @@ country_event = {
 			}
 			save_event_target_as = criminal_fleet_spawn_planet
 		}
-		create_fleet = {
-			name = "NAME_Pirate_Fleet"
-			effect = {
-				set_owner = event_target:criminal_enterprise
+		if = {
+			limit = {
+				exists = event_target:criminal_fleet
+			}
+			event_target:criminal_fleet = {
 				create_pirate_ships_0 = yes
-				set_location = event_target:criminal_fleet_spawn_planet
 			}
 		}
-		# create_fleet = {
-		# 	name = "NAME_Shroud_Manifestation"			#"NAME_Corrupted_Avatar"
-		# 	settings = {
-		# 		spawn_debris = no
-		# 		is_boss = yes
-		# 	}
-		# 	effect = {
-		# 		set_owner = event_target:criminal_enterprise
-		# 		create_ship = {
-		# 			name = "NAME_Fragment"
-		# 			design = "NAME_Shroud_Manifestation"
-		# 		}
-		# 		set_location = event_target:criminal_fleet_spawn_planet
-		# 		set_fleet_stance = neutral
-		# 	}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:criminal_fleet
+				}
+			}
+			create_fleet = {
+				name = "NAME_Pirate_Fleet"
+				effect = {
+					set_owner = event_target:criminal_enterprise
+					create_pirate_ships_0 = yes
+					set_location = event_target:criminal_fleet_spawn_planet
+					save_global_event_target_as = criminal_fleet
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cw_criminal_fleet_on_@event_target:criminal_fleet_spawn_planet
+				}
+			}
+			set_country_flag = cw_criminal_fleet_on_@event_target:criminal_fleet_spawn_planet
+			event_target:criminal_fleet_spawn_planet = {
+				planet_event = {
+					id = criminal_worlds.26
+				}
+			}
+		}
 	}
 }
 

@@ -87,3 +87,11 @@ cw_dark_whispers = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_dead_god.dds"
 	icon_frame = 2
 }
+
+cw_mercenary_fighters = {
+	planet_stability_add = -5
+	custom_tooltip = cw_mercenary_fighters_tooltip
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds"
+	icon_frame = 2
+}
