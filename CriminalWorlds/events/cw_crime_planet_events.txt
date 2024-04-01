@@ -430,6 +430,13 @@ planet_event = {
 	location = root
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		owner = {
+			set_country_flag = cw_encountered_black_market_relic
+		}
+	}
 
 	option = {
 		name = criminal_worlds.34.a

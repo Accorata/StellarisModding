@@ -69,7 +69,7 @@ country_event = {
 				}
 			}
 			random_list = {
-				50 = {}
+				60 = {}
 				10 = {
 					modifier = {
 						factor = 0
@@ -219,6 +219,19 @@ country_event = {
 					}
 					planet_event = { 
 						id = criminal_worlds.33
+						days = 1
+						#random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						owner = {
+							has_country_flag = cw_encountered_black_market_relic
+						}
+					}
+					planet_event = { 
+						id = criminal_worlds.34
 						days = 1
 						#random = 300
 					}

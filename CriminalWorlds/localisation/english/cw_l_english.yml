@@ -68,6 +68,13 @@
   cw_smuggled_relic_project_2_name:0 "Retrieve Contraband"
   cw_smuggled_relic_project_2_desc:0 "..."
 
+# Event Chains
+  cw_smuggled_relic_chain_name:0 "Rumored Artifact"
+  cw_smuggled_relic_chain_desc:0 ""
+	cw_rumors_analyzed:0 "Rumors Analyzed"
+	cw_artifacts_retrieved:0 "Artifacts Retrieved"
+	cw_artifacts_studied:0 "Artifacts Studied"
+
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"
   leader_trait_criminal_relations_desc:0 "..."
