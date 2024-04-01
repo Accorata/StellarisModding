@@ -12,7 +12,7 @@ NOT achievement compatible ([i]Only UI mods that don't change features can be[/i
 
 [h2] Features [/h2]
 
-10 crime events (with varied changes based on government)
+13 crime events (with varied changes based on government)
 2 homelessness
 5 anomaly events ... 
 2 special projects,

@@ -467,7 +467,7 @@ planet_event = {
 	id = criminal_worlds.35
 	title = criminal_worlds.35.name
 	desc = criminal_worlds.35.desc
-	picture = GFX_evt_black_market
+	picture = GFX_evt_cover_blown
 	show_sound = event_alien_signal
 	location = root
 	event_chain = cw_smuggled_relic_chain
@@ -482,5 +482,66 @@ planet_event = {
 		}
 	}
 }
+
+planet_event = {
+	id = criminal_worlds.36
+	title = criminal_worlds.36.name
+	desc = criminal_worlds.36.desc
+	picture = GFX_evt_ancient_artifact
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+
+	option = {
+		name = criminal_worlds.36.a
+		owner = {
+			add_resource = { 
+				minor_artifacts = 20
+			}
+		}
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_3"
+			location = this
+			owner = root
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.37
+	title = criminal_worlds.37.name
+	desc = criminal_worlds.37.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+
+	option = {
+		name = criminal_worlds.37.a
+		end_event_chain = cw_smuggled_relic_chain
+		# relic + analyze artifact tech
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.38
+	title = criminal_worlds.38.name
+	desc = criminal_worlds.38.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+
+	option = {
+		name = criminal_worlds.37.a
+		end_event_chain = cw_smuggled_relic_chain
+		# precursor insight + analyze artifact tech
+	}
+}
+
+
 
 # starbase

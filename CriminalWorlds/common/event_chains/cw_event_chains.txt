@@ -1,15 +1,15 @@
 cw_smuggled_relic_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	picture = GFX_evt_black_market
-	counter = {
-		cw_rumors_analyzed = {
-			max = 1
-		}
-		cw_artifacts_retrieved = {
-			max = 1
-		}
-		cw_artifacts_studied = {
-			max = 1
-		}
-	}
+	# counter = {
+	# 	cw_rumors_analyzed = {
+	# 		max = 1
+	# 	}
+	# 	cw_artifacts_retrieved = {
+	# 		max = 1
+	# 	}
+	# 	cw_artifacts_studied = {
+	# 		max = 1
+	# 	}
+	# }
 }
