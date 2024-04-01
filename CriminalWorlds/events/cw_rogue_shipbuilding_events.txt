@@ -98,27 +98,27 @@ country_event = {
 					exists = event_target:criminal_enterprise
 				}
 			}
-			# create_country = {
-			# 	name = "NAME_Creatures_of_the_Shroud"
-			# 	type = shroud_spirits
-			# 	flag = {
-			# 		icon = {
-			# 			category = "special"
-			# 			file = "the_shroud.dds"
-			# 		}
-			# 		background = {
-			# 			category = "backgrounds"
-			# 			file = "00_solid.dds"
-			# 		}
-			# 		colors = {
-			# 			"dark_purple"
-			# 			"black"
-			# 			"null"
-			# 			"null"
-			# 		}
-			# 	}
-			# }
-			create_normal_pirate_country = yes
+			create_country = {
+				name = "NAME_cw_criminal_enterprise"
+				type = shroud_spirits
+				flag = {
+					icon = {
+						category = "special"
+						file = "the_shroud.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"dark_purple"
+						"black"
+						"null"
+						"null"
+					}
+				}
+			}
+			# create_normal_pirate_country = yes
 			last_created_country = {
 				establish_communications_no_message = root
 				save_global_event_target_as = criminal_enterprise

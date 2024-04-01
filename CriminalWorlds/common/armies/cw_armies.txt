@@ -21,20 +21,14 @@ cw_mercenary_army = {
 	}
 
 	potential = {
-		custom_tooltip = {
-			text = cw_mercenary_army_tooltip
-			planet = {
-				has_modifier = cw_mercenary_fighters
-			}
+		planet = {
+			has_modifier = cw_mercenary_fighters
 		}
 	}
 
 	allow = {
-		custom_tooltip = {
-			text = cw_mercenary_army_tooltip
-			planet = {
-				has_modifier = cw_mercenary_fighters
-			}
+		planet = {
+			has_modifier = cw_mercenary_fighters
 		}
 	}
 }
