@@ -91,7 +91,23 @@ cw_dark_whispers = {
 cw_mercenary_fighters = {
 	planet_stability_add = -5
 	custom_tooltip = cw_mercenary_fighters_tooltip
+	show_only_custom_tooltip = no
 
-	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds" #change
 	icon_frame = 2
+}
+
+cw_open_crime = {
+	job_criminal_add = 1
+	apply_modifier_to_other_planets = cw_open_crime_other_planets
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds" #change
+	icon_frame = 3
+}
+
+cw_open_crime_other_planets = {
+	planet_crime_add = 5
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds" #change
+	icon_frame = 3
 }

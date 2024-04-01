@@ -31,6 +31,10 @@
   criminal_worlds.32.name:0 "Mercenary Fighters on [Root.GetName]"
 	criminal_worlds.32.desc:0 "..."
   criminal_worlds.32.a:0 "Worrying"
+# Criminal Speaches
+  criminal_worlds.33.name:0 " on [Root.GetName]"
+	criminal_worlds.33.desc:0 "..."
+  criminal_worlds.33.a:0 "This needs to stop."
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

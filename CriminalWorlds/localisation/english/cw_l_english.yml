@@ -50,6 +50,9 @@
   cw_mercenary_fighters:0 "Mercenary Fighters"
   cw_mercenary_fighters_desc:0 "..."
   cw_mercenary_fighters_tooltip:0 "Stability: §R-5%§!\nCan recruit $cw_mercenary_army_plural$."
+  cw_open_crime:0 "Criminal Speaches"
+  cw_open_crime_desc:0 "..."
+  cw_open_crime_other_planets:0 "$cw_open_crime$"
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
