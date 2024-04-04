@@ -52,6 +52,7 @@
   criminal_worlds.38.name:0 "Artifacts Analyzed"
 	criminal_worlds.38.desc:0 "..."
   criminal_worlds.38.a:0 "$criminal_worlds.37.a$"
+  criminal_worlds.38.b:0 "Unfortunately Redundant"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

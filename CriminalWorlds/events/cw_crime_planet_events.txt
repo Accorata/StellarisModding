@@ -520,8 +520,12 @@ planet_event = {
 
 	option = {
 		name = criminal_worlds.37.a
-		end_event_chain = cw_smuggled_relic_chain # doesn't end
-		# relic + analyze artifact tech 
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain # maybe this way
+			add_research_option = tech_arcane_deciphering
+		}
+		 # doesn't end
+		# relic
 	}
 }
 
@@ -536,9 +540,121 @@ planet_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = criminal_worlds.37.a
-		end_event_chain = cw_smuggled_relic_chain # doesn't end
-		# precursor insight + analyze artifact tech
+		trigger = {
+			owner = {
+				OR = {
+					AND = {
+						has_event_chain = "vultaum_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = vultaum_chain
+								counter = vultaum_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "yuht_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = yuht_chain
+								counter = yuht_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "first_league_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = first_league_chain
+								counter = first_league_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "irassian_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = irassian_chain
+								counter = irassian_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "cybrex_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = cybrex_chain
+								counter = cybrex_artifacts
+							}
+						}
+					}
+				}
+			}
+		}
+		name = criminal_worlds.38.a
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain # maybe this way
+			add_research_option = tech_arcane_deciphering
+			collector_surrenders_artifact = yes
+		}		
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOR = {
+					AND = {
+						has_event_chain = "vultaum_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = vultaum_chain
+								counter = vultaum_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "yuht_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = yuht_chain
+								counter = yuht_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "first_league_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = first_league_chain
+								counter = first_league_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "irassian_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = irassian_chain
+								counter = irassian_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "cybrex_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = cybrex_chain
+								counter = cybrex_artifacts
+							}
+						}
+					}
+				}
+			}
+		}
+		name = criminal_worlds.38.b
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+			add_research_option = tech_arcane_deciphering
+		}
 	}
 }
 
