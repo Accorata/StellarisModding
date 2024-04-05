@@ -100,18 +100,18 @@ country_event = {
 			}
 			create_country = {
 				name = "NAME_cw_criminal_enterprise"
-				type = shroud_spirits
+				type = pirate
 				flag = {
 					icon = {
 						category = "special"
-						file = "the_shroud.dds"
+						file = "the_empire.dds"
 					}
-					background = {
+					background= {
 						category = "backgrounds"
 						file = "00_solid.dds"
 					}
 					colors = {
-						"dark_purple"
+						"black"
 						"black"
 						"null"
 						"null"
