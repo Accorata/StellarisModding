@@ -17,8 +17,8 @@ NOT achievement compatible ([i]Only UI mods that don't change features can be[/i
 5 anomaly events ... 
 2 special projects,
 
-17 modifiers
-1 army, 4 jobs
+18 modifiers
+1 army, 5 jobs
 
 [h2] Contact [/h2]
 

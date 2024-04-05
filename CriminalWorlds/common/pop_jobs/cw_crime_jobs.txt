@@ -22,7 +22,7 @@ cw_bribed_enforcer = {
 	}
 
 	resources = {
-		category = planet_jobs #planet_cw_bribed
+		category = planet_enforcers
 		produces = {
 			energy = 6
 		}
@@ -44,7 +44,6 @@ cw_bribed_enforcer = {
 	planet_modifier = {
 		planet_crime_add = 5
 		planet_stability_add = 1
-		branch_office_criminal_syndicate_value_add = 7.5
 	}
 
 	triggered_planet_modifier = {
@@ -85,7 +84,7 @@ cw_bribed_politician = {
 	possible_precalc = can_fill_ruler_job
 
 	resources = {
-		category = planet_jobs #planet_cw_bribed
+		category = planet_politicians
 		produces = {
 			energy = 6
 		}
@@ -114,6 +113,57 @@ cw_bribed_politician = {
 
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+
+	weight = {
+		weight = @criminal_job_weight
+	}
+}
+
+cw_bribed_executive = {
+	category = criminal
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	can_set_priority = no
+	contributes_to_diplo_weight = no
+	ignores_favorite = yes
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_executives
+		produces = {
+			energy = 6
+		}
+		upkeep = {
+			consumer_goods = 2
+			energy = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 4
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 3
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	weight = {

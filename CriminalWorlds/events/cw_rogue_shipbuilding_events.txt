@@ -154,21 +154,24 @@ country_event = {
 					exists = event_target:criminal_fleet
 				}
 			}
-			create_leader = {
-				class = commander
-				species = owner_main_species
-				name = random
-				skill = 2
-				leader_age_min = 25
-				leader_age_max = 45
-				traits = {
-					0 = leader_trait_corrupt
-				}
-			}
+			# create_leader = {
+			# 	class = commander
+			# 	species = owner_main_species
+			# 	name = random
+			# 	skill = 2
+			# 	leader_age_min = 25
+			# 	leader_age_max = 45
+			# 	traits = {
+			# 		0 = leader_trait_corrupt
+			# 	}
+			# }
+			# last_created_leader = {
+			# 	save_event_target_as = criminal_fleet_leader
+			# }
 			create_fleet = {
 				name = "NAME_Pirate_Fleet"
 				effect = {
-					assign_leader = last_created_leader
+					# assign_leader = event_target:criminal_fleet_leader
 					set_owner = event_target:criminal_enterprise
 					create_pirate_ships_0 = yes
 					set_location = event_target:criminal_fleet_spawn_planet
