@@ -179,7 +179,6 @@ cw_underworlder = {
 	is_capped_by_modifier = yes
 	can_set_priority = no
 	clothes_texture_index = 2
-	icon = criminal
 	building_icon = building_residence
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes

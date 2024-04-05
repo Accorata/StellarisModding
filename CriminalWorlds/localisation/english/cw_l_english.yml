@@ -1,28 +1,28 @@
 ﻿l_english:
 # Jobs
   cw_bribed_enforcer:0 "Bribed Enforcer"
-  cw_bribed_enforcer_desc:0 "These enforcers have fallen into the pockets of the criminal organizations they were supposed to fight."
+  job_cw_bribed_enforcer_desc:0 "These enforcers have fallen into the pockets of the criminal organizations they were supposed to fight."
   job_cw_bribed_enforcer:0 "Bribed Enforcer"
   job_cw_bribed_enforcer_plural:0 "Bribed Enforcers"
   mod_job_cw_bribed_enforcer_add:0 "Bribed Enforcer Jobs"
   cw_bribed_politician:0 "Bribed Politician"
-  cw_bribed_politician_desc:0 "These politicians no longer even pretend to care about the people. All that matters to them is personal wealth."
+  job_cw_bribed_politician_desc:0 "These politicians no longer even pretend to care about the people. All that matters to them is personal wealth."
   job_cw_bribed_politician:0 "Bribed Politician"
   job_cw_bribed_politician_plural:0 "Bribed Politicians"
   mod_job_cw_bribed_politician_add:0 "Bribed Politician Jobs"
   cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
-  cw_rogue_shipbuilder_desc:0 "On the outskirts of cities, these pops are building the weapons of crime."
+  job_cw_rogue_shipbuilder_desc:0 "On the outskirts of cities, these pops are building the weapons of crime."
   job_cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
   job_cw_rogue_shipbuilder_plural:0 "Rogue Shipbuilders"
   mod_job_cw_rogue_shipbuilder_add:0 "Rogue Shipbuilder Jobs"
   cw_underworlder:0 "Underdweller"
-  cw_underworlder_desc:0 "These pops live below the depths of society, beyond the scope of laws and regulation. Here, anything is possible."
+  job_cw_underworlder_desc:0 "These pops live below the depths of society, beyond the scope of laws and regulation. Here, anything is possible."
   job_cw_underworlder:0 "Underdweller"
   job_cw_underworlder_plural:0 "Underdwellers"
   mod_job_cw_underworlder_add:0 "Underdweller Jobs"
 
-  planet_cw_bribed:0 "Bribed Officials"
-  planet_cw_shipbuilders:0 "Shipbuilder Jobs"
+  # planet_cw_bribed:0 "Bribed Officials"
+  # planet_cw_shipbuilders:0 "Shipbuilder Jobs"
 
 # Planet Modifiers
   cw_corruption_1:0 "Corruption"
@@ -76,6 +76,10 @@
 	# cw_rumors_analyzed:0 "Rumors Analyzed"
 	# cw_artifacts_retrieved:0 "Artifacts Retrieved"
 	# cw_artifacts_studied:0 "Artifacts Studied"
+
+# Relics
+  r_cw_medallion:0 "'s Medallion"
+  r_cw_medallion_desc:0 "An ancient artifact of unknown origin, this medallion depicts a king above subjects projecting an aura that pulls the loyalty of others "
 
 # Leader Traits
   leader_trait_criminal_relations:0 "Criminal Ties"

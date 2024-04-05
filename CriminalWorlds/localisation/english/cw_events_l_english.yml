@@ -24,9 +24,9 @@
   criminal_worlds.26.a:0 "Concerning"
 # Underground Slums
   criminal_worlds.30.name:0 "Underground Slums appear on [Root.GetName]"
-	criminal_worlds.30.desc:0 "..."
+	criminal_worlds.30.desc:0 "The housing crisis on [Root.GetName] have forced some of our population belowground, into sewars and abandoned tunnels. This should lessen the problems of the homelessness, however these areas are beyond the reach of society or enforcement, and will likely remain a lawless zone."
   criminal_worlds.31.name:0 "Underground Slums increase on [Root.GetName]"
-	criminal_worlds.31.desc:0 "..."
+	criminal_worlds.31.desc:0 "The underground slums have grown in popularity as more and more people turn to the depths for housing. They shouldn't pose too large of a problem, however it is unfortunate to lose more and more promising individuals who might otherwise bring great positive impact to society."
 # Mercenary Fighters
   criminal_worlds.32.name:0 "Mercenary Fighters on [Root.GetName]"
 	criminal_worlds.32.desc:0 "..."
