@@ -9,7 +9,7 @@
   criminal_worlds.13.name:0 "$criminal_worlds.12.name$"
   criminal_worlds.13.desc:0 "$criminal_worlds.12.desc$"
 # Illegal Freeports
-  criminal_worlds.20.name:0 "Illegal Freeports on [Root.GetName]"
+  criminal_worlds.20.name:0 "Illegal Freeports appear on [Root.GetName]"
   criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
 # Criminal Shipyards
   criminal_worlds.21.name:0 "$cw_criminal_shipyards$ on [Root.GetName]"
@@ -54,7 +54,7 @@
   criminal_worlds.38.a:0 "$criminal_worlds.37.a$"
   criminal_worlds.38.b:0 "Unfortunately Redundant"
 # Criminal Worlds
-  criminal_worlds.40.name:0 "Criminal Influence on [Root.GetName]"
+  criminal_worlds.40.name:0 "Criminal Influence over [Root.GetName]"
 	criminal_worlds.40.desc:0 "Criminal organizations on [Root.GetName] have begun to consolidate their operations, wrestling planet control further away from our control. Now more and more planetside businesses lie within their sphere, and [Root.GetName] has begun to operate somewhat independently."
   criminal_worlds.40.a:0 "Unfortunate"
   criminal_worlds.41.name:0 "Criminals Increase on [Root.GetName]"
@@ -63,10 +63,10 @@
   criminal_worlds.42.name:0 "Criminal Consolidation on [Root.GetName]"
 	criminal_worlds.42.desc:0 "The criminal organizations are now united under a single syndicate that has continued to wrestle power away from our authority. At this point, the criminal networks are so entrenched in life on [Root.GetName] that their removal would disrupt the entire flow of society.\n\nWe can only hope that enforcers can prevent the situation from getting any worse. However, judging by past action, that future does not seem likely."
   criminal_worlds.42.a:0 "Terrible"
-  criminal_worlds.43.name:0 "Criminal Control on [Root.GetName]"
+  criminal_worlds.43.name:0 "Criminal Control of [Root.GetName]"
 	criminal_worlds.43.desc:0 "Loyalties are gone. To call [Root.GetName] a planet of our nation would make others laugh. Rather, [Root.GetName] is a place of the syndicate where crime looms and shady deals take place. Local industry swears allegiance to the criminals, claiming that they now take care of [Root.GetName] far more than we ever had or ever will."
   criminal_worlds.43.a:0 "Terrible"
-  criminal_worlds.44.name:0 "The Criminal World of [Root.GetName]"
+  criminal_worlds.44.name:0 "[Root.GetName] is a Criminal World"
 	criminal_worlds.44.desc:0 "[Root.GetName] has fallen into the hands of criminals. National sovereignity is all but unheard of and [Root.GetName] shows only its allegiance in name.\n\nThe word 'criminal' has lost all meaning there. Now there is no distinction between those who hope for a better future and those who hope for quick reward: all life is bound up, one way or another, in the great syndicate that holds power here."
   criminal_worlds.44.a:0 "Terrible"
 # Criminal Stockpile Anomoly

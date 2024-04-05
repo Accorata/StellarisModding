@@ -99,6 +99,8 @@ cw_mercenary_fighters = {
 
 cw_open_crime = {
 	job_criminal_add = 1
+	custom_tooltip = cw_open_crime_tooltip
+	show_only_custom_tooltip = no
 	apply_modifier_to_other_planets = cw_open_crime_other_planets
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds" #change
