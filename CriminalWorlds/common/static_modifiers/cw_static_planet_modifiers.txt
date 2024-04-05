@@ -144,3 +144,25 @@ cw_criminal_world_3 = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
+
+cw_criminal_world_4 = {
+	planet_jobs_produces_mult = -0.5
+	planet_jobs_upkeep_mult = -0.5
+	trade_value_mult = -0.5
+	planet_pops_upkeep_mult = -0.5
+	species_empire_size_mult = -0.5
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 3
+}
+
+cw_criminal_world_5 = {
+	planet_jobs_produces_mult = -0.75
+	planet_jobs_upkeep_mult = -0.75
+	trade_value_mult = -0.75
+	planet_pops_upkeep_mult = -0.75
+	species_empire_size_mult = -0.75
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 3
+}

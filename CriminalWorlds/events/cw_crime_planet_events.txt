@@ -23,10 +23,6 @@ planet_event = {
 			modifier = cw_corruption_1 
 			days = 3600 
 		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
-		}
 	}
 
 	option = {
@@ -63,10 +59,6 @@ planet_event = {
 		add_modifier = { 
 			modifier = cw_corruption_2 
 			days = 3600 
-		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
 		}
 	}
 
@@ -106,10 +98,6 @@ planet_event = {
 			modifier = cw_corruption_3 
 			days = 3600 
 		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
-		}
 	}
 
 	option = {
@@ -148,10 +136,6 @@ planet_event = {
 			modifier = cw_corruption_3_megacorp 
 			days = 3600 
 		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
-		}
 	}
 
 	option = {
@@ -189,10 +173,6 @@ planet_event = {
 			modifier = cw_illegal_freeports 
 			days = 3600 
 		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
-		}
 	}
 
 	option = {
@@ -228,10 +208,6 @@ planet_event = {
 		add_modifier = { 
 			modifier = cw_criminal_shipyards 
 			days = 3600 
-		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
 		}
 	}
 
@@ -269,10 +245,6 @@ planet_event = {
 		add_modifier = { 
 			modifier = cw_criminal_shipyards_2
 			days = 3600 
-		}
-		set_timed_planet_flag = {
-			flag = planet_crime_flag
-			days = 3600
 		}
 	}
 
@@ -378,6 +350,7 @@ planet_event = {
 	immediate = {
 		add_modifier = { 
 			modifier = cw_mercenary_fighters 
+			days = 3600 
 		}
 	}
 
@@ -386,6 +359,7 @@ planet_event = {
 		tooltip = {
 			add_modifier = { 
 				modifier = cw_mercenary_fighters 
+				days = 3600 
 			}
 		}
 	}
@@ -407,6 +381,7 @@ planet_event = {
 	immediate = {
 		add_modifier = { 
 			modifier = cw_open_crime 
+			days = 3600 
 		}
 	}
 
@@ -415,6 +390,7 @@ planet_event = {
 		tooltip = {
 			add_modifier = { 
 				modifier = cw_open_crime 
+				days = 3600 
 			}
 		}
 	}
@@ -674,6 +650,7 @@ planet_event = {
 	immediate = {
 		add_modifier = { 
 			modifier = cw_criminal_world_1
+			days = 3600 
 		}
 	}
 
@@ -682,6 +659,7 @@ planet_event = {
 		tooltip = {
 			add_modifier = { 
 				modifier = cw_criminal_world_1 
+				days = 3600 
 			}
 		}
 	}
@@ -708,6 +686,7 @@ planet_event = {
 		remove_modifier = cw_criminal_world_1
 		add_modifier = { 
 			modifier = cw_criminal_world_2 
+			days = 3600
 		}
 	}
 
@@ -717,6 +696,7 @@ planet_event = {
 			remove_modifier = cw_criminal_world_1
 			add_modifier = { 
 				modifier = cw_criminal_world_2 
+				days = 3600
 			}
 		}
 	}
@@ -752,6 +732,76 @@ planet_event = {
 			remove_modifier = cw_criminal_world_2
 			add_modifier = { 
 				modifier = cw_criminal_world_3 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.43
+	title = criminal_worlds.43.name
+	desc = criminal_worlds.43.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_criminal_world_3
+	}
+
+	immediate = {
+		remove_modifier = cw_criminal_world_3
+		add_modifier = { 
+			modifier = cw_criminal_world_4 
+		}
+	}
+
+	option = {
+		name = criminal_worlds.43.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_3
+			add_modifier = { 
+				modifier = cw_criminal_world_4
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.44
+	title = criminal_worlds.44.name
+	desc = criminal_worlds.44.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_criminal_world_4
+	}
+
+	immediate = {
+		remove_modifier = cw_criminal_world_4
+		add_modifier = { 
+			modifier = cw_criminal_world_5
+		}
+	}
+
+	option = {
+		name = criminal_worlds.44.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_4
+			add_modifier = { 
+				modifier = cw_criminal_world_5
 			}
 		}
 	}

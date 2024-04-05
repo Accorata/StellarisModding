@@ -59,6 +59,10 @@
   cw_criminal_world_2_desc:0 "..."
   cw_criminal_world_3:0 "Criminal World III"
   cw_criminal_world_3_desc:0 "..."
+  cw_criminal_world_4:0 "Criminal World IV"
+  cw_criminal_world_4_desc:0 "..."
+  cw_criminal_world_5:0 "Criminal World V"
+  cw_criminal_world_5_desc:0 "..."
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
