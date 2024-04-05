@@ -53,6 +53,12 @@
   cw_open_crime:0 "Infamous Criminals"
   cw_open_crime_desc:0 "Several criminal figures are quite notorious, and openly speak about their 'acheivements.'"
   cw_open_crime_other_planets:0 "$cw_open_crime$"
+  cw_criminal_world_1:0 "Criminal World I"
+  cw_criminal_world_1_desc:0 "..."
+  cw_criminal_world_2:0 "Criminal World II"
+  cw_criminal_world_2_desc:0 "..."
+  cw_criminal_world_3:0 "Criminal World III"
+  cw_criminal_world_3_desc:0 "..."
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"

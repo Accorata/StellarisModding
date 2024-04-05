@@ -236,6 +236,87 @@ country_event = {
 						#random = 300
 					}
 				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_world_1
+					}
+					modifier = {
+						factor = 3
+						has_modifier = mob_rule
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3_megacorp
+					}
+					planet_event = { 
+						id = criminal_worlds.40
+						days = 1
+						#random = 300
+					}
+				}
+				15 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_world_2
+					}
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_criminal_world
+						}
+					}
+					modifier = {
+						factor = 3
+						has_modifier = mob_rule
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3_megacorp
+					}
+					planet_event = { 
+						id = criminal_worlds.41
+						days = 1
+						#random = 300
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_world_3
+					}
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_criminal_world_2
+						}
+					}
+					modifier = {
+						factor = 3
+						has_modifier = mob_rule
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3_megacorp
+					}
+					planet_event = { 
+						id = criminal_worlds.42
+						days = 1
+						#random = 300
+					}
+				}
 			}
 		}
 	}

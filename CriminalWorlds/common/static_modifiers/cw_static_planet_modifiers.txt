@@ -111,3 +111,36 @@ cw_open_crime_other_planets = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_separatist_supporter.dds" #change
 	icon_frame = 3
 }
+
+cw_criminal_world_1 = {
+	planet_jobs_produces_mult = -0.10
+	planet_jobs_upkeep_mult = -0.1
+	trade_value_mult = -0.1
+	planet_pops_upkeep_mult = -0.1
+	species_empire_size_mult = -0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 3
+}
+
+cw_criminal_world_2 = {
+	planet_jobs_produces_mult = -0.15
+	planet_jobs_upkeep_mult = -0.15
+	trade_value_mult = -0.15
+	planet_pops_upkeep_mult = -0.15
+	species_empire_size_mult = -0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 3
+}
+
+cw_criminal_world_3 = {
+	planet_jobs_produces_mult = -0.25
+	planet_jobs_upkeep_mult = -0.25
+	trade_value_mult = -0.25
+	planet_pops_upkeep_mult = -0.25
+	species_empire_size_mult = -0.25
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
+	icon_frame = 3
+}

@@ -53,6 +53,16 @@
 	criminal_worlds.38.desc:0 "..."
   criminal_worlds.38.a:0 "$criminal_worlds.37.a$"
   criminal_worlds.38.b:0 "Unfortunately Redundant"
+# Criminal Worlds
+  criminal_worlds.40.name:0 "Criminal Control on [Root.GetName]"
+	criminal_worlds.40.desc:0 "Criminal organizations on [Root.GetName] have begun to consolidate their operations, wrestling planet control further away from our control. Now more and more planetside businesses lie within their sphere, and [Root.GetName] has begun to operate somewhat independently."
+  criminal_worlds.40.a:0 "Unfortunate"
+  criminal_worlds.41.name:0 "Criminal Increase on [Root.GetName]"
+	criminal_worlds.41.desc:0 "..."
+  criminal_worlds.41.a:0 "Unfortunate"
+  criminal_worlds.42.name:0 "Criminal Consolidation on [Root.GetName]"
+	criminal_worlds.42.desc:0 "..."
+  criminal_worlds.42.a:0 "Unfortunate"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."

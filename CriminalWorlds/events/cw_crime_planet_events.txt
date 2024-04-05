@@ -658,6 +658,103 @@ planet_event = {
 	}
 }
 
+planet_event = {
+	id = criminal_worlds.40
+	title = criminal_worlds.40.name
+	desc = criminal_worlds.40.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		add_modifier = { 
+			modifier = cw_criminal_world_1
+		}
+	}
+
+	option = {
+		name = criminal_worlds.40.a
+		tooltip = {
+			add_modifier = { 
+				modifier = cw_criminal_world_1 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.41
+	title = criminal_worlds.41.name
+	desc = criminal_worlds.41.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_criminal_world_1
+	}
+
+	immediate = {
+		remove_modifier = cw_criminal_world_1
+		add_modifier = { 
+			modifier = cw_criminal_world_2 
+		}
+	}
+
+	option = {
+		name = criminal_worlds.41.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_1
+			add_modifier = { 
+				modifier = cw_criminal_world_2 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.42
+	title = criminal_worlds.42.name
+	desc = criminal_worlds.42.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_criminal_world_2
+	}
+
+	immediate = {
+		remove_modifier = cw_criminal_world_2
+		add_modifier = { 
+			modifier = cw_criminal_world_3 
+		}
+	}
+
+	option = {
+		name = criminal_worlds.42.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_2
+			add_modifier = { 
+				modifier = cw_criminal_world_3 
+			}
+		}
+	}
+}
 
 # starbase
