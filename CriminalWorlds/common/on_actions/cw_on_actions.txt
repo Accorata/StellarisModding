@@ -2,6 +2,7 @@
 on_yearly_pulse = {
 	events = {
 		criminal_worlds.1		# Criminal Worlds Crime Events
+		criminal_worlds.46		# Checks for freedom fighters
 	}
 }
 

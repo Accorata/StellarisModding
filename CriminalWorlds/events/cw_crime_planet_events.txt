@@ -807,4 +807,100 @@ planet_event = {
 	}
 }
 
+planet_event = {
+	id = criminal_worlds.45
+	title = criminal_worlds.45.name
+	desc = criminal_worlds.45.desc
+	picture = GFX_evt_broken_shackles
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	immediate = {
+		add_modifier = { 
+			modifier = cw_freedom_fighters
+			days = 3600 
+		}
+	}
+
+	option = {
+		name = criminal_worlds.45.a
+		tooltip = {
+			add_modifier = { 
+				modifier = cw_freedom_fighters 
+				days = 3600 
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.47
+	title = criminal_worlds.47.name
+	desc = criminal_worlds.47.desc
+	picture = GFX_evt_broken_shackles
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+
+	trigger = {
+		has_modifier = cw_freedom_fighters
+		NOT = {
+			count_owned_pop = {
+				limit = {
+					is_enslaved = yes
+					is_sapient = yes
+					pop_has_happiness = yes
+				}
+				count = 0
+			}
+		}
+	}
+
+	immediate = {
+		random_owned_pop = {
+			limit = {
+				is_enslaved = yes
+				is_sapient = yes
+				pop_has_happiness = yes
+			}
+			save_event_target_as = escaped_pop
+		}
+		random_playable_country = {
+			limit = {
+				is_homicidal = no
+				is_gestalt = no
+			}
+			save_event_target_as = target_country
+		}
+		event_target:target_country = {
+			random_owned_planet = {
+				save_event_target_as = target_planet
+			}
+		}
+		resettle_pop = {
+			pop = event_target:escaped_pop
+			planet = event_target:target_planet
+		}
+	}
+
+	option = {
+		name = criminal_worlds.47.a
+		tooltip = {
+			resettle_pop = {
+				pop = event_target:escaped_pop
+				planet = event_target:target_planet
+			}
+		}
+	}
+}
+
 # starbase

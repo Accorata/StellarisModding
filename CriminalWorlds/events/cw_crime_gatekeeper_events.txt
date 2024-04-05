@@ -69,7 +69,7 @@ country_event = {
 				}
 			}
 			random_list = {
-				60 = {}
+				70 = {}
 				10 = {
 					modifier = {
 						factor = 0
@@ -350,6 +350,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						has_modifier = cw_criminal_world_5
+					}
 					modifier = {
 						factor = 0
 						NOT = {
@@ -370,6 +371,29 @@ country_event = {
 					}
 					planet_event = { 
 						id = criminal_worlds.44
+						days = 1
+						#random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_freedom_fighters
+					}
+					modifier = {
+						factor = 2
+						owner = {
+							has_ethic = ethic_egalitarian
+						}
+					}
+					modifier = {
+						factor = 5
+						owner = {
+							has_ethic = ethic_fanatic_egalitarian
+						}
+					}
+					planet_event = { 
+						id = criminal_worlds.45
 						days = 1
 						#random = 300
 					}
@@ -450,5 +474,35 @@ planet_event = {
 
 }
 
+event = {
+	id = criminal_worlds.46
+	hide_window = yes
+	is_triggered_only = yes
 
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+				any_owned_planet = {
+					has_modifier = cw_freedom_fighters
+				}
+			}
+			random_owned_planet = {
+				limit = {
+					has_modifier = cw_freedom_fighters
+				}
+				random_list = {
+					40 = {}
+					10 = {
+						planet_event = { 
+							id = criminal_worlds.47
+							days = 1
+							#random = 300
+						}
+					}
+				}
+			}
+		}
+	}
+}
 

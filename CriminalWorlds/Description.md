@@ -12,13 +12,15 @@ NOT achievement compatible ([i]Only UI mods that don't change features can be[/i
 
 [h2] Features [/h2]
 
-18 crime events (with varied changes based on government)
+20 crime events (with varied changes based on government)
 2 homelessness
 5 anomaly events ... 
-2 special projects,
+3 special projects, 1 relic
 
-18 modifiers
-1 army, 5 jobs
+Prividing an array of new planet modifiers, new jobs, new armies, and a new relic.
+
+19 modifiers
+1 army, 6 jobs
 
 [h2] Contact [/h2]
 

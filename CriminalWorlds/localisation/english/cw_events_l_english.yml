@@ -69,6 +69,13 @@
   criminal_worlds.44.name:0 "[Root.GetName] is a Criminal World"
 	criminal_worlds.44.desc:0 "[Root.GetName] has fallen into the hands of criminals. National sovereignity is all but unheard of and [Root.GetName] shows only its allegiance in name.\n\nThe word 'criminal' has lost all meaning there. Now there is no distinction between those who hope for a better future and those who hope for quick reward: all life is bound up, one way or another, in the great syndicate that holds power here."
   criminal_worlds.44.a:0 "Terrible"
+# Freedom fighters
+  criminal_worlds.45.name:0 "Freedom Fighters on [Root.GetName]"
+	criminal_worlds.45.desc:0 "..."
+  criminal_worlds.45.a:0 "Unfortunate"
+  criminal_worlds.47.name:0 "Slaves escape from [Root.GetName]"
+	criminal_worlds.47.desc:0 "The local rebel freedom fighters have finally managed to achieve something of note: they aided some slaves in their escape. \n..."
+  criminal_worlds.47.a:0 "Unfortunate"
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
