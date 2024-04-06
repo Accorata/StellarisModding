@@ -381,6 +381,19 @@ country_event = {
 						has_modifier = cw_freedom_fighters
 					}
 					modifier = {
+						factor = 0
+						NOT = {
+							count_owned_pop = {
+								limit = {
+									is_enslaved = yes
+									is_sapient = yes
+									pop_has_happiness = yes
+								}
+								count = 0
+							}
+						}
+					}
+					modifier = {
 						factor = 2
 						owner = {
 							has_ethic = ethic_egalitarian

@@ -5,9 +5,8 @@ special_project = {
 	picture = GFX_evt_black_market
 	event_chain = cw_smuggled_relic_chain
 	location = yes
-
 	event_scope = planet_event
-# not functioning - also not part of greater event chain...
+
 	requirements = {
 		shipclass_science_ship = 1
 		leader = scientist
@@ -22,9 +21,9 @@ special_project = {
 
 special_project = {
 	key = "cw_smuggled_relic_project_2"
-	cost = 0
-	days_to_research = 80
-	tech_department = society_technology
+	cost = 1000
+	# days_to_research = 80
+	tech_department = engineering_technology
 	picture = GFX_evt_victorious_army
 	event_chain = cw_smuggled_relic_chain
 	location = yes
@@ -32,9 +31,9 @@ special_project = {
 
 	event_scope = planet_event
 
-	requirements = {
-		shipclass_transport = 2
-	}
+	# requirements = {
+	# 	shipclass_transport = 2
+	# }
 
 	on_success = {
 		planet_event = {

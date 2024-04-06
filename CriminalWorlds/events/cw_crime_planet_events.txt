@@ -894,12 +894,7 @@ planet_event = {
 
 	option = {
 		name = criminal_worlds.47.a
-		tooltip = {
-			resettle_pop = {
-				pop = event_target:escaped_pop
-				planet = event_target:target_planet
-			}
-		}
+		custom_tooltip = criminal_worlds.47.a.tooltip
 	}
 }
 

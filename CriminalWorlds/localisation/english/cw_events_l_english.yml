@@ -74,8 +74,9 @@
 	criminal_worlds.45.desc:0 "..."
   criminal_worlds.45.a:0 "Unfortunate"
   criminal_worlds.47.name:0 "Slaves escape from [Root.GetName]"
-	criminal_worlds.47.desc:0 "The local rebel freedom fighters have finally managed to achieve something of note: they aided some slaves in their escape. \n..."
+	criminal_worlds.47.desc:0 "The local rebel freedom fighters have finally managed to achieve something of note: they were able to hijack a shipping vessel and use it to aid slaves in their escape. Arrests have been made but without further enforcement this tragedy may repeat."
   criminal_worlds.47.a:0 "Unfortunate"
+  criminal_worlds.47.a.tooltip:0 "One slave pop on [Root.GetName] is freed to another country."
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
