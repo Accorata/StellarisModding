@@ -329,7 +329,7 @@ leader_trait_lucid_dreaming = {
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = scientist
-		ICON = "GFX_leader_trait_mindfulness"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_lucid_dreaming.dds"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -372,7 +372,7 @@ leader_trait_mind_body_mastery = {
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shroud_preacher"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_mind_body_mastery.dds"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -419,7 +419,7 @@ leader_trait_zro_adict = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_substance_abuser"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
 		COUNCIL = no
 		TIER = 1
 	}
@@ -463,7 +463,7 @@ leader_trait_zro_adict_2 = {
 	}
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_substance_abuser"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
 		COUNCIL = no
 		TIER = 2
 	}
@@ -487,7 +487,7 @@ leader_trait_out_of_body_experience = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative_no_tiers
-		ICON = "GFX_leader_trait_traumatized"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_out_of_body_experience.dds"
 		COUNCIL = yes
 		TIER = none
 	}
@@ -569,31 +569,3 @@ leader_trait_psionic_being = {
 		}
 	}
 }
-
-# leader_trait_caller_of_planes_beyond = {
-# starting_ruler_trait = yes
-# #orgins = { teachers_of_the_shroud }
-# cost = 1
-# 	leader_trait_type = destiny
-# 	inline_script = {
-# 		script = trait/icon_psionic
-# 		CLASS = leader
-# 		ICON = "GFX_leader_trait_planar_theorist"
-# 		RARITY = paragon
-# 		COUNCIL = yes
-# 		TIER = none
-# 	}
-# 	councilor_modifier = {
-# 		shroud_delve_cooldown = -0.1
-# 		shroud_delve_cost = -0.2
-# 	}
-# 	leader_potential_add = {
-# 		AND = {
-# 			has_astral_planes_dlc = yes
-# 			OR = { has_trait = leader_trait_psionic has_trait = leader_trait_chosen}
-# 			# has_trait = scientuist....
-# 		}
-# 	}
-# 	leader_class = { scientist }
-# 	background_icon = "GFX_leader_background_destiny_1"
-# }
