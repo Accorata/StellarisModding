@@ -187,6 +187,7 @@ leader_trait_built_in_calculator = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 

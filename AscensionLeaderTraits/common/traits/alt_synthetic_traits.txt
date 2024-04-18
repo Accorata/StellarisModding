@@ -193,6 +193,7 @@ leader_trait_mainframe_integration = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -223,6 +224,7 @@ leader_trait_thorough_annihilation = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/army_weight_mult
 	}
 }
 

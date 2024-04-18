@@ -230,6 +230,7 @@ leader_trait_shrouded_cloak = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -275,6 +276,7 @@ leader_trait_one_with_troops = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/army_weight_mult
 	}
 }
 

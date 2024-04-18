@@ -90,6 +90,42 @@ leader_trait_plurality_of_consciousness = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_unplugger = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_commander_general
+		}
+	}
+	fleet_modifier = {
+		ship_orbital_bombardment_pop_damage_mult = 1
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		leader_trait_surgical_bombardment
+		leader_trait_surgical_bombardment_2
+		leader_trait_surgical_bombardment_3
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
