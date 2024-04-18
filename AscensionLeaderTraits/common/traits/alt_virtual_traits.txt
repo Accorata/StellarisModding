@@ -34,6 +34,57 @@ leader_trait_uploaded_architect = {
 	}
 }
 
+leader_trait_computational_introspection = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		category_computing_research_speed_mult = 0.15
+		category_computing_draw_chance_mult = 0.15
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			has_trait = leader_trait_inquisitive
+			factor = 2
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_2
+			factor = 3
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_3
+			factor = 4
+		}
+		modifier = {
+			has_trait = leader_trait_expertise_computing
+			factor = 2
+		}
+		modifier = {
+			has_trait = leader_trait_expertise_computing_2
+			factor = 3
+		}
+		modifier = {
+			has_trait = leader_trait_expertise_computing_3
+			factor = 4
+		}
+		inline_script = paragon/council_weight_mult
+	}
+}
+
 # Negative Traits #
 leader_trait_material_disillusionment = {
 	leader_trait_type = negative
@@ -60,6 +111,7 @@ leader_trait_material_disillusionment = {
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -86,5 +138,8 @@ leader_trait_material_disillusionment_2 = {
 		scientist
 		commander
 	}
-	selectable_weight = @tier2_negative_trait_weight
+	selectable_weight = {
+		weight = @tier2_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
 }

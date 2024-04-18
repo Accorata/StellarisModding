@@ -48,6 +48,7 @@ leader_trait_mind_of_the_people = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -91,6 +92,7 @@ leader_trait_shroud_empath = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -181,6 +183,7 @@ leader_trait_sights_from_beyond = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -321,6 +324,7 @@ leader_trait_one_with_space = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -567,5 +571,6 @@ leader_trait_psionic_being = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }

@@ -60,6 +60,7 @@ leader_trait_next_gen_processing = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -94,6 +95,7 @@ leader_trait_blunt_directives = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -158,6 +160,7 @@ leader_trait_computational_understanding = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -261,6 +264,7 @@ leader_trait_introspective_revisions = {
 			has_trait = leader_trait_inquisitive_3
 			factor = 4
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -408,5 +412,6 @@ leader_trait_ex_machina = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }

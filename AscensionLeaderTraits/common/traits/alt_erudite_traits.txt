@@ -60,6 +60,7 @@ leader_trait_patron_of_research = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -96,6 +97,7 @@ leader_trait_eru_science_communicator = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -160,6 +162,7 @@ leader_trait_impeccable_mentor = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -264,6 +267,7 @@ leader_trait_genetic_visionary = {
 			has_trait = leader_trait_expertise_biology_3
 			factor = 8
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -381,5 +385,6 @@ leader_trait_unbound_intellect = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/council_weight_mult
 	}
 }

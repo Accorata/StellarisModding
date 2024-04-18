@@ -6,6 +6,8 @@
 # Commander traits
 
 # Scientist Traits
+  leader_trait_computational_introspection:0 "Computational Introspection"
+  leader_trait_computational_introspection_desc:0 "..."
 
 # Negative Traits
   leader_trait_material_disillusionment:0 "Material Disillusionment"

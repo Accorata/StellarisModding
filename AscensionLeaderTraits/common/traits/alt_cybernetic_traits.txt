@@ -59,6 +59,7 @@ leader_trait_one_with_the_machine = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -88,6 +89,7 @@ leader_trait_predictive_algorithms = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -152,6 +154,7 @@ leader_trait_organic_synthetic_materials = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -243,6 +246,7 @@ leader_trait_generalized_learning_algorithms = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -338,5 +342,6 @@ leader_trait_endlessly_adaptive = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/council_weight_mult
 	}
 }
