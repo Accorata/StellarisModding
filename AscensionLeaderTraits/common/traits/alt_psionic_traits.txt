@@ -49,6 +49,7 @@ leader_trait_mind_of_the_people = {
 			factor = 3
 		}
 		inline_script = paragon/council_weight_mult
+		inline_script = paragon/governor_weight_mult
 	}
 }
 

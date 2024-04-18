@@ -29,6 +29,7 @@ leader_trait_logistics_insights = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
@@ -224,6 +225,7 @@ leader_trait_unparalleled_strategics = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/army_weight_mult
 	}
 }
 

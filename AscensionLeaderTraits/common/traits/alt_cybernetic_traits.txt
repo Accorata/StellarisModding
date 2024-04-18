@@ -29,6 +29,7 @@ leader_trait_city_interfaces = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
@@ -217,6 +218,7 @@ leader_trait_terrain_retrofitting = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/army_weight_mult
 	}
 }
 

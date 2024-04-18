@@ -31,6 +31,7 @@ leader_trait_age_of_machines = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/governor_weight_mult
 	}
 }
 
