@@ -1,0 +1,15 @@
+﻿l_english:
+# Official Traits
+  leader_trait_uploaded_architect:0 "Uploaded Architect"
+  leader_trait_uploaded_architect_desc:0 "..."
+
+# Commander traits
+
+# Scientist Traits
+
+# Negative Traits
+  leader_trait_material_disillusionment:0 "Material Disillusionment"
+  leader_trait_material_disillusionment_desc:0 "This leader has begun to reject material reality, preferring to spend more and more attention on the virtual world ands its many attractions."
+  leader_trait_material_disillusionment_2:0 "$leader_trait_material_disillusionment$ II"
+  leader_trait_material_disillusionment_2_desc:0 "This leader no longer belives in the material world, claiming it exists only as a widespread hallucination created by our enemies to distract us from greater goals."
+# Destiny Traits

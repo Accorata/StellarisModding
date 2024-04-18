@@ -24,7 +24,7 @@
   leader_trait_zro_adict:0 "Zro Adict"
   leader_trait_zro_adict_desc:0 "The addictive powers of zro have manifested in this leader."
   leader_trait_zro_adict_2:0 "$leader_trait_zro_adict$ II
-  leader_trait_zro_adict_desc:0 "The addictive powers of zro have grown greatly in this leader, but have started to strengthen this leader's ability."
+  leader_trait_zro_adict_2_desc:0 "The addictive powers of zro have grown greatly in this leader, but have started to strengthen this leader's ability."
   leader_trait_out_of_body_experience:0 "Out of Body Experience"
   leader_trait_out_of_body_experience_desc:0 "This leader was prone to an exceptionally scarring out of body experience."
 # Destiny Traits
