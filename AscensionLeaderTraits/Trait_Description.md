@@ -131,6 +131,11 @@ The list of traits and their effects is as follows:
 [b]Endlessly Adaptive[/b] (Destiny trait)
   Councilor: +10% habitability, -10% pop amenities usage, -10% pop housing usage
 
+[h2] Virtual Leader Traits [/h2]
+insert here
+[h2] Nanite Leader Traits [/h2]
+insert here
+
 [h2] Erudite Leader Traits [/h2]
 
 [b]Logistics Insights[/b] (Available to Commissioners, Urbanists, and Analysts)

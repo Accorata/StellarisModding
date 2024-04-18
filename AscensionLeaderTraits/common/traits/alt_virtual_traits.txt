@@ -34,6 +34,65 @@ leader_trait_uploaded_architect = {
 	}
 }
 
+leader_trait_training_procedures = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_commander_councilor
+		}
+	}
+	councilor_modifier = {
+		commander_initial_skill = 1
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_plurality_of_consciousness = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		command_limit_mult = 0.3
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
 leader_trait_computational_introspection = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -54,7 +113,9 @@ leader_trait_computational_introspection = {
 			has_trait = subclass_scientist_councilor
 		}
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		weight = 250
 		modifier = {

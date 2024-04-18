@@ -4,6 +4,10 @@
   leader_trait_uploaded_architect_desc:0 "..."
 
 # Commander traits
+  leader_trait_training_procedures:0 "Training Procedures"
+  leader_trait_training_procedures_desc:0 "..."
+  leader_trait_plurality_of_consciousness:0 "Plurality of Consciousness"
+  leader_trait_plurality_of_consciousness_desc:0 "..."
 
 # Scientist Traits
   leader_trait_computational_introspection:0 "Computational Introspection"
