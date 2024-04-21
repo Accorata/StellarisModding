@@ -1,5 +1,4 @@
 namespace = criminal_worlds
-
 # Bribed Enforcer
 planet_event = {
 	id = criminal_worlds.10
@@ -9,28 +8,24 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_corruption_1 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_corruption_1
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = { 
+			add_modifier = {
 				modifier = cw_corruption_1
-				days = 3600 
+				days = 3600
 			}
 		}
 	}
@@ -44,31 +39,27 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 		has_modifier = cw_corruption_1
 	}
-
 	immediate = {
 		remove_modifier = cw_corruption_1
-		add_modifier = { 
-			modifier = cw_corruption_2 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_corruption_2
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
 			remove_modifier = cw_corruption_1
-			add_modifier = { 
-				modifier = cw_corruption_2 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_corruption_2
+				days = 3600
 			}
 		}
 	}
@@ -82,31 +73,27 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 		has_modifier = cw_corruption_2
 	}
-
 	immediate = {
 		remove_modifier = cw_corruption_2
-		add_modifier = { 
-			modifier = cw_corruption_3 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_corruption_3
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
 			remove_modifier = cw_corruption_2
-			add_modifier = { 
-				modifier = cw_corruption_3 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_corruption_3
+				days = 3600
 			}
 		}
 	}
@@ -120,31 +107,27 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 		has_modifier = cw_corruption_2
 	}
-
 	immediate = {
 		remove_modifier = cw_corruption_2
-		add_modifier = { 
-			modifier = cw_corruption_3_megacorp 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_corruption_3_megacorp
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
 			remove_modifier = cw_corruption_2
-			add_modifier = { 
-				modifier = cw_corruption_3_megacorp 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_corruption_3_megacorp
+				days = 3600
 			}
 		}
 	}
@@ -159,28 +142,24 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_illegal_freeports 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_illegal_freeports
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = { 
+			add_modifier = {
 				modifier = cw_illegal_freeports
-				days = 3600 
+				days = 3600
 			}
 		}
 	}
@@ -195,28 +174,24 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_criminal_shipyards 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_criminal_shipyards
+			days = 3600
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = { 
+			add_modifier = {
 				modifier = cw_criminal_shipyards
-				days = 3600 
+				days = 3600
 			}
 		}
 	}
@@ -230,41 +205,37 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = criminal_underworld
 		has_modifier = cw_criminal_shipyards
 	}
-
 	immediate = {
-		remove_modifier = cw_criminal_shipyards 
-		add_modifier = { 
+		remove_modifier = cw_criminal_shipyards
+		add_modifier = {
 			modifier = cw_criminal_shipyards_2
-			days = 3600 
+			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.22.a
 		tooltip = {
-			remove_modifier = cw_criminal_shipyards 
-			add_modifier = { 
+			remove_modifier = cw_criminal_shipyards
+			add_modifier = {
 				modifier = cw_criminal_shipyards_2
-				days = 3600 
+				days = 3600
 			}
 		}
 	}
 	option = {
 		name = criminal_worlds.22.b
 		tooltip = {
-			remove_modifier = cw_criminal_shipyards 
-			add_modifier = { 
+			remove_modifier = cw_criminal_shipyards
+			add_modifier = {
 				modifier = cw_criminal_shipyards_2
-				days = 3600 
+				days = 3600
 			}
 		}
 	}
@@ -278,22 +249,19 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_underground_slums_1 
+		add_modifier = {
+			modifier = cw_underground_slums_1
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = { 
-				modifier = cw_underground_slums_1 
+			add_modifier = {
+				modifier = cw_underground_slums_1
 			}
 		}
 	}
@@ -307,28 +275,24 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_underground_slums_1
 	}
-
 	immediate = {
 		remove_modifier = cw_underground_slums_1
-		add_modifier = { 
-			modifier = cw_underground_slums_2 
+		add_modifier = {
+			modifier = cw_underground_slums_2
 		}
 	}
-
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
 			remove_modifier = cw_underground_slums_1
-			add_modifier = { 
-				modifier = cw_underground_slums_2 
+			add_modifier = {
+				modifier = cw_underground_slums_2
 			}
 		}
 	}
@@ -342,24 +306,21 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_mercenary_fighters 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_mercenary_fighters
+			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.32.a
 		tooltip = {
-			add_modifier = { 
-				modifier = cw_mercenary_fighters 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_mercenary_fighters
+				days = 3600
 			}
 		}
 	}
@@ -373,24 +334,21 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	immediate = {
-		add_modifier = { 
-			modifier = cw_open_crime 
-			days = 3600 
+		add_modifier = {
+			modifier = cw_open_crime
+			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.33.a
 		tooltip = {
-			add_modifier = { 
-				modifier = cw_open_crime 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_open_crime
+				days = 3600
 			}
 		}
 	}
@@ -407,13 +365,11 @@ planet_event = {
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	immediate = {
 		owner = {
 			set_country_flag = cw_encountered_black_market_relic
 		}
 	}
-
 	option = {
 		name = criminal_worlds.34.a
 		begin_event_chain = {
@@ -448,7 +404,6 @@ planet_event = {
 	location = root
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
-
 	option = {
 		name = criminal_worlds.35.a
 		enable_special_project = {
@@ -468,11 +423,10 @@ planet_event = {
 	location = root
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
-
 	option = {
 		name = criminal_worlds.36.a
 		owner = {
-			add_resource = { 
+			add_resource = {
 				minor_artifacts = 20
 			}
 		}
@@ -493,15 +447,13 @@ planet_event = {
 	location = root
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
-
 	option = {
 		name = criminal_worlds.37.a
 		owner = {
-			end_event_chain = cw_smuggled_relic_chain # maybe this way
+			end_event_chain = cw_smuggled_relic_chain			# maybe this way
+			add_relic = r_cw_medallion
 			add_research_option = tech_arcane_deciphering
 		}
-		 # doesn't end
-		# relic
 	}
 }
 
@@ -514,7 +466,6 @@ planet_event = {
 	location = root
 	event_chain = cw_smuggled_relic_chain
 	is_triggered_only = yes
-
 	option = {
 		trigger = {
 			owner = {
@@ -569,10 +520,10 @@ planet_event = {
 		}
 		name = criminal_worlds.38.a
 		owner = {
-			end_event_chain = cw_smuggled_relic_chain # maybe this way
+			end_event_chain = cw_smuggled_relic_chain			# maybe this way
 			add_research_option = tech_arcane_deciphering
 			collector_surrenders_artifact = yes
-		}		
+		}
 	}
 	option = {
 		trigger = {
@@ -642,24 +593,21 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	immediate = {
-		add_modifier = { 
+		add_modifier = {
 			modifier = cw_criminal_world_1
-			days = 3600 
+			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.40.a
 		tooltip = {
-			add_modifier = { 
-				modifier = cw_criminal_world_1 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_criminal_world_1
+				days = 3600
 			}
 		}
 	}
@@ -673,29 +621,25 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_criminal_world_1
 	}
-
 	immediate = {
 		remove_modifier = cw_criminal_world_1
-		add_modifier = { 
-			modifier = cw_criminal_world_2 
+		add_modifier = {
+			modifier = cw_criminal_world_2
 			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.41.a
 		tooltip = {
 			remove_modifier = cw_criminal_world_1
-			add_modifier = { 
-				modifier = cw_criminal_world_2 
+			add_modifier = {
+				modifier = cw_criminal_world_2
 				days = 3600
 			}
 		}
@@ -710,28 +654,24 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_criminal_world_2
 	}
-
 	immediate = {
 		remove_modifier = cw_criminal_world_2
-		add_modifier = { 
-			modifier = cw_criminal_world_3 
+		add_modifier = {
+			modifier = cw_criminal_world_3
 		}
 	}
-
 	option = {
 		name = criminal_worlds.42.a
 		tooltip = {
 			remove_modifier = cw_criminal_world_2
-			add_modifier = { 
-				modifier = cw_criminal_world_3 
+			add_modifier = {
+				modifier = cw_criminal_world_3
 			}
 		}
 	}
@@ -745,27 +685,23 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_criminal_world_3
 	}
-
 	immediate = {
 		remove_modifier = cw_criminal_world_3
-		add_modifier = { 
-			modifier = cw_criminal_world_4 
+		add_modifier = {
+			modifier = cw_criminal_world_4
 		}
 	}
-
 	option = {
 		name = criminal_worlds.43.a
 		tooltip = {
 			remove_modifier = cw_criminal_world_3
-			add_modifier = { 
+			add_modifier = {
 				modifier = cw_criminal_world_4
 			}
 		}
@@ -780,27 +716,23 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_criminal_world_4
 	}
-
 	immediate = {
 		remove_modifier = cw_criminal_world_4
-		add_modifier = { 
+		add_modifier = {
 			modifier = cw_criminal_world_5
 		}
 	}
-
 	option = {
 		name = criminal_worlds.44.a
 		tooltip = {
 			remove_modifier = cw_criminal_world_4
-			add_modifier = { 
+			add_modifier = {
 				modifier = cw_criminal_world_5
 			}
 		}
@@ -815,24 +747,21 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	immediate = {
-		add_modifier = { 
+		add_modifier = {
 			modifier = cw_freedom_fighters
-			days = 3600 
+			days = 3600
 		}
 	}
-
 	option = {
 		name = criminal_worlds.45.a
 		tooltip = {
-			add_modifier = { 
-				modifier = cw_freedom_fighters 
-				days = 3600 
+			add_modifier = {
+				modifier = cw_freedom_fighters
+				days = 3600
 			}
 		}
 	}
@@ -846,11 +775,9 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	trigger = {
 		has_modifier = cw_freedom_fighters
 		NOT = {
@@ -864,7 +791,6 @@ planet_event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_owned_pop = {
 			limit = {
@@ -891,7 +817,6 @@ planet_event = {
 			planet = event_target:target_planet
 		}
 	}
-
 	option = {
 		name = criminal_worlds.47.a
 		custom_tooltip = criminal_worlds.47.a.tooltip

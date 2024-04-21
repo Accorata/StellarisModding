@@ -1,0 +1,4 @@
+cw_medallion_triumph = {
+	ruler_skill_add = 3
+	pop_ethic_authoritarian_attraction_mult = 0.5
+}

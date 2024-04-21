@@ -77,6 +77,10 @@
   cw_freedom_fighters:0 "Freedom Fighters"
   cw_freedom_fighters_desc:0 "..."
 
+# Country Modifiers
+  cw_medallion_triumph:0 "Mantle of Etrioki"
+  cw_medallion_triumph_desc:0 "Etrioki's Medallion has bestowed its psionic grasp to our nation's leadership, granting them immense sovereign authority."
+
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
   cw_mercenary_army_plural:0 "Mercenary Armies"
@@ -96,14 +100,12 @@
 # Event Chains
   cw_smuggled_relic_chain_title:0 "Rumored Artifact"
   cw_smuggled_relic_chain_desc:0 "..."
-	# cw_rumors_analyzed:0 "Rumors Analyzed"
-	# cw_artifacts_retrieved:0 "Artifacts Retrieved"
-	# cw_artifacts_studied:0 "Artifacts Studied"
 
 # Relics
-  r_cw_medallion:0 "'s Medallion"
-  r_cw_medallion_desc:0 "An ancient artifact of unknown origin, this medallion depicts a king above subjects projecting an aura that pulls the loyalty of others "
+  r_cw_medallion:0 "Etrioki's Medallion"
+  r_cw_medallion_desc:0 "An ancient artifact of unknown origin, this medallion depicts a king above subjects and projects a psionic aura that tugs at other's threads of loyalty and binds them to the bearer. No wonder it was a prized possession among crime lords."
+  cw_medallion_ruler_trait_add_tooltip:0 "Ruler gains the §Y$leader_trait_cw_medallion_blessed$§! leader trait, granting §G+5§! leader lifespan and §G+10%§! £unity£ unity from £job£ jobs.\n"
 
 # Leader Traits
-  leader_trait_criminal_relations:0 "Criminal Ties"
-  leader_trait_criminal_relations_desc:0 "..."
+  leader_trait_cw_medallion_blessed:0 "Medallion's Blessing"
+  leader_trait_cw_medallion_blessed_desc:0 "This leader has been granted the blessing of Etrioki's Medallion to sustain their eternal rule."
