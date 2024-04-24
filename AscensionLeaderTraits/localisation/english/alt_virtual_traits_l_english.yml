@@ -1,7 +1,9 @@
 ﻿l_english:
 # Official Traits
   leader_trait_uploaded_architect:0 "Uploaded Architect"
-  leader_trait_uploaded_architect_desc:0 "..."
+  leader_trait_uploaded_architect_desc:0 "This leader specializes in designing cloud based architecture, creating infrastructure that lies more and more in digital space than reality."
+  leader_trait_virtual_reality_specialist:0 "Virtual Reality Specialist"
+  leader_trait_virtual_reality_specialist_desc:0 "This leader works wonders in the ways of virtual entertainment, seemlessly integrating the digital world with the joys of the individuals."
 
 # Commander traits
   leader_trait_training_procedures:0 "Training Procedures"
@@ -13,7 +15,10 @@
 # Scientist Traits
   leader_trait_computational_introspection:0 "Computational Introspection"
   leader_trait_computational_introspection_desc:0 "..."
-
+  leader_trait_deepcode_traveler:0 "Deepcode Traveler"
+  leader_trait_deepcode_traveler_desc:0 "This leader spends their free time delving into virtual spaces so isolated and hidden one would never find normally."
+  leader_trait_predictive_simulations:0 "Predictive Simulations"
+  leader_trait_predictive_simulations_desc:0 "This leader specializes in generating temporal virtual simulations that can give them a heightened understanding of possible future outcomes."
 # Negative Traits
   leader_trait_material_disillusionment:0 "Material Disillusionment"
   leader_trait_material_disillusionment_desc:0 "This leader has begun to reject material reality, preferring to spend more and more attention on the virtual world ands its many attractions."

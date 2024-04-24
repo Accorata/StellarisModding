@@ -133,6 +133,7 @@ leader_trait_galactic_scientist = {
 	}
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/galcom_weight_mult
 	}
 }
 
@@ -301,6 +302,7 @@ leader_trait_efficient_surveys = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -337,6 +339,7 @@ leader_trait_enhanced_perception = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 

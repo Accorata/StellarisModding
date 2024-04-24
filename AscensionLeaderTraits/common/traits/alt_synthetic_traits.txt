@@ -131,6 +131,7 @@ leader_trait_obfuscated_code = {
 	}
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/galcom_weight_mult
 	}
 }
 
@@ -308,6 +309,7 @@ leader_trait_evolved_AI_assistant = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -348,6 +350,7 @@ leader_trait_also_evolved_AI_assistant = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 

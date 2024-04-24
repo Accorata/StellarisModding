@@ -35,6 +35,36 @@ leader_trait_uploaded_architect = {
 	}
 }
 
+leader_trait_virtual_reality_specialist = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_official_economy_councilor
+		}
+	}
+	councilor_modifier = {
+		pop_amenities_usage_mult = -0.05
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/council_weight_mult
+	}
+}
+
 leader_trait_training_procedures = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -100,7 +130,7 @@ leader_trait_unplugger = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_unplugger.dds"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -180,6 +210,71 @@ leader_trait_computational_introspection = {
 			factor = 4
 		}
 		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_deepcode_traveler = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.1
+	}
+	councilor_modifier = {
+		intel_decryption_add = 1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_scientist_explorer
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_predictive_simulations = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		country_astral_rift_fail_mult = -0.1
+		ship_anomaly_research_speed_mult = 0.1
+	}
+	leader_potential_add = {
+		has_astral_planes_dlc = yes
+		AND = {
+			has_trait = leader_trait_erudite
+			has_trait = subclass_scientist_scholar
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 

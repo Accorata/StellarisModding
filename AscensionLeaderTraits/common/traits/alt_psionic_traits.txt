@@ -141,6 +141,7 @@ leader_trait_conduit_of_the_people = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/galcom_weight_mult
 	}
 }
 
@@ -371,6 +372,7 @@ leader_trait_lucid_dreaming = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -418,6 +420,7 @@ leader_trait_mind_body_mastery = {
 			}
 			factor = 3
 		}
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 

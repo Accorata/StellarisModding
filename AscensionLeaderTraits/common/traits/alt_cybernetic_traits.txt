@@ -125,6 +125,7 @@ leader_trait_economic_projections = {
 	}
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/galcom_weight_mult
 	}
 }
 
@@ -280,6 +281,7 @@ leader_trait_electronic_mind_meld = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -310,6 +312,7 @@ leader_trait_multi_tool_appendages = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
+		inline_script = paragon/pilot_weight_mult
 	}
 }
 
