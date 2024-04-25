@@ -27,24 +27,24 @@ event = {
 				id = criminal_worlds.2 
 			}
 		}
-		every_playable_country = {
-			limit = {
-				has_authority = auth_hive_mind
-				any_owned_planet = {
-					has_modifier = drone_deviancy
-				}
-			}
-			# country_event = { id = criminal_worlds.3 }
-		}
-		every_playable_country = {
-			limit = {
-				has_authority = auth_machine_intelligence
-				any_owned_planet = {
-					has_modifier = drone_corruption
-				}
-			}
-			# country_event = { id = criminal_worlds.4 }
-		}
+		# every_playable_country = {
+		# 	limit = {
+		# 		has_authority = auth_hive_mind
+		# 		any_owned_planet = {
+		# 			has_modifier = drone_deviancy
+		# 		}
+		# 	}
+		# 	# country_event = { id = criminal_worlds.3 }
+		# }
+		# every_playable_country = {
+		# 	limit = {
+		# 		has_authority = auth_machine_intelligence
+		# 		any_owned_planet = {
+		# 			has_modifier = drone_corruption
+		# 		}
+		# 	}
+		# 	# country_event = { id = criminal_worlds.4 }
+		# }
 	}
 }
 
@@ -78,7 +78,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.10
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				15 = {
@@ -101,7 +101,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.11
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				20 = {
@@ -128,7 +128,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.12
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				20 = { # For megacorps (worker coops are immune)
@@ -155,7 +155,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.13
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -166,7 +166,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.20
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -181,7 +181,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.21
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				15 = {
@@ -198,7 +198,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.22
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -209,7 +209,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.32
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -220,7 +220,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.33
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -233,7 +233,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.34
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				5 = {
@@ -256,7 +256,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.40
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				15 = {
@@ -285,7 +285,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.41
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				25 = {
@@ -314,7 +314,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.42
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				35 = {
@@ -343,7 +343,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.43
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}				
 				50 = {
@@ -372,7 +372,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.44
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 				10 = {
@@ -408,7 +408,7 @@ country_event = {
 					planet_event = { 
 						id = criminal_worlds.45
 						days = 1
-						#random = 300
+						random = 300
 					}
 				}
 			}
@@ -510,7 +510,7 @@ event = {
 						planet_event = { 
 							id = criminal_worlds.47
 							days = 1
-							#random = 300
+							random = 300
 						}
 					}
 				}

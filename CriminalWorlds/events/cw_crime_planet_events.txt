@@ -426,8 +426,13 @@ planet_event = {
 	option = {
 		name = criminal_worlds.36.a
 		owner = {
-			add_resource = {
-				minor_artifacts = 20
+			if = {
+				limit = { 
+					has_ancrel = yes 
+				}
+				add_resource = { 
+					minor_artifacts = 20 
+				}
 			}
 		}
 		enable_special_project = {

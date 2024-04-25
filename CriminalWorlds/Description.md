@@ -1,5 +1,9 @@
 [h1] Criminal Worlds [/h1]
 
+Across Science Fiction there are numerous examples of worlds that fall to criminal organizations: Tatooine for example. Here scum and villany are abundant and authorities struggle to keep the law in check. While Stellaris has a host of criminal events that try to build this atmosphere, I've always felt some missing immersion. This helps to cover some of those gaps, increasing a whole host of events that can occur, from crime organizations building fleets to corrupting your enforcers.
+
+This mod does make crime more punishing as there are more events that can cause problems and they are more likely, however it also adds a number of positive benefits/events that can make having a crime world or two not the worst thing and maybe worth considering. Afterall, a number of existing governments use the criminal organizations within them to their advantage. ([i]Maybe the local mercenaries might come in handy in this next war[i])
+
 The mod is currently only available in English (translators welcome).
 
 [h2] Compatibility [/h2]
@@ -8,19 +12,15 @@ No DLC requirements.
 
 Zero base game files harmed (Should be compatible with all other mods)
 
-NOT achievement compatible ([i]Only UI mods that don't change features can be[/i])
+NOT achievement compatible ([i]Only UI mods that don't change features can be[i])
 
 [h2] Features [/h2]
 
-20 crime events (with varied changes based on government)
-2 homelessness
-5 anomaly events ... 
-3 special projects, 1 relic
+This mod introduces 30 new events (with varied changes based on government). These events are mostly new criminal events, however this mod does include a few new crime-related anomalies and special projects.
 
-Prividing an array of new planet modifiers, new jobs, new armies, and a new relic.
+These all provide an array of new planet modifiers, new jobs, new armies, and a new relic!
 
-19 modifiers
-1 army, 6 jobs
+Includes a bunch of new stories, new icons for new jobs/leader traits, and new artwork for the relic.
 
 [h2] Contact [/h2]
 
