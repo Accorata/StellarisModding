@@ -2,7 +2,7 @@
 @triumph_duration = 3600
 r_cw_medallion = {
 	activation_duration = @triumph_duration
-	portrait = "gfx/interface/icons/relics/r_cw_medallion.dds"
+	portrait = "GFX_relic_cw_medallion"
 	sound = "relic_activation_intact_zro_soulstone"
 	resources = {
 		category = relics
