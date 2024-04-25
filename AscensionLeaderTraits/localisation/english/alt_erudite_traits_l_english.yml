@@ -24,6 +24,10 @@
   leader_trait_enhanced_perception:0 "Enhanced Perception"
   leader_trait_enhanced_perception_desc:0 "This leader spots what others often miss, letting them rush through what would otherwise be difficult tasks."
 # Negative Traits
+  leader_trait_bureaucratic_impatiency:0 "Bureaucratic Impatiency"
+  leader_trait_bureaucratic_impatiency_desc:0 "This leader struggles to confine their endless new ideas within the red tape of the government."
+  leader_trait_bureaucratic_impatiency_2:0 "$leader_trait_bureaucratic_impatiency$ II"
+  leader_trait_bureaucratic_impatiency_2_desc:0 "$leader_trait_bureaucratic_impatiency_desc$"
 # Destiny Traits
   leader_trait_unbound_intellect:0 "Unbound Intellect"
   leader_trait_unbound_intellect_desc:0 "The limits of this leaders intelligence have yet to be found. Across the empire they've made countless improvements beyond any level of genius ever seen before."

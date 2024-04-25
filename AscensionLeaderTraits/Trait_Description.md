@@ -170,5 +170,11 @@ insert here
 [b]Enhanced Perception[/b] (Available to Scholars)
   Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
 
+[b]Bureaucratic Impatiency[/b] (Negative Trait)
+  Councilor: -10% agenda duration
+
+[b]Bureaucratic Impatiency II[/b] (Negative Trait)
+  Councilor: -25% agenda duration
+
 [b]Unbound Intellect[/b] (Destiny trait - more common if leader has Hyper-Focused, Reformer, or Military Pioneer)
   Councilor: +5% research speed, +5% resources from jobs, -5% ship build cost

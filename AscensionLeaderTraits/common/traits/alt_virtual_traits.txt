@@ -65,6 +65,8 @@ leader_trait_virtual_reality_specialist = {
 	}
 }
 
+
+
 leader_trait_training_procedures = {
 	leader_trait_type = veteran
 	inline_script = {

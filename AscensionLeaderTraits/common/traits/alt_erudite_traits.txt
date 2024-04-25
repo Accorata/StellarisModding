@@ -343,6 +343,61 @@ leader_trait_enhanced_perception = {
 	}
 }
 
+# Negative Traits #
+leader_trait_bureaucratic_impatiency = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		council_agenda_finishing_effect_duration_mult = -0.1
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	leader_potential_add = {
+		has_trait = leader_trait_erudite
+	}
+	opposites = {
+		leader_trait_politician
+		leader_trait_politician_2
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_bureaucratic_impatiency_2 = {
+	leader_trait_type = negative
+	replace_traits = {
+		leader_trait_bureaucratic_impatiency
+	}
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		council_agenda_finishing_effect_duration_mult = -0.25
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	selectable_weight = {
+		weight = @tier2_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
 # Destiny Traits #
 leader_trait_unbound_intellect = {
 	leader_trait_type = destiny

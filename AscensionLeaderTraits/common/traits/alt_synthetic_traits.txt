@@ -358,10 +358,10 @@ leader_trait_also_evolved_AI_assistant = {
 leader_trait_failing_subroutines = {
 	leader_trait_type = negative
 	inline_script = {
-		script = trait/icon_negative_no_tiers
+		script = trait/icon_negative
 		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_failing_subroutines.dds"
 		COUNCIL = yes
-		TIER = none
+		TIER = 1
 	}
 	councilor_modifier = {
 		empire_size_penalty_mult = 0.1
@@ -381,6 +381,36 @@ leader_trait_failing_subroutines = {
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_failing_subroutines_2 = {
+	leader_trait_type = negative
+	replace_traits = {
+		leader_trait_failing_subroutines
+	}
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_failing_subroutines.dds"
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		empire_size_penalty_mult = 0.25
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	opposites = {
+		leader_trait_next_gen_processing
+		trait_ruler_feedback_loop
+		trait_ruler_feedback_loop_2
+	}
+	selectable_weight = {
+		weight = @tier2_negative_trait_weight
 		inline_script = paragon/council_weight_mult
 	}
 }

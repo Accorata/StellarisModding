@@ -25,6 +25,8 @@
 # Negative Traits
   leader_trait_failing_subroutines:0 "Failing Subroutines"
   leader_trait_failing_subroutines_desc:0 "Codeblocks in this leaders programming are starting to deteriorate, increasing management upkeep within the nation."
+  leader_trait_failing_subroutines_2:0 "$leader_trait_failing_subroutines$"
+  leader_trait_failing_subroutines_2_desc:0 "$leader_trait_failing_subroutines_desc$"
 # Destiny Traits
   leader_trait_ex_machina:0 "Ex Machina"
   leader_trait_ex_machina_desc:0 "This leader inspires all towards a new age of robotics as the necessary evolution of organics."
