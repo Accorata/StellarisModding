@@ -16,11 +16,13 @@ leader_trait_uploaded_architect = {
 	}
 	planet_modifier = {
 		empire_size_districts_mult = -0.15
-		planet_districts_cost_mult = -0.15
+		planet_districts_cost_mult = -0.10
+		planet_buildings_cost_mult = -0.10
 	}
 	sector_modifier = {
 		empire_size_districts_mult = -0.075
-		planet_districts_cost_mult = -0.075
+		planet_districts_cost_mult = -0.05
+		planet_buildings_cost_mult = -0.05
 	}
 	leader_class = {
 		official
@@ -285,7 +287,7 @@ leader_trait_material_disillusionment = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_material_disillusionment.dds"
 		COUNCIL = yes
 		TIER = 1
 	}
@@ -317,7 +319,7 @@ leader_trait_material_disillusionment_2 = {
 	}
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_material_disillusionment.dds"
 		COUNCIL = yes
 		TIER = 2
 	}

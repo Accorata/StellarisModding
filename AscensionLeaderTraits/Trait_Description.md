@@ -91,6 +91,9 @@ The list of traits and their effects is as follows:
 [b]Failing Subroutines[/b] (Negative Trait)
   Councilor: +10% empire size effect
 
+[b]Failing Subroutines II[/b] (Negative Trait)
+  Councilor: +25% empire size effect
+
 [b]Ex Machina[/b] (Destiny trait)
   Councilor: +1 monthly influence, +0.25 unity per pop
 
