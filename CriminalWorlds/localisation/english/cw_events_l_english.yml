@@ -47,7 +47,7 @@
 	criminal_worlds.36.desc:0 "It took multiple covert operations into multiple crime rings on [Root.GetName], but the collection is now in our possession. These small trinkets are confirmed to be of ancient age, but initial analysis hasn't found anything special that would lead to such high market prices for the crime lords."
   criminal_worlds.36.a:0 "Analyze what we've confiscated"
   criminal_worlds.37.name:0 "Relic Found!"
-	criminal_worlds.37.desc:0 "..."
+	criminal_worlds.37.desc:0 "Upon investigating the stash of artifacts further, one medallion stood out. It was a foreign green metal inscribed with ancient runes attached to a bare chain. It continued to attract the attention of our scientists, as if it was calling out.\n\nFurther analysis revealed it to be a relic of great power, that contains powerful psionic energy. It's origins and purpose are unknown, but our lead researcheron the project began to hear a name in the dreams: 'Etrioki'. Our archeology team has concluded the the runes most likely depict a king above subjects, and the psionic power of this relic clearly holds much weight on the weakened mind. Now it is ours, for whatever use we wish of it."
   criminal_worlds.37.a:0 "Wonderful"
   criminal_worlds.38.name:0 "Artifacts Analyzed"
 	criminal_worlds.38.desc:0 "Among these trinkets is something of greater value: a precursor artifact that helps explain the origins of our universe. Initial analyses missed the artifact as it had been split up into four parts during the seizure from the crime lords, but now that it has been reconstructed, we know even more about the mysteries of what came before."
@@ -71,10 +71,10 @@
   criminal_worlds.44.a:0 "Terrible"
 # Freedom fighters
   criminal_worlds.45.name:0 "Freedom Fighters on [Root.GetName]"
-	criminal_worlds.45.desc:0 "..."
+	criminal_worlds.45.desc:0 "It seems there are opponents to our methods of slavery present on [Root.GetName]. So much so that an underground organization has sprung up, dedicated to freeing the oppressed. If we do not crack down on these pathetic rebels, they just might have some success."
   criminal_worlds.45.a:0 "Unfortunate"
   criminal_worlds.47.name:0 "Slaves escape from [Root.GetName]"
-	criminal_worlds.47.desc:0 "The local rebel freedom fighters have finally managed to achieve something of note: they were able to hijack a shipping vessel and use it to aid slaves in their escape. Arrests have been made but without further enforcement this tragedy may repeat."
+	criminal_worlds.47.desc:0 "The rebel freedom fighters have finally managed to achieve something of note: they were able to hijack a shipping vessel and use it to aid slaves in their escape. Arrests have been made but without further enforcement this tragedy may repeat."
   criminal_worlds.47.a:0 "Unfortunate"
   criminal_worlds.47.a.tooltip:0 "One slave pop on [Root.GetName] is freed to another country."
 # Criminal Stockpile Anomoly
@@ -82,7 +82,8 @@
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
   cw_anomaly.1.name:0 "Criminal Hideout"
   cw_anomaly.1.desc:0 "It appears a small band of pirates have been hiding out here, using this asteriod as a stockpile for their gains. They offered little resistance when discovered as they clearly weren't expecting anyone to find them.\n\nWe've arrested them and confiscated their resources."
-  cw_anomaly.1.a:0 "Excellent" # maybe add an option to execute for authoritarian which provides attraction?/-crime
+  cw_anomaly.1.a:0 "Excellent"
+  cw_anomaly.1.b:0 "Broadcast their Executions"
   cw_anomaly.2.name:0 "Nothing Amiss"
   cw_anomaly.2.desc:0 "After investigating the signal further, [Root.GetLeaderName] has reported that there was nothing amiss on the asteroid and it seems some malfunction was leading our radio signal to have been picking up our own ships messages.\n\nHowever, a different crew member claims no error was present and seems to believe [Root.GetLeaderName] is hiding whatever they found down there."
   cw_anomaly.2.a:0 "They'd Never!"

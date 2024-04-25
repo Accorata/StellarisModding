@@ -2,3 +2,7 @@ cw_medallion_triumph = {
 	ruler_skill_add = 3
 	pop_ethic_authoritarian_attraction_mult = 0.5
 }
+
+cw_executed_criminals = {
+	planet_crime_add = -10
+}

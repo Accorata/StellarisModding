@@ -27,6 +27,35 @@ ship_event = {
 			}
 		}
 	}
+	option = {
+		name = cw_anomaly.1.b
+		trigger = { 
+			owner = { 
+				OR = { 
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				} 
+			} 
+		}
+		owner = {
+			add_modifier = {
+				modifier = "cw_executed_criminals"
+				days = 3600
+			}
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier1materialreward
+				min = @tier1materialmin
+				max = @tier1materialmax
+			}
+		}
+	}
 }
 
 ship_event = {

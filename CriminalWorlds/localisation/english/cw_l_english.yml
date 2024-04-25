@@ -80,6 +80,8 @@
 # Country Modifiers
   cw_medallion_triumph:0 "Mantle of Etrioki"
   cw_medallion_triumph_desc:0 "Etrioki's Medallion has bestowed its psionic grasp to our nation's leadership, granting them immense sovereign authority."
+  cw_executed_criminals:0 "Executed Criminals"
+  cw_executed_criminals_desc:0 "Broadcasts of the executions of rebel pirates have been made public. Others wouldn't dare follow."
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
