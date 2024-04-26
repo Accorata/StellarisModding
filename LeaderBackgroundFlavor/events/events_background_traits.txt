@@ -1,0 +1,367 @@
+namespace = leader_background
+country_event = {
+	id = leader_background.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = spawning_renowned_leader			#maybe?
+		}
+	}
+	immediate = {
+		# Commanders
+		if = {
+			limit = {
+				from = {
+					has_background_job = captain
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_captain
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_navigator
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_navigator
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = principal_pilot
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_principal_pilot
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = ship_weapons_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_ship_weapons_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = ship_logistics_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_ship_logistics_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = special_operations_commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_special_operations_commander
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = commanding_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_commanding_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_supply_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_supply_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = intelligence_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_intelligence_officer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = chief_security_officer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chief_security_officer
+			}
+		}
+		# Workers
+		if = {
+			limit = {
+				from = {
+					has_background_job = colonist
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_colonist
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = farmer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_farmer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = angler
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_angler
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = puddle_technician
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_puddle_technician
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = miner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_miner
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = scrap_miner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_scrap_miner
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = crystal_miner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_crystal_miner
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = gas_extractor
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_gas_extractor
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = mote_harvester
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_mote_harvester
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = squire
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_squire
+			}
+		}
+		# Specialists
+		if = {
+			limit = {
+				from = {
+					has_background_job = chemist
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_chemist
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = translucer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_translucer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = gas_refiner
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_gas_refiner
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = bureaucrat
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_bureaucrat
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = preacher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_preacher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = entertainer
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_entertainer
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = duelist
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_duelist
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = telepath
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_telepath
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = researcher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_researcher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = government_employee
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_government_employee
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = knight
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_knight
+			}
+		}
+		# Rulers
+		if = {
+			limit = {
+				from = {
+					has_background_job = noble
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_noble
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = executive
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_executive
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = head_researcher
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_head_researcher
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_background_job = knight_commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_former_knight
+			}
+		}
+	}
+}

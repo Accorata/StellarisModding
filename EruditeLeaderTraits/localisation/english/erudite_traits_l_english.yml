@@ -1,0 +1,29 @@
+﻿l_english:
+# Governor Traits
+  leader_trait_logistics_insights:0 "Logistics Insights"
+  leader_trait_logistics_insights_desc:0 "Supply chains come naturally to this leader, who uses their knowledge to better distribute the resources needed to power local economies."
+# Official Traits
+  leader_trait_patron_of_research:0 "Patron of Research"
+  leader_trait_patron_of_research_desc:0 "This leader cares deeply about technological progress and makes sure to provide extra funding where it is needed."
+  leader_trait_eru_science_communicator:0 "Science Communicator"
+  leader_trait_eru_science_communicator_desc:0 "This leaders scientific knowledge allows them to effectively communicate technological progress to both allies and the public."
+  leader_trait_galactic_scientist:0 "Galactic Scientist"
+  leader_trait_galactic_scientist_desc:0 "In this leader's spare time, they make inventions that are known across the galaxy."
+# Commander traits
+  leader_trait_impeccable_mentor:0 "Impeccable Mentor"
+  leader_trait_impeccable_mentor_desc:0 "This leader excels at translating their experience in war to the next generation of pilots and soldiers, readying them for the times ahead."
+  leader_trait_pinpoint_accuracy:0 "Pinpoint Accuracy"
+  leader_trait_pinpoint_accuracy_desc:0 "It is unnerving how often this leader hits their targets."
+  leader_trait_unparalleled_strategics:0 "Unparalleled Strategics"
+  leader_trait_unparalleled_strategics_desc:0 "On the battlefield, this leader moves troops into and out of formations with ease, providing a great advantage."
+# Scientist Traits
+  leader_trait_genetic_visionary:0 "Genetic Visionary"
+  leader_trait_genetic_visionary_desc:0 "This leader has made incredible strides in the field of genetics, allowing further improvement of our people."
+  leader_trait_efficient_surveys:0 "Efficient Surveys"
+  leader_trait_efficient_surveys_desc:0 "This leader manages their equipment better than anyone else, employing often revolutionary tactics again and again."
+  leader_trait_enhanced_perception:0 "Enhanced Perception"
+  leader_trait_enhanced_perception_desc:0 "This leader spots what others often miss, letting them rush through what would otherwise be difficult tasks."
+# Negative Traits
+# Destiny Traits
+  leader_trait_unbound_intellect:0 "Unbound Intellect"
+  leader_trait_unbound_intellect_desc:0 "The limits of this leaders intelligence have yet to be found. Across the empire they've made countless improvements beyond any level of genius ever seen before."

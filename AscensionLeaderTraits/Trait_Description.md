@@ -55,8 +55,8 @@ The list of traits and their effects is as follows:
 [h2] Synthetic Leader Traits [/h2]
 
 [b]Endless Drive[/b] (Available to Commissioners, Urbanists, and Analysts)
-  Planet: +10% production from robots, +10% mechanical pop assembly speed
-  Sector: +5% production from robots, +5% mechanical pop assembly speed
+  Planet: +15% production from metallurgists
+  Sector: +7.5% production from metallurgists
 
 [b]Next-Gen Processing[/b] (Available to Advisors)
   Councilor: -10 empire size

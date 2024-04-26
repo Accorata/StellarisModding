@@ -3,7 +3,7 @@ leader_trait_age_of_machines = {
 	inline_script = {
 		script = trait/icon
 		CLASS = leader
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_age_of_machines.dds"
+		ICON = "GFX_leader_trait_knowledge_for_the_masses"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -15,10 +15,12 @@ leader_trait_age_of_machines = {
 		}
 	}
 	planet_modifier = {
-		planet_metallurgists_produces_mult = 0.15
+		planet_pop_assembly_mult = 0.1
+		planet_jobs_robotic_produces_mult = 0.1
 	}
 	sector_modifier = {
-		planet_metallurgists_produces_mult = 0.075
+		planet_pop_assembly_mult = 0.05
+		planet_jobs_robotic_produces_mult = 0.05
 	}
 	leader_class = {
 		official
@@ -29,7 +31,6 @@ leader_trait_age_of_machines = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/governor_weight_mult
 	}
 }
 
@@ -38,7 +39,7 @@ leader_trait_next_gen_processing = {
 	inline_script = {
 		script = trait/icon
 		CLASS = offical
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_next_gen_processing.dds"
+		ICON = "GFX_leader_trait_robotist"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = none
@@ -59,7 +60,6 @@ leader_trait_next_gen_processing = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -68,7 +68,7 @@ leader_trait_blunt_directives = {
 	inline_script = {
 		script = trait/icon
 		CLASS = offical
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_blunt_directives.dds"
+		ICON = "GFX_leader_trait_opinionated"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = none
@@ -94,7 +94,6 @@ leader_trait_blunt_directives = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -103,7 +102,7 @@ leader_trait_obfuscated_code = {
 	inline_script = {
 		script = trait/icon
 		CLASS = offical
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_obfuscated_code.dds"
+		ICON = "GFX_leader_trait_narrow_minded"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -129,7 +128,6 @@ leader_trait_obfuscated_code = {
 	}
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/galcom_weight_mult
 	}
 }
 
@@ -138,7 +136,7 @@ leader_trait_computational_understanding = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_computational_understanding.dds"
+		ICON = "GFX_leader_trait_reverse_engineer"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = none
@@ -160,7 +158,6 @@ leader_trait_computational_understanding = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -169,7 +166,7 @@ leader_trait_mainframe_integration = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_mainframe_integration.dds"
+		ICON = "GFX_leader_trait_financial"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -193,7 +190,6 @@ leader_trait_mainframe_integration = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -202,7 +198,7 @@ leader_trait_thorough_annihilation = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_thorough_annihilation.dds"
+		ICON = "GFX_leader_trait_warlike"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
@@ -224,7 +220,6 @@ leader_trait_thorough_annihilation = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/army_weight_mult
 	}
 }
 
@@ -233,7 +228,7 @@ leader_trait_introspective_revisions = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_introspective_revisions.dds"
+		ICON = "GFX_leader_trait_magnifying_glass"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = none
@@ -266,7 +261,6 @@ leader_trait_introspective_revisions = {
 			has_trait = leader_trait_inquisitive_3
 			factor = 4
 		}
-		inline_script = paragon/council_weight_mult
 	}
 }
 
@@ -278,7 +272,7 @@ leader_trait_evolved_AI_assistant = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_evolved_AI_assistant.dds"
+		ICON = "GFX_leader_trait_sapient_AI_assistant"
 		RARITY = veteran
 		COUNCIL = triggered
 		TIER = none
@@ -307,7 +301,6 @@ leader_trait_evolved_AI_assistant = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -319,7 +312,7 @@ leader_trait_also_evolved_AI_assistant = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_evolved_AI_assistant.dds"
+		ICON = "GFX_leader_trait_sapient_AI_assistant"
 		RARITY = veteran
 		COUNCIL = triggered
 		TIER = none
@@ -348,7 +341,6 @@ leader_trait_also_evolved_AI_assistant = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/pilot_weight_mult
 	}
 }
 
@@ -356,10 +348,10 @@ leader_trait_also_evolved_AI_assistant = {
 leader_trait_failing_subroutines = {
 	leader_trait_type = negative
 	inline_script = {
-		script = trait/icon_negative
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_failing_subroutines.dds"
+		script = trait/icon_negative_no_tiers
+		ICON = "GFX_leader_trait_machine_intelligence"
 		COUNCIL = yes
-		TIER = 1
+		TIER = none
 	}
 	councilor_modifier = {
 		empire_size_penalty_mult = 0.1
@@ -379,36 +371,6 @@ leader_trait_failing_subroutines = {
 	}
 	selectable_weight = {
 		weight = @shared_negative_trait_weight
-		inline_script = paragon/council_weight_mult
-	}
-}
-
-leader_trait_failing_subroutines_2 = {
-	leader_trait_type = negative
-	replace_traits = {
-		leader_trait_failing_subroutines
-	}
-	inline_script = {
-		script = trait/icon_negative
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_failing_subroutines.dds"
-		COUNCIL = yes
-		TIER = 2
-	}
-	councilor_modifier = {
-		empire_size_penalty_mult = 0.25
-	}
-	leader_class = {
-		official
-		scientist
-		commander
-	}
-	opposites = {
-		leader_trait_next_gen_processing
-		trait_ruler_feedback_loop
-		trait_ruler_feedback_loop_2
-	}
-	selectable_weight = {
-		weight = @tier2_negative_trait_weight
 		inline_script = paragon/council_weight_mult
 	}
 }
@@ -446,6 +408,5 @@ leader_trait_ex_machina = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		inline_script = paragon/council_weight_mult
 	}
 }

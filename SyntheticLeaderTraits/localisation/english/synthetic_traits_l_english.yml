@@ -1,7 +1,7 @@
 ﻿l_english:
 # Official Traits
   leader_trait_age_of_machines:0 "Endless Drive"
-  leader_trait_age_of_machines_desc:0 "This leader never hesitates, always taking steps to build a better future. For us, this future lies in metal."
+  leader_trait_age_of_machines_desc:0 "This leader never hesitates, always taking steps to build a better future."
   leader_trait_next_gen_processing:0 "Next-Gen Processing"
   leader_trait_next_gen_processing_desc:0 "This leaders processing power exceedes normal levels, greatly reducing time complexity of tasks."
   leader_trait_blunt_directives:0 "Blunt Directives"
@@ -25,8 +25,6 @@
 # Negative Traits
   leader_trait_failing_subroutines:0 "Failing Subroutines"
   leader_trait_failing_subroutines_desc:0 "Codeblocks in this leaders programming are starting to deteriorate, increasing management upkeep within the nation."
-  leader_trait_failing_subroutines_2:0 "$leader_trait_failing_subroutines$"
-  leader_trait_failing_subroutines_2_desc:0 "$leader_trait_failing_subroutines_desc$"
 # Destiny Traits
   leader_trait_ex_machina:0 "Ex Machina"
   leader_trait_ex_machina_desc:0 "This leader inspires all towards a new age of robotics as the necessary evolution of organics."

@@ -1,0 +1,363 @@
+leader_trait_former_telepath = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	planet_modifier = {
+		planet_telepaths_unity_produces_add = 1
+	}
+	sector_modifier = {
+		planet_telepaths_unity_produces_add = 0.5
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = official
+		}
+		empire_size_pops_mult = -0.01
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		add_base_country_intel = 2
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_psionics_research_speed_mult = 0.03
+		category_psionics_draw_chance_mult = 0.1
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			leader_class = official
+		}
+		resolutions_cost_mult = -0.02
+	}
+	triggered_federation_modifier = {
+		potential = {
+			leader_class = official
+		}
+		federation_experience_add = 0.2
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		ship_shield_hardening_add = 0.02
+	}
+	triggered_army_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		army_morale = 0.02
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.05
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_bureaucrat = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.05
+	}
+	sector_modifier = {
+		planet_jobs_unity_produces_mult = 0.025
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_unity_produces_mult = 0.02
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		ship_orbit_upkeep_mult = -0.01
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		ship_anomaly_generation_chance_mult = 0.02
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		ship_orbit_upkeep_mult = -0.025
+	}
+	triggered_army_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		armies_upkeep_mult = -0.2
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		leaders_upkeep_mult = -0.05
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_preacher = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.05
+		planet_amenities_add = 0.5
+	}
+	planet_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.25
+		planet_amenities_add = 2
+	}
+	sector_modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.125
+		planet_amenities_add = 1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_chemist = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_volatile_motes_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_volatile_motes_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_explosive_weapon_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_translucer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_rare_crystals_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_rare_crystals_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_kinetic_weapon_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_gas_refiner = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		category_materials_research_speed_mult = 0.01
+		category_materials_draw_chance_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_exotic_gases_produces_mult = 0.1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			leader_class = official
+		}
+		planet_jobs_exotic_gases_produces_mult = 0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
+		weapon_type_energy_weapon_damage_mult = 0.1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_researcher = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.02
+		planet_jobs_society_research_produces_mult = 0.02
+		planet_jobs_engineering_research_produces_mult = 0.02
+	}
+	sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.01
+		planet_jobs_society_research_produces_mult = 0.01
+		planet_jobs_engineering_research_produces_mult = 0.01
+	}
+	leader_class = {
+		scientist
+	}
+}
+
+leader_trait_former_entertainer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_amenities_add = 1
+	}
+	planet_modifier = {
+		planet_amenities_add = 4
+	}
+	sector_modifier = {
+		planet_amenities_add = 2
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_duelist = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_amenities_add = 1
+		country_naval_cap_add = 2
+	}
+	planet_modifier = {
+		planet_amenities_add = 4
+	}
+	sector_modifier = {
+		planet_amenities_add = 2
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}

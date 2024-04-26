@@ -1,0 +1,131 @@
+leader_trait_former_noble = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		ruler_skill_add = 1
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			leader_class = official
+		}
+		diplo_weight_mult = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_executive = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = energy_credits
+		AMOUNT = 2
+	}
+	councilor_modifier = {
+		commercial_pact_mult = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_head_researcher = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.01
+	}
+	leader_class = {
+		scientist
+	}
+}
+
+# Knight or Knight Commander / Lord Commander
+leader_trait_former_knight = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = physics_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = engineering_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = society_research
+		AMOUNT = value:knights_research_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = value:knights_unity_output_modifier
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = alloys
+		AMOUNT = 1
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
+
+leader_trait_former_government_employee = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_generic_background"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		council_agenda_progress_speed = 0.02
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+}
