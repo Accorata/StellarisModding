@@ -38,10 +38,6 @@ ship_event = {
 			} 
 		}
 		owner = {
-			add_modifier = {
-				modifier = "cw_executed_criminals"
-				days = 3600
-			}
 			add_monthly_resource_mult = {
 				resource = energy
 				value = @tier2materialreward
@@ -53,6 +49,10 @@ ship_event = {
 				value = @tier1materialreward
 				min = @tier1materialmin
 				max = @tier1materialmax
+			}
+			add_modifier = {
+				modifier = "cw_executed_criminals"
+				days = 3600
 			}
 		}
 	}

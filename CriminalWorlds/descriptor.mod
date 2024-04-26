@@ -1,4 +1,4 @@
-version="3.11.2"
+version="3.11.3"
 tags={
 	"Gameplay"
 	"Leaders"
@@ -6,4 +6,5 @@ tags={
 	"Economy"
 }
 name="Criminal Worlds"
-supported_version="3.11.2"
+picture="thumbnail.png"
+supported_version="3.11.3"

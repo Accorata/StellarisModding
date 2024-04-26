@@ -22,6 +22,8 @@ These all provide an array of new planet modifiers, new jobs, new armies, and a 
 
 Includes a bunch of new stories, new icons for new jobs/leader traits, and new artwork for the relic.
 
+Very few of these events are available for gestalt empires, as the flavor is much harder to create and adapt. The AI will also be affected by these events.
+
 [h2] Contact [/h2]
 
 Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]Stellaris Modding Den[/url].
