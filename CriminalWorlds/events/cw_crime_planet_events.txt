@@ -253,15 +253,41 @@ planet_event = {
 		has_owner = yes
 	}
 	immediate = {
-		add_modifier = {
-			modifier = cw_underground_slums_1
+		if = {
+			limit ={
+				is_gestalt = no
+			}
+			add_modifier = {
+				modifier = cw_underground_slums_1
+			}
+		}
+		if = {
+			limit ={
+				is_gestalt = yes
+			}
+			add_modifier = {
+				modifier = cw_underground_slums_1_gestalt
+			}
 		}
 	}
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			add_modifier = {
-				modifier = cw_underground_slums_1
+			if = {
+				limit ={
+					is_gestalt = no
+				}
+				add_modifier = {
+					modifier = cw_underground_slums_1
+				}
+			}
+			if = {
+				limit ={
+					is_gestalt = yes
+				}
+				add_modifier = {
+					modifier = cw_underground_slums_1_gestalt
+				}
 			}
 		}
 	}
@@ -279,20 +305,52 @@ planet_event = {
 		has_owner = yes
 	}
 	trigger = {
-		has_modifier = cw_underground_slums_1
+		OR = {
+			has_modifier = cw_underground_slums_1
+			has_modifier = cw_underground_slums_1_gestalt
+		}
+		
 	}
 	immediate = {
-		remove_modifier = cw_underground_slums_1
-		add_modifier = {
-			modifier = cw_underground_slums_2
+		if = {
+			limit ={
+				is_gestalt = no
+			}
+			remove_modifier = cw_underground_slums_1
+			add_modifier = {
+				modifier = cw_underground_slums_2
+			}
+		}
+		if = {
+			limit ={
+				is_gestalt = yes
+			}
+			remove_modifier = cw_underground_slums_1_gestalt
+			add_modifier = {
+				modifier = cw_underground_slums_2_gestalt
+			}
 		}
 	}
 	option = {
 		name = UNFORTUNATE
 		tooltip = {
-			remove_modifier = cw_underground_slums_1
-			add_modifier = {
-				modifier = cw_underground_slums_2
+			if = {
+				limit ={
+					is_gestalt = no
+				}
+				remove_modifier = cw_underground_slums_1
+				add_modifier = {
+					modifier = cw_underground_slums_2
+				}
+			}
+			if = {
+				limit ={
+					is_gestalt = yes
+				}
+				remove_modifier = cw_underground_slums_1_gestalt
+				add_modifier = {
+					modifier = cw_underground_slums_2_gestalt
+				}
 			}
 		}
 	}

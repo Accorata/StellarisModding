@@ -30,6 +30,11 @@
   job_cw_underworlder:0 "Underdweller"
   job_cw_underworlder_plural:0 "Underdwellers"
   mod_job_cw_underworlder_add:0 "Underdweller Jobs"
+  cw_drone_underworlder:0 "$cw_underworlder$"
+  job_cw_drone_underworlder_desc:0 "$job_cw_underworlder_desc$"
+  job_cw_drone_underworlder:0 "$job_cw_underworlder$"
+  job_cw_drone_underworlder_plural:0 "$job_cw_underworlder_plural$"
+  mod_job_cw_drone_underworlder_add:0 "$mod_job_cw_underworlder_add$"
 
 # Planet Modifiers
   cw_corruption_1:0 "Corruption"
@@ -52,6 +57,10 @@
   cw_underground_slums_1_desc:0 "Due to limited housing, part of this planet's population has moved into underground sewars."
   cw_underground_slums_2:0 "Underground Slums II"
   cw_underground_slums_2_desc:0 "$cw_underground_slums_1_desc$"
+  cw_underground_slums_1_gestalt:0 "$cw_underground_slums_1$"
+  cw_underground_slums_1_gestalt_desc:0 "$cw_underground_slums_1_desc$"
+  cw_underground_slums_2_gestalt:0 "Underground Slums II"
+  cw_underground_slums_2_gestalt_desc:0 "$cw_underground_slums_1_desc$"
   cw_dark_whispers:0 "Dark Whispers"
   cw_dark_whispers_desc:0 "All on the planet hears them. Some listen."
   cw_mercenary_fighters:0 "Mercenary Fighters"

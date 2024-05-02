@@ -26,6 +26,12 @@ cw_ruined_undercity_cat = {
 			add = 3
 			habitable_planet = yes
 		}
+		modifier = {
+			factor = 0
+			from.owner = { 
+				is_gestalt = yes 
+			}
+		}
 	}
 
 	on_success = cw_anomaly.3

@@ -80,6 +80,22 @@ cw_underground_slums_2 = {
 	icon_frame = 2
 }
 
+cw_underground_slums_1_gestalt = {
+	planet_housing_add = 5
+	job_cw_drone_underworlder_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
+	icon_frame = 2
+}
+
+cw_underground_slums_2_gestalt = {
+	planet_housing_add = 10
+	job_cw_drone_underworlder_add = 2
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
+	icon_frame = 2
+}
+
 cw_dark_whispers = {
 	planet_crime_add = 10
 	planet_jobs_society_research_produces_mult = 0.10

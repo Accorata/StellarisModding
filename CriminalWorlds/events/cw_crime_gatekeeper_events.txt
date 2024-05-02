@@ -465,6 +465,8 @@ planet_event = {
 				NOR = {
 					has_modifier = cw_underground_slums_1
 					has_modifier = cw_underground_slums_2
+					has_modifier = cw_underground_slums_1_gestalt
+					has_modifier = cw_underground_slums_2_gestalt
 				}
 			}
 			planet_event = { 
@@ -475,7 +477,10 @@ planet_event = {
 		}
 		if = {
 			limit = {
-				has_modifier = cw_underground_slums_1
+				OR = {
+					has_modifier = cw_underground_slums_1
+					has_modifier = cw_underground_slums_1_gestalt
+				}
 			}
 			planet_event = { 
 				id = criminal_worlds.31
