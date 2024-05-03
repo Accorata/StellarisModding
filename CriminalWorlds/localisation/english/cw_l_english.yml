@@ -89,6 +89,12 @@
   cw_executed_criminals:0 "Executed Criminals"
   cw_executed_criminals_desc:0 "Broadcasts of the executions of rebel pirates have been made public. Others wouldn't dare follow."
 
+# Decisions
+  decision_uplift_slums:0 "Uplift Slums"
+  decision_uplift_slums_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into our local society."
+  decision_uplift_slums_gestalt:0 "$decision_uplift_slums$"
+  decision_uplift_slums_gestalt_desc:0 "$decision_uplift_slums_desc$"
+
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
   cw_mercenary_army_plural:0 "Mercenary Armies"

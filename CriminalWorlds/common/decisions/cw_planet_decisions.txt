@@ -1,0 +1,79 @@
+decision_uplift_slums = { #localization + gestalt version
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_arcology_project
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = cw_underground_slums_1
+			has_modifier = cw_underground_slums_2
+		}
+	}
+	allow = {
+		free_housing > 20
+	}
+	effect = {
+		if = {
+			limit ={
+				has_modifier = cw_underground_slums_1
+			}
+			remove_modifier = cw_underground_slums_1
+		}
+		if = {
+			limit ={
+				has_modifier = cw_underground_slums_2
+			}
+			remove_modifier = cw_underground_slums_2
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_uplift_slums_gestalt = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_arcology_project
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = cw_underground_slums_1_gestalt
+			has_modifier = cw_underground_slums_2_gestalt
+		}
+	}
+	allow = {
+		free_housing > 20
+	}
+	effect = {
+		if = {
+			limit ={
+				has_modifier = cw_underground_slums_1_gestalt
+			}
+			remove_modifier = cw_underground_slums_1_gestalt
+		}
+		if = {
+			limit ={
+				has_modifier = cw_underground_slums_2_gestalt
+			}
+			remove_modifier = cw_underground_slums_2_gestalt
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
