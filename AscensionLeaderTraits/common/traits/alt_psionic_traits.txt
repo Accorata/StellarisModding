@@ -38,16 +38,7 @@ leader_trait_mind_of_the_people = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/council_weight_mult
 		inline_script = paragon/governor_weight_mult
 	}
@@ -83,16 +74,7 @@ leader_trait_shroud_empath = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/council_weight_mult
 	}
 }
@@ -131,16 +113,7 @@ leader_trait_conduit_of_the_people = {
 	}
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/galcom_weight_mult
 	}
 }
@@ -175,16 +148,7 @@ leader_trait_sights_from_beyond = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/council_weight_mult
 	}
 }
@@ -222,16 +186,7 @@ leader_trait_shrouded_cloak = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/pilot_weight_mult
 	}
 }
@@ -268,16 +223,7 @@ leader_trait_one_with_troops = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/army_weight_mult
 	}
 }
@@ -318,16 +264,7 @@ leader_trait_one_with_space = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/council_weight_mult
 	}
 }
@@ -362,16 +299,7 @@ leader_trait_lucid_dreaming = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/pilot_weight_mult
 	}
 }
@@ -410,16 +338,7 @@ leader_trait_mind_body_mastery = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/pilot_weight_mult
 	}
 }
@@ -567,16 +486,7 @@ leader_trait_psionic_being = {
 	notify_on_gained = yes
 	selectable_weight = {
 		weight = 250
-		modifier = {
-			OR = {
-				has_trait = leader_trait_chosen
-				has_trait = leader_trait_composer_chosen
-				has_trait = leader_trait_instrument_chosen
-				has_trait = leader_trait_eater_chosen
-				has_trait = leader_trait_whisperers_chosen
-			}
-			factor = 3
-		}
+		inline_script = alt/psionic_chosen_weight_mult
 		inline_script = paragon/council_weight_mult
 	}
 }

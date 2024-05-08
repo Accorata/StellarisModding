@@ -1,0 +1,10 @@
+modifier = {
+	OR = {
+		has_trait = leader_trait_chosen
+		has_trait = leader_trait_composer_chosen
+		has_trait = leader_trait_instrument_chosen
+		has_trait = leader_trait_eater_chosen
+		has_trait = leader_trait_whisperers_chosen
+	}
+	factor = 3
+}
