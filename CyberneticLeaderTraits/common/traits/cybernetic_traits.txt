@@ -10,7 +10,10 @@ leader_trait_city_interfaces = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_governor_subclass = yes
 		}
 	}
@@ -44,7 +47,10 @@ leader_trait_one_with_the_machine = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_official_economy_councilor
 		}
 	}
@@ -74,7 +80,10 @@ leader_trait_predictive_algorithms = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_official_diplomacy_councilor
 		}
 	}
@@ -114,7 +123,10 @@ leader_trait_economic_projections = {
 		federation_experience_add = 0.5
 	}
 	leader_potential_add = {
-		has_trait = leader_trait_cyborg
+		OR = {
+			has_trait = leader_trait_cyborg
+			has_trait = leader_trait_ritualistic_implants_cyborg
+		}
 		has_trait = subclass_official_delegate
 	}
 	leader_class = {
@@ -137,7 +149,10 @@ leader_trait_organic_synthetic_materials = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_commander_councilor
 		}
 	}
@@ -167,7 +182,10 @@ leader_trait_built_in_calculator = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_commander_admiral
 		}
 	}
@@ -199,7 +217,10 @@ leader_trait_terrain_retrofitting = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_commander_general
 		}
 	}
@@ -232,7 +253,10 @@ leader_trait_generalized_learning_algorithms = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_scientist_councilor
 		}
 	}
@@ -262,7 +286,10 @@ leader_trait_electronic_mind_meld = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_scientist_explorer
 		}
 	}
@@ -292,7 +319,10 @@ leader_trait_multi_tool_appendages = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			has_trait = subclass_scientist_scholar
 		}
 	}
@@ -324,7 +354,10 @@ leader_trait_endlessly_adaptive = {
 	}
 	leader_potential_add = {
 		AND = {
-			has_trait = leader_trait_cyborg
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
 			is_councilor = yes
 		}
 	}
