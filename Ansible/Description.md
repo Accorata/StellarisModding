@@ -1,6 +1,6 @@
 [h1] Ansible Technologies and Arcologies (From Ursula K LeGuin) [/h1]
 
-UPDATED FOR 3.11
+UPDATED FOR 3.12
 
 Stellaris lacks one of the most iconic Sci-Fi elements seen in galaxy-spanning stories: the ansible, a tool for infinite-range instantaneous communication first coined by prolific writer Ursula K LeGuin.
 
