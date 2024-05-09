@@ -1,7 +1,7 @@
-version="3.11.*"
+version="3.12.*"
 tags={
 	"Gameplay"
 	"Leaders"
 }
 name="Ascension Leader Traits"
-supported_version="3.11.2"
+supported_version="3.12.1"
