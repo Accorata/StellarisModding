@@ -14,7 +14,7 @@ The list of traits and their effects is as follows:
   Councilor: 10% shroud delve cooldown, -20% shroud delve cost
 
 [b]Conduit of the People[/b] (Available to Delegates)
-  GalCom: 10% diplomatic weight from pops
+  GalCom: +10% diplomatic weight from pops
   Federation: +0.5 federation experience
 
 [b]Sights From Beyond[/b] (Available to Strategists)
@@ -36,13 +36,13 @@ The list of traits and their effects is as follows:
 [b]Mind Body Mastery[/b] (Available to Scholars)
   Leader: +1 astral rift skill, +10% to find an anomaly
 
-[b]Zro Adict[/b] (Negative Trait)
+[b]Zro Adict[/b] (Negative trait)
   Leader: +1 zro upkeep
 
-[b]Zro Adict II[/b] (Negative Trait)
+[b]Zro Adict II[/b] (Negative trait)
   Leader: +3 zro upkeep, +10% experience
 
-[b]Out of Body Experience[/b] (Negative Trait - also available for non-psionics)
+[b]Out of Body Experience[/b] (Negative trait - also available for non-psionics)
   Leader: -25% experience, +10% upkeep
   Councilor: +25% chance to roll psionic technologies
 
@@ -51,51 +51,6 @@ The list of traits and their effects is as follows:
   Councilor: +25% spiritualist ethic attraction
   Planet: +100% spiritualist ethic attraction
   Sector: +50% spiritualist ethic attraction
-
-[h2] Synthetic Leader Traits [/h2]
-
-[b]Endless Drive[/b] (Available to Commissioners, Urbanists, and Analysts)
-  Planet: +15% production from metallurgists
-  Sector: +7.5% production from metallurgists
-
-[b]Next-Gen Processing[/b] (Available to Advisors)
-  Councilor: -10 empire size
-
-[b]Blunt Directives[/b] (Available to Ambassadors)
-  Councilor: -20% claim influence cost
-
-[b]Obfuscated Code[/b] (Available to Delegates)
-  GalCom: 5% diplomatic weight from fleets
-  Federation: +0.5 federation experience
-
-[b]Computational Understanding[/b] (Available to Strategists)
-  Councilor: +5% ship fire rate, +5% evasion
-
-[b]Mainframe Integration[/b] (Available to Admirals)
-  Fleet: +10 evasion
-  Leader: +25% experience
-
-[b]Thorough Annihilation[/b] (Available to Generals)
-  Army: +100% collateral damage, +5% morale damage
-
-[b]Introspective Revisions[/b] (Available to Statisticians)
-  Councilor: -7.5% robot upkeep
-
-[b]Evolved AI Assistent[/b] (Available to Explorers and Scholars)(Requires Sapient/Custom AI Assistent trait)
-  Leader: +40% survey speed, +40% anomaly research speed
-  Councilor: +10% survey speed, +10% anomaly research speed
-
-[b]Enhanced Perception[/b] (Available to Scholars)
-  Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
-
-[b]Failing Subroutines[/b] (Negative Trait)
-  Councilor: +10% empire size effect
-
-[b]Failing Subroutines II[/b] (Negative Trait)
-  Councilor: +25% empire size effect
-
-[b]Ex Machina[/b] (Destiny trait)
-  Councilor: +1 monthly influence, +0.25 unity per pop
 
 [h2] Cybernetic Leader Traits [/h2]
 
@@ -110,7 +65,7 @@ The list of traits and their effects is as follows:
   Councilor: -3% trade fee
 
 [b]Economic Projections[/b] (Available to Delegates)
-  GalCom: 10% diplomatic weight from economy
+  GalCom: +10% diplomatic weight from economy
   Federation: +0.5 federation experience
 
 [b]Organic-Synthetic Materials[/b] (Available to Strategists)
@@ -135,9 +90,93 @@ The list of traits and their effects is as follows:
   Councilor: +10% habitability, -10% pop amenities usage, -10% pop housing usage
 
 [h2] Virtual Leader Traits [/h2]
-insert here
-[h2] Nanite Leader Traits [/h2]
-insert here
+
+[b]Uploaded Architect[/b] (Available to Commissioners, Urbanists, and Analysts)
+  Planet: -15% empire size from districts, -10% district/building cost
+  Sector: -7.5% empire size from districts, -5% district/building cost
+
+[b]Virtual Reality Specialist[/b] (Available to Advisors)
+  Councilor: -5% pop amenities usage
+
+[b]Cryptographic Communion[/b] (Available to Ambassadors)
+  Councilor: +2 hostile operations difficulty
+
+[b]Synthesis of Minds[/b] (Available to Delegates)
+  GalCom: +20% diplomatic weight from tech, -10% diplomatic weight from pops
+  Federation: +0.5 federation experience
+
+[b]Training Procedures[/b] (Available to Strategists)
+  Councilor: +1 commander starting level
+
+[b]Plurality of Consciousness[/b] (Available to Admirals)
+  Fleet: +30% command limit
+
+[b]Unplugger[/b] (Available to Generals)
+  Fleet: +100% orbital bombardment damage to pops
+
+[b]Computational Introspection[/b] (Available to Statisticians)
+  Councilor: +15% computing research speed, +15% computing draw chance
+
+[b]Deepcode Traveler[/b] (Available to Explorers)
+  Leader: -10% upkeep
+  Councilor: +1 codebreaking
+
+[b]Predictive Simulations[/b] (Available to Scholars)
+  Leader: -10% astral rift fail probability, +10% anomaly research speed
+
+[b]Material Disillusionment[/b] (Negative trait)
+  Councilor: -1% monthly energy, minerals, food, consumer goods, and alloys
+
+[b]Material Disillusionment II[/b] (Negative trait)
+  Councilor: -3% monthly energy, minerals, food, consumer goods, and alloys
+
+[b]Forsaker of Limitation[/b] (Destiny trait)
+  Councilor: +25% planetary ascension effects, -10% planetary ascension cost
+
+[h2] Synthetic Leader Traits [/h2]
+
+[b]Endless Drive[/b] (Available to Commissioners, Urbanists, and Analysts)
+  Planet: +15% production from metallurgists
+  Sector: +7.5% production from metallurgists
+
+[b]Next-Gen Processing[/b] (Available to Advisors)
+  Councilor: -10 empire size
+
+[b]Blunt Directives[/b] (Available to Ambassadors)
+  Councilor: -20% claim influence cost
+
+[b]Obfuscated Code[/b] (Available to Delegates)
+  GalCom: +5% diplomatic weight from fleets
+  Federation: +0.5 federation experience
+
+[b]Computational Understanding[/b] (Available to Strategists)
+  Councilor: +5% ship fire rate, +5% evasion
+
+[b]Mainframe Integration[/b] (Available to Admirals)
+  Fleet: +10 evasion
+  Leader: +25% experience
+
+[b]Thorough Annihilation[/b] (Available to Generals)
+  Army: +100% collateral damage, +5% morale damage
+
+[b]Introspective Revisions[/b] (Available to Statisticians)
+  Councilor: -7.5% robot upkeep
+
+[b]Evolved AI Assistent[/b] (Available to Explorers and Scholars)(Requires Sapient/Custom AI Assistent trait)
+  Leader: +40% survey speed, +40% anomaly research speed
+  Councilor: +10% survey speed, +10% anomaly research speed
+
+[b]Enhanced Perception[/b] (Available to Scholars)
+  Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
+
+[b]Failing Subroutines[/b] (Negative trait)
+  Councilor: +10% empire size effect
+
+[b]Failing Subroutines II[/b] (Negative trait)
+  Councilor: +25% empire size effect
+
+[b]Ex Machina[/b] (Destiny trait)
+  Councilor: +1 monthly influence, +0.25 unity per pop
 
 [h2] Erudite Leader Traits [/h2]
 
@@ -152,7 +191,7 @@ insert here
   Councilor: +10% scientist experience gain, +5% research sharing from research agreements
 
 [b]Galactic Scientist[/b] (Available to Delegates)
-  GalCom: 10% diplomatic weight from tech
+  GalCom: +10% diplomatic weight from tech
   Federation: +0.5 federation experience
 
 [b]Impeccable Mentor[/b] (Available to Strategists)
@@ -173,10 +212,10 @@ insert here
 [b]Enhanced Perception[/b] (Available to Scholars)
   Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
 
-[b]Bureaucratic Impatiency[/b] (Negative Trait)
+[b]Bureaucratic Impatiency[/b] (Negative trait)
   Councilor: -10% agenda duration
 
-[b]Bureaucratic Impatiency II[/b] (Negative Trait)
+[b]Bureaucratic Impatiency II[/b] (Negative trait)
   Councilor: -25% agenda duration
 
 [b]Unbound Intellect[/b] (Destiny trait - more common if leader has Hyper-Focused, Reformer, or Military Pioneer)

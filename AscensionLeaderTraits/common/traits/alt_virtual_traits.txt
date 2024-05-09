@@ -67,7 +67,71 @@ leader_trait_virtual_reality_specialist = {
 	}
 }
 
+leader_trait_cryptographic_communion = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_virtual
+			has_trait = subclass_official_diplomacy_councilor
+		}
+	}
+	councilor_modifier = {
+		espionage_hostile_operation_difficulty_add = 2
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/council_weight_mult
+	}
+}
 
+leader_trait_synthesis_of_minds = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_zro_addict.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		diplo_weight_technology_mult = 0.2
+		diplo_weight_pops_mult = -0.1
+	}
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		federation_experience_add = 0.5
+	}
+	leader_potential_add = {
+		has_trait = leader_trait_virtual
+		has_trait = subclass_official_delegate
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		weight = 250
+		inline_script = paragon/galcom_weight_mult
+	}
+}
 
 leader_trait_training_procedures = {
 	leader_trait_type = veteran
@@ -337,6 +401,38 @@ leader_trait_material_disillusionment_2 = {
 	}
 	selectable_weight = {
 		weight = @tier2_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+# Destiny Traits #
+leader_trait_forsaker_of_limitation = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_virtual"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planetary_ascension_effect_mult = 0.25
+		planetary_ascension_cost_mult = -0.1
+	}
+	leader_potential_add = {
+		has_trait = leader_trait_virtual
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
 		inline_script = paragon/council_weight_mult
 	}
 }
