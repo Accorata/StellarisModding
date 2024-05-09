@@ -356,6 +356,9 @@ leader_trait_multi_tool_appendages = {
 	}
 }
 
+# Negative Traits #
+
+
 # Destiny Traits #
 leader_trait_endlessly_adaptive = {
 	leader_trait_type = destiny
