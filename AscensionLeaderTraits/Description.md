@@ -1,3 +1,6 @@
+Before release: terrain-retrofitting icon is out of position and one with the machine could maybe be better?
+Definietly image with psionic sights from beyond
+
 [h1] Ascension Leader Traits [/h1]
 
 Ascension Leader Traits adds many new veteran, negative, and destiny traits that are available to any leader who has a trait from an ascension path. Each aims to focus on more specific abilities that leaders could develop from psionic otherworldly visions, to having a cybernetic swiss-army knife built-in to one's arm, to failing subroutines in a synthetic.

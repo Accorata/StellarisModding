@@ -110,22 +110,16 @@ leader_trait_economic_projections = {
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
-		CLASS = offical
+		CLASS = official
 		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_economic_projections.dds"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = none
 	}
-	triggered_galcom_modifier = {
-		potential = {
-			is_ruler = no
-		}
+	galcom_modifier = {
 		diplo_weight_economy_mult = 0.1
 	}
-	triggered_federation_modifier = {
-		potential = {
-			is_ruler = no
-		}
+	federation_modifier = {
 		federation_experience_add = 0.5
 	}
 	leader_potential_add = {
@@ -256,7 +250,7 @@ leader_trait_generalized_learning_algorithms = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_predictive_algorithms.dds"
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_generalized_learning_algorithms.dds"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = none
