@@ -116,10 +116,16 @@ leader_trait_economic_projections = {
 		COUNCIL = no
 		TIER = none
 	}
-	galcom_modifier = {
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+		}
 		diplo_weight_economy_mult = 0.1
 	}
-	federation_modifier = {
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+		}
 		federation_experience_add = 0.5
 	}
 	leader_potential_add = {

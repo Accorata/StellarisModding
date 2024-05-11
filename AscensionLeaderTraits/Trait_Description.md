@@ -36,10 +36,10 @@ The list of traits and their effects is as follows:
 [b]Mind Body Mastery[/b] (Available to Scholars)
   Leader: +1 astral rift skill, +10% to find an anomaly
 
-[b]Zro Adict[/b] (Negative trait)
+[b]Zro Addict[/b] (Negative trait)
   Leader: +1 zro upkeep
 
-[b]Zro Adict II[/b] (Negative trait)
+[b]Zro Addict II[/b] (Negative trait)
   Leader: +3 zro upkeep, +10% experience
 
 [b]Out of Body Experience[/b] (Negative trait - also available for non-psionics)
