@@ -256,6 +256,8 @@ cw_underworlder = {
 		produces = {
 			trigger = {
 				is_lithoid = no
+				is_machine_empire = no
+				is_mechanical_empire = no
 			}
 			food = 1
 		}
@@ -264,6 +266,15 @@ cw_underworlder = {
 				is_lithoid = yes
 			}
 			minerals = 1
+		}
+		produces = {
+			trigger = {
+				OR = {
+					is_machine_empire = yes
+					is_mechanical_empire = yes
+				}
+			}
+			energy = 1
 		}
 	}
 	
