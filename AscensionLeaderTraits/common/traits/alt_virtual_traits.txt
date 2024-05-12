@@ -331,7 +331,7 @@ leader_trait_predictive_simulations = {
 	leader_potential_add = {
 		has_astral_planes_dlc = yes
 		AND = {
-			has_trait = leader_trait_erudite
+			has_trait = leader_trait_virtual
 			has_trait = subclass_scientist_scholar
 		}
 	}
