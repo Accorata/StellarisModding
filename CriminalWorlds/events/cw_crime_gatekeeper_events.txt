@@ -424,6 +424,9 @@ country_event = {
 	trigger = {
 		any_owned_planet = {
 			free_housing < 0
+			NOT = {
+				is_planet_class = pc_cosmogenesis_world
+			}
 		}
 	}
 
@@ -457,6 +460,9 @@ planet_event = {
 
 	trigger = {
 		free_housing < 0
+		NOT = {
+			is_planet_class = pc_cosmogenesis_world
+		}
 	}
 
 	immediate = {
