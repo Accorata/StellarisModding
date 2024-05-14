@@ -1,5 +1,4 @@
-Before release: terrain-retrofitting icon is out of position and one with the machine could maybe be better?
-Definietly image with psionic sights from beyond
+Before release: (synth) age of machines/endless drive, maybe increase size of obsfuscated code?
 
 [h1] Ascension Leader Traits [/h1]
 
