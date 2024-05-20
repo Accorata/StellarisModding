@@ -84,7 +84,7 @@ The list of traits and their effects is as follows:
   Leader: +20% ship speed, +10% anomaly discovery chance
 
 [b]Multi-tool Appendages[/b] (Available to Scholars)
-  Leader: +1 archaeology skill, +5% archealogy speed
+  Leader: +1 archaeology skill, +5% archeology speed
 
 [b]Endlessly Adaptive[/b] (Destiny trait)
   Councilor: +10% habitability, -10% pop amenities usage, -10% pop housing usage
@@ -167,7 +167,7 @@ The list of traits and their effects is as follows:
   Councilor: +10% survey speed, +10% anomaly research speed
 
 [b]Enhanced Perception[/b] (Available to Scholars)
-  Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
+  Leader: +10% anomaly research speed, +10% archeology speed, +10 astral rift speed
 
 [b]Failing Subroutines[/b] (Negative trait)
   Councilor: +10% empire size effect
@@ -210,7 +210,7 @@ The list of traits and their effects is as follows:
   Leader: +10% survey speed, +10% anomaly discovery chance
 
 [b]Enhanced Perception[/b] (Available to Scholars)
-  Leader: +10% anomaly research speed, +10% archealogy speed, +10 astral rift speed
+  Leader: +10% anomaly research speed, +10% archeology speed, +10 astral rift speed
 
 [b]Bureaucratic Impatiency[/b] (Negative trait)
   Councilor: -10% agenda duration
