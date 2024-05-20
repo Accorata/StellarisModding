@@ -83,7 +83,7 @@ The list of traits and their effects is as follows:
 [b]Electronic Mind Meld[/b] (Available to Explorers)
   Leader: +20% ship speed, +10% anomaly discovery chance
 
-[b]Mult-tool Appendages[/b] (Available to Scholars)
+[b]Multi-tool Appendages[/b] (Available to Scholars)
   Leader: +1 archaeology skill, +5% archealogy speed
 
 [b]Endlessly Adaptive[/b] (Destiny trait)

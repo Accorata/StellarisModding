@@ -4,9 +4,9 @@
   leader_trait_logistics_insights_desc:0 "Supply chains come naturally to this leader, who uses their knowledge to better distribute the resources needed to power local economies."
 # Official Traits
   leader_trait_patron_of_research:0 "Patron of Research"
-  leader_trait_patron_of_research_desc:0 "This leader cares deeply about technological progress and makes sure to provide extra funding where it is needed."
+  leader_trait_patron_of_research_desc:0 "This leader cares deeply about technological progress and provides extra funding wherever and whenever it is needed."
   leader_trait_eru_science_communicator:0 "Science Communicator"
-  leader_trait_eru_science_communicator_desc:0 "This leaders scientific knowledge allows them to effectively communicate technological progress to both allies and the public."
+  leader_trait_eru_science_communicator_desc:0 "This leader's scientific knowledge allows them to effectively communicate technological progress to both allies and the public."
   leader_trait_galactic_scientist:0 "Galactic Scientist"
   leader_trait_galactic_scientist_desc:0 "In this leader's spare time, they make inventions that are known across the galaxy."
 # Commander traits
@@ -24,10 +24,10 @@
   leader_trait_enhanced_perception:0 "Enhanced Perception"
   leader_trait_enhanced_perception_desc:0 "This leader spots what others often miss, letting them rush through what would otherwise be difficult tasks."
 # Negative Traits
-  leader_trait_bureaucratic_impatiency:0 "Bureaucratic Impatiency"
+  leader_trait_bureaucratic_impatiency:0 "Bureaucratic Impatience"
   leader_trait_bureaucratic_impatiency_desc:0 "This leader struggles to confine their endless new ideas within the red tape of the government."
   leader_trait_bureaucratic_impatiency_2:0 "$leader_trait_bureaucratic_impatiency$ II"
   leader_trait_bureaucratic_impatiency_2_desc:0 "$leader_trait_bureaucratic_impatiency_desc$"
 # Destiny Traits
   leader_trait_unbound_intellect:0 "Unbound Intellect"
-  leader_trait_unbound_intellect_desc:0 "The limits of this leaders intelligence have yet to be found. Across the empire they've made countless improvements beyond any level of genius ever seen before."
+  leader_trait_unbound_intellect_desc:0 "The limits of this leader's intelligence have yet to be found. Across the empire, they've made countless improvements beyond any level of genius ever seen before."
