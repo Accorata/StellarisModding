@@ -1,0 +1,34 @@
+spriteTypes = {
+	# ?
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_fft_social_media"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_fft_social_media.dds"
+	}
+
+	# Backgrounds Art
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_fft_social_media"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_fft_social_media.dds"
+	}
+
+	# Tiles
+
+	# corneredTileSpriteType = {
+	# 	name = "GFX_tradition_category_tile_tradition_mt_vigilance"
+	# 	textureFile = "gfx/interface/tiles/tradition_category_tile_mt_vigilance.dds"
+	# 	borderSize = { x=140 y=140 }
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	# }
+
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_fft_social_media"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_fft_social_media.dds"
+	}
+
+	# Tradition Arts
+	spriteType = {
+		name = "GFX_tr_fft_social_media_collective_participation"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_collective_participation.dds"
+	}
+}
