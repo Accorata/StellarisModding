@@ -1,9 +1,9 @@
 spriteTypes = {
 	# ?
-	spriteType = {
-		name = "GFX_tradition_hex_bg_tradition_fft_social_media"
-		textureFile = "gfx/interface/traditions/tradition_hex_bg_fft_social_media.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_tradition_hex_bg_tradition_fft_social_media"
+	# 	textureFile = "gfx/interface/traditions/tradition_hex_bg_fft_social_media.dds"
+	# }
 
 	# Backgrounds Art
 	spriteType = {
@@ -30,5 +30,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tr_fft_social_media_collective_participation"
 		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_collective_participation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_fft_social_media_administrative_networks"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_administrative_networks.dds"
 	}
 }

@@ -1,0 +1,20 @@
+﻿l_english:
+# Tradition Names + Descriptions + Toottips
+  tradition_fft_social_media:0 "\-Media Instantaneity"
+  tradition_fft_social_media_desc:0 "..."
+  tr_fft_social_media_adopt:0 "Media Instantaneity Traditions"
+  tr_fft_social_media_collective_participation:0 "Collective Participation"
+  tr_fft_social_media_collective_participation_delayed:0 "..."
+  tr_fft_social_media_administrative_networks:0 "Administrative Networks"
+  tr_fft_social_media_administrative_networks_desc:0 "..."
+  tr_fft_social_media_administrative_networks_modifier_desc:0 "§YUnlocks Policy§!: $fft_social_media_focus$\nAllows our government to decide what limitations on the media to place or to avoid."
+
+  fft_social_media_focus: "Media Oversight"
+  fft_social_media_egal_focus_flag_name: "Freedom of the Press"
+  fft_social_media_auth_focus_flag_name: "Regulated Coverage"
+  policy_fft_social_media_focus: "Media Oversight"
+  policy_fft_social_media_focus_desc: "It's neccessary to have a policy on what regulations are necessary to place on our nation's media."
+  fft_social_media_egal_focus: "Freedom of the Press"
+  fft_social_media_egal_focus_desc: "...\n\n"
+  fft_social_media_auth_focus: "Regulated Coverage"
+  fft_social_media_auth_focus_desc: "...\n\n"

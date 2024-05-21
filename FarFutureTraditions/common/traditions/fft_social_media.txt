@@ -18,43 +18,62 @@ tr_fft_social_media_finish = {
 tr_fft_social_media_collective_participation = {
 	#custom_tooltip = tr_urbanism_city_life_desc
 	modifier = {
-		planet_pop_assembly_mult = 0.05
-	}
-	# tradition swap for machines
-	tradition_swap = {
-		# name = tr_urbanism_city_life_machine
-		inherit_name = yes
-		inherit_icon = yes
-		trigger = {
-			is_machine_empire = yes
-		}
-		# increase machine assemlbly by 5%, auto resesttlement by 30%
-		modifier = {
-			planet_pop_assembly_mult = 0.05
-			planet_resettlement_unemployed_mult = 0.3
-		}
-		weight = {
-			factor = 1
-		}
-	}
-	# tradition swap for hives
-	tradition_swap = {
-		# name = tr_urbanism_city_life_hive
-		inherit_name = yes
-		inherit_icon = yes
-		trigger = {
-			is_hive_empire = yes
-		}
-		# increase pop growth by 5%, auto resesttlement by 30%
-		modifier = {
-			pop_growth_speed = 0.05
-			planet_resettlement_unemployed_mult = 0.3
-		}
-		weight = {
-			factor = 1
-		}
+		pop_category_rulers_unity_produces_add = 0.05
+		pop_category_specialists_unity_produces_add = 0.05
+		pop_category_workers_unity_produces_add = 0.05
 	}
 	ai_weight = {
 		factor = 1000
 	}
 }
+
+tr_fft_social_media_administrative_networks = {
+	possible = {
+		has_tradition = tr_fft_social_media_collective_participation
+	}
+	modifier = {
+
+	}
+	custom_tooltip_with_modifiers = tr_fft_social_media_administrative_networks_modifier_desc
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# 	# tradition swap for machines
+# 	tradition_swap = {
+# 		# name = tr_urbanism_city_life_machine
+# 		inherit_name = yes
+# 		inherit_icon = yes
+# 		trigger = {
+# 			is_machine_empire = yes
+# 		}
+# 		# increase machine assemlbly by 5%, auto resesttlement by 30%
+# 		modifier = {
+# 			planet_pop_assembly_mult = 0.05
+# 			planet_resettlement_unemployed_mult = 0.3
+# 		}
+# 		weight = {
+# 			factor = 1
+# 		}
+# 	}
+# 	# tradition swap for hives
+# 	tradition_swap = {
+# 		# name = tr_urbanism_city_life_hive
+# 		inherit_name = yes
+# 		inherit_icon = yes
+# 		trigger = {
+# 			is_hive_empire = yes
+# 		}
+# 		# increase pop growth by 5%, auto resesttlement by 30%
+# 		modifier = {
+# 			pop_growth_speed = 0.05
+# 			planet_resettlement_unemployed_mult = 0.3
+# 		}
+# 		weight = {
+# 			factor = 1
+# 		}
+# 	}
+# 	ai_weight = {
+# 		factor = 1000
+# 	}
