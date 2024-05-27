@@ -57,7 +57,7 @@ leader_trait_one_with_the_machine = {
 		}
 	}
 	councilor_modifier = {
-		planet_pop_assembly_organic_mult = 0.05
+		planet_pop_assembly_mult = 0.05
 		planet_building_build_speed_mult = 0.15
 	}
 	leader_class = {
