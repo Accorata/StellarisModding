@@ -6,7 +6,7 @@ tech_ansible = {
 		particles
 	}
 	prerequisites = {
-		"tech_physics_2"
+		"tech_space_science_3"
 	}
 	is_rare = yes
 	weight = @tier3weight1
