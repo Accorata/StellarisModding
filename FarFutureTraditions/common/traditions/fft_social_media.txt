@@ -32,7 +32,7 @@ tr_fft_social_media_administrative_networks = {
 	}
 	modifier = {
 	}
-	custom_tooltip_with_modifiers = tr_fft_social_media_administrative_networks_modifier_desc
+	custom_tooltip = tr_fft_social_media_administrative_networks_modifier_desc
 	ai_weight = {
 		factor = 1000
 	}
@@ -43,9 +43,14 @@ tr_fft_social_media_media_influencers = {
 		has_tradition = tr_fft_social_media_collective_participation
 	}
 	modifier = {
-		job_culture_worker_add = 1
 		country_leader_pool_size = 1
 	}
+	hidden_effect = {
+		modifier = {
+			job_culture_worker_add = 1
+		}
+	}
+	custom_tooltip_with_modifiers = tr_fft_social_media_media_influencers_modifier_desc
 	ai_weight = {
 		factor = 1000
 	}
