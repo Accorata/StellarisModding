@@ -30,7 +30,7 @@ country_event = {
 						save_event_target_as = attacking_general
 					}
 				}
-				# Select a defending army
+				# Select the defeated army
 				random_ground_combat_defender = {
 					limit = {
 						is_same_value = ROOT.FROM
@@ -115,6 +115,133 @@ country_event = {
 						}
 						add_resource = {
 							food = 75						# Tier 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+# On army killed in combat.
+country_event = {
+	id = advanced_leader_traits.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROMFROM = {
+			# Planet where ground combat is taking place.
+			# Check if attacking army has general with Recalibrator trait.
+			if = {
+				limit = {
+					any_ground_combat_attacker = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_recalibrator
+								has_trait = leader_trait_recalibrator_2
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+					}
+				}
+				# Select the defeated army
+				random_ground_combat_attacker = {
+					limit = {
+						is_same_value = ROOT.FROM
+					}
+					save_event_target_as = army_defeated
+				}
+				random_ground_combat_defender = {
+					limit = {
+						is_same_value = ROOT.FROM
+					}
+					save_event_target_as = army_defeated
+				}
+				# Save general
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_recalibrator
+								has_trait = leader_trait_recalibrator_2
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+			}
+		}
+		# If defeated army was a robot, chance to spawn another
+		if = {
+			limit = {
+				exists = event_target:army_defeated
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:army_defeated = {
+							is_robotic = yes
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator
+							}
+						}
+						random_list = {
+							9 = { }
+							1 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator_2
+							}
+						}
+						random_list = {
+							8 = { }
+							2 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+						random_list = {
+							7 = { }
+							3 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
 						}
 					}
 				}
