@@ -2,5 +2,6 @@
 on_army_killed_in_combat = {
 	events = {
 		advanced_leader_traits.1		# On army destroyed desecrator traits.
+		advanced_leader_traits.2		# On army destroyed recalibrator traits.
 	}
 }

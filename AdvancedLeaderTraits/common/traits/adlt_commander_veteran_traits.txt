@@ -47,16 +47,6 @@ leader_trait_desecrator_2 = {
 	leader_class = {
 		commander
 	}
-	randomized = yes
-	notify_on_gained = yes
-	selectable_weight = {
-		weight = @class_trait_weight
-		inline_script = paragon/army_weight_mult
-		inline_script = {
-			script = paragon/subclass_weight_mult
-			SUBCLASS = commander_general
-		}
-	}
 }
 
 leader_trait_desecrator_3 = {
@@ -78,16 +68,6 @@ leader_trait_desecrator_3 = {
 	custom_tooltip = leader_trait_desecrator_2_effect
 	leader_class = {
 		commander
-	}
-	randomized = yes
-	notify_on_gained = yes
-	selectable_weight = {
-		weight = @class_trait_weight
-		inline_script = paragon/army_weight_mult
-		inline_script = {
-			script = paragon/subclass_weight_mult
-			SUBCLASS = commander_general
-		}
 	}
 }
 
@@ -158,16 +138,6 @@ leader_trait_recalibrator_2 = {
 	leader_class = {
 		commander
 	}
-	randomized = yes
-	notify_on_gained = yes
-	selectable_weight = {
-		weight = @class_trait_weight
-		inline_script = paragon/army_weight_mult
-		inline_script = {
-			script = paragon/subclass_weight_mult
-			SUBCLASS = commander_general
-		}
-	}
 }
 
 leader_trait_recalibrator_3 = {
@@ -187,14 +157,94 @@ leader_trait_recalibrator_3 = {
 	leader_class = {
 		commander
 	}
+}
+
+leader_trait_invader = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_virtual"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				AND = {
+					has_ethic = ethic_militarist
+					exists = owner
+					owner = {
+						has_technology = tech_interstellar_campaigns
+					}
+				}
+				is_genocidal = yes
+			}
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.1
+		ship_home_territory_fire_rate_mult = -0.1
+	}
+	leader_class = {
+		commander
+	}
 	randomized = yes
 	notify_on_gained = yes
 	selectable_weight = {
-		weight = @class_trait_weight
-		inline_script = paragon/army_weight_mult
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
 		inline_script = {
 			script = paragon/subclass_weight_mult
-			SUBCLASS = commander_general
+			SUBCLASS = commander_admiral
 		}
+	}
+}
+
+leader_trait_invader_2 = {
+	replaced_traits = {
+		leader_trait_invader
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_virtual"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_home_territory_fire_rate_mult = -0.15
+		ship_damage_against_starbases_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_invader_3 = {
+	replaced_traits = {
+		leader_trait_invader_2
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_virtual"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_home_territory_fire_rate_mult = -0.15
+		ship_damage_against_starbases_mult = 0.25
+	}
+	leader_class = {
+		commander
 	}
 }

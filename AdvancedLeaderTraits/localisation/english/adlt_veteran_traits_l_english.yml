@@ -13,6 +13,9 @@
   leader_trait_recalibrator_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y10%§! to spawn a Hunter Killer Army of that species"
   leader_trait_recalibrator_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y20%§! to spawn a Hunter Killer Army of that species"
   leader_trait_recalibrator_3_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y30%§! to spawn a Hunter Killer Army of that species"
+# Militarist
+  leader_trait_invader:0 "Invader"
+  leader_trait_invader_desc:0 "..."
 ## Scientist Traits
 
 EVERY_MACHINE_ARMY_KILLED_TXT: "For Every Machine Army Killed or Lost in Combat"
