@@ -1,0 +1,10 @@
+﻿l_english:
+## Official Traits
+
+## Commander traits
+# Xenophobic
+  leader_trait_desecrator:0 "Desecrator"
+  leader_trait_desecrator_desc:0 "..."
+  leader_trait_desecrator_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$If organic: $r_food$: §G+40§!\n$tt$If lithoid: $r_minerals$: §G+40§!"\n$tt$If machine: $r_energy$: §G+40§!"
+  leader_trait_desecrator_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$If organic: $r_food$: §G+75§!\n$tt$If lithoid: $r_minerals$: §G+75§!"\n$tt$If machine: $r_energy$: §G+75§!"
+## Scientist Traits

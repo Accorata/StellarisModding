@@ -1,0 +1,6 @@
+#An army has been killed in ground combat
+on_army_killed_in_combat = {
+	events = {
+		advanced_leader_traits.1		# On army destroyed desecrator traits.
+	}
+}
