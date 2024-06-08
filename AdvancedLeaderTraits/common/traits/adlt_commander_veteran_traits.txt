@@ -222,7 +222,7 @@ leader_trait_invader_2 = {
 		ship_home_territory_fire_rate_mult = -0.15
 		ship_damage_against_starbases_mult = 0.05
 	}
-	# custom_tooltip = leader_trait_invader_2_effect
+	custom_tooltip = leader_trait_invader_2_effect
 	leader_class = {
 		commander
 	}
