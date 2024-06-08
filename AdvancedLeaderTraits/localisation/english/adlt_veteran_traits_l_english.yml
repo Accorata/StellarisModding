@@ -16,6 +16,11 @@
 # Militarist
   leader_trait_invader:0 "Invader"
   leader_trait_invader_desc:0 "..."
+  leader_trait_invader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+10%§!"
+  leader_trait_invader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+15%§!\n$t$Damage vs Starbases: §G+5%§!"
+  leader_trait_invader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+15%§!\n$t$Damage vs Starbases: §G+25%§!"
 ## Scientist Traits
 
-EVERY_MACHINE_ARMY_KILLED_TXT: "For Every Machine Army Killed or Lost in Combat"
+
+# Other
+  EVERY_MACHINE_ARMY_KILLED_TXT: "For Every Machine Army Killed or Lost in Combat"
