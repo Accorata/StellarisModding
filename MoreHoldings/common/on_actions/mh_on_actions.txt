@@ -1,0 +1,6 @@
+# this = country
+on_bi_yearly_pulse_country = {
+	events = {
+		more_holdings.1		# Synaptic Packager resettles pop to lathe
+	}
+}

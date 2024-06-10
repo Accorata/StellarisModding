@@ -1,0 +1,22 @@
+mh_synaptic_packager = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_synaptic_packager
+	base_cap_amount = 1
+	category = research
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	planet_modifier = {
+		monthly_loyalty = -1
+	}
+	triggered_desc = {
+		text = holding_mh_synaptic_packager_desc
+	}
+}
