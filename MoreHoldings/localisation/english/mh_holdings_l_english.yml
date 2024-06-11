@@ -1,5 +1,8 @@
 ﻿l_english:
 ## Holdings
   mh_synaptic_packager:0 "Synaptic Packager"
-  mh_synaptic_packager_desc:0 "..."
-  holding_mh_synaptic_packager_desc:0 "Every §Y2%§! years, resettles one pop from this planet to the Synaptic Lathe if possible."
+  mh_synaptic_packager_desc:0 "The Lathe could greatly benefit from a wide variety of minds, and our subjects have a number of wonderful intellectuals who would do perfectly."
+  holding_mh_synaptic_packager_desc:0 "Every §Y2§! years, resettles one pop from this planet to the Synaptic Lathe, if possible."
+
+  mh_interstellar_embassy:0 "Interstellar Embassy"
+  mh_interstellar_embassy_desc:0 "..."

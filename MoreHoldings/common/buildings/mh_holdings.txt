@@ -20,3 +20,27 @@ mh_synaptic_packager = {
 		text = holding_mh_synaptic_packager_desc
 	}
 }
+
+mh_interstellar_embassy = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = mh_interstellar_embassy
+	base_cap_amount = 1
+	category = government
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	country_modifier = {
+		country_trust_cap_add = 10
+		country_trust_growth = 0.05
+	}
+	planet_modifier = {
+		monthly_loyalty = 0.25
+	}
+}
