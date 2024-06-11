@@ -6,3 +6,8 @@
 
   mh_interstellar_embassy:0 "Interstellar Embassy"
   mh_interstellar_embassy_desc:0 "..."
+
+  mh_telepathic_outpost:0 "Psionic Stronghold"
+  mh_telepathic_outpost_desc:0 "..."
+  mh_overlord_telepath:0 "Overlord Telepath"
+  mh_overlord_telepath_desc:0 "..."
