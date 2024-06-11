@@ -7,7 +7,8 @@
   mh_interstellar_embassy:0 "Interstellar Embassy"
   mh_interstellar_embassy_desc:0 "..."
 
-  mh_telepathic_outpost:0 "Psionic Stronghold"
+  mh_telepathic_outpost:0 "Psionic Monastery"
   mh_telepathic_outpost_desc:0 "..."
-  mh_overlord_telepath:0 "Overlord Telepath"
+  mod_job_mh_overlord_telepath_add:0 "$mh_overlord_telepath$ Jobs"
+  mh_overlord_telepath:0 "Psionic Adepts"
   mh_overlord_telepath_desc:0 "..."

@@ -63,8 +63,7 @@ mh_interstellar_embassy = {
 mh_telepathic_outpost = {
 	base_buildtime = @b2_time
 	owner_type = subject_holding
-	icon = holding_mh_interstellar_embassy
-	#holding_mh_telepathic_outpost
+	icon = holding_mh_telepathic_outpost
 	base_cap_amount = 1
 	category = government
 	resources = {
@@ -76,11 +75,11 @@ mh_telepathic_outpost = {
 			energy = @b2_upkeep
 		}
 	}
-	potential = {
-		owner.overlord = {
-			has_tradition = tr_psionics_psi_corps
-		}
-	}
+	# potential = {
+	# 	owner.overlord = {
+	# 		has_tradition = tr_psionics_psi_corps
+	# 	}
+	# }
 	country_modifier = {
 		shroud_delve_cooldown = -0.05
 	}
