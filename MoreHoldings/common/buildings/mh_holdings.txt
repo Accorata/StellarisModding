@@ -14,7 +14,7 @@ mh_synaptic_packager = {
 		}
 	}
 	planet_modifier = {
-		monthly_loyalty = -1
+		monthly_loyalty = -1.5
 	}
 	potential = {
 		owner.overlord = {
@@ -55,8 +55,67 @@ mh_interstellar_embassy = {
 		country_trust_growth = 0.05
 	}
 	planet_modifier = {
-		job_politician_add = 1
 		monthly_loyalty = 0.25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_politician_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_politician_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes 
+				is_machine = yes
+			}
+		}
+		modifier = {
+			job_coordinator_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				is_machine = yes
+			}
+		}
+		text = job_coordinator_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes 
+				is_machine = no
+			}
+		}
+		modifier = {
+			job_synapse_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				is_machine = no
+			}
+		}
+		text = job_synapse_drone_effect_desc
 	}
 }
 
@@ -75,15 +134,101 @@ mh_telepathic_outpost = {
 			energy = @b2_upkeep
 		}
 	}
-	# potential = {
+	potential = {
+		owner = {
+			is_gestalt = no
+		}
 	# 	owner.overlord = {
 	# 		has_tradition = tr_psionics_psi_corps
 	# 	}
-	# }
-	country_modifier = {
-		shroud_delve_cooldown = -0.05
 	}
+	hidden_effect = {
+		country_modifier = {
+			shroud_delve_cooldown = -0.05
+		}
+		planet_modifier = {
+			job_mh_overlord_telepath_add = 2
+		}
+	}
+	triggered_desc = {
+		text = holding_mh_telepathic_outpost_desc
+	}
+	triggered_desc = {
+		text = job_mh_overlord_telepath_effect_desc
+	}
+}
+
+mh_offworld_refinery = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_offworld_refinery
+	base_cap_amount = 1
+
+	category = manufacturing
+
+	allow = {
+		custom_tooltip = {
+			fail_text = subject_is_prospectorium
+			exists = planet.owner
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
+	}
+
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
 	planet_modifier = {
-		job_mh_overlord_telepath_add = 2
+		monthly_loyalty = -1.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_mh_overlord_refiner_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_mh_overlord_refiner_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_mh_overlord_refiner_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_mh_overlord_refiner_drone_effect_desc
+	}
+
+	destroy_trigger = {
+		exists = planet.owner
+		planet.owner = {
+			NOT = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
 	}
 }

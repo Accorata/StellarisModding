@@ -1,4 +1,4 @@
-mh_overlord_telepath = {
+job_mh_overlord_telepath = {
 	category = specialist
 	can_set_priority = no
 	is_capped_by_modifier = yes
@@ -112,4 +112,141 @@ mh_overlord_telepath = {
 		weight = @overlord_job_weight
 	}
 	inline_script = "jobs/automodding_priority_unity"
+}
+
+job_mh_overlord_refiner = {
+	can_set_priority = no
+	is_capped_by_modifier = yes
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = holding_mh_offworld_refinery
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	overlord_resources = {
+		category = planet_refiners
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			volatile_motes = 0.6
+			rare_crystals = 0.6
+			exotic_gases = 0.6
+
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			volatile_motes = 0.8
+			rare_crystals = 0.8
+			exotic_gases = 0.8
+		}
+	}
+	resources = {
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			minerals = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			food = 15
+		}
+	}
+	weight = {
+		weight = @overlord_job_weight
+	}
+}
+
+job_mh_overlord_refiner_drone = {
+	can_set_priority = no
+	is_capped_by_modifier = yes
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = holding_mh_offworld_refinery
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_drone_job
+	possible = {
+		can_think = yes
+	}
+	overlord_resources = {
+		category = planet_refiners
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			volatile_motes = 0.6
+			rare_crystals = 0.6
+			exotic_gases = 0.6
+
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			volatile_motes = 0.8
+			rare_crystals = 0.8
+			exotic_gases = 0.8
+		}
+	}
+	resources = {
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			minerals = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			food = 15
+		}
+	}
+	weight = {
+		weight = @overlord_job_weight
+	}
 }

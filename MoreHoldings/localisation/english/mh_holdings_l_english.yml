@@ -9,6 +9,24 @@
 
   mh_telepathic_outpost:0 "Psionic Monastery"
   mh_telepathic_outpost_desc:0 "..."
-  mod_job_mh_overlord_telepath_add:0 "$mh_overlord_telepath$ Jobs"
-  mh_overlord_telepath:0 "Psionic Adepts"
-  mh_overlord_telepath_desc:0 "..."
+  holding_mh_telepathic_outpost_desc:0 "Overlord Empire Modifier:\n$t$Shroud Delve Cooldown: §G-5%§!\nPlanet Modifier:\n$t$$mod_job_mh_overlord_telepath_add$: §G+2§!\n"
+  job_mh_overlord_telepath:0 "Psionic Adept"
+  job_mh_overlord_telepath_plural:0 "Psionic Adepts"
+  job_mh_overlord_telepath_desc:0 "..."
+  mod_job_mh_overlord_telepath_add:0 "$job_mh_overlord_telepath$ Jobs"
+  job_mh_overlord_telepath_effect_desc:0 "\n£job_mh_overlord_telepath£ $job_mh_overlord_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
+
+  mh_offworld_refinery:0 "Offworld Refinery"
+  mh_offworld_refinery_desc:0 "..."
+  job_mh_overlord_refiner:0 "Overlord Refiner"
+  job_mh_overlord_refiner_plural:0 "Overlord Refiners"
+  job_mh_overlord_refiner_desc:0 "..."
+  mod_job_mh_overlord_refiner_add:0 "$job_mh_overlord_refiner$ Jobs"
+  job_mh_overlord_refiner_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ Rare Resources for the Overlord."
+
+  job_mh_overlord_refiner_drone:0 "Overlord Refiner Drone"
+  job_mh_overlord_refiner_drone_plural:0 "Overlord Refiner Drones"
+  job_mh_overlord_refiner_drone_desc:0 "..."
+  mod_job_mh_overlord_refiner_drone_add:0 "$job_mh_overlord_refiner_drone$ Jobs"
+  job_mh_overlord_refiner_drone_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_drone_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ Rare Resources for the Overlord."
+
