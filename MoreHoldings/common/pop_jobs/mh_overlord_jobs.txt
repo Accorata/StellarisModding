@@ -1,4 +1,4 @@
-job_mh_overlord_telepath = {
+mh_overlord_telepath = {
 	category = specialist
 	can_set_priority = no
 	is_capped_by_modifier = yes
@@ -114,7 +114,7 @@ job_mh_overlord_telepath = {
 	inline_script = "jobs/automodding_priority_unity"
 }
 
-job_mh_overlord_refiner = {
+mh_overlord_refiner = {
 	can_set_priority = no
 	is_capped_by_modifier = yes
 	category = specialist
@@ -182,7 +182,7 @@ job_mh_overlord_refiner = {
 	}
 }
 
-job_mh_overlord_refiner_drone = {
+mh_overlord_refiner_drone = {
 	can_set_priority = no
 	is_capped_by_modifier = yes
 	category = complex_drone

@@ -138,15 +138,16 @@ mh_telepathic_outpost = {
 		owner = {
 			is_gestalt = no
 		}
-	# 	owner.overlord = {
-	# 		has_tradition = tr_psionics_psi_corps
-	# 	}
+		owner.overlord = {
+			has_tradition = tr_psionics_psi_corps
+		}
 	}
 	country_modifier = {
 		shroud_delve_cooldown = -0.05
 	}
 	planet_modifier = {
 		job_mh_overlord_telepath_add = 2
+		pop_ethic_spiritualist_attraction_mult = 0.05
 	}
 	triggered_desc = {
 		text = holding_mh_telepathic_outpost_desc
@@ -164,15 +165,15 @@ mh_offworld_refinery = {
 
 	category = manufacturing
 
-	allow = {
-		custom_tooltip = {
-			fail_text = subject_is_prospectorium
-			exists = planet.owner
-			planet.owner = {
-				is_specialist_subject_type = { TYPE = prospectorium }
-			}
-		}
-	}
+	# allow = {
+	# 	custom_tooltip = {
+	# 		fail_text = subject_is_prospectorium
+	# 		exists = planet.owner
+	# 		planet.owner = {
+	# 			is_specialist_subject_type = { TYPE = prospectorium }
+	# 		}
+	# 	}
+	# }
 
 	resources = {
 		category = planet_holdings
@@ -247,12 +248,12 @@ mh_offworld_refinery = {
 		text = job_mh_overlord_refiner_drone_effect_catalytic_desc
 	}
 
-	destroy_trigger = {
-		exists = planet.owner
-		planet.owner = {
-			NOT = {
-				is_specialist_subject_type = { TYPE = prospectorium }
-			}
-		}
-	}
+	# destroy_trigger = {
+	# 	exists = planet.owner
+	# 	planet.owner = {
+	# 		NOT = {
+	# 			is_specialist_subject_type = { TYPE = prospectorium }
+	# 		}
+	# 	}
+	# }
 }
