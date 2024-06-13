@@ -22,11 +22,13 @@
   job_mh_overlord_refiner_plural:0 "Overlord Refiners"
   job_mh_overlord_refiner_desc:0 "..."
   mod_job_mh_overlord_refiner_add:0 "$job_mh_overlord_refiner$ Jobs"
-  job_mh_overlord_refiner_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ Rare Resources for the Overlord."
+  job_mh_overlord_refiner_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+  job_mh_overlord_refiner_effect_catalytic_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £food£ §Y$food$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
 
   job_mh_overlord_refiner_drone:0 "Overlord Refiner Drone"
   job_mh_overlord_refiner_drone_plural:0 "Overlord Refiner Drones"
   job_mh_overlord_refiner_drone_desc:0 "..."
   mod_job_mh_overlord_refiner_drone_add:0 "$job_mh_overlord_refiner_drone$ Jobs"
-  job_mh_overlord_refiner_drone_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_drone_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ Rare Resources for the Overlord."
+  job_mh_overlord_refiner_drone_effect_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+  job_mh_overlord_refiner_drone_effect_catalytic_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £food£ §Y$food$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
 

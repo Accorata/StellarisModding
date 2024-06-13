@@ -142,13 +142,11 @@ mh_telepathic_outpost = {
 	# 		has_tradition = tr_psionics_psi_corps
 	# 	}
 	}
-	hidden_effect = {
-		country_modifier = {
-			shroud_delve_cooldown = -0.05
-		}
-		planet_modifier = {
-			job_mh_overlord_telepath_add = 2
-		}
+	country_modifier = {
+		shroud_delve_cooldown = -0.05
+	}
+	planet_modifier = {
+		job_mh_overlord_telepath_add = 2
 	}
 	triggered_desc = {
 		text = holding_mh_telepathic_outpost_desc
@@ -202,9 +200,22 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { 
+				is_gestalt = no 
+				is_catalytic_empire = no
+			}
 		}
 		text = job_mh_overlord_refiner_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_mh_overlord_refiner_effect_catalytic_desc
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -218,9 +229,22 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { 
+				is_gestalt = yes 
+				is_catalytic_empire = no
+			}
 		}
 		text = job_mh_overlord_refiner_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_mh_overlord_refiner_drone_effect_catalytic_desc
 	}
 
 	destroy_trigger = {
