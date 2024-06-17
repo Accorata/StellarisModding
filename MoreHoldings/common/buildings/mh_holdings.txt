@@ -4,6 +4,13 @@ mh_synaptic_packager = {
 	icon = holding_mh_synaptic_packager
 	base_cap_amount = 1
 	category = research
+	custom_tooltip = {
+		fail_text = is_capital
+		exists = planet
+		planet = {
+			is_capital = yes
+		}
+	}
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -165,15 +172,15 @@ mh_offworld_refinery = {
 
 	category = manufacturing
 
-	# allow = {
-	# 	custom_tooltip = {
-	# 		fail_text = subject_is_prospectorium
-	# 		exists = planet.owner
-	# 		planet.owner = {
-	# 			is_specialist_subject_type = { TYPE = prospectorium }
-	# 		}
-	# 	}
-	# }
+	allow = {
+		custom_tooltip = {
+			fail_text = subject_is_prospectorium
+			exists = planet.owner
+			planet.owner = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
+	}
 
 	resources = {
 		category = planet_holdings
@@ -248,12 +255,12 @@ mh_offworld_refinery = {
 		text = job_mh_overlord_refiner_drone_effect_catalytic_desc
 	}
 
-	# destroy_trigger = {
-	# 	exists = planet.owner
-	# 	planet.owner = {
-	# 		NOT = {
-	# 			is_specialist_subject_type = { TYPE = prospectorium }
-	# 		}
-	# 	}
-	# }
+	destroy_trigger = {
+		exists = planet.owner
+		planet.owner = {
+			NOT = {
+				is_specialist_subject_type = { TYPE = prospectorium }
+			}
+		}
+	}
 }
