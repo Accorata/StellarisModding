@@ -1,0 +1,73 @@
+tr_fft_automation_adopt = {
+	possible = {
+		# has_technology = tech_housing_2
+	}
+	# unlocks_agenda = agenda_???
+	modifier = {
+		
+	}
+}
+
+tr_fft_automation_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_fft_automation_overloaded_synthesis = {
+	modifier = {
+		planet_buildings_produces_mult = 0.15
+		starbase_constructions_produces_mult = 0.15
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_automation_artificial_eclipse = {
+	modifier = {
+		planet_jobs_robotic_produces_mult = 0.25
+		planet_pops_robotics_unity_produces_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_fft_automation_artificial_eclipse_machine
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			OR = {
+				is_machine_empire = yes
+				is_individual_machine = yes
+			}
+		}
+		modifier = {
+			planet_pops_upkeep_mult = -0.10
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	# tradition_swap = {
+	# 	name = tr_fft_automation_artificial_eclipse_hive
+	# 	trigger = {
+	# 		is_hive_empire = yes
+	# 	}
+
+	# 	weight = {
+	# 		factor = 1
+	# 	}
+	# }
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_automation_robotic_eclipse_machine = {
+	modifier = {
+		planet_jobs_robotic_produces_mult = 0.25
+		planet_pops_robotics_upkeep_mult = -0.2
+	}
+}

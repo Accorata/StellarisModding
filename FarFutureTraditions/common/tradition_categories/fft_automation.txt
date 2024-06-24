@@ -1,0 +1,15 @@
+tradition_fft_automation = {
+	tree_template = "tree_21_12"
+	adoption_bonus = "tr_fft_automation_adopt"
+	finish_bonus = "tr_fft_automation_finish"
+	traditions = {
+		"tr_fft_automation_overloaded_synthesis"
+		"tr_fft_automation_"
+		"tr_fft_automation_robotic_eclipse"
+		"tr_fft_automation_"
+		"tr_fft_automation_"
+	}
+	ai_weight = {
+		factor = 15
+	}
+}

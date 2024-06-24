@@ -4,8 +4,8 @@ tr_fft_gravitics_adopt = {
 	}
 	# unlocks_agenda = agenda_???
 	modifier = {
-		planet_jobs_ruler_produces_mult = 0.1
-		# more
+		empire_size_districts_mult = -0.25
+		colony_start_num_pops_add = 1
 	}
 }
 
@@ -17,8 +17,8 @@ tr_fft_gravitics_finish = {
 
 tr_fft_gravitics_elevated_skylines = {
 	modifier = {
-		empire_size_districts_mult = -0.25
-		colony_start_num_pops_add = 1
+		planet_jobs_ruler_produces_mult = 0.1
+		pop_category_rulers_influence_produces_add = 0.05
 	}
 	ai_weight = {
 		factor = 1000
