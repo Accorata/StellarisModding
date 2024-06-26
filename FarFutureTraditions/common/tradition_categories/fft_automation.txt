@@ -4,12 +4,15 @@ tradition_fft_automation = {
 	finish_bonus = "tr_fft_automation_finish"
 	traditions = {
 		"tr_fft_automation_overloaded_synthesis"
-		"tr_fft_automation_"
-		"tr_fft_automation_robotic_eclipse"
+		"tr_fft_automation_prefabricated_assembly"
+		"tr_fft_automation_artifical_eclipse"
 		"tr_fft_automation_"
 		"tr_fft_automation_"
 	}
 	ai_weight = {
 		factor = 15
+	}
+	potential = {
+		is_hive_empire = no
 	}
 }

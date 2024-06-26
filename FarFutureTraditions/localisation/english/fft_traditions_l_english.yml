@@ -44,11 +44,21 @@
   tr_fft_automation_finish:0 "Automation Traditions Finished"
   tr_fft_automation_overloaded_synthesis:0 "Overloaded Synthesis"
   tr_fft_automation_overloaded_synthesis_desc:0 "..."
+  tr_fft_automation_prefabricated_assembly:0 "Prefabricated Assembly"
+  tr_fft_automation_prefabricated_assembly_desc:0 "..."
   tr_fft_automation_robotic_eclipse:0 "Artificial Eclipse"
   tr_fft_automation_robotic_eclipse_desc:0 "..."
-  
+  tr_fft_automation_extravagant_abundance:0 "Extravagant Abundance"
+  tr_fft_automation_extravagant_abundance_desc:0 "..."
+  tr_fft_automation_extravagant_abundance_tooltip:0 "§YUnlocks Repeatable Decision:§! $decision_fft_build_extravagant_residence$$TABBED_NEW_LINE$- $mod_job_fft_hedonist_add$: §G+1§!"
+  # Automation - Extravagant Abundance Decision + Job
+  decision_fft_build_extravagant_residence:0 "Build $d_fft_hedonist_living$"
+  decision_fft_build_extravagant_residence_desc:0 "..."
+  d_fft_hedonist_living:0 "Extravagant Residence"
+  d_fft_hedonist_living_desc:0 "Those that live in these ostentatious towers have no need to worry of the plights that befall their lower-class subordinates."
   job_fft_hedonist:0 "Hedonist"
   job_fft_hedonist_plural:0 "Hedonists"
   job_fft_hedonist_desc:0 "$job_fe_hedonist_desc$"
   mod_job_fft_hedonist_add:0 "$job_fft_hedonist$ Jobs"
   # job_fft_hedonist_effect_desc:0 "..."
+  # Resume 

@@ -4,7 +4,7 @@ tr_fft_automation_adopt = {
 	}
 	# unlocks_agenda = agenda_???
 	modifier = {
-		
+		planet_pop_assembly_mult = 0.10
 	}
 }
 
@@ -24,24 +24,38 @@ tr_fft_automation_overloaded_synthesis = {
 	}
 }
 
+tr_fft_automation_prefabricated_assembly = {
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.10
+		planet_building_build_speed_mult = 0.10
+		planet_decision_enact_speed_mult = 0.10
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
 tr_fft_automation_artificial_eclipse = {
+	possible = {
+		has_tradition = tr_fft_automation_overloaded_synthesis
+		has_tradition = tr_fft_automation_prefabricated_assembly
+	}
 	modifier = {
 		planet_jobs_robotic_produces_mult = 0.25
-		planet_pops_robotics_unity_produces_add = 1
+		# planet_pops_robotics_unity_produces_add = 1
+		planet_pop_assemblers_unity_produces_add = 1
 	}
 
 	tradition_swap = {
-		name = tr_fft_automation_artificial_eclipse_machine
+		name = tr_fft_automation_artificial_eclipse_machine_gestalt
 		inherit_icon = yes
 		inherit_name = yes
 		trigger = {
-			OR = {
-				is_machine_empire = yes
-				is_individual_machine = yes
-			}
+			is_machine_empire = yes
 		}
 		modifier = {
-			planet_pops_upkeep_mult = -0.10
+			planet_jobs_produces_mult = 0.5
+			planet_pop_replicators_unity_produces_add = 1
 		}
 
 		weight = {
@@ -49,25 +63,34 @@ tr_fft_automation_artificial_eclipse = {
 		}
 	}
 
-	# tradition_swap = {
-	# 	name = tr_fft_automation_artificial_eclipse_hive
-	# 	trigger = {
-	# 		is_hive_empire = yes
-	# 	}
+	tradition_swap = {
+		name = tr_fft_automation_artificial_eclipse_machine_indiv
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_individual_machine = yes
+		}
+		modifier = {
+			planet_jobs_produces_mult = 0.5
+			planet_pop_assemblers_unity_produces_add = 1
+		}
 
-	# 	weight = {
-	# 		factor = 1
-	# 	}
-	# }
+		weight = {
+			factor = 1
+		}
+	}
 
 	ai_weight = {
 		factor = 1000
 	}
 }
 
-tr_fft_automation_robotic_eclipse_machine = {
-	modifier = {
-		planet_jobs_robotic_produces_mult = 0.25
-		planet_pops_robotics_upkeep_mult = -0.2
+tr_fft_automation_extravagant_abundance = {
+	possible = {
+		has_tradition = tr_fft_automation_artificial_eclipse
+	}
+	custom_tooltip = tr_fft_automation_extravagant_abundance_tooltip
+	ai_weight = {
+		factor = 1000
 	}
 }
