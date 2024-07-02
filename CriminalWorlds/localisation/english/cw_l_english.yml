@@ -94,6 +94,13 @@
   decision_uplift_slums_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into our local society."
   decision_uplift_slums_gestalt:0 "$decision_uplift_slums$"
   decision_uplift_slums_gestalt_desc:0 "$decision_uplift_slums_desc$"
+  decision_cw_undercity_expansion:0 "Undercity Expansion"
+  decision_cw_undercity_expansion_desc:0 "By tunneling futher into the planet we could expand our infrastucture ever downwards. However, it is worth noting that some individuals will utilize our weakened ability to patrol these depths."
+  decision_cw_collapse_lower_level:0 "Collapse Lower Level"
+  decision_cw_collapse_lower_level_desc:0 "The lower levels are only a problematic mess which must be removed."
+# Deposits
+  d_cw_lower_level:0 "Lower Level"
+  d_cw_lower_level_desc:0 "The cities stretch futher and futher into the core of this planet."
 
 # Armies
   cw_mercenary_army:0 "Mercenary Army"
