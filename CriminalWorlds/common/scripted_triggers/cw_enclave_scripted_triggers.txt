@@ -1,0 +1,5 @@
+has_cw_criminal_enclave_event = {
+	has_active_event = {
+		cw_enclave.100 #GREETINGS
+	}
+}
