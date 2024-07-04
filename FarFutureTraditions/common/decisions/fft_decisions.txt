@@ -1,6 +1,6 @@
 decision_fft_build_extravagant_residence = {
 	owned_planets_only = yes
-	icon = decision_arcology_project
+	icon = d_central_spire #decision_arcology_project
 	enactment_time = 180
 	resources = {
 		category = decisions

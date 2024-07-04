@@ -1,15 +1,22 @@
 tr_fft_automation_adopt = {
 	possible = {
-		# has_technology = tech_housing_2
+		OR = {
+			has_technology = tech_binary_motivators
+			has_technology = tech_robomodding_points_1
+		}
 	}
 	# unlocks_agenda = agenda_???
 	modifier = {
-		planet_pop_assembly_mult = 0.10
+		planet_pop_assembly_mult = 0.1
 	}
 }
 
 tr_fft_automation_finish = {
 	modifier = {
+		# testing below
+		planet_districts_energy_upkeep_mult = -0.1
+		planet_districts_alloys_upkeep_add = -1
+		#
 		ascension_perks_add = 1
 	}
 }
@@ -26,9 +33,9 @@ tr_fft_automation_overloaded_synthesis = {
 
 tr_fft_automation_prefabricated_assembly = {
 	modifier = {
-		starbase_shipyard_build_speed_mult = 0.10
-		planet_building_build_speed_mult = 0.10
-		planet_decision_enact_speed_mult = 0.10
+		starbase_shipyard_build_speed_mult = 0.1
+		planet_building_build_speed_mult = 0.1
+		planet_decision_enact_speed_mult = 0.1
 	}
 	ai_weight = {
 		factor = 1000
@@ -45,7 +52,6 @@ tr_fft_automation_artificial_eclipse = {
 		# planet_pops_robotics_unity_produces_add = 1
 		planet_pop_assemblers_unity_produces_add = 1
 	}
-
 	tradition_swap = {
 		name = tr_fft_automation_artificial_eclipse_machine_gestalt
 		inherit_icon = yes
@@ -57,12 +63,10 @@ tr_fft_automation_artificial_eclipse = {
 			planet_jobs_produces_mult = 0.5
 			planet_pop_replicators_unity_produces_add = 1
 		}
-
 		weight = {
 			factor = 1
 		}
 	}
-
 	tradition_swap = {
 		name = tr_fft_automation_artificial_eclipse_machine_indiv
 		inherit_icon = yes
@@ -74,12 +78,10 @@ tr_fft_automation_artificial_eclipse = {
 			planet_jobs_produces_mult = 0.5
 			planet_pop_assemblers_unity_produces_add = 1
 		}
-
 		weight = {
 			factor = 1
 		}
 	}
-
 	ai_weight = {
 		factor = 1000
 	}
