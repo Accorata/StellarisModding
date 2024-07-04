@@ -1,0 +1,81 @@
+namespace = criminal_worlds
+event = {
+	id = criminal_worlds.50
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			exists = event_target:criminal_white_flower
+		}
+	}
+	immediate = {
+		create_species = {
+			name = "NAME_White_flower_species"
+			plural = "NAME_White_flower_species_plural"
+			adjective = "NAME_White_flower_species_adj"
+			class = FUN
+			portrait = "fun14"
+			namelist = "FUN2"
+			traits = {
+				ideal_planet_class = pc_artic
+				trait = "trait_thrifty"
+				trait = "trait_communal"
+				trait = "trait_nonadaptive"
+				trait = "trait_deviants"
+			}
+			effect = {
+				save_global_event_target_as = white_flower_species
+			}
+		}
+		create_country = {
+			name = "NAME_cw_criminal_white_flower"
+			type = pirate
+			species = event_target:white_flower_species
+			name_list = "FUN2"
+			flag = {
+				icon = {
+					# Change to custom flower flag
+					category = "special"
+					file = "the_empire.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"white"
+					"white"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = cw_white_flower
+				save_global_event_target_as = cw_white_flower_country
+			}
+		}
+		every_country = {
+			establish_communications_no_message = last_created_country
+		}
+		random_system = {
+			limit = {
+			}
+		}
+	}
+}
+
+# Via on_custom_diplomacy | this = target country (player); from = country being contacted
+country_event = {
+	id = criminal_worlds.52
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_country_type = pirate
+			has_country_flag = cw_white_flower
+		}
+		# Has white flower stolen ship tag
+	}
+	immediate = {
+	}
+}
