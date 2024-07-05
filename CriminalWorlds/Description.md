@@ -4,7 +4,8 @@ Across Science Fiction there are numerous examples of worlds that fall to crimin
 
 This mod does make crime more punishing as there are more events that can cause problems and they are more likely, however it also adds a number of positive benefits/events that can make having a crime world or two not the worst thing and maybe worth considering. Afterall, a number of existing governments use the criminal organizations within them to their advantage. ([i]Maybe the local mercenaries might come in handy in this next war[/i])
 
-The mod is currently only available in English (translators welcome).
+The mod is currently only available in English and German (thanks NeXon!).
+(translators welcome)
 
 [h2] Compatibility [/h2]
 
@@ -26,4 +27,4 @@ Very few of these events are available for gestalt empires, as the flavor is muc
 
 [h2] Contact [/h2]
 
-Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]Stellaris Modding Den[/url].
+Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]S
