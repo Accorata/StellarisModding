@@ -1,9 +1,11 @@
 namespace = criminal_worlds
-event = {
+country_event = {
+	# Currently not working - no country created, not sure about species
 	id = criminal_worlds.50
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		has_first_contact_dlc = yes
 		NOT = {
 			exists = event_target:criminal_white_flower
 		}
@@ -23,9 +25,9 @@ event = {
 				trait = "trait_nonadaptive"
 				trait = "trait_deviants"
 			}
-			effect = {
-				save_global_event_target_as = white_flower_species
-			}
+			# effect = {
+			# 	save_global_event_target_as = white_flower_species
+			# }
 		}
 		create_country = {
 			name = "NAME_cw_criminal_white_flower"
@@ -49,16 +51,29 @@ event = {
 					"null"
 				}
 			}
-			effect = {
-				set_country_flag = cw_white_flower
-				save_global_event_target_as = cw_white_flower_country
-			}
+			# effect = {
+			# 	set_country_flag = cw_white_flower
+			# 	save_global_event_target_as = cw_white_flower_country
+			# }
+		}
+		random_system = {
+			# limit = {
+			# }
+			save_event_target_as = target_system
 		}
 		every_country = {
 			establish_communications_no_message = last_created_country
 		}
-		random_system = {
-			limit = {
+		create_ship_design = {
+			design = "NAME_White_flower_ship_design"
+		}
+		create_ship = {
+			name = "NAME_White_flower_ship"
+			design = last_created_design
+			upgradable = no
+			effect = {
+				set_location = event_target:target_system
+				# set_cloaking_active = yes
 			}
 		}
 	}

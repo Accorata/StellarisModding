@@ -113,6 +113,8 @@
   NAME_White_flower_species:0 "..."
   NAME_White_flower_species_plural:0 "..."
   NAME_White_flower_species_adj:0 "..."
+  NAME_White_flower_ship:0 "Dancing Needle"
+  NAME_White_flower_ship_design:0 "Needle"
 
 # Special Projects
   cw_smuggled_relic_project_1:0 "Survey Rumors on [Root.GetName]"

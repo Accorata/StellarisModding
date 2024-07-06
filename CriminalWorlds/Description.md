@@ -27,4 +27,4 @@ Very few of these events are available for gestalt empires, as the flavor is muc
 
 [h2] Contact [/h2]
 
-Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]S
+Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]Stellaris Modding Den[/url].

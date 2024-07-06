@@ -20,4 +20,6 @@ on_monthly_pulse_country = {
 on_custom_diplomacy = {
 	events = {
 		cw_enclave.100		# Criminal Enclave greetings
-		crimi
+		criminal_worlds.52		# White Flower Hostage
+	}
+}
