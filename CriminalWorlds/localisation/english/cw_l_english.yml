@@ -107,14 +107,17 @@
   cw_mercenary_army_plural:0 "Mercenary Armies"
   cw_mercenary_army_desc:0 "A ragtag group who fights for one thing and one thing only: wealth."
 
-# Country
-  NAME_cw_criminal_enterprise:0 "Criminal Syndicates"
+## Countries ##
+  NAME_cw_criminal_enterprise:0 "Criminal Enterprises"
+# White Orchid
   NAME_cw_criminal_white_flower:0 "White Orchid"
   NAME_White_flower_species:0 "..."
   NAME_White_flower_species_plural:0 "..."
   NAME_White_flower_species_adj:0 "..."
   NAME_White_flower_ship:0 "Dancing Needle"
   NAME_White_flower_ship_design:0 "Needle"
+# Criminal Enclaves
+  NAME_Criminal_Hideout:0 "Criminal Hideout"
 
 # Special Projects
   cw_smuggled_relic_project_1:0 "Survey Rumors on [Root.GetName]"

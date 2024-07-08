@@ -6,28 +6,24 @@ cw_bribed_enforcer = {
 	building_icon = building_precinct_house
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = {
 		battle_thrall_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_enforcers
 		produces = {
 			energy = 6
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -40,25 +36,24 @@ cw_bribed_enforcer = {
 		}
 		pop_happiness = -0.025
 	}
-
 	planet_modifier = {
 		planet_crime_add = 5
 		planet_stability_add = 1
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = {
 				has_branch_office = yes
 				branch_office_owner = {
-					has_councilor = { COUNCILOR = "councilor_criminal_heritage" }
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
 				}
 			}
 		}
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}
@@ -72,7 +67,6 @@ cw_bribed_politician = {
 	can_set_priority = no
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -80,9 +74,7 @@ cw_bribed_politician = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_ruler_job
-
 	resources = {
 		category = planet_politicians
 		produces = {
@@ -92,7 +84,6 @@ cw_bribed_politician = {
 			consumer_goods = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			always = yes
@@ -100,21 +91,20 @@ cw_bribed_politician = {
 		planet_amenities_add = 3
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = {
 				has_branch_office = yes
 				branch_office_owner = {
-					has_councilor = { COUNCILOR = "councilor_criminal_heritage" }
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
 				}
 			}
 		}
-
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}
@@ -128,7 +118,6 @@ cw_bribed_executive = {
 	can_set_priority = no
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -136,9 +125,7 @@ cw_bribed_executive = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_ruler_job
-
 	resources = {
 		category = planet_executives
 		produces = {
@@ -149,7 +136,6 @@ cw_bribed_executive = {
 			energy = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			always = yes
@@ -157,7 +143,6 @@ cw_bribed_executive = {
 		trade_value_add = 4
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			always = yes
@@ -165,7 +150,6 @@ cw_bribed_executive = {
 		planet_amenities_add = 3
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}
@@ -179,12 +163,10 @@ cw_rogue_shipbuilder = {
 	building_icon = building_foundry_1
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
 	}
-
 	possible = {
 		# check that this is not a robot in servitude
 		NOT = {
@@ -197,28 +179,26 @@ cw_rogue_shipbuilder = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
-		category = planet_jobs #planet_cw_shipbuilders
+		category = planet_jobs		#planet_cw_shipbuilders
 		upkeep = {
 			alloys = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = {
 				has_branch_office = yes
 				branch_office_owner = {
-					has_councilor = { COUNCILOR = "councilor_criminal_heritage" }
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
 				}
 			}
 		}
-
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}
@@ -232,12 +212,10 @@ cw_underworlder = {
 	building_icon = building_residence
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
 	}
-
 	possible = {
 		# check that this is not a robot in servitude
 		NOT = {
@@ -250,14 +228,12 @@ cw_underworlder = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_jobs
 		produces = {
 			trigger = {
 				is_lithoid = no
-				is_machine_empire = no
-				is_mechanical_empire = no
+				is_robot_pop = no
 			}
 			food = 1
 		}
@@ -269,19 +245,14 @@ cw_underworlder = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					is_machine_empire = yes
-					is_mechanical_empire = yes
-				}
+				is_robot_pop = yes
 			}
 			energy = 1
 		}
 	}
-	
 	planet_modifier = {
 		planet_crime_add = 5
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}
@@ -295,12 +266,10 @@ cw_freedom_fighter = {
 	building_icon = building_residence
 	contributes_to_diplo_weight = no
 	ignores_favorite = yes
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
 	}
-
 	possible = {
 		NOT = {
 			has_citizenship_type = {
@@ -312,25 +281,23 @@ cw_freedom_fighter = {
 			is_gestalt = no
 		}
 	}
-
 	planet_modifier = {
 		planet_stability_add = -2
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = {
 				has_branch_office = yes
 				branch_office_owner = {
-					has_councilor = { COUNCILOR = "councilor_criminal_heritage" }
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
 				}
 			}
 		}
-
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-
 	weight = {
 		weight = @criminal_job_weight
 	}

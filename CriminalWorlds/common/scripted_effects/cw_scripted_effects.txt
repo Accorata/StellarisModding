@@ -1,0 +1,50 @@
+cw_create_normal_criminal_enterprise = {
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:criminal_enterprise
+			}
+		}
+		create_country = {
+			name = "NAME_cw_criminal_enterprise"
+			type = pirate
+			flag = {
+				icon = {
+					category = "special"
+					file = "the_empire.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			save_global_event_target_as = criminal_enterprise
+			set_faction_hostility = {
+				set_hostile = no
+				set_neutral = yes
+				target = root
+			}
+		}
+		every_country = {
+			establish_communications_no_message = last_created_country
+		}
+	}
+}
+
+# cw_build_outpost = {
+# 	event_target:owner_of_the_planet = {
+# 		event_target:target_planet_for_building = {
+# 			planet_event = {
+# 				id = cw_enclave.2
+# 			}
+# 		}
+# 	}
+# }

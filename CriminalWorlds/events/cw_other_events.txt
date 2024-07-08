@@ -67,12 +67,19 @@ country_event = {
 		create_ship_design = {
 			design = "NAME_White_flower_ship_design"
 		}
-		create_ship = {
+		create_fleet = {
 			name = "NAME_White_flower_ship"
-			design = last_created_design
-			upgradable = no
 			effect = {
+				set_owner = event_target:criminal_white_flower
+				create_ship = {
+					name = "NAME_White_flower_ship"
+					design = last_created_design
+					upgradable = no
+				}
 				set_location = event_target:target_system
+				set_fleet_stance = aggressive
+				set_aggro_range_measure_from = return_point
+				set_aggro_range = 300
 				# set_cloaking_active = yes
 			}
 		}

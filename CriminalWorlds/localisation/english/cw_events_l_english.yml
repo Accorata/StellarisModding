@@ -77,6 +77,8 @@
 	criminal_worlds.47.desc:0 "The rebel freedom fighters have finally managed to achieve something of note: they were able to hijack a shipping vessel and use it to aid slaves in their escape. Arrests have been made but without further enforcement this tragedy may repeat."
   criminal_worlds.47.a:0 "Unfortunate"
   criminal_worlds.47.a.tooltip:0 "One slave pop on [Root.GetName] is freed to another country."
+
+## Anomalies ##
 # Criminal Stockpile Anomoly
   cw_criminal_stockpile_cat:0 "Radio Chatter"
   cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
@@ -104,3 +106,11 @@
   cw_anomaly.5.name:0 "Mental Illusions"
   cw_anomaly.5.desc:0 "It seems [Root.GetLeaderName] was experiencing a wave of strong psionic dreams. There seems to be no correlation to [Root.GetName], however this psionic experience has helped our scientists delve into this interesting field of research. Hopefully further advancements will explain the crews visions."
   cw_anomaly.5.a:0 "Interesting"
+
+## Criminal Enclaves ##
+# Construction ship
+  cw_enclave.1.name:0 "Criminal Constructions" # Temp
+  cw_enclave.1.desc:0 "A new construction ship now lies above [Root.GetName], a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
+# Outpost built
+  cw_enclave.2.name:0 "Criminal Outpost"
+  cw_enclave.2.desc:0 "..."

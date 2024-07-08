@@ -1,7 +1,5 @@
 namespace = criminal_worlds
-
 @rogue_ship_progress_needed = 30
-
 # On monthly pulse
 country_event = {
 	id = criminal_worlds.24
@@ -9,8 +7,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		AND = {
-			NOT = { 
-				has_ethic = ethic_gestalt_consciousness 
+			NOT = {
+				has_ethic = ethic_gestalt_consciousness
 			}
 			any_owned_planet = {
 				OR = {
@@ -50,7 +48,6 @@ country_event = {
 			# 	}
 			# 	variable = cw_rogue_shipbuilder_job_num
 			# }
-			
 			if = {
 				limit = {
 					has_modifier = cw_criminal_shipyards_2
@@ -58,14 +55,14 @@ country_event = {
 				owner = {
 					change_variable = {
 						which = cw_rogue_ship_progress
-						value = 2 #cw_rogue_shipbuilder_job_num
+						value = 2						#cw_rogue_shipbuilder_job_num
 					}
 				}
 			}
 			owner = {
 				change_variable = {
 					which = cw_rogue_ship_progress
-					value = 1 #cw_rogue_shipbuilder_job_num
+					value = 1					#cw_rogue_shipbuilder_job_num
 				}
 			}
 		}
@@ -92,45 +89,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					exists = event_target:criminal_enterprise
-				}
-			}
-			create_country = {
-				name = "NAME_cw_criminal_enterprise"
-				type = pirate
-				flag = {
-					icon = {
-						category = "special"
-						file = "the_empire.dds"
-					}
-					background= {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors = {
-						"black"
-						"black"
-						"null"
-						"null"
-					}
-				}
-			}
-			last_created_country = {
-				# establish_communications_no_message = root
-				save_global_event_target_as = criminal_enterprise
-				set_faction_hostility = {
-					set_hostile = no
-					set_neutral = yes
-					target = root
-				}
-			}
-			every_country = {
-				establish_communications_no_message = last_created_country
-			}
-		}
+		cw_create_normal_criminal_enterprise = yes
 		random_owned_planet = {
 			limit = {
 				OR = {
@@ -211,11 +170,9 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	pre_triggers = {
 		has_owner = yes
 	}
-
 	option = {
 		name = criminal_worlds.26.a
 	}
