@@ -101,10 +101,11 @@ decision_cw_undercity_expansion = {
 		}
 	}
 	allow = {
-		count_deposits = {
-			category = d_cw_lower_level
-			count < 5
-		}
+		# count_deposits = {
+		# 	category = d_cw_lower_level
+		# 	count < 5
+		# }
+		# This needs to be fixed...
 	}
 	effect = {
 		add_deposit = d_cw_lower_level
@@ -113,7 +114,10 @@ decision_cw_undercity_expansion = {
 		weight = 0
 		modifier = {
 			add = 100
-			num_free_districts = 0
+			num_free_districts = {
+				type = any
+				value = 0
+			}
 		}
 	}
 }
@@ -135,7 +139,10 @@ decision_cw_collapse_lower_level = {
 		has_deposit = d_cw_lower_level
 	}
 	allow = {
-		num_free_districts > 0
+		num_free_districts = {
+			type = any
+			value >= 1
+		}
 		has_deposit = d_cw_lower_level
 	}
 	effect = {

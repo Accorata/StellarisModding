@@ -13,6 +13,63 @@ country_event = {
 		has_cw_criminal_enclave_event = no
 	}
 	immediate = {
+		country_event = {
+			id = cw_enclave.300
+		}
+	}
+}
+
+# Criminal Enclave Main Menu
+country_event = {
+	id = cw_enclave.300
+	title = cw_enclave.300.name
+	desc = cw_enclave.300.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country		# Maybe custom room later?
+	}
+	location = event_target:cw_criminal_enclave_location
+	trigger = {
+		exists = event_target:cw_criminal_enclave_country
+		# NOT = {
+		# 	has_country_flag = enclave_artist_ignores
+		# }
+	}
+	# Goodbye
+	option = {
+		name = {
+			trigger = {
+				has_valid_civic = civic_fanatic_purifiers
+			}
+			text = SCUM
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+			text = TASTY
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_machine_terminator
+			}
+			text = EXTERMINATE
+		}
+		name = {
+			trigger = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+			}
+			text = leviathans.502.a
+		}
+		default_hide_option = yes
 	}
 }
 
@@ -61,7 +118,7 @@ planet_event = {
 		create_fleet = {
 			name = "NAME_Constructor"
 			effect = {
-				set_owner = event_target:criminal_enterprise
+				set_owner = event_target:cw_criminal_enterprise
 				create_ship = {
 					name = "NAME_Constructor"
 					design = NAME_Constructor
@@ -127,8 +184,8 @@ planet_event = {
 			ignore_initial_colony_error = yes
 			effect = {
 				randomize_flag_symbol = "pirate"
-				save_global_event_target_as = salvager_enclave_country
-				set_country_flag = salvager_enclave_country
+				save_global_event_target_as = cw_criminal_enclave_country
+				set_country_flag = cw_criminal_enclave_country
 				#Create capital starbase
 				create_fleet = {
 					name = "NAME_Criminal_Hideout"
@@ -147,12 +204,13 @@ planet_event = {
 							distance = 40
 							angle = 70
 						}
-						save_global_event_target_as = salvager_enclave_starbase
+						save_global_event_target_as = cw_criminal_enclave_starbase
 					}
 				}
 				set_custom_capital_location = root				#event_target:salvager_enclave_starbase
 				# Copy Techs
 				root = {
+					save_global_event_target_as = cw_criminal_enclave_location
 					owner = {
 						save_event_target_as = copy_techs_from
 					}
@@ -178,11 +236,11 @@ planet_event = {
 		# 	limit = { is_ship_size = corvette }
 		# 	save_event_target_as = mercenary_dividend_corvette
 		# }
-		event_target:criminal_enterprise = {
+		event_target:cw_criminal_enterprise = {
 			root = {
 				solar_system = {
 					every_fleet_in_system = {
-						set_owner = event_target:salvager_enclave_country
+						set_owner = event_target:cw_criminal_enclave_country
 					}
 				}
 			}

@@ -2,7 +2,7 @@ cw_create_normal_criminal_enterprise = {
 	if = {
 		limit = {
 			NOT = {
-				exists = event_target:criminal_enterprise
+				exists = event_target:cw_criminal_enterprise
 			}
 		}
 		create_country = {
@@ -26,7 +26,7 @@ cw_create_normal_criminal_enterprise = {
 			}
 		}
 		last_created_country = {
-			save_global_event_target_as = criminal_enterprise
+			save_global_event_target_as = cw_criminal_enterprise
 			set_faction_hostility = {
 				set_hostile = no
 				set_neutral = yes

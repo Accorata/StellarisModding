@@ -255,16 +255,15 @@ planet_event = {
 	immediate = {
 		if = {
 			limit ={
-				is_gestalt = no
+				owner = {
+					is_gestalt = no
+				}
 			}
 			add_modifier = {
 				modifier = cw_underground_slums_1
 			}
 		}
-		if = {
-			limit ={
-				is_gestalt = yes
-			}
+		else = {
 			add_modifier = {
 				modifier = cw_underground_slums_1_gestalt
 			}
@@ -275,16 +274,15 @@ planet_event = {
 		tooltip = {
 			if = {
 				limit ={
-					is_gestalt = no
+					owner = {
+						is_gestalt = no
+					}
 				}
 				add_modifier = {
 					modifier = cw_underground_slums_1
 				}
 			}
-			if = {
-				limit ={
-					is_gestalt = yes
-				}
+			else = {
 				add_modifier = {
 					modifier = cw_underground_slums_1_gestalt
 				}
@@ -314,17 +312,16 @@ planet_event = {
 	immediate = {
 		if = {
 			limit ={
-				is_gestalt = no
+				owner = {
+					is_gestalt = no
+				}
 			}
 			remove_modifier = cw_underground_slums_1
 			add_modifier = {
 				modifier = cw_underground_slums_2
 			}
 		}
-		if = {
-			limit ={
-				is_gestalt = yes
-			}
+		else = {
 			remove_modifier = cw_underground_slums_1_gestalt
 			add_modifier = {
 				modifier = cw_underground_slums_2_gestalt
@@ -336,17 +333,16 @@ planet_event = {
 		tooltip = {
 			if = {
 				limit ={
-					is_gestalt = no
+					owner = {
+						is_gestalt = no
+					}
 				}
 				remove_modifier = cw_underground_slums_1
 				add_modifier = {
 					modifier = cw_underground_slums_2
 				}
 			}
-			if = {
-				limit ={
-					is_gestalt = yes
-				}
+			else = {
 				remove_modifier = cw_underground_slums_1_gestalt
 				add_modifier = {
 					modifier = cw_underground_slums_2_gestalt

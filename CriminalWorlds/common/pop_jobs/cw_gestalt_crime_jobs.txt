@@ -23,8 +23,7 @@ cw_drone_underworlder = {
 		produces = {
 			trigger = {
 				is_lithoid = no
-				is_machine_empire = no
-				is_mechanical_empire = no
+				is_robot_pop = no
 			}
 			food = 1
 		}
@@ -36,10 +35,7 @@ cw_drone_underworlder = {
 		}
 		produces = {
 			trigger = {
-				OR = {
-					is_machine_empire = yes
-					is_mechanical_empire = yes
-				}
+				is_robot_pop = yes
 			}
 			energy = 1
 		}
