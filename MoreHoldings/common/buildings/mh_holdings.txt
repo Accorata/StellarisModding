@@ -4,11 +4,13 @@ mh_synaptic_packager = {
 	icon = holding_mh_synaptic_packager
 	base_cap_amount = 1
 	category = research
-	custom_tooltip = {
-		fail_text = is_capital
-		exists = planet
-		planet = {
-			is_capital = yes
+	allow = {
+		custom_tooltip = {
+			fail_text = is_capital
+			exists = planet
+			planet = {
+				is_capital = yes
+			}
 		}
 	}
 	resources = {
@@ -67,7 +69,9 @@ mh_interstellar_embassy = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 1
@@ -76,7 +80,9 @@ mh_interstellar_embassy = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		text = job_politician_effect_desc
 	}
@@ -84,8 +90,8 @@ mh_interstellar_embassy = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = yes 
-				is_machine = yes
+				is_gestalt = yes
+				is_machine_empire = yes
 			}
 		}
 		modifier = {
@@ -95,9 +101,9 @@ mh_interstellar_embassy = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = yes 
-				is_machine = yes
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = yes
 			}
 		}
 		text = job_coordinator_effect_desc
@@ -106,8 +112,8 @@ mh_interstellar_embassy = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = yes 
-				is_machine = no
+				is_gestalt = yes
+				is_machine_empire = no
 			}
 		}
 		modifier = {
@@ -117,9 +123,9 @@ mh_interstellar_embassy = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = yes 
-				is_machine = no
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = no
 			}
 		}
 		text = job_synapse_drone_effect_desc
@@ -169,19 +175,18 @@ mh_offworld_refinery = {
 	owner_type = subject_holding
 	icon = holding_mh_offworld_refinery
 	base_cap_amount = 1
-
 	category = manufacturing
-
 	allow = {
 		custom_tooltip = {
 			fail_text = subject_is_prospectorium
 			exists = planet.owner
 			planet.owner = {
-				is_specialist_subject_type = { TYPE = prospectorium }
+				is_specialist_subject_type = {
+					TYPE = prospectorium
+				}
 			}
 		}
 	}
-
 	resources = {
 		category = planet_holdings
 		cost = {
@@ -191,15 +196,15 @@ mh_offworld_refinery = {
 			energy = @b1_upkeep
 		}
 	}
-
 	planet_modifier = {
 		monthly_loyalty = -1.5
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_mh_overlord_refiner_add = 2
@@ -208,8 +213,8 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = no 
+			owner = {
+				is_gestalt = no
 				is_catalytic_empire = no
 			}
 		}
@@ -218,8 +223,8 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = no 
+			owner = {
+				is_gestalt = no
 				is_catalytic_empire = yes
 			}
 		}
@@ -228,7 +233,9 @@ mh_offworld_refinery = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_mh_overlord_refiner_drone_add = 2
@@ -237,8 +244,8 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = yes 
+			owner = {
+				is_gestalt = yes
 				is_catalytic_empire = no
 			}
 		}
@@ -247,19 +254,20 @@ mh_offworld_refinery = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { 
-				is_gestalt = yes 
+			owner = {
+				is_gestalt = yes
 				is_catalytic_empire = yes
 			}
 		}
 		text = job_mh_overlord_refiner_drone_effect_catalytic_desc
 	}
-
 	destroy_trigger = {
 		exists = planet.owner
 		planet.owner = {
 			NOT = {
-				is_specialist_subject_type = { TYPE = prospectorium }
+				is_specialist_subject_type = {
+					TYPE = prospectorium
+				}
 			}
 		}
 	}

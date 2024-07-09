@@ -1,4 +1,4 @@
-[h1] Ansible Technologies and Arcologies (From Ursula K LeGuin) [/h1]
+[h1] Ansible Technologies and Arcologies [/h1]
 
 UPDATED FOR 3.12
 
@@ -18,10 +18,27 @@ NOT achievement compatible ([i]Only UI mods that don't change features can be[/i
 
 [h2] Features [/h2]
 
+The arcologies on the Centrapolis (from left to right) are:
+
+[b]Residential Arcology[/b]
+  The base city arcology providing extra housing and 6 Clerk jobs
+
+[b]Coordination Arcology[/b]
+  Provides 6 Optimizer jobs which increase empire-wide production from jobs
+
+[b]Aesthetics Arcology[/b]
+  Provides 6 Culture Worker jobs
+
+[b]Media Arcology[/b]
+  Provides 6 Media Producer jobs which grant empire-wide amenities
+
+[b]Administrative Arcology[/b]
+  The base unity arcology providing 6 Bureaucrat jobs 
+
 The list of techs and their effects is as follows:
 
-[b]Ansible Theory[/b] [i]Rare, Tier 3, Particles[/i] (Requires Applied Quantum Physics)
-  Base: -10% empire size from colonies
+[b]Ansible Theory[/b] [i]Rare, Tier 3, Particles[/i] (Requires Quantum Probes)
+  Base: -10% empire size from planets
 
 [b]Coorperate Relays[/b] [i]Rare, Tier 4, Computing[/i] (Must be megacorp, Requires Ansible)
   Base: -25% empire size from branch offices, -10% branch office cost

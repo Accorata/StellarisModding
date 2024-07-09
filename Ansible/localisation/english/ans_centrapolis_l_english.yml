@@ -28,3 +28,5 @@
   district_arcology_religious_central:0 "$district_arcology_religious$"
   district_arcology_religious_central_plural:0 "$district_arcology_religious_plural$"
   district_arcology_religious_central_desc:0 "$district_arcology_religious_desc$"
+  district_arcology_organic_housing_central:0 "$district_arcology_organic_housing$"
+  district_arcology_organic_housing_central_desc:0 "$district_arcology_organic_housing_desc$"

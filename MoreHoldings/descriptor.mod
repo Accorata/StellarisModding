@@ -4,5 +4,6 @@ tags={
 	"Gameplay"
 }
 name="More Holdings"
-supported_version="3.12.4"
 picture="thumbnail.png"
+supported_version="v3.12.5"
+remote_file_id="3277756953"

@@ -16,9 +16,7 @@ decision_fft_build_extravagant_residence = {
 		}
 	}
 	effect = {
-		add_deposit = {
-			deposit = d_fft_hedonist_living
-		}
+		add_deposit = d_fft_hedonist_living
 	}
 	ai_weight = {
 		weight = 0
