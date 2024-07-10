@@ -8,6 +8,7 @@ country_event = {
 		capital_scope = {
 			has_holding = {
 				holding = mh_synaptic_packager
+				owner = planet.owner.overlord
 			}
 		}
 	}
