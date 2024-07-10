@@ -25,9 +25,9 @@ country_event = {
 				trait = "trait_nonadaptive"
 				trait = "trait_deviants"
 			}
-			# effect = {
-			# 	save_global_event_target_as = white_flower_species
-			# }
+			effect = {
+				save_event_target_as = white_flower_species
+			}
 		}
 		create_country = {
 			name = "NAME_cw_criminal_white_flower"
@@ -50,10 +50,10 @@ country_event = {
 					"null"
 				}
 			}
-			# effect = {
-			# 	set_country_flag = cw_white_flower
-			# 	save_global_event_target_as = cw_white_flower_country
-			# }
+			effect = {
+				# set_country_flag = cw_white_flower
+				save_event_target_as = cw_white_flower_country
+			}
 		}
 		random_system = {
 			# limit = {
@@ -69,7 +69,7 @@ country_event = {
 		create_fleet = {
 			name = "NAME_White_flower_ship"
 			effect = {
-				set_owner = event_target:criminal_white_flower
+				set_owner = event_target:cw_white_flower_country
 				create_ship = {
 					name = "NAME_White_flower_ship"
 					design = last_created_design

@@ -150,13 +150,17 @@ planet_event = {
 	location = root
 	is_triggered_only = yes
 	immediate = {
-		owner = {
-			owner_species = {
-				save_event_target_as = pirate_species
+		root = {
+			exists = owner
+			owner = {
+				owner_species = {
+					save_event_target_as = pirate_species
+				}
 			}
 		}
 		create_country = {
 			name = random
+			ethos = random
 			type = enclave
 			authority = "auth_oligarchic"
 			# civics = {
@@ -176,11 +180,6 @@ planet_event = {
 			}
 			origin = "origin_default"
 			species = event_target:pirate_species
-			# ethos = {
-			# 	ethic = ethic_fanatic_materialist
-			# 	ethic = ethic_pacifist
-			# }
-			# rebels
 			ignore_initial_colony_error = yes
 			effect = {
 				randomize_flag_symbol = "pirate"
@@ -236,12 +235,13 @@ planet_event = {
 		# 	limit = { is_ship_size = corvette }
 		# 	save_event_target_as = mercenary_dividend_corvette
 		# }
-		event_target:cw_criminal_enterprise = {
-			root = {
-				solar_system = {
-					every_fleet_in_system = {
-						set_owner = event_target:cw_criminal_enclave_country
+		root = {
+			solar_system = {
+				every_fleet_in_system = {
+					limit = {
+						has_owner = event_target:cw_criminal_enterprise
 					}
+					set_owner = event_target:cw_criminal_enclave_country
 				}
 			}
 		}
