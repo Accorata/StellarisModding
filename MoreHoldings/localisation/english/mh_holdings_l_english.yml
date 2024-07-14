@@ -32,3 +32,5 @@
   job_mh_overlord_refiner_drone_effect_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
   job_mh_overlord_refiner_drone_effect_catalytic_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £food£ §Y$food$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
 
+  mh_mission_holding:0 "Mission Holding"
+  mh_mission_holding_desc:0 "Diligent missionaries spread faith and goodwill to the people."
