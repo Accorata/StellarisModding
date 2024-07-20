@@ -10,12 +10,13 @@ tr_fft_social_media_adopt = {
 
 tr_fft_social_media_finish = {
 	modifier = {
+		country_unity_produces_mult = 0.1
+		planet_amenities_mult = 0.1
 		ascension_perks_add = 1
 	}
 }
 
 tr_fft_social_media_collective_participation = {
-	#custom_tooltip = tr_urbanism_city_life_desc
 	modifier = {
 		pop_category_rulers_unity_produces_add = 0.05
 		pop_category_specialists_unity_produces_add = 0.05

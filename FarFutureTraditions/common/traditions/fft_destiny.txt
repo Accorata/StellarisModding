@@ -1,0 +1,17 @@
+tr_fft_destiny_adopt = {
+	possible = {
+		ruler = {
+			is_immortal = yes
+		}
+	}
+	# unlocks_agenda = agenda_???
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.1
+	}
+}
+
+tr_fft_destiny_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}

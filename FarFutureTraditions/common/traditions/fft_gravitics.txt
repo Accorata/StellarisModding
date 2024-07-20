@@ -4,8 +4,7 @@ tr_fft_gravitics_adopt = {
 	}
 	# unlocks_agenda = agenda_???
 	modifier = {
-		empire_size_districts_mult = -0.25
-		colony_start_num_pops_add = 1
+		planet_jobs_ruler_produces_mult = 0.1
 	}
 }
 
@@ -17,8 +16,8 @@ tr_fft_gravitics_finish = {
 
 tr_fft_gravitics_elevated_skylines = {
 	modifier = {
-		planet_jobs_ruler_produces_mult = 0.1
-		pop_category_rulers_influence_produces_add = 0.05
+		empire_size_districts_mult = -0.25
+		colony_start_num_pops_add = 1
 	}
 	ai_weight = {
 		factor = 1000
@@ -29,6 +28,8 @@ tr_fft_neo_lagrangian_dynamics = {
 	modifier = {
 		station_researchers_produces_mult = 0.1
 		stations_upkeep_mult = -0.25
+		# Testing below
+		starbase_building_capacity_add = 1
 	}
 	ai_weight = {
 		factor = 1000

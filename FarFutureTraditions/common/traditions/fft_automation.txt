@@ -13,10 +13,7 @@ tr_fft_automation_adopt = {
 
 tr_fft_automation_finish = {
 	modifier = {
-		# testing below
-		planet_districts_energy_upkeep_mult = -0.1
-		planet_districts_alloys_upkeep_add = -1
-		#
+
 		ascension_perks_add = 1
 	}
 }
@@ -49,7 +46,6 @@ tr_fft_automation_artificial_eclipse = {
 	}
 	modifier = {
 		planet_jobs_robotic_produces_mult = 0.25
-		# planet_pops_robotics_unity_produces_add = 1
 		planet_pop_assemblers_unity_produces_add = 1
 	}
 	tradition_swap = {
@@ -61,7 +57,7 @@ tr_fft_automation_artificial_eclipse = {
 		}
 		modifier = {
 			planet_jobs_produces_mult = 0.5
-			planet_pop_replicators_unity_produces_add = 1
+			planet_pop_assemblers_unity_produces_add = 1
 		}
 		weight = {
 			factor = 1
