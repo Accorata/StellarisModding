@@ -26,15 +26,20 @@ The list of holdings and their effects is as follows:
   Resettles one pop from subjects capital to the overlord's Synaptic Lathe every two years.
   -2 Loyalty
 
-[b]Psionic Monastery[/b] (Requires Psi Corps tradition and subject must not be gestalt)
+[b]Psionic Monastery[/b] (Requires Psi Corps tradition and Subject must not be Gestalt)
   Overlord receieves a -5% shroud delve cooldown
   Provides 2 Psionic Adept jobs that provide unity and production from jobs (along with inheriting some bonuses from covenants) for the subject
-  Grants 5% spiritualist ethics attraction to planet
+  Grants 5% Spiritualist ethics attraction to planet
 
 [b]Interstellar Embassy[/b] (Unavailable for genocidal empires)
   Overlord recieves +10 to Trust Cap and 5% to Trust Growth for all empires
   Provides 1 Politican job (or Gestalt equivalents)
   +0.25 Loyalty
+
+[b]Mission Holding (Requires Spiritualist and Unavailable for genocidal empires)
+  Grants +50% Spiritualist ethics attraction to planet (unless owner is gestalt or already Spiritualist)
+  Provides 2 Aid Worker jobs
+  +1 Loyalty if owner is Spiritualist, -0.5 if owner is Materialist
 
 [h2] Contact [/h2]
 
