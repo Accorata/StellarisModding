@@ -49,22 +49,7 @@ tr_fft_automation_artificial_eclipse = {
 		planet_pop_assemblers_unity_produces_add = 1
 	}
 	tradition_swap = {
-		name = tr_fft_automation_artificial_eclipse_machine_gestalt
-		inherit_icon = yes
-		inherit_name = yes
-		trigger = {
-			is_machine_empire = yes
-		}
-		modifier = {
-			planet_jobs_produces_mult = 0.5
-			planet_pop_assemblers_unity_produces_add = 1
-		}
-		weight = {
-			factor = 1
-		}
-	}
-	tradition_swap = {
-		name = tr_fft_automation_artificial_eclipse_machine_indiv
+		name = tr_fft_automation_artificial_eclipse_machine
 		inherit_icon = yes
 		inherit_name = yes
 		trigger = {
@@ -88,6 +73,19 @@ tr_fft_automation_extravagant_abundance = {
 		has_tradition = tr_fft_automation_artificial_eclipse
 	}
 	custom_tooltip = tr_fft_automation_extravagant_abundance_tooltip
+	tradition_swap = {
+		name = tr_fft_automation_extravagant_abundance_gestalt
+		inherit_icon = yes
+		trigger = {
+			is_gestalt = yes
+		}
+		modifier = {
+			planet_jobs_unity_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
 	ai_weight = {
 		factor = 1000
 	}

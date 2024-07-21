@@ -17,7 +17,6 @@ fft_hedonist = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robotic_species = no
 	}
 
 	resources = {

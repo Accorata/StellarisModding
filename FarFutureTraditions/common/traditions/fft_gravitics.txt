@@ -24,12 +24,24 @@ tr_fft_gravitics_elevated_skylines = {
 	}
 }
 
-tr_fft_neo_lagrangian_dynamics = {
+tr_fft_gravitics_neo_lagrangian_dynamics = {
 	modifier = {
 		station_researchers_produces_mult = 0.1
 		stations_upkeep_mult = -0.25
-		# Testing below
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_gravitics_graviton_architecture = {
+	possible = {
+		has_tradition = tr_fft_gravitics_elevated_skylines
+		has_tradition = tr_fft_gravitics_neo_lagrangian_dynamics
+	}
+	modifier = {
 		starbase_building_capacity_add = 1
+		planet_max_buildings_add = 1
 	}
 	ai_weight = {
 		factor = 1000

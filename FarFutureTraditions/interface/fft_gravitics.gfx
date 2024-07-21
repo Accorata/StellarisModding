@@ -1,0 +1,22 @@
+spriteTypes = {
+	# Background Art
+	# spriteType = {
+	# 	name = "GFX_tradition_category_bg_tradition_fft_automation"
+	# 	textureFile = "gfx/interface/tiles/tradition_category_tile_fft_automation.dds"
+	# }
+	# corneredTileSpriteType = {
+	# 	name = "GFX_tradition_category_tile_tradition_fft_automation"
+	# 	textureFile = "gfx/interface/tiles/tradition_category_tile_fft_automation.dds"
+	# 	borderSize = {
+	# 		x = 140
+	# 		y = 140
+	# 	}
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	# }
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_fft_gravitics"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_fft_gravitics.dds"
+	}
+	# Tradition Arts
+}
