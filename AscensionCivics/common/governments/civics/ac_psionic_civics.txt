@@ -21,17 +21,17 @@ civic_beyond_the_veil = {
 		planet_researchers_physics_research_produces_add = -1
 		planet_researchers_engineering_research_produces_add = -1
 	}
-	swap_type = {
-		trigger = {
-			has_relic = r_zro_crystal
-		}
-		modifier = {
-			shroud_delve_cooldown = -0.125
-			planet_researchers_society_research_produces_add = 2
-			planet_researchers_physics_research_produces_add = -1
-			planet_researchers_engineering_research_produces_add = -1
-		}
-	}
+	# swap_type = {
+	# 	trigger = {
+	# 		has_relic = r_zro_crystal
+	# 	}
+	# 	modifier = {
+	# 		shroud_delve_cooldown = -0.125
+	# 		planet_researchers_society_research_produces_add = 2
+	# 		planet_researchers_physics_research_produces_add = -1
+	# 		planet_researchers_engineering_research_produces_add = -1
+	# 	}
+	# }
 }
 
 civic_telepathic_empire = {

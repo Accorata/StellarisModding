@@ -1,6 +1,7 @@
 civic_bioform_eliminator = {
 	modification = yes
-	pickable_at_start = no
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 	possible = {
 		# has_active_tradition = tr_synthetics_finish
 		civics = {
@@ -15,11 +16,11 @@ civic_bioform_eliminator = {
 				value = PLANT
 			}
 		}
-		traditions = {
-			value = tr_synthetics_finish
-		}
-		active_tradition = {
-		}
+		# traditions = {
+		# 	value = tr_synthetics_finish
+		# }
+		# active_tradition = {
+		# }
 	}
 	random_weight = {
 		base = 0
@@ -36,9 +37,9 @@ civic_bioform_eliminator = {
 
 civic_synthetic_celestials = {
 	modification = yes
-	pickable_at_start = no
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 	possible = {
-		has_active_tradition = tr_synthetics_finish
 		ethics = {
 			OR = {
 				value = ethic_fanatic_materialist
@@ -49,8 +50,22 @@ civic_synthetic_celestials = {
 	random_weight = {
 		base = 0
 	}
-	modifier = {
-		megastructure_build_speed_mult = 0.25
-		country_megastructure_build_cap_add = 1
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_psionics_finish
+			# tr_synthetics_finish
+		}
+	}
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_psionics_finish
+			# tr_synthetics_finish
+		}
+		modifier = {
+			megastructure_build_speed_mult = 0.25
+			country_megastructure_build_cap_add = 1
+		}
 	}
 }

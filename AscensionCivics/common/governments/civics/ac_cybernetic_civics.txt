@@ -1,8 +1,8 @@
 civic_living_cities = {
 	modification = yes
-	pickable_at_start = no
+	pickable_at_start = yes
 	possible = {
-		has_active_tradition = tr_cybernetics_finish
+		# has_active_tradition = tr_cybernetics_finish
 	}
 	random_weight = {
 		base = 0
@@ -14,9 +14,9 @@ civic_living_cities = {
 
 civic_cyberlife = {
 	modification = yes
-	pickable_at_start = no
+	pickable_at_start = yes
 	possible = {
-		has_active_tradition = tr_cybernetics_finish
+		# has_active_tradition = tr_cybernetics_finish
 	}
 	random_weight = {
 		base = 0

@@ -1,8 +1,8 @@
 civic_bioship_integration = {
 	modification = yes
-	pickable_at_start = no
+	pickable_at_start = yes
 	possible = {
-		has_active_tradition = tr_genetics_finish
+		# has_active_tradition = tr_genetics_finish
 	}
 	random_weight = {
 		base = 0
@@ -11,3 +11,4 @@ civic_bioship_integration = {
 	modifier = {
 	}
 }
+ 
