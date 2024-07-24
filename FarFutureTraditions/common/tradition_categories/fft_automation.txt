@@ -7,7 +7,7 @@ tradition_fft_automation = {
 		"tr_fft_automation_prefabricated_assembly"
 		"tr_fft_automation_artificial_eclipse"
 		"tr_fft_automation_extravagant_abundance"
-		"tr_fft_automation_"
+		"tr_fft_automation_comfortable_living"
 	}
 	ai_weight = {
 		factor = 15
