@@ -1,17 +1,16 @@
 ﻿l_english:
 # Synthetic
-  civic_bioform_eliminator:0 "Bioform Eliminators"
-  civic_bioform_eliminator_desc:0 "Whether it be to establish the supremacy of our machine forms or enlighten others into the fold, it is clear that the bygone relic of organic life must be purged from this galaxy."
-  civic_tooltip_bioform_eliminator_effects:13 "- Cannot access the §YGalactic Market§!\n- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_elimination$§! casus belli on organic species\n- Gains £unity£ §YUnity§! from assimilating or purging organic £pop£ Pops\n- May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
-# no market, and no unity assimilating yet
-  councilor_bioform_eliminator:0 "Flayer of Flesh"
-  councilor_bioform_eliminator_desc:0 "..."
-  cb_ac_bio_elimination:0 "Bioform Elimination"
-  cb_ac_bio_elimination_desc:0 "..."
+  civic_bioform_upgrader:0 "Bioform Upgraders"
+  civic_bioform_upgrader_desc:0 "Our synthetic bodies grant great advantages over those of the flesh. If the galaxy is to move forward together, all must embrace this new age. Nothing may stop us."
+  civic_tooltip_bioform_upgrader_effects:13 "- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n" # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
+  councilor_bioform_upgrader:0 "..."
+  councilor_bioform_upgrader_desc:0 "..."
+  cb_ac_bio_upgrades:0 "Bioform Upgrading"
+  cb_ac_bio_upgrades_desc:0 "..."
   cb_ac_machine_containment:0 "Containment"
   cb_ac_machine_containment_desc:0 "..."
-  bombardment_armageddon_bio:0 "Organic Armageddon"
-  bombardment_armageddon_bio_desc:3 "$bombardment_armageddon_bio$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing organic casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RMassive§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
+  # bombardment_armageddon_bio:0 "Organic Armageddon"
+  # bombardment_armageddon_bio_desc:3 "$bombardment_armageddon_bio$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing organic casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RMassive§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "..."

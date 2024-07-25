@@ -1,4 +1,4 @@
-civic_bioform_eliminator = {
+civic_bioform_upgrader = {
 	modification = yes
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
@@ -8,12 +8,6 @@ civic_bioform_eliminator = {
 			NOR = {
 				value = civic_machine_terminator
 				value = civic_fanatic_purifiers
-			}
-		}
-		species_class = {
-			OR = {
-				value = FUN
-				value = PLANT
 			}
 		}
 		# traditions = {
@@ -26,12 +20,15 @@ civic_bioform_eliminator = {
 		base = 0
 	}
 	# on add - adds leader_trait_machine_crusader - check to see if this effect works on biological armies
-	description = civic_tooltip_bioform_eliminator_effects
-	modifier = {
-		country_starbase_influence_cost_mult = -0.3
-		ship_weapon_damage = 0.25
-		starbase_shipyard_build_cost_mult = -0.15
-		country_naval_cap_mult = 0.33
+	description = civic_tooltip_bioform_upgrader_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_synthetics_finish
+		}
+		modifier = {
+			ship_weapon_damage = 0.10
+			country_naval_cap_mult = 0.15
+		}
 	}
 }
 

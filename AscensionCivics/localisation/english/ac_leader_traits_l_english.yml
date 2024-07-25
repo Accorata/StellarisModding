@@ -6,7 +6,7 @@
   EVERY_BIOLOGIC_ARMY_KILLED_TXT:0 "..."
 # to be implemented
   leader_trait_machine_crusader:0 "Machine Crusader"
-  leader_trait_machine_crusader_desc:2 "This leader understands the problem of organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
+  leader_trait_machine_crusader_desc:2 "This leader is willing to do anything to reform organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
   leader_trait_machine_crusader_2:0 "$leader_trait_machine_crusader$ II"
   leader_trait_machine_crusader_2_desc:0 "$leader_trait_machine_crusader_desc$"
   leader_trait_machine_crusader_3:0 "$leader_trait_machine_crusader$ III"

@@ -1,5 +1,5 @@
 # Synthetic
-councilor_bioform_eliminator = {
+councilor_bioform_upgrader = {
 	leader_class = { official commander }
 	is_leader_possible = {
 		AND = {
@@ -10,7 +10,7 @@ councilor_bioform_eliminator = {
 			has_trait = leader_trait_synth
 		}
 	}
-	civic = civic_bioform_eliminator
+	civic = civic_bioform_upgrader
 	modifier = {
 		army_morale_damage_mult = 0.025
 		country_war_exhaustion_mult = -0.025

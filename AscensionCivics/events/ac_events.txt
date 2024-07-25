@@ -14,7 +14,8 @@ country_event = {
 		# Adds the Machine Crusader trait
 		if = {
 			limit = {
-				has_valid_civic = civic_bioform_eliminator
+				has_valid_civic = civic_bioform_upgrader
+				has_active_tradition = tr_synthetics_finish
 				from = {
 					leader_class = commander
 				}
@@ -225,7 +226,8 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_valid_civic = civic_bioform_eliminator
+		has_valid_civic = civic_bioform_upgrader
+		has_active_tradition = tr_synthetics_finish
 	}
 	immediate = {
 		# check to see if this works
@@ -250,35 +252,36 @@ country_event = {
 	}
 }
 
-# Bioform Eliminator: purging pops yields unity
-planet_event = {
-	id = ascension_civics.53
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		FROM = {
-			has_valid_civic = civic_bioform_eliminator
-		}
-		exists = fromfrom		#crisis.202 can remove the last pop
-		FROMFROM = {
-			NOR = {
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-			}
-		}
-		is_controlled_by = FROM
-	}
-	immediate = {
-		FROM = {
-			add_monthly_resource_mult = {
-				resource = unity
-				value = 2
-				min = 5
-				max = 100
-			}
-		}
-	}
-}
+# Bioform Eliminator: purging pops yields unity (no longer)
+# planet_event = {
+# 	id = ascension_civics.53
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		FROM = {
+# 			has_valid_civic = civic_bioform_upgrader
+#           has_active_tradition = tr_synthetics_finish
+# 		}
+# 		exists = fromfrom		#crisis.202 can remove the last pop
+# 		FROMFROM = {
+# 			NOR = {
+# 				has_trait = trait_mechanical
+# 				has_trait = trait_machine_unit
+# 			}
+# 		}
+# 		is_controlled_by = FROM
+# 	}
+# 	immediate = {
+# 		FROM = {
+# 			add_monthly_resource_mult = {
+# 				resource = unity
+# 				value = 2
+# 				min = 5
+# 				max = 100
+# 			}
+# 		}
+# 	}
+# }
 
 #On post government change #testing !!!
 country_event = {
