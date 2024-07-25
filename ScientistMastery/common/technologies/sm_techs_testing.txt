@@ -1,0 +1,21 @@
+tech_sm_testing = {
+	cost = @tier0cost1
+	area = engineering
+	start_tech = yes
+	category = { voidcraft }
+	tier = 1
+	# is_sm_scientist_insight = yes
+
+	modifier = {
+		envoys_add = @insight_envoy_gain
+		all_technology_research_speed = 0.05
+	}
+
+	weight_modifier = {
+		factor = 1000
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+}

@@ -101,11 +101,10 @@ decision_cw_undercity_expansion = {
 		}
 	}
 	allow = {
-		# count_deposits = {
-		# 	category = d_cw_lower_level
-		# 	count < 5
-		# }
-		# This needs to be fixed...
+		count_deposits = {
+			type = d_cw_lower_level
+			count < 5
+		}
 	}
 	effect = {
 		add_deposit = d_cw_lower_level

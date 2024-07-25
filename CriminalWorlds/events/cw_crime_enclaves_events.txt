@@ -30,7 +30,7 @@ country_event = {
 	custom_gui_option = "cw_criminal_enclave_option"
 	picture_event_data = {
 		portrait = event_target:cw_criminal_enclave_country
-		room = event_target:cw_criminal_enclave_country		# Maybe custom room later?
+		room = event_target:cw_criminal_enclave_country		# Maybe custom room later? - space room
 	}
 	location = event_target:cw_criminal_enclave_location
 	trigger = {
@@ -139,6 +139,9 @@ planet_event = {
 			}
 		}
 	}
+	option = {
+		name = cw_enclave.1.a
+	}
 }
 
 planet_event = {
@@ -149,99 +152,116 @@ planet_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-	immediate = {
-		root = {
-			exists = owner
+	# immediate = {
+	# 	# owner = {
+	# 	# 	exists = yes
+	# 	# 	owner_species = {
+	# 	# 		save_event_target_as = pirate_species
+	# 	# 	}
+	# 	# }
+	# 	owner_species = {
+	# 		save_event_target_as = pirate_species
+	# 	}
+	# 	create_country = {
+	# 		name = random
+	# 		ethos = {
+	# 			ethic = ethic_fanatic_materialist
+	# 			ethic = ethic_xenophile
+	# 		}
+	# 		type = enclave
+	# 		authority = "auth_oligarchic"
+	# 		# civics = {
+	# 		# 	civic = civic_salvager_enclave
+	# 		# }
+	# 		flag = {
+	# 			background = {
+	# 				category = "backgrounds"
+	# 				file = "00_solid.dds"
+	# 			}
+	# 			colors = {
+	# 				"black"
+	# 				"black"
+	# 				"null"
+	# 				"null"
+	# 			}
+	# 		}
+	# 		origin = "origin_default"
+	# 		species = event_target:pirate_species
+	# 		ignore_initial_colony_error = yes
+	# 		effect = {
+	# 			randomize_flag_symbol = "pirate"
+	# 			save_global_event_target_as = cw_criminal_enclave_country
+	# 			set_country_flag = cw_criminal_enclave_country
+	# 			#Create capital starbase
+	# 			create_fleet = {
+	# 				name = "NAME_Criminal_Hideout"
+	# 				settings = {
+	# 					spawn_debris = no
+	# 				}
+	# 				effect = {
+	# 					set_owner = prev
+	# 					create_ship = {
+	# 						name = "NAME_Criminal_Hideout"
+	# 						design = "NAME_Trader_Enclave_Station"
+	# 						graphical_culture = prev
+	# 					}
+	# 					set_location = {
+	# 						target = root
+	# 						distance = 40
+	# 						angle = 70
+	# 					}
+	# 					save_global_event_target_as = cw_criminal_enclave_starbase
+	# 				}
+	# 			}
+	# 			set_custom_capital_location = root				#event_target:salvager_enclave_starbase
+	# 			# Copy Techs
+	# 			root = {
+	# 				save_global_event_target_as = cw_criminal_enclave_location
+	# 				# owner = {
+	# 				# 	save_event_target_as = copy_techs_from
+	# 				# }
+	# 			}
+	# 			copy_techs_from = {
+	# 				target = root.owner
+	# 			}
+	# 			# Create Ruler
+	# 			create_leader = {
+	# 				name = random
+	# 				class = random_ruler
+	# 				species = event_target:pirate_species
+	# 				skill = 5
+	# 				# traits = {
+	# 				# 	trait = leader_trait_spark_of_genius
+	# 				# 	trait = leader_trait_expertise_voidcraft
+	# 				# }
+	# 			}
+	# 			set_leader = last_created_leader
+	# 		}
+	# 	}
+	# 	# random_owned_design = {
+	# 	# 	limit = { is_ship_size = corvette }
+	# 	# 	save_event_target_as = mercenary_dividend_corvette
+	# 	# }
+	# 	root = {
+	# 		solar_system = {
+	# 			every_fleet_in_system = {
+	# 				limit = {
+	# 					is_owned_by = event_target:cw_criminal_enterprise
+	# 				}
+	# 				set_owner = event_target:cw_criminal_enclave_country
+	# 			}
+	# 		}
+	# 	}
+	# 	every_country = {
+	# 		establish_communications_no_message = last_created_country
+	# 	}
+	# }
+	option = {
+		name = cw_enclave.2.a
+		hidden_effect = {
 			owner = {
-				owner_species = {
-					save_event_target_as = pirate_species
-				}
-			}
-		}
-		create_country = {
-			name = random
-			ethos = random
-			type = enclave
-			authority = "auth_oligarchic"
-			# civics = {
-			# 	civic = civic_salvager_enclave
-			# }
-			flag = {
-				background = {
-					category = "backgrounds"
-					file = "00_solid.dds"
-				}
-				colors = {
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-			origin = "origin_default"
-			species = event_target:pirate_species
-			ignore_initial_colony_error = yes
-			effect = {
-				randomize_flag_symbol = "pirate"
-				save_global_event_target_as = cw_criminal_enclave_country
-				set_country_flag = cw_criminal_enclave_country
-				#Create capital starbase
-				create_fleet = {
-					name = "NAME_Criminal_Hideout"
-					settings = {
-						spawn_debris = no
-					}
-					effect = {
-						set_owner = prev
-						create_ship = {
-							name = "NAME_Criminal_Hideout"
-							design = "NAME_Trader_Enclave_Station"
-							graphical_culture = prev
-						}
-						set_location = {
-							target = root
-							distance = 40
-							angle = 70
-						}
-						save_global_event_target_as = cw_criminal_enclave_starbase
-					}
-				}
-				set_custom_capital_location = root				#event_target:salvager_enclave_starbase
-				# Copy Techs
-				root = {
-					save_global_event_target_as = cw_criminal_enclave_location
-					owner = {
-						save_event_target_as = copy_techs_from
-					}
-				}
-				copy_techs_from = {
-					target = event_target:copy_techs_from
-				}
-				# Create Ruler
-				create_leader = {
-					name = random
-					class = random_ruler
-					species = event_target:pirate_species
-					skill = 5
-					# traits = {
-					# 	trait = leader_trait_spark_of_genius
-					# 	trait = leader_trait_expertise_voidcraft
-					# }
-				}
-				set_leader = last_created_leader
-			}
-		}
-		# random_owned_design = {
-		# 	limit = { is_ship_size = corvette }
-		# 	save_event_target_as = mercenary_dividend_corvette
-		# }
-		root = {
-			solar_system = {
-				every_fleet_in_system = {
-					limit = {
-						has_owner = event_target:cw_criminal_enterprise
-					}
-					set_owner = event_target:cw_criminal_enclave_country
+				country_event = {
+					id = cw_enclave.300
 				}
 			}
 		}

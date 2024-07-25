@@ -25,14 +25,14 @@ country_event = {
 				trait = "trait_nonadaptive"
 				trait = "trait_deviants"
 			}
-			effect = {
-				save_event_target_as = white_flower_species
-			}
+			# effect = {
+			# 	save_event_target_as = white_flower_species
+			# }
 		}
 		create_country = {
 			name = "NAME_cw_criminal_white_flower"
 			type = pirate
-			species = event_target:white_flower_species
+			species = last_created_species # event_target:white_flower_species
 			name_list = "FUN2"
 			flag = {
 				icon = {

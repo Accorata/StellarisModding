@@ -111,6 +111,8 @@
 # Construction ship
   cw_enclave.1.name:0 "Criminal Constructions" # Temp
   cw_enclave.1.desc:0 "A new construction ship now lies above [Root.GetName], a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
+  cw_enclave.1.a:0 "Moniter the Situation"
 # Outpost built
   cw_enclave.2.name:0 "Criminal Outpost"
   cw_enclave.2.desc:0 "..."
+  cw_enclave.2.a:0 "Open Comms" # Needs to do something

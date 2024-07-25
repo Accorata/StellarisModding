@@ -36,7 +36,7 @@ The list of holdings and their effects is as follows:
   Provides 1 Politican job (or Gestalt equivalents)
   +0.25 Loyalty
 
-[b]Mission Holding (Requires Spiritualist and Unavailable for genocidal empires)
+[b]Mission Holding[/b] (Requires Spiritualist and Unavailable for genocidal empires)
   Grants +50% Spiritualist ethics attraction to planet (unless owner is gestalt or already Spiritualist)
   Provides 2 Aid Worker jobs
   +1 Loyalty if owner is Spiritualist, -0.5 if owner is Materialist
