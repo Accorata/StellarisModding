@@ -1,9 +1,11 @@
 on_post_government_changed = {
 	events = {
-		ascension_civics.10		# Add ascendant psionic to psionic pops
-		ascension_civics.11		# Remove ascendant psionic from pops
-		ascension_civics.52		# Add machine crusader trait to commanders and -200 opinion for organics hopefully
+		# ascension_civics.10		# Add ascendant psionic to psionic pops
+		# ascension_civics.11		# Remove ascendant psionic from pops
+		ascension_civics.52		# Add machine crusader trait to commanders
 		ascension_civics.200	# Setup variable for doomseeker shroud incursion
+
+		ascension_civics.60		# Add Programmed Loyalty trait to subject rulers if Sovereign Ciruitry
 	}
 }
 
@@ -33,7 +35,7 @@ on_added_to_leader_pool = {
 # FromFrom = Pop
 on_pop_purged = {
 	events = {
-		ascension_civics.53		# Gain resources for bioform eliminators
+		# ascension_civics.53		# Gain resources for bioform eliminators
 	}
 }
 

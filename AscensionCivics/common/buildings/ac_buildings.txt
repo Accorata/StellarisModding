@@ -1,11 +1,12 @@
 # Telepathic Empire
-building_psi_tower = {
+building_ac_psi_tower = {
 	base_buildtime = @b2_time
 	category = government
 	base_cap_amount = 1
 	potential = {
 		owner = {
 			has_valid_civic = civic_telepathic_empire
+			has_active_tradition = tr_psionics_finish
 		}
 		NOT = {
 			has_modifier = resort_colony
@@ -14,21 +15,64 @@ building_psi_tower = {
 			has_modifier = slave_colony
 		}
 	}
+
 	allow = {
 		has_major_upgraded_capital = yes
 	}
+
 	destroy_trigger = {
 		exists = owner
 		NOT = {
 			owner = {
 				has_valid_civic = civic_telepathic_empire
+				has_active_tradition = tr_psionics_finish
 			}
 		}
 	}
+
 	planet_modifier = {
-		job_politician_add = 2
 		job_telepath_per_pop = 0.1
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
+		job_politician_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -38,9 +82,42 @@ building_psi_tower = {
 			energy = @b2_upkeep
 		}
 	}
+
 	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
 		text = job_politician_effect_desc
 	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+
 	triggered_desc = {
 		text = job_telepath_effect_desc
 	}

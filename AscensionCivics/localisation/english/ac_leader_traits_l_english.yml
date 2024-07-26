@@ -18,6 +18,9 @@
 # Scientist Traits
 
 # Negative Traits
+  leader_trait_programmed_loyalty:0 "Programmed Loyalty"
+  leader_trait_programmed_loyalty_desc:0 "..."
+  leader_trait_programmed_loyalty_effects:0 "§RThis leader will die if we rebel against our overlord.§!"
   
 # Destiny Traits
   

@@ -28,80 +28,80 @@ country_event = {
 }
 
 # On post government change
-country_event = {
-	id = ascension_civics.10
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_valid_civic = civic_beyond_the_veil
-	}
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				species = {
-					has_trait = trait_psionic
-				}
-			}
-			modify_species = {
-				species = this
-				add_trait = trait_ascendant_psionic
-				add_traits_at_start_of_list = yes
-			}
-		}
-	}
-}
+# country_event = {
+# 	id = ascension_civics.10
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_valid_civic = civic_beyond_the_veil
+# 	}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_psionic
+# 				}
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				add_trait = trait_ascendant_psionic
+# 				add_traits_at_start_of_list = yes
+# 			}
+# 		}
+# 	}
+# }
 
 # On post government change
-country_event = {
-	id = ascension_civics.11
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		NOT = {
-			has_valid_civic = civic_beyond_the_veil
-		}
-	}
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				species = {
-					has_trait = trait_ascendant_psionic
-				}
-			}
-			modify_species = {
-				species = this
-				remove_trait = trait_ascendant_psionic
-			}
-		}
-	}
-}
+# country_event = {
+# 	id = ascension_civics.11
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		NOT = {
+# 			has_valid_civic = civic_beyond_the_veil
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_ascendant_psionic
+# 				}
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				remove_trait = trait_ascendant_psionic
+# 			}
+# 		}
+# 	}
+# }
 
-# ...
-country_event = {
-	id = ascension_civics.20
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				species = {
-					has_trait = trait_infectious
-				}
-			}
-			planet = {
-				#save_event_target_as = infected_planet
-				random_owned_pop = {
-					limit = {
-						NOT = {
-							has_trait = trait_infectious
-						}
-					}
-					add_trait = trait_infectious
-				}
-			}
-		}
-	}
-}
+# ... (For future testing)
+# country_event = {
+# 	id = ascension_civics.20
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_infectious
+# 				}
+# 			}
+# 			planet = {
+# 				#save_event_target_as = infected_planet
+# 				random_owned_pop = {
+# 					limit = {
+# 						NOT = {
+# 							has_trait = trait_infectious
+# 						}
+# 					}
+# 					add_trait = trait_infectious
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 # On destroying enemy ship.
 country_event = {
@@ -230,17 +230,6 @@ country_event = {
 		has_active_tradition = tr_synthetics_finish
 	}
 	immediate = {
-		# check to see if this works
-		every_playable_country = {
-			limit = {
-				is_machine_empire = no
-			}
-			add_opinion_modifier = {
-				modifier = -200
-				who = root
-			}
-		}
-		# testing #
 		every_owned_leader = {
 			limit = {
 				NOT = {
@@ -252,40 +241,9 @@ country_event = {
 	}
 }
 
-# Bioform Eliminator: purging pops yields unity (no longer)
-# planet_event = {
-# 	id = ascension_civics.53
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		FROM = {
-# 			has_valid_civic = civic_bioform_upgrader
-#           has_active_tradition = tr_synthetics_finish
-# 		}
-# 		exists = fromfrom		#crisis.202 can remove the last pop
-# 		FROMFROM = {
-# 			NOR = {
-# 				has_trait = trait_mechanical
-# 				has_trait = trait_machine_unit
-# 			}
-# 		}
-# 		is_controlled_by = FROM
-# 	}
-# 	immediate = {
-# 		FROM = {
-# 			add_monthly_resource_mult = {
-# 				resource = unity
-# 				value = 2
-# 				min = 5
-# 				max = 100
-# 			}
-# 		}
-# 	}
-# }
-
 #On post government change #testing !!!
 country_event = {
-	id = ascension_civics.60
+	id = ascension_civics.10000
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -301,15 +259,51 @@ country_event = {
 	}
 }
 
-planet_event = {
-	id = ascension_civics.61
-	hide_window = no
+# On post government change - Send event to subjects to gain Programmed Loyalty trait
+country_event = {
+	id = ascension_civics.60
+	hide_window = yes
 	is_triggered_only = yes
+	trigger = {
+		has_valid_civic = civic_sovereign_circuitry
+	}
 	immediate = {
-		add_modifier = {
-			modifier = ac_testing
-			mult = trigger:num_pops
-			clear_on_owner_change = yes
+		every_playable_empire = {
+			limit = {
+				is_subject = yes
+				overlord = {
+					is_same_value = root
+				}
+			}
+			country_event = {
+				id = ascension_civics.61
+				days = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.61
+	title = ascension_civics.61.name
+	desc = ascension_civics.61.desc
+	show_sound = event_ship_bridge #change
+	picture = GFX_evt_excavation_team #change
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_subject = yes
+		overlord = {
+			is_same_value = prev
+		}
+	}
+
+	option = {
+		name = ascension_civics.61.a
+		owner = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty
+			}
 		}
 	}
 }
