@@ -65,14 +65,12 @@ leader_trait_machine_crusader_3 = {
 leader_trait_programmed_loyalty = {
 	leader_trait_type = negative
 	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		ICON = "GFX_leader_trait_crusader" #change
-		RARITY = veteran
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_crusader"		#change
 		COUNCIL = yes
 		TIER = none
 	}
-	council_modifier = {
+	councilor_modifier = {
 		monthly_loyalty = 1
 	}
 	leader_class = {
@@ -80,5 +78,5 @@ leader_trait_programmed_loyalty = {
 		scientist
 		commander
 	}
-	custom_tooltip = leader_trait_programmed_loyalty_effect
+	custom_tooltip_with_modifiers = leader_trait_programmed_loyalty_effect
 }

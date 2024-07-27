@@ -50,7 +50,6 @@ country_event = {
 # 		}
 # 	}
 # }
-
 # On post government change
 # country_event = {
 # 	id = ascension_civics.11
@@ -75,7 +74,6 @@ country_event = {
 # 		}
 # 	}
 # }
-
 # ... (For future testing)
 # country_event = {
 # 	id = ascension_civics.20
@@ -102,7 +100,6 @@ country_event = {
 # 		}
 # 	}
 # }
-
 # On destroying enemy ship.
 country_event = {
 	id = ascension_civics.50
@@ -241,24 +238,6 @@ country_event = {
 	}
 }
 
-#On post government change #testing !!!
-country_event = {
-	id = ascension_civics.10000
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		capital = {
-			add_modifier = {
-				modifier = {
-					planet_pop_assembly_add = 1
-				}
-				mult = trigger:num_pops
-				clear_on_owner_change = yes
-			}
-		}
-	}
-}
-
 # On post government change - Send event to subjects to gain Programmed Loyalty trait
 country_event = {
 	id = ascension_civics.60
@@ -266,18 +245,17 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_valid_civic = civic_sovereign_circuitry
+		# has_tradition = ...
 	}
 	immediate = {
-		every_playable_empire = {
+		every_playable_country = {
 			limit = {
 				is_subject = yes
-				overlord = {
-					is_same_value = root
-				}
+				has_overlord = root
+				is_gestalt = no
 			}
 			country_event = {
 				id = ascension_civics.61
-				days = -1
 			}
 		}
 	}
@@ -287,23 +265,113 @@ country_event = {
 	id = ascension_civics.61
 	title = ascension_civics.61.name
 	desc = ascension_civics.61.desc
-	show_sound = event_ship_bridge #change
-	picture = GFX_evt_excavation_team #change
+	show_sound = event_ship_bridge	#change
+	picture = GFX_evt_excavation_team	#change
 	location = capital
 	is_triggered_only = yes
 	trigger = {
+		is_gestalt = no
 		is_subject = yes
-		overlord = {
-			is_same_value = prev
-		}
 	}
-
 	option = {
 		name = ascension_civics.61.a
 		owner = {
 			ruler = {
 				add_trait = leader_trait_programmed_loyalty
 			}
+			set_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	# Future option to rebel against the overlord instead
+}
+
+leader_event = {
+	id = ascension_civics.62
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	immediate = {
+		add_trait = leader_trait_programmed_loyalty
+	}
+}
+
+country_event = {
+	id = ascension_civics.63
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		ruler = {
+			add_trait = leader_trait_programmed_loyalty
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.64
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		from = {
+			remove_trait = leader_trait_programmed_loyalty
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.65
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		ruler = {
+			kill_leader = {
+				show_notification = yes
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = ascension_civics.70
+	hide_window = no	# yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:ac_cyberform_species
+				}
+			}
+			create_species = {
+				name = random
+				class = random_non_machine
+				portrait = random
+				traits = random
+				allow_negative_traits = no
+			}
+			last_created_species = {
+				modify_species = {
+					species = this
+					add_trait = trait_cybernetic
+					add_trait = trait_ac_cyberform
+				}
+				save_global_event_target_as = ac_cyberform_species
+			}
+		}
+		create_pop = {
+			species = event_target:ac_cyberform_species
 		}
 	}
 }

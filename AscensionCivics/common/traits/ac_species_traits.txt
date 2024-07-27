@@ -68,3 +68,20 @@ trait_infectious = {
 		energy = -3000
 	}
 }
+
+trait_ac_cyberform = {
+	cost = 0
+	potential_crossbreeding_chance = 1
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		pop_growth_speed = -1
+	}
+	slave_cost = {
+		energy = -500
+	}
+}

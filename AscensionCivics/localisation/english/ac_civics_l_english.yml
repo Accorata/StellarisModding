@@ -1,34 +1,38 @@
 ﻿l_english:
-# Synthetic
+# Synthetic ---------------------------------------------------------------------------------------------
+
+  synthetic_ascension_required:0 "If §YSynthetically§! Ascended:\n"
   civic_bioform_upgrader:0 "Bioform Upgraders"
   civic_bioform_upgrader_desc:0 "Our synthetic bodies grant great advantages over those of the flesh. If the galaxy is to move forward together, all must embrace this new age. Nothing may stop us."
-  civic_tooltip_bioform_upgrader_effects:13 "- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n"
+  civic_tooltip_bioform_upgrader_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§YModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
  # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
   councilor_bioform_upgrader:0 "..."
   councilor_bioform_upgrader_desc:0 "..."
-  cb_ac_bio_upgrades:0 "Bioform Upgrading"
-  cb_ac_bio_upgrades_desc:0 "..."
-  cb_ac_machine_containment:0 "Containment"
-  cb_ac_machine_containment_desc:0 "..."
+  casus_belli_cb_ac_bio_upgrades:0 "Bioform Upgrading"
+  casus_belli_cb_ac_bio_upgrades_desc:0 "..."
+  casus_belli_cb_ac_machine_containment:0 "Containment"
+  casus_belli_cb_ac_machine_containment_desc:0 "..."
   # bombardment_armageddon_bio:0 "Organic Armageddon"
-  # bombardment_armageddon_bio_desc:3 "$bombardment_armageddon_bio$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing organic casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RMassive§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
+  # bombardment_armageddon_bio_desc:0 "$bombardment_armageddon_bio$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing organic casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RMassive§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "..."
 
-# Psionic
+# Psionic ---------------------------------------------------------------------------------------------
+
+  psionic_ascension_required:0 "If §YPsionically§! Ascended:\n"
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "To see the entrance of the Shroud as the goal is for the weakminded. We will acsend beyond all others, embracing psionic duality and casting off all material desire for the sake of true enlightenment!"
-  civic_tooltip_beyond_the_veil_effects:13 "- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
+  civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
   living_standard_ac_ascetic:0 "Ascetic"
-  living_standard_ac_ascetic_tooltip:1 "These pops live a life of little material pleasure.\n\nPops have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop."
+  living_standard_ac_ascetic_tooltip:0 "These pops live a life of little material pleasure.\n\nPops have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop."
   living_standard_ac_ascetic_tooltip_delayed:0 "Some may consider this torture, but for the gifted it is the only way of life." #Needs to be gray
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This nation communicates solely via telepathy, scaling psionic potential to greater and greater heights the greater number of psionic pops present."
-  civic_tooltip_telepathic_empire_effects:1 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops."
+  civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops."
   councilor_telepathic_empire:0 "Central Conduit"
   councilor_telepathic_empire_desc:0 "..."
 
@@ -39,11 +43,12 @@
   councilor_doomseekers_desc:0 "..."
   tech_ac_doom_foretold:0 "Doom Foretold"
   tech_ac_doom_foretold_desc:0 "..."
-  tech_ac_doom_foretold_effect:1 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
+  tech_ac_doom_foretold_effect:0 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
   MESSAGE_SHROUD_BREACH:0 "Shroud Avatar Drawn"
   MESSAGE_SHROUD_BREACH_DESC:0 "..."
 
-# Cybernetic
+# Cybernetic ---------------------------------------------------------------------------------------------
+
   civic_sovereign_circuitry:0 "Sovereign Circuitry"
   civic_sovereign_circuitry_desc:0 "..."
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
@@ -54,15 +59,26 @@
 
   civic_cyberlife:0 "CyberLife"
   civic_cyberlife_desc:0 "..."
-  civic_tooltip_cyberlife_effects:1 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which increases pop §YHappiness§!, while decreasing §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§! but addding §Y$r_energy$ Upkeep§!."
+  civic_tooltip_cyberlife_effects:0 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which increases pop §YHappiness§!, while decreasing §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§! but addding §Y$r_energy$ Upkeep§!."
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
-  mod_pop_category_rulers_energy_upkeep_add:1 "..."
-  mod_pop_category_specialists_energy_upkeep_add:1 "..."
-  mod_pop_category_workers_energy_upkeep_add:1 "..."
+  mod_pop_category_rulers_energy_upkeep_add:0 "..."
+  mod_pop_category_specialists_energy_upkeep_add:0 "..."
+  mod_pop_category_workers_energy_upkeep_add:0 "..."
 
-# Genetic
+# Genetic ---------------------------------------------------------------------------------------------
+
   civic_bioship_integration:0 "Bioship Integration"
   civic_bioship_integration_desc:0 "..."
   civic_tooltip_bioship_integration_effects:0 "..."
+
+# Gestalt Cybernetic ---------------------------------------------------------------------------------
+# civic_cyberform_gestation
+  pop_category_ac_droid_drone:0 "Droid"
+  pop_cat_ac_droid:0 "Droid"
+  pop_cat_ac_droid_plural:0 "Droids"
+  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node of our hive mind."
+  ac_droid:0 "Droid"
+  trait_ac_cyberform:0 "CyberForm"
+  trait_ac_cyberform_desc:0 "..."

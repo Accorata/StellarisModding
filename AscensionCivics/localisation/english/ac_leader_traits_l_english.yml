@@ -6,21 +6,21 @@
   EVERY_BIOLOGIC_ARMY_KILLED_TXT:0 "..."
 # to be implemented
   leader_trait_machine_crusader:0 "Machine Crusader"
-  leader_trait_machine_crusader_desc:2 "This leader is willing to do anything to reform organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
+  leader_trait_machine_crusader_desc:0 "This leader is willing to do anything to reform organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
   leader_trait_machine_crusader_2:0 "$leader_trait_machine_crusader$ II"
   leader_trait_machine_crusader_2_desc:0 "$leader_trait_machine_crusader_desc$"
   leader_trait_machine_crusader_3:0 "$leader_trait_machine_crusader$ III"
   leader_trait_machine_crusader_3_desc:0 "$leader_trait_machine_crusader_desc$"
-  leader_trait_machine_crusader_effect: "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+25§!\n$tt$$r_alloys$: §G+5§!"
-  leader_trait_machine_crusader_2_effect: "..." 
-  leader_trait_machine_crusader_3_effect: "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+40§!"
+  leader_trait_machine_crusader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+25§!\n$tt$$r_alloys$: §G+5§!"
+  leader_trait_machine_crusader_2_effect:0 "..." 
+  leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+40§!"
 
 # Scientist Traits
 
 # Negative Traits
   leader_trait_programmed_loyalty:0 "Programmed Loyalty"
   leader_trait_programmed_loyalty_desc:0 "..."
-  leader_trait_programmed_loyalty_effects:0 "§RThis leader will die if we rebel against our overlord.§!"
+  leader_trait_programmed_loyalty_effect:0 "$t$§RThis leader will die if we are at war against our overlord.§!"
   
 # Destiny Traits
   

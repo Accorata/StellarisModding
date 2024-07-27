@@ -26,7 +26,7 @@ civic_sovereign_circuitry = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 		modifier = {
-			
+			divided_patrongage_max_subjects = 1
 		}
 	}
 }

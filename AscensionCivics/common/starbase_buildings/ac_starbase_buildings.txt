@@ -26,7 +26,9 @@ ac_avatar_caller = {
 
 	triggered_system_modifier = {
 		potential = {
-			has_tech = "tech_ac_doom_foretold"
+			owner = {
+				has_technology = "tech_ac_doom_foretold"
+			}
 		}
 		planet_stability_add = -5
 	}

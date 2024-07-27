@@ -69,20 +69,20 @@ civic_telepathic_empire = {
 	}
 }
 
-# civic_doomseekers = {
-# 	modification = yes
-# 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
-# 	pickable_at_start = no
-# 	possible = {
-# 		has_active_tradition = tr_psionics_finish
-# 	}
-# 	random_weight = {
-# 		base = 0
-# 	}
-# 	description = civic_tooltip_doomseekers_effects
-# 	modifier = {
-# 	}
-# }
+civic_doomseekers = {
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	pickable_at_start = yes
+	possible = {
+		# has_active_tradition = tr_psionics_finish
+	}
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_doomseekers_effects
+	modifier = {
+	}
+}
 
 # civic_shroud_renouncers = {
 # 	modification = yes
