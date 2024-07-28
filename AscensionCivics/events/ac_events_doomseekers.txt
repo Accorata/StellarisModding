@@ -1,5 +1,5 @@
 namespace = ascension_civics
-@necessary_avatar_points = 12 # Once a year
+@necessary_avatar_points = 12# Once a year
 # On post government change
 country_event = {
 	id = ascension_civics.200
@@ -7,6 +7,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_valid_civic = civic_doomseekers
+		has_active_tradition = tr_psionics_finish
 	}
 	immediate = {
 		if = {
@@ -34,21 +35,22 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_valid_civic = civic_doomseekers
+		has_active_tradition = tr_psionics_finish
 	}
 	immediate = {
-		change_variable = {
-			which = ac_avatar_progress
-			value = 1
-		}
-		if = {
-			limit = {
-				has_technology = "tech_ac_doom_foretold"
-			}
-			change_variable = {
-				which = ac_avatar_progress
-				value = 2
-			}
-		}
+		# change_variable = {
+		# 	which = ac_avatar_progress
+		# 	value = 1
+		# }
+		# if = {
+		# 	limit = {
+		# 		has_technology = tech_ac_doom_foretold
+		# 	}
+		# 	change_variable = {
+		# 		which = ac_avatar_progress
+		# 		value = 2
+		# 	}
+		# }
 		every_owned_starbase = {
 			limit = {
 				has_starbase_building = ac_avatar_caller
@@ -143,6 +145,7 @@ country_event = {
 				is_boss = yes
 			}
 			effect = {
+				set_fleet_stance = passive
 				set_owner = event_target:shroud_country
 				# create_ship = {
 				# 	name = "NAME_Corrupted_Avatar"
@@ -153,13 +156,12 @@ country_event = {
 					design = "NAME_Shroud_Manifestation"
 				}
 				set_location = event_target:shroud_spawn_planet
-				set_fleet_stance = neutral
 			}
 		}
 		#?
 		create_message = {
-			type = MESSAGE_SHROUD_BREACH
-			localization = MESSAGE_SHROUD_BREACH_DESC
+			type = MESSAGE_AC_SHROUD_BREACH
+			localization = MESSAGE_AC_SHROUD_BREACH_DESC
 			days = 1
 			target = root
 			variable = {
@@ -171,13 +173,14 @@ country_event = {
 	}
 }
 
-# On random yearly pulse
+# On yearly pulse
 country_event = {
 	id = ascension_civics.210
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
 		has_valid_civic = civic_doomseekers
+		has_active_tradition = tr_psionics_finish
 		exists = event_target:shroud_country
 		# global flag no invasion
 	}
@@ -189,6 +192,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = ascension_civics.211
 	is_triggered_only = yes
@@ -198,15 +202,112 @@ country_event = {
 		# global flag no invasion
 	}
 	immediate = {
-		random_system = {
-			save_event_target = ac_moved_star
-		}
-		every_owned_fleet = {
-			auto_move_to_planet = { 
-				target = ac_moved_star.star
-				clear_auto_move_on_arrival = yes 
+		random_playable_country = {
+			limit = {
+				OR = {
+					NAND = {
+						has_active_tradition = tr_psionics_finish
+						has_valid_civic = civic_doomseekers
+					}
+					has_technology = tech_ac_doom_foretold
+				}
+			}
+			random_system_within_border = {
+				set_star_flag = ac_shroud_target
+				star = {
+					save_event_target_as = ac_moved_star
+				}
 			}
 		}
+		every_owned_fleet = {
+			limit = {
+				NOT = {
+					# absorbed or defender or custom modded
+				}
+			}
+			auto_move_to_planet = {
+				target = ac_moved_star
+				clear_auto_move_on_arrival = yes
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = ascension_civics.212
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		owner = {
+			is_country_type = shroud_spirits
+		}
+		from = {
+			has_star_flag = ac_shroud_target
+		}
+	}
+	immediate = {
+		# Notify owner of system
+		if = {
+			limit = {
+				from.owner = {
+					NOT = {
+						has_country_flag = ac_shroud_attacked
+					}
+				}
+			}
+			from.owner = {
+				set_country_flag = ac_shroud_attacked
+				country_event = {
+					id = ascension_civics.213
+				}
+			}
+		}
+		# Attack
+		# this.owner = {
+		# 	set_faction_hostility = {
+		# 		set_hostile = yes
+		# 		target = from.owner
+		# 	}
+		# }
+		fleet = {
+			set_fleet_stance = aggressive
+		}
+	}
+}
+
+# Notification that shroud spirits are attacking system (fired from ac.212)
+country_event = {
+	id = ascension_civics.213
+	title = ascension_civics.213.name
+	desc = ascension_civics.213.desc
+	show_sound = event_ship_bridge	#change
+	picture = GFX_evt_excavation_team	#change
+	location = from.from
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_shroud_attacked
+		}
+	}
+	option = {
+		name = ascension_civics.213.a
+	}
+}
+
+starbase_event = {
+	id = ascension_civics.214
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from.owner = {
+			is_country_type = shroud_spirits
+		}
+		# galactic_object = {
+		# 	has_star_flag = ac_shroud_target
+		# }
+	}
+	immediate = {
+		# Summon rift and possibly more avatars (these are defenders)
 	}
 }
 
@@ -215,9 +316,7 @@ planet_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
-		change_pc = { 
-			class = pc_shrouded
-		}
+		change_pc = pc_shrouded
 		create_ambient_object = {
 			type = psi_storm_1
 			location = this
@@ -233,5 +332,3 @@ planet_event = {
 # every_playable_country = {
 # 	set_hostile = event_target:shroud_country
 # }
-
-

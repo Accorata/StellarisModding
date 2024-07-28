@@ -1,0 +1,36 @@
+namespace = ascension_civics
+# On genetics tradition finsihed
+country_event = {
+	id = ascension_civics.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_finished_genetics_tradition
+		}
+		has_tradition = tr_genetics_finish
+	}
+	immediate = {
+		# Makes sure this is only triggered once
+		set_country_flag = ac_has_finished_genetics_tradition
+		# Starts situation
+	}
+}
+
+# On psionics tradition finsihed
+country_event = {
+	id = ascension_civics.1001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_finished_psionics_tradition
+		}
+		has_tradition = tr_psionics_finish
+	}
+	immediate = {
+		# Makes sure this is only triggered once
+		set_country_flag = ac_has_finished_psionics_tradition
+		# Starts situation
+	}
+}

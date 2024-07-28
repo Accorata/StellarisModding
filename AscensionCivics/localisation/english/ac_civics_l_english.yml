@@ -44,7 +44,8 @@
   tech_ac_doom_foretold:0 "Doom Foretold"
   tech_ac_doom_foretold_desc:0 "..."
   tech_ac_doom_foretold_effect:0 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
-  MESSAGE_SHROUD_BREACH:0 "Shroud Avatar Drawn"
+
+  MESSAGE_SHROUD_BREACH_TITLE:0 "Shroud Avatar Drawn"
   MESSAGE_SHROUD_BREACH_DESC:0 "..."
 
 # Cybernetic ---------------------------------------------------------------------------------------------

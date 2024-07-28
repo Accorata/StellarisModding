@@ -1,16 +1,7 @@
-on_post_government_changed = {
+# A leader is added to the leader pool, available for recruitment
+on_added_to_leader_pool = {
 	events = {
-		# ascension_civics.10		# Add ascendant psionic to psionic pops
-		# ascension_civics.11		# Remove ascendant psionic from pops
-		ascension_civics.52		# Add machine crusader trait to commanders
-		ascension_civics.200		# Setup variable for doomseeker shroud incursion
-		ascension_civics.60		# Add Programmed Loyalty trait to subject rulers if Sovereign Ciruitry
-	}
-}
-
-on_ship_destroyed_perp = {
-	events = {
-		ascension_civics.50		# On ship destroyed machine crusader traits.
+		ascension_civics.100		# Additional traits from civics (machine crusader for bioform eliminator)
 	}
 }
 
@@ -21,32 +12,20 @@ on_army_killed_in_combat = {
 	}
 }
 
-# A leader is added to the leader pool, available for recruitment
-on_added_to_leader_pool = {
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
 	events = {
-		ascension_civics.100		# Additional traits from civics (machine crusader for bioform eliminator)
+		ascension_civics.212
 	}
 }
 
-# A pop has finished purging
-# This = Planet scope
-# From = Country
-# FromFrom = Pop
-on_pop_purged = {
+# This = country
+# From = opponent war leader
+on_entering_war = {
 	events = {
-		# ascension_civics.53		# Gain resources for bioform eliminators
-	}
-}
-
-on_monthly_pulse_country = {
-	events = {
-		ascension_civics.201		# Increase doomseeker variable to spawn avatars
-	}
-}
-
-on_yearly_pulse_country = {
-	events = {
-		ascension_civics.210		# Set random convergence location for 50% of avatars
+		ascension_civics.65		# Kills ruler if subject of Soveriegn Circuitry empire
 	}
 }
 
@@ -58,11 +37,19 @@ on_heir_promoted_to_ruler = {
 	}
 }
 
-# Executed as new ruler has been set
-# This = Country
-on_ruler_set = {
+on_monthly_pulse_country = {
 	events = {
-		ascension_civics.63		# Add Programmed Loyalty trait
+		ascension_civics.201		# Increase doomseeker variable to spawn avatars
+	}
+}
+
+on_post_government_changed = {
+	events = {
+		# ascension_civics.10		# Add ascendant psionic to psionic pops
+		# ascension_civics.11		# Remove ascendant psionic from pops
+		ascension_civics.52		# Add machine crusader trait to commanders
+		ascension_civics.200		# Setup variable for doomseeker shroud incursion
+		ascension_civics.60		# Add Programmed Loyalty trait to subject rulers if Sovereign Ciruitry
 	}
 }
 
@@ -75,10 +62,39 @@ on_ruler_removed = {
 	}
 }
 
-# This = country
-# From = opponent war leader
-on_entering_war = {
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
 	events = {
-		ascension_civics.65	# Kills ruler if subject of Soveriegn Circuitry empire
+		ascension_civics.63		# Add Programmed Loyalty trait
+	}
+}
+
+on_ship_destroyed_perp = {
+	events = {
+		ascension_civics.50		# On ship destroyed machine crusader traits.
+	}
+}
+
+# This = starbase being disabled (not ship!)
+# From = fleet that disabled the starbase
+on_starbase_disabled = {
+	events = {
+		ascension_civics.214		# Destroy starbase and add shroud breach
+	}
+}
+
+# Executed when a country picks any tradition (including starters and finishers)
+# THIS = country
+on_tradition_picked = {
+	events = {
+		ascension_civics.1000		# Genetic situation start
+		ascension_civics.1001		# Psionic situation start
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		ascension_civics.210		# Set random convergence location for 50% of avatars
 	}
 }

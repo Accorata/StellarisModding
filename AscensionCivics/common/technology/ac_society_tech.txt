@@ -2,22 +2,24 @@ tech_ac_doom_foretold = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = { psionics }
+	category = {
+		psionics
+	}
 	ai_update_type = all
 	is_rare = yes
-	prerequisites = { "tech_psionic_theory" }
+	prerequisites = {
+		"tech_psionic_theory"
+	}
 	weight = @tier5weight1
 	is_dangerous = yes
 	is_reverse_engineerable = no
-
 	potential = {
 		has_valid_civic = civic_doomseekers
+		has_active_tradition = tr_psionics_finish
 	}
-
 	modifier = {
 		custom_tooltip = tech_ac_doom_foretold_effect
 	}
-
 	weight_modifier = {
 		factor = 1
 		modifier = {
@@ -44,13 +46,27 @@ tech_ac_doom_foretold = {
 		modifier = {
 			factor = 0.1
 			NOR = {
-				has_trait_in_council = { TRAIT = leader_trait_expertise_psionics }
-				has_trait_in_council = { TRAIT = leader_trait_curator }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
-				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
-				has_trait_in_council = { TRAIT = leader_trait_maniacal }
-				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
-				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_psionics
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_spark_of_genius
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_spark_of_genius_2
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal_2
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_maniacal_3
+				}
 			}
 		}
 		inline_script = {
