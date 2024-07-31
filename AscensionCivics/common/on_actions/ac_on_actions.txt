@@ -29,6 +29,12 @@ on_entering_war = {
 	}
 }
 
+on_game_start = {
+	events = {
+		ascension_civics.1 		# Declares this mod active for any future modders
+	}
+}
+
 # Executed when an heir is promoted to ruler
 # This = Heir
 on_heir_promoted_to_ruler = {

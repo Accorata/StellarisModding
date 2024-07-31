@@ -1,4 +1,28 @@
 namespace = ascension_civics
+
+event = {
+	id = ascension_civics.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		event_target:global_event_country = {
+			country_event = {
+				id = ascension_civics.2 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = stellaris_ascended_active
+	}
+}
+
 # A leader is added to the leader pool, available for recruitment
 country_event = {
 	id = ascension_civics.100
