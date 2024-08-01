@@ -39,7 +39,7 @@ on_game_start = {
 # This = Heir
 on_heir_promoted_to_ruler = {
 	events = {
-		ascension_civics.62		# Add Programmed Loyalty trait
+		ascension_civics.62			# Add Programmed Loyalty trait
 	}
 }
 
@@ -49,13 +49,21 @@ on_monthly_pulse_country = {
 	}
 }
 
+# Executed when a new heir is appointed
+# This = Heir
+on_new_heir = {
+	events = {
+		ascension_civics.1100			# Sets heir to clone of current ruler (test)
+	}
+}
+
 on_post_government_changed = {
 	events = {
 		# ascension_civics.10		# Add ascendant psionic to psionic pops
 		# ascension_civics.11		# Remove ascendant psionic from pops
 		ascension_civics.52		# Add machine crusader trait to commanders
 		ascension_civics.200		# Setup variable for doomseeker shroud incursion
-		ascension_civics.60		# Add Programmed Loyalty trait to subject rulers if Sovereign Ciruitry
+		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
 	}
 }
 
@@ -99,8 +107,43 @@ on_tradition_picked = {
 	}
 }
 
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+		ascension_civics.67			# Subject effects for Sovereign Circuitry
+	}
+}
+
 on_yearly_pulse_country = {
 	events = {
 		ascension_civics.210		# Set random convergence location for 50% of avatars
+	}
+}
+
+# This = subject
+# From = subject's overlord
+on_becoming_subject = {
+	events = {
+		ascension_civics.68		# Add new traits/effects to if Sovereign Ciruitry overlord
+	}
+}
+
+# fires when a country finishes being integrated
+# This = overlord
+# From = subject
+on_subject_integrated = {
+	events = {
+		# Remove Soveriegn Circuitry traits
+	}
+}
+
+# fires when a country releases a sector as a vassal
+# This = released vassal
+# From = overlord
+on_released_as_vassal = {
+	events = {
+		ascension_civics.67			# Subject effects for Sovereign Circuitry
 	}
 }

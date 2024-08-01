@@ -1,0 +1,10 @@
+﻿l_english:
+# Psionic ---------------------------------------------------------------------------------------------
+
+# Genetic ---------------------------------------------------------------------------------------------
+  auth_ac_genetic_imperial_perfect:0 "Imperial Clone"
+  auth_ac_genetic_imperial_perfect_desc:0 "..."
+  AUTHORITY_AC_CLONED:1 "$t$ Upon §HRuler Death§! their §HCloned Heir§! becomes the new Ruler."
+
+
+# Hive Genetic ---------------------------------------------------------------------------------

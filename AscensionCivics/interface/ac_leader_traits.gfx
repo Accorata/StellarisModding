@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_leader_trait_programmed_loyalty"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_programmed_loyalty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_machine_crusader"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_machine_crusader.dds"
+	}
+}

@@ -276,11 +276,20 @@ country_event = {
 			limit = {
 				is_subject = yes
 				has_overlord = root
-				is_gestalt = no
 			}
-			country_event = {
-				id = ascension_civics.61
+			if = {
+				limit = {
+					is_gesalt = no
+				}
+				country_event = {
+					id = ascension_civics.61
+				}
 			}
+			else = {
+				country_event = {
+					id = ascension_civics.66
+				}
+			}		
 		}
 	}
 }
@@ -359,11 +368,104 @@ country_event = {
 		has_country_flag = ac_accepted_sovereign_circuitry
 	}
 	immediate = {
-		ruler = {
-			kill_leader = {
-				show_notification = yes
+		remove_country_flag = ac_accepted_sovereign_circuitry
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			ruler = {
+				kill_leader = {
+					show_notification = yes
+				}
 			}
 		}
+		else = {
+			ruler = {
+				remove_trait = leader_trait_programmed_loyalty_gestalt
+				add_trait = leader_trait_corrupted_logic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.66
+	title = ascension_civics.66.name
+	desc = ascension_civics.66.desc
+	show_sound = event_ship_bridge	#change
+	picture = GFX_evt_excavation_team	#change
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = yes
+		is_subject = yes
+	}
+	option = {
+		name = ascension_civics.66.a
+		owner = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty_gestalt
+			}
+			set_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	# Future option to rebel against the overlord instead
+}
+
+# On lost war and becomes subject or on vassal released
+country_event = {
+	id = ascension_civics.67
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_subject = yes
+		from = {
+			has_valid_civic = civic_sovereign_circuitry
+			# has_tradition = ...
+		}
+	}
+	immediate = {
+		set_country_flag = ac_accepted_sovereign_circuitry
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty
+			}
+		}
+		else = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty_gestalt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.68
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_valid_civic = civic_sovereign_circuitry
+			# has_tradition = ...
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_gesalt = no
+			}
+			country_event = {
+				id = ascension_civics.61
+			}
+		}
+		else = {
+			country_event = {
+				id = ascension_civics.66
+			}
+		}	
 	}
 }
 

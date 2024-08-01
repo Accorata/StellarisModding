@@ -34,3 +34,29 @@ country_event = {
 		# Starts situation
 	}
 }
+
+leader_event = {
+	id = ascension_civics.1100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_imperial
+		has_tradition = tr_prosperity_adopt
+		# has_country_flag = ac_genetic_perfect
+	}
+	immediate = {
+		owner = {
+			ruler = {
+				save_event_target_as = ruler_to_be_cloned
+			}
+			clone_leader = {
+				target = ruler_to_be_cloned
+				set_age = 1
+				effect = {
+					add_trait_no_notify = trait_imperial_heir
+				}
+			}
+		}
+		
+	}
+}
