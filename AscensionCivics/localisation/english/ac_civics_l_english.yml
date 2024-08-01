@@ -31,10 +31,13 @@
   living_standard_ac_ascetic_tooltip_delayed:0 "Some may consider this torture, but for the gifted it is the only way of life." #Needs to be gray
 
   civic_telepathic_empire:0 "Telepathic Empire"
-  civic_telepathic_empire_desc:0 "This nation communicates solely via telepathy, scaling psionic potential to greater and greater heights the greater number of psionic pops present."
+  civic_telepathic_empire_desc:0 "This nation communicates solely via telepathy, scaling psionic potential to incredible heights via collective communion." # needs to be rewritten
   civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops."
   councilor_telepathic_empire:0 "Central Conduit"
   councilor_telepathic_empire_desc:0 "..."
+
+  civic_telepathic_corporation:0 "Telepathic Corporation"
+  civic_telepathic_corporation_desc:0 "..."
 
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. And we embrace that end, that Great End!"
