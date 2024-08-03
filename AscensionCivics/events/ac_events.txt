@@ -24,8 +24,7 @@ country_event = {
 		# Adds the Machine Crusader trait
 		if = {
 			limit = {
-				has_valid_civic = civic_bioform_upgrader
-				has_active_tradition = tr_synthetics_finish
+				is_ac_bio_upgrader = yes
 				from = {
 					leader_class = commander
 				}
@@ -233,8 +232,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_valid_civic = civic_bioform_upgrader
-		has_active_tradition = tr_synthetics_finish
+		is_ac_bio_upgrader = yes
 	}
 	immediate = {
 		every_owned_leader = {
@@ -254,8 +252,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_valid_civic = civic_sovereign_circuitry
-		# has_tradition = ...
+		is_ac_cyber_overlord = yes
 	}
 	immediate = {
 		every_playable_country = {
@@ -406,8 +403,7 @@ country_event = {
 	trigger = {
 		is_subject = yes
 		from = {
-			has_valid_civic = civic_sovereign_circuitry
-			# has_tradition = ...
+			is_ac_cyber_overlord = yes
 		}
 	}
 	immediate = {
@@ -434,8 +430,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		from = {
-			has_valid_civic = civic_sovereign_circuitry
-			# has_tradition = ...
+			is_ac_cyber_overlord = yes
 		}
 	}
 	immediate = {
@@ -456,7 +451,7 @@ country_event = {
 }
 
 planet_event = {
-	id = ascension_civics.70
+	id = ascension_civics.80
 	hide_window = no	# yes
 	is_triggered_only = yes
 	immediate = {

@@ -1,0 +1,37 @@
+civic_bandwidth_enhancers = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = { 
+			NOR = { 
+				# value = civic_telepathic_corporation 
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_enhancers.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_virtuality_finish
+		}
+	}
+	
+	description = civic_tooltip_bandwidth_enhancers_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_virtuality_finish
+		}
+		hidden_modifier = {
+		}
+	}
+}

@@ -4,8 +4,7 @@ cb_ac_bio_upgrades = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		has_valid_civic = civic_bioform_upgrader
-		has_active_tradition = tr_synthetics_finish
+		is_ac_bio_upgrader = yes
 		from = {
 			NOT = {
 				is_individual_machine = yes
@@ -29,8 +28,7 @@ cb_ac_machine_containment = {
 	show_notification = no
 	potential = {
 		from = {
-			has_valid_civic = civic_bioform_upgrader
-			has_active_tradition = tr_synthetics_finish
+			is_ac_bio_upgrader = yes
 		}
 		is_country_type = default
 		NOR = {
@@ -46,8 +44,7 @@ cb_ac_machine_containment = {
 		}
 		NOT = { is_overlord_to = FROM }
 		from = {
-			has_valid_civic = civic_bioform_upgrader
-			has_active_tradition = tr_synthetics_finish
+			is_ac_bio_upgrader = yes
 		}
 	}
 }

@@ -6,8 +6,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_valid_civic = civic_doomseekers
-		has_active_tradition = tr_psionics_finish
+		is_ac_doomseeker = yes
 	}
 	immediate = {
 		if = {
@@ -34,8 +33,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_valid_civic = civic_doomseekers
-		has_active_tradition = tr_psionics_finish
+		is_ac_doomseeker = yes
 	}
 	immediate = {
 		# change_variable = {
@@ -179,8 +177,7 @@ country_event = {
 	is_triggered_only = yes
 	hide_window = yes
 	trigger = {
-		has_valid_civic = civic_doomseekers
-		has_active_tradition = tr_psionics_finish
+		is_ac_doomseeker = yes
 		exists = event_target:shroud_country
 		# global flag no invasion
 	}
@@ -206,8 +203,7 @@ country_event = {
 			limit = {
 				OR = {
 					NAND = {
-						has_active_tradition = tr_psionics_finish
-						has_valid_civic = civic_doomseekers
+						is_ac_doomseeker = yes
 					}
 					has_technology = tech_ac_doom_foretold
 				}

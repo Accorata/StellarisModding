@@ -1,7 +1,0 @@
-spriteTypes = {
-	# Telepathic Empire
-	spriteType = {
-		name = "GFX_ac_civic_telepathic_empire"
-		textureFile = "gfx/interface/icons/governments/civics/civic_telepathic_empire.dds"
-	}
-}

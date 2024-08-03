@@ -80,6 +80,13 @@
   civic_bioship_integration_desc:0 "..."
   civic_tooltip_bioship_integration_effects:0 "..."
 
+# Virtual ---------------------------------------------------------------------------------------------
+  virtual_ascension_required:0 "If §YVirtual§! Ascension completed:\n"
+
+  civic_bandwidth_enhancers:0 "Bandwidth Enhancers"
+  civic_bandwidth_enhancers_desc:0 "..."
+  civic_tooltip_bandwidth_enhancers_effects:0 ""
+
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation
   pop_category_ac_droid_drone:0 "Droid"

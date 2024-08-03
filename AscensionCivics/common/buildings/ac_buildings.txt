@@ -5,8 +5,7 @@ building_ac_psi_tower = {
 	base_cap_amount = 1
 	potential = {
 		owner = {
-			has_valid_civic = civic_telepathic_empire
-			has_active_tradition = tr_psionics_finish
+			is_ac_telepathic_empire = yes
 		}
 		NOT = {
 			has_modifier = resort_colony
@@ -24,8 +23,7 @@ building_ac_psi_tower = {
 		exists = owner
 		NOT = {
 			owner = {
-				has_valid_civic = civic_telepathic_empire
-				has_active_tradition = tr_psionics_finish
+				is_ac_telepathic_empire = yes
 			}
 		}
 	}

@@ -13,8 +13,7 @@ apply_post_assimilation_effects = {
 	if = { # bio upgrader empire
 		limit = {
 			root.owner = {
-				has_active_tradition = tr_synthetics_finish
-				has_civic = civic_bioform_upgrader
+				is_ac_bio_upgrader = yes
 			}
 		}
 		root.owner = { 
