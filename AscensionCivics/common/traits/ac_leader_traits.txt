@@ -78,6 +78,8 @@ leader_trait_programmed_loyalty = {
 		commander
 	}
 	custom_tooltip_with_modifiers = leader_trait_programmed_loyalty_effect
+	initial = no
+	randomized = no
 }
 
 leader_trait_programmed_loyalty_gestalt = {
@@ -96,6 +98,8 @@ leader_trait_programmed_loyalty_gestalt = {
 		commander
 	}
 	custom_tooltip_with_modifiers = leader_trait_programmed_loyalty_gestalt_effect
+	initial = no
+	randomized = no
 }
 
 leader_trait_corrupted_logic = {
@@ -116,4 +120,6 @@ leader_trait_corrupted_logic = {
 		scientist
 		commander
 	}
+	initial = no
+	randomized = no
 }

@@ -19,7 +19,7 @@ country_event = {
 
 # On psionics tradition finsihed
 country_event = {
-	id = ascension_civics.1001
+	id = ascension_civics.1050
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -40,9 +40,12 @@ leader_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_authority = auth_imperial
-		has_tradition = tr_prosperity_adopt
-		# has_country_flag = ac_genetic_perfect
+		owner = {
+			has_authority = auth_imperial
+			# has_tradition = tr_prosperity_adopt
+			# has_country_flag = ac_genetic_perfect
+			has_country_flag = ac_has_finished_genetics_tradition
+		}
 	}
 	immediate = {
 		owner = {
@@ -50,13 +53,15 @@ leader_event = {
 				save_event_target_as = ruler_to_be_cloned
 			}
 			clone_leader = {
-				target = ruler_to_be_cloned
+				target = event_target:ruler_to_be_cloned
 				set_age = 1
-				effect = {
-					add_trait_no_notify = trait_imperial_heir
-				}
+				# effect = {
+				# 	add_trait_no_notify = trait_imperial_heir - could be cloned leader...
+				# }
 			}
 		}
-		
+		kill_leader = {
+			show_notification = no
+		}
 	}
 }

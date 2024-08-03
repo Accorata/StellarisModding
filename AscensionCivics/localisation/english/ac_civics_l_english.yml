@@ -1,10 +1,10 @@
 ﻿l_english:
 # Synthetic ---------------------------------------------------------------------------------------------
+  synthetic_ascension_required:0 "If §YSynthetic§! Ascension completed:\n"
 
-  synthetic_ascension_required:0 "If §YSynthetically§! Ascended:\n"
   civic_bioform_upgrader:0 "Bioform Upgraders"
   civic_bioform_upgrader_desc:0 "Our synthetic bodies grant great advantages over those of the flesh. If the galaxy is to move forward together, all must embrace this new age. Nothing may stop us."
-  civic_tooltip_bioform_upgrader_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§YModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
+  civic_tooltip_bioform_upgrader_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
  # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
   councilor_bioform_upgrader:0 "..."
   councilor_bioform_upgrader_desc:0 "..."
@@ -19,8 +19,8 @@
   civic_synthetic_celestials_desc:0 "..."
 
 # Psionic ---------------------------------------------------------------------------------------------
+  psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
 
-  psionic_ascension_required:0 "If §YPsionically§! Ascended:\n"
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "To see the entrance of the Shroud as the goal is for the weakminded. We will acsend beyond all others, embracing psionic duality and casting off all material desire for the sake of true enlightenment!"
   civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
@@ -32,12 +32,13 @@
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This nation communicates solely via telepathy, scaling psionic potential to incredible heights via collective communion." # needs to be rewritten
-  civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops."
+  civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §Y+5§!"
   councilor_telepathic_empire:0 "Central Conduit"
   councilor_telepathic_empire_desc:0 "..."
 
   civic_telepathic_corporation:0 "Telepathic Corporation"
   civic_telepathic_corporation_desc:0 "..."
+  civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£§Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §Y+5§!"
 
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. And we embrace that end, that Great End!"
@@ -52,6 +53,7 @@
   MESSAGE_SHROUD_BREACH_DESC:0 "..."
 
 # Cybernetic ---------------------------------------------------------------------------------------------
+  cybernetic_ascension_required:0 "If §YCybernetic§! Ascension completed:\n"
 
   civic_sovereign_circuitry:0 "Sovereign Circuitry"
   civic_sovereign_circuitry_desc:0 "..."
@@ -72,6 +74,7 @@
   mod_pop_category_workers_energy_upkeep_add:0 "..."
 
 # Genetic ---------------------------------------------------------------------------------------------
+  genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
 
   civic_bioship_integration:0 "Bioship Integration"
   civic_bioship_integration_desc:0 "..."

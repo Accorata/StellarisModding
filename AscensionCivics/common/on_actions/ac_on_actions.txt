@@ -103,7 +103,7 @@ on_starbase_disabled = {
 on_tradition_picked = {
 	events = {
 		ascension_civics.1000		# Genetic situation start
-		ascension_civics.1001		# Psionic situation start
+		ascension_civics.1050		# Psionic situation start
 	}
 }
 

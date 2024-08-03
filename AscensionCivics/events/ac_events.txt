@@ -5,20 +5,6 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		event_target:global_event_country = {
-			country_event = {
-				id = ascension_civics.2 
-			}
-		}
-	}
-}
-
-country_event = {
-	id = ascension_civics.2
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
 		set_global_flag = stellaris_ascended_active
 	}
 }
@@ -279,7 +265,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					is_gesalt = no
+					is_gestalt = no
 				}
 				country_event = {
 					id = ascension_civics.61
@@ -455,7 +441,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				is_gesalt = no
+				is_gestalt = no
 			}
 			country_event = {
 				id = ascension_civics.61

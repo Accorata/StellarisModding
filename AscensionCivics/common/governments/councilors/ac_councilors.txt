@@ -7,7 +7,7 @@ councilor_bioform_upgrader = {
 				leader_class = official
 				leader_class = commander
 			}
-			has_trait = leader_trait_synth
+			has_trait = leader_trait_synthetic
 		}
 	}
 	civic = civic_bioform_upgrader
