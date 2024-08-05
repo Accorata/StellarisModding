@@ -246,6 +246,22 @@ country_event = {
 	}
 }
 
+# On post government change
+country_event = {
+	id = ascension_civics.53
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_bandwidth_empire = yes
+		NOT = {
+			has_technology = tech_hyper_relays
+		}
+	}
+	immediate = {
+		add_research_option = tech_hyper_relays
+	}
+}
+
 # On post government change - Send event to subjects to gain Programmed Loyalty trait
 country_event = {
 	id = ascension_civics.60

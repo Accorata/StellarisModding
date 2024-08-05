@@ -1,7 +1,7 @@
 is_ac_bandwidth_empire = {
 	OR = {
 		has_valid_civic = civic_bandwidth_enhancers
-		# has_valid_civic = 
+		has_valid_civic = civic_bandwidth_incorporated
 		# has_valid_civic = 
 	}
 	has_active_tradition = tr_virtuality_finish

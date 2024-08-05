@@ -112,7 +112,7 @@ civic_doomseekers = {
 	}
 
 	modification = yes
-	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 	pickable_at_start = yes
 	
 	random_weight = {

@@ -64,6 +64,7 @@ on_post_government_changed = {
 		ascension_civics.52		# Add machine crusader trait to commanders
 		ascension_civics.200		# Setup variable for doomseeker shroud incursion
 		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
+		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
 	}
 }
 

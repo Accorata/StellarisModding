@@ -20,7 +20,7 @@ civic_bioform_upgrader = {
 
 	modification = yes
 	pickable_at_start = yes
-	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 
 	random_weight = {
 		base = 0
