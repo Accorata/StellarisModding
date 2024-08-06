@@ -16,13 +16,33 @@ apply_post_assimilation_effects = {
 				is_ac_bio_upgrader = yes
 			}
 		}
-		root.owner = { 
-			add_monthly_resource_mult = {
-				resource = unity
-				value = 1
-				min = 5
-				max = 250
+		if  = {
+			limit = {
+				root.owner = {
+					has_valid_civic = civic_bioform_upgrader
+				}
 			}
+			root.owner = {
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 250
+				}
+			}
+		}
+		# Energy for corporate bio upgrader
+		else = {
+			root.owner = {
+				add_monthly_resource_mult = {
+					resource = energy
+					value = 1
+					min = 10
+					max = 500
+				}
+			}
+		}
+		root.owner = { 
 			add_monthly_resource_mult = {
 				resource = physics_research
 				value = 1

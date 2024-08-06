@@ -34,6 +34,7 @@ civic_bandwidth_enhancers = {
 		}
 		hidden_modifier = {
 			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.10
 		}
 	}
 }
@@ -74,6 +75,7 @@ civic_bandwidth_incorporated = {
 		}
 		hidden_modifier = {
 			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.10
 		}
 	}
 }
@@ -114,6 +116,7 @@ civic_bandwidth_optimization = {
 		}
 		hidden_modifier = {
 			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.10
 		}
 	}
 }

@@ -5,9 +5,14 @@
   civic_bioform_upgrader:0 "Bioform Upgraders"
   civic_bioform_upgrader_desc:0 "Our synthetic bodies grant great advantages over those of the flesh. If the galaxy is to move forward together, all must embrace this new age. Nothing may stop us."
   civic_tooltip_bioform_upgrader_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
- # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
   councilor_bioform_upgrader:0 "..."
   councilor_bioform_upgrader_desc:0 "..."
+
+  civic_bio_replacer:0 "Intended Obsolescence"
+  civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. All that’s needed are mandatory synthesization policies throughout the galaxy."
+  civic_tooltip_bio_replacer_effects:0 "..."
+
+ # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
   casus_belli_cb_ac_bio_upgrades:0 "Bioform Upgrading"
   casus_belli_cb_ac_bio_upgrades_desc:0 "..."
   casus_belli_cb_ac_machine_containment:0 "Containment"
@@ -39,6 +44,8 @@
   civic_telepathic_corporation:0 "Telepathic Enterprise"
   civic_telepathic_corporation_desc:0 "..."
   civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£§Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!"
+  # councilor_telepathic_corporation:0 "Chief Psionic Officer"
+  # councilor_telepathic_corporation_desc:0 "..."
 
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. And we embrace that end, that Great End!"
@@ -59,19 +66,21 @@
   civic_sovereign_circuitry_desc:0 "..."
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
 
-  civic_living_cities:0 "Living Cities"
-  civic_living_cities_desc:0 "..."
-  civic_tooltip_living_cities_effects:0 "..."
+  # civic_living_cities:0 "Living Cities"
+  # civic_living_cities_desc:0 "..."
+  # civic_tooltip_living_cities_effects:0 "..."
 
   civic_cyberlife:0 "CyberLife"
   civic_cyberlife_desc:0 "..."
-  civic_tooltip_cyberlife_effects:0 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which increases pop §YHappiness§!, while decreasing §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§! but addding §Y$r_energy$ Upkeep§!."
+  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!.\n\n$cybernetic_ascension_required$- $mod_espionage_operation_difficulty_add$ §G-1§!"
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
-  mod_pop_category_rulers_energy_upkeep_add:0 "..."
-  mod_pop_category_specialists_energy_upkeep_add:0 "..."
-  mod_pop_category_workers_energy_upkeep_add:0 "..."
+  mod_pop_category_rulers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $RULERS$"
+  mod_pop_category_specialists_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SPECIALISTS$"
+  mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
+  mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
+
 
 # Genetic ---------------------------------------------------------------------------------------------
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
@@ -85,7 +94,9 @@
 
   civic_bandwidth_enhancers:0 "Bandwidth Enhancers"
   civic_bandwidth_enhancers_desc:0 "..."
-  civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_jobs_produces_mult£ job output and provide empire wide £unity£ unity from hyper relays as long as the system they are built in has a functioning hyper relay.\n\n§EModifiers:§!\n$virtual_ascension_required$- $mod_empire_size_systems_mult$ §G-25%§!"
+  civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_jobs_produces_mult£ job output and provide empire wide £unity£ unity from hyper relays as long as the system they are built in has a functioning hyper relay.\n\n§EModifiers:§!\n$virtual_ascension_required$- $mod_empire_size_systems_mult$ §G-25%§!\n$mod_tradition_cost_empire_size_mult$ §G-10%§!"
+  councilor_bandwidth_enhancers:0 "... Coordinator"
+  councilor_bandwidth_enhancers_desc:0 "..."
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "..."

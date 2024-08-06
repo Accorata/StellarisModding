@@ -71,6 +71,7 @@ civic_telepathic_empire = {
 
 civic_telepathic_corporation = {
 	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { value = auth_corporate }
 	}
 	possible = {

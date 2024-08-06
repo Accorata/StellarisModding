@@ -37,6 +37,23 @@ councilor_telepathic_empire = {
 	}
 }
 
+councilor_telepathic_corporation = {
+	leader_class = { official }
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			has_trait = leader_trait_psionic
+		}
+	}
+	civic = civic_telepathic_corporation
+	modifier = {
+		empire_size_branch_office_mult = -0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # councilor_doomseekers = {
 # 	leader_class = { official commander scientist }
 # 	is_leader_possible = {
@@ -51,3 +68,19 @@ councilor_telepathic_empire = {
 # 		inline_script = councilor_leader_weights
 # 	}
 # }
+
+# Virtual
+councilor_bandwidth_enhancers = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_bandwidth_enhancers
+	modifier = {
+		country_unity_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
