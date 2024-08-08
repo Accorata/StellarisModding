@@ -20,13 +20,96 @@ country_event = {
 			switch = {
 				trigger = has_trait
 				leader_trait_sm_mastery_materials = {
-					this = {
+					owner = {
 						add_modifier = {
 							modifier = "sm_materials_scientist_memory"
 						}
 					}
 				}
-				# next trait
+				leader_trait_sm_mastery_propulsion = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_propulsion_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_voidcraft = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_voidcraft_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_industry = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_industry_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_field_manipulation = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_field_manipulation_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_particles = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_particles_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_computing = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_computing_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_psionics = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_psionics_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_new_worlds = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_new_worlds_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_statecraft = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_statecraft_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_biology = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_biology_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_military_theory = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_military_theory_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_archaeostudies = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_archaeostudies_scientist_memory"
+						}
+					}
+				}
 			}
 		}
 	}

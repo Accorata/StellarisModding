@@ -1,6 +1,7 @@
 ﻿l_english:
 # Traits
   sm_trait_description:0 "This leader is, following a lifetime of study, considered a master of the field of"
+  sm_mastery_trait_effect: "$t$Provides the Opportunity to Draw Unique Technologies."
 
   leader_trait_sm_mastery_materials:0 "Mastery: Materials"
   leader_trait_sm_mastery_materials_desc:0 "$sm_trait_description$ Materials."
