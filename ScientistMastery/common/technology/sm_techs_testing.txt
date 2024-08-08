@@ -1,10 +1,10 @@
-tech_sm_testing = {
+tech_sm_biomimetic_disguises = {
 	cost = @tier0cost1
 	area = engineering
 	start_tech = yes
 	category = { voidcraft }
 	tier = 1
-	# is_sm_scientist_insight = yes
+	is_custom_tech_2 = yes
 
 	modifier = {
 		envoys_add = @insight_envoy_gain
