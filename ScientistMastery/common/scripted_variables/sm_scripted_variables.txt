@@ -1,0 +1,2 @@
+@sm_leader_insight_cost = 1000
+@sm_leader_insight_weight = 50

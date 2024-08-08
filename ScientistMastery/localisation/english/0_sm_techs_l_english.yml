@@ -2,4 +2,15 @@
   TECH_IS_CUSTOM_TECH_2:0 "§dMastery Insight§!"
 
   tech_sm_biomimetic_disguises:0 "Biomimetic Disguises"
-  tech_sm_biomimetic_disguises_desc:0 "tested"
+  tech_sm_biomimetic_disguises_desc:0 "..."
+
+# Computing
+  tech_sm_proto_gravity_analysis:0 "Proto Gravity Analysis"
+  tech_sm_proto_gravity_analysis_desc:0 "..."
+
+# Propulsion
+  tech_sm_impulse_grav_thrusters:0 "Graviton Propulsion" #Impulse Grav-Thrusters
+  tech_sm_impulse_grav_thrusters_desc:0 "These highly advanced fusion-powered gravatic thrusters provide ships with unmatched maneuverability and speed under sublight conditions."
+
+  tech_sm_dark_matter_grav_thrusters:0 "Dark Matter Gravatics"
+  tech_sm_dark_matter_grav_thrusters_desc:0 "$tech_sm_impulse_grav_thrusters_desc$"

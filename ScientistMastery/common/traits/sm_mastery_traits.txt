@@ -20,10 +20,12 @@ leader_trait_sm_mastery_materials = {
 	inline_script = {
 		script = traits/technocracy_expertise_effects
 		FIELD = engineering
-		TIER = 3
+		TIER = 4
 	}
 	leader_class = {
 		scientist
 	}
 	ai_weight = 100
 }
+
+# leader_trait_sm_mastery_computing

@@ -1,0 +1,21 @@
+namespace = scientist_mastery
+
+# Synth Imperial physical swap, leader dies and gives research benefit if mastery trait
+# Executed as a leader has died
+#	This = Country
+#	From = Leader
+# Fired by: on_leader_death
+country_event = {
+	id = scientist_mastery.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_synth_imperial = yes
+		has_country_flag = synth_physical
+	}
+
+	immediate = {
+		
+	}
+}

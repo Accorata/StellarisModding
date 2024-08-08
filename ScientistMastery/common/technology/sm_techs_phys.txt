@@ -1,0 +1,28 @@
+tech_sm_proto_gravity_analysis = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { computing }
+	tier = 1 
+	# prerequisites = { "tech_lasers_2" } #to do
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_buildings_cost_mult = -0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_computing 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
