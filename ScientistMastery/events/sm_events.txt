@@ -1,6 +1,6 @@
 namespace = scientist_mastery
 
-# Synth Imperial physical swap, leader dies and gives research benefit if mastery trait
+# Synth Imperial physical swap, leader dies and gives research modifier if has any mastery trait
 # Executed as a leader has died
 #	This = Country
 #	From = Leader
@@ -16,6 +16,18 @@ country_event = {
 	}
 
 	immediate = {
-		
+		from = {
+			switch = {
+				trigger = has_trait
+				leader_trait_sm_mastery_materials = {
+					this = {
+						add_modifier = {
+							modifier = "sm_materials_scientist_memory"
+						}
+					}
+				}
+				# next trait
+			}
+		}
 	}
 }
