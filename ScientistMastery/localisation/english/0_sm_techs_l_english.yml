@@ -16,7 +16,11 @@
 
 # Propulsion
   tech_sm_impulse_grav_thrusters:0 "Graviton Propulsion" #Impulse Grav-Thrusters
-  tech_sm_impulse_grav_thrusters_desc:0 "These highly advanced fusion-powered gravatic thrusters provide ships with unmatched maneuverability and speed under sublight conditions."
+  tech_sm_impulse_grav_thrusters_desc:0 "$SHIP_THRUSTER_4_GRAV_DESC$"
+  TECH_UNLOCK_SM_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_4_GRAV$"
+  TECH_UNLOCK_SM_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_4_GRAV$§!\n$SHIP_THRUSTER_4_GRAV_DESC$"
 
   tech_sm_dark_matter_grav_thrusters:0 "Dark Matter Gravatics"
-  tech_sm_dark_matter_grav_thrusters_desc:0 "$tech_sm_impulse_grav_thrusters_desc$"
+  tech_sm_dark_matter_grav_thrusters_desc:0 "$SHIP_THRUSTER_5_GRAV_DESC$"
+  TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_5_GRAV$"
+  TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_5_GRAV$§!\n$SHIP_THRUSTER_5_GRAV_DESC$"

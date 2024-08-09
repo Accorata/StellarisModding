@@ -71,5 +71,3 @@ tech_sm_biomimetic_disguises = {
 		weight = 1000
 	}
 }
-
-#ship_landing_time_mult = -0.1 (gravitics propulsion)
