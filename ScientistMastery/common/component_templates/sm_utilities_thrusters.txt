@@ -1,4 +1,22 @@
-### 4
+@power_4 = -25
+@power_5 = -30
+@destroyer_power_4 = -50
+@destroyer_power_5 = -60
+@cruiser_power_4 = -100
+@cruiser_power_5 = -120
+@battleship_power_4 = -200
+@battleship_power_5 = -240
+@titan_power_4 = -400
+@titan_power_5 = -480
+@colossus_power_4 = -500
+@colossus_power_5 = -600
+
+@cost2 = 6
+@destroyer_cost2 = 12
+@cruiser_cost2 = 24
+@battleship_cost2 = 48
+@titan_cost2 = 96
+@colossus_cost2 = 120
 
 utility_component_template = {
 	key = "SHIP_THRUSTER_4_GRAV"
@@ -162,7 +180,6 @@ utility_component_template = {
 	}
 }
 
-### 5
 
 utility_component_template = {
 	key = "SHIP_THRUSTER_5_GRAV"

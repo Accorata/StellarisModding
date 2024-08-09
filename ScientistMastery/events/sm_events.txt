@@ -114,3 +114,23 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = scientist_mastery.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_increased_tech = "tech_sm_dreams_beyond_scale"
+		NOT = {
+			has_technology = tech_mega_engineering
+		}
+	}
+	immediate = {
+		add_research_option = tech_mega_engineering
+		add_tech_progress = {
+			tech = tech_mega_engineering
+			progress = 0.05
+		}
+	}
+}

@@ -7,6 +7,10 @@
   tech_sm_biomimetic_disguises:0 "Biomimetic Disguises"
   tech_sm_biomimetic_disguises_desc:0 "..."
 
+# Archaeostudies
+  tech_sm_ancient_secrets:0 "Ancient Secrets"
+  tech_sm_ancient_secrets_desc:0 "..."
+
 # Computing
   tech_sm_proto_gravity_analysis:0 "Proto Gravity Analysis"
   tech_sm_proto_gravity_analysis_desc:0 "..."
@@ -15,12 +19,17 @@
   tech_sm_synthetic_data_desc:0 "..."
 
 # Propulsion
-  tech_sm_impulse_grav_thrusters:0 "Graviton Propulsion" #Impulse Grav-Thrusters
-  tech_sm_impulse_grav_thrusters_desc:0 "$SHIP_THRUSTER_4_GRAV_DESC$"
+  tech_sm_graviton_propulsion:0 "Graviton Propulsion"
+  tech_sm_graviton_propulsion_desc:0 "$SHIP_THRUSTER_4_GRAV_DESC$"
   TECH_UNLOCK_SM_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_4_GRAV$"
   TECH_UNLOCK_SM_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_4_GRAV$§!\n$SHIP_THRUSTER_4_GRAV_DESC$"
 
-  tech_sm_dark_matter_grav_thrusters:0 "Dark Matter Gravatics"
-  tech_sm_dark_matter_grav_thrusters_desc:0 "$SHIP_THRUSTER_5_GRAV_DESC$"
+  tech_sm_dark_matter_gravatics:0 "Dark Matter Gravatics"
+  tech_sm_dark_matter_gravatics_desc:0 "$SHIP_THRUSTER_5_GRAV_DESC$"
   TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_5_GRAV$"
   TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_5_GRAV$§!\n$SHIP_THRUSTER_5_GRAV_DESC$"
+
+  tech_sm_dreams_beyond_scale:0 "Dreams Beyond Scale"
+  tech_sm_dreams_beyond_scale_desc:0 "..."
+  TECH_UNLOCK_SM_MEGA_TITLE:0 "§HGrants 5% of Tech:§! $tech_mega_engineering$"
+  TECH_UNLOCK_SM_MEGA_DESC:0 "§H$tech_mega_engineering$§!\n$tech_mega_engineering_desc$"

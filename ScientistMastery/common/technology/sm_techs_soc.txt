@@ -71,3 +71,33 @@ tech_sm_biomimetic_disguises = {
 		weight = 1000
 	}
 }
+
+tech_sm_ancient_secrets = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { archaeostudies }
+	tier = 3
+	prerequisites = { "tech_arcane_deciphering" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		all_technology_research_speed = 0.03
+		planet_researchers_upkeep_mult = 0.03
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_archaeostudies
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
