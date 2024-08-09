@@ -12,3 +12,76 @@
 # 	}
 # }
  
+civic_blossoming_worlds = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = { 
+			NOT = { 
+				value = civic_blossoming_hive
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_worlds.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	
+	description = civic_tooltip_blossoming_worlds_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_genetics_finish
+		}
+		hidden_modifier = {
+			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+			# empire_size_systems_mult = -0.25
+			# tradition_cost_empire_size_mult = -0.10
+		}
+	}
+}
+
+civic_blossoming_hive = {
+	potential = {
+		ethics = { value = ethic_gestalt_consciousness }
+		authority = { value = auth_hive_mind }
+	}
+	possible = {
+		civics = { 
+			NOT = { 
+				value = civic_blossoming_worlds
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_hive.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	
+	description = civic_tooltip_blossoming_hive_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_genetics_finish
+		}
+		hidden_modifier = {
+			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+			# empire_size_systems_mult = -0.25
+			# tradition_cost_empire_size_mult = -0.10
+		}
+	}
+}

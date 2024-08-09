@@ -15,3 +15,8 @@
   sm_ac_bandwidth_router_plural:0 "Omni-band Routers"
   sm_ac_bandwidth_router_desc:0 "Modular quantum CPUs coordinating immense transfer of information from the nearby hyper relay, transmitting the data that is our entire being."
   sm_ac_bandwidth_router_desc_modifier:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_planet_jobs_produces_mult$ §G+15%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
+
+  building_ac_grand_sapling:0 "Grand Sapling"
+  building_ac_grand_sapling_desc:0 "$building_solarpunk_sapling_desc$"
+  mod_job_solarpunk_anarchist_add:0 "$job_solarpunk_anarchist$ Jobs" # Vanilla Override to fix bug
+  job_solarpunk_anarchist_effect_desc:0 "£job_solarpunk_anarchist£ $job_solarpunk_anarchist_plural$ increase £stability£ §YStability§!, increase £amenities£ §YAmenities§!, and produce £unity£ §Y$unity$§!."

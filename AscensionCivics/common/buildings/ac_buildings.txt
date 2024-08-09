@@ -120,3 +120,49 @@ building_ac_psi_tower = {
 		text = job_telepath_effect_desc
 	}
 }
+
+building_ac_grand_sapling = {
+	icon = holding_tree_of_life_sapling
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		exists = owner
+		owner = {
+			# is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		# has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+
+	planet_modifier = {
+		job_solarpunk_anarchist_add = 1
+		planet_farmers_food_produces_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = @b2_minerals
+		}
+		upkeep = {
+			food = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}

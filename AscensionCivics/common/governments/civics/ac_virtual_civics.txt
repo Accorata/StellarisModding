@@ -21,10 +21,6 @@ civic_bandwidth_enhancers = {
 	}
 	ai_weight = {
 		base = 0
-		modifier = {
-			add = 100
-			has_active_tradition = tr_virtuality_finish
-		}
 	}
 	
 	description = civic_tooltip_bandwidth_enhancers_effects
@@ -62,10 +58,6 @@ civic_bandwidth_incorporated = {
 	}
 	ai_weight = {
 		base = 0
-		modifier = {
-			add = 100
-			has_active_tradition = tr_virtuality_finish
-		}
 	}
 	
 	description = civic_tooltip_bandwidth_enhancers_effects
@@ -103,18 +95,15 @@ civic_bandwidth_optimization = {
 	}
 	ai_weight = {
 		base = 0
-		modifier = {
-			add = 100
-			has_active_tradition = tr_virtuality_finish
-		}
 	}
 	
-	description = civic_tooltip_bandwidth_enhancers_effects
+	description = civic_tooltip_bandwidth_optimization_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
 		hidden_modifier = {
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.10
 		}

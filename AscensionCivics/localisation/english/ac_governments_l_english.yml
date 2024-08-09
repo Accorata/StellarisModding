@@ -8,3 +8,7 @@
 
 
 # Hive Genetic ---------------------------------------------------------------------------------
+  auth_ac_genetic_hive_perfect:0 "Collective Hive"
+  auth_ac_genetic_hive_perfect_desc:0 "..."
+  auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
+  auth_ac_genetic_hive_chaotic_desc:0 "..."

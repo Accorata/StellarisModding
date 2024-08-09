@@ -14,6 +14,7 @@ civic_bioform_upgrader = {
 			NOR = {
 				value = civic_machine_terminator
 				value = civic_fanatic_purifiers
+				value = civic_machine_assimilator
 				value = civic_bio_replacer
 			}
 		}
@@ -63,6 +64,7 @@ civic_bio_replacer = {
 			NOR = {
 				value = civic_machine_terminator
 				value = civic_fanatic_purifiers
+				value = civic_machine_assimilator
 				value = civic_bioform_upgrader
 			}
 		}
@@ -89,8 +91,7 @@ civic_bio_replacer = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			ship_weapon_damage = 0.10
-			country_naval_cap_mult = 0.15
+			# TO DO
 		}
 	}
 }
@@ -124,6 +125,7 @@ civic_bio_replacer = {
 # 			# tr_synthetics_finish
 # 		}
 # 		modifier = {
+#			megastructures_energy_produces_mult = 0.25
 # 			megastructure_build_speed_mult = 0.25
 # 			country_megastructure_build_cap_add = 1
 # 		}

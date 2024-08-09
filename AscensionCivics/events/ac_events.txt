@@ -478,7 +478,7 @@ planet_event = {
 				}
 			}
 			create_species = {
-				name = random
+				name = "Cyberform" # Owner species name
 				class = random_non_machine
 				portrait = random
 				traits = random
@@ -488,7 +488,7 @@ planet_event = {
 				modify_species = {
 					species = this
 					add_trait = trait_cybernetic
-					add_trait = trait_ac_cyberform
+					# add_trait = trait_ac_cyberform
 				}
 				save_global_event_target_as = ac_cyberform_species
 			}
