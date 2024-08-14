@@ -1,0 +1,42 @@
+sm_interstellar_ecology = {
+	icon = "GFX_sm_interstellar_ecology_sb"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_sm_interstellar_ecologies
+		}
+		is_normal_starbase = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	# Purely testing:
+	station_modifier = {
+		# country_starbase_upkeep_mult = -0.25
+		starbases_upkeep_mult = -0.25
+		starbase_constructions_produces_mult = 0.25
+	}
+
+
+	ai_weight = {
+		weight = 100
+	}
+}

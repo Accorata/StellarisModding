@@ -107,3 +107,28 @@ tech_sm_dreams_beyond_scale = {
 		weight = 1000
 	}
 }
+
+tech_sm_interstellar_ecologies = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { voidcraft }
+	tier = 3 # ?
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_voidcraft
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}

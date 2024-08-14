@@ -12,8 +12,8 @@ spriteTypes = {
 
 	# STARBASE MODULES -----------------------------------------------------------------------
 	spriteType = {
-		name = "GFX_sm_interstellar_arcology_sb"
-		texturefile = "gfx/interface/icons/modules/sb_sm_interstellar_arcology.dds"
+		name = "GFX_sm_interstellar_ecology_sb"
+		texturefile = "gfx/interface/icons/modules/sb_sm_interstellar_ecology.dds"
 	}
 }
 

@@ -29,7 +29,12 @@
   TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_5_GRAV$"
   TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_5_GRAV$§!\n$SHIP_THRUSTER_5_GRAV_DESC$"
 
+# Voidcraft
   tech_sm_dreams_beyond_scale:0 "Dreams Beyond Scale"
   tech_sm_dreams_beyond_scale_desc:0 "..."
   TECH_UNLOCK_SM_MEGA_TITLE:0 "§HGrants 5% of Tech:§! $tech_mega_engineering$"
   TECH_UNLOCK_SM_MEGA_DESC:0 "§H$tech_mega_engineering$§!\n$tech_mega_engineering_desc$"
+
+  tech_sm_interstellar_ecologies:0 "Interstellar Ecologies"
+  tech_sm_interstellar_ecologies_desc:0 "..."
+

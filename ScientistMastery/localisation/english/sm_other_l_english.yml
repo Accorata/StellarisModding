@@ -1,4 +1,5 @@
 ﻿l_english:
+  mod_starbase_constructions_produces_mult:0 "Resources from Starbase Constructions"
 # Traits
   sm_trait_description:0 "This leader is, following a lifetime of study, considered a master of the field of"
   sm_mastery_trait_effect: "$t$Provides the Opportunity to Draw Unique Technologies."
@@ -31,6 +32,8 @@
   leader_trait_sm_mastery_archaeostudies_desc:0 "$sm_trait_description$ Archaeostudies."
 
 # Starbase Modules
+  sm_sm_interstellar_ecology:0 "Interstellar Ecology"
+  sm_sm_interstellar_ecology_desc:0 "..."
 
 # Ship Components
   SHIP_THRUSTER_4_GRAV:0 "Impulse Grav-Thrusters"
