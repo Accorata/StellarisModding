@@ -6,6 +6,7 @@ civic_bioform_upgrader = {
 	possible = {
 		ethics = {
 			NOR = {
+				text = civic_tooltip_not_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
 			}
@@ -56,6 +57,7 @@ civic_bio_replacer = {
 	possible = {
 		ethics = {
 			NOR = {
+				text = civic_tooltip_not_xenophile
 				value = ethic_xenophile
 				value = ethic_fanatic_xenophile
 			}
@@ -86,6 +88,56 @@ civic_bio_replacer = {
 	}
 	
 	description = civic_tooltip_bio_replacer_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_synthetics_finish
+		}
+		modifier = {
+			# TO DO
+		}
+	}
+}
+
+civic_soul_seekers = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_fanatic_purifiers
+				value = civic_machine_assimilator
+				value = civic_bioform_upgrader
+			}
+		}
+	}
+
+	modification = yes # Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_soul_seekers.dds"
+	# alternate_civic_version = (Corporate version because unremovable)
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_synthetics_finish
+		}
+	}
+	
+	description = civic_tooltip_soul_seekers_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish

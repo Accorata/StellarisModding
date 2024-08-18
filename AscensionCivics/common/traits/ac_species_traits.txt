@@ -1,3 +1,5 @@
+# Start of specialized robot traits
+
 trait_ac_robot_power_drills = {
 	cost = 2
 	category = robotic
@@ -226,7 +228,7 @@ trait_ac_robot_logic_engines = {
 
 	initial = no
 	randomized = no
-	
+
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.10
 		planet_jobs_society_research_produces_mult = 0.10
@@ -243,6 +245,7 @@ trait_ac_robot_logic_engines = {
 	}
 }
 
+# End of specialized robot traits
 
 trait_ascendant_psionic = {
 	cost = 0

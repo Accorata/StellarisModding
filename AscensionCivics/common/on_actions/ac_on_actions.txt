@@ -62,7 +62,7 @@ on_post_government_changed = {
 		# ascension_civics.10		# Add ascendant psionic to psionic pops
 		# ascension_civics.11		# Remove ascendant psionic from pops
 		ascension_civics.52		# Add machine crusader trait to commanders
-		ascension_civics.200		# Setup variable for doomseeker shroud incursion
+		ascension_civics.200		# Setup variables for doomseeker shroud incursion
 		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
 		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
 	}
@@ -105,6 +105,10 @@ on_tradition_picked = {
 	events = {
 		ascension_civics.1000		# Genetic situation start
 		ascension_civics.1050		# Psionic situation start
+		ascension_civics.52 		# Leaders gain machine crusader trait if synth traditions finished
+		ascension_civics.53			# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
+		ascension_civics.60			# Send event to subjects to gain Programmed Loyalty trait
+		ascension_civics.200		# Setup variables for doomseeker shroud incursion
 	}
 }
 

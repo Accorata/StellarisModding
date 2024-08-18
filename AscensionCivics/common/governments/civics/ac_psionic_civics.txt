@@ -132,8 +132,9 @@ civic_shroud_renouncers = {
 	possible = {
 		ethics = {
 			OR = {
-				value = ethic_fanatic_materialist
+				text = civic_tooltip_materialist
 				value = ethic_materialist
+				value = ethic_fanatic_materialist
 			}
 		}
 		# civics = { NOT = { value = civic_telepathic_corporation } }

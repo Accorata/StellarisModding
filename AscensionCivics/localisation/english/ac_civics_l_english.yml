@@ -12,13 +12,14 @@
   civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. All that's remains are mandatory synthesization policies throughout the galaxy."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
 
- # - May use §Y$bombardment_armageddon_bio$§! bombardment stance\n"
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
   casus_belli_cb_ac_bio_upgrades_desc:0 "..."
   casus_belli_cb_ac_machine_containment:0 "Containment"
   casus_belli_cb_ac_machine_containment_desc:0 "..."
-  # bombardment_armageddon_bio:0 "Organic Armageddon"
-  # bombardment_armageddon_bio_desc:0 "$bombardment_armageddon_bio$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing organic casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RMassive§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
+
+  civic_soul_seekers:0 "Soul Seekers"
+  civic_soul_seekers_desc:0 "..."
+  civic_tooltip_soul_seekers_effects:0 "Will be done"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "..."
@@ -116,6 +117,24 @@
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
   civic_bandwidth_optimization_desc:0 "..."
   civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$ §G+25%§!"
+
+# Modularity --------------------------------------------------------------------------------------
+  modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
+
+  trait_ac_robot_superconductive:0 "Ultraconductive"
+  trait_ac_robot_superconductive_desc:0 "..."
+  trait_ac_robot_power_drills:0 "Fusion Drills"
+  trait_ac_robot_power_drills_desc:0 "..."
+  trait_ac_robot_harvesters:0 "..."
+  trait_ac_robot_harvesters_desc:0 "..."
+  trait_ac_robot_trading_algorithms:0 "..."
+  trait_ac_robot_trading_algorithms_desc:0 "..."
+  trait_ac_robot_emotion_emulators:0 "..."
+  trait_ac_robot_emotion_emulators_desc:0 "..."
+  trait_ac_robot_propaganda_machines:0 "Truth Machines"
+  trait_ac_robot_propaganda_machines_desc:0 "..."
+  trait_ac_robot_logic_engines:0 "Intelligence Engines"
+  trait_ac_robot_logic_engines_desc:0 "..."
 
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation

@@ -36,7 +36,7 @@ country_event = {
 	}
 }
 
-# On post government change
+# On post government change (needs to also include on new tradition for psionic finish)
 # country_event = {
 # 	id = ascension_civics.10
 # 	hide_window = yes
@@ -226,15 +226,19 @@ country_event = {
 	}
 }
 
-# On post government change
+# On post government change or tradition gained
 country_event = {
 	id = ascension_civics.52
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		NOT = {
+			has_country_flag = ac_has_given_machine_crusader_trait
+		}
 		is_ac_bio_upgrader = yes
 	}
 	immediate = {
+		set_country_flag = ac_has_given_machine_crusader_trait
 		every_owned_leader = {
 			limit = {
 				NOT = {
@@ -246,31 +250,39 @@ country_event = {
 	}
 }
 
-# On post government change
+# On post government change or tradition picked
 country_event = {
 	id = ascension_civics.53
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		NOT = {
+			has_country_flag = ac_has_gives_hyper_relay_tech_option
+		}
 		is_ac_bandwidth_empire = yes
 		NOT = {
 			has_technology = tech_hyper_relays
 		}
 	}
 	immediate = {
+		set_country_flag = ac_has_gives_hyper_relay_tech_option
 		add_research_option = tech_hyper_relays
 	}
 }
 
-# On post government change - Send event to subjects to gain Programmed Loyalty trait
+# On post government change or tradition picked - Send event to subjects to gain Programmed Loyalty trait
 country_event = {
 	id = ascension_civics.60
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		NOT = {
+			has_country_flag = ac_has_sent_sovereign_cicuitry_event
+		}
 		is_ac_cyber_overlord = yes
 	}
 	immediate = {
+		set_country_flag = ac_has_sent_sovereign_cicuitry_event
 		every_playable_country = {
 			limit = {
 				is_subject = yes
@@ -465,6 +477,10 @@ country_event = {
 		}	
 	}
 }
+
+# remove country flag when country switches out of sovereign circuity = ac_has_sent_sovereign_cicuitry_event
+
+
 
 planet_event = {
 	id = ascension_civics.80
