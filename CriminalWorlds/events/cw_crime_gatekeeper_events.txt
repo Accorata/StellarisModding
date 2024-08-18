@@ -383,15 +383,13 @@ country_event = {
 					}
 					modifier = {
 						factor = 0
-						NOT = {
-							count_owned_pop = {
-								limit = {
-									is_enslaved = yes
-									is_sapient = yes
-									pop_has_happiness = yes
-								}
-								count = 0
+						count_owned_pop = {
+							limit = {
+								is_enslaved = yes
+								is_sapient = yes
+								pop_has_happiness = yes
 							}
+							count = 0
 						}
 					}
 					modifier = {
