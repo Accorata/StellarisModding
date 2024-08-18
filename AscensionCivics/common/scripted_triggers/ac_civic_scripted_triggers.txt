@@ -56,3 +56,18 @@ is_ac_blossoming = {
 	}
 	has_active_tradition = tr_genetics_finish
 }
+
+is_ac_specialized = {
+	# OR = {
+	# 	has_valid_civic = 
+	# }
+	has_active_tradition = tr_modularity_finish 
+	# planet_jobs_upkeep_mult (councilor)
+}
+#this = species, from = country
+can_do_ac_specialized_robo_modding = {
+	hidden_trigger = { exists = from }
+	from = {
+		is_ac_specialized = yes
+	}
+}

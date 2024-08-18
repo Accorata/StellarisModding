@@ -93,9 +93,9 @@
   civic_blossoming_worlds_desc:0 "..."
   civic_tooltip_blossoming_worlds_effects:0 ""
 
-  civic_blossoming_hive:0 "Blossoming Hive"
-  civic_blossoming_hive_desc:0 "..."
-  civic_tooltip_blossoming_hive_effects:0 ""
+  civic_blossoming_hives:0 "Blossoming Hives"
+  civic_blossoming_hives_desc:0 "..."
+  civic_tooltip_blossoming_hives_effects:0 ""
 
   # civic_bioship_integration:0 "Bioship Integration"
   # civic_bioship_integration_desc:0 "..."
