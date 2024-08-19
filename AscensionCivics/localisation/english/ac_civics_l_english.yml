@@ -18,7 +18,7 @@
   casus_belli_cb_ac_machine_containment_desc:0 "..."
 
   civic_soul_seekers:0 "Soul Seekers"
-  civic_soul_seekers_desc:0 "..."
+  civic_soul_seekers_desc:0 "Abandoning our biological forms have only left us with further questions on the nature of our consciousness and soul. There were those that viewed our innate form as divine, and though we pushed past their concerns, it is possible we have left something behind. Yet still, a sense of shared communion remains."
   civic_tooltip_soul_seekers_effects:0 "Will be done"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
@@ -121,19 +121,23 @@
 # Modularity --------------------------------------------------------------------------------------
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
 
+  automodding_trait_ac_robotic_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_robotic$§! picks modifiers from the ['concept_ac_automodding_robotic']"
+  concept_ac_automodding_robotic: "Specialized Auto-Mod Trait List"
+  concept_ac_automodding_robotic_desc: "- ['trait:trait_ac_robot_propaganda_machines']\n- ['trait:trait_ac_robot_trading_algorithms']\n- ['trait:trait_ac_robot_logic_engines']\n- ['trait:trait_ac_robot_power_drills']\n- ['trait:trait_ac_robot_harvesters']\n- ['trait:trait_ac_robot_superconductive']\n- ['trait:trait_ac_robot_emotion_emulators']"
+
   trait_ac_robot_superconductive:0 "Ultraconductive"
   trait_ac_robot_superconductive_desc:0 "..."
   trait_ac_robot_power_drills:0 "Fusion Drills"
   trait_ac_robot_power_drills_desc:0 "..."
-  trait_ac_robot_harvesters:0 "..."
+  trait_ac_robot_harvesters:0 "Mega-Harvestors"
   trait_ac_robot_harvesters_desc:0 "..."
   trait_ac_robot_trading_algorithms:0 "..."
   trait_ac_robot_trading_algorithms_desc:0 "..."
   trait_ac_robot_emotion_emulators:0 "..."
   trait_ac_robot_emotion_emulators_desc:0 "..."
-  trait_ac_robot_propaganda_machines:0 "Truth Machines"
+  trait_ac_robot_propaganda_machines:0 "Reality Machines"
   trait_ac_robot_propaganda_machines_desc:0 "..."
-  trait_ac_robot_logic_engines:0 "Intelligence Engines"
+  trait_ac_robot_logic_engines:0 "Epistemological Engines"
   trait_ac_robot_logic_engines_desc:0 "..."
 
 # Hive Cybernetic ---------------------------------------------------------------------------------

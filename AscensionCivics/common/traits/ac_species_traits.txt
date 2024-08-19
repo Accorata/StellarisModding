@@ -1,8 +1,40 @@
 # Start of specialized robot traits
+#Leave at start of list
+
+trait_ac_auto_mod_robotic = {
+	cost = {
+		base = 2
+	}
+	auto_mod = yes
+	category = ac_robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	slave_cost = {
+		energy = 1250
+	}
+	assembly_score = {
+		base = 2
+	}
+	custom_tooltip_with_modifiers = automodding_trait_robotic_tooltip
+}
 
 trait_ac_robot_power_drills = {
 	cost = 2
-	category = robotic
+	category = ac_robotic
 
 	allowed_archetypes = { ROBOT MACHINE }
 
@@ -39,7 +71,7 @@ trait_ac_robot_power_drills = {
 
 trait_ac_robot_harvesters = {
 	cost = 2
-	category = robotic
+	category = ac_robotic
 
 	allowed_archetypes = { ROBOT MACHINE }
 
@@ -84,7 +116,7 @@ trait_ac_robot_harvesters = {
 
 trait_ac_robot_superconductive = {
 	cost = 2
-	category = robotic
+	category = ac_robotic
 
 	allowed_archetypes = { ROBOT MACHINE }
 
@@ -121,7 +153,7 @@ trait_ac_robot_superconductive = {
 
 trait_ac_robot_trading_algorithms = {
 	cost = 2
-	category = robotic
+	category = ac_robotic
 	forbidden_ethics = { ethic_gestalt_consciousness }
 	opposites = { trait_robot_scarcity_algorithms }
 	allowed_archetypes = { ROBOT MACHINE }
@@ -151,7 +183,7 @@ trait_ac_robot_trading_algorithms = {
 
 trait_ac_robot_emotion_emulators = {
 	cost = 1
-	category = robotic
+	category = ac_robotic
 	opposites = { "trait_robot_uncanny" }
 	allowed_archetypes = { ROBOT MACHINE }
 
@@ -178,7 +210,7 @@ trait_ac_robot_emotion_emulators = {
 
 trait_ac_robot_propaganda_machines = {
 	cost = 1
-	category = robotic
+	category = ac_robotic
 	opposites = { "trait_robot_quarrelsome" }
 	allowed_archetypes = { ROBOT MACHINE }
 
@@ -212,7 +244,7 @@ trait_ac_robot_propaganda_machines = {
 
 trait_ac_robot_logic_engines = {
 	cost = 2
-	category = robotic
+	category = ac_robotic
 
 	allowed_archetypes = { ROBOT MACHINE }
 

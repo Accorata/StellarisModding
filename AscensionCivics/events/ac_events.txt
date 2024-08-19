@@ -250,6 +250,20 @@ country_event = {
 	}
 }
 
+# On post government change
+country_event = {
+	id = ascension_civics.54
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_has_given_machine_crusader_trait
+		is_ac_bio_upgrader = no
+	}
+	immediate = {
+		remove_country_flag = ac_has_given_machine_crusader_trait
+	}
+}
+
 # On post government change or tradition picked
 country_event = {
 	id = ascension_civics.53
@@ -267,6 +281,30 @@ country_event = {
 	immediate = {
 		set_country_flag = ac_has_gives_hyper_relay_tech_option
 		add_research_option = tech_hyper_relays
+	}
+}
+
+# On post government change or tradition picked
+country_event = {
+	id = ascension_civics.55
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_given_psionic_trait_to_robots
+		}
+		is_ac_soul_searcher_empire = yes
+	}
+	immediate = {
+		set_country_flag = ac_has_given_psionic_trait_to_robots
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_robot_digital_1 # Will be limited psionic
+		}
+		change_dominant_species = {
+			species = last_created_species
+			change_all = yes
+		} # Try this part
 	}
 }
 
@@ -509,8 +547,32 @@ planet_event = {
 				save_global_event_target_as = ac_cyberform_species
 			}
 		}
+	after = {
 		create_pop = {
 			species = event_target:ac_cyberform_species
 		}
 	}
 }
+
+# owner_main_species = {
+# 	create_species = {
+# 		is_mod = yes
+# 		name = this
+# 		plural = this
+# 		class = "ROBOT"
+# 		portrait = "default_robot"
+# 		traits = {
+# 			trait = trait_mechanical
+# 		}
+# 		can_be_modified = this
+# 		homeworld = this
+# 		namelist = this
+# 		gender = this
+
+# 		effect = {
+# 			set_synth_origin_traits_effect = yes
+# 			set_synth_or_robot_portrait_effect = yes
+# 			save_global_event_target_as = synthspecies@root.owner
+# 		}
+# 	}
+# }

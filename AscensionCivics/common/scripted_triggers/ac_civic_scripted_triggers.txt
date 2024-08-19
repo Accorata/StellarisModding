@@ -71,3 +71,11 @@ can_do_ac_specialized_robo_modding = {
 		is_ac_specialized = yes
 	}
 }
+
+is_ac_soul_searcher_empire = {
+	OR = {
+		has_valid_civic = civic_soul_seekers
+		# has_valid_civic = 
+	}
+	has_active_tradition = tr_synthetics_finish
+}
