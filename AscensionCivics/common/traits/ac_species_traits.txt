@@ -29,7 +29,7 @@ trait_ac_auto_mod_robotic = {
 	assembly_score = {
 		base = 2
 	}
-	custom_tooltip_with_modifiers = automodding_trait_robotic_tooltip
+	custom_tooltip_with_modifiers = automodding_trait_ac_robotic_tooltip
 }
 
 trait_ac_robot_power_drills = {

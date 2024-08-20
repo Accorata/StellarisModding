@@ -42,8 +42,8 @@ civic_blossoming_worlds = {
 			has_active_tradition = tr_genetics_finish
 		}
 		hidden_modifier = {
-			# empire_size_systems_mult = -0.25
-			# tradition_cost_empire_size_mult = -0.10
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
 		}
 	}
 }
@@ -78,9 +78,9 @@ civic_blossoming_hives = {
 			has_active_tradition = tr_genetics_finish
 		}
 		hidden_modifier = {
-			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
-			# empire_size_systems_mult = -0.25
-			# tradition_cost_empire_size_mult = -0.10
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }

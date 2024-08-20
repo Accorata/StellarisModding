@@ -52,7 +52,7 @@ is_ac_shroud_renouncer = {
 is_ac_blossoming = {
 	OR = {
 		has_valid_civic = civic_blossoming_worlds
-		has_valid_civic = civic_blossoming_hive
+		has_valid_civic = civic_blossoming_hives
 	}
 	has_active_tradition = tr_genetics_finish
 }

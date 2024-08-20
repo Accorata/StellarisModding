@@ -127,9 +127,13 @@ building_ac_grand_sapling = {
 	category = government
 	base_cap_amount = 1
 	potential = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_gaia
+		}
 		exists = owner
 		owner = {
-			# is_ac_blossoming = yes
+			is_ac_blossoming = yes
 		}
 		NOT = {
 			has_modifier = slave_colony
@@ -137,7 +141,7 @@ building_ac_grand_sapling = {
 	}
 
 	allow = {
-		# has_major_upgraded_capital = yes
+		has_major_upgraded_capital = yes
 	}
 
 	destroy_trigger = {
@@ -152,6 +156,24 @@ building_ac_grand_sapling = {
 		planet_farmers_food_produces_add = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+			}
+		}
+		pop_happiness = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		pop_happiness = 0.1
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -159,6 +181,73 @@ building_ac_grand_sapling = {
 		}
 		upkeep = {
 			food = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+building_ac_hanging_cities = {
+	icon = building_paradise_dome
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_gaia
+		}
+		exists = owner
+		owner = {
+			is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+
+	planet_modifier = {
+		job_solarpunk_anarchist_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+			}
+		}
+		planet_jobs_produces_mult = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		planet_jobs_produces_mult = 0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			minerals = @b2_upkeep
 		}
 	}
 

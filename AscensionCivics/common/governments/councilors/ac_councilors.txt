@@ -69,6 +69,19 @@ councilor_telepathic_corporation = {
 # 	}
 # }
 
+# Genetic
+councilor_blossoming_worlds = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_blossoming_worlds
+	custom_tooltip = councilor_blossoming_worlds_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Virtual
 councilor_bandwidth_enhancers = {
 	leader_class = { official }

@@ -537,14 +537,15 @@ planet_event = {
 				portrait = random
 				traits = random
 				allow_negative_traits = no
-			}
-			last_created_species = {
-				modify_species = {
-					species = this
-					add_trait = trait_cybernetic
-					# add_trait = trait_ac_cyberform
+				# sapient = no
+				effect = {
+					modify_species = {
+						species = this
+						add_trait = trait_cybernetic
+						# add_trait = trait_ac_cyberform
+					}
+					save_global_event_target_as = ac_cyberform_species
 				}
-				save_global_event_target_as = ac_cyberform_species
 			}
 		}
 	after = {

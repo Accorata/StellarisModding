@@ -77,7 +77,7 @@
 
   civic_cyberlife:0 "CyberLife"
   civic_cyberlife_desc:0 "..."
-  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!.\n\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!"
+  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!"
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
@@ -92,11 +92,14 @@
 
   civic_blossoming_worlds:0 "Blossoming Worlds"
   civic_blossoming_worlds_desc:0 "..."
-  civic_tooltip_blossoming_worlds_effects:0 ""
+  civic_tooltip_blossoming_worlds_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  councilor_blossoming_worlds:0 "..."
+  councilor_blossoming_worlds_desc:0 "..."
+  councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
   civic_blossoming_hives:0 "Blossoming Hives"
   civic_blossoming_hives_desc:0 "..."
-  civic_tooltip_blossoming_hives_effects:0 ""
+  civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
   # civic_bioship_integration:0 "Bioship Integration"
   # civic_bioship_integration_desc:0 "..."
@@ -113,18 +116,20 @@
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "..."
+# Councilor increases overall trade value by ?%
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
   civic_bandwidth_optimization_desc:0 "..."
-  civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$ §G+25%§!"
+  civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
 # Modularity --------------------------------------------------------------------------------------
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
 
+  trait_ac_auto_mod_robotic:0 "Adaptive Machines"
+  trait_ac_auto_mod_robotic_desc:0 "..."
   automodding_trait_ac_robotic_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_robotic$§! picks modifiers from the ['concept_ac_automodding_robotic']"
   concept_ac_automodding_robotic: "Specialized Auto-Mod Trait List"
   concept_ac_automodding_robotic_desc: "- ['trait:trait_ac_robot_propaganda_machines']\n- ['trait:trait_ac_robot_trading_algorithms']\n- ['trait:trait_ac_robot_logic_engines']\n- ['trait:trait_ac_robot_power_drills']\n- ['trait:trait_ac_robot_harvesters']\n- ['trait:trait_ac_robot_superconductive']\n- ['trait:trait_ac_robot_emotion_emulators']"
-
   trait_ac_robot_superconductive:0 "Ultraconductive"
   trait_ac_robot_superconductive_desc:0 "..."
   trait_ac_robot_power_drills:0 "Fusion Drills"

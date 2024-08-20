@@ -33,7 +33,7 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			empire_size_from_pops = -0.1
+			# empire_size_from_pops = -0.1
 			empire_size_penalty_mult = -0.33
 			country_leader_cap_add = -1
 			num_tech_alternatives_add = -1
@@ -51,7 +51,7 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
-			empire_size_from_pops = -0.1
+			# empire_size_from_pops = -0.1
 		}
 	}
 }
