@@ -221,6 +221,7 @@ building_ac_hanging_cities = {
 
 	planet_modifier = {
 		job_solarpunk_anarchist_add = 1
+		planet_housing_add = 8
 	}
 
 	triggered_planet_modifier = {

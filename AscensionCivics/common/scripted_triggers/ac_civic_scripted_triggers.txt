@@ -58,11 +58,11 @@ is_ac_blossoming = {
 }
 
 is_ac_specialized = {
-	# OR = {
-	# 	has_valid_civic = 
-	# }
+	OR = {
+		has_valid_civic = civic_hyper_specialization
+	}
 	has_active_tradition = tr_modularity_finish 
-	# planet_jobs_upkeep_mult (councilor)
+	# planet_jobs_upkeep_mult 2% (councilor)
 }
 #this = species, from = country
 can_do_ac_specialized_robo_modding = {

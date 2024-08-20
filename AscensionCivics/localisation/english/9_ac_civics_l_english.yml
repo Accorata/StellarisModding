@@ -19,10 +19,11 @@
 
   civic_soul_seekers:0 "Soul Seekers"
   civic_soul_seekers_desc:0 "Abandoning our biological forms have only left us with further questions on the nature of our consciousness and soul. There were those that viewed our innate form as divine, and though we pushed past their concerns, it is possible we have left something behind. Yet still, a sense of shared communion remains."
-  civic_tooltip_soul_seekers_effects:0 "Will be done"
+  civic_tooltip_soul_seekers_effects:0 "(Will be done)"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
-  civic_synthetic_celestials_desc:0 "..."
+  civic_synthetic_celestials_desc:0 "Now that we’ve upgraded our own bodies, the rest of the universe must learn the grace of metal and hum of electricity."
+  civic_tooltip_synthetic_celestials_effects:0 "(Will be done)"
 
 # Psionic ---------------------------------------------------------------------------------------------
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
@@ -93,7 +94,7 @@
   civic_blossoming_worlds:0 "Blossoming Worlds"
   civic_blossoming_worlds_desc:0 "..."
   civic_tooltip_blossoming_worlds_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
-  councilor_blossoming_worlds:0 "..."
+  councilor_blossoming_worlds:0 "Terrestrial Cultivator"
   councilor_blossoming_worlds_desc:0 "..."
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
@@ -124,6 +125,10 @@
 
 # Modularity --------------------------------------------------------------------------------------
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
+
+  civic_hyper_specialization:0 "Hyper Specialization"
+  civic_hyper_specialization_desc:0 "..."
+  civic_tooltip_hyper_specialization_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
 
   trait_ac_auto_mod_robotic:0 "Adaptive Machines"
   trait_ac_auto_mod_robotic_desc:0 "..."

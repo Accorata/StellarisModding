@@ -52,7 +52,7 @@ trait_ac_robot_power_drills = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_minerals_produces_mult = 0.15
+		planet_jobs_minerals_produces_mult = 0.20
 	}
 	slave_cost = {
 		energy = 750
@@ -89,7 +89,7 @@ trait_ac_robot_harvesters = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_food_produces_mult = 0.15
+		planet_jobs_food_produces_mult = 0.20
 	}
 	slave_cost = {
 		energy = 750
@@ -134,7 +134,7 @@ trait_ac_robot_superconductive = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.20
 	}
 	slave_cost = {
 		energy = 750
@@ -174,7 +174,7 @@ trait_ac_robot_trading_algorithms = {
 	randomized = no
 
 	modifier = {
-		pop_job_trade_mult = 0.25
+		pop_job_trade_mult = 0.30
 	}
 	slave_cost = {
 		energy = 500
@@ -201,7 +201,7 @@ trait_ac_robot_emotion_emulators = {
 	randomized = no
 
 	modifier = {
-		pop_job_amenities_mult = 0.20
+		pop_job_amenities_mult = 0.25
 	}
 	slave_cost = {
 		energy = 750
@@ -228,8 +228,8 @@ trait_ac_robot_propaganda_machines = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.15
-		planet_jobs_unity_upkeep_mult = -0.1
+		planet_jobs_unity_produces_mult = 0.2
+		planet_jobs_unity_upkeep_mult = -0.15
 	}
 	slave_cost = {
 		energy = 750
@@ -262,9 +262,9 @@ trait_ac_robot_logic_engines = {
 	randomized = no
 
 	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.10
-		planet_jobs_society_research_produces_mult = 0.10
-		planet_jobs_engineering_research_produces_mult = 0.10
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
 	}
 	slave_cost = {
 		energy = 750

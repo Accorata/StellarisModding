@@ -94,7 +94,7 @@ civic_bandwidth_optimization = {
 		base = 0
 	}
 	ai_weight = {
-		base = 0
+		base = 0 # AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
 	}
 	
 	description = civic_tooltip_bandwidth_optimization_effects
