@@ -4,6 +4,7 @@ civic_sovereign_circuitry = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 	}
 
 	modification = yes
@@ -37,6 +38,8 @@ civic_cyberlife = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
+
 	}
 
 	modification = yes

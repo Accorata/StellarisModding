@@ -4,6 +4,7 @@ civic_bioform_upgrader = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_xenophile
@@ -55,6 +56,7 @@ civic_bio_replacer = {
 		authority = { value = auth_corporate }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_xenophile
@@ -104,6 +106,7 @@ civic_soul_seekers = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		ethics = {
 			OR = {
 				text = civic_tooltip_spiritualist
@@ -154,6 +157,7 @@ civic_synthetic_celestials = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		ethics = {
 			OR = {
 				text = civic_tooltip_materialist

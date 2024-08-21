@@ -82,6 +82,22 @@ councilor_blossoming_worlds = {
 	}
 }
 
+# Modularity
+councilor_hyper_specialization = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_synth
+	}
+	civic = civic_hyper_specialization
+	modifier = {
+		planet_jobs_upkeep_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Virtual
 councilor_bandwidth_enhancers = {
 	leader_class = { official }

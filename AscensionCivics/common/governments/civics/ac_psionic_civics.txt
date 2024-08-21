@@ -40,6 +40,7 @@ civic_telepathic_empire = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		civics = { NOT = { value = civic_telepathic_corporation } }
 	}
 
@@ -75,6 +76,7 @@ civic_telepathic_corporation = {
 		authority = { value = auth_corporate }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		civics = { NOT = { value = civic_telepathic_empire } }
 	}
 
@@ -110,6 +112,7 @@ civic_doomseekers = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 	}
 
 	modification = yes
@@ -130,6 +133,7 @@ civic_shroud_renouncers = {
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
 		ethics = {
 			OR = {
 				text = civic_tooltip_materialist
