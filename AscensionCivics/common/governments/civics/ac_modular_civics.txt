@@ -6,8 +6,7 @@ civic_hyper_specialization = {
 	possible = {
 		species_archetype = { value = MACHINE }
 		civics = { 
-			NOR = { 
-				value = civic_hyper_specialized
+			NOT = { 
 				# value = 
 			} 
 		}
@@ -44,14 +43,6 @@ civic_hyper_specialized = {
 	potential = {
 		ethics = { value = ethic_gestalt_consciousness }
 		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		civics = { 
-			NOR = { 
-				value = civic_hyper_specialization
-				# value = 
-			} 
-		}
 	}
 
 	modification = yes

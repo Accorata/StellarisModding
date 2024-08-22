@@ -19,11 +19,6 @@ civic_blossoming_worlds = {
 	}
 	possible = {
 		species_archetype = { NOT = { value = MACHINE } }
-		civics = { 
-			NOT = { 
-				value = civic_blossoming_hives
-			} 
-		}
 	}
 
 	modification = yes
@@ -53,13 +48,6 @@ civic_blossoming_hives = {
 	potential = {
 		ethics = { value = ethic_gestalt_consciousness }
 		authority = { value = auth_hive_mind }
-	}
-	possible = {
-		civics = { 
-			NOT = { 
-				value = civic_blossoming_worlds
-			} 
-		}
 	}
 
 	modification = yes

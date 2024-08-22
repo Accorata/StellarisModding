@@ -1,14 +1,88 @@
 ﻿l_english:
-# Psionic ---------------------------------------------------------------------------------------------
+### Psionic ---------------------------------------------------------------------------------------------
 
-# Genetic ---------------------------------------------------------------------------------------------
-  auth_ac_genetic_imperial_perfect:0 "Imperial Clone"
+### Genetic ---------------------------------------------------------------------------------------------
+  ac_genetic_shock_chain_title: "..."
+  ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained a much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
+  ac_genetic_keep_auth_option: "Genetic Ascendency does not change who we are."
+
+## Authorities
+# Genetic Imperial Perfect
+  auth_ac_genetic_imperial_perfect:0 "Imperial Clones"
   auth_ac_genetic_imperial_perfect_desc:0 "..."
   AUTHORITY_AC_CLONED:1 "$t$ Upon §HRuler Death§! their §HCloned Heir§! becomes the new Ruler."
+  concept_auth_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
+  gov_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
+  gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
+# Genetic Imperial Chaotic
+  auth_ac_genetic_imperial_chaotic:0 "Imperial Pathogens"
+  auth_ac_genetic_imperial_chaotic_desc:0 "..."
+  concept_auth_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
+  gov_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
+  gov_ac_genetic_imperial_chaotic_desc:0 "$auth_ac_genetic_imperial_chaotic_desc$"
+# Genetic Democratic Perfect
+  auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
+  auth_ac_genetic_democratic_perfect_desc:0 "..."
+  concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
+  gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
+  gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
 
+## Events
+  ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables has changed
 
-# Hive Genetic ---------------------------------------------------------------------------------
+# First Event
+# Democratic 
+  ascension_governments.2.name: "$ac_genetic_shock_chain_title$"
+  ascension_governments.2.desc: "Thanks to the efforts of our government, all can now benefit from genetic advancements, curing previously fatal diseases and granting all a better quality of life. Now we have a choice on how to best to express our democratic ideals.\n\nBy limiting genetic diversity to a single phenotype, we could guarantee that all have an equal chance to succeed. Alternatively, we could invest our research into further deviations, granting all the ability to truly express themselves via their body."
+  ascension_governments.2.a: "We should focus on guaranteeing true equality."
+  ascension_governments.2.a.tt: "Emphasis on ..."
+  ascension_governments.2.b: "We must promote freedom of bodily expression."
+  ascension_governments.2.b.tt: "Emphasis on ..."
+
+# Oligarchic
+  ascension_governments.3.name: "$ac_genetic_shock_chain_title$"
+  ascension_governments.3.desc: "...\n\n..."
+  ascension_governments.3.a: "Focus ..."
+  ascension_governments.3.a.tt: "Emphasis on ...."
+  ascension_governments.3.b: "Study ..."
+  ascension_governments.3.b.tt: "Emphasis on ..."
+
+# Dictatorial
+  ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
+  ascension_governments.4.desc: "...\n\n..."
+  ascension_governments.4.a: "Test embryos for ..."
+  ascension_governments.4.a.tt: "Emphasis on workers and political power."
+  ascension_governments.4.b: "..."
+  ascension_governments.4.b.tt: "Emphasis on ..."
+
+# Imperial
+  ascension_governments.5.name: "$ac_genetic_shock_chain_title$"
+  ascension_governments.5.desc: "Now that the empire has embraced a future of genetics and clones, ...\n\nWe can perfect our cloning technology in order to perfectly recreate our ruler upon passing. Alternatively, we could create genetic diseases and test them on our lower castes to develop better genetic health for the elite."
+  ascension_governments.5.a: "Look into cloning consciousness."
+  ascension_governments.5.a.tt: "Emphasis on the imperial ruler."
+  ascension_governments.5.b: "Develop novel genetic diseases."
+  ascension_governments.5.b.tt: "Emphasis on rulers and research."
+
+# Corporate
+  ascension_governments.6.name: "$ac_genetic_shock_chain_title$"
+  ascension_governments.6.desc: "Our genetic advancements prvoide new markets to explore, but also new risks for competition. We must adapt to these changes in order to embrace this new frontier before any others....\n\n..."
+  ascension_governments.6.a: "..."
+  ascension_governments.6.a.tt: "Emphasis on ..."
+  ascension_governments.6.b: "..."
+  ascension_governments.6.b.tt: "Emphasis on ..."
+
+# Event Pool 1
+  ascension_governments.7.name: "Preserved Loved Ones"
+  ascension_governments.7.desc: "..."
+  ascension_governments.7.a: "A wonderful way to remember the deceased." # C
+  ascension_governments.7.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
+  ascension_governments.7.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
+
+# Event Pool 2
+
+### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Collective Hive"
   auth_ac_genetic_hive_perfect_desc:0 "..."
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
   auth_ac_genetic_hive_chaotic_desc:0 "..."
+  auth_ac_genetic_hive_chaotic_effects:0 "Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic

@@ -6,9 +6,8 @@ civic_bandwidth_enhancers = {
 	possible = {
 		species_archetype = { value = MACHINE }
 		civics = { 
-			NOR = { 
+			NOT = { 
 				value = civic_bandwidth_incorporated 
-				value = civic_bandwidth_optimization
 			} 
 		}
 	}
@@ -44,9 +43,8 @@ civic_bandwidth_incorporated = {
 	possible = {
 		species_archetype = { value = MACHINE }
 		civics = { 
-			NOR = { 
+			NOT = { 
 				value = civic_bandwidth_enhancers 
-				value = civic_bandwidth_optimization
 			} 
 		}
 	}
@@ -78,14 +76,6 @@ civic_bandwidth_optimization = {
 	potential = {
 		ethics = { value = ethic_gestalt_consciousness }
 		authority = { value = auth_machine_intelligence }
-	}
-	possible = {
-		civics = { 
-			NOR = { 
-				value = civic_bandwidth_enhancers
-				value = civic_bandwidth_incorporated 
-			} 
-		}
 	}
 
 	modification = yes

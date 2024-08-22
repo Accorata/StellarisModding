@@ -1,7 +1,7 @@
-namespace = ascension_civics
+namespace = ascension_governments
 # On genetics tradition finsihed
 country_event = {
-	id = ascension_civics.1000
+	id = ascension_governments.1
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -19,7 +19,7 @@ country_event = {
 
 # On psionics tradition finsihed
 country_event = {
-	id = ascension_civics.1050
+	id = ascension_governments.1000
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -36,7 +36,7 @@ country_event = {
 }
 
 leader_event = {
-	id = ascension_civics.1100
+	id = ascension_governments.100
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {

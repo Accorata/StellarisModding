@@ -22,7 +22,7 @@
   civic_tooltip_soul_seekers_effects:0 "(Will be done)"
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
-  civic_synthetic_celestials_desc:0 "Now that we’ve upgraded our own bodies, the rest of the universe must learn the grace of metal and hum of electricity."
+  civic_synthetic_celestials_desc:0 "Now that we've upgraded our own bodies, the rest of the universe must learn the grace of metal and hum of electricity."
   civic_tooltip_synthetic_celestials_effects:0 "(Will be done)"
 
 # Psionic ---------------------------------------------------------------------------------------------
@@ -134,7 +134,7 @@
 
   civic_hyper_specialized:0 "Hyper-Specialized"
   civic_hyper_specialized_desc:0 "Versatile living metal interiors allowing our drones to take on whatever form best suits the collective's needs."
-  civic_tooltip_hyper_specialized_effects:0 "$civic_tooltip_hyper_specialization_effects$/n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
+  civic_tooltip_hyper_specialized_effects:0 "$civic_tooltip_hyper_specialization_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   trait_ac_auto_mod_robotic:0 "Living Frames"
   trait_ac_auto_mod_robotic_desc:0 "Living metal interiors adapting to every circumstances, allowing adaptable and versatile specialization."

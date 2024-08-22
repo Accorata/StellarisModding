@@ -20,10 +20,31 @@ auth_imperial = {
 			AUTHORITY_AC_CLONED
 		}
 	}
+
+	advanced_authority_swap	= {
+		name = "auth_ac_genetic_imperial_chaotic"
+		description = "auth_ac_genetic_imperial_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		# ruler_council_position = councilor_ruler_imperial_ac_genetic
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_has_finished_genetics_tradition
+		}
+		modifier = {
+			pop_category_workers_society_research_produces_add = 0.5
+			# custom_tooltip = 
+			# show_only_custom_tooltip = no
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_HAS_HEIR
+		}
+	}
 }
 
 auth_hive_mind = {
-	advanced_authority_swap	= {
+	advanced_authority_swap	= { # Might change the flavor on this one
 		name = "auth_ac_genetic_hive_perfect"
 		description = "auth_ac_genetic_hive_perfect_desc"
 		inherit_icon = no
@@ -33,7 +54,7 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			# empire_size_from_pops = -0.1
+			empire_size_pops_mult = -0.1
 			empire_size_penalty_mult = -0.33
 			country_leader_cap_add = -1
 			num_tech_alternatives_add = -1
@@ -51,7 +72,9 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
-			# empire_size_from_pops = -0.1
+			empire_size_pops_mult = -0.1
+			custom_tooltip = auth_ac_genetic_hive_chaotic_effects
+			show_only_custom_tooltip = no
 		}
 	}
 }

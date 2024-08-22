@@ -7,7 +7,10 @@ councilor_bioform_upgrader = {
 				leader_class = official
 				leader_class = commander
 			}
-			has_trait = leader_trait_synthetic
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
 		}
 	}
 	civic = civic_bioform_upgrader
@@ -19,6 +22,7 @@ councilor_bioform_upgrader = {
 		inline_script = councilor_leader_weights
 	}
 }
+
 # Psionic
 councilor_telepathic_empire = {
 	leader_class = { official }

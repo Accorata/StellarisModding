@@ -39,7 +39,6 @@ civic_cyberlife = {
 	}
 	possible = {
 		species_archetype = { NOT = { value = MACHINE } }
-
 	}
 
 	modification = yes
