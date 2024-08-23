@@ -1,5 +1,30 @@
 ﻿l_english:
 ### Psionic ---------------------------------------------------------------------------------------------
+  ac_psionic_shock_chain_title: "..."
+  ac_psionic_shock_chain_desc: "We can speak with our minds, we have breached the Shroud, we can glimpse the future. We are no longer the unenlightened species that left our homeworld and rose to the skies, we are far more. But this new future brings a new way of life.\n\nHow we confront these changes will define our society for ages to come."
+  ac_psionic_keep_auth_option: "Psionic Ascendency does not change who we are."
+
+## Authorities
+# Psionic Imperial Divine
+  auth_ac_psionic_imperial_divine:0 "Imperial Apotheosis"
+  auth_ac_psionic_imperial_divine_desc:0 "..."
+  concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
+  gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
+  gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
+  councilor_ruler_imperial_ac_psionic_divine:0 "Divine $imperial_ruler$"
+  councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
+# Psionic Imperial Eldritch
+  auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
+  auth_ac_psionic_imperial_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
+  gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
+  gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
+# Psionic Dictatorial Divine
+  auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
+  auth_ac_psionic_dictatorial_divine_desc:0 "..."
+  concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
+  gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
+  gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
 
 ### Genetic ---------------------------------------------------------------------------------------------
   ac_genetic_shock_chain_title: "..."
@@ -49,9 +74,9 @@
 
 # Dictatorial
   ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
-  ascension_governments.4.desc: "...\n\n..."
-  ascension_governments.4.a: "Test embryos for ..."
-  ascension_governments.4.a.tt: "Emphasis on workers and political power."
+  ascension_governments.4.desc: "...\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, ..."
+  ascension_governments.4.a: "Test reducing intelligence on embryos."
+  ascension_governments.4.a.tt: "Emphasis on political power and workers."
   ascension_governments.4.b: "..."
   ascension_governments.4.b.tt: "Emphasis on ..."
 

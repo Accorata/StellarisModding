@@ -305,6 +305,10 @@ country_event = {
 			species = last_created_species
 			change_all = yes
 		} # Try this part
+		start_situation = {
+			type = situation_ac_soul_seeking
+			target = root
+		}
 	}
 }
 

@@ -21,6 +21,14 @@
   civic_soul_seekers_desc:0 "Abandoning our biological forms have only left us with further questions on the nature of our consciousness and soul. There were those that viewed our innate form as divine, and though we pushed past their concerns, it is possible we have left something behind. Yet still, a sense of shared communion remains."
   civic_tooltip_soul_seekers_effects:0 "(Will be done)"
 
+  situation_ac_soul_seeking:0 "Search for our Soul"
+  # situation_ac_soul_seeking_type:0 "$situation_ac_soul_seeking$"
+  situation_ac_soul_seeking_stage_1:0 "..Stage 1"
+  situation_ac_soul_seeking_all_ahead:0 ""
+  situation_ac_soul_seeking_steady:0 ""
+  situation_ac_soul_seeking_paused:0 "Paused"
+  situation_ac_soul_seeking_needed_psionic_theory_desc:0 "£trigger_no£ Has technology $tech_psionic_theory$"
+
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "Now that we've upgraded our own bodies, the rest of the universe must learn the grace of metal and hum of electricity."
   civic_tooltip_synthetic_celestials_effects:0 "(Will be done)"
