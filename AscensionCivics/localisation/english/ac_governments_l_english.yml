@@ -15,16 +15,47 @@
   councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
 # Psionic Imperial Eldritch
   auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
-  auth_ac_psionic_imperial_eldritch_desc:0 "..."
+  auth_ac_psionic_imperial_eldritch_desc:0 "Our emperor has opened their mind to the Shroud, allowing themselves to serve as a vessel for the entities that dwell within. Our rule is eternal for the very Shroud guides us now."
   concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
+  councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
+  councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
-  auth_ac_psionic_dictatorial_divine_desc:0 "..."
+  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. "
   concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
+# Psionic Dictatorial Eldritch
+  auth_ac_psionic_dictatorial_eldritch:0 "Dictatorial Void"
+  auth_ac_psionic_dictatorial_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
+  gov_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
+  gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
+
+## Events
+  ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables has changed
+
+# First Event
+# Dictatorial
+  ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and influence the entire populace."
+  ascension_governments.1004.a: "..."
+  ascension_governments.1004.a.tt: "Emphasis on ..."
+  ascension_governments.1004.b: "Assembly the conclave."
+  ascension_governments.1004.b.tt: "Emphasis on ..."
+# Imperial
+  ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
+  ascension_governments.1005.a: "Begin the ascension."
+  ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
+  ascension_governments.1005.b: "Call eldritch beings to propose the offer."
+  ascension_governments.1005.b.tt: "Emphasis on the Shroud."
+
+# Event Pool 1
+
+# Event Pool 2
 
 ### Genetic ---------------------------------------------------------------------------------------------
   ac_genetic_shock_chain_title: "..."
@@ -102,8 +133,16 @@
   ascension_governments.7.a: "A wonderful way to remember the deceased." # C
   ascension_governments.7.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
   ascension_governments.7.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
+  ac_alleles_of_the_dead:0 "Alleles of the Dead"
+  ac_alleles_of_the_dead_desc:0 "This society honores its departed by taking various genetic traits and placing them within their relatives and close friends, ensuring all are remembered."
+  ac_preserved_genetic_form:0 "Preserved Genetic Form"
+  ac_preserved_genetic_form_desc:0 "This society rejects small gene changes done solely for cosmetics or remembrance."
 
 # Event Pool 2
+  ascension_governments.(N).name: "Cloned Descendants"
+  ascension_governments.(N).desc: "..."
+  ascension_governments.(N).a: "This will stagnate evolution!" # C
+  ascension_governments.(N).b: "We no longer need the madness of evolution to guide us." # P
 
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Collective Hive"

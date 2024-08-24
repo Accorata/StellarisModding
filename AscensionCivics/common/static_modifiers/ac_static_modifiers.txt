@@ -1,1 +1,7 @@
+ac_alleles_of_the_dead = {
+	country_unity_produces_mult = 0.05
+}
 
+ac_preserved_genetic_form = {
+	pop_government_ethic_attraction = 0.05
+}
