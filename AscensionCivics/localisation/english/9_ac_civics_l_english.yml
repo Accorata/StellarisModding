@@ -106,6 +106,10 @@
   councilor_blossoming_worlds_desc:0 "..."
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
+  civic_xanadu_retreats:0 "Xanadu Retreats"
+  civic_xanadu_retreats_desc:0 "..."
+  civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- £energy£ Energy from $job_resort_worker_plural_with_icon$\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+
   civic_blossoming_hives:0 "Blossoming Hives"
   civic_blossoming_hives_desc:0 "..."
   civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"

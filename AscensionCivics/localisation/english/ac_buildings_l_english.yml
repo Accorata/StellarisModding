@@ -26,3 +26,7 @@
 
   mod_job_solarpunk_anarchist_add:0 "$job_solarpunk_anarchist$ Jobs" # Vanilla Override to fix bug
   job_solarpunk_anarchist_effect_desc:0 "£job_solarpunk_anarchist£ $job_solarpunk_anarchist_plural$ increase £stability£ §YStability§!, increase £amenities£ §YAmenities§!, and produce £unity£ §Y$unity$§!."
+
+  building_ac_xanadu:0 "Xanadu"
+  building_ac_xanadu_plural:0 "Xanadus"
+  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing will ever compare to."

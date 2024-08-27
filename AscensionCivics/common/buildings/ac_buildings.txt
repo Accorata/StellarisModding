@@ -21,10 +21,8 @@ building_ac_psi_tower = {
 
 	destroy_trigger = {
 		exists = owner
-		NOT = {
-			owner = {
-				is_ac_telepathic_empire = yes
-			}
+		owner = {
+			is_ac_telepathic_empire = no
 		}
 	}
 
@@ -122,7 +120,6 @@ building_ac_psi_tower = {
 }
 
 building_ac_grand_sapling = {
-	icon = holding_tree_of_life_sapling
 	base_buildtime = @b1_time
 	category = government
 	base_cap_amount = 1
@@ -190,7 +187,6 @@ building_ac_grand_sapling = {
 }
 
 building_ac_hanging_cities = {
-	icon = building_paradise_dome
 	base_buildtime = @b1_time
 	category = government
 	base_cap_amount = 1
@@ -254,5 +250,100 @@ building_ac_hanging_cities = {
 
 	triggered_desc = {
 		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+# Xanadu Retreats
+building_ac_xanadu = {
+	base_buildtime = @b2_time
+	category = amenity
+	base_cap_amount = 1
+	potential = {
+		is_planet_class = pc_gaia
+		NOT = {
+			has_modifier = slave_colony
+		}
+		exists = owner
+		owner = {
+			is_ac_xanadu = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_xanadu = no
+		}
+	}
+
+	country_modifier = {
+		pop_growth_from_immigration = 0.1
+		planet_immigration_pull_mult = 0.1
+	}
+
+	planet_modifier = {
+		job_resort_worker_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_resort_worker_effect_desc
 	}
 }

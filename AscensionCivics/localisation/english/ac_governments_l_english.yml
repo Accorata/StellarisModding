@@ -1,6 +1,6 @@
 ﻿l_english:
 ### Psionic ---------------------------------------------------------------------------------------------
-  ac_psionic_shock_chain_title: "..."
+  ac_psionic_shock_chain_title: "Telepathic Future"
   ac_psionic_shock_chain_desc: "We can speak with our minds, we have breached the Shroud, we can glimpse the future. We are no longer the unenlightened species that left our homeworld and rose to the skies, we are far more. But this new future brings a new way of life.\n\nHow we confront these changes will define our society for ages to come."
   ac_psionic_keep_auth_option: "Psionic Ascendency does not change who we are."
 
@@ -23,7 +23,7 @@
   councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
-  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. "
+  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."
   concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
@@ -40,10 +40,10 @@
 # First Event
 # Dictatorial
   ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and influence the entire populace."
-  ascension_governments.1004.a: "..."
+  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and weild control over the entire populace."
+  ascension_governments.1004.a: "Legitamize our rule."
   ascension_governments.1004.a.tt: "Emphasis on ..."
-  ascension_governments.1004.b: "Assembly the conclave."
+  ascension_governments.1004.b: "Assemble the conclave."
   ascension_governments.1004.b.tt: "Emphasis on ..."
 # Imperial
   ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"

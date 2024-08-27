@@ -57,6 +57,11 @@ is_ac_blossoming = {
 	has_active_tradition = tr_genetics_finish
 }
 
+is_ac_xanadu = {
+	has_valid_civic = civic_xanadu_retreats
+	has_active_tradition = tr_genetics_finish
+}
+
 is_ac_specialized = {
 	OR = {
 		has_valid_civic = civic_hyper_specialization

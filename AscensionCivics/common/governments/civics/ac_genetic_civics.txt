@@ -19,6 +19,11 @@ civic_blossoming_worlds = {
 	}
 	possible = {
 		species_archetype = { NOT = { value = MACHINE } }
+		civics = { 
+			NOT = { 
+				value = civic_xanadu_retreats 
+			} 
+		}
 	}
 
 	modification = yes
@@ -38,6 +43,48 @@ civic_blossoming_worlds = {
 			has_active_tradition = tr_genetics_finish
 		}
 		hidden_modifier = {
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
+		}
+	}
+}
+
+civic_xanadu_retreats = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { value = auth_corporate }
+	}
+	possible = {
+		# species_archetype = { NOT = { value = MACHINE } }
+		civics = { 
+			NOT = { 
+				value = civic_blossoming_worlds 
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_xanadu_retreats.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_genetics_finish
+		}
+	}
+	
+	description = civic_tooltip_xanadu_retreats_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_genetics_finish
+		}
+		hidden_modifier = {
+			planet_resort_workers_energy_produces_add = 5
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
 		}
