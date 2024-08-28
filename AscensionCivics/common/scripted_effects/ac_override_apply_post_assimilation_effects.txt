@@ -96,4 +96,22 @@ apply_post_assimilation_effects = {
 			CYBER_SPECIES = event_target:convert_to_species
 		}
 	}
+
+	# Maybe somme event attached to a building that did that (or just an event! - fires every year on each planet and transforms pop to main species
+	# 	- apply post assimilation effects...
+
+	# # START OF OVERRIDE #2 --------------------------------------------------------------------
+	# if = {
+	# 	limit = {
+	# 		root.owner = {
+	# 			has_authority = auth_democratic
+	# 			# has_country_flag = ...
+	# 		}
+	# 	}
+	# 	kill_pop = this
+	# 	create_pop = {
+	# 		species = root.owner.owner_main_species
+	# 	}
+	# }
+	# # END OF OVERRIDE #2 -----------------------------------------------------------------------
 }

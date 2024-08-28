@@ -58,7 +58,7 @@
 # Event Pool 2
 
 ### Genetic ---------------------------------------------------------------------------------------------
-  ac_genetic_shock_chain_title: "..."
+  ac_genetic_shock_chain_title: "Genetic Destiny"
   ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained a much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
   ac_genetic_keep_auth_option: "Genetic Ascendency does not change who we are."
 
@@ -128,11 +128,11 @@
   ascension_governments.6.b.tt: "Emphasis on ..."
 
 # Event Pool 1
-  ascension_governments.7.name: "Preserved Loved Ones"
-  ascension_governments.7.desc: "..."
-  ascension_governments.7.a: "A wonderful way to remember the deceased." # C
-  ascension_governments.7.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
-  ascension_governments.7.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
+  ascension_governments.8.name: "Preserved Loved Ones"
+  ascension_governments.8.desc: "..."
+  ascension_governments.8.a: "A wonderful way to remember the deceased." # C
+  ascension_governments.8.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
+  ascension_governments.8.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
   ac_alleles_of_the_dead:0 "Alleles of the Dead"
   ac_alleles_of_the_dead_desc:0 "This society honores its departed by taking various genetic traits and placing them within their relatives and close friends, ensuring all are remembered."
   ac_preserved_genetic_form:0 "Preserved Genetic Form"

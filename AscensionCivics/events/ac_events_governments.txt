@@ -1,7 +1,7 @@
 namespace = ascension_governments
 # On genetics tradition finsihed
 country_event = {
-	id = ascension_governments.1
+	id = ascension_governments.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -13,9 +13,442 @@ country_event = {
 	immediate = {
 		# Makes sure this is only triggered once
 		set_country_flag = ac_has_finished_genetics_tradition
-		# Starts situation
+		hidden_effect = {
+			country_event = { 
+				id = ascension_governments.1
+				days = 180
+				random = 90
+			}
+		}
 	}
 }
+
+country_event = {
+	id = ascension_governments.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {
+			which = "ac_genetic_perfect_society"
+			value = 0
+		}
+		set_variable = {
+			which = "ac_genetic_chaotic_society"
+			value = 0
+		}
+		switch = {
+			trigger = has_authority
+			auth_democratic = {
+				hidden_effect = {
+					country_event = { id = ascension_governments.2 }
+				}
+			}
+			auth_oligarchic = {
+				hidden_effect = {
+					country_event = { id = ascension_governments.3 }
+				}
+			}
+			auth_dictatorial = {
+				hidden_effect = {
+					country_event = { id = ascension_governments.4 }
+				}
+			}
+			auth_imperial = {
+				hidden_effect = {
+					country_event = { id = ascension_governments.5 }
+				}
+			}
+			auth_corporate = {
+				hidden_effect = {
+					country_event = { id = ascension_governments.6 }
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Democratic
+	id = ascension_governments.2
+	title = ascension_governments.2.name
+	desc = ascension_governments.2.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.2.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.2.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.2.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.2.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = { # Oligarchic
+	id = ascension_governments.3
+	title = ascension_governments.3.name
+	desc = ascension_governments.3.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.3.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.3.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.3.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.3.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = { # Dictatorial
+	id = ascension_governments.4
+	title = ascension_governments.4.name
+	desc = ascension_governments.4.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.4.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.4.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.4.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.4.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = { # Imperial
+	id = ascension_governments.5
+	title = ascension_governments.5.name
+	desc = ascension_governments.5.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.5.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.5.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.5.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.5.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = { # Corporate
+	id = ascension_governments.6
+	title = ascension_governments.6.name
+	desc = ascension_governments.6.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.6.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.6.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.6.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.6.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2 # The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Genetic Pool 1
+# Fired by: event
+country_event = {
+	id = ascension_governments.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_genetic_shock_chain_event_pool_one_list
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_one_list
+country_event = { # Preserved Loved Ones
+	id = ascension_governments.8
+	title = ascension_governments.8.name
+	desc = ascension_governments.8.desc
+	picture = GFX_evt_happy_reunion
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+
+	option = { # Chaotic
+		name = ascension_governments.8.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_alleles_of_the_dead
+			days = 1800
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Perfect
+		name = ascension_governments.8.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_preserved_genetic_form
+			days = 1800
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Chaotic
+		name = ascension_governments.8.c
+		custom_tooltip = ac_genetic.social_consequences.tt
+		trigger = {
+			owner = {
+				is_memorialist_empire = yes
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
+		}
+		add_modifier = {
+			modifier = ac_alleles_of_the_dead
+			days = 1800
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	after = {
+		# hidden_effect = {
+		# 	country_event = {
+		# 		id = ascension_governments.15 (whatever the second pool will be)
+		# 		days = 180
+		# 		random = 90
+		# 	}
+		# }
+	}
+}
+
 
 # On psionics tradition finsihed
 country_event = {
@@ -31,7 +464,13 @@ country_event = {
 	immediate = {
 		# Makes sure this is only triggered once
 		set_country_flag = ac_has_finished_psionics_tradition
-		# Starts situation
+		# hidden_effect = {
+		# 	country_event = { 
+		# 		id = ascension_governments.1001
+		# 		days = 180
+		# 		random = 90
+		# 	}
+		# }
 	}
 }
 

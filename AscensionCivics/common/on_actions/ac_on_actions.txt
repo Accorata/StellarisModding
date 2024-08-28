@@ -105,7 +105,7 @@ on_starbase_disabled = {
 # THIS = country
 on_tradition_picked = {
 	events = {
-		ascension_governments.1		# Genetic situation start
+		ascension_governments.0		# Genetic situation start
 		ascension_governments.1000	# Psionic situation start
 		ascension_civics.52 		# Leaders gain machine crusader trait if synth traditions finished
 		ascension_civics.53			# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
@@ -153,5 +153,14 @@ on_subject_integrated = {
 on_released_as_vassal = {
 	events = {
 		ascension_civics.67			# Subject effects for Sovereign Circuitry
+	}
+}
+
+
+# Event Pool 1 | Fired by ascension_governments.7
+# This = Country
+on_ac_genetic_shock_chain_event_pool_one_list = {
+	random_events = {
+		5 = ascension_governments.8 # Preserved Loved Ones
 	}
 }
