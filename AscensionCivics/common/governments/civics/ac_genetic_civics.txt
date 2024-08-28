@@ -84,7 +84,6 @@ civic_xanadu_retreats = {
 			has_active_tradition = tr_genetics_finish
 		}
 		hidden_modifier = {
-			planet_resort_workers_energy_produces_add = 5
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
 		}

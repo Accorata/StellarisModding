@@ -91,12 +91,27 @@ councilor_telepathic_corporation = {
 
 # Genetic
 councilor_blossoming_worlds = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_blossoming_worlds
+	custom_tooltip = councilor_blossoming_worlds_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_xanadu_retreats = {
 	leader_class = { official }
 	is_leader_possible = {
 		leader_class = official
 	}
-	civic = civic_blossoming_worlds
-	custom_tooltip = councilor_blossoming_worlds_tooltip
+	civic = civic_xanadu_retreats
+	custom_tooltip = councilor_xanadu_retreats_tooltip
+	modifier = {
+		planet_resort_workers_energy_produces_add = 0.5
+	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
 	}
@@ -128,6 +143,21 @@ councilor_bandwidth_enhancers = {
 	civic = civic_bandwidth_enhancers
 	modifier = {
 		country_unity_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_bandwidth_incorporated = {
+	leader_class = { official }
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_bandwidth_incorporated
+	modifier = {
+		trade_value_mult = 0.025
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

@@ -3,4 +3,4 @@ tags={
 	"Gameplay"
 }
 name="Ascension Civics"
-supported_version="3.12.5"
+supported_version="v3.12.5"

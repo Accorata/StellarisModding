@@ -43,10 +43,10 @@
   trait_ascendant_psionic_desc:0 "..."
   living_standard_ac_ascetic:0 "Ascetic"
   living_standard_ac_ascetic_tooltip:0 "These pops live a life of little material pleasure.\n\nPops have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop."
-  living_standard_ac_ascetic_tooltip_delayed:0 "Some may consider this torture, but for the gifted it is the only way of life." #Needs to be gray
+  living_standard_ac_ascetic_tooltip_delayed:0 "Some may consider this material abstinence torturous, but for the gifted it is the only way of life." #Needs to be gray
 
   civic_telepathic_empire:0 "Telepathic Empire"
-  civic_telepathic_empire_desc:0 "This nation communicates solely via telepathy... collective communion." # needs to be rewritten
+  civic_telepathic_empire_desc:0 "This society communicates solely via telepathy... collective communion." # needs to be rewritten
   civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£§Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_desc:0 "..."
@@ -107,8 +107,13 @@
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
   civic_xanadu_retreats:0 "Xanadu Retreats"
-  civic_xanadu_retreats_desc:0 "..."
-  civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- £energy£ Energy from $job_resort_worker_plural_with_icon$\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  civic_xanadu_retreats_desc:0 "This Megacorporation builds dream-like paradises, genetically perfected worlds with climate controlled weather and beautiful vistas. Their resorts are known throughout the galaxy as unbelievable places to stay- for a price."
+  civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu_plural$§! on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  councilor_xanadu_retreats:0 "Executive Resort Manager"
+  councilor_xanadu_retreats_desc:0 "..."
+  councilor_xanadu_retreats_tooltip:0 "- £energy£ Energy from $job_resort_worker_plural_with_icon$: §G+0.5§!"
+  decision_ac_more_resort_colony:0 "$decision_resort_colony$"
+  decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
   civic_blossoming_hives:0 "Blossoming Hives"
   civic_blossoming_hives_desc:0 "..."
@@ -122,17 +127,18 @@
   virtual_ascension_required:0 "If §YVirtual§! Ascension completed:\n"
 
   civic_bandwidth_enhancers:0 "Bandwidth Enhancers"
-  civic_bandwidth_enhancers_desc:0 "..."
+  civic_bandwidth_enhancers_desc:0 "This society lives in an entirely virtual reality, and has quickly realized how valuable the speeds at which their data transmission occurs. This simple material requirement remains one of their few limits, and they strive to remove it."
   civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_virtual_jobs_produces_mult£ §YJob Output§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_enhancers:0 "... Coordinator"
   councilor_bandwidth_enhancers_desc:0 "..."
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
-  civic_bandwidth_incorporated_desc:0 "..."
-# Councilor increases overall trade value by ?%
+  civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
+  councilor_bandwidth_incorporated:0 "Lead Data Marketer"
+  councilor_bandwidth_incorporated_desc:0 "..."
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
-  civic_bandwidth_optimization_desc:0 "..."
+  civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It's repurposed the hyper relay network to transmit data at greater quantity than ever before."
   civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
 # Modularity --------------------------------------------------------------------------------------
