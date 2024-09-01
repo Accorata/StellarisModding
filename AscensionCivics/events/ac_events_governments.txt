@@ -362,11 +362,13 @@ country_event = {
 	}
 }
 
+# Genetic Pool 2 - will be a_g.8
+
 # Fired by: on_ac_genetic_shock_chain_event_pool_one_list
 country_event = { # Preserved Loved Ones
-	id = ascension_governments.8
-	title = ascension_governments.8.name
-	desc = ascension_governments.8.desc
+	id = ascension_governments.9
+	title = ascension_governments.9.name
+	desc = ascension_governments.9.desc
 	picture = GFX_evt_happy_reunion
 	show_sound = event_cityscape
 	location = from
@@ -374,7 +376,7 @@ country_event = { # Preserved Loved Ones
 	is_triggered_only = yes
 
 	option = { # Chaotic
-		name = ascension_governments.8.a
+		name = ascension_governments.9.a
 		custom_tooltip = ac_genetic.social_consequences.tt
 		hidden_effect = {
 			change_variable = {
@@ -391,7 +393,7 @@ country_event = { # Preserved Loved Ones
 		}
 	}
 	option = { # Perfect
-		name = ascension_governments.8.b
+		name = ascension_governments.9.b
 		custom_tooltip = ac_genetic.social_consequences.tt
 		hidden_effect = {
 			change_variable = {
@@ -408,7 +410,7 @@ country_event = { # Preserved Loved Ones
 		}
 	}
 	option = { # Chaotic
-		name = ascension_governments.8.c
+		name = ascension_governments.9.c
 		custom_tooltip = ac_genetic.social_consequences.tt
 		trigger = {
 			owner = {
@@ -434,14 +436,14 @@ country_event = { # Preserved Loved Ones
 			days = 1800
 		}
 		ai_chance = {
-			factor = 1
+			factor = 2
 		}
 	}
 
 	after = {
 		# hidden_effect = {
 		# 	country_event = {
-		# 		id = ascension_governments.15 (whatever the second pool will be)
+		# 		id = ascension_governments.8 (whatever the second pool will be)
 		# 		days = 180
 		# 		random = 90
 		# 	}

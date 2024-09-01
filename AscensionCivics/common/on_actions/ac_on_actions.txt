@@ -161,6 +161,6 @@ on_released_as_vassal = {
 # This = Country
 on_ac_genetic_shock_chain_event_pool_one_list = {
 	random_events = {
-		5 = ascension_governments.8 # Preserved Loved Ones
+		5 = ascension_governments.9 # Preserved Loved Ones
 	}
 }
