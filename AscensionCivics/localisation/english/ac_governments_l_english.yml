@@ -129,7 +129,7 @@
 
 # Event Pool 1
   ascension_governments.9.name: "Preserved Loved Ones"
-  ascension_governments.9.desc: "..."
+  ascension_governments.9.desc: "A new tradition has appeared within small communities of our people. Upon the unfortunate passing of their loved ones, some [Root.GetSpeciesNamePlural] have decided to modify their own genetic makeup to incorporate some of the phenotypes of the deceased.\n\nWhether this might be a change in eye color, or a new birthmark, to even incorporating elements of another species, some opposition has formed against this practice, declaring these changes as purely cosmetic and an afront to our nature."
   ascension_governments.9.a: "A wonderful way to remember the deceased." # C
   ascension_governments.9.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
   ascension_governments.9.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
@@ -137,7 +137,18 @@
   ac_alleles_of_the_dead_desc:0 "This society honores its departed by taking various genetic traits and placing them within their relatives and close friends, ensuring all are remembered."
   ac_preserved_genetic_form:0 "Preserved Genetic Form"
   ac_preserved_genetic_form_desc:0 "This society rejects small gene changes done solely for cosmetics or remembrance."
-  ascension_governments.9.namet
+  ascension_governments.10.name: "Celebrity Impersonators"
+  ascension_governments.10.desc: "..."
+  ascension_governments.10.a: "Set required appearance-differentiating standards." # C
+  ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P (unknown effect)
+  ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
+  ac_identity_merchants:0 "Identity Merchants"
+  ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body to the latest trends."
+  ascension_governments.11.name: "Mutant Amalgams"
+  ascension_governments.11.desc: "Our military geneticists on [Root.Capital.GetName] have begun experimentating with genetic mutations, creating horrific abilities that may prove fruitful, although destructive, on the battlefield. A number of experts caution against these moves, worried that our carelessness may unleash horrors beyond our control.\n\nOther scientists also argue that a refined approach on genetic warfare could allow what they are calling the 'perfect' soldier. The dilemna has been passed to us on how they should continue."
+  ascension_governments.11.a: "Push these mutations to their limits and beyond!" # C
+  ascension_governments.11.b: "Chaotic mutations are the way of the past." # P
+  ascension_governments.11.c: "Genetics are for our people, not for warfare." # N
 # Event Pool 2
   ascension_governments.(N).name: "Cloned Descendants"
   ascension_governments.(N).desc: "..."
