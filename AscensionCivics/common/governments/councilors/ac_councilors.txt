@@ -163,3 +163,17 @@ councilor_bandwidth_incorporated = {
 		inline_script = councilor_leader_weights
 	}
 }
+
+councilor_concurrent_command = {
+	leader_class = { official commander scientist }
+	is_leader_possible = {
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_concurrent_command
+	modifier = {
+		ruler_skill_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

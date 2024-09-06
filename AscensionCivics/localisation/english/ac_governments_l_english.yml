@@ -88,6 +88,7 @@
   concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic_desc:0 "$auth_ac_genetic_dictatorial_chaotic_desc$"
+  auth_ac_genetic_dictatorial_chaotic_effects:0 "Rulers gain the §Yabc$$§! leader trait\nOn Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!" #not yet in effect
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "..."
@@ -194,7 +195,7 @@
   ascension_governments.32.name: "A New Populace"
   ascension_governments.32.desc.perfect: "We are finally equal. Gone are the days of oppression and false equivalence. No more will we fight the endless struggle towards guaranteeing opportunities, for we have reached that horizon. We are united, not just by our collective will for freedom, but rather through every allele in our bodies."
   ascension_governments.32.desc.chaotic: "From this moment forward, all can be whoever they wish to be. Whatever species or race or sex the mind can dream of, that can be you. In our society, there are no more limits on our forms of expression. We welcome all to be themselves."
-  ascension_governments.32.desc.neutral: "We've reached on a precipice. ..."
+  ascension_governments.32.desc.neutral: "We've reached a precipice. ..."
   ascension_governments.32.a: "..."
   ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$" # edicts to be changed...
   ascension_governments.32.b: "..."

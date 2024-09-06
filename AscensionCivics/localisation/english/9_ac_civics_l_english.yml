@@ -141,6 +141,20 @@
   civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It's repurposed the hyper relay network to transmit data at greater quantity than ever before."
   civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
+  civic_concurrent_command:0 "Concurrent Command"
+  civic_concurrent_command_desc:0 "..." # how to get more recent ruler icon?
+  civic_tooltip_concurrent_command_effects:0 "$virtual_ascension_required$- Gains §Y$commander_with_icon$§! benefits scaling with effective £ruler£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
+  councilor_concurrent_command:0 "Duo Processor"
+  councilor_concurrent_command_desc:0 "..."
+
+  civic_executive_militarization:0 "Executive Militarization"
+  civic_executive_militarization_desc:0 "This Megacorporation's executive council ..."
+  civic_tooltip_executive_militarization_effects:0 "$civic_tooltip_concurrent_command_effects$"
+
+  civic_nodal_command:0 "Nodal Command"
+  civic_nodal_command_desc:0 "..."
+  civic_tooltip_nodal_command_effects:0 "$civic_tooltip_concurrent_command_effects$\n\n§EModifiers:§!\n$virtual_ascension_required$- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
+
 # Modularity --------------------------------------------------------------------------------------
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
 
