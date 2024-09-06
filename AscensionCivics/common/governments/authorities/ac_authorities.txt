@@ -1,5 +1,5 @@
 auth_imperial = {
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_psionic_imperial_divine"
 		description = "auth_ac_psionic_imperial_divine_desc"
 		inherit_icon = no
@@ -7,7 +7,7 @@ auth_imperial = {
 		ruler_council_position = councilor_ruler_imperial_ac_psionic_divine
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition # Temp
+			has_country_flag = ac_has_finished_psionics_tradition			# Temp
 		}
 		modifier = {
 			job_high_priest_per_pop = 0.04
@@ -19,7 +19,7 @@ auth_imperial = {
 			AUTHORITY_HAS_HEIR
 		}
 	}
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_psionic_imperial_eldritch"
 		description = "auth_ac_psionic_imperial_eldritch_desc"
 		inherit_icon = no
@@ -27,7 +27,7 @@ auth_imperial = {
 		ruler_council_position = councilor_ruler_imperial_ac_psionic_eldritch
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition # Temp
+			has_country_flag = ac_has_finished_psionics_tradition			# Temp
 		}
 		modifier = {
 			job_high_priest_per_pop = 0.04
@@ -41,32 +41,32 @@ auth_imperial = {
 			AUTHORITY_HAS_HEIR
 		}
 	}
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_psionic_dictatorial_divine"
 		description = "auth_ac_psionic_dictatorial_divine_desc"
 		inherit_icon = no
 		inherit_effects = no
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition # Temp
+			has_country_flag = ac_has_finished_psionics_tradition			# Temp
 		}
 		modifier = {
 			empire_size_colonies_mult = -0.15
 			country_claim_influence_cost_mult = -0.1
 			pop_cat_ruler_happiness = 0.25
 			pop_cat_ruler_political_power = 0.5
-			pop_cat_specialist_happiness = -0.10
+			pop_cat_specialist_happiness = -0.1
 			ruler_skill_add = 2
 		}
 	}
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_psionic_dictatorial_eldritch"
 		description = "auth_ac_psionic_dictatorial_eldritch_desc"
 		inherit_icon = no
 		inherit_effects = no
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition # Temp
+			has_country_flag = ac_has_finished_psionics_tradition			# Temp
 		}
 		modifier = {
 			empire_size_colonies_mult = -0.15
@@ -78,13 +78,12 @@ auth_imperial = {
 			edicts_cost_mult = 1
 		}
 	}
-
 	tags = {
 		AUTHORITY_SUCCESSION_TYPE
 		AUTHORITY_DICTATORIAL_SUCCESSION
 	}
-
-	advanced_authority_swap	= { # Cloned leader may have more trait picks???
+	advanced_authority_swap = {
+		# Cloned leader may have more trait picks???
 		name = "auth_ac_genetic_imperial_perfect"
 		description = "auth_ac_genetic_imperial_perfect_desc"
 		inherit_icon = no
@@ -105,8 +104,7 @@ auth_imperial = {
 			AUTHORITY_AC_CLONED
 		}
 	}
-
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_genetic_imperial_chaotic"
 		description = "auth_ac_genetic_imperial_chaotic_desc"
 		inherit_icon = no
@@ -117,7 +115,7 @@ auth_imperial = {
 			has_country_flag = ac_has_finished_genetics_tradition
 		}
 		modifier = {
-			pop_category_workers_society_research_produces_add = 0.5
+			pop_category_workers_society_research_produces_add = 0.5			# Probably needs modifier localisation
 			# custom_tooltip = 
 			# show_only_custom_tooltip = no
 		}
@@ -129,7 +127,8 @@ auth_imperial = {
 }
 
 auth_hive_mind = {
-	advanced_authority_swap	= { # Might change the flavor on this one
+	advanced_authority_swap = {
+		# Might change the flavor on this one
 		name = "auth_ac_genetic_hive_perfect"
 		description = "auth_ac_genetic_hive_perfect_desc"
 		inherit_icon = no
@@ -139,15 +138,11 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			empire_size_pops_mult = -0.1
-			empire_size_penalty_mult = -0.33
 			country_leader_cap_add = -1
 			num_tech_alternatives_add = -1
-			planet_crime_no_happiness_mult = -1
 		}
 	}
-
-	advanced_authority_swap	= {
+	advanced_authority_swap = {
 		name = "auth_ac_genetic_hive_chaotic"
 		description = "auth_ac_genetic_hive_chaotic_desc"
 		inherit_icon = no
@@ -157,7 +152,7 @@ auth_hive_mind = {
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
-			empire_size_pops_mult = -0.1
+			empire_size_pops_mult = -0.1			#?
 			custom_tooltip = auth_ac_genetic_hive_chaotic_effects
 			show_only_custom_tooltip = no
 		}

@@ -1,28 +1,35 @@
 civic_bandwidth_enhancers = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		species_archetype = { value = MACHINE }
-		civics = { 
-			NOT = { 
-				value = civic_bandwidth_incorporated 
-			} 
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
 		}
 	}
-
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_bandwidth_incorporated
+			}
+		}
+	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_enhancers.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
 	ai_weight = {
 		base = 0
 	}
-	
 	description = civic_tooltip_bandwidth_enhancers_effects
 	swap_type = {
 		trigger = {
@@ -30,36 +37,41 @@ civic_bandwidth_enhancers = {
 		}
 		hidden_modifier = {
 			empire_size_systems_mult = -0.25
-			tradition_cost_empire_size_mult = -0.10
+			tradition_cost_empire_size_mult = -0.1
 		}
 	}
 }
 
 civic_bandwidth_incorporated = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { value = auth_corporate }
-	}
-	possible = {
-		species_archetype = { value = MACHINE }
-		civics = { 
-			NOT = { 
-				value = civic_bandwidth_enhancers 
-			} 
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
 		}
 	}
-
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_bandwidth_enhancers
+			}
+		}
+	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_incorporated.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
 	ai_weight = {
 		base = 0
 	}
-	
 	description = civic_tooltip_bandwidth_enhancers_effects
 	swap_type = {
 		trigger = {
@@ -67,28 +79,29 @@ civic_bandwidth_incorporated = {
 		}
 		hidden_modifier = {
 			empire_size_systems_mult = -0.25
-			tradition_cost_empire_size_mult = -0.10
+			tradition_cost_empire_size_mult = -0.1
 		}
 	}
 }
 
 civic_bandwidth_optimization = {
 	potential = {
-		ethics = { value = ethic_gestalt_consciousness }
-		authority = { value = auth_machine_intelligence }
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
 	}
-
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_optimization.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
 	ai_weight = {
-		base = 0 # AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
 	}
-	
 	description = civic_tooltip_bandwidth_optimization_effects
 	swap_type = {
 		trigger = {
@@ -97,7 +110,7 @@ civic_bandwidth_optimization = {
 		hidden_modifier = {
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 			empire_size_systems_mult = -0.25
-			tradition_cost_empire_size_mult = -0.10
+			tradition_cost_empire_size_mult = -0.1
 		}
 	}
 }

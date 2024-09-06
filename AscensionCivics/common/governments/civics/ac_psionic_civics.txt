@@ -33,21 +33,34 @@
 # 	# 	}
 # 	# }
 # }
-
 civic_telepathic_empire = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
-		civics = { NOT = { value = civic_telepathic_corporation } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_corporation
+			}
+		}
 	}
-
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -58,7 +71,6 @@ civic_telepathic_empire = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	
 	description = civic_tooltip_telepathic_empire_effects
 	swap_type = {
 		trigger = {
@@ -72,18 +84,30 @@ civic_telepathic_empire = {
 
 civic_telepathic_corporation = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { value = auth_corporate }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
-		civics = { NOT = { value = civic_telepathic_empire } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_empire
+			}
+		}
 	}
-
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_corporation.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -94,7 +118,6 @@ civic_telepathic_corporation = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	
 	description = civic_tooltip_telepathic_corporation_effects
 	swap_type = {
 		trigger = {
@@ -108,17 +131,27 @@ civic_telepathic_corporation = {
 
 civic_doomseekers = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 	}
-
 	modification = yes
 	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
 	pickable_at_start = yes
-	
 	random_weight = {
 		base = 0
 	}
@@ -129,11 +162,23 @@ civic_doomseekers = {
 
 civic_shroud_renouncers = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 		ethics = {
 			OR = {
 				text = civic_tooltip_materialist
@@ -143,11 +188,9 @@ civic_shroud_renouncers = {
 		}
 		# civics = { NOT = { value = civic_telepathic_corporation } }
 	}
-
 	modification = yes
 	# icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -158,7 +201,6 @@ civic_shroud_renouncers = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-
 	description = civic_tooltip_shroud_renouncers_effects
 	swap_type = {
 		trigger = {
@@ -166,7 +208,7 @@ civic_shroud_renouncers = {
 		}
 		hidden_modifier = {
 			# unity from telepaths
-			planet_psionic_jobs_produces_mult = 0.20
+			planet_psionic_jobs_produces_mult = 0.2
 			# shroud damage
 		}
 	}

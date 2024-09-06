@@ -1,6 +1,6 @@
 ﻿l_english:
 ### Psionic ---------------------------------------------------------------------------------------------
-  ac_psionic_shock_chain_title: "Telepathic Future"
+  ac_psionic_shock_chain_title: "Telepathic Destiny"
   ac_psionic_shock_chain_desc: "We can speak with our minds, we have breached the Shroud, we can glimpse the future. We are no longer the unenlightened species that left our homeworld and rose to the skies, we are far more. But this new future brings a new way of life.\n\nHow we confront these changes will define our society for ages to come."
   ac_psionic_keep_auth_option: "Psionic Ascendency does not change who we are."
 
@@ -58,7 +58,7 @@
 # Event Pool 2
 
 ### Genetic ---------------------------------------------------------------------------------------------
-  ac_genetic_shock_chain_title: "Genetic Destiny"
+  ac_genetic_shock_chain_title: "Genetic Legacy"
   ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained a much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
   ac_genetic_keep_auth_option: "Genetic Ascendency does not change who we are."
 
@@ -76,12 +76,30 @@
   concept_auth_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic_desc:0 "$auth_ac_genetic_imperial_chaotic_desc$"
+# Genetic Dictatorial Perfect
+  auth_ac_genetic_dictatorial_perfect:0 "Dictatorial Castes"
+  auth_ac_genetic_dictatorial_perfect_desc:0 "..."
+  concept_auth_ac_genetic_dictatorial_perfect:0 "$auth_ac_genetic_dictatorial_perfect$"
+  gov_ac_genetic_dictatorial_perfect:0 "$auth_ac_genetic_dictatorial_perfect$"
+  gov_ac_genetic_dictatorial_perfect_desc:0 "$auth_ac_genetic_dictatorial_perfect_desc$"
+# Genetic Dictatorial Chaotic
+  auth_ac_genetic_dictatorial_chaotic:0 "Dictatorial Kraterocracy"
+  auth_ac_genetic_dictatorial_chaotic_desc:0 "..."
+  concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
+  gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
+  gov_ac_genetic_dictatorial_chaotic_desc:0 "$auth_ac_genetic_dictatorial_chaotic_desc$"
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "..."
   concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
+# Genetic Democratic Chaotic
+  auth_ac_genetic_democratic_chaotic:0 "Democratic Expressionism"
+  auth_ac_genetic_democratic_chaotic_desc:0 "..."
+  concept_auth_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
+  gov_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
+  gov_ac_genetic_democratic_chaotic_desc:0 "$auth_ac_genetic_democratic_chaotic_desc$"
 
 ## Events
   ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables has changed
@@ -105,11 +123,11 @@
 
 # Dictatorial
   ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
-  ascension_governments.4.desc: "...\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, ..."
-  ascension_governments.4.a: "Test reducing intelligence on embryos."
-  ascension_governments.4.a.tt: "Emphasis on political power and workers."
-  ascension_governments.4.b: "..."
-  ascension_governments.4.b.tt: "Emphasis on ..."
+  ascension_governments.4.desc: "...\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, in order to determine who has the best genetics, we could redesign how our leadership is passed down, hosting a large fight between our leaders to take the next place."
+  ascension_governments.4.a: "Attempt to reduce intelligence in embryos."
+  ascension_governments.4.a.tt: "Emphasis on ruler political power and worker output."
+  ascension_governments.4.b: "Plan the games."
+  ascension_governments.4.b.tt: "Emphasis on the ruler and unity."
 
 # Imperial
   ascension_governments.5.name: "$ac_genetic_shock_chain_title$"
@@ -129,7 +147,7 @@
 
 # Event Pool 1
   ascension_governments.9.name: "Preserved Loved Ones"
-  ascension_governments.9.desc: "A new tradition has appeared within small communities of our people. Upon the unfortunate passing of their loved ones, some [Root.GetSpeciesNamePlural] have decided to modify their own genetic makeup to incorporate some of the phenotypes of the deceased.\n\nWhether this might be a change in eye color, or a new birthmark, to even incorporating elements of another species, some opposition has formed against this practice, declaring these changes as purely cosmetic and an afront to our nature."
+  ascension_governments.9.desc: "A new tradition has gained popularity within some communities of our people. Upon the unfortunate passing of their loved ones, some [Root.GetSpeciesNamePlural] have decided to modify their own genetic makeup to incorporate some of the phenotypes of the deceased.\n\nWhether this might be a change in eye color, or a new birthmark, to even incorporating elements of another species, some opposition has formed against this practice, declaring these changes as purely cosmetic and an afront to our nature."
   ascension_governments.9.a: "A wonderful way to remember the deceased." # C
   ascension_governments.9.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
   ascension_governments.9.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
@@ -138,25 +156,66 @@
   ac_preserved_genetic_form:0 "Preserved Genetic Form"
   ac_preserved_genetic_form_desc:0 "This society rejects small gene changes done solely for cosmetics or remembrance."
   ascension_governments.10.name: "Celebrity Impersonators"
-  ascension_governments.10.desc: "..."
+  ascension_governments.10.desc: "...Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as ...."
   ascension_governments.10.a: "Set required appearance-differentiating standards." # C
   ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P (unknown effect)
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
   ac_identity_merchants:0 "Identity Merchants"
   ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body to the latest trends."
-  ascension_governments.11.name: "Mutant Amalgams"
+  ascension_governments.11.name: "Mutant Amalgamations"
   ascension_governments.11.desc: "Our military geneticists on [Root.Capital.GetName] have begun experimentating with genetic mutations, creating horrific abilities that may prove fruitful, although destructive, on the battlefield. A number of experts caution against these moves, worried that our carelessness may unleash horrors beyond our control.\n\nOther scientists also argue that a refined approach on genetic warfare could allow what they are calling the 'perfect' soldier. The dilemna has been passed to us on how they should continue."
   ascension_governments.11.a: "Push these mutations to their limits and beyond!" # C
   ascension_governments.11.b: "Chaotic mutations are the way of the past." # P
   ascension_governments.11.c: "Genetics are for our people, not for warfare." # N
+  ascension_governments.12.name: "Employee Gene Mods"
+  ascension_governments.12.desc: "Certain comapnies have begun greatly encouraging various genetic changes in their employee's, whether those may be adapting them to their job, increasing their pleasantness for others, all the way to minimizing their normal health risks. The process, while possibly morally questionable, has had high returns on employee profit margins, and more and more companies are turning to this new path.\n\nA number of foreleaders have even started to require these changes. If we wish to interfere, our moment is quickly passing."
+  ascension_governments.12.a: "Our genetic makeup needs no variations." # P
+  ascension_governments.12.b: "Specialization has always been the best path forward." # C
+  ascension_governments.12.c: "This is abhorent. No company has rights over someone's genes." # P
+  ascension_governments.12.d: "A new corporate evolution awaits." # C
+  ac_genetic_freedoms:0 "Genetic Freedoms"
+  ac_genetic_freedoms_desc:0 "Our people are not subject to the whims of corporate greed's newest idea: employee gene modifications."
+  ac_genetic_specialization:0 "Genetic Specialization"
+  ac_genetic_specialization_desc:0 "Each job requires its own set of skills, and for each set of skills, a new set of genes."
+  ac_corporate_genetics:0 "Corporate Genetics"
+  ac_corporate_genetics_desc:0 "Our employees are greatly benefited by our routine set of gene modifications, providing themm the best chance to suceed in the company."
 # Event Pool 2
-  ascension_governments.(N).name: "Cloned Descendants"
-  ascension_governments.(N).desc: "..."
-  ascension_governments.(N).a: "This will stagnate evolution!" # C
-  ascension_governments.(N).b: "We no longer need the madness of evolution to guide us." # P
+  ascension_governments.20.name: "Cloned Descendants"
+  ascension_governments.20.desc: "A new form of parenthood has become popular: the raising of oneself. It's early adopters claim to find perfection in themselves, and thus wish to raise offspring that are identical clones of their own genetic makeup. It remains a costly process, afforded only to the elites of our society, but could bring lasting changes to [Root.GetSpeciesAdj] life.\n\nBut of course, such a change requires our approval, and thus the matter has been brought before us."
+  ascension_governments.20.a: "This will stagnate evolution!" # C
+  ascension_governments.20.b: "We no longer need the madness of evolution to guide us." # P
+  ac_cloned_population:0 "Cloned Population"
+  ac_cloned_population_desc:0 "This society has built the perfect individuals and large scale cloning is the best step into the future."
+  ac_evolving_population:0 "Evolving Population"
+  ac_evolving_population_desc:0 "This society understands that they may never become passive, and must always evolve with the challenges that face them."
+
+# Final Event
+# Democratic
+  ascension_governments.32.name: "A New Populace"
+  ascension_governments.32.desc.perfect: "We are finally equal. Gone are the days of oppression and false equivalence. No more will we fight the endless struggle towards guaranteeing opportunities, for we have reached that horizon. We are united, not just by our collective will for freedom, but rather through every allele in our bodies."
+  ascension_governments.32.desc.chaotic: "From this moment forward, all can be whoever they wish to be. Whatever species or race or sex the mind can dream of, that can be you. In our society, there are no more limits on our forms of expression. We welcome all to be themselves."
+  ascension_governments.32.desc.neutral: "We've reached on a precipice. ..."
+  ascension_governments.32.a: "..."
+  ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$" # edicts to be changed...
+  ascension_governments.32.b: "..."
+  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed...
+  ascension_governments.32.c: "$ac_genetic_keep_auth_option$"
+  ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
+
+# Oligarchic
+  ascension_governments.33.name: "..."
+  ascension_governments.33.desc.perfect: "..."
+  ascension_governments.33.desc.chaotic: "..."
+  ascension_governments.33.desc.neutral: "..."
+  ascension_governments.33.a: "..."
+  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_cyber_democratic_individualist']\n$unlock_edict_legislative_chorus$"
+  ascension_governments.33.b: "..."
+  ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_cyber_democratic_collectivist']\n$unlock_edict_self_preservation_override$"
+  ascension_governments.33.c: "$ac_genetic_keep_auth_option$"
+  ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
 ### Hive Genetic ---------------------------------------------------------------------------------
-  auth_ac_genetic_hive_perfect:0 "Collective Hive"
+  auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
   auth_ac_genetic_hive_perfect_desc:0 "..."
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
   auth_ac_genetic_hive_chaotic_desc:0 "..."

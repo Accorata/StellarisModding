@@ -11,32 +11,40 @@
 # 	modifier = {
 # 	}
 # }
- 
 civic_blossoming_worlds = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
-		civics = { 
-			NOT = { 
-				value = civic_xanadu_retreats 
-			} 
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
 		}
 	}
-
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_xanadu_retreats
+			}
+		}
+	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_worlds.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
 	ai_weight = {
 		base = 0
 	}
-	
 	description = civic_tooltip_blossoming_worlds_effects
 	swap_type = {
 		trigger = {
@@ -51,22 +59,30 @@ civic_blossoming_worlds = {
 
 civic_xanadu_retreats = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { value = auth_corporate }
-	}
-	possible = {
-		# species_archetype = { NOT = { value = MACHINE } }
-		civics = { 
-			NOT = { 
-				value = civic_blossoming_worlds 
-			} 
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
 		}
 	}
-
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_blossoming_worlds
+			}
+		}
+	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_xanadu_retreats.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -77,7 +93,6 @@ civic_xanadu_retreats = {
 			has_active_tradition = tr_genetics_finish
 		}
 	}
-	
 	description = civic_tooltip_xanadu_retreats_effects
 	swap_type = {
 		trigger = {
@@ -92,21 +107,22 @@ civic_xanadu_retreats = {
 
 civic_blossoming_hives = {
 	potential = {
-		ethics = { value = ethic_gestalt_consciousness }
-		authority = { value = auth_hive_mind }
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
 	}
-
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_hives.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
 	ai_weight = {
 		base = 0
 	}
-	
 	description = civic_tooltip_blossoming_hives_effects
 	swap_type = {
 		trigger = {

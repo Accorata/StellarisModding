@@ -1,10 +1,22 @@
 civic_bioform_upgrader = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_xenophile
@@ -21,11 +33,9 @@ civic_bioform_upgrader = {
 			}
 		}
 	}
-
 	modification = yes
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bioform_upgrader.dds"
-
 	random_weight = {
 		base = 0
 	}
@@ -36,7 +46,6 @@ civic_bioform_upgrader = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	
 	# on add - adds leader_trait_machine_crusader - check to see if this effect works on biological armies
 	description = civic_tooltip_bioform_upgrader_effects
 	swap_type = {
@@ -44,7 +53,7 @@ civic_bioform_upgrader = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			ship_weapon_damage = 0.10
+			ship_weapon_damage = 0.1
 			country_naval_cap_mult = 0.15
 		}
 	}
@@ -52,11 +61,21 @@ civic_bioform_upgrader = {
 
 civic_bio_replacer = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { value = auth_corporate }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_xenophile
@@ -73,11 +92,9 @@ civic_bio_replacer = {
 			}
 		}
 	}
-
 	modification = yes
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bio_replacer.dds"
-
 	random_weight = {
 		base = 0
 	}
@@ -88,7 +105,6 @@ civic_bio_replacer = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	
 	description = civic_tooltip_bio_replacer_effects
 	swap_type = {
 		trigger = {
@@ -102,11 +118,23 @@ civic_bio_replacer = {
 
 civic_soul_seekers = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 		ethics = {
 			OR = {
 				text = civic_tooltip_spiritualist
@@ -123,12 +151,10 @@ civic_soul_seekers = {
 			}
 		}
 	}
-
-	modification = yes # Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
+	modification = yes	# Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_soul_seekers.dds"
 	# alternate_civic_version = (Corporate version because unremovable)
-
 	random_weight = {
 		base = 0
 	}
@@ -139,7 +165,6 @@ civic_soul_seekers = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	
 	description = civic_tooltip_soul_seekers_effects
 	swap_type = {
 		trigger = {
@@ -153,11 +178,23 @@ civic_soul_seekers = {
 
 civic_synthetic_celestials = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 		ethics = {
 			OR = {
 				text = civic_tooltip_materialist
@@ -166,11 +203,9 @@ civic_synthetic_celestials = {
 			}
 		}
 	}
-
 	modification = yes
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_synthetic_celestials.dds"
-
 	random_weight = {
 		base = 0
 	}
@@ -181,13 +216,13 @@ civic_synthetic_celestials = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-
 	description = civic_tooltip_synthetic_celestials_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish
 		}
-		modifier = { # hidden modifier
+		modifier = {
+			# hidden modifier
 			megastructures_energy_produces_mult = 0.25
 			megastructure_build_speed_mult = 0.25
 		}

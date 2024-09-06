@@ -1,15 +1,25 @@
 civic_sovereign_circuitry = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 	}
-
 	modification = yes
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -20,7 +30,6 @@ civic_sovereign_circuitry = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-
 	description = civic_tooltip_sovereign_circuitry_effects
 	swap_type = {
 		trigger = {
@@ -34,16 +43,26 @@ civic_sovereign_circuitry = {
 
 civic_cyberlife = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
 	}
 	possible = {
-		species_archetype = { NOT = { value = MACHINE } }
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
 	}
-
 	modification = yes
 	pickable_at_start = yes
-	
 	random_weight = {
 		base = 0
 	}
@@ -54,7 +73,6 @@ civic_cyberlife = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-
 	description = civic_tooltip_cyberlife_effects
 	swap_type = {
 		trigger = {

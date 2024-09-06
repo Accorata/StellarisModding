@@ -9,7 +9,7 @@
   councilor_bioform_upgrader_desc:0 "..."
 
   civic_bio_replacer:0 "Anatomic Obsolescence"
-  civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. All that's remains are mandatory synthesization policies throughout the galaxy."
+  civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. ..."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
 
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
@@ -37,7 +37,7 @@
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
 
   civic_beyond_the_veil:0 "Beyond the Veil"
-  civic_beyond_the_veil_desc:0 "To see the entrance of the Shroud as the goal is for the weakminded. We will acsend beyond all others, embracing psionic duality and casting off all material desire for the sake of true enlightenment!"
+  civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!"
   civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
@@ -62,7 +62,7 @@
   civic_tooltip_shroud_renouncers_effects:0 "..."
 
   civic_doomseekers:0 "Doomseekers"
-  civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. And we embrace that end, that Great End!"
+  civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. This society embraces that end, that Great End!"
   civic_tooltip_doomseekers_effects:0 "..."
   councilor_doomseekers:0 "Seer of the Great End"
   councilor_doomseekers_desc:0 "..."
@@ -76,7 +76,7 @@
 # Cybernetic ---------------------------------------------------------------------------------------------
   cybernetic_ascension_required:0 "If §YCybernetic§! Ascension completed:\n"
 
-  civic_sovereign_circuitry:0 "Sovereign Circuitry"
+  civic_sovereign_circuitry:0 "Sovereign Implants"
   civic_sovereign_circuitry_desc:0 "..."
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
 
@@ -107,7 +107,7 @@
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
   civic_xanadu_retreats:0 "Xanadu Retreats"
-  civic_xanadu_retreats_desc:0 "This Megacorporation builds dream-like paradises, genetically perfected worlds with climate controlled weather and beautiful vistas. Their resorts are known throughout the galaxy as unbelievable places to stay- for a price."
+  civic_xanadu_retreats_desc:0 "This Megacorporation builds dream-like paradises, genetically perfected worlds with climate controlled weather and beautiful vistas. Their resorts are known throughout the galaxy as unbelievable places to stay - for the right price."
   civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_xanadu_retreats:0 "Executive Resort Manager"
   councilor_xanadu_retreats_desc:0 "..."
@@ -134,7 +134,7 @@
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
-  councilor_bandwidth_incorporated:0 "Lead Data Marketer"
+  councilor_bandwidth_incorporated:0 "Lead Data Marketer" # idk
   councilor_bandwidth_incorporated_desc:0 "..."
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
@@ -172,7 +172,7 @@
   trait_ac_robot_propaganda_machines:0 "Reality Machines"
   trait_ac_robot_propaganda_machines_desc:0 "Metallic mirages of pristine beauty forming whatever realities we deam most viable."
   trait_ac_robot_logic_engines:0 "Epistemological Engines"
-  trait_ac_robot_logic_engines_desc:0 "Quantum possibility engines computing all possible results and outcomes."
+  trait_ac_robot_logic_engines_desc:0 "Quantum possibility engines computing all possible logical outcomes."
 
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation
