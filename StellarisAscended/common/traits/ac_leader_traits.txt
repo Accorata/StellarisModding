@@ -124,4 +124,5 @@ leader_trait_corrupted_logic = {
 	randomized = no
 }
 
-# leader_trait_mutant_
+# leader_trait_mutant_shifter = {
+# }

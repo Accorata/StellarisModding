@@ -7,3 +7,13 @@ ac_effective_ruler_level = {
 	add = modifier:ruler_skill_add
 	add = modifier:councilor_skill_add
 }
+
+ac_species_in_empire_max_5 = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger_scope = country
+		trigger = num_species
+		mode = add
+	}
+	max = 5
+}

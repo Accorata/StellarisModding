@@ -101,7 +101,7 @@
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
-  auth_ac_genetic_oligarchic_chaotic_effects:0 "..."
+  auth_ac_genetic_oligarchic_chaotic_effects:0 "New leaders have a §Y50%§! chance to gain a Mutant trait along with an additional Negative trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "..."
@@ -124,17 +124,17 @@
   ascension_governments.2.name: "$ac_genetic_shock_chain_title$"
   ascension_governments.2.desc: "Thanks to the efforts of our government, all can now benefit from genetic advancements, curing previously fatal diseases and granting all a better quality of life. Now we have a choice on how to best express our democratic ideals.\n\nBy limiting genetic diversity to a single phenotype, we could guarantee that all have an equal chance to succeed. Alternatively, we could invest our research into further deviations, granting all the ability to truly express themselves via their body."
   ascension_governments.2.a: "We should focus on guaranteeing true equality."
-  ascension_governments.2.a.tt: "Emphasis on ..."
+  ascension_governments.2.a.tt: "Emphasis on one species and assimilation."
   ascension_governments.2.b: "We must promote freedom of bodily expression."
-  ascension_governments.2.b.tt: "Emphasis on ..."
+  ascension_governments.2.b.tt: "Emphasis on many species and immigration."
 
 # Oligarchic
   ascension_governments.3.name: "$ac_genetic_shock_chain_title$"
   ascension_governments.3.desc: "Our scientists are already bosting their great genetic breakthroughs, and our people are feeling the effects of their upgraded lives. As genetic commoditification becomes more and more accessible, our elites are worried about their place in this new society. Some structure must remain as we transition, and the question of how to best preserve the status quo must be answered.\n\nWe could focus new efforts into the possibilities of innate intelligence, creating a smarter line of individuals to lead the nation. Alternatively, we could test new iterations of genetic wetware upon our governmental officials, creating a new upper class of mutants."
   ascension_governments.3.a: "Focus on prenatal intelligence."
-  ascension_governments.3.a.tt: "Emphasis on ...."
+  ascension_governments.3.a.tt: "Emphasis on researchers and councilors."
   ascension_governments.3.b: "Ramp up random mutations in our officials."
-  ascension_governments.3.b.tt: "Emphasis on ..."
+  ascension_governments.3.b.tt: "Emphasis on new leaders."
 
 # Dictatorial
   ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
@@ -173,7 +173,7 @@
   ascension_governments.10.name: "Celebrity Impersonators"
   ascension_governments.10.desc: "...Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as ...."
   ascension_governments.10.a: "Set required appearance-differentiating standards." # C
-  ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P (unknown effect)
+  ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
   ac_identity_merchants:0 "Identity Merchants"
   ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body to the latest trends."
@@ -204,7 +204,17 @@
   ac_cloned_population_desc:0 "This society has built the perfect individuals and large scale cloning is the best step into the future."
   ac_evolving_population:0 "Evolving Population"
   ac_evolving_population_desc:0 "This society understands that they may never become passive, and must always evolve with the challenges that face them."
-
+  ascension_governments.21.name: "Innate Safety Instincts"
+  ascension_governments.21.desc: "..."
+  ascension_governments.21.a: "Perfection of our instincts is essential in [Root.GetSpeciesAdj] evolution." # P
+  ascension_governments.21.b: "Learning provides a unique and varied experience that genetic knowledge never will." # C
+  ascension_governments.21.c: "Individuals will decide what to install in their children." # N
+  ac_innate_abilities:0 "Innate Abilities"
+  ac_innate_abilities_desc:0 "..."
+  ac_natural_education:0 "Natural Education"
+  ac_natural_education_desc:0 "..."
+  ac_reproductive_instillations:0 "Reproductive Instillations"
+  ac_reproductive_instillations_desc:0 "..."
 # Final Event
 # Democratic
   ascension_governments.32.name: "A New Populace"
@@ -219,16 +229,16 @@
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
 # Oligarchic
-  ascension_governments.33.name: "..."
+  ascension_governments.33.name: "A New Superiority"
   ascension_governments.33.desc.perfect: "..."
   ascension_governments.33.desc.chaotic: "..."
   ascension_governments.33.desc.neutral: "..."
-  ascension_governments.33.a: "..."
-  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
+  ascension_governments.33.a: "May the enlightened guide us forward."
+  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
   ascension_governments.33.b: "..."
-  ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
+  ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
   ascension_governments.33.c: "$ac_genetic_keep_auth_option$"
-  ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
+  ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
 
 # Dictatorial
 
@@ -258,7 +268,7 @@
   ac_unrestricted_mutation_desc:0 "..."
   concept_edict_ac_unrestricted_mutation:0 "$ac_unrestricted_mutation$"
   unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
-  edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with a Negative trait from §Y50%§! to §Y100%§!."
+  edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with an additional Negative trait from §Y50%§! to §Y100%§!."
 
 # Democratic
   ac_handicap_distribution:0 "Handicap Distribution"

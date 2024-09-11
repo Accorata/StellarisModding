@@ -179,5 +179,6 @@ on_ac_genetic_shock_chain_event_pool_one_list = {
 on_ac_genetic_shock_chain_event_pool_two_list = {
 	random_events = {
 		5 = ascension_governments.20		# Cloned Descendants
+		5 = ascension_governments.21		# Innate Safety Instincts
 	}
 }

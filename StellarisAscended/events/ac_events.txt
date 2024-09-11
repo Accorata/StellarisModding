@@ -33,6 +33,28 @@ country_event = {
 				add_trait_no_notify = leader_trait_machine_crusader
 			}
 		}
+		# Oligrachic Mutants
+		# 50% (or 100% with edict) to add a mutant trait and a negative trait
+		if = {
+			limit = {
+				has_oligarchic_authority = yes
+				has_country_flag = ac_genetic_chaotic
+			}
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						has_edict = ac_unrestricted_mutation
+					}
+				}
+				1 = {
+					from = {
+						# ac_add_mutant_trait = yes (future scripted effect)
+						add_trait_no_notify = random_negative
+					}
+				}
+			}
+		}
 	}
 }
 

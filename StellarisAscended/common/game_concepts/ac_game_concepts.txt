@@ -50,4 +50,14 @@ concept_edict_ac_harvest_genetic_failures = {
 	tooltip_override = "edict:ac_harvest_genetic_failures"
 }
 
+concept_edict_ac_unrestricted_mutation = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_unrestricted_mutation"
+}
+
+concept_edict_ac_handicap_distribution = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_handicap_distribution"
+}
+
 # Psionic Authorities

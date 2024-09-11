@@ -1,4 +1,7 @@
 namespace = ascension_governments
+
+####### GENETIC SITUATION #######
+
 # On genetics tradition finsihed
 country_event = {
 	id = ascension_governments.0
@@ -496,7 +499,12 @@ country_event = {
 				value = 1
 			}
 		}
-		# Unknown
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -720,7 +728,7 @@ country_event = {
 			}
 		}
 		add_modifier = {
-			modifier = ac_cloned_population
+			modifier = ac_evolving_population
 		}
 		ai_chance = {
 			factor = 1
@@ -737,10 +745,81 @@ country_event = {
 			}
 		}
 		add_modifier = {
-			modifier = ac_evolving_population
+			modifier = ac_cloned_population
 		}
 		ai_chance = {
 			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.31
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_two_list
+country_event = {
+	# Innate Safetly Instincts
+	id = ascension_governments.21
+	title = ascension_governments.21.name
+	desc = ascension_governments.21.desc
+	picture = GFX_evt_happy_reunion	#change
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Perfect
+		name = ascension_governments.21.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_innate_abilities
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.21.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_natural_education
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.21.c
+		custom_tooltip = ac_genetic.social_consequences.tt
+		add_modifier = {
+			modifier = ac_reproductive_instillations
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 2
+				is_egalitarian = yes
+			}
 		}
 	}
 	after = {
@@ -955,7 +1034,7 @@ planet_event = {
 							value > 0
 						}
 					}
-					assimilation_effect = yes
+					ac_hyperequality_assimilation_effect = yes
 				}
 			}
 
@@ -977,7 +1056,7 @@ planet_event = {
 							value > 0
 						}
 					}
-					assimilation_effect = yes
+					ac_hyperequality_assimilation_effect = yes
 				}
 			}
 
@@ -999,7 +1078,7 @@ planet_event = {
 							value > 0
 						}
 					}
-					assimilation_effect = yes
+					ac_hyperequality_assimilation_effect = yes
 				}
 			}
 		}
@@ -1176,6 +1255,9 @@ country_event = {
 	}
 }
 
+#42 - gives leader new trait
+#43 - empire gains new leader.
+
 # Imperial Final Event
 # Fired by: event
 country_event = {
@@ -1341,6 +1423,8 @@ country_event = {
 		}
 	}
 }
+
+####### PSIONIC SITUATION #######
 
 # On psionics tradition finsihed
 country_event = {
