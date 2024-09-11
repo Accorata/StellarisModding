@@ -1,0 +1,3 @@
+trait_bg_ac_mutant = {
+	color = { 73 195 133 255 }
+}

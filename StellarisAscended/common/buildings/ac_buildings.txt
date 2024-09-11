@@ -1,0 +1,349 @@
+# Telepathic Empire
+building_ac_psi_tower = {
+	base_buildtime = @b2_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			is_ac_telepathic_empire = yes
+		}
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_telepathic_empire = no
+		}
+	}
+
+	planet_modifier = {
+		job_telepath_per_pop = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
+		job_politician_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
+		text = job_politician_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}
+
+building_ac_grand_sapling = {
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_gaia
+		}
+		exists = owner
+		owner = {
+			is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+
+	planet_modifier = {
+		job_solarpunk_anarchist_add = 1
+		planet_farmers_food_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+			}
+		}
+		pop_happiness = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		pop_happiness = 0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = @b2_minerals
+		}
+		upkeep = {
+			food = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+building_ac_hanging_cities = {
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_gaia
+		}
+		exists = owner
+		owner = {
+			is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+
+	planet_modifier = {
+		job_solarpunk_anarchist_add = 1
+		planet_housing_add = 8
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+			}
+		}
+		planet_jobs_produces_mult = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		planet_jobs_produces_mult = 0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			minerals = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+# Xanadu Retreats
+building_ac_xanadu = {
+	base_buildtime = @b2_time
+	category = amenity
+	base_cap_amount = 1
+	potential = {
+		is_planet_class = pc_gaia
+		NOT = {
+			has_modifier = slave_colony
+		}
+		exists = owner
+		owner = {
+			is_ac_xanadu = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_xanadu = no
+		}
+	}
+
+	country_modifier = {
+		pop_growth_from_immigration = 0.1
+		planet_immigration_pull_mult = 0.1
+	}
+
+	planet_modifier = {
+		job_resort_worker_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_resort_worker_effect_desc
+	}
+}

@@ -1,0 +1,227 @@
+# Governments
+councilor_ruler_imperial_ac_psionic_divine = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	possible = {
+		always = no
+	}
+	icon = "GFX_icon_councilor_ruler"
+	modifier = {
+		country_unity_produces_mult = 0.03
+		country_influence_produces_mult = 0.03
+		diplo_weight_mult = 0.03
+		country_edict_fund_add = 5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Synthetic
+councilor_bioform_upgrader = {
+	leader_class = {
+		official
+		commander
+	}
+	is_leader_possible = {
+		AND = {
+			OR = {
+				leader_class = official
+				leader_class = commander
+			}
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
+		}
+	}
+	civic = civic_bioform_upgrader
+	modifier = {
+		army_morale_damage_mult = 0.025
+		country_war_exhaustion_mult = -0.025
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_soul_seekers = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
+		}
+	}
+	civic = civic_soul_seekers
+	modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.075
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Psionic
+councilor_telepathic_empire = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			has_trait = leader_trait_psionic
+		}
+	}
+	civic = civic_telepathic_empire
+	modifier = {
+		empire_size_pops_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_telepathic_corporation = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			has_trait = leader_trait_psionic
+		}
+	}
+	civic = civic_telepathic_corporation
+	modifier = {
+		empire_size_branch_office_mult = -0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# councilor_doomseekers = {
+# 	leader_class = { official commander scientist }
+# 	is_leader_possible = {
+# 		has_trait = leader_trait_psionic
+# 	}
+# 	civic = civic_doomseekers
+# 	modifier = {
+# 		planet_stability_add = -2
+# 		country_unity_produces_mult = -0.05
+# 	}
+# 	ai_hiring_weight = {
+# 		inline_script = councilor_leader_weights
+# 	}
+# }
+# Genetic
+councilor_blossoming_worlds = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_blossoming_worlds
+	custom_tooltip = councilor_blossoming_worlds_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_xanadu_retreats = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_xanadu_retreats
+	custom_tooltip = councilor_xanadu_retreats_tooltip
+	modifier = {
+		planet_resort_workers_energy_produces_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Modularity
+councilor_hyper_specialization = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_synth
+	}
+	civic = civic_hyper_specialization
+	modifier = {
+		planet_jobs_upkeep_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Virtual
+councilor_bandwidth_enhancers = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_bandwidth_enhancers
+	modifier = {
+		country_unity_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_bandwidth_incorporated = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_bandwidth_incorporated
+	modifier = {
+		trade_value_mult = 0.025
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_concurrent_command = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_concurrent_command
+	modifier = {
+		ruler_skill_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

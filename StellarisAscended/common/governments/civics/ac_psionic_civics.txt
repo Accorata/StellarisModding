@@ -1,0 +1,215 @@
+# civic_beyond_the_veil = {
+# 	modification = yes
+# 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+# 	pickable_at_start = no
+# 	possible = {
+# 		has_active_tradition = tr_psionics_finish
+# 		ethics = {
+# 			OR = {
+# 				value = ethic_fanatic_spiritualist
+# 				value = ethic_spiritualist
+# 			}
+# 		}
+# 	}
+# 	random_weight = {
+# 		base = 0
+# 	}
+# 	description = civic_tooltip_beyond_the_veil_effects
+# 	modifier = {
+# 		shroud_delve_cooldown = -0.25
+# 		planet_researchers_society_research_produces_add = 2
+# 		planet_researchers_physics_research_produces_add = -1
+# 		planet_researchers_engineering_research_produces_add = -1
+# 	}
+# 	# swap_type = {
+# 	# 	trigger = {
+# 	# 		has_relic = r_zro_crystal
+# 	# 	}
+# 	# 	modifier = {
+# 	# 		shroud_delve_cooldown = -0.125
+# 	# 		planet_researchers_society_research_produces_add = 2
+# 	# 		planet_researchers_physics_research_produces_add = -1
+# 	# 		planet_researchers_engineering_research_produces_add = -1
+# 	# 	}
+# 	# }
+# }
+civic_telepathic_empire = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_corporation
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_telepathic_empire_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_psionics_finish
+		}
+		hidden_modifier = {
+			planet_stability_add = 5
+		}
+	}
+}
+
+civic_telepathic_corporation = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_empire
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_corporation.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_telepathic_corporation_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_psionics_finish
+		}
+		hidden_modifier = {
+			planet_stability_add = 5
+		}
+	}
+}
+
+civic_doomseekers = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+	}
+	modification = yes
+	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_doomseekers_effects
+	modifier = {
+	}
+}
+
+civic_shroud_renouncers = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		# civics = { NOT = { value = civic_telepathic_corporation } }
+	}
+	modification = yes
+	# icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_shroud_renouncers_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_psionics_finish
+		}
+		hidden_modifier = {
+			# unity from telepaths
+			planet_psionic_jobs_produces_mult = 0.2
+			# shroud damage
+		}
+	}
+}

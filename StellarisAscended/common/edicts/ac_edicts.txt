@@ -1,0 +1,31 @@
+@Edict2Cost = 25
+@EdictDuration = -1
+# Genetic Government Edicts
+ac_harvest_genetic_failures = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		councilor_exp_gain = 0.15
+		leader_lifespan_add = 10
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
