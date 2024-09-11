@@ -26,6 +26,66 @@ ac_harvest_genetic_failures = {
 	allow = {
 	}
 	ai_weight = {
-		weight = 0
+		weight = 1
+	}
+}
+
+ac_unrestricted_mutation = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	edict_lock_in_months = 180
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		custom_tooltip = edict_ac_unrestricted_mutation_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_handicap_distribution = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	edict_lock_in_months = 12
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		custom_tooltip = edict_ac_handicap_distribution_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 100
 	}
 }

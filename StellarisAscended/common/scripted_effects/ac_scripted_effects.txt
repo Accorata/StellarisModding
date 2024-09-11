@@ -1,0 +1,24 @@
+ac_hyperequality_assimilation_effect = {
+	random_owned_pop = {
+		limit = {
+			NOR = {
+				is_same_species = root.owner
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
+			}
+			NOT = { root = { is_planet_class = pc_cosmogenesis_world } }
+		}
+		
+		change_species = root.owner # event_target:ac_main_species
+		root = {
+			owner = {
+				if = {
+					limit = { has_ascension_perk = ap_become_the_crisis }
+					complete_crisis_objective = crisobj_purge_pops
+				}
+			}
+		}
+		
+		apply_post_assimilation_effects = yes
+	}
+}

@@ -221,6 +221,7 @@ councilor_concurrent_command = {
 	modifier = {
 		ruler_skill_add = 0.5
 	}
+	custom_tooltip = councilor_concurrent_command_tooltip
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
 	}

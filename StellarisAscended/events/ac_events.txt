@@ -299,7 +299,7 @@ country_event = {
 		set_country_flag = ac_has_given_psionic_trait_to_robots
 		modify_species = {
 			species = owner_main_species
-			add_trait = trait_robot_digital_1 # Will be limited psionic
+			add_trait = trait_latent_psionic
 		}
 		change_dominant_species = {
 			species = last_created_species

@@ -124,6 +124,13 @@ on_war_ended = {
 	}
 }
 
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		ascension_governments.40		# Democratic Hyperequality edict assimilate pops to main species
+	}
+}
+
 on_yearly_pulse_country = {
 	events = {
 		ascension_civics.210		# Set random convergence location for 50% of avatars

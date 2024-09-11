@@ -212,9 +212,9 @@
   ascension_governments.32.desc.chaotic: "From this moment forward, all can be whoever they wish to be. Whatever species or race or sex the mind can dream of, that can be you. In our society, there are no more limits on our forms of expression. We welcome all to be themselves."
   ascension_governments.32.desc.neutral: "We've reached a precipice. Genetic ascendency has uplifted our people and bettered all ways of life in our nation. However, our parties now find ourselves divided on how to utilize this advacement. Some wish to unify all under one phenotype to ensure equality, others wish to allow all complete genetic diversity, and others just wish to remain as we've always stood."
   ascension_governments.32.a: "We are one. One species where all can equally thrive."
-  ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$" # edicts to be changed...
+  ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_ac_handicap_distribution$"
   ascension_governments.32.b: "Our bodies are bound only by the limits of our imaginations."
-  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed...
+  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
   ascension_governments.32.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
@@ -224,9 +224,9 @@
   ascension_governments.33.desc.chaotic: "..."
   ascension_governments.33.desc.neutral: "..."
   ascension_governments.33.a: "..."
-  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$"
+  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
   ascension_governments.33.b: "..."
-  ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$"
+  ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
   ascension_governments.33.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
@@ -238,11 +238,13 @@
   ascension_governments.35.desc.chaotic: "..."
   ascension_governments.35.desc.neutral: "..."
   ascension_governments.35.a: "..."
-  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_legislative_chorus$"
+  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_legislative_chorus$"  #change edict
   ascension_governments.35.b: "..."
-  ascension_governments.35.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_self_preservation_override$"
+  ascension_governments.35.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$"
   ascension_governments.35.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.35.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
+
+# Corporate
 
 # Edicts
 # Imperial
@@ -250,6 +252,20 @@
   ac_harvest_genetic_failures_desc:0 "..."
   concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$
   unlock_edict_ac_harvest_genetic_failures:0 "$unlock_edict_tt$['concept_edict_ac_harvest_genetic_failures']"
+
+# Oligarchic
+  ac_unrestricted_mutation:0 "Unrestricted Mutation"
+  ac_unrestricted_mutation_desc:0 "..."
+  concept_edict_ac_unrestricted_mutation:0 "$ac_unrestricted_mutation$"
+  unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
+  edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with a Negative trait from §Y50%§! to §Y100%§!."
+
+# Democratic
+  ac_handicap_distribution:0 "Handicap Distribution"
+  ac_handicap_distribution_desc:0 "..."
+  concept_edict_ac_handicap_distribution:0 "$ac_handicap_distribution$"
+  unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
+  edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
 
 
 ### Hive Genetic ---------------------------------------------------------------------------------
