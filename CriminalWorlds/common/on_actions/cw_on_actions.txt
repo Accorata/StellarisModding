@@ -17,9 +17,9 @@ on_monthly_pulse_country = {
 # Country scope
 # This = target country (player)
 # From = source country
-on_custom_diplomacy = {
-	events = {
-		cw_enclave.100		# Criminal Enclave greetings
-		criminal_worlds.52		# White Flower Hostage
-	}
-}
+# on_custom_diplomacy = {
+# 	events = {
+# 		cw_enclave.100		# Criminal Enclave greetings
+# 		criminal_worlds.52		# White Flower Hostage
+# 	}
+# }
