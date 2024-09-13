@@ -398,7 +398,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_alleles_of_the_dead
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 1
@@ -416,7 +416,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_preserved_genetic_form
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 1
@@ -443,7 +443,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_alleles_of_the_dead
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 2
@@ -483,7 +483,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_preserved_genetic_form
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 1
@@ -512,13 +512,12 @@ country_event = {
 	option = {
 		# Neutral
 		name = ascension_governments.10.c
-		custom_tooltip = ac_genetic.social_consequences.tt
 		trigger = {
 			is_megacorp = yes
 		}
 		add_modifier = {
 			modifier = ac_identity_merchants
-			days = 900
+			days = 9000
 		}
 		ai_chance = {
 			factor = 2
@@ -579,10 +578,9 @@ country_event = {
 	option = {
 		# Neutral
 		name = ascension_governments.11.c
-		custom_tooltip = ac_genetic.social_consequences.tt
 		add_modifier = {
 			modifier = ac_ideal_society
-			days = 3600
+			days = 18000
 		}
 		ai_chance = {
 			factor = 2
@@ -622,7 +620,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_genetic_freedoms
-			days = 900
+			days = 9000
 		}
 		ai_chance = {
 			factor = 1
@@ -640,7 +638,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_genetic_specialization
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 1
@@ -655,7 +653,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_genetic_freedoms
-			days = 900
+			days = 9000
 		}
 		add_monthly_resource_mult = {
 			resource = unity
@@ -676,7 +674,7 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ac_corporate_genetics
-			days = 1800
+			days = 18000
 		}
 		ai_chance = {
 			factor = 2
@@ -712,7 +710,7 @@ country_event = {
 	id = ascension_governments.20
 	title = ascension_governments.20.name
 	desc = ascension_governments.20.desc
-	picture = GFX_evt_happy_reunion	#change
+	picture = GFX_evt_necrophage
 	show_sound = event_cityscape
 	location = from
 	event_chain = ac_genetic_shock_chain
@@ -768,7 +766,7 @@ country_event = {
 	id = ascension_governments.21
 	title = ascension_governments.21.name
 	desc = ascension_governments.21.desc
-	picture = GFX_evt_happy_reunion	#change
+	picture = GFX_evt_cosmic_storms_celebration
 	show_sound = event_cityscape
 	location = from
 	event_chain = ac_genetic_shock_chain
@@ -810,7 +808,6 @@ country_event = {
 	option = {
 		# Neutral
 		name = ascension_governments.21.c
-		custom_tooltip = ac_genetic.social_consequences.tt
 		add_modifier = {
 			modifier = ac_reproductive_instillations
 		}

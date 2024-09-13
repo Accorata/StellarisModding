@@ -1,9 +1,11 @@
+# Genetic Legacy Situation
+
 ac_alleles_of_the_dead = {
-	country_unity_produces_mult = 0.05
+	country_unity_produces_mult = 0.075
 }
 
 ac_preserved_genetic_form = {
-	pop_government_ethic_attraction = 0.05
+	pop_government_ethic_attraction = 0.1
 }
 
 ac_identity_merchants = {
@@ -47,4 +49,15 @@ ac_natural_education = {
 ac_reproductive_instillations = {
 	pop_ethic_egalitarian_attraction_mult = 0.15
 	pop_cat_worker_political_power = 0.25
+}
+
+# Psionic Destiny Situation
+
+ac_holy_minds = {
+	pop_ethic_spiritualist_attraction_mult = 0.15
+}
+
+ac_dark_rituals = {
+	country_unity_produces_mult = 0.15
+	planet_stability_add = -3
 }

@@ -1,62 +1,4 @@
 ﻿l_english:
-### Psionic ---------------------------------------------------------------------------------------------
-  ac_psionic_shock_chain_title: "Telepathic Destiny"
-  ac_psionic_shock_chain_desc: "We can speak with our minds, we have breached the Shroud, we can glimpse the future. We are no longer the unenlightened species that left our homeworld and rose to the skies, we are far more. But this new future brings a new way of life.\n\nHow we confront these changes will define our society for ages to come."
-  ac_psionic_keep_auth_option: "Psionic Ascendency does not change who we are."
-
-## Authorities
-# Psionic Imperial Divine
-  auth_ac_psionic_imperial_divine:0 "Imperial Apotheosis"
-  auth_ac_psionic_imperial_divine_desc:0 "..."
-  concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
-  gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
-  gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
-  councilor_ruler_imperial_ac_psionic_divine:0 "Divine $imperial_ruler$"
-  councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
-# Psionic Imperial Eldritch
-  auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
-  auth_ac_psionic_imperial_eldritch_desc:0 "Our emperor has opened their mind to the Shroud, allowing themselves to serve as a vessel for the entities that dwell within. Our rule is eternal for the very Shroud guides us now."
-  concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
-  gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
-  gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
-  councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
-  councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
-# Psionic Dictatorial Divine
-  auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
-  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."
-  concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
-  gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
-  gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
-# Psionic Dictatorial Eldritch
-  auth_ac_psionic_dictatorial_eldritch:0 "Dictatorial Void"
-  auth_ac_psionic_dictatorial_eldritch_desc:0 "..."
-  concept_auth_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
-  gov_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
-  gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
-
-## Events
-  ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables has changed
-
-# First Event
-# Dictatorial
-  ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and weild control over the entire populace."
-  ascension_governments.1004.a: "Legitamize our rule."
-  ascension_governments.1004.a.tt: "Emphasis on ..."
-  ascension_governments.1004.b: "Assemble the conclave."
-  ascension_governments.1004.b.tt: "Emphasis on ..."
-# Imperial
-  ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
-  ascension_governments.1005.a: "Begin the ascension."
-  ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
-  ascension_governments.1005.b: "Call eldritch beings to propose the offer."
-  ascension_governments.1005.b.tt: "Emphasis on the Shroud."
-
-# Event Pool 1
-
-# Event Pool 2
-
 ### Genetic ---------------------------------------------------------------------------------------------
   ac_genetic_shock_chain_title: "Genetic Legacy"
   ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained a much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
@@ -176,7 +118,7 @@
   ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
   ac_identity_merchants:0 "Identity Merchants"
-  ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body to the latest trends."
+  ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body's latest trends."
   ascension_governments.11.name: "Mutant Amalgamations"
   ascension_governments.11.desc: "Our military geneticists on [Root.Capital.GetName] have begun experimentating with genetic mutations, creating horrific abilities that may prove fruitful, although destructive, on the battlefield. A number of experts caution against these moves, worried that our carelessness may unleash horrors beyond our control.\n\nOther scientists also argue that a refined approach on genetic warfare could allow what they are calling the 'perfect' soldier. The dilemna has been passed to us on how they should continue."
   ascension_governments.11.a: "Push these mutations to their limits and beyond!" # C
@@ -242,14 +184,16 @@
 
 # Dictatorial
 
+# Kraterocracy - Survival of the FIttest!
+
 # Imperial
   ascension_governments.35.name: "Empire Reborn"
-  ascension_governments.35.desc.perfect: "Our efforts ..."
+  ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented <ruler> with ..."
   ascension_governments.35.desc.chaotic: "..."
   ascension_governments.35.desc.neutral: "..."
-  ascension_governments.35.a: "..."
-  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_legislative_chorus$"  #change edict
-  ascension_governments.35.b: "..."
+  ascension_governments.35.a: "Clones forever."
+  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_legislative_chorus$"  #change edict (also remove trait from current heir)
+  ascension_governments.35.b: "Unleash the viruses."
   ascension_governments.35.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$"
   ascension_governments.35.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.35.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
@@ -277,6 +221,123 @@
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
   edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
 
+
+### Psionic ---------------------------------------------------------------------------------------------
+  ac_psionic_shock_chain_title: "Telepathic Destiny"
+  ac_psionic_shock_chain_desc: "We can speak with our minds, we have breached the Shroud, we can glimpse the future. We are no longer the unenlightened species that left our homeworld and rose to the skies, we are far more. But this new future brings a new way of life.\n\nHow we confront these changes will define our society for ages to come."
+  ac_psionic_keep_auth_option: "Psionic Ascendency does not change who we are."
+
+## Authorities
+# Psionic Imperial Divine
+  auth_ac_psionic_imperial_divine:0 "Imperial Apotheosis"
+  auth_ac_psionic_imperial_divine_desc:0 "..."
+  concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
+  gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
+  gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
+  councilor_ruler_imperial_ac_psionic_divine:0 "Divine $imperial_ruler$"
+  councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
+# Psionic Imperial Eldritch
+  auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
+  auth_ac_psionic_imperial_eldritch_desc:0 "Our emperor has opened their mind to the Shroud, allowing themselves to serve as a vessel for the entities that dwell within. Our rule is eternal for the very Shroud guides us now."
+  concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
+  gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
+  gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
+  councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
+  councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
+# Psionic Dictatorial Divine
+  auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
+  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."
+  concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
+  gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
+  gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
+# Psionic Dictatorial Eldritch
+  auth_ac_psionic_dictatorial_eldritch:0 "Dictatorial Void"
+  auth_ac_psionic_dictatorial_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
+  gov_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
+  gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
+# Psionic Oligarchic Divine
+  auth_ac_psionic_oligarchic_divine:0 "Oligarchic Order"
+  auth_ac_psionic_oligarchic_divine_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
+  gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
+  gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
+# Psionic Oligarchic Eldritch
+  auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
+  auth_ac_psionic_oligarchic_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
+
+## Events
+  ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables has changed
+
+# First Event
+# Democratic
+# Oligarchic
+  ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1003.desc: "...\n\n..."
+  ascension_governments.1003.a: "..."
+  ascension_governments.1003.a.tt: "Emphasis on ..."
+  ascension_governments.1003.b: "..."
+  ascension_governments.1003.b.tt: "Emphasis on ..."
+# Dictatorial
+  ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and weild control over the entire populace."
+  ascension_governments.1004.a: "Legitamize our rule."
+  ascension_governments.1004.a.tt: "Emphasis on ..."
+  ascension_governments.1004.b: "Assemble the conclave."
+  ascension_governments.1004.b.tt: "Emphasis on ..."
+# Imperial
+  ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
+  ascension_governments.1005.a: "Begin the ascension."
+  ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
+  ascension_governments.1005.b: "Call eldritch beings to propose the offer."
+  ascension_governments.1005.b.tt: "Emphasis on the Shroud."
+# Corporate
+
+# Event Pool 1
+  ascension_governments.1009.name: "Ritualistic Sacrifices"
+  ascension_governments.1009.desc: "...\n\n..."
+  ascension_governments.1009.a: "The Shroud deserves our devotion." # E
+  ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
+  ascension_governments.1009.c: "There will always be those lost to insanity...." # N
+  ac_holy_minds:0 "Holy Minds"
+  ac_holy_minds_desc:0 "Our minds are sacred; they shall not be left as fodder for demonic entities."
+  ac_dark_rituals:0 "Dark Rituals"
+  ac_dark_rituals_desc:0 "..."
+
+# Event Pool 2
+
+
+### Psionic Teachers ---------------------------------------------------------------------------------
+# Psionic Teacher Authorities
+  auth_ac_psi_teacher_democratic: "Democratic Mentalism"
+  auth_ac_psi_teacher_democratic_desc: "..."
+  concept_auth_ac_psi_teacher_democratic: "$auth_ac_psi_teacher_democratic$"
+  auth_ac_psi_teacher_oligarchic: "Oligarchic Divinocracy"
+  auth_ac_psi_teacher_oligarchic_desc: "..."
+  concept_auth_ac_psi_teacher_oligarchic: "$auth_ac_psi_teacher_oligarchic$"
+  auth_ac_psi_teacher_dictatorial: "Dictatorial ..."
+  auth_ac_psi_teacher_dictatorial_desc: "..."
+  concept_auth_ac_psi_teacher_dictatorial: "$auth_ac_psi_teacher_dictatorial$"
+  auth_ac_psi_teacher_imperial: "Imperial Prophetarchy"
+  auth_ac_psi_teacher_imperial_desc: "..."
+  concept_auth_ac_psi_teacher_imperial: "$auth_ac_psi_teacher_imperial$"
+  auth_ac_psi_teacher_corporate: "Corporate SacredMind"
+  auth_ac_psi_teacher_corporate_desc: "..."
+  concept_auth_ac_psi_teacher_corporate: "$auth_ac_psi_teacher_corporate$"
+
+# Event
+  ascension_governments.900.name: "The Teacher's Gift"
+  ascension_governments.900.desc: "...\n\nTo follow our mind's enlightenment, our government will now be guided by the teacher's insights, embracing psionics throughout its structure. The §Y[Owner.GetGovernmentName]§! will be created."
+  ascension_governments.900.a: "..."
+  ascension_governments.900.a.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
+  ascension_governments.900.b.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."
+  ascension_governments.900.c.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_dictatorial']§!."
+  ascension_governments.900.d.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_imperial']§!."
+  ascension_governments.900.e.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_corporate']§!."
 
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
