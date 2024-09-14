@@ -433,9 +433,9 @@ country_event = {
 				free_housing < 0
 			}
 			random_list = {
-				5 = {
+				10 = {
 				}
-				15 = {
+				10 = {
 					planet_event = {
 						id = criminal_worlds.6
 					}
