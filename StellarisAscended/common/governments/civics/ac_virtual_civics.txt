@@ -72,7 +72,7 @@ civic_bandwidth_incorporated = {
 	ai_weight = {
 		base = 0
 	}
-	description = civic_tooltip_bandwidth_enhancers_effects
+	description = civic_tooltip_bandwidth_incorporated_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish

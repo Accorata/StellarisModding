@@ -4,17 +4,19 @@ spriteTypes = {
 		name = "GFX_leader_trait_programmed_loyalty"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_programmed_loyalty.dds"
 	}
-
 	spriteType = {
 		name = "GFX_leader_trait_machine_crusader"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_machine_crusader.dds"
 	}
-
 	# STARBASE MODULES -----------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_ac_bandwidth_router_sb"
 		texturefile = "gfx/interface/icons/modules/sb_ac_bandwidth_router.dds"
 	}
+	# COLONY TYPES ---------------------------------------------------------------------------
+	# testing:
+	spriteType = {
+		name = "GFX_ac_city_template"
+		textureFile = "gfx/interface/planetview/ac_coloy_types/ac_city_template.dds"
+	}
 }
-
-

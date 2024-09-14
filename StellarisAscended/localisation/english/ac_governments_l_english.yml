@@ -274,6 +274,12 @@
 
 # First Event
 # Democratic
+  ascension_governments.1002.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1002.desc: "...\n\n..."
+  ascension_governments.1002.a: "..."
+  ascension_governments.1002.a.tt: "Emphasis on ..."
+  ascension_governments.1002.b: "..."
+  ascension_governments.1002.b.tt: "Emphasis on ..."
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1003.desc: "...\n\n..."
@@ -283,8 +289,8 @@
   ascension_governments.1003.b.tt: "Emphasis on ..."
 # Dictatorial
   ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths to merge with the Shroud and weild control over the entire populace."
-  ascension_governments.1004.a: "Legitamize our rule."
+  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths that merge with the Shroud to wield control over the entire populace."
+  ascension_governments.1004.a: "Legitamize our sovereignty."
   ascension_governments.1004.a.tt: "Emphasis on ..."
   ascension_governments.1004.b: "Assemble the conclave."
   ascension_governments.1004.b.tt: "Emphasis on ..."
@@ -296,6 +302,12 @@
   ascension_governments.1005.b: "Call eldritch beings to propose the offer."
   ascension_governments.1005.b.tt: "Emphasis on the Shroud."
 # Corporate
+  ascension_governments.1006.name: "$ac_psionic_shock_chain_title$"
+  ascension_governments.1006.desc: "...\n\n..."
+  ascension_governments.1006.a: "..."
+  ascension_governments.1006.a.tt: "Emphasis on ..."
+  ascension_governments.1006.b: "..."
+  ascension_governments.1006.b.tt: "Emphasis on ..."
 
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
@@ -331,7 +343,7 @@
 
 # Event
   ascension_governments.900.name: "The Teacher's Gift"
-  ascension_governments.900.desc: "...\n\nTo follow our mind's enlightenment, our government will now be guided by the teacher's insights, embracing psionics throughout its structure. The §Y[Owner.GetGovernmentName]§! will be created."
+  ascension_governments.900.desc: "...\n\nIn response to our enlightenment, the government will now be guided by the teacher's insights, embracing psionic theory throughout its structure. The §Y[Owner.GetGovernmentName]§! will be created."
   ascension_governments.900.a: "..."
   ascension_governments.900.a.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
   ascension_governments.900.b.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."

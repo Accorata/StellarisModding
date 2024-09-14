@@ -97,6 +97,9 @@
   mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
   mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
 
+  col_ac_city_of_lights:0 "City of Lights"
+  col_ac_city_of_lights_desc:0 "..."
+
 
 # Genetic ---------------------------------------------------------------------------------------------
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
@@ -136,6 +139,7 @@
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
+  civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_incorporated:0 "Lead Data Marketer" # idk
   councilor_bandwidth_incorporated_desc:0 "..."
 

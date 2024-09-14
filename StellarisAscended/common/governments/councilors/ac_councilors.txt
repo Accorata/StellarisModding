@@ -162,7 +162,7 @@ councilor_hyper_specialization = {
 	}
 	is_leader_possible = {
 		leader_class = official
-		has_trait = leader_trait_synth
+		has_trait = leader_trait_synthetic
 	}
 	civic = civic_hyper_specialization
 	modifier = {

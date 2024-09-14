@@ -1,5 +1,5 @@
 ac_avatar_caller = {
-	icon = "GFX_starbase_zroni_storm_caster" # to be changed
+	icon = "GFX_starbase_zroni_storm_caster"	# to be changed
 	construction_days = 360
 	potential = {
 		exists = owner
@@ -34,11 +34,9 @@ ac_avatar_caller = {
 	custom_tooltip_with_modifiers = sm_ac_avatar_caller_desc_modifier
 }
 
-
 ac_bandwidth_router = {
 	icon = "GFX_ac_bandwidth_router_sb"
 	construction_days = 180
-
 	potential = {
 		exists = owner
 		owner = {
@@ -46,7 +44,6 @@ ac_bandwidth_router = {
 		}
 		is_normal_starbase = yes
 	}
-
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
@@ -61,19 +58,16 @@ ac_bandwidth_router = {
 			}
 		}
 	}
-
 	resources = {
 		category = starbase_buildings
 		cost = {
 			alloys = 150
 		}
-
 		upkeep = {
 			energy = 2
 			sr_dark_matter = 1
 		}
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			solar_system = {
@@ -82,17 +76,35 @@ ac_bandwidth_router = {
 		}
 		megastructures_hyper_relay_unity_produces_add = 1
 	}
-
 	triggered_system_modifier = {
 		potential = {
 			solar_system = {
 				has_megastructure = hyper_relay
 			}
+			owner = {
+				is_megacorp = no
+			}
 		}
 		planet_jobs_produces_mult = 0.15
 	}
-	custom_tooltip = sm_ac_bandwidth_router_desc_modifier
-
+	triggered_system_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		pop_job_trade_mult = 0.3
+	}
+	custom_tooltip = {
+		success_text = sm_ac_bandwidth_router_desc_modifier
+		fail_text = sm_ac_bandwidth_router_desc_modifier_corporate
+		NOT = {
+			is_megacorp = yes
+		}
+	}
 	ai_weight = {
 		weight = 100
 	}
