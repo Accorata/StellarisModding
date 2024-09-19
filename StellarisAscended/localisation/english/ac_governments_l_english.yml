@@ -59,7 +59,7 @@
 # Corporate ...
 
 ## Events
-  ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables has changed
+  ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables have changed
 
 # First Event
 # Democratic 
@@ -117,6 +117,8 @@
   ascension_governments.10.a: "Set required appearance-differentiating standards." # C
   ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
+  ac_ideal_society:0 "Ideal Society"
+  ac_ideal_society_desc:0 "..."
   ac_identity_merchants:0 "Identity Merchants"
   ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body's latest trends."
   ascension_governments.11.name: "Mutant Amalgamations"
@@ -175,7 +177,7 @@
   ascension_governments.33.desc.perfect: "..."
   ascension_governments.33.desc.chaotic: "..."
   ascension_governments.33.desc.neutral: "..."
-  ascension_governments.33.a: "May the enlightened guide us forward."
+  ascension_governments.33.a: "May the uplifted guide us forward."
   ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
   ascension_governments.33.b: "..."
   ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
@@ -204,7 +206,7 @@
 # Imperial
   ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
   ac_harvest_genetic_failures_desc:0 "..."
-  concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$
+  concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$"
   unlock_edict_ac_harvest_genetic_failures:0 "$unlock_edict_tt$['concept_edict_ac_harvest_genetic_failures']"
 
 # Oligarchic
@@ -270,7 +272,7 @@
   gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
 
 ## Events
-  ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables has changed
+  ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables have changed
 
 # First Event
 # Democratic

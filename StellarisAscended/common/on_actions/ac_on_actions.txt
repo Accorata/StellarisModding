@@ -163,7 +163,7 @@ on_released_as_vassal = {
 	}
 }
 
-# Event Pool 1 | Fired by ascension_governments.7
+# Genetic Event Pool 1 | Fired by ascension_governments.7
 # This = Country
 on_ac_genetic_shock_chain_event_pool_one_list = {
 	random_events = {
@@ -174,11 +174,25 @@ on_ac_genetic_shock_chain_event_pool_one_list = {
 	}
 }
 
-# Event Pool 1 | Fired by ascension_governments.7
+# Genetic Event Pool 2 | Fired by ascension_governments.8
 # This = Country
 on_ac_genetic_shock_chain_event_pool_two_list = {
 	random_events = {
 		5 = ascension_governments.20		# Cloned Descendants
 		5 = ascension_governments.21		# Innate Safety Instincts
+	}
+}
+
+# Psionic Event Pool 1 | Fired by ascension_governments.1007
+# This = Country
+on_ac_psionic_shock_chain_event_pool_one_list = {
+	random_events = {
+	}
+}
+
+# Psionic Event Pool 2 | Fired by ascension_governments.1008
+# This = Country
+on_ac_psionic_shock_chain_event_pool_two_list = {
+	random_events = {
 	}
 }

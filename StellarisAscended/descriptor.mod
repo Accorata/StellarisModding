@@ -3,4 +3,4 @@ tags={
 	"Gameplay"
 }
 name="Stellaris Ascended"
-supported_version="v3.13.0"
+supported_version="v3.13.1"

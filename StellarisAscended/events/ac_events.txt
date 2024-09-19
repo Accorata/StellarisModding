@@ -548,7 +548,7 @@ country_event = {
 
 planet_event = {
 	id = ascension_civics.80
-	hide_window = no	# yes
+	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		if = {

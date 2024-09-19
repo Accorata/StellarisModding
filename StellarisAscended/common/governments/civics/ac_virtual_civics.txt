@@ -1,4 +1,6 @@
 civic_bandwidth_enhancers = {
+	playable = { host_has_dlc = "Overlord" }
+	ai_playable = { host_has_dlc = "Overlord" }
 	potential = {
 		ethics = {
 			NOT = {
@@ -43,6 +45,8 @@ civic_bandwidth_enhancers = {
 }
 
 civic_bandwidth_incorporated = {
+	playable = { host_has_dlc = "Overlord" }
+	ai_playable = { host_has_dlc = "Overlord" }
 	potential = {
 		ethics = {
 			NOT = {
@@ -85,6 +89,8 @@ civic_bandwidth_incorporated = {
 }
 
 civic_bandwidth_optimization = {
+	playable = { host_has_dlc = "Overlord" }
+	ai_playable = { host_has_dlc = "Overlord" }
 	potential = {
 		ethics = {
 			value = ethic_gestalt_consciousness

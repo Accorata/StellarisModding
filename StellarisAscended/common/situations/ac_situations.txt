@@ -10,13 +10,15 @@ situation_ac_soul_seeking = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 120
 			on_first_enter = {
-				if = {
-					limit = {
-						NOT = {
-							has_technology = tech_psionic_theory
+				owner = {
+					if = {
+						limit = {
+							NOT = {
+								has_technology = tech_psionic_theory
+							}
 						}
+						add_research_option = tech_psionic_theory
 					}
-					add_research_option = tech_psionic_theory
 				}
 			}
 		}

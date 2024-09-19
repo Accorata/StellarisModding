@@ -15,6 +15,9 @@
   sm_ac_bandwidth_router_plural:0 "Omni-band Routers"
   sm_ac_bandwidth_router_desc:0 "Modular quantum CPUs coordinating immense transfer of information from the nearby hyper relay, transmitting the data that is our entire being."
   sm_ac_bandwidth_router_desc_modifier:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_planet_jobs_produces_mult$ §G+15%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
+  sm_ac_bandwidth_router_corporate:0 "$sm_ac_bandwidth_router$"
+  sm_ac_bandwidth_router_corporate_plural:0 "$sm_ac_bandwidth_router_plural$"
+  sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
   sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
 
   building_ac_grand_sapling:0 "Grand Sapling"

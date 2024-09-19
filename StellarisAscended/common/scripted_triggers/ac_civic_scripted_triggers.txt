@@ -7,6 +7,19 @@ is_ac_bandwidth_empire = {
 	has_active_tradition = tr_virtuality_finish
 }
 
+is_ac_bandwidth_non_corporate = {
+	OR = {
+		has_valid_civic = civic_bandwidth_enhancers
+		has_valid_civic = civic_bandwidth_optimization
+	}
+	has_active_tradition = tr_virtuality_finish
+}
+
+is_ac_bandwidth_corporate = {
+	has_valid_civic = civic_bandwidth_incorporated
+	has_active_tradition = tr_virtuality_finish
+}
+
 is_ac_doomseeker = {
 	has_valid_civic = civic_doomseekers
 	has_active_tradition = tr_psionics_finish

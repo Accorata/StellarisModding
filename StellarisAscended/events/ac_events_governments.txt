@@ -1532,6 +1532,317 @@ country_event = {
 	}
 }
 
+country_event = {
+	# Democratic
+	id = ascension_governments.1002
+	title = ascension_governments.1002.name
+	desc = ascension_governments.1002.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1002.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1002.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1002.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1002.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Oligarchic
+	id = ascension_governments.1003
+	title = ascension_governments.1003.name
+	desc = ascension_governments.1003.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1003.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1003.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1003.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1003.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Dictatorial
+	id = ascension_governments.1004
+	title = ascension_governments.1004.name
+	desc = ascension_governments.1004.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1004.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1004.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1004.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1004.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Imperial
+	id = ascension_governments.1005
+	title = ascension_governments.1005.name
+	desc = ascension_governments.1005.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1005.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1005.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1005.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1005.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Corporate
+	id = ascension_governments.1006
+	title = ascension_governments.1006.name
+	desc = ascension_governments.1006.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1006.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1006.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1006.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1006.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Psionic Pool 1
+# Fired by: event
+country_event = {
+	id = ascension_governments.1007
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_psionic_shock_chain_event_pool_one_list
+		}
+	}
+}
+
+# Event pools gatekeeping event | Psionic Pool 2
+# Fired by: event
+country_event = {
+	id = ascension_governments.1008
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_psionic_shock_chain_event_pool_two_list
+		}
+	}
+}
+
 ### Psi Teachers Event ###
 country_event = {
 	id = ascension_governments.900
