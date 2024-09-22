@@ -123,6 +123,12 @@ leader_trait_corrupted_logic = {
 	initial = no
 	randomized = no
 }
-
-# leader_trait_mutant_shifter = {
+### Mutant Traits ###
+# Commander
+# leader_trait_mutant_plane_shifter = {
 # }
+# Scientist
+# leader_trait_mutant_brilliant = {
+
+# }
+# Official

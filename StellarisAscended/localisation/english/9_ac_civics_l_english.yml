@@ -11,6 +11,7 @@
   civic_bio_replacer:0 "Anatomic Obsolescence"
   civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. ..."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$<Place modifiers here>"
+  # councilor needed
 
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
   casus_belli_cb_ac_bio_upgrades_desc:0 "..."
@@ -34,6 +35,11 @@
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "Now that this society has upgraded their own bodies, they believe that the rest of the universe must learn the grace of metal and hum of electricity."
   civic_tooltip_synthetic_celestials_effects:0 "(Will be done)"
+  # councilor needed
+
+  civic_world_commissioners:0 "World Commissioners"
+  civic_world_commissioners_desc:0 "..."
+  # councilor needed
 
 # Psionic ---------------------------------------------------------------------------------------------
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
@@ -41,6 +47,8 @@
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!"
   civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
+  # councilor needed
+
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
   living_standard_ac_ascetic:0 "Ascetic"
@@ -62,16 +70,17 @@
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
   civic_shroud_renouncers_desc:0 "..."
   civic_tooltip_shroud_renouncers_effects:0 "..."
+  # councilor needed
 
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. This society embraces that end, that Great End!"
   civic_tooltip_doomseekers_effects:0 "..."
   councilor_doomseekers:0 "Seer of the Great End"
   councilor_doomseekers_desc:0 "..."
+
   tech_ac_doom_foretold:0 "Doom Foretold"
   tech_ac_doom_foretold_desc:0 "..."
   tech_ac_doom_foretold_effect:0 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
-
   MESSAGE_SHROUD_BREACH_TITLE:0 "Shroud Avatar Called"
   MESSAGE_SHROUD_BREACH_DESC:0 "..."
 
@@ -81,14 +90,13 @@
   civic_sovereign_circuitry:0 "Sovereign Implants"
   civic_sovereign_circuitry_desc:0 "..."
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
-
-  # civic_living_cities:0 "Living Cities"
-  # civic_living_cities_desc:0 "..."
-  # civic_tooltip_living_cities_effects:0 "..."
+  # councilor needed
 
   civic_cyberlife:0 "CyberLife"
   civic_cyberlife_desc:0 "..."
   civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!"
+  # councilor needed
+
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
@@ -96,6 +104,9 @@
   mod_pop_category_specialists_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SPECIALISTS$"
   mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
   mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
+
+  # Neon stars...
+  # councilor needed
 
   col_ac_city_of_lights:0 "City of Lights"
   col_ac_city_of_lights_desc:0 "..."
@@ -157,6 +168,7 @@
   civic_executive_militarization:0 "Executive Militarization"
   civic_executive_militarization_desc:0 "This Megacorporation's executive council ..."
   civic_tooltip_executive_militarization_effects:0 "$civic_tooltip_concurrent_command_effects$"
+  # councilor needed
 
   civic_nodal_command:0 "Nodal Command"
   civic_nodal_command_desc:0 "..."
@@ -166,13 +178,16 @@
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
 
   civic_hyper_specialization:0 "Hyper Specialization"
-  civic_hyper_specialization_desc:0 "Such a versatile material as living metal could grant us specialization beyond our wildest dreams, and with minimal re-modelling costs."
+  civic_hyper_specialization_desc:0 "The incredibly verstalile properties of living metal have granted this society specialization beyond their wildest dreams, and with minimal re-modelling costs."
   civic_tooltip_hyper_specialization_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
   councilor_hyper_specialization:0 "..."
   councilor_hyper_specialization_desc:0 "..."
 
+  # corporate version needed
+  # councilor needed
+
   civic_hyper_specialized:0 "Hyper-Specialized"
-  civic_hyper_specialized_desc:0 "Versatile living metal interiors allowing our drones to take on whatever form best suits the collective's needs."
+  civic_hyper_specialized_desc:0 "This Machine Intelligence builds its drones with versatile living metal interiors, allowing each drone to take the form that best suits the collective's needs."
   civic_tooltip_hyper_specialized_effects:0 "$civic_tooltip_hyper_specialization_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   trait_ac_auto_mod_robotic:0 "Living Frames"

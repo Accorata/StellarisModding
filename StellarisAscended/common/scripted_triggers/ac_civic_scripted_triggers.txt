@@ -97,3 +97,18 @@ is_ac_soul_searcher_empire = {
 	}
 	has_active_tradition = tr_synthetics_finish
 }
+
+is_ac_world_builders = {
+	OR = {
+		has_valid_civic = civic_synthetic_celestials
+		has_valid_civic = civic_world_commissioners
+	}
+	has_active_tradition = tr_synthetics_finish
+}
+
+is_ac_cybergladiator = {
+	OR = {
+
+	}
+	has_active_tradition = tr_cybernetics_finish
+}

@@ -51,6 +51,23 @@ apply_post_assimilation_effects = {
 			}
 		}
 	}
+	# Unity for Democratic Hyperequality Authority
+	if = {
+		limit = {
+			root.owner = {
+				has_democratic_authority = yes
+				has_country_flag = ac_genetic_perfect
+			}
+		}
+		root.owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 1
+				min = 5
+				max = 100
+			}
+		}
+	}
 	# END OF OVERRIDE -------------------------------------------------------------------------
 	if = {
 		limit = {

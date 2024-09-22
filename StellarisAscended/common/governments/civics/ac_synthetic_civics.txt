@@ -142,14 +142,14 @@ civic_soul_seekers = {
 				value = ethic_fanatic_spiritualist
 			}
 		}
-		civics = {
-			NOR = {
-				value = civic_machine_terminator
-				value = civic_fanatic_purifiers
-				value = civic_machine_assimilator
-				value = civic_bioform_upgrader
-			}
-		}
+		# civics = {
+		# 	NOR = {
+		# 		value = civic_machine_terminator
+		# 		value = civic_fanatic_purifiers
+		# 		value = civic_machine_assimilator
+		# 		value = civic_bioform_upgrader
+		# 	}
+		# }
 	}
 	modification = yes	# Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
 	pickable_at_start = yes
@@ -202,10 +202,71 @@ civic_synthetic_celestials = {
 				value = ethic_fanatic_materialist
 			}
 		}
+		civics = {
+			NOT = {
+				value = civic_world_commissioners
+			}
+		}
 	}
 	modification = yes
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_synthetic_celestials.dds"
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_synthetic_celestials_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_synthetics_finish
+		}
+		modifier = {
+			# hidden modifier
+			megastructures_energy_produces_mult = 0.25
+			megastructure_build_speed_mult = 0.25
+		}
+	}
+}
+
+civic_world_commissioners = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_synthetic_celestials
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_world_commissioners.dds"
 	random_weight = {
 		base = 0
 	}

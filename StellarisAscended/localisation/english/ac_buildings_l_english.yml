@@ -34,3 +34,7 @@
   building_ac_xanadu:0 "Xanadu"
   building_ac_xanadu_plural:0 "Xanadus"
   building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing will ever compare to."
+
+  building_ac_undercity_arena:0 "Undercity Arena"
+  building_ac_undercity_arena_plural:0 "Undercity Arenas"
+  building_ac_undercity_arena_desc:0 "..."

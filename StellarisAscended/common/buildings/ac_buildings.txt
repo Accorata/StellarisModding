@@ -347,3 +347,49 @@ building_ac_xanadu = {
 		text = job_resort_worker_effect_desc
 	}
 }
+
+# Cybergladiation
+building_ac_undercity_arena = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = amenity
+
+	potential = {
+		is_ac_cybergladiator = yes
+	}
+
+	allow = {
+
+	}
+
+	destroy_trigger = {
+		AND = {
+			exists = owner
+			owner = {
+				is_ac_cybergladiator = no
+			}
+		}
+	}
+
+	country_modifier = {
+		army_damage_mult = 0.1
+	}
+
+	planet_modifier = {
+		job_cyberdome_duelist_add = 2
+		job_cyberdome_spectator_add = 2
+		army_starting_experience_add = 50
+		planet_crime_add = 10
+	}
+	# civic imcreases output of duelist jobs by 3 unity, 3 engineering research
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+}
