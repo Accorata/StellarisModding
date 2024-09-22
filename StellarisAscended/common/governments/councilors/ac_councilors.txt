@@ -1,4 +1,22 @@
 # Governments
+councilor_ruler_imperial_ac_genetic = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	possible = {
+		always = no
+	}
+	icon = "GFX_icon_councilor_ruler"
+	modifier = {
+		country_influence_produces_add = 0.25
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 councilor_ruler_imperial_ac_psionic_divine = {
 	leader_class = {
 		official

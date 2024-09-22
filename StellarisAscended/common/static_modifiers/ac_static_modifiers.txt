@@ -13,7 +13,8 @@ ac_identity_merchants = {
 }
 
 ac_ideal_society = {
-	pop_ethic_pacifist_attraction_mult = 0.15
+	pop_citizen_happiness = 0.5
+	pop_ethic_xenophobic_attraction_mult = 0.15
 }
 
 ac_genetic_freedoms = {

@@ -78,6 +78,32 @@ auth_oligarchic = {
 		}
 	}
 	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_divine"
+		description = "auth_ac_psionic_oligarchic_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+			
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch"
+		description = "auth_ac_psionic_oligarchic_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+			
+		}
+	}
+	advanced_authority_swap = {
 		name = "auth_ac_genetic_oligarchic_perfect"
 		description = "auth_ac_genetic_oligarchic_perfect_desc"
 		inherit_icon = no
@@ -292,19 +318,22 @@ auth_imperial = {
 		}
 	}
 	advanced_authority_swap = {
-		# Cloned leader may have more trait picks???
+		# Cloned leader may have more trait picks??? - maybe a feature...
 		name = "auth_ac_genetic_imperial_perfect"
 		description = "auth_ac_genetic_imperial_perfect_desc"
 		inherit_icon = no
 		inherit_effects = no
-		# ruler_council_position = councilor_ruler_imperial_cyber
+		ruler_council_position = councilor_ruler_imperial_ac_genetic
 		trigger = {
 			is_scope_valid = yes
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			# custom_tooltip = auth_cyber_imperial_individualist_tt
-			# show_only_custom_tooltip = no
+			country_edict_fund_mult = 0.4
+			pop_happiness = -0.1
+			custom_tooltip = auth_ac_genetic_imperial_perfect_effects
+			show_only_custom_tooltip = no
+			# ... 
 		}
 		tags = {
 			AUTHORITY_SUCCESSION_TYPE
@@ -316,15 +345,16 @@ auth_imperial = {
 		description = "auth_ac_genetic_imperial_chaotic_desc"
 		inherit_icon = no
 		inherit_effects = no
-		# ruler_council_position = councilor_ruler_imperial_ac_genetic
+		ruler_council_position = councilor_ruler_imperial_ac_genetic
 		trigger = {
 			is_scope_valid = yes
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
+			country_edict_fund_mult = 0.4
+			pop_happiness = -0.1
 			pop_category_workers_society_research_produces_add = 0.5			# Probably needs modifier localisation
-			# custom_tooltip = 
-			# show_only_custom_tooltip = no
+			# ...
 		}
 		tags = {
 			AUTHORITY_SUCCESSION_TYPE

@@ -1843,6 +1843,77 @@ country_event = {
 	}
 }
 
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Ritualistic Sacrificies
+	id = ascension_governments.1009
+	title = ascension_governments.1009.name
+	desc = ascension_governments.1009.desc
+	picture = GFX_evt_astral_rift_tomb
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Eldritch
+		name = ascension_governments.1009.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		capital_scope = { 
+			random_owned_pop = {
+				kill_pop = yes 
+			}
+			set_planetary_ascension_tier = value:add_planet_ascension_tier 
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1009.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_holy_minds
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1009.c
+		add_modifier = {
+			modifier = ac_dark_rituals
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
 ### Psi Teachers Event ###
 country_event = {
 	id = ascension_governments.900

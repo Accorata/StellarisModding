@@ -12,6 +12,9 @@
   concept_auth_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
   gov_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
   gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
+  auth_ac_genetic_imperial_perfect_effects:0 "...Cloned rulers gain new trait picks"
+  councilor_ruler_imperial_ac_genetic:0 "$imperial_ruler$"
+  councilor_ruler_imperial_ac_genetic_desc:0 "$imperial_ruler_desc$"
 # Genetic Imperial Chaotic
   auth_ac_genetic_imperial_chaotic:0 "Imperial Pathogens"
   auth_ac_genetic_imperial_chaotic_desc:0 "..."
@@ -80,7 +83,7 @@
 
 # Dictatorial
   ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
-  ascension_governments.4.desc: "The regime ...\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, in order to determine who has the best genetics, we could redesign how our leadership is passed down, hosting a large fight between our leaders to take the next place."
+  ascension_governments.4.desc: "The regime has brought new life to the nation. Genetic improvements have given us the tools to shape our bodies and minds as we shape steel and ideas to build our weapons and culture. A golden age is up us, and now we must decide how we embrace this revolution.\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, in order to determine who has the best genetics, we could redesign how our leadership is passed down, hosting a large competition between our leaders to take the next place."
   ascension_governments.4.a: "Attempt to reduce abstract thought in embryos."
   ascension_governments.4.a.tt: "Emphasis on ruler political power and worker output."
   ascension_governments.4.b: "Plan the games."
@@ -113,12 +116,12 @@
   ac_preserved_genetic_form:0 "Preserved Genetic Form"
   ac_preserved_genetic_form_desc:0 "This society rejects small gene changes done solely for cosmetics or remembrance."
   ascension_governments.10.name: "Celebrity Impersonators"
-  ascension_governments.10.desc: "...Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as ...."
+  ascension_governments.10.desc: "Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as ...."
   ascension_governments.10.a: "Set required appearance-differentiating standards." # C
   ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
   ac_ideal_society:0 "Ideal Society"
-  ac_ideal_society_desc:0 "..."
+  ac_ideal_society_desc:0 "This society has joined together in face and form. Their great aspirations of beauty are now as commonplace as conceivably possible. Together their collectivism has grown, though their shared standards are quick to ward off outsiders."
   ac_identity_merchants:0 "Identity Merchants"
   ac_identity_merchants_desc:0 "This Megacorporation builds 'cosmetic' genetic identities, commercializing the body's latest trends."
   ascension_governments.11.name: "Mutant Amalgamations"
@@ -244,8 +247,8 @@
   concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
-  councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
-  councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
+  # councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
+  # councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
   auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."
@@ -270,6 +273,7 @@
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
+# 
 
 ## Events
   ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables have changed
@@ -314,7 +318,7 @@
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
   ascension_governments.1009.desc: "...\n\n..."
-  ascension_governments.1009.a: "The Shroud deserves our devotion." # E
+  ascension_governments.1009.a: "The Shroud deserves our devotion." # E - might need a tooltip for this effect...
   ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
   ascension_governments.1009.c: "There will always be those lost to insanity...." # N
   ac_holy_minds:0 "Holy Minds"
