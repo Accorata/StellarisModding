@@ -1,5 +1,20 @@
 ﻿l_english:
+# Cybernetic
+  building_ac_undercity_arena:0 "Undercity Arena"
+  building_ac_undercity_arena_plural:0 "Undercity Arenas"
+  building_ac_undercity_arena_desc:0 "..."
+
 # Synthetic
+  building_ac_mega_forge:0 "Mega-Forge"
+  building_ac_mega_forge_desc:0 "..."
+  job_ac_grand_synthesizer:0 "Grand Synthesizer"
+  job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
+  job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
+  job_ac_grand_synthesizer_desc:0 "..."
+  job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase Megastructure build speed."
+  mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
+  concept_job_ac_grand_synthesizer: "$job_ac_grand_synthesizer_plural$"
+  concept_job_ac_grand_synthesizer_desc: "$job_ac_grand_synthesizer_plural$ turn $i_minerals$ into $i_alloys$ and Megastructure build speed.\n\n§L$job_ac_grand_synthesizer_desc$§!"
 
 # Psionic
   building_ac_psi_tower:0 "Psionic Tower" #center? #grand unit?
@@ -11,15 +26,7 @@
   sm_ac_avatar_caller_desc:0 "This mini tear into the fabric of the Shroud allows for a clearer path through the chaos, drawing the great end ever closer."
   sm_ac_avatar_caller_desc_modifier:0 "..."
 
-  sm_ac_bandwidth_router:0 "Omni-band Router"
-  sm_ac_bandwidth_router_plural:0 "Omni-band Routers"
-  sm_ac_bandwidth_router_desc:0 "Modular quantum CPUs coordinating immense transfer of information from the nearby hyper relay, transmitting the data that is our entire being."
-  sm_ac_bandwidth_router_desc_modifier:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_planet_jobs_produces_mult$ §G+15%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
-  sm_ac_bandwidth_router_corporate:0 "$sm_ac_bandwidth_router$"
-  sm_ac_bandwidth_router_corporate_plural:0 "$sm_ac_bandwidth_router_plural$"
-  sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
-  sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
-
+# Genetic
   building_ac_grand_sapling:0 "Grand Sapling"
   building_ac_grand_sapling_plural:0 "Grand Saplings"
   building_ac_grand_sapling_desc:0 "$building_solarpunk_sapling_desc$"
@@ -35,6 +42,12 @@
   building_ac_xanadu_plural:0 "Xanadus"
   building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing will ever compare to."
 
-  building_ac_undercity_arena:0 "Undercity Arena"
-  building_ac_undercity_arena_plural:0 "Undercity Arenas"
-  building_ac_undercity_arena_desc:0 "..."
+# Virtual
+  sm_ac_bandwidth_router:0 "Omni-band Router"
+  sm_ac_bandwidth_router_plural:0 "Omni-band Routers"
+  sm_ac_bandwidth_router_desc:0 "Modular quantum CPUs coordinating immense transfer of information from the nearby hyper relay, transmitting the data that is our entire being."
+  sm_ac_bandwidth_router_desc_modifier:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_planet_jobs_produces_mult$ §G+15%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
+  sm_ac_bandwidth_router_corporate:0 "$sm_ac_bandwidth_router$"
+  sm_ac_bandwidth_router_corporate_plural:0 "$sm_ac_bandwidth_router_plural$"
+  sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
+  sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"

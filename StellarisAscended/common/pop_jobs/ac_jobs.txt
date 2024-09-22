@@ -1,0 +1,55 @@
+job_ac_grand_synthesizer = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_ac_mega_forge
+	clothes_texture_index = 2 #?
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 9
+		}
+		upkeep = {
+			minerals = 18
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			alloys = @requisitorium_alloys_reduction
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			minerals = 2
+		}
+	}
+	country_modifier = {
+		megastructure_build_speed_mult = 0.03
+	}
+	
+
+	weight = {
+		weight = @ruler_job_weight
+	}
+}

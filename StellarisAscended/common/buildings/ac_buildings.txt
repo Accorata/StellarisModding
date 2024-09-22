@@ -393,3 +393,67 @@ building_ac_undercity_arena = {
 		}
 	}
 }
+
+# Synthetic Celestials
+building_ac_mega_forge = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	category = manufacturing
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	potential = {
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			owner = {
+				is_ac_world_builders = yes
+			}
+		}
+		exists = planet
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_world_builders = no
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			alloys = 80
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_ac_world_builders = yes
+			}
+		}
+		job_ac_grand_synthesizer_add = 2
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_ac_world_builders = yes
+			}
+		}
+		job_ac_grand_synthesizer_per_pop = 0.04
+	}
+
+	triggered_desc = {
+		text = job_ac_grand_synthesizer_effect_desc
+	}
+}

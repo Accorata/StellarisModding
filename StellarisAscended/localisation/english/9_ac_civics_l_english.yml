@@ -34,7 +34,7 @@
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "Now that this society has upgraded their own bodies, they believe that the rest of the universe must learn the grace of metal and hum of electricity."
-  civic_tooltip_synthetic_celestials_effects:0 "(Will be done)"
+  civic_tooltip_synthetic_celestials_effects:0 "$synthetic_ascension_required$- Can build unique £building£ §Y$building_ac_mega_forge$§! building. \n\nThe £building£ §Y$building_ac_mega_forge$§! grants empire-wide §Y$job_ac_grand_synthesizer_plural_with_icon$§! jobs scalling with pops which produce £alloys£ §Y$alloys$§! and increase Megastructure build speed.\n\n§EModifiers:§!\n$synthetic_ascension_required$"
   # councilor needed
 
   civic_world_commissioners:0 "World Commissioners"
