@@ -8,6 +8,10 @@ spriteTypes = {
 		name = "GFX_leader_trait_machine_crusader"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_machine_crusader.dds"
 	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_genetically_superior"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_genetically_superior.dds"
+	}
 	# STARBASE MODULES -----------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_ac_bandwidth_router_sb"

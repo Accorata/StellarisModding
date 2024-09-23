@@ -123,12 +123,57 @@ leader_trait_corrupted_logic = {
 	initial = no
 	randomized = no
 }
+
+leader_trait_genetically_superior = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_ac_genetically_superior"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_stability_add = 5
+	}
+	self_modifier = {
+		leader_lifespan_add = 20
+		species_leader_exp_gain = 0.15
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+}
 ### Mutant Traits ###
 # Commander
+
+# Scientist
 # leader_trait_mutant_plane_shifter = {
 # }
-# Scientist
-# leader_trait_mutant_brilliant = {
-
-# }
+leader_trait_mutant_brilliant = {
+	inline_script = {
+		script = trait/icon_ac_mutant
+		CLASS = scientist
+		ICON = "GFX_leader_trait_ac_genetically_superior" #temp
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leader_scientists_physics_research_produces_add = 2
+		leader_scientists_society_research_produces_add = 2
+		leader_scientists_engineering_research_produces_add = 2
+		species_leader_exp_gain = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
 # Official

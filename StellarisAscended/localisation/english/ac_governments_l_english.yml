@@ -188,8 +188,20 @@
   ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
 
 # Dictatorial
+  ascension_governments.34.name: "..."
+  ascension_governments.34.desc.perfect: "..."
+  ascension_governments.34.desc.chaotic: "..."
+  ascension_governments.34.desc.neutral: "..."
+  ascension_governments.34.a: "..."
+  ascension_governments.34.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_perfect']\n$unlock_edict_legislative_chorus$" #change edict
+  ascension_governments.34.b: "Survival of the Fittest!"
+  ascension_governments.34.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_chaotic']\n$unlock_edict_ac_unrestricted_mutation$" #change edict
+  ascension_governments.34.c: "$ac_genetic_keep_auth_option$"
+  ascension_governments.34.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
-# Kraterocracy - Survival of the FIttest!
+  ascension_governments.42.name: "..."
+  ascension_governments.42.desc: "Our very own [leader_1.GetTitle] [leader_1.GetName], ..."
+  ascension_governments.42.a: "A Necessary Sacrifice"
 
 # Imperial
   ascension_governments.35.name: "Empire Reborn"

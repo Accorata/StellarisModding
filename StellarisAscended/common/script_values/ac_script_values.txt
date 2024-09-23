@@ -17,3 +17,15 @@ ac_species_in_empire_max_5 = {
 	}
 	max = 5
 }
+
+# value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
+ac_districts_arcology_jobs = {
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = $TYPE$
+		}
+		mult = $FACTOR$
+		mode = add
+	}
+}

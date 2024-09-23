@@ -1246,8 +1246,91 @@ country_event = {
 	}
 }
 
-#42 - gives leader new trait
-#43 - empire gains new leader.
+# On new ruler - Adds genetically superior trait
+country_event = {
+	id = ascension_governments.42
+	title = ascension_governments.42.name
+	desc = ascension_governments.42.desc
+	show_sound = event_cityscape
+	picture = GFX_evt_coronation
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+			}
+			save_event_target_as = leader_1
+		}
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+				NOT = {
+					is_same_value = event_target:leader_1
+				}
+			}
+			save_event_target_as = leader_2
+		}
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+				NOR = {
+					is_same_value = event_target:leader_1
+					is_same_value = event_target:leader_2
+				}
+			}
+			save_event_target_as = leader_3
+		}
+	}
+	option = {
+		name = ascension_governments.42.a
+		ruler = {
+			add_trait = leader_trait_genetically_superior
+		}
+		event_target:leader_1 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		event_target:leader_2 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		event_target:leader_3 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unitymin
+			max = @tier4unitymax
+		}
+	}
+}
+
+# Fires on change to Dictatorial Kraterocracy
+country_event = {
+	id = ascension_governments.43
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	immediate = {
+		ruler = {
+			add_trait = leader_trait_genetically_superior
+		}
+	}
+}
+
 # Imperial Final Event
 # Fired by: event
 country_event = {
