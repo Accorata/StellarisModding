@@ -1231,6 +1231,10 @@ country_event = {
 		set_country_flag = ac_genetic_chaotic
 		hidden_effect = {
 			advanced_authority_refresh = yes
+			country_event = {
+				id = ascension_governments.43
+				days = 1
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -1381,6 +1385,10 @@ country_event = {
 		set_country_flag = ac_genetic_perfect
 		hidden_effect = {
 			advanced_authority_refresh = yes
+			country_event = {
+				id = ascension_governments.44
+				days = 1
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -1410,6 +1418,25 @@ country_event = {
 		custom_tooltip = ascension_governments.35.c.tt
 		trigger = {
 			is_ai = no
+		}
+	}
+}
+
+# Fires on change to Imperial Clones
+country_event = {
+	id = ascension_governments.44
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_trait = trait_imperial_heir
+			}
+			remove_trait = trait_imperial_heir
 		}
 	}
 }

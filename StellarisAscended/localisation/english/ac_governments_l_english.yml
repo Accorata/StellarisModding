@@ -209,7 +209,7 @@
   ascension_governments.35.desc.chaotic: "..."
   ascension_governments.35.desc.neutral: "..."
   ascension_governments.35.a: "Clones forever."
-  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_legislative_chorus$"  #change edict (also remove trait from current heir)
+  ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$"
   ascension_governments.35.b: "Unleash the viruses."
   ascension_governments.35.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$"
   ascension_governments.35.c: "$ac_genetic_keep_auth_option$"
@@ -219,6 +219,10 @@
 
 # Edicts
 # Imperial
+  ac_clone_overdrive:0 "Clone Overdrive"
+  ac_clone_overdrive_desc:0 "..."
+  concept_edict_ac_clone_overdrive:0 "$ac_clone_overdrive$"
+  unlock_edict_ac_clone_overdrive:0 "$unlock_edict_tt$['concept_edict_ac_clone_overdrive']"
   ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
   ac_harvest_genetic_failures_desc:0 "..."
   concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$"

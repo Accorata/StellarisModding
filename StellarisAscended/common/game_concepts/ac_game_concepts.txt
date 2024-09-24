@@ -49,6 +49,11 @@ concept_auth_ac_genetic_democratic_chaotic = {
 
 # Corporate+Hive to go
 # Genetic Edicts
+concept_edict_ac_clone_overdrive = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_clone_overdrive"
+}
+
 concept_edict_ac_harvest_genetic_failures = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_harvest_genetic_failures"

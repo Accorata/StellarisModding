@@ -1,6 +1,35 @@
 @Edict2Cost = 25
 @EdictDuration = -1
 # Genetic Government Edicts
+ac_clone_overdrive = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		planet_pop_assembly_organic_mult = 0.15
+		planet_buildings_clone_vats_upkeep_mult = 0.25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_harvest_genetic_failures = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
