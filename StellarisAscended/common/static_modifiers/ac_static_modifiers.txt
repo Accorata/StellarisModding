@@ -52,6 +52,31 @@ ac_reproductive_instillations = {
 	pop_cat_worker_political_power = 0.25
 }
 
+ac_genetic_athletes = {
+	icon = "gfx/interface/icons/modifiers/mod_society_research_produces_add.dds"
+	planet_entertainers_society_research_produces_add = 2
+}
+
+ac_genetic_athlete_leagues = {
+	icon = "gfx/interface/icons/modifiers/mod_faction_approval.dds"
+	faction_approval = 0.05
+}
+
+ac_limited_genetic_athletes = {
+	icon = "gfx/interface/icons/modifiers/mod_unity_produces_add.dds"
+	planet_entertainers_unity_produces_add = 1
+}
+
+ac_painless_labor = {
+	planet_jobs_worker_produces_mult = 0.05
+	army_health = 0.1
+}
+
+ac_united_in_pain = {
+	country_war_exhaustion_mult = -0.1
+	army_morale = 0.1
+}
+
 # Psionic Destiny Situation
 
 ac_holy_minds = {

@@ -162,6 +162,29 @@
   ac_natural_education_desc:0 "..."
   ac_reproductive_instillations:0 "Reproductive Instillations"
   ac_reproductive_instillations_desc:0 "..."
+  ascension_governments.22.name: "$cyber.1005.name$"
+  ascension_governments.22.desc: "$cyber.1005.desc$"
+  ascension_governments.22.a: "$cyber.1005.a.tt$" # P
+  ascension_governments.22.b: "$cyber.1005.b$" # C
+  ascension_governments.22.c: "$cyber.1005.c$" # N
+  ac_genetic_athletes:0 "Pure-Gened Athletics"
+  ac_genetic_athletes_desc:0 "..."
+  ac_genetic_athlete_leagues:0 "Genetic Athletic Leagues"
+  ac_genetic_athlete_leagues_desc:0 "..."
+  ac_limited_genetic_athletes:0 "Limited Genetic Athletics"
+  ac_limited_genetic_athletes_desc:0 "..."
+  ascension_governments.23.name: "Leaving Pain Behind"
+  ascension_governments.23.desc: "...Some citizens experimenting with auto-analgesia genetic mods which numb nerves as soon as ...filtering out any extreme pain reactions"
+  ascension_governments.23.a: "An evolution of [Root.GetSpeciesAdj] life." # P
+  ascension_governments.23.b: "Targeted applications should prove best." # C
+  ascension_governments.23.c: "Pain is a virtue, not an obstacle." # N
+  trait_ac_auto_analgesic:0 "Auto-Analgesic"
+  trait_ac_auto_analgesic_desc:0 "..."
+  ac_painless_labor:0 "Painless Labor"
+  ac_painless_labor_desc:0 "..."
+  ac_united_in_pain:0 "United in Pain"
+  ac_united_in_pain_desc:0 "This society was offered the chance to forgo pain, but decided to embraces physical suffering as a essential of life."
+
 # Final Event
 # Democratic
   ascension_governments.32.name: "A New Populace"
@@ -223,6 +246,7 @@
   ac_clone_overdrive_desc:0 "..."
   concept_edict_ac_clone_overdrive:0 "$ac_clone_overdrive$"
   unlock_edict_ac_clone_overdrive:0 "$unlock_edict_tt$['concept_edict_ac_clone_overdrive']"
+
   ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
   ac_harvest_genetic_failures_desc:0 "..."
   concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$"
