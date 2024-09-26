@@ -53,7 +53,7 @@ on_monthly_pulse_country = {
 # This = Heir
 on_new_heir = {
 	events = {
-		ascension_governments.100		# Sets heir to clone of current ruler (test)
+		ascension_governments.45		# Sets heir to clone of current ruler
 	}
 }
 

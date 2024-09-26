@@ -1,4 +1,4 @@
-job_ac_grand_synthesizer = {
+ac_grand_synthesizer = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
 	building_icon = building_ac_mega_forge

@@ -355,7 +355,10 @@ building_ac_undercity_arena = {
 	category = amenity
 
 	potential = {
-		is_ac_cybergladiator = yes
+		exists = owner
+		owner = {
+			is_ac_cybergladiator = yes
+		}
 	}
 
 	allow = {
@@ -363,11 +366,9 @@ building_ac_undercity_arena = {
 	}
 
 	destroy_trigger = {
-		AND = {
-			exists = owner
-			owner = {
-				is_ac_cybergladiator = no
-			}
+		exists = owner
+		owner = {
+			is_ac_cybergladiator = no
 		}
 	}
 

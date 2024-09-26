@@ -154,7 +154,7 @@
   ascension_governments.21.name: "Innate Safety Instincts"
   ascension_governments.21.desc: "..."
   ascension_governments.21.a: "Perfection of our instincts is essential in [Root.GetSpeciesAdj] evolution." # P
-  ascension_governments.21.b: "Learning provides a unique and varied experience that genetic knowledge never will." # C
+  ascension_governments.21.b: "Learning provides a unique experience that genetic knowledge never will." # C
   ascension_governments.21.c: "Individuals will decide what to install in their children." # N
   ac_innate_abilities:0 "Innate Abilities"
   ac_innate_abilities_desc:0 "..."
@@ -239,30 +239,40 @@
   ascension_governments.35.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
 
 # Corporate
+  ascension_governments.36.name: "..."
+  ascension_governments.36.desc.perfect: "..."
+  ascension_governments.36.desc.chaotic: "..."
+  ascension_governments.36.desc.neutral: "..."
+  ascension_governments.36.a: "..."
+  ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$" #change
+  ascension_governments.36.b: "..."
+  ascension_governments.36.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$" #change
+  ascension_governments.36.c: "$ac_genetic_keep_auth_option$"
+  ascension_governments.36.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
 
 # Edicts
 # Imperial
-  ac_clone_overdrive:0 "Clone Overdrive"
-  ac_clone_overdrive_desc:0 "..."
-  concept_edict_ac_clone_overdrive:0 "$ac_clone_overdrive$"
+  edict_ac_clone_overdrive:0 "Clone Overdrive"
+  edict_ac_clone_overdrive_desc:0 "..."
+  concept_edict_ac_clone_overdrive:0 "$edict_ac_clone_overdrive$"
   unlock_edict_ac_clone_overdrive:0 "$unlock_edict_tt$['concept_edict_ac_clone_overdrive']"
 
-  ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
-  ac_harvest_genetic_failures_desc:0 "..."
-  concept_edict_ac_harvest_genetic_failures:0 $ac_harvest_genetic_failures$"
+  edict_ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
+  edict_ac_harvest_genetic_failures_desc:0 "..."
+  concept_edict_ac_harvest_genetic_failures:0 "$edict_ac_harvest_genetic_failures$"
   unlock_edict_ac_harvest_genetic_failures:0 "$unlock_edict_tt$['concept_edict_ac_harvest_genetic_failures']"
 
 # Oligarchic
-  ac_unrestricted_mutation:0 "Unrestricted Mutation"
-  ac_unrestricted_mutation_desc:0 "..."
-  concept_edict_ac_unrestricted_mutation:0 "$ac_unrestricted_mutation$"
+  edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
+  edict_ac_unrestricted_mutation_desc:0 "..."
+  concept_edict_ac_unrestricted_mutation:0 "$edict_ac_unrestricted_mutation$"
   unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
   edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with an additional Negative trait from §Y50%§! to §Y100%§!."
 
 # Democratic
-  ac_handicap_distribution:0 "Handicap Distribution"
-  ac_handicap_distribution_desc:0 "..."
-  concept_edict_ac_handicap_distribution:0 "$ac_handicap_distribution$"
+  edict_ac_handicap_distribution:0 "Handicap Distribution"
+  edict_ac_handicap_distribution_desc:0 "..."
+  concept_edict_ac_handicap_distribution:0 "$edict_ac_handicap_distribution$"
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
   edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
 

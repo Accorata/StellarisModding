@@ -40,27 +40,27 @@ situation_ac_soul_seeking = {
 			base = 0
 		}
 	}
-	approach = {
-		name = situation_ac_soul_seeking_steady
-		icon = GFX_situation_approach_balance_sheet
-		icon_background = GFX_situation_approach_bg_yellow
-		default = yes
-		modifier = {
-			country_society_tech_research_speed = -0.05
-		}
-		ai_weight = {
-			base = 1
-		}
-	}
-	approach = {
-		name = situation_ac_soul_seeking_paused
-		icon = GFX_situation_approach_balance_sheet
-		icon_background = GFX_situation_approach_bg_red
-		default = yes
-		ai_weight = {
-			base = 0
-		}
-	}
+	# approach = {
+	# 	name = situation_ac_soul_seeking_steady
+	# 	icon = GFX_situation_approach_balance_sheet
+	# 	icon_background = GFX_situation_approach_bg_yellow
+	# 	default = yes
+	# 	modifier = {
+	# 		country_society_tech_research_speed = -0.05
+	# 	}
+	# 	ai_weight = {
+	# 		base = 1
+	# 	}
+	# }
+	# approach = {
+	# 	name = situation_ac_soul_seeking_paused
+	# 	icon = GFX_situation_approach_balance_sheet
+	# 	icon_background = GFX_situation_approach_bg_red
+	# 	default = yes
+	# 	ai_weight = {
+	# 		base = 0
+	# 	}
+	# }
 	monthly_progress = {
 		base = 1
 		modifier = {

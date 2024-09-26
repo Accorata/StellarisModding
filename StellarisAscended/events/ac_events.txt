@@ -37,7 +37,7 @@ country_event = {
 		# 50% (or 100% with edict) to add a mutant trait and a negative trait
 		if = {
 			limit = {
-				has_oligarchic_authority = yes
+				is_oligarchic_authority = yes
 				has_country_flag = ac_genetic_chaotic
 			}
 			random_list = {

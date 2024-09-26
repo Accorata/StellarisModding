@@ -1584,6 +1584,7 @@ country_event = {
 	immediate = {
 		random_owned_leader = {
 			limit = {
+				is_ruler = no
 				has_trait = trait_imperial_heir
 			}
 			remove_trait = trait_imperial_heir
@@ -1676,15 +1677,13 @@ country_event = {
 
 ## still testing:
 leader_event = {
-	id = ascension_governments.100
+	id = ascension_governments.45
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		owner = {
 			is_imperial_authority = yes
-			# has_tradition = tr_prosperity_adopt
-			# has_country_flag = ac_genetic_perfect
-			has_country_flag = ac_has_finished_genetics_tradition
+			has_country_flag = ac_genetic_perfect
 		}
 	}
 	immediate = {
@@ -1700,9 +1699,9 @@ leader_event = {
 				# }
 			}
 		}
-		kill_leader = {
-			show_notification = no
-		}
+		# kill_leader = {
+		# 	show_notification = no
+		# }
 	}
 }
 
