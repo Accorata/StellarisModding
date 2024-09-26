@@ -31,7 +31,7 @@ ac_avatar_caller = {
 	ai_weight = {
 		weight = 50
 	}
-	custom_tooltip_with_modifiers = sm_ac_avatar_caller_desc_modifier
+	custom_tooltip = sm_ac_avatar_caller_desc_modifier # ... add stability at least to tooltip
 }
 
 ac_bandwidth_router = {

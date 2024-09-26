@@ -68,11 +68,11 @@ situation_ac_soul_seeking = {
 			desc = "situation_ac_soul_seeking_all_ahead_tooltip"
 			current_situation_approach = situation_ac_soul_seeking_all_ahead
 		}
-		modifier = {
-			mult = 0
-			desc = "situation_ac_soul_seeking_paused"
-			current_situation_approach = situation_ac_soul_seeking_paused
-		}
+		# modifier = {
+		# 	mult = 0
+		# 	desc = "situation_ac_soul_seeking_paused"
+		# 	current_situation_approach = situation_ac_soul_seeking_paused
+		# }
 		# modifier = {
 		# 	mult = 0
 		# 	desc = situation_ac_soul_seeking_needed_desc

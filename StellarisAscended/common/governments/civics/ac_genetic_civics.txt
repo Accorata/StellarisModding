@@ -50,7 +50,7 @@ civic_blossoming_worlds = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
-		hidden_modifier = {
+		modifier = { #hidden_ (testing)...
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
 		}
@@ -98,7 +98,7 @@ civic_xanadu_retreats = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
 		}
@@ -128,7 +128,7 @@ civic_blossoming_hives = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
 			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate

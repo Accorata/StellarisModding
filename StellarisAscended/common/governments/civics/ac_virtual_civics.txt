@@ -37,7 +37,7 @@ civic_bandwidth_enhancers = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.1
 		}
@@ -81,7 +81,7 @@ civic_bandwidth_incorporated = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.1
 		}
@@ -113,7 +113,7 @@ civic_bandwidth_optimization = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.1
@@ -162,7 +162,7 @@ civic_concurrent_command = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			triggered_modifier = {
 				potential = { always = yes }
 				ship_fire_rate_mult = 0.03
@@ -213,7 +213,7 @@ civic_executive_militarization = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			triggered_modifier = {
 				potential = { always = yes }
 				ship_fire_rate_mult = 0.03
@@ -252,7 +252,7 @@ civic_nodal_command = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			triggered_modifier = {
 				potential = { always = yes }
 				ship_fire_rate_mult = 0.03

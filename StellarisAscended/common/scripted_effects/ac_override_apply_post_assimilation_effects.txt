@@ -55,7 +55,7 @@ apply_post_assimilation_effects = {
 	if = {
 		limit = {
 			root.owner = {
-				has_democratic_authority = yes
+				is_democratic_authority = yes
 				has_country_flag = ac_genetic_perfect
 			}
 		}

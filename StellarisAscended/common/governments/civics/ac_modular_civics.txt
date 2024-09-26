@@ -32,7 +32,7 @@ civic_hyper_specialization = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
 		}
@@ -65,7 +65,7 @@ civic_hyper_specialized = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate

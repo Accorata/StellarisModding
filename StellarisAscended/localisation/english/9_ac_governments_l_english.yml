@@ -173,6 +173,7 @@
   ac_genetic_athlete_leagues_desc:0 "..."
   ac_limited_genetic_athletes:0 "Limited Genetic Athletics"
   ac_limited_genetic_athletes_desc:0 "..."
+  mod_planet_entertainers_society_research_produces_add:0 "£society£ $society_research$ from [GetEntertainerPluralWithIcon]"
   ascension_governments.23.name: "Leaving Pain Behind"
   ascension_governments.23.desc: "...Some citizens experimenting with auto-analgesia genetic mods which numb nerves as soon as ...filtering out any extreme pain reactions"
   ascension_governments.23.a: "An evolution of [Root.GetSpeciesAdj] life." # P
@@ -289,7 +290,7 @@
   concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
-  councilor_ruler_imperial_ac_psionic_divine:0 "Divine $imperial_ruler$"
+  councilor_ruler_imperial_ac_psionic_divine:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
 # Psionic Imperial Eldritch
   auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
@@ -297,8 +298,8 @@
   concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
-  # councilor_ruler_imperial_ac_psionic_eldritch:0 "..."
-  # councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "..."
+  councilor_ruler_imperial_ac_psionic_eldritch:0 "$imperial_ruler$"
+  councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "$imperial_ruler_desc$"
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
   auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."

@@ -1694,15 +1694,31 @@ leader_event = {
 			clone_leader = {
 				target = event_target:ruler_to_be_cloned
 				set_age = 1
-				# effect = {
-				# 	add_trait_no_notify = trait_imperial_heir - could be cloned leader...
-				# }
 			}
+			last_created_leader = {
+				save_event_target_as = ac_cloned_heir
+			}
+			set_heir = event_target:ac_cloned_heir
 		}
-		# kill_leader = {
-		# 	show_notification = no
+		kill_leader = {
+			show_notification = no
+		}
+		# remove_trait = trait_imperial_heir
+		# leader_event = {
+		# 	id = ascension_governments.46
+		# 	days = 1
 		# }
 	}
+	# after = {
+	# 	effect = {
+	# 		remove_trait = trait_imperial_heir
+	# 	}
+	# }
+	# after = {
+	# 	kill_leader = {
+	# 		show_notification = no
+	# 	}
+	# }
 }
 
 ####### PSIONIC SITUATION #######

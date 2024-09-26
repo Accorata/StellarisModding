@@ -67,6 +67,8 @@ on_post_government_changed = {
 		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
 		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
 		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_governments.43	# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
+		ascension_governments.44	# Removes heir trait from current trait if Imperial Clones
 	}
 }
 

@@ -76,7 +76,7 @@ civic_telepathic_empire = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			planet_stability_add = 5
 			pop_citizen_happiness = 0.15
 			pop_happiness = -0.15
@@ -125,7 +125,7 @@ civic_telepathic_corporation = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			planet_stability_add = 5
 			pop_citizen_happiness = 0.15
 			pop_happiness = -0.15
@@ -210,7 +210,7 @@ civic_shroud_renouncers = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
-		hidden_modifier = {
+		modifier = {
 			# unity from telepaths
 			planet_psionic_jobs_produces_mult = 0.2
 			# shroud damage

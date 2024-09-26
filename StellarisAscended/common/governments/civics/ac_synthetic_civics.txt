@@ -227,8 +227,6 @@ civic_synthetic_celestials = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			# hidden modifier
-			megastructures_energy_produces_mult = 0.25
 			megastructure_build_speed_mult = 0.25
 		}
 	}
@@ -283,8 +281,6 @@ civic_world_commissioners = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			# hidden modifier
-			megastructures_energy_produces_mult = 0.25
 			megastructure_build_speed_mult = 0.25
 		}
 	}

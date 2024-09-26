@@ -574,7 +574,6 @@ planet_event = {
 				}
 			}
 		}
-	after = {
 		create_pop = {
 			species = event_target:ac_cyberform_species
 		}

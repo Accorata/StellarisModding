@@ -129,9 +129,9 @@ building_ac_grand_sapling = {
 			is_planet_class = pc_gaia
 		}
 		exists = owner
-		owner = {
-			is_ac_blossoming = yes
-		}
+		# owner = {
+		# 	is_ac_blossoming = yes
+		# }
 		NOT = {
 			has_modifier = slave_colony
 		}

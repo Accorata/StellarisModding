@@ -11,10 +11,12 @@
   job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
   job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
   job_ac_grand_synthesizer_desc:0 "..."
-  job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase Megastructure build speed."
+  job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
+  mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
   mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
+  # mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
   concept_job_ac_grand_synthesizer: "$job_ac_grand_synthesizer_plural$"
-  concept_job_ac_grand_synthesizer_desc: "$job_ac_grand_synthesizer_plural$ turn $i_minerals$ into $i_alloys$ and Megastructure build speed.\n\n§L$job_ac_grand_synthesizer_desc$§!"
+  concept_job_ac_grand_synthesizer_desc: "$job_ac_grand_synthesizer_plural$ turn $i_minerals$ into $i_alloys$ and §YMegastructure build speed§!.\n\n§L$job_ac_grand_synthesizer_desc$§!"
 
 # Psionic
   building_ac_psi_tower:0 "Psionic Tower" #center? #grand unit?
