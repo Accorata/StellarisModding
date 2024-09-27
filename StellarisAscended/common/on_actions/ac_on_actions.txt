@@ -193,6 +193,7 @@ on_ac_genetic_shock_chain_event_pool_two_list = {
 on_ac_psionic_shock_chain_event_pool_one_list = {
 	random_events = {
 		5 = ascension_governments.1009		# Ritualistic Sacrifices
+		5 = ascension_governments.1010		# Nether Calling
 	}
 }
 
@@ -200,5 +201,6 @@ on_ac_psionic_shock_chain_event_pool_one_list = {
 # This = Country
 on_ac_psionic_shock_chain_event_pool_two_list = {
 	random_events = {
+		10 = ascension_governments.1020		# Chosen Sovereignty
 	}
 }

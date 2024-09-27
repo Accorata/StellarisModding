@@ -1592,6 +1592,37 @@ country_event = {
 	}
 }
 
+# Clone Ruler on heir death
+leader_event = {
+	id = ascension_governments.45
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			is_imperial_authority = yes
+			has_country_flag = ac_genetic_perfect
+		}
+	}
+	immediate = {
+		owner = {
+			ruler = {
+				save_event_target_as = ruler_to_be_cloned
+			}
+			clone_leader = {
+				target = event_target:ruler_to_be_cloned
+				set_age = 1
+			}
+			last_created_leader = {
+				save_event_target_as = ac_cloned_heir
+			}
+			set_heir = event_target:ac_cloned_heir
+		}
+		kill_leader = {
+			show_notification = no
+		}
+	}
+}
+
 # Corporate Final Event
 # Fired by: event
 country_event = {
@@ -1673,52 +1704,6 @@ country_event = {
 			is_ai = no
 		}
 	}
-}
-
-## still testing:
-leader_event = {
-	id = ascension_governments.45
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		owner = {
-			is_imperial_authority = yes
-			has_country_flag = ac_genetic_perfect
-		}
-	}
-	immediate = {
-		owner = {
-			ruler = {
-				save_event_target_as = ruler_to_be_cloned
-			}
-			clone_leader = {
-				target = event_target:ruler_to_be_cloned
-				set_age = 1
-			}
-			last_created_leader = {
-				save_event_target_as = ac_cloned_heir
-			}
-			set_heir = event_target:ac_cloned_heir
-		}
-		kill_leader = {
-			show_notification = no
-		}
-		# remove_trait = trait_imperial_heir
-		# leader_event = {
-		# 	id = ascension_governments.46
-		# 	days = 1
-		# }
-	}
-	# after = {
-	# 	effect = {
-	# 		remove_trait = trait_imperial_heir
-	# 	}
-	# }
-	# after = {
-	# 	kill_leader = {
-	# 		show_notification = no
-	# 	}
-	# }
 }
 
 ####### PSIONIC SITUATION #######
@@ -2105,19 +2090,6 @@ country_event = {
 	}
 }
 
-# Event pools gatekeeping event | Psionic Pool 2
-# Fired by: event
-country_event = {
-	id = ascension_governments.1008
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		fire_on_action = {
-			on_action = on_ac_psionic_shock_chain_event_pool_two_list
-		}
-	}
-}
-
 # Fired by: on_ac_psionic_shock_chain_event_pool_one_list
 country_event = {
 	# Ritualistic Sacrificies
@@ -2185,6 +2157,304 @@ country_event = {
 				days = 180
 				random = 90
 			}
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Nether Calling
+	id = ascension_governments.1010
+	title = ascension_governments.1010.name
+	desc = ascension_governments.1010.desc
+	picture = GFX_evt_space_monster
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Eldritch
+		name = ascension_governments.1010.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1010.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+			random_list = {
+				60 = { country_event = { id = utopia.3020 }}
+				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3023 }
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1010.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_abstaining_from_darkness
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Psionic Pool 2
+# Fired by: event
+country_event = {
+	id = ascension_governments.1008
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_psionic_shock_chain_event_pool_two_list
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_two_list
+country_event = {
+	# Chosen Sovereignty
+	id = ascension_governments.1020
+	title = ascension_governments.1020.name
+	desc = ascension_governments.1020.desc
+	picture = GFX_evt_psionics
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		NOT = { has_country_flag = chosen_one_ruler_event }
+		OR = {
+			# Either you've not Imperial and have a Chosen One
+			AND = {
+				OR = {
+					is_democratic_authority = yes
+					is_oligarchic_authority = yes
+					is_dictatorial_authority = yes
+					# MegaCorps deliberately excluded.
+				}
+				any_owned_leader = {
+					has_chosen_one_leader_trait = yes
+				}
+			}
+			# Or you're Imperial and the Chosen One is your current ruler or heir.
+			AND = {
+				is_imperial_authority = yes
+				any_owned_leader = {
+					has_chosen_one_leader_trait = yes
+					has_trait = trait_imperial_heir
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = chosen_one_ruler_event
+		if = {
+			limit = {
+				OR = {
+					is_democratic_authority = yes
+					is_oligarchic_authority = yes
+					is_dictatorial_authority = yes
+					# MegaCorps deliberately excluded.
+				}
+			}
+			random_owned_leader = {
+				limit = {
+					has_chosen_one_leader_trait = yes
+				}
+				save_event_target_as = chosen_one
+				species = { save_event_target_as = chosen_one_species }
+			}
+		}
+		else = {
+			random_owned_leader = {
+				limit = {
+					has_chosen_one_leader_trait = yes
+					has_trait = trait_imperial_heir
+				}
+				save_event_target_as = chosen_one
+				species = { save_event_target_as = chosen_one_species }
+			}
+		}
+	}
+
+	option = {
+		# Divine
+		name = ascension_governments.1020.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_legendary_leader_dictatorial
+			}
+			set_origin = origin_legendary_leader_imperial
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_imperial
+			cooldown = no
+			remove_invalid_civics = yes
+		}
+		force_add_civic = civic_psionic_sovereign
+		set_government_cooldown = no
+		# The ruler doesn't need to abdicate if they're being crowned.
+		if = {
+			limit = {
+				ruler = {
+					NOT = {
+						is_same_value = event_target:chosen_one
+					}
+				}
+			}
+			ruler = {
+				exile_leader_as = destituted_ruler_chosen_one
+			}
+			set_leader = event_target:chosen_one
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = { is_same_value = root }
+					has_communications = root
+				}
+				country_event = { id = utopia.3401 days = 4 }
+			}
+			country_event = { id = utopia.3402 days = 5 }
+		}
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1020.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_legendary_leader_dictatorial
+			}
+			set_origin = origin_legendary_leader_imperial
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_imperial
+			cooldown = no
+			remove_invalid_civics = yes
+		}
+		force_add_civic = civic_psionic_sovereign
+		set_government_cooldown = no
+		# The ruler doesn't need to abdicate if they're being crowned.
+		if = {
+			limit = {
+				ruler = {
+					NOT = {
+						is_same_value = event_target:chosen_one
+					}
+				}
+			}
+			ruler = {
+				exile_leader_as = destituted_ruler_chosen_one
+			}
+			set_leader = event_target:chosen_one
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = { is_same_value = root }
+					has_communications = root
+				}
+				country_event = { id = utopia.3401 days = 4 }
+			}
+			country_event = { id = utopia.3402 days = 5 }
+		}
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		name = ascension_governments.1020.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_ethic = ethic_egalitarian
+			}
+				modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		custom_tooltip = reject_god_emperor
+	}
+	after = {
+		hidden_effect = {
+			# country_event = {
+			# 	id = ascension_governments.1008
+			# 	days = 180
+			# 	random = 90
+			# }
 		}
 	}
 }

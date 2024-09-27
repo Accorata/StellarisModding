@@ -376,8 +376,20 @@
   ac_holy_minds_desc:0 "Our minds are sacred; they shall not be left as fodder for demonic entities."
   ac_dark_rituals:0 "Dark Rituals"
   ac_dark_rituals_desc:0 "..."
+  ascension_governments.1010.name: "Nether Calling"
+  ascension_governments.1010.desc: "...\n\n..."
+  ascension_governments.1010.a: "Begin the Ritual." # E 
+  ascension_governments.1010.a.tt: "Attempt to summon a Psionic Avatar."
+  ascension_governments.1010.b: "Such risks should not be taken." # D
+  ac_abstaining_from_darkness:0 "Abstaining from Darkness"
+  ac_abstaining_from_darkness_desc:0 "..."
 
 # Event Pool 2
+  ascension_governments.1020.name: "Chosen Sovereignty"
+  ascension_governments.1020.desc: "...\n\n..."
+  ascension_governments.1020.a: "..." # D
+  ascension_governments.1020.b: "..." # E
+  ascension_governments.1020.c: "..." # N
 
 
 ### Psionic Teachers ---------------------------------------------------------------------------------

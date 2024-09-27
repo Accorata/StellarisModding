@@ -87,3 +87,8 @@ ac_dark_rituals = {
 	country_unity_produces_mult = 0.15
 	planet_stability_add = -3
 }
+
+ac_abstaining_from_darkness = {
+	planet_stability_add = 5
+	shroud_delve_cooldown = 0.1
+}
