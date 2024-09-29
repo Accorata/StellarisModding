@@ -84,16 +84,100 @@ civic_cyberlife = {
 	}
 }
 
-# civic_living_cities = {
-# 	modification = yes
-# 	pickable_at_start = yes
-# 	possible = {
-# 		# has_active_tradition = tr_cybernetics_finish
-# 	}
-# 	random_weight = {
-# 		base = 0
-# 	}
-# 	description = civic_tooltip_living_cities_effects
-# 	modifier = {
-# 	}
-# }
+civic_cybergladiators = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_underworld_bloodsports
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cybergladiators.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cybergladiators_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_cybernetics_finish
+		}
+		modifier = {
+			planet_jobs_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_jobs_cyberdome_duelist_unity_produces_add = 3
+		}
+	}
+}
+
+civic_underworld_bloodsports = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cybergladiators
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_underworld_bloodsports.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cybergladiators_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_cybernetics_finish
+		}
+		modifier = {
+			planet_jobs_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_jobs_cyberdome_duelist_unity_produces_add = 3
+		}
+	}
+}

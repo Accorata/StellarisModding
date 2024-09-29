@@ -106,6 +106,15 @@
   mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
   mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
 
+  civic_cybergladiators:0 "Cybergladiators"
+  civic_cybergladiators_desc:0 "...in the alleyways, ..."
+  civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings. \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  # councilor needed
+
+  civic_underworld_bloodsports:0 "Underworld Bloodsports"
+  civic_underworld_bloodsports_desc:0 "..."
+  # councilor needed
+
   # Neon stars...
   # councilor needed
 

@@ -4,7 +4,7 @@ is_ac_bandwidth_empire = {
 		has_valid_civic = civic_bandwidth_incorporated
 		has_valid_civic = civic_bandwidth_optimization
 	}
-	has_active_tradition = tr_virtuality_finish
+	has_tradition = tr_virtuality_finish
 }
 
 is_ac_bandwidth_non_corporate = {
@@ -12,17 +12,17 @@ is_ac_bandwidth_non_corporate = {
 		has_valid_civic = civic_bandwidth_enhancers
 		has_valid_civic = civic_bandwidth_optimization
 	}
-	has_active_tradition = tr_virtuality_finish
+	has_tradition = tr_virtuality_finish
 }
 
 is_ac_bandwidth_corporate = {
 	has_valid_civic = civic_bandwidth_incorporated
-	has_active_tradition = tr_virtuality_finish
+	has_tradition = tr_virtuality_finish
 }
 
 is_ac_doomseeker = {
 	has_valid_civic = civic_doomseekers
-	has_active_tradition = tr_psionics_finish
+	has_tradition = tr_psionics_finish
 }
 	
 is_ac_telepathic_empire = {
@@ -30,14 +30,14 @@ is_ac_telepathic_empire = {
 		has_valid_civic = civic_telepathic_empire
 		has_valid_civic = civic_telepathic_corporation
 	}
-	has_active_tradition = tr_psionics_finish
+	has_tradition = tr_psionics_finish
 }
 
 is_ac_cyber_overlord = {
 	OR = {
 		has_valid_civic = civic_sovereign_circuitry
 	}
-	# has_active_tradition = tr_cybernetics_finish
+	# has_tradition = tr_cybernetics_finish
 }
 
 is_ac_bio_upgrader = {
@@ -45,21 +45,21 @@ is_ac_bio_upgrader = {
 		has_valid_civic = civic_bioform_upgrader
 		has_valid_civic = civic_bio_replacer
 	}
-	has_active_tradition = tr_synthetics_finish
+	has_tradition = tr_synthetics_finish
 }
 
 is_ac_cyberlife = {
 	OR = {
 		has_valid_civic = civic_cyberlife 
 	}
-	has_active_tradition = tr_cybernetics_finish
+	has_tradition = tr_cybernetics_finish
 }
 
 is_ac_shroud_renouncer = {
 	OR = {
 		has_valid_civic = civic_shroud_renouncers
 	}
-	has_active_tradition = tr_psionics_finish
+	has_tradition = tr_psionics_finish
 }
 
 is_ac_blossoming = {
@@ -67,12 +67,12 @@ is_ac_blossoming = {
 		has_valid_civic = civic_blossoming_worlds
 		has_valid_civic = civic_blossoming_hives
 	}
-	has_active_tradition = tr_genetics_finish
+	has_tradition = tr_genetics_finish
 }
 
 is_ac_xanadu = {
 	has_valid_civic = civic_xanadu_retreats
-	has_active_tradition = tr_genetics_finish
+	has_tradition = tr_genetics_finish
 }
 
 is_ac_specialized = {
@@ -80,7 +80,7 @@ is_ac_specialized = {
 		has_valid_civic = civic_hyper_specialization
 		has_valid_civic = civic_hyper_specialized
 	}
-	has_active_tradition = tr_modularity_finish 
+	has_tradition = tr_modularity_finish 
 }
 #this = species, from = country
 can_do_ac_specialized_robo_modding = {
@@ -95,7 +95,7 @@ is_ac_soul_searcher_empire = {
 		has_valid_civic = civic_soul_seekers
 		# has_valid_civic = 
 	}
-	has_active_tradition = tr_synthetics_finish
+	has_tradition = tr_synthetics_finish
 }
 
 is_ac_world_builders = {
@@ -103,12 +103,13 @@ is_ac_world_builders = {
 		has_valid_civic = civic_synthetic_celestials
 		has_valid_civic = civic_world_commissioners
 	}
-	has_active_tradition = tr_synthetics_finish
+	has_tradition = tr_synthetics_finish
 }
 
 is_ac_cybergladiator = {
 	OR = {
-
+		has_valid_civic = civic_cybergladiators
+		has_valid_civic = civic_underworld_bloodsports
 	}
-	has_active_tradition = tr_cybernetics_finish
+	has_tradition = tr_cybernetics_finish
 }

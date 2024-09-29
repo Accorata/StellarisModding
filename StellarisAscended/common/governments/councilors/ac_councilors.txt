@@ -185,7 +185,7 @@ councilor_xanadu_retreats = {
 	civic = civic_xanadu_retreats
 	custom_tooltip = councilor_xanadu_retreats_tooltip
 	modifier = {
-		planet_resort_worker_energy_produces_add = 0.5
+		planet_jobs_resort_worker_energy_produces_add = 0.5
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
