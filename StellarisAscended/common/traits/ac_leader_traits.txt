@@ -159,7 +159,7 @@ leader_trait_mutant_brilliant = {
 	inline_script = {
 		script = trait/icon_ac_mutant
 		CLASS = scientist
-		ICON = "GFX_leader_trait_ac_genetically_superior" #temp
+		ICON = "GFX_leader_trait_ac_mutant_brilliant"
 		RARITY = common
 		COUNCIL = no
 		TIER = none
@@ -176,4 +176,5 @@ leader_trait_mutant_brilliant = {
 	initial = no
 	randomized = no
 }
+
 # Official

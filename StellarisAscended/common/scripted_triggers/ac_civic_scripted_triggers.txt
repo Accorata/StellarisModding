@@ -78,6 +78,7 @@ is_ac_xanadu = {
 is_ac_specialized = {
 	OR = {
 		has_valid_civic = civic_hyper_specialization
+		# corporate
 		has_valid_civic = civic_hyper_specialized
 	}
 	has_tradition = tr_modularity_finish 
@@ -112,4 +113,13 @@ is_ac_cybergladiator = {
 		has_valid_civic = civic_underworld_bloodsports
 	}
 	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_metal_recycler = {
+	OR = {
+		has_valid_civic = civic_metallic_repurposing
+		has_valid_civic = civic_corporate_remodeling
+		has_valid_civic = civic_omnirecyclers
+	}
+	has_tradition = tr_modularity_finish 
 }

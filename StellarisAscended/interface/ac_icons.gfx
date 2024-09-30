@@ -12,11 +12,21 @@ spriteTypes = {
 		name = "GFX_leader_trait_ac_genetically_superior"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_genetically_superior.dds"
 	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_brilliant"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_brilliant.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_tetrochromat"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_tetrochromat.dds"
+	}
+	
 	# STARBASE MODULES -----------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_ac_bandwidth_router_sb"
 		texturefile = "gfx/interface/icons/modules/sb_ac_bandwidth_router.dds"
 	}
+
 	# COLONY TYPES ---------------------------------------------------------------------------
 	# testing:
 	spriteType = {

@@ -53,6 +53,7 @@
   concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
+  auth_ac_genetic_democratic_perfect_effects:0 "- Gains £unity£ §YUnity§! from assimilating £pop£ Pops"
 # Genetic Democratic Chaotic
   auth_ac_genetic_democratic_chaotic:0 "Democratic Expressionism"
   auth_ac_genetic_democratic_chaotic_desc:0 "..."

@@ -221,6 +221,16 @@
   trait_ac_robot_logic_engines:0 "Epistemological Engines"
   trait_ac_robot_logic_engines_desc:0 "Quantum possibility engines computing all possible logical outcomes."
 
+  civic_metallic_repurposing:0 "Metallic Repurposing"
+  civic_metallic_repurposing_desc:0 "..."
+  civic_tooltip_metallic_repurposing_effects:0 "(to do)\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
+
+  civic_corporate_remodeling:0 "Corporate Remodeling"
+  civic_corporate_remodeling_desc:0 "..."
+
+  civic_omnirecyclers:0 "Omnirecyclers"
+  civic_omnirecyclers_desc:0 "..."
+
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation
   pop_category_ac_droid_drone:0 "Droid"

@@ -1,10 +1,20 @@
 civic_hyper_specialization = {
 	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
 	}
 	possible = {
-		species_archetype = { value = MACHINE }
+		species_archetype = { 
+			value = MACHINE 
+		}
 		civics = { 
 			NOT = { 
 				# value = 
@@ -41,8 +51,12 @@ civic_hyper_specialization = {
 
 civic_hyper_specialized = {
 	potential = {
-		ethics = { value = ethic_gestalt_consciousness }
-		authority = { NOT = { value = auth_corporate } }
+		ethics = { 
+			value = ethic_gestalt_consciousness 
+		}
+		authority = { 
+			value = auth_machine_intelligence  
+		}
 	}
 
 	modification = yes
@@ -69,6 +83,140 @@ civic_hyper_specialized = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_metallic_repurposing = {
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_corporate_remodeling
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_metallic_repurposing.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_metallic_repurposing_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_modularity_finish
+		}
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
+		}
+	}
+}
+
+civic_corporate_remodeling = {
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			value = auth_corporate  
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_metallic_repurposing
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_corporate_remodeling.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_metallic_repurposing_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_modularity_finish
+		}
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
+		}
+	}
+}
+
+civic_omnirecyclers = {
+	potential = {
+		ethics = { 
+			value = ethic_gestalt_consciousness  
+		}
+		authority = { 
+			value = auth_machine_intelligence  
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_omnirecyclers.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_metallic_repurposing_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_modularity_finish
+		}
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
 		}
 	}
 }

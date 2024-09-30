@@ -1,4 +1,5 @@
 ﻿l_english:
+  ac_mutated_trait:0 "Mutation: "
 # Common Traits
   leader_trait_genetically_superior:0 "Genetically Superior"
   leader_trait_genetically_superior_desc:0 "..."
@@ -20,7 +21,7 @@
   leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+40§!"
 
 # Scientist Traits
-  leader_trait_mutant_brilliant:0 "Mutation: Brilliant"
+  leader_trait_mutant_brilliant:0 "$ac_mutated_trait$Brilliant"
   leader_trait_mutant_brilliant_desc:0 "..."
 
 # Negative Traits

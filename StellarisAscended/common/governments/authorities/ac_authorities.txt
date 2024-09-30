@@ -15,27 +15,23 @@ auth_democratic = {
 			planet_jobs_unity_produces_mult = 0.1
 		}
 	}
-	# advanced_authority_swap = {
-	# 	name = "auth_ac_genetic_democratic_perfect"
-	# 	description = "auth_ac_genetic_democratic_perfect_desc"
-	# 	inherit_icon = no
-	# 	inherit_effects = no
-	# 	trigger = {
-	# 		is_scope_valid = yes
-	# 		has_country_flag = ac_genetic_perfect
-	# 	}
-	# 	modifier = {
-	# 		pop_citizen_happiness = 0.2
-	# 		planet_pops_upkeep_mult = 0.1
-	# 		triggered_modifier = {
-	# 			potential = {
-	# 				always = yes
-	# 			}
-	# 			country_unity_produces_mult = 0.25
-	# 			divide = value:ac_species_in_empire_max_5
-	# 		}
-	# 	}
-	# }
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_democratic_perfect"
+		description = "auth_ac_genetic_democratic_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			pop_citizen_happiness = 0.2
+			planet_pops_upkeep_mult = 0.1
+			custom_tooltip = auth_ac_genetic_democratic_perfect_effects
+			show_only_custom_tooltip = no
+			# ...
+		}
+	}
 	advanced_authority_swap = {
 		name = "auth_ac_genetic_democratic_chaotic"
 		description = "auth_ac_genetic_democratic_chaotic_desc"
