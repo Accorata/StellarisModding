@@ -146,6 +146,40 @@
   civic_blossoming_hives_desc:0 "..."
   civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
+  civic_hyper_diversification:0 "Hyper Diversification"
+  civic_hyper_diversification_desc:0 "..."
+  civic_tooltip_hyper_diversification_effects:0 "$genetic_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$genetic_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
+  # councilor needed
+
+  civic_employee_diversification:0 "Employee Diversification"
+  civic_employee_diversification_desc:0 "..."
+  # councilor needed
+
+  civic_hyper_diversified:0 "Hyper-Diversified"
+  civic_hyper_diversified_desc:0 "..."
+  civic_tooltip_hyper_diversified_effects:0 "$civic_tooltip_hyper_diversification_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
+
+  trait_ac_auto_mod_biological:0 "Evolving Niches"
+  trait_ac_auto_mod_biological_desc:0 "..."
+  automodding_trait_ac_bio_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_biological$§! picks modifiers from the ['concept_ac_automodding_bio']"
+  concept_ac_automodding_bio: "Diversified Auto-Mod Trait List"
+  concept_ac_automodding_bio_desc: "- ['trait:trait_ac_bio_traditional']\n- ['trait:trait_ac_bio_thrifty']\n- ['trait:trait_ac_bio_intelligent']\n- ['trait:trait_ac_bio_industrious']\n- ['trait:trait_ac_bio_agrarian']\n- ['trait:trait_ac_bio_ingenious']\n- ['trait:trait_ac_bio_charismatic']"
+  trait_ac_bio_ingenious:0 "..."
+  trait_ac_bio_ingenious_desc:0 "..."
+  trait_ac_bio_industrious:0 "..."
+  trait_ac_bio_industrious_desc:0 "..."
+  trait_ac_bio_agrarian:0 "..."
+  trait_ac_bio_agrarian_desc:0 "..."
+  trait_ac_bio_thrifty:0 "..."
+  trait_ac_bio_thrifty_desc:0 "..."
+  trait_ac_bio_charismatic:0 "..."
+  trait_ac_bio_charismatic_desc:0 "..."
+  trait_ac_bio_traditional:0 "Enlightened"
+  trait_ac_bio_traditional_desc:0 "..."
+  trait_ac_bio_intelligent:0 "Brilliant"
+  trait_ac_bio_intelligent_desc:0 "..."
+
+
   # civic_bioship_integration:0 "Bioship Integration"
   # civic_bioship_integration_desc:0 "..."
   # civic_tooltip_bioship_integration_effects:0 "..."
@@ -194,7 +228,8 @@
   councilor_hyper_specialization:0 "..."
   councilor_hyper_specialization_desc:0 "..."
 
-  # corporate version needed
+  civic_employee_specialization:0 "Employee Specialization"
+  civic_employee_specialization_desc:0 "..."
   # councilor needed
 
   civic_hyper_specialized:0 "Hyper-Specialized"

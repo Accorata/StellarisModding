@@ -2,6 +2,10 @@ concept_ac_automodding_robotic = {
 	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_robotic.dds"
 }
 
+concept_ac_automodding_bio = {
+	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_biological.dds"
+}
+
 concept_job_ac_grand_synthesizer = {
 	icon = "gfx/interface/icons/jobs/job_ac_grand_synthesizer.dds"
 }

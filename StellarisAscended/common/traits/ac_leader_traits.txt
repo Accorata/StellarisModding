@@ -155,11 +155,11 @@ leader_trait_genetically_superior = {
 # Scientist
 # leader_trait_mutant_plane_shifter = {
 # }
-leader_trait_mutant_brilliant = {
+leader_trait_mutant_brilliance = {
 	inline_script = {
 		script = trait/icon_ac_mutant
 		CLASS = scientist
-		ICON = "GFX_leader_trait_ac_mutant_brilliant"
+		ICON = "GFX_leader_trait_ac_mutant_brilliance"
 		RARITY = common
 		COUNCIL = no
 		TIER = none

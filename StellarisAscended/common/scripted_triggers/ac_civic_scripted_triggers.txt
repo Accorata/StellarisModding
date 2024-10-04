@@ -78,7 +78,7 @@ is_ac_xanadu = {
 is_ac_specialized = {
 	OR = {
 		has_valid_civic = civic_hyper_specialization
-		# corporate
+		has_valid_civic = civic_employee_specialization
 		has_valid_civic = civic_hyper_specialized
 	}
 	has_tradition = tr_modularity_finish 
@@ -88,6 +88,22 @@ can_do_ac_specialized_robo_modding = {
 	hidden_trigger = { exists = from }
 	from = {
 		is_ac_specialized = yes
+	}
+}
+
+is_ac_diversified = {
+	OR = {
+		has_valid_civic = civic_hyper_diversification
+		has_valid_civic = civic_employee_diversification
+		has_valid_civic = civic_hyper_diversified
+	}
+	has_tradition = tr_modularity_finish 
+}
+#this = species, from = country
+can_do_ac_diversified_bio_modding = {
+	hidden_trigger = { exists = from }
+	from = {
+		is_ac_diversified = yes
 	}
 }
 

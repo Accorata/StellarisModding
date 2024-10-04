@@ -13,7 +13,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_genetically_superior.dds"
 	}
 	spriteType = {
-		name = "GFX_leader_trait_ac_mutant_brilliant"
+		name = "GFX_leader_trait_ac_mutant_brilliance"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_brilliant.dds"
 	}
 	spriteType = {
