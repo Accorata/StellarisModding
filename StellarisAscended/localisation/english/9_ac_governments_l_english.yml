@@ -10,7 +10,7 @@
   auth_ac_genetic_imperial_perfect_desc:0 "..."
   AUTHORITY_AC_CLONED:1 "$t$ Upon §HRuler Death§! their §HCloned Heir§! becomes the new Ruler."
   concept_auth_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
-  gov_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
+  gov_ac_genetic_imperial_perfect:0 "Genetic Dynasty"
   gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
   auth_ac_genetic_imperial_perfect_effects:0 "...Cloned rulers gain new trait picks"
   councilor_ruler_imperial_ac_genetic:0 "$imperial_ruler$"
@@ -60,7 +60,18 @@
   concept_auth_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic_desc:0 "$auth_ac_genetic_democratic_chaotic_desc$"
-# Corporate ...
+# Genetic Corporate Perfect
+  auth_ac_genetic_corporate_perfect:0 "Corporate Cryosleep"
+  auth_ac_genetic_corporate_perfect_desc:0 "..."
+  concept_auth_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
+  gov_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
+  gov_ac_genetic_corporate_perfect_desc:0 "$auth_ac_genetic_corporate_perfect_desc$"
+# Genetic Corporate Chaotic
+  auth_ac_genetic_corporate_chaotic:0 "Corporate Darwinism"
+  auth_ac_genetic_corporate_chaotic_desc:0 "..."
+  concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
+  gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
+  gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
 
 ## Events
   ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables have changed
@@ -101,10 +112,10 @@
 # Corporate
   ascension_governments.6.name: "$ac_genetic_shock_chain_title$"
   ascension_governments.6.desc: "Our genetic advancements prvoide new markets to explore, but also new risks for competition. We must adapt to these changes in order to embrace this new frontier before any others....\n\n..."
-  ascension_governments.6.a: "..."
+  ascension_governments.6.a: "...cryonics"
   ascension_governments.6.a.tt: "Emphasis on ..."
   ascension_governments.6.b: "..."
-  ascension_governments.6.b.tt: "Emphasis on ..."
+  ascension_governments.6.b.tt: "Emphasis on specialized policy."
 
 # Event Pool 1
   ascension_governments.9.name: "Preserved Loved Ones"
@@ -246,9 +257,9 @@
   ascension_governments.36.desc.chaotic: "..."
   ascension_governments.36.desc.neutral: "..."
   ascension_governments.36.a: "..."
-  ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$" #change
+  ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_perfect']\n$unlock_edict_ac_clone_overdrive$" #change
   ascension_governments.36.b: "..."
-  ascension_governments.36.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$" #change
+  ascension_governments.36.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$" #change
   ascension_governments.36.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.36.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
 
@@ -401,7 +412,7 @@
   auth_ac_psi_teacher_oligarchic: "Oligarchic Divinocracy"
   auth_ac_psi_teacher_oligarchic_desc: "..."
   concept_auth_ac_psi_teacher_oligarchic: "$auth_ac_psi_teacher_oligarchic$"
-  auth_ac_psi_teacher_dictatorial: "Dictatorial ..."
+  auth_ac_psi_teacher_dictatorial: "Dictatorial Telepocracy"
   auth_ac_psi_teacher_dictatorial_desc: "..."
   concept_auth_ac_psi_teacher_dictatorial: "$auth_ac_psi_teacher_dictatorial$"
   auth_ac_psi_teacher_imperial: "Imperial Prophetarchy"
@@ -427,3 +438,4 @@
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
   auth_ac_genetic_hive_chaotic_desc:0 "..."
   auth_ac_genetic_hive_chaotic_effects:0 "Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
+  #needs concepts and gov

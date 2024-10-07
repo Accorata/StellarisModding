@@ -51,7 +51,17 @@ concept_auth_ac_genetic_democratic_chaotic = {
 	tooltip_override = "authority:auth_democratic:auth_ac_genetic_democratic_chaotic"
 }
 
-# Corporate+Hive to go
+concept_auth_ac_genetic_corporate_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_corporate_perfect_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_corporate_perfect"
+}
+
+concept_auth_ac_genetic_corporate_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_corporate_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_corporate_chaotic"
+}
+
+# Hive to go
 # Genetic Edicts
 concept_edict_ac_clone_overdrive = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
