@@ -84,6 +84,9 @@ concept_edict_ac_handicap_distribution = {
 }
 
 # Psionic Authorities
+
+
+# Psi Teacher Authorities
 concept_auth_ac_psi_teacher_democratic = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_democratic_35x35.dds"
 	tooltip_override = "authority:auth_democratic:auth_ac_psi_teacher_democratic"
@@ -108,5 +111,3 @@ concept_auth_ac_psi_teacher_corporate = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_corporate_35x35.dds"
 	tooltip_override = "authority:auth_corporate:auth_ac_psi_teacher_corporate"
 }
-
-# Psi Teacher Authorities

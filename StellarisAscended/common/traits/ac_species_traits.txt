@@ -440,9 +440,8 @@ trait_ac_bio_thrifty = {
 	}
 
 	potential_crossbreeding_chance = 1.0
-
-	allowed_archetypes = { BIOLOGICAL LITHOID }
-	opposites = { "trait_hive_mind" "trait_cyborg_scarcity_algorithms" }
+	
+	opposites = { "trait_hive_mind" }
 	forbidden_ethics = { ethic_gestalt_consciousness }
 	modifier = {
 		pop_job_trade_mult = 0.30

@@ -177,4 +177,29 @@ leader_trait_mutant_brilliance = {
 	randomized = no
 }
 
+leader_trait_mutant_tetrochromat = {
+	inline_script = {
+		script = trait/icon_ac_mutant
+		CLASS = leader
+		ICON = "GFX_leader_trait_ac_mutant_tetrochromat"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.075
+		planet_jobs_unity_produces_mult = 0.075
+	}
+	sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.04
+		planet_jobs_unity_produces_mult = 0.04
+	}
+	leader_class = {
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+}
+
 # Official

@@ -23,6 +23,8 @@
 # Scientist Traits
   leader_trait_mutant_brilliance:0 "$ac_mutated_trait$Brilliance"
   leader_trait_mutant_brilliance_desc:0 "..."
+  leader_trait_mutant_tetrochromat:0 "$ac_mutated_trait$Tetrochromat"
+  leader_trait_mutant_tetrochromat_desc:0 "..."
 
 # Negative Traits
   leader_trait_programmed_loyalty:0 "Programmed Loyalty"
