@@ -814,7 +814,7 @@ country_event = {
 		# Neutral
 		name = ascension_governments.21.c
 		add_modifier = {
-			modifier = ac_reproductive_instillations
+			modifier = ac_reproductive_installations
 		}
 		ai_chance = {
 			factor = 0

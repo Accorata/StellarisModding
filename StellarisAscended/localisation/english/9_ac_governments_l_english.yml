@@ -171,9 +171,9 @@
   ac_innate_abilities:0 "Innate Abilities"
   ac_innate_abilities_desc:0 "..."
   ac_natural_education:0 "Natural Education"
-  ac_natural_education_desc:0 "..."
-  ac_reproductive_instillations:0 "Reproductive Instillations"
-  ac_reproductive_instillations_desc:0 "..."
+  ac_natural_education_desc:0 "...selecting those through the "
+  ac_reproductive_installations:0 "Reproductive Installations"
+  ac_reproductive_installations_desc:0 "..."
   ascension_governments.22.name: "$cyber.1005.name$"
   ascension_governments.22.desc: "$cyber.1005.desc$"
   ascension_governments.22.a: "$cyber.1005.a.tt$" # P
@@ -194,9 +194,9 @@
   trait_ac_auto_analgesic:0 "Auto-Analgesic"
   trait_ac_auto_analgesic_desc:0 "..."
   ac_painless_labor:0 "Painless Labor"
-  ac_painless_labor_desc:0 "..."
+  ac_painless_labor_desc:0 "Neuron advancements eliminating the tenous strain of physical labor and mental damage of costly battles."
   ac_united_in_pain:0 "United in Pain"
-  ac_united_in_pain_desc:0 "This society was offered the chance to forgo pain, but decided to embraces physical suffering as a essential of life."
+  ac_united_in_pain_desc:0 "This society was offered the chance to forgo pain, but decided to embrace physical suffering as a essential of life."
 
 # Final Event
 # Democratic
