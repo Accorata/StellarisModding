@@ -62,6 +62,7 @@ civic_cyberlife = {
 		}
 	}
 	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberlife.dds"
 	pickable_at_start = yes
 	random_weight = {
 		base = 0

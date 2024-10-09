@@ -16,6 +16,30 @@ auth_democratic = {
 		}
 	}
 	advanced_authority_swap = {
+		name = "auth_ac_psionic_democratic_divine"
+		description = "auth_ac_psionic_democratic_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_democratic_eldritch"
+		description = "auth_ac_psionic_democratic_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+		}
+	}
+	advanced_authority_swap = {
 		name = "auth_ac_genetic_democratic_perfect"
 		description = "auth_ac_genetic_democratic_perfect_desc"
 		inherit_icon = no
@@ -83,7 +107,6 @@ auth_oligarchic = {
 			has_country_flag = ac_psionic_divine
 		}
 		modifier = {
-			
 		}
 	}
 	advanced_authority_swap = {
@@ -96,7 +119,6 @@ auth_oligarchic = {
 			has_country_flag = ac_psionic_eldritch
 		}
 		modifier = {
-			
 		}
 	}
 	advanced_authority_swap = {
@@ -165,7 +187,7 @@ auth_dictatorial = {
 		inherit_effects = no
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition			# Temp
+			has_country_flag = ac_psionic_divine
 		}
 		modifier = {
 			empire_size_colonies_mult = -0.15
@@ -187,7 +209,7 @@ auth_dictatorial = {
 		inherit_effects = no
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition			# Temp
+			has_country_flag = ac_psionic_eldritch
 		}
 		modifier = {
 			empire_size_colonies_mult = -0.15
@@ -279,7 +301,7 @@ auth_imperial = {
 		ruler_council_position = councilor_ruler_imperial_ac_psionic_divine		#5 unity, 0.25 influence
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition			# Temp
+			has_country_flag = ac_psionic_divine
 		}
 		modifier = {
 			job_high_priest_per_pop = 0.04
@@ -299,7 +321,7 @@ auth_imperial = {
 		ruler_council_position = councilor_ruler_imperial_ac_psionic_eldritch
 		trigger = {
 			is_scope_valid = yes
-			has_country_flag = ac_has_finished_psionics_tradition			# Temp
+			has_country_flag = ac_psionic_eldritch
 		}
 		modifier = {
 			job_high_priest_per_pop = 0.04
@@ -376,6 +398,30 @@ auth_corporate = {
 		}
 	}
 	advanced_authority_swap = {
+		name = "auth_ac_psionic_corporate_divine"
+		description = "auth_ac_psionic_corporate_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_corporate_eldritch"
+		description = "auth_ac_psionic_corporate_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+		}
+	}
+	advanced_authority_swap = {
 		name = "auth_ac_genetic_corporate_perfect"
 		description = "auth_ac_genetic_corporate_perfect_desc"
 		inherit_icon = no
@@ -385,7 +431,6 @@ auth_corporate = {
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			
 		}
 	}
 	advanced_authority_swap = {
@@ -398,7 +443,6 @@ auth_corporate = {
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
-			
 		}
 	}
 }

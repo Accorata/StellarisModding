@@ -84,7 +84,58 @@ concept_edict_ac_handicap_distribution = {
 }
 
 # Psionic Authorities
+concept_auth_ac_psionic_imperial_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_imperial_divine_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_psionic_imperial_divine"
+}
 
+concept_auth_ac_psionic_imperial_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_imperial_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_psionic_imperial_eldritch"
+}
+
+concept_auth_ac_psionic_dictatorial_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_dictatorial_divine_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_psionic_dictatorial_divine"
+}
+
+concept_auth_ac_psionic_dictatorial_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_dictatorial_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_psionic_dictatorial_eldritch"
+}
+
+concept_auth_ac_psionic_oligarchic_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch"
+}
+
+concept_auth_ac_psionic_democratic_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_democratic_divine_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_psionic_democratic_divine"
+}
+
+concept_auth_ac_psionic_democratic_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_democratic_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_psionic_democratic_eldritch"
+}
+
+concept_auth_ac_psionic_corporate_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_corporate_divine_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_psionic_corporate_divine"
+}
+
+concept_auth_ac_psionic_corporate_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_corporate_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_psionic_corporate_eldritch"
+}
+
+# Psionic Edicts
+#...
 
 # Psi Teacher Authorities
 concept_auth_ac_psi_teacher_democratic = {

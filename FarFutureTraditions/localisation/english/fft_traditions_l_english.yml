@@ -75,3 +75,6 @@
   tr_fft_destiny_adopt:0 "Destiny Traditions"
   tr_fft_destiny_finish:0 "Destiny Traditions Finished"
 
+  tr_fft_destiny_matrioski_ascendant:0 "Matrioski Ascendant"
+  tr_fft_destiny_matrioski_ascendant_delayed:0 "..."
+  tr_fft_destiny_matrioski_ascendant_tooltip:0 "If £ruler£ Ruler level is greater than §Y3§!:\n$t$£mod_planet_jobs_worker_produces_mult£ $mod_planet_jobs_worker_produces_mult$: §Y+10%§!\nIf £ruler£ Ruler level is greater than §Y6§!:\n$t$£mod_planet_jobs_specialist_produces_mult£ $mod_planet_jobs_specialist_produces_mult$: §Y+10%§!\nIf £ruler£ Ruler level is greater than §Y9§!:\n$t$£mod_planet_jobs_ruler_produces_mult£ $mod_planet_jobs_ruler_produces_mult$: §Y+10%§!\n"

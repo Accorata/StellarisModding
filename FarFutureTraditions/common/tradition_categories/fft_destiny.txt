@@ -3,6 +3,7 @@ tradition_fft_destiny = {
 	adoption_bonus = "tr_fft_destiny_adopt"
 	finish_bonus = "tr_fft_destiny_finish"
 	traditions = {
+		"tr_fft_destiny_matrioski_ascendant"
 	}
 	ai_weight = {
 		factor = 50

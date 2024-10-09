@@ -336,7 +336,30 @@
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
-# 
+# Psionic Democratic Divine
+  auth_ac_psionic_democratic_divine:0 "Democratic Empath"
+  auth_ac_psionic_democratic_divine_desc:0 "..."
+  concept_auth_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
+  gov_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
+  gov_ac_psionic_democratic_divine_desc:0 "$auth_ac_psionic_democratic_divine_desc$"
+# Psionic Democratic Eldritch
+  auth_ac_psionic_democratic_eldritch:0 "Democratic Insanity"
+  auth_ac_psionic_democratic_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
+  gov_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
+  gov_ac_psionic_democratic_eldritch_desc:0 "$auth_ac_psionic_democratic_eldritch_desc$"
+# Psionic Corporate Divine
+  auth_ac_psionic_corporate_divine:0 "Corporate Precognition"
+  auth_ac_psionic_corporate_divine_desc:0 "..."
+  concept_auth_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
+  gov_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
+  gov_ac_psionic_corporate_divine_desc:0 "$auth_ac_psionic_corporate_divine_desc$"
+# Psionic Corporate Eldritch
+  auth_ac_psionic_corporate_eldritch:0 "Corporate Subliminals"
+  auth_ac_psionic_corporate_eldritch_desc:0 "..."
+  concept_auth_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
+  gov_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
+  gov_ac_psionic_corporate_eldritch_desc:0 "$auth_ac_psionic_corporate_eldritch_desc$"
 
 ## Events
   ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables have changed
@@ -403,6 +426,66 @@
   ascension_governments.1020.b: "..." # E
   ascension_governments.1020.c: "..." # N
 
+# Final Event
+# Democratic
+  ascension_governments.1032.name: "..."
+  ascension_governments.1032.desc.divine: "..."
+  ascension_governments.1032.desc.eldritch: "..."
+  ascension_governments.1032.desc.neutral: "..."
+  ascension_governments.1032.a: "..."
+  ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1032.b: "..."
+  ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1032.c: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1032.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
+
+# Oligarchic
+  ascension_governments.1033.name: "..."
+  ascension_governments.1033.desc.divine: "..."
+  ascension_governments.1033.desc.eldritch: "..."
+  ascension_governments.1033.desc.neutral: "..."
+  ascension_governments.1033.a: "..."
+  ascension_governments.1033.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1033.b: "..."
+  ascension_governments.1033.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1033.c: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1033.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
+
+# Dictatorial
+  ascension_governments.1034.name: "..."
+  ascension_governments.1034.desc.divine: "..."
+  ascension_governments.1034.desc.eldritch: "..."
+  ascension_governments.1034.desc.neutral: "..."
+  ascension_governments.1034.a: "..."
+  ascension_governments.1034.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1034.b: "..."
+  ascension_governments.1034.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1034.c: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1034.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
+
+# Imperial
+  ascension_governments.1035.name: "..."
+  ascension_governments.1035.desc.divine: "..."
+  ascension_governments.1035.desc.eldritch: "..."
+  ascension_governments.1035.desc.neutral: "..."
+  ascension_governments.1035.a: "..."
+  ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1035.b: "..."
+  ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1035.c: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1035.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
+
+# Corporate
+  ascension_governments.1036.name: "..."
+  ascension_governments.1036.desc.divine: "..."
+  ascension_governments.1036.desc.eldritch: "..."
+  ascension_governments.1036.desc.neutral: "..."
+  ascension_governments.1036.a: "..."
+  ascension_governments.1036.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1036.b: "..."
+  ascension_governments.1036.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1036.c: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1036.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
 
 ### Psionic Teachers ---------------------------------------------------------------------------------
 # Psionic Teacher Authorities

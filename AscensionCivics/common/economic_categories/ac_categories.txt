@@ -1,3 +1,0 @@
-pop_category_ac_droid_drone = {
-	parent = planet_pops
-}

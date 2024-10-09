@@ -1,4 +1,4 @@
-ac_effective_ruler_level = {
+fft_effective_ruler_level = {
 	complex_trigger_modifier = {
  		trigger = has_level
  		trigger_scope = ruler

@@ -4,5 +4,5 @@ tags={
 	"Diplomacy"
 }
 name="Espionage+"
-supported_version="3.10.4"
+supported_version="v3.10.4"
 remote_file_id="3151774675"
