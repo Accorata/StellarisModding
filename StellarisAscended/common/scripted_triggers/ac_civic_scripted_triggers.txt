@@ -51,7 +51,7 @@ is_ac_bio_upgrader = {
 is_ac_cyberlife = {
 	OR = {
 		has_valid_civic = civic_cyberlife
-		# corporate
+		has_valid_civic = civic_cybernet
 		# hive (hive may be unique...)
 	}
 	has_tradition = tr_cybernetics_finish

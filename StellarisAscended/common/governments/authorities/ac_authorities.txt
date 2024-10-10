@@ -25,6 +25,8 @@ auth_democratic = {
 			has_country_flag = ac_psionic_divine
 		}
 		modifier = {
+			pop_job_amenities_mult = 0.15
+			# ...
 		}
 	}
 	advanced_authority_swap = {
@@ -37,6 +39,11 @@ auth_democratic = {
 			has_country_flag = ac_psionic_eldritch
 		}
 		modifier = {
+			pop_job_amenities_mult = 0.15
+			pop_factions_produces_mult = 1
+			faction_approval = -0.1
+			election_term_variance_add = 5
+			country_election_cost_mult = 1
 		}
 	}
 	advanced_authority_swap = {
@@ -71,6 +78,7 @@ auth_democratic = {
 			planet_immigration_pull_mult = 0.25
 		}
 		triggered_modifier = {
+			#needs testing still
 			potential = {
 				always = yes
 			}

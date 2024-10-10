@@ -1,6 +1,10 @@
 civic_bandwidth_enhancers = {
-	playable = { host_has_dlc = "Overlord" }
-	ai_playable = { host_has_dlc = "Overlord" }
+	playable = {
+		host_has_dlc = "Overlord"
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+	}
 	potential = {
 		ethics = {
 			NOT = {
@@ -45,8 +49,12 @@ civic_bandwidth_enhancers = {
 }
 
 civic_bandwidth_incorporated = {
-	playable = { host_has_dlc = "Overlord" }
-	ai_playable = { host_has_dlc = "Overlord" }
+	playable = {
+		host_has_dlc = "Overlord"
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+	}
 	potential = {
 		ethics = {
 			NOT = {
@@ -89,8 +97,12 @@ civic_bandwidth_incorporated = {
 }
 
 civic_bandwidth_optimization = {
-	playable = { host_has_dlc = "Overlord" }
-	ai_playable = { host_has_dlc = "Overlord" }
+	playable = {
+		host_has_dlc = "Overlord"
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+	}
 	potential = {
 		ethics = {
 			value = ethic_gestalt_consciousness
@@ -162,14 +174,14 @@ civic_concurrent_command = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		modifier = {
-			triggered_modifier = {
-				potential = { always = yes }
-				ship_fire_rate_mult = 0.03
-				ship_disengage_opportunities_add = 0.2
-				army_damage_mult = 0.05
-				mult = value:ac_effective_ruler_level
+		triggered_modifier = {
+			potential = {
+				always = yes
 			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
 		}
 	}
 }
@@ -213,14 +225,14 @@ civic_executive_militarization = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		modifier = {
-			triggered_modifier = {
-				potential = { always = yes }
-				ship_fire_rate_mult = 0.03
-				ship_disengage_opportunities_add = 0.2
-				army_damage_mult = 0.05
-				mult = value:ac_effective_ruler_level
+		triggered_modifier = {
+			potential = {
+				always = yes
 			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
 		}
 	}
 }
@@ -252,14 +264,16 @@ civic_nodal_command = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
-		modifier = {
-			triggered_modifier = {
-				potential = { always = yes }
-				ship_fire_rate_mult = 0.03
-				ship_disengage_opportunities_add = 0.2
-				army_damage_mult = 0.05
-				mult = value:ac_effective_ruler_level
+		triggered_modifier = {
+			potential = {
+				always = yes
 			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
+		}
+		modifier = {
 			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}

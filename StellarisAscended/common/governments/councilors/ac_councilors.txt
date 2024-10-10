@@ -107,6 +107,26 @@ councilor_soul_seekers = {
 	}
 }
 
+councilor_world_commissioners = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
+		}
+	}
+	civic = civic_world_commissioners
+	custom_tooltip = "councilor_world_commissioners_custom_modifier_desc"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Psionic
 councilor_telepathic_empire = {
 	leader_class = {
@@ -204,6 +224,23 @@ councilor_hyper_specialization = {
 	civic = civic_hyper_specialization
 	modifier = {
 		planet_jobs_upkeep_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_metallic_repurposing = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_synthetic
+	}
+	civic = civic_metallic_repurposing
+	modifier = {
+		planet_metallurgists_sr_living_metal_produces_add = 0.02
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

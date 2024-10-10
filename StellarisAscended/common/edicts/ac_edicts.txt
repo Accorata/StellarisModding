@@ -63,7 +63,6 @@ ac_unrestricted_mutation = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	edict_lock_in_months = 180
-
 	resources = {
 		category = edicts
 		cost = {
@@ -93,7 +92,6 @@ ac_handicap_distribution = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	edict_lock_in_months = 12
-
 	resources = {
 		category = edicts
 		cost = {
@@ -116,5 +114,33 @@ ac_handicap_distribution = {
 	}
 	ai_weight = {
 		weight = 100
+	}
+}
+
+# Psionic Government Edicts
+ac_betrayal_of_the_mind = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
 	}
 }

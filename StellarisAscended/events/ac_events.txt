@@ -1,5 +1,4 @@
 namespace = ascension_civics
-
 event = {
 	id = ascension_civics.1
 	hide_window = yes
@@ -326,7 +325,8 @@ country_event = {
 		change_dominant_species = {
 			species = last_created_species
 			change_all = yes
-		} # Try this part
+		}
+		# Try this part
 		start_situation = {
 			type = situation_ac_soul_seeking
 			target = root
@@ -364,7 +364,7 @@ country_event = {
 				country_event = {
 					id = ascension_civics.66
 				}
-			}		
+			}
 		}
 	}
 }
@@ -538,13 +538,84 @@ country_event = {
 			country_event = {
 				id = ascension_civics.66
 			}
-		}	
+		}
 	}
 }
 
 # remove country flag when country switches out of sovereign circuity = ac_has_sent_sovereign_cicuitry_event
+country_event = {
+	id = ascension_civics.78
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ac_metal_recycler = yes
+	}
+	immediate = {
+		# Check if the country has a leader with the salvager trait in the same system
+		if = {
+			limit = {
+				any_owned_leader = {
+					OR = {
+						has_trait = leader_trait_salvager
+						has_trait = leader_trait_salvager_2
+						has_trait = leader_trait_salvager_3
+						has_trait = leader_trait_master_salvager
+					}
+					exists = solar_system
+					solar_system = {
+						is_same_value = from.solar_system
+					}
+				}
+			}
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance
+			}
+		}
+		add_resource = {
+			sr_living_metal = 25
+		}
+	}
+}
 
-
+country_event = {
+	id = ascension_civics.79
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		AND = {
+			is_ac_metal_recycler = yes
+			is_scavenger = yes
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				any_owned_leader = {
+					OR = {
+						has_trait = leader_trait_salvager
+						has_trait = leader_trait_salvager_2
+						has_trait = leader_trait_salvager_3
+					}
+					exists = solar_system
+					solar_system = {
+						is_same_value = from.solar_system
+					}
+				}
+			}
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance|BONUS|5|				# Give additional chance from trait, but less than just adding both of them together
+			}
+		}
+		else = {
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance
+			}
+		}
+		add_resource = {
+			sr_living_metal = 25
+		}
+	}
+}
 
 planet_event = {
 	id = ascension_civics.80
@@ -558,7 +629,7 @@ planet_event = {
 				}
 			}
 			create_species = {
-				name = "Cyberform" # Owner species name
+				name = "Cyberform"				# Owner species name
 				class = random_non_machine
 				portrait = random
 				traits = random
@@ -594,7 +665,6 @@ planet_event = {
 # 		homeworld = this
 # 		namelist = this
 # 		gender = this
-
 # 		effect = {
 # 			set_synth_origin_traits_effect = yes
 # 			set_synth_or_robot_portrait_effect = yes

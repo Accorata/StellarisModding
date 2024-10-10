@@ -2614,7 +2614,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1032.c
-		end_event_chain = ac_psionic_eldritch
+		end_event_chain = ac_psionic_shock_chain
 		custom_tooltip = ascension_governments.1032.c.tt
 		trigger = {
 			is_ai = no
@@ -2697,7 +2697,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1033.c
-		end_event_chain = ac_psionic_eldritch
+		end_event_chain = ac_psionic_shock_chain
 		custom_tooltip = ascension_governments.1033.c.tt
 		trigger = {
 			is_ai = no
@@ -2780,7 +2780,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1034.c
-		end_event_chain = ac_psionic_eldritch
+		end_event_chain = ac_psionic_shock_chain
 		custom_tooltip = ascension_governments.1034.c.tt
 		trigger = {
 			is_ai = no
@@ -2863,7 +2863,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1035.c
-		end_event_chain = ac_psionic_eldritch
+		end_event_chain = ac_psionic_shock_chain
 		custom_tooltip = ascension_governments.1035.c.tt
 		trigger = {
 			is_ai = no
@@ -2946,7 +2946,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1036.c
-		end_event_chain = ac_psionic_eldritch
+		end_event_chain = ac_psionic_shock_chain
 		custom_tooltip = ascension_governments.1036.c.tt
 		trigger = {
 			is_ai = no

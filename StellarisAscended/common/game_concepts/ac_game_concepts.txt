@@ -135,7 +135,10 @@ concept_auth_ac_psionic_corporate_eldritch = {
 }
 
 # Psionic Edicts
-#...
+concept_edict_ac_betrayal_of_the_mind = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_betrayal_of_the_mind"
+}
 
 # Psi Teacher Authorities
 concept_auth_ac_psi_teacher_democratic = {
