@@ -37,7 +37,7 @@
 
   civic_synthetic_celestials:0 "Synthetic Celestials"
   civic_synthetic_celestials_desc:0 "Now that this society has upgraded their own bodies, they believe that the rest of the universe must learn the grace of metal and hum of electricity."
-  civic_tooltip_synthetic_celestials_effects:0 "$synthetic_ascension_required$- Can build unique £building£ §Y$building_ac_mega_forge$§! building. \n\nThe £building£ §Y$building_ac_mega_forge$§! grants empire-wide §Y$job_ac_grand_synthesizer_plural_with_icon$§! jobs which produce £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!.\n\n§EModifiers:§!\n$synthetic_ascension_required$- ..."
+  civic_tooltip_synthetic_celestials_effects:0 "$synthetic_ascension_required$- Can build unique £building£ §Y$building_ac_mega_forge$§! building \n\nThe £building£ §Y$building_ac_mega_forge$§! grants empire-wide §Y$job_ac_grand_synthesizer_plural_with_icon$§! jobs which produce £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!.\n\n§EModifiers:§!\n$synthetic_ascension_required$- ..."
   # councilor needed
 
   civic_world_commissioners:0 "World Commissioners"
@@ -53,7 +53,7 @@
 
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!"
-  civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness.\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!."
+  civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!"
   # councilor needed
 
   trait_ascendant_psionic:0 "Ascendant Psionic"
@@ -64,14 +64,14 @@
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This society communicates solely via telepathy... collective communion." # needs to be rewritten
-  civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- Non-Citizen Happiness: §R-15%§!"
+  civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- Non-Citizen Happiness: §R-15%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_female:0 "$councilor_telepathic_empire$"
   councilor_telepathic_empire_desc:0 "..."
 
   civic_telepathic_corporation:0 "Telepathic Enterprise"
   civic_telepathic_corporation_desc:0 "..."
-  civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings. \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- Non-Citizen Happiness: §R-15%§!"
+  civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- Non-Citizen Happiness: §R-15%§!"
   councilor_telepathic_corporation:0 "Chief Telepathic Officer"
   councilor_telepathic_corporation_female:0 "$councilor_telepathic_corporation$"
   councilor_telepathic_corporation_desc:0 "..."
@@ -104,7 +104,7 @@
 
   civic_cyberlife:0 "CyberReality"
   civic_cyberlife_desc:0 "..."
-  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!"
+  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!"
   # councilor needed
 
   civic_cybernet:0 "CyberNet"
@@ -121,11 +121,12 @@
 
   civic_cybergladiators:0 "Cybergladiators"
   civic_cybergladiators_desc:0 "...in the alleyways, ..."
-  civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings. \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "..."
+  civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ $holding_ac_undercity_arena_plural$ holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
 
   # Neon stars...
@@ -203,14 +204,14 @@
 
   civic_bandwidth_enhancers:0 "Bandwidth Enhancers"
   civic_bandwidth_enhancers_desc:0 "This society lives in an entirely virtual reality, and has quickly realized how important the speeds at which their data transmission occurs. This simple material requirement remains one of their few limits, and they strive to remove it."
-  civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_virtual_jobs_produces_mult£ §YJob Output§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
+  civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_virtual_jobs_produces_mult£ §YJob Output§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_enhancers:0 "... Coordinator"
   councilor_bandwidth_enhancers_female:0 "$councilor_bandwidth_enhancers$"
   councilor_bandwidth_enhancers_desc:0 "..."
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
-  civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched.\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases.\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
+  civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n- Can build £building£ $holding_ac_external_router_plural$ holdings \n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_incorporated:0 "Lead Data Marketer" # ...
   councilor_bandwidth_incorporated_female:0 "$councilor_bandwidth_incorporated$"
   councilor_bandwidth_incorporated_desc:0 "..."

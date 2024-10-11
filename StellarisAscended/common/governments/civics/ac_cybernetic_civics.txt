@@ -17,6 +17,13 @@ civic_sovereign_circuitry = {
 				value = MACHINE
 			}
 		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
 	}
 	modification = yes
 	pickable_at_start = yes
@@ -37,6 +44,7 @@ civic_sovereign_circuitry = {
 		}
 		modifier = {
 			divided_patrongage_max_subjects = 1
+			pop_slave_resource_output = 0.25
 		}
 	}
 }
@@ -223,7 +231,7 @@ civic_underworld_bloodsports = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_cybergladiators_effects
+	description = civic_tooltip_underworld_bloodsports_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish

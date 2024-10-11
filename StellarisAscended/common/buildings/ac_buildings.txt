@@ -14,22 +14,18 @@ building_ac_psi_tower = {
 			has_modifier = slave_colony
 		}
 	}
-
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_telepathic_empire = no
 		}
 	}
-
 	planet_modifier = {
 		job_telepath_per_pop = 0.1
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -42,7 +38,6 @@ building_ac_psi_tower = {
 		}
 		job_politician_add = 1
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -55,7 +50,6 @@ building_ac_psi_tower = {
 			job_executive_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -68,7 +62,6 @@ building_ac_psi_tower = {
 			job_steward_add = 2
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -78,7 +71,6 @@ building_ac_psi_tower = {
 			energy = @b2_upkeep
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -91,7 +83,6 @@ building_ac_psi_tower = {
 		}
 		text = job_politician_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -102,7 +93,6 @@ building_ac_psi_tower = {
 		}
 		text = job_executive_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -113,7 +103,6 @@ building_ac_psi_tower = {
 		}
 		text = job_steward_effect_desc
 	}
-
 	triggered_desc = {
 		text = job_telepath_effect_desc
 	}
@@ -136,27 +125,25 @@ building_ac_grand_sapling = {
 			has_modifier = slave_colony
 		}
 	}
-
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_blossoming = no
 		}
 	}
-
 	planet_modifier = {
 		job_solarpunk_anarchist_add = 1
 		planet_farmers_food_produces_add = 2
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
-				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+				has_councilor = {
+					COUNCILOR = "councilor_blossoming_worlds"
+				}
 			}
 		}
 		pop_happiness = 0.02
@@ -170,7 +157,6 @@ building_ac_grand_sapling = {
 		}
 		pop_happiness = 0.1
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -180,7 +166,6 @@ building_ac_grand_sapling = {
 			food = @b2_upkeep
 		}
 	}
-
 	triggered_desc = {
 		text = job_solarpunk_anarchist_effect_desc
 	}
@@ -203,27 +188,25 @@ building_ac_hanging_cities = {
 			has_modifier = slave_colony
 		}
 	}
-
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_blossoming = no
 		}
 	}
-
 	planet_modifier = {
 		job_solarpunk_anarchist_add = 1
 		planet_housing_add = 8
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			owner = {
-				has_councilor = { COUNCILOR = "councilor_blossoming_worlds" } 
+				has_councilor = {
+					COUNCILOR = "councilor_blossoming_worlds"
+				}
 			}
 		}
 		planet_jobs_produces_mult = 0.02
@@ -237,7 +220,6 @@ building_ac_hanging_cities = {
 		}
 		planet_jobs_produces_mult = 0.1
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -247,7 +229,6 @@ building_ac_hanging_cities = {
 			minerals = @b2_upkeep
 		}
 	}
-
 	triggered_desc = {
 		text = job_solarpunk_anarchist_effect_desc
 	}
@@ -268,27 +249,22 @@ building_ac_xanadu = {
 			is_ac_xanadu = yes
 		}
 	}
-
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_xanadu = no
 		}
 	}
-
 	country_modifier = {
 		pop_growth_from_immigration = 0.1
 		planet_immigration_pull_mult = 0.1
 	}
-
 	planet_modifier = {
 		job_resort_worker_add = 4
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -300,7 +276,6 @@ building_ac_xanadu = {
 			job_executive_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -312,7 +287,6 @@ building_ac_xanadu = {
 			job_steward_add = 2
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -322,7 +296,6 @@ building_ac_xanadu = {
 			energy = @b2_upkeep
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -332,7 +305,6 @@ building_ac_xanadu = {
 		}
 		text = job_executive_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -342,7 +314,6 @@ building_ac_xanadu = {
 		}
 		text = job_steward_effect_desc
 	}
-
 	triggered_desc = {
 		text = job_resort_worker_effect_desc
 	}
@@ -353,37 +324,29 @@ building_ac_undercity_arena = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 	category = amenity
-
 	potential = {
 		exists = owner
 		owner = {
 			is_ac_cybergladiator = yes
 		}
 	}
-
 	allow = {
-
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_cybergladiator = no
 		}
 	}
-
 	country_modifier = {
 		army_damage_mult = 0.1
 	}
-
 	planet_modifier = {
 		job_cyberdome_duelist_add = 2
 		job_cyberdome_spectator_add = 2
 		army_starting_experience_add = 50
 		planet_crime_add = 10
 	}
-	# civic imcreases output of duelist jobs by 3 unity, 3 engineering research
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -401,11 +364,9 @@ building_ac_mega_forge = {
 	base_cap_amount = 1
 	empire_limit = 1
 	category = manufacturing
-
 	allow = {
 		has_upgraded_capital = yes
 	}
-
 	potential = {
 		custom_tooltip = {
 			text = EMPIRE_UNIQUE_BUILDING
@@ -415,14 +376,12 @@ building_ac_mega_forge = {
 		}
 		exists = planet
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_world_builders = no
 		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -433,7 +392,6 @@ building_ac_mega_forge = {
 			energy = @b3_upkeep
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -443,7 +401,6 @@ building_ac_mega_forge = {
 		}
 		job_ac_grand_synthesizer_add = 2
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			exists = owner
@@ -453,7 +410,6 @@ building_ac_mega_forge = {
 		}
 		job_ac_grand_synthesizer_per_pop = 0.04
 	}
-
 	triggered_desc = {
 		text = job_ac_grand_synthesizer_effect_desc
 	}

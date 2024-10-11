@@ -212,7 +212,7 @@
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
 # Oligarchic
-  ascension_governments.33.name: "A New Superiority"
+  ascension_governments.33.name: "New Superiority"
   ascension_governments.33.desc.perfect: "..."
   ascension_governments.33.desc.chaotic: "..."
   ascension_governments.33.desc.neutral: "..."
@@ -266,18 +266,18 @@
 # Edicts
 # Imperial
   edict_ac_clone_overdrive:0 "Clone Overdrive"
-  edict_ac_clone_overdrive_desc:0 "..."
+  edict_ac_clone_overdrive_desc:0 "Through our clone bays, we must build new generations to serve the genetic dynasty."
   concept_edict_ac_clone_overdrive:0 "$edict_ac_clone_overdrive$"
   unlock_edict_ac_clone_overdrive:0 "$unlock_edict_tt$['concept_edict_ac_clone_overdrive']"
 
   edict_ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
-  edict_ac_harvest_genetic_failures_desc:0 "..."
+  edict_ac_harvest_genetic_failures_desc:0 "Through the ..."
   concept_edict_ac_harvest_genetic_failures:0 "$edict_ac_harvest_genetic_failures$"
   unlock_edict_ac_harvest_genetic_failures:0 "$unlock_edict_tt$['concept_edict_ac_harvest_genetic_failures']"
 
 # Oligarchic
   edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
-  edict_ac_unrestricted_mutation_desc:0 "..."
+  edict_ac_unrestricted_mutation_desc:0 "We must not limit ourselves in our mutations and must continue to push the limits of what is possible in our new people."
   concept_edict_ac_unrestricted_mutation:0 "$edict_ac_unrestricted_mutation$"
   unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
   edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with an additional Negative trait from §Y50%§! to §Y100%§!."
@@ -298,7 +298,7 @@
 ## Authorities
 # Psionic Imperial Divine
   auth_ac_psionic_imperial_divine:0 "Imperial Apotheosis"
-  auth_ac_psionic_imperial_divine_desc:0 "..."
+  auth_ac_psionic_imperial_divine_desc:0 "The divine speak to ourselves in physical form. This ruler is no mortal, but an asceneded deity leading our great nation."
   concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
@@ -314,19 +314,19 @@
   councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "$imperial_ruler_desc$"
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
-  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. ..."
+  auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. The prophets have divined our destiny over all."
   concept_auth_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine:0 "$auth_ac_psionic_dictatorial_divine$"
   gov_ac_psionic_dictatorial_divine_desc:0 "$auth_ac_psionic_dictatorial_divine_desc$"
 # Psionic Dictatorial Eldritch
   auth_ac_psionic_dictatorial_eldritch:0 "Dictatorial Void"
-  auth_ac_psionic_dictatorial_eldritch_desc:0 "..."
+  auth_ac_psionic_dictatorial_eldritch_desc:0 "The Shroud touches every part of physical space all at once, and through it all minds can be observed as one."
   concept_auth_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
   gov_ac_psionic_dictatorial_eldritch:0 "$auth_ac_psionic_dictatorial_eldritch$"
   gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
 # Psionic Oligarchic Divine
   auth_ac_psionic_oligarchic_divine:0 "Oligarchic Order"
-  auth_ac_psionic_oligarchic_divine_desc:0 "..."
+  auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, ..."
   concept_auth_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
@@ -344,7 +344,7 @@
   gov_ac_psionic_democratic_divine_desc:0 "$auth_ac_psionic_democratic_divine_desc$"
 # Psionic Democratic Eldritch
   auth_ac_psionic_democratic_eldritch:0 "Democratic Insanity"
-  auth_ac_psionic_democratic_eldritch_desc:0 "..."
+  auth_ac_psionic_democratic_eldritch_desc:0 "Collective mood determines our rule. Here laws are not the product of consious reason, but rather are decided by the inner truths beyond our mind's awareness."
   concept_auth_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
   gov_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
   gov_ac_psionic_democratic_eldritch_desc:0 "$auth_ac_psionic_democratic_eldritch_desc$"
@@ -356,7 +356,7 @@
   gov_ac_psionic_corporate_divine_desc:0 "$auth_ac_psionic_corporate_divine_desc$"
 # Psionic Corporate Eldritch
   auth_ac_psionic_corporate_eldritch:0 "Corporate Subliminals"
-  auth_ac_psionic_corporate_eldritch_desc:0 "..."
+  auth_ac_psionic_corporate_eldritch_desc:0 "Gifted telepaths implant consumer desires straight into the mind's of the population. A whole new meaning to telemarketing."
   concept_auth_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch_desc:0 "$auth_ac_psionic_corporate_eldritch_desc$"
@@ -370,8 +370,8 @@
   ascension_governments.1002.desc: "...\n\n..."
   ascension_governments.1002.a: "..."
   ascension_governments.1002.a.tt: "Emphasis on ..."
-  ascension_governments.1002.b: "..."
-  ascension_governments.1002.b.tt: "Emphasis on ..."
+  ascension_governments.1002.b: "The Unconsious Mind reveals True Insight."
+  ascension_governments.1002.b.tt: "Emphasis on faction unity."
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1003.desc: "...\n\n..."
@@ -464,7 +464,7 @@
   ascension_governments.1034.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
 # Imperial
-  ascension_governments.1035.name: "..."
+  ascension_governments.1035.name: "Regal Ascendency"
   ascension_governments.1035.desc.divine: "..."
   ascension_governments.1035.desc.eldritch: "..."
   ascension_governments.1035.desc.neutral: "..."

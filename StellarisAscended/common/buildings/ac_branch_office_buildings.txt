@@ -1,0 +1,64 @@
+# Cybernetic
+holding_ac_undercity_arena = {
+	base_buildtime = @b1_time
+	icon = building_ac_undercity_arena
+	owner_type = corporate
+	category = amenity
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ac_cybergladiator = yes
+		}
+	}
+	country_modifier = {
+		army_damage_mult = 0.1
+	}
+	planet_modifier = {
+		job_cyberdome_duelist_add = 1
+		job_cyberdome_spectator_add = 1
+		planet_crime_add = 20
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			energy = 10
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
+
+# Virtual
+holding_ac_external_router = {
+	base_buildtime = @b2_time
+	owner_type = corporate
+	category = unity
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ac_bandwidth_corporate = yes
+		}
+	}
+	country_modifier = {
+		megastructures_hyper_relay_unity_produces_add = 2
+	}
+	planet_modifier = {
+		trade_value_mult = 0.1
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	ai_weight = {
+		factor = 1
+	}
+}
