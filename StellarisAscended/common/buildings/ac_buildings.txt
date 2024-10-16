@@ -414,3 +414,107 @@ building_ac_mega_forge = {
 		text = job_ac_grand_synthesizer_effect_desc
 	}
 }
+
+# Oligarchic Order Authority
+building_ac_order_hall = { # icon needed
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	category = government
+	allow = {
+		has_upgraded_capital = yes
+	}
+	potential = {
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			owner = {
+				is_oligarchic_authority = yes
+				has_empire_flag = ac_psionic_divine
+				NOT = {
+					has_origin = origin_toxic_knights
+				}
+			}
+		}
+		exists = planet
+	}
+	destroy_trigger = {
+		OR = {
+			NOT = {
+				exists = owner
+				owner = {
+					is_oligarchic_authority = yes
+					has_empire_flag = ac_psionic_divine
+				}
+			}
+			AND = {
+				exists = owner
+				has_origin = origin_toxic_knights
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_ac_normal_knight_add = 2
+		job_ac_normal_knight_per_pop = 0.05
+		planet_amenities_add = 10
+	}
+
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		category = planet_buildings
+	}
+
+	triggered_desc = {
+		text = job_ac_normal_knight_effect_desc
+	}
+}
+
+building_ac_order_hall_knights = { # icon needed
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	category = government
+	allow = {
+		has_upgraded_capital = yes
+	}
+	potential = {
+		custom_tooltip = {
+			text = EMPIRE_UNIQUE_BUILDING
+			owner = {
+				is_oligarchic_authority = yes
+				has_empire_flag = ac_psionic_divine
+				has_origin = origin_toxic_knights
+			}
+		}
+		exists = planet
+	}
+	destroy_trigger = {
+		NOT = {
+			exists = owner
+			owner = {
+				is_oligarchic_authority = yes
+				has_empire_flag = ac_psionic_divine
+				has_origin = origin_toxic_knights
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_knight_add = 2
+		job_knight_per_pop = 0.05
+		planet_amenities_add = 10
+	}
+
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		category = planet_buildings
+	}
+
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+}

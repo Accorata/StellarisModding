@@ -133,10 +133,12 @@ ac_betrayal_of_the_mind = {
 		}
 	}
 	potential = {
-		is_imperial_authority = yes
+		is_dictatorial_authority = yes
 		has_country_flag = ac_psionic_eldritch
 	}
 	modifier = {
+		planet_stability_add = 10
+		planet_crime_add = -25
 	}
 	allow = {
 	}

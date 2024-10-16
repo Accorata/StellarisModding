@@ -328,14 +328,30 @@
   auth_ac_psionic_oligarchic_divine:0 "Oligarchic Order"
   auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, ..."
   concept_auth_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
+  auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine$"
+  auth_ac_psionic_oligarchic_divine_toxic_god_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
+  concept_auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine_toxic_god$"
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
+  unlock_building_ac_order_hall:0 "Unlocks Building: ['concept_building_ac_order_hall']"
+  unlock_building_ac_order_hall_knights:0 "Unlocks Building: ['concept_building_ac_order_hall_knights']"
+  auth_ac_psionic_oligarchic_divine_effects:0 "$unlock_building_ac_order_hall$"
+  auth_ac_psionic_oligarchic_divine_toxic_god_effects:0 "$unlock_building_ac_order_hall_knights$"
+
+  # $unlock_building_cyberdome$
 # Psionic Oligarchic Eldritch
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
   auth_ac_psionic_oligarchic_eldritch_desc:0 "..."
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
+  auth_ac_psionic_oligarchic_eldritch_effects:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
+
+  council_agenda_ac_shroud_invocation_name:0 "Invoke the Shroud"
+  council_agenda_ac_shroud_invocation_desc:0 "Through our collective minds, the Conclave of Telepaths will attempt to breach the Shroud again."
+  agenda_ac_shroud_invocation_finish:0 "$council_agenda_ac_shroud_invocation_name$ $agenda_ref$"
+  agenda_ac_shroud_invocation_finish_desc:0 "$council_agenda_ac_shroud_invocation_desc$"
+  council_agenda_ac_shroud_invocation_effect:0 "Removes §YShroud Cooldown§! allowing our empire to Breach the Shroud again."
 # Psionic Democratic Divine
   auth_ac_psionic_democratic_divine:0 "Democratic Empath"
   auth_ac_psionic_democratic_divine_desc:0 "..."
@@ -459,19 +475,19 @@
   ascension_governments.1034.a: "..."
   ascension_governments.1034.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1034.b: "..."
-  ascension_governments.1034.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1034.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$"
   ascension_governments.1034.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1034.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
 # Imperial
   ascension_governments.1035.name: "Regal Ascendency"
-  ascension_governments.1035.desc.divine: "..."
+  ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen [ruler.GetRulerTitle] [ruler.GetRegnalName] is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills. All will see the light; all will bow before them; all will bask in their brilliant embrace."
   ascension_governments.1035.desc.eldritch: "..."
   ascension_governments.1035.desc.neutral: "..."
   ascension_governments.1035.a: "..."
   ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1035.b: "..."
-  ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$"
+  ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$" # change edict
   ascension_governments.1035.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1035.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
 
@@ -500,13 +516,13 @@
   auth_ac_psi_teacher_democratic_desc: "..."
   concept_auth_ac_psi_teacher_democratic: "$auth_ac_psi_teacher_democratic$"
   auth_ac_psi_teacher_oligarchic: "Oligarchic Divinocracy"
-  auth_ac_psi_teacher_oligarchic_desc: "..."
+  auth_ac_psi_teacher_oligarchic_desc: "Within this oligarchy, the elite strive not only to control the present, but also the future. Gifted diviners rise quickly through the class strata until they serve upper society and shape their dreams."
   concept_auth_ac_psi_teacher_oligarchic: "$auth_ac_psi_teacher_oligarchic$"
   auth_ac_psi_teacher_dictatorial: "Dictatorial Telepocracy"
   auth_ac_psi_teacher_dictatorial_desc: "..."
   concept_auth_ac_psi_teacher_dictatorial: "$auth_ac_psi_teacher_dictatorial$"
   auth_ac_psi_teacher_imperial: "Imperial Prophetarchy"
-  auth_ac_psi_teacher_imperial_desc: "..."
+  auth_ac_psi_teacher_imperial_desc: "Guided by the teachers, our imperial bloodline has been prophesized to rule for eternity. The noble houses train their elite telepaths in tandem with the teachers to understand the prophecy and ensure their continual elevation."
   concept_auth_ac_psi_teacher_imperial: "$auth_ac_psi_teacher_imperial$"
   auth_ac_psi_teacher_corporate: "Corporate SacredMind"
   auth_ac_psi_teacher_corporate_desc: "..."

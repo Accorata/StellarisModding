@@ -126,7 +126,7 @@
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "..."
-  civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ $holding_ac_undercity_arena_plural$ holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
 
   # Neon stars...
@@ -211,7 +211,7 @@
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
-  civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n- Can build £building£ $holding_ac_external_router_plural$ holdings \n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
+  civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n- Can build £building£ §Y$holding_ac_external_router$§! holdings \n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_incorporated:0 "Lead Data Marketer" # ...
   councilor_bandwidth_incorporated_female:0 "$councilor_bandwidth_incorporated$"
   councilor_bandwidth_incorporated_desc:0 "..."
@@ -288,6 +288,14 @@
 
   civic_omnirecyclers:0 "Omnirecyclers"
   civic_omnirecyclers_desc:0 "..."
+  # councilor needed
+
+# Virtual -----------------------------------------------------------------------------------------
+  virtual_ascension_required:0 "If §YVirtual§! Ascension completed:\n"
+  
+  civic_stellar_monopoly:0 "Stellar Monopoly"
+  civic_stellar_monopoly_desc:0 "..."
+  civic_tooltip_stellar_monopoly_effects:0 "§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
   # councilor needed
 
 # Hive Cybernetic ---------------------------------------------------------------------------------

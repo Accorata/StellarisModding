@@ -1,0 +1,42 @@
+civic_stellar_monopoly = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_corporate
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			# NOT = {
+			# 	value = 
+			# }
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_stellar_monopolization.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	description = civic_tooltip_stellar_monopoly_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_nanotech_finish
+		}
+		modifier = {
+			empire_size_systems_mult = -0.5
+			starbase_outpost_cost_mult = -0.25
+			starbases_upkeep_mult = -0.15
+		}
+	}
+}

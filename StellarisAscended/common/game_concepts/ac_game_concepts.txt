@@ -6,8 +6,12 @@ concept_ac_automodding_bio = {
 	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_biological.dds"
 }
 
-concept_job_ac_grand_synthesizer = {
+concept_ac_grand_synthesizer = {
 	icon = "gfx/interface/icons/jobs/job_ac_grand_synthesizer.dds"
+}
+
+concept_ac_normal_knight = {
+	icon = "gfx/interface/icons/jobs/job_knight.dds"
 }
 
 # Genetic Authorities
@@ -107,6 +111,21 @@ concept_auth_ac_psionic_dictatorial_eldritch = {
 concept_auth_ac_psionic_oligarchic_divine = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_35x35.dds"
 	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine"
+}
+
+concept_auth_ac_psionic_oligarchic_divine_toxic_god = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_toxic_god_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine_toxic_god"
+}
+
+concept_building_ac_order_hall = {
+	icon =  "gfx/interface/icons/buildings/building_cyberdome.dds" #change
+	tooltip_override = "building:building_ac_order_hall"
+}
+
+concept_building_ac_order_hall_knights = {
+	icon =  "gfx/interface/icons/buildings/building_cyberdome.dds" #change
+	tooltip_override = "building:building_ac_order_hall_knights"
 }
 
 concept_auth_ac_psionic_oligarchic_eldritch = {
