@@ -237,11 +237,11 @@
 
   ascension_governments.42.name: "..."
   ascension_governments.42.desc: "Our very own [leader_1.GetTitle] [leader_1.GetName], ..."
-  ascension_governments.42.a: "A Necessary Sacrifice"
+  ascension_governments.42.a: "A necessary sacrifice."
 
 # Imperial
   ascension_governments.35.name: "Empire Reborn"
-  ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented <ruler> with ..."
+  ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented [ruler.GetRulerTitle] [ruler.GetRegnalName] with ..."
   ascension_governments.35.desc.chaotic: "..."
   ascension_governments.35.desc.neutral: "..."
   ascension_governments.35.a: "Clones forever."
@@ -298,7 +298,7 @@
 ## Authorities
 # Psionic Imperial Divine
   auth_ac_psionic_imperial_divine:0 "Imperial Apotheosis"
-  auth_ac_psionic_imperial_divine_desc:0 "The divine speak to ourselves in physical form. This ruler is no mortal, but an asceneded deity leading our great nation."
+  auth_ac_psionic_imperial_divine_desc:0 "The divine speak to ourselves in physical form. This ruler is no mortal, but an ascended deity leading our great nation."
   concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
@@ -326,15 +326,15 @@
   gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
 # Psionic Oligarchic Divine
   auth_ac_psionic_oligarchic_divine:0 "Oligarchic Order"
-  auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, ..."
+  auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, our order strives to train the very best of our psionic virtuousos. These honorable knights represent the pinnacle of our progress and guide us towards a better future."
   concept_auth_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine$"
   auth_ac_psionic_oligarchic_divine_toxic_god_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
   concept_auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine_toxic_god$"
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
-  unlock_building_ac_order_hall:0 "Unlocks Building: ['concept_building_ac_order_hall']"
-  unlock_building_ac_order_hall_knights:0 "Unlocks Building: ['concept_building_ac_order_hall_knights']"
+  unlock_building_ac_order_hall:0 "Unlocks Unique Building: ['concept_building_ac_order_hall']"
+  unlock_building_ac_order_hall_knights:0 "Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
   auth_ac_psionic_oligarchic_divine_effects:0 "$unlock_building_ac_order_hall$"
   auth_ac_psionic_oligarchic_divine_toxic_god_effects:0 "$unlock_building_ac_order_hall_knights$"
 
@@ -348,10 +348,10 @@
   auth_ac_psionic_oligarchic_eldritch_effects:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
 
   council_agenda_ac_shroud_invocation_name:0 "Invoke the Shroud"
-  council_agenda_ac_shroud_invocation_desc:0 "Through our collective minds, the Conclave of Telepaths will attempt to breach the Shroud again."
+  council_agenda_ac_shroud_invocation_desc:0 "Through our collective minds, the Conclave of Telepaths will attempt to breach the Shroud will renowed vigor."
   agenda_ac_shroud_invocation_finish:0 "$council_agenda_ac_shroud_invocation_name$ $agenda_ref$"
   agenda_ac_shroud_invocation_finish_desc:0 "$council_agenda_ac_shroud_invocation_desc$"
-  council_agenda_ac_shroud_invocation_effect:0 "Removes §YShroud Cooldown§! allowing our empire to Breach the Shroud again."
+  council_agenda_ac_shroud_invocation_effect:0 "Removes any §YShroud Cooldown§! allowing our empire to Breach the Shroud again." #check breach the shroud action (name)
 # Psionic Democratic Divine
   auth_ac_psionic_democratic_divine:0 "Democratic Empath"
   auth_ac_psionic_democratic_divine_desc:0 "..."
@@ -385,26 +385,26 @@
   ascension_governments.1002.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1002.desc: "...\n\n..."
   ascension_governments.1002.a: "..."
-  ascension_governments.1002.a.tt: "Emphasis on ..."
-  ascension_governments.1002.b: "The Unconsious Mind reveals True Insight."
-  ascension_governments.1002.b.tt: "Emphasis on faction unity."
+  ascension_governments.1002.a.tt: "Emphasis on unity and workers"
+  ascension_governments.1002.b: "The unconsious mind reveals true insight."
+  ascension_governments.1002.b.tt: "Emphasis on faction output."
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1003.desc: "...\n\n..."
+  ascension_governments.1003.desc: "...\n\n...Are we to worship the..."
   ascension_governments.1003.a: "..."
   ascension_governments.1003.a.tt: "Emphasis on ..."
   ascension_governments.1003.b: "..."
-  ascension_governments.1003.b.tt: "Emphasis on ..."
+  ascension_governments.1003.b.tt: "Emphasis on Shroud interactions"
 # Dictatorial
   ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1004.desc: "...\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths that merge with the Shroud to wield control over the entire populace."
+  ascension_governments.1004.desc: "Through the wonderous rule of [From.GetRulerTitle] [From.GetRulerName], our country has reached true enlightenment. Our mind's potential has been unleashed and the energies of the Shroud are ours. As with any revolution, the might of the [From.GetRulerTitle] must be protected from the winds of change. Without their generous rule, chaos would reign across our consious. A choice must be made to guarantee stability.\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths that merge with the Shroud to wield control over the entire populace."
   ascension_governments.1004.a: "Legitamize our sovereignty."
-  ascension_governments.1004.a.tt: "Emphasis on ..."
+  ascension_governments.1004.a.tt: "Emphasis on claims and rulers."
   ascension_governments.1004.b: "Assemble the conclave."
-  ascension_governments.1004.b.tt: "Emphasis on ..."
+  ascension_governments.1004.b.tt: "Emphasis on ethics attraction and edicts."
 # Imperial
   ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
+  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. Greater heights than ever thought possible are mere moments away. But now we must decide how [From.GetRulerTitle] [From.GetRulerName] wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
   ascension_governments.1005.a: "Begin the ascension."
   ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
   ascension_governments.1005.b: "Call eldritch beings to propose the offer."
@@ -413,9 +413,9 @@
   ascension_governments.1006.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1006.desc: "...\n\n..."
   ascension_governments.1006.a: "..."
-  ascension_governments.1006.a.tt: "Emphasis on ..."
+  ascension_governments.1006.a.tt: "Emphasis on branch offices."
   ascension_governments.1006.b: "..."
-  ascension_governments.1006.b.tt: "Emphasis on ..."
+  ascension_governments.1006.b.tt: "Emphasis on profit."
 
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
@@ -429,7 +429,7 @@
   ac_dark_rituals_desc:0 "..."
   ascension_governments.1010.name: "Nether Calling"
   ascension_governments.1010.desc: "...\n\n..."
-  ascension_governments.1010.a: "Begin the Ritual." # E 
+  ascension_governments.1010.a: "Begin the ritual." # E 
   ascension_governments.1010.a.tt: "Attempt to summon a Psionic Avatar."
   ascension_governments.1010.b: "Such risks should not be taken." # D
   ac_abstaining_from_darkness:0 "Abstaining from Darkness"
@@ -481,10 +481,10 @@
 
 # Imperial
   ascension_governments.1035.name: "Regal Ascendency"
-  ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen [ruler.GetRulerTitle] [ruler.GetRegnalName] is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills. All will see the light; all will bow before them; all will bask in their brilliant embrace."
+  ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen [ruler.GetRulerTitle] [ruler.GetRegnalName] is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills.\n\nAll will see the light; all will bow before them; all will bask in their brilliant embrace."
   ascension_governments.1035.desc.eldritch: "..."
   ascension_governments.1035.desc.neutral: "..."
-  ascension_governments.1035.a: "..."
+  ascension_governments.1035.a: "Divinity at last."
   ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1035.b: "..."
   ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$" # change edict
@@ -532,11 +532,11 @@
   ascension_governments.900.name: "The Teacher's Gift"
   ascension_governments.900.desc: "...\n\nIn response to our enlightenment, the government will now be guided by the teacher's insights, embracing psionic theory throughout its structure. The §Y[Owner.GetGovernmentName]§! will be created."
   ascension_governments.900.a: "..."
-  ascension_governments.900.a.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
-  ascension_governments.900.b.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."
-  ascension_governments.900.c.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_dictatorial']§!."
-  ascension_governments.900.d.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_imperial']§!."
-  ascension_governments.900.e.tooltip: "Our authority has changed to psionic-focused §Y['concept_auth_ac_psi_teacher_corporate']§!."
+  ascension_governments.900.a.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
+  ascension_governments.900.b.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."
+  ascension_governments.900.c.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_dictatorial']§!."
+  ascension_governments.900.d.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_imperial']§!."
+  ascension_governments.900.e.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_corporate']§!."
 
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
