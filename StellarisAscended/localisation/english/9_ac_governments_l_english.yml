@@ -408,14 +408,14 @@
   ascension_governments.1005.a: "Begin the ascension."
   ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
   ascension_governments.1005.b: "Call eldritch beings to propose the offer."
-  ascension_governments.1005.b.tt: "Emphasis on the Shroud."
+  ascension_governments.1005.b.tt: "Emphasis on our patron."
 # Corporate
   ascension_governments.1006.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1006.desc: "...\n\n..."
   ascension_governments.1006.a: "..."
   ascension_governments.1006.a.tt: "Emphasis on branch offices."
   ascension_governments.1006.b: "..."
-  ascension_governments.1006.b.tt: "Emphasis on profit."
+  ascension_governments.1006.b.tt: "Emphasis on profit and intel."
 
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
@@ -433,14 +433,24 @@
   ascension_governments.1010.a.tt: "Attempt to summon a Psionic Avatar."
   ascension_governments.1010.b: "Such risks should not be taken." # D
   ac_abstaining_from_darkness:0 "Abstaining from Darkness"
-  ac_abstaining_from_darkness_desc:0 "..."
+  ac_abstaining_from_darkness_desc:0 "The Shroud can grant great benefits, but also is a place filled with horror. We would do well to be careful."
+  ascension_governments.1011.name: "Telepathic Health"
+  ascension_governments.1011.desc: "...\n\n..."
+  ascension_governments.1011.a: "[ac_healed_leader.GetTitle] [ac_healed_leader.GetName] could benefit greatly." # N
+  ascension_governments.1011.b: "All parts of the psyche must be uplifted." # D
+  ascension_governments.1011.c: "The mind is our gateway to the Shroud." # E
+  ascension_governments.1011.d: "Another avenue for profit." # Corporate - E
+  ac_mind_body_soul:0 "Mind Body Soul"
+  ac_mind_body_soul_desc:0 "..."
+  ac_eldritch_mind:0 "Eldritch Mind"
+  ac_eldritch_mind_desc:0 "..."
 
 # Event Pool 2
   ascension_governments.1020.name: "Chosen Sovereignty"
   ascension_governments.1020.desc: "...\n\n..."
-  ascension_governments.1020.a: "..." # D
-  ascension_governments.1020.b: "..." # E
-  ascension_governments.1020.c: "..." # N
+  ascension_governments.1020.a: "Our diety walks the physical realm." # D
+  ascension_governments.1020.b: "The Chosen One is blessed by the Shroud." # E
+  ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
 
 # Final Event
 # Democratic

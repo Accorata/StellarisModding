@@ -18,6 +18,13 @@ holding_ac_undercity_arena = {
 		job_cyberdome_spectator_add = 1
 		planet_crime_add = 20
 	}
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }
+		}
+		planet_crime_add = 20
+		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -49,6 +56,13 @@ holding_ac_external_router = {
 	planet_modifier = {
 		trade_value_mult = 0.1
 	}
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }
+		}
+		planet_crime_add = 20
+		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -60,5 +74,83 @@ holding_ac_external_router = {
 	}
 	ai_weight = {
 		factor = 1
+	}
+}
+
+# Psionic Governments 
+building_ac_manipulation_network = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	owner_type = corporate
+
+	category = resource
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_megacorp = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = building_ac_manipulation_network_fail_tt
+			planet.owner = {
+				NOT = {
+					any_owned_planet = {
+						has_branch_office = yes
+						has_holding = {
+							holding = building_ac_manipulation_network
+							owner = root.branch_office_owner
+						}
+					}
+				}
+			}
+		}
+	}
+
+	planet_modifier = {
+		trade_value_mult = 0.20
+	}
+
+	country_modifier = {
+		# this is for the megacorp...
+		pop_lifestyle_trade_value_mult = 0.15
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }
+		}
+		planet_crime_add = 20
+		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			energy = 5
+			society_research = 5
+			influence = 0.5
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+
+		modifier = {
+			weight = 0.5
+			branch_office_owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+			}
+		}
 	}
 }

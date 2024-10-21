@@ -432,7 +432,10 @@ country_event = {
 		name = ascension_governments.9.c
 		custom_tooltip = ac_genetic.social_consequences.tt
 		trigger = {
-			is_memorialist_empire = yes
+			# testing (owner = {}) ...
+			owner = {
+				is_memorialist_empire = yes
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -2239,6 +2242,106 @@ country_event = {
 	}
 }
 
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Telepathic Health
+	id = ascension_governments.1011
+	title = ascension_governments.1011.name
+	desc = ascension_governments.1011.desc
+	picture = GFX_evt_friendly_enlightenment
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				num_negative_traits > 0
+			}
+			save_event_target_as = ac_healed_leader
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1011.a
+		trigger = {
+			exists = event_target:ac_healed_leader
+		}
+		event_target:ac_healed_leader = {
+			remove_all_negative_traits = yes
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1011.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_mind_body_soul
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1011.c
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_eldritch_mind
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # Pharma State
+		# Eldritch
+		name = ascension_governments.1011.d
+		custom_tooltip = ac_psionic.social_consequences.tt
+		trigger = {
+			owner = {
+				has_valid_civic = civic_private_healthcare_corporate
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		# to do
+		ai_chance = {
+			factor = 5
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
 # Event pools gatekeeping event | Psionic Pool 2
 # Fired by: event
 country_event = {
@@ -2867,6 +2970,73 @@ country_event = {
 		custom_tooltip = ascension_governments.1035.c.tt
 		trigger = {
 			is_ai = no
+		}
+	}
+}
+
+# needs more expansive trigger + event that fires when switching out of government to remove trait ...
+country_event = {
+	id = ascension_governments.1040
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+		has_country_flag = has_shroud_patron
+		# ruler doesn't have any of these traits
+	}
+	immediate = {
+		# remove all of these current traits
+		ruler = {
+			# Composer.
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = composer_covenant_confirmed 
+					}
+				}
+				add_trait = leader_trait_ac_composer_vessel
+			}
+
+			# Eater.
+			if = {
+				limit = {
+					ROOT = { 
+						has_country_flag = eater_covenant_confirmed 
+					}
+				}
+				add_trait = leader_trait_ac_eater_vessel
+			}
+
+			# Instrument.
+			if = {
+				limit = {
+					ROOT = { 
+						has_country_flag = instrument_covenant_confirmed 
+					}
+				}
+				add_trait = leader_trait_ac_instrument_vessel
+			}
+
+			# Whisperers.
+			if = {
+				limit = {
+					ROOT = { 
+						has_country_flag = whisperers_covenant_confirmed 
+					}
+				}
+				add_trait = leader_trait_ac_whisperers_vessel
+			}
+
+			# End of the Cycle.
+			if = {
+				limit = {
+					ROOT = { 
+						has_country_flag = covenant_end_of_the_cycle 
+					}
+				}
+				add_trait = leader_trait_ac_end_vessel
+			}
 		}
 	}
 }

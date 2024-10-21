@@ -149,6 +149,53 @@ leader_trait_genetically_superior = {
 	initial = no
 	randomized = no
 }
+
+leader_trait_ac_composer_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_composer_chosen"
+		RARITY = destiny
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		#
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.50
+		negative_traits_leader = 1
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ac_whisperers_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_whisperers_chosen"
+		RARITY = destiny
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		physics_tech_cost_mult = -0.05
+		society_tech_cost_mult = -0.05
+		engineering_tech_cost_mult = -0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = -15
+		species_leader_exp_gain = -0.15
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
 ### Mutant Traits ###
 # Commander
 

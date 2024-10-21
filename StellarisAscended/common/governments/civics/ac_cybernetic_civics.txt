@@ -4,6 +4,8 @@ civic_sovereign_circuitry = {
 			NOT = {
 				value = ethic_gestalt_consciousness
 			}
+			# temporarily removed
+			value = ethic_gestalt_consciousness
 		}
 		authority = {
 			NOT = {

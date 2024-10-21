@@ -35,5 +35,7 @@
   leader_trait_programmed_loyalty_gestalt_effect:0 "$t$§RThis leader will gain a terrible negative trait if we are at war against our overlord.§!"
   leader_trait_corrupted_logic:0 "Corrupted Processes"
   leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord for our retalittion"
+
 # Destiny Traits
-  
+  leader_trait_ac_whisperers_vessel:0 "Vessel of the Whisperer"
+  leader_trait_ac_whisperers_vessel_desc:0 "..."

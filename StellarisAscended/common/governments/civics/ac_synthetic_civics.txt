@@ -55,6 +55,7 @@ civic_bioform_upgrader = {
 		modifier = {
 			ship_weapon_damage = 0.1
 			country_naval_cap_mult = 0.15
+			country_synthetic_trust_cap_add = 10
 		}
 	}
 }
@@ -112,6 +113,7 @@ civic_bio_replacer = {
 		}
 		modifier = {
 			# TO DO
+			country_synthetic_trust_cap_add = 10
 		}
 	}
 }
