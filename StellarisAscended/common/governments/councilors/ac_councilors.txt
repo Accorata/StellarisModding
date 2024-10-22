@@ -85,6 +85,32 @@ councilor_bioform_upgrader = {
 	}
 }
 
+councilor_bio_replacer = {
+	leader_class = {
+		official
+		scientist
+	}
+	is_leader_possible = {
+		AND = {
+			OR = {
+				leader_class = official
+				leader_class = scientist
+			}
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
+		}
+	}
+	civic = civic_bio_replacer
+	modifier = {
+		job_roboticist_branch_office_value_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 councilor_soul_seekers = {
 	leader_class = {
 		official

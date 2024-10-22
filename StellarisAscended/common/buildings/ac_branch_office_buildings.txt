@@ -1,3 +1,62 @@
+# Synthetic
+holding_ac_robotics_beneficiary = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	owner_type = corporate
+
+	category = resource
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ac_bio_upgrader_corporate = yes
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = building_ai_emporium_outlawed_robots_tt
+			planet.owner = {
+				NOT = { has_policy_flag = robots_outlawed }
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_roboticist_branch_office_value_mult = 0.05
+		job_roboticist_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }
+		}
+		planet_crime_add = 20
+		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+	}
+
+	on_built = {
+		planet.owner = {
+			create_built_robot_species = yes
+		}
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		produces = {
+			engineering_research = 10
+		}
+	}
+
+	ai_weight = {
+		weight = 1.5
+	}
+}
+
 # Cybernetic
 holding_ac_undercity_arena = {
 	base_buildtime = @b1_time
@@ -7,7 +66,7 @@ holding_ac_undercity_arena = {
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			is_ac_cybergladiator = yes
+			is_ac_cybergladiator_corporate = yes
 		}
 	}
 	country_modifier = {
@@ -89,7 +148,6 @@ building_ac_manipulation_network = {
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			is_megacorp = yes
 			has_country_flag = ac_psionic_eldritch
 		}
 	}

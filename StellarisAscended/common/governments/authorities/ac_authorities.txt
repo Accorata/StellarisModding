@@ -369,9 +369,10 @@ auth_imperial = {
 		modifier = {
 			job_high_priest_per_pop = 0.04
 			planet_crime_add = -10
+			custom_tooltip = auth_ac_psionic_imperial_eldritch_effects
+			show_only_custom_tooltip = no
 			shroud_delve_cooldown = -0.1
 			pop_government_ethic_attraction = -0.25
-			# ...
 		}
 		tags = {
 			AUTHORITY_SUCCESSION_TYPE

@@ -37,5 +37,13 @@
   leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord for our retalittion"
 
 # Destiny Traits
-  leader_trait_ac_whisperers_vessel:0 "Vessel of the Whisperer"
+  leader_trait_ac_composer_vessel:0 "Vessel of the Composer"
+  leader_trait_ac_composer_vessel_desc:0 "..."
+  leader_trait_ac_whisperers_vessel:0 "Vessel of the Whisperers"
   leader_trait_ac_whisperers_vessel_desc:0 "..."
+  leader_trait_ac_eater_vessel:0 "Vessel of the Eater"
+  leader_trait_ac_eater_vessel_desc:0 "..."
+  leader_trait_ac_instrument_vessel:0 "Vessel of the Instrument"
+  leader_trait_ac_instrument_vessel_desc:0 "..."
+  leader_trait_ac_end_vessel:0 "Vessel of the End"
+  leader_trait_ac_end_vessel_desc:0 "..."

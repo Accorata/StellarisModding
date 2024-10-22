@@ -48,6 +48,11 @@ is_ac_bio_upgrader = {
 	has_tradition = tr_synthetics_finish
 }
 
+is_ac_bio_upgrader_corporate = {
+	has_valid_civic = civic_bio_replacer
+	has_tradition = tr_synthetics_finish
+}
+
 is_ac_cyberlife = {
 	OR = {
 		has_valid_civic = civic_cyberlife
@@ -136,6 +141,11 @@ is_ac_cybergladiator = {
 		has_valid_civic = civic_cybergladiators
 		has_valid_civic = civic_underworld_bloodsports
 	}
+	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_cybergladiator_corporate = {
+	has_valid_civic = civic_underworld_bloodsports
 	has_tradition = tr_cybernetics_finish
 }
 

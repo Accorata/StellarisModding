@@ -160,7 +160,7 @@ leader_trait_ac_composer_vessel = {
 		TIER = none
 	}
 	councilor_modifier = {
-		#
+		# ...
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.50
@@ -189,6 +189,71 @@ leader_trait_ac_whisperers_vessel = {
 	self_modifier = {
 		leader_lifespan_add = -15
 		species_leader_exp_gain = -0.15
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ac_eater_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_eater_chosen"
+		RARITY = destiny
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_weapon_damage = 0.15
+		army_damage_mult = 0.15
+		pop_happiness = -0.05
+		pop_growth_speed = -0.05
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ac_instrument_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_instrument_chosen"
+		RARITY = destiny
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_jobs_produces_mult = 0.1
+	}
+	self_modifier = {
+		leader_lifespan_add = 10
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = consumer_goods
+		AMOUNT = 25
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_ac_end_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_instrument_chosen" #change
+		RARITY = destiny
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		# ...
 	}
 
 	leader_class = { commander scientist official }

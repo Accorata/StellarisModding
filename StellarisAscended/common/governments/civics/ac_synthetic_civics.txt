@@ -46,7 +46,6 @@ civic_bioform_upgrader = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	# on add - adds leader_trait_machine_crusader - check to see if this effect works on biological armies
 	description = civic_tooltip_bioform_upgrader_effects
 	swap_type = {
 		trigger = {
@@ -56,6 +55,7 @@ civic_bioform_upgrader = {
 			ship_weapon_damage = 0.1
 			country_naval_cap_mult = 0.15
 			country_synthetic_trust_cap_add = 10
+			country_organic_trust_cap_add = -10
 		}
 	}
 }
@@ -112,8 +112,8 @@ civic_bio_replacer = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			# TO DO
 			country_synthetic_trust_cap_add = 10
+			country_organic_trust_cap_add = -10
 		}
 	}
 }
@@ -124,6 +124,8 @@ civic_soul_seekers = {
 			NOT = {
 				value = ethic_gestalt_consciousness
 			}
+			# temporarily removed
+			value = ethic_gestalt_consciousness
 		}
 		authority = {
 			NOT = {
@@ -229,7 +231,7 @@ civic_synthetic_celestials = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			megastructure_build_speed_mult = 0.25
+			megastructures_cost_mult = -0.1
 		}
 	}
 }
@@ -283,7 +285,7 @@ civic_world_commissioners = {
 			has_active_tradition = tr_synthetics_finish
 		}
 		modifier = {
-			megastructure_build_speed_mult = 0.25
+			megastructures_cost_mult = -0.1
 		}
 	}
 }

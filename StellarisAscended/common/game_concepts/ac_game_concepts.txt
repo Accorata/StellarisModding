@@ -108,6 +108,10 @@ concept_auth_ac_psionic_dictatorial_eldritch = {
 	tooltip_override = "authority:auth_dictatorial:auth_ac_psionic_dictatorial_eldritch"
 }
 
+concept_ac_vessel_traits = {
+	icon =  "gfx/interface/icons/icon_leader.dds"
+}
+
 concept_auth_ac_psionic_oligarchic_divine = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_35x35.dds"
 	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine"

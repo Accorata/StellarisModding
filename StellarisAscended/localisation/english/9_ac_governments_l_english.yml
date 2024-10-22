@@ -312,6 +312,10 @@
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
   councilor_ruler_imperial_ac_psionic_eldritch:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "$imperial_ruler_desc$"
+  auth_ac_psionic_imperial_eldritch_effects:0 "Ruler gains a trait from the ['concept_ac_vessel_traits'] depending on our Covenant"
+  concept_ac_vessel_traits: "Shroud Vessel Traits"
+  concept_ac_vessel_traits_desc: "- ['trait:leader_trait_ac_composer_vessel']\n- ['trait:leader_trait_ac_whisperers_vessel']\n- ['trait:leader_trait_ac_eater_vessel']\n- ['trait:leader_trait_ac_instrument_vessel']\n- ['trait:leader_trait_ac_end_vessel']"
+
 # Psionic Dictatorial Divine
   auth_ac_psionic_dictatorial_divine:0 "Dictatorial Mandate"
   auth_ac_psionic_dictatorial_divine_desc:0 "The Shroud has blessed our rule, has declared us supreme ruler over this galaxy. The prophets have divined our destiny over all."

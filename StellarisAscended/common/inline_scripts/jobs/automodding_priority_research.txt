@@ -5,4 +5,5 @@ auto_trait_prio = {
 	trait_robot_logic_engines
 	trait_cyborg_logic_engines
 	trait_ac_robot_logic_engines
+	trait_ac_bio_intelligent
 }

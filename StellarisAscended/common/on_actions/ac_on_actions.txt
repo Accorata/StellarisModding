@@ -72,7 +72,8 @@ on_game_start = {
 # This = Heir
 on_heir_promoted_to_ruler = {
 	events = {
-		ascension_civics.62		# Add Programmed Loyalty trait
+		ascension_civics.62				# Add Programmed Loyalty trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
 }
 
@@ -102,6 +103,8 @@ on_post_government_changed = {
 		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current trait if Imperial Clones
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
+		ascension_governments.1041		# Remove Vessel traits if no longer Imperial Vessel Auth
 	}
 }
 
@@ -110,7 +113,8 @@ on_post_government_changed = {
 # This = Country
 on_ruler_removed = {
 	events = {
-		ascension_civics.64		# Add Programmed Loyalty trait
+		ascension_civics.64				# Add Programmed Loyalty trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
 }
 
@@ -118,8 +122,9 @@ on_ruler_removed = {
 # This = Country
 on_ruler_set = {
 	events = {
-		ascension_civics.63		# Add Programmed Loyalty trait
+		ascension_civics.63				# Add Programmed Loyalty trait
 		ascension_governments.42		# Adds Genetically Superior Trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
 }
 
@@ -169,7 +174,8 @@ on_yearly_pulse = {
 
 on_yearly_pulse_country = {
 	events = {
-		ascension_civics.210		# Set random convergence location for 50% of avatars
+		ascension_civics.210			# Set random convergence location for 50% of avatars
+		ascension_governments.1040		# Adds Vessel traits if Imperial Vessel auth and now has Patron
 	}
 }
 
