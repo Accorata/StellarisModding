@@ -617,8 +617,63 @@ country_event = {
 	}
 }
 
-planet_event = {
+# On tradition picked or civics changed, sets nanite robot assembled variable if Numbered Beyond Stars or Unending Swarm
+country_event = {
 	id = ascension_civics.80
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_numbered_stars = yes
+		NOT = {
+			is_variable_set = ac_nanite_robots_assembled
+		}
+	}
+	immediate = {
+		set_variable = {
+			which = ac_nanite_robots_assembled
+			value = 0
+		}
+	}
+}
+
+# on pop assembled - increase counter and spawn pop if counter reaches 5
+country_event = {
+	id = ascension_civics.81
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_numbered_stars = yes
+		is_variable_set = ac_nanite_robots_assembled
+	}
+	immediate = {
+		change_variable = {
+			which = ac_nanite_robots_assembled
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable_arithmetic = {
+					which = ac_nanite_robots_assembled
+					value >= 5
+				}
+			}
+			subtract_variable = {
+				which = ac_nanite_robots_assembled
+				value = 5
+			}
+
+			capital_scope = {
+				create_pop = {
+					species = owner_main_species
+					ethos = random
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = ascension_civics.199
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {

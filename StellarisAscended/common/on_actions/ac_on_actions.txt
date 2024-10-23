@@ -50,7 +50,7 @@ on_debris_scavenged_and_researched = {
 # From = System
 on_entering_system_fleet = {
 	events = {
-		ascension_civics.212
+		ascension_civics.212 		# doomseeker - uncomplete
 	}
 }
 
@@ -91,16 +91,27 @@ on_new_heir = {
 	}
 }
 
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_assembled = {
+	events = {
+		ascension_civics.81			# Increases nanite pop created counter and creates a new one if reaches 5
+	}
+}
+
 on_post_government_changed = {
 	events = {
-		# ascension_civics.10		# Add ascendant psionic to psionic pops
-		# ascension_civics.11		# Remove ascendant psionic from pops
-		ascension_civics.52		# Add machine crusader trait to commanders
-		ascension_civics.54		# Allows future picking of bio upgraders to give machine crusaders (fix bc tradition picking shouldn't trigger multiple times but government reform can)
-		ascension_civics.200		# Setup variables for doomseeker shroud incursion
-		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
-		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
-		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		# ascension_civics.10			# Add ascendant psionic to psionic pops
+		# ascension_civics.11			# Remove ascendant psionic from pops
+		ascension_civics.52				# Add machine crusader trait to commanders
+		ascension_civics.54				# Allows future picking of bio upgraders to give machine crusaders (fix bc tradition picking shouldn't trigger multiple times but government reform can)
+		ascension_civics.200			# Setup variables for doomseeker shroud incursion
+		ascension_civics.60				# Add new traits/effects to if Sovereign Ciruitry
+		ascension_civics.53				# Adds Hyper Relays as tech option if Bandwidth empire
+		ascension_civics.55				# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current trait if Imperial Clones
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
@@ -146,13 +157,14 @@ on_starbase_disabled = {
 # THIS = country
 on_tradition_picked = {
 	events = {
-		ascension_governments.0		# Genetic situation start
+		ascension_governments.0			# Genetic situation start
 		ascension_governments.1000		# Psionic situation start
-		ascension_civics.52		# Leaders gain machine crusader trait if synth traditions finished
-		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
-		ascension_civics.60		# Send event to subjects to gain Programmed Loyalty trait
-		ascension_civics.200		# Setup variables for doomseeker shroud incursion
-		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.52				# Leaders gain machine crusader trait if synth traditions finished
+		ascension_civics.53				# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
+		ascension_civics.60				# Send event to subjects to gain Programmed Loyalty trait
+		ascension_civics.200			# Setup variables for doomseeker shroud incursion
+		ascension_civics.55				# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
 	}
 }
 
@@ -209,7 +221,7 @@ on_released_as_vassal = {
 # This = Country
 on_ac_genetic_shock_chain_event_pool_one_list = {
 	random_events = {
-		5 = ascension_governments.9		# Preserved Loved Ones
+		5 = ascension_governments.9			# Preserved Loved Ones
 		5 = ascension_governments.10		# Celebrity Impersonators
 		5 = ascension_governments.11		# Mutant Amalgamations
 		5 = ascension_governments.12		# Employee Gene Mods

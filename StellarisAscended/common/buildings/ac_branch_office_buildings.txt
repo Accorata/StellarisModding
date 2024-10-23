@@ -5,7 +5,7 @@ holding_ac_robotics_beneficiary = {
 
 	owner_type = corporate
 
-	category = resource
+	category = research
 
 	potential = {
 		has_branch_office = yes

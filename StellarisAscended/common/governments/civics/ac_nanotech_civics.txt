@@ -1,3 +1,53 @@
+civic_numbered_among_stars = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_stellar_monopoly
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_numbered_among_stars.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_numbered_among_stars_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_nanotech_finish
+		}
+		modifier = {
+			planet_pop_assemblers_nanites_upkeep_add = 0.5
+			empire_size_systems_mult = -0.5
+			starbase_outpost_cost_mult = -0.25
+			ship_damage_against_starbases_mult = 0.25
+		}
+	}
+}
+
 civic_stellar_monopoly = {
 	potential = {
 		ethics = {
@@ -14,9 +64,9 @@ civic_stellar_monopoly = {
 			value = MACHINE
 		}
 		civics = {
-			# NOT = {
-			# 	value = 
-			# }
+			NOT = {
+				value = civic_numbered_among_stars
+			}
 		}
 	}
 	modification = yes
@@ -27,6 +77,10 @@ civic_stellar_monopoly = {
 	}
 	ai_weight = {
 		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_nanotech_finish
+		}
 	}
 	description = civic_tooltip_stellar_monopoly_effects
 	swap_type = {
@@ -34,9 +88,52 @@ civic_stellar_monopoly = {
 			has_active_tradition = tr_nanotech_finish
 		}
 		modifier = {
+			dyson_swarm_limit_add = 1
+			arc_furnace_limit_add = 1
+			shipclass_mining_station_build_cost_mult = -0.5
+			shipclass_research_station_build_cost_mult = -0.5
+			station_gatherers_produces_mult = 1
+			station_researchers_produces_mult = 1
 			empire_size_systems_mult = -0.5
 			starbase_outpost_cost_mult = -0.25
 			starbases_upkeep_mult = -0.15
+		}
+	}
+}
+
+civic_unending_swarm = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_unending_swarm.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_unending_swarm_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_nanotech_finish
+		}
+		modifier = {
+			planet_pop_assemblers_nanites_upkeep_add = 0.5
+			empire_size_systems_mult = -0.5
+			starbase_outpost_cost_mult = -0.25
+			ship_damage_against_starbases_mult = 0.25
+			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }

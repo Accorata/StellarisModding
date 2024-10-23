@@ -60,15 +60,11 @@ councilor_ruler_imperial_ac_psionic_eldritch = {
 # Synthetic
 councilor_bioform_upgrader = {
 	leader_class = {
-		official
 		commander
 	}
 	is_leader_possible = {
 		AND = {
-			OR = {
-				leader_class = official
-				leader_class = commander
-			}
+			leader_class = commander
 			OR = {
 				has_trait = leader_trait_synthetic
 				has_trait = leader_trait_virtual
@@ -326,3 +322,22 @@ councilor_concurrent_command = {
 		inline_script = councilor_leader_weights
 	}
 }
+
+# Nanotech
+
+councilor_numbered_among_stars = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_numbered_among_stars
+	modifier = {
+		country_nanites_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+

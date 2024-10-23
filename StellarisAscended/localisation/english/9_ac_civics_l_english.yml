@@ -292,13 +292,25 @@
   civic_omnirecyclers_desc:0 "..."
   # councilor needed
 
-# Virtual -----------------------------------------------------------------------------------------
-  virtual_ascension_required:0 "If §YVirtual§! Ascension completed:\n"
+# Nanotech -----------------------------------------------------------------------------------------
+  nanotech_ascension_required:0 "If §YNanotech§! Ascension completed:\n"
   
+  civic_numbered_among_stars:0 "Numbered Among Stars"
+  civic_numbered_among_stars_desc:0 "..."
+  civic_tooltip_numbered_among_stars_effects:0 "- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_ship_damage_against_starbases_mult$: §G+25%§!"
+  councilor_numbered_among_stars:0 "..."
+  councilor_numbered_among_stars_female:0 "$councilor_numbered_among_stars$"
+  councilor_numbered_among_stars_desc:0 "..."
+
+
   civic_stellar_monopoly:0 "Stellar Monopoly"
-  civic_stellar_monopoly_desc:0 "This nanite corporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply the same logic to monpolozing the galaxy."
-  civic_tooltip_stellar_monopoly_effects:0 "§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
+  civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monpolozing the galaxy's riches."
+  civic_tooltip_stellar_monopoly_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- Doubles output from §YMining Stations§! and §YResearch Stations§!\n- Halves cost to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
   # councilor needed
+
+  civic_unending_swarm:0 "Unending Swarm"
+  civic_unending_swarm_desc:0 "..."
+  civic_tooltip_unending_swarm_effects:0 "$civic_tooltip_numbered_among_stars_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
 
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation

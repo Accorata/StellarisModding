@@ -157,3 +157,11 @@ is_ac_metal_recycler = {
 	}
 	has_tradition = tr_modularity_finish
 }
+
+is_ac_numbered_stars = {
+	OR = {
+		has_valid_civic = civic_numbered_among_stars
+		has_valid_civic = civic_unending_swarm
+	}
+	has_tradition = tr_nanotech_finish
+}
