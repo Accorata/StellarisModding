@@ -1,5 +1,5 @@
 # Synthetic
-holding_ac_robotics_beneficiary = {
+holding_ac_robotics_plant = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 

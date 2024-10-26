@@ -8,8 +8,8 @@
   holding_ac_undercity_arena_desc:0 "..."
 
 # Synthetic
-  holding_ac_robotics_beneficiary:0 "Robotics Plant"
-  holding_ac_robotics_beneficiary_desc:0 "..."
+  holding_ac_robotics_plant:0 "Robotics Plant"
+  holding_ac_robotics_plant_desc:0 "..."
 
   building_ac_mega_forge:0 "Mega-Forge"
   building_ac_mega_forge_desc:0 "..."

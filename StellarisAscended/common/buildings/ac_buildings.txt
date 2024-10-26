@@ -416,7 +416,7 @@ building_ac_mega_forge = {
 }
 
 # Oligarchic Order Authority
-building_ac_order_hall = { # icon needed
+building_ac_order_hall = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
 	empire_limit = 1
@@ -471,10 +471,11 @@ building_ac_order_hall = { # icon needed
 	}
 }
 
-building_ac_order_hall_knights = { # icon needed
+building_ac_order_hall_knights = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
 	empire_limit = 1
+	icon = building_ac_order_hall
 	category = government
 	allow = {
 		has_upgraded_capital = yes
