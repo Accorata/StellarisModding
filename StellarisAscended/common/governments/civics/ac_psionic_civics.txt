@@ -212,9 +212,9 @@ civic_shroud_renouncers = {
 		}
 		modifier = {
 			shroud_delve_cost = 99
-			planet_telepaths_unity_produces_add = 10
-			planet_psionic_jobs_produces_mult = 0.2
-			damage_vs_country_type_shroud_spirits_mult = 0.25
+			planet_telepaths_unity_produces_add = 9
+			planet_psionic_jobs_produces_mult = 0.25
+			damage_vs_country_type_shroud_spirits_mult = 0.50
 		}
 	}
 }

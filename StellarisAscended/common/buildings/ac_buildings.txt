@@ -108,6 +108,64 @@ building_ac_psi_tower = {
 	}
 }
 
+# Renouncers of the Shroud
+building_ac_renouncer_sanctum = {
+	base_buildtime = @b3_time
+
+	category = government
+
+	empire_limit = {
+		base = 1
+	}
+
+	potential = {
+		owner = {
+			is_ac_shroud_renouncer = yes
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_shroud_renouncer = no
+		}
+	}
+
+	planet_modifier = {
+		job_telepath_add = 3
+	}
+
+	country_modifier = {
+		pop_happiness = 0.05
+		planet_jobs_produces_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}
+
+# Blossoming Worlds
 building_ac_grand_sapling = {
 	base_buildtime = @b1_time
 	category = government

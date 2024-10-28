@@ -214,7 +214,7 @@
 # Oligarchic
   ascension_governments.33.name: "New Superiority"
   ascension_governments.33.desc.perfect: "..."
-  ascension_governments.33.desc.chaotic: "..."
+  ascension_governments.33.desc.chaotic: "Mutations brought us our sapience, our evolution; we owe ourselves to their greatness. Now, we push the ..."
   ascension_governments.33.desc.neutral: "..."
   ascension_governments.33.a: "May the uplifted guide us forward."
   ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
@@ -237,7 +237,7 @@
 
   ascension_governments.42.name: "..."
   ascension_governments.42.desc: "Our very own [leader_1.GetTitle] [leader_1.GetName], ..."
-  ascension_governments.42.a: "A necessary sacrifice."
+  ascension_governments.42.a: "All honor the glorious [ruler.GetRulerTitle]!"
 
 # Imperial
   ascension_governments.35.name: "Empire Reborn"
@@ -330,32 +330,54 @@
   gov_ac_psionic_dictatorial_eldritch_desc:0 "$auth_ac_psionic_dictatorial_eldritch_desc$"
 # Psionic Oligarchic Divine
   auth_ac_psionic_oligarchic_divine:0 "Oligarchic Order"
-  auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, our order strives to train the very best of our psionic virtuousos. These honorable knights represent the pinnacle of our progress and guide us towards a better future."
+  auth_ac_psionic_oligarchic_divine_desc:0 "United in spirit and soul, the Order strives to train the very best of our psionic virtuousos. These honorable knights represent the pinnacle of our progress and guide us towards a better future."
   concept_auth_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine$"
   auth_ac_psionic_oligarchic_divine_toxic_god_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
   concept_auth_ac_psionic_oligarchic_divine_toxic_god:0 "$auth_ac_psionic_oligarchic_divine_toxic_god$"
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
+
   unlock_building_ac_order_hall:0 "Unlocks Unique Building: ['concept_building_ac_order_hall']"
   unlock_building_ac_order_hall_knights:0 "Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
   auth_ac_psionic_oligarchic_divine_effects:0 "$unlock_building_ac_order_hall$"
   auth_ac_psionic_oligarchic_divine_toxic_god_effects:0 "$unlock_building_ac_order_hall_knights$"
-
-  # $unlock_building_cyberdome$
 # Psionic Oligarchic Eldritch
+  unlocks_ac_ac_shroud_invocation:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
+
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
   auth_ac_psionic_oligarchic_eldritch_desc:0 "..."
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\nProvides varied benefits based on Shroud Covenant"
+
+  auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_composer_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
+
+  auth_ac_psionic_oligarchic_eldritch_whisperer:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_whisperer_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch_whisperer:0 "$auth_ac_psionic_oligarchic_eldritch$"
+
+  auth_ac_psionic_oligarchic_eldritch_eater:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_eater_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch_eater:0 "$auth_ac_psionic_oligarchic_eldritch$"
+
+  auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_instrument_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
+
+  auth_ac_psionic_oligarchic_eldritch_end:0 "$auth_ac_psionic_oligarchic_eldritch$"
+  auth_ac_psionic_oligarchic_eldritch_end_desc:0 "..."
+  concept_auth_ac_psionic_oligarchic_eldritch_end:0 "$auth_ac_psionic_oligarchic_eldritch$"
+
   gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   gov_ac_psionic_oligarchic_eldritch_desc:0 "$auth_ac_psionic_oligarchic_eldritch_desc$"
-  auth_ac_psionic_oligarchic_eldritch_effects:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
 
   council_agenda_ac_shroud_invocation_name:0 "Invoke the Shroud"
   council_agenda_ac_shroud_invocation_desc:0 "Through our collective minds, the Conclave of Telepaths will attempt to breach the Shroud will renowed vigor."
   agenda_ac_shroud_invocation_finish:0 "$council_agenda_ac_shroud_invocation_name$ $agenda_ref$"
   agenda_ac_shroud_invocation_finish_desc:0 "$council_agenda_ac_shroud_invocation_desc$"
-  council_agenda_ac_shroud_invocation_effect:0 "Removes any §YShroud Cooldown§! allowing our empire to Breach the Shroud again." #check breach the shroud action (name)
+  council_agenda_ac_shroud_invocation_effect:0 "Removes any §YShroud Cooldown§! allowing our empire to venture into the Shroud again."
 # Psionic Democratic Divine
   auth_ac_psionic_democratic_divine:0 "Democratic Empath"
   auth_ac_psionic_democratic_divine_desc:0 "..."

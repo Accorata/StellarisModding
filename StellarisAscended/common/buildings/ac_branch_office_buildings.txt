@@ -75,13 +75,18 @@ holding_ac_undercity_arena = {
 	planet_modifier = {
 		job_cyberdome_duelist_add = 1
 		job_cyberdome_spectator_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = no }
+		}
 		planet_crime_add = 20
 	}
 	triggered_planet_modifier = {
 		potential = {
 			branch_office_owner = { is_criminal_syndicate = yes }
 		}
-		planet_crime_add = 20
+		planet_crime_add = 40
 		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
 	}
 	resources = {

@@ -672,6 +672,51 @@ country_event = {
 	}
 }
 
+# On tradition picked or civics changed, Renounce the Shroud
+country_event = {
+	id = ascension_civics.82
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_shroud_renouncer = yes
+		NOT = {
+			has_country_flag = ac_shroud_renounced
+		}
+	}
+	immediate = {
+		set_country_flag = ac_shroud_renounced
+		if = {
+			limit = {
+				has_country_flag = has_shroud_patron
+			}
+			remove_modifier = covenant_composer_of_strands_0
+			remove_modifier = covenant_eater_of_worlds_0
+			remove_modifier = covenant_instrument_of_desire_0
+			remove_modifier = covenant_whisperers_in_the_void_0
+			remove_modifier = covenant_whisperers_in_the_void_0_fircon
+			# remove flags and variables... - maybe shroud patrons can't be renounced?
+		}
+		else = {
+			set_country_flag = has_shroud_patron
+		}
+	}
+}
+
+# On civics changed, Unrenounce the Shroud
+country_event = {
+	id = ascension_civics.83
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_shroud_renouncer = no
+		has_country_flag = ac_shroud_renounced
+	}
+	immediate = {
+		remove_country_flag = ac_shroud_renounced
+		remove_country_flag = has_shroud_patron	# Allows for you to get a new patron
+	}
+}
+
 planet_event = {
 	id = ascension_civics.199
 	hide_window = yes

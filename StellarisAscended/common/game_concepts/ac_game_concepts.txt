@@ -137,6 +137,31 @@ concept_auth_ac_psionic_oligarchic_eldritch = {
 	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch"
 }
 
+concept_auth_ac_psionic_oligarchic_eldritch_composer = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_composer_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_composer"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_whisperer = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_whisperer_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_whisperer"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_eater = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_eater_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_eater"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_instrument = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_instrument_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_instrument"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_end = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_end_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_end"
+}
+
 concept_auth_ac_psionic_democratic_divine = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_democratic_divine_35x35.dds"
 	tooltip_override = "authority:auth_democratic:auth_ac_psionic_democratic_divine"

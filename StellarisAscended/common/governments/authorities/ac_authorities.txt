@@ -155,13 +155,121 @@ auth_oligarchic = {
 		trigger = {
 			is_scope_valid = yes
 			has_country_flag = ac_psionic_eldritch
+			NOR = {
+				has_modifier = covenant_composer_of_strands_0
+				has_modifier = covenant_eater_of_worlds_0
+				has_modifier = covenant_instrument_of_desire_0
+				has_modifier = covenant_whisperers_in_the_void_0
+				has_modifier = covenant_end_of_the_cycle
+			}
 		}
 		modifier = {
 			empire_size_mult = -0.1
 			custom_tooltip = auth_ac_psionic_oligarchic_eldritch_effects
 			show_only_custom_tooltip = no
-			# ... Shroud spirits
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_composer"
+		description = "auth_ac_psionic_oligarchic_eldritch_composer_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_composer_of_strands_0
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			# ...
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_eater"
+		description = "auth_ac_psionic_oligarchic_eldritch_eater_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_eater_of_worlds_0
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			# ...
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_instrument"
+		description = "auth_ac_psionic_oligarchic_eldritch_instrument_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_instrument_of_desire_0
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			# ...
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_whisperer"
+		description = "auth_ac_psionic_oligarchic_eldritch_whisperer_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_whisperers_in_the_void_0
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			num_tech_alternatives_add = 2
 			planet_stability_add = -5
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_end"
+		description = "auth_ac_psionic_oligarchic_eldritch_end_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_end_of_the_cycle
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			# ...
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_end"
+		description = "auth_ac_psionic_oligarchic_eldritch_end_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_end_of_the_cycle
+		}
+		modifier = {
+			empire_size_mult = -0.1
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			# ...
 		}
 	}
 	advanced_authority_swap = {

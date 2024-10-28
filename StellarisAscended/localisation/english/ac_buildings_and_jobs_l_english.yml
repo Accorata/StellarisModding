@@ -3,6 +3,7 @@
   building_ac_undercity_arena:0 "Undercity Arena"
   building_ac_undercity_arena_plural:0 "Undercity Arenas"
   building_ac_undercity_arena_desc:0 "..."
+
   holding_ac_undercity_arena:0 "..."
   holding_ac_undercity_arena_plural:0 "...s"
   holding_ac_undercity_arena_desc:0 "..."
@@ -47,6 +48,9 @@
   building_ac_psi_tower_plural:0 "Psionic Towers"
   building_ac_psi_tower_desc:0 "..."
 
+  building_ac_renouncer_sanctum:0 "Sanctum of Transcendence"
+  building_ac_renouncer_sanctum_desc:0 "..."
+
   sm_ac_avatar_caller:0 "Beacon of the End"
   sm_ac_avatar_caller_plural:0 "Beacons of the End"
   sm_ac_avatar_caller_desc:0 "This mini tear into the fabric of the Shroud allows for a clearer path through the chaos, drawing the great end ever closer."
@@ -66,7 +70,7 @@
 
   building_ac_xanadu:0 "Xanadu"
   building_ac_xanadu_plural:0 "Xanadus"
-  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing will ever compare to."
+  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing else will ever compare to."
 
 # Virtual
   sm_ac_bandwidth_router:0 "Omni-band Router"
@@ -77,6 +81,7 @@
   sm_ac_bandwidth_router_corporate_plural:0 "$sm_ac_bandwidth_router_plural$"
   sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
   sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
-  holding_ac_external_router:0 "External Router Core"
+
+  holding_ac_external_router:0 "External Router Core" #tower?
   holding_ac_external_router_plural:0 "External Router Cores"
   holding_ac_external_router_desc:0 "external servers processing..."
