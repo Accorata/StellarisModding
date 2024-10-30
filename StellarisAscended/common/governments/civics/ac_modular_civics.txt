@@ -259,13 +259,14 @@ civic_omnirecyclers = {
 		}
 	}
 	
-	description = civic_tooltip_metallic_repurposing_effects
+	description = civic_tooltip_omnirecyclers_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
 		modifier = {
 			planet_metallurgists_upkeep_mult = -0.2
+			# council
 		}
 	}
 }

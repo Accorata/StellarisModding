@@ -59,6 +59,36 @@ ac_harvest_genetic_failures = {
 	}
 }
 
+ac_hypnopaedic_conditioning = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		negative_traits_leader = -1
+		planet_pops_upkeep_mult = -0.10
+		pop_cat_worker_happiness = 0.10
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_unrestricted_mutation = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
@@ -118,6 +148,37 @@ ac_handicap_distribution = {
 }
 
 # Psionic Government Edicts
+ac_dark_pact = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		leader_lifespan_add = 20
+		species_leader_exp_gain = 0.25
+		negative_traits_leader = 1
+		country_unity_produces_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_betrayal_of_the_mind = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"

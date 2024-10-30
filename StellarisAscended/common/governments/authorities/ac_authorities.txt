@@ -183,7 +183,8 @@ auth_oligarchic = {
 			empire_size_mult = -0.1
 			custom_tooltip = unlocks_ac_ac_shroud_invocation
 			show_only_custom_tooltip = no
-			# ...
+			pop_growth_speed = 0.10
+			pop_decline_speed = 0.10
 		}
 	}
 	advanced_authority_swap = {
@@ -200,7 +201,8 @@ auth_oligarchic = {
 			empire_size_mult = -0.1
 			custom_tooltip = unlocks_ac_ac_shroud_invocation
 			show_only_custom_tooltip = no
-			# ...
+			ship_orbital_bombardment_damage_mult = 1
+			army_collateral_damage_mult = 1
 		}
 	}
 	advanced_authority_swap = {
@@ -252,24 +254,13 @@ auth_oligarchic = {
 			empire_size_mult = -0.1
 			custom_tooltip = unlocks_ac_ac_shroud_invocation
 			show_only_custom_tooltip = no
-			# ...
-		}
-	}
-	advanced_authority_swap = {
-		name = "auth_ac_psionic_oligarchic_eldritch_end"
-		description = "auth_ac_psionic_oligarchic_eldritch_end_desc"
-		inherit_icon = no
-		inherit_effects = no
-		trigger = {
-			is_scope_valid = yes
-			has_country_flag = ac_psionic_eldritch
-			has_modifier = covenant_end_of_the_cycle
-		}
-		modifier = {
-			empire_size_mult = -0.1
-			custom_tooltip = unlocks_ac_ac_shroud_invocation
-			show_only_custom_tooltip = no
-			# ...
+			station_gatherers_produces_mult = 0.5
+			station_researchers_produces_mult = 0.5
+			planet_jobs_produces_mult = 0.5
+			country_naval_cap_mult = 0.5
+			country_starbase_capacity_add = 5
+			country_covenant_influence_produces_add = 2.5
+			planet_stability_add = -25
 		}
 	}
 	advanced_authority_swap = {
@@ -599,9 +590,13 @@ auth_corporate = {
 			has_country_flag = ac_genetic_perfect
 		}
 		modifier = {
-			leader_lifespan_add = 20
+			BIOLOGICAL_species_trait_points_add = 1
+			living_standard_trade_value_rulers_add = 3
 			election_term_years_mult = 1
-			# ...
+			leader_lifespan_add = 20
+			leader_commanders_energy_upkeep_add = 2
+			leader_scientists_energy_upkeep_add = 2
+			leader_officials_energy_upkeep_add = 2
 		}
 	}
 	advanced_authority_swap = {
@@ -614,6 +609,8 @@ auth_corporate = {
 			has_country_flag = ac_genetic_chaotic
 		}
 		modifier = {
+			BIOLOGICAL_species_trait_points_add = 1
+			# ...
 		}
 	}
 }

@@ -142,7 +142,7 @@ holding_ac_external_router = {
 }
 
 # Psionic Governments 
-building_ac_manipulation_network = {
+holding_ac_manipulation_network = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 

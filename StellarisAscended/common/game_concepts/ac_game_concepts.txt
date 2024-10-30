@@ -77,6 +77,11 @@ concept_edict_ac_harvest_genetic_failures = {
 	tooltip_override = "edict:ac_harvest_genetic_failures"
 }
 
+concept_edict_ac_hypnopaedic_conditioning = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_hypnopaedic_conditioning"
+}
+
 concept_edict_ac_unrestricted_mutation = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_unrestricted_mutation"
@@ -186,6 +191,11 @@ concept_auth_ac_psionic_corporate_eldritch = {
 concept_edict_ac_betrayal_of_the_mind = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_betrayal_of_the_mind"
+}
+
+concept_edict_ac_dark_pact = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_dark_pact"
 }
 
 # Psi Teacher Authorities

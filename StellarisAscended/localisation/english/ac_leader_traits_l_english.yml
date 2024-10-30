@@ -21,12 +21,18 @@
   leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$$r_unity$: §G+40§!"
 
 # Scientist Traits
-  leader_trait_mutant_brilliance:0 "$ac_mutated_trait$Brilliance"
-  leader_trait_mutant_brilliance_desc:0 "..."
-  leader_trait_mutant_tetrochromat:0 "$ac_mutated_trait$Tetrochromat"
-  leader_trait_mutant_tetrochromat_desc:0 "..."
+
+# Mutant Traits
+  leader_trait_ac_mutant_plane_shifter:0 "$ac_mutated_trait$Planar Shifter"
+  leader_trait_ac_mutant_plane_shifter_desc:0 "..."
+  leader_trait_ac_mutant_brilliance:0 "$ac_mutated_trait$Brilliance"
+  leader_trait_ac_mutant_brilliance_desc:0 "..."
+  leader_trait_ac_mutant_tetrochromat:0 "$ac_mutated_trait$Tetrochromat"
+  leader_trait_ac_mutant_tetrochromat_desc:0 "..."
 
 # Negative Traits
+  leader_trait_ac_visions_of_doom:0 "Visions of Doom"
+  leader_trait_ac_visions_of_doom_desc:0 "..."
   leader_trait_programmed_loyalty:0 "Programmed Loyalty"
   leader_trait_programmed_loyalty_desc:0 "..."
   leader_trait_programmed_loyalty_effect:0 "$t$§RThis leader will die if we are at war against our overlord.§!"
@@ -34,7 +40,7 @@
   leader_trait_programmed_loyalty_gestalt_desc:0 "$leader_trait_programmed_loyalty_desc$"
   leader_trait_programmed_loyalty_gestalt_effect:0 "$t$§RThis leader will gain a terrible negative trait if we are at war against our overlord.§!"
   leader_trait_corrupted_logic:0 "Corrupted Processes"
-  leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord for our retalittion"
+  leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord for our retaliation."
 
 # Destiny Traits
   leader_trait_ac_composer_vessel:0 "Vessel of the Composer"

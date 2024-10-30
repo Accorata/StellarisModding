@@ -40,9 +40,9 @@
   mod_job_ac_normal_knight_add:0 "$job_knight$ Jobs"
   mod_job_ac_normal_knight_per_pop:0 "§G+1§! $job_knight$ Job per $VALUE$ Pops"
 
-  building_ac_manipulation_network:0 "Manipulation Network"
-  building_ac_manipulation_network_desc:0 "..."
-  building_ac_manipulation_network_fail_tt:0 "$TRIGGER_FAIL$We already have an §Y$building_ac_manipulation_network$§! in the §Y[planet.owner.GetName]§!"
+  holding_ac_manipulation_network:0 "Manipulation Network"
+  holding_ac_manipulation_network_desc:0 "..."
+  holding_ac_manipulation_network_fail_tt:0 "$TRIGGER_FAIL$We already have an §Y$holding_ac_manipulation_network$§! in the §Y[planet.owner.GetName]§!"
 
   building_ac_psi_tower:0 "Psionic Tower" #center? #grand unit?
   building_ac_psi_tower_plural:0 "Psionic Towers"

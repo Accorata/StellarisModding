@@ -1,0 +1,28 @@
+ac_genetic_focus = {
+	potential = {
+		# darwinism
+	}
+
+	allow = {
+	}
+
+	option = {
+		name = "ac_policy_materialist_engineering"
+
+		potential = {
+			has_country_flag = ac_policy_materialist_engineering
+		}
+
+		policy_flags = {
+			ac_policy_materialist_engineering
+		}
+
+		modifier = {
+			# faction benefits
+		}
+
+		ai_weight = {
+			weight = 1
+		}
+	}
+}

@@ -11,7 +11,7 @@ ac_effective_ruler_level = {
 ac_species_in_empire_max_5 = {
 	base = 0
 	complex_trigger_modifier = {
-		trigger_scope = country
+		trigger_scope = root
 		trigger = num_species
 		mode = add
 	}
@@ -25,7 +25,7 @@ ac_districts_arcology_jobs = {
 		parameters = {
 			type = $TYPE$
 		}
-		mult = $FACTOR$
+		mult = $FACTOR$ # 2
 		mode = add
 	}
 }

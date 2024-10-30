@@ -129,6 +129,28 @@ councilor_soul_seekers = {
 	}
 }
 
+councilor_synthetic_celestials = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = scientist
+			OR = {
+				has_trait = leader_trait_synthetic
+				has_trait = leader_trait_virtual
+			}
+		}
+	}
+	civic = civic_synthetic_celestials
+	modifier = {
+		megastructures_cost_mult = -0.01
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 councilor_world_commissioners = {
 	leader_class = {
 		official
