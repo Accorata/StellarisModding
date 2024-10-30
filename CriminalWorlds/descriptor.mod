@@ -1,4 +1,4 @@
-version="3.13.*"
+version="3.14.*"
 tags={
 	"Gameplay"
 	"Leaders"
@@ -7,5 +7,5 @@ tags={
 }
 name="Criminal Worlds"
 picture="thumbnail.png"
-supported_version="v3.13.0"
+supported_version="v3.14.1"
 remote_file_id="3232998006"
