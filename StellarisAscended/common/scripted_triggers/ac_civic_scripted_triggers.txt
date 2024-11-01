@@ -62,11 +62,22 @@ is_ac_cyberlife = {
 	has_tradition = tr_cybernetics_finish
 }
 
+ac_has_confirmed_shroud_patron = {
+	OR = {
+		has_country_flag = composer_covenant_confirmed
+		has_country_flag = eater_covenant_confirmed
+		has_country_flag = instrument_covenant_confirmed
+		has_country_flag = whisperers_covenant_confirmed
+		has_country_flag = covenant_end_of_the_cycle
+	}
+}
+
 is_ac_shroud_renouncer = {
 	OR = {
 		has_valid_civic = civic_shroud_renouncers
 	}
 	has_tradition = tr_psionics_finish
+	ac_has_confirmed_shroud_patron = no
 }
 
 is_ac_blossoming = {

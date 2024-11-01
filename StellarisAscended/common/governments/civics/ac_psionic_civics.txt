@@ -190,9 +190,18 @@ civic_shroud_renouncers = {
 				value = ethic_fanatic_materialist
 			}
 		}
-		# civics = { NOT = { value = civic_telepathic_corporation } }
+		# civics = { NOT = { value = civic_shroud_divestment } }
 	}
-	modification = yes
+	modification = {
+		add = {
+			custom_tooltip = {
+				fail_text = AC_CIVIC_NO_PATRON
+				ac_has_confirmed_shroud_patron = no
+			}
+		}
+		remove = yes
+	}
+	# alternate_civic_version = civic_shroud_divestment
 	# icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
 	pickable_at_start = yes
 	random_weight = {

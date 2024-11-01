@@ -694,7 +694,6 @@ country_event = {
 			remove_modifier = covenant_instrument_of_desire_0
 			remove_modifier = covenant_whisperers_in_the_void_0
 			remove_modifier = covenant_whisperers_in_the_void_0_fircon
-			# remove flags and variables... - maybe shroud patrons can't be renounced?
 		}
 		else = {
 			set_country_flag = has_shroud_patron

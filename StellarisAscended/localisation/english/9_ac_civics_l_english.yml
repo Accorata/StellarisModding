@@ -82,7 +82,8 @@
 
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
   civic_shroud_renouncers_desc:0 "..."
-  civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension_required$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building...\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
+  AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
+  civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   # councilor needed
 
   civic_doomseekers:0 "Doomseekers"
@@ -292,7 +293,7 @@
 
   civic_omnirecyclers:0 "Omnirecyclers"
   civic_omnirecyclers_desc:0 "..."
-  civic_tooltip_omnirecyclers_effects:0 "$civic_tooltip_metallic_repurposing_effects$\n- ..."
+  civic_tooltip_omnirecyclers_effects:0 "$civic_tooltip_metallic_repurposing_effects$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+25%§!"
 
 # Nanotech -----------------------------------------------------------------------------------------
   nanotech_ascension_required:0 "If §YNanotech§! Ascension completed:\n"
@@ -324,7 +325,7 @@
 
   civic_microscopic:0 "Microscopic"
   civic_microscopic_desc:0 "..."
-  civic_tooltip_microscopic_effects:0 "$civic_tooltip_microscopic_life_effects$\n- ..."
+  civic_tooltip_microscopic_effects:0 "$civic_tooltip_microscopic_life_effects$\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
 # Hive Cybernetic ---------------------------------------------------------------------------------
 # civic_cyberform_gestation

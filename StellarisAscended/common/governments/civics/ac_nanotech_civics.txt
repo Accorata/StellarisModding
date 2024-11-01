@@ -262,6 +262,7 @@ civic_microscopic = {
 		modifier = {
 			planet_max_districts_mult = 0.5
 			pop_housing_usage_mult = 0.5
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }
