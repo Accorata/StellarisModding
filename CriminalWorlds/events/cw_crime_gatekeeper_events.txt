@@ -464,30 +464,59 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOR = {
-					has_modifier = cw_underground_slums_1
-					has_modifier = cw_underground_slums_2
-					has_modifier = cw_underground_slums_1_gestalt
-					has_modifier = cw_underground_slums_2_gestalt
+				NOT = {
+					is_variable_set = cw_slum_progress
 				}
 			}
-			planet_event = {
-				id = criminal_worlds.30
-				days = 1
-				random = 10
+			set_variable = {
+				which = cw_slum_progress
+				value = 1
+			}
+		}
+		else = {
+			change_variable = {
+				which = cw_slum_progress
+				value = 1
 			}
 		}
 		if = {
 			limit = {
-				OR = {
-					has_modifier = cw_underground_slums_1
-					has_modifier = cw_underground_slums_1_gestalt
+				check_variable_arithmetic = {
+					which = cw_slum_progress
+					value >= 3
 				}
 			}
-			planet_event = {
-				id = criminal_worlds.31
-				days = 1
-				random = 10
+			if = {
+				limit = {
+					NOR = {
+						has_modifier = cw_underground_slums_1
+						has_modifier = cw_underground_slums_2
+						has_modifier = cw_underground_slums_1_gestalt
+						has_modifier = cw_underground_slums_2_gestalt
+					}
+				}
+				planet_event = {
+					id = criminal_worlds.30
+					days = 1
+					random = 10
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_modifier = cw_underground_slums_1
+						has_modifier = cw_underground_slums_1_gestalt
+					}
+				}
+				planet_event = {
+					id = criminal_worlds.31
+					days = 1
+					random = 10
+				}
+			}
+			subtract_variable = {
+				which = cw_slum_progress
+				value = 3
 			}
 		}
 	}

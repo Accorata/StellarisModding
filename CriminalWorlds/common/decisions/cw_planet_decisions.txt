@@ -17,7 +17,7 @@ decision_uplift_slums = {
 		}
 	}
 	allow = {
-		free_housing > 20
+		free_housing > 10
 	}
 	effect = {
 		if = {
@@ -57,7 +57,7 @@ decision_uplift_slums_gestalt = {
 		}
 	}
 	allow = {
-		free_housing > 20
+		free_housing > 10
 	}
 	effect = {
 		if = {
@@ -78,6 +78,7 @@ decision_uplift_slums_gestalt = {
 	}
 }
 
+# redo like Cellaris nest civic decisions !
 # decision_cw_undercity_expansion = {
 # 	owned_planets_only = yes
 # 	sound = event_administrative_work
