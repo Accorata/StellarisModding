@@ -128,12 +128,12 @@ concept_auth_ac_psionic_oligarchic_divine_toxic_god = {
 }
 
 concept_building_ac_order_hall = {
-	icon =  "gfx/interface/icons/buildings/building_cyberdome.dds" #change
+	icon =  "gfx/interface/icons/buildings/building_ac_order_hall.dds"
 	tooltip_override = "building:building_ac_order_hall"
 }
 
 concept_building_ac_order_hall_knights = {
-	icon =  "gfx/interface/icons/buildings/building_cyberdome.dds" #change
+	icon =  "gfx/interface/icons/buildings/building_ac_order_hall.dds"
 	tooltip_override = "building:building_ac_order_hall_knights"
 }
 

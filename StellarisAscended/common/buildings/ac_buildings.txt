@@ -4,6 +4,7 @@ building_ac_psi_tower = {
 	category = government
 	base_cap_amount = 1
 	potential = {
+		exists = owner
 		owner = {
 			is_ac_telepathic_empire = yes
 		}
@@ -119,6 +120,7 @@ building_ac_renouncer_sanctum = {
 	}
 
 	potential = {
+		exists = owner
 		owner = {
 			is_ac_shroud_renouncer = yes
 		}
@@ -198,6 +200,7 @@ building_ac_grand_sapling = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				has_councilor = {
 					COUNCILOR = "councilor_blossoming_worlds"
@@ -209,6 +212,7 @@ building_ac_grand_sapling = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
@@ -261,6 +265,7 @@ building_ac_hanging_cities = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				has_councilor = {
 					COUNCILOR = "councilor_blossoming_worlds"
@@ -272,6 +277,7 @@ building_ac_hanging_cities = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
@@ -426,13 +432,10 @@ building_ac_mega_forge = {
 		has_upgraded_capital = yes
 	}
 	potential = {
-		custom_tooltip = {
-			text = EMPIRE_UNIQUE_BUILDING
-			owner = {
-				is_ac_world_builders = yes
-			}
+		exists = owner
+		owner = {
+			is_ac_world_builders = yes
 		}
-		exists = planet
 	}
 	destroy_trigger = {
 		exists = owner
@@ -483,17 +486,14 @@ building_ac_order_hall = {
 		has_upgraded_capital = yes
 	}
 	potential = {
-		custom_tooltip = {
-			text = EMPIRE_UNIQUE_BUILDING
-			owner = {
-				is_oligarchic_authority = yes
-				has_empire_flag = ac_psionic_divine
-				NOT = {
-					has_origin = origin_toxic_knights
-				}
+		exists = owner
+		owner = {
+			is_oligarchic_authority = yes
+			has_country_flag = ac_psionic_divine
+			NOT = {
+				has_origin = origin_toxic_knights
 			}
 		}
-		exists = planet
 	}
 	destroy_trigger = {
 		OR = {
@@ -501,12 +501,14 @@ building_ac_order_hall = {
 				exists = owner
 				owner = {
 					is_oligarchic_authority = yes
-					has_empire_flag = ac_psionic_divine
+					has_country_flag = ac_psionic_divine
 				}
 			}
 			AND = {
 				exists = owner
-				has_origin = origin_toxic_knights
+				owner = {
+					has_origin = origin_toxic_knights
+				}
 			}
 		}
 	}
@@ -539,22 +541,19 @@ building_ac_order_hall_knights = {
 		has_upgraded_capital = yes
 	}
 	potential = {
-		custom_tooltip = {
-			text = EMPIRE_UNIQUE_BUILDING
-			owner = {
-				is_oligarchic_authority = yes
-				has_empire_flag = ac_psionic_divine
-				has_origin = origin_toxic_knights
-			}
+		exists = owner
+		owner = {
+			is_oligarchic_authority = yes
+			has_country_flag = ac_psionic_divine
+			has_origin = origin_toxic_knights
 		}
-		exists = planet
 	}
 	destroy_trigger = {
 		NOT = {
 			exists = owner
 			owner = {
 				is_oligarchic_authority = yes
-				has_empire_flag = ac_psionic_divine
+				has_country_flag = ac_psionic_divine
 				has_origin = origin_toxic_knights
 			}
 		}

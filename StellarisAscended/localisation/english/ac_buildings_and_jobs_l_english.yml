@@ -21,7 +21,7 @@
   job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
   mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
   mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
-  # mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
+  mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
   concept_job_ac_grand_synthesizer: "$job_ac_grand_synthesizer_plural$"
   concept_job_ac_grand_synthesizer_desc: "$job_ac_grand_synthesizer_plural$ turn $i_minerals$ into $i_alloys$ and §YMegastructure build speed§!.\n\n§L$job_ac_grand_synthesizer_desc$§!"
 
@@ -39,6 +39,7 @@
   job_ac_normal_knight_effect_desc:3 "£job_knight£ $job_knight_plural$ turn $r_alloys$ into $r_unity$ and $r_research$, increase £mod_country_naval_cap_add£ §YNaval Capacity§! and spawn £defense_army£ §YDefense Armies§!."
   mod_job_ac_normal_knight_add:0 "$job_knight$ Jobs"
   mod_job_ac_normal_knight_per_pop:0 "§G+1§! $job_knight$ Job per $VALUE$ Pops"
+  mod_job_ac_normal_knight_per_pop_short:0 "\n§G+1§! £mod_job_knight_add£ per $VALUE$ £pop£"
 
   holding_ac_manipulation_network:0 "Manipulation Network"
   holding_ac_manipulation_network_desc:0 "..."

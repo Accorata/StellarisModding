@@ -637,35 +637,39 @@ country_event = {
 }
 
 # on pop assembled - increase counter and spawn pop if counter reaches 5
-country_event = {
+planet_event = {
 	id = ascension_civics.81
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		is_ac_numbered_stars = yes
-		is_variable_set = ac_nanite_robots_assembled
+		from = {
+			is_ac_numbered_stars = yes
+			is_variable_set = ac_nanite_robots_assembled
+		}
 	}
 	immediate = {
-		change_variable = {
-			which = ac_nanite_robots_assembled
-			value = 1
-		}
-		if = {
-			limit = {
-				check_variable_arithmetic = {
-					which = ac_nanite_robots_assembled
-					value >= 5
-				}
-			}
-			subtract_variable = {
+		from = {
+			change_variable = {
 				which = ac_nanite_robots_assembled
-				value = 5
+				value = 1
 			}
-
-			capital_scope = {
-				create_pop = {
-					species = owner_main_species
-					ethos = random
+			if = {
+				limit = {
+					check_variable_arithmetic = {
+						which = ac_nanite_robots_assembled
+						value >= 5
+					}
+				}
+				subtract_variable = {
+					which = ac_nanite_robots_assembled
+					value = 5
+				}
+	
+				capital_scope = {
+					create_pop = {
+						species = owner_main_species
+						ethos = random
+					}
 				}
 			}
 		}
