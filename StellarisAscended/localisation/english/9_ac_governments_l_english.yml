@@ -7,17 +7,17 @@
 ## Authorities
 # Genetic Imperial Perfect
   auth_ac_genetic_imperial_perfect:0 "Imperial Clones"
-  auth_ac_genetic_imperial_perfect_desc:0 "..."
+  auth_ac_genetic_imperial_perfect_desc:0 "Our great genetic dynasty stands for all time. Each of our rulers, a clone of our great founder, leading us even in death."
   AUTHORITY_AC_CLONED:1 "$t$ Upon §HRuler Death§! their §HCloned Heir§! becomes the new Ruler."
   concept_auth_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
-  gov_ac_genetic_imperial_perfect:0 "Genetic Dynasty"
+  gov_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
   gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
-  auth_ac_genetic_imperial_perfect_effects:0 "...Cloned rulers gain new trait picks"
+  auth_ac_genetic_imperial_perfect_effects:0 "- £leader£ Cloned heirs gain additional traits"
   councilor_ruler_imperial_ac_genetic:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_genetic_desc:0 "$imperial_ruler_desc$"
 # Genetic Imperial Chaotic
   auth_ac_genetic_imperial_chaotic:0 "Imperial Pathogens"
-  auth_ac_genetic_imperial_chaotic_desc:0 "..."
+  auth_ac_genetic_imperial_chaotic_desc:0 "Biochemical weapons wreak havoc among the lower classes, as the elites reap the random insights such death provides. Trials ensure that any brilliance among these inferiors isn't wasted, granting a few passage to class mobility."
   concept_auth_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic_desc:0 "$auth_ac_genetic_imperial_chaotic_desc$"
@@ -29,11 +29,11 @@
   gov_ac_genetic_dictatorial_perfect_desc:0 "$auth_ac_genetic_dictatorial_perfect_desc$"
 # Genetic Dictatorial Chaotic
   auth_ac_genetic_dictatorial_chaotic:0 "Dictatorial Kraterocracy"
-  auth_ac_genetic_dictatorial_chaotic_desc:0 "..."
+  auth_ac_genetic_dictatorial_chaotic_desc:0 "Only through violence can perfection emerge. Within this government, the weak are eliminated until only the strong remain."
   concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic_desc:0 "$auth_ac_genetic_dictatorial_chaotic_desc$"
-  auth_ac_genetic_dictatorial_chaotic_effects:0 "Rulers gain the §Yabc$$§! leader trait\nOn Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!" #not yet in effect
+  auth_ac_genetic_dictatorial_chaotic_effects:0 "- £leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! leader trait\n- On Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!"
 # Genetic Oligarchic Perfect
   auth_ac_genetic_oligarchic_perfect:0 "Oligarchic Geniocracy"
   auth_ac_genetic_oligarchic_perfect_desc:0 "..."
@@ -46,7 +46,7 @@
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
-  auth_ac_genetic_oligarchic_chaotic_effects:0 "New leaders have a §Y50%§! chance to gain a Mutant trait along with an additional Negative trait."
+  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! chance to gain a Mutant trait along with an additional Negative trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "..."
@@ -121,14 +121,14 @@
   ascension_governments.9.name: "Preserved Loved Ones"
   ascension_governments.9.desc: "A new tradition has gained popularity within some communities of our people. Upon the unfortunate passing of their loved ones, some [Root.GetSpeciesNamePlural] have decided to modify their own genetic makeup to incorporate some of the phenotypes of the deceased.\n\nWhether this might be a change in eye color, or a new birthmark, to even incorporating elements of another species, some opposition has formed against this practice, declaring these changes as purely cosmetic and an afront to our nature."
   ascension_governments.9.a: "A wonderful way to remember the deceased." # C
-  ascension_governments.9.b: "These are horrid abominations of [root.GetSpeciesName]. Outlaw the process." # P
+  ascension_governments.9.b: "These are horrid abominations of [Root.GetSpeciesName]. Outlaw the process." # P
   ascension_governments.9.c: "Embrace this tradition as a wonderful part of our culture." # Memorialist - C
   ac_alleles_of_the_dead:0 "Alleles of the Dead"
   ac_alleles_of_the_dead_desc:0 "This society honores its departed by taking various genetic traits and placing them within their relatives and close friends, ensuring all are remembered."
   ac_preserved_genetic_form:0 "Preserved Genetic Form"
   ac_preserved_genetic_form_desc:0 "This society rejects small gene changes done solely for cosmetics or remembrance."
   ascension_governments.10.name: "Celebrity Impersonators"
-  ascension_governments.10.desc: "Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as ...."
+  ascension_governments.10.desc: "Beauty standards have always changed with the flow of time, but now everyone can embrace the trends. Demand has risen for full bodily transformations to appear as current celebrity icons, and experts believe that similar actors will want to change their appearances as beauty standards rise and fall. Some are concerned that our idenity will be dilluted as we continue down this path and call for government intervention."
   ascension_governments.10.a: "Set required appearance-differentiating standards." # C
   ascension_governments.10.b: "Why shouldn't [Root.GetSpeciesNamePlural] become the best versions of ourselves?" # P
   ascension_governments.10.c: "Sell pre built identity designs." # Corporate - N
@@ -164,16 +164,16 @@
   ac_evolving_population:0 "Evolving Population"
   ac_evolving_population_desc:0 "This society understands that they may never become passive, and must always evolve with the challenges that face them."
   ascension_governments.21.name: "Innate Safety Instincts"
-  ascension_governments.21.desc: "..."
-  ascension_governments.21.a: "Perfection of our instincts is essential in [Root.GetSpeciesAdj] evolution." # P
-  ascension_governments.21.b: "Learning provides a unique experience that genetic knowledge never will." # C
-  ascension_governments.21.c: "Individuals will decide what to install in their children." # N
+  ascension_governments.21.desc: "New genetic advancements would allow an increase in the number of natural instincts in [[Root.GetSpeciesAdj] children, allowing them to automatically avoid natural dangers for infants, from depressurized spaces to escaped radiation waves.\n\nSuch instincts could also include basic fundamentals of knowledge, increasing intelligence at birth, and giving our young a stepping stone from which to build. That said, the natural process may provide benefits that genetic knowledge never will."
+  ascension_governments.21.a: "Perfect our instincts for [Root.GetSpeciesAdj] evolution." # P
+  ascension_governments.21.b: "Learning provides a unique experience." # C
+  ascension_governments.21.c: "Individuals will decide for their children." # N
   ac_innate_abilities:0 "Innate Abilities"
   ac_innate_abilities_desc:0 "..."
   ac_natural_education:0 "Natural Education"
-  ac_natural_education_desc:0 "...selecting those through the "
+  ac_natural_education_desc:0 "Selecting those through current channels allows for the best expression of future excellence."
   ac_reproductive_installations:0 "Reproductive Installations"
-  ac_reproductive_installations_desc:0 "..."
+  ac_reproductive_installations_desc:0 "It is the right of parents, and parents alone, to decide what innate knowledge kernels to instantiate in their children."
   ascension_governments.22.name: "$cyber.1005.name$"
   ascension_governments.22.desc: "$cyber.1005.desc$"
   ascension_governments.22.a: "$cyber.1005.a.tt$" # P
@@ -192,7 +192,7 @@
   ascension_governments.23.b: "Targeted applications should prove best." # C
   ascension_governments.23.c: "Pain is a virtue, not an obstacle." # N
   trait_ac_auto_analgesic:0 "Auto-Analgesic"
-  trait_ac_auto_analgesic_desc:0 "..."
+  trait_ac_auto_analgesic_desc:0 "This species has genetic programs that automatically identify and suppress unnecessarily extreme pain."
   ac_painless_labor:0 "Painless Labor"
   ac_painless_labor_desc:0 "Neuron advancements eliminating the tenous strain of physical labor and mental damage of costly battles."
   ac_united_in_pain:0 "United in Pain"
@@ -224,11 +224,11 @@
   ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
 
 # Dictatorial
-  ascension_governments.34.name: "..."
-  ascension_governments.34.desc.perfect: "..."
+  ascension_governments.34.name: "Descendants of Authority"
+  ascension_governments.34.desc.perfect: "National scientists proudly reveal our newest advancement that will ensure power belongs to our [ruler.GetRulerTitle]: the creation of the genetic caste. New generations will be modified invitro, designing their mental and physical capacities to ensure optimal complacency without harming efficiency. The lower classes will truly be free as they won't even contain the capacity  to realize their oppression."
   ascension_governments.34.desc.chaotic: "..."
   ascension_governments.34.desc.neutral: "..."
-  ascension_governments.34.a: "..."
+  ascension_governments.34.a: "Inherent order is imperative."
   ascension_governments.34.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_perfect']\n$unlock_edict_ac_hypnopaedic_conditioning$"
   ascension_governments.34.b: "Survival of the Fittest!"
   ascension_governments.34.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_chaotic']\n$unlock_edict_ac_unrestricted_mutation$" #change edict
@@ -236,8 +236,9 @@
   ascension_governments.34.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
   ascension_governments.42.name: "..."
-  ascension_governments.42.desc: "Our very own §Y[leader_1.GetTitle] [leader_1.GetName]§!, ..."
+  ascension_governments.42.desc: "...\n\nUnfortunately, for some, their genetic makeups were tested and found unsufficient. Our very own §Y[leader_1.GetTitle] [leader_1.GetName]§!, §Y[leader_2.GetTitle] [leader_2.GetName]§!, and §Y[leader_3.GetTitle] [leader_3.GetName]§! have fallen in battle. Their honor is admired, but they are failures of [Root.GetSpeciesNamePlural], and their deaths will only benefit our decendants."
   ascension_governments.42.a: "All honor our newest [ruler.GetRulerTitle]!"
+  # ascension_governments.42.b: "Kill the inferiers' relatives."
 
 # Imperial
   ascension_governments.35.name: "Empire Reborn"
@@ -344,17 +345,17 @@
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
 
-  unlock_building_ac_order_hall:0 "Unlocks Unique Building: ['concept_building_ac_order_hall']"
-  unlock_building_ac_order_hall_knights:0 "Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
+  unlock_building_ac_order_hall:0 "- Unlocks Unique Building: ['concept_building_ac_order_hall']"
+  unlock_building_ac_order_hall_knights:0 "- Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
   auth_ac_psionic_oligarchic_divine_effects:0 "$unlock_building_ac_order_hall$"
   auth_ac_psionic_oligarchic_divine_toxic_god_effects:0 "$unlock_building_ac_order_hall_knights$"
 # Psionic Oligarchic Eldritch
-  unlocks_ac_ac_shroud_invocation:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
+  unlocks_ac_ac_shroud_invocation:0 "- Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
 
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
   auth_ac_psionic_oligarchic_eldritch_desc:0 "..."
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\nProvides varied benefits based on Shroud Covenant"
+  auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\n- Provides varied benefits based on Shroud Covenant"
 
   auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
   auth_ac_psionic_oligarchic_eldritch_composer_desc:0 "..."
@@ -408,7 +409,7 @@
   concept_auth_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch_desc:0 "$auth_ac_psionic_corporate_eldritch_desc$"
-  auth_ac_psionic_corporate_eldritch_effects:0 "$AVAILABLE_HOLDINGS$ ['building:holding_ac_manipulation_network']"
+  auth_ac_psionic_corporate_eldritch_effects:0 "$AVAILABLE_HOLDINGS$ ['building:holding_ac_manipulation_network']" #... '- '?
 
 ## Events
   ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables have changed
@@ -453,7 +454,7 @@
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
   ascension_governments.1009.desc: "...\n\n..."
-  ascension_governments.1009.a: "The Shroud deserves our devotion." # E - might need a tooltip for this effect...
+  ascension_governments.1009.a: "The Shroud deserves our devotion." # E
   ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
   ascension_governments.1009.c: "There will always be those lost to insanity...." # N
   ac_holy_minds:0 "Holy Minds"
@@ -525,11 +526,11 @@
 # Imperial
   ascension_governments.1035.name: "Regal Ascendency"
   ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills.\n\nAll will see the light; all will bow before them; all will bask in their brilliant embrace."
-  ascension_governments.1035.desc.eldritch: "..."
-  ascension_governments.1035.desc.neutral: "..."
+  ascension_governments.1035.desc.eldritch: "The proposal is complete. Our Patron wishes to join the material plane by manifesting their will into the mind of §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!. \n\nIf we continue down this path, then from this moment onwards, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will serve as a conduit for our Patron, allowing their bodily form to be possessed as the entities of the Shroud deem fit for the empire."
+  ascension_governments.1035.desc.neutral: "Our majesty, §Y[ruler.GetRegnalName]§! is larger than life, that much is clear. The degree to which, and methods by which remain a topic of conversation.\n\nAs §Y[ruler.GetRulerTitle]§!, their right by royal blood is evident, but others claim their psionic ability allows for true ascendant deification. Others appeal to the power of our Patron, arguing that the only ultimate authority would arise from allowing §Y[ruler.GetRegnalName]§! to be possessed by our Patron."
   ascension_governments.1035.a: "Divinity at last."
   ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
-  ascension_governments.1035.b: "..."
+  ascension_governments.1035.b: "Our Patron has joined us."
   ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$" # change edict
   ascension_governments.1035.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1035.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
@@ -549,13 +550,16 @@
 # Edicts
 # Imperial
   edict_ac_betrayal_of_the_mind:0 "Betrayal of the Mind"
-  edict_ac_betrayal_of_the_mind_desc:0 "..."
+  edict_ac_betrayal_of_the_mind_desc:0 "Thoughts, emotions, desires. The Shroud sees all and compell all to reveal their inner secrets."
   concept_edict_ac_betrayal_of_the_mind:0 "$edict_ac_betrayal_of_the_mind$"
   unlock_edict_ac_betrayal_of_the_mind:0 "$unlock_edict_tt$['concept_edict_ac_betrayal_of_the_mind']"
 
 # Oligarchic 
+  edict_ac_consecrated_rites:0 "Consecrated Rites"
+  # ...
+
   edict_ac_dark_pact:0 "Dark Pact"
-  edict_ac_dark_pact_desc:0 "..."
+  edict_ac_dark_pact_desc:0 "Within the Shroud there are energies that shouldn't be tampered with, that is, if one wishes to keep their soul to themselves."
   concept_edict_ac_dark_pact:0 "$edict_ac_dark_pact$"
   unlock_edict_ac_dark_pact:0 "$unlock_edict_tt$['concept_edict_ac_dark_pact']"
 
@@ -568,7 +572,7 @@
   auth_ac_psi_teacher_oligarchic_desc: "Within this oligarchy, the elite strive not only to control the present, but also the future. Gifted diviners rise quickly through the class strata until they serve upper society and shape their dreams."
   concept_auth_ac_psi_teacher_oligarchic: "$auth_ac_psi_teacher_oligarchic$"
   auth_ac_psi_teacher_dictatorial: "Dictatorial Telepocracy"
-  auth_ac_psi_teacher_dictatorial_desc: "..."
+  auth_ac_psi_teacher_dictatorial_desc: "Our dictatorial reign is aided by the help of the telepathic insights of the teachers. The sciences of controlling the mind and spirit of the nation are obsolute, replaced by the brilliant power of telepathy."
   concept_auth_ac_psi_teacher_dictatorial: "$auth_ac_psi_teacher_dictatorial$"
   auth_ac_psi_teacher_imperial: "Imperial Prophetarchy"
   auth_ac_psi_teacher_imperial_desc: "Guided by the teachers, our imperial bloodline has been prophesized to rule for eternity. The noble houses train their elite telepaths in tandem with the teachers to understand the prophecy and ensure their continual elevation."
@@ -579,7 +583,7 @@
 
 # Event
   ascension_governments.900.name: "The Teacher's Gift"
-  ascension_governments.900.desc: "...\n\nIn response to our enlightenment, the government will now be guided by the teacher's insights, embracing psionic theory throughout its structure. The §Y[Root.GetGovernmentName]§! will be created."
+  ascension_governments.900.desc: "The work of the teachers has finally come to completion: Our people have reached a state of illumination beyond our own expectations. We can finally grace the Shroud and enjoy the fruits of the teacher's labor.\n\nIn response to our enlightenment, the government will now be guided by the teacher's insights, embracing psionic theory throughout its structure. The §Y[Root.GetGovernmentName]§! will be created."
   ascension_governments.900.a: "..."
   ascension_governments.900.a.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
   ascension_governments.900.b.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."
@@ -592,5 +596,5 @@
   auth_ac_genetic_hive_perfect_desc:0 "..."
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
   auth_ac_genetic_hive_chaotic_desc:0 "..."
-  auth_ac_genetic_hive_chaotic_effects:0 "Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
+  auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
   #needs concepts and gov

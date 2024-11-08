@@ -1,14 +1,14 @@
 Overrides: 
 - Scripted Effect: apply_post_assimilation_effects
-- Inline Scripts: auto modding prios
+- Inline Scripts: auto modding priorities
 
 References:
-- Legend -> Republic of America (Imperial Pathogens authority) (unspecific)
-- Foundation (TV adaptation) -> Genetic Dynasty (Imperial Clones gov name)
+- Harrison Bergeron -> Handicaps (Handicap Distribution edict)
+- Foundation (TV adaptation) -> Genetic Dynasty (Imperial Clones authority description)
 - Netrunner -> Xanadu (Xanadu Retreats civic)
-- Ender's Game -> Anton's Key (Brilliant species trait)
-- Brave New World -> (?) (Dictatorial Castes authority) (unspecific)
+- Ender's Game -> Anton's Key (Brilliant species trait description)
 - Brave New World -> Sleep-Learning (Hypnopædic Conditioning edict) 
+- Legend -> Republic of America Trials (Imperial Pathogens authority description)
 Maybe?:
 - Neuromancer -> ? (maybe not?)
 - Tron -> (program appropriator / ISO's) (to do)

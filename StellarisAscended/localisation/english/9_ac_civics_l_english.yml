@@ -12,7 +12,8 @@
   civic_bio_replacer:0 "Anatomic Obsolescence"
   civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. ..."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n- Can build £building£ §Y$holding_ac_robotics_plant$§! holdings\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_country_synthetic_trust_cap_add$: §G+10§!\n- $mod_country_organic_trust_cap_add$: §R-10§!"
-  councilor_bio_replacer:0 "..."
+  councilor_bio_replacer:0 "..." 
+  # need to change effects - maybe applies this benefit to all other empires? or branch offices or holding?
   councilor_bio_replacer_female:0 "$councilor_bio_replacer$"
   councilor_bio_replacer_desc:0 "..."
 
@@ -42,7 +43,7 @@
   civic_tooltip_synthetic_celestials_effects:0 "$synthetic_ascension_required$- Can build unique £building£ §Y$building_ac_mega_forge$§! building \n\nThe £building£ §Y$building_ac_mega_forge$§! grants empire-wide §Y$job_ac_grand_synthesizer_plural_with_icon$§! jobs which produce £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!.\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_megastructures_cost_mult$: §G-10%§!"
   councilor_synthetic_celestials:0 "Architect of Worlds"
   councilor_synthetic_celestials_female:0 "$councilor_synthetic_celestials$"
-  councilor_synthetic_celestials_desc:0 "..."
+  councilor_synthetic_celestials_desc:0 "The $TITLE$ is a master of artificial realities, designing the worlds of the future."
 
   civic_world_commissioners:0 "World Commissioners"
   civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future and will yield an enormous rate of return."
@@ -78,7 +79,7 @@
   civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
   councilor_telepathic_corporation:0 "Chief Telepathic Officer"
   councilor_telepathic_corporation_female:0 "$councilor_telepathic_corporation$"
-  councilor_telepathic_corporation_desc:0 "..."
+  councilor_telepathic_corporation_desc:0 "The $TITLE$ oversees mental communication among the executives, increasing optimization and bureaucratic oversight."
 
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
   civic_shroud_renouncers_desc:0 "..."
@@ -181,22 +182,22 @@
   civic_tooltip_hyper_diversified_effects:0 "$civic_tooltip_hyper_diversification_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   trait_ac_auto_mod_biological:0 "Evolving Niches"
-  trait_ac_auto_mod_biological_desc:0 "..."
+  trait_ac_auto_mod_biological_desc:0 "This species has been modified to excell at their niche, mutating their own genetic makeup to ensure maximum productivity."
   automodding_trait_ac_bio_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_biological$§! picks modifiers from the ['concept_ac_automodding_bio']"
   concept_ac_automodding_bio: "Diversified Auto-Mod Trait List"
   concept_ac_automodding_bio_desc: "- ['trait:trait_ac_bio_traditional']\n- ['trait:trait_ac_bio_thrifty']\n- ['trait:trait_ac_bio_intelligent']\n- ['trait:trait_ac_bio_industrious']\n- ['trait:trait_ac_bio_agrarian']\n- ['trait:trait_ac_bio_ingenious']\n- ['trait:trait_ac_bio_charismatic']"
   trait_ac_bio_ingenious:0 "Innovative"
-  trait_ac_bio_ingenious_desc:0 "..."
+  trait_ac_bio_ingenious_desc:0 "This species constantly evolves their designs, refusing to stop short of perfect efficiency."
   trait_ac_bio_industrious:0 "Vigorous"
   trait_ac_bio_industrious_desc:0 "Unparalleled determination matched with physical prowess."
   trait_ac_bio_agrarian:0 "Cultivating"
   trait_ac_bio_agrarian_desc:0 "Green's thumb would be an understatement. All life flourishes around those who are in tune with the natural environment."
   trait_ac_bio_thrifty:0 "Mercantile"
-  trait_ac_bio_thrifty_desc:0 "..."
+  trait_ac_bio_thrifty_desc:0 "Savvy in all xeno relations, this species knows best how to sell a deal."
   trait_ac_bio_charismatic:0 "Extraordinary"
   trait_ac_bio_charismatic_desc:0 "..."
   trait_ac_bio_traditional:0 "Enlightened"
-  trait_ac_bio_traditional_desc:0 "..."
+  trait_ac_bio_traditional_desc:0 "This species sees past normal concerns, finding beauty in all things."
   trait_ac_bio_intelligent:0 "Brilliant"
   trait_ac_bio_intelligent_desc:0 "An ingenious mutation developed by our scientists called Anton's Key has allowed for intelligence never seen before."
 
@@ -226,7 +227,7 @@
   civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   civic_concurrent_command:0 "Concurrent Command"
-  civic_concurrent_command_desc:0 "..."
+  civic_concurrent_command_desc:0 "This society splits its strategic planning between its ruler and its operatives in the field. Its virtual existence allows all teams to work in unison as if they were one, regardless of distance."
   civic_tooltip_concurrent_command_effects:0 "$virtual_ascension_required$- Gains §Y$commander_with_icon$§! benefits scaling with effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
   councilor_concurrent_command:0 "Duo Processor"
   councilor_concurrent_command_female:0 "$councilor_concurrent_command$"
@@ -234,12 +235,12 @@
   councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!"
 
   civic_executive_militarization:0 "Executive Militarization"
-  civic_executive_militarization_desc:0 "This Megacorporation's executive council ..."
+  civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with training ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
   civic_tooltip_executive_militarization_effects:0 "$civic_tooltip_concurrent_command_effects$"
   # councilor needed
 
   civic_nodal_command:0 "Nodal Command"
-  civic_nodal_command_desc:0 "..."
+  civic_nodal_command_desc:0 "This Machine Intelligence runs strategic simulations along its nodal core, allowing warrior drones to tap into the network and run naval calculations concurrently."
   civic_tooltip_nodal_command_effects:0 "$civic_tooltip_concurrent_command_effects$\n\n§EModifiers:§!\n$virtual_ascension_required$- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
 
 # Modularity --------------------------------------------------------------------------------------
@@ -268,13 +269,13 @@
   trait_ac_robot_superconductive:0 "Ultraconductive"
   trait_ac_robot_superconductive_desc:0 "Coils of living metal arranged for optimal conductivity."
   trait_ac_robot_power_drills:0 "Fusion Drills"
-  trait_ac_robot_power_drills_desc:0 "..."
+  trait_ac_robot_power_drills_desc:0 "Powerful internal reactors sustaining top-of-the-line mining equipment."
   trait_ac_robot_harvesters:0 "Mega-Harvestors"
   trait_ac_robot_harvesters_desc:0 "Fluid interiors able to expand at will, collecting entire harvests per robot."
   trait_ac_robot_trading_algorithms:0 "Predictive Algorithms"
-  trait_ac_robot_trading_algorithms_desc:0 "..."
-  trait_ac_robot_emotion_emulators:0 "... Emulators"
-  trait_ac_robot_emotion_emulators_desc:0 "..."
+  trait_ac_robot_trading_algorithms_desc:0 "Probability simulators running concurrently in real time to analyze market patterns."
+  trait_ac_robot_emotion_emulators:0 "Life Emulators"
+  trait_ac_robot_emotion_emulators_desc:0 "Living metal shaping unique and motivating identities."
   trait_ac_robot_propaganda_machines:0 "Reality Machines"
   trait_ac_robot_propaganda_machines_desc:0 "Metallic mirages of pristine beauty forming whatever realities we deam most viable."
   trait_ac_robot_logic_engines:0 "Epistemological Engines"
@@ -282,7 +283,8 @@
 
   civic_metallic_repurposing:0 "Metallic Repurposing"
   civic_metallic_repurposing_desc:0 "This society believes all metal serves a purpose, that none should go to waste. Their living metal technology is able to grow on metallic remains, greatly enhancing their recycling capabilities."
-  civic_tooltip_metallic_repurposing_effects:0 "$modular_ascension_required$- §YDoubles§! chance of salvaging ships\n- Grants §Y£sr_living_metal£ Living Metal§! on salvaging or researching debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!" #maybe change to show job?- instead of just "Metallurgist"
+  civic_tooltip_metallic_repurposing_effects:0 "$modular_ascension_required$- §YDoubles§! chance of salvaging ships\n- Grants §Y£sr_living_metal£ Living Metal§! on salvaging or researching debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"  
+  # maybe change to show job?- instead of just "Metallurgist"
   councilor_metallic_repurposing:0 "..."
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
   councilor_metallic_repurposing_desc:0 "..."

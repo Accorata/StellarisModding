@@ -83,6 +83,6 @@
   sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
   sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
 
-  holding_ac_external_router:0 "External Router Core" #tower?
+  holding_ac_external_router:0 "External Router Core"
   holding_ac_external_router_plural:0 "External Router Cores"
   holding_ac_external_router_desc:0 "external servers processing..."
