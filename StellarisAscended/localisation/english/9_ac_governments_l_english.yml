@@ -42,14 +42,14 @@
   gov_ac_genetic_oligarchic_perfect_desc:0 "$auth_ac_genetic_oligarchic_perfect_desc$"
 # Genetic Oligarchic Chaotic
   auth_ac_genetic_oligarchic_chaotic:0 "Oligarchic Mutagens"
-  auth_ac_genetic_oligarchic_chaotic_desc:0 "..."
+  auth_ac_genetic_oligarchic_chaotic_desc:0 "Promising individuals are given new lives through genetic resequencing, granting unpredictable, but powerful powers."
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
   auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! chance to gain a Mutant trait along with an additional Negative trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
-  auth_ac_genetic_democratic_perfect_desc:0 "..."
+  auth_ac_genetic_democratic_perfect_desc:0 "All are equal in genetics, granting perfect equality as all hvae an equal chance to thrive."
   concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
@@ -62,13 +62,13 @@
   gov_ac_genetic_democratic_chaotic_desc:0 "$auth_ac_genetic_democratic_chaotic_desc$"
 # Genetic Corporate Perfect
   auth_ac_genetic_corporate_perfect:0 "Corporate Cryosleep"
-  auth_ac_genetic_corporate_perfect_desc:0 "..."
+  auth_ac_genetic_corporate_perfect_desc:0 "The hegemonic shareholder elite preserve themselves within the peace of cryosleep, emerging only rarely to correct the corpoations focus or lavish in their rule."
   concept_auth_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect_desc:0 "$auth_ac_genetic_corporate_perfect_desc$"
 # Genetic Corporate Chaotic
   auth_ac_genetic_corporate_chaotic:0 "Corporate Darwinism"
-  auth_ac_genetic_corporate_chaotic_desc:0 "..."
+  auth_ac_genetic_corporate_chaotic_desc:0 "Only in competition is there innovatation. The corporation is split into various factions, all competing for dominance."
   concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
@@ -95,7 +95,7 @@
 
 # Dictatorial
   ascension_governments.4.name: "$ac_genetic_shock_chain_title$"
-  ascension_governments.4.desc: "The regime has brought new life to the nation. Genetic improvements have given us the tools to shape our bodies and minds as we shape steel and ideas to build our weapons and culture. A golden age is up us, and now we must decide how we embrace this revolution.\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, in order to determine who has the best genetics, we could redesign how our leadership is passed down, hosting a large competition between our leaders to take the next place."
+  ascension_governments.4.desc: "The regime has brought new life to the nation. Genetic improvements have given us the tools to shape our bodies and minds just as we shape steel and ideas to build our weapons and culture. A golden age is up us, and now we must decide how we embrace this revolution.\n\nIf we devote our efforts to researching the effects of genetic changes on babies, we could form genetic castes to keep the workers subservient and productive. Alternatively, in order to determine who has the best genetics, we could redesign how our leadership is passed down, hosting a large competition between our leaders to take the next place."
   ascension_governments.4.a: "Attempt to reduce abstract thought in embryos."
   ascension_governments.4.a.tt: "Emphasis on ruler political power and worker output."
   ascension_governments.4.b: "Plan the games."
@@ -485,6 +485,14 @@
   ascension_governments.1020.a: "Our diety walks the physical realm." # D
   ascension_governments.1020.b: "The Chosen One is blessed by the Shroud." # E
   ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
+
+  ascension_governments.1021.name: "A Request"
+  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it make its request. Always, we are the one's who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the Harrower of Time. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the Harrower wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the Harrower promises power, power to rule all others. It wants us to agree, for else, our time cannot be freely taken.\n\nA choice must be made."
+  ascension_governments.1021.a: "Anything for power." # E
+  ascension_governments.1021.b: "We will not make unretractable bargains." # D
+  ac_pact_of_the_harrower:0 "Pact of the Harrower"
+  ac_pact_of_the_harrower_desc:0 "For a day out of each month, we've been promised power."
+  ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
 
 # Final Event
 # Democratic

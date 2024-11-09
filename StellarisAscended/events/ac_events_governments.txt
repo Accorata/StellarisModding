@@ -2594,6 +2594,114 @@ country_event = {
 	}
 }
 
+country_event = {
+	# Harrower of Time
+	id = ascension_governments.1021
+	title = ascension_governments.1021.name
+	desc = ascension_governments.1021.desc
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+	add_modifier = ac_pact_of_the_harrower
+	option = {
+		# Eldritch
+		name = ascension_governments.1021.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1021.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+			country_event = {
+				id = ascension_governments.1031
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1022
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = ac_pact_of_the_harrower
+	}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Psionic_Avatar"
+			settings = {
+				can_upgrade = no
+				can_change_composition = no
+				can_change_leader = no
+				uses_naval_capacity = no
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = "NAME_Avatar"
+					design = "NAME_Shroud_Avatar"
+					prefix = no
+					upgradable = no
+				}
+				set_location = root.capital_scope
+			}
+		}
+	}
+}
+
 # Ending
 # Fired by: event
 country_event = {

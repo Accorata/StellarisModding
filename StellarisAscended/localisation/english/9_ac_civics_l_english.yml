@@ -52,7 +52,6 @@
   councilor_world_commissioners_desc:0 "The $TITLE$ is ..."
   councilor_world_commissioners_custom_modifier_desc:1 "- £trade_value£ Trade Value from $job_ac_grand_synthesizer_plural_with_icon$: §G+1§!"
 
-
 # Psionic ---------------------------------------------------------------------------------------------
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
 
@@ -117,6 +116,13 @@
   civic_cybernet_desc:0 "..."
   # councilor needed
 
+  civic_cyberspacial:0 "Cyberspacial"
+  civic_cyberspacial_desc:0 "..."
+  civic_tooltip_cyberspacial_effects:0 "(to do)"
+  trait_ac_hive_digital:0 "Half-Virtual"
+  trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
+  trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_energy_upkeep_mult$: §R+50%§!"
+
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
@@ -169,12 +175,12 @@
   civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
   civic_hyper_diversification:0 "Hyper Diversification"
-  civic_hyper_diversification_desc:0 "..."
+  civic_hyper_diversification_desc:0 "This society embraces genetic specialization in full, designing individual genetic designs for each niche."
   civic_tooltip_hyper_diversification_effects:0 "$genetic_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$genetic_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
   # councilor needed
 
   civic_employee_diversification:0 "Employee Diversification"
-  civic_employee_diversification_desc:0 "..."
+  civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by specializing each's genetic makeup to their job description."
   # councilor needed
 
   civic_hyper_diversified:0 "Hyper-Diversified"
@@ -220,7 +226,7 @@
   civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n- Can build £building£ §Y$holding_ac_external_router$§! holdings \n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_incorporated:0 "Lead Data Marketer"
   councilor_bandwidth_incorporated_female:0 "$councilor_bandwidth_incorporated$"
-  councilor_bandwidth_incorporated_desc:0 "..."
+  councilor_bandwidth_incorporated_desc:0 "The $TITLE$ ensures all customers are kept up to date on the fastest speeds and newest deals!"
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
   civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It's repurposed the hyper relay network to transmit data at greater quantity than ever before."

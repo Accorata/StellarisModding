@@ -150,6 +150,43 @@ civic_cybernet = {
 	}
 }
 
+civic_cyberspacial = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberspacial.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_cybernetics_finish
+		}
+	}
+	
+	description = civic_tooltip_cyberspacial_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_cybernetics_finish
+		}
+		modifier = {
+			# ...
+			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
 civic_cybergladiators = {
 	potential = {
 		ethics = {

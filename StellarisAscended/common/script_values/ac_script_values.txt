@@ -18,6 +18,16 @@ ac_species_in_empire_max_5 = {
 	max = 5
 }
 
+ac_hive_virtuality_concentrated_production_mult = {
+	base = 1
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		trigger_scope = owner
+		mult = 0.15
+		mode = subtract
+	}
+}
+
 # value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
 ac_districts_arcology_jobs = {
 	complex_trigger_modifier = {
