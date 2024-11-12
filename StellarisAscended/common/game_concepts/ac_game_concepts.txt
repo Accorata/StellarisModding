@@ -6,6 +6,12 @@ concept_ac_automodding_bio = {
 	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_biological.dds"
 }
 
+# test this ...
+concept_trait_ac_hive_digital = {
+	icon = "gfx/interface/icons/traits/trait_robot_digital_1.dds"
+	tooltip_override = "trait:trait_ac_hive_digital"
+}
+
 concept_ac_grand_synthesizer = {
 	icon = "gfx/interface/icons/jobs/job_ac_grand_synthesizer.dds"
 }

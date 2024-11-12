@@ -1,7 +1,7 @@
 ﻿l_english:
 ### Genetic ---------------------------------------------------------------------------------------------
   ac_genetic_shock_chain_title: "Genetic Legacy"
-  ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained a much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
+  ac_genetic_shock_chain_desc: "Through our mastery of genetics, we have gained much progress in our journey forward. However, this path is far from over. Numerous challenges and opportunities will arise in the days that follow, as our society adapts to our new strengths.\n\nHow we confront these changes will define our society for ages to come."
   ac_genetic_keep_auth_option: "Genetic Ascendency does not change who we are."
 
 ## Authorities
@@ -23,7 +23,7 @@
   gov_ac_genetic_imperial_chaotic_desc:0 "$auth_ac_genetic_imperial_chaotic_desc$"
 # Genetic Dictatorial Perfect
   auth_ac_genetic_dictatorial_perfect:0 "Dictatorial Castes"
-  auth_ac_genetic_dictatorial_perfect_desc:0 "..."
+  auth_ac_genetic_dictatorial_perfect_desc:0 "Prenatal inequalities are enforced, granting the elites great mental acuity while reducing the lower classes to mere beasts of burden."
   concept_auth_ac_genetic_dictatorial_perfect:0 "$auth_ac_genetic_dictatorial_perfect$"
   gov_ac_genetic_dictatorial_perfect:0 "$auth_ac_genetic_dictatorial_perfect$"
   gov_ac_genetic_dictatorial_perfect_desc:0 "$auth_ac_genetic_dictatorial_perfect_desc$"
@@ -36,7 +36,7 @@
   auth_ac_genetic_dictatorial_chaotic_effects:0 "- £leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! leader trait\n- On Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!"
 # Genetic Oligarchic Perfect
   auth_ac_genetic_oligarchic_perfect:0 "Oligarchic Geniocracy"
-  auth_ac_genetic_oligarchic_perfect_desc:0 "..."
+  auth_ac_genetic_oligarchic_perfect_desc:0 "The intelligent brought about the future of the past, and it is them that we invest our resources to bring the future of the now into reality."
   concept_auth_ac_genetic_oligarchic_perfect:0 "$auth_ac_genetic_oligarchic_perfect$"
   gov_ac_genetic_oligarchic_perfect:0 "$auth_ac_genetic_oligarchic_perfect$"
   gov_ac_genetic_oligarchic_perfect_desc:0 "$auth_ac_genetic_oligarchic_perfect_desc$"
@@ -56,7 +56,7 @@
   auth_ac_genetic_democratic_perfect_effects:0 "- Gains £unity£ §YUnity§! from assimilating £pop£ Pops"
 # Genetic Democratic Chaotic
   auth_ac_genetic_democratic_chaotic:0 "Democratic Expressionism"
-  auth_ac_genetic_democratic_chaotic_desc:0 "..."
+  auth_ac_genetic_democratic_chaotic_desc:0 "Genetic modification grant all the freedom to live in their desired form. This government recognizes those rights and encourages all to be as they wish."
   concept_auth_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic_desc:0 "$auth_ac_genetic_democratic_chaotic_desc$"
@@ -111,10 +111,10 @@
 
 # Corporate
   ascension_governments.6.name: "$ac_genetic_shock_chain_title$"
-  ascension_governments.6.desc: "Our genetic advancements prvoide new markets to explore, but also new risks for competition. We must adapt to these changes in order to embrace this new frontier before any others....\n\n..."
-  ascension_governments.6.a: "...cryonics"
-  ascension_governments.6.a.tt: "Emphasis on ..."
-  ascension_governments.6.b: "..."
+  ascension_governments.6.desc: "Our genetic advancements prvoide new markets to explore, but also new risks for competition. We must be quick to embrace this new frontier before any others are able to take a hold on genetics and weaponize their capital against are aims.\n\nWe could focus on the promising effects of cryonics, entending lifespans for an profitable cost. Alternatively, we could embrace evolutionary competition, spliting our corporation into branches to best adapt with change."
+  ascension_governments.6.a: "Cryonics will generate a promising ROI."
+  ascension_governments.6.a.tt: "Emphasis on lifespans and living standards."
+  ascension_governments.6.b: "Competition breeds innovation."
   ascension_governments.6.b.tt: "Emphasis on specialized policy."
 
 # Event Pool 1
@@ -169,7 +169,7 @@
   ascension_governments.21.b: "Learning provides a unique experience." # C
   ascension_governments.21.c: "Individuals will decide for their children." # N
   ac_innate_abilities:0 "Innate Abilities"
-  ac_innate_abilities_desc:0 "..."
+  ac_innate_abilities_desc:0 "Natural neural instincts are formed within our children, granting them increased intelligence from birth."
   ac_natural_education:0 "Natural Education"
   ac_natural_education_desc:0 "Selecting those through current channels allows for the best expression of future excellence."
   ac_reproductive_installations:0 "Reproductive Installations"
@@ -180,14 +180,14 @@
   ascension_governments.22.b: "$cyber.1005.b$" # C
   ascension_governments.22.c: "$cyber.1005.c$" # N
   ac_genetic_athletes:0 "Pure-Gened Athletics"
-  ac_genetic_athletes_desc:0 "..."
+  ac_genetic_athletes_desc:0 "By promoting enhanced athletes in sports, we can test the ultimate versions of ourselves."
   ac_genetic_athlete_leagues:0 "Genetic Athletic Leagues"
-  ac_genetic_athlete_leagues_desc:0 "..."
+  ac_genetic_athlete_leagues_desc:0 "Separating natural vs enhanced competitors ensures fair competition for everyone."
   ac_limited_genetic_athletes:0 "Limited Genetic Athletics"
-  ac_limited_genetic_athletes_desc:0 "..."
+  ac_limited_genetic_athletes_desc:0 "Regulating the number of enhanced athletes ensures that every team has a real shot at success."
   mod_planet_entertainers_society_research_produces_add:0 "£society£ $society_research$ from [GetEntertainerPluralWithIcon]"
   ascension_governments.23.name: "Leaving Pain Behind"
-  ascension_governments.23.desc: "...Some citizens experimenting with auto-analgesia genetic mods which numb nerves as soon as ...filtering out any extreme pain reactions"
+  ascension_governments.23.desc: "Some citizens have began experimenting with auto-analgesia genetic mods which numb nerves as soon as they come into contact with danger. At the moment, these mods are mere prototypes, but our scientists say they could be developed into mods that would cause minimal pain to alert the individual of danger, while still filtering out any extreme pain reactions.\n\nMilitary officials wish to promote these practices within our soldiers and workers, creating armies that fight longer and proles that are more resiliant to injury. Others wish that all should bask in a life free from extreme pain, and that this is a step forwards for [Root.GetSpeciesAdj] civilization."
   ascension_governments.23.a: "An evolution of [Root.GetSpeciesAdj] life." # P
   ascension_governments.23.b: "Targeted applications should prove best." # C
   ascension_governments.23.c: "Pain is a virtue, not an obstacle." # N
@@ -235,7 +235,7 @@
   ascension_governments.34.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.34.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
-  ascension_governments.42.name: "..."
+  ascension_governments.42.name: "Glory to the Throne!"
   ascension_governments.42.desc: "...\n\nUnfortunately, for some, their genetic makeups were tested and found unsufficient. Our very own §Y[leader_1.GetTitle] [leader_1.GetName]§!, §Y[leader_2.GetTitle] [leader_2.GetName]§!, and §Y[leader_3.GetTitle] [leader_3.GetName]§! have fallen in battle. Their honor is admired, but they are failures of [Root.GetSpeciesNamePlural], and their deaths will only benefit our decendants."
   ascension_governments.42.a: "All honor our newest [ruler.GetRulerTitle]!"
   # ascension_governments.42.b: "Kill the inferiers' relatives."
@@ -244,7 +244,7 @@
   ascension_governments.35.name: "Empire Reborn"
   ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! with plans to clone their brain and body to preserve their consciousness and skills for the next generation. If we embrace this change, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will rule forever within their cloned descendants."
   ascension_governments.35.desc.chaotic: "..."
-  ascension_governments.35.desc.neutral: "The crown must be preserved. Without it's benevolent rule, the natural order would fall and the most wretched of peasants would claim themselves kings. However, how best to preserve that order remains a contentious question.\n\nSome look to our great §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!, proclaiming that if we clone their consciousness indefinitely, their reign could never falter. Others worry of the resilience of the workers and wish to cull their fervor with genetic diseases. Finally, some wish to keep things as they are, citing the long and prosperous history of the §Y[Root.GetName]§!."
+  ascension_governments.35.desc.neutral: "The crown must be preserved. Without it's benevolent rule, the natural order would fall and the most wretched of peasants would claim themselves kings. However, how best to preserve that order remains a contentious question. Some look to our great §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!, proclaiming that if we clone their consciousness indefinitely, their reign could never falter. Others worry of the resilience of the workers and wish to cull their fervor with genetic diseases. Finally, some wish to keep things as they are, citing the long and prosperous history of the §Y[Root.GetName]§!."
   ascension_governments.35.a: "Clones forever."
   ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$"
   ascension_governments.35.b: "Unleash the viruses."
@@ -253,12 +253,12 @@
   ascension_governments.35.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
 
 # Corporate
-  ascension_governments.36.name: "..."
-  ascension_governments.36.desc.perfect: "..."
+  ascension_governments.36.name: "Evolving Profits"
+  ascension_governments.36.desc.perfect: "With the introduction of cryosleep as an effective method for sustaining life, our top executives can be preserved within chambers decanted as necessary. This extenstion of life will guarantee better futures for our shareholders both in health and riches as our CEOs stand the test of life and are able to provide their profitable insights for extebded periods."
   ascension_governments.36.desc.chaotic: "..."
   ascension_governments.36.desc.neutral: "..."
-  ascension_governments.36.a: "..."
-  ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_perfect']\n$unlock_edict_ac_clone_overdrive$" #change
+  ascension_governments.36.a: "Long live the elite."
+  ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_perfect']\n$unlock_edict_ac_awoken_council$"
   ascension_governments.36.b: "..."
   ascension_governments.36.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$" #change
   ascension_governments.36.c: "$ac_genetic_keep_auth_option$"
@@ -295,6 +295,12 @@
   concept_edict_ac_handicap_distribution:0 "$edict_ac_handicap_distribution$"
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
   edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
+
+# Corporate
+  edict_ac_awoken_council:0 "Awoken Council"
+  edict_ac_awoken_council_desc:0 "..."
+  concept_edict_ac_awoken_council:0 "$edict_ac_awoken_council$"
+  unlock_edict_ac_awoken_council:0 "$unlock_edict_tt$['concept_edict_ac_awoken_council']"
 
 
 ### Psionic ---------------------------------------------------------------------------------------------
@@ -353,24 +359,24 @@
   unlocks_ac_ac_shroud_invocation:0 "- Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
 
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
-  auth_ac_psionic_oligarchic_eldritch_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_desc:0 "Our patrons are deities of the Shroud. We will treat them as such."
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
   auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\n- Provides varied benefits based on Shroud Covenant"
 
   auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_composer_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_composer_desc:0 "The Composer of Strands has gifted us with wonderful abilities. To be shaped by the Composer is the greatest blessing, regardless of the outcome."
   concept_auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_whisperer:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_whisperer_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_whisperer_desc:0 "The Whisperers of the Void have gifted us with insights no mortal should possess. Our sanity is a small price to pay."
   concept_auth_ac_psionic_oligarchic_eldritch_whisperer:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_eater:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_eater_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_eater_desc:0 "The Eater of Worlds has gifted us with immense physical might. It would be dishonorable not to offer ourselves in sacrifice."
   concept_auth_ac_psionic_oligarchic_eldritch_eater:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_instrument_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_instrument_desc:0 "The Instrument of Desire has gifted us with wishes never dreamed of. ..."
   concept_auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_end:0 "$auth_ac_psionic_oligarchic_eldritch$"
@@ -387,7 +393,7 @@
   council_agenda_ac_shroud_invocation_effect:0 "Removes any §YShroud Cooldown§! allowing our empire to venture into the Shroud again."
 # Psionic Democratic Divine
   auth_ac_psionic_democratic_divine:0 "Democratic Empath"
-  auth_ac_psionic_democratic_divine_desc:0 "..."
+  auth_ac_psionic_democratic_divine_desc:0 "Our minds meld as one..."
   concept_auth_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
   gov_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
   gov_ac_psionic_democratic_divine_desc:0 "$auth_ac_psionic_democratic_divine_desc$"

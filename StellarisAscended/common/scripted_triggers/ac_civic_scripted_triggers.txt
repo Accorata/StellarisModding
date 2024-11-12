@@ -57,8 +57,12 @@ is_ac_cyberlife = {
 	OR = {
 		has_valid_civic = civic_cyberlife
 		has_valid_civic = civic_cybernet
-		# hive (hive may be unique...)
 	}
+	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_cyberhive = {
+	has_valid_civic = civic_cyberspacial
 	has_tradition = tr_cybernetics_finish
 }
 

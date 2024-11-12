@@ -168,6 +168,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				has_civic = civic_technocracy
+				factor = 100
+			}
 		}
 	}
 	option = {
@@ -1293,6 +1297,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				has_civic = civic_technocracy
+				factor = 100
+			}
 		}
 	}
 	option = {

@@ -13,7 +13,7 @@
   holding_ac_robotics_plant_desc:0 "..."
 
   building_ac_mega_forge:0 "Mega-Forge"
-  building_ac_mega_forge_desc:0 "..."
+  building_ac_mega_forge_desc:0 "This collosal structure provides the metals needed to build dreams beyond scale."
   job_ac_grand_synthesizer:0 "Grand Synthesizer"
   job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
   job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"

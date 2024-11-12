@@ -349,12 +349,30 @@ councilor_concurrent_command = {
 
 councilor_numbered_among_stars = {
 	leader_class = {
-		commander
+		scientist
 	}
 	is_leader_possible = {
-		leader_class = commander
+		leader_class = scientist
 	}
 	civic = civic_numbered_among_stars
+	modifier = {
+		unemployment_resources_nanites_produces_add = 0.25
+		# testing
+		ships_nanites_cost_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_stellar_monopoly = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_stellar_monopoly
 	modifier = {
 		country_nanites_produces_mult = 0.02
 	}

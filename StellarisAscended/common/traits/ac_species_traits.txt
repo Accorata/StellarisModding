@@ -607,11 +607,11 @@ trait_ac_hive_digital = {
 	}
 
 	species_potential_add = {
-		always = no
+		is_ac_cyberhive = yes
 	}
 
 	species_possible_remove = {
-		always = no
+		is_ac_cyberhive = no
 	}
 
 	modifier = {

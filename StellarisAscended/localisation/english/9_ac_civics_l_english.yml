@@ -117,11 +117,13 @@
   # councilor needed
 
   civic_cyberspacial:0 "Cyberspacial"
-  civic_cyberspacial_desc:0 "..."
-  civic_tooltip_cyberspacial_effects:0 "(to do)"
+  civic_cyberspacial_desc:0 "...drones have a virtual counterpart."
+  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n- \n\n§EModifiers:§!\n$cybernetic_ascension_required$- "
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
   trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_energy_upkeep_mult$: §R+50%§!"
+  concept_trait_ac_hive_digital:0 "$trait_ac_hive_digital$"
+  concept_trait_ac_hive_digital_desc:0 "$trait_ac_hive_digital_desc$"
 
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
@@ -308,23 +310,25 @@
   
   civic_numbered_among_stars:0 "Numbered Among Stars"
   civic_numbered_among_stars_desc:0 "..."
-  civic_tooltip_numbered_among_stars_effects:0 "- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_ship_damage_against_starbases_mult$: §G+25%§!"
-  councilor_numbered_among_stars:0 "..."
+  civic_tooltip_numbered_among_stars_effects:0 "- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!"
+  councilor_numbered_among_stars:0 "Self-Replicator"
   councilor_numbered_among_stars_female:0 "$councilor_numbered_among_stars$"
-  councilor_numbered_among_stars_desc:0 "..."
+  councilor_numbered_among_stars_desc:0 "The $TITLE$ manages ..."
 
   civic_stellar_monopoly:0 "Stellar Monopoly"
   civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monpolozing the galaxy's riches."
-  civic_tooltip_stellar_monopoly_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- Doubles output from §YMining Stations§! and §YResearch Stations§!\n- Halves cost to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
-  # councilor needed
+  civic_tooltip_stellar_monopoly_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- Doubles Output from §YMining Stations§! and §YResearch Stations§!\n- Halves Cost to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!" #... Green for +1 capacity or yellow - also then red/green for halving cost/disengagement etc.
+  councilor_stellar_monopoly:0 "..."
+  councilor_stellar_monopoly_female:0 "$councilor_stellar_monopoly$"
+  councilor_stellar_monopoly_desc:0 "..."
 
   civic_unending_swarm:0 "Unending Swarm"
   civic_unending_swarm_desc:0 "..."
-  civic_tooltip_unending_swarm_effects:0 "$civic_tooltip_numbered_among_stars_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
+  civic_tooltip_unending_swarm_effects:0 "- Doubles Hull of §YNanite Interdictors§!\n- Halves Cost of §YNanite Swarmers§!\n- Halves Disengagement Chance for all §YNanite Ships§!\n- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_ship_damage_against_starbases_mult$: §G+25%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
 
   civic_microscopic_life:0 "Microscopic Life"
   civic_microscopic_life_desc:0 "..."
-  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$(...)"
+  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$(...)" # + halves army health
   # councilor needed
 
   civic_minicorp:0 "MiniCorp"

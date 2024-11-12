@@ -147,6 +147,36 @@ ac_handicap_distribution = {
 	}
 }
 
+ac_awoken_council = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_megacorp = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		ruler_skill_add = 3
+		council_agenda_finishing_effect_duration_mult = 0.15
+		leader_lifespan_add = -10
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
 # Psionic Government Edicts
 ac_dark_pact = {
 	length = @EdictDuration

@@ -114,6 +114,8 @@ on_post_government_changed = {
 		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
 		ascension_civics.82				# Renounce the Shroud
 		ascension_civics.83				# Unrenounce the Shroud
+		ascension_civics.84				# Add Half-Virtual trait to Cyberspacial Hives
+		ascension_civics.85				# Remove Half-Virtual trait for non-Cyberspacial Hives
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current trait if Imperial Clones
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
@@ -168,6 +170,7 @@ on_tradition_picked = {
 		ascension_civics.55				# Limited Psionic trait for Soul Searcher empires
 		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
 		ascension_civics.82				# Renounce the Shroud
+		ascension_civics.84				# Add Half-Virtual trait to Cyberspacial Hives
 	}
 }
 
