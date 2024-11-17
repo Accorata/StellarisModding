@@ -86,6 +86,10 @@
   civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   # councilor needed
 
+  civic_shroud_divestment:0 "Shroud Divestment"
+  civic_shroud_divestment_desc:0 "..."
+  # councilor needed
+
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. This society embraces that end, that Great End!"
   civic_tooltip_doomseekers_effects:0 "..."
@@ -118,7 +122,7 @@
 
   civic_cyberspacial:0 "Cyberspacial"
   civic_cyberspacial_desc:0 "...drones have a virtual counterpart."
-  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n- \n\n§EModifiers:§!\n$cybernetic_ascension_required$- "
+  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- ..."
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
   trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_energy_upkeep_mult$: §R+50%§!"
@@ -186,7 +190,7 @@
   # councilor needed
 
   civic_hyper_diversified:0 "Hyper-Diversified"
-  civic_hyper_diversified_desc:0 "..."
+  civic_hyper_diversified_desc:0 "For each role, a new design. This Hive evolves each genetic niche to its fullest potention: no two drones are alike."
   civic_tooltip_hyper_diversified_effects:0 "$civic_tooltip_hyper_diversification_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   trait_ac_auto_mod_biological:0 "Evolving Niches"
@@ -219,7 +223,7 @@
   civic_bandwidth_enhancers:0 "Bandwidth Enhancers"
   civic_bandwidth_enhancers_desc:0 "This society lives in an entirely virtual reality, and has quickly realized how important the speeds at which their data transmission occurs. This simple material requirement remains one of their few limits, and they strive to remove it."
   civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_virtual_jobs_produces_mult£ §YJob Output§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
-  councilor_bandwidth_enhancers:0 "... Coordinator"
+  councilor_bandwidth_enhancers:0 "Router Coordinator"
   councilor_bandwidth_enhancers_female:0 "$councilor_bandwidth_enhancers$"
   councilor_bandwidth_enhancers_desc:0 "..."
 
@@ -228,7 +232,7 @@
   civic_tooltip_bandwidth_incorporated_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n- Can build £building£ §Y$holding_ac_external_router$§! holdings \n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_trade_value_mult£ §YTrade Value§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_incorporated:0 "Lead Data Marketer"
   councilor_bandwidth_incorporated_female:0 "$councilor_bandwidth_incorporated$"
-  councilor_bandwidth_incorporated_desc:0 "The $TITLE$ ensures all customers are kept up to date on the fastest speeds and newest deals!"
+  councilor_bandwidth_incorporated_desc:0 "The $TITLE$ ensures all customers are kept up to date on the fastest speeds and newest bundled deals!"
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
   civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It's repurposed the hyper relay network to transmit data at greater quantity than ever before."
@@ -328,7 +332,7 @@
 
   civic_microscopic_life:0 "Microscopic Life"
   civic_microscopic_life_desc:0 "..."
-  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$(...)" # + halves army health
+  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$- (to do)\n\n§EModifiers:§!\n$nanotech_ascension_required$- $mod_planet_max_districts_mult$: §G+50%§!\n- $mod_pop_housing_usage_mult$: §G-50%§!\n- $mod_army_health$: §R-50%§!"
   # councilor needed
 
   civic_minicorp:0 "MiniCorp"
@@ -344,7 +348,4 @@
   pop_category_ac_droid_drone:0 "Droid"
   pop_cat_ac_droid:0 "Droid"
   pop_cat_ac_droid_plural:0 "Droids"
-  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node of our hive mind."
-  ac_droid:0 "Droid"
-  trait_ac_cyberform:0 "CyberForm"
-  trait_ac_cyberform_desc:0 "..."
+  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node

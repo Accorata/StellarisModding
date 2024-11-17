@@ -28,7 +28,7 @@
   gov_ac_genetic_dictatorial_perfect:0 "$auth_ac_genetic_dictatorial_perfect$"
   gov_ac_genetic_dictatorial_perfect_desc:0 "$auth_ac_genetic_dictatorial_perfect_desc$"
 # Genetic Dictatorial Chaotic
-  auth_ac_genetic_dictatorial_chaotic:0 "Dictatorial Kraterocracy"
+  auth_ac_genetic_dictatorial_chaotic:0 "Dictatorial Kratocracy"
   auth_ac_genetic_dictatorial_chaotic_desc:0 "Only through violence can perfection emerge. Within this government, the weak are eliminated until only the strong remain."
   concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
@@ -46,7 +46,7 @@
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
-  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! chance to gain a Mutant trait along with an additional Negative trait."
+  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! chance to gain a §GMutant§! Trait along with an additional §RNegative§! Trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "All are equal in genetics, granting perfect equality as all hvae an equal chance to thrive."
@@ -142,7 +142,7 @@
   ascension_governments.11.b: "Chaotic mutations are the way of the past." # P
   ascension_governments.11.c: "Genetics are for our people, not for warfare." # N
   ascension_governments.12.name: "Employee Gene Mods"
-  ascension_governments.12.desc: "Certain comapnies have begun greatly encouraging various genetic changes in their employee's, whether those may be adapting them to their job, increasing their pleasantness for others, all the way to minimizing their normal health risks. The process, while possibly morally questionable, has had high returns on employee profit margins, and more and more companies are turning to this new path.\n\nA number of foreleaders have even started to require these changes. If we wish to interfere, our moment is quickly passing."
+  ascension_governments.12.desc: "Certain comapnies have begun greatly encouraging various genetic changes in their employee's, whether those may be adapting them to their job, increasing their pleasantness for others, all the way to minimizing their normal health risks. The process, while possibly morally questionable, has greatly increased employee profit margins, and more and more companies are turning to this new path.\n\nA number of foreleaders have even started to require these changes. If we wish to interfere, our moment is quickly passing."
   ascension_governments.12.a: "Our genetic makeup needs no variations." # P
   ascension_governments.12.b: "Specialization has always been the best path forward." # C
   ascension_governments.12.c: "Abhorent! No company has rights over someone's genes." # P
@@ -206,7 +206,7 @@
   ascension_governments.32.desc.neutral: "We've reached a precipice. Genetic ascendency has uplifted our people and bettered all ways of life in our nation. However, our parties now find ourselves divided on how to utilize this advacement. Some wish to unify all under one phenotype to ensure equality, others wish to allow all complete genetic diversity, and others just wish to remain as we've always stood."
   ascension_governments.32.a: "We are one. One species where all can equally thrive."
   ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_ac_handicap_distribution$"
-  ascension_governments.32.b: "Our bodies are bound only by the limits of our imaginations."
+  ascension_governments.32.b: "Our bodies are bound only by our imaginations."
   ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
   ascension_governments.32.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
@@ -214,11 +214,11 @@
 # Oligarchic
   ascension_governments.33.name: "New Superiority"
   ascension_governments.33.desc.perfect: "..."
-  ascension_governments.33.desc.chaotic: "Mutations brought us our sapience, our evolution; we owe ourselves to their greatness. Now, we push the ..."
+  ascension_governments.33.desc.chaotic: "Mutations brought us our sapience, our evolution; we owe ourselves to their generosity. Now, we will return the favor, catalyzing chaotic changes within our leaders to develop the next iterations of ourselves. Some casaulties may arise, as mutations are never predictable, but we will begin developing the next generations to withstand such chaos."
   ascension_governments.33.desc.neutral: "..."
   ascension_governments.33.a: "May the uplifted guide us forward."
   ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
-  ascension_governments.33.b: "..."
+  ascension_governments.33.b: "Magnificence awaits."
   ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
   ascension_governments.33.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.33.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
@@ -244,7 +244,7 @@
   ascension_governments.35.name: "Empire Reborn"
   ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! with plans to clone their brain and body to preserve their consciousness and skills for the next generation. If we embrace this change, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will rule forever within their cloned descendants."
   ascension_governments.35.desc.chaotic: "..."
-  ascension_governments.35.desc.neutral: "The crown must be preserved. Without it's benevolent rule, the natural order would fall and the most wretched of peasants would claim themselves kings. However, how best to preserve that order remains a contentious question. Some look to our great §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!, proclaiming that if we clone their consciousness indefinitely, their reign could never falter. Others worry of the resilience of the workers and wish to cull their fervor with genetic diseases. Finally, some wish to keep things as they are, citing the long and prosperous history of the §Y[Root.GetName]§!."
+  ascension_governments.35.desc.neutral: "The crown must be preserved. Without it's benevolent rule, all natural order would fall and the most wretched of peasants would claim themselves kings. However, how best to preserve that order remains a contentious question. Some look to our great §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!, proclaiming that if we clone their consciousness indefinitely, their reign could never falter. Others worry of the resilience of the workers and wish to cull their fervor with genetic diseases. Finally, some wish to keep things as they are, citing the long and prosperous history of the §Y[Root.GetName]§!."
   ascension_governments.35.a: "Clones forever."
   ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$"
   ascension_governments.35.b: "Unleash the viruses."
@@ -325,7 +325,7 @@
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
   councilor_ruler_imperial_ac_psionic_eldritch:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "$imperial_ruler_desc$"
-  auth_ac_psionic_imperial_eldritch_effects:0 "Ruler gains a trait from the ['concept_ac_vessel_traits'] depending on our Covenant"
+  auth_ac_psionic_imperial_eldritch_effects:0 "- £leader£ Rulers gains a Trait from the ['concept_ac_vessel_traits'] depending on our Covenant"
   concept_ac_vessel_traits: "Shroud Vessel Traits"
   concept_ac_vessel_traits_desc: "- ['trait:leader_trait_ac_composer_vessel']\n- ['trait:leader_trait_ac_whisperers_vessel']\n- ['trait:leader_trait_ac_eater_vessel']\n- ['trait:leader_trait_ac_instrument_vessel']\n- ['trait:leader_trait_ac_end_vessel']"
 
@@ -351,12 +351,12 @@
   gov_ac_psionic_oligarchic_divine:0 "$auth_ac_psionic_oligarchic_divine$"
   gov_ac_psionic_oligarchic_divine_desc:0 "$auth_ac_psionic_oligarchic_divine_desc$"
 
-  unlock_building_ac_order_hall:0 "- Unlocks Unique Building: ['concept_building_ac_order_hall']"
-  unlock_building_ac_order_hall_knights:0 "- Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
+  unlock_building_ac_order_hall:0 "Unlocks Unique Building: ['concept_building_ac_order_hall']"
+  unlock_building_ac_order_hall_knights:0 "Unlocks Unique Building: ['concept_building_ac_order_hall_knights']"
   auth_ac_psionic_oligarchic_divine_effects:0 "$unlock_building_ac_order_hall$"
   auth_ac_psionic_oligarchic_divine_toxic_god_effects:0 "$unlock_building_ac_order_hall_knights$"
 # Psionic Oligarchic Eldritch
-  unlocks_ac_ac_shroud_invocation:0 "- Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
+  unlocks_ac_ac_shroud_invocation:0 "Unlocks Agenda: §Y$council_agenda_ac_shroud_invocation_name$§!"
 
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
   auth_ac_psionic_oligarchic_eldritch_desc:0 "Our patrons are deities of the Shroud. We will treat them as such."
@@ -376,11 +376,11 @@
   concept_auth_ac_psionic_oligarchic_eldritch_eater:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_instrument_desc:0 "The Instrument of Desire has gifted us with wishes never dreamed of. ..."
+  auth_ac_psionic_oligarchic_eldritch_instrument_desc:0 "The Instrument of Desire has gifted us with wishes never conceived of. Unsatiable desires await."
   concept_auth_ac_psionic_oligarchic_eldritch_instrument:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   auth_ac_psionic_oligarchic_eldritch_end:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_end_desc:0 "..."
+  auth_ac_psionic_oligarchic_eldritch_end_desc:0 "The End of the Cycle has made us gods. Our covenant is sacred, and we will pay any price."
   concept_auth_ac_psionic_oligarchic_eldritch_end:0 "$auth_ac_psionic_oligarchic_eldritch$"
 
   gov_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
@@ -393,7 +393,7 @@
   council_agenda_ac_shroud_invocation_effect:0 "Removes any §YShroud Cooldown§! allowing our empire to venture into the Shroud again."
 # Psionic Democratic Divine
   auth_ac_psionic_democratic_divine:0 "Democratic Empath"
-  auth_ac_psionic_democratic_divine_desc:0 "Our minds meld as one..."
+  auth_ac_psionic_democratic_divine_desc:0 "Our minds meld as one. All emotions and feelings are shared between all, uniting all peoples regardless of class."
   concept_auth_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
   gov_ac_psionic_democratic_divine:0 "$auth_ac_psionic_democratic_divine$"
   gov_ac_psionic_democratic_divine_desc:0 "$auth_ac_psionic_democratic_divine_desc$"
@@ -405,7 +405,7 @@
   gov_ac_psionic_democratic_eldritch_desc:0 "$auth_ac_psionic_democratic_eldritch_desc$"
 # Psionic Corporate Divine
   auth_ac_psionic_corporate_divine:0 "Corporate Precognition"
-  auth_ac_psionic_corporate_divine_desc:0 "..."
+  auth_ac_psionic_corporate_divine_desc:0 "Sections of precogs analysize the branches of tomorrow, ensuring future prospects are designed for optimal ROI."
   concept_auth_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine_desc:0 "$auth_ac_psionic_corporate_divine_desc$"
@@ -415,7 +415,7 @@
   concept_auth_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch:0 "$auth_ac_psionic_corporate_eldritch$"
   gov_ac_psionic_corporate_eldritch_desc:0 "$auth_ac_psionic_corporate_eldritch_desc$"
-  auth_ac_psionic_corporate_eldritch_effects:0 "$AVAILABLE_HOLDINGS$ ['building:holding_ac_manipulation_network']" #... '- '?
+  auth_ac_psionic_corporate_eldritch_effects:0 "$AVAILABLE_HOLDINGS$ ['building:holding_ac_manipulation_network']"
 
 ## Events
   ac_psionic.social_consequences.tt: "Influences the ongoing §YPsionic Society Shift§!.\n\n" # Standard tooltip to indicate that the Divine/Eldritch focus variables have changed
@@ -431,7 +431,7 @@
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1003.desc: "...\n\n...Are we to worship the..."
-  ascension_governments.1003.a: "..."
+  ascension_governments.1003.a: "Form a holy order."
   ascension_governments.1003.a.tt: "Emphasis on knights."
   ascension_governments.1003.b: "Our patron deserves worship."
   ascension_governments.1003.b.tt: "Emphasis on Shroud benefits."
@@ -497,7 +497,7 @@
   ascension_governments.1021.a: "Anything for power." # E
   ascension_governments.1021.b: "We will not make unretractable bargains." # D
   ac_pact_of_the_harrower:0 "Pact of the Harrower"
-  ac_pact_of_the_harrower_desc:0 "For a day out of each month, we've been promised power."
+  ac_pact_of_the_harrower_desc:0 "In exchange for a day of each month, we've been promised power."
   ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
 
 # Final Event

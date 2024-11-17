@@ -159,11 +159,9 @@ civic_cyberspacial = {
 			value = auth_hive_mind
 		}
 	}
-
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberspacial.dds"
 	pickable_at_start = yes
-
 	random_weight = {
 		base = 0
 	}
@@ -174,14 +172,13 @@ civic_cyberspacial = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	
 	description = civic_tooltip_cyberspacial_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 		modifier = {
-			# ...
+			espionage_operation_difficulty_add = -1
 			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}

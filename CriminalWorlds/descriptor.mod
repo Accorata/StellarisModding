@@ -7,5 +7,5 @@ tags={
 }
 name="Criminal Worlds"
 picture="thumbnail.png"
-supported_version="v3.14.1"
+supported_version="v3.14.15"
 remote_file_id="3232998006"

@@ -132,3 +132,8 @@ ac_pact_of_the_harrower = {
 	custom_tooltip = ac_pact_of_the_harrower_effects
 	show_only_custom_tooltip = yes
 }
+
+# Other
+# ac_despotic_eugenics = {
+#  Governmental ethics attraction - from Killing relatives for Kratocracy event
+# }
