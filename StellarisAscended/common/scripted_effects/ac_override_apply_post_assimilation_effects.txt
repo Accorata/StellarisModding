@@ -1,22 +1,84 @@
 # pop scope, root = planet
 apply_post_assimilation_effects = {
-	if = { # assimilator empire
+	if = {
+		# assimilator empire
 		limit = {
 			root.owner = {
 				has_authority = auth_machine_intelligence
 				has_civic = civic_machine_assimilator
+				# START OF OVERRIDE 1 -------------------------------------------------------------------------
+				is_ac_cybermachine = no
+				# END OF OVERRIDE 1 -------------------------------------------------------------------------
 			}
 		}
-		root.owner = { generate_cyborg_treats = yes } # scripted effect
+		root.owner = {
+			generate_cyborg_treats = yes
+		}		# scripted effect
 	}
-	# START OF OVERRIDE -------------------------------------------------------------------------
-	if = { # bio upgrader empire
+	# START OF OVERRIDE 2 -------------------------------------------------------------------------
+	if = {
+		# assimilator empire with Uploaded Mind civic
+		limit = {
+			root.owner = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_assimilator
+				is_ac_cybermachine = yes
+			}
+		}
+		root.owner = {
+			if = {
+				limit = {
+					has_government = gov_memory_aggregator
+				}
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 250
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = 1
+					min = 5
+					max = 250
+				}
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = 2
+					min = 10
+					max = 250
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 175
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = 1
+					min = 5
+					max = 175
+				}
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = 2
+					min = 10
+					max = 175
+				}
+			}
+		}
+	}
+	if = {
+		# bio upgrader empire
 		limit = {
 			root.owner = {
 				is_ac_bio_upgrader = yes
 			}
 		}
-		if  = {
+		if = {
 			limit = {
 				root.owner = {
 					has_valid_civic = civic_bioform_upgrader
@@ -42,7 +104,7 @@ apply_post_assimilation_effects = {
 				}
 			}
 		}
-		root.owner = { 
+		root.owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
 				value = 1
@@ -68,20 +130,27 @@ apply_post_assimilation_effects = {
 			}
 		}
 	}
-	# END OF OVERRIDE -------------------------------------------------------------------------
+	# END OF OVERRIDE 2 -------------------------------------------------------------------------
 	if = {
 		limit = {
 			NOT = {
 				owner = {
 					any_owned_pop = {
 						is_exact_same_species = event_target:convert_to_species
-						NOT = { is_same_value = prevprev }
+						NOT = {
+							is_same_value = prevprev
+						}
 					}
 				}
 			}
 		}
-		if = { # set citizenship
-			limit = { root.owner = { has_authority = auth_machine_intelligence } }
+		if = {
+			# set citizenship
+			limit = {
+				root.owner = {
+					has_authority = auth_machine_intelligence
+				}
+			}
 			set_citizenship_type = {
 				type = citizenship_full_machine
 				country = root.owner
@@ -93,19 +162,25 @@ apply_post_assimilation_effects = {
 				country = root.owner
 			}
 		}
-
-		if = { # set citizenship
-			limit = { root.owner = { has_ethic = ethic_gestalt_consciousness } }
+		if = {
+			# set citizenship
+			limit = {
+				root.owner = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
 			set_living_standard = {
 				type = living_standard_hive_mind
 				country = root.owner
 			}
 		}
 	}
-
-	if = { # Handle assimilation of spiritualists into cybernetic empires
+	if = {
+		# Handle assimilation of spiritualists into cybernetic empires
 		limit = {
-			root.owner = { has_policy_flag = cyberization_standards_limited }
+			root.owner = {
+				has_policy_flag = cyberization_standards_limited
+			}
 			is_spiritualist = yes
 			has_trait = trait_cybernetic
 		}
@@ -113,10 +188,8 @@ apply_post_assimilation_effects = {
 			CYBER_SPECIES = event_target:convert_to_species
 		}
 	}
-
 	# Maybe somme event attached to a building that did that (or just an event! - fires every year on each planet and transforms pop to main species
 	# 	- apply post assimilation effects...
-
 	# # START OF OVERRIDE #2 --------------------------------------------------------------------
 	# if = {
 	# 	limit = {

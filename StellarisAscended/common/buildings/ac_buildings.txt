@@ -112,13 +112,10 @@ building_ac_psi_tower = {
 # Renouncers of the Shroud
 building_ac_renouncer_sanctum = {
 	base_buildtime = @b3_time
-
 	category = government
-
 	empire_limit = {
 		base = 1
 	}
-
 	potential = {
 		exists = owner
 		owner = {
@@ -129,27 +126,22 @@ building_ac_renouncer_sanctum = {
 			has_modifier = slave_colony
 		}
 	}
-
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = {
 			is_ac_shroud_renouncer = no
 		}
 	}
-
 	planet_modifier = {
 		job_telepath_add = 3
 	}
-
 	country_modifier = {
 		pop_happiness = 0.05
 		planet_jobs_produces_mult = 0.05
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -161,7 +153,6 @@ building_ac_renouncer_sanctum = {
 			exotic_gases = @b3_rare_upkeep
 		}
 	}
-
 	triggered_desc = {
 		text = job_telepath_effect_desc
 	}
@@ -512,20 +503,17 @@ building_ac_order_hall = {
 			}
 		}
 	}
-
 	planet_modifier = {
 		job_ac_normal_knight_add = 2
 		job_ac_normal_knight_per_pop = 0.05
 		planet_amenities_add = 10
 	}
-
 	resources = {
 		cost = {
 			minerals = 1000
 		}
 		category = planet_buildings
 	}
-
 	triggered_desc = {
 		text = job_ac_normal_knight_effect_desc
 	}
@@ -558,20 +546,17 @@ building_ac_order_hall_knights = {
 			}
 		}
 	}
-
 	planet_modifier = {
 		job_knight_add = 2
 		job_knight_per_pop = 0.05
 		planet_amenities_add = 10
 	}
-
 	resources = {
 		cost = {
 			minerals = 1000
 		}
 		category = planet_buildings
 	}
-
 	triggered_desc = {
 		text = job_knight_effect_desc
 	}

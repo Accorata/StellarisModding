@@ -10,12 +10,12 @@
   councilor_bioform_upgrader_desc:0 "..."
 
   civic_bio_replacer:0 "Anatomic Obsolescence"
-  civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. ..."
+  civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. This Megacorporation aims to make that market a reality."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n- Can build £building£ §Y$holding_ac_robotics_plant$§! holdings\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_country_synthetic_trust_cap_add$: §G+10§!\n- $mod_country_organic_trust_cap_add$: §R-10§!"
   councilor_bio_replacer:0 "..." 
-  # need to change effects - maybe applies this benefit to all other empires? or branch offices or holding?
   councilor_bio_replacer_female:0 "$councilor_bio_replacer$"
   councilor_bio_replacer_desc:0 "..."
+  councilor_bio_replacer_custom_modifier_desc:0 "On §YBranch Offices§! with £building£ $holding_ac_robotics_plant_plural$:\n$t$- £mod_branch_office_value_mult£ $MOD_BRANCH_OFFICE_VALUE_MULT$ from $job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon$: §G+2%§!"
 
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
   casus_belli_cb_ac_machine_containment:0 "$casus_belli_cb_containment$"
@@ -56,7 +56,7 @@
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
 
   civic_beyond_the_veil:0 "Beyond the Veil"
-  civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!"
+  civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!" #needs change...
   civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!"
   # councilor needed
 
@@ -71,23 +71,23 @@
   civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_female:0 "$councilor_telepathic_empire$"
-  councilor_telepathic_empire_desc:0 "..."
+  councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before vanishing once more."
 
   civic_telepathic_corporation:0 "Telepathic Enterprise"
-  civic_telepathic_corporation_desc:0 "..."
+  civic_telepathic_corporation_desc:0 "This Megacorporation looks down on verbal speech. The aspiring elite quickly learn the langauge of the mind, and its many advantages."
   civic_tooltip_telepathic_corporation_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
   councilor_telepathic_corporation:0 "Chief Telepathic Officer"
   councilor_telepathic_corporation_female:0 "$councilor_telepathic_corporation$"
-  councilor_telepathic_corporation_desc:0 "The $TITLE$ oversees mental communication among the executives, increasing optimization and bureaucratic oversight."
+  councilor_telepathic_corporation_desc:0 "The $TITLE$ oversees mental communication among the top executives, increasing optimization and bureaucratic oversight."
 
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
-  civic_shroud_renouncers_desc:0 "..."
+  civic_shroud_renouncers_desc:0 "This society belives psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
   AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
   civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   # councilor needed
 
   civic_shroud_divestment:0 "Shroud Divestment"
-  civic_shroud_divestment_desc:0 "..."
+  civic_shroud_divestment_desc:0 "This Megacorporation sees the Shroud only as another hunger for power that cares not for profit and wishes only to control them for its own ends."
   # councilor needed
 
   civic_doomseekers:0 "Doomseekers"
@@ -112,26 +112,30 @@
   # councilor needed
 
   civic_cyberlife:0 "CyberReality"
-  civic_cyberlife_desc:0 "..."
+  civic_cyberlife_desc:0 "This society spends much of its existence in an artificial reality, living both physical and virtual lives in tandem."
   civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
   # councilor needed
 
-  civic_cybernet:0 "CyberNet"
-  civic_cybernet_desc:0 "..."
+  civic_cybernet:0 "CyberNet"s
+  civic_cybernet_desc:0 "This Megacorporation deploys a massive cybernet across its planets, allowing for virtaul jobs, luxury lifestyles, as well as instantaneous executive meetings."
   # councilor needed
 
   civic_cyberspacial:0 "Cyberspacial"
-  civic_cyberspacial_desc:0 "...drones have a virtual counterpart."
-  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- ..."
+  civic_cyberspacial_desc:0 "This Hive Mind has expanded its domain into the virtual world. Each of its drones have a virtual counterpart connected directly to their brain via cybernetic software."
+  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
   trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_energy_upkeep_mult$: §R+50%§!"
   concept_trait_ac_hive_digital:0 "$trait_ac_hive_digital$"
   concept_trait_ac_hive_digital_desc:0 "$trait_ac_hive_digital_desc$"
 
+  civic_uploaded_mind:0 "Uploaded Mind"
+  civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
+  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating organic £pop£ Pops provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n ...(to do)"
+
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
-  living_standard_ac_cyberlife_tooltip_delayed:0 "..." #Needs to be gray
+  living_standard_ac_cyberlife_tooltip_delayed:0 "Spending most of their lives in a virtual reality, these pops ..." #Needs to be gray
   mod_pop_category_rulers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $RULERS$"
   mod_pop_category_specialists_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SPECIALISTS$"
   mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
@@ -143,7 +147,7 @@
   # councilor needed
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
-  civic_underworld_bloodsports_desc:0 "..."
+  civic_underworld_bloodsports_desc:0 "Corporate work has its stresses, and how better to relive the workday tension than betting on gladiatorial duels to the death?"
   civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
 
@@ -163,7 +167,7 @@
   civic_tooltip_blossoming_worlds_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_blossoming_worlds:0 "Terrestrial Cultivator"
   councilor_blossoming_worlds_female:0 "$councilor_blossoming_worlds$"
-  councilor_blossoming_worlds_desc:0 "..."
+  councilor_blossoming_worlds_desc:0 "The $TITLE$ ..."
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
   civic_xanadu_retreats:0 "Xanadu Retreats"
@@ -186,11 +190,11 @@
   # councilor needed
 
   civic_employee_diversification:0 "Employee Diversification"
-  civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by specializing each's genetic makeup to their job description."
+  civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by tuning each's genetic makeup as their job description requires."
   # councilor needed
 
   civic_hyper_diversified:0 "Hyper-Diversified"
-  civic_hyper_diversified_desc:0 "For each role, a new design. This Hive evolves each genetic niche to its fullest potention: no two drones are alike."
+  civic_hyper_diversified_desc:0 "For each role, a new design. This Hive Mind evolves each genetic niche to its fullest potention: no two drones are alike."
   civic_tooltip_hyper_diversified_effects:0 "$civic_tooltip_hyper_diversification_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+25%§!"
 
   trait_ac_auto_mod_biological:0 "Evolving Niches"
@@ -348,4 +352,7 @@
   pop_category_ac_droid_drone:0 "Droid"
   pop_cat_ac_droid:0 "Droid"
   pop_cat_ac_droid_plural:0 "Droids"
-  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node
+  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node of our hive mind."
+  ac_droid:0 "Droid"
+  trait_ac_cyberform:0 "CyberForm"
+  trait_ac_cyberform_desc:0 "..."

@@ -17,7 +17,7 @@
   councilor_ruler_imperial_ac_genetic_desc:0 "$imperial_ruler_desc$"
 # Genetic Imperial Chaotic
   auth_ac_genetic_imperial_chaotic:0 "Imperial Pathogens"
-  auth_ac_genetic_imperial_chaotic_desc:0 "Biochemical weapons wreak havoc among the lower classes, as the elites reap the random insights such death provides. Trials ensure that any brilliance among these inferiors isn't wasted, granting a few passage to class mobility."
+  auth_ac_genetic_imperial_chaotic_desc:0 "Biochemical weapons wreak havoc among the lower classes, as the elites reap the random insights such death provides."
   concept_auth_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic:0 "$auth_ac_genetic_imperial_chaotic$"
   gov_ac_genetic_imperial_chaotic_desc:0 "$auth_ac_genetic_imperial_chaotic_desc$"
@@ -243,7 +243,7 @@
 # Imperial
   ascension_governments.35.name: "Empire Reborn"
   ascension_governments.35.desc.perfect: "Our efforts have led to a resounding success. The imperial scientists have presented §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! with plans to clone their brain and body to preserve their consciousness and skills for the next generation. If we embrace this change, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will rule forever within their cloned descendants."
-  ascension_governments.35.desc.chaotic: "..."
+  ascension_governments.35.desc.chaotic: "In secret, the imperial scientists have developed controlled genetic pathogens, and will release them at our order. Such diseases will restrain the workers indefinitely in their new struggle to survive, and those who resist should provide important genetic insights. Furthermore, a set of trials will be enacted for the lower class youth, granting them mobility if they succeed. Such trials will ensure any talent in these inferiors won't be uselessly killed off."
   ascension_governments.35.desc.neutral: "The crown must be preserved. Without it's benevolent rule, all natural order would fall and the most wretched of peasants would claim themselves kings. However, how best to preserve that order remains a contentious question. Some look to our great §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!, proclaiming that if we clone their consciousness indefinitely, their reign could never falter. Others worry of the resilience of the workers and wish to cull their fervor with genetic diseases. Finally, some wish to keep things as they are, citing the long and prosperous history of the §Y[Root.GetName]§!."
   ascension_governments.35.a: "Clones forever."
   ascension_governments.35.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_imperial_perfect']\n$unlock_edict_ac_clone_overdrive$"
@@ -278,13 +278,13 @@
 
 # Dictatorial
   edict_ac_hypnopaedic_conditioning:0 "Hypnopædic Conditioning"
-  edict_ac_hypnopaedic_conditioning_desc:0 "While sleeping-learning has proved unsuccesful for intelligent comprehension, it has been discovered to convey proper morals to sleeping youth."
+  edict_ac_hypnopaedic_conditioning_desc:0 "While sleep-learning has proved unsuccesful for intelligent comprehension, it has been shown to convey proper morals to sleeping youth."
   concept_edict_ac_hypnopaedic_conditioning:0 "$edict_ac_hypnopaedic_conditioning$"
   unlock_edict_ac_hypnopaedic_conditioning:0 "$unlock_edict_tt$ ['edict_ac_hypnopaedic_conditioning']"
 
 # Oligarchic
   edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
-  edict_ac_unrestricted_mutation_desc:0 "We must not limit ourselves in our mutations and must continue to push the limits of what is possible in our new people."
+  edict_ac_unrestricted_mutation_desc:0 "We must not limit ourselves in our mutations and must continue to push the limits of what is possible in our newest generations."
   concept_edict_ac_unrestricted_mutation:0 "$edict_ac_unrestricted_mutation$"
   unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
   edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with an additional Negative trait from §Y50%§! to §Y100%§!."
@@ -423,14 +423,14 @@
 # First Event
 # Democratic
   ascension_governments.1002.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1002.desc: "...\n\n..."
+  ascension_governments.1002.desc: "A new age is upon us. Our people speak through their minds, ..\n\n..."
   ascension_governments.1002.a: "..."
   ascension_governments.1002.a.tt: "Emphasis on unity and workers."
   ascension_governments.1002.b: "The unconsious mind reveals true insight."
   ascension_governments.1002.b.tt: "Emphasis on faction output."
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1003.desc: "...\n\n...Are we to worship the..."
+  ascension_governments.1003.desc: "Faith in the Shroud uplifts us...\n\n...Are we to worship the..."
   ascension_governments.1003.a: "Form a holy order."
   ascension_governments.1003.a.tt: "Emphasis on knights."
   ascension_governments.1003.b: "Our patron deserves worship."
@@ -444,17 +444,17 @@
   ascension_governments.1004.b.tt: "Emphasis on ethics attraction and edicts."
 # Imperial
   ascension_governments.1005.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. Greater heights than ever thought possible are mere moments away. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their place beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
+  ascension_governments.1005.desc: "The empire is one with the Shroud. Our telepaths spread the influence of our rule throughout our populace. Greater heights than ever thought possible are mere moments away. But now we must decide how §Y[From.GetRulerTitle] [From.GetRulerName]§! wishes to interact with this new realm.\n\nWe could worship our ruler as a diety, ascending their consciousness beyond the mortal realm. Alternatively, we could allow the Shroud's entities to manifest themselves in our ruler, granting supernatural strength."
   ascension_governments.1005.a: "Begin the ascension."
   ascension_governments.1005.a.tt: "Emphasis on the imperial ruler."
   ascension_governments.1005.b: "Call eldritch beings to propose the offer."
   ascension_governments.1005.b.tt: "Emphasis on our patron."
 # Corporate
   ascension_governments.1006.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1006.desc: "...\n\n..."
-  ascension_governments.1006.a: "..."
+  ascension_governments.1006.desc: "A new world has opened its doors to our corporate interests. The Shroud seems not to care for the material possessions we peddle, but one only seeks another when they desire something from them. We may have reached out, but the entities within let us in. There must be something they need from us, and we will be sure to only exchange for the right price. For now, we must decide how to move forward within this new realm of possibility.\n\nWe could focus on precognition, allowing analysts to predict consumer trends to virtually eliminate investment risks. Alternatively, the mental powers of our enlightened minds seem highly profitable if we are able to manipulate others to feed their capitalist desires."
+  ascension_governments.1006.a: "Analyze future profits."
   ascension_governments.1006.a.tt: "Emphasis on branch offices."
-  ascension_governments.1006.b: "..."
+  ascension_governments.1006.b: "Encourage the masses."
   ascension_governments.1006.b.tt: "Emphasis on profit and intel."
 
 # Event Pool 1
@@ -493,7 +493,7 @@
   ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
 
   ascension_governments.1021.name: "A Request"
-  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it make its request. Always, we are the one's who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the Harrower of Time. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the Harrower wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the Harrower promises power, power to rule all others. It wants us to agree, for else, our time cannot be freely taken.\n\nA choice must be made."
+  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it make its request. Always, we are the one's who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the Harrower of Time. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the Harrower wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the Harrower promises power, power to rule all others. It wants us to agree, for otherwise, our time cannot be freely taken.\n\nA choice must be made."
   ascension_governments.1021.a: "Anything for power." # E
   ascension_governments.1021.b: "We will not make unretractable bargains." # D
   ac_pact_of_the_harrower:0 "Pact of the Harrower"
@@ -502,8 +502,8 @@
 
 # Final Event
 # Democratic
-  ascension_governments.1032.name: "..."
-  ascension_governments.1032.desc.divine: "..."
+  ascension_governments.1032.name: "Transcendance of the Masses"
+  ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] emotions dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains <Gaia/Foundation>..."
   ascension_governments.1032.desc.eldritch: "..."
   ascension_governments.1032.desc.neutral: "..."
   ascension_governments.1032.a: "..."

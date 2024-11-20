@@ -179,6 +179,41 @@ civic_cyberspacial = {
 		}
 		modifier = {
 			espionage_operation_difficulty_add = -1
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+#...
+civic_uploaded_mind = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_uploaded_mind.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_cybernetics_assimilator_finish
+		}
+	}
+	description = civic_tooltip_uploaded_mind_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_cybernetics_assimilator_finish
+		}
+		modifier = {
+			espionage_operation_difficulty_add = -1
 			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}

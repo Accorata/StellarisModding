@@ -126,7 +126,7 @@ auth_oligarchic = {
 			planet_stability_add = 5
 			custom_tooltip = auth_ac_psionic_oligarchic_divine_effects
 			show_only_custom_tooltip = no
-			pop_cat_worker_happiness = -0.10
+			pop_cat_worker_happiness = -0.1
 		}
 	}
 	advanced_authority_swap = {
@@ -144,7 +144,7 @@ auth_oligarchic = {
 			planet_stability_add = 5
 			custom_tooltip = auth_ac_psionic_oligarchic_divine_toxic_god_effects
 			show_only_custom_tooltip = no
-			pop_cat_worker_happiness = -0.10
+			pop_cat_worker_happiness = -0.1
 		}
 	}
 	advanced_authority_swap = {
@@ -183,8 +183,8 @@ auth_oligarchic = {
 			empire_size_mult = -0.1
 			custom_tooltip = unlocks_ac_ac_shroud_invocation
 			show_only_custom_tooltip = no
-			pop_growth_speed = 0.10
-			pop_decline_speed = 0.10
+			pop_growth_speed = 0.1
+			pop_decline_speed = 0.1
 		}
 	}
 	advanced_authority_swap = {
@@ -493,7 +493,7 @@ auth_imperial = {
 			pop_happiness = -0.1
 			custom_tooltip = auth_ac_genetic_imperial_perfect_effects
 			show_only_custom_tooltip = no
-			pop_cat_ruler_happiness = 0.10
+			pop_cat_ruler_happiness = 0.1
 			all_technology_research_speed = -0.05
 			country_war_exhaustion_mult = -0.25
 		}
@@ -558,9 +558,9 @@ auth_corporate = {
 		modifier = {
 			country_trade_fee = -0.05
 			country_unity_produces_mult = -0.05
-			planet_branch_offices_cost_mult = -0.50
+			planet_branch_offices_cost_mult = -0.5
 			branch_office_value_mult = 0.25
-			pop_lifestyle_trade_value_mult = -0.50
+			pop_lifestyle_trade_value_mult = -0.5
 			pop_cat_ruler_political_power = 0.25
 		}
 	}

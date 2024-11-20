@@ -4,12 +4,13 @@
   building_ac_undercity_arena_plural:0 "Undercity Arenas"
   building_ac_undercity_arena_desc:0 "..."
 
-  holding_ac_undercity_arena:0 "..."
-  holding_ac_undercity_arena_plural:0 "...s"
-  holding_ac_undercity_arena_desc:0 "..."
+  holding_ac_undercity_arena:0 "Offworld Colloseum"
+  holding_ac_undercity_arena_plural:0 "Offworld Colloseums"
+  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's forces duel to provide spectacles for our peoples."
 
 # Synthetic
   holding_ac_robotics_plant:0 "Robotics Plant"
+  holding_ac_robotics_plant_plural:0 "Robotics Plants"
   holding_ac_robotics_plant_desc:0 "..."
 
   building_ac_mega_forge:0 "Mega-Forge"
@@ -17,7 +18,7 @@
   job_ac_grand_synthesizer:0 "Grand Synthesizer"
   job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
   job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
-  job_ac_grand_synthesizer_desc:0 "..."
+  job_ac_grand_synthesizer_desc:0 "The gods of the material plane, Grand Synthesizers forge the resources from which our wonders are formed."
   job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
   mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
   mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
@@ -27,7 +28,7 @@
 
 # Psionic
   building_ac_order_hall:0 "Order's Hall"
-  building_ac_order_hall_desc:0 "..."
+  building_ac_order_hall_desc:0 "Within this great hall, the Knights of the Order convene on matters of divine importance."
   concept_building_ac_order_hall:0 "$building_ac_order_hall$"
   building_ac_order_hall_knights:0 "$building_ac_order_hall$"
   building_ac_order_hall_knights_desc:0 "$building_ac_order_hall_desc$"
@@ -45,7 +46,7 @@
   holding_ac_manipulation_network_desc:0 "..."
   holding_ac_manipulation_network_fail_tt:0 "$TRIGGER_FAIL$We already have an §Y$holding_ac_manipulation_network$§! in the §Y[planet.owner.GetName]§!"
 
-  building_ac_psi_tower:0 "Psionic Tower" #center? #grand unit?
+  building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
   building_ac_psi_tower_desc:0 "..."
 
@@ -85,4 +86,4 @@
 
   holding_ac_external_router:0 "External Router Core"
   holding_ac_external_router_plural:0 "External Router Cores"
-  holding_ac_external_router_desc:0 "external servers processing..."
+  holding_ac_external_router_desc:0 "Massive computers processing the immense load of data of our Overlord's virtual lifestyle."

@@ -99,9 +99,7 @@ councilor_bio_replacer = {
 		}
 	}
 	civic = civic_bio_replacer
-	modifier = {
-		job_roboticist_branch_office_value_mult = 0.02
-	}
+	custom_tooltip = "councilor_bio_replacer_custom_modifier_desc"
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
 	}
@@ -356,8 +354,6 @@ councilor_numbered_among_stars = {
 	civic = civic_numbered_among_stars
 	modifier = {
 		unemployment_resources_nanites_produces_add = 0.25
-		# testing below:
-		ships_nanites_cost_mult = -0.02
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

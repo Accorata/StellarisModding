@@ -66,6 +66,11 @@ is_ac_cyberhive = {
 	has_tradition = tr_cybernetics_finish
 }
 
+is_ac_cybermachine = {
+	has_valid_civic = civic_uploaded_mind
+	has_tradition = tr_cybernetics_assimilator_finish
+}
+
 ac_has_confirmed_shroud_patron = {
 	OR = {
 		has_country_flag = composer_covenant_confirmed

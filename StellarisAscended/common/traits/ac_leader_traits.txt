@@ -163,8 +163,11 @@ leader_trait_ac_composer_vessel = {
 		species_leader_exp_gain = 1
 		negative_traits_leader = 1
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -184,11 +187,14 @@ leader_trait_ac_whisperers_vessel = {
 		engineering_tech_cost_mult = -0.05
 	}
 	self_modifier = {
-		leader_lifespan_add = -15
-		species_leader_exp_gain = -0.15
+		leader_lifespan_add = -10
+		species_leader_exp_gain = -0.1
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -208,8 +214,11 @@ leader_trait_ac_eater_vessel = {
 		pop_happiness = -0.05
 		pop_growth_speed = -0.05
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -224,7 +233,7 @@ leader_trait_ac_instrument_vessel = {
 		TIER = none
 	}
 	councilor_modifier = {
-		planet_jobs_produces_mult = 0.1
+		planet_jobs_produces_mult = 0.15
 	}
 	self_modifier = {
 		leader_lifespan_add = 10
@@ -234,8 +243,11 @@ leader_trait_ac_instrument_vessel = {
 		RESOURCE = consumer_goods
 		AMOUNT = 25
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -252,8 +264,11 @@ leader_trait_ac_end_vessel = {
 	councilor_modifier = {
 		# ...
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -262,7 +277,7 @@ leader_trait_ac_visions_of_doom = {
 	leader_trait_type = negative
 	inline_script = {
 		script = trait/icon_negative
-		ICON = "GFX_leader_trait_ac_end_vessel" #change
+		ICON = "GFX_leader_trait_ac_visions_of_doom"
 		COUNCIL = triggered
 		TIER = none
 	}
@@ -280,8 +295,11 @@ leader_trait_ac_visions_of_doom = {
 	sector_modifier = {
 		planet_stability_add = -5
 	}
-
-	leader_class = { commander scientist official }
+	leader_class = {
+		commander
+		scientist
+		official
+	}
 	initial = no
 	randomized = no
 }
@@ -291,7 +309,7 @@ leader_trait_ac_mutant_plane_shifter = {
 	inline_script = {
 		script = trait/icon_ac_mutant
 		CLASS = scientist
-		ICON = "GFX_leader_trait_ac_mutant_brilliance" #change
+		ICON = "GFX_leader_trait_ac_mutant_brilliance"		#change
 		RARITY = common
 		COUNCIL = no
 		TIER = none
