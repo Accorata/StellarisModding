@@ -12,6 +12,8 @@
   concept_auth_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
   gov_ac_genetic_imperial_perfect:0 "$auth_ac_genetic_imperial_perfect$"
   gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
+  HT_AC_CLONED_EMPEROR:0 "Cloned Heir"
+  HT_AC_CLONED_EMPRESS:0 "Cloned Heiress"
   auth_ac_genetic_imperial_perfect_effects:0 "- £leader£ Cloned heirs gain additional traits"
   councilor_ruler_imperial_ac_genetic:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_genetic_desc:0 "$imperial_ruler_desc$"
@@ -315,6 +317,8 @@
   concept_auth_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine:0 "$auth_ac_psionic_imperial_divine$"
   gov_ac_psionic_imperial_divine_desc:0 "$auth_ac_psionic_imperial_divine_desc$"
+  HT_AC_DEMIGOD:0 "Crown Demigod"
+  HT_AC_DEMIGODDESS:0 "Crown Demigoddess"
   councilor_ruler_imperial_ac_psionic_divine:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
 # Psionic Imperial Eldritch
@@ -582,15 +586,19 @@
   auth_ac_psi_teacher_democratic: "Democratic Mentalism"
   auth_ac_psi_teacher_democratic_desc: "..."
   concept_auth_ac_psi_teacher_democratic: "$auth_ac_psi_teacher_democratic$"
+
   auth_ac_psi_teacher_oligarchic: "Oligarchic Divinocracy"
   auth_ac_psi_teacher_oligarchic_desc: "Within this oligarchy, the elite strive not only to control the present, but also the future. Gifted diviners rise quickly through the class strata until they serve upper society and shape their dreams."
   concept_auth_ac_psi_teacher_oligarchic: "$auth_ac_psi_teacher_oligarchic$"
+
   auth_ac_psi_teacher_dictatorial: "Dictatorial Telepocracy"
   auth_ac_psi_teacher_dictatorial_desc: "Our dictatorial reign is aided by the help of the telepathic insights of the teachers. The sciences of controlling the mind and spirit of the nation are obsolute, replaced by the brilliant power of telepathy."
   concept_auth_ac_psi_teacher_dictatorial: "$auth_ac_psi_teacher_dictatorial$"
+
   auth_ac_psi_teacher_imperial: "Imperial Prophetarchy"
   auth_ac_psi_teacher_imperial_desc: "Guided by the teachers, our imperial bloodline has been prophesized to rule for eternity. The noble houses train their elite telepaths in tandem with the teachers to understand the prophecy and ensure their continual elevation."
   concept_auth_ac_psi_teacher_imperial: "$auth_ac_psi_teacher_imperial$"
+
   auth_ac_psi_teacher_corporate: "Corporate SacredMind"
   auth_ac_psi_teacher_corporate_desc: "..."
   concept_auth_ac_psi_teacher_corporate: "$auth_ac_psi_teacher_corporate$"
@@ -608,7 +616,14 @@
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
   auth_ac_genetic_hive_perfect_desc:0 "..."
+  concept_auth_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
+  gov_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
+  gov_ac_genetic_hive_perfect_desc:0 "$auth_ac_genetic_hive_perfect_desc$"
+
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
   auth_ac_genetic_hive_chaotic_desc:0 "..."
+  concept_auth_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
+  gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
+  gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"
   auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
   #needs concepts and gov
