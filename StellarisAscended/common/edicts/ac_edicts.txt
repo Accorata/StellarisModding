@@ -178,6 +178,37 @@ ac_awoken_council = {
 }
 
 # Psionic Government Edicts
+ac_united_in_soul = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		diplo_weight_delegate_mult = 0.025
+		hostile_operation_diplomatic_incident_difficulty_add = 4
+		hostile_operation_extort_favors_difficulty_add = 4
+		hostile_operation_smear_campaign_difficulty_add = 4
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_dark_pact = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
@@ -201,6 +232,35 @@ ac_dark_pact = {
 		species_leader_exp_gain = 0.25
 		negative_traits_leader = 1
 		country_unity_produces_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_heavens_blessing = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_stability_add = 10
+		pop_government_ethic_attraction = 0.25
 	}
 	allow = {
 	}

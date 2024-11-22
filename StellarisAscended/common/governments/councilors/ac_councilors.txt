@@ -169,6 +169,29 @@ councilor_world_commissioners = {
 	}
 }
 
+# Cybernetic
+councilor_cybernet = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = official
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+		}
+	}
+	civic = civic_cybernet
+	modifier = {
+		# pop trade value percentages...
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Psionic
 councilor_telepathic_empire = {
 	leader_class = {

@@ -116,9 +116,11 @@
   civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
   # councilor needed
 
-  civic_cybernet:0 "CyberNet"s
+  civic_cybernet:0 "CyberNet"
   civic_cybernet_desc:0 "This Megacorporation deploys a massive cybernet across its planets, allowing for virtaul jobs, luxury lifestyles, as well as instantaneous executive meetings."
-  # councilor needed
+  councilor_cybernet:0 "Cyberasset Manager"
+  councilor_cybernet_female:0 "$councilor_cybernet$"
+  councilor_cybernet_desc:0 "The $TITLE$ oversees the transfer of corporate assets along the net, the selling of digital real estate, and numerous other profitable ventures."
 
   civic_cyberspacial:0 "Cyberspacial"
   civic_cyberspacial_desc:0 "This Hive Mind has expanded its domain into the virtual world. Each of its drones have a virtual counterpart connected directly to their brain via cybernetic software."
@@ -144,7 +146,7 @@
   civic_cybergladiators:0 "Cybergladiators"
   civic_cybergladiators_desc:0 "...in the alleyways, ..."
   civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
-  # councilor needed
+  # councilor needed - Gladiator Champion - commander - army morale, -war exhaustion?
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "Corporate work has its stresses, and how better to relive the workday tension than betting on gladiatorial duels to the death?"
@@ -191,7 +193,7 @@
 
   civic_employee_diversification:0 "Employee Diversification"
   civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by tuning each's genetic makeup as their job description requires."
-  # councilor needed
+  # councilor needed - auto_mod_monthly_mult 10%
 
   civic_hyper_diversified:0 "Hyper-Diversified"
   civic_hyper_diversified_desc:0 "For each role, a new design. This Hive Mind evolves each genetic niche to its fullest potention: no two drones are alike."
@@ -300,7 +302,7 @@
   civic_metallic_repurposing:0 "Metallic Repurposing"
   civic_metallic_repurposing_desc:0 "This society believes all metal serves a purpose, that none should go to waste. Their living metal technology is able to grow on metallic remains, greatly enhancing their recycling capabilities."
   civic_tooltip_metallic_repurposing_effects:0 "$modular_ascension_required$- §YDoubles§! chance of salvaging ships\n- Grants §Y£sr_living_metal£ Living Metal§! on salvaging or researching debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"  
-  # maybe change to show job?- instead of just "Metallurgist"
+  # maybe change to show job? - instead of just "Metallurgist"
   councilor_metallic_repurposing:0 "..."
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
   councilor_metallic_repurposing_desc:0 "..."

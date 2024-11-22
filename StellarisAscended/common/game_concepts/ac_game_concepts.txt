@@ -71,7 +71,16 @@ concept_auth_ac_genetic_corporate_chaotic = {
 	tooltip_override = "authority:auth_corporate:auth_ac_genetic_corporate_chaotic"
 }
 
-# Hive to go
+concept_auth_ac_genetic_hive_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_hive_perfect_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_hive_perfect"
+}
+
+concept_auth_ac_genetic_hive_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_hive_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_hive_chaotic"
+}
+
 # Genetic Edicts
 concept_edict_ac_clone_overdrive = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
@@ -194,6 +203,11 @@ concept_auth_ac_psionic_corporate_eldritch = {
 }
 
 # Psionic Edicts
+concept_edict_ac_heavens_blessing = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_heavens_blessing"
+}
+
 concept_edict_ac_betrayal_of_the_mind = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_betrayal_of_the_mind"
@@ -202,6 +216,11 @@ concept_edict_ac_betrayal_of_the_mind = {
 concept_edict_ac_dark_pact = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_dark_pact"
+}
+
+concept_edict_ac_united_in_soul = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_united_in_soul"
 }
 
 # Psi Teacher Authorities

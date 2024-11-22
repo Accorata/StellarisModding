@@ -428,8 +428,8 @@
 # Democratic
   ascension_governments.1002.name: "$ac_psionic_shock_chain_title$"
   ascension_governments.1002.desc: "A new age is upon us. Our people speak through their minds, ..\n\n..."
-  ascension_governments.1002.a: "..."
-  ascension_governments.1002.a.tt: "Emphasis on unity and workers."
+  ascension_governments.1002.a: "None shall be excluded from our empathy."
+  ascension_governments.1002.a.tt: "Emphasis on unity and lower classes."
   ascension_governments.1002.b: "The unconsious mind reveals true insight."
   ascension_governments.1002.b.tt: "Emphasis on faction output."
 # Oligarchic
@@ -511,7 +511,7 @@
   ascension_governments.1032.desc.eldritch: "..."
   ascension_governments.1032.desc.neutral: "..."
   ascension_governments.1032.a: "..."
-  ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_united_in_soul$"
   ascension_governments.1032.b: "..."
   ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
   ascension_governments.1032.c: "$ac_psionic_keep_auth_option$"
@@ -535,7 +535,7 @@
   ascension_governments.1034.desc.eldritch: "..."
   ascension_governments.1034.desc.neutral: "..."
   ascension_governments.1034.a: "..."
-  ascension_governments.1034.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1034.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_divine']\n$unlock_edict_ac_heavens_blessing$"
   ascension_governments.1034.b: "..."
   ascension_governments.1034.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$"
   ascension_governments.1034.c: "$ac_psionic_keep_auth_option$"
@@ -567,6 +567,11 @@
 
 # Edicts
 # Imperial
+  edict_ac_heavens_blessing:0 "Heaven's Blessing"
+  edict_ac_heavens_blessing_desc:0 "..."
+  concept_edict_ac_heavens_blessing:0 "$edict_ac_heavens_blessing$"
+  unlock_edict_ac_heavens_blessing:0 "$unlock_edict_tt$['concept_edict_ac_heavens_blessing']"
+
   edict_ac_betrayal_of_the_mind:0 "Betrayal of the Mind"
   edict_ac_betrayal_of_the_mind_desc:0 "Thoughts, emotions, desires. The Shroud sees all and compell all to reveal their inner secrets."
   concept_edict_ac_betrayal_of_the_mind:0 "$edict_ac_betrayal_of_the_mind$"
@@ -580,6 +585,12 @@
   edict_ac_dark_pact_desc:0 "Within the Shroud there are energies that shouldn't be tampered with, that is, if one wishes to keep their soul to themselves."
   concept_edict_ac_dark_pact:0 "$edict_ac_dark_pact$"
   unlock_edict_ac_dark_pact:0 "$unlock_edict_tt$['concept_edict_ac_dark_pact']"
+
+# Democratic
+  edict_ac_united_in_soul:0 "United in Soul"
+  edict_ac_united_in_soul_desc:0 "..."
+  concept_edict_ac_united_in_soul:0 "$edict_ac_united_in_soul$"
+  unlock_edict_ac_united_in_soul:0 "$unlock_edict_tt$['concept_edict_ac_united_in_soul']"
 
 ### Psionic Teachers ---------------------------------------------------------------------------------
 # Psionic Teacher Authorities
@@ -626,4 +637,4 @@
   gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"
   auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
-  #needs concepts and gov
+  #needs govs
