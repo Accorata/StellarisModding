@@ -43,10 +43,10 @@
   civic_tooltip_synthetic_celestials_effects:0 "$synthetic_ascension_required$- Can build unique £building£ §Y$building_ac_mega_forge$§! building \n\nThe £building£ §Y$building_ac_mega_forge$§! grants empire-wide §Y$job_ac_grand_synthesizer_plural_with_icon$§! jobs which produce £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!.\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_megastructures_cost_mult$: §G-10%§!"
   councilor_synthetic_celestials:0 "Architect of Worlds"
   councilor_synthetic_celestials_female:0 "$councilor_synthetic_celestials$"
-  councilor_synthetic_celestials_desc:0 "The $TITLE$ is a master of artificial realities, designing the worlds of the future."
+  councilor_synthetic_celestials_desc:0 "The $TITLE$ is a master of artificial realities, designing the solar systems of our future."
 
   civic_world_commissioners:0 "World Commissioners"
-  civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future and will yield an enormous rate of return."
+  civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future which will yield unprecedented rates of return."
   councilor_world_commissioners:0 "..."
   councilor_world_commissioners_female:0 "$councilor_world_commissioners$"
   councilor_world_commissioners_desc:0 "The $TITLE$ is ..."
@@ -133,11 +133,15 @@
 
   civic_uploaded_mind:0 "Uploaded Mind"
   civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
-  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating organic £pop£ Pops provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n ...(to do)"
+  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating organic £pop£ Pops provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which...cyborgs... ...(to do)\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+25%§!"
 
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."
   living_standard_ac_cyberlife_tooltip_delayed:0 "Spending most of their lives in a virtual reality, these pops ..." #Needs to be gray
+  living_standard_ac_computational_matrix:0 "Computational Matrix"
+  living_standard_ac_computational_matrix_tooltip:0 "..."
+  living_standard_ac_computational_matrix_tooltip_delayed:0 "..." #Needs to be gray
+  AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must be have the §Y$trait_cybernetic$§! trait.."
   mod_pop_category_rulers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $RULERS$"
   mod_pop_category_specialists_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SPECIALISTS$"
   mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
@@ -149,9 +153,13 @@
   # councilor needed - Gladiator Champion - commander - army morale, -war exhaustion?
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
-  civic_underworld_bloodsports_desc:0 "Corporate work has its stresses, and how better to relive the workday tension than betting on gladiatorial duels to the death?"
+  civic_underworld_bloodsports_desc:0 "Corporate work has its stresses, and how better to relive the workday tension than betting fortunes on gladiatorial duels to the death?"
   civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
+
+  civic_cybersports:0 "CyberSports"
+  civic_cybersports_desc:0 "..."
+  civic_tooltip_cybersports_effects:0 "...(to do)"
 
   # Neon stars...
   # councilor needed

@@ -214,7 +214,7 @@ civic_uploaded_mind = {
 		}
 		modifier = {
 			espionage_operation_difficulty_add = -1
-			# councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+			councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }
@@ -313,6 +313,39 @@ civic_underworld_bloodsports = {
 		modifier = {
 			planet_jobs_cyberdome_duelist_engineering_research_produces_add = 3
 			planet_jobs_cyberdome_duelist_unity_produces_add = 3
+		}
+	}
+}
+
+civic_cybersports = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cybersports.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_active_tradition = tr_cybernetics_assimilator_finish
+		}
+	}
+	description = civic_tooltip_cybersports_effects
+	swap_type = {
+		trigger = {
+			has_active_tradition = tr_cybernetics_assimilator_finish
+		}
+		modifier = {
+			# councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }

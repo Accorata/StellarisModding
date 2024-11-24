@@ -185,7 +185,7 @@ councilor_cybernet = {
 	}
 	civic = civic_cybernet
 	modifier = {
-		# pop trade value percentages...
+		pop_lifestyle_trade_value_mult = 0.1
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

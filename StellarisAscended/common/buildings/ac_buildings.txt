@@ -411,6 +411,48 @@ building_ac_undercity_arena = {
 			energy = 2
 		}
 	}
+	triggered_desc = {
+		text = job_cyberdome_duelist_effect_desc
+	}
+	triggered_desc = {
+		text = job_cyberdome_spectator_effect_desc
+	}
+}
+
+building_ac_cybernetics_stadium = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = research
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator_machine = yes
+		}
+	}
+	allow = {
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator_machine = no
+		}
+	}
+	planet_modifier = {
+		job_ac_cybergladiator_drone_add = 2
+		# ...
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	triggered_desc = {
+		text = job_ac_cybergladiator_drone_effect_desc
+	}
 }
 
 # Synthetic Celestials

@@ -6,7 +6,17 @@
 
   holding_ac_undercity_arena:0 "Offworld Colloseum"
   holding_ac_undercity_arena_plural:0 "Offworld Colloseums"
-  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's forces duel to provide spectacles for our peoples."
+  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's armies duel to provide spectacles for our peoples."
+
+  building_ac_cybernetics_stadium:0 "Cybernetic Stadium"
+  building_ac_cybernetics_stadium_plural:0 "Cybernetic Stadiums"
+  building_ac_cybernetics_stadium_desc:0 "..."
+
+  job_ac_cybergladiator_drone:0 "Gladiator Drone"
+  job_ac_cybergladiator_drone_plural:0 "Gladiator Drones"
+  # ...
+  job_ac_cybergladiator_drone_effect_desc:0 "..."
+  planet_ac_cybergladiator_drone:0 "$job_ac_cybergladiator_drone_plural$"
 
 # Synthetic
   holding_ac_robotics_plant:0 "Robotics Plant"

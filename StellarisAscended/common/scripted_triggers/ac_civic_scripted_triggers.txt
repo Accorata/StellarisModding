@@ -169,6 +169,11 @@ is_ac_cybergladiator_corporate = {
 	has_tradition = tr_cybernetics_finish
 }
 
+is_ac_cybergladiator_machine = {
+	has_valid_civic = civic_cybersports
+	has_tradition = tr_cybernetics_assimilator_finish
+}
+
 is_ac_metal_recycler = {
 	OR = {
 		has_valid_civic = civic_metallic_repurposing
