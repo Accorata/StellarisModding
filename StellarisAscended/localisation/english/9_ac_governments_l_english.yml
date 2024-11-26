@@ -209,7 +209,7 @@
   ascension_governments.32.a: "We are one. One species where all can equally thrive."
   ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_ac_handicap_distribution$"
   ascension_governments.32.b: "Our bodies are bound only by our imaginations."
-  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed
   ascension_governments.32.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
@@ -293,14 +293,14 @@
 
 # Democratic
   edict_ac_handicap_distribution:0 "Handicap Distribution"
-  edict_ac_handicap_distribution_desc:0 "..."
+  edict_ac_handicap_distribution_desc:0 "Genetic handicaps ensure that, for once, all are truly equal in opportunity."
   concept_edict_ac_handicap_distribution:0 "$edict_ac_handicap_distribution$"
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
   edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
 
 # Corporate
   edict_ac_awoken_council:0 "Awoken Council"
-  edict_ac_awoken_council_desc:0 "..."
+  edict_ac_awoken_council_desc:0 "From their cyronic chambers, the council has been assembled, ready to lead our corporation through strife before returning to their peaceful slumber."
   concept_edict_ac_awoken_council:0 "$edict_ac_awoken_council$"
   unlock_edict_ac_awoken_council:0 "$unlock_edict_tt$['concept_edict_ac_awoken_council']"
 
@@ -323,7 +323,7 @@
   councilor_ruler_imperial_ac_psionic_divine_desc:0 "$imperial_ruler_desc$"
 # Psionic Imperial Eldritch
   auth_ac_psionic_imperial_eldritch:0 "Imperial Vessel"
-  auth_ac_psionic_imperial_eldritch_desc:0 "Our emperor has opened their mind to the Shroud, allowing themselves to serve as a vessel for the entities that dwell within. Our rule is eternal for the very Shroud guides us now."
+  auth_ac_psionic_imperial_eldritch_desc:0 "Our emperor has opened their mind to the Shroud, allowing themself to serve as a vessel for the entities that dwell within. Our rule is eternal for the very Shroud guides us now."
   concept_auth_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch:0 "$auth_ac_psionic_imperial_eldritch$"
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
@@ -427,21 +427,21 @@
 # First Event
 # Democratic
   ascension_governments.1002.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1002.desc: "A new age is upon us. Our people speak through their minds, ..\n\n..."
+  ascension_governments.1002.desc: "A new age is upon us. Our people speak through their minds, elevating intimacy between those from all walks of life. Together, our covenant reaches into the Shroud and brings all [Root.GetSpeciesNamePlural] further. Visionaries see the democratic process itself as a vestigial element which must be similarly uplifted.\n\nWe could join our minds together, letting all feel the emotions of their bretheren. Alternatively, we could grant politic power to the unconsious mind, entrusting it to choose governance that best suits the collectives needs."
   ascension_governments.1002.a: "None shall be excluded from our empathy."
   ascension_governments.1002.a.tt: "Emphasis on unity and lower classes."
   ascension_governments.1002.b: "The unconsious mind reveals true insight."
   ascension_governments.1002.b.tt: "Emphasis on faction output."
 # Oligarchic
   ascension_governments.1003.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1003.desc: "Faith in the Shroud uplifts us...\n\n...Are we to worship the..."
+  ascension_governments.1003.desc: "Psionics uplift us, ascend us, and actualize our will. The powers of the Shroud have resulted in sweeping changes across the nation. Faith in the Shroud guides us through these evolving times, but we must choose how to move forth on our own if we are to progress.\n\nWe could form a covenant among our own, honoring those purest of mind and soul. Alternatively, we could pray to our patron as a god, devoting our material forms to their greatness."
   ascension_governments.1003.a: "Form a holy order."
   ascension_governments.1003.a.tt: "Emphasis on knights."
   ascension_governments.1003.b: "Our patron deserves worship."
   ascension_governments.1003.b.tt: "Emphasis on Shroud benefits."
 # Dictatorial
   ascension_governments.1004.name: "$ac_psionic_shock_chain_title$"
-  ascension_governments.1004.desc: "Through the wonderous rule of §Y[From.GetRulerTitle] [From.GetRulerName]§!, our country has reached true enlightenment. Our mind's potential has been unleashed and the energies of the Shroud are ours. As with any revolution, the might of the §Y[From.GetRulerTitle]§! must be protected from the winds of change. Without their generous rule, chaos would reign across our consious. A choice must be made to guarantee stability.\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths that merge with the Shroud to wield control over the entire populace."
+  ascension_governments.1004.desc: "Through the wonderous rule of §Y[From.GetRulerTitle] [From.GetRulerName]§!, our country has reached true enlightenment. Our mind's potential has been unleashed and the energies of the Shroud are ours. As with any revolution, the might of the [From.GetRulerTitle] must be protected from the winds of change. Without their generous rule, chaos would reign across our consious. A choice must be made to guarantee stability.\n\nWe could proclaim our empire chosen by the entities of the Shroud, declaring a mandate of heaven upon our rightfull rule. Alternatively, we could form a conclave of telepaths that merge with the Shroud to wield control over the entire populace."
   ascension_governments.1004.a: "Legitamize our sovereignty."
   ascension_governments.1004.a.tt: "Emphasis on claims and rulers."
   ascension_governments.1004.b: "Assemble the conclave."
@@ -463,21 +463,21 @@
 
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
-  ascension_governments.1009.desc: "...\n\n..."
+  ascension_governments.1009.desc: "On [Root.Capital.GetName] local enforcement have begun to find ghastly remains of [Root.GetSpeciesNamePlural] sprawled out upon horrifying altars. .. ritualistic killings .\n\n..."
   ascension_governments.1009.a: "The Shroud deserves our devotion." # E
   ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
   ascension_governments.1009.c: "There will always be those lost to insanity...." # N
   ac_holy_minds:0 "Holy Minds"
   ac_holy_minds_desc:0 "Our minds are sacred; they shall not be left as fodder for demonic entities."
   ac_dark_rituals:0 "Dark Rituals"
-  ac_dark_rituals_desc:0 "..."
+  ac_dark_rituals_desc:0 "Within our society, small cults have formed that view the Shroud entities as gods. While the nation doesn't recognize their beliefs as legitimate, their existence has been permitted."
   ascension_governments.1010.name: "Nether Calling"
-  ascension_governments.1010.desc: "...\n\n..."
+  ascension_governments.1010.desc: "Our most gifted telepaths have brought forth a proposal, or rather, a choice. They've identified cracks within the Veil, feeling the energies within reaching out. Whispers in their minds speak ancient tongues which upon further study have revealed to them a ritual which would release the entity into our world.\n\nOur priests believe the entity would be grateful for its release and would willingly join our forces. However they caution that the Shroud is never predictable and confrontations with the other can quickly sour. The choice is ours."
   ascension_governments.1010.a: "Begin the ritual." # E 
   ascension_governments.1010.a.tt: "Attempt to summon a Psionic Avatar."
   ascension_governments.1010.b: "Such risks should not be taken." # D
   ac_abstaining_from_darkness:0 "Abstaining from Darkness"
-  ac_abstaining_from_darkness_desc:0 "The Shroud can grant great benefits, but also is a place filled with horror. We would do well to be careful."
+  ac_abstaining_from_darkness_desc:0 "The Shroud can grant great benefits, but is also a place filled with horror. We would do well to be careful."
   ascension_governments.1011.name: "Telepathic Health"
   ascension_governments.1011.desc: "...\n\n..."
   ascension_governments.1011.a: "[ac_healed_leader.GetTitle] [ac_healed_leader.GetName] could benefit greatly." # N
@@ -487,7 +487,8 @@
   ac_mind_body_soul:0 "Mind Body Soul"
   ac_mind_body_soul_desc:0 "..."
   ac_eldritch_mind:0 "Eldritch Mind"
-  ac_eldritch_mind_desc:0 "..."
+  ac_eldritch_mind_desc:0 "The intricacies of our mind must not be touched if we wish to ensure our connection to the Shroud remains."
+  # corporate benefit...
 
 # Event Pool 2
   ascension_governments.1020.name: "Chosen Sovereignty"
@@ -497,7 +498,7 @@
   ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
 
   ascension_governments.1021.name: "A Request"
-  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it make its request. Always, we are the one's who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the Harrower of Time. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the Harrower wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the Harrower promises power, power to rule all others. It wants us to agree, for otherwise, our time cannot be freely taken.\n\nA choice must be made."
+  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it makes its request. Always before, we have been the ones who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the §YHarrower of Time§!. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the §YHarrower§! wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the §YHarrower§! promises power, power to rule all others. It wants us to agree, for otherwise, our time cannot be freely taken.\n\n§RA choice must be made.§!"
   ascension_governments.1021.a: "Anything for power." # E
   ascension_governments.1021.b: "We will not make unretractable bargains." # D
   ac_pact_of_the_harrower:0 "Pact of the Harrower"
@@ -508,23 +509,23 @@
 # Democratic
   ascension_governments.1032.name: "Transcendance of the Masses"
   ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] emotions dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains <Gaia/Foundation>..."
-  ascension_governments.1032.desc.eldritch: "..."
+  ascension_governments.1032.desc.eldritch: "Within the unconsious, desires run rampant free from the authority of the superego. Here one's true emotions are made manifest, and it is these that shall govern our society. Our collective mood will sustain the nation, orchestrating elections and victors in instants and instilling a society built on intuition."
   ascension_governments.1032.desc.neutral: "..."
   ascension_governments.1032.a: "..."
   ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_united_in_soul$"
-  ascension_governments.1032.b: "..."
-  ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1032.b: "Freedom from self-doubt."
+  ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed
   ascension_governments.1032.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1032.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
 # Oligarchic
-  ascension_governments.1033.name: "..."
-  ascension_governments.1033.desc.divine: "..."
-  ascension_governments.1033.desc.eldritch: "..."
-  ascension_governments.1033.desc.neutral: "..."
-  ascension_governments.1033.a: "..."
+  ascension_governments.1033.name: "Destined Power"
+  ascension_governments.1033.desc.divine: "Today will forever be remembered as the birth of our sacred order. Upon reaching mental maturity, all [Root.GetSpeciesNamePlural] take a solemn oath to swear by the Order and serve to maintain it over loss of soul, mind, or body. Let us strive to empower the virtous, and in return, let them guide us to new heights."
+  ascension_governments.1033.desc.eldritch: "Our patron's glory is eternal. Our minds bound to the sacred covenant experience freedom never seen before. Through devotion, our power can only rise as the favor of the patrons amplifies indefinitely. In eternal deference, our sacrifices are power and all [Root.GetSpeciesNamePlural] will rise under our patron."
+  ascension_governments.1033.desc.neutral: "Psionic strength dwarfs the mere materialistic concerns we've wasted millenia squandering over, that much is clear. How that fortitude must be weilded remains a contentious question. Some wish to grant lordship to those who exemplify beauty of morals and mind. Others wish to devote ourselves to our Patrons, sacrificing our mortal possessions for true power. Finally, there are those who wish to keep things as they are and leave the current oligarchs to consolidate the powers of the Shroud."
+  ascension_governments.1033.a: "Dub the first knights."
   ascension_governments.1033.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_divine']\n$unlock_building_ac_order_hall$\n$unlock_edict_ac_handicap_distribution$" #change edict
-  ascension_governments.1033.b: "..."
+  ascension_governments.1033.b: "Bow before the Patrons."
   ascension_governments.1033.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_eldritch']\n$unlocks_ac_ac_shroud_invocation$\n$unlock_edict_ac_dark_pact$"
   ascension_governments.1033.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1033.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
@@ -543,9 +544,9 @@
 
 # Imperial
   ascension_governments.1035.name: "Regal Ascendency"
-  ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills.\n\nAll will see the light; all will bow before them; all will bask in their brilliant embrace."
-  ascension_governments.1035.desc.eldritch: "The proposal is complete. Our Patron wishes to join the material plane by manifesting their will into the mind of §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!. \n\nIf we continue down this path, then from this moment onwards, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will serve as a conduit for our Patron, allowing their bodily form to be possessed as the entities of the Shroud deem fit for the empire."
-  ascension_governments.1035.desc.neutral: "Our majesty, §Y[ruler.GetRegnalName]§! is larger than life, that much is clear. The degree to which, and methods by which remain a topic of conversation.\n\nAs §Y[ruler.GetRulerTitle]§!, their right by royal blood is evident, but others claim their psionic ability allows for true ascendant deification. Others appeal to the power of our Patron, arguing that the only ultimate authority would arise from allowing §Y[ruler.GetRegnalName]§! to be possessed by our Patron."
+  ascension_governments.1035.desc.divine: "A god walks the mortal realm. Our chosen §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! is a divine manifestation of our species, gifted in psionic powers above all others and weilder of our combined wills. All will see the light; all will bow before them; all will bask in their brilliant embrace."
+  ascension_governments.1035.desc.eldritch: "The proposal is complete. Our Patron wishes to join the material plane by manifesting their will into the mind of §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!. If we continue down this path, then from this moment onwards, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will serve as a conduit for our Patron, allowing their bodily form to be possessed as the entities of the Shroud deem fit for the empire."
+  ascension_governments.1035.desc.neutral: "Our majesty, §Y[ruler.GetRegnalName]§! is larger than life, that much is clear. The degree to which, and methods by which remain a topic of conversation. As §Y[ruler.GetRulerTitle]§!, their right by royal blood is evident, but others claim their psionic ability allows for true ascendant deification. Others appeal to the power of our Patron, arguing that the only ultimate authority would arise from allowing §Y[ruler.GetRegnalName]§! to be possessed by our Patron."
   ascension_governments.1035.a: "Divinity at last."
   ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1035.b: "Our Patron has joined us."
@@ -554,19 +555,22 @@
   ascension_governments.1035.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
 
 # Corporate
-  ascension_governments.1036.name: "..."
-  ascension_governments.1036.desc.divine: "..."
+  ascension_governments.1036.name: "Riches of the Soul"
+  ascension_governments.1036.desc.divine: "Our executives have all been trained profusely in the prophetic precognition the Shroud has bestowed upon us. Their foresight guarantees the profits of tommorrow, allowing each business decision to be analyzed both in present and future. It has been foreseen that our stocks will rise immensely once this change is made and annouced to our shareholders."
   ascension_governments.1036.desc.eldritch: "..."
   ascension_governments.1036.desc.neutral: "..."
   ascension_governments.1036.a: "..."
   ascension_governments.1036.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
-  ascension_governments.1036.b: "..."
+  ascension_governments.1036.b: "Telemarketers guarantee demand."
   ascension_governments.1036.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
   ascension_governments.1036.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1036.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
 
 # Edicts
 # Imperial
+  # edict_ac_palace_of_the_intellect...
+
+# Dictatorial
   edict_ac_heavens_blessing:0 "Heaven's Blessing"
   edict_ac_heavens_blessing_desc:0 "..."
   concept_edict_ac_heavens_blessing:0 "$edict_ac_heavens_blessing$"
@@ -595,7 +599,7 @@
 ### Psionic Teachers ---------------------------------------------------------------------------------
 # Psionic Teacher Authorities
   auth_ac_psi_teacher_democratic: "Democratic Mentalism"
-  auth_ac_psi_teacher_democratic_desc: "..."
+  auth_ac_psi_teacher_democratic_desc: "This democracy embraces the freedoms of the mind, connecting people through telepathic speech and unifying the country as one entity under the Shroud."
   concept_auth_ac_psi_teacher_democratic: "$auth_ac_psi_teacher_democratic$"
 
   auth_ac_psi_teacher_oligarchic: "Oligarchic Divinocracy"

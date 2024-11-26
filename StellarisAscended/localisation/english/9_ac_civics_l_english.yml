@@ -157,6 +157,8 @@
   civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed
 
+  # Hive Cybergladiator Civic
+
   civic_cybersports:0 "CyberSports"
   civic_cybersports_desc:0 "..."
   civic_tooltip_cybersports_effects:0 "...(to do)"

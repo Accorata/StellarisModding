@@ -96,14 +96,15 @@ ac_abstaining_from_darkness = {
 }
 
 ac_mind_body_soul = {
-	species_leader_exp_gain = 0.05
-	leader_lifespan_mult = 0.05
-	leaders_upkeep_mult = -0.05
+	species_leader_exp_gain = 0.1
+	leader_lifespan_mult = 0.1
+	leaders_upkeep_mult = -0.1
 }
 
 ac_eldritch_mind = {
 	planet_telepaths_produces_mult = 0.15
 	pop_cat_specialist_political_power = 0.1
+	modify_species_cost_mult = 0.25
 }
 
 ac_pact_of_the_harrower = {
