@@ -183,7 +183,9 @@ civic_microscopic_life = {
 		}
 		modifier = {
 			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
 			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
 			army_health = -0.5
 		}
 	}
@@ -230,7 +232,9 @@ civic_minicorp = {
 		}
 		modifier = {
 			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
 			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
 			army_health = -0.5
 		}
 	}
@@ -265,7 +269,9 @@ civic_microscopic = {
 		}
 		modifier = {
 			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
 			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
 			army_health = -0.5
 			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
 		}

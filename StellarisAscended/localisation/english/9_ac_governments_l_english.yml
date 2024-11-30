@@ -520,15 +520,16 @@
 
 # Oligarchic
   ascension_governments.1033.name: "Destined Power"
-  ascension_governments.1033.desc.divine: "Today will forever be remembered as the birth of our sacred order. Upon reaching mental maturity, all [Root.GetSpeciesNamePlural] take a solemn oath to swear by the Order and serve to maintain it over loss of soul, mind, or body. Let us strive to empower the virtous, and in return, let them guide us to new heights."
+  ascension_governments.1033.desc.divine: "Today will forever be remembered as the birth of our sacred order. Upon reaching mental maturity, all [Root.GetSpeciesNamePlural] take a solemn oath to swear by the Order and serve to maintain it over hazard of soul, mind, and body. Let us strive to empower the virtous, and in return, let them guide us to new heights."
   ascension_governments.1033.desc.eldritch: "Our patron's glory is eternal. Our minds bound to the sacred covenant experience freedom never seen before. Through devotion, our power can only rise as the favor of the patrons amplifies indefinitely. In eternal deference, our sacrifices are power and all [Root.GetSpeciesNamePlural] will rise under our patron."
   ascension_governments.1033.desc.neutral: "Psionic strength dwarfs the mere materialistic concerns we've wasted millenia squandering over, that much is clear. How that fortitude must be weilded remains a contentious question. Some wish to grant lordship to those who exemplify beauty of morals and mind. Others wish to devote ourselves to our Patrons, sacrificing our mortal possessions for true power. Finally, there are those who wish to keep things as they are and leave the current oligarchs to consolidate the powers of the Shroud."
   ascension_governments.1033.a: "Dub the first knights."
-  ascension_governments.1033.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_divine']\n$unlock_building_ac_order_hall$\n$unlock_edict_ac_handicap_distribution$" #change edict
-  ascension_governments.1033.b: "Bow before the Patrons."
-  ascension_governments.1033.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_eldritch']\n$unlocks_ac_ac_shroud_invocation$\n$unlock_edict_ac_dark_pact$"
-  ascension_governments.1033.c: "$ac_psionic_keep_auth_option$"
-  ascension_governments.1033.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
+  ascension_governments.1033.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_divine']\n$unlock_building_ac_order_hall$\n$unlock_edict_ac_consecrated_rites$"
+  ascension_governments.1033.b: "Rise! Our quest is not yet over."
+  ascension_governments.1033.c: "Bow before the Patrons."
+  ascension_governments.1033.c.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_oligarchic_eldritch']\n$unlocks_ac_ac_shroud_invocation$\n$unlock_edict_ac_dark_pact$"
+  ascension_governments.1033.d: "$ac_psionic_keep_auth_option$"
+  ascension_governments.1033.d.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
 
 # Dictatorial
   ascension_governments.1034.name: "..."
@@ -583,7 +584,11 @@
 
 # Oligarchic 
   edict_ac_consecrated_rites:0 "Consecrated Rites"
-  # ...
+  edict_ac_consecrated_rites_desc:0 "..."
+  edict_ac_consecrated_rites_knight:0 "$edict_ac_consecrated_rites$"
+  edict_ac_consecrated_rites_knight_desc:0 "$edict_ac_consecrated_rites_desc$"
+  concept_edict_ac_consecrated_rites:0 "$edict_ac_consecrated_rites$"
+  unlock_edict_ac_consecrated_rites:0 "$unlock_edict_tt$['concept_edict_ac_consecrated_rites']"
 
   edict_ac_dark_pact:0 "Dark Pact"
   edict_ac_dark_pact_desc:0 "Within the Shroud there are energies that shouldn't be tampered with, that is, if one wishes to keep their soul to themselves."

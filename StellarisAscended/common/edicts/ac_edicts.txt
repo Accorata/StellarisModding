@@ -209,6 +209,64 @@ ac_united_in_soul = {
 	}
 }
 
+ac_consecrated_rites = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_ac_normal_knights_produces_mult = 0.15
+		pop_amenities_usage_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_consecrated_rites_knight = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_knights_produces_mult = 0.15
+		pop_amenities_usage_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_dark_pact = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"

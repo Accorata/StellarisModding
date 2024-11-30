@@ -2880,6 +2880,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		trigger = {
+			NOT = {
+				has_origin = origin_toxic_knights
+			}
 			check_variable = {
 				which = "ac_psionic_divine_society"
 				value >= ac_psionic_eldritch_society
@@ -2898,14 +2901,33 @@ country_event = {
 	}
 	option = {
 		trigger = {
+			has_origin = origin_toxic_knights
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1033.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1033.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
 			check_variable = {
 				which = "ac_psionic_divine_society"
 				value <= ac_psionic_eldritch_society
 			}
 		}
-		name = ascension_governments.1033.b
+		name = ascension_governments.1033.c
 		end_event_chain = ac_psionic_shock_chain
-		custom_tooltip = ascension_governments.1033.b.tt
+		custom_tooltip = ascension_governments.1033.c.tt
 		set_country_flag = ac_psionic_eldritch
 		hidden_effect = {
 			advanced_authority_refresh = yes
@@ -2915,9 +2937,9 @@ country_event = {
 		}
 	}
 	option = {
-		name = ascension_governments.1033.c
+		name = ascension_governments.1033.d
 		end_event_chain = ac_psionic_shock_chain
-		custom_tooltip = ascension_governments.1033.c.tt
+		custom_tooltip = ascension_governments.1033.d.tt
 		trigger = {
 			is_ai = no
 		}

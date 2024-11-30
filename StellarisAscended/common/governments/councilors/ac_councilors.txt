@@ -192,6 +192,29 @@ councilor_cybernet = {
 	}
 }
 
+councilor_cybergladiators = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		AND = {
+			leader_class = commander
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+		}
+	}
+	civic = civic_cybergladiators
+	modifier = {
+		planet_amenities_add = 2
+		army_morale = 0.05
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Psionic
 councilor_telepathic_empire = {
 	leader_class = {

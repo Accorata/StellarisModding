@@ -213,6 +213,11 @@ concept_edict_ac_betrayal_of_the_mind = {
 	tooltip_override = "edict:ac_betrayal_of_the_mind"
 }
 
+concept_edict_ac_consecrated_rites = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_consecrated_rites"
+}
+
 concept_edict_ac_dark_pact = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_dark_pact"
