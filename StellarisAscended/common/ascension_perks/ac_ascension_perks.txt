@@ -1,0 +1,30 @@
+ap_ac_ascended_society = {
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_ac_ascended_society
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		OR = {
+			has_tradition = tr_cybernetics_finish
+			has_tradition = tr_cybernetics_assimilator_finish
+			has_tradition = tr_genetics_finish
+			has_tradition = tr_psionics_finish
+			has_tradition = tr_synthetics_finish
+			has_tradition = tr_modularity_finish
+			has_tradition = tr_nanotech_finish
+			has_tradition = tr_virtuality_finish
+		}
+	}
+	modifier = {
+		empire_size_mult = -0.05
+		country_government_civic_points_add = 1
+	}
+	ai_weight = {
+		factor = 25
+	}
+}

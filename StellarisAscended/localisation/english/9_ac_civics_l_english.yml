@@ -1,4 +1,7 @@
 ﻿l_english:
+  ap_ac_ascended_society:0 "Post-[Root.GetSpeciesName] Society"
+  ap_ac_ascended_society_desc:0 "..."
+
 # Synthetic ---------------------------------------------------------------------------------------------
   synthetic_ascension_required:0 "If §YSynthetic§! Ascension completed:\n"
 
