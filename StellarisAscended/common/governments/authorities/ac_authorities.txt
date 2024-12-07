@@ -614,6 +614,8 @@ auth_corporate = {
 		}
 		modifier = {
 			BIOLOGICAL_species_trait_points_add = 1
+			custom_tooltip = auth_ac_genetic_corporate_chaotic_effects
+			show_only_custom_tooltip = no
 			# ...
 		}
 	}

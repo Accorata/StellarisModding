@@ -1,26 +1,43 @@
-ac_genetic_focus = {
+ac_darwin_focus = {
 	potential = {
-		# darwinism
+		is_megacorp = yes
+		has_country_flag = ac_genetic_chaotic
 	}
-
 	allow = {
 	}
-
 	option = {
-		name = "ac_policy_materialist_engineering"
-
-		potential = {
-			has_country_flag = ac_policy_materialist_engineering
-		}
-
+		name = "ac_darwin_energy"
 		policy_flags = {
-			ac_policy_materialist_engineering
+			ac_darwin_energy_flag
 		}
-
+		modifier = {
+			# test
+			pop_factions_energy_produces_add = 1
+		}
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "ac_darwin_cosumer_goods"
+		policy_flags = {
+			ac_darwin_cosumer_goods_flag
+		}
 		modifier = {
 			# faction benefits
 		}
-
+		ai_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = "ac_darwin_society_research"
+		policy_flags = {
+			ac_darwin_society_research_flag
+		}
+		modifier = {
+			# faction benefits
+		}
 		ai_weight = {
 			weight = 1
 		}

@@ -74,6 +74,10 @@
   concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
+  policy_ac_darwin_focus:0 "..."
+  policy_ac_darwin_focus_desc:0 "..."
+  # flag and policy choice local needed...
+  auth_ac_genetic_corporate_chaotic_effects:0 "$AVAILABLE_POLICIES$ §Y$policy_ac_darwin_focus$§!"
 
 ## Events
   ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables have changed

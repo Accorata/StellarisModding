@@ -1,12 +1,12 @@
 # Start of specialized robot traits
-
 trait_ac_auto_mod_robotic = {
 	cost = 2
 	auto_mod = yes
 	category = ac_robotic
-
-	allowed_archetypes = { ROBOT MACHINE }
-
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -16,10 +16,8 @@ trait_ac_auto_mod_robotic = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	slave_cost = {
 		energy = 1250
 	}
@@ -32,9 +30,10 @@ trait_ac_auto_mod_robotic = {
 trait_ac_robot_power_drills = {
 	cost = 2
 	category = ac_robotic
-
-	allowed_archetypes = { ROBOT MACHINE }
-
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -44,12 +43,10 @@ trait_ac_robot_power_drills = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
-		planet_jobs_minerals_produces_mult = 0.20
+		planet_jobs_minerals_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -57,11 +54,15 @@ trait_ac_robot_power_drills = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_mining_designation = yes }
+			from = {
+				has_mining_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
 }
@@ -69,9 +70,10 @@ trait_ac_robot_power_drills = {
 trait_ac_robot_harvesters = {
 	cost = 2
 	category = ac_robotic
-
-	allowed_archetypes = { ROBOT MACHINE }
-
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -81,12 +83,10 @@ trait_ac_robot_harvesters = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
-		planet_jobs_food_produces_mult = 0.20
+		planet_jobs_food_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -94,19 +94,24 @@ trait_ac_robot_harvesters = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_farming_designation = yes }
+			from = {
+				has_farming_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
-
 	ai_weight = {
 		modifier = {
 			factor = 0
 			exists = from
-			from = { country_uses_food = no }
+			from = {
+				country_uses_food = no
+			}
 		}
 	}
 }
@@ -114,9 +119,10 @@ trait_ac_robot_harvesters = {
 trait_ac_robot_superconductive = {
 	cost = 2
 	category = ac_robotic
-
-	allowed_archetypes = { ROBOT MACHINE }
-
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -126,12 +132,10 @@ trait_ac_robot_superconductive = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.20
+		planet_jobs_energy_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -139,11 +143,15 @@ trait_ac_robot_superconductive = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_generator_designation = yes }
+			from = {
+				has_generator_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
 }
@@ -151,9 +159,16 @@ trait_ac_robot_superconductive = {
 trait_ac_robot_trading_algorithms = {
 	cost = 2
 	category = ac_robotic
-	forbidden_ethics = { ethic_gestalt_consciousness }
-	opposites = { trait_robot_scarcity_algorithms }
-	allowed_archetypes = { ROBOT MACHINE }
+	forbidden_ethics = {
+		ethic_gestalt_consciousness
+	}
+	opposites = {
+		trait_robot_scarcity_algorithms
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	# Droid, Synth, or Individualist Machine
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
@@ -166,12 +181,10 @@ trait_ac_robot_trading_algorithms = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
-		pop_job_trade_mult = 0.30
+		pop_job_trade_mult = 0.3
 	}
 	slave_cost = {
 		energy = 500
@@ -181,9 +194,13 @@ trait_ac_robot_trading_algorithms = {
 trait_ac_robot_emotion_emulators = {
 	cost = 1
 	category = ac_robotic
-	opposites = { "trait_robot_uncanny" }
-	allowed_archetypes = { ROBOT MACHINE }
-
+	opposites = {
+		"trait_robot_uncanny"
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -193,10 +210,8 @@ trait_ac_robot_emotion_emulators = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		pop_job_amenities_mult = 0.25
 	}
@@ -208,9 +223,13 @@ trait_ac_robot_emotion_emulators = {
 trait_ac_robot_propaganda_machines = {
 	cost = 1
 	category = ac_robotic
-	opposites = { "trait_robot_quarrelsome" }
-	allowed_archetypes = { ROBOT MACHINE }
-
+	opposites = {
+		"trait_robot_quarrelsome"
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -220,10 +239,8 @@ trait_ac_robot_propaganda_machines = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.2
 		planet_jobs_unity_upkeep_mult = -0.15
@@ -234,7 +251,9 @@ trait_ac_robot_propaganda_machines = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_unity_designation = yes }
+			from = {
+				has_unity_designation = yes
+			}
 		}
 	}
 }
@@ -242,9 +261,10 @@ trait_ac_robot_propaganda_machines = {
 trait_ac_robot_logic_engines = {
 	cost = 2
 	category = ac_robotic
-
-	allowed_archetypes = { ROBOT MACHINE }
-
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -254,10 +274,8 @@ trait_ac_robot_logic_engines = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.15
 		planet_jobs_society_research_produces_mult = 0.15
@@ -269,7 +287,9 @@ trait_ac_robot_logic_engines = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_research_designation = yes }
+			from = {
+				has_research_designation = yes
+			}
 		}
 	}
 }
@@ -280,11 +300,12 @@ trait_ac_auto_mod_biological = {
 	cost = 2
 	auto_mod = yes
 	category = ac_biological
-
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -294,9 +315,7 @@ trait_ac_auto_mod_biological = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-
+	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 1250
 	}
@@ -308,12 +327,13 @@ trait_ac_auto_mod_biological = {
 
 trait_ac_bio_industrious = {
 	cost = 2
-    category = ac_biological
-	
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -323,11 +343,9 @@ trait_ac_bio_industrious = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
+	potential_crossbreeding_chance = 1
 	modifier = {
-		planet_jobs_minerals_produces_mult = 0.20
+		planet_jobs_minerals_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -335,22 +353,27 @@ trait_ac_bio_industrious = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_mining_designation = yes }
+			from = {
+				has_mining_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
 }
 
 trait_ac_bio_agrarian = {
 	cost = 2
-    
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -360,11 +383,9 @@ trait_ac_bio_agrarian = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
+	potential_crossbreeding_chance = 1
 	modifier = {
-		planet_jobs_food_produces_mult = 0.20
+		planet_jobs_food_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -372,23 +393,28 @@ trait_ac_bio_agrarian = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_farming_designation = yes }
+			from = {
+				has_farming_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
 }
 
 trait_ac_bio_ingenious = {
 	cost = 2
-    category = ac_biological
-	
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -398,11 +424,9 @@ trait_ac_bio_ingenious = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
+	potential_crossbreeding_chance = 1
 	modifier = {
-		planet_jobs_energy_produces_mult = 0.20
+		planet_jobs_energy_produces_mult = 0.2
 	}
 	slave_cost = {
 		energy = 750
@@ -410,23 +434,28 @@ trait_ac_bio_ingenious = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_generator_designation = yes }
+			from = {
+				has_generator_designation = yes
+			}
 		}
 		modifier = {
 			add = 0.5
-			from = { has_rural_designation = yes }
+			from = {
+				has_rural_designation = yes
+			}
 		}
 	}
 }
 
 trait_ac_bio_thrifty = {
 	cost = 2
-    category = ac_biological
-
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 		owner_is_machine_intelligence = no
@@ -438,13 +467,15 @@ trait_ac_bio_thrifty = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
-	opposites = { "trait_hive_mind" }
-	forbidden_ethics = { ethic_gestalt_consciousness }
+	potential_crossbreeding_chance = 1
+	opposites = {
+		"trait_hive_mind"
+	}
+	forbidden_ethics = {
+		ethic_gestalt_consciousness
+	}
 	modifier = {
-		pop_job_trade_mult = 0.30
+		pop_job_trade_mult = 0.3
 	}
 	slave_cost = {
 		energy = 750
@@ -452,19 +483,22 @@ trait_ac_bio_thrifty = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_trade_designation = yes }
+			from = {
+				has_trade_designation = yes
+			}
 		}
 	}
 }
 
 trait_ac_bio_charismatic = {
 	cost = 2
-    category = ac_biological
-	
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -474,9 +508,7 @@ trait_ac_bio_charismatic = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
+	potential_crossbreeding_chance = 1
 	modifier = {
 		pop_job_amenities_mult = 0.25
 	}
@@ -487,12 +519,13 @@ trait_ac_bio_charismatic = {
 
 trait_ac_bio_traditional = {
 	cost = 1
-    category = ac_biological
-		
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -502,9 +535,7 @@ trait_ac_bio_traditional = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
+	potential_crossbreeding_chance = 1
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.2
 	}
@@ -514,23 +545,28 @@ trait_ac_bio_traditional = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_unity_designation = yes }
+			from = {
+				has_unity_designation = yes
+			}
 		}
 		modifier = {
 			add = 1.5
-			from = { has_building = building_order_keep }
+			from = {
+				has_building = building_order_keep
+			}
 		}
 	}
 }
 
 trait_ac_bio_intelligent = {
 	cost = 2
-    category = ac_biological
-		
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	category = ac_biological
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -540,10 +576,12 @@ trait_ac_bio_intelligent = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
-	potential_crossbreeding_chance = 1.0
-	
-	opposites = { "trait_nerve_stapled" "trait_erudite" "trait_enigmatic_intelligence_poor" }
+	potential_crossbreeding_chance = 1
+	opposites = {
+		"trait_nerve_stapled"
+		"trait_erudite"
+		"trait_enigmatic_intelligence_poor"
+	}
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.15
 		planet_jobs_society_research_produces_mult = 0.15
@@ -555,16 +593,20 @@ trait_ac_bio_intelligent = {
 	assembly_score = {
 		modifier = {
 			add = 1.5
-			from = { has_research_designation = yes }
+			from = {
+				has_research_designation = yes
+			}
 		}
 		modifier = {
 			add = 1.5
-			from = { has_building = building_order_keep }
+			from = {
+				has_building = building_order_keep
+			}
 		}
 	}
 }
-# End of diversified bio traits
 
+# End of diversified bio traits
 # Leaving Pain Behind - Perfect Trait
 trait_ac_auto_analgesic = {
 	cost = 0
@@ -605,21 +647,17 @@ trait_ac_hive_digital = {
 		BIOLOGICAL
 		LITHOID
 	}
-
 	species_potential_add = {
 		is_ac_cyberhive = yes
 	}
-
 	species_possible_remove = {
 		is_ac_cyberhive = no
 	}
-
 	modifier = {
 		habitability_floor_add = 0.15
 		pop_housing_usage_mult = -0.5
 		planet_pops_energy_upkeep_mult = 0.5
 	}
-
 	triggered_pop_modifier = {
 		potential = {
 			exists = owner
@@ -627,9 +665,7 @@ trait_ac_hive_digital = {
 		planet_jobs_produces_mult = 1
 		mult = value:ac_hive_virtuality_concentrated_production_mult
 	}
-
 	custom_tooltip = trait_ac_hive_digital_effects
-
 	slave_cost = {
 		energy = 500
 	}
@@ -690,6 +726,8 @@ trait_ascendant_psionic = {
 # need to add it to pops gained after (place in assimilation) for above trait
 trait_infectious = {
 	cost = -3
+	initial = no
+	randomized = no
 	potential_crossbreeding_chance = 0.9
 	allowed_archetypes = {
 		BIOLOGICAL
@@ -707,6 +745,8 @@ trait_infectious = {
 
 trait_ac_cyberform = {
 	cost = 0
+	initial = no
+	randomized = no
 	potential_crossbreeding_chance = 1
 	allowed_archetypes = {
 		BIOLOGICAL

@@ -1,6 +1,7 @@
 ﻿l_english:
-  ap_ac_ascended_society:0 "Post-[Root.GetSpeciesName] Society"
+  ap_ac_ascended_society:0 "Post-Ascension Society"
   ap_ac_ascended_society_desc:0 "..."
+  requires_ac_cybernetic_finish:0 "$TRIGGER_FAIL$Has §YCybernetic Traditions Finished§! Tradition"
 
 # Synthetic ---------------------------------------------------------------------------------------------
   synthetic_ascension_required:0 "If §YSynthetic§! Ascension completed:\n"
