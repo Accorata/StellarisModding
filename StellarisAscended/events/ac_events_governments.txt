@@ -1503,6 +1503,42 @@ country_event = {
 	}
 }
 
+# On army killed in combat - Dictatorial Kraterocracy edict effects
+country_event = {
+	id = ascension_governments.46
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_edict = ac_natural_eugenics
+		# Planet where ground combat is taking place.
+		FROMFROMFROM = {
+			OR = {
+				# Check if dead army is an organic offensive army.
+				any_ground_combat_attacker = {
+					is_same_value = ROOT.FROM
+					exists = species
+					species = {
+						is_robotic = no
+					}
+				}
+				# Check if dead army is an organic defensive army.
+				any_ground_combat_defender = {
+					is_same_value = ROOT.FROM
+					exists = species
+					species = {
+						is_robotic = no
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		add_resource = {
+			society_research = 50
+		}
+	}
+}
+
 # Imperial Final Event
 # Fired by: event
 country_event = {

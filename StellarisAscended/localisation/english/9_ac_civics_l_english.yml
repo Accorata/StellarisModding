@@ -88,7 +88,9 @@
   civic_shroud_renouncers_desc:0 "This society belives psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
   AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
   civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
-  # councilor needed
+  councilor_shroud_renouncers:0 "Warden of Consciousness"
+  councilor_shroud_renouncers_female:0 "$councilor_shroud_renouncers$"
+  councilor_shroud_renouncers_desc:0 "..."
 
   civic_shroud_divestment:0 "Shroud Divestment"
   civic_shroud_divestment_desc:0 "This Megacorporation sees the Shroud only as another hunger for power that cares not for profit and wishes only to control them for its own ends."

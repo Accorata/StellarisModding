@@ -190,3 +190,22 @@ is_ac_numbered_stars = {
 	}
 	has_tradition = tr_nanotech_finish
 }
+
+# Auth Scripted Triggers
+trait_ac_has_edict_unholy_possession = {
+	OR = {
+		AND = {
+			exists = owner
+			owner = {
+				has_edict = edict_ac_unholy_possession
+			}
+		}
+		AND = {
+			exists = from
+			from = {
+				is_scope_type = country
+				has_edict = edict_ac_unholy_possession
+			}
+		}
+	}
+}

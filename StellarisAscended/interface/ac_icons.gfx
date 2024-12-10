@@ -1,4 +1,11 @@
 spriteTypes = {
+	# ASCENSION PERKS -----------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ap_ac_ascended_society"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_ac_ascended_society.dds"
+		alwaystransparent = yes
+	}
+
 	# LEADER TRAITS --------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_leader_trait_programmed_loyalty"
@@ -45,6 +52,6 @@ spriteTypes = {
 	# COUNCIL AGENDAS ------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_council_agenda_icon_ac_shroud_invocation" 
-		texturefile = "gfx/interface/icons/agenda_icons/agenda_ac_shroud_invocation.dds" #doesnt exist yet
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_ac_shroud_invocation.dds" #doesnt exist yet...
 	}
 }

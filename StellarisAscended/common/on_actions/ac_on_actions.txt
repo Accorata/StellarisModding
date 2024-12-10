@@ -9,6 +9,7 @@ on_added_to_leader_pool = {
 on_army_killed_in_combat = {
 	events = {
 		ascension_civics.51		# On organic army destroyed machine crusader traits.
+		ascension_governments.46		# On organic army lost or destroyed with natural eugenics edict
 	}
 }
 
@@ -50,7 +51,7 @@ on_debris_scavenged_and_researched = {
 # From = System
 on_entering_system_fleet = {
 	events = {
-		ascension_civics.212 		# doomseeker - uncomplete
+		ascension_civics.212		# doomseeker - uncomplete
 	}
 }
 
@@ -72,7 +73,7 @@ on_game_start = {
 # This = Heir
 on_heir_promoted_to_ruler = {
 	events = {
-		ascension_civics.62				# Add Programmed Loyalty trait
+		ascension_civics.62		# Add Programmed Loyalty trait
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
 }
@@ -97,7 +98,7 @@ on_new_heir = {
 # FromFrom = Pop
 on_pop_assembled = {
 	events = {
-		ascension_civics.81			# Increases nanite pop created counter and creates a new one if reaches 5
+		ascension_civics.81		# Increases nanite pop created counter and creates a new one if reaches 5
 	}
 }
 
@@ -105,17 +106,17 @@ on_post_government_changed = {
 	events = {
 		# ascension_civics.10			# Add ascendant psionic to psionic pops
 		# ascension_civics.11			# Remove ascendant psionic from pops
-		ascension_civics.52				# Add machine crusader trait to commanders
-		ascension_civics.54				# Allows future picking of bio upgraders to give machine crusaders (fix bc tradition picking shouldn't trigger multiple times but government reform can)
-		ascension_civics.200			# Setup variables for doomseeker shroud incursion
-		ascension_civics.60				# Add new traits/effects to if Sovereign Ciruitry
-		ascension_civics.53				# Adds Hyper Relays as tech option if Bandwidth empire
-		ascension_civics.55				# Limited Psionic trait for Soul Searcher empires
-		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
-		ascension_civics.82				# Renounce the Shroud
-		ascension_civics.83				# Unrenounce the Shroud
-		ascension_civics.84				# Add Half-Virtual trait to Cyberspacial Hives
-		ascension_civics.85				# Remove Half-Virtual trait for non-Cyberspacial Hives
+		ascension_civics.52		# Add machine crusader trait to commanders
+		ascension_civics.54		# Allows future picking of bio upgraders to give machine crusaders (fix bc tradition picking shouldn't trigger multiple times but government reform can)
+		ascension_civics.200		# Setup variables for doomseeker shroud incursion
+		ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
+		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
+		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80		# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
+		ascension_civics.82		# Renounce the Shroud
+		ascension_civics.83		# Unrenounce the Shroud
+		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
+		ascension_civics.85		# Remove Half-Virtual trait for non-Cyberspacial Hives
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current trait if Imperial Clones
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
@@ -128,7 +129,7 @@ on_post_government_changed = {
 # This = Country
 on_ruler_removed = {
 	events = {
-		ascension_civics.64				# Add Programmed Loyalty trait
+		ascension_civics.64		# Add Programmed Loyalty trait
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
 }
@@ -137,7 +138,7 @@ on_ruler_removed = {
 # This = Country
 on_ruler_set = {
 	events = {
-		ascension_civics.63				# Add Programmed Loyalty trait
+		ascension_civics.63		# Add Programmed Loyalty trait
 		ascension_governments.42		# Adds Genetically Superior Trait
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
@@ -161,16 +162,16 @@ on_starbase_disabled = {
 # THIS = country
 on_tradition_picked = {
 	events = {
-		ascension_governments.0			# Genetic situation start
+		ascension_governments.0		# Genetic situation start
 		ascension_governments.1000		# Psionic situation start
-		ascension_civics.52				# Leaders gain machine crusader trait if synth traditions finished
-		ascension_civics.53				# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
-		ascension_civics.60				# Send event to subjects to gain Programmed Loyalty trait
-		ascension_civics.200			# Setup variables for doomseeker shroud incursion
-		ascension_civics.55				# Limited Psionic trait for Soul Searcher empires
-		ascension_civics.80				# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
-		ascension_civics.82				# Renounce the Shroud
-		ascension_civics.84				# Add Half-Virtual trait to Cyberspacial Hives
+		ascension_civics.52		# Leaders gain machine crusader trait if synth traditions finished
+		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
+		ascension_civics.60		# Send event to subjects to gain Programmed Loyalty trait
+		ascension_civics.200		# Setup variables for doomseeker shroud incursion
+		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80		# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
+		ascension_civics.82		# Renounce the Shroud
+		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
 	}
 }
 
@@ -193,7 +194,7 @@ on_yearly_pulse = {
 on_yearly_pulse_country = {
 	events = {
 		ascension_governments.1022		# Harrower of Time grants a Psionic Avatar
-		ascension_civics.210			# Set random convergence location for 50% of avatars
+		ascension_civics.210		# Set random convergence location for 50% of avatars
 		ascension_governments.1040		# Adds Vessel traits if Imperial Vessel auth and now has Patron
 	}
 }
@@ -228,7 +229,7 @@ on_released_as_vassal = {
 # This = Country
 on_ac_genetic_shock_chain_event_pool_one_list = {
 	random_events = {
-		5 = ascension_governments.9			# Preserved Loved Ones
+		5 = ascension_governments.9		# Preserved Loved Ones
 		5 = ascension_governments.10		# Celebrity Impersonators
 		5 = ascension_governments.11		# Mutant Amalgamations
 		5 = ascension_governments.12		# Employee Gene Mods

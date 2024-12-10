@@ -97,6 +97,11 @@ concept_edict_ac_hypnopaedic_conditioning = {
 	tooltip_override = "edict:ac_hypnopaedic_conditioning"
 }
 
+concept_edict_ac_natural_eugenics = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_natural_eugenics"
+}
+
 concept_edict_ac_unrestricted_mutation = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_unrestricted_mutation"
@@ -129,7 +134,7 @@ concept_auth_ac_psionic_dictatorial_eldritch = {
 }
 
 concept_ac_vessel_traits = {
-	icon =  "gfx/interface/icons/icon_leader.dds"
+	icon = "gfx/interface/icons/icon_leader.dds"
 }
 
 concept_auth_ac_psionic_oligarchic_divine = {
@@ -143,12 +148,12 @@ concept_auth_ac_psionic_oligarchic_divine_toxic_god = {
 }
 
 concept_building_ac_order_hall = {
-	icon =  "gfx/interface/icons/buildings/building_ac_order_hall.dds"
+	icon = "gfx/interface/icons/buildings/building_ac_order_hall.dds"
 	tooltip_override = "building:building_ac_order_hall"
 }
 
 concept_building_ac_order_hall_knights = {
-	icon =  "gfx/interface/icons/buildings/building_ac_order_hall.dds"
+	icon = "gfx/interface/icons/buildings/building_ac_order_hall.dds"
 	tooltip_override = "building:building_ac_order_hall_knights"
 }
 
@@ -203,6 +208,11 @@ concept_auth_ac_psionic_corporate_eldritch = {
 }
 
 # Psionic Edicts
+concept_edict_ac_unholy_possession = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_unholy_possession"
+}
+
 concept_edict_ac_heavens_blessing = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_heavens_blessing"

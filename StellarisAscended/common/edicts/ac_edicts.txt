@@ -75,12 +75,42 @@ ac_hypnopaedic_conditioning = {
 	}
 	potential = {
 		is_dictatorial_authority = yes
-		has_country_flag = ac_genetic_chaotic
+		has_country_flag = ac_genetic_perfect
 	}
 	modifier = {
 		negative_traits_leader = -1
-		planet_pops_upkeep_mult = -0.10
-		pop_cat_worker_happiness = 0.10
+		planet_pops_upkeep_mult = -0.1
+		pop_cat_worker_happiness = 0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_natural_eugenics = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		custom_tooltip = edict_ac_natural_eugenics_effect
+		show_only_custom_tooltip = no
+		army_damage = 0.15
 	}
 	allow = {
 	}
@@ -348,6 +378,34 @@ ac_betrayal_of_the_mind = {
 	modifier = {
 		planet_stability_add = 10
 		planet_crime_add = -25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_unholy_possession = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		custom_tooltip = edict_ac_unholy_possession_effect
 	}
 	allow = {
 	}

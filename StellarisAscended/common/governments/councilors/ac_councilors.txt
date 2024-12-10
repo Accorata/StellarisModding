@@ -254,6 +254,24 @@ councilor_telepathic_corporation = {
 	}
 }
 
+councilor_shroud_renouncers = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_psionic
+	}
+	civic = civic_shroud_renouncers
+	modifier = {
+		planet_stability_add = 2
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # councilor_doomseekers = {
 # 	leader_class = { official commander scientist }
 # 	is_leader_possible = {

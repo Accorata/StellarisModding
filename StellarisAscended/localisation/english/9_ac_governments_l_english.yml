@@ -191,7 +191,7 @@
   ac_genetic_athlete_leagues_desc:0 "Separating natural vs enhanced competitors ensures fair competition for everyone."
   ac_limited_genetic_athletes:0 "Limited Genetic Athletics"
   ac_limited_genetic_athletes_desc:0 "Regulating the number of enhanced athletes ensures that every team has a real shot at success."
-  mod_planet_entertainers_society_research_produces_add:0 "£society£ $society_research$ from [GetEntertainerPluralWithIcon]"
+  mod_planet_entertainers_society_research_produces_add:0 "£society_research£ $society_research$ from [GetEntertainerPluralWithIcon]"
   ascension_governments.23.name: "Leaving Pain Behind"
   ascension_governments.23.desc: "Some citizens have began experimenting with auto-analgesia genetic mods which numb nerves as soon as they come into contact with danger. At the moment, these mods are mere prototypes, but our scientists say they could be developed into mods that would cause minimal pain to alert the individual of danger, while still filtering out any extreme pain reactions.\n\nMilitary officials wish to promote these practices within our soldiers and workers, creating armies that fight longer and proles that are more resiliant to injury. Others wish that all should bask in a life free from extreme pain, and that this is a step forwards for [Root.GetSpeciesAdj] civilization."
   ascension_governments.23.a: "An evolution of [Root.GetSpeciesAdj] life." # P
@@ -237,7 +237,7 @@
   ascension_governments.34.a: "Inherent order is imperative."
   ascension_governments.34.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_perfect']\n$unlock_edict_ac_hypnopaedic_conditioning$"
   ascension_governments.34.b: "Survival of the Fittest!"
-  ascension_governments.34.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_chaotic']\n$unlock_edict_ac_unrestricted_mutation$" #change edict
+  ascension_governments.34.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_chaotic']\n$unlock_edict_ac_natural_eugenics$"
   ascension_governments.34.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.34.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
@@ -278,7 +278,7 @@
   unlock_edict_ac_clone_overdrive:0 "$unlock_edict_tt$['concept_edict_ac_clone_overdrive']"
 
   edict_ac_harvest_genetic_failures:0 "Harvest Genetic Failures"
-  edict_ac_harvest_genetic_failures_desc:0 "Through the ..."
+  edict_ac_harvest_genetic_failures_desc:0 "Through the deaths of the inferiors, occasionally intelligent mutations arise. Our elites will greatly enjoy these improvements."
   concept_edict_ac_harvest_genetic_failures:0 "$edict_ac_harvest_genetic_failures$"
   unlock_edict_ac_harvest_genetic_failures:0 "$unlock_edict_tt$['concept_edict_ac_harvest_genetic_failures']"
 
@@ -286,21 +286,27 @@
   edict_ac_hypnopaedic_conditioning:0 "Hypnopædic Conditioning"
   edict_ac_hypnopaedic_conditioning_desc:0 "While sleep-learning has proved unsuccesful for intelligent comprehension, it has been shown to convey proper morals to sleeping youth."
   concept_edict_ac_hypnopaedic_conditioning:0 "$edict_ac_hypnopaedic_conditioning$"
-  unlock_edict_ac_hypnopaedic_conditioning:0 "$unlock_edict_tt$ ['edict_ac_hypnopaedic_conditioning']"
+  unlock_edict_ac_hypnopaedic_conditioning:0 "$unlock_edict_tt$ ['concept_edict_ac_hypnopaedic_conditioning']"
+
+  edict_ac_natural_eugenics:0 "Natural Eugenics"
+  edict_ac_natural_eugenics_desc:0 "..."
+  concept_edict_ac_natural_eugenics:0 "$edict_ac_natural_eugenics$"
+  unlock_edict_ac_natural_eugenics:0 "$unlock_edict_tt$ ['concept_edict_ac_natural_eugenics']"
+  edict_ac_natural_eugenics_effect:0 "Gain £society_research£ $society_research$ every time an Organic Army is Killed or Lost"
 
 # Oligarchic
   edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
   edict_ac_unrestricted_mutation_desc:0 "We must not limit ourselves in our mutations and must continue to push the limits of what is possible in our newest generations."
   concept_edict_ac_unrestricted_mutation:0 "$edict_ac_unrestricted_mutation$"
   unlock_edict_ac_unrestricted_mutation:0 "$unlock_edict_tt$['concept_edict_ac_unrestricted_mutation']"
-  edict_ac_unrestricted_mutation_effect:0 "Increases the chance of new leaders gaining a Mutant trait along with an additional Negative trait from §Y50%§! to §Y100%§!."
+  edict_ac_unrestricted_mutation_effect:0 "Increases the Chance of new Leaders Gaining a Mutant trait along with an Additional Negative trait from §Y50%§! to §Y100%§!."
 
 # Democratic
   edict_ac_handicap_distribution:0 "Handicap Distribution"
   edict_ac_handicap_distribution_desc:0 "Genetic handicaps ensure that, for once, all are truly equal in opportunity."
   concept_edict_ac_handicap_distribution:0 "$edict_ac_handicap_distribution$"
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
-  edict_ac_handicap_distribution_effect:0 "Every year, assimilates §Y1§! to §Y3§! organic pops on each planet to our main species."
+  edict_ac_handicap_distribution_effect:0 "Every year, §Y1§! to §Y3§! Organic Pops on each Planet are Assimilated to our Main Species."
 
 # Corporate
   edict_ac_awoken_council:0 "Awoken Council"
@@ -407,13 +413,13 @@
   gov_ac_psionic_democratic_divine_desc:0 "$auth_ac_psionic_democratic_divine_desc$"
 # Psionic Democratic Eldritch
   auth_ac_psionic_democratic_eldritch:0 "Democratic Insanity"
-  auth_ac_psionic_democratic_eldritch_desc:0 "Collective mood determines our rule. Here laws are not the product of consious reason, but rather are decided by the inner truths beyond our mind's awareness."
+  auth_ac_psionic_democratic_eldritch_desc:0 "Collective mood determines our rule. Here laws are not the product of consious reason, but rather are decided by the inner fears and desires beyond our mind's awareness."
   concept_auth_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
   gov_ac_psionic_democratic_eldritch:0 "$auth_ac_psionic_democratic_eldritch$"
   gov_ac_psionic_democratic_eldritch_desc:0 "$auth_ac_psionic_democratic_eldritch_desc$"
 # Psionic Corporate Divine
   auth_ac_psionic_corporate_divine:0 "Corporate Precognition"
-  auth_ac_psionic_corporate_divine_desc:0 "Sections of precogs analysize the branches of tomorrow, ensuring future prospects are designed for optimal ROI."
+  auth_ac_psionic_corporate_divine_desc:0 "Sections of precogs analysize the branches offices of tomorrow, ensuring future prospects are designed for optimal ROI."
   concept_auth_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine_desc:0 "$auth_ac_psionic_corporate_divine_desc$"
@@ -555,7 +561,7 @@
   ascension_governments.1035.a: "Divinity at last."
   ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1035.b: "Our Patron has joined us."
-  ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$" # change edict
+  ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_unholy_possession$"
   ascension_governments.1035.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1035.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
 
@@ -574,6 +580,12 @@
 # Edicts
 # Imperial
   # edict_ac_palace_of_the_intellect...
+
+  edict_ac_unholy_possession:0 "Unholy Possession"
+  edict_ac_unholy_possession_desc:0 "..."
+  concept_edict_ac_unholy_possession:0 "$edict_ac_unholy_possession$"
+  unlock_edict_ac_unholy_possession:0 "$unlock_edict_tt$['concept_edict_ac_unholy_possession']"
+  edict_ac_unholy_possession_effect:0 "Increases Benefits from ['concept_ac_vessel_traits'] by §G50%§! but Increases Drawbacks by §R100%§!"
 
 # Dictatorial
   edict_ac_heavens_blessing:0 "Heaven's Blessing"
@@ -639,7 +651,7 @@
 
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
-  auth_ac_genetic_hive_perfect_desc:0 "..."
+  auth_ac_genetic_hive_perfect_desc:0 "Having perfected their drones’ genetics, the hive seeks to replicate their form through unending asexual replication."
   concept_auth_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
   gov_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
   gov_ac_genetic_hive_perfect_desc:0 "$auth_ac_genetic_hive_perfect_desc$"

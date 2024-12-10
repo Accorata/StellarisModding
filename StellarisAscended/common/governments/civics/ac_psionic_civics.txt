@@ -196,15 +196,17 @@ civic_shroud_renouncers = {
 			}
 		}
 	}
-	# modification = {
-	# 	add = {
-	# 		custom_tooltip = {
-	# 			fail_text = AC_CIVIC_NO_PATRON
-	# 			ac_has_confirmed_shroud_patron = no
-	# 		}
-	# 	}
-	# 	remove = yes
-	# }
+	modification = {
+		add = {
+			custom_tooltip = {
+				fail_text = AC_CIVIC_NO_PATRON
+				ac_has_confirmed_shroud_patron = no
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
 	alternate_civic_version = civic_shroud_divestment
 	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
 	pickable_at_start = yes
@@ -262,15 +264,17 @@ civic_shroud_divestment = {
 			}
 		}
 	}
-	# modification = {
-	# 	add = {
-	# 		custom_tooltip = {
-	# 			fail_text = AC_CIVIC_NO_PATRON
-	# 			ac_has_confirmed_shroud_patron = no
-	# 		}
-	# 	}
-	# 	remove = yes
-	# }
+	modification = {
+		add = {
+			custom_tooltip = {
+				fail_text = AC_CIVIC_NO_PATRON
+				ac_has_confirmed_shroud_patron = no
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
 	alternate_civic_version = civic_shroud_renouncers
 	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_divestment.dds"
 	pickable_at_start = yes
