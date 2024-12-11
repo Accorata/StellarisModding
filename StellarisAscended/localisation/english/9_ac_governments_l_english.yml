@@ -219,9 +219,9 @@
 
 # Oligarchic
   ascension_governments.33.name: "New Superiority"
-  ascension_governments.33.desc.perfect: "..."
+  ascension_governments.33.desc.perfect: "Only through the brilliance of our greatest scientists have we found ourselves here. To them, our ascendance is due. In return, we will gift all [Root.GetSpeciesNamePlural] with the fruit of knowledge, and may the smartest rise up, and lead us to tomorrow."
   ascension_governments.33.desc.chaotic: "Mutations brought us our sapience, our evolution; we owe ourselves to their generosity. Now, we will return the favor, catalyzing chaotic changes within our leaders to develop the next iterations of ourselves. Some casaulties may arise, as mutations are never predictable, but we will begin developing the next generations to withstand such chaos."
-  ascension_governments.33.desc.neutral: "..."
+  ascension_governments.33.desc.neutral: "Our scientists are split on how to proceed with genetic evolution. Some wish for intelligence to be prioritized leading to an uplifted populace and new insights. Others acknowledge that it is random chance, not intelligent design that created our wonderful forms. They argue that inducing random mutations will preseve this structure and allow for phenotypes we've never even conceived of. Finally, the elites warn such changes will only undermine our foundations and that maintaining the status quo is necessary."
   ascension_governments.33.a: "May the uplifted guide us forward."
   ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
   ascension_governments.33.b: "Magnificence awaits."
@@ -242,7 +242,7 @@
   ascension_governments.34.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
 
   ascension_governments.42.name: "Glory to the Throne!"
-  ascension_governments.42.desc: "...\n\nUnfortunately, for some, their genetic makeups were tested and found unsufficient. Our very own §Y[leader_1.GetTitle] [leader_1.GetName]§!, §Y[leader_2.GetTitle] [leader_2.GetName]§!, and §Y[leader_3.GetTitle] [leader_3.GetName]§! have fallen in battle. Their honor is admired, but they are failures of [Root.GetSpeciesNamePlural], and their deaths will only benefit our decendants."
+  ascension_governments.42.desc: "In honor of our late [ruler.GetRulerTitle], the §YGames of Succession§! have begun. In staggering displays of physical and mental prowess, many elites competed for the throne. Enthralling the masses with the genetic feats, we come together today to celebrate the lone survivor and grant them the honorable title of [ruler.GetRulerTitle].\n\nUnfortunately for some, their genetic makeups were tested and found unsufficient. Our very own §Y[leader_1.GetTitle] [leader_1.GetName]§!, §Y[leader_2.GetTitle] [leader_2.GetName]§!, and §Y[leader_3.GetTitle] [leader_3.GetName]§! have fallen in battle. Their honor is admired, but they are failures of [Root.GetSpeciesNamePlural], and their deaths will only benefit our decendants."
   ascension_governments.42.a: "All honor our newest [ruler.GetRulerTitle]!"
   # ascension_governments.42.b: "Kill the inferiers' relatives."
 
@@ -523,7 +523,7 @@
   ascension_governments.1032.desc.neutral: "..."
   ascension_governments.1032.a: "..."
   ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_united_in_soul$"
-  ascension_governments.1032.b: "Freedom from self-doubt."
+  ascension_governments.1032.b: "Freedom from manipulation."
   ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed
   ascension_governments.1032.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1032.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
@@ -542,13 +542,13 @@
   ascension_governments.1033.d.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
 
 # Dictatorial
-  ascension_governments.1034.name: "..."
-  ascension_governments.1034.desc.divine: "..."
-  ascension_governments.1034.desc.eldritch: "..."
-  ascension_governments.1034.desc.neutral: "..."
-  ascension_governments.1034.a: "..."
+  ascension_governments.1034.name: "Psionic Might"
+  ascension_governments.1034.desc.divine: "Great gifts from our patron can only mean one thing: Our ruler has been chosen by those above us and is destined to rule. The blessing of the Shroud is upon our glorious nation and with it, the galaxy will bend to the mantle of heavens."
+  ascension_governments.1034.desc.eldritch: "The Shroud has granted great insight into the eldritch beings that dwell within, but its vision does not end there. It touches all physical space at once and reaches into the minds of all. While peering into space beyond lies outside of our present capabilities, telepaths can easily influence the thoughts of our citizens. With such a system in place, rebellion will be impossible and the nation's stabilitily ensured for all time."
+  ascension_governments.1034.desc.neutral: "Authority must remain in the hands of our ruler, but cementing such power within the minds of the people has become a subject of debate. Some believe the great powers of the Shroud have clearly chosen us, and that that message must be made clear to the populace. Others see the Shroud as a tool which can be used to manipulate the minds of the people and ensure loyalty. Finally, some worry change can only bring stability and our nation's current prosperity is not worth jeopardising."
+  ascension_governments.1034.a: "We are the chosen ones."
   ascension_governments.1034.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_divine']\n$unlock_edict_ac_heavens_blessing$"
-  ascension_governments.1034.b: "..."
+  ascension_governments.1034.b: "Mental control is eternal."
   ascension_governments.1034.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_dictatorial_eldritch']\n$unlock_edict_ac_betrayal_of_the_mind$"
   ascension_governments.1034.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1034.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
@@ -582,14 +582,14 @@
   # edict_ac_palace_of_the_intellect...
 
   edict_ac_unholy_possession:0 "Unholy Possession"
-  edict_ac_unholy_possession_desc:0 "..."
+  edict_ac_unholy_possession_desc:0 "Within our ruler, our Patron dwells. Awaken, our lord, for we are yours to command!"
   concept_edict_ac_unholy_possession:0 "$edict_ac_unholy_possession$"
   unlock_edict_ac_unholy_possession:0 "$unlock_edict_tt$['concept_edict_ac_unholy_possession']"
   edict_ac_unholy_possession_effect:0 "Increases Benefits from ['concept_ac_vessel_traits'] by §G50%§! but Increases Drawbacks by §R100%§!"
 
 # Dictatorial
   edict_ac_heavens_blessing:0 "Heaven's Blessing"
-  edict_ac_heavens_blessing_desc:0 "..."
+  edict_ac_heavens_blessing_desc:0 "Our gods have given their blessing to our holy leader! Long live the empire."
   concept_edict_ac_heavens_blessing:0 "$edict_ac_heavens_blessing$"
   unlock_edict_ac_heavens_blessing:0 "$unlock_edict_tt$['concept_edict_ac_heavens_blessing']"
 
@@ -600,7 +600,7 @@
 
 # Oligarchic 
   edict_ac_consecrated_rites:0 "Consecrated Rites"
-  edict_ac_consecrated_rites_desc:0 "..."
+  edict_ac_consecrated_rites_desc:0 "The sacred knights are an honor to all. Their work is essential and grace admirable."
   edict_ac_consecrated_rites_knight:0 "$edict_ac_consecrated_rites$"
   edict_ac_consecrated_rites_knight_desc:0 "$edict_ac_consecrated_rites_desc$"
   concept_edict_ac_consecrated_rites:0 "$edict_ac_consecrated_rites$"
@@ -613,7 +613,7 @@
 
 # Democratic
   edict_ac_united_in_soul:0 "United in Soul"
-  edict_ac_united_in_soul_desc:0 "..."
+  edict_ac_united_in_soul_desc:0 "As our minds overlap, so may our souls. Together we will not falter against the whims of others."
   concept_edict_ac_united_in_soul:0 "$edict_ac_united_in_soul$"
   unlock_edict_ac_united_in_soul:0 "$unlock_edict_tt$['concept_edict_ac_united_in_soul']"
 
@@ -636,13 +636,27 @@
   concept_auth_ac_psi_teacher_imperial: "$auth_ac_psi_teacher_imperial$"
 
   auth_ac_psi_teacher_corporate: "Corporate SacredMind"
-  auth_ac_psi_teacher_corporate_desc: "..."
+  auth_ac_psi_teacher_corporate_desc: "Psionics have brought great wisdom to our people. With the help of the teachers, we will learn to monetise our new world."
   concept_auth_ac_psi_teacher_corporate: "$auth_ac_psi_teacher_corporate$"
+
+# Psionic Teacher Governments
+  gov_ac_psi_teacher_monarchy: "Pious Sovereignty"
+  gov_ac_psi_teacher_monarchy_desc: "This government is a highly spiritualistic monarchy, where the ruler is treated as a divine entity and fanatics worship their rule and oversight."
+  gov_ac_psi_teacher_dictatorship: "Zeolous Autocracy"
+  gov_ac_psi_teacher_dictatorship_desc: "This government is a spiritualistic dictatorship, ruled by a single powerful individual followed by obedient, unquestioning, hyperreligious zealots."
+  gov_ac_psi_teacher_oligarchy: "Order of Interpreters"
+  gov_ac_psi_teacher_oligarchy_desc: "This government is a spiritualistic oligarchy in which ascended telepaths pore over the words of the Teachers of the Shroud in an effort to devulge their true secrets. Political success is accomplished solely through the scholarly church."
+  gov_ac_psi_teacher_democracy: "Telepathic Plebiscitary"
+  gov_ac_psi_teacher_democracy_desc: "This government is a spiritualistic form of democracy, where religious appointees propose legislation and through psionics, all vote in the ratifying process."
+  gov_ac_psi_teacher_megacorp: "Divine MegaChurch"
+  gov_ac_psi_teacher_megacorp_desc: "This government is an oligarchic company with deep religious values, in which the chief officer preaches regulary to the masses in telepathic sermons."
+  gov_ac_psi_teacher_criminal_megacorp: "Cult of the Mind"
+  gov_ac_psi_teacher_criminal_megacorp_desc: "This government is a religious cult which wields power over the mental faculties of those within to reap profits for the criminal elite."
 
 # Event
   ascension_governments.900.name: "The Teacher's Gift"
   ascension_governments.900.desc: "The work of the teachers has finally come to completion: Our people have reached a state of illumination beyond our own expectations. We can finally grace the Shroud and enjoy the fruits of the teacher's labor.\n\nIn response to our enlightenment, the government will now be guided by the teacher's insights, embracing psionic theory throughout its structure. The §Y[Root.GetGovernmentName]§! will be created."
-  ascension_governments.900.a: "..."
+  ascension_governments.900.a: "Let them guide us further."
   ascension_governments.900.a.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_democratic']§!."
   ascension_governments.900.b.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_oligarchic']§!."
   ascension_governments.900.c.tooltip: "Our authority has changed to a psionic-focused §Y['concept_auth_ac_psi_teacher_dictatorial']§!."
@@ -651,13 +665,13 @@
 
 ### Hive Genetic ---------------------------------------------------------------------------------
   auth_ac_genetic_hive_perfect:0 "Ancestral Hive"
-  auth_ac_genetic_hive_perfect_desc:0 "Having perfected their drones’ genetics, the hive seeks to replicate their form through unending asexual replication."
+  auth_ac_genetic_hive_perfect_desc:0 "Having perfected their drones' genetics, the hive seeks to replicate their form through unending asexual replication."
   concept_auth_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
   gov_ac_genetic_hive_perfect:0 "$auth_ac_genetic_hive_perfect$"
   gov_ac_genetic_hive_perfect_desc:0 "$auth_ac_genetic_hive_perfect_desc$"
 
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
-  auth_ac_genetic_hive_chaotic_desc:0 "..."
+  auth_ac_genetic_hive_chaotic_desc:0 "The hive learns through all beings, each one a new genetic canvas to explore and incorporate into the whole."
   concept_auth_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"

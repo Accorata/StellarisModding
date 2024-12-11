@@ -304,19 +304,103 @@ gov_ac_psionic_corporate_eldritch = {
 
 ## Psionic Teacher Governments
 # Psionic Teacher Imperial
-# gov_cyber_creed_monarchy = {
-# 	ruler_title = RT_ARCHPROPHET
-# 	ruler_title_female = RT_ARCHPROPHETESS
-# 	heir_title = HT_PRIEST
-# 	heir_title_female = HT_PRIESTESS
-# 	use_regnal_names = yes
-# 	dynastic_last_names = yes
-# 	possible = {
-# 		is_cyber_creed_advanced_government = yes
-# 		is_imperial_authority = yes
-# 		is_spiritualist = yes
-# 	}
-# 	weight = {
-# 		base = @gov_authority_swap_weight
-# 	}
-# }
+gov_ac_psi_teacher_monarchy = {
+	ruler_title = RT_GOD_EMPEROR
+	ruler_title_female = RT_GOD_EMPRESS
+	heir_title = HT_SAINT
+	heir_title_female = HT_SAINT_FEMALE
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_imperial_authority = yes
+		is_spiritualist = yes
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Dictatorship
+gov_ac_psi_teacher_dictatorship = {
+	ruler_title = RT_GRAND_ARBITER
+	ruler_title_female = RT_GRAND_ARBITER_FEMALE
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_dictatorial_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Oligarchy
+gov_ac_psi_teacher_oligarchy = {
+	ruler_title = RT_HIGH_PRIEST
+	ruler_title_female = RT_HIGH_PRIEST_FEMALE
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_oligarchic_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Democracy
+gov_ac_psi_teacher_democracy = {
+	ruler_title = RT_FIRST_SPEAKER
+	ruler_title_female = RT_FIRST_SPEAKER_FEMALE
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_democratic_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher MegaCorp
+gov_ac_psi_teacher_megacorp = {
+	ruler_title = RT_HIGH_PRIEST
+	ruler_title_female = RT_HIGH_PRIESTESS
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_megacorp = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Criminal MegaCorp
+gov_ac_psi_teacher_criminal_megacorp = {
+	ruler_title = RT_ORACLE
+	ruler_title_female = RT_ORACLE
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_megacorp = yes
+		is_spiritualist = yes
+		has_valid_civic = civic_criminal_heritage
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+		add = @gov_civic_override_weight
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_criminal_heritage
+		}
+	}
+}
