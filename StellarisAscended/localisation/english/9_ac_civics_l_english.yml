@@ -16,7 +16,7 @@
   civic_bio_replacer:0 "Anatomic Obsolescence"
   civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. This Megacorporation aims to make that market a reality."
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n- Can build £building£ §Y$holding_ac_robotics_plant$§! holdings\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_country_synthetic_trust_cap_add$: §G+10§!\n- $mod_country_organic_trust_cap_add$: §R-10§!"
-  councilor_bio_replacer:0 "..." 
+  councilor_bio_replacer:0 "Identity Merchant" 
   councilor_bio_replacer_female:0 "$councilor_bio_replacer$"
   councilor_bio_replacer_desc:0 "..."
   councilor_bio_replacer_custom_modifier_desc:0 "On §YBranch Offices§! with £building£ $holding_ac_robotics_plant_plural$:\n$t$- £mod_branch_office_value_mult£ $MOD_BRANCH_OFFICE_VALUE_MULT$ from $job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon$: §G+2%§!"
@@ -24,13 +24,13 @@
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
   casus_belli_cb_ac_machine_containment:0 "$casus_belli_cb_containment$"
 
+  # Future Addition
   civic_soul_seekers:0 "Soul Seekers"
   civic_soul_seekers_desc:0 "Abandoning our biological forms have only left us with further questions on the nature of our consciousness and soul. There were those that viewed our innate form as divine, and though we pushed past their concerns, it is possible we have left something behind. Yet still, a sense of shared communion remains."
   civic_tooltip_soul_seekers_effects:0 "(Will be done)"
   councilor_soul_seekers:0 "Final Preacher"
   councilor_soul_seekers_female:0 "$councilor_soul_seekers$"
   councilor_soul_seekers_desc:0 "..."
-
   situation_ac_soul_seeking:0 "Search for our Soul"  
   situation_ac_soul_seeking_desc:0 "..."
   situation_ac_soul_seeking_type:0 "$situation_ac_soul_seeking$" #???
@@ -51,7 +51,7 @@
 
   civic_world_commissioners:0 "World Commissioners"
   civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future which will yield unprecedented rates of return."
-  councilor_world_commissioners:0 "..."
+  councilor_world_commissioners:0 "Marketer of Celestials"
   councilor_world_commissioners_female:0 "$councilor_world_commissioners$"
   councilor_world_commissioners_desc:0 "The $TITLE$ is ..."
   councilor_world_commissioners_custom_modifier_desc:1 "- £trade_value£ Trade Value from $job_ac_grand_synthesizer_plural_with_icon$: §G+1§!"
@@ -59,11 +59,11 @@
 # Psionic ---------------------------------------------------------------------------------------------
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
 
+  # Future Addition
   civic_beyond_the_veil:0 "Beyond the Veil"
   civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!" #needs change...
   civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!"
-  # councilor needed
-
+  # councilor
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
   living_standard_ac_ascetic:0 "Ascetic"
@@ -75,7 +75,7 @@
   civic_tooltip_telepathic_empire_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_female:0 "$councilor_telepathic_empire$"
-  councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before vanishing once more."
+  councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before dispersing once more."
 
   civic_telepathic_corporation:0 "Telepathic Enterprise"
   civic_telepathic_corporation_desc:0 "This Megacorporation looks down on verbal speech. The aspiring elite quickly learn the langauge of the mind, and its many advantages."
@@ -90,19 +90,19 @@
   civic_tooltip_shroud_renouncers_effects:0 "$psionic_ascension$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   councilor_shroud_renouncers:0 "Warden of Consciousness"
   councilor_shroud_renouncers_female:0 "$councilor_shroud_renouncers$"
-  councilor_shroud_renouncers_desc:0 "..."
+  councilor_shroud_renouncers_desc:0 "The $TITLE$ ensures the entities of the Shroud have no place in our minds and deploys telepaths to guard against insanity."
 
   civic_shroud_divestment:0 "Shroud Divestment"
-  civic_shroud_divestment_desc:0 "This Megacorporation sees the Shroud only as another hunger for power that cares not for profit and wishes only to control them for its own ends."
+  civic_shroud_divestment_desc:0 "This Megacorporation sees the Shroud as a hunger for power that cares not for profit and wishes only to control them for its own ends."
   # councilor needed
 
+  # Future Addition
   civic_doomseekers:0 "Doomseekers"
   civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. This society embraces that end, that Great End!"
   civic_tooltip_doomseekers_effects:0 "..."
   councilor_doomseekers:0 "Seer of the Great End"
   councilor_doomseekers_female:0 "Seeress of the Great End"
   councilor_doomseekers_desc:0 "..."
-
   tech_ac_doom_foretold:0 "Doom Foretold"
   tech_ac_doom_foretold_desc:0 "..."
   tech_ac_doom_foretold_effect:0 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
@@ -112,10 +112,11 @@
 # Cybernetic ---------------------------------------------------------------------------------------------
   cybernetic_ascension_required:0 "If §YCybernetic§! Ascension completed:\n"
 
+  # Future Addition
   civic_sovereign_circuitry:0 "Sovereign Implants"
   civic_sovereign_circuitry_desc:0 "..."
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
-  # councilor needed
+  # councilor
 
   civic_cyberlife:0 "CyberReality"
   civic_cyberlife_desc:0 "This society spends much of its existence in an artificial reality, living both physical and virtual lives in tandem."
@@ -158,12 +159,12 @@
   civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   councilor_cybergladiators:0 "Gladiator Champion"
   councilor_cybergladiators_female:0 "$councilor_cybergladiators$"
-  councilor_cybergladiators_desc:0 "..."
+  councilor_cybergladiators_desc:0 "The $TITLE$ is the elitest of the Cybergladiators, inspiring immense nationalism through their physical prowess."
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "Corporate work has its stressors, and how better to relive the workday tension than betting fortunes on gladiatorial duels to the death?"
   civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
-  # councilor needed
+  # councilor needed - spectators give trade value / energy credits
 
   # Hive Cybergladiator Civic ...
 
@@ -171,9 +172,9 @@
   civic_cybersports_desc:0 "..."
   civic_tooltip_cybersports_effects:0 "...(to do)"
 
-  # Neon stars...
-  # councilor needed
-
+  # Future Addition
+  # Neon Stars
+  # councilor
   col_ac_city_of_lights:0 "City of Lights"
   col_ac_city_of_lights_desc:0 "..."
   col_ac_city_of_embers:0 "City of Embers"
@@ -183,11 +184,11 @@
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
 
   civic_blossoming_worlds:0 "Blossoming Worlds"
-  civic_blossoming_worlds_desc:0 "..."
+  civic_blossoming_worlds_desc:0 "This society preserves the natural beauty through genetically engineered fauna and flora. Their citizens thrive in harmony with the perfect environment."
   civic_tooltip_blossoming_worlds_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_blossoming_worlds:0 "Terrestrial Cultivator"
   councilor_blossoming_worlds_female:0 "$councilor_blossoming_worlds$"
-  councilor_blossoming_worlds_desc:0 "The $TITLE$ ..."
+  councilor_blossoming_worlds_desc:0 "The $TITLE$ architects worlds with respect to the essential virtues of life, building cities of gardens and forests of homes."
   councilor_blossoming_worlds_tooltip:0 "- £building£ $building_ac_grand_sapling_plural$ provide §G+2%§! §YPop Happiness§! \n- £building£ $building_ac_hanging_cities_plural$ provide §G+2%§! §Y$mod_planet_jobs_produces_mult$§!"
 
   civic_xanadu_retreats:0 "Xanadu Retreats"
@@ -195,23 +196,27 @@
   civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_xanadu_retreats:0 "Executive Resort Manager"
   councilor_xanadu_retreats_female:0 "$councilor_xanadu_retreats$"
-  councilor_xanadu_retreats_desc:0 "..."
+  councilor_xanadu_retreats_desc:0 "The $TITLE$ ..."
   councilor_xanadu_retreats_tooltip:0 "- £energy£ Energy from $job_resort_worker_plural_with_icon$: §G+0.5§!"
   decision_ac_more_resort_colony:0 "$decision_resort_colony$"
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
   civic_blossoming_hives:0 "Blossoming Hives"
-  civic_blossoming_hives_desc:0 "..."
+  civic_blossoming_hives_desc:0 "On the worlds of this Hive Mind, life flourishes in tandem with the hives' drones."
   civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
   civic_hyper_diversification:0 "Hyper Diversification"
   civic_hyper_diversification_desc:0 "This society embraces genetic specialization in full, designing individual genetic designs for each niche."
   civic_tooltip_hyper_diversification_effects:0 "$genetic_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$genetic_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
-  # councilor needed
+  councilor_hyper_diversification:0 "Phenotype Designer"
+  councilor_hyper_diversification_female:0 "$councilor_hyper_diversification$"
+  councilor_hyper_diversification_desc:0 "The $TITLE$ engineers the newest modifications for optimal efficiency. Adaptability mustn't be compromised in specialization."
 
   civic_employee_diversification:0 "Employee Diversification"
   civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by tuning each's genetic makeup as their job description requires."
-  # councilor needed - auto_mod_monthly_mult 10%
+  councilor_employee_diversification:0 "Gene Catalyst"
+  councilor_employee_diversification_female:0 "$councilor_employee_diversification$"
+  councilor_employee_diversification_desc:0 "The $TITLE$ ensures all employees' genetic mods are up-to-date and calibrated properly, all in the name of optimizing corporate efficiency."
 
   civic_hyper_diversified:0 "Hyper-Diversified"
   civic_hyper_diversified_desc:0 "For each role, a new design. This Hive Mind evolves each genetic niche to its fullest potention: no two drones are alike."
@@ -231,12 +236,13 @@
   trait_ac_bio_thrifty:0 "Mercantile"
   trait_ac_bio_thrifty_desc:0 "Savvy in all xeno relations, this species knows best how to sell a deal."
   trait_ac_bio_charismatic:0 "Extraordinary"
-  trait_ac_bio_charismatic_desc:0 "..."
+  trait_ac_bio_charismatic_desc:0 "Whether they create profound art or divine performances, it is clear this species is capable of true wonders."
   trait_ac_bio_traditional:0 "Enlightened"
   trait_ac_bio_traditional_desc:0 "This species sees past normal concerns, finding beauty in all things."
   trait_ac_bio_intelligent:0 "Brilliant"
   trait_ac_bio_intelligent_desc:0 "An ingenious mutation developed by our scientists called Anton's Key has allowed for intelligence never seen before."
 
+  # Future Addition
   # civic_bioship_integration:0 "Bioship Integration"
   # civic_bioship_integration_desc:0 "..."
   # civic_tooltip_bioship_integration_effects:0 "..."
@@ -249,7 +255,7 @@
   civic_tooltip_bandwidth_enhancers_effects:0 "$virtual_ascension_required$- Adds §Y$tech_hyper_relays$§! as a research option if not already researched\n- Allows building an §Y$sm_ac_bandwidth_router$§! in starbases\n\n§Y$sm_ac_bandwidth_router_plural$§! increase £mod_planet_virtual_jobs_produces_mult£ §YJob Output§! and provide empire wide £unity£ §YUnity§! from hyper relays as long as the system they are built in has a §Yfunctioning hyper relay§!.\n\n§EModifiers:§!\n$virtual_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-25%§!\n- Tradition Cost from $EMPIRE_SIZE$: §G-10%§!"
   councilor_bandwidth_enhancers:0 "Router Coordinator"
   councilor_bandwidth_enhancers_female:0 "$councilor_bandwidth_enhancers$"
-  councilor_bandwidth_enhancers_desc:0 "..."
+  councilor_bandwidth_enhancers_desc:0 "The $TITLE$ maintains data synchronization to prevent corrupted files among the hyper fast speeds of the network."
 
   civic_bandwidth_incorporated:0 "Bandwidth Incorporated"
   civic_bandwidth_incorporated_desc:0 "This virtual Megacorporation profits off the digital nature of their citizens, providing higher and higher connection speeds at respectively higher and higher prices. Increasing rates is essential to ensure a steady upwards trend in profits."
@@ -264,10 +270,10 @@
 
   civic_concurrent_command:0 "Concurrent Command"
   civic_concurrent_command_desc:0 "This society splits its strategic planning between its ruler and its operatives in the field. Its virtual existence allows all teams to work in unison as if they were one, regardless of distance."
-  civic_tooltip_concurrent_command_effects:0 "$virtual_ascension_required$- Gains §Y$commander_with_icon$§! benefits scaling with effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
+  civic_tooltip_concurrent_command_effects:0 "$virtual_ascension_required$- Gain §Y$commander_with_icon$§! Benefits scaling with Effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
   councilor_concurrent_command:0 "Duo Processor"
   councilor_concurrent_command_female:0 "$councilor_concurrent_command$"
-  councilor_concurrent_command_desc:0 "..."
+  councilor_concurrent_command_desc:0 "The $TITLE$ serves as backup processing power for the ruler as well as executing routine computational tasks for the nation."
   councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!"
 
   civic_executive_militarization:0 "Executive Militarization"
@@ -291,7 +297,9 @@
 
   civic_employee_specialization:0 "Employee Specialization"
   civic_employee_specialization_desc:0 "..."
-  # councilor needed
+  councilor_employee_specialization:0 "..."
+  councilor_employee_specialization_female:0 "$councilor_employee_specialization$"
+  councilor_employee_specialization_desc:0 "..."
 
   civic_hyper_specialized:0 "Hyper-Specialized"
   civic_hyper_specialized_desc:0 "This Machine Intelligence builds its drones with versatile living metal interiors, allowing each drone to take the form that best suits the collective's needs."
@@ -319,7 +327,7 @@
 
   civic_metallic_repurposing:0 "Metallic Repurposing"
   civic_metallic_repurposing_desc:0 "This society believes all metal serves a purpose, that none should go to waste. Their living metal technology is able to grow on metallic remains, greatly enhancing their recycling capabilities."
-  civic_tooltip_metallic_repurposing_effects:0 "$modular_ascension_required$- §YDoubles§! chance of salvaging ships\n- Grants §Y£sr_living_metal£ Living Metal§! on salvaging or researching debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"  
+  civic_tooltip_metallic_repurposing_effects:0 "$modular_ascension_required$- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"  
   # maybe change to show job? - instead of just "Metallurgist"
   councilor_metallic_repurposing:0 "..."
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
@@ -337,26 +345,26 @@
   nanotech_ascension_required:0 "If §YNanotech§! Ascension completed:\n"
   
   civic_numbered_among_stars:0 "Numbered Among Stars"
-  civic_numbered_among_stars_desc:0 "..."
-  civic_tooltip_numbered_among_stars_effects:0 "- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!"
+  civic_numbered_among_stars_desc:0 "Now that this machine society has embraced life as nanite entities, they wish to replicate indefinitely to unfathomable numbers."
+  civic_tooltip_numbered_among_stars_effects:0 "- For every §Y5 Pops§! assembled across all planets, creates a §GNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §R£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!"
   councilor_numbered_among_stars:0 "Self-Replicator"
   councilor_numbered_among_stars_female:0 "$councilor_numbered_among_stars$"
-  councilor_numbered_among_stars_desc:0 "The $TITLE$ manages ..."
+  councilor_numbered_among_stars_desc:0 "The $TITLE$ manages individual duplication, encouraging many to design a life of duplicating their nanite bodies for the nation."
 
   civic_stellar_monopoly:0 "Stellar Monopoly"
   civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monpolozing the galaxy's riches."
-  civic_tooltip_stellar_monopoly_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- Doubles Output from §YMining Stations§! and §YResearch Stations§!\n- Halves Cost to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!" #... Green for +1 capacity or yellow - also then red/green for halving cost/disengagement etc.
+  civic_tooltip_stellar_monopoly_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- §GDoubles Output§! from §YMining Stations§! and §YResearch Stations§!\n- §GHalves Cost§! to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
   councilor_stellar_monopoly:0 "..."
   councilor_stellar_monopoly_female:0 "$councilor_stellar_monopoly$"
   councilor_stellar_monopoly_desc:0 "..."
 
   civic_unending_swarm:0 "Unending Swarm"
-  civic_unending_swarm_desc:0 "..."
-  civic_tooltip_unending_swarm_effects:0 "- Doubles Hull of §YNanite Interdictors§!\n- Halves Cost of §YNanite Swarmers§!\n- Halves Disengagement Chance for all §YNanite Ships§!\n- For every §Y5 Pops§! assembled across all planets, creates a §YNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §Y£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_ship_damage_against_starbases_mult$: §G+25%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
+  civic_unending_swarm_desc:0 "The swarm is eternal. All matter must be consumed."
+  civic_tooltip_unending_swarm_effects:0 "- §GDoubles Hull§! of §YNanite Interdictors§!\n- §GHalves Cost§! of §YNanite Swarmers§!\n- §RHalves Disengagement Chance§! for all §YNanite Ships§!\n- For every §Y5 Pops§! assembled across all planets, creates a §GNew Pop§! on the capital\n- §Y[GetPopAssemblersPluralWithIcon]§! gain additional §R£nanites£ $nanites$ Upkeep§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_ship_damage_against_starbases_mult$: §G+25%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+25%§!"
 
   civic_microscopic_life:0 "Microscopic Life"
-  civic_microscopic_life_desc:0 "..."
-  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$- Increases District Max by §G+50%§!\n- Halves Cost of §YColony Ships§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $mod_pop_housing_usage_mult$: §G-50%§!\n- $mod_planet_pops_upkeep_mult$: §G-20%§!\n- $mod_army_health$: §R-50%§!"
+  civic_microscopic_life_desc:0 "This machine society has embraced the world of nanites, shrinking their bodies to microscopic sizes to increase the productivity of their planets."
+  civic_tooltip_microscopic_life_effects:0 "$nanotech_ascension_required$- Increases District Max by §G+50%§!\n- §GHalves Cost§! of §YColony Ships§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $mod_pop_housing_usage_mult$: §G-50%§!\n- $mod_planet_pops_upkeep_mult$: §G-20%§!\n- $mod_army_health$: §R-50%§!"
   # councilor needed
 
   civic_minicorp:0 "MiniCorp"
@@ -367,7 +375,8 @@
   civic_microscopic_desc:0 "..."
   civic_tooltip_microscopic_effects:0 "$civic_tooltip_microscopic_life_effects$\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
 
-# Hive Cybernetic ---------------------------------------------------------------------------------
+# Unique Hive Cybernetic ----------------------------------------------------------------------------
+# Future Addition
 # civic_cyberform_gestation
   pop_category_ac_droid_drone:0 "Droid"
   pop_cat_ac_droid:0 "Droid"

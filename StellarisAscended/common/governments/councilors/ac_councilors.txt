@@ -256,12 +256,13 @@ councilor_telepathic_corporation = {
 
 councilor_shroud_renouncers = {
 	leader_class = {
-		official
 		commander
-		scientist
 	}
 	is_leader_possible = {
-		has_trait = leader_trait_psionic
+		AND = {
+			leader_class = commander
+			has_trait = leader_trait_psionic
+		}
 	}
 	civic = civic_shroud_renouncers
 	modifier = {
@@ -318,6 +319,44 @@ councilor_xanadu_retreats = {
 	}
 }
 
+councilor_hyper_diversification = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_hyper_diversification
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+		category_biology_draw_chance_mult = 0.10
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_employee_diversification = {
+	leader_class = {
+		official
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = civic_employee_diversification
+	modifier = {
+		country_councilor_society_research_produces_add = 2.5
+		auto_mod_monthly_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Modularity
 councilor_hyper_specialization = {
 	leader_class = {
@@ -330,6 +369,23 @@ councilor_hyper_specialization = {
 	civic = civic_hyper_specialization
 	modifier = {
 		planet_jobs_upkeep_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_employee_specialization = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+		has_trait = leader_trait_synthetic
+	}
+	civic = civic_employee_specialization
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.02
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

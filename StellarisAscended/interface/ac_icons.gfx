@@ -52,6 +52,6 @@ spriteTypes = {
 	# COUNCIL AGENDAS ------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_council_agenda_icon_ac_shroud_invocation" 
-		texturefile = "gfx/interface/icons/agenda_icons/agenda_ac_shroud_invocation.dds" #doesnt exist yet...
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_ac_shroud_invocation.dds"
 	}
 }
