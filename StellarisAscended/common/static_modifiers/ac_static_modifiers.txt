@@ -134,6 +134,11 @@ ac_pact_of_the_harrower = {
 	show_only_custom_tooltip = yes
 }
 
+ac_psychic_shields = {
+	negative_traits_leader = -1
+	intel_decryption_add = 1
+}
+
 # Other
 # ac_despotic_eugenics = {
 #  Governmental ethics attraction - from Killing relatives for Kratocracy event

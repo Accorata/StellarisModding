@@ -515,6 +515,26 @@
   ac_pact_of_the_harrower_desc:0 "In exchange for a day of each month, we've been promised power."
   ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
 
+  ascension_governments.1023.name: "Mass Psychosis"
+  ascension_governments.1023.desc: "...dreams of madness\n\n..."
+  ascension_governments.1023.a: "Look into this."
+  ac_madness_leaders.tt: "A random number of Psionic Leaders have gained the §Y$leader_trait_ac_visions_of_doom$§! Trait."
+  ascension_governments.1024.name: "Horrors of the Mind"
+  ascension_governments.1024.desc: "...\n\n..."
+  ascension_governments.1024.a: "We must kill this evil." # D
+  ascension_governments.1024.b: "Embrace the madness!" # E
+  ascension_governments.1024.c: "Increase psychic defenses." # N
+  ac_kill_horror_chain_title:0 "Killing Insanity"
+  ac_kill_horror_chain_desc:0 "..."
+  ac_horror_poi_title:0 "Source of Madness"
+  ac_horror_poi_desc:0 "Our telepaths have tracked the cause of our delusions to this spot. We know not what lies here and must be prepared for whatever evil awaits. "
+  ac_psychic_shields:0 "Psychic Shields"
+  ac_psychic_shields_desc:0 "Scarred by an attack by some dark evil, we've developed powerful psychic defenses to ensure our people are forever safe."
+  ascension_governments.1026.name: "Silent Dreams"
+  ascension_governments.1026.desc: "Upon the death of the Dimensional Horror, the hysteria has come to an end. The dreams of madness have completely dropped, and once more can our people rest in silence. ...\n\n..."
+  ascension_governments.1026.a: "Wonderful."
+  ac_sane_leaders.tt: "All Leaders with the §Y$leader_trait_ac_visions_of_doom$§! Trait have replaced it with the §Y$leader_trait_ac_restored_sanity$§! Trait."
+
 # Final Event
 # Democratic
   ascension_governments.1032.name: "Transcendance of the Masses"

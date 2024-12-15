@@ -3,6 +3,8 @@
 # Common Traits
   leader_trait_genetically_superior:0 "Genetically Superior"
   leader_trait_genetically_superior_desc:0 "..."
+  leader_trait_ac_restored_sanity:0 "Restored Sanity"
+  leader_trait_ac_restored_sanity_desc:0 "Upon defeating the Dimensional Horror the terrible dreams ended replaced with a sense of renewed mental vigor."
 
 # Official Traits
   
