@@ -1760,6 +1760,26 @@ country_event = {
 	}
 }
 
+### Genetic Hive ###
+
+# On receiving relic - sets initial Assimilation Engine variable
+country_event = {
+	id = ascension_governments.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_received_relic = r_ac_assimilation_engine
+	}
+
+	immediate = {
+		set_variable = {
+			which = ac_num_assimilation_engine
+			value = 0
+		}
+	}
+}
+
 ####### PSIONIC SITUATION #######
 # On psionics tradition finsihed
 country_event = {

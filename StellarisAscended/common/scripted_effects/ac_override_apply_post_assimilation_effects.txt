@@ -130,6 +130,20 @@ apply_post_assimilation_effects = {
 			}
 		}
 	}
+	# Assimilation Engine relic upgrades 
+	if = {
+		limit = {
+			root.owner = {
+				has_relic = r_ac_assimilation_engine
+			}
+		}
+		root.owner = {
+			change_variable = {
+				which = ac_num_assimilation_engine
+				value = 1
+			}
+		}
+	}
 	# END OF OVERRIDE 2 -------------------------------------------------------------------------
 	if = {
 		limit = {

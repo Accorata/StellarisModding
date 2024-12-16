@@ -235,6 +235,13 @@ on_released_as_vassal = {
 	}
 }
 
+# This = Country
+on_relic_received = {
+	events = {
+		ascension_governments.101		# Initialize variables for the Assimilation Engine
+	}
+}
+
 # Genetic Event Pool 1 | Fired by ascension_governments.7
 # This = Country
 on_ac_genetic_shock_chain_event_pool_one_list = {

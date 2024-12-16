@@ -55,7 +55,7 @@
   concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
-  auth_ac_genetic_democratic_perfect_effects:0 "- Gains £unity£ §YUnity§! from assimilating £pop£ Pops"
+  auth_ac_genetic_democratic_perfect_effects:0 "- Gains £unity£ §YUnity§! from assimilating §Y£pop£ Pops§!"
 # Genetic Democratic Chaotic
   auth_ac_genetic_democratic_chaotic:0 "Democratic Expressionism"
   auth_ac_genetic_democratic_chaotic_desc:0 "Genetic modification grant all the freedom to live in their desired form. This government recognizes those rights and encourages all to be as they wish."
@@ -473,7 +473,7 @@
 
 # Event Pool 1
   ascension_governments.1009.name: "Ritualistic Sacrifices"
-  ascension_governments.1009.desc: "On [Root.Capital.GetName] local enforcement have begun to find ghastly remains of [Root.GetSpeciesNamePlural] sprawled out upon horrifying altars. .. ritualistic killings .\n\n..."
+  ascension_governments.1009.desc: "On [Root.Capital.GetName] local enforcement have begun to find ghastly remains of [Root.GetSpeciesNamePlural] sprawled out upon horrifying altars. If we do not act soon, these ritualistic killings will likely increase and the cultists numbers will rise. Others will to embrace such madness, calling for a larger sacrficie to our Gods of the Shroud.\n\nThe choice is ours."
   ascension_governments.1009.a: "The Shroud deserves our devotion." # E
   ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
   ascension_governments.1009.c: "There will always be those lost to insanity...." # N
@@ -495,7 +495,7 @@
   ascension_governments.1011.c: "The mind is our gateway to the Shroud." # E
   ascension_governments.1011.d: "Another avenue for profit." # Corporate - E
   ac_mind_body_soul:0 "Mind Body Soul"
-  ac_mind_body_soul_desc:0 "..."
+  ac_mind_body_soul_desc:0 "Our uplifted consciousness allows for wonders of the psyche."
   ac_eldritch_mind:0 "Eldritch Mind"
   ac_eldritch_mind_desc:0 "The intricacies of our mind must not be touched if we wish to ensure our connection to the Shroud remains."
   # corporate benefit...
@@ -620,7 +620,7 @@
 
 # Oligarchic 
   edict_ac_consecrated_rites:0 "Consecrated Rites"
-  edict_ac_consecrated_rites_desc:0 "The sacred knights are an honor to all. Their work is essential and grace admirable."
+  edict_ac_consecrated_rites_desc:0 "The sacred knights are an honor to all. Their work is essential and their grace most admirable."
   edict_ac_consecrated_rites_knight:0 "$edict_ac_consecrated_rites$"
   edict_ac_consecrated_rites_knight_desc:0 "$edict_ac_consecrated_rites_desc$"
   concept_edict_ac_consecrated_rites:0 "$edict_ac_consecrated_rites$"
@@ -691,9 +691,13 @@
   gov_ac_genetic_hive_perfect_desc:0 "$auth_ac_genetic_hive_perfect_desc$"
 
   auth_ac_genetic_hive_chaotic:0 "Assimilator Hive"
-  auth_ac_genetic_hive_chaotic_desc:0 "The hive learns through all beings, each one a new genetic canvas to explore and incorporate into the whole."
+  auth_ac_genetic_hive_chaotic_desc:0 "The hive learns through all beings, each one a new genetic canvas to incorporate into the collective."
   concept_auth_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"
-  auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_the_rulerchip$§!" # change to future relic
-  #needs govs
+  auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_ac_assimilation_engine$§!"
+  ac_assimilation_engine_passive_tooltip: "\n§EFor every §Y20§! Assimilated §Y£pop£ Pops§!:$NEW_LINE$§Y$mod_BIOLOGICAL_species_trait_points_add$:§! §G+1%§!\nCurrent Effects:§!"
+  # ac_assimilation_engine_activation_tooltip: 
+
+  r_ac_assimilation_engine:0 "Assimilation Engine"
+  r_ac_assimilation_engine_desc:0 "..."
