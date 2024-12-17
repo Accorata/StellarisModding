@@ -30,13 +30,13 @@ r_ac_assimilation_engine = {
 	score = 0
 
 	active_effect = {
-		custom_tooltip = relic_triumph_cooldown
+		custom_tooltip = "ac_assimilation_engine_activation_tooltip"
+		show_only_custom_tooltip = no
 		add_resource = {
 			society_research = 50
 			mult = value:ac_num_assimilation_engine
-			# custom_tooltip = "ac_assimilation_engine_activation_tooltip"
-			# show_only_custom_tooltip = no
 		}
+		custom_tooltip = relic_triumph_cooldown
 	}
 
 	# Possible check for activation

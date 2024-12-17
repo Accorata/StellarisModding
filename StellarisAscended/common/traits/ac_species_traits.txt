@@ -656,7 +656,7 @@ trait_ac_hive_digital = {
 	modifier = {
 		habitability_floor_add = 0.15
 		pop_housing_usage_mult = -0.5
-		planet_pops_energy_upkeep_mult = 0.5
+		planet_pops_upkeep_mult = 0.25
 	}
 	triggered_pop_modifier = {
 		potential = {

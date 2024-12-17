@@ -239,6 +239,39 @@ ac_united_in_soul = {
 	}
 }
 
+ac_aligned_desires = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	triggered_modifier = {
+		potential = {
+			always = yes
+		}
+		council_agenda_progress_speed = 0.25
+		leaders_upkeep_mult = 0.10
+		mult = value:ac_democratic_insanity_empire_size
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_consecrated_rites = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
@@ -378,6 +411,36 @@ ac_betrayal_of_the_mind = {
 	modifier = {
 		planet_stability_add = 10
 		planet_crime_add = -25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_palace_of_the_intellect = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		LEADER_RULER_EXPERIENCE_add = 3
+		resolutions_cost_mult = -0.10
+		envoys_add = 2
 	}
 	allow = {
 	}

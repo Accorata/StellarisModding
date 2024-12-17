@@ -411,12 +411,12 @@ building_ac_undercity_arena = {
 			energy = 2
 		}
 	}
-	triggered_desc = {
-		text = job_cyberdome_duelist_effect_desc
-	}
-	triggered_desc = {
-		text = job_cyberdome_spectator_effect_desc
-	}
+	# triggered_desc = {
+	# 	text = job_cyberdome_duelist_effect_desc
+	# }
+	# triggered_desc = {
+	# 	text = job_cyberdome_spectator_effect_desc
+	# }
 }
 
 building_ac_cybernetics_stadium = {

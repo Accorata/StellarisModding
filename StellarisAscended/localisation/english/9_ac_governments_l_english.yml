@@ -38,7 +38,7 @@
   auth_ac_genetic_dictatorial_chaotic_effects:0 "- £leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! leader trait\n- On Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!"
 # Genetic Oligarchic Perfect
   auth_ac_genetic_oligarchic_perfect:0 "Oligarchic Geniocracy"
-  auth_ac_genetic_oligarchic_perfect_desc:0 "The intelligent brought about the future of the past, and it is them that we invest our resources to bring the future of the now into reality."
+  auth_ac_genetic_oligarchic_perfect_desc:0 "The intelligent brought about the future of the past, and it is in them that we invest our resources to bring the future of the now into reality."
   concept_auth_ac_genetic_oligarchic_perfect:0 "$auth_ac_genetic_oligarchic_perfect$"
   gov_ac_genetic_oligarchic_perfect:0 "$auth_ac_genetic_oligarchic_perfect$"
   gov_ac_genetic_oligarchic_perfect_desc:0 "$auth_ac_genetic_oligarchic_perfect_desc$"
@@ -48,7 +48,7 @@
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
-  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! chance to gain a §GMutant§! Trait along with an additional §RNegative§! Trait."
+  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! Chance to gain a §GMutant§! Trait along with an additional §RNegative§! Trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "All are equal in genetics, granting perfect equality as all hvae an equal chance to thrive."
@@ -71,6 +71,7 @@
 # Genetic Corporate Chaotic
   auth_ac_genetic_corporate_chaotic:0 "Corporate Darwinism"
   auth_ac_genetic_corporate_chaotic_desc:0 "Only in competition is there innovatation. The corporation is split into various factions, all competing for dominance."
+  # +1 research option, -10% unity, increased specialist output?/upkeep decreased (or maybe both by 15%), ...
   concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
@@ -544,7 +545,7 @@
   ascension_governments.1032.a: "..."
   ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_united_in_soul$"
   ascension_governments.1032.b: "Freedom from manipulation."
-  ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_self_preservation_override$" # edicts to be changed
+  ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_ac_aligned_desires$"
   ascension_governments.1032.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1032.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
@@ -579,7 +580,7 @@
   ascension_governments.1035.desc.eldritch: "The proposal is complete. Our Patron wishes to join the material plane by manifesting their will into the mind of §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§!. If we continue down this path, then from this moment onwards, §Y[ruler.GetRulerTitle] [ruler.GetRegnalName]§! will serve as a conduit for our Patron, allowing their bodily form to be possessed as the entities of the Shroud deem fit for the empire."
   ascension_governments.1035.desc.neutral: "Our majesty, §Y[ruler.GetRegnalName]§! is larger than life, that much is clear. The degree to which, and methods by which remain a topic of conversation. As §Y[ruler.GetRulerTitle]§!, their right by royal blood is evident, but others claim their psionic ability allows for true ascendant deification. Others appeal to the power of our Patron, arguing that the only ultimate authority would arise from allowing §Y[ruler.GetRegnalName]§! to be possessed by our Patron."
   ascension_governments.1035.a: "Divinity at last."
-  ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
+  ascension_governments.1035.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_divine']\n$unlock_edict_ac_palace_of_the_intellect$"
   ascension_governments.1035.b: "Our Patron has joined us."
   ascension_governments.1035.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_imperial_eldritch']\n$unlock_edict_ac_unholy_possession$"
   ascension_governments.1035.c: "$ac_psionic_keep_auth_option$"
@@ -599,7 +600,10 @@
 
 # Edicts
 # Imperial
-  # edict_ac_palace_of_the_intellect...
+  edict_ac_palace_of_the_intellect:0 "Palace of the Intellect"
+  edict_ac_palace_of_the_intellect_desc:0 "Within our divine ruler's mind, vast expanses of knowledge and grace lie. All shall know their perfection."
+  concept_edict_ac_palace_of_the_intellect:0 "$edict_ac_palace_of_the_intellect$"
+  unlock_edict_ac_palace_of_the_intellect:0 "$unlock_edict_tt$['concept_edict_ac_palace_of_the_intellect']"
 
   edict_ac_unholy_possession:0 "Unholy Possession"
   edict_ac_unholy_possession_desc:0 "Within our ruler, our Patron dwells. Awaken, our lord, for we are yours to command!"
@@ -636,6 +640,14 @@
   edict_ac_united_in_soul_desc:0 "As our minds overlap, so may our souls. Together we will not falter against the whims of others."
   concept_edict_ac_united_in_soul:0 "$edict_ac_united_in_soul$"
   unlock_edict_ac_united_in_soul:0 "$unlock_edict_tt$['concept_edict_ac_united_in_soul']"
+
+  edict_ac_aligned_desires:0 "Aligned Desire"
+  edict_ac_aligned_desires_desc:0 "In rare moments, all our passions are in harmony."
+  concept_edict_ac_aligned_desires:0 "$edict_ac_aligned_desires$"
+  unlock_edict_ac_aligned_desires:0 "$unlock_edict_tt$['concept_edict_ac_aligned_desires']"
+
+# Corporate
+
 
 ### Psionic Teachers ---------------------------------------------------------------------------------
 # Psionic Teacher Authorities
@@ -696,8 +708,8 @@
   gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"
   auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_ac_assimilation_engine$§!"
-  ac_assimilation_engine_passive_tooltip: "\n§EFor every §Y20§! Assimilated §Y£pop£ Pops§!:$NEW_LINE$§Y$mod_BIOLOGICAL_species_trait_points_add$:§! §G+1%§!\nCurrent Effects:§!"
-  # ac_assimilation_engine_activation_tooltip: 
+  ac_assimilation_engine_passive_tooltip: "For every §Y20§! Assimilated §Y£pop£ Pops§!:$NEW_LINE$§Y$mod_BIOLOGICAL_species_trait_points_add$:§! §G+1§!\n\n§ECurrent Effects:§!"
+  ac_assimilation_engine_activation_tooltip: "Grants §G50§! §Y£society_research£ $society_research$§! for every Assimilated §Y£pop£ Pop§!:\n"
 
   r_ac_assimilation_engine:0 "Assimilation Engine"
   r_ac_assimilation_engine_desc:0 "..."

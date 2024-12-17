@@ -1775,7 +1775,7 @@ country_event = {
 	immediate = {
 		set_variable = {
 			which = ac_num_assimilation_engine
-			value = 0
+			value = 20 # maybe a test
 		}
 	}
 }
@@ -2676,12 +2676,15 @@ country_event = {
 	immediate = {
 		set_country_flag = shroud_diplomacy_engaged
 	}
+
 	option = {
 		# Eldritch
 		name = ascension_governments.1021.a
 		custom_tooltip = ac_psionic.social_consequences.tt
 
-		add_modifier = ac_pact_of_the_harrower
+		add_modifier = {
+			modifier = ac_pact_of_the_harrower
+		}
 
 		hidden_effect = {
 			change_variable = {
@@ -2844,27 +2847,27 @@ country_event = {
 			event_chain = ac_kill_horror_chain
 			target = this
 		}
-		random_fleet = {
-			limit = {
-				exists = owner
-				owner = {
-					is_country_type = guardian_horror
-				}
-			}
-			create_point_of_interest = {
-				id = ac_horror_poi
-				name = ac_horror_poi_title
-				desc = ac_horror_poi_desc
-				event_chain = ac_kill_horror_chain
-				location = this
-			}
-		}	
-		hidden_effect = {
-			change_variable = {
-				which = "ac_psionic_divine_society"
-				value = 1
-			}
-		}
+		# random_fleet = {
+		# 	limit = {
+		# 		exists = owner
+		# 		owner = {
+		# 			is_country_type = guardian_horror
+		# 		}
+		# 	}
+		# 	# create_point_of_interest = {
+		# 	# 	id = ac_horror_poi
+		# 	# 	name = ac_horror_poi_title
+		# 	# 	desc = ac_horror_poi_desc
+		# 	# 	event_chain = ac_kill_horror_chain
+		# 	# 	location = this
+		# 	# }
+		# }	
+		# hidden_effect = {
+		# 	change_variable = {
+		# 		which = "ac_psionic_divine_society"
+		# 		value = 1
+		# 	}
+		# }
 		ai_chance = {
 			factor = 1
 		}
@@ -2911,90 +2914,90 @@ country_event = {
 	}
 }
 
-# If Horror Destroyed Fire Silent Dreams Event
-country_event = {
-	id = ascension_governments.1025
-	hide_window = yes
+# # If Horror Destroyed Fire Silent Dreams Event
+# country_event = {
+# 	id = ascension_governments.1025
+# 	hide_window = yes
 
-	fire_only_once = yes
-	is_triggered_only = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
 
-	trigger = {
-		is_country_type = guardian_horror
-		OR = {
-			has_country_flag = dimensional_horror_country
-			has_country_flag = eldritch_horror_country
-		}
-		FROMFROM = { is_ship_size = dimensional_horror }
-	}
+# 	trigger = {
+# 		is_country_type = guardian_horror
+# 		OR = {
+# 			has_country_flag = dimensional_horror_country
+# 			has_country_flag = eldritch_horror_country
+# 		}
+# 		FROMFROM = { is_ship_size = dimensional_horror }
+# 	}
 
-	immediate = {
-		# Fire Silent Dreams Event if killing empire choose to hunt the Horror
-		FROM = {
-			if = {
-				limit = {
-					has_event_chain = ac_kill_horror_chain
-					has_country_flag = ac_horror_caused_insanity
-				}
-				country_event = {
-					id = ascension_governments.1026
-					days = 2
-				}
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		# Fire Silent Dreams Event if killing empire choose to hunt the Horror
+# 		FROM = {
+# 			if = {
+# 				limit = {
+# 					has_event_chain = ac_kill_horror_chain
+# 					has_country_flag = ac_horror_caused_insanity
+# 				}
+# 				country_event = {
+# 					id = ascension_governments.1026
+# 					days = 2
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-country_event = {
-	# Silent Dreams
-	id = ascension_governments.1026
-	title = ascension_governments.1026.name
-	desc = ascension_governments.1026.desc
-	picture = GFX_evt_unspeakable_horror # change
-	show_sound = event_cityscape
-	location = from
-	event_chain = ac_kill_horror_chain
-	is_triggered_only = yes
-	trigger = {
-		has_country_flag = ac_horror_caused_insanity
-	}
+# country_event = {
+# 	# Silent Dreams
+# 	id = ascension_governments.1026
+# 	title = ascension_governments.1026.name
+# 	desc = ascension_governments.1026.desc
+# 	picture = GFX_evt_unspeakable_horror # change
+# 	show_sound = event_cityscape
+# 	location = from
+# 	event_chain = ac_kill_horror_chain
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_country_flag = ac_horror_caused_insanity
+# 	}
 
-	option = {
-		name = ascension_governments.1026.a
-		custom_tooltip = ac_sane_leaders
-		add_monthly_resource_mult = {
-			resource = unity
-			value = @tier3unityreward
-			min = @tier3unitymin
-			max = @tier3unitymax
-		}
-		tooltip = {
-			end_event_chain = ac_kill_horror_chain
-		}
-		hidden_effect = {
-			# Restore Sanity
-			every_owned_leader = {
-				limit = {
-					has_trait = leader_trait_ac_visions_of_doom
-				}
-				remove_trait = leader_trait_ac_visions_of_doom
-				add_trait = leader_trait_ac_restored_sanity
-			}
-			# End Killing Insanity Chain
-			every_country = {
-				limit = {
-					is_country_type = default
-					has_event_chain = ac_kill_horror_chain
-				}
-				remove_point_of_interest = ac_horror_poi
-				end_event_chain = ac_kill_horror_chain
-			}
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
+# 	option = {
+# 		name = ascension_governments.1026.a
+# 		custom_tooltip = ac_sane_leaders
+# 		add_monthly_resource_mult = {
+# 			resource = unity
+# 			value = @tier3unityreward
+# 			min = @tier3unitymin
+# 			max = @tier3unitymax
+# 		}
+# 		tooltip = {
+# 			end_event_chain = ac_kill_horror_chain
+# 		}
+# 		hidden_effect = {
+# 			# Restore Sanity
+# 			every_owned_leader = {
+# 				limit = {
+# 					has_trait = leader_trait_ac_visions_of_doom
+# 				}
+# 				remove_trait = leader_trait_ac_visions_of_doom
+# 				add_trait = leader_trait_ac_restored_sanity
+# 			}
+# 			# End Killing Insanity Chain
+# 			every_country = {
+# 				limit = {
+# 					is_country_type = default
+# 					has_event_chain = ac_kill_horror_chain
+# 				}
+# 				remove_point_of_interest = ac_horror_poi
+# 				end_event_chain = ac_kill_horror_chain
+# 			}
+# 		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 	}
+# }
 
 # Ending
 # Fired by: event

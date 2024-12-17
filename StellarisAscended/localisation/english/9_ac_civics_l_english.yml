@@ -130,11 +130,11 @@
   councilor_cybernet_desc:0 "The $TITLE$ oversees the transfer of corporate assets along the net, the selling of digital real estate, and numerous other profitable cyberspace ventures."
 
   civic_cyberspacial:0 "Cyberspacial"
-  civic_cyberspacial_desc:0 "This Hive Mind has expanded its domain into the virtual world. Each of its drones have a virtual counterpart connected directly to their brain via cybernetic software."
+  civic_cyberspacial_desc:0 "This Hive Mind has expanded its domain into the virtual world. Each of its drones has a virtual counterpart connected directly to their brain via cybernetic software."
   civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
-  trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_energy_upkeep_mult$: §R+50%§!"
+  trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_upkeep_mult$: §R+25%§!"
   concept_trait_ac_hive_digital:0 "$trait_ac_hive_digital$"
   concept_trait_ac_hive_digital_desc:0 "$trait_ac_hive_digital_desc$"
 

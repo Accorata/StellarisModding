@@ -208,6 +208,11 @@ concept_auth_ac_psionic_corporate_eldritch = {
 }
 
 # Psionic Edicts
+concept_edict_ac_palace_of_the_intellect = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_palace_of_the_intellect"
+}
+
 concept_edict_ac_unholy_possession = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_unholy_possession"
@@ -236,6 +241,11 @@ concept_edict_ac_dark_pact = {
 concept_edict_ac_united_in_soul = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_united_in_soul"
+}
+
+concept_edict_ac_aligned_desires = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_aligned_desires"
 }
 
 # Psi Teacher Authorities
