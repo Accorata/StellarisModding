@@ -206,6 +206,7 @@ on_yearly_pulse_country = {
 		ascension_governments.1022		# Harrower of Time grants a Psionic Avatar
 		ascension_civics.210		# Set random convergence location for 50% of avatars
 		ascension_governments.1040		# Adds Vessel traits if Imperial Vessel auth and now has Patron
+		ascension_governments.47		# Mutant trait Evolving gains experience
 	}
 }
 

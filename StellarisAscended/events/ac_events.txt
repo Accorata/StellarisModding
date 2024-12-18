@@ -48,7 +48,7 @@ country_event = {
 				}
 				1 = {
 					from = {
-						# ac_add_mutant_trait = yes (future scripted effect)
+						ac_add_mutant_trait = yes
 						add_trait_no_notify = random_negative
 					}
 				}

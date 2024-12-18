@@ -28,6 +28,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_tetrochromat.dds"
 	}
 	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_evolving"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_evolving.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_enigmatic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_enigmatic.dds"
+	}
+	spriteType = {
 		name = "GFX_leader_trait_ac_end_vessel"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_end_vessel.dds"
 	}
