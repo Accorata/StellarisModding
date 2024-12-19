@@ -140,7 +140,7 @@
 
   civic_uploaded_mind:0 "Uploaded Mind"
   civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
-  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating organic £pop£ Pops provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborgs§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+25%§!"
+  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!" # testing this instead of 25%...
 
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "..."

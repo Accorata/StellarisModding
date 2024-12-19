@@ -233,8 +233,8 @@
 # Dictatorial
   ascension_governments.34.name: "Descendants of Authority"
   ascension_governments.34.desc.perfect: "National scientists proudly reveal our newest advancement that will ensure power belongs to our [ruler.GetRulerTitle]: the creation of the genetic caste. New generations will be modified invitro, designing their mental and physical capacities to ensure optimal complacency without harming efficiency. The lower classes will truly be free as they won't even contain the capacity  to realize their oppression."
-  ascension_governments.34.desc.chaotic: "..."
-  ascension_governments.34.desc.neutral: "..."
+  ascension_governments.34.desc.chaotic: "Genetic superiority reveals itself only in selection. Evolution it brought us to this point, showed the galaxy we were worthy and our competitors inferior. This selection must continue if we are to thrive. Our ruler will not be determined by corrupt bureaucratic power, but rather by their strength over others. Only then will their genetic inheritance be illustrated."
+  ascension_governments.34.desc.neutral: "Although much has changed from genetic evolution, our rule must remain untouched if there is to be order. Given the current climate, three options have presented themselves. We could create genetic castes to suppress the lower classes and benefit our reign. We could declare our ruler a genetic superior and reform succession of power to a duel of physical forms. Finally, we could remain as before to ensure stability."
   ascension_governments.34.a: "Inherent order is imperative."
   ascension_governments.34.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_dictatorial_perfect']\n$unlock_edict_ac_hypnopaedic_conditioning$"
   ascension_governments.34.b: "Survival of the Fittest!"
@@ -290,7 +290,7 @@
   unlock_edict_ac_hypnopaedic_conditioning:0 "$unlock_edict_tt$ ['concept_edict_ac_hypnopaedic_conditioning']"
 
   edict_ac_natural_eugenics:0 "Natural Eugenics"
-  edict_ac_natural_eugenics_desc:0 "..."
+  edict_ac_natural_eugenics_desc:0 "Through war, our weak are naturally eliminated from succession, building an ultimate genetic citizen of the future."
   concept_edict_ac_natural_eugenics:0 "$edict_ac_natural_eugenics$"
   unlock_edict_ac_natural_eugenics:0 "$unlock_edict_tt$ ['concept_edict_ac_natural_eugenics']"
   edict_ac_natural_eugenics_effect:0 "Gain £society_research£ $society_research$ every time an Organic Army is Killed or Lost"
@@ -490,11 +490,11 @@
   ac_abstaining_from_darkness:0 "Abstaining from Darkness"
   ac_abstaining_from_darkness_desc:0 "The Shroud can grant great benefits, but is also a place filled with horror. We would do well to be careful."
   ascension_governments.1011.name: "Telepathic Health"
-  ascension_governments.1011.desc: "...\n\n..."
+  ascension_governments.1011.desc: "From depression to schizophrenia to mental breakdowns, all pathologies of the mind are now able to be treated by our telehealths, which specialize in therapeutic telepathy. By conversing not just with the individual but with their soul, the telehealths are able to manipulate emotions directly and cure such afflictions. Motivation can easily be increased and destructive behavior quenched.\n\nHowever, not all are positive of these developements. A subsection of our telepaths argues that the mind is our gateway to the Shroud, and that by tampering with it we risk severing our connection. The choice is ours."
   ascension_governments.1011.a: "[ac_healed_leader.GetTitle] [ac_healed_leader.GetName] could benefit greatly." # N
-  ascension_governments.1011.b: "All parts of the psyche must be uplifted." # D
-  ascension_governments.1011.c: "The mind is our gateway to the Shroud." # E
-  ascension_governments.1011.d: "Another avenue for profit." # Corporate - E
+  ascension_governments.1011.b: "The psyche must be uplifted." # D
+  ascension_governments.1011.c: "Ensure our bond remains." # E
+  ascension_governments.1011.d: "Another avenue for profit." # Corporate - D
   ac_mind_body_soul:0 "Mind Body Soul"
   ac_mind_body_soul_desc:0 "Our uplifted consciousness allows for wonders of the psyche."
   ac_eldritch_mind:0 "Eldritch Mind"
@@ -509,7 +509,7 @@
   ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
 
   ascension_governments.1021.name: "A Request"
-  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it makes its request. Always before, we have been the ones who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the §YHarrower of Time§!. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. It will run from us as the §YHarrower§! wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear: it wishes only one thing: that we yield the 8th day of every month to it. In return, the §YHarrower§! promises power, power to rule all others. It wants us to agree, for otherwise, our time cannot be freely taken.\n\n§RA choice must be made.§!"
+  ascension_governments.1021.desc: "All [Root.GetSpeciesNamePlural] hears the Shroud's call. At once it envelops our minds, holding time still as it makes its request. Always before, we have been the ones who labor to pierce the veil, but this time, something has reached out to us.\n\nIt calls itself by no name, but our souls see it clearly: this entity is known as the §YHarrower of Time§!. It beckons us forth, our collective mind obliging without question. It speaks not in words nor in thoughts, only in what can only be described as entropy. Our mind shudders against the waves of realization that regardless of the outcome, we will not remember this moment. The moment will run from us as the §YHarrower§! wishes, and we will return to our obliviousness.\n\nIt proposes a bargain. Or rather, it already proposed a bargain. Or perhaps, it is about to. Regardless, it's intentions are clear. It wishes only one thing: that we yield the 8th day of every month to it. In return, the §YHarrower§! promises power, power to rule all others. It desires us to agree, for without our approval, our time cannot be freely taken.\n\n§RA choice must be made.§!"
   ascension_governments.1021.a: "Anything for power." # E
   ascension_governments.1021.b: "We will not make unretractable bargains." # D
   ac_pact_of_the_harrower:0 "Pact of the Harrower"
@@ -517,29 +517,29 @@
   ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
 
   ascension_governments.1023.name: "Mass Psychosis"
-  ascension_governments.1023.desc: "...dreams of madness\n\n..."
+  ascension_governments.1023.desc: "Throughout our country, reports of insanity are rising at unseen rates. Dreams of madness plague our people, filled with imagery of worlds beyond their comprehension. Here, shapes take on new meaning and combine in unnatural ways. Despite our best efforts in psychiatry, the horror is still unexplained.\n\nSome of our leaders have faced such madness and are struggling as a result."
   ascension_governments.1023.a: "Look into this."
   ac_madness_leaders.tt: "A random number of Psionic Leaders have gained the §Y$leader_trait_ac_visions_of_doom$§! Trait."
   ascension_governments.1024.name: "Horrors of the Mind"
-  ascension_governments.1024.desc: "...\n\n..."
+  ascension_governments.1024.desc: "The dreams are unrelenting, and despair is taking over. Reports of suicide have tripled and unholy cults rise in the shadows. But for one moment, all is clear. The source of this insanity illuminates itself in the minds of the lost, and they can only describe it as evil itself. The dark shape stretches itself through the fabric of our universe, releasing its spores of dread throughout the material plane. Those who even hear this description shudder under the mental realization of evil, and those who have seen the being are already gone.\n\nHow to proceed is up to us."
   ascension_governments.1024.a: "We must kill this evil." # D
   ascension_governments.1024.b: "Embrace the madness!" # E
   ascension_governments.1024.c: "Increase psychic defenses." # N
   ac_kill_horror_chain_title:0 "Killing Insanity"
-  ac_kill_horror_chain_desc:0 "..."
+  ac_kill_horror_chain_desc:0 "It has manifested in physical form, an old god born of another dimension. Only through ending this evil will we be free."
   ac_horror_poi_title:0 "Source of Madness"
   ac_horror_poi_desc:0 "Our telepaths have tracked the cause of our delusions to this spot. We know not what lies here and must be prepared for whatever evil awaits. "
   ac_psychic_shields:0 "Psychic Shields"
   ac_psychic_shields_desc:0 "Scarred by an attack by some dark evil, we've developed powerful psychic defenses to ensure our people are forever safe."
   ascension_governments.1026.name: "Silent Dreams"
-  ascension_governments.1026.desc: "Upon the death of the Dimensional Horror, the hysteria has come to an end. The dreams of madness have completely dropped, and once more can our people rest in silence. ...\n\n..."
+  ascension_governments.1026.desc: "Upon the death of the Dimensional Horror, the hysteria has come to an end. The dreams of madness have completely dropped, and once more can our people rest in silence. Psychiatrists will have a large task ahead of them to repair this damage but already minds are clinging back together. While tenacious at first, the madness has faded without the presence of its master.\n\nThe rejoice can be felt from the streets of our great cities to the farthest outposts of our frontiers. Today is a glorious day in which we are finally free from that horrible presence. Maybe our glory never end!"
   ascension_governments.1026.a: "Wonderful."
   ac_sane_leaders.tt: "All Leaders with the §Y$leader_trait_ac_visions_of_doom$§! Trait have replaced it with the §Y$leader_trait_ac_restored_sanity$§! Trait."
 
 # Final Event
 # Democratic
   ascension_governments.1032.name: "Transcendance of the Masses"
-  ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] emotions dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains <Gaia/Foundation>..."
+  ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] sensations dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains to themselves. ..."
   ascension_governments.1032.desc.eldritch: "Within the unconsious, desires run rampant free from the authority of the superego. Here one's true emotions are made manifest, and it is these that shall govern our society. Our collective mood will sustain the nation, orchestrating elections and victors in instants and instilling a society built on intuition."
   ascension_governments.1032.desc.neutral: "..."
   ascension_governments.1032.a: "..."
@@ -642,7 +642,7 @@
   unlock_edict_ac_united_in_soul:0 "$unlock_edict_tt$['concept_edict_ac_united_in_soul']"
 
   edict_ac_aligned_desires:0 "Aligned Desire"
-  edict_ac_aligned_desires_desc:0 "In rare moments, all our passions are in harmony."
+  edict_ac_aligned_desires_desc:0 "In rare moments, all our passions lie in harmony."
   concept_edict_ac_aligned_desires:0 "$edict_ac_aligned_desires$"
   unlock_edict_ac_aligned_desires:0 "$unlock_edict_tt$['concept_edict_ac_aligned_desires']"
 
@@ -712,4 +712,4 @@
   ac_assimilation_engine_activation_tooltip: "Grants §G50§! §Y£society_research£ $society_research$§! for every Assimilated §Y£pop£ Pop§!:\n"
 
   r_ac_assimilation_engine:0 "Assimilation Engine"
-  r_ac_assimilation_engine_desc:0 "..."
+  r_ac_assimilation_engine_desc:0 "This grotesque machine is filled with the living remains of countless species, all of their genetic secrets being extracted through the mess of tubing to reach the pulsating core."

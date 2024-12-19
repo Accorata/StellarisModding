@@ -140,6 +140,10 @@ ac_psychic_shields = {
 }
 
 # Other
+ac_manipulation_network_modifier = {
+	branch_office_value_mult = 0.25 # Needs testing...
+	planet_pops_consumer_goods_upkeep_mult = 0.25
+}
+
 # ac_despotic_eugenics = {
-#  Governmental ethics attraction - from Killing relatives for Kratocracy event
-# }
+#  Governmental ethics attraction - from Killing relatives for Kr

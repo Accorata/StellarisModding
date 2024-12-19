@@ -2407,7 +2407,7 @@ country_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = "ac_psionic_eldritch_society"
+				which = "ac_psionic_divine_society"
 				value = 1
 			}
 		}

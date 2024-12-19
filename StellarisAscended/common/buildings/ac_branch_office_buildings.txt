@@ -182,11 +182,7 @@ holding_ac_manipulation_network = {
 		}
 	}
 	planet_modifier = {
-		trade_value_mult = 0.2
-	}
-	country_modifier = {
-		# this is for the megacorp...
-		pop_lifestyle_trade_value_mult = 0.15
+		pop_happiness = -0.05
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -208,6 +204,44 @@ holding_ac_manipulation_network = {
 			influence = 0.5
 		}
 	}
+
+	# Needs tooltip for this if it works
+	on_built = {
+		planet= {
+			owner = {
+				add_modifier = {
+					modifier = ac_manipulation_network_modifier
+					days = -1
+				}
+			}
+		}
+	}
+
+	on_destroy = {
+		planet = {
+			save_event_target_as = ac_manipulation_network_destroyed_planet
+		}
+		planet.owner = {
+			# If they don't have another planet with another Manipulationn Network (built by anyone, not just that megacorp) then remove the modifier
+			if = {
+				limit = {
+					NOT = {
+						any_owned_planet = {
+							NOT = {
+								is_same_value = event_target:ac_manipulation_network_destroyed_planet
+							}
+							has_branch_office = yes
+							has_holding = {
+								holding = holding_ac_manipulation_network
+							}
+						}
+					}
+				}
+				remove_modifier = ac_manipulation_network_modifier
+			}
+		}
+	}
+
 	ai_weight = {
 		weight = 2
 		modifier = {
