@@ -14,7 +14,7 @@
   gov_ac_genetic_imperial_perfect_desc:0 "$auth_ac_genetic_imperial_perfect_desc$"
   HT_AC_CLONED_EMPEROR:0 "Cloned Heir"
   HT_AC_CLONED_EMPRESS:0 "Cloned Heiress"
-  auth_ac_genetic_imperial_perfect_effects:0 "- £leader£ Cloned heirs gain additional traits"
+  auth_ac_genetic_imperial_perfect_effects:0 "£leader£ Cloned Heirs gain Additional Traits"
   councilor_ruler_imperial_ac_genetic:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_genetic_desc:0 "$imperial_ruler_desc$"
 # Genetic Imperial Chaotic
@@ -35,7 +35,7 @@
   concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic_desc:0 "$auth_ac_genetic_dictatorial_chaotic_desc$"
-  auth_ac_genetic_dictatorial_chaotic_effects:0 "- £leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! leader trait\n- On Ruler death, grants £unity£ §YUnity§! and §RKills Random Leaders§!"
+  auth_ac_genetic_dictatorial_chaotic_effects:0 "£leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! Trait\nOn Ruler Death, Gains £unity£ §YUnity§! and §RKills Random Leaders§!"
 # Genetic Oligarchic Perfect
   auth_ac_genetic_oligarchic_perfect:0 "Oligarchic Geniocracy"
   auth_ac_genetic_oligarchic_perfect_desc:0 "The intelligent brought about the future of the past, and it is in them that we invest our resources to bring the future of the now into reality."
@@ -48,14 +48,14 @@
   concept_auth_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic:0 "$auth_ac_genetic_oligarchic_chaotic$"
   gov_ac_genetic_oligarchic_chaotic_desc:0 "$auth_ac_genetic_oligarchic_chaotic_desc$"
-  auth_ac_genetic_oligarchic_chaotic_effects:0 "- New leaders have a §Y50%§! Chance to gain a §GMutant§! Trait along with an additional §RNegative§! Trait."
+  auth_ac_genetic_oligarchic_chaotic_effects:0 "New Leaders have a §Y50%§! Chance to gain a §GMutant§! Trait along with an Additional §RNegative§! Trait."
 # Genetic Democratic Perfect
   auth_ac_genetic_democratic_perfect:0 "Democratic Hyperequality"
   auth_ac_genetic_democratic_perfect_desc:0 "All are equal in genetics, granting perfect equality as all hvae an equal chance to thrive."
   concept_auth_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect:0 "$auth_ac_genetic_democratic_perfect$"
   gov_ac_genetic_democratic_perfect_desc:0 "$auth_ac_genetic_democratic_perfect_desc$"
-  auth_ac_genetic_democratic_perfect_effects:0 "- Gains £unity£ §YUnity§! from assimilating §Y£pop£ Pops§!"
+  auth_ac_genetic_democratic_perfect_effects:0 "Gains £unity£ §YUnity§! when Assimilating §Y£pop£ Pops§!"
 # Genetic Democratic Chaotic
   auth_ac_genetic_democratic_chaotic:0 "Democratic Expressionism"
   auth_ac_genetic_democratic_chaotic_desc:0 "Genetic modification grant all the freedom to live in their desired form. This government recognizes those rights and encourages all to be as they wish."
@@ -68,6 +68,7 @@
   concept_auth_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect_desc:0 "$auth_ac_genetic_corporate_perfect_desc$"
+  auth_ac_genetic_corporate_perfect_effects:0 "Leader $r_energy$ Upkeep: §R+2§!"
 # Genetic Corporate Chaotic
   auth_ac_genetic_corporate_chaotic:0 "Corporate Darwinism"
   auth_ac_genetic_corporate_chaotic_desc:0 "Only in competition is there innovatation. The corporation is split into various factions, all competing for dominance."
@@ -75,10 +76,7 @@
   concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
-  policy_ac_darwin_focus:0 "..."
-  policy_ac_darwin_focus_desc:0 "..."
-  # flag and policy choice local needed...
-  auth_ac_genetic_corporate_chaotic_effects:0 "$AVAILABLE_POLICIES$ §Y$policy_ac_darwin_focus$§!"
+  # auth_ac_genetic_corporate_chaotic_effects:0 "$AVAILABLE_POLICIES$ §Y$policy_ac_darwin_focus$§!"
 
 ## Events
   ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables have changed
@@ -293,7 +291,7 @@
   edict_ac_natural_eugenics_desc:0 "Through war, our weak are naturally eliminated from succession, building an ultimate genetic citizen of the future."
   concept_edict_ac_natural_eugenics:0 "$edict_ac_natural_eugenics$"
   unlock_edict_ac_natural_eugenics:0 "$unlock_edict_tt$ ['concept_edict_ac_natural_eugenics']"
-  edict_ac_natural_eugenics_effect:0 "Gain £society_research£ $society_research$ every time an Organic Army is Killed or Lost"
+  edict_ac_natural_eugenics_effect:0 "Gain §Y£society_research£ $society_research$§! every time an Organic Army is Killed or Lost"
 
 # Oligarchic
   edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
@@ -340,7 +338,7 @@
   gov_ac_psionic_imperial_eldritch_desc:0 "$auth_ac_psionic_imperial_eldritch_desc$"
   councilor_ruler_imperial_ac_psionic_eldritch:0 "$imperial_ruler$"
   councilor_ruler_imperial_ac_psionic_eldritch_desc:0 "$imperial_ruler_desc$"
-  auth_ac_psionic_imperial_eldritch_effects:0 "- £leader£ Rulers gains a Trait from the ['concept_ac_vessel_traits'] depending on our Covenant"
+  auth_ac_psionic_imperial_eldritch_effects:0 "£leader£ Rulers Gain a Trait from the ['concept_ac_vessel_traits'] Depending on our Covenant"
   concept_ac_vessel_traits: "Shroud Vessel Traits"
   concept_ac_vessel_traits_desc: "- ['trait:leader_trait_ac_composer_vessel']\n- ['trait:leader_trait_ac_whisperers_vessel']\n- ['trait:leader_trait_ac_eater_vessel']\n- ['trait:leader_trait_ac_instrument_vessel']\n- ['trait:leader_trait_ac_end_vessel']"
 
@@ -376,7 +374,7 @@
   auth_ac_psionic_oligarchic_eldritch:0 "Oligarchic Cult"
   auth_ac_psionic_oligarchic_eldritch_desc:0 "Our patrons are deities of the Shroud. We will treat them as such."
   concept_auth_ac_psionic_oligarchic_eldritch:0 "$auth_ac_psionic_oligarchic_eldritch$"
-  auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\n- Provides varied benefits based on Shroud Covenant"
+  auth_ac_psionic_oligarchic_eldritch_effects:0 "$unlocks_ac_ac_shroud_invocation$\nProvides Varied Benefits based on Shroud Covenant"
 
   auth_ac_psionic_oligarchic_eldritch_composer:0 "$auth_ac_psionic_oligarchic_eldritch$"
   auth_ac_psionic_oligarchic_eldritch_composer_desc:0 "The Composer of Strands has gifted us with wonderful abilities. To be shaped by the Composer is the greatest blessing, regardless of the outcome."
@@ -420,7 +418,7 @@
   gov_ac_psionic_democratic_eldritch_desc:0 "$auth_ac_psionic_democratic_eldritch_desc$"
 # Psionic Corporate Divine
   auth_ac_psionic_corporate_divine:0 "Corporate Precognition"
-  auth_ac_psionic_corporate_divine_desc:0 "Sections of precogs analysize the branches offices of tomorrow, ensuring future prospects are designed for optimal ROI."
+  auth_ac_psionic_corporate_divine_desc:0 "Sections of precogs analysize the branches offices of tomorrow, ensuring future prospects are designed for optimal return on investment."
   concept_auth_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine:0 "$auth_ac_psionic_corporate_divine$"
   gov_ac_psionic_corporate_divine_desc:0 "$auth_ac_psionic_corporate_divine_desc$"
@@ -707,7 +705,7 @@
   concept_auth_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic:0 "$auth_ac_genetic_hive_chaotic$"
   gov_ac_genetic_hive_chaotic_desc:0 "$auth_ac_genetic_hive_chaotic_desc$"
-  auth_ac_genetic_hive_chaotic_effects:0 "- Creates Relic: §Y$r_ac_assimilation_engine$§!"
+  auth_ac_genetic_hive_chaotic_effects:0 "Creates Relic: §Y$r_ac_assimilation_engine$§!"
   ac_assimilation_engine_passive_tooltip: "For every §Y20§! Assimilated §Y£pop£ Pops§!:$NEW_LINE$§Y$mod_BIOLOGICAL_species_trait_points_add$:§! §G+1§!\n\n§ECurrent Effects:§!"
   ac_assimilation_engine_activation_tooltip: "Grants §G50§! §Y£society_research£ $society_research$§! for every Assimilated §Y£pop£ Pop§!:\n"
 

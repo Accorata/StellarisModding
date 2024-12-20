@@ -132,6 +132,8 @@ civic_telepathic_corporation = {
 }
 
 civic_doomseekers = {
+	# temporary icon to avoid error
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
 	potential = {
 		ethics = {
 			NOT = {

@@ -81,14 +81,7 @@ auth_democratic = {
 			pop_citizen_happiness = 0.2
 			planet_pops_upkeep_mult = 0.1
 			planet_immigration_pull_mult = 0.25
-		}
-		triggered_modifier = {
-			#needs testing still
-			potential = {
-				always = yes
-			}
-			country_unity_produces_mult = 0.05
-			mult = value:ac_species_in_empire_max_5
+			# ...
 		}
 	}
 }
@@ -598,6 +591,10 @@ auth_corporate = {
 			living_standard_trade_value_rulers_add = 3
 			election_term_years_mult = 1
 			leader_lifespan_add = 20
+			custom_tooltip = auth_ac_genetic_corporate_perfect_effects
+			show_only_custom_tooltip = no
+		}
+		hidden_modifier = {
 			leader_commanders_energy_upkeep_add = 2
 			leader_scientists_energy_upkeep_add = 2
 			leader_officials_energy_upkeep_add = 2

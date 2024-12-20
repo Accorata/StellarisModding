@@ -1,3 +1,9 @@
 trait_bg_ac_mutant = {
-	color = { 73 195 133 255 }
+	# color = { 73 195 133 255 }
+	color = {
+		30
+		105
+		67
+		255
+	}
 }

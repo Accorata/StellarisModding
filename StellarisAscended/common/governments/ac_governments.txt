@@ -340,7 +340,7 @@ gov_ac_psi_teacher_dictatorship = {
 # Psionic Teacher Oligarchy
 gov_ac_psi_teacher_oligarchy = {
 	ruler_title = RT_HIGH_PRIEST
-	ruler_title_female = RT_HIGH_PRIEST_FEMALE
+	ruler_title_female = RT_HIGH_PRIESTESS
 
 	possible = {
 		has_country_flag = ac_psi_teacher_advanced_government

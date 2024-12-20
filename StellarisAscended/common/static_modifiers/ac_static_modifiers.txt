@@ -146,4 +146,5 @@ ac_manipulation_network_modifier = {
 }
 
 # ac_despotic_eugenics = {
-#  Governmental ethics attraction - from Killing relatives for Kr
+#  Governmental ethics attraction - from Killing relatives for Kratocracy event
+# }

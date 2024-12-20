@@ -1,4 +1,6 @@
 civic_sovereign_circuitry = {
+	# temporary icon to avoid error
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
 	potential = {
 		ethics = {
 			NOT = {

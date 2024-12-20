@@ -66,6 +66,16 @@ is_ac_cyberhive = {
 	has_tradition = tr_cybernetics_finish
 }
 
+#this = species, from = country
+can_modify_ac_hive_digital_trait = {
+	hidden_trigger = {
+		exists = from
+	}
+	from = {
+		is_ac_cyberhive = yes
+	}
+}
+
 is_ac_cybermachine = {
 	has_valid_civic = civic_uploaded_mind
 	has_tradition = tr_cybernetics_assimilator_finish

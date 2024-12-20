@@ -31,12 +31,18 @@ r_ac_assimilation_engine = {
 
 	active_effect = {
 		custom_tooltip = "ac_assimilation_engine_activation_tooltip"
-		show_only_custom_tooltip = no
+		# show_only_custom_tooltip = no
 		add_resource = {
 			society_research = 50
 			mult = value:ac_num_assimilation_engine
 		}
 		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
 	}
 
 	# Possible check for activation

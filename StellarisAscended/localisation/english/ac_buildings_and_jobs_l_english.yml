@@ -14,8 +14,11 @@
 
   job_ac_cybergladiator_drone:0 "Gladiator Drone"
   job_ac_cybergladiator_drone_plural:0 "Gladiator Drones"
+  job_ac_cybergladiator_drone_desc:0 "..."
   # ...
   job_ac_cybergladiator_drone_effect_desc:0 "..."
+  mod_job_ac_cybergladiator_drone_add:0 "$job_ac_cybergladiator_drone$ Jobs" # icon needed
+
   planet_ac_cybergladiator_drone:0 "$job_ac_cybergladiator_drone_plural$"
 
 # Synthetic

@@ -183,6 +183,13 @@ civic_concurrent_command = {
 			army_damage_mult = 0.05
 			mult = value:ac_effective_ruler_level
 		}
+		# test below:
+		triggered_country_modifier = {
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
+		}
 	}
 }
 

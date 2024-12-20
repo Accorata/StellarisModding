@@ -648,10 +648,10 @@ trait_ac_hive_digital = {
 		LITHOID
 	}
 	species_potential_add = {
-		is_ac_cyberhive = yes
+		can_modify_ac_hive_digital_trait = yes
 	}
 	species_possible_remove = {
-		is_ac_cyberhive = no
+		can_modify_ac_hive_digital_trait = no
 	}
 	modifier = {
 		habitability_floor_add = 0.15

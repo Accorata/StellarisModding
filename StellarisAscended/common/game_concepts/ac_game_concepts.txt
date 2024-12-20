@@ -112,6 +112,11 @@ concept_edict_ac_handicap_distribution = {
 	tooltip_override = "edict:ac_handicap_distribution"
 }
 
+concept_edict_ac_awoken_council = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_awoken_council"
+}
+
 # Psionic Authorities
 concept_auth_ac_psionic_imperial_divine = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_imperial_divine_35x35.dds"
