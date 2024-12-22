@@ -140,8 +140,12 @@ ac_psychic_shields = {
 }
 
 # Other
+ac_modification_unity_cooldown = {
+	# game concept for cooldown icon likely needed
+}
+
 ac_manipulation_network_modifier = {
-	branch_office_value_mult = 0.25 # Needs testing...
+	branch_office_value_mult = 0.25	# Needs testing...
 	planet_pops_consumer_goods_upkeep_mult = 0.25
 }
 

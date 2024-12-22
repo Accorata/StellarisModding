@@ -1244,6 +1244,39 @@ planet_event = {
 	}
 }
 
+# Unity on modifying population
+country_event = {
+	id = ascension_governments.48
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+		NOT = {
+			has_modifier = ac_modification_unity_cooldown
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ac_modification_unity_cooldown
+				}
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			add_modifier = {
+				modifier = ac_modification_unity_cooldown
+				days = 360
+			}
+		}
+	}
+}
+
 # Oligarchic Final Event
 # Fired by: event
 country_event = {
@@ -1336,11 +1369,9 @@ country_event = {
 	id = ascension_governments.47
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		has_country_flag = ac_genetic_chaotic
 	}
-
 	immediate = {
 		owner = {
 			every_owned_leader = {
@@ -1783,21 +1814,18 @@ country_event = {
 }
 
 ### Genetic Hive ###
-
 # On receiving relic - sets initial Assimilation Engine variable
 country_event = {
 	id = ascension_governments.101
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		last_received_relic = r_ac_assimilation_engine
 	}
-
 	immediate = {
 		set_variable = {
 			which = ac_num_assimilation_engine
-			value = 20 # maybe a test
+			value = 20			# maybe a test
 		}
 	}
 }
@@ -2396,7 +2424,8 @@ country_event = {
 			factor = 1
 		}
 	}
-	option = { # Pharma State
+	option = {
+		# Pharma State
 		# Eldritch
 		name = ascension_governments.1011.d
 		custom_tooltip = ac_psionic.social_consequences.tt
@@ -2416,7 +2445,6 @@ country_event = {
 			factor = 5
 		}
 	}
-	
 	after = {
 		hidden_effect = {
 			country_event = {
@@ -2694,20 +2722,16 @@ country_event = {
 		room = shroud_room
 	}
 	is_triggered_only = yes
-
 	immediate = {
 		set_country_flag = shroud_diplomacy_engaged
 	}
-
 	option = {
 		# Eldritch
 		name = ascension_governments.1021.a
 		custom_tooltip = ac_psionic.social_consequences.tt
-
 		add_modifier = {
 			modifier = ac_pact_of_the_harrower
 		}
-
 		hidden_effect = {
 			change_variable = {
 				which = "ac_psionic_eldritch_society"
@@ -2764,11 +2788,9 @@ country_event = {
 	id = ascension_governments.1022
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		has_modifier = ac_pact_of_the_harrower
 	}
-
 	immediate = {
 		create_fleet = {
 			name = "NAME_Psionic_Avatar"
@@ -2810,7 +2832,6 @@ country_event = {
 			num_fleets > 0
 		}
 	}
-
 	option = {
 		name = ascension_governments.1023.a
 		custom_tooltip = ac_madness_leaders.tt
@@ -2840,7 +2861,8 @@ country_event = {
 					33 = {
 						add_trait = leader_trait_ac_visions_of_doom
 					}
-					66 = { }
+					66 = {
+					}
 				}
 			}
 		}
@@ -2860,7 +2882,6 @@ country_event = {
 	location = from
 	event_chain = ac_psionic_shock_chain
 	is_triggered_only = yes
-
 	option = {
 		# Divine
 		name = ascension_governments.1024.a
@@ -2869,27 +2890,41 @@ country_event = {
 			event_chain = ac_kill_horror_chain
 			target = this
 		}
-		# random_fleet = {
-		# 	limit = {
-		# 		exists = owner
-		# 		owner = {
-		# 			is_country_type = guardian_horror
-		# 		}
-		# 	}
-		# 	# create_point_of_interest = {
-		# 	# 	id = ac_horror_poi
-		# 	# 	name = ac_horror_poi_title
-		# 	# 	desc = ac_horror_poi_desc
-		# 	# 	event_chain = ac_kill_horror_chain
-		# 	# 	location = this
-		# 	# }
-		# }	
-		# hidden_effect = {
-		# 	change_variable = {
-		# 		which = "ac_psionic_divine_society"
-		# 		value = 1
-		# 	}
-		# }
+		capital_scope = {
+			closest_system = {
+				min_steps = 0
+				max_steps = 999
+				limit = {
+					any_fleet_in_system = {
+						exists = owner
+						owner = {
+							is_country_type = guardian_horror
+						}
+					}
+				}
+				random_ship_in_system = {
+					limit = {
+						exists = owner
+						owner = {
+							is_country_type = guardian_horror
+						}
+					}
+					create_point_of_interest = {
+						id = ac_horror_poi
+						name = ac_horror_poi_title
+						desc = ac_horror_poi_desc
+						event_chain = ac_kill_horror_chain
+						location = this
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -2924,7 +2959,6 @@ country_event = {
 			factor = 1
 		}
 	}
-	
 	after = {
 		hidden_effect = {
 			country_event = {
@@ -2936,90 +2970,88 @@ country_event = {
 	}
 }
 
-# # If Horror Destroyed Fire Silent Dreams Event
-# country_event = {
-# 	id = ascension_governments.1025
-# 	hide_window = yes
+# If Horror Destroyed Fire Silent Dreams Event
+country_event = {
+	id = ascension_governments.1025
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		is_country_type = guardian_horror
+		OR = {
+			has_country_flag = dimensional_horror_country
+			has_country_flag = eldritch_horror_country
+		}
+		FROMFROM = {
+			is_ship_size = dimensional_horror
+		}
+	}
+	immediate = {
+		# Fire Silent Dreams Event if killing empire choose to hunt the Horror
+		FROM = {
+			if = {
+				limit = {
+					has_event_chain = ac_kill_horror_chain
+					has_country_flag = ac_horror_caused_insanity
+				}
+				country_event = {
+					id = ascension_governments.1026
+					days = 2
+				}
+			}
+		}
+	}
+}
 
-# 	fire_only_once = yes
-# 	is_triggered_only = yes
-
-# 	trigger = {
-# 		is_country_type = guardian_horror
-# 		OR = {
-# 			has_country_flag = dimensional_horror_country
-# 			has_country_flag = eldritch_horror_country
-# 		}
-# 		FROMFROM = { is_ship_size = dimensional_horror }
-# 	}
-
-# 	immediate = {
-# 		# Fire Silent Dreams Event if killing empire choose to hunt the Horror
-# 		FROM = {
-# 			if = {
-# 				limit = {
-# 					has_event_chain = ac_kill_horror_chain
-# 					has_country_flag = ac_horror_caused_insanity
-# 				}
-# 				country_event = {
-# 					id = ascension_governments.1026
-# 					days = 2
-# 				}
-# 			}
-# 		}
-# 	}
-# }
-
-# country_event = {
-# 	# Silent Dreams
-# 	id = ascension_governments.1026
-# 	title = ascension_governments.1026.name
-# 	desc = ascension_governments.1026.desc
-# 	picture = GFX_evt_unspeakable_horror # change
-# 	show_sound = event_cityscape
-# 	location = from
-# 	event_chain = ac_kill_horror_chain
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		has_country_flag = ac_horror_caused_insanity
-# 	}
-
-# 	option = {
-# 		name = ascension_governments.1026.a
-# 		custom_tooltip = ac_sane_leaders
-# 		add_monthly_resource_mult = {
-# 			resource = unity
-# 			value = @tier3unityreward
-# 			min = @tier3unitymin
-# 			max = @tier3unitymax
-# 		}
-# 		tooltip = {
-# 			end_event_chain = ac_kill_horror_chain
-# 		}
-# 		hidden_effect = {
-# 			# Restore Sanity
-# 			every_owned_leader = {
-# 				limit = {
-# 					has_trait = leader_trait_ac_visions_of_doom
-# 				}
-# 				remove_trait = leader_trait_ac_visions_of_doom
-# 				add_trait = leader_trait_ac_restored_sanity
-# 			}
-# 			# End Killing Insanity Chain
-# 			every_country = {
-# 				limit = {
-# 					is_country_type = default
-# 					has_event_chain = ac_kill_horror_chain
-# 				}
-# 				remove_point_of_interest = ac_horror_poi
-# 				end_event_chain = ac_kill_horror_chain
-# 			}
-# 		}
-# 		ai_chance = {
-# 			factor = 1
-# 		}
-# 	}
-# }
+country_event = {
+	# Silent Dreams
+	id = ascension_governments.1026
+	title = ascension_governments.1026.name
+	desc = ascension_governments.1026.desc
+	picture = GFX_evt_unspeakable_horror	# change
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_kill_horror_chain
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_horror_caused_insanity
+	}
+	option = {
+		name = ascension_governments.1026.a
+		custom_tooltip = ac_sane_leaders
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		tooltip = {
+			end_event_chain = ac_kill_horror_chain
+		}
+		hidden_effect = {
+			# Restore Sanity
+			every_owned_leader = {
+				limit = {
+					has_trait = leader_trait_ac_visions_of_doom
+				}
+				remove_trait = leader_trait_ac_visions_of_doom
+				add_trait = leader_trait_ac_restored_sanity
+			}
+			# End Killing Insanity Chain
+			every_country = {
+				limit = {
+					is_country_type = default
+					has_event_chain = ac_kill_horror_chain
+				}
+				remove_point_of_interest = ac_horror_poi
+				end_event_chain = ac_kill_horror_chain
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
 
 # Ending
 # Fired by: event
@@ -3482,12 +3514,11 @@ country_event = {
 						has_trait = leader_trait_ac_end_vessel
 					}
 					ROOT = {
-						has_country_flag = composer_covenant_confirmed 
+						has_country_flag = composer_covenant_confirmed
 					}
 				}
 				add_trait = leader_trait_ac_composer_vessel
 			}
-
 			# Eater
 			if = {
 				limit = {
@@ -3498,13 +3529,12 @@ country_event = {
 						has_trait = leader_trait_ac_whisperers_vessel
 						has_trait = leader_trait_ac_end_vessel
 					}
-					ROOT = { 
-						has_country_flag = eater_covenant_confirmed 
+					ROOT = {
+						has_country_flag = eater_covenant_confirmed
 					}
 				}
 				add_trait = leader_trait_ac_eater_vessel
 			}
-
 			# Instrument
 			if = {
 				limit = {
@@ -3515,13 +3545,12 @@ country_event = {
 						has_trait = leader_trait_ac_whisperers_vessel
 						has_trait = leader_trait_ac_end_vessel
 					}
-					ROOT = { 
-						has_country_flag = instrument_covenant_confirmed 
+					ROOT = {
+						has_country_flag = instrument_covenant_confirmed
 					}
 				}
 				add_trait = leader_trait_ac_instrument_vessel
 			}
-
 			# Whisperers
 			if = {
 				limit = {
@@ -3532,13 +3561,12 @@ country_event = {
 						has_trait = leader_trait_ac_whisperers_vessel
 						has_trait = leader_trait_ac_end_vessel
 					}
-					ROOT = { 
-						has_country_flag = whisperers_covenant_confirmed 
+					ROOT = {
+						has_country_flag = whisperers_covenant_confirmed
 					}
 				}
 				add_trait = leader_trait_ac_whisperers_vessel
 			}
-
 			# End of the Cycle
 			if = {
 				limit = {
@@ -3549,8 +3577,8 @@ country_event = {
 						has_trait = leader_trait_ac_whisperers_vessel
 						has_trait = leader_trait_ac_end_vessel
 					}
-					ROOT = { 
-						has_country_flag = covenant_end_of_the_cycle 
+					ROOT = {
+						has_country_flag = covenant_end_of_the_cycle
 					}
 				}
 				add_trait = leader_trait_ac_end_vessel

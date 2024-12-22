@@ -177,6 +177,36 @@ ac_handicap_distribution = {
 	}
 }
 
+ac_genetic_freedoms = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		pop_ethic_egalitarian_attraction_mult = 0.1
+		modify_species_cost_mult = -0.35
+		auto_mod_monthly_add = -2
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_awoken_council = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
@@ -203,7 +233,7 @@ ac_awoken_council = {
 	allow = {
 	}
 	ai_weight = {
-		weight = 100
+		weight = 1
 	}
 }
 
@@ -262,7 +292,7 @@ ac_aligned_desires = {
 			always = yes
 		}
 		council_agenda_progress_speed = 0.25
-		leaders_upkeep_mult = 0.10
+		leaders_upkeep_mult = 0.1
 		mult = value:ac_democratic_insanity_empire_size
 	}
 	allow = {
@@ -439,7 +469,7 @@ ac_palace_of_the_intellect = {
 	}
 	modifier = {
 		LEADER_RULER_EXPERIENCE_add = 3
-		resolutions_cost_mult = -0.10
+		resolutions_cost_mult = -0.1
 		envoys_add = 2
 	}
 	allow = {

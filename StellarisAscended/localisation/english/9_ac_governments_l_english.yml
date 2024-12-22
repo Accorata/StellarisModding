@@ -62,21 +62,22 @@
   concept_auth_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic:0 "$auth_ac_genetic_democratic_chaotic$"
   gov_ac_genetic_democratic_chaotic_desc:0 "$auth_ac_genetic_democratic_chaotic_desc$"
+  auth_ac_genetic_democratic_chaotic_effects:0 "Gains £unity£ §YUnity§! when Modifying §YSpecies§!"
+  ac_modification_unity_cooldown:0 "Expressionism Unity Cooldown"
+  ac_modification_unity_cooldown_desc:0 "Modifying species will not give unity until this cooldown has expired."
 # Genetic Corporate Perfect
   auth_ac_genetic_corporate_perfect:0 "Corporate Cryosleep"
   auth_ac_genetic_corporate_perfect_desc:0 "The hegemonic shareholder elite preserve themselves within the peace of cryosleep, emerging only rarely to correct the corpoations focus or lavish in their rule."
   concept_auth_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect:0 "$auth_ac_genetic_corporate_perfect$"
   gov_ac_genetic_corporate_perfect_desc:0 "$auth_ac_genetic_corporate_perfect_desc$"
-  auth_ac_genetic_corporate_perfect_effects:0 "Leader $r_energy$ Upkeep: §R+2§!"
+  auth_ac_genetic_corporate_perfect_effects:0 "$mod_BIOLOGICAL_species_trait_points_add$: §G+1§!\n$mod_living_standard_trade_value_rulers_add$: §G+3§!\n$mod_election_term_years_mult$: §Y+100%§!\n$mod_leader_lifespan_add$: §G+20§!\nLeader $r_energy$ Upkeep: §R+2§!"
 # Genetic Corporate Chaotic
   auth_ac_genetic_corporate_chaotic:0 "Corporate Darwinism"
   auth_ac_genetic_corporate_chaotic_desc:0 "Only in competition is there innovatation. The corporation is split into various factions, all competing for dominance."
-  # +1 research option, -10% unity, increased specialist output?/upkeep decreased (or maybe both by 15%), ...
   concept_auth_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic:0 "$auth_ac_genetic_corporate_chaotic$"
   gov_ac_genetic_corporate_chaotic_desc:0 "$auth_ac_genetic_corporate_chaotic_desc$"
-  # auth_ac_genetic_corporate_chaotic_effects:0 "$AVAILABLE_POLICIES$ §Y$policy_ac_darwin_focus$§!"
 
 ## Events
   ac_genetic.social_consequences.tt: "Influences the ongoing §YGenetic Society Shift§!.\n\n" # Standard tooltip to indicate that the Perfected/Chaotic focus variables have changed
@@ -120,7 +121,7 @@
   ascension_governments.6.a: "Cryonics will generate a promising ROI."
   ascension_governments.6.a.tt: "Emphasis on lifespans and living standards."
   ascension_governments.6.b: "Competition breeds innovation."
-  ascension_governments.6.b.tt: "Emphasis on specialized policy."
+  ascension_governments.6.b.tt: "Emphasis on specialists and branch offices."
 
 # Event Pool 1
   ascension_governments.9.name: "Preserved Loved Ones"
@@ -212,7 +213,7 @@
   ascension_governments.32.a: "We are one. One species where all can equally thrive."
   ascension_governments.32.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_perfect']\n$unlock_edict_ac_handicap_distribution$"
   ascension_governments.32.b: "Our bodies are bound only by our imaginations."
-  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_self_preservation_override$" # edicts to be changed
+  ascension_governments.32.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_democratic_chaotic']\n$unlock_edict_ac_genetic_freedoms$"
   ascension_governments.32.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.32.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
 
@@ -259,12 +260,12 @@
 
 # Corporate
   ascension_governments.36.name: "Evolving Profits"
-  ascension_governments.36.desc.perfect: "With the introduction of cryosleep as an effective method for sustaining life, our top executives can be preserved within chambers decanted as necessary. This extenstion of life will guarantee better futures for our shareholders both in health and riches as our CEOs stand the test of life and are able to provide their profitable insights for extebded periods."
-  ascension_governments.36.desc.chaotic: "..."
-  ascension_governments.36.desc.neutral: "..."
+  ascension_governments.36.desc.perfect: "With the introduction of cryosleep as an effective method for sustaining life, our top executives can be preserved within chambers and decanted when needed. This extenstion of life will guarantee better futures for our shareholders both in health and riches as our CEOs stand the test of time to provide their profitable insights for extended periods."
+  ascension_governments.36.desc.chaotic: "With the seperate of the megacorp into competing branches, specialty interests can be pursued once more. Each individual branch will focus on their desired profits and through competition will the best practices be promoted and the weakest eliminated. The creed of evolution runs deep within us."
+  ascension_governments.36.desc.neutral: "Genetic ascendency has revolutionized the corporate hegemony, but now pulls us in different directions. With the dawn of cryosleep, our administrative structure could be reformed around this invention, preserving our most effective councilors and upper classes. However others worry this would stagnate our innovation, and look to the process of evolution as a model for corporate success. They propose our corporation should be fragmented into various competitors to ensure adaptable and diverse approaches. Finally, some wish to remain as is without jeopardizing current investments."
   ascension_governments.36.a: "Long live the elite."
   ascension_governments.36.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_perfect']\n$unlock_edict_ac_awoken_council$"
-  ascension_governments.36.b: "..."
+  ascension_governments.36.b: "Competition breeds growth."
   ascension_governments.36.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_corporate_chaotic']\n$unlock_edict_ac_harvest_genetic_failures$" #change
   ascension_governments.36.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.36.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
@@ -306,6 +307,11 @@
   concept_edict_ac_handicap_distribution:0 "$edict_ac_handicap_distribution$"
   unlock_edict_ac_handicap_distribution:0 "$unlock_edict_tt$['concept_edict_ac_handicap_distribution']"
   edict_ac_handicap_distribution_effect:0 "Every year, §Y1§! to §Y3§! Organic Pops on each Planet are Assimilated to our Main Species."
+
+  edict_ac_genetic_freedoms:0 "Genetic Freedoms"
+  edict_ac_genetic_freedoms_desc:0 "Laws ensure that no one must conform to phenotype standards and discrimination against genetic variation is outlawed. Additionally, government efforts are directed towards genetic diversity research so all may transform their bodies as they wish."
+  concept_edict_ac_genetic_freedoms:0 "$edict_ac_genetic_freedoms$"
+  unlock_edict_ac_genetic_freedoms:0 "$unlock_edict_tt$['concept_edict_ac_genetic_freedoms']"
 
 # Corporate
   edict_ac_awoken_council:0 "Awoken Council"

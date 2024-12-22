@@ -2,7 +2,6 @@ r_ac_assimilation_engine = {
 	activation_duration = @triumph_duration
 	portrait = "GFX_relic_ac_assimilation_engine"
 	sound = "relic_activation_javorian_pox_sample"
-
 	resources = {
 		category = relics
 		# Activation cost
@@ -10,13 +9,10 @@ r_ac_assimilation_engine = {
 			unity = @activation_cost
 		}
 	}
-
 	can_be_stolen = no
-
 	ai_weight = {
 		weight = 100
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			is_variable_set = ac_num_assimilation_engine
@@ -26,9 +22,7 @@ r_ac_assimilation_engine = {
 		custom_tooltip = "ac_assimilation_engine_passive_tooltip"
 		show_only_custom_tooltip = no
 	}
-
 	score = 0
-
 	active_effect = {
 		custom_tooltip = "ac_assimilation_engine_activation_tooltip"
 		# show_only_custom_tooltip = no
@@ -44,7 +38,6 @@ r_ac_assimilation_engine = {
 			}
 		}
 	}
-
 	# Possible check for activation
 	possible = {
 		inline_script = {

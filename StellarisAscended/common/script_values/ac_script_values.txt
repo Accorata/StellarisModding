@@ -1,9 +1,9 @@
 ac_effective_ruler_level = {
 	complex_trigger_modifier = {
- 		trigger = has_level
- 		trigger_scope = ruler
- 		mode = add
- 	}
+		trigger = has_level
+		trigger_scope = ruler
+		mode = add
+	}
 	add = modifier:ruler_skill_add
 	add = modifier:councilor_skill_add
 }
@@ -49,7 +49,7 @@ ac_districts_arcology_jobs = {
 		parameters = {
 			type = $TYPE$
 		}
-		mult = $FACTOR$ # 2
+		mult = $FACTOR$		# 2
 		mode = add
 	}
 }

@@ -78,6 +78,17 @@ on_heir_promoted_to_ruler = {
 	}
 }
 
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+		ascension_governments.48		# Unity on modifying species for Democratic Expression
+	}
+}
+
 on_monthly_pulse_country = {
 	events = {
 		ascension_civics.201		# Increase doomseeker variable to spawn avatars

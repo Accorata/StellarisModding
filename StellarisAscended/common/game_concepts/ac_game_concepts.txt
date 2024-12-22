@@ -112,6 +112,11 @@ concept_edict_ac_handicap_distribution = {
 	tooltip_override = "edict:ac_handicap_distribution"
 }
 
+concept_edict_ac_genetic_freedoms = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_genetic_freedoms"
+}
+
 concept_edict_ac_awoken_council = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_awoken_council"

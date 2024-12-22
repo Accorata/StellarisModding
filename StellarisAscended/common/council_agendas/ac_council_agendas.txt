@@ -8,7 +8,6 @@ ac_shroud_invocation = {
 		is_oligarchic_authority = yes
 		has_country_flag = ac_psionic_eldritch
 	}
-
 	modifier = {
 		planet_psionic_jobs_produces_mult = 0.05
 	}

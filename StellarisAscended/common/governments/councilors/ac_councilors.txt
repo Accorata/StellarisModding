@@ -329,7 +329,7 @@ councilor_hyper_diversification = {
 	civic = civic_hyper_diversification
 	modifier = {
 		category_biology_research_speed_mult = 0.05
-		category_biology_draw_chance_mult = 0.10
+		category_biology_draw_chance_mult = 0.1
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

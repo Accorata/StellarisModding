@@ -1,4 +1,5 @@
 namespace = ascension_civics
+# Mod compatability check
 event = {
 	id = ascension_civics.1
 	hide_window = yes
@@ -665,7 +666,6 @@ planet_event = {
 					which = ac_nanite_robots_assembled
 					value = 5
 				}
-	
 				capital_scope = {
 					create_pop = {
 						species = owner_main_species
@@ -717,7 +717,7 @@ country_event = {
 	}
 	immediate = {
 		remove_country_flag = ac_shroud_renounced
-		remove_country_flag = has_shroud_patron	# Allows for you to get a new patron
+		remove_country_flag = has_shroud_patron		# Allows for you to get a new patron
 	}
 }
 
@@ -772,7 +772,6 @@ country_event = {
 		}
 	}
 }
-
 
 # testing event
 planet_event = {
