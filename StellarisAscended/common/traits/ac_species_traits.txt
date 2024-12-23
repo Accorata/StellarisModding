@@ -2,7 +2,7 @@
 trait_ac_auto_mod_robotic = {
 	cost = 2
 	auto_mod = yes
-	category = ac_robotic
+	category = advanced_genetic
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
@@ -29,7 +29,7 @@ trait_ac_auto_mod_robotic = {
 
 trait_ac_robot_power_drills = {
 	cost = 2
-	category = ac_robotic
+	category = advanced_genetic
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
@@ -69,7 +69,7 @@ trait_ac_robot_power_drills = {
 
 trait_ac_robot_harvesters = {
 	cost = 2
-	category = ac_robotic
+	category = advanced_genetic
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
@@ -118,7 +118,7 @@ trait_ac_robot_harvesters = {
 
 trait_ac_robot_superconductive = {
 	cost = 2
-	category = ac_robotic
+	category = advanced_genetic
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
@@ -158,7 +158,7 @@ trait_ac_robot_superconductive = {
 
 trait_ac_robot_trading_algorithms = {
 	cost = 2
-	category = ac_robotic
+	category = advanced_genetic
 	forbidden_ethics = {
 		ethic_gestalt_consciousness
 	}
@@ -193,7 +193,7 @@ trait_ac_robot_trading_algorithms = {
 
 trait_ac_robot_emotion_emulators = {
 	cost = 1
-	category = ac_robotic
+	category = advanced_genetic
 	opposites = {
 		"trait_robot_uncanny"
 	}
@@ -222,7 +222,7 @@ trait_ac_robot_emotion_emulators = {
 
 trait_ac_robot_propaganda_machines = {
 	cost = 1
-	category = ac_robotic
+	category = advanced_genetic
 	opposites = {
 		"trait_robot_quarrelsome"
 	}
@@ -260,7 +260,7 @@ trait_ac_robot_propaganda_machines = {
 
 trait_ac_robot_logic_engines = {
 	cost = 2
-	category = ac_robotic
+	category = advanced_genetic
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
@@ -299,7 +299,7 @@ trait_ac_robot_logic_engines = {
 trait_ac_auto_mod_biological = {
 	cost = 2
 	auto_mod = yes
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -327,7 +327,7 @@ trait_ac_auto_mod_biological = {
 
 trait_ac_bio_industrious = {
 	cost = 2
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -368,6 +368,7 @@ trait_ac_bio_industrious = {
 
 trait_ac_bio_agrarian = {
 	cost = 2
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -408,7 +409,7 @@ trait_ac_bio_agrarian = {
 
 trait_ac_bio_ingenious = {
 	cost = 2
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -449,7 +450,7 @@ trait_ac_bio_ingenious = {
 
 trait_ac_bio_thrifty = {
 	cost = 2
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -492,7 +493,7 @@ trait_ac_bio_thrifty = {
 
 trait_ac_bio_charismatic = {
 	cost = 2
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -519,7 +520,7 @@ trait_ac_bio_charismatic = {
 
 trait_ac_bio_traditional = {
 	cost = 1
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -560,7 +561,7 @@ trait_ac_bio_traditional = {
 
 trait_ac_bio_intelligent = {
 	cost = 2
-	category = ac_biological
+	category = advanced_genetic
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -730,6 +731,15 @@ trait_infectious = {
 	initial = no
 	randomized = no
 	potential_crossbreeding_chance = 0.9
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
@@ -749,6 +759,15 @@ trait_ac_cyberform = {
 	initial = no
 	randomized = no
 	potential_crossbreeding_chance = 1
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID

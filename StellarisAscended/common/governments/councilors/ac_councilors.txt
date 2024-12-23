@@ -267,6 +267,7 @@ councilor_shroud_renouncers = {
 	civic = civic_shroud_renouncers
 	modifier = {
 		planet_stability_add = 2
+		damage_vs_country_type_shroud_spirits_mult = 0.05
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -310,9 +311,9 @@ councilor_xanadu_retreats = {
 		leader_class = official
 	}
 	civic = civic_xanadu_retreats
-	custom_tooltip = councilor_xanadu_retreats_tooltip
+	# custom_tooltip = councilor_xanadu_retreats_tooltip
 	modifier = {
-		planet_jobs_resort_worker_energy_produces_add = 0.5
+		planet_entertainers_energy_produces_add = 0.5
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -456,8 +457,29 @@ councilor_concurrent_command = {
 	civic = civic_concurrent_command
 	modifier = {
 		ruler_skill_add = 0.5
+		empire_size_penalty_mult = -0.025
 	}
 	custom_tooltip = councilor_concurrent_command_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_executive_militarization = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_virtual
+	}
+	civic = civic_concurrent_command
+	modifier = {
+		ruler_skill_add = 0.5
+		spy_network_levels_add = 2
+	}
+	custom_tooltip = councilor_executive_militarization_tooltip
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
 	}

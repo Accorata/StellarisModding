@@ -1695,6 +1695,9 @@ country_event = {
 				has_trait = trait_imperial_heir
 			}
 			remove_trait = trait_imperial_heir
+			# NO LONGER HEIR TOO -> how to change
+			# testing purposes:...
+			# add_trait = leader_trait_ac_composer_vessel
 		}
 	}
 }
@@ -1706,12 +1709,16 @@ leader_event = {
 	is_triggered_only = yes
 	trigger = {
 		owner = {
+			NOT = {
+				has_country_flag = ac_recent_heir
+			}
 			is_imperial_authority = yes
 			has_country_flag = ac_genetic_perfect
 		}
 	}
 	immediate = {
 		owner = {
+			set_country_flag = ac_recent_heir
 			ruler = {
 				save_event_target_as = ruler_to_be_cloned
 			}
@@ -1720,13 +1727,35 @@ leader_event = {
 				set_age = 1
 			}
 			last_created_leader = {
+				#testing...
+				add_trait = leader_trait_ac_end_vessel
 				save_event_target_as = ac_cloned_heir
 			}
 			set_heir = event_target:ac_cloned_heir
+			country_event = {
+				id = ascension_governments.49
+				days = 10
+			}
 		}
-		kill_leader = {
-			show_notification = no
+		root = {
+			kill_leader = {
+				show_notification = no
+			}
 		}
+	}
+}
+
+# Remove recent cloned heir flag after 10 days
+country_event = {
+	id = ascension_governments.49
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_recent_heir
+		has_country_flag = ac_genetic_perfect
+	}
+	immediate = {
+		remove_country_flag = ac_recent_heir
 	}
 }
 
@@ -2792,24 +2821,41 @@ country_event = {
 		has_modifier = ac_pact_of_the_harrower
 	}
 	immediate = {
-		create_fleet = {
-			name = "NAME_Psionic_Avatar"
-			settings = {
-				can_upgrade = no
-				can_change_composition = no
-				can_change_leader = no
-				uses_naval_capacity = no
-				spawn_debris = no
+		if = {
+			limit = {
+				# Might need to be unique per country
+				exists = event_target:ac_avatars_of_time
 			}
-			effect = {
-				set_owner = root
+			event_target:ac_avatars_of_time = {
 				create_ship = {
 					name = "NAME_Avatar"
 					design = "NAME_Shroud_Avatar"
 					prefix = no
 					upgradable = no
 				}
-				set_location = root.capital_scope
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_AC_Harrower_Avatar"
+				settings = {
+					can_upgrade = no
+					can_change_composition = no
+					can_change_leader = no
+					uses_naval_capacity = no
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = "NAME_Avatar"
+						design = "NAME_Shroud_Avatar"
+						prefix = no
+						upgradable = no
+					}
+					set_location = root.capital_scope
+					save_event_target_as = ac_avatars_of_time
+				}
 			}
 		}
 	}
@@ -3018,7 +3064,7 @@ country_event = {
 	}
 	option = {
 		name = ascension_governments.1026.a
-		custom_tooltip = ac_sane_leaders
+		custom_tooltip = ac_sane_leaders.tt
 		add_monthly_resource_mult = {
 			resource = unity
 			value = @tier3unityreward
@@ -3465,7 +3511,7 @@ country_event = {
 	trigger = {
 		is_imperial_authority = yes
 		has_country_flag = ac_psionic_eldritch
-		has_country_flag = has_shroud_patron
+		has_country_flag = has_shroud_patron # not always yet...
 		ruler = {
 			NOR = {
 				has_trait = leader_trait_ac_composer_vessel

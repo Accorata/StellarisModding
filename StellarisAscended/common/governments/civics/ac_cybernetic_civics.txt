@@ -265,8 +265,8 @@ civic_cybergladiators = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 		modifier = {
-			planet_jobs_cyberdome_duelist_engineering_research_produces_add = 3
-			planet_jobs_cyberdome_duelist_unity_produces_add = 3
+			planet_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_cyberdome_duelist_unity_produces_add = 3
 		}
 	}
 }
@@ -313,8 +313,8 @@ civic_underworld_bloodsports = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 		modifier = {
-			planet_jobs_cyberdome_duelist_engineering_research_produces_add = 3
-			planet_jobs_cyberdome_duelist_unity_produces_add = 3
+			planet_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_cyberdome_duelist_unity_produces_add = 3
 		}
 	}
 }

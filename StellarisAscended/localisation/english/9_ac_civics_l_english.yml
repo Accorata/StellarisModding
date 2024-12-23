@@ -18,7 +18,7 @@
   civic_tooltip_bio_replacer_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £energy£ §YEnergy Credits§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n- Can build £building£ §Y$holding_ac_robotics_plant$§! holdings\n\n§EModifiers:§!\n$synthetic_ascension_required$- $mod_country_synthetic_trust_cap_add$: §G+10§!\n- $mod_country_organic_trust_cap_add$: §R-10§!"
   councilor_bio_replacer:0 "Identity Merchant" 
   councilor_bio_replacer_female:0 "$councilor_bio_replacer$"
-  councilor_bio_replacer_desc:0 "..."
+  councilor_bio_replacer_desc:0 "The $TITLE$ promotes the wonderful benefits of synthetic living, advertising those throughout the galaxy to find their new body at one of our many $holding_ac_robotics_plant_plural$!"
   councilor_bio_replacer_custom_modifier_desc:0 "On §YBranch Offices§! with £building£ $holding_ac_robotics_plant_plural$:\n$t$- £mod_branch_office_value_mult£ $MOD_BRANCH_OFFICE_VALUE_MULT$ from $job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon$: §G+2%§!"
 
   casus_belli_cb_ac_bio_upgrades:0 "Synthetic Upgrades"
@@ -51,7 +51,7 @@
 
   civic_world_commissioners:0 "World Commissioners"
   civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future which will yield unprecedented rates of return."
-  councilor_world_commissioners:0 "Marketer of Celestials"
+  councilor_world_commissioners:0 "Head Celestial Marketer"
   councilor_world_commissioners_female:0 "$councilor_world_commissioners$"
   councilor_world_commissioners_desc:0 "The $TITLE$ is ..."
   councilor_world_commissioners_custom_modifier_desc:1 "- £trade_value£ Trade Value from $job_ac_grand_synthesizer_plural_with_icon$: §G+1§!"
@@ -155,7 +155,7 @@
   mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
 
   civic_cybergladiators:0 "Cybergladiators"
-  civic_cybergladiators_desc:0 "...in the alleyways, ..."
+  civic_cybergladiators_desc:0 "In the dark alleyways of this society, cybernetically enhanced warriors risk life and limb to compete for honor, glory, and a quick buck."
   civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   councilor_cybergladiators:0 "Gladiator Champion"
   councilor_cybergladiators_female:0 "$councilor_cybergladiators$"
@@ -197,7 +197,7 @@
   councilor_xanadu_retreats:0 "Executive Resort Manager"
   councilor_xanadu_retreats_female:0 "$councilor_xanadu_retreats$"
   councilor_xanadu_retreats_desc:0 "The $TITLE$ ..."
-  councilor_xanadu_retreats_tooltip:0 "- £energy£ Energy from $job_resort_worker_plural_with_icon$: §G+0.5§!"
+  # councilor_xanadu_retreats_tooltip:0 "- £energy£ Energy from $job_entertainer_plural_with_icon$: §G+0.5§!"
   decision_ac_more_resort_colony:0 "$decision_resort_colony$"
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
@@ -213,7 +213,7 @@
   councilor_hyper_diversification_desc:0 "The $TITLE$ engineers the newest modifications for optimal efficiency. Adaptability mustn't be compromised in specialization."
 
   civic_employee_diversification:0 "Employee Diversification"
-  civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employee return on investment, by tuning each's genetic makeup as their job description requires."
+  civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employees productivity, enforcing contracts that involve tuning each's genetic makeup as their job description requires."
   councilor_employee_diversification:0 "Gene Catalyst"
   councilor_employee_diversification_female:0 "$councilor_employee_diversification$"
   councilor_employee_diversification_desc:0 "The $TITLE$ ensures all employees' genetic mods are up-to-date and calibrated properly, all in the name of optimizing corporate efficiency."
@@ -274,12 +274,15 @@
   councilor_concurrent_command:0 "Duo Processor"
   councilor_concurrent_command_female:0 "$councilor_concurrent_command$"
   councilor_concurrent_command_desc:0 "The $TITLE$ serves as backup processing power for the ruler as well as executing routine computational tasks for the nation."
-  councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!"
+  councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $mod_empire_size_penalty_mult$: §G-0.05%§!"
 
   civic_executive_militarization:0 "Executive Militarization"
-  civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with training ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
+  civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with military protocols, ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
   civic_tooltip_executive_militarization_effects:0 "$civic_tooltip_concurrent_command_effects$"
-  # councilor needed
+  councilor_executive_militarization:0 "..."
+  councilor_executive_militarization_female:0 "$councilor_executive_militarization$"
+  councilor_executive_militarization_desc:0 "..."
+  councilor_executive_militarization_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $mod_spy_network_levels_add$: §G+2§!"
 
   civic_nodal_command:0 "Nodal Command"
   civic_nodal_command_desc:0 "This Machine Intelligence runs strategic simulations along its nodal core, allowing warrior drones to tap into the network and run naval calculations concurrently."

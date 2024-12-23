@@ -46,7 +46,7 @@ ac_innate_abilities = {
 
 ac_natural_education = {
 	country_leader_pool_size = 1
-	planet_researchers_output_mult = 0.05
+	planet_researchers_produces_mult = 0.05
 }
 
 ac_reproductive_installations = {
@@ -108,6 +108,7 @@ ac_eldritch_mind = {
 }
 
 ac_pact_of_the_harrower = {
+	icon = "gfx/interface/icons/modifiers/mod_empire_build_speed_add.dds"
 	country_energy_produces_mult = -0.03
 	country_minerals_produces_mult = -0.03
 	country_food_produces_mult = -0.03
@@ -135,13 +136,13 @@ ac_pact_of_the_harrower = {
 }
 
 ac_psychic_shields = {
-	negative_traits_leader = -1
 	intel_decryption_add = 1
+	negative_traits_leader = -1
 }
 
 # Other
 ac_modification_unity_cooldown = {
-	# game concept for cooldown icon likely needed
+	icon = "gfx/interface/icons/modifiers/mod_unity_upkeep_add.dds"
 }
 
 ac_manipulation_network_modifier = {

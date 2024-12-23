@@ -137,7 +137,7 @@ is_ac_diversified = {
 		has_valid_civic = civic_employee_diversification
 		has_valid_civic = civic_hyper_diversified
 	}
-	has_tradition = tr_modularity_finish
+	has_tradition = tr_genetics_finish
 }
 
 #this = species, from = country
@@ -207,14 +207,14 @@ trait_ac_has_edict_unholy_possession = {
 		AND = {
 			exists = owner
 			owner = {
-				has_edict = edict_ac_unholy_possession
+				has_edict = ac_unholy_possession
 			}
 		}
 		AND = {
 			exists = from
 			from = {
 				is_scope_type = country
-				has_edict = edict_ac_unholy_possession
+				has_edict = ac_unholy_possession
 			}
 		}
 	}

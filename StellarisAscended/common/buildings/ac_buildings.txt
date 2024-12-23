@@ -186,7 +186,7 @@ building_ac_grand_sapling = {
 		}
 	}
 	planet_modifier = {
-		job_solarpunk_anarchist_add = 1
+		job_ac_content_terraformer_add = 1
 		planet_farmers_food_produces_add = 2
 	}
 	triggered_planet_modifier = {
@@ -251,7 +251,7 @@ building_ac_hanging_cities = {
 		}
 	}
 	planet_modifier = {
-		job_solarpunk_anarchist_add = 1
+		job_ac_content_terraformer_add = 1
 		planet_housing_add = 8
 	}
 	triggered_planet_modifier = {

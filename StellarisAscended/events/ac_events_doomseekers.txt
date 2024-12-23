@@ -209,7 +209,7 @@ country_event = {
 					NAND = {
 						is_ac_doomseeker = yes
 					}
-					has_technology = tech_ac_doom_foretold
+					# has_technology = tech_ac_doom_foretold
 				}
 			}
 			random_system_within_border = {

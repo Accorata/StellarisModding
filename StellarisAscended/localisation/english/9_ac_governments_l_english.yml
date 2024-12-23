@@ -35,7 +35,7 @@
   concept_auth_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic:0 "$auth_ac_genetic_dictatorial_chaotic$"
   gov_ac_genetic_dictatorial_chaotic_desc:0 "$auth_ac_genetic_dictatorial_chaotic_desc$"
-  auth_ac_genetic_dictatorial_chaotic_effects:0 "£leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! Trait\nOn Ruler Death, Gains £unity£ §YUnity§! and §RKills Random Leaders§!"
+  auth_ac_genetic_dictatorial_chaotic_effects:0 "£leader£ Rulers gain the §Y$leader_trait_genetically_superior$§! Trait\nOn Ruler Elected, Gains £unity£ §YUnity§! and §RKills Random Leaders§!"
 # Genetic Oligarchic Perfect
   auth_ac_genetic_oligarchic_perfect:0 "Oligarchic Geniocracy"
   auth_ac_genetic_oligarchic_perfect_desc:0 "The intelligent brought about the future of the past, and it is in them that we invest our resources to bring the future of the now into reality."
@@ -519,6 +519,7 @@
   ac_pact_of_the_harrower:0 "Pact of the Harrower"
   ac_pact_of_the_harrower_desc:0 "In exchange for a day of each month, we've been promised power."
   ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
+  NAME_AC_Harrower_Avatar:0 "Avatars of Time"
 
   ascension_governments.1023.name: "Mass Psychosis"
   ascension_governments.1023.desc: "Throughout our country, reports of insanity are rising at unseen rates. Dreams of madness plague our people, filled with imagery of worlds beyond their comprehension. Here, shapes take on new meaning and combine in unnatural ways. Despite our best efforts in psychiatry, the horror is still unexplained.\n\nSome of our leaders have faced such madness and are struggling as a result."

@@ -595,7 +595,7 @@ auth_corporate = {
 			leader_commanders_energy_upkeep_add = 2
 			leader_scientists_energy_upkeep_add = 2
 			leader_officials_energy_upkeep_add = 2
-			custom_tooltip = auth_ac_genetic_corporate_perfect_effects
+			# temp: custom_tooltip = auth_ac_genetic_corporate_perfect_effects
 		}
 	}
 	advanced_authority_swap = {

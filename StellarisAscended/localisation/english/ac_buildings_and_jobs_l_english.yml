@@ -84,10 +84,16 @@
 
   mod_job_solarpunk_anarchist_add:0 "$job_solarpunk_anarchist$ Jobs" # Vanilla Override to fix bug
   job_solarpunk_anarchist_effect_desc:0 "£job_solarpunk_anarchist£ $job_solarpunk_anarchist_plural$ increase £stability£ §YStability§!, increase £amenities£ §YAmenities§!, and produce £unity£ §Y$unity$§!."
+  
+  job_ac_content_terraformer:0 "$job_solarpunk_anarchist$"
+  job_ac_content_terraformer_plural:0 "$job_solarpunk_anarchist_plural$"
+  job_ac_content_terraformer_desc:0 "$job_solarpunk_anarchist_desc$"
+  job_ac_content_terraformer_effect_desc:3 "$job_solarpunk_anarchist_effect_desc$"
+  mod_job_ac_content_terraformer_add:0 "$mod_job_solarpunk_anarchist_add$"
 
   building_ac_xanadu:0 "Xanadu"
   building_ac_xanadu_plural:0 "Xanadus"
-  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten, that nothing else will ever compare to."
+  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten. Nothing else will ever even begin to compare."
 
 # Virtual
   sm_ac_bandwidth_router:0 "Omni-band Router"

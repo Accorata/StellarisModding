@@ -110,7 +110,7 @@ ac_natural_eugenics = {
 	modifier = {
 		custom_tooltip = edict_ac_natural_eugenics_effect
 		show_only_custom_tooltip = no
-		army_damage = 0.15
+		army_damage_mult = 0.15
 	}
 	allow = {
 	}
@@ -287,12 +287,9 @@ ac_aligned_desires = {
 		is_democratic_authority = yes
 		has_country_flag = ac_psionic_eldritch
 	}
-	triggered_modifier = {
-		potential = {
-			always = yes
-		}
+	modifier = {
 		council_agenda_progress_speed = 0.25
-		leaders_upkeep_mult = 0.1
+		leaders_upkeep_mult = -0.1
 		mult = value:ac_democratic_insanity_empire_size
 	}
 	allow = {

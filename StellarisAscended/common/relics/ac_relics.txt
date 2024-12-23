@@ -18,7 +18,7 @@ r_ac_assimilation_engine = {
 			is_variable_set = ac_num_assimilation_engine
 		}
 		BIOLOGICAL_species_trait_points_add = 0.05
-		mult = value:ac_num_assimilation_engine
+		mult = value:ac_num_assimilation_engine_value
 		custom_tooltip = "ac_assimilation_engine_passive_tooltip"
 		show_only_custom_tooltip = no
 	}
@@ -28,7 +28,7 @@ r_ac_assimilation_engine = {
 		# show_only_custom_tooltip = no
 		add_resource = {
 			society_research = 50
-			mult = value:ac_num_assimilation_engine
+			mult = value:ac_num_assimilation_engine_value
 		}
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
