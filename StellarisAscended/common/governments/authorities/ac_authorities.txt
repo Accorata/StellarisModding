@@ -574,7 +574,8 @@ auth_corporate = {
 		modifier = {
 			country_trade_fee = -0.05
 			country_unity_produces_mult = -0.05
-			# (holding)
+			custom_tooltip = auth_ac_psionic_corporate_eldritch_effects
+			show_only_custom_tooltip = no
 			add_base_country_intel = 5
 		}
 	}
@@ -595,7 +596,7 @@ auth_corporate = {
 			leader_commanders_energy_upkeep_add = 2
 			leader_scientists_energy_upkeep_add = 2
 			leader_officials_energy_upkeep_add = 2
-			# temp: custom_tooltip = auth_ac_genetic_corporate_perfect_effects
+			custom_tooltip = auth_ac_genetic_corporate_perfect_effects
 		}
 	}
 	advanced_authority_swap = {

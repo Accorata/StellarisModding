@@ -290,7 +290,7 @@ on_ac_psionic_shock_chain_event_pool_one_list = {
 # This = Country
 on_ac_psionic_shock_chain_event_pool_two_list = {
 	random_events = {
-		10 = ascension_governments.1020		# Chosen Sovereignty
+		2 = ascension_governments.1020		# Chosen Sovereignty
 		5 = ascension_governments.1021		# A Request
 		5 = ascension_governments.1023		# Mass Psychosis -> Horrors of the Mind
 	}

@@ -18,19 +18,19 @@ ac_effective_ruler_level = {
 # 	max = 5
 # }
 
-ac_empire_size_minus_hundred = {
-	base = 0
-	add = owner.trigger:empire_size
-	subtract = 100
-	min = 0
-}
+# ac_empire_size_minus_hundred = {
+# 	base = 0
+# 	add = owner.trigger:empire_size
+# 	subtract = 100
+# 	min = 0
+# }
 
-ac_democratic_insanity_empire_size = {
-	base = -0.0025
-	multiply = value:ac_empire_size_minus_hundred
-	add = 1
-	min = 0
-}
+# ac_democratic_insanity_empire_size = {
+# 	base = -0.0025
+# 	multiply = value:ac_empire_size_minus_hundred
+# 	add = 1
+# 	min = 0
+# }
 
 ac_num_assimilation_engine_value = {
 	base = 0
@@ -47,6 +47,7 @@ ac_hive_virtuality_concentrated_production_mult = {
 	}
 }
 
+# Future Usage:
 # value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
 ac_districts_arcology_jobs = {
 	complex_trigger_modifier = {

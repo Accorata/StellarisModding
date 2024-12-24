@@ -159,7 +159,10 @@ leader_trait_ac_composer_vessel = {
 		COUNCIL = yes
 		TIER = none
 	}
-	self_modifier = {
+	triggered_self_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		species_leader_exp_gain = 1
 		negative_traits_leader = 1
 	}
@@ -167,8 +170,8 @@ leader_trait_ac_composer_vessel = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		species_leader_exp_gain = 0.5
-		negative_traits_leader = 1
+		species_leader_exp_gain = 1.5
+		negative_traits_leader = 2
 	}
 	leader_class = {
 		commander
@@ -188,7 +191,10 @@ leader_trait_ac_whisperers_vessel = {
 		COUNCIL = yes
 		TIER = none
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		physics_tech_cost_mult = -0.05
 		society_tech_cost_mult = -0.05
 		engineering_tech_cost_mult = -0.05
@@ -197,11 +203,14 @@ leader_trait_ac_whisperers_vessel = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		physics_tech_cost_mult = -0.025
-		society_tech_cost_mult = -0.025
-		engineering_tech_cost_mult = -0.025
+		physics_tech_cost_mult = -0.075
+		society_tech_cost_mult = -0.075
+		engineering_tech_cost_mult = -0.075
 	}
-	self_modifier = {
+	triggered_self_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		leader_lifespan_add = -10
 		species_leader_exp_gain = -0.1
 	}
@@ -209,8 +218,8 @@ leader_trait_ac_whisperers_vessel = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		leader_lifespan_add = -10
-		species_leader_exp_gain = -0.1
+		leader_lifespan_add = -20
+		species_leader_exp_gain = -0.2
 	}
 	leader_class = {
 		commander
@@ -230,7 +239,10 @@ leader_trait_ac_eater_vessel = {
 		COUNCIL = yes
 		TIER = none
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		ship_weapon_damage = 0.15
 		army_damage_mult = 0.15
 		pop_happiness = -0.05
@@ -240,10 +252,10 @@ leader_trait_ac_eater_vessel = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		ship_weapon_damage = 0.075
-		army_damage_mult = 0.075
-		pop_happiness = -0.05
-		pop_growth_speed = -0.05
+		ship_weapon_damage = 0.225
+		army_damage_mult = 0.225
+		pop_happiness = -0.1
+		pop_growth_speed = -0.1
 	}
 	leader_class = {
 		commander
@@ -263,49 +275,71 @@ leader_trait_ac_instrument_vessel = {
 		COUNCIL = yes
 		TIER = none
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		planet_jobs_produces_mult = 0.15
 	}
 	triggered_councilor_modifier = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		planet_jobs_produces_mult = 0.075
+		planet_jobs_produces_mult = 0.225
 	}
-	self_modifier = {
+	triggered_self_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		leader_lifespan_add = 10
 	}
 	triggered_self_modifier = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		leader_lifespan_add = 5
-	}
-	inline_script = {
-		script = paragon/leader_resource_upkeep
-		RESOURCE = consumer_goods
-		AMOUNT = 25
+		leader_lifespan_add = 15
 	}
 	triggered_self_modifier = {
 		potential = {
 			leader_class = commander
-			trait_ac_has_edict_unholy_possession = yes
+			trait_ac_has_edict_unholy_possession = no
 		}
 		leader_commanders_consumer_goods_upkeep_add = 25
 	}
 	triggered_self_modifier = {
 		potential = {
 			leader_class = official
-			trait_ac_has_edict_unholy_possession = yes
+			trait_ac_has_edict_unholy_possession = no
 		}
 		leader_officials_consumer_goods_upkeep_add = 25
 	}
 	triggered_self_modifier = {
 		potential = {
 			leader_class = scientist
-			trait_ac_has_edict_unholy_possession = yes
+			trait_ac_has_edict_unholy_possession = no
 		}
 		leader_scientists_consumer_goods_upkeep_add = 25
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_class = commander
+			trait_ac_has_edict_unholy_possession = yes
+		}
+		leader_commanders_consumer_goods_upkeep_add = 50
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_class = official
+			trait_ac_has_edict_unholy_possession = yes
+		}
+		leader_officials_consumer_goods_upkeep_add = 50
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_class = scientist
+			trait_ac_has_edict_unholy_possession = yes
+		}
+		leader_scientists_consumer_goods_upkeep_add = 50
 	}
 	leader_class = {
 		commander
@@ -325,7 +359,10 @@ leader_trait_ac_end_vessel = {
 		COUNCIL = yes
 		TIER = none
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_ac_has_edict_unholy_possession = no
+		}
 		country_councilor_influence_produces_add = 1
 		pop_government_ethic_attraction = 0.5
 		country_trust_cap_add = -35
@@ -334,9 +371,9 @@ leader_trait_ac_end_vessel = {
 		potential = {
 			trait_ac_has_edict_unholy_possession = yes
 		}
-		country_councilor_influence_produces_add = 0.5
-		pop_government_ethic_attraction = 0.25
-		country_trust_cap_add = -35
+		country_councilor_influence_produces_add = 1.5
+		pop_government_ethic_attraction = 0.75
+		country_trust_cap_add = -70
 	}
 	leader_class = {
 		commander
@@ -352,7 +389,7 @@ leader_trait_ac_visions_of_doom = {
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_ac_visions_of_doom"
-		COUNCIL = triggered
+		COUNCIL = yes
 		TIER = none
 	}
 	inline_script = {

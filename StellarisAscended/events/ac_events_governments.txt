@@ -436,7 +436,6 @@ country_event = {
 		name = ascension_governments.9.c
 		custom_tooltip = ac_genetic.social_consequences.tt
 		trigger = {
-			# testing (owner = {}) ...
 			owner = {
 				is_memorialist_empire = yes
 			}
@@ -1695,9 +1694,22 @@ country_event = {
 				has_trait = trait_imperial_heir
 			}
 			remove_trait = trait_imperial_heir
-			# NO LONGER HEIR TOO -> how to change
-			# testing purposes:...
-			# add_trait = leader_trait_ac_composer_vessel
+		}
+		set_country_flag = ac_recent_heir
+		ruler = {
+			save_event_target_as = ruler_to_be_cloned
+		}
+		clone_leader = {
+			target = event_target:ruler_to_be_cloned
+			set_age = 1
+		}
+		last_created_leader = {
+			save_event_target_as = ac_cloned_heir
+		}
+		set_heir = event_target:ac_cloned_heir
+		country_event = {
+			id = ascension_governments.49
+			days = 3
 		}
 	}
 }
@@ -1727,8 +1739,6 @@ leader_event = {
 				set_age = 1
 			}
 			last_created_leader = {
-				#testing...
-				add_trait = leader_trait_ac_end_vessel
 				save_event_target_as = ac_cloned_heir
 			}
 			set_heir = event_target:ac_cloned_heir
@@ -2515,23 +2525,13 @@ country_event = {
 			has_country_flag = chosen_one_ruler_event
 		}
 		OR = {
-			# Either you've not Imperial and have a Chosen One
-			AND = {
-				OR = {
-					is_democratic_authority = yes
-					is_oligarchic_authority = yes
-					is_dictatorial_authority = yes
-					# MegaCorps deliberately excluded.
-				}
-				any_owned_leader = {
-					has_chosen_one_leader_trait = yes
-				}
-			}
-			# Or you're Imperial and the Chosen One is your current ruler or heir.
+			is_democratic_authority = yes
+			is_oligarchic_authority = yes
+			is_dictatorial_authority = yes
 			AND = {
 				is_imperial_authority = yes
 				any_owned_leader = {
-					has_chosen_one_leader_trait = yes
+					has_trait = leader_trait_psionic
 					has_trait = trait_imperial_heir
 				}
 			}
@@ -2545,12 +2545,11 @@ country_event = {
 					is_democratic_authority = yes
 					is_oligarchic_authority = yes
 					is_dictatorial_authority = yes
-					# MegaCorps deliberately excluded.
 				}
 			}
 			random_owned_leader = {
 				limit = {
-					has_chosen_one_leader_trait = yes
+					has_trait = leader_trait_psionic
 				}
 				save_event_target_as = chosen_one
 				species = {
@@ -2561,7 +2560,7 @@ country_event = {
 		else = {
 			random_owned_leader = {
 				limit = {
-					has_chosen_one_leader_trait = yes
+					has_trait = leader_trait_psionic
 					has_trait = trait_imperial_heir
 				}
 				save_event_target_as = chosen_one
@@ -2823,10 +2822,9 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				# Might need to be unique per country
-				exists = event_target:ac_avatars_of_time
+				exists = event_target:ac_avatars_of_time_of_@root
 			}
-			event_target:ac_avatars_of_time = {
+			event_target:ac_avatars_of_time_of_@root = {
 				create_ship = {
 					name = "NAME_Avatar"
 					design = "NAME_Shroud_Avatar"
@@ -2854,7 +2852,7 @@ country_event = {
 						upgradable = no
 					}
 					set_location = root.capital_scope
-					save_event_target_as = ac_avatars_of_time
+					save_global_event_target_as = ac_avatars_of_time_of_@root
 				}
 			}
 		}
@@ -3511,7 +3509,6 @@ country_event = {
 	trigger = {
 		is_imperial_authority = yes
 		has_country_flag = ac_psionic_eldritch
-		has_country_flag = has_shroud_patron # not always yet...
 		ruler = {
 			NOR = {
 				has_trait = leader_trait_ac_composer_vessel
@@ -3523,111 +3520,116 @@ country_event = {
 		}
 	}
 	immediate = {
-		random_owned_leader = {
-			limit = {
-				is_ruler = no
-				OR = {
-					has_trait = leader_trait_ac_composer_vessel
-					has_trait = leader_trait_ac_eater_vessel
-					has_trait = leader_trait_ac_instrument_vessel
-					has_trait = leader_trait_ac_whisperers_vessel
-					has_trait = leader_trait_ac_end_vessel
-				}
-			}
-			save_event_target_as = ac_previous_leader
-		}
 		if = {
 			limit = {
-				exists = event_target:ac_previous_leader
+				has_country_flag = has_shroud_patron
 			}
-			event_target:ac_previous_leader = {
-				remove_trait = leader_trait_ac_composer_vessel
-				remove_trait = leader_trait_ac_eater_vessel
-				remove_trait = leader_trait_ac_instrument_vessel
-				remove_trait = leader_trait_ac_whisperers_vessel
-				remove_trait = leader_trait_ac_end_vessel
-			}
-		}
-		ruler = {
-			# Composer
-			if = {
+			random_owned_leader = {
 				limit = {
-					NOR = {
+					is_ruler = no
+					OR = {
 						has_trait = leader_trait_ac_composer_vessel
 						has_trait = leader_trait_ac_eater_vessel
 						has_trait = leader_trait_ac_instrument_vessel
 						has_trait = leader_trait_ac_whisperers_vessel
 						has_trait = leader_trait_ac_end_vessel
 					}
-					ROOT = {
-						has_country_flag = composer_covenant_confirmed
-					}
 				}
-				add_trait = leader_trait_ac_composer_vessel
+				save_event_target_as = ac_previous_leader
 			}
-			# Eater
 			if = {
 				limit = {
-					NOR = {
-						has_trait = leader_trait_ac_composer_vessel
-						has_trait = leader_trait_ac_eater_vessel
-						has_trait = leader_trait_ac_instrument_vessel
-						has_trait = leader_trait_ac_whisperers_vessel
-						has_trait = leader_trait_ac_end_vessel
-					}
-					ROOT = {
-						has_country_flag = eater_covenant_confirmed
-					}
+					exists = event_target:ac_previous_leader
 				}
-				add_trait = leader_trait_ac_eater_vessel
+				event_target:ac_previous_leader = {
+					remove_trait = leader_trait_ac_composer_vessel
+					remove_trait = leader_trait_ac_eater_vessel
+					remove_trait = leader_trait_ac_instrument_vessel
+					remove_trait = leader_trait_ac_whisperers_vessel
+					remove_trait = leader_trait_ac_end_vessel
+				}
 			}
-			# Instrument
-			if = {
-				limit = {
-					NOR = {
-						has_trait = leader_trait_ac_composer_vessel
-						has_trait = leader_trait_ac_eater_vessel
-						has_trait = leader_trait_ac_instrument_vessel
-						has_trait = leader_trait_ac_whisperers_vessel
-						has_trait = leader_trait_ac_end_vessel
+			ruler = {
+				# Composer
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = composer_covenant_confirmed
+						}
 					}
-					ROOT = {
-						has_country_flag = instrument_covenant_confirmed
-					}
+					add_trait = leader_trait_ac_composer_vessel
 				}
-				add_trait = leader_trait_ac_instrument_vessel
-			}
-			# Whisperers
-			if = {
-				limit = {
-					NOR = {
-						has_trait = leader_trait_ac_composer_vessel
-						has_trait = leader_trait_ac_eater_vessel
-						has_trait = leader_trait_ac_instrument_vessel
-						has_trait = leader_trait_ac_whisperers_vessel
-						has_trait = leader_trait_ac_end_vessel
+				# Eater
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = eater_covenant_confirmed
+						}
 					}
-					ROOT = {
-						has_country_flag = whisperers_covenant_confirmed
-					}
+					add_trait = leader_trait_ac_eater_vessel
 				}
-				add_trait = leader_trait_ac_whisperers_vessel
-			}
-			# End of the Cycle
-			if = {
-				limit = {
-					NOR = {
-						has_trait = leader_trait_ac_composer_vessel
-						has_trait = leader_trait_ac_eater_vessel
-						has_trait = leader_trait_ac_instrument_vessel
-						has_trait = leader_trait_ac_whisperers_vessel
-						has_trait = leader_trait_ac_end_vessel
+				# Instrument
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = instrument_covenant_confirmed
+						}
 					}
-					ROOT = {
-						has_country_flag = covenant_end_of_the_cycle
-					}
+					add_trait = leader_trait_ac_instrument_vessel
 				}
-				add_trait = leader_trait_ac_end_vessel
+				# Whisperers
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = whisperers_covenant_confirmed
+						}
+					}
+					add_trait = leader_trait_ac_whisperers_vessel
+				}
+				# End of the Cycle
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = covenant_end_of_the_cycle
+						}
+					}
+					add_trait = leader_trait_ac_end_vessel
+				}
 			}
 		}
 	}

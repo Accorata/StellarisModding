@@ -221,6 +221,9 @@ holding_ac_manipulation_network = {
 		planet = {
 			save_event_target_as = ac_manipulation_network_destroyed_planet
 		}
+		branch_office_owner = {
+			save_event_target_as = branch_office_owner
+		}
 		planet.owner = {
 			# If they don't have another planet with another Manipulationn Network (built by anyone, not just that megacorp) then remove the modifier
 			if = {
@@ -233,6 +236,7 @@ holding_ac_manipulation_network = {
 							has_branch_office = yes
 							has_holding = {
 								holding = holding_ac_manipulation_network
+								owner = event_target:branch_office_owner
 							}
 						}
 					}
@@ -240,6 +244,10 @@ holding_ac_manipulation_network = {
 				remove_modifier = ac_manipulation_network_modifier
 			}
 		}
+	}
+
+	triggered_desc = {
+		text = ac_manipulation_network_tt
 	}
 
 	ai_weight = {

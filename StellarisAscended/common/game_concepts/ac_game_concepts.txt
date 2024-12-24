@@ -217,6 +217,11 @@ concept_auth_ac_psionic_corporate_eldritch = {
 	tooltip_override = "authority:auth_corporate:auth_ac_psionic_corporate_eldritch"
 }
 
+concept_holding_ac_manipulation_network = {
+	icon = "gfx/interface/icons/buildings/holding_ac_manipulation_network.dds"
+	tooltip_override = "building:holding_ac_manipulation_network"
+}
+
 # Psionic Edicts
 concept_edict_ac_palace_of_the_intellect = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"

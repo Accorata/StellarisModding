@@ -438,7 +438,7 @@ building_ac_cybernetics_stadium = {
 		}
 	}
 	planet_modifier = {
-		job_ac_cybergladiator_drone_add = 2
+		# job_ac_cybergladiator_drone_add = 2
 		# ...
 	}
 	resources = {

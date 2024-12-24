@@ -58,8 +58,10 @@
   holding_ac_manipulation_network:0 "Manipulation Network"
   holding_ac_manipulation_network_desc:0 "..."
   holding_ac_manipulation_network_fail_tt:0 "$TRIGGER_FAIL$We already have an §Y$holding_ac_manipulation_network$§! in the §Y[Planet.Owner.GetName]§!"
-  ac_manipulation_network_modifier:0 "Corporate Subliminals"
-  ac_manipulation_network_modifier_desc:0 "A Megacorporation has built a Manipulation Network holding on one of our planets, in which their telepaths promote consumerism in our populace through subliminal telepathy."
+  ac_manipulation_network_modifier:0 "$holding_ac_manipulation_network$"
+  ac_manipulation_network_modifier_desc:0 "A Megacorporation has built a $holding_ac_manipulation_network$ holding on one of our planets, in which their telepaths promote consumerism in our populace through subliminal telepathy."
+  ac_manipulation_network_tt: "Non-Stacking Modifier for this Planet's Owner: $TABBED_NEW_LINE$Branch Office Value: §Y+25%§! $TABBED_NEW_LINE$$mod_planet_pops_consumer_goods_upkeep_mult$: §R+25§!"
+  concept_holding_ac_manipulation_network:0 "$holding_ac_manipulation_network$"
 
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"

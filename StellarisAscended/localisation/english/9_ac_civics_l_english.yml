@@ -360,6 +360,7 @@
   councilor_stellar_monopoly:0 "..."
   councilor_stellar_monopoly_female:0 "$councilor_stellar_monopoly$"
   councilor_stellar_monopoly_desc:0 "..."
+  mod_shipclass_research_station_build_cost_mult:0 "Research Station Build Cost"
 
   civic_unending_swarm:0 "Unending Swarm"
   civic_unending_swarm_desc:0 "The swarm is eternal. All matter must be consumed."

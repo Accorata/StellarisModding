@@ -288,9 +288,7 @@ ac_aligned_desires = {
 		has_country_flag = ac_psionic_eldritch
 	}
 	modifier = {
-		council_agenda_progress_speed = 0.25
-		leaders_upkeep_mult = -0.1
-		mult = value:ac_democratic_insanity_empire_size
+		# to be done
 	}
 	allow = {
 	}
