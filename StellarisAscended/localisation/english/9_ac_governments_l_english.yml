@@ -521,6 +521,10 @@
   ac_pact_of_the_harrower_desc:0 "In exchange for a day of each month, we've been promised power."
   ac_pact_of_the_harrower_effects:0 "- Monthly Resources: §R-3%§!\n- Pop Growth Speed: §R-3%§!\n- Pop Assembly Speed: §R-3%§!\n- Leader Lifespan: §G+6%§!\n- Every year, the Harrower will grant us a Shroud Avatar"
   NAME_AC_Harrower_Avatar:0 "Avatars of Time"
+  mod_country_sr_living_metal_produces_mult:0 "Monthly Living Metal"
+  mod_country_sr_dark_matter_produces_mult:0 "Monthly Dark Matter"
+  mod_country_nanites_produces_mult:0 "Monthly Nanites"
+  mod_country_minor_artifacts_produces_mult:0 "Monthly Minor Artifacts"
 
   ascension_governments.1023.name: "Mass Psychosis"
   ascension_governments.1023.desc: "Throughout our country, reports of insanity are rising at unseen rates. Dreams of madness plague our people, filled with imagery of worlds beyond their comprehension. Here, shapes take on new meaning and combine in unnatural ways. Despite our best efforts in psychiatry, the horror is still unexplained.\n\nSome of our leaders have faced such madness and are struggling as a result."
@@ -646,6 +650,9 @@
   edict_ac_united_in_soul_desc:0 "As our minds overlap, so may our souls. Together we will not falter against the whims of others."
   concept_edict_ac_united_in_soul:0 "$edict_ac_united_in_soul$"
   unlock_edict_ac_united_in_soul:0 "$unlock_edict_tt$['concept_edict_ac_united_in_soul']"
+  mod_hostile_operation_diplomatic_incident_difficulty_add:0 "Defense Against Hostile Operations ($operation_diplomatic_incident$)"
+  mod_hostile_operation_extort_favors_difficulty_add:0 "Defense Against Hostile Operations ($operation_extort_favors$)"
+  mod_hostile_operation_smear_campaign_difficulty_add:0 "Defense Against Hostile Operations ($operation_smear_campaign$)"
 
   edict_ac_aligned_desires:0 "Aligned Desire"
   edict_ac_aligned_desires_desc:0 "In rare moments, all our passions lie in harmony."

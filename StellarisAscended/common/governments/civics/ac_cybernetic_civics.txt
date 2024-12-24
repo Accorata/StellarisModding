@@ -92,11 +92,12 @@ civic_cyberlife = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_cyberlife_effects
+	description = civic_tooltip_cyberlife_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
+		description = civic_tooltip_cyberlife_effects
 		modifier = {
 			espionage_operation_difficulty_add = -1
 			pop_housing_usage_mult = -0.1
@@ -140,11 +141,12 @@ civic_cybernet = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_cyberlife_effects
+	description = civic_tooltip_cyberlife_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
+		description = civic_tooltip_cyberlife_effects
 		modifier = {
 			espionage_operation_difficulty_add = -1
 			pop_housing_usage_mult = -0.1
@@ -174,11 +176,12 @@ civic_cyberspacial = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_cyberspacial_effects
+	description = civic_tooltip_cyberspacial_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
+		description = civic_tooltip_cyberspacial_effects
 		modifier = {
 			espionage_operation_difficulty_add = -1
 			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
@@ -209,11 +212,12 @@ civic_uploaded_mind = {
 			has_active_tradition = tr_cybernetics_assimilator_finish
 		}
 	}
-	description = civic_tooltip_uploaded_mind_effects
+	description = civic_tooltip_uploaded_mind_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_assimilator_finish
 		}
+		description = civic_tooltip_uploaded_mind_effects
 		modifier = {
 			espionage_operation_difficulty_add = -1
 			councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
@@ -259,11 +263,12 @@ civic_cybergladiators = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_cybergladiators_effects
+	description = civic_tooltip_cybergladiators_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
+		description = civic_tooltip_cybergladiators_effects
 		modifier = {
 			planet_cyberdome_duelist_engineering_research_produces_add = 3
 			planet_cyberdome_duelist_unity_produces_add = 3
@@ -307,11 +312,12 @@ civic_underworld_bloodsports = {
 			has_active_tradition = tr_cybernetics_finish
 		}
 	}
-	description = civic_tooltip_underworld_bloodsports_effects
+	description = civic_tooltip_underworld_bloodsports_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_finish
 		}
+		description = civic_tooltip_underworld_bloodsports_effects
 		modifier = {
 			planet_cyberdome_duelist_engineering_research_produces_add = 3
 			planet_cyberdome_duelist_unity_produces_add = 3
@@ -323,6 +329,10 @@ civic_cybersports = {
 	potential = {
 		ethics = {
 			value = ethic_gestalt_consciousness
+			# temporarily removed
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
 		}
 		authority = {
 			value = auth_machine_intelligence
@@ -341,11 +351,12 @@ civic_cybersports = {
 			has_active_tradition = tr_cybernetics_assimilator_finish
 		}
 	}
-	description = civic_tooltip_cybersports_effects
+	description = civic_tooltip_cybersports_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_cybernetics_assimilator_finish
 		}
+		description = civic_tooltip_cybersports_effects
 		modifier = {
 			# councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
 		}

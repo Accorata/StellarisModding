@@ -67,8 +67,8 @@
   trait_ascendant_psionic:0 "Ascendant Psionic"
   trait_ascendant_psionic_desc:0 "..."
   living_standard_ac_ascetic:0 "Ascetic"
-  living_standard_ac_ascetic_tooltip:0 "These pops live a life of little material pleasure.\n\nPops have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop."
-  living_standard_ac_ascetic_tooltip_delayed:0 "Some may consider this material abstinence torturous, but for the gifted it is the only way of life." #Needs to be gray
+  living_standard_ac_ascetic_tooltip:0 "These pops live a life of little material pleasure.\n\n§YPops§! have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop." # more specifics needed
+  living_standard_ac_ascetic_tooltip_delayed:0 "§LSome may consider this material abstinence torturous, but for the gifted it is the only way of life.§!"
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expressed of individuality."
@@ -120,7 +120,9 @@
 
   civic_cyberlife:0 "CyberReality"
   civic_cyberlife_desc:0 "This society spends much of its existence in an artificial reality, living both physical and virtual lives in tandem."
-  civic_tooltip_cyberlife_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
+  civic_tooltip_cyberlife_incomplete_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
+  civic_tooltip_cyberlife_effects:0 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
+
   # councilor needed
 
   civic_cybernet:0 "CyberNet"
@@ -131,7 +133,8 @@
 
   civic_cyberspacial:0 "Cyberspacial"
   civic_cyberspacial_desc:0 "This Hive Mind has expanded its domain into the virtual world. Each of its drones has a virtual counterpart connected directly to their brain via cybernetic software."
-  civic_tooltip_cyberspacial_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
+  civic_tooltip_cyberspacial_incomplete_effects:0 "$cybernetic_ascension_required$- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
+  civic_tooltip_cyberspacial_effects:0 "- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
   trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_upkeep_mult$: §R+25%§!"
@@ -140,36 +143,40 @@
 
   civic_uploaded_mind:0 "Uploaded Mind"
   civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
-  civic_tooltip_uploaded_mind_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!" # testing this instead of 25%...
+  civic_tooltip_uploaded_mind_incomplete_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!" # testing this instead of 25%...
+  civic_tooltip_uploaded_mind_effects:0 "- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   living_standard_ac_cyberlife:0 "CyberLife"
-  living_standard_ac_cyberlife_tooltip:0 "..."
-  living_standard_ac_cyberlife_tooltip_delayed:0 "Spending most of their lives in a virtual reality, these pops ..." #Needs to be gray
+  living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! by unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
+  living_standard_ac_cyberlife_tooltip_delayed:0 "§L...§!"
   living_standard_ac_computational_matrix:0 "Computational Matrix"
   living_standard_ac_computational_matrix_tooltip:0 "..."
-  living_standard_ac_computational_matrix_tooltip_delayed:0 "..." #Needs to be gray
-  AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must be have the §Y$trait_cybernetic$§! trait.."
-  mod_pop_category_rulers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $RULERS$"
-  mod_pop_category_specialists_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SPECIALISTS$"
-  mod_pop_category_workers_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $WORKERS$"
-  mod_pop_category_slave_energy_upkeep_add:0 "$ENERGY_UPKEEP$ $SLAVES$"
+  living_standard_ac_computational_matrix_tooltip_delayed:0 "§L...§!"
+  AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must be have the §Y$trait_cybernetic$§! trait."
+  mod_pop_category_rulers_energy_upkeep_add:0 "£energy£ Upkeep for $RULERS$"
+  mod_pop_category_specialists_energy_upkeep_add:0 "£energy£ Upkeep for $SPECIALISTS$"
+  mod_pop_category_workers_energy_upkeep_add:0 "£energy£ Upkeep for $WORKERS$"
+  mod_pop_category_slave_energy_upkeep_add:0 "£energy£ Upkeep for $SLAVES$"
 
   civic_cybergladiators:0 "Cybergladiators"
   civic_cybergladiators_desc:0 "In the dark alleyways of this society, cybernetically enhanced warriors risk life and limb to compete for honor, glory, and a quick buck."
-  civic_tooltip_cybergladiators_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_cybergladiators_incomplete_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_cybergladiators_effects:0 "- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   councilor_cybergladiators:0 "Gladiator Champion"
   councilor_cybergladiators_female:0 "$councilor_cybergladiators$"
   councilor_cybergladiators_desc:0 "The $TITLE$ is the elitest of the Cybergladiators, inspiring immense nationalism through their physical prowess."
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "Corporate work has its stressors, and how better to relive the workday tension than betting fortunes on gladiatorial duels to the death?"
-  civic_tooltip_underworld_bloodsports_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_underworld_bloodsports_incomplete_effects:0 "$cybernetic_ascension_required$- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n$cybernetic_ascension_required$- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
+  civic_tooltip_underworld_bloodsports_effects:0 "- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n- Can build £building£ §Y$holding_ac_undercity_arena$§! holdings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n- $mod_planet_jobs_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_jobs_cyberdome_duelist_unity_produces_add$: §G+3§!"
   # councilor needed - spectators give trade value / energy credits
 
   # Hive Cybergladiator Civic ...
 
   civic_cybersports:0 "CyberSports"
   civic_cybersports_desc:0 "..."
+  civic_tooltip_cybersports_incomplete_effects:0 "...(to do)"
   civic_tooltip_cybersports_effects:0 "...(to do)"
 
   # Future Addition
@@ -185,7 +192,8 @@
 
   civic_blossoming_worlds:0 "Blossoming Worlds"
   civic_blossoming_worlds_desc:0 "This society preserves the natural beauty through genetically engineered fauna and flora. Their citizens thrive in harmony with the perfect environment."
-  civic_tooltip_blossoming_worlds_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  civic_tooltip_blossoming_worlds_incomplete_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  civic_tooltip_blossoming_worlds_effects:0 "- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_blossoming_worlds:0 "Terrestrial Cultivator"
   councilor_blossoming_worlds_female:0 "$councilor_blossoming_worlds$"
   councilor_blossoming_worlds_desc:0 "The $TITLE$ architects worlds with respect to the essential virtues of life, building cities of gardens and forests of homes."
@@ -193,14 +201,15 @@
 
   civic_xanadu_retreats:0 "Xanadu Retreats"
   civic_xanadu_retreats_desc:0 "This Megacorporation builds dream-like paradises, genetically perfected worlds with climate controlled weather and beautiful vistas. Their resorts are known throughout the galaxy as unbelievable places to stay - for the right price."
-  civic_tooltip_xanadu_retreats_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  civic_tooltip_xanadu_retreats_incomplete_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
+  civic_tooltip_xanadu_retreats_effects:0 "- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_xanadu_retreats:0 "Executive Resort Manager"
   councilor_xanadu_retreats_female:0 "$councilor_xanadu_retreats$"
   councilor_xanadu_retreats_desc:0 "The $TITLE$ ..."
-  # councilor_xanadu_retreats_tooltip:0 "- £energy£ Energy from $job_entertainer_plural_with_icon$: §G+0.5§!"
   decision_ac_more_resort_colony:0 "$decision_resort_colony$"
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
+# continue adding incomplete effect tooltips below: ... 
   civic_blossoming_hives:0 "Blossoming Hives"
   civic_blossoming_hives_desc:0 "On the worlds of this Hive Mind, life flourishes in tandem with the hives' drones."
   civic_tooltip_blossoming_hives_effects:0 "$genetic_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Hive or Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Hive or Gaia worlds\n\n§EModifiers:§!\n$genetic_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+25%§!"
@@ -353,6 +362,8 @@
   councilor_numbered_among_stars:0 "Self-Replicator"
   councilor_numbered_among_stars_female:0 "$councilor_numbered_among_stars$"
   councilor_numbered_among_stars_desc:0 "The $TITLE$ manages individual duplication, encouraging many to design a life of duplicating their nanite bodies for the nation."
+  mod_planet_pop_assemblers_nanites_upkeep_add: "§Y[GetPopAssemblersPluralWithIcon]§! £nanites£ Nanites Upkeep"
+  mod_unemployment_resources_nanites_produces_add:0 "£nanites£ Nanites $UNEMPLOYED_POPS$"
 
   civic_stellar_monopoly:0 "Stellar Monopoly"
   civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monpolozing the galaxy's riches."
