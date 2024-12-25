@@ -37,11 +37,12 @@ civic_hyper_specialization = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_specialization_effects
+	description = civic_tooltip_hyper_specialization_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_hyper_specialization_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
@@ -86,11 +87,12 @@ civic_employee_specialization = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_specialization_effects
+	description = civic_tooltip_hyper_specialization_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_hyper_specialization_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
@@ -123,11 +125,12 @@ civic_hyper_specialized = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_specialized_effects
+	description = civic_tooltip_hyper_specialized_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_hyper_specialized_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			MACHINE_species_trait_picks_add = 1
@@ -175,11 +178,12 @@ civic_metallic_repurposing = {
 		}
 	}
 	
-	description = civic_tooltip_metallic_repurposing_effects
+	description = civic_tooltip_metallic_repurposing_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_metallic_repurposing_effects
 		modifier = {
 			planet_metallurgists_upkeep_mult = -0.2
 		}
@@ -223,11 +227,12 @@ civic_corporate_remodeling = {
 		}
 	}
 	
-	description = civic_tooltip_metallic_repurposing_effects
+	description = civic_tooltip_metallic_repurposing_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_metallic_repurposing_effects
 		modifier = {
 			planet_metallurgists_upkeep_mult = -0.2
 		}
@@ -259,11 +264,12 @@ civic_omnirecyclers = {
 		}
 	}
 	
-	description = civic_tooltip_omnirecyclers_effects
+	description = civic_tooltip_omnirecyclers_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_modularity_finish
 		}
+		description = civic_tooltip_omnirecyclers_effects
 		modifier = {
 			planet_metallurgists_upkeep_mult = -0.2
 			councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate

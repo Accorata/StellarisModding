@@ -34,13 +34,14 @@ civic_bandwidth_enhancers = {
 		base = 0
 	}
 	ai_weight = {
-		base = 0
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
 	}
-	description = civic_tooltip_bandwidth_enhancers_effects
+	description = civic_tooltip_bandwidth_enhancers_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_bandwidth_enhancers_effects
 		modifier = {
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.1
@@ -82,13 +83,14 @@ civic_bandwidth_incorporated = {
 		base = 0
 	}
 	ai_weight = {
-		base = 0
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
 	}
-	description = civic_tooltip_bandwidth_incorporated_effects
+	description = civic_tooltip_bandwidth_incorporated_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_bandwidth_incorporated_effects
 		modifier = {
 			empire_size_systems_mult = -0.25
 			tradition_cost_empire_size_mult = -0.1
@@ -120,11 +122,12 @@ civic_bandwidth_optimization = {
 	ai_weight = {
 		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
 	}
-	description = civic_tooltip_bandwidth_optimization_effects
+	description = civic_tooltip_bandwidth_optimization_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_bandwidth_optimization_effects
 		modifier = {
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 			empire_size_systems_mult = -0.25
@@ -169,22 +172,16 @@ civic_concurrent_command = {
 			has_active_tradition = tr_virtuality_finish
 		}
 	}
-	description = civic_tooltip_concurrent_command_effects
+	description = civic_tooltip_concurrent_command_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_concurrent_command_effects
 		triggered_modifier = {
 			potential = {
 				always = yes
 			}
-			ship_fire_rate_mult = 0.03
-			ship_disengage_opportunities_add = 0.2
-			army_damage_mult = 0.05
-			mult = value:ac_effective_ruler_level
-		}
-		# test below:
-		triggered_country_modifier = {
 			ship_fire_rate_mult = 0.03
 			ship_disengage_opportunities_add = 0.2
 			army_damage_mult = 0.05
@@ -227,11 +224,12 @@ civic_executive_militarization = {
 			has_active_tradition = tr_virtuality_finish
 		}
 	}
-	description = civic_tooltip_executive_militarization_effects
+	description = civic_tooltip_concurrent_command_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_concurrent_command_effects
 		triggered_modifier = {
 			potential = {
 				always = yes
@@ -266,11 +264,12 @@ civic_nodal_command = {
 			has_active_tradition = tr_virtuality_finish
 		}
 	}
-	description = civic_tooltip_nodal_command_effects
+	description = civic_tooltip_nodal_command_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_virtuality_finish
 		}
+		description = civic_tooltip_nodal_command_effects
 		triggered_modifier = {
 			potential = {
 				always = yes

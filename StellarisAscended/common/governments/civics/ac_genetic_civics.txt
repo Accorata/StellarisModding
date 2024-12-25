@@ -125,11 +125,12 @@ civic_blossoming_hives = {
 	ai_weight = {
 		base = 0
 	}
-	description = civic_tooltip_blossoming_hives_effects
+	description = civic_tooltip_blossoming_hives_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
+		description = civic_tooltip_blossoming_hives_effects
 		modifier = {
 			terraforming_cost_mult = -0.25
 			terraform_speed_mult = 0.25
@@ -179,11 +180,12 @@ civic_hyper_diversification = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_diversification_effects
+	description = civic_tooltip_hyper_diversification_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
+		description = civic_tooltip_hyper_diversification_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			BIOLOGICAL_species_trait_points_add = 1
@@ -230,11 +232,12 @@ civic_employee_diversification = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_diversification_effects
+	description = civic_tooltip_hyper_diversification_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
+		description = civic_tooltip_hyper_diversification_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			BIOLOGICAL_species_trait_points_add = 1
@@ -267,11 +270,12 @@ civic_hyper_diversified = {
 		}
 	}
 	
-	description = civic_tooltip_hyper_diversified_effects
+	description = civic_tooltip_hyper_diversified_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_genetics_finish
 		}
+		description = civic_tooltip_hyper_diversified_effects
 		modifier = {
 			auto_mod_monthly_add = 2
 			BIOLOGICAL_species_trait_points_add = 1

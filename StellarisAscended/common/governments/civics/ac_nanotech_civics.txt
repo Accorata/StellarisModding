@@ -34,11 +34,12 @@ civic_numbered_among_stars = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_numbered_among_stars_effects
+	description = civic_tooltip_numbered_among_stars_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_numbered_among_stars_effects
 		modifier = {
 			planet_pop_assemblers_nanites_upkeep_add = 0.5
 			empire_size_systems_mult = -0.5
@@ -81,11 +82,12 @@ civic_stellar_monopoly = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_stellar_monopoly_effects
+	description = civic_tooltip_stellar_monopoly_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_stellar_monopoly_effects
 		modifier = {
 			dyson_swarm_limit_add = 1
 			arc_furnace_limit_add = 1
@@ -122,11 +124,12 @@ civic_unending_swarm = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_unending_swarm_effects
+	description = civic_tooltip_unending_swarm_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_unending_swarm_effects
 		modifier = {
 			ship_nanite_swarmer_nanites_cost_mult = -0.5
 			shipsize_nanite_interdictor_hull_mult = 1
@@ -176,11 +179,12 @@ civic_microscopic_life = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_microscopic_life_effects
+	description = civic_tooltip_microscopic_life_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_microscopic_life_effects
 		modifier = {
 			planet_max_districts_mult = 0.5
 			ship_colonizer_cost_mult = -0.5
@@ -225,11 +229,12 @@ civic_minicorp = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_microscopic_life_effects
+	description = civic_tooltip_microscopic_life_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_microscopic_life_effects
 		modifier = {
 			planet_max_districts_mult = 0.5
 			ship_colonizer_cost_mult = -0.5
@@ -262,11 +267,12 @@ civic_microscopic = {
 			has_active_tradition = tr_nanotech_finish
 		}
 	}
-	description = civic_tooltip_microscopic_effects
+	description = civic_tooltip_microscopic_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_nanotech_finish
 		}
+		description = civic_tooltip_microscopic_effects
 		modifier = {
 			planet_max_districts_mult = 0.5
 			ship_colonizer_cost_mult = -0.5

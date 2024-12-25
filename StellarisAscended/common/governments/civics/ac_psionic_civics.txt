@@ -71,11 +71,12 @@ civic_telepathic_empire = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	description = civic_tooltip_telepathic_empire_effects
+	description = civic_tooltip_telepathic_empire_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
+		description = civic_tooltip_telepathic_empire_effects
 		modifier = {
 			planet_stability_add = 5
 			pop_non_psionic_happiness = -0.15
@@ -119,11 +120,12 @@ civic_telepathic_corporation = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	description = civic_tooltip_telepathic_corporation_effects
+	description = civic_tooltip_telepathic_corporation_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
+		description = civic_tooltip_telepathic_corporation_effects
 		modifier = {
 			planet_executives_produces_mult = 0.1
 			pop_non_psionic_happiness = -0.15
@@ -222,11 +224,12 @@ civic_shroud_renouncers = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	description = civic_tooltip_shroud_renouncers_effects
+	description = civic_tooltip_shroud_renouncers_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
+		description = civic_tooltip_shroud_renouncers_effects
 		modifier = {
 			shroud_delve_cost = 99
 			planet_telepaths_unity_produces_add = 9
@@ -290,11 +293,12 @@ civic_shroud_divestment = {
 			has_active_tradition = tr_psionics_finish
 		}
 	}
-	description = civic_tooltip_shroud_renouncers_effects
+	description = civic_tooltip_shroud_renouncers_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_psionics_finish
 		}
+		description = civic_tooltip_shroud_renouncers_effects
 		modifier = {
 			shroud_delve_cost = 99
 			planet_telepaths_unity_produces_add = 9

@@ -119,6 +119,36 @@ ac_natural_eugenics = {
 	}
 }
 
+ac_privileged_intellectualism = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		country_scientist_cap_add = 1
+		scientist_exp_gain = 0.1
+		pop_demotion_time_mult = 0.50
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
 ac_unrestricted_mutation = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
@@ -463,8 +493,8 @@ ac_palace_of_the_intellect = {
 		has_country_flag = ac_psionic_divine
 	}
 	modifier = {
-		LEADER_RULER_EXPERIENCE_add = 3
-		resolutions_cost_mult = -0.1
+		councilor_ruler_imperial_ac_psionic_divine_exp_gain = 0.25
+		resolutions_cost_mult = -0.10
 		envoys_add = 2
 	}
 	allow = {

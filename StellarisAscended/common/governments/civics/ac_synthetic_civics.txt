@@ -46,11 +46,12 @@ civic_bioform_upgrader = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	description = civic_tooltip_bioform_upgrader_effects
+	description = civic_tooltip_bioform_upgrader_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish
 		}
+		description = civic_tooltip_bioform_upgrader_effects
 		modifier = {
 			ship_weapon_damage = 0.1
 			country_naval_cap_mult = 0.15
@@ -106,11 +107,12 @@ civic_bio_replacer = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	description = civic_tooltip_bio_replacer_effects
+	description = civic_tooltip_bio_replacer_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish
 		}
+		description = civic_tooltip_bio_replacer_effects
 		modifier = {
 			country_synthetic_trust_cap_add = 10
 			country_organic_trust_cap_add = -10
@@ -225,11 +227,12 @@ civic_synthetic_celestials = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	description = civic_tooltip_synthetic_celestials_effects
+	description = civic_tooltip_synthetic_celestials_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish
 		}
+		description = civic_tooltip_synthetic_celestials_effects
 		modifier = {
 			megastructures_cost_mult = -0.1
 		}
@@ -279,11 +282,12 @@ civic_world_commissioners = {
 			has_active_tradition = tr_synthetics_finish
 		}
 	}
-	description = civic_tooltip_synthetic_celestials_effects
+	description = civic_tooltip_synthetic_celestials_incomplete_effects
 	swap_type = {
 		trigger = {
 			has_active_tradition = tr_synthetics_finish
 		}
+		description = civic_tooltip_synthetic_celestials_effects
 		modifier = {
 			megastructures_cost_mult = -0.1
 		}

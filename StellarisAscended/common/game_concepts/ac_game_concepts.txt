@@ -102,6 +102,11 @@ concept_edict_ac_natural_eugenics = {
 	tooltip_override = "edict:ac_natural_eugenics"
 }
 
+concept_edict_ac_privileged_intellectualism = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_privileged_intellectualism"
+}
+
 concept_edict_ac_unrestricted_mutation = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
 	tooltip_override = "edict:ac_unrestricted_mutation"

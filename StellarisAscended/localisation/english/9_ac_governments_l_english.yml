@@ -223,7 +223,7 @@
   ascension_governments.33.desc.chaotic: "Mutations brought us our sapience, our evolution; we owe ourselves to their generosity. Now, we will return the favor, catalyzing chaotic changes within our leaders to develop the next iterations of ourselves. Some casaulties may arise, as mutations are never predictable, but we will begin developing the next generations to withstand such chaos."
   ascension_governments.33.desc.neutral: "Our scientists are split on how to proceed with genetic evolution. Some wish for intelligence to be prioritized leading to an uplifted populace and new insights. Others acknowledge that it is random chance, not intelligent design that created our wonderful forms. They argue that inducing random mutations will preseve this structure and allow for phenotypes we've never even conceived of. Finally, the elites warn such changes will only undermine our foundations and that maintaining the status quo is necessary."
   ascension_governments.33.a: "May the uplifted guide us forward."
-  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_legislative_chorus$" #change edict
+  ascension_governments.33.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_perfect']\n$unlock_edict_ac_privileged_intellectualism$"
   ascension_governments.33.b: "Magnificence awaits."
   ascension_governments.33.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_oligarchic_chaotic']\n$unlock_edict_ac_unrestricted_mutation$"
   ascension_governments.33.c: "$ac_genetic_keep_auth_option$"
@@ -295,6 +295,11 @@
   edict_ac_natural_eugenics_effect:0 "Gain §Y£society_research£ $society_research$§! every time an Organic Army is Killed or Lost"
 
 # Oligarchic
+  edict_ac_privileged_intellectualism:0 "Privileged Intellectualism"
+  edict_ac_privileged_intellectualism_desc:0 "Our genetic focus must be to produce intellectual minds; Those with such brilliant curiousities turn the wheels of history."
+  concept_edict_ac_privileged_intellectualism:0 "$edict_ac_privileged_intellectualism$"
+  unlock_edict_ac_privileged_intellectualism:0 "$unlock_edict_tt$['concept_edict_ac_privileged_intellectualism']"
+
   edict_ac_unrestricted_mutation:0 "Unrestricted Mutation"
   edict_ac_unrestricted_mutation_desc:0 "We must not limit ourselves in our mutations and must continue to push the limits of what is possible in our newest generations."
   concept_edict_ac_unrestricted_mutation:0 "$edict_ac_unrestricted_mutation$"
@@ -614,6 +619,7 @@
   edict_ac_palace_of_the_intellect_desc:0 "Within our divine ruler's mind, vast expanses of knowledge and grace lie. All shall know their perfection."
   concept_edict_ac_palace_of_the_intellect:0 "$edict_ac_palace_of_the_intellect$"
   unlock_edict_ac_palace_of_the_intellect:0 "$unlock_edict_tt$['concept_edict_ac_palace_of_the_intellect']"
+  mod_councilor_ruler_imperial_ac_psionic_divine_exp_gain: "$councilor_ruler_imperial_ac_psionic_divine$ $exp_gain$"
 
   edict_ac_unholy_possession:0 "Unholy Possession"
   edict_ac_unholy_possession_desc:0 "Within our ruler, our Patron dwells. Awaken, our lord, for we are yours to command!"
