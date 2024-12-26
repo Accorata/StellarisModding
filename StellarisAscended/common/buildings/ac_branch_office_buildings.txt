@@ -22,6 +22,7 @@ holding_ac_robotics_plant = {
 	}
 	planet_modifier = {
 		job_roboticist_add = 1
+		pop_ethic_materialist_attraction_mult = 0.25
 	}
 	triggered_planet_modifier = {
 		potential = {

@@ -487,7 +487,7 @@
   ascension_governments.1009.desc: "On [Root.Capital.GetName] local enforcement have begun to find ghastly remains of [Root.GetSpeciesNamePlural] sprawled out upon horrifying altars. If we do not act soon, these ritualistic killings will likely increase and the cultists numbers will rise. Others will to embrace such madness, calling for a larger sacrficie to our Gods of the Shroud.\n\nThe choice is ours."
   ascension_governments.1009.a: "The Shroud deserves our devotion." # E
   ascension_governments.1009.b: "The fusion of minds should not beget such evil." # D
-  ascension_governments.1009.c: "There will always be those lost to insanity...." # N
+  ascension_governments.1009.c: "There will always be those lost to insanity." # N
   ac_holy_minds:0 "Holy Minds"
   ac_holy_minds_desc:0 "Our minds are sacred; they shall not be left as fodder for demonic entities."
   ac_dark_rituals:0 "Dark Rituals"
@@ -513,9 +513,9 @@
 
 # Event Pool 2
   ascension_governments.1020.name: "Chosen Sovereignty"
-  ascension_governments.1020.desc: "...\n\n..."
+  ascension_governments.1020.desc: "A powerful psionic §H[chosen_one.GetName]§!, previously [chosen_one_species.GetName] but now something far more, has attracted a large and devout following in the [Root.GetName]. Worshipped by many as a supreme deity, a call has gone out to officially crown the [chosen_one.GetTitle] as the permanent ruler of our great empire, now and into perpetuity.\n\nHow they received such power remains a contentious question: are they a divine being in themselves or rather a conduit for the gods within the Shroud?"
   ascension_governments.1020.a: "Our diety walks the physical realm." # D
-  ascension_governments.1020.b: "The Chosen One is blessed by the Shroud." # E
+  ascension_governments.1020.b: "They are chosen by the Shroud." # E
   ascension_governments.1020.c: "Worship shouldn't be wasted on power alone." # N
 
   ascension_governments.1021.name: "A Request"
@@ -554,10 +554,10 @@
 # Final Event
 # Democratic
   ascension_governments.1032.name: "Transcendance of the Masses"
-  ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] sensations dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains to themselves. ..."
+  ascension_governments.1032.desc.divine: "All [Root.GetSpeciesAdj] sensations dance in our minds. We reach out and feel them all, as one. One conscience where all emotions are felt by all, even as each indivual's will remains to themselves. Together we will reach beyond all other barriers."
   ascension_governments.1032.desc.eldritch: "Within the unconsious, desires run rampant free from the authority of the superego. Here one's true emotions are made manifest, and it is these that shall govern our society. Our collective mood will sustain the nation, orchestrating elections and victors in instants and instilling a society built on intuition."
-  ascension_governments.1032.desc.neutral: "..."
-  ascension_governments.1032.a: "..."
+  ascension_governments.1032.desc.neutral: "The glory of all [Root.GetSpeciesAdj] minds has revealed itself to us. Our enlightenment lifts us from mere material beings to sages of time. The democratic structure may need to evolve itself with such changes. Some wish we telepathically link our minds so that all emotions are shared and empathy reaches endlessly across space. Others wish to retain our emotional individuality, but to use such collective emotions as a poltical compass to elect our representatives. Under this system, the subconscious would share its desires with the universal will, and democracy would fear no threat from manipulative actors. Finally, there are those who wish to remain as we are and continue to ensure equality for all in these changing times."
+  ascension_governments.1032.a: "Compassion with thrive."
   ascension_governments.1032.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_divine']\n$unlock_edict_ac_united_in_soul$"
   ascension_governments.1032.b: "Freedom from manipulation."
   ascension_governments.1032.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_democratic_eldritch']\n$unlock_edict_ac_aligned_desires$"
@@ -603,13 +603,13 @@
 
 # Corporate
   ascension_governments.1036.name: "Riches of the Soul"
-  ascension_governments.1036.desc.divine: "Our executives have all been trained profusely in the prophetic precognition the Shroud has bestowed upon us. Their foresight guarantees the profits of tommorrow, allowing each business decision to be analyzed both in present and future. It has been foreseen that our stocks will rise immensely once this change is made and annouced to our shareholders."
-  ascension_governments.1036.desc.eldritch: "..."
-  ascension_governments.1036.desc.neutral: "..."
-  ascension_governments.1036.a: "..."
+  ascension_governments.1036.desc.divine: "Our executives have all been trained profusely in the prophetic precognition the Shroud has bestowed upon us. Their foresight guarantees the profits of tommorrow, allowing each business decision to be analyzed both in present and future. They have already foreseen that our stocks will rise immensely once this change is annouced to our shareholders."
+  ascension_governments.1036.desc.eldritch: "Introducing the telemarketer: a gifted telepath who manipulates the minds of others to compell consumerist practises! With this new corporate role, never again will supply outperform demand, never again will products go unsold, and never again will profit margins fail to be realized."
+  ascension_governments.1036.desc.neutral: "The powers of psionics have brought exciting new business approaches to bear. Embracing foresight and precognition would allow for future decisions to be analyzed now, guaranteeing all futures are profitable. Embracing psionic emotional manipulation would allow for the creation of the telemarketer - a psionic adept who subliminally encourages others to buy our products. Additionally, we could remain as our current corporate form."
+  ascension_governments.1036.a: "The future is ours to wield."
   ascension_governments.1036.a.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_divine']\n$unlock_edict_ac_handicap_distribution$" #change edict
   ascension_governments.1036.b: "Telemarketers guarantee demand."
-  ascension_governments.1036.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_eldritch']\n$unlock_holding_ac_manipulation_network$\n$unlock_edict_self_preservation_override$" # edicts to be changed... 
+  ascension_governments.1036.b.tt: "$change_auth_tt$ ['concept_auth_ac_psionic_corporate_eldritch']\n$unlock_holding_ac_manipulation_network$\n$unlock_edict_self_preservation_override$" # edicts to be changed 
   ascension_governments.1036.c: "$ac_psionic_keep_auth_option$"
   ascension_governments.1036.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
 

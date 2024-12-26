@@ -36,12 +36,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_enigmatic.dds"
 	}
 	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_shapeshifter"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_shapeshifter.dds"
+	}
+	spriteType = {
 		name = "GFX_leader_trait_ac_end_vessel"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_end_vessel.dds"
 	}
 	spriteType = {
 		name = "GFX_leader_trait_ac_visions_of_doom"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_visions_of_doom.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_restored_sanity"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_restored_sanity.dds"
 	}
 	
 	# STARBASE MODULES -----------------------------------------------------------------------

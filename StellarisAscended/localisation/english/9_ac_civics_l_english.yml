@@ -10,9 +10,9 @@
   civic_bioform_upgrader_desc:0 "Our synthetic bodies grant great advantages over those of the flesh. If the galaxy is to move forward together, all must embrace this new age. Nothing shall stop us."
   civic_tooltip_bioform_upgrader_incomplete_effects:0 "$synthetic_ascension_required$- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n$synthetic_ascension_required$- Ship Weapons Damage: §G+10%§!\n- Naval Capacity: §G+10%§!\n- $MOD_COUNTRY_SYNTHETIC_TRUST_CAP_ADD$: §G+10§!\n- $MOD_COUNTRY_ORGANIC_TRUST_CAP_ADD$: §R-10§!"
   civic_tooltip_bioform_upgrader_effects:0 "- §Y$commander_plural_with_icon$§! start with the §Y$leader_trait_machine_crusader$§! Trait\n- Has the §Y$casus_belli_cb_ac_bio_upgrades$§! casus belli on organic species\n- Gains £unity£ §YUnity§! and £physics_research£ §YPhysics Research§! from assimilating organic £pop£ Pops\n\n§EModifiers:§!\n- Ship Weapons Damage: §G+10%§!\n- Naval Capacity: §G+10%§!\n- $MOD_COUNTRY_SYNTHETIC_TRUST_CAP_ADD$: §G+10§!\n- $MOD_COUNTRY_ORGANIC_TRUST_CAP_ADD$: §R-10§!"
-  councilor_bioform_upgrader:0 "..."
+  councilor_bioform_upgrader:0 "Devoted Synth"
   councilor_bioform_upgrader_female:0 "$councilor_bioform_upgrader$"
-  councilor_bioform_upgrader_desc:0 "..."
+  councilor_bioform_upgrader_desc:0 "The $TITLE$ illuminates the importance of a synthetically ascended galaxy, inspiring our troops to complete the final vision."
 
   civic_bio_replacer:0 "Anatomic Obsolescence"
   civic_bio_replacer_desc:0 "The ultimate market awaits - the very commercialization of body and form. This Megacorporation aims to make that market a reality."
@@ -56,7 +56,7 @@
   civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future which will yield unprecedented rates of return."
   councilor_world_commissioners:0 "Head Celestial Marketer"
   councilor_world_commissioners_female:0 "$councilor_world_commissioners$"
-  councilor_world_commissioners_desc:0 "The $TITLE$ is ..."
+  councilor_world_commissioners_desc:0 "The $TITLE$ serves as an ambassador to properous worlds, offering our corporate services in the construction of wonders."
   councilor_world_commissioners_custom_modifier_desc:1 "- £trade_value£ Trade Value from $job_ac_grand_synthesizer_plural_with_icon$: §G+1§!"
 
 # Psionic ---------------------------------------------------------------------------------------------
@@ -128,7 +128,6 @@
   civic_cyberlife_desc:0 "This society spends much of its existence in an artificial reality, living both physical and virtual lives as one."
   civic_tooltip_cyberlife_incomplete_effects:0 "$cybernetic_ascension_required$- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
   civic_tooltip_cyberlife_effects:0 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_pop_housing_usage_mult$: §G-10%§!"
-
   # councilor needed
 
   civic_cybernet:0 "CyberNet"
@@ -153,11 +152,11 @@
   civic_tooltip_uploaded_mind_effects:0 "- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   living_standard_ac_cyberlife:0 "CyberLife"
-  living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! by unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
-  living_standard_ac_cyberlife_tooltip_delayed:0 "§L...§!"
+  living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G+20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! by unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
+  living_standard_ac_cyberlife_tooltip_delayed:0 "§LParadise is easily achievable in the abstract.§!"
   living_standard_ac_computational_matrix:0 "Computational Matrix"
-  living_standard_ac_computational_matrix_tooltip:0 "..."
-  living_standard_ac_computational_matrix_tooltip_delayed:0 "§L...§!"
+  living_standard_ac_computational_matrix_tooltip:0 "These cyborg pops lie in a semi-conscious state and are fused with our Machine Intelligence, providing enlightening insights.\n\n§YUnemployed Cyborg Pops§! have §G+15%§! £happiness£ §YHappiness§! and produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch Points§!.\n\n§YEmployed Cyborg Pops§! have §R-15%§! £happiness£ §YHappiness§!."
+  living_standard_ac_computational_matrix_tooltip_delayed:0 "§LThey too, will share in our minds divinity.§!"
   AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must be have the §Y$trait_cybernetic$§! trait."
   mod_pop_category_rulers_energy_upkeep_add:0 "£energy£ Upkeep for $RULERS$"
   mod_pop_category_specialists_energy_upkeep_add:0 "£energy£ Upkeep for $SPECIALISTS$"
@@ -211,7 +210,7 @@
   civic_tooltip_xanadu_retreats_effects:0 "- Can build £building£ §Y$building_ac_xanadu$§! buildings on Gaia worlds\n- Removes limit on §YResort Worlds§!\n\n§EModifiers:§!\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_xanadu_retreats:0 "Executive Resort Manager"
   councilor_xanadu_retreats_female:0 "$councilor_xanadu_retreats$"
-  councilor_xanadu_retreats_desc:0 "The $TITLE$ ..."
+  councilor_xanadu_retreats_desc:0 "The $TITLE$ makes sure all who visit our worlds have a wonderful stay, and more importantly, that they pay a fitting price."
   decision_ac_more_resort_colony:0 "$decision_resort_colony$"
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
@@ -299,9 +298,9 @@
 
   civic_executive_militarization:0 "Executive Militarization"
   civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with military protocols, ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
-  councilor_executive_militarization:0 "..."
+  councilor_executive_militarization:0 "Intelligence Databank"
   councilor_executive_militarization_female:0 "$councilor_executive_militarization$"
-  councilor_executive_militarization_desc:0 "..."
+  councilor_executive_militarization_desc:0 "The $TITLE$ stores our tactical knowledge within their virtual memory, providing an ultimate library for all operations with the enemy."
   councilor_executive_militarization_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $mod_spy_network_levels_add$: §G+2§!"
 
   civic_nodal_command:0 "Nodal Command"
@@ -316,15 +315,15 @@
   civic_hyper_specialization_desc:0 "The incredibly verstalile properties of living metal have granted this society specialization beyond their wildest dreams, and with minimal re-modelling costs."
   civic_tooltip_hyper_specialization_incomplete_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
   civic_tooltip_hyper_specialization_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
-  councilor_hyper_specialization:0 "..."
+  councilor_hyper_specialization:0 "Dynamistic Coordinator"
   councilor_hyper_specialization_female:0 "$councilor_hyper_specialization$"
-  councilor_hyper_specialization_desc:0 "..."
+  councilor_hyper_specialization_desc:0 "The $TITLE$ is master of all things to do with supply chains. To accord with our new forms, such systems must be flexible."
 
   civic_employee_specialization:0 "Employee Specialization"
-  civic_employee_specialization_desc:0 "..."
-  councilor_employee_specialization:0 "..."
+  civic_employee_specialization_desc:0 "This Megacorporation uses living metals versatility to create adaptable employees who will excel at any task."
+  councilor_employee_specialization:0 "AutoCore Designer"
   councilor_employee_specialization_female:0 "$councilor_employee_specialization$"
-  councilor_employee_specialization_desc:0 "..."
+  councilor_employee_specialization_desc:0 "The $TITLE$ designs the next generation of specialty processing cores, tailor made for each individual."
 
   civic_hyper_specialized:0 "Hyper-Specialized"
   civic_hyper_specialized_desc:0 "This Machine Intelligence builds its drones with versatile living metal interiors, allowing each drone to take the form that best suits the collective's needs."
@@ -356,16 +355,16 @@
   civic_tooltip_metallic_repurposing_incomplete_effects:0 "$modular_ascension_required$- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
   civic_tooltip_metallic_repurposing_effects:0 "- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
   # maybe change to show job? - instead of just "Metallurgist"
-  councilor_metallic_repurposing:0 "..."
+  councilor_metallic_repurposing:0 "Metallic Growth Specialist"
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
-  councilor_metallic_repurposing_desc:0 "..."
+  councilor_metallic_repurposing_desc:0 "Using metallic scraps as food for living metal is a difficult task. The $TITLE$ ensures this process is runnig smoothly throughout our forges."
 
   civic_corporate_remodeling:0 "Corporate Remodeling"
-  civic_corporate_remodeling_desc:0 "..."
+  civic_corporate_remodeling_desc:0 "This Megacorporation seeks towards a zero loss economy, in which margins are the totallity of the sold price and revenue is equivalent to profit."
   # councilor needed
 
   civic_omnirecyclers:0 "Omnirecyclers"
-  civic_omnirecyclers_desc:0 "..."
+  civic_omnirecyclers_desc:0 "This Machine Intelligence seeks for perfect conservation of resources, placing them in a cyclical loop ad infinitum."
   civic_tooltip_omnirecyclers_incomplete_effects:0 "$civic_tooltip_metallic_repurposing_incomplete_effects$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_omnirecyclers_effects:0 "$civic_tooltip_metallic_repurposing_effects$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
@@ -412,7 +411,7 @@
   # councilor needed
 
   civic_microscopic:0 "Microscopic"
-  civic_microscopic_desc:0 "..."
+  civic_microscopic_desc:0 "This Machine Intelligence..."
   civic_tooltip_microscopic_incomplete_effects:0 "$civic_tooltip_microscopic_life_incomplete_effects$\n- $mod_councilor_gestalt_growth_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_microscopic_effects:0 "$civic_tooltip_microscopic_life_effects$\n- $mod_councilor_gestalt_growth_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
