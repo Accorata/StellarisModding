@@ -1,0 +1,390 @@
+leader_trait_sm_mastery_materials = {
+	replace_traits = {
+		"leader_trait_expertise_materials_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_materials"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_materials_research_speed_mult = 0.25
+		category_materials_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_propulsion  = {
+	replace_traits = {
+		"leader_trait_expertise_propulsion_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_propulsion"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_propulsion_research_speed_mult = 0.25
+		category_propulsion_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_voidcraft  = {
+	replace_traits = {
+		"leader_trait_expertise_voidcraft_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_voidcraft_voidcraft"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_voidcraft_research_speed_mult = 0.25
+		category_voidcraft_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_industry = {
+	replace_traits = {
+		"leader_trait_expertise_industry_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_engineering
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_industry"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_industry_research_speed_mult = 0.25
+		category_industry_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = engineering
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_field_manipulation = {
+	replace_traits = {
+		"leader_trait_expertise_field_manipulation_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_field_manipulation"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_field_manipulation_research_speed_mult = 0.25
+		category_field_manipulation_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_particles = {
+	replace_traits = {
+		"leader_trait_expertise_particles_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_particles"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_particles_research_speed_mult = 0.25
+		category_particles_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_computing = {
+	replace_traits = {
+		"leader_trait_expertise_computing_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_computing"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_computing_research_speed_mult = 0.25
+		category_computing_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_psionics = {
+	replace_traits = {
+		"leader_trait_expertise_psionics_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_psionics"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_psionics_research_speed_mult = 0.5
+		category_psionics_draw_chance_mult = 2.5
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_new_worlds = {
+	replace_traits = {
+		"leader_trait_expertise_new_worlds_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_new_worlds"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_new_worlds_research_speed_mult = 0.25
+		category_new_worlds_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_statecraft = {
+	replace_traits = {
+		"leader_trait_expertise_statecraft_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_statecraft"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_statecraft_research_speed_mult = 0.25
+		category_statecraft_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_biology = {
+	replace_traits = {
+		"leader_trait_expertise_biology_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_biology"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_biology_research_speed_mult = 0.25
+		category_biology_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_military_theory = {
+	replace_traits = {
+		"leader_trait_expertise_military_theory_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_military_theory"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_military_theory_research_speed_mult = 0.25
+		category_military_theory_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = society
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}
+
+leader_trait_sm_mastery_archaeostudies = {
+	replace_traits = {
+		"leader_trait_expertise_archaeostudies_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_society
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_archaeostudies"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	councilor_modifier = {
+		category_archaeostudies_research_speed_mult = 0.25
+		category_archaeostudies_draw_chance_mult = 0.50
+		starbase_shipyard_build_minor_artifacts_cost_mult = -0.15
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_technocracy
+			}
+		}
+		planet_jobs_minor_artifacts_produces_mult = 0.40
+	}
+	triggered_sector_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_technocracy
+			}
+		}
+		planet_jobs_minor_artifacts_produces_mult = 0.20
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}

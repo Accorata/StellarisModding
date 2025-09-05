@@ -1,0 +1,4 @@
+# Mod compatability check
+@has_criminal_worlds = 1
+
+# END OF FILE

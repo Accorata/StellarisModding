@@ -1,0 +1,299 @@
+spriteTypes = {
+	## LEADER SUBCLASSES ------------------------------------------------------------------------
+	# Racketeer
+	spriteType = {
+		name = "GFX_leader_subclass_official_cw_racketeer_small"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_official_cw_racketeer_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_official_cw_racketeer_medium"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_official_cw_racketeer_medium.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_official_cw_racketeer_large"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_official_cw_racketeer_large.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_official_cw_racketeer_background"
+		# Change below...
+		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_commander_admiral.dds"
+	}
+	# Privateer
+	spriteType = {
+		name = "GFX_leader_subclass_commander_cw_privateer_small"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_commander_cw_privateer_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_commander_cw_privateer_medium"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_commander_cw_privateer_medium.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_commander_cw_privateer_large"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_commander_cw_privateer_large.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_commander_cw_privateer_background"
+		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_commander_cw_privateer.dds"
+	}
+	# Hacker
+	spriteType = {
+		name = "GFX_leader_subclass_scientist_cw_hacker_small"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_scientist_cw_hacker_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_scientist_cw_hacker_medium"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_scientist_cw_hacker_medium.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_scientist_cw_hacker_large"
+		texturefile = "gfx/interface/icons/leaders/subclasses/subclass_scientist_cw_hacker_large.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_subclass_scientist_cw_hacker_background"
+		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_cw_hacker.dds"
+	}
+	## LEADER TRAITS --------------------------------------------------------------------------
+	## Generic
+	# Medallion's Blessing
+	spriteType = {
+		name = "GFX_leader_trait_cw_medallions_blessing"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_medallions_blessing.dds"
+	}
+	# Underworld Connections
+	spriteType = {
+		name = "GFX_leader_trait_cw_underworld_connections"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_underworld_connections.dds"
+	}
+	# Raider Connections
+	spriteType = {
+		name = "GFX_leader_trait_cw_raider_connections"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_raider_connections.dds"
+	}
+	# Darknet Connections
+	spriteType = {
+		name = "GFX_leader_trait_cw_darknet_connections"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_darknet_connections.dds"
+	}
+	# Ill-Gotten Gains
+	spriteType = {
+		name = "GFX_leader_trait_cw_ill_gotten_gains"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_ill_gotten_gains.dds"
+	}
+	## Racketeers
+	# Cyber Fraud
+	spriteType = {
+		name = "GFX_leader_trait_cw_cyber_fraud"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_cyber_fraud.dds"
+	}
+	# Organ Harvesting
+	spriteType = {
+		name = "GFX_leader_trait_cw_organ_harvesting"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_organ_harvesting.dds"
+	}
+	# Unregulated Cybernetics
+	spriteType = {
+		name = "GFX_leader_trait_cw_restricted_cybernetics"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_restricted_cybernetics.dds"
+	}
+	# Hedonistic Pleasures
+	spriteType = {
+		name = "GFX_leader_trait_cw_hedonistic_pleasures"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_hedonistic_pleasures.dds"
+	}
+	# Enterprising
+	spriteType = {
+		name = "GFX_leader_trait_cw_enterprising"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_enterprising.dds"
+	}
+	## Privateers
+	# Underdog
+	spriteType = {
+		name = "GFX_leader_trait_cw_underdog"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_underdog.dds"
+	}
+	# Boarding Parties
+	spriteType = {
+		name = "GFX_leader_trait_cw_boarding_parties"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_boarding_parties.dds"
+	}
+	# Stealth Specialization
+	spriteType = {
+		name = "GFX_leader_trait_cw_stealth_specialization"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_stealth_specialization.dds"
+	}
+	# Wolfpack
+	spriteType = {
+		name = "GFX_leader_trait_cw_wolfpack"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_wolfpack.dds"
+	}
+	## Hackers
+	# Infiltration Focus
+	spriteType = {
+		name = "GFX_leader_trait_cw_infiltration_focus"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_infiltration_focus.dds"
+	}
+	# Manipulation Focus
+	spriteType = {
+		name = "GFX_leader_trait_cw_manipulation_focus"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_manipulation_focus.dds"
+	}
+	# Provocation Focus
+	spriteType = {
+		name = "GFX_leader_trait_cw_provocation_focus"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_provocation_focus.dds"
+	}
+	# Sabotage Focus
+	spriteType = {
+		name = "GFX_leader_trait_cw_sabotage_focus"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_sabotage_focus.dds"
+	}
+	# Subterfuge Focus
+	spriteType = {
+		name = "GFX_leader_trait_cw_subterfuge_focus"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_subterfuge_focus.dds"
+	}
+	# Deadly Saboteur
+	spriteType = {
+		name = "GFX_leader_trait_cw_deadly_saboteur"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_deadly_saboteur.dds"
+	}
+	# Master Puppeteer
+	spriteType = {
+		name = "GFX_leader_trait_cw_web_of_connections"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_web_of_connections.dds"
+	}
+	# Hacker Node
+	spriteType = {
+		name = "GFX_leader_trait_cw_hacker_node"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_hacker_node.dds"
+	}
+	## TRADITIONS -----------------------------------------------------------------------------
+	## Criminality
+	# Hex
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_cw_criminality"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_cw_criminality.dds"
+	}
+	# Background Art
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_cw_criminality"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_cw_criminality.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_cw_criminality"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_cw_criminality.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_cw_criminality"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_cw_criminality.dds"
+	}
+	# Tradition Arts
+	spriteType = {
+		name = "GFX_tr_cw_criminality_smugglers_cartel"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_smugglers_cartel.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_criminality_black_markets"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_black_markets.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_criminality_galactic_lawlessness"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_galactic_lawlessness.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_criminality_war_crimes"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_war_crimes.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_criminality_plundered_assets"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_plundered_assets.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_criminality_pirate_warlord"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_pirate_warlord.dds"
+	}
+	## Deviancy
+	# Hex
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_cw_deviancy"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_cw_criminality.dds"
+	}
+	# Background Art
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_cw_deviancy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_cw_criminality.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_cw_deviancy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_cw_criminality.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_cw_deviancy"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_cw_criminality.dds"
+	}
+	# Tradition Arts
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_smugglers_cartel"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_smugglers_cartel.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_black_markets"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_black_markets.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_galactic_lawlessness"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_galactic_lawlessness.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_war_crimes"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_war_crimes.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_plundered_assets"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_plundered_assets.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_cw_deviancy_pirate_warlord"
+		textureFile = "gfx/interface/icons/traditions/tradition_cw_criminality_pirate_warlord.dds"
+	}
+	## COUNCIL AGENDAS ------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_council_agenda_icon_cw_criminality" 
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_cw_deviancy" 
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
+	}
+	## RELICS ---------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_relic_cw_medallion"
+		texturefile = "gfx/interface/icons/relics/r_cw_medallion.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_cw_medallion_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

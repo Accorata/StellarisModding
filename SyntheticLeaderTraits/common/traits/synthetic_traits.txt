@@ -1,0 +1,412 @@
+leader_trait_age_of_machines = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_knowledge_for_the_masses"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_governor_subclass = yes
+		}
+	}
+	planet_modifier = {
+		planet_pop_assembly_mult = 0.1
+		planet_jobs_robotic_produces_mult = 0.1
+	}
+	sector_modifier = {
+		planet_pop_assembly_mult = 0.05
+		planet_jobs_robotic_produces_mult = 0.05
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_next_gen_processing = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "GFX_leader_trait_robotist"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_official_economy_councilor
+		}
+	}
+	councilor_modifier = {
+		empire_size_add = -10
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_blunt_directives = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "GFX_leader_trait_opinionated"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_official_diplomacy_councilor
+			owner = {
+				NOT = {
+					is_homicidal = yes
+				}
+			}
+		}
+	}
+	councilor_modifier = {
+		country_claim_influence_cost_mult = -0.2
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_obfuscated_code = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "GFX_leader_trait_narrow_minded"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		diplo_weight_naval_mult = 0.05
+	}
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		federation_experience_add = 0.5
+	}
+	leader_potential_add = {
+		has_trait = leader_trait_synthetic
+		has_trait = subclass_official_delegate
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_computational_understanding = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_reverse_engineer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_councilor
+		}
+	}
+	councilor_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_mainframe_integration = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_financial"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		ship_evasion_add = 10
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.15
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_thorough_annihilation = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_warlike"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_commander_general
+		}
+	}
+	army_modifier = {
+		army_morale_damage_mult = 0.05
+		army_collateral_damage_mult = 1
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_introspective_revisions = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_magnifying_glass"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_pops_robotics_upkeep_mult = -0.075
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		modifier = {
+			has_trait = leader_trait_inquisitive
+			factor = 2
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_2
+			factor = 3
+		}
+		modifier = {
+			has_trait = leader_trait_inquisitive_3
+			factor = 4
+		}
+	}
+}
+
+leader_trait_evolved_AI_assistant = {
+	replace_traits = {
+		leader_trait_sapient_AI_assistant
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_sapient_AI_assistant"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	modifier = {
+		science_ship_survey_speed = 0.4
+		ship_anomaly_research_speed_mult = 0.4
+	}
+	councilor_modifier = {
+		science_ship_survey_speed = 0.1
+		ship_anomaly_research_speed_mult = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			OR = {
+				has_trait = subclass_scientist_explorer
+				has_trait = subclass_scientist_scholar
+			}
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+leader_trait_also_evolved_AI_assistant = {
+	replace_traits = {
+		leader_trait_custom_AI_assistant
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_sapient_AI_assistant"
+		RARITY = veteran
+		COUNCIL = triggered
+		TIER = none
+	}
+	modifier = {
+		science_ship_survey_speed = 0.4
+		ship_anomaly_research_speed_mult = 0.4
+	}
+	councilor_modifier = {
+		science_ship_survey_speed = 0.1
+		ship_anomaly_research_speed_mult = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			OR = {
+				has_trait = subclass_scientist_explorer
+				has_trait = subclass_scientist_scholar
+			}
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}
+
+# Negative Traits #
+leader_trait_failing_subroutines = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative_no_tiers
+		ICON = "GFX_leader_trait_machine_intelligence"
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		empire_size_penalty_mult = 0.1
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	leader_potential_add = {
+		has_trait = leader_trait_synthetic
+	}
+	opposites = {
+		leader_trait_next_gen_processing
+		trait_ruler_feedback_loop
+		trait_ruler_feedback_loop_2
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+# Destiny Traits #
+leader_trait_ex_machina = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_synthetic"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		country_councilor_influence_produces_add = 1
+		pop_category_workers_unity_produces_add = 0.25
+		pop_category_specialists_unity_produces_add = 0.25
+		pop_category_rulers_unity_produces_add = 0.25
+	}
+	leader_potential_add = {
+		AND = {
+			has_trait = leader_trait_synthetic
+			is_councilor = yes
+		}
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+	}
+}

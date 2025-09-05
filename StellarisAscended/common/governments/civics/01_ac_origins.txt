@@ -1,0 +1,36 @@
+origin_ac_born_of_code = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_arc_welders.dds" # chnage
+	picture = GFX_origin_arc_welders # change
+	max_once_global = yes
+	flags = { custom_start_screen }
+
+	# initializers = { custom_starting_init_01 custom_starting_init_02 custom_starting_init_03 custom_starting_init_04 custom_starting_init_05 custom_starting_init_06 sol_system_initializer deneb_system titawin_init }
+
+	playable = {
+		has_machine_age_dlc = yes
+	}
+
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+	}
+
+	description = "origin_tooltip_ac_born_of_code_effects"
+	negative_description = "origin_tooltip_ac_born_of_code_negative_effects"
+
+	traits = {
+		trait = trait_robot_digital_1
+	}
+
+	modifier = {
+		# ...
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 2
+	}
+}

@@ -1,0 +1,49 @@
+tr_fft_gravitics_adopt = {
+	possible = {
+		has_technology = tech_housing_2
+	}
+	# unlocks_agenda = agenda_???
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.1
+	}
+}
+
+tr_fft_gravitics_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_fft_gravitics_elevated_skylines = {
+	modifier = {
+		empire_size_districts_mult = -0.25
+		colony_start_num_pops_add = 1
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_gravitics_neo_lagrangian_dynamics = {
+	modifier = {
+		station_researchers_produces_mult = 0.1
+		stations_upkeep_mult = -0.25
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_gravitics_graviton_architecture = {
+	possible = {
+		has_tradition = tr_fft_gravitics_elevated_skylines
+		has_tradition = tr_fft_gravitics_neo_lagrangian_dynamics
+	}
+	modifier = {
+		starbase_building_capacity_add = 1
+		planet_max_buildings_add = 1
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}

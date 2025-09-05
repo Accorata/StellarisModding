@@ -1,0 +1,26 @@
+tradition_fft_gravitics = {
+	tree_template = "tree_12_12"
+	adoption_bonus = "tr_fft_gravitics_adopt"
+	finish_bonus = "tr_fft_gravitics_finish"
+	traditions = {
+		"tr_fft_gravitics_elevated_skylines"
+		"tr_fft_gravitics_neo_lagrangian_dynamics"
+		"tr_fft_gravitics_"
+		"tr_fft_gravitics_graviton_architecture"
+		"tr_fft_gravitics_"
+	}
+	# potential = {
+	# 	is_gestalt = no
+	# }
+	ai_weight = {
+		factor = 15
+		# modifier = {
+		# 	factor = 2
+		# 	has_tradition = tr_expansion_adopt
+		# }
+		# modifier = {
+		# 	factor = 2
+		# 	has_tradition = tr_harmony_adopt
+		# }
+	}
+}

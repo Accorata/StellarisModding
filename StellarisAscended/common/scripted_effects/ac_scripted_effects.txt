@@ -1,0 +1,72 @@
+ac_hyperequality_assimilation_effect = {
+	random_owned_pop = {
+		limit = {
+			NOR = {
+				is_same_species = root.owner
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
+			}
+			NOT = {
+				root = {
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
+		}
+		change_species = root.owner
+		root = {
+			owner = {
+				if = {
+					limit = {
+						has_ascension_perk = ap_become_the_crisis
+					}
+					complete_crisis_objective = crisobj_purge_pops
+				}
+			}
+		}
+		apply_post_assimilation_effects = yes
+	}
+}
+
+ac_add_mutant_trait = {
+	random_list = {
+		1 = {
+			add_trait_no_notify = leader_trait_ac_mutant_brilliance
+		}
+		1 = {
+			add_trait_no_notify = leader_trait_ac_mutant_tetrochromat
+		}
+		1 = {
+			add_trait_no_notify = leader_trait_ac_mutant_evolving
+		}
+		1 = {
+			add_trait_no_notify = leader_trait_ac_mutant_shapeshifter
+		}
+		1 = {
+			add_trait_no_notify = leader_trait_ac_mutant_enigmatic
+		}
+	}
+}
+
+ac_clone_ruler = {
+	# Remove current heir if there is one
+	random_owned_leader = {
+		limit = {
+			is_ruler = no
+			has_trait = trait_imperial_heir
+		}
+		remove_trait = trait_imperial_heir
+	}
+	# Clone ruler
+	ruler = {
+		save_event_target_as = ruler_to_be_cloned
+	}
+	clone_leader = {
+		target = event_target:ruler_to_be_cloned
+		set_age = 1
+	}
+	# Set the new clone to be the heir (and denote them as a clone)
+	set_heir = last_created_leader
+	last_created_leader = {
+		set_leader_flag = ac_cloned_heir
+	}
+}

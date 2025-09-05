@@ -1,0 +1,135 @@
+tr_cw_deviancy_adopt = {
+	unlocks_agenda = cw_deviancy
+	modifier = {
+		planet_crime_floor_add = 10
+		# Reduces criminal pop category upkeep by 50%
+		pop_category_criminals_upkeep_mult = -0.5
+	}
+}
+
+tr_cw_deviancy_finish = {
+	# Unlocks criminal veteran classes (but not Hacker)
+	custom_tooltip_with_modifiers = tr_cw_deviancy_finish_tooltip
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_cw_deviancy_smugglers_cartel = {
+	custom_tooltip = tr_cw_deviancy_smugglers_cartel_tooltip
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_cw_deviancy_black_markets = {
+	possible = {
+		has_tradition = tr_cw_deviancy_smugglers_cartel
+	}
+
+	modifier = {
+		country_trade_fee = -0.10
+		planet_crime_no_happiness_mult = 0.15
+	}
+}
+
+tr_cw_deviancy_galactic_lawlessness = {
+	possible = {
+		has_tradition = tr_cw_deviancy_smugglers_cartel
+	}
+
+	custom_tooltip = tr_cw_deviancy_galactic_lawlessness_tooltip
+
+	triggered_modifier = {
+		# Happiness when violating galactic community law
+		potential = {
+			is_galactic_community_member = yes
+			OR = {
+				is_in_breach_of_any = yes
+				has_modifier = resolution_denounced
+			}
+		}
+		pop_happiness = 0.10
+	}
+
+	# -50% Effects from Sanctions
+	inline_script = {
+		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
+		CATEGORY = tech
+	}
+	inline_script = {
+		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
+		CATEGORY = economic
+	}
+	inline_script = {
+		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
+		CATEGORY = military
+	}
+	inline_script = {
+		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
+		CATEGORY = administrative
+	}
+
+	tradition_swap = {
+		name = tr_cw_deviancy_war_crimes
+		inherit_icon = no
+		trigger = {
+			is_homicidal = yes
+		}
+
+		modifier = {
+			ship_orbital_bombardment_mult = 0.3
+			army_collateral_damage_mult = 0.3
+			pop_purge_speed = 0.3
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_cw_deviancy_plundered_assets = {
+	modifier = {
+		ship_steal_defeated_ship_chance = 0.05
+		rivalries_trade_produces_add = 10
+	}
+
+	tradition_swap = {
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			cw_has_stealing_ship_dlc = no
+		}
+
+		modifier = {
+			create_debris_chance = 0.50
+			rivalries_trade_produces_add = 10
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_cw_deviancy_pirate_warlord = {
+	possible = {
+		has_tradition = tr_cw_deviancy_plundered_assets
+	}
+
+	custom_tooltip = tr_cw_deviancy_pirate_warlord_tooltip
+
+	ai_weight = {
+		factor = 5000
+	}
+}

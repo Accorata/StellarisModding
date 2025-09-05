@@ -1,0 +1,7 @@
+# a new leader is created
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		leader_background.0		# Randomize "leader_pending_negative_traits" for new Leader.
+	}
+}

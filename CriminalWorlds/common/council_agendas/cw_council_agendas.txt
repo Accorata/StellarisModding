@@ -1,0 +1,29 @@
+@base_tradition_agenda_cost = 7000
+
+cw_criminality = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_cw_criminality_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifier = {
+		job_criminal_per_pop = 0.05
+	}
+	finish_modifier = agenda_cw_criminality_finish
+}
+
+cw_deviancy = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_cw_deviancy_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifier = {
+		job_deviant_drone_per_pop = 0.05
+	}
+	finish_modifier = agenda_cw_deviancy_finish
+}

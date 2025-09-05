@@ -1,0 +1,184 @@
+mass_entertainer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_holo_theatres	# ?
+	clothes_texture_index = 3	# ?
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		AND = {
+			complex_specialist_job_check_trigger = yes
+			entertainer_job_check_trigger = yes
+		}
+	}
+	# custom_tooltip = job_mass_entertainer_plural
+	resources = {
+		custom_tooltip = decision_arcology_project_effects
+		category = planet_entertainers
+		produces = {
+			unity = 1
+		}
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+	country_modifier = {
+		planet_amenities_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+	# triggered_country_modifier = {
+	# 	potential = {
+	# 		always = yes
+	# 	}
+	# 	planet_amenities_add = 1
+	# 	mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	# }
+	triggered_planet_modifier = {
+		potential = {
+			has_councilor = {
+				COUNCILOR = "councilor_corporate_hedonism"
+			}
+		}
+		trade_value_add = @councilor_corporate_hedonism_entertainer_trade_value
+		mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_corporate_hedonism|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_pleasure_seeker = yes
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.01
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_modifier|JOB|entertainer|RESOURCE|unity|FACTOR|0.25|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+		}
+		modifier = {
+			factor = 0.1
+			is_domestic_servant = yes
+		}
+		modifier = {
+			factor = 2
+			has_job = mass_entertainer
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				has_job = mass_entertainer
+			}
+			exists = owner
+			owner = {
+				# No planets under 2 amenities
+				NOT = {
+					any_owned_planet = {
+						free_amenities < 2
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				has_job = mass_entertainer
+			}
+			exists = owner
+			owner = {
+				# Any planet without entertainers under 2 amenities
+				any_owned_planet = {
+					AND = {
+						free_amenities < 2
+						NOT = {
+							has_available_jobs = entertainer
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+ansible_coordinator = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_administrators
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	country_modifier = {
+		planet_jobs_produces_mult = 0.01
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_byzantine_bureaucracy
+			}
+		}
+		modifier = {
+			planet_stability_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_active_building = building_league_offices
+			}
+		}
+		planet_amenities_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_efficient_bureaucracy
+			}
+		}
+		country_edict_fund_add = 2
+		mult = value:job_total_output_modifier|JOB|bureaucrat|RESOURCE|unity|
+	}
+	weight = {
+		weight = @high_prio_specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = ansible_coordinator
+		}
+	}
+}

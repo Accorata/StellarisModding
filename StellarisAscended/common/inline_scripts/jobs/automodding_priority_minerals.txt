@@ -1,0 +1,11 @@
+auto_trait_prio = {
+	#Miners
+	trait_industrious
+	trait_crack_miner
+	trait_robot_power_drills
+	trait_cyborg_power_drills
+	trait_malleable_minerals
+	trait_adaptive_minerals
+	trait_ac_robot_power_drills
+	trait_ac_bio_industrious
+}

@@ -1,0 +1,2037 @@
+## Generic ##
+leader_trait_cw_medallion_blessed = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_cw_medallions_blessing"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	self_modifier = {
+		leader_lifespan_add = 5
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+}
+
+# Underworld Connections
+leader_trait_cw_underworld_connections = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_underworld_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_underworld_connections_tooltip
+	leader_class = {
+		official
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_cw_underworld_connections_2 = {
+	replace_traits = {
+		leader_trait_cw_underworld_connections
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_raider_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_underworld_connections_2_tooltip
+	leader_class = {
+		official
+	}
+}
+
+# Raider Connections
+leader_trait_cw_raider_connections = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_raider_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_raider_connections_tooltip
+	leader_class = {
+		commander
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_cw_raider_connections_2 = {
+	replace_traits = {
+		leader_trait_cw_raider_connections
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_raider_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_raider_connections_2_tooltip
+	leader_class = {
+		commander
+	}
+}
+
+# Darknet Connections
+leader_trait_cw_darknet_connections = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_darknet_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_darknet_connections_tooltip
+	leader_class = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_cw_darknet_connections_2 = {
+	replace_traits = {
+		leader_trait_cw_darknet_connections
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_darknet_connections"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_darknet_connections_2_tooltip
+	leader_class = {
+		scientist
+	}
+}
+
+# Ill-Gotten Gains
+leader_trait_cw_ill_gotten_gains = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_cw_ill_gotten_gains"
+		COUNCIL = no
+		TIER = 1
+	}
+	planet_modifier = {
+		job_criminal_add = 200
+	}
+	sector_modifier = {
+		job_criminal_add = 100
+	}
+	leader_class = { official commander scientist }
+	initial = no
+	randomized = no
+}
+
+leader_trait_cw_ill_gotten_gains_2 = {
+	leader_trait_type = negative
+	replace_traits = { "leader_trait_cw_ill_gotten_gains" }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_cw_ill_gotten_gains"
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
+		job_criminal_add = 400
+	}
+	sector_modifier = {
+		job_criminal_add = 200
+	}
+	leader_class = { official commander scientist }
+	opposites = {
+		leader_trait_righteous
+		leader_trait_righteous_2
+		leader_trait_martinet
+		leader_trait_martinet_2
+	}
+	selectable_weight = @tier2_negative_trait_weight
+}
+
+## Racketeer ##
+leader_trait_cw_cyber_fraud = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_cyber_fraud"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	planet_modifier = {
+		pop_category_criminals_physics_research_produces_add = 1
+	}
+	sector_modifier = {
+		pop_category_criminals_physics_research_produces_add = 0.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 10
+		SECTOR = 5
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_cw_cyber_fraud_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_cyber_fraud
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_cyber_fraud"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
+		pop_category_criminals_physics_research_produces_add = 2
+	}
+	sector_modifier = {
+		pop_category_criminals_physics_research_produces_add = 1
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 15
+		SECTOR = 7.5
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_cyber_fraud_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_cyber_fraud_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_cyber_fraud"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	planet_modifier = {
+		pop_category_criminals_physics_research_produces_add = 3
+	}
+	sector_modifier = {
+		pop_category_criminals_physics_research_produces_add = 1.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 20
+		SECTOR = 10
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_organ_harvesting = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_organ_harvesting"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	planet_modifier = {
+		pop_category_criminals_society_research_produces_add = 1
+	}
+	sector_modifier = {
+		pop_category_criminals_society_research_produces_add = 0.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 10
+		SECTOR = 5
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_cw_organ_harvesting_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_organ_harvesting
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_organ_harvesting"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
+		pop_category_criminals_society_research_produces_add = 2
+	}
+	sector_modifier = {
+		pop_category_criminals_society_research_produces_add = 1
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 15
+		SECTOR = 7.5
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_organ_harvesting_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_organ_harvesting_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_organ_harvesting"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	planet_modifier = {
+		pop_category_criminals_society_research_produces_add = 3
+	}
+	sector_modifier = {
+		pop_category_criminals_society_research_produces_add = 1.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 20
+		SECTOR = 10
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_restricted_cybernetics = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	planet_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 1
+	}
+	sector_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 0.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 10
+		SECTOR = 5
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_cw_restricted_cybernetics_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_restricted_cybernetics
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	planet_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 2
+	}
+	sector_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 1
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 15
+		SECTOR = 7.5
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_restricted_cybernetics_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_restricted_cybernetics_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	planet_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 3
+	}
+	sector_modifier = {
+		pop_category_criminals_engineering_research_produces_add = 1.5
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_add_crime
+		PLANET = 20
+		SECTOR = 10
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_paramilitary_groups = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = soldier
+		GESTALT_JOB = warrior_drone
+		MULT = 1
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_cw_paramilitary_groups_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_paramilitary_groups
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = soldier
+		GESTALT_JOB = warrior_drone
+		MULT = 2
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_paramilitary_groups_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_paramilitary_groups_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = soldier
+		GESTALT_JOB = warrior_drone
+		MULT = 3
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_hedonistic_pleasures = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_hedonistic_pleasures"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = entertainer
+		GESTALT_JOB = maintenance_drone
+		MULT = 1
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_cw_hedonistic_pleasures_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_hedonistic_pleasures
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_hedonistic_pleasures"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = entertainer
+		GESTALT_JOB = maintenance_drone
+		MULT = 2
+	}
+	leader_class = {
+		official
+	}
+}
+
+leader_trait_cw_hedonistic_pleasures_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_hedonistic_pleasures_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_hedonistic_pleasures"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = entertainer
+		GESTALT_JOB = maintenance_drone
+		MULT = 3
+	}
+	leader_class = {
+		official
+	}
+}
+
+# Destiny
+leader_trait_cw_arbiter = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_arbiter"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_official_racketeer
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		planet_jobs_worker_produces_mult = 0.5
+		planet_jobs_slave_produces_mult = 0.5
+		planet_pops_upkeep_mult = -0.35
+		pop_happiness = -0.1
+		logistic_growth_mult = -0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		planet_jobs_worker_produces_mult = 0.25
+		planet_jobs_slave_produces_mult = 0.25
+		planet_pops_upkeep_mult = -0.175
+		pop_happiness = -0.05
+		logistic_growth_mult = -0.025
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_jobs_worker_produces_mult = 0.5
+		planet_jobs_slave_produces_mult = 0.5
+		planet_pops_upkeep_mult = -0.35
+		pop_happiness = -0.1
+		planet_pop_assembly_mult = -0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_jobs_worker_produces_mult = 0.25
+		planet_jobs_slave_produces_mult = 0.25
+		planet_pops_upkeep_mult = -0.175
+		pop_happiness = -0.05
+		planet_pop_assembly_mult = -0.025
+	}
+	leader_class = { official }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+leader_trait_cw_criminal_enterprise = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_enterprising"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_official_racketeer
+	}
+	planet_modifier = {
+		pop_category_criminals_produces_mult = 0.5
+	}
+	sector_modifier = {
+		pop_category_criminals_produces_mult = 0.25
+	}
+	inline_script = {
+		script = traits/cw_racketeer_traits_jobs_per_crime
+		JOB = criminal
+		GESTALT_JOB = deviant_drone
+		MULT = 2
+	}
+	leader_class = { official }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+## Privateer ##
+leader_trait_cw_corsair = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_corsair"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip = leader_trait_corsair_effect
+	opposites = {
+		leader_trait_corsair
+		leader_trait_corsair_2
+	}
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_corsair_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_corsair
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_corsair"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_orbit_upkeep_mult = -0.2
+	}
+	triggered_modifier = {
+		potential = {
+			has_first_contact_dlc = yes
+		}
+		ship_cloaking_strength_add = 1
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip_with_modifiers = leader_trait_corsair_2_effect
+	opposites = {
+		leader_trait_corsair
+		leader_trait_corsair_2
+	}
+}
+
+leader_trait_cw_juryrigger = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_juryrigger"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+	}
+	fleet_modifier = {
+		create_debris_chance = -1
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip_with_modifiers = leader_trait_juryrigger_effect
+	opposites = {
+		leader_trait_wrecker
+		leader_trait_wrecker_2
+		leader_trait_juryrigger
+		leader_trait_juryrigger_2
+	}
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_juryrigger_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_juryrigger
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_juryrigger"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		create_debris_chance = -1
+	}
+	leader_class = {
+		commander
+	}
+	custom_tooltip_with_modifiers = leader_trait_juryrigger_2_effect
+	opposites = {
+		leader_trait_wrecker
+		leader_trait_wrecker_2
+		leader_trait_juryrigger
+		leader_trait_juryrigger_2
+	}
+}
+
+leader_trait_cw_boarding_parties = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_boarding_parties"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		cw_has_stealing_ship_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+	}
+	fleet_modifier = {
+		fleet_capture_defeated_leader_chance = 0.005
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_boarding_parties_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_boarding_parties
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_boarding_parties"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		fleet_capture_defeated_leader_chance = 0.01
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_cw_boarding_parties_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_boarding_parties_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_boarding_parties"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	fleet_modifier = {
+		fleet_capture_defeated_leader_chance = 0.02
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_cw_underdog = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_underdog"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_commander_privateer
+	}
+	fleet_modifier = {
+		damage_vs_superior_empires_mult = 0.20
+		ship_evasion_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_underdog_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_underdog
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_underdog"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		damage_vs_superior_empires_mult = 0.40
+		ship_evasion_mult = 0.10
+	}
+	leader_class = {
+		commander
+	}
+}
+
+leader_trait_cw_underdog_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_underdog_2
+	}
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_underdog"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	fleet_modifier = {
+		damage_vs_superior_empires_mult = 0.60
+		ship_evasion_mult = 0.15
+	}
+	leader_class = {
+		commander
+	}
+}
+
+# Specializations: Rocketry / Gunship / Stealth / 
+leader_trait_cw_rocketry_specialization = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_rocketry_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	fleet_modifier = {
+		weapon_type_explosive_weapon_fire_rate_mult = 0.15
+		weapon_type_explosive_weapon_damage_mult = 0.15
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+		has_any_cw_privateer_speciality = no
+	}
+	prerequisites = {
+		tech_missiles_1
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = explosive
+	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_rocketry_specialization_2 = {
+	leader_trait_type = veteran
+	replace_traits = { leader_trait_cw_rocketry_specialization }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_rocketry_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		weapon_type_explosive_weapon_fire_rate_mult = 0.25
+		weapon_type_explosive_weapon_damage_mult = 0.25
+	}
+	prerequisites = {
+		tech_missiles_1
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = explosive
+	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
+}
+
+leader_trait_cw_gunship_specialization = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_gunship_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	fleet_modifier = {
+		s_slot_weapon_fire_rate_mult = 0.15
+		s_slot_weapon_damage_mult = 0.15
+		m_slot_weapon_fire_rate_mult = 0.15
+		m_slot_weapon_damage_mult = 0.15
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+		has_any_cw_privateer_speciality = no
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = gunship
+	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_gunship_specialization_2 = {
+	leader_trait_type = veteran
+	replace_traits = { leader_trait_cw_gunship_specialization }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_gunship_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		s_slot_weapon_fire_rate_mult = 0.25
+		s_slot_weapon_damage_mult = 0.25
+		m_slot_weapon_fire_rate_mult = 0.25
+		m_slot_weapon_damage_mult = 0.25
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = gunship
+	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
+}
+
+leader_trait_cw_stealth_specialization = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_stealth_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	fleet_modifier = {
+		ship_cloaking_strength_add = 1
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_stealth_specialization_effect
+	leader_potential_add = {
+		has_trait = subclass_cw_commander_privateer
+		has_any_cw_privateer_speciality = no
+	}
+	prerequisites = {
+		tech_cloaking_1
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = gunship_stealth
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_cw_stealth_specialization_2 = {
+	leader_trait_type = veteran
+	replace_traits = { leader_trait_cw_stealth_specialization }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_stealth_specialization"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_cloaking_strength_add = 2
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_stealth_specialization_effect_2
+	prerequisites = {
+		tech_cloaking_1
+	}
+	leader_class = { commander }
+	fleet_specialization_tag = gunship_stealth
+}
+
+# Destiny
+leader_trait_cw_guerilla_tactics = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_guerilla_tactics"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = { 
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			has_first_contact_dlc = no
+		}
+		ship_disengage_chance_mult = 0.5
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			has_first_contact_dlc = yes
+		}
+		ship_cloaking_strength_add = 2
+	}
+	fleet_modifier = {
+		ship_disengage_opportunities_add = 2
+		ship_evasion_add = 10
+		fleet_mia_time_mult = -0.5
+		command_limit_mult = -0.25
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+	}
+	leader_class = {
+		commander
+	}
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+leader_trait_cw_pirate_lord = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pirate_queen"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = { 
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	fleet_modifier = {
+		ship_steal_defeated_ship_chance = 0.1
+		ship_weapon_damage = 0.15
+	}
+	leader_class = {
+		commander
+	}
+	leader_potential_add = {
+		has_grand_archive_dlc = yes
+		has_trait = subclass_cw_commander_privateer
+	}
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+leader_trait_cw_wolfpack = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_cw_wolfpack"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = { 
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	triggered_fleet_modifier = {
+		potential = { always = yes }
+		ship_weapon_damage = 0.01
+		mult = trigger:num_ships
+	}
+	leader_class = {
+		commander
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_commander_privateer
+	}
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+## Hacker ##
+leader_trait_cw_ambassador_ear_to_the_ground = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_ambassador_ear_to_the_ground"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+	}
+	councilor_modifier = {
+		intel_gain_speed = 0.25
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_ambassador_ear_to_the_ground_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_cw_ambassador_ear_to_the_ground" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_ambassador_ear_to_the_ground"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		intel_gain_speed = 0.50
+	}
+	leader_class = { scientist }
+}
+
+leader_trait_cw_ambassador_ear_to_the_ground_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_cw_ambassador_ear_to_the_ground_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_ambassador_ear_to_the_ground"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		intel_gain_speed = 1.0
+	}
+	leader_class = { scientist }
+}
+
+leader_trait_cw_shadow_broker = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		intel_decryption_add = 1
+		intel_encryption_add = 1
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_scientist_hacker
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_shadow_broker_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_cw_shadow_broker" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		intel_decryption_add = 2
+		intel_encryption_add = 2
+	}
+	leader_class = { scientist }
+}
+
+leader_trait_cw_military_espionage = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_militarily_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_military
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_military_espionage_effect
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+		inline_script = {
+			script = traits/cw_hacker_traits_superior_rival_weight_mult
+			FIELD = militarily
+		}
+	}
+}
+
+leader_trait_cw_military_espionage_2 = {
+	replace_traits = { "leader_trait_cw_military_espionage" }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_militarily_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_military
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_military_espionage_effect
+	leader_class = { scientist }
+}
+
+leader_trait_cw_tech_espionage = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_technologically_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_tech
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_tech_espionage_effect
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+		inline_script = {
+			script = traits/cw_hacker_traits_superior_rival_weight_mult
+			FIELD = technologically
+		}
+	}
+}
+
+leader_trait_cw_tech_espionage_2 = {
+	replace_traits = { "leader_trait_cw_tech_espionage" }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_technologically_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_tech
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_tech_espionage_effect
+	leader_class = { scientist }
+}
+
+leader_trait_cw_economy_espionage = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_economically_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_economy
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_economy_espionage_effect
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+		inline_script = {
+			script = traits/cw_hacker_traits_superior_rival_weight_mult
+			FIELD = economically
+		}
+	}
+}
+
+leader_trait_cw_economy_espionage_2 = {
+	replace_traits = { "leader_trait_cw_economy_espionage" }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_shadow_broker" # change
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				is_rival_economically_superior = yes
+			}
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = cw_hacker_no_superior_economy
+
+		# ....
+	}
+	custom_tooltip_with_modifiers = leader_trait_cw_economy_espionage_effect
+	leader_class = { scientist }
+}
+
+@focus_benefit_1 = 2
+@focus_benefit_2 = 3
+@focus_benefit_3 = 4
+# Focus Traits
+leader_trait_cw_infiltration_focus = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_cw_infiltration
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_infiltration_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		op_cat_infiltration_skill_add = @focus_benefit_1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+		has_cw_hacker_focus = no
+		owner = {
+			has_country_flag = built_observation_post
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_infiltration_focus_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_infiltration_focus
+	}
+	inline_script = {
+		script = trait/icon_cw_infiltration
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_infiltration_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		op_cat_infiltration_skill_add = @focus_benefit_2
+		spy_network_daily_value_mult = 0.05
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_infiltration_focus_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_infiltration_focus_2
+	}
+	inline_script = {
+		script = trait/icon_cw_infiltration
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_infiltration_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		op_cat_infiltration_skill_add = @focus_benefit_3
+		spy_network_daily_value_mult = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_manipulation_focus = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_cw_manipulation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_manipulation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		op_cat_manipulation_skill_add = @focus_benefit_1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+		has_cw_hacker_focus = no
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_manipulation_focus_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_manipulation_focus
+	}
+	inline_script = {
+		script = trait/icon_cw_manipulation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_manipulation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		op_cat_manipulation_skill_add = @focus_benefit_2
+		spy_network_daily_value_mult = 0.05
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_manipulation_focus_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_manipulation_focus_2
+	}
+	inline_script = {
+		script = trait/icon_cw_manipulation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_manipulation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		op_cat_manipulation_skill_add = @focus_benefit_3
+		spy_network_daily_value_mult = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_provocation_focus = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_cw_provocation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_provocation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		op_cat_provocation_skill_add = @focus_benefit_1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+		has_cw_hacker_focus = no
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_provocation_focus_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_provocation_focus
+	}
+	inline_script = {
+		script = trait/icon_cw_provocation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_provocation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		op_cat_provocation_skill_add = @focus_benefit_2
+		spy_network_daily_value_mult = 0.05
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_provocation_focus_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_provocation_focus_2
+	}
+	inline_script = {
+		script = trait/icon_cw_provocation
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_provocation_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		op_cat_provocation_skill_add = @focus_benefit_3
+		spy_network_daily_value_mult = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_sabotage_focus = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_cw_sabotage
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_sabotage_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		op_cat_sabotage_skill_add = @focus_benefit_1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+		has_cw_hacker_focus = no
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_sabotage_focus_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_sabotage_focus
+	}
+	inline_script = {
+		script = trait/icon_cw_sabotage
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_sabotage_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		op_cat_sabotage_skill_add = @focus_benefit_2
+		spy_network_daily_value_mult = 0.05
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_sabotage_focus_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_sabotage_focus_2
+	}
+	inline_script = {
+		script = trait/icon_cw_sabotage
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_sabotage_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		op_cat_sabotage_skill_add = @focus_benefit_3
+		spy_network_daily_value_mult = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_subterfuge_focus = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_cw_subterfuge
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_subterfuge_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		op_cat_subterfuge_skill_add = @focus_benefit_1
+	}
+	leader_potential_add = {
+		has_trait = subclass_cw_scientist_hacker
+		has_cw_hacker_focus = no
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cw_subterfuge_focus_2 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_subterfuge_focus
+	}
+	inline_script = {
+		script = trait/icon_cw_subterfuge
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_subterfuge_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		op_cat_subterfuge_skill_add = @focus_benefit_2
+		spy_network_daily_value_mult = 0.05
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+leader_trait_cw_subterfuge_focus_3 = {
+	leader_trait_type = veteran
+	replace_traits = {
+		leader_trait_cw_subterfuge_focus_2
+	}
+	inline_script = {
+		script = trait/icon_cw_subterfuge
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_subterfuge_focus"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		op_cat_subterfuge_skill_add = @focus_benefit_3
+		spy_network_daily_value_mult = 0.15
+	}
+	leader_class = {
+		scientist
+	}
+	custom_tooltip_with_modifiers = only_one_cw_hacker_focus
+}
+
+# Destiny
+leader_trait_cw_spymaster = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_spymaster"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	councilor_modifier = {
+		spy_network_daily_value_mult = 1.5
+		operations_cost_mult = -0.25
+		envoys_add = 2
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_cw_scientist_hacker
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+leader_trait_cw_deadly_saboteur = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_deadly_saboteur"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_deadly_saboteur_tooltip
+	leader_potential_add = {
+		cw_has_confusion_dlc = yes
+		has_trait = subclass_cw_scientist_hacker
+		owner = {
+			NOT = {
+				any_owned_leader = {
+					has_trait = leader_trait_cw_deadly_saboteur
+				}
+			}
+		}
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+leader_trait_cw_web_of_connections = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_cw_web_of_connections"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = { id = tutorial.2010 } #Tutorial: Assigning Assets
+		}
+	}
+	force_councilor_trait = yes
+	custom_tooltip = leader_trait_cw_web_of_connections_tooltip
+	leader_potential_add = {
+		has_nemesis = yes
+		has_trait = subclass_cw_scientist_hacker
+		owner = {
+			NOT = {
+				any_owned_leader = {
+					has_trait = leader_trait_cw_web_of_connections
+				}
+			}
+		}
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+
+# Gestalt Hacker
+leader_trait_cw_hacker_node = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_cw_hacker_node"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		add_base_country_intel = 10
+		spy_network_daily_value_mult = 0.15
+	}
+	initial = no
+	randomized = no
+	leader_class = { official }
+	ai_weight = 100
+}

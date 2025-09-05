@@ -1,0 +1,788 @@
+# Start of specialized robot traits
+trait_ac_auto_mod_robotic = {
+	cost = 2
+	auto_mod = yes
+	category = advanced_genetic
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	slave_cost = {
+		energy = 1250
+	}
+	assembly_score = {
+		base = 2
+	}
+	custom_tooltip_with_modifiers = automodding_trait_ac_robotic_tooltip
+}
+
+trait_ac_robot_power_drills = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_mining_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_robot_harvesters = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		planet_jobs_food_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_farming_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 0
+			exists = from
+			from = {
+				country_uses_food = no
+			}
+		}
+	}
+}
+
+trait_ac_robot_superconductive = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_generator_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_robot_trading_algorithms = {
+	cost = 2
+	category = advanced_genetic
+	forbidden_ethics = {
+		ethic_gestalt_consciousness
+	}
+	opposites = {
+		trait_robot_scarcity_algorithms
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	# Droid, Synth, or Individualist Machine
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+		owner_is_machine_intelligence = no
+		owner_is_hive_empire = no
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		pop_job_trade_mult = 0.3
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+
+trait_ac_robot_emotion_emulators = {
+	cost = 1
+	category = advanced_genetic
+	opposites = {
+		"trait_robot_uncanny"
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		pop_job_amenities_mult = 0.25
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+
+trait_ac_robot_propaganda_machines = {
+	cost = 1
+	category = advanced_genetic
+	opposites = {
+		"trait_robot_quarrelsome"
+	}
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+		planet_jobs_unity_upkeep_mult = -0.15
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_unity_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_robot_logic_engines = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		ROBOT
+		MACHINE
+	}
+	species_potential_add = {
+		can_do_ac_specialized_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_research_designation = yes
+			}
+		}
+	}
+}
+
+# End of specialized robot traits
+# Start of diversified bio traits
+trait_ac_auto_mod_biological = {
+	cost = 2
+	auto_mod = yes
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	slave_cost = {
+		energy = 1250
+	}
+	assembly_score = {
+		base = 2
+	}
+	custom_tooltip_with_modifiers = automodding_trait_ac_bio_tooltip
+}
+
+trait_ac_bio_industrious = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_mining_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_bio_agrarian = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	modifier = {
+		planet_jobs_food_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_farming_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_bio_ingenious = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_generator_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_rural_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_bio_thrifty = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+		owner_is_machine_intelligence = no
+		owner_is_hive_empire = no
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	opposites = {
+		"trait_hive_mind"
+	}
+	forbidden_ethics = {
+		ethic_gestalt_consciousness
+	}
+	modifier = {
+		pop_job_trade_mult = 0.3
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_trade_designation = yes
+			}
+		}
+	}
+}
+
+trait_ac_bio_charismatic = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	modifier = {
+		pop_job_amenities_mult = 0.25
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+
+trait_ac_bio_traditional = {
+	cost = 1
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.2
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_unity_designation = yes
+			}
+		}
+		modifier = {
+			add = 1.5
+			from = {
+				has_building = building_order_keep
+			}
+		}
+	}
+}
+
+trait_ac_bio_intelligent = {
+	cost = 2
+	category = advanced_genetic
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_do_ac_diversified_bio_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 1
+	opposites = {
+		"trait_nerve_stapled"
+		"trait_erudite"
+		"trait_enigmatic_intelligence_poor"
+	}
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = {
+				has_research_designation = yes
+			}
+		}
+		modifier = {
+			add = 1.5
+			from = {
+				has_building = building_order_keep
+			}
+		}
+	}
+}
+
+# End of diversified bio traits
+# Leaving Pain Behind - Perfect Trait
+trait_ac_auto_analgesic = {
+	cost = 0
+	potential_crossbreeding_chance = 0.5
+	initial = no
+	randomized = no
+	species_potential_add = {
+		hidden_trigger = {
+			exists = from
+		}
+		from = {
+			has_country_flag = ac_auto_analgesic
+		}
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	modifier = {
+		pop_happiness = 0.05
+		army_health = 0.05
+	}
+	slave_cost = {
+		energy = 500
+	}
+	assembly_score = {
+		base = 1
+	}
+}
+
+trait_ac_hive_digital = {
+	icon = "gfx/interface/icons/traits/trait_robot_digital_1.dds"
+	cost = 0
+	initial = no
+	randomized = no
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	species_potential_add = {
+		can_modify_ac_hive_digital_trait = yes
+	}
+	species_possible_remove = {
+		can_modify_ac_hive_digital_trait = no
+	}
+	modifier = {
+		habitability_floor_add = 0.15
+		pop_housing_usage_mult = -0.5
+		# planet_pops_energy_upkeep_mult = 0.5		# test (prefered over pop upkeep increase)
+		planet_pops_upkeep_mult = 0.25
+	}
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_jobs_produces_mult = 1
+		mult = value:ac_hive_virtuality_concentrated_production_mult
+	}
+	custom_tooltip = trait_ac_hive_digital_effects
+	slave_cost = {
+		energy = 500
+	}
+}
+
+trait_ascendant_psionic = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+	forced_happiness = yes
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	modifier = {
+		# planet_jobs_physics_research_produces_mult = 0.1
+		# planet_jobs_society_research_produces_mult = 0.1
+		# planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.2
+		species_leader_exp_gain = 0.1
+	}
+	slave_cost = {
+		energy = 2000
+	}
+	assembly_score = {
+		base = 1.5
+		modifier = {
+			add = 0.5
+			from = {
+				has_research_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_unity_designation = yes
+			}
+		}
+		modifier = {
+			add = 0.5
+			from = {
+				has_building = building_order_keep
+			}
+		}
+	}
+}
+
+# need to add it to pops gained after (place in assimilation) for above trait
+trait_infectious = {
+	cost = -3
+	initial = no
+	randomized = no
+	potential_crossbreeding_chance = 0.9
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		pop_growth_speed = -0.2
+	}
+	slave_cost = {
+		energy = -3000
+	}
+}
+
+trait_ac_cyberform = {
+	cost = 0
+	initial = no
+	randomized = no
+	potential_crossbreeding_chance = 1
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+		LITHOID
+	}
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		pop_growth_speed = -1
+	}
+	slave_cost = {
+		energy = -500
+	}
+}

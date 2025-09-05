@@ -1,0 +1,687 @@
+@Edict2Cost = 25
+@EdictDuration = -1
+# Genetic Government Edicts
+ac_clone_overdrive = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		planet_pop_assembly_organic_mult = 0.15
+		planet_buildings_clone_vats_upkeep_mult = 0.25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_harvest_genetic_failures = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		councilor_exp_gain = 0.15
+		leader_lifespan_add = 10
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_hypnopaedic_conditioning = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		negative_traits_leader = -1
+		planet_pops_upkeep_mult = -0.1
+		pop_cat_worker_happiness = 0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_natural_eugenics = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		custom_tooltip = edict_ac_natural_eugenics_effect
+		show_only_custom_tooltip = no
+		army_damage_mult = 0.15
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_privileged_intellectualism = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		country_scientist_cap_add = 1
+		scientist_exp_gain = 0.1
+		pop_demotion_time_mult = 0.50
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_unrestricted_mutation = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	edict_lock_in_months = 60
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		custom_tooltip = edict_ac_unrestricted_mutation_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_handicap_distribution = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	edict_lock_in_months = 12
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		custom_tooltip = edict_ac_handicap_distribution_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+ac_genetic_freedoms = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		pop_ethic_egalitarian_attraction_mult = 0.1
+		modify_species_cost_mult = -0.35
+		auto_mod_monthly_add = -200
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_awoken_council = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_megacorp = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		councilor_skill_add = 1
+		council_agenda_finishing_effect_duration_mult = 0.15
+		leader_lifespan_add = -10
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_ruthless_competition = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_megacorp = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		branch_office_value_mult = 0.3
+		pop_demotion_time_mult = -1
+		pop_growth_speed = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_mind_spawn = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	edict_lock_in_months = 60
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_hive_empire = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	modifier = {
+		leader_initial_skill = 1
+		restored_node_bonus_skill = 1
+		leaders_cost_mult = 0.5
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_all_with_be_one = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_hive_empire = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	modifier = {
+		custom_tooltip = edict_ac_all_with_be_one_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+# Psionic Government Edicts
+ac_united_in_soul = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		diplo_weight_delegate_mult = 0.025
+		hostile_operation_diplomatic_incident_difficulty_add = 4
+		hostile_operation_extort_favors_difficulty_add = 4
+		hostile_operation_smear_campaign_difficulty_add = 4
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_aligned_desires = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		council_agenda_progress_speed = 0.4
+		council_agenda_finishing_effect_duration_mult = -0.4
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_consecrated_rites = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		NOT = {
+			has_origin = origin_toxic_knights
+		}
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_ac_normal_knights_produces_mult = 0.15
+		pop_amenities_usage_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_consecrated_rites_knight = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		has_origin = origin_toxic_knights
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_knights_produces_mult = 0.15
+		pop_amenities_usage_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_dark_pact = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		leader_lifespan_add = 20
+		species_leader_exp_gain = 0.25
+		negative_traits_leader = 1
+		country_unity_produces_mult = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_heavens_blessing = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		planet_stability_add = 10
+		pop_government_ethic_attraction = 0.25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_betrayal_of_the_mind = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		planet_stability_add = 10
+		planet_crime_add = -25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_palace_of_the_intellect = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		councilor_ruler_imperial_ac_psionic_divine_exp_gain = 0.25
+		resolutions_cost_mult = -0.10
+		envoys_add = 2
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_unholy_possession = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		custom_tooltip = edict_ac_unholy_possession_effect
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_wielded_clairvoyance = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_megacorp = yes
+		has_country_flag = ac_psionic_divine
+	}
+	modifier = {
+		ship_evasion_mult = 0.15
+		ship_accuracy_add = 10
+		intel_gain_speed = 0.25
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+ac_prosperity_cult = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = @Edict2Cost
+			multiplier = value:edict_size_effect
+		}
+	}
+	potential = {
+		is_megacorp = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		pop_government_ethic_attraction = 0.75
+		pop_ethics_shift_speed_mult = 0.25
+		pop_happiness = -0.1
+	}
+	allow = {
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

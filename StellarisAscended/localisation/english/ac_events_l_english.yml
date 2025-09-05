@@ -1,0 +1,16 @@
+﻿l_english:
+# Currently Unused
+
+# Implants on Ruler
+  ascension_civics.61.name:0 "Sovereign Circuitry"
+  ascension_civics.61.desc:0 ""
+  ascension_civics.61.a:0 "Unfortunate"
+  # Gestalt Version
+  ascension_civics.66.name:0 "Sovereign Circuitry"
+  ascension_civics.66.desc:0 ""
+  ascension_civics.66.a:0 "Unfortunate"
+
+# Shroud Spirits attack system
+  ascension_civics.213.name:0 "..."
+  ascension_civics.213.desc:0 "..."
+  ascension_civics.213.a:0 "..."

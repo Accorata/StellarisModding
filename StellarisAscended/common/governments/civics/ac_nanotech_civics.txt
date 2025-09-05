@@ -1,0 +1,313 @@
+civic_numbered_among_stars = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_stellar_monopoly
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_numbered_among_stars.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_numbered_among_stars_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_numbered_among_stars_effects
+		modifier = {
+			planet_pop_assemblers_nanites_upkeep_add = 0.5
+			empire_size_systems_mult = -0.5
+			starbase_outpost_cost_mult = -0.25
+		}
+	}
+}
+
+civic_stellar_monopoly = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_numbered_among_stars
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_stellar_monopolization.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_stellar_monopoly_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_stellar_monopoly_effects
+		modifier = {
+			dyson_swarm_limit_add = 1
+			arc_furnace_limit_add = 1
+			shipclass_mining_station_build_cost_mult = -0.5
+			shipclass_research_station_build_cost_mult = -0.5
+			station_gatherers_produces_mult = 1
+			station_researchers_produces_mult = 1
+			empire_size_systems_mult = -0.5
+			starbase_outpost_cost_mult = -0.25
+			starbases_upkeep_mult = -0.15
+		}
+	}
+}
+
+civic_unending_swarm = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_unending_swarm.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_unending_swarm_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_unending_swarm_effects
+		modifier = {
+			ship_nanite_swarmer_nanites_cost_mult = -0.5
+			shipsize_nanite_interdictor_hull_mult = 1
+			shipsize_nanite_swarmer_disengage_chance_mult = -0.5
+			shipsize_nanite_interdictor_disengage_chance_mult = -0.5
+			planet_pop_assemblers_nanites_upkeep_add = 0.5
+			empire_size_systems_mult = -0.5
+			ship_damage_against_starbases_mult = 0.25
+			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_microscopic_life = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_minicorp
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_microscopic_life.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_microscopic_life_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_microscopic_life_effects
+		modifier = {
+			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
+			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
+			army_health = -0.5
+		}
+	}
+}
+
+civic_minicorp = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_microscopic_life
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_minicorp.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_microscopic_life_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_microscopic_life_effects
+		modifier = {
+			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
+			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
+			army_health = -0.5
+		}
+	}
+}
+
+civic_microscopic = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_microscopic.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	description = civic_tooltip_microscopic_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_nanotech_finish
+		}
+		description = civic_tooltip_microscopic_effects
+		modifier = {
+			planet_max_districts_mult = 0.5
+			ship_colonizer_cost_mult = -0.5
+			pop_housing_usage_mult = -0.5
+			planet_pops_upkeep_mult = -0.2
+			army_health = -0.5
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

@@ -1,0 +1,105 @@
+situation_ac_soul_seeking = {
+	picture = GFX_evt_machine_sapience
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_unknown
+	category = positive
+	start_value = 0
+	stages = {
+		situation_ac_soul_seeking_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 120
+			on_first_enter = {
+				owner = {
+					if = {
+						limit = {
+							NOT = {
+								has_technology = tech_psionic_theory
+							}
+						}
+						add_research_option = tech_psionic_theory
+					}
+				}
+			}
+		}
+	}
+	approach = {
+		name = situation_ac_soul_seeking_all_ahead
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		modifier = {
+			country_society_tech_research_speed = -0.10
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				influence = 1
+			}
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	# approach = {
+	# 	name = situation_ac_soul_seeking_steady
+	# 	icon = GFX_situation_approach_balance_sheet
+	# 	icon_background = GFX_situation_approach_bg_yellow
+	# 	default = yes
+	# 	modifier = {
+	# 		country_society_tech_research_speed = -0.05
+	# 	}
+	# 	ai_weight = {
+	# 		base = 1
+	# 	}
+	# }
+	# approach = {
+	# 	name = situation_ac_soul_seeking_paused
+	# 	icon = GFX_situation_approach_balance_sheet
+	# 	icon_background = GFX_situation_approach_bg_red
+	# 	default = yes
+	# 	ai_weight = {
+	# 		base = 0
+	# 	}
+	# }
+	monthly_progress = {
+		base = 1
+		modifier = {
+			mult = 1.2
+			desc = "situation_ac_soul_seeking_all_ahead_tooltip"
+			current_situation_approach = situation_ac_soul_seeking_all_ahead
+		}
+		# modifier = {
+		# 	mult = 0
+		# 	desc = "situation_ac_soul_seeking_paused"
+		# 	current_situation_approach = situation_ac_soul_seeking_paused
+		# }
+		# modifier = {
+		# 	mult = 0
+		# 	desc = situation_ac_soul_seeking_needed_desc
+		# 	AND = {
+		# 		situation_progress >= 100
+		# 		owner = {
+		# 			NOT = {
+		# 				has_technology = tech_telepathy
+		# 			}
+		# 		}
+		# 	}
+		# }
+		modifier = {
+			mult = 0.25
+			desc = situation_ac_soul_seeking_needed_psionic_theory_desc
+			owner = {
+				NOT = {
+					has_technology = tech_psionic_theory
+				}
+			}
+		}
+	}
+
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

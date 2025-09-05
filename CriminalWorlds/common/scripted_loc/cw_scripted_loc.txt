@@ -1,0 +1,89 @@
+defined_text = {
+	name = CW_GetNumSlaves
+	random = no
+	text = {
+		localization_key = "100"
+		trigger = {
+			has_country_flag = cw_100_enslaved
+		}
+	}
+	text = {
+		localization_key = "200"
+		trigger = {
+			has_country_flag = cw_200_enslaved
+		}
+	}
+	text = {
+		localization_key = "300"
+		trigger = {
+			has_country_flag = cw_300_enslaved
+		}
+	}
+	default = "100"
+}
+
+defined_text = {
+	name = CW_GetHackerMilitaryEffect
+	random = no
+	text = {
+		localization_key = cw_hacker_superior_military
+		trigger = {
+			owner = {
+				is_rival_militarily_superior = no
+			}
+		}
+	}
+	text = {
+		localization_key = BLANK_STRING
+		trigger = {
+			owner = {
+				is_rival_militarily_superior = yes
+			}
+		}
+	}
+	default = cw_hacker_superior_military
+}
+
+defined_text = {
+	name = CW_GetHackerTechEffect
+	random = no
+	text = {
+		localization_key = cw_hacker_superior_tech
+		trigger = {
+			owner = {
+				is_rival_technologically_superior = no
+			}
+		}
+	}
+	text = {
+		localization_key = BLANK_STRING
+		trigger = {
+			owner = {
+				is_rival_technologically_superior = yes
+			}
+		}
+	}
+	default = cw_hacker_superior_tech
+}
+
+defined_text = {
+	name = CW_GetHackerEconomyEffect
+	random = no
+	text = {
+		localization_key = cw_hacker_superior_economy
+		trigger = {
+			owner = {
+				is_rival_economically_superior = no
+			}
+		}
+	}
+	text = {
+		localization_key = BLANK_STRING
+		trigger = {
+			owner = {
+				is_rival_economically_superior = yes
+			}
+		}
+	}
+	default = cw_hacker_superior_economy
+}

@@ -1,0 +1,34 @@
+decision_create_galactic_center = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 2000
+			rare_crystals = 100
+			volatile_motes = 100
+			exotic_gases = 100
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_tradition = tr_urbanism_galactic_centers
+		}
+		NOT = {
+			has_modifier = galactic_center
+		}
+	}
+	allow = {
+		num_uncleared_blockers < 1
+	}
+	effect = {
+		add_modifier = {
+			modifier = galactic_center
+		}
+	}
+	ai_weight = {
+		weight = trigger:num_pops
+	}
+}

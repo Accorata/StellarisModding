@@ -1,0 +1,358 @@
+namespace = operation_expanded
+## Install Backdoor
+# Access Programming Directives
+espionage_operation_event = {
+	id = operation_expanded.100
+	title = operation_expanded.100.name
+	espionage_operation = yes
+	desc = operation_expanded.100.desc
+	picture = GFX_evt_infiltration_neutral
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Deactivate Firewalls
+espionage_operation_event = {
+	id = operation_expanded.101
+	title = operation_expanded.101.name
+	espionage_operation = yes
+	desc = operation_expanded.101.desc
+	picture = GFX_evt_intelligence_report
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Plant Malware
+espionage_operation_event = {
+	id = operation_expanded.102
+	title = operation_expanded.102.name
+	espionage_operation = yes
+	desc = operation_expanded.102.desc
+	picture = GFX_evt_robot_encounter
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Result: Activate Spyware
+espionage_operation_event = {
+	id = operation_expanded.103
+	title = operation_expanded.103.name
+	espionage_operation = yes
+	desc = operation_expanded.103.desc
+	picture = GFX_evt_spymaster
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		set_espionage_operation_progress_locked = yes
+	}
+	option = {
+		name = ACTIVATE
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = operation_expanded.106
+					days = 1
+				}
+			}
+		}
+	}
+	after = {
+		set_espionage_operation_progress_locked = no
+	}
+}
+
+# Success
+country_event = {
+	id = operation_expanded.106
+	title = operation_expanded.106.name
+	desc = operation_expanded.106.desc
+	picture = GFX_evt_synth_sabotage
+	location = from.target.capital_scope
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		hidden_effect = {
+			from.target = {
+				# Notification of hacking which also immediately adds ruler trait
+				country_event = {
+					id = operation_expanded.107
+				}
+			}
+		}
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = {
+				VALUE = -15
+			}
+		}
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+# Ruler Hacked
+country_event = {
+	id = operation_expanded.107
+	title = operation_expanded.107.name
+	immediate = {
+		ruler = {
+			# Sets flag that shows which country
+			set_leader_flag = backdoor_from_@from
+			# Adds the negative leader trait if doesn't already have it
+			if = {
+				limit = {
+					NOT = {
+						has_trait = leader_trait_active_backdoor
+					}
+				}
+				add_trait = leader_trait_active_backdoor
+			}
+		}
+	}
+	desc = {
+		trigger = {
+			is_gestalt = yes
+		}
+		text = operation_expanded.107.desc
+	}
+	desc = {
+		trigger = {
+			is_gestalt = no
+		}
+		text = operation_expanded.107.desc.regular
+	}
+	picture = GFX_evt_synth_sabotage
+	show_sound = event_default
+	location = capital_scope
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+## Corrupt Loyalties
+# Survey Possible Defectors
+espionage_operation_event = {
+	id = operation_expanded.200
+	title = operation_expanded.200.name
+	espionage_operation = yes
+	desc = operation_expanded.200.desc
+	picture = GFX_evt_infiltration_neutral
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Establish Communications
+espionage_operation_event = {
+	id = operation_expanded.201
+	title = operation_expanded.201.name
+	espionage_operation = yes
+	desc = operation_expanded.201.desc
+	picture = GFX_evt_acquire_asset
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Result: Convince Their Leader
+espionage_operation_event = {
+	id = operation_expanded.202
+	title = operation_expanded.202.name
+	espionage_operation = yes
+	desc = operation_expanded.202.desc
+	picture = GFX_evt_bribery
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		set_espionage_operation_progress_locked = yes
+	}
+	option = {
+		name = CONVINCE
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = operation_expanded.205
+					days = 1
+				}
+			}
+		}
+	}
+	after = {
+		set_espionage_operation_progress_locked = no
+	}
+}
+
+# Success
+country_event = {
+	id = operation_expanded.205
+	title = operation_expanded.205.name
+	desc = operation_expanded.205.desc
+	picture = GFX_evt_synth_sabotage	#change
+	location = from.target.capital_scope
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		# hidden_effect = {
+		root = {
+			add_modifier = {
+				modifier = stolen_from
+			}
+		}
+		# will be done
+		# }
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = {
+				VALUE = -15				# X = ?
+			}
+		}
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+## Abduct Pops
+# Coordinate Exit Strategy
+espionage_operation_event = {
+	id = operation_expanded.300
+	title = operation_expanded.300.name
+	espionage_operation = yes
+	desc = operation_expanded.300.desc
+	picture = GFX_evt_infiltration_neutral
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Infiltrate Planet
+espionage_operation_event = {
+	id = operation_expanded.301
+	title = operation_expanded.301.name
+	espionage_operation = yes
+	desc = operation_expanded.301.desc
+	picture = GFX_evt_acquire_asset	#change
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+# Result: Capture Populace
+espionage_operation_event = {
+	id = operation_expanded.302
+	title = operation_expanded.302.name
+	espionage_operation = yes
+	desc = operation_expanded.302.desc
+	picture = GFX_evt_bribery	#change
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		set_espionage_operation_progress_locked = yes
+	}
+	option = {
+		name = LAUNCH_OPERATION
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = operation_expanded.305
+					days = 1
+				}
+			}
+		}
+	}
+	after = {
+		set_espionage_operation_progress_locked = no
+	}
+}
+
+# Success
+country_event = {
+	id = operation_expanded.305
+	title = operation_expanded.305.name
+	desc = operation_expanded.305.desc
+	picture = GFX_evt_synth_sabotage	#change
+	location = from.target	#.capital_scope	# affected planet
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		# hidden_effect = {
+		hidden_effect = {
+			while = {
+				count = value:perc_of_planet_pop
+				random_owned_pop = {
+					# Pick a pop
+					limit = {
+						planet = from.target
+					}
+					save_event_target_as = kidnapped_pop
+				}
+				root = {
+					# Pick a planet
+					reroll_random = yes
+					random_owned_planet = {
+						save_event_target_as = target_planet
+					}
+				}
+				resettle_pop = {
+					# Kidnap pop
+					pop = event_target:kidnapped_pop
+					planet = event_target:target_planet
+				}
+				event_target:kidnapped_pop = {
+					set_citizenship_type = {
+						country = root
+						type = citizenship_slavery
+					}
+				}
+			}
+			random_owned_pop = {
+				resettle_pop = {
+					pop = THIS
+				}
+			}
+		}
+		# will be done
+		# }
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = {
+				VALUE = -5				# X = ?
+			}
+		}
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+# Test event
+country_event = {
+	id = operation_expanded.0
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = this_$this$
+		ruler = {
+			set_leader_flag = backdoor_from_@root
+		}
+		log = "abc"
+	}
+}

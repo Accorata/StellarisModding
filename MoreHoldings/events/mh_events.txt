@@ -1,0 +1,39 @@
+namespace = more_holdings
+# Bi-yearly resettle pop to lathe
+country_event = {
+	id = more_holdings.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		capital_scope = {
+			has_holding = {
+				holding = mh_synaptic_packager
+				owner = planet.owner.overlord
+			}
+		}
+	}
+	immediate = {
+		capital_scope = {
+			random_owned_pop = {
+				save_event_target_as = abducted_pop
+			}
+		}
+		overlord = {
+			random_owned_planet = {
+				limit = {
+					has_designation = col_cosmogenesis_world
+				}
+				save_event_target_as = overlord_lathe
+			}
+		}
+		if = {
+			limit = {
+				exists = event_target:overlord_lathe
+			}
+			resettle_pop = {
+				pop = event_target:abducted_pop
+				planet = event_target:overlord_lathe
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+﻿l_english:
+# Official Traits
+  leader_trait_uploaded_architect:0 "Uploaded Architect"
+  leader_trait_uploaded_architect_desc:0 "This leader specializes in designing cloud-based architecture, creating infrastructure that lies more and more in digital space than reality."
+  leader_trait_virtual_reality_specialist:0 "Virtual Reality Specialist"
+  leader_trait_virtual_reality_specialist_desc:0 "This leader works wonders in the ways of virtual entertainment, seamlessly integrating the digital world with the joys of the individuals."
+  leader_trait_cryptographic_communion:0 "Cryptographic Communion"
+  leader_trait_cryptographic_communion_desc:0 "..."
+  leader_trait_synthesis_of_minds:0 "Synthesis of Minds"
+  leader_trait_synthesis_of_minds_desc:0 "Now that our population can be created at will, all advancement is limited within the digital realm. Tech is the only path forward."
+# Commander traits
+  leader_trait_training_procedures:0 "Training Procedures"
+  leader_trait_training_procedures_desc:0 "This leader creates highly advanced combat code that can be downloaded into recruits."
+  leader_trait_plurality_of_consciousness:0 "Plurality of Consciousness"
+  leader_trait_plurality_of_consciousness_desc:0 "This leader is more accurately described as several hypersimilar virtual personnel who collaborate extremely efficiently, and allow them to command in multiple places at once."
+  leader_trait_unplugger:0 "Unplugger"
+  leader_trait_unplugger_desc:0 "This leader specializes in utilizing orbital bombardments to 'unplug' other pops, perhaps unaware that most other species aren’t always as easy to 'plug' back in."
+# Scientist Traits
+  leader_trait_computational_introspection:0 "Computational Introspection"
+  leader_trait_computational_introspection_desc:0 "Now that our people are nothing but code, this leader finds this new nature a mystery to uncover."
+  leader_trait_deepcode_traveler:0 "Deepcode Traveler"
+  leader_trait_deepcode_traveler_desc:0 "This leader spends their free time delving into virtual spaces so isolated and hidden one would never find normally."
+  leader_trait_predictive_simulations:0 "Predictive Simulations"
+  leader_trait_predictive_simulations_desc:0 "This leader specializes in generating temporal virtual simulations that can give them a heightened understanding of possible future outcomes."
+# Negative Traits
+  leader_trait_material_disillusionment:0 "Material Disillusionment"
+  leader_trait_material_disillusionment_desc:0 "This leader has begun to reject material reality, preferring to spend more and more attention on the virtual world and its many attractions."
+  leader_trait_material_disillusionment_2:0 "$leader_trait_material_disillusionment$ II"
+  leader_trait_material_disillusionment_2_desc:0 "This leader no longer believes in the material world, claiming it exists only as a widespread hallucination created by our enemies to distract us from greater goals."
+# Destiny Traits
+  leader_trait_forsaker_of_limitation:0 "Forsaker of Limitation"
+  leader_trait_forsaker_of_limitation_desc:0 "Now that our physical limitations have been stripped away, our ascension to greater heights can truly begin."

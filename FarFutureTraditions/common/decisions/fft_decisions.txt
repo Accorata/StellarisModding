@@ -1,0 +1,24 @@
+decision_fft_build_extravagant_residence = {
+	owned_planets_only = yes
+	icon = d_central_spire	#decision_arcology_project
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 400
+			consumer_goods = 100
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_tradition = tr_fft_automation_extravagant_abundance
+		}
+	}
+	effect = {
+		add_deposit = d_fft_hedonist_living
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

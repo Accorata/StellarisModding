@@ -1,0 +1,381 @@
+civic_sovereign_circuitry = {
+	# temporary icon to avoid error
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+			# temporarily removed
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_sovereign_circuitry_effects
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		hide_modifiers = yes
+		modifier = {
+			divided_patrongage_max_subjects = 1
+			planet_jobs_slave_produces_mult = 0.25
+			pop_cat_slave_political_power = -0.25
+		}
+	}
+}
+
+civic_cyberlife = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cybernet
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberlife.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cyberlife_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		description = civic_tooltip_cyberlife_effects
+		modifier = {
+			espionage_operation_difficulty_add = -1
+			pop_housing_usage_mult = -0.1
+		}
+	}
+}
+
+civic_cybernet = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cyberlife
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cybernet.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cyberlife_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		description = civic_tooltip_cyberlife_effects
+		modifier = {
+			espionage_operation_difficulty_add = -1
+			pop_housing_usage_mult = -0.1
+		}
+	}
+}
+
+civic_cyberspacial = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberspacial.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cyberspacial_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		description = civic_tooltip_cyberspacial_effects
+		modifier = {
+			espionage_operation_difficulty_add = -1
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_uploaded_mind = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_uploaded_mind.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_assimilator_finish
+		}
+	}
+	description = civic_tooltip_uploaded_mind_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_assimilator_finish
+		}
+		description = civic_tooltip_uploaded_mind_effects
+		modifier = {
+			espionage_operation_difficulty_add = -1
+			councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_cybergladiators = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_underworld_bloodsports
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cybergladiators.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_cybergladiators_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		description = civic_tooltip_cybergladiators_effects
+		modifier = {
+			planet_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_cyberdome_duelist_unity_produces_add = 3
+		}
+	}
+}
+
+civic_underworld_bloodsports = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_cybergladiators
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_underworld_bloodsports.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	description = civic_tooltip_underworld_bloodsports_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_finish
+		}
+		description = civic_tooltip_underworld_bloodsports_effects
+		modifier = {
+			planet_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_cyberdome_duelist_unity_produces_add = 3
+		}
+	}
+}
+
+civic_cybersports = {
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+			# temporarily removed
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_cybersports.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cybernetics_assimilator_finish
+		}
+	}
+	description = civic_tooltip_cybersports_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cybernetics_assimilator_finish
+		}
+		description = civic_tooltip_cybersports_effects
+		modifier = {
+			# councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

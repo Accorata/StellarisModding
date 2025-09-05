@@ -1,0 +1,33 @@
+triggered_modifier = {
+	potential = {
+		is_galactic_community_member = yes
+		OR = {
+			is_in_breach_of_any = yes
+			has_modifier = resolution_denounced
+		}
+		is_active_resolution = "resolution_sanctions_$CATEGORY$_1"
+	}
+	resolution_sanctions_$CATEGORY$ = -0.5
+}
+triggered_modifier = {
+	potential = {
+		is_galactic_community_member = yes
+		OR = {
+			is_in_breach_of_any = yes
+			has_modifier = resolution_denounced
+		}
+		is_active_resolution = "resolution_sanctions_$CATEGORY$_2"
+	}
+	resolution_sanctions_$CATEGORY$ = -1
+}
+triggered_modifier = {
+	potential = {
+		is_galactic_community_member = yes
+		OR = {
+			is_in_breach_of_any = yes
+			has_modifier = resolution_denounced
+		}
+		is_active_resolution = "resolution_sanctions_$CATEGORY$_3"
+	}
+	resolution_sanctions_$CATEGORY$ = -1.5
+}

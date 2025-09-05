@@ -1,0 +1,112 @@
+tr_urbanism_adopt = {
+	# unlocks_agenda = agenda_???
+	modifier = {
+		# Planet districts +1
+		planet_max_districts_add = capital_scope.trigger:num_pops #1
+	}
+	# log = "hello"
+}
+
+tr_urbanism_finish = {
+	# custom_tooltip = tr_urbanism_finish_tooltip
+	modifier = {
+		# Arcologies provide an additional job
+		ascension_perks_add = 1
+	}
+}
+
+tr_urbanism_city_life = {
+	#custom_tooltip = tr_urbanism_city_life_desc
+	modifier = {
+		# Pops Provide +1% Immigration Pull
+		planet_immigration_pull_mult = value:planet_pop_num
+		# +25% Pop Growth From Immigration
+		pop_growth_from_immigration = value:planet_pop_num #0.25
+	}
+	# tradition swap for machines
+	tradition_swap = {
+		# name = tr_urbanism_city_life_machine
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		# increase machine assemlbly by 5%, auto resesttlement by 30%
+		modifier = {
+			planet_pop_assembly_mult = 0.05
+			planet_resettlement_unemployed_mult = 0.3
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	# tradition swap for hives
+	tradition_swap = {
+		# name = tr_urbanism_city_life_hive
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		# increase pop growth by 5%, auto resesttlement by 30%
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_resettlement_unemployed_mult = 0.3
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_urbanism_local_bureaucracy = {
+	possible = {
+		has_tradition = tr_urbanism_city_life
+	}
+	# custom_tooltip = tr_urbanism_local_bureaucracy_tooltip
+	# Clerks reduce job upkeep by 2%
+	# Management Drones
+	#tradition swap for gestalts to decrease job upkeep by 1% per maintenance drone
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_urbanism_planetwide_infrastruture = {
+	modifier = {
+		# +50% building construction, +50% clear blocker speed
+		planet_building_build_speed_mult = 0.5
+		planet_clear_blocker_speed_mult = 0.5
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_urbanism_highrises = {
+	modifier = {
+		# Increases ruler pop ouput by 10%
+		planet_jobs_ruler_produces_mult = 0.1
+		# +1 Politican job per 50 pops
+		job_politician_per_pop = 0.02
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_urbanism_galactic_centers = {
+	possible = {
+		has_tradition = tr_urbanism_planetwide_infrastruture
+		has_tradition = tr_urbanism_highrises
+	}
+	# Allows for planetary decision to increase job output by 25% and upkeep by 15%
+	# increase output by 50% divided by # of galactic centers ? maybe
+	custom_tooltip = tr_urbanism_galactic_centers_desc
+	ai_weight = {
+		factor = 5000
+	}
+}

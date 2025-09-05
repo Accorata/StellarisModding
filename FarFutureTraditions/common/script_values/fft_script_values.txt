@@ -1,0 +1,9 @@
+fft_effective_ruler_level = {
+	complex_trigger_modifier = {
+ 		trigger = has_level
+ 		trigger_scope = ruler
+ 		mode = add
+ 	}
+	add = modifier:ruler_skill_add
+	add = modifier:councilor_skill_add
+}

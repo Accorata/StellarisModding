@@ -1,0 +1,11 @@
+d_fft_hedonist_living = {
+	is_for_colonizable = yes
+	icon = d_central_spire
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		job_fft_hedonist_add = 1
+	}
+}

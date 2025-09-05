@@ -1,0 +1,52 @@
+opinion_cw_freed_slaves = {
+	opinion = {
+		base = 50
+	}
+	decay = {
+		base = 0.5
+		modifier = {
+			factor = value:positive_opinion_decay_rate
+		}
+	}
+}
+
+triggered_cw_dislike_pirate_warlords = {
+	trigger = {
+		is_country_type = default
+		NOR = {
+			has_tradition = tr_cw_criminality_pirate_warlord
+			has_tradition = tr_cw_deviancy_pirate_warlord
+		}
+		FROM = {
+			OR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+
+	opinion = {
+		base = -25
+	}
+}
+
+triggered_cw_fellow_pirate_warlords = {
+	trigger = {
+		is_country_type = default
+		OR = {
+			has_tradition = tr_cw_criminality_pirate_warlord
+			has_tradition = tr_cw_deviancy_pirate_warlord
+		}
+		FROM = {
+			OR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+
+	opinion = {
+		base = 25
+	}
+}
+

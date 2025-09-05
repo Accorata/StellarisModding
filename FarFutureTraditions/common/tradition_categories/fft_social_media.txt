@@ -1,0 +1,26 @@
+tradition_fft_social_media = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_fft_social_media_adopt"
+	finish_bonus = "tr_fft_social_media_finish"
+	traditions = {
+		"tr_fft_social_media_collective_participation"
+		"tr_fft_social_media_galactic_collective"
+		"tr_fft_social_media_media_influencers"
+		"tr_fft_social_media_administrative_networks"
+		"tr_fft_social_media_data_surveillance"
+	}
+	potential = {
+		is_gestalt = no
+	}
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 2
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_harmony_adopt
+		}
+	}
+}

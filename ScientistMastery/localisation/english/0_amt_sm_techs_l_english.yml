@@ -1,0 +1,120 @@
+﻿l_english:
+  TECH_IS_CUSTOM_TECH_2:0 "§dMastery Insight§!"
+
+## Society ##
+# Biology
+  tech_sm_replication_nexus:0 "Replication Nexus"
+  tech_sm_replication_nexus_desc:0 "$building_sm_replication_nexus_desc$"
+
+  tech_sm_neuron_revitalizers:0 "Neuron Revitalizers"
+  tech_sm_neuron_revitalizers_desc:0 "..."
+
+  tech_sm_genetic_memory:0 "Genetic Memory"
+  tech_sm_genetic_memory_desc:0 "One of our leaders has proposed a clever way of storing additional knowledge outside the brain using redundant genetic structures. Further research is required."
+  # Needs Machine Counterpart...
+
+  tech_sm_modular_taxonomy:0 "Modular Taxonomy"
+  tech_sm_modular_taxonomy_desc:0 "Precise and adaptable systems that can easily accompany any new discovery and apply changes retroactively."
+
+# New Worlds
+  tech_sm_dynamic_heat_shielding:0 "Dynamic Heat Shielding"
+  tech_sm_dynamic_heat_shielding_desc:0 "Designed for keeping the heat out during the day and keeping it in during the cold nights."
+
+  tech_sm_predictive_hydrodynamics:0 "Predictive Hydrodynamics"
+  tech_sm_predictive_hydrodynamics_desc:0 "..."
+
+  tech_sm_subdermal_living:0 "Subdermal Living"
+  tech_sm_subdermal_living_desc:0 "..."
+
+  tech_sm_unified_spirit:0 "Unified Spirit"
+  tech_sm_unified_spirit_desc:0 "..."
+
+# Statecraft
+  tech_sm_limited_shapeshifting:0 "Limited Shapeshifting"
+  tech_sm_limited_shapeshifting_desc:0 "..."
+  tech_sm_biomimetic_disguises:0 "Biomimetic Disguises"
+  tech_sm_biomimetic_disguises_desc:0 "..."
+
+  tech_sm_neural_identities:0 "Neural Identities"
+  tech_sm_neural_identities_desc:0 "Through advanced algorithms, slave implants could provide their wearers entirely fictional lives to keep them subservient and functional."
+
+# Military Theory
+  tech_sm_esoteric_strategies:0 "Doctrine: Esoteric Strategies"
+  tech_sm_esoteric_strategies_desc:0 "..."
+
+  tech_sm_strategos_refinement:0 "Strategos Refinement"
+  tech_sm_strategos_refinement_desc:0 "..."
+
+  tech_sm_omnigravitational_warfare:0 "Omnigravitational Warfare"
+  tech_sm_omnigravitational_warfare_desc:0 "The enemy's gate is down." # Ender's Game
+
+  tech_sm_intrasolar_positioning:0 "Intrasolar Positioning"
+  tech_sm_intrasolar_positioning_desc:0 "..."
+
+# Psionics
+  tech_sm_telepathic_shielding:0 "Telepathic Shielding"
+  tech_sm_telepathic_shielding_desc:0 "..." # Foundation?
+
+  tech_sm_mental_manipulation:0 "Mental Manipulation"
+  tech_sm_mental_manipulation_desc:0 "..."
+
+# Archaeostudies
+  tech_sm_ancient_secrets:0 "Ancient Secrets"
+  tech_sm_ancient_secrets_desc:0 "..."
+
+## Physics ##
+# Computing
+  tech_sm_proto_gravity_analysis:0 "Proto Gravity Analysis"
+  tech_sm_proto_gravity_analysis_desc:0 "..."
+
+  tech_sm_synthetic_data:0 "Synthetic Data"
+  tech_sm_synthetic_data_desc:0 "..."
+
+  tech_sm_regenerative_firewalls:0 "Regenerative Firewalls"
+  tech_sm_regenerative_firewalls_desc:0 "..."
+
+  tech_sm_n_body_abstractions:0 "n-Body Abstractions"
+  tech_sm_n_body_abstractions_desc:0 "..."
+
+# Particles
+  tech_sm_reactor_boosters_4:0 "Dark Reactor Boosters"
+  tech_sm_reactor_boosters_4_desc:0 "$SM_REACTOR_BOOSTER_4_DESC$"
+
+  tech_sm_microchemistry:0 "Microchemistry"
+  tech_sm_microchemistry_desc:0 "..."
+
+# Field Manipulation
+  tech_sm_conduction_nexus:0 "Conduction Nexus"
+  tech_sm_conduction_nexus_desc:0 "$building_sm_conduction_nexus_desc$"
+
+## Engineering ##
+# Industry
+  tech_sm_extraction_nexus:0 "Extraction Nexus"
+  tech_sm_extraction_nexus_desc:0 "$building_sm_extraction_nexus_desc$"
+
+  tech_sm_graviton_reflectors:0 "Graviton Reflectors"
+  tech_sm_graviton_reflectors_desc:0 "..."
+
+  tech_sm_positronic_love:0 "Positronic Love"
+  tech_sm_positronic_love_desc:0 "..."
+
+# Propulsion
+  tech_sm_graviton_propulsion:0 "Graviton Propulsion"
+  tech_sm_graviton_propulsion_desc:0 "$SHIP_THRUSTER_4_GRAV_DESC$"
+  TECH_UNLOCK_SM_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_4_GRAV$"
+  TECH_UNLOCK_SM_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_4_GRAV$§!\n$SHIP_THRUSTER_4_GRAV_DESC$"
+
+  tech_sm_dark_matter_gravatics:0 "Dark Matter Gravitics"
+  tech_sm_dark_matter_gravatics_desc:0 "$SHIP_THRUSTER_5_GRAV_DESC$"
+  TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $SHIP_THRUSTER_5_GRAV$"
+  TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC:0 "§H$SHIP_THRUSTER_5_GRAV$§!\n$SHIP_THRUSTER_5_GRAV_DESC$"
+
+# Voidcraft
+  tech_sm_dreams_beyond_scale:0 "Dreams Beyond Scale"
+  tech_sm_dreams_beyond_scale_desc:0 "..."
+  TECH_UNLOCK_SM_MEGA_TITLE:0 "§HGrants 5% of Tech:§! $tech_mega_engineering$"
+  TECH_UNLOCK_SM_MEGA_DESC:0 "§H$tech_mega_engineering$§!\n$tech_mega_engineering_desc$"
+
+  tech_sm_interstellar_ecologies:0 "Interstellar Ecologies"
+  tech_sm_interstellar_ecologies_desc:0 "..."
+

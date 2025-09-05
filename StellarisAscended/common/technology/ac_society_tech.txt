@@ -1,0 +1,76 @@
+# tech_ac_doom_foretold = {
+# 	cost = @tier5cost1
+# 	area = society
+# 	tier = 5
+# 	category = {
+# 		psionics
+# 	}
+# 	ai_update_type = all
+# 	is_rare = yes
+# 	prerequisites = {
+# 		"tech_psionic_theory"
+# 	}
+# 	weight = @tier5weight1
+# 	is_dangerous = yes
+# 	is_reverse_engineerable = no
+# 	potential = {
+# 		is_ac_doomseeker = yes
+# 	}
+# 	modifier = {
+# 		custom_tooltip = tech_ac_doom_foretold_effect
+# 	}
+# 	weight_modifier = {
+# 		factor = 1
+# 		modifier = {
+# 			factor = 3
+# 			check_variable_arithmetic = {
+# 				which = ac_avatars_summoned
+# 				value >= 5
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 3
+# 			check_variable_arithmetic = {
+# 				which = ac_avatars_summoned
+# 				value >= 10
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 10
+# 			check_variable_arithmetic = {
+# 				which = ac_avatars_summoned
+# 				value >= 20
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOR = {
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_expertise_psionics
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_curator
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_spark_of_genius
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_spark_of_genius_2
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_maniacal
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_maniacal_2
+# 				}
+# 				has_trait_in_council = {
+# 					TRAIT = leader_trait_maniacal_3
+# 				}
+# 			}
+# 		}
+# 		inline_script = {
+# 			script = technologies/rare_technologies_weight_modifiers
+# 			TECHNOLOGY = tech_ac_doom_foretold
+# 		}
+# 	}
+# }

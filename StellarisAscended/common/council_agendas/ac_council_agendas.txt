@@ -1,0 +1,29 @@
+ac_shroud_invocation = {
+	agenda_cost = 3000
+	allow = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	potential = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	modifier = {
+		planet_psionic_jobs_produces_mult = 0.05
+	}
+	effect = {
+		custom_tooltip = council_agenda_ac_shroud_invocation_effect
+		if = {
+			limit = {
+				has_modifier = shroud_cooldown
+			}
+			remove_modifier = shroud_cooldown
+		}
+		if = {
+			limit = {
+				has_modifier = shroud_precog_cooldown
+			}
+			remove_modifier = shroud_precog_cooldown
+		}
+	}
+}

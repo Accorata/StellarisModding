@@ -1,0 +1,14 @@
+tradition_fft_destiny = {
+	tree_template = "tree_21_12" #?
+	adoption_bonus = "tr_fft_destiny_adopt"
+	finish_bonus = "tr_fft_destiny_finish"
+	traditions = {
+		"tr_fft_destiny_matrioski_ascendant"
+	}
+	ai_weight = {
+		factor = 50
+	}
+	potential = {
+		is_gestalt = no
+	}
+}

@@ -1,0 +1,4 @@
+@sm_leader_insight_cost = 1500
+@sm_leader_insight_weight = 50
+@sm_leader_insight_weight_archeo = 37 # 3/4 of @sm_leader_insight_weight
+@sm_leader_insight_weight_psionic = 25 # 1/2 of @sm_leader_insight_weight

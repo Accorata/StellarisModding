@@ -1,0 +1,55 @@
+cw_smuggler_policy = {
+	potential = {
+		OR = {
+			has_tradition = tr_cw_criminality_smugglers_cartel
+			has_tradition = tr_cw_deviancy_smugglers_cartel
+		}
+	}
+
+	option = {
+		name = cw_arms_smuggling
+
+		policy_flags = {
+			cw_arms_smuggling
+		}
+
+		modifier = {
+			pop_category_criminals_alloys_produces_add = 2
+		}
+
+		AI_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = cw_balanced_smuggling
+
+		policy_flags = {
+			cw_balanced_smuggling
+		}
+
+		modifier = {
+			pop_category_criminals_alloys_produces_add = 1
+			pop_category_criminals_consumer_goods_produces_add = 1
+		}
+
+		AI_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = cw_drugs_smuggling
+
+		policy_flags = {
+			cw_drugs_smuggling
+		}
+
+		modifier = {
+			pop_category_criminals_consumer_goods_produces_add = 2
+		}
+
+		AI_weight = {
+			weight = 1
+		}
+	}
+}

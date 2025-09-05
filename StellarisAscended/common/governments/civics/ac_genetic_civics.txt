@@ -1,0 +1,299 @@
+civic_ac_gen_blossoming_worlds = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_gen_xanadu_retreats
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_worlds.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	description = civic_tooltip_ac_gen_blossoming_worlds_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_blossoming_worlds_effects
+		modifier = {
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
+		}
+	}
+}
+
+civic_ac_gen_xanadu_retreats = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_gen_blossoming_worlds
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_xanadu_retreats.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	description = civic_tooltip_ac_gen_xanadu_retreats_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_xanadu_retreats_effects
+		modifier = {
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
+		}
+	}
+}
+
+civic_ac_gen_blossoming_hives = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_hives.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	description = civic_tooltip_ac_gen_blossoming_hives_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_blossoming_hives_effects
+		modifier = {
+			terraforming_cost_mult = -0.25
+			terraform_speed_mult = 0.25
+			councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_ac_gen_hyper_diversification = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = { 
+			NOT = { 
+				value = civic_ac_gen_employee_diversification
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_diversification.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	description = civic_tooltip_ac_gen_hyper_diversification_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_hyper_diversification_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+		}
+	}
+}
+
+civic_ac_gen_employee_diversification = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = { 
+			NOT = { 
+				value = civic_ac_gen_hyper_diversification
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_employee_diversification.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	
+	description = civic_tooltip_ac_gen_hyper_diversification_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_hyper_diversification_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+		}
+	}
+}
+
+civic_ac_gen_hyper_diversified = {
+	playable = { has_biogenesis_dlc = no }
+	ai_playable = { has_biogenesis_dlc = no }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_diversified.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	
+	description = civic_tooltip_ac_gen_hyper_diversified_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_ac_gen_hyper_diversified_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

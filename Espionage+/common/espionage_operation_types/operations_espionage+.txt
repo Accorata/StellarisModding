@@ -1,0 +1,222 @@
+@diff_t0 = 4
+@diff_t1 = 5
+@diff_t2 = 6
+@diff_t3 = 7
+@diff_t4 = 8
+@diff_t5 = 9
+@diff_t6 = 10
+@diff_t7 = 11
+@diff_t8 = 12
+@diff_t9 = 13
+@operationTargetedByTimer = 10800
+#30 years during which the effects of an operation may be felt by select Spy Network events
+# this = operation
+# from = operation target
+operation_install_backdoor = {
+	target = none
+	categories = {
+		op_cat_subterfuge
+		op_cat_government
+	}
+	picture = GFX_evt_spymaster
+	desc = operation_install_backdoor_desc
+	stages = 4
+	resources = {
+		category = operations
+		cost = {
+			influence = 30
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	spy_power_cost = 0	#30
+	potential = {
+		target = {
+			is_primitive = no
+			OR = {
+				is_machine_empire = yes
+				ruler = {
+					has_trait = leader_trait_synthetic
+				}
+				ruler = {
+					has_trait = leader_trait_cyborg
+				}
+			}
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	stage = {
+		# Access Programming Directives
+		difficulty = @diff_t2
+		icon = GFX_espionage_chapter_icon_surveillance
+		event = operation_expanded.100
+	}
+	stage = {
+		# Deactivate Firewalls
+		difficulty = @diff_t2
+		icon = GFX_espionage_chapter_icon_motion
+		event = operation_expanded.101
+	}
+	stage = {
+		# Plant Malware
+		difficulty = @diff_t2
+		icon = GFX_espionage_chapter_icon_target
+		event = operation_expanded.102
+	}
+	stage = {
+		# Result: Activate Spyware
+		difficulty = @diff_t2
+		icon = GFX_espionage_chapter_icon_success
+		event = operation_expanded.103
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = espionage_operation_targeted_by@root.owner
+				days = @operationTargetedByTimer
+			}
+		}
+	}
+}
+
+operation_corrupt_loyalties = {
+	target = none
+	categories = {
+		op_cat_manipulation
+		op_cat_government
+	}
+	picture = GFX_evt_bribery
+	desc = operation_corrupt_loyalties_desc
+	stages = 3
+	resources = {
+		category = operations
+		cost = {
+			energy = 1000
+			influence = 30
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	spy_power_cost = 0	#40
+	potential = {
+		target = {
+			is_primitive = no
+			is_gestalt = no
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	stage = {
+		# Survey Possible Defectors
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_surveillance
+		event = operation_expanded.200
+	}
+	stage = {
+		# Establish Communications
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_motion
+		event = operation_expanded.201
+	}
+	stage = {
+		# Result: Convince Their Leader
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_success
+		event = operation_expanded.202
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = espionage_operation_targeted_by@root.owner
+				days = @operationTargetedByTimer
+			}
+		}
+	}
+}
+
+operation_abduct_pops = {
+	target = none	# planet
+	categories = {
+		op_cat_subterfuge
+		op_cat_government		#?
+	}
+	picture = GFX_evt_bribery	#?
+	desc = operation_abduct_pops_desc
+	stages = 3
+	resources = {
+		category = operations
+		cost = {
+			energy = 1000			#?
+			influence = 30
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	spy_power_cost = 0	#40
+	potential = {
+		target = {
+			is_primitive = no
+			is_gestalt = no
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	#change all these
+	stage = {
+		# Survey Possible Defectors
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_surveillance
+		event = operation_expanded.300
+	}
+	stage = {
+		# Establish Communications
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_motion
+		event = operation_expanded.301
+	}
+	stage = {
+		# Result: Convince Their Leader
+		difficulty = @diff_t4		#change all these
+		icon = GFX_espionage_chapter_icon_success
+		event = operation_expanded.302
+	}
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_generic
+		}
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = espionage_operation_targeted_by@root.owner
+				days = @operationTargetedByTimer
+			}
+		}
+	}
+}

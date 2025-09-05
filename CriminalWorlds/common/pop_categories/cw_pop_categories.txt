@@ -1,0 +1,92 @@
+criminal = {
+	rank = 1
+	change_job_threshold = 2
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_dystopian_society
+			}
+			planet = {
+				OR = {
+					has_branch_office = no
+					branch_office_owner = {
+						is_criminal_syndicate = no
+					}
+				}
+			}
+		}
+		planet_crime_add = 2
+		planet_stability_add = -2
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			NOT = {
+				has_trait = trait_noxious
+			}
+		}
+		key = trait_noxious
+		pop_happiness = 1
+		mult = modifier:pop_non_noxious_happiness
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_noxious
+		}
+		key = trait_noxious
+		pop_non_noxious_happiness = @noxious_happiness_penalty
+	}
+	pop_group_modifier = {
+		pop_housing_usage_base = 1
+		pop_amenities_usage_base = 1
+	}
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = no
+	}
+	resources = {
+		category = pop_category_criminals # Overriden Only Here (Used to be in the Worker category)
+		upkeep = {
+			trade = 5
+		}
+	}
+}
+
+deviant_drone = {
+	rank = 2
+	change_job_threshold = 2
+
+	pop_group_modifier = {
+		pop_housing_usage_base = 1
+		pop_amenities_usage_base = 1
+	}
+
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = no
+	}
+
+	resources = {
+		category = pop_category_deviant_drones # Overriden Only Here (Used to be in the Drones category)
+	}
+}
+
+corrupt_drone = {
+	rank = 2
+	change_job_threshold = 2
+
+	pop_group_modifier = {
+		pop_housing_usage_base = 1
+		pop_amenities_usage_base = 1
+	}
+
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = no
+	}
+
+	resources = {
+		category = pop_category_corrupt_drones # Overriden Only Here (Used to be in the Drones category)
+	}
+}

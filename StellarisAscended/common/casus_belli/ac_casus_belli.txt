@@ -1,0 +1,50 @@
+# CHANGE TO BIO OVERRIDE
+
+cb_ac_bio_upgrades = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		is_ac_bio_upgrader = yes
+		from = {
+			NOT = {
+				is_individual_machine = yes
+				is_machine_empire = yes
+				has_active_tradition = tr_synthetics_finish
+			}
+		}
+	}
+	is_valid = {
+		has_total_war_cb = yes
+		NOT = { is_overlord_to = FROM }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+	}
+}
+
+cb_ac_machine_containment = {
+	show_in_diplomacy = no
+	show_notification = no
+	potential = {
+		from = {
+			is_ac_bio_upgrader = yes
+		}
+		is_country_type = default
+		NOR = {
+			has_valid_civic = civic_machine_terminator
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	is_valid = {
+		has_total_war_cb = yes
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+		NOT = { is_overlord_to = FROM }
+		from = {
+			is_ac_bio_upgrader = yes
+		}
+	}
+}

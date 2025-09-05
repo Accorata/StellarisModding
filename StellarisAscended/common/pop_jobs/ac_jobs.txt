@@ -1,0 +1,153 @@
+ac_grand_synthesizer = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_ac_mega_forge
+	clothes_texture_index = 2	#?
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_ruler_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 9
+		}
+		upkeep = {
+			minerals = 18
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			alloys = @requisitorium_alloys_reduction
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			minerals = 2
+		}
+	}
+	country_modifier = {
+		megastructure_build_speed_mult = 0.03
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_councilor = {
+				COUNCILOR = "councilor_world_commissioners"
+			}
+		}
+		trade_value_add = 1
+		mult = value:scripted_modifier_councilor_level_mult|MODIFIER|pop_job_trade_mult|TYPE|councilor_world_commissioners|
+	}
+	weight = {
+		weight = @ruler_job_weight
+	}
+}
+
+ac_normal_knight = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_order_keep
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_enslaved = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_ac_normal_knights
+		produces = {
+			unity = 3
+		}
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+		}
+		upkeep = {
+			alloys = 1
+		}
+	}
+	pop_modifier = {
+		pop_defense_armies_add = 2
+	}
+	country_modifier = {
+		country_naval_cap_add = 4
+	}
+
+	weight = {
+		weight = @high_prio_specialist_job_weight
+		factor = 1.2
+		add = 5 #Somehow pops preferred to work as squires than as knights. No more.
+		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+		mult = value:job_weights_research_modifier|JOB|researcher|
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+ac_content_terraformer = {
+	category = ruler
+	is_capped_by_modifier = yes
+	building_icon = building_paradise_dome
+	icon = ranger
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_politicians
+		produces = {
+			unity = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_stability_add = 0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}

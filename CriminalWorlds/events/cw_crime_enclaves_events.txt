@@ -1,0 +1,4454 @@
+namespace = cw_enclave
+@cw_hack_cost = 1000
+# Criminal Enclave Greetings: Gatekeeper event
+# Via on_custom_diplomacy | this = target country (player); from = country being contacted
+country_event = {
+	id = cw_enclave.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_country_type = cw_criminal_enclave
+			NOT = {
+				is_hostile = root
+			}
+		}
+		has_cw_criminal_enclave_event = no
+	}
+	immediate = {
+		from = {
+			save_event_target_as = cw_criminal_enclave_country
+			random_owned_fleet = {
+				limit = {
+					is_ship_size = enclave_station
+				}
+				solar_system = {
+					random_system_planet = {
+						limit = {
+							has_planet_flag = cw_criminal_enclave_planet
+						}
+						save_event_target_as = cw_criminal_enclave_location
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cw_enclave.300
+		}
+	}
+}
+
+# Fired from event above (cw_enclave.100) & event that spawns enclave (cw_enclave.2)
+country_event = {
+	id = cw_enclave.300
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = cw_has_met_criminal_enclave
+		event_target:cw_criminal_enclave_country = {
+			switch = {
+				trigger = has_country_flag
+				cw_criminal_enclave_racketeers = {
+					# Racketeers
+					root = {
+						country_event = {
+							id = cw_enclave.302
+						}
+					}
+				}
+				cw_criminal_enclave_privateers = {
+					# Privateers
+					root = {
+						country_event = {
+							id = cw_enclave.303
+						}
+					}
+				}
+				cw_criminal_enclave_hackers = {
+					# Hackers
+					root = {
+						country_event = {
+							id = cw_enclave.304
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# New Offers (post upgrading) - not firing...
+country_event = {
+	id = cw_enclave.299
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			save_event_target_as = cw_criminal_enclave_country
+			random_owned_fleet = {
+				limit = {
+					is_ship_size = enclave_station
+				}
+				solar_system = {
+					random_system_planet = {
+						limit = {
+							has_planet_flag = cw_criminal_enclave_planet
+						}
+						save_event_target_as = cw_criminal_enclave_location
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cw_enclave.301
+		}
+	}
+}
+
+country_event = {
+	id = cw_enclave.301
+	title = cw_enclave.301.name
+	desc = cw_enclave.301.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	trigger = {
+		has_country_flag = cw_traded_with_@from
+		is_homicidal = no
+		from = {
+			NOT = {
+				is_hostile = root
+			}
+		}
+	}
+	# Check New Offers
+	option = {
+		name = cw_enclave.301.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Goodbye
+	option = {
+		name = cw_enclave.301.b
+		default_hide_option = yes
+	}
+}
+
+### Criminal Enclave Events ###
+## Racketeer Events
+# Racketeer Main Menu
+country_event = {
+	id = cw_enclave.302
+	title = cw_enclave.302.name
+	desc = cw_enclave.302.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country		# Maybe custom room later? - space room
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cw_met_racketeer_enclave
+				}
+			}
+			set_country_flag = cw_met_racketeer_enclave
+		}
+	}
+	trigger = {
+		exists = event_target:cw_criminal_enclave_country
+	}
+	# Goodbye
+	option = {
+		name = {
+			trigger = {
+				has_valid_civic = civic_fanatic_purifiers
+			}
+			text = SCUM
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+			text = TASTY
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_machine_terminator
+			}
+			text = EXTERMINATE
+		}
+		name = {
+			trigger = {
+				is_homicidal = no
+			}
+			text = leviathans.502.a
+		}
+		default_hide_option = yes
+	}
+	# Purchase Smuggled Arms
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.a.has_deal
+				NOR = {
+					has_modifier = cw_enclave_smuggled_alloys
+					has_modifier = cw_enclave_smuggled_alloys_2
+					has_modifier = cw_enclave_smuggled_alloys_3
+					has_modifier = cw_enclave_smuggled_alloys_4
+					has_modifier = cw_enclave_smuggled_alloys_5
+				}
+			}
+		}
+		name = cw_enclave.302.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.400
+			}
+		}
+	}
+	# Purchase Illicit Drugs
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.b.has_deal
+				NOR = {
+					has_modifier = cw_enclave_smuggled_consumer_goods
+					has_modifier = cw_enclave_smuggled_consumer_goods_2
+					has_modifier = cw_enclave_smuggled_consumer_goods_3
+					has_modifier = cw_enclave_smuggled_consumer_goods_4
+					has_modifier = cw_enclave_smuggled_consumer_goods_5
+				}
+			}
+		}
+		name = cw_enclave.302.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.401
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 2 or 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_2
+			# }
+		}
+		name = cw_enclave.302.c
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.c.has_leader
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = cw_racketeer_leader
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.402
+			}
+		}
+	}
+	# Purchase Slaves
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.302.d
+		# allow = { ...
+		# 	# Check how this works / displays...
+		# 	AND = {
+		# 		custom_tooltip = {
+		# 			fail_text = cw_enclave.302.d.slave_planet
+		# 			any_planet = {
+		# 				cw_is_criminal_planet = yes
+		# 				owner = {
+		# 					NOR = {
+		# 						is_same_value = root
+		# 						cw_can_be_enslaved = yes
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 		custom_tooltip = {
+		# 			fail_text = cw_enclave.302.d.cooldown
+		# 			event_target:cw_criminal_enclave_country = {
+		# 				NOT = {
+		# 					has_country_flag = cw_slave_cooldown
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.407
+			}
+		}
+	}
+	# Bribery
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.302.e
+		allow = {
+			NOT = {
+				has_modifier = cw_bribed_racketeers
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.409
+			}
+		}
+	}
+}
+
+# Purchase Smuggled Arms
+country_event = {
+	id = cw_enclave.400
+	title = cw_enclave.400.name
+	desc = cw_enclave.400.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.400.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|200|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.400.b
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|500|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_2
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.400.c
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_3
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.400.d
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|2000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_4
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.400.e
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion30
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_5
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 30
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.400.f
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.400.g
+		default_hide_option = yes
+	}
+}
+
+# Purchase Illicit Drugs
+country_event = {
+	id = cw_enclave.401
+	title = cw_enclave.401.name
+	desc = cw_enclave.401.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.401.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|200|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.401.b
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|500|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_2
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.401.c
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_3
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.401.d
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|2000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_4
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.401.e
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion30
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_5
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 30
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.401.f
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.401.g
+		default_hide_option = yes
+	}
+}
+
+# Arms Deal Renew (405 & 403)
+country_event = {
+	id = cw_enclave.405
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = {
+			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_arms_supplier_of_@root
+			NOT = {
+				is_hostile = root
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = cw_criminal_enclave
+				has_country_flag = cw_arms_supplier_of_@root
+			}
+			remove_country_flag = cw_arms_supplier_of_@root
+			save_event_target_as = event_target:cw_criminal_enclave_country
+			random_owned_fleet = {
+				limit = {
+					is_ship_size = enclave_station
+				}
+				solar_system = {
+					random_system_planet = {
+						limit = {
+							has_planet_flag = cw_criminal_enclave_planet
+						}
+						save_event_target_as = cw_criminal_enclave_location
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cw_enclave.403
+		}
+	}
+}
+
+country_event = {
+	id = cw_enclave.403
+	title = cw_enclave.403.name
+	desc = cw_enclave.403.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.403.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|200|
+		}
+		response_text = cw_enclave.403.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.403.b
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|500|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_2
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.403.c
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_3
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.403.d
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|2000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_4
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.403.e
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
+		}
+		response_text = cw_enclave.400.response
+		custom_tooltip = opinion30
+		add_modifier = {
+			modifier = cw_enclave_smuggled_alloys_5
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 30
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_arms_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.405
+				days = @traderDealDuration
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.403.f
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.403.g
+		default_hide_option = yes
+	}
+}
+
+# Drugs Deal Renew (406 & 404)
+country_event = {
+	id = cw_enclave.406
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = {
+			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_drugs_supplier_of_@root
+			NOT = {
+				is_hostile = root
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = cw_criminal_enclave
+				has_country_flag = cw_drugs_supplier_of_@root
+			}
+			remove_country_flag = cw_drugs_supplier_of_@root
+			save_event_target_as = event_target:cw_criminal_enclave_country
+			random_owned_fleet = {
+				limit = {
+					is_ship_size = enclave_station
+				}
+				solar_system = {
+					random_system_planet = {
+						limit = {
+							has_planet_flag = cw_criminal_enclave_planet
+						}
+						save_event_target_as = cw_criminal_enclave_location
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cw_enclave.404
+		}
+	}
+}
+
+country_event = {
+	id = cw_enclave.404
+	title = cw_enclave.404.name
+	desc = cw_enclave.404.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.404.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|200|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.404.b
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|500|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion10
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_2
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.404.c
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_3
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.404.d
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|2000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion20
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_4
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.404.e
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
+		}
+		response_text = cw_enclave.401.response
+		custom_tooltip = opinion30
+		add_modifier = {
+			modifier = cw_enclave_smuggled_consumer_goods_5
+			days = @traderDealDuration
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 30
+				DEAL_LENGTH = 180
+			}
+			# Renew deal
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_drugs_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.406
+				days = @traderDealDuration
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.404.f
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.404.g
+		default_hide_option = yes
+	}
+}
+
+# Hire Racketeer Veteran
+country_event = {
+	id = cw_enclave.402
+	title = cw_enclave.402.name
+	desc = cw_enclave.402.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		event_target:cw_criminal_enclave_country = {
+			owner_species = {
+				save_event_target_as = pirate_species
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		name = cw_enclave.402.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = influence
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|50|
+		}
+		custom_tooltip = cw_racketeer_leader_explanation
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			create_leader = {
+				name = random
+				class = official
+				species = event_target:pirate_species
+				background_ethic = ethic_authoritarian
+				skip_background_generation = yes
+				custom_description = cw_hired_racketeer_desc
+				custom_catch_phrase = cw_hired_racketeer_catch_phrase
+				skill = 5
+				event_leader = yes
+				traits = {
+					0 = subclass_cw_official_racketeer
+				}
+				randomize_traits = yes
+				effect = {
+					set_leader_flag = cw_racketeer_leader
+					set_leader_flag = renowned_leader
+				}
+			}
+			last_created_leader = {
+				fire_on_action = {
+					on_action = on_leader_hired
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.402.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.402.c
+		default_hide_option = yes
+	}
+}
+
+# Purchase Slaves
+country_event = {
+	id = cw_enclave.407
+	title = cw_enclave.407.name
+	desc = cw_enclave.407.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		random_planet = {
+			limit = {
+				cw_is_criminal_planet = yes
+				owner = {
+					NOT = {
+						is_same_value = root
+					}
+				}
+				count_owned_pop_amount = {
+					count >= 200
+					limit = {
+						can_be_smuggled = yes
+					}
+				}
+			}
+			save_event_target_as = cw_enslaved_planet
+		}
+	}
+	# 100 Pops
+	option = {
+		name = cw_enclave.407.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|2500|
+		}
+		custom_tooltip = cw_enclave.407.a.tooltip
+		hidden_effect = {
+			event_target:cw_criminal_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 10
+				}
+				set_timed_country_flag = {
+					flag = cw_slave_cooldown
+					days = 120
+				}
+			}
+			event_target:cw_enslaved_planet = {
+				random_owned_pop_group = {
+					limit = {
+						can_be_smuggled = yes
+					}
+					weights = {
+						base = 1
+						modifier = {
+							OR = {
+								is_pop_category = worker
+								is_pop_category = slave
+							}
+							factor = 5
+						}
+						modifier = {
+							is_pop_category = ruler
+							factor = 0.1
+						}
+					}
+					resettle_pop_group = {
+						POP_GROUP = this
+						PLANET = capital_scope
+						AMOUNT = 100
+					}
+				}
+				owner = {
+					set_timed_country_flag = {
+						flag = cw_100_enslaved
+						days = 10
+					}
+					country_event = {
+						id = cw_enclave.408
+					}
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# 200 Pops
+	option = {
+		name = cw_enclave.407.b
+		trigger = {
+			event_target:cw_enslaved_planet = {
+				count_owned_pop_amount = {
+					count >= 300
+					limit = {
+						can_be_smuggled = yes
+					}
+				}
+			}
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|5000|
+		}
+		custom_tooltip = cw_enclave.407.b.tooltip
+		hidden_effect = {
+			while = {
+				count = 2
+				random_owned_pop_group = {
+					limit = {
+						can_be_smuggled = yes
+					}
+					weights = {
+						base = 1
+						modifier = {
+							OR = {
+								is_pop_category = worker
+								is_pop_category = slave
+							}
+							factor = 5
+						}
+						modifier = {
+							is_pop_category = ruler
+							factor = 0.1
+						}
+					}
+					resettle_pop_group = {
+						POP_GROUP = this
+						PLANET = capital_scope
+						AMOUNT = 100
+					}
+				}
+			}
+			event_target:cw_criminal_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 15
+				}
+				set_timed_country_flag = {
+					flag = cw_slave_cooldown
+					days = 240
+				}
+			}
+			event_target:cw_enslaved_planet = {
+				owner = {
+					set_timed_country_flag = {
+						flag = cw_200_enslaved
+						days = 10
+					}
+					country_event = {
+						id = cw_enclave.408
+					}
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# 300 Pops
+	option = {
+		name = cw_enclave.407.c
+		trigger = {
+			event_target:cw_enslaved_planet = {
+				count_owned_pop_amount = {
+					count >= 400
+					limit = {
+						can_be_smuggled = yes
+					}
+				}
+			}
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_racketeer_purchase_cost|COST|7500|
+		}
+		custom_tooltip = cw_enclave.407.c.tooltip
+		hidden_effect = {
+			while = {
+				count = 3
+				random_owned_pop_group = {
+					limit = {
+						can_be_smuggled = yes
+					}
+					weights = {
+						base = 1
+						modifier = {
+							OR = {
+								is_pop_category = worker
+								is_pop_category = slave
+							}
+							factor = 5
+						}
+						modifier = {
+							is_pop_category = ruler
+							factor = 0.1
+						}
+					}
+					resettle_pop_group = {
+						POP_GROUP = this
+						PLANET = capital_scope
+						AMOUNT = 100
+					}
+				}
+			}
+			event_target:cw_criminal_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 20
+				}
+				set_timed_country_flag = {
+					flag = cw_slave_cooldown
+					days = 360
+				}
+			}
+			event_target:cw_enslaved_planet = {
+				owner = {
+					set_timed_country_flag = {
+						flag = cw_300_enslaved
+						days = 10
+					}
+					country_event = {
+						id = cw_enclave.408
+					}
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.407.d
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.407.e
+		default_hide_option = yes
+	}
+}
+
+# Slaved Pops
+country_event = {
+	id = cw_enclave.408
+	title = cw_enclave.408.name
+	desc = cw_enclave.408.desc
+	picture = GFX_evt_surrender
+	show_sound = event_criminal_activity
+	location = event_target:cw_enslaved_planet
+	is_triggered_only = yes
+
+	option = {
+		name = cw_enclave.408.a
+		default_hide_option = yes
+	}
+}
+
+# Bribery
+country_event = {
+	id = cw_enclave.409
+	title = cw_enclave.409.name
+	desc = {
+		text = cw_enclave.409.desc
+		trigger = {
+			fleet_power < 15000
+		}
+	}
+	desc = {
+		text = cw_enclave.409.desc.medium
+		trigger = {
+			fleet_power > 15000
+			fleet_power < 25000
+		}
+	}
+	desc = {
+		text = cw_enclave.409.desc.strong
+		trigger = {
+			fleet_power > 25000
+		}
+	}
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Bribery
+	inline_script = {
+		script = enclaves/cw_enclave_bribery
+		ENCLAVE_TYPE = racketeer
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.409.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.409.b
+		default_hide_option = yes
+	}
+}
+
+## Privateer Events
+# Privateer Main Menu
+country_event = {
+	id = cw_enclave.303
+	title = cw_enclave.303.name
+	desc = cw_enclave.303.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country		# Maybe custom room later? - space room
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cw_met_privateer_enclave
+				}
+			}
+			set_country_flag = cw_met_privateer_enclave
+		}
+	}
+	trigger = {
+		exists = event_target:cw_criminal_enclave_country
+	}
+	# Goodbye
+	option = {
+		name = {
+			trigger = {
+				has_valid_civic = civic_fanatic_purifiers
+			}
+			text = SCUM
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+			text = TASTY
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_machine_terminator
+			}
+			text = EXTERMINATE
+		}
+		name = {
+			trigger = {
+				is_homicidal = no
+			}
+			text = leviathans.502.a
+		}
+		default_hide_option = yes
+	}
+	# ???
+	# Harass Rivals
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		name = cw_enclave.303.b
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.b.cooldown
+				event_target:cw_criminal_enclave_country = {
+					NOT = {
+						has_country_flag = cw_harass_cooldown
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = cw_enclave.303.b.need_rivals
+				any_relation = {
+					root = { is_rival = prev }
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.506
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 2 or 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_2
+			# }
+		}
+		name = cw_enclave.303.c
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.c.has_leader
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = cw_privateer_leader
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.509
+			}
+		}
+	}
+	# Purchase Stolen Specimens
+	option = {
+		trigger = {
+			has_grand_archive_dlc = yes
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.303.d
+		allow = {
+			AND = {
+				custom_tooltip = {
+					fail_text = cw_enclave.303.d.no_stealing_system
+					any_system = {
+						has_owner = yes
+						# Check for pirates
+						OR = {
+							any_fleet_in_system = {
+								owner = {
+									is_country_type = pirate
+								}
+							}
+							any_neighbor_system = {
+								any_fleet_in_system = {
+									owner = {
+										is_country_type = pirate
+									}
+								}
+							}
+						}
+						owner = {
+							NOR = {
+								is_same_value = root
+								cw_can_be_harrassed = yes
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					fail_text = cw_enclave.303.d.cooldown
+					event_target:cw_criminal_enclave_country = {
+						NOT = {
+							has_country_flag = cw_raid_cooldown
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.510
+			}
+		}
+	}
+	# Purchase Stolen Resources (No Grand Archive)
+	option = {
+		trigger = {
+			has_grand_archive_dlc = no
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.303.d.no_archive
+		allow = {
+			AND = {
+				custom_tooltip = {
+					fail_text = cw_enclave.303.d.no_raidable_system
+					any_system = {
+						has_owner = yes
+						# Check for pirates
+						OR = {
+							any_fleet_in_system = {
+								owner = {
+									is_country_type = pirate
+								}
+							}
+							any_neighbor_system = {
+								any_fleet_in_system = {
+									owner = {
+										is_country_type = pirate
+									}
+								}
+							}
+						}
+						owner = {
+							NOR = {
+								is_same_value = root
+								cw_can_be_harrassed = yes
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					fail_text = cw_enclave.303.d.no_archive_cooldown
+					event_target:cw_criminal_enclave_country = {
+						NOT = {
+							has_country_flag = cw_raid_cooldown
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.511
+			}
+		}
+	}
+}
+
+# Setup Harass Targets (Not called when one chooses a new target)
+country_event = {
+	id = cw_enclave.506
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_rival_country = {
+			save_event_target_as = cw_pirate_target_1
+		}
+		random_rival_country = {
+			limit = {
+				NOT = {
+					is_same_value = event_target:cw_pirate_target_1
+				}
+			}
+			save_event_target_as = cw_pirate_target_2
+		}
+		random_rival_country = {
+			limit = {
+				NOR = {
+					is_same_value = event_target:cw_pirate_target_1
+					is_same_value = event_target:cw_pirate_target_2
+				}
+			}
+			save_event_target_as = cw_pirate_target_3
+		}
+		random_rival_country = {
+			limit = {
+				NOR = {
+					is_same_value = event_target:cw_pirate_target_1
+					is_same_value = event_target:cw_pirate_target_2
+					is_same_value = event_target:cw_pirate_target_3
+				}
+			}
+			save_event_target_as = cw_pirate_target_4
+		}
+		country_event = {
+			id = cw_enclave.503
+		}
+	}
+}
+
+# Harass Rival Empires Menu
+country_event = {
+	id = cw_enclave.503
+	title = cw_enclave.503.name
+	desc = cw_enclave.503.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.503.a
+		trigger = {
+			exists = event_target:cw_pirate_target_1
+		}
+		hidden_effect = {
+			event_target:cw_pirate_target_1 = {
+				save_event_target_as = cw_pirate_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_pirate_confirmed_target = {
+						cw_can_be_harassed = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.504
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.505
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.503.b
+		trigger = {
+			exists = event_target:cw_pirate_target_2
+		}
+		hidden_effect = {
+			event_target:cw_pirate_target_2 = {
+				save_event_target_as = cw_pirate_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_pirate_confirmed_target = {
+						cw_can_be_harassed = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.504
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.505
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.503.c
+		trigger = {
+			exists = event_target:cw_pirate_target_3
+		}
+		hidden_effect = {
+			event_target:cw_pirate_target_3 = {
+				save_event_target_as = cw_pirate_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_pirate_confirmed_target = {
+						cw_can_be_harassed = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.504
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.505
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.503.d
+		trigger = {
+			exists = event_target:cw_pirate_target_4
+		}
+		hidden_effect = {
+			event_target:cw_pirate_target_4 = {
+				save_event_target_as = cw_pirate_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_pirate_confirmed_target = {
+						cw_can_be_harassed = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.504
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.505
+				}
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.503.e
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.503.f
+		default_hide_option = yes
+	}
+}
+
+# Harass Selection
+country_event = {
+	id = cw_enclave.504
+	title = cw_enclave.504.name
+	desc = cw_enclave.504.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.504.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|2000|
+		}
+		response_text = cw_enclave.504.response
+		custom_tooltip = cw_enclave.pirate_harass
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 180
+			}
+			event_target:cw_criminal_enclave_country = {
+				set_timed_country_flag = {
+					flag = cw_harass_cooldown
+					days = 180
+				}
+				country_event = {
+					id = cw_enclave.508
+					days = 120
+				}
+			}
+			event_target:cw_pirate_confirmed_target = {
+				country_event = {
+					id = cw_enclave.507
+				}
+			}
+		}
+	}
+	# New Selection
+	option = {
+		name = cw_enclave.504.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.503
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.504.c
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.504.d
+		default_hide_option = yes
+	}
+}
+
+# Harass Denied
+country_event = {
+	id = cw_enclave.505
+	title = cw_enclave.505.name
+	desc = cw_enclave.505.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Exit
+	option = {
+		name = cw_enclave.505.a
+		default_hide_option = yes
+	}
+	# New Selection
+	option = {
+		name = cw_enclave.505.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.503
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.505.c
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+}
+
+# Empire Harassed
+country_event = {
+	id = cw_enclave.507
+	title = cw_enclave.507.name
+	desc = cw_enclave.507.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		## Pirate Fleets are Sent to Attack
+		# Find target systems
+		while = {
+			count = 5
+			random_system_within_border = {
+				limit = {
+					# Priotize Outposts
+					starbase = {
+						has_starbase_size = starbase_outpost
+					}
+					# Hope to find border systems
+					is_on_border = yes
+				}
+				# Scripted Effect which saves raid targets
+				cw_save_as_raid_target = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:cw_pirate_raid_target_5
+				}
+			}
+			while = {
+				count = 5
+				random_system_within_border = {
+					limit = {
+						# Hope to find border systems
+						is_on_border = yes
+					}
+					# Scripted Effect which saves raid targets
+					cw_save_as_raid_target = yes
+				}
+			}
+		}
+		# Backup case in the event that there are no systems with 2 unowned/other owned neighbors (should basically never fire)
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:cw_pirate_raid_target_5
+				}
+			}
+			while = {
+				count = 5
+				random_system_within_border = {
+					# Scripted Effect which saves raid targets
+					cw_save_as_raid_target = yes
+				}
+			}
+		}
+		# Send fleets to those systems
+		event_target:cw_criminal_enclave_country = {
+			every_owned_fleet = {
+				limit = {
+					is_mobile = yes
+				}
+				random_list = {
+					1 = {
+						auto_move_to_planet = {
+							target = event_target:cw_pirate_raid_target_1.starbase
+							clear_auto_move_on_arrival = no
+						}
+					}
+					1 = {
+						auto_move_to_planet = {
+							target = event_target:cw_pirate_raid_target_2.starbase
+							clear_auto_move_on_arrival = no
+						}
+					}
+					1 = {
+						auto_move_to_planet = {
+							target = event_target:cw_pirate_raid_target_3.starbase
+							clear_auto_move_on_arrival = no
+						}
+					}
+					1 = {
+						auto_move_to_planet = {
+							target = event_target:cw_pirate_raid_target_4.starbase
+							clear_auto_move_on_arrival = no
+						}
+					}
+					1 = {
+						auto_move_to_planet = {
+							target = event_target:cw_pirate_raid_target_5.starbase
+							clear_auto_move_on_arrival = no
+						}
+					}
+				}
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.507.a
+		default_hide_option = yes
+	}
+	# Who paid for this?
+	option = {
+		name = cw_enclave.507.b
+		response_text = cw_enclave.507.b.response
+		trigger = {
+			NOT = {
+				has_country_flag = cw_asked_who_paid
+			}
+		}
+		hidden_effect = {
+			set_country_flag = cw_asked_who_paid
+		}
+	}
+}
+
+# Harassing Fleets Return
+country_event = {
+	id = cw_enclave.508
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_owned_fleet = {
+			limit = {
+				is_ship_size = enclave_station
+			}
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						has_planet_flag = cw_criminal_enclave_planet
+					}
+					save_event_target_as = cw_criminal_enclave_planet
+				}
+			}
+		}
+		every_owned_fleet = {
+			limit = {
+				is_mobile = yes
+			}
+			# maybe way to space these out?
+			auto_move_to_planet = {
+				target = event_target:cw_criminal_enclave_planet
+				clear_auto_move_on_arrival = yes
+			}
+		}
+	}
+}
+
+# Hire Privateer Veteran
+country_event = {
+	id = cw_enclave.509
+	title = cw_enclave.509.name
+	desc = cw_enclave.509.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		event_target:cw_criminal_enclave_country = {
+			owner_species = {
+				save_event_target_as = pirate_species
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		name = cw_enclave.509.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|1000|
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = influence
+			AMOUNT = value:cw_privateer_purchase_cost|COST|50|
+		}
+		custom_tooltip = cw_privateer_leader_explanation
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			create_leader = {
+				name = random
+				class = commander
+				species = event_target:pirate_species
+				background_ethic = ethic_militarist
+				skip_background_generation = yes
+				custom_description = cw_hired_privateer_desc
+				custom_catch_phrase = cw_hired_privateer_catch_phrase
+				skill = 5
+				event_leader = yes
+				traits = {
+					0 = subclass_cw_commander_privateer
+				}
+				randomize_traits = yes
+				effect = {
+					set_leader_flag = cw_privateer_leader
+					set_leader_flag = renowned_leader
+				}
+			}
+			last_created_leader = {
+				fire_on_action = {
+					on_action = on_leader_hired
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.509.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.509.c
+		default_hide_option = yes
+	}
+}
+
+# Purchase Stolen Specimens
+country_event = {
+	id = cw_enclave.510
+	title = cw_enclave.510.name
+	desc = cw_enclave.510.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		random_system = {
+			limit = {
+				has_owner = yes
+				# Check for pirates
+				OR = {
+					any_fleet_in_system = {
+						owner = {
+							is_country_type = pirate
+						}
+					}
+					any_neighbor_system = {
+						any_fleet_in_system = {
+							owner = {
+								is_country_type = pirate
+							}
+						}
+					}
+				}
+				owner = {
+					NOR = {
+						is_same_value = root
+						cw_can_be_harrassed = yes
+					}
+				}
+			}
+			owner = {
+				save_event_target_as = cw_specimen_stealing_target
+			}
+		}
+	}
+	# Aesthetic Wonder
+	option = {
+		name = cw_enclave.510.a
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.510.a.no_aesthetic_wonder
+				event_target:cw_specimen_stealing_target = {
+					count_exhibit = {
+						limit = {
+							is_specimen_category = aesthetic_wonder
+						}
+						count >= 1
+					}
+				}
+			}
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|3000|
+		}
+		custom_tooltip = cw_steals_aesthetic_wonder
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			# Steals a random Aesthetic Wonder Specimen
+			steal_specimens = {
+				who = event_target:cw_specimen_stealing_target
+				category = aesthetic_wonder
+				count = 1
+				show_notification = yes # maybe no...
+			}
+			event_target:cw_specimen_stealing_target = {
+				country_event = {
+					id = cw_enclave.512 # to do... (also how do we know which specimen?)
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# b and c to do...
+	# Main Menu
+	option = {
+		name = cw_enclave.510.d
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.510.e
+		default_hide_option = yes
+	}
+}
+
+# Purchase Stolen Resources
+country_event = {
+	id = cw_enclave.511
+	title = cw_enclave.511.name
+	desc = cw_enclave.511.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		event_target:cw_criminal_enclave_country = {
+			owner_species = {
+				save_event_target_as = pirate_species
+			}
+		}
+	}
+	# Purchase
+	option = {
+		name = cw_enclave.511.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.511.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.511.c
+		default_hide_option = yes
+	}
+}
+
+## Hacker Events
+# Hacker Main Menu
+country_event = {
+	id = cw_enclave.304
+	title = cw_enclave.304.name
+	desc = cw_enclave.304.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country		# Maybe custom room later? - space room
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cw_met_hacker_enclave
+				}
+			}
+			set_country_flag = cw_met_hacker_enclave
+		}
+	}
+	trigger = {
+		exists = event_target:cw_criminal_enclave_country
+	}
+	# Goodbye
+	option = {
+		name = {
+			trigger = {
+				has_valid_civic = civic_fanatic_purifiers
+			}
+			text = SCUM
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+			text = TASTY
+		}
+		name = {
+			trigger = {
+				has_valid_civic = civic_machine_terminator
+			}
+			text = EXTERMINATE
+		}
+		name = {
+			trigger = {
+				is_homicidal = no
+			}
+			text = leviathans.502.a
+		}
+		default_hide_option = yes
+	}
+	# Skeleton Key
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.a.has_key
+				NOT = {
+					has_modifier = cw_skeleton_key
+				}
+			}
+		}
+		name = cw_enclave.304.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.600
+			}
+		}
+	}
+	# Hack Rivals
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		name = cw_enclave.304.b
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.b.cooldown
+				event_target:cw_criminal_enclave_country = {
+					NOT = {
+						has_country_flag = cw_hack_cooldown
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = cw_enclave.304.b.need_rivals
+				any_relation = {
+					root = { is_rival = prev }
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.609
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		trigger = {
+			is_homicidal = no
+			is_gestalt = no
+			# Enclave is Level 2 or 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_2
+			# }
+		}
+		name = cw_enclave.304.c
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.c.has_leader
+				NOT = {
+					any_owned_leader = {
+						has_leader_flag = cw_hacker_leader
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.608
+			}
+		}
+	}
+	# Gestalt Trait
+	option = {
+		name = cw_enclave.304.c.gestalt
+		trigger = {
+			is_homicidal = no
+			is_gestalt = yes
+			# Enclave is Level 2 or 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_2
+			# }
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.c.has_assimilated
+				NOT = {
+					any_owned_leader = {
+						has_trait = leader_trait_cw_hacker_node
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.616
+			}
+		}
+	}
+	# Acquire Virus
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.304.d
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.d.has_hack
+				NOT = {
+					has_modifier = cw_purchased_hacker_virus
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.611
+			}
+		}
+	}
+	# Bribery
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.304.e
+		allow = {
+			NOT = {
+				has_modifier = cw_bribed_hackers
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.615
+			}
+		}
+	}
+}
+
+# Skeleton Key
+country_event = {
+	id = cw_enclave.600
+	title = cw_enclave.600.name
+	desc = cw_enclave.600.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Purchase Key 
+	option = {
+		name = cw_enclave.600.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		add_modifier = {
+			modifier = cw_skeleton_key
+			days = 3600
+		}
+		custom_tooltip = opinion10
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+			# Renew
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_key_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.610
+				days = 3600
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.600.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.600.c
+		default_hide_option = yes
+	}
+}
+
+# Skeleton Key Renewal (610 & 601)
+country_event = {
+	id = cw_enclave.610
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = {
+			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_key_supplier_of_@root
+			NOT = {
+				is_hostile = root
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = cw_criminal_enclave
+				has_country_flag = cw_key_supplier_of_@root
+			}
+			remove_country_flag = cw_key_supplier_of_@root
+			save_event_target_as = event_target:cw_criminal_enclave_country
+			random_owned_fleet = {
+				limit = {
+					is_ship_size = enclave_station
+				}
+				solar_system = {
+					random_system_planet = {
+						limit = {
+							has_planet_flag = cw_criminal_enclave_planet
+						}
+						save_event_target_as = cw_criminal_enclave_location
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cw_enclave.601
+		}
+	}
+}
+
+country_event = {
+	id = cw_enclave.601
+	title = cw_enclave.601.name
+	desc = cw_enclave.601.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Purchase Key 
+	option = {
+		name = cw_enclave.601.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		add_modifier = {
+			modifier = cw_skeleton_key
+			days = 3600
+		}
+		custom_tooltip = opinion10
+		hidden_effect = {
+			# Renew
+			event_target:cw_criminal_enclave_country = {
+				set_country_flag = cw_key_supplier_of_@root
+			}
+			country_event = {
+				id = cw_enclave.610
+				days = 3600
+			}
+			event_target:cw_criminal_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 10
+				}
+				if = {
+					limit = {
+						has_country_flag = cw_recent_deal
+					}
+					remove_country_flag = cw_recent_deal
+				}
+				set_timed_country_flag = {
+					flag = cw_recent_deal
+					days = 180
+				}
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.601.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.601.c
+		default_hide_option = yes
+	}
+}
+
+# Setup Hack Targets (Not called when one chooses a new target)
+country_event = {
+	id = cw_enclave.609
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_rival_country = {
+			save_event_target_as = cw_hack_target_1
+		}
+		random_rival_country = {
+			limit = {
+				NOT = {
+					is_same_value = event_target:cw_hack_target_1
+				}
+			}
+			save_event_target_as = cw_hack_target_2
+		}
+		random_rival_country = {
+			limit = {
+				NOR = {
+					is_same_value = event_target:cw_hack_target_1
+					is_same_value = event_target:cw_hack_target_2
+				}
+			}
+			save_event_target_as = cw_hack_target_3
+		}
+		random_rival_country = {
+			limit = {
+				NOR = {
+					is_same_value = event_target:cw_hack_target_1
+					is_same_value = event_target:cw_hack_target_2
+					is_same_value = event_target:cw_hack_target_3
+				}
+			}
+			save_event_target_as = cw_hack_target_4
+		}
+		country_event = {
+			id = cw_enclave.602
+		}
+	}
+}
+
+# Hack Rival Empires Menu
+country_event = {
+	id = cw_enclave.602
+	title = cw_enclave.602.name
+	desc = cw_enclave.602.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.602.a
+		trigger = {
+			exists = event_target:cw_hack_target_1
+		}
+		hidden_effect = {
+			event_target:cw_hack_target_1 = {
+				save_event_target_as = cw_hack_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_hack_confirmed_target = {
+						cw_can_be_hacked = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.603
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.604
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.602.b
+		trigger = {
+			exists = event_target:cw_hack_target_2
+		}
+		hidden_effect = {
+			event_target:cw_hack_target_2 = {
+				save_event_target_as = cw_hack_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_hack_confirmed_target = {
+						cw_can_be_hacked = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.603
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.604
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.602.c
+		trigger = {
+			exists = event_target:cw_hack_target_3
+		}
+		hidden_effect = {
+			event_target:cw_hack_target_3 = {
+				save_event_target_as = cw_hack_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_hack_confirmed_target = {
+						cw_can_be_hacked = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.603
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.604
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.602.d
+		trigger = {
+			exists = event_target:cw_hack_target_4
+		}
+		hidden_effect = {
+			event_target:cw_hack_target_4 = {
+				save_event_target_as = cw_hack_confirmed_target
+			}
+			if = {
+				limit = {
+					event_target:cw_hack_confirmed_target = {
+						cw_can_be_hacked = yes
+					}
+				}
+				country_event = {
+					id = cw_enclave.603
+				}
+			}
+			else = {
+				# Denial of Service
+				country_event = {
+					id = cw_enclave.604
+				}
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.602.e
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.602.f
+		default_hide_option = yes
+	}
+}
+
+# Hack Selection
+country_event = {
+	id = cw_enclave.603
+	title = cw_enclave.603.name
+	desc = cw_enclave.603.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	option = {
+		name = cw_enclave.603.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|@cw_hack_cost|
+		}
+		response_text = cw_enclave.603.response
+		custom_tooltip = cw_enclave.military_hack
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			event_target:cw_criminal_enclave_country = {
+				set_timed_country_flag = {
+					flag = cw_hack_cooldown
+					days = 180
+				}
+			}
+			event_target:cw_hack_confirmed_target = {
+				country_event = {
+					id = cw_enclave.605
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.603.b
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|@cw_hack_cost|
+		}
+		response_text = cw_enclave.603.response
+		custom_tooltip = cw_enclave.economic_hack
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			event_target:cw_criminal_enclave_country = {
+				set_timed_country_flag = {
+					flag = cw_hack_cooldown
+					days = 180
+				}
+			}
+			event_target:cw_hack_confirmed_target = {
+				country_event = {
+					id = cw_enclave.606
+				}
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.603.c
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|@cw_hack_cost|
+		}
+		response_text = cw_enclave.603.response
+		custom_tooltip = cw_enclave.political_hack
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			event_target:cw_criminal_enclave_country = {
+				set_timed_country_flag = {
+					flag = cw_hack_cooldown
+					days = 180
+				}
+			}
+			event_target:cw_hack_confirmed_target = {
+				country_event = {
+					id = cw_enclave.607
+				}
+			}
+		}
+	}
+	# New Selection
+	option = {
+		name = cw_enclave.603.d
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.602
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.603.e
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.603.f
+		default_hide_option = yes
+	}
+}
+
+# Hack Denied
+country_event = {
+	id = cw_enclave.604
+	title = cw_enclave.604.name
+	desc = cw_enclave.604.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Exit
+	option = {
+		name = cw_enclave.604.a
+		default_hide_option = yes
+	}
+	# New Selection
+	option = {
+		name = cw_enclave.604.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.602
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.604.c
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+}
+
+# Military Hack
+country_event = {
+	id = cw_enclave.605
+	title = cw_enclave.605.name
+	desc = cw_enclave.605.desc
+	picture = GFX_evt_sabotaged_ship
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		add_modifier = {
+			modifier = cw_military_hacked
+			days = 720
+		}
+	}
+	option = {
+		name = cw_enclave.605.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_military_hacked
+				days = 720
+			}
+		}
+	}
+}
+
+# Economic Hack
+country_event = {
+	id = cw_enclave.606
+	title = cw_enclave.606.name
+	desc = cw_enclave.606.desc
+	picture = GFX_evt_financial_instruments
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		add_modifier = {
+			modifier = cw_economy_hacked
+			days = 720
+		}
+	}
+	option = {
+		name = cw_enclave.606.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_economy_hacked
+				days = 720
+			}
+		}
+	}
+}
+
+# Political Hack
+country_event = {
+	id = cw_enclave.607
+	title = cw_enclave.607.name
+	desc = cw_enclave.607.desc
+	picture = GFX_evt_announcement
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		add_modifier = {
+			modifier = cw_politics_hacked
+			days = 720
+		}
+	}
+	option = {
+		name = cw_enclave.607.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_politics_hacked
+				days = 720
+			}
+		}
+	}
+}
+
+# Hire Hacker Veteran
+country_event = {
+	id = cw_enclave.608
+	title = cw_enclave.608.name
+	desc = cw_enclave.608.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	immediate = {
+		event_target:cw_criminal_enclave_country = {
+			owner_species = {
+				save_event_target_as = pirate_species
+			}
+		}
+	}
+	# Hire Leader
+	option = {
+		name = cw_enclave.608.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = influence
+			AMOUNT = value:cw_hacker_purchase_cost|COST|50|
+		}
+		custom_tooltip = cw_hacker_leader_explanation
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			create_leader = {
+				name = random
+				class = scientist
+				species = event_target:pirate_species
+				background_ethic = ethic_materialist
+				skip_background_generation = yes
+				custom_description = cw_hired_hacker_desc
+				custom_catch_phrase = cw_hired_hacker_catch_phrase
+				skill = 5
+				event_leader = yes
+				traits = {
+					0 = subclass_cw_scientist_hacker
+				}
+				randomize_traits = yes
+				effect = {
+					set_leader_flag = cw_hacker_leader
+					set_leader_flag = renowned_leader
+				}
+			}
+			last_created_leader = {
+				fire_on_action = {
+					on_action = on_leader_hired
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.608.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.608.c
+		default_hide_option = yes
+	}
+}
+
+# Assimilate Hacker Protocols
+country_event = {
+	id = cw_enclave.616
+	title = cw_enclave.616.name
+	desc = cw_enclave.616.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Assimilate
+	option = {
+		name = cw_enclave.616.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = influence
+			AMOUNT = value:cw_hacker_purchase_cost|COST|50|
+		}
+		random_owned_leader = {
+			limit = {
+				is_councilor_type = councilor_gestalt_regulatory
+			}
+			add_trait = {
+				trait = leader_trait_cw_hacker_node
+			}
+		}
+		custom_tooltip = opinion20
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.616.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.616.c
+		default_hide_option = yes
+	}
+}
+
+# Purchase Tech Virus
+country_event = {
+	id = cw_enclave.611
+	title = cw_enclave.611.name
+	desc = cw_enclave.611.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Purchase Virus
+	option = {
+		name = cw_enclave.611.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_hacker_purchase_cost|COST|5000|
+		}
+		add_modifier = {
+			modifier = cw_purchased_hacker_virus
+		}
+		custom_tooltip = opinion20
+		response_text = cw_enclave.611.response
+		hidden_effect = {
+			event_target:cw_criminal_enclave_country = {
+				add_trust = {
+					who = root
+					amount = 20
+				}
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.611.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.611.c
+		default_hide_option = yes
+	}
+}
+
+# Virus Triggered on Espionage Completion
+espionage_operation_event = {
+	id = cw_enclave.612
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			has_modifier = cw_purchased_hacker_virus
+		}
+		from = {
+			is_primitive = no
+		}
+	}
+	
+	immediate = {
+		owner = {
+			country_event = {
+				id = cw_enclave.613
+			}
+		}
+	}
+}
+
+# Activate Virus
+country_event = {
+	id = cw_enclave.613
+	title = cw_enclave.613.name
+	desc = cw_enclave.613.desc
+	picture = GFX_evt_announcement # change
+	show_sound = event_criminal_activity # change
+	location = fromfrom.capital_scope
+	is_triggered_only = yes
+
+	option = {
+		name = cw_enclave.613.a
+		custom_tooltip = cw_hacker_virus_effects
+		remove_modifier = cw_purchased_hacker_virus
+		hidden_effect = {
+			fromfrom = {
+				if = {
+					limit = {
+						has_country_flag = cw_hacker_virus_activated
+					}
+					remove_country_flag = cw_hacker_virus_activated
+				}
+				set_timed_country_flag = {
+					flag = cw_hacker_virus_activated
+					days = 1800
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = cw_hacker_virus_activate_on_@fromfrom
+				}
+				remove_country_flag = cw_hacker_virus_activate_on_@fromfrom
+			}
+			set_timed_country_flag = {
+				flag = cw_hacker_virus_activate_on_@fromfrom
+				days = 1800
+			}
+		}
+		default_hide_option = yes
+	}
+
+	option = {
+		name = cw_enclave.613.b
+	}
+}
+
+# Virus Steals Tech
+country_event = {
+	id = cw_enclave.614
+	hide_window = yes
+	is_triggered_only = yes
+
+	# trigger = {
+	# 	has_country_flag = cw_hacker_virus_activated
+	# }
+
+	immediate = {
+		every_playable_country = {
+			# limit = {
+			# 	has_country_flag = cw_hacker_virus_activate_on_@root
+			# }
+			add_tech_progress = {
+				tech = last_increased_tech
+				progress = 0.10
+			}
+			# Maybe fire a message too... (only if owner doesn't have that tech)
+		}
+	}
+}
+
+# Bribery
+country_event = {
+	id = cw_enclave.615
+	title = cw_enclave.615.name
+	desc = {
+		text = cw_enclave.615.desc
+		trigger = {
+			fleet_power < 15000
+		}
+	}
+	desc = {
+		text = cw_enclave.615.desc.medium
+		trigger = {
+			fleet_power > 15000
+			fleet_power < 25000
+		}
+	}
+	desc = {
+		text = cw_enclave.615.desc.strong
+		trigger = {
+			fleet_power > 25000
+		}
+	}
+	desc = cw_enclave.615.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Bribery
+	inline_script = {
+		script = enclaves/cw_enclave_bribery
+		ENCLAVE_TYPE = hacker
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.615.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.615.b
+		default_hide_option = yes
+	}
+}
+
+# Spawn Criminal Enclave
+planet_event = {
+	id = cw_enclave.1
+	title = cw_enclave.1.name
+	desc = cw_enclave.1.desc
+	picture = GFX_evt_bribery	# To be changed
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	trigger = {
+		solar_system = {
+			NOT = {
+				has_star_flag = cw_active_criminal_enclave
+			}
+			any_system_planet = {
+				OR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+		}
+	}
+	immediate = {
+		cw_create_normal_criminal_enterprise = yes
+		solar_system = {
+			set_star_flag = enclave
+			set_star_flag = cw_active_criminal_enclave
+			if = {
+				limit = {
+					any_system_planet = {
+						is_moon = yes
+					}
+				}
+				random_system_planet = {
+					limit = {
+						is_moon = yes
+					}
+					save_event_target_as = target_planet_for_building
+				}
+			}
+			else = {
+				random_system_planet = {
+					limit = {
+						is_asteroid = yes
+					}
+					save_event_target_as = target_planet_for_building
+				}
+			}
+		}
+		# Need a check for there is nothing else (or this could be in triggered) - NO moon or asteriod aka
+		create_fleet = {
+			name = "NAME_Constructor"
+			effect = {
+				set_owner = event_target:cw_criminal_enterprise
+				create_ship = {
+					name = "NAME_Constructor"
+					design = NAME_Constructor
+					graphical_culture = root.owner
+					upgradable = no
+				}
+				set_location = root
+				auto_move_to_planet = {
+					target = event_target:target_planet_for_building
+					clear_auto_move_on_arrival = yes
+					# arrival_effect = cw_build_outpost
+				}
+			}
+		}
+		event_target:target_planet_for_building = {
+			planet_event = {
+				id = cw_enclave.2
+				days = 10				# 180
+			}
+		}
+	}
+	option = {
+		name = cw_enclave.1.a
+	}
+}
+
+planet_event = {
+	id = cw_enclave.2
+	title = cw_enclave.2.name
+	desc = cw_enclave.2.desc
+	picture = GFX_evt_bribery	# To be changed
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	immediate = {
+		save_event_target_as = cw_criminal_enclave_location
+		set_planet_flag = cw_criminal_enclave_planet
+		root.solar_system.owner = {
+			owner_species = {
+				save_event_target_as = pirate_species
+			}
+		}
+		create_country = {
+			name = random
+			name_list = root.solar_system.owner
+			type = cw_criminal_enclave
+			authority = "auth_oligarchic"
+			origin = "origin_default"
+			species = event_target:pirate_species
+			ignore_initial_colony_error = yes
+			effect = {
+				random_list = {
+					1 = {
+						# Becomes Racketeer Syndicate
+						set_country_flag = cw_criminal_enclave_racketeers
+						change_country_flag = {
+							background = {
+								category = "backgrounds"
+								file = "flag_BG_cw_enclave.dds"
+							}
+							colors = {
+								"black"
+								"yellow"
+								"null"
+								"null"
+							}
+						}
+						country_add_ethic = ethic_authoritarian
+						add_modifier = {
+							modifier = cw_enclave_racketeers
+							days = -1
+						}
+						# Create capital starbase
+						create_fleet = {
+							name = "NAME_Criminal_Hideout"
+							effect = {
+								set_owner = prev
+								create_ship = {
+									name = "NAME_Criminal_Hideout"
+									design = "NAME_CW_Criminal_Enclave_Station_Racketeer_1"
+									graphical_culture = prev
+								}
+								set_location = {
+									target = root
+									distance = 30
+									angle = 70
+								}
+							}
+						}
+						# Create Ruler
+						create_leader = {
+							name = random
+							class = official
+							species = event_target:pirate_species
+							background_ethic = ethic_authoritarian
+							skip_background_generation = yes
+							traits = {
+								0 = subclass_cw_scientist_hacker								#change
+							}
+							skill = 5
+							randomize_traits = yes
+						}
+					}
+					1 = {
+						# Becomes Privateer Clan
+						set_country_flag = cw_criminal_enclave_privateers
+						start_situation = {
+							type = situation_cw_privateer_fleets
+						}
+						change_country_flag = {
+							background = {
+								category = "backgrounds"
+								file = "flag_BG_cw_enclave.dds"
+							}
+							colors = {
+								"black"
+								"dark_red"
+								"null"
+								"null"
+							}
+						}
+						country_add_ethic = ethic_militarist
+						add_modifier = {
+							modifier = cw_enclave_privateers
+							days = -1
+						}
+						# Create capital starbase
+						create_fleet = {
+							name = "NAME_Criminal_Hideout"
+							effect = {
+								set_owner = prev
+								create_ship = {
+									name = "NAME_Criminal_Hideout"
+									design = "NAME_CW_Criminal_Enclave_Station_Privateer_1"
+									graphical_culture = prev
+								}
+								set_location = {
+									target = root
+									distance = 30
+									angle = 70
+								}
+							}
+						}
+						# Create Ruler
+						create_leader = {
+							name = random
+							class = commander
+							species = event_target:pirate_species
+							background_ethic = ethic_militarist
+							skip_background_generation = yes
+							traits = {
+								0 = subclass_cw_commander_privateer
+							}
+							skill = 5
+							randomize_traits = yes
+						}
+						# Spawn a small privateer fleet
+						country_event = {
+							id = cw_enclave.501
+						}
+					}
+					1 = {
+						# Becomes Hacker Guild
+						set_country_flag = cw_criminal_enclave_hackers
+						change_country_flag = {
+							background = {
+								category = "backgrounds"
+								file = "flag_BG_cw_enclave.dds"
+							}
+							colors = {
+								"black"
+								"dark_blue"
+								"null"
+								"null"
+							}
+						}
+						country_add_ethic = ethic_materialist
+						add_modifier = {
+							modifier = cw_enclave_hackers
+							days = -1
+						}
+						# Create capital starbase
+						create_fleet = {
+							name = "NAME_Criminal_Hideout"
+							effect = {
+								set_owner = prev
+								create_ship = {
+									name = "NAME_Criminal_Hideout"
+									design = "NAME_CW_Criminal_Enclave_Station_Hacker_1"
+									graphical_culture = prev
+								}
+								set_location = {
+									target = root
+									distance = 30
+									angle = 70
+								}
+							}
+						}
+						# Create Ruler
+						create_leader = {
+							name = random
+							class = scientist
+							species = event_target:pirate_species
+							background_ethic = ethic_materialist
+							skip_background_generation = yes
+							traits = {
+								0 = subclass_cw_scientist_hacker
+							}
+							skill = 5
+							randomize_traits = yes
+						}
+					}
+				}
+				set_leader = last_created_leader
+				set_custom_capital_location = root				# event_target:cw_criminal_enclave_starbase
+				# Copy Techs
+				copy_techs_from = {
+					target = root.solar_system.owner
+				}
+				# Start upgrade situation
+				start_situation = {
+					type = situation_cw_enclave_upgrade
+				}
+				# Add a Symbol Back to the Flag
+				randomize_flag_symbol = "pirate"
+				# Set enclave to current criminal enclave for diplo events
+				save_event_target_as = cw_criminal_enclave_country
+				# Uses default ships
+				set_country_flag = use_default_ships
+			}
+		}
+		root.solar_system = {
+			every_fleet_in_system = {
+				limit = {
+					is_owned_by = event_target:cw_criminal_enterprise
+				}
+				set_owner = last_created_country
+			}
+		}
+		every_country = {
+			establish_communications_no_message = last_created_country
+		}
+	}
+	option = {
+		name = cw_enclave.2.a
+		hidden_effect = {
+			root.solar_system.owner = {
+				country_event = {
+					id = cw_enclave.300
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cw_enclave.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			is_country_type = cw_criminal_enclave
+			fromfrom = {
+				is_ship_size = enclave_station
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			solar_system = {
+				remove_star_flag = enclave
+				remove_star_flag = cw_active_criminal_enclave
+				random_system_planet = {
+					limit = {
+						has_planet_flag = cw_criminal_enclave_planet
+					}
+					remove_planet_flag = cw_criminal_enclave_planet
+				}
+			}
+		}
+	}
+	after = {
+		destroy_country = yes
+	}
+}
+
+situation_event = {
+	id = cw_enclave.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			is_country_type = cw_criminal_enclave
+			NOT = {
+				has_modifier = cw_lvl_3
+			}
+		}
+	}
+	immediate = {
+		owner = {
+			country_event = {
+				id = cw_enclave.5
+			}
+		}
+		destroy_situation = this
+	}
+}
+
+country_event = {
+	id = cw_enclave.5
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# Notify Previous Customers about New Offers
+		every_country = {
+			limit = {
+				has_country_flag = cw_traded_with_@root
+			}
+			country_event = {
+				id = cw_enclave.299
+			}
+		}
+		# Upgrade Starbase
+		random_owned_fleet = {
+			limit = {
+				is_ship_size = enclave_station
+			}
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						has_planet_flag = cw_criminal_enclave_planet
+					}
+					save_event_target_as = cw_criminal_enclave_planet
+				}
+			}
+			# Racketeers
+			if = {
+				limit = {
+					owner = {
+						has_modifier = cw_enclave_racketeers
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							has_modifier = cw_lvl_2
+						}
+					}
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_3"								# change to racketeers
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_3
+							days = -1
+						}
+					}
+				}
+				else = {
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_2"								# change to racketeers
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_2
+							days = -1
+						}
+						start_situation = {
+							type = situation_cw_enclave_upgrade
+						}
+					}
+				}
+			}
+			# Privateers
+			else_if = {
+				limit = {
+					owner = {
+						has_modifier = cw_enclave_privateers
+					}
+				}
+				# Create a new fleet or upgrade a current one
+				owner = {
+					country_event = {
+						id = cw_enclave.501
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							has_modifier = cw_lvl_2
+						}
+					}
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_3"								# change to privateers
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_3
+							days = -1
+						}
+					}
+				}
+				else = {
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_2"								# change to privateers
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_2
+							days = -1
+						}
+						start_situation = {
+							type = situation_cw_enclave_upgrade
+						}
+					}
+				}
+			}
+			# Hackers
+			else = {
+				if = {
+					limit = {
+						owner = {
+							has_modifier = cw_lvl_2
+						}
+					}
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_3"
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_3
+							days = -1
+						}
+					}
+				}
+				else = {
+					create_fleet = {
+						name = "NAME_Criminal_Hideout"
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = "NAME_Criminal_Hideout"
+								design = "NAME_CW_Criminal_Enclave_Station_Hacker_2"
+								graphical_culture = prev
+							}
+							set_location = {
+								target = event_target:cw_criminal_enclave_planet
+								distance = 30
+								angle = 70
+							}
+						}
+					}
+					owner = {
+						add_modifier = {
+							modifier = cw_lvl_2
+							days = -1
+						}
+						start_situation = {
+							type = situation_cw_enclave_upgrade
+						}
+					}
+				}
+			}
+			delete_fleet = this
+		}
+	}
+}
+
+situation_event = {
+	id = cw_enclave.500
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			is_country_type = cw_criminal_enclave
+			has_modifier = cw_enclave_privateers
+		}
+	}
+	immediate = {
+		owner = {
+			country_event = {
+				id = cw_enclave.501
+			}
+			start_situation = {
+				type = situation_cw_privateer_fleets
+			}
+		}
+		destroy_situation = this
+	}
+}
+
+country_event = {
+	id = cw_enclave.501
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_country_type = cw_criminal_enclave
+		has_modifier = cw_enclave_privateers
+	}
+	immediate = {
+		random_owned_fleet = {
+			limit = {
+				is_ship_size = enclave_station
+			}
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						has_planet_flag = cw_criminal_enclave_planet
+					}
+					save_event_target_as = cw_privateer_spawn
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = cw_lvl_2
+				NOT = {
+					exists = event_target:cw_privateer_fleet_1_of_@root
+				}
+			}
+			cw_create_large_privateer_fleet = yes
+			last_created_fleet = {
+				save_global_event_target_as = cw_privateer_fleet_1_of_@root
+				add_modifier = {
+					modifier = cw_large_privateer_fleet
+					days = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = cw_lvl_3
+				NOT = {
+					exists = event_target:cw_privateer_fleet_2_of_@root
+				}
+			}
+			cw_create_large_privateer_fleet = yes
+			last_created_fleet = {
+				save_global_event_target_as = cw_privateer_fleet_2_of_@root
+				add_modifier = {
+					modifier = cw_large_privateer_fleet
+					days = -1
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					# Privateer has less than 5 fleets
+					count_owned_fleet = {
+						count < 5
+						limit = {
+							is_mobile = yes
+						}
+					}
+				}
+				# Create a small fleet (advanced 2 corvette design if lvl 3, and advanced 1 corvette design if lvl 2)
+				if = {
+					limit = {
+						has_modifier = cw_lvl_3
+					}
+					cw_create_small_privateer_fleet = {
+						CORVETTE_SHIP = NAME_Skull
+						NUMBER = 5
+					}
+				}
+				else_if = {
+					limit = {
+						has_modifier = cw_lvl_2
+					}
+					cw_create_small_privateer_fleet = {
+						CORVETTE_SHIP = NAME_Brigand
+						NUMBER = 5
+					}
+				}
+				else = {
+					cw_create_small_privateer_fleet = {
+						CORVETTE_SHIP = NAME_Reaver
+						NUMBER = 5
+					}
+				}
+			}
+			else = {
+				# Choose a random small fleet and add a couple ships
+				random_owned_fleet = {
+					limit = {
+						is_mobile = yes
+						NOT = {
+							has_modifier = cw_large_privateer_fleet
+						}
+					}
+					# Add advanced 1/2 corvettes depending on lvl
+					if = {
+						limit = {
+							root = {
+								has_modifier = cw_lvl_2
+							}
+						}
+						create_ship_design = {
+							design = NAME_Reaver
+						}
+					}
+					else = {
+						create_ship_design = {
+							design = NAME_Brigand
+						}
+					}
+					while = {
+						count = 3
+						create_ship = {
+							name = random
+							design = last_created_design
+							graphical_culture = "pirate_01"
+						}
+					}
+					# Add an Advanced Destroyer
+					create_ship_design = {
+						design = NAME_Corsair
+					}
+					create_ship = {
+						name = random
+						design = last_created_design
+						graphical_culture = "pirate_01"
+					}
+				}
+			}
+		}
+	}
+}
+
+## Enclaves Attacked ##
+# fired from on_entering_battle
+country_event = {
+	id = cw_enclave.297
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			is_country_type = cw_criminal_enclave
+			NOT = {
+				is_hostile = this
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			switch = {
+				trigger = has_country_flag
+				cw_criminal_enclave_racketeers = {
+					root = {
+						if = {
+							limit = {
+								has_modifier = cw_bribed_racketeers
+							}
+							remove_modifier = cw_bribed_racketeers
+						}
+						# Removes current trades
+						if = {
+							limit = {
+								OR = {
+									has_modifier = cw_enclave_smuggled_alloys
+									has_modifier = cw_enclave_smuggled_alloys_2
+									has_modifier = cw_enclave_smuggled_alloys_3
+									has_modifier = cw_enclave_smuggled_alloys_4
+									has_modifier = cw_enclave_smuggled_alloys_5
+								}
+								from = {
+									has_country_flag = cw_arms_supplier_of_@root
+								}
+							}
+							remove_modifier = cw_enclave_smuggled_alloys
+							remove_modifier = cw_enclave_smuggled_alloys_2
+							remove_modifier = cw_enclave_smuggled_alloys_3
+							remove_modifier = cw_enclave_smuggled_alloys_4
+							remove_modifier = cw_enclave_smuggled_alloys_5
+						}
+						if = {
+							limit = {
+								OR = {
+									has_modifier = cw_enclave_smuggled_consumer_goods
+									has_modifier = cw_enclave_smuggled_consumer_goods_2
+									has_modifier = cw_enclave_smuggled_consumer_goods_3
+									has_modifier = cw_enclave_smuggled_consumer_goods_4
+									has_modifier = cw_enclave_smuggled_consumer_goods_5
+								}
+								from = {
+									has_country_flag = cw_drugs_supplier_of_@root
+								}
+							}
+							remove_modifier = cw_enclave_smuggled_consumer_goods
+							remove_modifier = cw_enclave_smuggled_consumer_goods_2
+							remove_modifier = cw_enclave_smuggled_consumer_goods_3
+							remove_modifier = cw_enclave_smuggled_consumer_goods_4
+							remove_modifier = cw_enclave_smuggled_consumer_goods_5
+						}
+					}
+				
+				}
+				cw_criminal_enclave_privateers = {
+					root = {
+						if = {
+							limit = {
+								has_modifier = cw_bribed_privateers
+							}
+							remove_modifier = cw_bribed_privateers
+						}
+					}
+				}
+				cw_criminal_enclave_hackers = {
+					root = {
+						if = {
+							limit = {
+								has_modifier = cw_bribed_hackers
+							}
+							remove_modifier = cw_bribed_hackers
+						}
+						# Removes current trades
+						if = {
+							limit = {
+								has_modifier = cw_skeleton_key
+								from = {
+									has_country_flag = cw_key_supplier_of_@root
+								}
+							}
+							remove_modifier = cw_skeleton_key
+						}
+						# Fire event notifying attacker of hacker aura
+						country_event = {
+							id = cw_enclave.298
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Hacker Aura Announcement
+country_event = {
+	id = cw_enclave.298
+	title = cw_enclave.298.name
+	desc = cw_enclave.298.desc
+	picture = GFX_evt_sabotaged_ship # change...
+	show_sound = event_criminal_activity #...
+	location = fromfromfrom
+	is_triggered_only = yes
+
+	option = {
+		name = cw_enclave.298.a
+	}
+}

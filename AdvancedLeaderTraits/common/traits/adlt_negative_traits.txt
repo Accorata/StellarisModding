@@ -1,0 +1,56 @@
+# Negative Traits #
+leader_trait_upsurper = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_virtual"
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		ruler_skill_add = -2
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	leader_potential_add = {
+		exists = owner
+		owner = {
+			has_technology = tech_colonial_centralization
+		}
+	}
+	opposites = {
+		leader_trait_principled
+		leader_trait_principled_2
+	}
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+leader_trait_upsurper_2 = {
+	leader_trait_type = negative
+	replace_traits = {
+		leader_trait_upsurper
+	}
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_virtual"
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		ruler_skill_add = -5
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	selectable_weight = {
+		weight = @tier2_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}

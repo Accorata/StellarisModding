@@ -1,0 +1,157 @@
+civic_hyper_diversification = {
+	playable = { has_biogenesis_dlc = yes }
+	ai_playable = { has_biogenesis_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = { 
+			NOT = { 
+				value = civic_employee_diversification
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_diversification.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	description = civic_tooltip_hyper_diversification_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_hyper_diversification_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+		}
+	}
+}
+
+civic_employee_diversification = {
+	playable = { has_biogenesis_dlc = yes }
+	ai_playable = { has_biogenesis_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = { 
+			NOT = { 
+				value = civic_hyper_diversification
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_employee_diversification.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	
+	description = civic_tooltip_hyper_diversification_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_hyper_diversification_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+		}
+	}
+}
+
+civic_hyper_diversified = {
+	playable = { has_biogenesis_dlc = yes }
+	ai_playable = { has_biogenesis_dlc = yes }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_diversified.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_genetics_finish
+		}
+	}
+	
+	description = civic_tooltip_hyper_diversified_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_genetics_finish
+		}
+		description = civic_tooltip_hyper_diversified_effects
+		modifier = {
+			auto_mod_monthly_add = 2
+			BIOLOGICAL_species_trait_points_add = 1
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

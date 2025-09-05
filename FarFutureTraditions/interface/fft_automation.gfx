@@ -1,0 +1,43 @@
+spriteTypes = {
+	# Background Art
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_fft_automation"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_fft_automation.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_fft_automation"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_fft_automation.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_fft_automation"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_fft_automation.dds"
+	}
+	# Tradition Arts
+	spriteType = {
+		name = "GFX_tr_fft_automation_overloaded_synthesis"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_automation_overloaded_synthesis.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_automation_prefabricated_assembly"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_automation_prefabricated_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_automation_artificial_eclipse"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_automation_robotic_eclipse.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_automation_extravagant_abundance"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_automation_extravagant_abundance.dds"
+	}
+	
+	# spriteType = {
+	# 	name = "GFX_tr_fft_social_media_data_surveillance"
+	# 	textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_data_surveillance.dds"
+	# }
+}

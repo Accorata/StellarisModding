@@ -1,0 +1,175 @@
+ac_avatar_caller = {
+	icon = "GFX_starbase_zroni_storm_caster"	# to be changed
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_doomseeker = yes
+		}
+		is_normal_starbase = yes
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			sr_zro = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_zro = 1
+		}
+	}
+	system_modifier = {
+		planet_stability_add = -5
+	}
+	ai_weight = {
+		weight = 50
+	}
+	custom_tooltip = sm_ac_avatar_caller_desc_modifier # ... add stability at least to tooltip
+}
+
+ac_bandwidth_router = {
+	icon = "GFX_ac_bandwidth_router_sb"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_bandwidth_non_corporate = yes
+		}
+		is_normal_starbase = yes
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_colony = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 150
+		}
+		upkeep = {
+			energy = 2
+			sr_dark_matter = 1
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+		}
+		megastructures_hyper_relay_unity_produces_add = 1
+	}
+	triggered_system_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+			owner = {
+				is_megacorp = no
+			}
+		}
+		planet_jobs_produces_mult = 0.15
+	}
+	triggered_system_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		pop_job_trade_mult = 0.3
+	}
+	custom_tooltip = sm_ac_bandwidth_router_desc_modifier
+	ai_weight = {
+		weight = 100
+	}
+}
+
+ac_bandwidth_router_corporate = {
+	icon = "GFX_ac_bandwidth_router_sb"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_bandwidth_corporate = yes
+		}
+		is_normal_starbase = yes
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_colony = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 150
+		}
+		upkeep = {
+			energy = 2
+			sr_dark_matter = 1
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+		}
+		megastructures_hyper_relay_unity_produces_add = 1
+	}
+	triggered_system_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+			owner = {
+				is_megacorp = no
+			}
+		}
+		planet_jobs_produces_mult = 0.15
+	}
+	triggered_system_modifier = {
+		potential = {
+			solar_system = {
+				has_megastructure = hyper_relay
+			}
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		pop_job_trade_mult = 0.3
+	}
+	custom_tooltip = sm_ac_bandwidth_router_desc_modifier_corporate
+	ai_weight = {
+		weight = 100
+	}
+}

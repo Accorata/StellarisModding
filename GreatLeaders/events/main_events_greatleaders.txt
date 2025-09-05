@@ -1,0 +1,70 @@
+namespace = great_leaders
+@necessary_points = 9
+country_event = {
+	id = great_leaders.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_country_type = default
+	}
+	immediate = {
+		set_variable = {
+			which = greatleaders_statistician_points
+			value = 0
+		}
+		set_variable = {
+			which = greatleaders_explorer_points
+			value = 0
+		}
+		set_variable = {
+			which = greatleaders_strategist_points
+			value = 0
+		}
+	}
+}
+
+country_event = {
+	id = great_leaders.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# (For testing purposes alone)
+		change_variable = {
+			which = greatleaders_explorer_points
+			value = 3
+		}
+		change_variable = {
+			which = greatleaders_statistician_points
+			value = 3
+		} #has_trait = subclass_scientist_councilor
+		# Per stragist (level relevant)
+		every_owned_leader = {
+			limit = {
+				has_trait = subclass_commander_councilor
+			}
+			save_event_target_as = event_leader
+			root = {
+				change_variable = {
+					which = greatleaders_strategist_points
+					value = event_target:event_leader.trigger:has_skill
+				}
+			}
+		}
+		# Check to see if points reaches threshold
+		if = {
+			limit = {
+				check_variable_arithmetic = {
+					which = greatleaders_explorer_points
+					value >= @necessary_points
+				}
+			}
+			country_event = {
+				id = great_leaders_explorer.0
+			}
+			subtract_variable = {
+				which = greatleaders_explorer_points
+				value = @necessary_points
+			}
+		}
+	}
+}

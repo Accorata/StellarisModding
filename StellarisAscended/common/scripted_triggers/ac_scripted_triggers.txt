@@ -1,0 +1,240 @@
+is_ac_bandwidth_empire = {
+	OR = {
+		has_valid_civic = civic_bandwidth_enhancers
+		has_valid_civic = civic_bandwidth_incorporated
+		has_valid_civic = civic_bandwidth_optimization
+	}
+	has_tradition = tr_virtuality_finish
+}
+
+is_ac_bandwidth_non_corporate = {
+	OR = {
+		has_valid_civic = civic_bandwidth_enhancers
+		has_valid_civic = civic_bandwidth_optimization
+	}
+	has_tradition = tr_virtuality_finish
+}
+
+is_ac_bandwidth_corporate = {
+	has_valid_civic = civic_bandwidth_incorporated
+	has_tradition = tr_virtuality_finish
+}
+
+is_ac_doomseeker = {
+	has_valid_civic = civic_doomseekers
+	has_tradition = tr_psionics_finish
+}
+
+is_ac_telepathic_empire = {
+	OR = {
+		has_valid_civic = civic_telepathic_empire
+		has_valid_civic = civic_telepathic_corporation
+	}
+	has_tradition = tr_psionics_finish
+}
+
+is_ac_cyber_overlord = {
+	OR = {
+		has_valid_civic = civic_sovereign_circuitry
+	}
+	# has_tradition = tr_cybernetics_finish
+}
+
+is_ac_bio_upgrader = {
+	OR = {
+		has_valid_civic = civic_bioform_upgrader
+		has_valid_civic = civic_bio_replacer
+	}
+	has_tradition = tr_synthetics_finish
+}
+
+is_ac_bio_upgrader_corporate = {
+	has_valid_civic = civic_bio_replacer
+	has_tradition = tr_synthetics_finish
+}
+
+is_ac_cyberlife = {
+	OR = {
+		has_valid_civic = civic_cyberlife
+		has_valid_civic = civic_cybernet
+	}
+	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_cyberhive = {
+	has_valid_civic = civic_cyberspacial
+	has_tradition = tr_cybernetics_finish
+}
+
+#this = species, from = country
+can_modify_ac_hive_digital_trait = {
+	hidden_trigger = {
+		exists = from
+	}
+	from = {
+		is_ac_cyberhive = yes
+	}
+}
+
+is_ac_cybermachine = {
+	has_valid_civic = civic_uploaded_mind
+	has_tradition = tr_cybernetics_assimilator_finish
+}
+
+ac_has_confirmed_shroud_patron = {
+	OR = {
+		has_country_flag = composer_covenant_confirmed
+		has_country_flag = eater_covenant_confirmed
+		has_country_flag = instrument_covenant_confirmed
+		has_country_flag = whisperers_covenant_confirmed
+		has_country_flag = covenant_end_of_the_cycle
+	}
+}
+
+is_ac_shroud_renouncer = {
+	OR = {
+		has_valid_civic = civic_shroud_renouncers
+	}
+	has_tradition = tr_psionics_finish
+	ac_has_confirmed_shroud_patron = no
+}
+
+is_ac_blossoming = {
+	OR = {
+		has_valid_civic = civic_blossoming_worlds
+		has_valid_civic = civic_blossoming_hives
+	}
+	has_tradition = tr_genetics_finish
+}
+
+is_ac_xanadu = {
+	has_valid_civic = civic_xanadu_retreats
+	has_tradition = tr_genetics_finish
+}
+
+is_ac_specialized = {
+	OR = {
+		has_valid_civic = civic_hyper_specialization
+		has_valid_civic = civic_employee_specialization
+		has_valid_civic = civic_hyper_specialized
+	}
+	has_tradition = tr_modularity_finish
+}
+
+#this = species, from = country
+can_do_ac_specialized_robo_modding = {
+	hidden_trigger = {
+		exists = from
+	}
+	from = {
+		is_ac_specialized = yes
+	}
+}
+
+is_ac_diversified = {
+	OR = {
+		has_valid_civic = civic_hyper_diversification
+		has_valid_civic = civic_employee_diversification
+		has_valid_civic = civic_hyper_diversified
+	}
+	has_tradition = tr_genetics_finish
+}
+
+#this = species, from = country
+can_do_ac_diversified_bio_modding = {
+	hidden_trigger = {
+		exists = from
+	}
+	from = {
+		is_ac_diversified = yes
+	}
+}
+
+is_ac_soul_searcher_empire = {
+	OR = {
+		has_valid_civic = civic_soul_seekers
+		# has_valid_civic = 
+	}
+	has_tradition = tr_synthetics_finish
+}
+
+is_ac_world_builders = {
+	OR = {
+		has_valid_civic = civic_synthetic_celestials
+		has_valid_civic = civic_world_commissioners
+	}
+	has_tradition = tr_synthetics_finish
+}
+
+is_ac_cybergladiator = {
+	OR = {
+		has_valid_civic = civic_cybergladiators
+		has_valid_civic = civic_underworld_bloodsports
+	}
+	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_cybergladiator_corporate = {
+	has_valid_civic = civic_underworld_bloodsports
+	has_tradition = tr_cybernetics_finish
+}
+
+is_ac_cybergladiator_machine = {
+	has_valid_civic = civic_cybersports
+	has_tradition = tr_cybernetics_assimilator_finish
+}
+
+is_ac_metal_recycler = {
+	OR = {
+		has_valid_civic = civic_metallic_repurposing
+		has_valid_civic = civic_corporate_remodeling
+		has_valid_civic = civic_omnirecyclers
+	}
+	has_tradition = tr_modularity_finish
+}
+
+is_ac_numbered_stars = {
+	OR = {
+		has_valid_civic = civic_numbered_among_stars
+		has_valid_civic = civic_unending_swarm
+	}
+	has_tradition = tr_nanotech_finish
+}
+
+# Auth Scripted Triggers
+trait_ac_has_edict_unholy_possession = {
+	OR = {
+		AND = {
+			exists = owner
+			owner = {
+				has_edict = ac_unholy_possession
+			}
+		}
+		AND = {
+			exists = from
+			from = {
+				is_scope_type = country
+				has_edict = ac_unholy_possession
+			}
+		}
+	}
+}
+
+# Building Scripted Triggers
+
+has_ac_upgraded_capital = {
+	OR = {
+		has_upgraded_capital = yes
+		has_ac_major_upgraded_capital = yes
+	}
+}
+
+has_ac_major_upgraded_capital = {
+	OR = {
+		has_major_upgraded_capital = yes
+		# ACOT Compatibility:
+		has_fully_upgraded_capital = yes
+		has_enigmatic_capital = yes
+		has_ascended_capital = yes
+	}
+}

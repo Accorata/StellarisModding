@@ -1,0 +1,36 @@
+﻿l_english:
+## Holdings
+  mh_synaptic_packager:0 "Synaptic Packager"
+  mh_synaptic_packager_desc:0 "The Lathe could greatly benefit from a wide variety of minds, and our subjects have a number of wonderful intellectuals who would do perfectly."
+  holding_mh_synaptic_packager_desc:0 "Every §Y2§! years, resettles one pop from this planet to the Synaptic Lathe, if possible."
+
+  mh_interstellar_embassy:0 "Interstellar Embassy"
+  mh_interstellar_embassy_desc:0 "Diplomatic sectors facilitating mutual growth and communion."
+
+  mh_telepathic_outpost:0 "Psionic Monastery"
+  mh_telepathic_outpost_desc:0 "The Conclave of Telepaths will benefit from new temples from which to commune with the beings of the Shroud."
+  holding_mh_telepathic_outpost_desc:0 "Overlord Empire Modifier:\n$t$Shroud Delve Cooldown: §G-5%§!\n" 
+# \nPlanet Modifier:\n$t$$mod_job_mh_overlord_telepath_add$: §G+2§!
+  job_mh_overlord_telepath:0 "Psionic Adept"
+  job_mh_overlord_telepath_plural:0 "Psionic Adepts"
+  job_mh_overlord_telepath_desc:0 "These monks work their limited telepathy to accelerate our people towards an ascended future."
+  mod_job_mh_overlord_telepath_add:0 "$job_mh_overlord_telepath$ Jobs"
+  job_mh_overlord_telepath_effect_desc:0 "\n£job_mh_overlord_telepath£ $job_mh_overlord_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
+
+  mh_offworld_refinery:0 "Offworld Refinery"
+  mh_offworld_refinery_desc:0 "Large local refineries utilizing planetery resources to fund foreign economies."
+  job_mh_overlord_refiner:0 "Overlord Refiner"
+  job_mh_overlord_refiner_plural:0 "Overlord Refiners"
+  job_mh_overlord_refiner_desc:0 "These refiners work for our Overlord, producing the rare resources that fuel their advanced economy."
+  mod_job_mh_overlord_refiner_add:0 "$job_mh_overlord_refiner$ Jobs"
+  job_mh_overlord_refiner_effect_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+  job_mh_overlord_refiner_effect_catalytic_desc:0 "£job_mh_overlord_refiner£ $job_mh_overlord_refiner_plural$ turn Subject £food£ §Y$food$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+  job_mh_overlord_refiner_drone:0 "Overlord Refiner Drone"
+  job_mh_overlord_refiner_drone_plural:0 "Overlord Refiner Drones"
+  job_mh_overlord_refiner_drone_desc:0 "These drones work for our Overlord, producing the rare resources that fuel their advanced economy."
+  mod_job_mh_overlord_refiner_drone_add:0 "$job_mh_overlord_refiner_drone$ Jobs"
+  job_mh_overlord_refiner_drone_effect_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £minerals£ §Y$minerals$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+  job_mh_overlord_refiner_drone_effect_catalytic_desc:0 "£job_mh_overlord_refiner_drone£ $job_mh_overlord_refiner_drone_plural$ turn Subject £food£ §Y$food$§! into £exotic_gases£ £rare_crystals£ £volatile_motes£ §YRare Resources§! for the Overlord."
+
+  mh_mission_holding:0 "Mission Holding"
+  mh_mission_holding_desc:0 "Diligent missionaries spread faith and goodwill to the people."

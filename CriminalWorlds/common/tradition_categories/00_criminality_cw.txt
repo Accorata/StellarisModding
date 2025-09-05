@@ -1,0 +1,31 @@
+tradition_cw_criminality = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_cw_criminality_adopt"
+	finish_bonus = "tr_cw_criminality_finish"
+	potential = {
+		is_gestalt = no
+	}
+	traditions = {
+		"tr_cw_criminality_smugglers_cartel"
+		"tr_cw_criminality_plundered_assets"
+		"tr_cw_criminality_black_markets"
+		"tr_cw_criminality_galactic_lawlessness"
+		"tr_cw_criminality_pirate_warlord"
+	}
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 4
+			is_megacorp = yes
+			is_illegal_criminal = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_egalitarian
+		}
+	}
+}

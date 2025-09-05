@@ -1,0 +1,30 @@
+﻿l_english:
+# Official Traits
+  leader_trait_city_interfaces:0 "City Interfaces"
+  leader_trait_city_interfaces_desc:0 "This leader connects their brain directly to the planet's infrastructure."
+  leader_trait_one_with_the_machine:0 "One with the Machine"
+  leader_trait_one_with_the_machine_desc:0 "The leader understands the ins and outs of the machines that build our worlds, from the towers to the bodies."
+  leader_trait_predictive_algorithms:0 "Predictive Algorithms"
+  leader_trait_predictive_algorithms_desc:0 "This leaders internal calulators anticipate future changes in markets better than all others, giving them an impressive edge."
+  leader_trait_economic_projections:0 "Economic Projections"
+  leader_trait_economic_projections_desc:0 "This leader effectively demonstrates the power of an economic base, with maybe one or two smartly hidden overestimates."
+# Commander traits
+  leader_trait_organic_synthetic_materials:0 "Organic-Synthetic Materials"
+  leader_trait_organic_synthetic_materials_desc:0 "This leader has personal experience looking into all that builds protective coatings, making sure to incorporate the best designs."
+  leader_trait_built_in_calculator:0 "Built-in Calculator"
+  leader_trait_built_in_calculator_desc:0 "This leader is aided by internal algorithms providing advantages in limitless combat situations."
+  leader_trait_terrain_retrofitting:0 "Terrain Retrofitting"
+  leader_trait_terrain_retrofitting_desc:0 "This leader uses their location better than others, even modifying it as needed to allow their troops to overwhelm."
+# Scientist Traits
+  leader_trait_generalized_learning_algorithms:0 "Generalized Learning Algorithms"
+  leader_trait_generalized_learning_algorithms_desc:0 "Advanced AI developments distributed across our populace greatly improves future innovation."
+  leader_trait_electronic_mind_meld:0 "Electronic Mind Meld"
+  leader_trait_electronic_mind_meld_desc:0 "This leader connects their brain directly to their ship, using their equipment to its fullest."
+  leader_trait_multi_tool_appendages:0 "Mult-tool Appendages"
+  leader_trait_multi_tool_appendages_desc:0 "This leaders appendages have endless gadgets allowing them to move past obstacles intuitively in the field."
+# Negative Traits
+  
+# Destiny Traits
+  leader_trait_endlessly_adaptive:0 "Endlessly Adaptive"
+  leader_trait_endlessly_adaptive_desc:0 "This leader understands that for the nation to prosper, we must move beyond the physical and mental constraits imposed on us by biology, and excel in all environments."
+  

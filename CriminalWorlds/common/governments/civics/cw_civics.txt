@@ -1,0 +1,125 @@
+civic_cw_invisible_shareholders = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_shadow_council
+				value = civic_worker_coop
+				value = civic_shared_burden
+			}
+		}
+	}
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = slaving_despots
+				has_ai_personality = decadent_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = democratic_crusaders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = peaceful_traders
+			}
+		}
+	}
+	random_weight = {
+		base = @civic_default_random_weight
+	}
+	modifier = {
+		election_term_variance_add = 5
+		country_election_cost_mult = -0.75
+		councilor_skill_add = 1
+		intel_decryption_add = 1
+		spy_network_daily_value_mult = 0.1
+	}
+}
+
+civic_cw_prison_state = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_criminal_heritage
+				value = civic_police_state
+				value = civic_civil_education
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_broken_shackles
+				value = origin_payback
+			}
+		}
+	}
+	description = civic_cw_prison_state_effects
+	modifier = {
+		# ... - maybe converts into different planet with similar but different districts?
+		# or just worker output
+		planet_jobs_worker_produces_mult = 0.1
+		planet_enforcers_unity_produces_add = 1 # 4.0?
+		planet_telepaths_unity_produces_add = 1 # 4.0?
+	}
+	random_weight = { base = @civic_default_random_weight }
+	ai_weight = {
+		base = @ai_civic_default_base_weight
+		modifier = {
+			factor = @ai_civic_personality_match_factor
+			OR = {
+				has_ai_personality = ruthless_capitalists
+				has_ai_personality = hegemonic_imperialists
+				has_ai_personality = slaving_despots
+				has_ai_personality = decadent_hierarchy
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_mismatch_factor
+			OR = {
+				has_ai_personality = erudite_explorers
+				has_ai_personality = peaceful_traders
+				has_ai_personality = spiritual_seekers
+				has_ai_personality = harmonious_hierarchy
+				has_ai_personality = fanatic_befrienders
+			}
+		}
+		modifier = {
+			factor = @ai_civic_personality_forbid_factor
+			OR = {
+				has_ai_personality = democratic_crusaders
+			}
+		}
+	}
+}

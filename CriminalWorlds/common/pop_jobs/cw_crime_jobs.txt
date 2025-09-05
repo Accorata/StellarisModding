@@ -1,0 +1,568 @@
+cw_bribed_enforcer = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_precinct_house
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible = {
+		battle_thrall_job_check_trigger = yes
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_enforcers
+		produces = {
+			energy = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				exists = ruler
+				ruler = {
+					has_trait = leader_trait_legendary_harsh_ruler
+				}
+			}
+		}
+		pop_happiness = -0.025
+	}
+	planet_modifier = {
+		planet_crime_add = 5
+		planet_stability_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+	}
+}
+
+cw_bribed_politician = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_capital
+			icon = cw_bribed_politician
+		}
+		swap_type = {
+			trigger = {
+				politician_is_executive = yes
+			}
+			name = cw_bribed_executive
+			icon = cw_bribed_executive
+			desc = job_cw_bribed_executive_desc
+			weight = 5
+		}
+		swap_type = {
+			trigger = {
+				politician_is_science_director = yes
+			}
+			name = cw_bribed_head_researcher
+			icon = cw_bribed_researcher
+			desc = job_cw_bribed_head_researcher_desc
+			weight = 5
+		}
+		swap_type = {
+			trigger = {
+				politician_is_noble = yes
+			}
+			name = cw_bribed_noble
+			icon = cw_bribed_noble
+			desc = job_cw_bribed_noble_desc
+			weight = 10
+		}
+		swap_type = {
+			trigger = {
+				politician_is_merchant = yes
+			}
+			name = cw_bribed_merchant
+			icon = cw_bribed_merchant
+			desc = job_cw_bribed_merchant_desc
+			weight = 10
+		}
+		swap_type = {
+			trigger = {
+				politician_is_high_priest = yes
+			}
+			name = cw_bribed_high_priest
+			icon = cw_bribed_high_priest
+			desc = job_cw_bribed_high_priest_desc
+			weight = 10
+		}
+		swap_type = {
+			trigger = {
+				politician_is_technophant = yes
+			}
+			name = cw_bribed_technophant
+			icon = cw_bribed_technophant
+			desc = job_cw_bribed_technophant_desc
+			weight = 30
+		}
+		swap_type = {
+			trigger = {
+				politician_is_planetary_warden = yes
+			}
+			name = cw_bribed_warden
+			icon = cw_bribed_enforcer
+			desc = job_cw_bribed_warden_desc
+			weight = 15
+		}
+		swap_type = {
+			trigger = {
+				politician_is_noble = yes
+				politician_is_science_director = yes
+			}
+			name = cw_bribed_noble_researcher
+			icon = cw_bribed_noble
+			desc = job_cw_bribed_noble_researcher_desc
+			weight = 20
+		}
+		swap_type = {
+			trigger = {
+				politician_is_noble = yes
+				politician_is_high_priest = yes
+			}
+			name = cw_bribed_sacred_noble
+			icon = cw_bribed_noble
+			desc = job_cw_bribed_sacred_noble_desc
+			weight = 20
+		}
+		swap_type = {
+			trigger = {
+				politician_is_augmentation_merchant = yes
+			}
+			name = cw_bribed_augmentation_merchant
+			icon = cw_bribed_augmentor
+			desc = job_cw_bribed_augmentation_merchant_desc
+			weight = 20
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job # Pops still need to pretend to be rulers
+
+	resources = {
+		category = planet_politicians
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 300
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+
+	inline_script = "output/politician_output_modifier"
+
+	weight = {
+		weight = @criminal_job_weight
+		mult = 10
+	}
+
+	inline_script = "jobs/automodding_priority_charisma"
+}
+
+cw_rogue_shipbuilder = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_private_shipyards
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		# check that this is not a robot in servitude
+		NOT = {
+			has_citizenship_type = {
+				country = owner
+				type = citizenship_robot_servitude
+			}
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_cw_shipbuilders
+		upkeep = {
+			alloys = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+	}
+}
+
+cw_underworlder = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_residence
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		# check that this is not a robot in servitude
+		NOT = {
+			has_citizenship_type = {
+				country = owner
+				type = citizenship_robot_servitude
+			}
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_jobs
+		produces = {
+			energy = 0.5
+			minerals = 0.5
+			food = 0.5
+		}
+	}
+	planet_modifier = {
+		planet_crime_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+	}
+}
+
+cw_underworlder_robot = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_residence
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		owner = {
+			is_gestalt = no
+			is_individual_machine = yes
+		}
+	}
+	resources = {
+		category = planet_jobs
+		produces = {
+			energy = 0.75
+			minerals = 0.75
+		}
+	}
+	planet_modifier = {
+		planet_crime_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+	}
+}
+
+cw_freedom_fighter = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_cw_rebel_stronghold
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		NOT = {
+			has_citizenship_type = {
+				country = owner
+				type = citizenship_robot_servitude
+			}
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_cw_freedom_fighters
+		upkeep = {
+			alloys = 2
+		}
+	}
+	planet_modifier = {
+		planet_stability_add = -2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+		modifier = {
+			factor = 10
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_egalitarian
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_authoritarian
+			}
+		}
+	}
+}
+
+cw_demagogue = {
+	category = criminal
+	is_capped_by_modifier = yes
+	can_set_priority = no
+	swappable_data = {
+		default = {
+			building_icon = building_autochthon_monument
+		}
+	}
+	contributes_to_diplo_weight = no
+	tags = {
+		crime
+	}
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+	possible = {
+		NOT = {
+			has_citizenship_type = {
+				country = owner
+				type = citizenship_robot_servitude
+			}
+		}
+		owner = {
+			is_gestalt = no
+		}
+	}
+	resources = {
+		category = planet_cw_demagogues
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	planet_modifier = {
+		pop_government_ethic_attraction = -0.25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			planet = {
+				has_branch_office = yes
+				branch_office_owner = {
+					has_councilor = {
+						COUNCILOR = "councilor_criminal_heritage"
+					}
+				}
+			}
+		}
+		branch_office_criminal_syndicate_value_add = 0.25
+		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+	weight = {
+		weight = @criminal_job_weight
+		modifier = {
+			factor = 10
+			OR = {
+				AND = {
+					has_ethic = ethic_materialist
+					owner = {
+						is_spiritualist = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_spiritualist
+					owner = {
+						is_materialist = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_xenophobe
+					owner = {
+						is_xenophile = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_xenophile
+					owner = {
+						is_xenophobe = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_authoritarian
+					owner = {
+						is_egalitarian = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_egalitarian
+					owner = {
+						is_authoritarian = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_militarist
+					owner = {
+						is_pacifist = yes
+					}
+				}
+				AND = {
+					has_ethic = ethic_pacifist
+					owner = {
+						is_militarist = yes
+					}
+				}
+			}
+		}
+	}
+}

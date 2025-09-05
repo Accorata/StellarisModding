@@ -1,0 +1,28 @@
+utility_component_template = {
+	key = "STARBASE_AURA_CW_HACKER_CORE"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+	class_restriction = {
+		shipclass_starbase
+	}
+	hostile_aura = {
+		name = "aura_starbase_cw_hacker_core"
+		system_wide = yes
+		stack_info = {
+			id = hostile_cw_hacker_core_aura
+			priority = 10
+		}
+		modifier = {
+			ship_fire_rate_mult = -0.2
+			ship_shield_hardening_add = -0.2
+		}
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

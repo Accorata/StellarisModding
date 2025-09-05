@@ -1,0 +1,696 @@
+namespace = criminal_worlds
+
+### Leader Trait Events ###
+# Fired by on_added_to_leader_pool - Add connection traits
+country_event = {
+	id = criminal_worlds.111
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_gestalt = no
+		NOT = {
+			has_country_flag = spawning_renowned_leader
+		}
+		has_country_flag = cw_has_met_criminal_enclave
+	}
+
+	immediate = {
+		# Racketeer Connections
+		if = {
+			limit = {
+				has_country_flag = cw_met_racketeer_enclave
+				from = {
+					leader_class = official
+				}
+				NOR = {
+					any_owned_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_underworld_connections
+						}
+					}
+					any_pool_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_underworld_connections
+						}
+					}
+				}
+			}
+			from = {
+				random_list = {
+					95 = {  }
+					5 = {
+						modifier = {
+							factor = 5
+							has_modifier = cw_criminal_elite
+						}
+						add_trait = {
+							trait = leader_trait_cw_underworld_connections
+							show_message = no
+						}
+						add_trait = {
+							trait = random_negative
+							show_message = no
+						}
+						change_background_job = criminal
+					}
+				}
+			}
+		}
+		# Raider Connections
+		else_if = {
+			limit = {
+				has_country_flag = cw_met_privateer_enclave
+				from = {
+					leader_class = commander
+				}
+				NOR = {
+					any_owned_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_raider_connections
+						}
+					}
+					any_pool_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_raider_connections
+						}
+					}
+				}
+			}
+			from = {
+				random_list = {
+					95 = {  }
+					5 = {
+						modifier = {
+							factor = 5
+							has_modifier = cw_criminal_elite
+						}
+						add_trait = {
+							trait = leader_trait_cw_raider_connections
+							show_message = no
+						}
+						add_trait = {
+							trait = random_negative
+							show_message = no
+						}
+						change_background_job = criminal
+					}
+				}
+			}
+		}
+		# Hacker Connections
+		else_if = {
+			limit = {
+				has_country_flag = cw_met_hacker_enclave
+				from = {
+					leader_class = scientist
+				}
+				NOR = {
+					any_owned_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_darknet_connections
+						}
+					}
+					any_pool_leader = {
+						has_trait_tier1or2 = {
+							TRAIT = leader_trait_cw_darknet_connections
+						}
+					}
+				}
+			}
+			from = {
+				random_list = {
+					95 = {  }
+					5 = {
+						modifier = {
+							factor = 5
+							has_modifier = cw_criminal_elite
+						}
+						add_trait = {
+							trait = leader_trait_cw_darknet_connections
+							show_message = no
+						}
+						add_trait = {
+							trait = random_negative
+							show_message = no
+						}
+						change_background_job = criminal
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = cw_criminal_elite
+			}
+			from = {
+				locked_random_list = {
+					90 = {  }
+					10 = {
+						add_trait = {
+							trait = leader_trait_cw_ill_gotten_gains
+							show_message = no
+						}
+						change_background_job = criminal
+					}
+				}
+			}
+		}
+	}
+}
+
+# On destroying enemy ship.
+country_event = {
+	id = criminal_worlds.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROM = { # Winning ship.
+			if = {
+				limit = { exists = fleet.leader }
+				fleet.leader = {
+
+					# Corsair / Corsair II
+					if = {
+						limit = {
+							OR = {
+								has_trait = leader_trait_cw_corsair
+								has_trait = leader_trait_cw_corsair_2
+							}
+							ROOT.FROM = { # Owner of losing ship.
+								is_default_or_fallen = yes
+							}
+						}
+						if = {
+							limit = { has_trait = leader_trait_cw_corsair }
+							ROOT = { # Owner of winning ship.
+								add_resource = {
+									energy = @trait_corsair_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+						else = {
+							ROOT = { # Owner of winning ship.
+								add_resource = {
+									energy = @trait_corsair_2_amt
+									mult = value:hells_heart_effect
+								}
+							}
+						}
+					}
+
+					# Juryrigger / Juryrigger II
+					if = {
+						limit = {
+							OR = {
+								has_trait = leader_trait_cw_juryrigger
+								has_trait = leader_trait_cw_juryrigger_2
+							}
+						}
+						ROOT.FROMFROM = {
+							if = {
+								limit = { PREV = { has_trait = leader_trait_cw_juryrigger } }
+								repair_percentage = @trait_juryrigger_amt
+							}
+							else = {
+								repair_percentage = @trait_juryrigger_2_amt
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# On fleet uncloaked
+fleet_event = {
+	id = criminal_worlds.112
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = leader
+		leader = {
+			has_trait_tier1or2 = {
+				TRAIT = leader_trait_cw_stealth_specialization
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				leader = {
+					has_trait = leader_trait_cw_stealth_specialization_2
+				}
+			}
+			add_modifier = {
+				modifier = cw_stealth_specialization_2_modifier
+				days = 30
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = cw_stealth_specialization_modifier
+				days = 30
+			}
+		}
+	}
+}
+
+# On fleet entering battle - confuses all ships for a month
+country_event = {
+	id = criminal_worlds.102
+	title = criminal_worlds.102.name
+	desc = criminal_worlds.102.desc
+	picture = GFX_evt_small_space_battle
+	show_sound = event_criminal_activity # maybe change to a hack noise
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			has_fleet_flag = cw_confusion_hack
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			every_owned_ship = {
+				limit = {
+					is_civilian = no
+					NOT = {
+						is_ship_class = shipclass_starbase
+					}
+				}
+				set_confused = yes
+				set_ship_flag = is_confused
+				ship_event = {
+					id = bioship.1
+					days = 30
+					random = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# On yearly country pulse - Web of Connections grants random assets
+country_event = {
+	id = criminal_worlds.113
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_trait_in_council = {
+			TRAIT = leader_trait_cw_web_of_connections
+		}
+		any_spynetwork = {
+			owner = { is_same_value = root }
+			is_spynetwork_level > 0
+			target = { is_country_type = default }
+		}
+	}
+
+	immediate = {
+		every_spynetwork = {
+			limit = {
+				owner = { is_same_value = root }
+			}
+			if = {
+				limit = { target = { is_hive_empire = yes } }
+				espionage_create_asset_hive = yes
+			}
+			else_if = {
+				limit = { target = { is_machine_empire = yes } }
+				espionage_create_asset_machine = yes
+			}
+			else = {
+				espionage_create_asset_regular = yes
+			}
+		}
+	}
+}
+
+## Espionage Events (Deadly Saboteur Leader Trait)
+espionage_operation_event = {
+	id = criminal_worlds.103
+	title = criminal_worlds.103.name
+	desc = criminal_worlds.103.desc
+	espionage_operation = yes
+	picture = GFX_evt_infiltration_neutral # change
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = criminal_worlds.104
+	title = criminal_worlds.104.name
+	desc = criminal_worlds.104.desc
+	espionage_operation = yes
+	picture = GFX_evt_intelligence_report # change
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = ACKNOWLEDGED
+	}
+}
+
+espionage_operation_event = {
+	id = criminal_worlds.105
+	title = criminal_worlds.105.name
+	desc = criminal_worlds.105.desc
+	espionage_operation = yes
+	picture = GFX_evt_spymaster # change
+	show_sound = event_default
+	is_triggered_only = yes
+	immediate = {
+		set_espionage_operation_progress_locked = yes
+	}
+	option = {
+		name = ACTIVATE
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = criminal_worlds.106
+					days = 1
+				}
+			}
+		}
+	}
+	after = {
+		set_espionage_operation_progress_locked = no
+	}
+}
+
+# Success
+country_event = {
+	id = criminal_worlds.106
+	title = criminal_worlds.106.name
+	desc = criminal_worlds.106.desc
+	picture = GFX_evt_synth_sabotage # change
+	location = from.target
+	show_sound = event_default
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		hidden_effect = {
+			from.target = {
+				set_fleet_flag = cw_confusion_hack
+			}
+		}
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = {
+				VALUE = -45
+			}
+		}
+	}
+	after = {
+		destroy_espionage_operation = from
+	}
+}
+
+## Civic Events ##
+# On game start + Switching governments
+country_event = {
+	id = criminal_worlds.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_valid_civic = civic_cw_prison_state
+	}
+	immediate = {
+		add_research_option = tech_penal_colonies
+	}
+}
+
+## Tradition Events ##
+country_event = {
+	id = criminal_worlds.107
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = pirate
+		any_country = {
+			OR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					has_tradition = tr_cw_criminality_pirate_warlord
+					has_tradition = tr_cw_deviancy_pirate_warlord
+				}
+			}
+			country_event = {
+				id = criminal_worlds.108
+			}
+		}
+	}
+}
+
+country_event = {
+	id = criminal_worlds.108
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_tradition = tr_cw_criminality_pirate_warlord
+			has_tradition = tr_cw_deviancy_pirate_warlord
+		}
+	}
+
+	immediate = {
+		from = {
+			set_faction_hostility = {
+				target = root
+				set_hostile = no
+				set_neutral = no
+				set_friendly = yes
+			}
+		}
+	}
+}
+
+# On tradition picked - Make pirates not hostile
+country_event = {
+	id = criminal_worlds.109
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_tradition = tr_cw_criminality_pirate_warlord
+			has_tradition = tr_cw_deviancy_pirate_warlord
+		}
+		NOT = {
+			has_country_flag = cw_fired_pirate_warlord_initializer
+		}
+	}
+
+	immediate = {
+		set_country_flag = cw_fired_pirate_warlord_initializer
+		# Disable future pirate spawns
+		set_country_flag = pirates_spawned
+		set_country_flag = birth_of_piracy
+		set_country_flag = pirate_encountered
+		# Make current pirates allies
+		every_country = {
+			limit = {
+				is_country_type = pirate
+			}
+			set_faction_hostility = {
+				target = root
+				set_hostile = no
+				set_neutral = no
+				set_friendly = yes
+			}
+		}
+	}
+}
+
+# Pirate Warlords increase Pirates
+country_event = {
+	id = criminal_worlds.110
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		has_country_flag = birth_of_piracy
+		NOT = { has_country_flag = pirates_spawned }
+		any_system_within_border = {
+			any_system_planet = {
+				# Half the normal requirement due to funding from warlord
+				planet_resource_compare = {
+					resource = trade
+					value > 500
+				}
+			}
+		}
+		any_system_within_border = {
+			is_on_border = yes
+			any_neighbor_system = {
+				has_owner = yes
+				owner = {
+					OR = {
+						has_tradition = tr_cw_criminality_pirate_warlord
+						has_tradition = tr_cw_deviancy_pirate_warlord
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			# Twice as likely, thus trippling pirate spawns
+			190 = {}
+			20 = {
+				set_timed_country_flag = { flag = pirates_spawned days = 3600 }
+				random_system_within_border = {
+					limit = {
+						any_system_planet = {
+							planet_resource_compare = {
+								resource = trade
+								value > 100
+							}
+						}
+					}
+					save_event_target_as = pirate_system
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					country_event = { id = pirate.50 }
+				}
+				if = {
+					limit = { is_hive_empire = yes }
+					country_event = { id = pirate.52 }
+				}
+				if = {
+					limit = { is_machine_empire = yes }
+					country_event = { id = pirate.55 }
+				}
+			}
+		}
+	}
+}
+
+# country_event = {
+# 	# Currently not working - no country created, not sure about species
+# 	id = criminal_worlds.50
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_first_contact_dlc = yes
+# 		NOT = {
+# 			exists = event_target:criminal_white_flower
+# 		}
+# 	}
+# 	immediate = {
+# 		create_species = {
+# 			name = "NAME_White_flower_species"
+# 			plural = "NAME_White_flower_species_plural"
+# 			adjective = "NAME_White_flower_species_adj"
+# 			class = FUN
+# 			portrait = "fun14"
+# 			namelist = "FUN2"
+# 			traits = {
+# 				ideal_planet_class = pc_arctic
+# 				trait = "trait_thrifty"
+# 				trait = "trait_communal"
+# 				trait = "trait_nonadaptive"
+# 				trait = "trait_deviants"
+# 			}
+# 			# effect = {
+# 			# 	save_event_target_as = white_flower_species
+# 			# }
+# 		}
+# 		create_country = {
+# 			name = "NAME_cw_criminal_white_flower"
+# 			type = pirate
+# 			species = last_created_species # event_target:white_flower_species
+# 			name_list = "FUN2"
+# 			flag = {
+# 				icon = {
+# 					category = "cw_flags"
+# 					file = "cw_white_flower.dds"
+# 				}
+# 				background = {
+# 					category = "backgrounds"
+# 					file = "00_solid.dds"
+# 				}
+# 				colors = {
+# 					"white"
+# 					"white"
+# 					"null"
+# 					"null"
+# 				}
+# 			}
+# 			effect = {
+# 				# set_country_flag = cw_white_flower
+# 				save_event_target_as = cw_white_flower_country
+# 			}
+# 		}
+# 		random_system = {
+# 			# limit = {
+# 			# }
+# 			save_event_target_as = target_system
+# 		}
+# 		every_country = {
+# 			establish_communications_no_message = last_created_country
+# 		}
+# 		create_ship_design = {
+# 			design = "NAME_White_flower_ship_design"
+# 		}
+# 		create_fleet = {
+# 			name = "NAME_White_flower_ship"
+# 			effect = {
+# 				set_owner = event_target:cw_white_flower_country
+# 				create_ship = {
+# 					name = "NAME_White_flower_ship"
+# 					design = last_created_design
+# 					upgradable = no
+# 				}
+# 				set_location = event_target:target_system
+# 				set_fleet_stance = aggressive
+# 				set_aggro_range_measure_from = return_point
+# 				set_aggro_range = 300
+# 				# set_cloaking_active = yes
+# 			}
+# 		}
+# 	}
+# }
+# # Via on_custom_diplomacy | this = target country (player); from = country being contacted
+# country_event = {
+# 	id = criminal_worlds.52
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		from = {
+# 			is_country_type = pirate
+# 			has_country_flag = cw_white_flower
+# 		}
+# 		# Has white flower stolen ship tag
+# 	}
+# 	immediate = {
+# 	}
+# }

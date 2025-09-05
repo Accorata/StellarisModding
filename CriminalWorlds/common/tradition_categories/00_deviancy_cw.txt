@@ -1,0 +1,18 @@
+tradition_cw_deviancy = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_cw_deviancy_adopt"
+	finish_bonus = "tr_cw_deviancy_finish"
+	potential = {
+		is_gestalt = yes
+	}
+	traditions = {
+		"tr_cw_deviancy_smugglers_cartel"
+		"tr_cw_deviancy_plundered_assets"
+		"tr_cw_deviancy_black_markets"
+		"tr_cw_deviancy_galactic_lawlessness"
+		"tr_cw_deviancy_pirate_warlord"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}

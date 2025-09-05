@@ -1,0 +1,319 @@
+concept_ac_automodding_robotic = {
+	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_robotic.dds"
+}
+
+concept_ac_automodding_bio = {
+	icon = "gfx/interface/icons/traits/trait_ac_auto_mod_biological.dds"
+}
+
+concept_trait_ac_hive_digital = {
+	icon = "gfx/interface/icons/traits/trait_robot_digital_1.dds"
+	tooltip_override = "trait:trait_ac_hive_digital"
+}
+
+concept_ac_grand_synthesizer = {
+	icon = "gfx/interface/icons/jobs/job_ac_grand_synthesizer.dds"
+}
+
+concept_ac_normal_knight = {
+	icon = "gfx/interface/icons/jobs/job_knight.dds"
+}
+
+# Genetic Authorities
+concept_auth_ac_genetic_imperial_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_imperial_perfect_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_genetic_imperial_perfect"
+}
+
+concept_auth_ac_genetic_imperial_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_imperial_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_genetic_imperial_chaotic"
+}
+
+concept_auth_ac_genetic_dictatorial_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_dictatorial_perfect_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_genetic_dictatorial_perfect"
+}
+
+concept_auth_ac_genetic_dictatorial_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_dictatorial_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_genetic_dictatorial_chaotic"
+}
+
+concept_auth_ac_genetic_oligarchic_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_oligarchic_perfect_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_genetic_oligarchic_perfect"
+}
+
+concept_auth_ac_genetic_oligarchic_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_oligarchic_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_genetic_oligarchic_chaotic"
+}
+
+concept_auth_ac_genetic_democratic_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_democratic_perfect_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_genetic_democratic_perfect"
+}
+
+concept_auth_ac_genetic_democratic_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_democratic_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_genetic_democratic_chaotic"
+}
+
+concept_auth_ac_genetic_corporate_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_corporate_perfect_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_corporate_perfect"
+}
+
+concept_auth_ac_genetic_corporate_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_corporate_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_genetic_corporate_chaotic"
+}
+
+concept_auth_ac_genetic_hive_perfect = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_hive_perfect_35x35.dds"
+	tooltip_override = "authority:auth_hive_mind:auth_ac_genetic_hive_perfect"
+}
+
+concept_auth_ac_genetic_hive_chaotic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_hive_chaotic_35x35.dds"
+	tooltip_override = "authority:auth_hive_mind:auth_ac_genetic_hive_chaotic"
+}
+
+# Genetic Edicts
+concept_edict_ac_clone_overdrive = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_clone_overdrive"
+}
+
+concept_edict_ac_harvest_genetic_failures = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_harvest_genetic_failures"
+}
+
+concept_edict_ac_hypnopaedic_conditioning = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_hypnopaedic_conditioning"
+}
+
+concept_edict_ac_natural_eugenics = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_natural_eugenics"
+}
+
+concept_edict_ac_privileged_intellectualism = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_privileged_intellectualism"
+}
+
+concept_edict_ac_unrestricted_mutation = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_unrestricted_mutation"
+}
+
+concept_edict_ac_handicap_distribution = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_handicap_distribution"
+}
+
+concept_edict_ac_genetic_freedoms = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_genetic_freedoms"
+}
+
+concept_edict_ac_awoken_council = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_awoken_council"
+}
+
+concept_edict_ac_ruthless_competition = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_ruthless_competition"
+}
+
+concept_edict_ac_mind_spawn = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_mind_spawn"
+}
+
+concept_edict_ac_all_with_be_one = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_all_with_be_one"
+}
+
+# Psionic Authorities
+concept_auth_ac_psionic_imperial_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_imperial_divine_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_psionic_imperial_divine"
+}
+
+concept_auth_ac_psionic_imperial_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_imperial_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_psionic_imperial_eldritch"
+}
+
+concept_auth_ac_psionic_dictatorial_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_dictatorial_divine_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_psionic_dictatorial_divine"
+}
+
+concept_auth_ac_psionic_dictatorial_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_dictatorial_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_psionic_dictatorial_eldritch"
+}
+
+concept_ac_vessel_traits = {
+	icon = "gfx/interface/icons/icon_leader.dds"
+}
+
+concept_auth_ac_psionic_oligarchic_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine"
+}
+
+concept_auth_ac_psionic_oligarchic_divine_toxic_god = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_divine_toxic_god_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_divine_toxic_god"
+}
+
+concept_building_ac_order_hall = {
+	icon = "gfx/interface/icons/buildings/building_ac_order_hall.dds"
+	tooltip_override = "building:building_ac_order_hall"
+}
+
+concept_building_ac_order_hall_knights = {
+	icon = "gfx/interface/icons/buildings/building_ac_order_hall.dds"
+	tooltip_override = "building:building_ac_order_hall_knights"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_composer = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_composer_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_composer"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_whisperer = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_whisperer_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_whisperer"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_eater = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_eater_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_eater"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_instrument = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_instrument_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_instrument"
+}
+
+concept_auth_ac_psionic_oligarchic_eldritch_end = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_oligarchic_eldritch_end_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psionic_oligarchic_eldritch_end"
+}
+
+concept_auth_ac_psionic_democratic_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_democratic_divine_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_psionic_democratic_divine"
+}
+
+concept_auth_ac_psionic_democratic_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_democratic_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_psionic_democratic_eldritch"
+}
+
+concept_auth_ac_psionic_corporate_divine = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_corporate_divine_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_psionic_corporate_divine"
+}
+
+concept_auth_ac_psionic_corporate_eldritch = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psionic_corporate_eldritch_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_psionic_corporate_eldritch"
+}
+
+concept_holding_ac_manipulation_network = {
+	icon = "gfx/interface/icons/buildings/holding_ac_manipulation_network.dds"
+	tooltip_override = "building:holding_ac_manipulation_network"
+}
+
+# Psionic Edicts
+concept_edict_ac_palace_of_the_intellect = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_palace_of_the_intellect"
+}
+
+concept_edict_ac_unholy_possession = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_unholy_possession"
+}
+
+concept_edict_ac_heavens_blessing = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_heavens_blessing"
+}
+
+concept_edict_ac_betrayal_of_the_mind = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_betrayal_of_the_mind"
+}
+
+concept_edict_ac_consecrated_rites = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_consecrated_rites"
+}
+
+concept_edict_ac_dark_pact = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_dark_pact"
+}
+
+concept_edict_ac_united_in_soul = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_united_in_soul"
+}
+
+concept_edict_ac_aligned_desires = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_aligned_desires"
+}
+
+concept_edict_ac_wielded_clairvoyance = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_wielded_clairvoyance"
+}
+
+concept_edict_ac_prosperity_cult = {
+	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
+	tooltip_override = "edict:ac_prosperity_cult"
+}
+
+# Psi Teacher Authorities
+concept_auth_ac_psi_teacher_democratic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_democratic_35x35.dds"
+	tooltip_override = "authority:auth_democratic:auth_ac_psi_teacher_democratic"
+}
+
+concept_auth_ac_psi_teacher_oligarchic = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_oligarchic_35x35.dds"
+	tooltip_override = "authority:auth_oligarchic:auth_ac_psi_teacher_oligarchic"
+}
+
+concept_auth_ac_psi_teacher_dictatorial = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_dictatorial_35x35.dds"
+	tooltip_override = "authority:auth_dictatorial:auth_ac_psi_teacher_dictatorial"
+}
+
+concept_auth_ac_psi_teacher_imperial = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_imperial_35x35.dds"
+	tooltip_override = "authority:auth_imperial:auth_ac_psi_teacher_imperial"
+}
+
+concept_auth_ac_psi_teacher_corporate = {
+	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_corporate_35x35.dds"
+	tooltip_override = "authority:auth_corporate:auth_ac_psi_teacher_corporate"
+}

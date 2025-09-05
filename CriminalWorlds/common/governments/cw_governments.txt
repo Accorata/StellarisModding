@@ -1,0 +1,47 @@
+gov_cw_racketeer_criminal_enclave = {
+	ruler_title = RT_CW_HIGH_RACKETEER
+
+	should_force_rename = yes
+
+	possible = {
+		is_ai = yes
+		is_country_type = cw_criminal_enclave
+		has_country_flag = cw_criminal_enclave_racketeers
+	}
+
+	weight = {
+		base = @gov_ai_weight
+	}
+}
+
+gov_cw_privateer_criminal_enclave = {
+	ruler_title = RT_CW_HIGH_PRIVATEER
+
+	should_force_rename = yes
+
+	possible = {
+		is_ai = yes
+		is_country_type = cw_criminal_enclave
+		has_country_flag = cw_criminal_enclave_privateers
+	}
+
+	weight = {
+		base = @gov_ai_weight
+	}
+}
+
+gov_cw_hacker_criminal_enclave = {
+	ruler_title = RT_CW_HIGH_HACKER
+
+	should_force_rename = yes
+
+	possible = {
+		is_ai = yes
+		is_country_type = cw_criminal_enclave
+		has_country_flag = cw_criminal_enclave_hackers
+	}
+
+	weight = {
+		base = @gov_ai_weight
+	}
+}

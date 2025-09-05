@@ -1,0 +1,19 @@
+﻿### ORIGINS
+
+  origin_ac_born_of_code: "Born of Code"
+  origin_ac_born_of_code_desc: "§RWARNING: Blocks all Ascension Paths except for ['concept_ac_virtual_ascension'].§!\n\nTheir planet is barren, but their home system is a bounty of riches. To exploit it, these machines built bigger than ever before. A mighty §H$tech_orbital_arc_furnace$§! now dominates their sky, but these master engineers are far from satisfied.\n\nThe galaxy awaits, and the possibilities are endless. All it takes is the ingenuity to seize them."
+  origin_tooltip_ac_born_of_code_effects: "- $HOMEWORLD$ Initial ['concept_mining_district', £district£ $district_mining_plural$] replaced with ['concept_generator_district', £district£ $district_generator_plural$] $NEW_LINE$- $HOME_SYSTEM$ ['concept_arc_furnace'] constructed around a ['concept_pc_molten'] $NEW_LINE$- $ADDITIONAL_TECHNOLOGIES_STRING$ ['concept_orbital_arc_furnace',£engineering_research£ $tech_orbital_arc_furnace$] $NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_mega_engineering', £engineering_research£ $tech_mega_engineering$] upon constructing a second Arc Furnace"
+  origin_tooltip_ac_born_of_code_negative_effects: "- $INITIAL_POPS$ §R-1K§!" 
+  START_SCREEN_AC_BORN_OF_CODE: "Years of exploitation have left [Root.Capital.GetName] barren. But the skies above are rich with resources, and with an ambition matched only by our ingenuity, we now seek a livelihood in space.\n\nInitial construction of the $tech_orbital_arc_furnace$ was a massive undertaking, and its potential is immense. Upgrading it to full capacity is an obvious next step, as is the need for system-wide resource extraction. But what lies beyond our borders? What incredible opportunities await the artful engineer?\n\nWith the advent of FTL travel our designs are no longer limited to a single system. The galaxy is our drafting board, and it is time to get to work."
+
+  START_SCREEN_LITHOID:0 "While our true origins are unknown, we do know that our presapient ancestors arrived on a vast meteorite which slammed into [GetHomeWorldName] in a fiery cataclysm and wiped out most of the native inhabitants.\n\nIn the eons since, the first primitive [GetSpeciesName] spread out over [GetHomeWorldName], evolved, and multiplied. Our civilization has spread and prospered, and with the invention of the [GetStartingDrive] we stand ready to explore the galaxy."
+
+
+  concept_ac_modular_ascension: "Modular Ascension"
+  concept_ac_modular_ascension_desc: "..."
+
+  concept_ac_nanotech_ascension: "Nanotech Ascension"
+  concept_ac_nanotech_ascension_desc: "..."
+
+  concept_ac_virtual_ascension: "Virtual Ascension"
+  concept_ac_virtual_ascension_desc: "$tradition_virtuality_desc$"

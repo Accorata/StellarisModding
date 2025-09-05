@@ -1,0 +1,4 @@
+# This file will be overwritten if Planetary Diversity is enabled
+pd_is_planet_class_gaia = {
+	is_planet_class = pc_gaia
+}

@@ -1,0 +1,831 @@
+namespace = ascension_civics
+# Mod compatability check
+event = {
+	id = ascension_civics.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = stellaris_ascended_active
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+country_event = {
+	id = ascension_civics.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = spawning_renowned_leader
+		}
+	}
+	immediate = {
+		# Bioform Eliminators
+		# Adds the Machine Crusader trait
+		if = {
+			limit = {
+				is_ac_bio_upgrader = yes
+				from = {
+					leader_class = commander
+				}
+			}
+			from = {
+				add_trait_no_notify = leader_trait_machine_crusader
+			}
+		}
+		# Oligrachic Mutants
+		# 50% (or 100% with edict) to add a mutant trait and a negative trait
+		if = {
+			limit = {
+				is_oligarchic_authority = yes
+				has_country_flag = ac_genetic_chaotic
+			}
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						has_edict = ac_unrestricted_mutation
+					}
+				}
+				1 = {
+					from = {
+						ac_add_mutant_trait = yes
+						add_trait_no_notify = random_negative
+					}
+				}
+			}
+		}
+	}
+}
+
+# On post government change (needs to also include on new tradition for psionic finish)
+# country_event = {
+# 	id = ascension_civics.10
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		has_valid_civic = civic_beyond_the_veil
+# 	}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_psionic
+# 				}
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				add_trait = trait_ascendant_psionic
+# 				add_traits_at_start_of_list = yes
+# 			}
+# 		}
+# 	}
+# }
+# On post government change
+# country_event = {
+# 	id = ascension_civics.11
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		NOT = {
+# 			has_valid_civic = civic_beyond_the_veil
+# 		}
+# 	}
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_ascendant_psionic
+# 				}
+# 			}
+# 			modify_species = {
+# 				species = this
+# 				remove_trait = trait_ascendant_psionic
+# 			}
+# 		}
+# 	}
+# }
+# ... (For future testing)
+# country_event = {
+# 	id = ascension_civics.20
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				species = {
+# 					has_trait = trait_infectious
+# 				}
+# 			}
+# 			planet = {
+# 				#save_event_target_as = infected_planet
+# 				random_owned_pop = {
+# 					limit = {
+# 						NOT = {
+# 							has_trait = trait_infectious
+# 						}
+# 					}
+# 					add_trait = trait_infectious
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# On destroying enemy ship.
+country_event = {
+	id = ascension_civics.50
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROM = {
+			if = {
+				limit = {
+					exists = fleet.leader
+				}
+				fleet.leader = {
+					# Machine Crusader I / II
+					if = {
+						limit = {
+							has_trait_tier1or2or3 = {
+								TRAIT = leader_trait_machine_crusader
+							}
+							ROOT.FROM = {
+								# Owner of losing ship.
+								is_default_or_fallen = yes
+							}
+						}
+						ROOT = {
+							if = {
+								limit = {
+									PREV = {
+										has_trait = leader_trait_machine_crusader
+									}
+								}
+								add_resource = {
+									unity = @trait_crusader_fleet_amt
+								}
+								add_resource = {
+									alloys = @trait_shipbreaker_amt
+								}
+							}
+							else = {
+								add_resource = {
+									unity = @trait_crusader_2_fleet_amt									#Tier 2/3
+								}
+								add_resource = {
+									alloys = @trait_shipbreaker_2_amt									#Tier 2/3
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# On army killed in combat.
+country_event = {
+	id = ascension_civics.51
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROMFROM = {
+			# Planet where ground combat is taking place.
+			# Check if dead army is a defensive army.
+			if = {
+				limit = {
+					any_ground_combat_defender = {
+						is_same_value = ROOT.FROM
+						exists = species
+						species = {
+							is_robotic = no
+						}
+					}
+				}
+				# Check if attacking army has general with Crusader trait.
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_machine_crusader
+								has_trait = leader_trait_machine_crusader_2
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+			}
+		}
+		# If attacking army has a leader with Machine Crusader trait, award Unity and Alloys.
+		if = {
+			limit = {
+				exists = event_target:attacking_general
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:attacking_general = {
+							has_trait = leader_trait_machine_crusader
+						}
+					}
+					add_resource = {
+						unity = 25						# Tier 1
+						alloys = 5						# Tier 1
+					}
+				}
+				else = {
+					add_resource = {
+						unity = 40						# Tier 2/3
+						alloys = 8						# Tier 2/3
+					}
+				}
+			}
+		}
+	}
+}
+
+# On post government change or tradition gained
+country_event = {
+	id = ascension_civics.52
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_given_machine_crusader_trait
+		}
+		is_ac_bio_upgrader = yes
+	}
+	immediate = {
+		set_country_flag = ac_has_given_machine_crusader_trait
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = renowned_leader
+				}
+			}
+			add_trait_no_notify = leader_trait_machine_crusader
+		}
+	}
+}
+
+# On post government change
+country_event = {
+	id = ascension_civics.54
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_has_given_machine_crusader_trait
+		is_ac_bio_upgrader = no
+	}
+	immediate = {
+		remove_country_flag = ac_has_given_machine_crusader_trait
+	}
+}
+
+# On post government change or tradition picked
+country_event = {
+	id = ascension_civics.53
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_gives_hyper_relay_tech_option
+		}
+		is_ac_bandwidth_empire = yes
+		NOT = {
+			has_technology = tech_hyper_relays
+		}
+	}
+	immediate = {
+		set_country_flag = ac_has_gives_hyper_relay_tech_option
+		add_research_option = tech_hyper_relays
+	}
+}
+
+# On post government change or tradition picked
+country_event = {
+	id = ascension_civics.55
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_given_psionic_trait_to_robots
+		}
+		is_ac_soul_searcher_empire = yes
+	}
+	immediate = {
+		set_country_flag = ac_has_given_psionic_trait_to_robots
+		modify_species = {
+			species = owner_main_species
+			add_traits_at_start_of_list = yes
+			add_trait = trait_latent_psionic
+		}
+		change_dominant_species = {
+			species = last_created_species
+			change_all = yes
+		}
+		# Try this part
+		start_situation = {
+			type = situation_ac_soul_seeking
+			target = root
+		}
+	}
+}
+
+# On post government change or tradition picked - Send event to subjects to gain Programmed Loyalty trait
+country_event = {
+	id = ascension_civics.60
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_sent_sovereign_cicuitry_event
+		}
+		is_ac_cyber_overlord = yes
+	}
+	immediate = {
+		set_country_flag = ac_has_sent_sovereign_cicuitry_event
+		every_playable_country = {
+			limit = {
+				is_subject = yes
+				has_overlord = root
+			}
+			if = {
+				limit = {
+					is_gestalt = no
+				}
+				country_event = {
+					id = ascension_civics.61
+				}
+			}
+			else = {
+				country_event = {
+					id = ascension_civics.66
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.61
+	title = ascension_civics.61.name
+	desc = ascension_civics.61.desc
+	show_sound = event_ship_bridge	#change
+	picture = GFX_evt_excavation_team	#change
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = no
+		is_subject = yes
+	}
+	option = {
+		name = ascension_civics.61.a
+		owner = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty
+			}
+			set_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	# Future option to rebel against the overlord instead
+}
+
+leader_event = {
+	id = ascension_civics.62
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	immediate = {
+		add_trait = leader_trait_programmed_loyalty
+	}
+}
+
+country_event = {
+	id = ascension_civics.63
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		ruler = {
+			add_trait = leader_trait_programmed_loyalty
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.64
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		from = {
+			remove_trait = leader_trait_programmed_loyalty
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.65
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_accepted_sovereign_circuitry
+	}
+	immediate = {
+		remove_country_flag = ac_accepted_sovereign_circuitry
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			ruler = {
+				kill_leader = {
+					show_notification = yes
+				}
+			}
+		}
+		else = {
+			ruler = {
+				remove_trait = leader_trait_programmed_loyalty_gestalt
+				add_trait = leader_trait_corrupted_logic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.66
+	title = ascension_civics.66.name
+	desc = ascension_civics.66.desc
+	show_sound = event_ship_bridge	#change
+	picture = GFX_evt_excavation_team	#change
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = yes
+		is_subject = yes
+	}
+	option = {
+		name = ascension_civics.66.a
+		owner = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty_gestalt
+			}
+			set_country_flag = ac_accepted_sovereign_circuitry
+		}
+	}
+	# Future option to rebel against the overlord instead
+}
+
+# On lost war and becomes subject or on vassal released
+country_event = {
+	id = ascension_civics.67
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_subject = yes
+		from = {
+			is_ac_cyber_overlord = yes
+		}
+	}
+	immediate = {
+		set_country_flag = ac_accepted_sovereign_circuitry
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty
+			}
+		}
+		else = {
+			ruler = {
+				add_trait = leader_trait_programmed_loyalty_gestalt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.68
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_ac_cyber_overlord = yes
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			country_event = {
+				id = ascension_civics.61
+			}
+		}
+		else = {
+			country_event = {
+				id = ascension_civics.66
+			}
+		}
+	}
+}
+
+# remove country flag when country switches out of sovereign circuity = ac_has_sent_sovereign_cicuitry_event
+country_event = {
+	id = ascension_civics.78
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ac_metal_recycler = yes
+	}
+	immediate = {
+		# Check if the country has a leader with the salvager trait in the same system
+		if = {
+			limit = {
+				any_owned_leader = {
+					OR = {
+						has_trait = leader_trait_salvager
+						has_trait = leader_trait_salvager_2
+						has_trait = leader_trait_salvager_3
+						has_trait = leader_trait_master_salvager
+					}
+					exists = solar_system
+					solar_system = {
+						is_same_value = from.solar_system
+					}
+				}
+			}
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance
+			}
+		}
+		add_resource = {
+			sr_living_metal = 25
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.79
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		AND = {
+			is_ac_metal_recycler = yes
+			is_scavenger = yes
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				any_owned_leader = {
+					OR = {
+						has_trait = leader_trait_salvager
+						has_trait = leader_trait_salvager_2
+						has_trait = leader_trait_salvager_3
+					}
+					exists = solar_system
+					solar_system = {
+						is_same_value = from.solar_system
+					}
+				}
+			}
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance|BONUS|5|				# Give additional chance from trait, but less than just adding both of them together
+			}
+		}
+		else = {
+			salvage_ships_from_debris = {
+				CHANCE = value:country_salvage_ships_from_debris_chance
+			}
+		}
+		add_resource = {
+			sr_living_metal = 25
+		}
+	}
+}
+
+# On tradition picked or civics changed, sets nanite robot assembled variable if Numbered Beyond Stars or Unending Swarm
+country_event = {
+	id = ascension_civics.80
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_numbered_stars = yes
+		NOT = {
+			is_variable_set = ac_nanite_robots_assembled
+		}
+	}
+	immediate = {
+		set_variable = {
+			which = ac_nanite_robots_assembled
+			value = 0
+		}
+	}
+}
+
+# on pop assembled - increase counter and spawn pop if counter reaches 5
+planet_event = {
+	id = ascension_civics.81
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			is_ac_numbered_stars = yes
+			is_variable_set = ac_nanite_robots_assembled
+		}
+	}
+	immediate = {
+		from = {
+			change_variable = {
+				which = ac_nanite_robots_assembled
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable_arithmetic = {
+						which = ac_nanite_robots_assembled
+						value >= 5
+					}
+				}
+				subtract_variable = {
+					which = ac_nanite_robots_assembled
+					value = 5
+				}
+				capital_scope = {
+					create_pop = {
+						species = owner_main_species
+						ethos = random
+					}
+				}
+			}
+		}
+	}
+}
+
+# On tradition picked or civics changed, Renounce the Shroud
+country_event = {
+	id = ascension_civics.82
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_shroud_renouncer = yes
+		NOT = {
+			has_country_flag = ac_shroud_renounced
+		}
+	}
+	immediate = {
+		set_country_flag = ac_shroud_renounced
+		if = {
+			limit = {
+				has_country_flag = has_shroud_patron
+			}
+			remove_modifier = covenant_composer_of_strands_0
+			remove_modifier = covenant_eater_of_worlds_0
+			remove_modifier = covenant_instrument_of_desire_0
+			remove_modifier = covenant_whisperers_in_the_void_0
+			remove_modifier = covenant_whisperers_in_the_void_0_fircon
+		}
+		else = {
+			set_country_flag = has_shroud_patron
+		}
+	}
+}
+
+# On civics changed, Unrenounce the Shroud
+country_event = {
+	id = ascension_civics.83
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_shroud_renouncer = no
+		has_country_flag = ac_shroud_renounced
+	}
+	immediate = {
+		remove_country_flag = ac_shroud_renounced
+		remove_country_flag = has_shroud_patron		# Allows for you to get a new patron
+	}
+}
+
+# On post government change or tradition picked
+country_event = {
+	id = ascension_civics.84
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_cyberhive = yes
+		NOT = {
+			has_country_flag = ac_half_virtual_hive
+		}
+	}
+	immediate = {
+		set_country_flag = ac_half_virtual_hive
+		modify_species = {
+			species = owner_main_species
+			add_traits_at_start_of_list = yes
+			add_trait = trait_ac_hive_digital
+		}
+		change_dominant_species = {
+			species = last_created_species
+			change_all = yes
+		}
+	}
+}
+
+# On post government change
+country_event = {
+	id = ascension_civics.85
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_half_virtual_hive
+		NOT = {
+			has_valid_civic = civic_cyberspacial
+		}
+	}
+	immediate = {
+		remove_country_flag = ac_half_virtual_hive
+		every_owned_pop = {
+			limit = {
+				species = {
+					has_trait = trait_ac_hive_digital
+				}
+			}
+			modify_species = {
+				species = this
+				remove_trait = trait_ac_hive_digital
+			}
+		}
+	}
+}
+
+# testing event
+planet_event = {
+	id = ascension_civics.199
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:ac_cyberform_species
+				}
+			}
+			create_species = {
+				name = "Cyberform"				# Owner species name
+				class = random_non_machine
+				portrait = random
+				traits = random
+				allow_negative_traits = no
+				# sapient = no
+				effect = {
+					modify_species = {
+						species = this
+						add_trait = trait_cybernetic
+						# add_trait = trait_ac_cyberform
+					}
+					save_global_event_target_as = ac_cyberform_species
+				}
+			}
+		}
+		create_pop = {
+			species = event_target:ac_cyberform_species
+		}
+	}
+}
+
+# owner_main_species = {
+# 	create_species = {
+# 		is_mod = yes
+# 		name = this
+# 		plural = this
+# 		class = "ROBOT"
+# 		portrait = "default_robot"
+# 		traits = {
+# 			trait = trait_mechanical
+# 		}
+# 		can_be_modified = this
+# 		homeworld = this
+# 		namelist = this
+# 		gender = this
+# 		effect = {
+# 			set_synth_origin_traits_effect = yes
+# 			set_synth_or_robot_portrait_effect = yes
+# 			save_global_event_target_as = synthspecies@root.owner
+# 		}
+# 	}
+# }

@@ -1,0 +1,11 @@
+auto_trait_prio = {
+	#Technicians
+	trait_ingenious
+	trait_technical_skill
+	trait_robot_superconductive
+	trait_cyborg_superconductive
+	trait_malleable_energy
+	trait_adaptive_energy
+	trait_ac_robot_superconductive
+	trait_ac_bio_ingenious
+}

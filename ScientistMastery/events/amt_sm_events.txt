@@ -1,0 +1,136 @@
+namespace = scientist_mastery
+
+# Synth Imperial physical swap, leader dies and gives research modifier if has any mastery trait
+# Executed as a leader has died
+#	This = Country
+#	From = Leader
+# Fired by: on_leader_death
+country_event = {
+	id = scientist_mastery.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_synth_imperial = yes
+		has_country_flag = synth_physical
+	}
+
+	immediate = {
+		from = {
+			switch = {
+				trigger = has_trait
+				leader_trait_sm_mastery_materials = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_materials_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_propulsion = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_propulsion_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_voidcraft = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_voidcraft_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_industry = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_industry_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_field_manipulation = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_field_manipulation_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_particles = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_particles_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_computing = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_computing_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_psionics = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_psionics_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_new_worlds = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_new_worlds_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_statecraft = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_statecraft_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_biology = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_biology_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_military_theory = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_military_theory_scientist_memory"
+						}
+					}
+				}
+				leader_trait_sm_mastery_archaeostudies = {
+					owner = {
+						add_modifier = {
+							modifier = "sm_archaeostudies_scientist_memory"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = scientist_mastery.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_increased_tech = "tech_sm_dreams_beyond_scale"
+		NOT = {
+			has_technology = tech_mega_engineering
+		}
+	}
+	immediate = {
+		add_research_option = tech_mega_engineering
+		add_tech_progress = {
+			tech = tech_mega_engineering
+			progress = 0.05
+		}
+	}
+}

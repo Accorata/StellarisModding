@@ -1,0 +1,40 @@
+ap_ac_ascended_society = {
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_ac_ascended_society
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		OR = {
+			custom_tooltip = {
+				fail_text = "requires_ac_cybernetic_finish"
+				OR = {
+					has_tradition = tr_cybernetics_finish
+					has_tradition = tr_cybernetics_assimilator_finish
+				}
+			}
+			has_tradition = tr_psionics_finish
+			has_tradition = tr_synthetics_finish
+			has_tradition = tr_modularity_finish
+			has_tradition = tr_nanotech_finish
+			has_tradition = tr_virtuality_finish
+			# Not Biogenesis
+			has_tradition = tr_genetics_finish
+			# Biogenesis (would love a trigger to detect this...) - could also split into two separate perks
+			has_tradition = tr_purity_finish
+			has_tradition = tr_cloning_finish
+			has_tradition = tr_mutation_finish
+		}
+	}
+	modifier = {
+		empire_size_mult = -0.05
+		country_government_civic_points_add = 1
+	}
+	ai_weight = {
+		factor = 25
+	}
+}

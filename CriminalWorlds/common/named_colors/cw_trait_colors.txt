@@ -1,0 +1,19 @@
+trait_bg_cw_infiltration = {
+	color = { 105 162 54 255 }
+}
+
+trait_bg_cw_manipulation = {
+	color = { 214 119 61 255 }
+}
+
+trait_bg_cw_provocation = {
+	color = { 157 99 208 255 }
+}
+
+trait_bg_cw_sabotage = {
+	color = { 211 63 63 255 }
+}
+
+trait_bg_cw_subterfuge = {
+	color = { 66 127 187 255 }
+}

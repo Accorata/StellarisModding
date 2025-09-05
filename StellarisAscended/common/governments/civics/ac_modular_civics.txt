@@ -1,0 +1,306 @@
+civic_hyper_specialization = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_employee_specialization
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_specialization.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_hyper_specialization_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_hyper_specialization_effects
+		modifier = {
+			auto_mod_monthly_add = 200
+			MACHINE_species_trait_picks_add = 1
+		}
+	}
+}
+
+civic_employee_specialization = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_hyper_specialization
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_employee_specialization.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_hyper_specialization_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_hyper_specialization_effects
+		modifier = {
+			auto_mod_monthly_add = 200
+			MACHINE_species_trait_picks_add = 1
+		}
+	}
+}
+
+civic_hyper_specialized = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			value = ethic_gestalt_consciousness 
+		}
+		authority = { 
+			value = auth_machine_intelligence  
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_specialized.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_hyper_specialized_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_hyper_specialized_effects
+		modifier = {
+			auto_mod_monthly_add = 200
+			MACHINE_species_trait_picks_add = 1
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_metallic_repurposing = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		authority = { 
+			NOT = { 
+				value = auth_corporate 
+			} 
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_corporate_remodeling
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_metallic_repurposing.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_metallic_repurposing_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_metallic_repurposing_effects
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
+		}
+	}
+}
+
+civic_corporate_remodeling = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = { 
+			value = MACHINE 
+		}
+		civics = { 
+			NOT = { 
+				value = civic_metallic_repurposing
+			} 
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_corporate_remodeling.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_metallic_repurposing_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_metallic_repurposing_effects
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
+		}
+	}
+}
+
+civic_omnirecyclers = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = { 
+			value = ethic_gestalt_consciousness  
+		}
+		authority = { 
+			value = auth_machine_intelligence  
+		}
+	}
+
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_omnirecyclers.dds"
+	pickable_at_start = yes
+
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_modularity_finish
+		}
+	}
+	
+	description = civic_tooltip_omnirecyclers_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_modularity_finish
+		}
+		description = civic_tooltip_omnirecyclers_effects
+		modifier = {
+			planet_metallurgists_upkeep_mult = -0.2
+			councilor_gestalt_cognitive_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

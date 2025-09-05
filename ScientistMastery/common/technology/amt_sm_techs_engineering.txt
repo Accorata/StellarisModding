@@ -1,0 +1,274 @@
+tech_sm_graviton_propulsion = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { propulsion }
+	tier = 5
+	prerequisites = { "tech_thrusters_4" "tech_housing_2" }
+	is_custom_tech_2 = yes
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_SM_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_SM_GRAV_THRUSTERS_DESC"
+		}
+	}
+
+	modifier = {
+		ship_landing_time_mult = -0.2
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_propulsion
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_dark_matter_gravatics = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { propulsion }
+	tier = 5
+	prerequisites = { "tech_dark_matter_propulsion" "tech_sm_graviton_propulsion" }
+	is_custom_tech_2 = yes
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC"
+		}
+	}
+
+	modifier = {
+		ship_speed_mult = 0.1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_propulsion
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_dreams_beyond_scale = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { voidcraft }
+	tier = 4
+	prerequisites = { "tech_starbase_4" "tech_cruisers" "tech_antimatter_power" }
+	is_custom_tech_2 = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SM_MEGA_TITLE"
+			desc = "TECH_UNLOCK_SM_MEGA_DESC"
+		}
+	}
+
+	modifier = {
+		megastructure_build_speed_mult = 0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_voidcraft
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_technology = tech_mega_engineering
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_interstellar_ecologies = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { voidcraft }
+	tier = 3 # ?
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_voidcraft
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_extraction_nexus = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { industry }
+	tier = 3
+	prerequisites = { "tech_mining_2" "tech_mineral_purification_2" }
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_industry
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_graviton_reflectors = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { industry }
+	tier = 4
+	prerequisites = { "tech_housing_2" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_structures_volatile_motes_upkeep_mult = -0.10
+		planet_structures_exotic_gases_upkeep_mult = -0.10
+		planet_structures_rare_crystals_upkeep_mult = -0.10
+	}
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_industry
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				is_urban_planet = yes
+			}
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet = {
+				is_planet_class = pc_city
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_positronic_love = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { industry }
+	tier = 5
+	prerequisites = { "tech_synthetic_leaders" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		ROBOT_pop_happiness = 0.1
+	}
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_industry
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_fractal_catalysts = {
+	cost = @sm_leader_insight_cost
+	area = engineering
+	category = { materials }
+	tier = 3
+	prerequisites = { "tech_rare_crystals" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_translucers_produces_mult = 0.25
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_materials
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}

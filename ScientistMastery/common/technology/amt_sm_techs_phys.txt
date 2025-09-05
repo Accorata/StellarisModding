@@ -1,0 +1,200 @@
+tech_sm_proto_gravity_analysis = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { computing }
+	tier = 3
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_buildings_cost_mult = -0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_computing 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_synthetic_data = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { computing }
+	tier = 3
+	prerequisites = { "tech_self_aware_logic" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_researchers_physics_research_produces_mult = 0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_computing 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_regenerative_firewalls = {
+	ost = @sm_leader_insight_cost
+	area = physics
+	category = { computing }
+	tier = 3
+	prerequisites = { "tech_encryption_2" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		intel_encryption_add = 1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_computing 
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_tradition = tr_subterfuge_adopt
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_n_body_abstractions = {
+	ost = @sm_leader_insight_cost
+	area = physics
+	category = { computing }
+	tier = 3
+	prerequisites = { "tech_space_science_4" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		station_researchers_produces_mult = 0.05
+		shipclass_research_station_build_cost_mult = -0.25
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_computing 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_reactor_boosters_4 = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { particles }
+	tier = 5
+	prerequisites = { "tech_dark_matter_power_core" "tech_reactor_boosters_3" }
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_particles 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_microchemistry = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { particles }
+	tier = 3
+	prerequisites = { "tech_volatile_motes" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_chemists_produces_mult = 0.25
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_particles 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_conduction_nexus = {
+	cost = @sm_leader_insight_cost
+	area = physics
+	category = { field_manipulation }
+	tier = 3
+	prerequisites = { "tech_power_plant_2" "tech_power_hub_2" }
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_field_manipulation
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}

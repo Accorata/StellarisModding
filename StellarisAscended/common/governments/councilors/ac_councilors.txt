@@ -1,0 +1,652 @@
+# Governments
+councilor_ruler_imperial_ac_genetic = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	possible = {
+		always = no
+	}
+	icon = "GFX_icon_councilor_ruler"
+	modifier = {
+		country_councilor_influence_produces_add = 0.25
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_imperial_ac_psionic_divine = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	possible = {
+		always = no
+	}
+	icon = "GFX_icon_councilor_ruler"
+	modifier = {
+		planetary_ascension_effect_mult = 0.05
+		country_influence_produces_mult = 0.05
+		diplo_weight_mult = 0.05
+		country_edict_fund_add = 5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ruler_imperial_ac_psionic_eldritch = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	possible = {
+		always = no
+	}
+	icon = "GFX_icon_councilor_ruler"
+	modifier = {
+		planetary_ascension_effect_mult = 0.05
+		country_edict_fund_add = 5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Synthetic
+councilor_bioform_upgrader = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_bioform_upgrader
+	modifier = {
+		army_morale_damage_mult = 0.025
+		country_war_exhaustion_mult = -0.025
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_bio_replacer = {
+	leader_class = {
+		official
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = civic_bio_replacer
+	custom_tooltip = "councilor_bio_replacer_custom_modifier_desc"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_soul_seekers = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_soul_seekers
+	modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.075
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_synthetic_celestials = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_synthetic_celestials
+	modifier = {
+		megastructures_cost_mult = -0.01
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_world_commissioners = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_world_commissioners
+	custom_tooltip = "councilor_world_commissioners_custom_modifier_desc"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Cybernetic
+councilor_cyberlife = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_cyberlife
+	modifier = {
+		country_councilor_unity_produces_add = 5
+		pop_amenities_usage_mult = -0.01
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_cybernet = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_cybernet
+	modifier = {
+		pop_lifestyle_trade_value_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_cybergladiators = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_cybergladiators
+	modifier = {
+		planet_amenities_add = 2
+		army_morale = 0.05
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_underworld_bloodsports = {
+	leader_class = {
+		official
+		commander
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = commander
+		}
+	}
+	civic = civic_underworld_bloodsports
+	custom_tooltip = councilor_underworld_bloodsports_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Psionic
+councilor_telepathic_empire = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_telepathic_empire
+	modifier = {
+		empire_size_pops_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_telepathic_corporation = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_telepathic_corporation
+	modifier = {
+		empire_size_branch_office_mult = -0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_shroud_renouncers = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_shroud_renouncers
+	modifier = {
+		planet_stability_add = 2
+		damage_vs_country_type_shroud_spirits_mult = 0.05
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_shroud_divestment = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_shroud_divestment
+	modifier = {
+		planet_telepaths_energy_produces_add = 1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# councilor_doomseekers = {
+# 	leader_class = { official commander scientist }
+# 	is_leader_possible = {
+# OR = {
+# 	leader_class = official
+# 	leader_class = commander
+# 	leader_class = scientist
+# }
+# 	}
+# 	civic = civic_doomseekers
+# 	modifier = {
+# 		planet_stability_add = -2
+# 		country_unity_produces_mult = -0.05
+# 	}
+# 	ai_hiring_weight = {
+# 		inline_script = councilor_leader_weights
+# 	}
+# }
+
+# Purity
+councilor_blossoming_worlds = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_blossoming_worlds
+	custom_tooltip = councilor_blossoming_worlds_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_xanadu_retreats = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_xanadu_retreats
+
+	modifier = {
+		planet_entertainers_energy_produces_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Mutation
+councilor_hyper_diversification = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_hyper_diversification
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+		category_biology_draw_chance_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_employee_diversification = {
+	leader_class = {
+		official
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = civic_employee_diversification
+	modifier = {
+		country_councilor_society_research_produces_add = 5
+		auto_mod_monthly_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Genetic
+councilor_ac_gen_blossoming_worlds = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_ac_gen_blossoming_worlds
+	custom_tooltip = councilor_blossoming_worlds_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_gen_xanadu_retreats = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_ac_gen_xanadu_retreats
+	modifier = {
+		planet_entertainers_energy_produces_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_gen_hyper_diversification = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_ac_gen_hyper_diversification
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+		category_biology_draw_chance_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_gen_employee_diversification = {
+	leader_class = {
+		official
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = civic_ac_gen_employee_diversification
+	modifier = {
+		country_councilor_society_research_produces_add = 5
+		auto_mod_monthly_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Modularity
+councilor_hyper_specialization = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_hyper_specialization
+	modifier = {
+		planet_jobs_upkeep_mult = -0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_employee_specialization = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_employee_specialization
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_metallic_repurposing = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_metallic_repurposing
+	modifier = {
+		planet_metallurgists_sr_living_metal_produces_add = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_corporate_remodeling = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = civic_corporate_remodeling
+	modifier = {
+		ship_speed_mult = 0.02
+		local_trade_protection_add = 2
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Virtual
+councilor_bandwidth_enhancers = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_bandwidth_enhancers
+	modifier = {
+		country_unity_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_bandwidth_incorporated = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_bandwidth_incorporated
+	modifier = {
+		country_trade_produces_mult = 0.025
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_concurrent_command = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = civic_concurrent_command
+	modifier = {
+		ruler_skill_add = 0.5
+		empire_size_penalty_mult = -0.025
+	}
+	custom_tooltip = councilor_concurrent_command_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_executive_militarization = {
+	leader_class = {
+		official
+		commander
+		scientist
+	}
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = civic_executive_militarization
+	modifier = {
+		ruler_skill_add = 0.5
+		spy_network_levels_add = 2
+	}
+	custom_tooltip = councilor_executive_militarization_tooltip
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+# Nanotech
+councilor_numbered_among_stars = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_numbered_among_stars
+	modifier = {
+		unemployment_resources_nanites_produces_add = 0.25
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_stellar_monopoly = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_stellar_monopoly
+	modifier = {
+		country_nanites_produces_mult = 0.02
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_microscopic_life = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_microscopic_life
+	modifier = {
+		planet_pop_assembly_add = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_minicorp = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_minicorp
+	modifier = {
+		country_trade_produces_mult = 0.025
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

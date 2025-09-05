@@ -1,0 +1,205 @@
+# pop scope, root = planet
+apply_post_assimilation_effects = {
+	if = {
+		# assimilator empire
+		limit = {
+			root.owner = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_assimilator
+				# START OF OVERRIDE 1 -------------------------------------------------------------------------
+				is_ac_cybermachine = no
+				# END OF OVERRIDE 1 -------------------------------------------------------------------------
+			}
+		}
+		root.owner = {
+			generate_cyborg_treats = yes
+		}		# scripted effect
+	}
+	# START OF OVERRIDE 2 -------------------------------------------------------------------------
+	if = {
+		# assimilator empire with Uploaded Mind civic
+		limit = {
+			root.owner = {
+				has_authority = auth_machine_intelligence
+				has_civic = civic_machine_assimilator
+				is_ac_cybermachine = yes
+			}
+		}
+		root.owner = {
+			if = {
+				limit = {
+					has_government = gov_memory_aggregator
+				}
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 250
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = 1
+					min = 5
+					max = 250
+				}
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = 2
+					min = 10
+					max = 250
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 175
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = 1
+					min = 5
+					max = 175
+				}
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = 2
+					min = 10
+					max = 175
+				}
+			}
+		}
+	}
+	if = {
+		# bio upgrader empire
+		limit = {
+			root.owner = {
+				is_ac_bio_upgrader = yes
+			}
+		}
+		if = {
+			limit = {
+				root.owner = {
+					has_valid_civic = civic_bioform_upgrader
+				}
+			}
+			root.owner = {
+				add_monthly_resource_mult = {
+					resource = unity
+					value = 1
+					min = 5
+					max = 250
+				}
+			}
+		}
+		# Energy for corporate bio upgrader
+		else = {
+			root.owner = {
+				add_monthly_resource_mult = {
+					resource = energy
+					value = 1
+					min = 10
+					max = 500
+				}
+			}
+		}
+		root.owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 1
+				min = 5
+				max = 250
+			}
+		}
+	}
+	# Unity for Democratic Hyperequality Authority
+	if = {
+		limit = {
+			root.owner = {
+				is_democratic_authority = yes
+				has_country_flag = ac_genetic_perfect
+			}
+		}
+		root.owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 1
+				min = 5
+				max = 100
+			}
+		}
+	}
+	# Assimilation Engine relic upgrades 
+	if = {
+		limit = {
+			root.owner = {
+				has_relic = r_ac_assimilation_engine
+			}
+		}
+		root.owner = {
+			change_variable = {
+				which = ac_num_assimilation_engine
+				value = 1
+			}
+		}
+	}
+	# END OF OVERRIDE 2 -------------------------------------------------------------------------
+	if = {
+		limit = {
+			NOT = {
+				owner = {
+					any_owned_pop = {
+						is_exact_same_species = event_target:convert_to_species
+						NOT = {
+							is_same_value = prevprev
+						}
+					}
+				}
+			}
+		}
+		if = {
+			# set citizenship
+			limit = {
+				root.owner = {
+					has_authority = auth_machine_intelligence
+				}
+			}
+			set_citizenship_type = {
+				type = citizenship_full_machine
+				country = root.owner
+			}
+		}
+		else = {
+			set_citizenship_type = {
+				type = citizenship_full
+				country = root.owner
+			}
+		}
+		if = {
+			# set citizenship
+			limit = {
+				root.owner = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+			set_living_standard = {
+				type = living_standard_hive_mind
+				country = root.owner
+			}
+		}
+	}
+	if = {
+		# Handle assimilation of spiritualists into cybernetic empires
+		limit = {
+			root.owner = {
+				has_policy_flag = cyberization_standards_limited
+			}
+			is_spiritualist = yes
+			has_trait = trait_cybernetic
+		}
+		convert_to_limited_cybernetic_effect = {
+			CYBER_SPECIES = event_target:convert_to_species
+		}
+	}
+}

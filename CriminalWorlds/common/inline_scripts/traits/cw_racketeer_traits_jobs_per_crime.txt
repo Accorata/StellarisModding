@@ -1,0 +1,28 @@
+triggered_planet_modifier = {
+	potential = {
+		trait_is_gestalt_check = no
+	}
+	job_$JOB$_per_crime = 0.03
+	mult = $MULT$
+}
+triggered_planet_modifier = {
+	potential = {
+		trait_is_gestalt_check = yes
+	}
+	job_$GESTALT_JOB$_per_crime = 0.03
+	mult = $MULT$
+}
+triggered_sector_modifier = {
+	potential = {
+		trait_is_gestalt_check = no
+	}
+	job_$JOB$_per_crime = 0.015
+	mult = $MULT$
+}
+triggered_sector_modifier = {
+	potential = {
+		trait_is_gestalt_check = yes
+	}
+	job_$GESTALT_JOB$_per_crime = 0.015
+	mult = $MULT$
+}

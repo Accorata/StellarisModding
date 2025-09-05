@@ -1,0 +1,2 @@
+# Mod compatability check
+@has_ansible = 1

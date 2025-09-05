@@ -1,0 +1,3952 @@
+namespace = ascension_governments
+####### GENETIC SITUATION #######
+# On genetics tradition finsihed
+country_event = {
+	id = ascension_governments.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_finished_genetics_tradition
+		}
+		has_tradition = tr_genetics_finish
+	}
+	immediate = {
+		# Makes sure this is only triggered once
+		set_country_flag = ac_has_finished_genetics_tradition
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			country_event = {
+				id = ascension_governments.1
+				days = 180
+				random = 90
+			}
+		}
+		# If gestalt fire event
+		else = {
+			country_event = {
+				id = ascension_governments.100
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = no
+	}
+	immediate = {
+		set_variable = {
+			which = "ac_genetic_perfect_society"
+			value = 0
+		}
+		set_variable = {
+			which = "ac_genetic_chaotic_society"
+			value = 0
+		}
+		switch = {
+			trigger = has_authority
+			auth_democratic = {
+				country_event = {
+					id = ascension_governments.2
+				}
+			}
+			auth_oligarchic = {
+				country_event = {
+					id = ascension_governments.3
+				}
+			}
+			auth_dictatorial = {
+				country_event = {
+					id = ascension_governments.4
+				}
+			}
+			auth_imperial = {
+				country_event = {
+					id = ascension_governments.5
+				}
+			}
+			auth_corporate = {
+				country_event = {
+					id = ascension_governments.6
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# Democratic
+	id = ascension_governments.2
+	title = ascension_governments.2.name
+	desc = ascension_governments.2.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.2.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.2.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.2.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.2.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Oligarchic
+	id = ascension_governments.3
+	title = ascension_governments.3.name
+	desc = ascension_governments.3.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.3.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.3.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_civic = civic_technocracy
+				factor = 100
+			}
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.3.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.3.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Dictatorial
+	id = ascension_governments.4
+	title = ascension_governments.4.name
+	desc = ascension_governments.4.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.4.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.4.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.4.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.4.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Imperial
+	id = ascension_governments.5
+	title = ascension_governments.5.name
+	desc = ascension_governments.5.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.5.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.5.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.5.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.5.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Corporate
+	id = ascension_governments.6
+	title = ascension_governments.6.name
+	desc = ascension_governments.6.desc
+	picture = GFX_evt_overtuned
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_genetic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.6.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.6.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.6.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		custom_tooltip = ascension_governments.6.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.7
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Genetic Pool 1
+# Fired by: event
+country_event = {
+	id = ascension_governments.7
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_genetic_shock_chain_event_pool_one_list
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_one_list
+country_event = {
+	# Preserved Loved Ones
+	id = ascension_governments.9
+	title = ascension_governments.9.name
+	desc = ascension_governments.9.desc
+	picture = GFX_evt_happy_reunion
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Chaotic
+		name = ascension_governments.9.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_alleles_of_the_dead
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.9.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_preserved_genetic_form
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.9.c
+		custom_tooltip = ac_genetic.social_consequences.tt
+		trigger = {
+			owner = {
+				is_memorialist_empire = yes
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		add_modifier = {
+			modifier = ac_alleles_of_the_dead
+			days = 18000
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.8
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_one_list
+country_event = {
+	# Celebrity Impersonators
+	id = ascension_governments.10
+	title = ascension_governments.10.name
+	desc = ascension_governments.10.desc
+	picture = GFX_evt_three_sided_deal
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Chaotic
+		name = ascension_governments.10.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_preserved_genetic_form
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.10.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_ideal_society
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.10.c
+		trigger = {
+			is_megacorp = yes
+		}
+		add_modifier = {
+			modifier = ac_identity_merchants
+			days = 9000
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.8
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_one_list
+country_event = {
+	# Mutant Amalgamations
+	id = ascension_governments.11
+	title = ascension_governments.11.name
+	desc = ascension_governments.11.desc
+	picture = GFX_evt_scientific_experiments
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Chaotic
+		name = ascension_governments.11.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_research_option = tech_morphogenetic_field_mastery
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.11.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_research_option = tech_gene_seed_purification
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.11.c
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.8
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_one_list
+country_event = {
+	# Employee Gene Mods
+	id = ascension_governments.12
+	title = ascension_governments.12.name
+	desc = ascension_governments.12.desc
+	picture = GFX_evt_emergency_workers
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Perfect
+		name = ascension_governments.12.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_genetic_freedoms
+			days = 9000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.12.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_genetic_specialization
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.12.c
+		custom_tooltip = ac_genetic.social_consequences.tt
+		trigger = {
+			is_egalitarian = yes
+		}
+		add_modifier = {
+			modifier = ac_genetic_freedoms
+			days = 9000
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier2unityreward
+			min = @tier2unitymin
+			max = @tier2unitymax
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.12.d
+		custom_tooltip = ac_genetic.social_consequences.tt
+		trigger = {
+			is_megacorp = yes
+		}
+		add_modifier = {
+			modifier = ac_corporate_genetics
+			days = 18000
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.8
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Genetic Pool 2
+# Fired by: event
+country_event = {
+	id = ascension_governments.8
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_genetic_shock_chain_event_pool_two_list
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_two_list
+country_event = {
+	# Cloned Descendants
+	id = ascension_governments.20
+	title = ascension_governments.20.name
+	desc = ascension_governments.20.desc
+	picture = GFX_evt_necrophage
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Chaotic
+		name = ascension_governments.20.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_evolving_population
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Perfect
+		name = ascension_governments.20.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_cloned_population
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.31
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_two_list
+country_event = {
+	# Innate Safetly Instincts
+	id = ascension_governments.21
+	title = ascension_governments.21.name
+	desc = ascension_governments.21.desc
+	picture = GFX_evt_cosmic_storms_celebration
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Perfect
+		name = ascension_governments.21.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_innate_abilities
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.21.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_natural_education
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.21.c
+		add_modifier = {
+			modifier = ac_reproductive_installations
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 2
+				is_egalitarian = yes
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.31
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_two_list
+country_event = {
+	# Limit Breaker
+	id = ascension_governments.22
+	title = ascension_governments.22.name
+	desc = ascension_governments.22.desc
+	picture = {
+		trigger = {
+			NOT = {
+				has_valid_civic = civic_warrior_culture
+			}
+		}
+		picture = GFX_evt_arena
+	}
+	picture = {
+		trigger = {
+			has_valid_civic = civic_warrior_culture
+		}
+		picture = GFX_evt_gladiators
+	}
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Perfect
+		name = ascension_governments.22.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_genetic_athletes
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_materialist = yes
+			}
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.22.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_genetic_athlete_leagues
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.22.c
+		add_modifier = {
+			modifier = ac_limited_genetic_athletes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.31
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_genetic_shock_chain_event_pool_two_list
+country_event = {
+	# Leaving Pain Behind
+	id = ascension_governments.23
+	title = ascension_governments.23.name
+	desc = ascension_governments.23.desc
+	picture = GFX_evt_aggressive_flora
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Perfect
+		name = ascension_governments.23.a
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_perfect_society"
+				value = 1
+			}
+		}
+		set_country_flag = ac_auto_analgesic
+		modify_species = {
+			species = owner_main_species
+			add_trait = trait_ac_auto_analgesic
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Chaotic
+		name = ascension_governments.23.b
+		custom_tooltip = ac_genetic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_genetic_chaotic_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_painless_labor
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.23.c
+		add_modifier = {
+			modifier = ac_united_in_pain
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.31
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Ending
+# Fired by: event
+country_event = {
+	id = ascension_governments.31
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		switch = {
+			trigger = has_authority
+			auth_democratic = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.32
+					}
+				}
+			}
+			auth_oligarchic = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.33
+					}
+				}
+			}
+			auth_dictatorial = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.34
+					}
+				}
+			}
+			auth_imperial = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.35
+					}
+				}
+			}
+			auth_corporate = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.36
+					}
+				}
+			}
+		}
+	}
+}
+
+# Democratic Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.32
+	title = ascension_governments.32.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value > ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.32.desc.perfect
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value < ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.32.desc.chaotic
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value = ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.32.desc.neutral
+	}
+	picture = GFX_evt_galactic_community
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value >= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.32.a
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.32.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value <= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.32.b
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.32.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.32.c
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.32.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Assimilate Pops on Yearly Pulse
+event = {
+	id = ascension_governments.40
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_playable_country = {
+			num_unique_species > 1
+			has_edict = ac_handicap_distribution
+		}
+	}
+	immediate = {
+		every_playable_country = {
+			limit = {
+				num_unique_species > 1
+				has_edict = ac_handicap_distribution
+			}
+			# modify_species = {
+			# 	species = owner_main_species
+			# 	change_scoped_species = no
+			# 	effect = {
+			# 		set_timed_species_flag = {
+			# 			flag = ac_main_species
+			# 			days = 30
+			# 		}
+			# 	}
+			# }
+			every_owned_planet = {
+				planet_event = {
+					id = ascension_governments.41
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = ascension_governments.41
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			has_edict = ac_handicap_distribution
+		}
+	}
+	immediate = {
+		random_list = {
+			1 = {
+				# 1 pop
+				set_variable = {
+					which = assimilation_counter
+					value = 1
+				}
+				while = {
+					count = 1
+					limit = {
+						any_owned_pop = {
+							NOT = {
+								is_same_species = root.owner
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ac_hyperequality_assimilation_effect = yes
+				}
+			}
+			1 = {
+				# 2 pops
+				set_variable = {
+					which = assimilation_counter
+					value = 2
+				}
+				while = {
+					count = 2
+					limit = {
+						any_owned_pop = {
+							NOT = {
+								is_same_species = root.owner
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ac_hyperequality_assimilation_effect = yes
+				}
+			}
+			1 = {
+				# 3 pops
+				set_variable = {
+					which = assimilation_counter
+					value = 3
+				}
+				while = {
+					count = 3
+					limit = {
+						any_owned_pop = {
+							NOT = {
+								is_same_species = root.owner
+							}
+						}
+						check_variable = {
+							which = assimilation_counter
+							value > 0
+						}
+					}
+					ac_hyperequality_assimilation_effect = yes
+				}
+			}
+		}
+		set_variable = {
+			which = assimilation_counter
+			value = 0
+		}
+	}
+}
+
+# Unity on modifying population
+country_event = {
+	id = ascension_governments.48
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+		NOT = {
+			has_modifier = ac_modification_unity_cooldown
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_modifier = ac_modification_unity_cooldown
+				}
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+			add_modifier = {
+				modifier = ac_modification_unity_cooldown
+				days = 360
+			}
+		}
+	}
+}
+
+# Oligarchic Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.33
+	title = ascension_governments.33.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value > ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.33.desc.perfect
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value < ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.33.desc.chaotic
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value = ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.33.desc.neutral
+	}
+	picture = GFX_evt_galactic_community
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value >= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.33.a
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.33.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_civic = civic_technocracy
+				factor = 100
+			}
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value <= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.33.b
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.33.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.33.c
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.33.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Mutant trait Evolving gains experience
+country_event = {
+	id = ascension_governments.47
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_genetic_chaotic
+	}
+	immediate = {
+		owner = {
+			every_owned_leader = {
+				limit = {
+					has_trait = leader_trait_ac_mutant_evolving
+				}
+				add_experience = 300
+			}
+		}
+	}
+}
+
+# Dictatorial Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.34
+	title = ascension_governments.34.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value > ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.34.desc.perfect
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value < ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.34.desc.chaotic
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value = ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.34.desc.neutral
+	}
+	picture = GFX_evt_galactic_community
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value >= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.34.a
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.34.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value <= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.34.b
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.34.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			advanced_authority_refresh = yes
+			country_event = {
+				id = ascension_governments.43
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.34.c
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.34.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# On new ruler - Adds genetically superior trait, grants unity, and kills off three leaders
+country_event = {
+	id = ascension_governments.42
+	title = ascension_governments.42.name
+	desc = ascension_governments.42.desc
+	show_sound = event_cityscape
+	picture = GFX_evt_coronation
+	location = capital
+	is_triggered_only = yes
+	trigger = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+			}
+			save_event_target_as = leader_1
+		}
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+				NOT = {
+					is_same_value = event_target:leader_1
+				}
+			}
+			save_event_target_as = leader_2
+		}
+		random_owned_leader = {
+			limit = {
+				is_ruler = no
+				NOR = {
+					is_same_value = event_target:leader_1
+					is_same_value = event_target:leader_2
+				}
+			}
+			save_event_target_as = leader_3
+		}
+	}
+	option = {
+		name = ascension_governments.42.a
+		ruler = {
+			add_trait = leader_trait_genetically_superior
+		}
+		event_target:leader_1 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		event_target:leader_2 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		event_target:leader_3 = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier4unityreward
+			min = @tier4unitymin
+			max = @tier4unitymax
+		}
+	}
+}
+
+# Fires on change to Dictatorial Kraterocracy - add new trait
+country_event = {
+	id = ascension_governments.43
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	immediate = {
+		ruler = {
+			add_trait = leader_trait_genetically_superior
+		}
+	}
+}
+
+# On army killed in combat - Dictatorial Kraterocracy edict effects
+country_event = {
+	id = ascension_governments.46
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_edict = ac_natural_eugenics
+		# Planet where ground combat is taking place.
+		FROMFROMFROM = {
+			OR = {
+				# Check if dead army is an organic offensive army.
+				any_ground_combat_attacker = {
+					is_same_value = ROOT.FROM
+					exists = species
+					species = {
+						is_robotic = no
+					}
+				}
+				# Check if dead army is an organic defensive army.
+				any_ground_combat_defender = {
+					is_same_value = ROOT.FROM
+					exists = species
+					species = {
+						is_robotic = no
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		add_resource = {
+			society_research = 50
+		}
+	}
+}
+
+# Imperial Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.35
+	title = ascension_governments.35.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value > ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.35.desc.perfect
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value < ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.35.desc.chaotic
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value = ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.35.desc.neutral
+	}
+	picture = GFX_evt_galactic_community
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value >= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.35.a
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.35.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+			country_event = {
+				id = ascension_governments.44
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value <= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.35.b
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.35.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.35.c
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.35.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Fires on change to Imperial Clones
+country_event = {
+	id = ascension_governments.44
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+		any_owned_leader = {
+			is_ruler = no
+			has_trait = trait_imperial_heir
+			NOT = {
+				has_leader_flag = ac_cloned_heir
+			}
+		}
+	}
+	immediate = {
+		ac_clone_ruler = yes
+	}
+}
+
+# Clone Ruler on new heir (Old one dies/is appointed)
+leader_event = {
+	id = ascension_governments.45
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_leader_flag = ac_cloned_heir
+		}
+		owner = {
+			is_imperial_authority = yes
+			has_country_flag = ac_genetic_perfect
+		}
+	}
+	immediate = {
+		root = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		owner = {
+			country_event = {
+				id = ascension_governments.49
+				days = 1
+			}
+		}
+	}
+}
+
+# Fires from above
+country_event = {
+	id = ascension_governments.49
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	immediate = {
+		ac_clone_ruler = yes
+	}
+}
+
+# Corporate Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.36
+	title = ascension_governments.36.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value > ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.36.desc.perfect
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value < ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.36.desc.chaotic
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value = ac_genetic_chaotic_society
+			}
+		}
+		text = ascension_governments.36.desc.neutral
+	}
+	picture = GFX_evt_galactic_community
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_genetic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value >= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.36.a
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.36.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_genetic_perfect_society"
+				value <= ac_genetic_chaotic_society
+			}
+		}
+		name = ascension_governments.36.b
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.36.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.36.c
+		end_event_chain = ac_genetic_shock_chain
+		custom_tooltip = ascension_governments.36.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+### Genetic Hive ###
+# Fired by: event
+country_event = {
+	id = ascension_governments.100
+	title = ascension_governments.100.name
+	desc = ascension_governments.100.desc
+	picture = GFX_evt_astral_rift_research_lab
+	location = from
+	show_sound = event_cityscape
+	is_triggered_only = yes
+	option = {
+		name = ascension_governments.100.a
+		custom_tooltip = ascension_governments.100.a.tt
+		set_country_flag = ac_genetic_perfect
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.100.b
+		custom_tooltip = ascension_governments.100.b.tt
+		set_country_flag = ac_genetic_chaotic
+		hidden_effect = {
+			add_relic = r_ac_assimilation_engine
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.100.c
+		custom_tooltip = ascension_governments.100.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# On receiving relic - sets initial Assimilation Engine variable
+country_event = {
+	id = ascension_governments.101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		last_received_relic = r_ac_assimilation_engine
+	}
+	immediate = {
+		set_variable = {
+			which = ac_num_assimilation_engine
+			value = 0
+		}
+	}
+}
+
+# Assimilate Pops on Yearly Pulse - All Will Be One edict
+event = {
+	id = ascension_governments.102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_playable_country = {
+			has_edict = ac_all_will_be_one
+			num_unique_species > 1
+			any_owned_species = {
+				has_citizenship_type = {
+					type = citizenship_assimilation
+					country = prev
+				}
+			}
+		}
+	}
+	immediate = {
+		set_update_modifiers_batch = begin
+		every_playable_country = {
+			limit = {
+				has_edict = ac_all_will_be_one
+				num_unique_species > 1
+				any_owned_species = {
+					has_citizenship_type = {
+						type = citizenship_assimilation
+						country = prev
+					}
+				}
+			}
+			every_owned_species = {
+				limit = {
+					has_citizenship_type = {
+						type = citizenship_assimilation
+						country = prev
+					}
+				}
+				if = {
+					# Not Devouring Swarm - as can't assimilate
+					limit = {
+						prev = {
+							NOT = {
+								has_civic = civic_hive_devouring_swarm
+							}
+						}
+					}
+					modify_species = {
+						species = this
+						add_trait = trait_hive_mind
+						remove_trait = trait_self_modified
+						remove_trait = trait_latent_psionic
+						remove_trait = trait_psionic
+						change_scoped_species = no
+						effect = {
+							set_timed_species_flag = {
+								flag = assimilation_species_of_species@prev
+								days = 30
+							}
+							set_timed_species_flag = {
+								flag = assimilation_species_of_empire@prevprev
+								days = 30
+							}
+						}
+					}
+				}
+			}
+			every_owned_planet = {
+				planet_event = {
+					id = action.65
+				}
+			}
+		}
+		set_update_modifiers_batch = end
+	}
+}
+
+####### PSIONIC SITUATION #######
+# On psionics tradition finsihed
+country_event = {
+	id = ascension_governments.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ac_has_finished_psionics_tradition
+		}
+		has_tradition = tr_psionics_finish
+	}
+	immediate = {
+		# Makes sure this is only triggered once
+		set_country_flag = ac_has_finished_psionics_tradition
+		# If Psi-Teachers
+		if = {
+			limit = {
+				has_origin = origin_shroudwalker_apprentice
+			}
+			country_event = {
+				id = ascension_governments.900
+				days = 180
+				random = 90
+			}
+		}
+		else = {
+			country_event = {
+				id = ascension_governments.1001
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1001
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = no
+		NOT = {
+			has_origin = origin_shroudwalker_apprentice
+		}
+	}
+	immediate = {
+		set_variable = {
+			which = "ac_psionic_divine_society"
+			value = 0
+		}
+		set_variable = {
+			which = "ac_psionic_eldritch_society"
+			value = 0
+		}
+		switch = {
+			trigger = has_authority
+			auth_democratic = {
+				country_event = {
+					id = ascension_governments.1002
+				}
+			}
+			auth_oligarchic = {
+				country_event = {
+					id = ascension_governments.1003
+				}
+			}
+			auth_dictatorial = {
+				country_event = {
+					id = ascension_governments.1004
+				}
+			}
+			auth_imperial = {
+				country_event = {
+					id = ascension_governments.1005
+				}
+			}
+			auth_corporate = {
+				country_event = {
+					id = ascension_governments.1006
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# Democratic
+	id = ascension_governments.1002
+	title = ascension_governments.1002.name
+	desc = ascension_governments.1002.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1002.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1002.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1002.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1002.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Oligarchic
+	id = ascension_governments.1003
+	title = ascension_governments.1003.name
+	desc = ascension_governments.1003.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1003.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1003.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1003.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1003.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Dictatorial
+	id = ascension_governments.1004
+	title = ascension_governments.1004.name
+	desc = ascension_governments.1004.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1004.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1004.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1004.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1004.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Imperial
+	id = ascension_governments.1005
+	title = ascension_governments.1005.name
+	desc = ascension_governments.1005.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1005.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1005.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1005.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1005.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Corporate
+	id = ascension_governments.1006
+	title = ascension_governments.1006.name
+	desc = ascension_governments.1006.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		begin_event_chain = {
+			event_chain = ac_psionic_shock_chain
+			target = this
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1006.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1006.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1006.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1006.b.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 2				# The first event is more impactful
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1007
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Psionic Pool 1
+# Fired by: event
+country_event = {
+	id = ascension_governments.1007
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_psionic_shock_chain_event_pool_one_list
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Ritualistic Sacrificies
+	id = ascension_governments.1009
+	title = ascension_governments.1009.name
+	desc = ascension_governments.1009.desc
+	picture = GFX_evt_astral_rift_tomb
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Eldritch
+		name = ascension_governments.1009.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		capital_scope = {
+			random_owned_pop = {
+				kill_pop = yes
+			}
+			set_planetary_ascension_tier = value:add_planet_ascension_tier
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1009.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_holy_minds
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1009.c
+		add_modifier = {
+			modifier = ac_dark_rituals
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Nether Calling
+	id = ascension_governments.1010
+	title = ascension_governments.1010.name
+	desc = ascension_governments.1010.desc
+	picture = GFX_evt_space_monster
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Eldritch
+		name = ascension_governments.1010.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		custom_tooltip = ascension_governments.1010.a.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+			random_list = {
+				60 = {
+					country_event = {
+						id = utopia.3020
+					}
+				}
+				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = {
+						id = utopia.3023
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1010.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_abstaining_from_darkness
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_one_list
+country_event = {
+	# Telepathic Health
+	id = ascension_governments.1011
+	title = ascension_governments.1011.name
+	desc = ascension_governments.1011.desc
+	picture = GFX_evt_friendly_enlightenment
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				num_negative_traits > 0
+			}
+			save_event_target_as = ac_healed_leader
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1011.a
+		trigger = {
+			exists = event_target:ac_healed_leader
+		}
+		event_target:ac_healed_leader = {
+			remove_all_negative_traits = yes
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1011.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_mind_body_soul
+			days = 18000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1011.c
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_eldritch_mind
+			days = 9000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Pharma State
+		# Eldritch
+		name = ascension_governments.1011.d
+		custom_tooltip = ac_psionic.social_consequences.tt
+		trigger = {
+			owner = {
+				has_valid_civic = civic_private_healthcare_corporate
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		add_modifier = {
+			modifier = ac_sanity_peddlers
+			days = 9000
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1008
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# Event pools gatekeeping event | Psionic Pool 2
+# Fired by: event
+country_event = {
+	id = ascension_governments.1008
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		fire_on_action = {
+			on_action = on_ac_psionic_shock_chain_event_pool_two_list
+		}
+	}
+}
+
+# Fired by: on_ac_psionic_shock_chain_event_pool_two_list
+country_event = {
+	# Chosen Sovereignty
+	id = ascension_governments.1020
+	title = ascension_governments.1020.name
+	desc = ascension_governments.1020.desc
+	picture = GFX_evt_psionics
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	trigger = {
+		is_country_type = default
+		NOT = {
+			has_country_flag = chosen_one_ruler_event
+		}
+		OR = {
+			is_democratic_authority = yes
+			is_oligarchic_authority = yes
+			is_dictatorial_authority = yes
+			AND = {
+				is_imperial_authority = yes
+				any_owned_leader = {
+					has_trait = leader_trait_psionic
+					has_trait = trait_imperial_heir
+				}
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = chosen_one_ruler_event
+		if = {
+			limit = {
+				OR = {
+					is_democratic_authority = yes
+					is_oligarchic_authority = yes
+					is_dictatorial_authority = yes
+				}
+			}
+			random_owned_leader = {
+				limit = {
+					has_trait = leader_trait_psionic
+				}
+				save_event_target_as = chosen_one
+				species = {
+					save_event_target_as = chosen_one_species
+				}
+			}
+		}
+		else = {
+			random_owned_leader = {
+				limit = {
+					has_trait = leader_trait_psionic
+					has_trait = trait_imperial_heir
+				}
+				save_event_target_as = chosen_one
+				species = {
+					save_event_target_as = chosen_one_species
+				}
+			}
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1020.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_legendary_leader_dictatorial
+			}
+			set_origin = origin_legendary_leader_imperial
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_imperial
+			cooldown = no
+			remove_invalid_civics = yes
+		}
+		force_add_civic = civic_psionic_sovereign
+		set_government_cooldown = no
+		# The ruler doesn't need to abdicate if they're being crowned.
+		if = {
+			limit = {
+				ruler = {
+					NOT = {
+						is_same_value = event_target:chosen_one
+					}
+				}
+			}
+			ruler = {
+				exile_leader_as = destituted_ruler_chosen_one
+			}
+			set_leader = event_target:chosen_one
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = {
+						is_same_value = root
+					}
+					has_communications = root
+				}
+				country_event = {
+					id = utopia.3401
+					days = 4
+				}
+			}
+			country_event = {
+				id = utopia.3402
+				days = 5
+			}
+		}
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1020.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_legendary_leader_dictatorial
+			}
+			set_origin = origin_legendary_leader_imperial
+		}
+		shift_ethic = "ethic_fanatic_authoritarian"
+		shift_ethic = "ethic_spiritualist"
+		change_government = {
+			authority = auth_imperial
+			cooldown = no
+			remove_invalid_civics = yes
+		}
+		force_add_civic = civic_psionic_sovereign
+		set_government_cooldown = no
+		# The ruler doesn't need to abdicate if they're being crowned.
+		if = {
+			limit = {
+				ruler = {
+					NOT = {
+						is_same_value = event_target:chosen_one
+					}
+				}
+			}
+			ruler = {
+				exile_leader_as = destituted_ruler_chosen_one
+			}
+			set_leader = event_target:chosen_one
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = {
+						is_same_value = root
+					}
+					has_communications = root
+				}
+				country_event = {
+					id = utopia.3401
+					days = 4
+				}
+			}
+			country_event = {
+				id = utopia.3402
+				days = 5
+			}
+		}
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1020.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_ethic = ethic_egalitarian
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+		custom_tooltip = reject_god_emperor
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1031
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	# Harrower of Time
+	id = ascension_governments.1021
+	title = ascension_governments.1021.name
+	desc = ascension_governments.1021.desc
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1021.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		add_modifier = {
+			modifier = ac_pact_of_the_harrower
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_ethic = ethic_authoritarian
+			}
+			modifier = {
+				factor = 4
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	option = {
+		# Divine
+		name = ascension_governments.1021.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 4
+				has_ethic = ethic_materialist
+			}
+			modifier = {
+				factor = 8
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+			country_event = {
+				id = ascension_governments.1031
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1022
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_modifier = ac_pact_of_the_harrower
+	}
+	immediate = {
+		if = {
+			limit = {
+				exists = event_target:ac_avatars_of_time_of_@root
+			}
+			event_target:ac_avatars_of_time_of_@root = {
+				create_ship = {
+					name = "NAME_Avatar"
+					design = "NAME_Shroud_Avatar"
+					prefix = no
+					upgradable = no
+				}
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_AC_Harrower_Avatar"
+				settings = {
+					can_upgrade = no
+					can_change_composition = no
+					can_change_leader = no
+					uses_naval_capacity = no
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = root
+					create_ship = {
+						name = "NAME_Avatar"
+						design = "NAME_Shroud_Avatar"
+						prefix = no
+						upgradable = no
+					}
+					set_location = root.capital_scope
+					save_global_event_target_as = ac_avatars_of_time_of_@root
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# Mass Psychosis
+	id = ascension_governments.1023
+	title = ascension_governments.1023.name
+	desc = ascension_governments.1023.desc
+	picture = GFX_evt_unspeakable_horror
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	trigger = {
+		# Check if there is a Dimensional Horror
+		any_country = {
+			is_country_type = guardian_horror
+			num_fleets > 0
+		}
+	}
+	option = {
+		name = ascension_governments.1023.a
+		custom_tooltip = ac_madness_leaders.tt
+		hidden_effect = {
+			set_country_flag = ac_horror_caused_insanity
+			country_event = {
+				id = ascension_governments.1024
+				days = 90
+				random = 30
+			}
+			# Random leader guaranteed to gain Visions of Doom trait
+			random_owned_leader = {
+				limit = {
+					has_trait = leader_trait_psionic
+				}
+				add_trait = leader_trait_ac_visions_of_doom
+			}
+			# 33% chance per leader to gain Visions of Doom trait
+			every_owned_leader = {
+				limit = {
+					has_trait = leader_trait_psionic
+					NOT = {
+						has_trait = leader_trait_ac_visions_of_doom
+					}
+				}
+				random_list = {
+					33 = {
+						add_trait = leader_trait_ac_visions_of_doom
+					}
+					66 = {
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	# Horrors of the Mind
+	id = ascension_governments.1024
+	title = ascension_governments.1024.name
+	desc = ascension_governments.1024.desc
+	picture = GFX_evt_dimensional_horror
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		# Divine
+		name = ascension_governments.1024.a
+		custom_tooltip = ac_psionic.social_consequences.tt
+		begin_event_chain = {
+			event_chain = ac_kill_horror_chain
+			target = this
+		}
+		capital_scope = {
+			closest_system = {
+				min_steps = 0
+				max_steps = 999
+				limit = {
+					any_fleet_in_system = {
+						exists = owner
+						owner = {
+							is_country_type = guardian_horror
+						}
+					}
+				}
+				random_ship_in_system = {
+					limit = {
+						exists = owner
+						owner = {
+							is_country_type = guardian_horror
+						}
+					}
+					create_point_of_interest = {
+						id = ac_horror_poi
+						name = ac_horror_poi_title
+						desc = ac_horror_poi_desc
+						event_chain = ac_kill_horror_chain
+						location = this
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_divine_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Eldritch
+		name = ascension_governments.1024.b
+		custom_tooltip = ac_psionic.social_consequences.tt
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		hidden_effect = {
+			change_variable = {
+				which = "ac_psionic_eldritch_society"
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		# Neutral
+		name = ascension_governments.1024.c
+		add_modifier = {
+			modifier = ac_psychic_shields
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_governments.1031
+				days = 180
+				random = 90
+			}
+		}
+	}
+}
+
+# If Horror Destroyed Fire Silent Dreams Event
+country_event = {
+	id = ascension_governments.1025
+	hide_window = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		is_country_type = guardian_horror
+		OR = {
+			has_country_flag = dimensional_horror_country
+			has_country_flag = eldritch_horror_country
+		}
+		FROMFROM = {
+			is_ship_size = dimensional_horror
+		}
+	}
+	immediate = {
+		# Fire Silent Dreams Event if killing empire choose to hunt the Horror
+		FROM = {
+			if = {
+				limit = {
+					has_event_chain = ac_kill_horror_chain
+					has_country_flag = ac_horror_caused_insanity
+				}
+				country_event = {
+					id = ascension_governments.1026
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# Silent Dreams
+	id = ascension_governments.1026
+	title = ascension_governments.1026.name
+	desc = ascension_governments.1026.desc
+	picture = GFX_evt_unspeakable_horror	# change
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_kill_horror_chain
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_horror_caused_insanity
+	}
+	option = {
+		name = ascension_governments.1026.a
+		custom_tooltip = ac_sane_leaders.tt
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+		tooltip = {
+			end_event_chain = ac_kill_horror_chain
+		}
+		hidden_effect = {
+			# Restore Sanity
+			every_owned_leader = {
+				limit = {
+					has_trait = leader_trait_ac_visions_of_doom
+				}
+				remove_trait = leader_trait_ac_visions_of_doom
+				add_trait = leader_trait_ac_restored_sanity
+			}
+			# End Killing Insanity Chain
+			every_country = {
+				limit = {
+					is_country_type = default
+					has_event_chain = ac_kill_horror_chain
+				}
+				remove_point_of_interest = ac_horror_poi
+				end_event_chain = ac_kill_horror_chain
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Ending
+# Fired by: event
+country_event = {
+	id = ascension_governments.1031
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		switch = {
+			trigger = has_authority
+			auth_democratic = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.1032
+					}
+				}
+			}
+			auth_oligarchic = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.1033
+					}
+				}
+			}
+			auth_dictatorial = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.1034
+					}
+				}
+			}
+			auth_imperial = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.1035
+					}
+				}
+			}
+			auth_corporate = {
+				hidden_effect = {
+					country_event = {
+						id = ascension_governments.1036
+					}
+				}
+			}
+		}
+	}
+}
+
+# Democratic Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.1032
+	title = ascension_governments.1032.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value > ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1032.desc.divine
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value < ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1032.desc.eldritch
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value = ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1032.desc.neutral
+	}
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1032.a
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1032.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value <= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1032.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1032.b.tt
+		set_country_flag = ac_psionic_eldritch
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.1032.c
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1032.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Oligarchic Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.1033
+	title = ascension_governments.1033.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value > ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1033.desc.divine
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value < ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1033.desc.eldritch
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value = ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1033.desc.neutral
+	}
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			NOT = {
+				has_origin = origin_toxic_knights
+			}
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1033.a
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1033.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			has_origin = origin_toxic_knights
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1033.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1033.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value <= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1033.c
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1033.c.tt
+		set_country_flag = ac_psionic_eldritch
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.1033.d
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1033.d.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Dictatorial Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.1034
+	title = ascension_governments.1034.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value > ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1034.desc.divine
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value < ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1034.desc.eldritch
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value = ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1034.desc.neutral
+	}
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1034.a
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1034.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value <= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1034.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1034.b.tt
+		set_country_flag = ac_psionic_eldritch
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.1034.c
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1034.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+# Imperial Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.1035
+	title = ascension_governments.1035.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value > ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1035.desc.divine
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value < ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1035.desc.eldritch
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value = ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1035.desc.neutral
+	}
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1035.a
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1035.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value <= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1035.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1035.b.tt
+		set_country_flag = ac_psionic_eldritch
+		hidden_effect = {
+			advanced_authority_refresh = yes
+			country_event = {
+				id = ascension_governments.1040
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.1035.c
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1035.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1040
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+		ruler = {
+			NOR = {
+				has_trait = leader_trait_ac_composer_vessel
+				has_trait = leader_trait_ac_eater_vessel
+				has_trait = leader_trait_ac_instrument_vessel
+				has_trait = leader_trait_ac_whisperers_vessel
+				has_trait = leader_trait_ac_end_vessel
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = has_shroud_patron
+			}
+			random_owned_leader = {
+				limit = {
+					is_ruler = no
+					OR = {
+						has_trait = leader_trait_ac_composer_vessel
+						has_trait = leader_trait_ac_eater_vessel
+						has_trait = leader_trait_ac_instrument_vessel
+						has_trait = leader_trait_ac_whisperers_vessel
+						has_trait = leader_trait_ac_end_vessel
+					}
+				}
+				save_event_target_as = ac_previous_leader
+			}
+			if = {
+				limit = {
+					exists = event_target:ac_previous_leader
+				}
+				event_target:ac_previous_leader = {
+					remove_trait = leader_trait_ac_composer_vessel
+					remove_trait = leader_trait_ac_eater_vessel
+					remove_trait = leader_trait_ac_instrument_vessel
+					remove_trait = leader_trait_ac_whisperers_vessel
+					remove_trait = leader_trait_ac_end_vessel
+				}
+			}
+			ruler = {
+				# Composer
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = composer_covenant_confirmed
+						}
+					}
+					add_trait = leader_trait_ac_composer_vessel
+				}
+				# Eater
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = eater_covenant_confirmed
+						}
+					}
+					add_trait = leader_trait_ac_eater_vessel
+				}
+				# Instrument
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = instrument_covenant_confirmed
+						}
+					}
+					add_trait = leader_trait_ac_instrument_vessel
+				}
+				# Whisperers
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = whisperers_covenant_confirmed
+						}
+					}
+					add_trait = leader_trait_ac_whisperers_vessel
+				}
+				# End of the Cycle
+				if = {
+					limit = {
+						NOR = {
+							has_trait = leader_trait_ac_composer_vessel
+							has_trait = leader_trait_ac_eater_vessel
+							has_trait = leader_trait_ac_instrument_vessel
+							has_trait = leader_trait_ac_whisperers_vessel
+							has_trait = leader_trait_ac_end_vessel
+						}
+						ROOT = {
+							has_country_flag = covenant_end_of_the_cycle
+						}
+					}
+					add_trait = leader_trait_ac_end_vessel
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_governments.1041
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_imperial_authority = no
+		has_country_flag = ac_psionic_eldritch
+	}
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				OR = {
+					has_trait = leader_trait_ac_composer_vessel
+					has_trait = leader_trait_ac_eater_vessel
+					has_trait = leader_trait_ac_instrument_vessel
+					has_trait = leader_trait_ac_whisperers_vessel
+					has_trait = leader_trait_ac_end_vessel
+				}
+			}
+			save_event_target_as = ac_previous_leader
+		}
+		if = {
+			limit = {
+				exists = event_target:ac_previous_leader
+			}
+			event_target:ac_previous_leader = {
+				remove_trait = leader_trait_ac_composer_vessel
+				remove_trait = leader_trait_ac_eater_vessel
+				remove_trait = leader_trait_ac_instrument_vessel
+				remove_trait = leader_trait_ac_whisperers_vessel
+				remove_trait = leader_trait_ac_end_vessel
+			}
+		}
+	}
+}
+
+# Corporate Final Event
+# Fired by: event
+country_event = {
+	id = ascension_governments.1036
+	title = ascension_governments.1036.name
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value > ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1036.desc.divine
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value < ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1036.desc.eldritch
+	}
+	desc = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value = ac_psionic_eldritch_society
+			}
+		}
+		text = ascension_governments.1036.desc.neutral
+	}
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = event_cityscape
+	location = from
+	event_chain = ac_psionic_shock_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value >= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1036.a
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1036.a.tt
+		set_country_flag = ac_psionic_divine
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		trigger = {
+			check_variable = {
+				which = "ac_psionic_divine_society"
+				value <= ac_psionic_eldritch_society
+			}
+		}
+		name = ascension_governments.1036.b
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1036.b.tt
+		set_country_flag = ac_psionic_eldritch
+		hidden_effect = {
+			advanced_authority_refresh = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = ascension_governments.1036.c
+		end_event_chain = ac_psionic_shock_chain
+		custom_tooltip = ascension_governments.1036.c.tt
+		trigger = {
+			is_ai = no
+		}
+	}
+}
+
+### Psi Teachers Event ###
+country_event = {
+	id = ascension_governments.900
+	title = ascension_governments.900.name
+	desc = ascension_governments.900.desc
+	picture = GFX_evt_shroudwalker_teachers
+	show_sound = event_mystic_reveal
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = ac_psi_teacher_advanced_government
+		advanced_authority_refresh = yes
+	}
+	#Democratic
+	option = {
+		trigger = {
+			owner = {
+				is_democratic_authority = yes
+			}
+		}
+		name = ascension_governments.900.a
+		custom_tooltip = ascension_governments.900.a.tooltip
+	}
+	#Oligarchic
+	option = {
+		trigger = {
+			owner = {
+				is_oligarchic_authority = yes
+			}
+		}
+		name = ascension_governments.900.a
+		custom_tooltip = ascension_governments.900.b.tooltip
+	}
+	#Dictatorial
+	option = {
+		trigger = {
+			owner = {
+				is_dictatorial_authority = yes
+			}
+		}
+		name = ascension_governments.900.a
+		custom_tooltip = ascension_governments.900.c.tooltip
+	}
+	#Imperial
+	option = {
+		trigger = {
+			owner = {
+				is_imperial_authority = yes
+			}
+		}
+		name = ascension_governments.900.a
+		custom_tooltip = ascension_governments.900.d.tooltip
+	}
+	#Corporate
+	option = {
+		trigger = {
+			owner = {
+				is_megacorp = yes
+			}
+		}
+		name = ascension_governments.900.a
+		custom_tooltip = ascension_governments.900.e.tooltip
+	}
+}
+
+# For Compatibility when adding to existing saves:
+# Fires Yearly
+country_event = {
+	id = ascension_governments.200
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		# Checks if mod was active at game start
+		NOT = {
+			has_global_flag = has_stellaris_ascended_active
+		}
+		has_tradition = tr_genetics_finish
+	}
+	immediate = {
+		country_event = {
+			id = ascension_governments.0
+		}
+	}
+}
+
+# Fires Yearly
+country_event = {
+	id = ascension_governments.1200
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		# Checks if mod was active at game start
+		NOT = {
+			has_global_flag = has_stellaris_ascended_active
+		}
+		has_tradition = tr_psionics_finish
+	}
+	immediate = {
+		country_event = {
+			id = ascension_governments.1000
+		}
+	}
+}

@@ -1,0 +1,313 @@
+# A leader is added to the leader pool, available for recruitment
+on_added_to_leader_pool = {
+	events = {
+		ascension_civics.100		# Additional traits from civics (machine crusader for bioform eliminator)
+	}
+}
+
+#An army has been killed in ground combat
+on_army_killed_in_combat = {
+	events = {
+		ascension_civics.51		# On organic army destroyed machine crusader traits.
+		ascension_governments.46		# On organic army lost or destroyed with natural eugenics edict
+	}
+}
+
+# Fired when a science ship succesfully analyzed or scavenged debris
+# this = country
+# from = debris
+# fromfrom = controller of destroyed ship
+# fromfromfrom = science ship
+on_debris_researched = {
+	events = {
+		ascension_civics.78		# Metal Recycler gets living metal and scavenge chance
+	}
+}
+
+# Fired when a science ship succesfully analyzed or scavenged debris
+# this = country
+# from = debris
+# fromfrom = controller of destroyed ship
+# fromfromfrom = science ship
+on_debris_scavenged = {
+	events = {
+		ascension_civics.78		# Metal Recycler gets living metal and scavenge chance
+	}
+}
+
+# Fired when a science ship succesfully analyzed or scavenged debris
+# this = country
+# from = debris
+# fromfrom = controller of destroyed ship
+# fromfromfrom = science ship
+on_debris_scavenged_and_researched = {
+	events = {
+		ascension_civics.79		# Metal Recycler + Salvager gets living metal and scavenge chance
+	}
+}
+
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+		ascension_civics.212		# doomseeker - uncomplete
+	}
+}
+
+# This = country
+# From = opponent war leader
+on_entering_war = {
+	events = {
+		ascension_civics.65		# Kills ruler if subject of Soveriegn Circuitry empire
+	}
+}
+
+on_game_start = {
+	events = {
+		ascension_civics.1		# Declares this mod active for any future modders
+	}
+}
+
+# Executed when an heir is promoted to ruler
+# This = Heir
+on_heir_promoted_to_ruler = {
+	events = {
+		ascension_civics.62		# Add Programmed Loyalty trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
+	}
+}
+
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+		ascension_governments.48		# Unity on modifying species for Democratic Expression
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		ascension_civics.201		# Increase doomseeker variable to spawn avatars
+	}
+}
+
+# Executed when a new heir is appointed
+# This = Heir
+on_new_heir = {
+	events = {
+		ascension_governments.45		# Replaces heir with a clone of current ruler
+	}
+}
+
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_assembled = {
+	events = {
+		ascension_civics.81		# Increases nanite pop created counter and creates a new one if reaches 5
+	}
+}
+
+# Executed just as country is changing its government, before the new one is applied
+# THIS = country
+# on_pre_government_changed = {
+# 	events = {
+# 		ascension_governments.50	 # Prevent Imperial Clones from getting extra heirs
+# 	}
+# }
+
+on_post_government_changed = {
+	events = {
+		# ascension_civics.10			# Add ascendant psionic to psionic pops
+		# ascension_civics.11			# Remove ascendant psionic from pops
+		ascension_civics.52		# Add machine crusader trait to commanders
+		ascension_civics.54		# Allows future picking of bio upgraders to give machine crusaders (fix bc tradition picking shouldn't trigger multiple times but government reform can)
+		# ascension_civics.200		# Setup variables for doomseeker shroud incursion
+		# ascension_civics.60		# Add new traits/effects to if Sovereign Ciruitry
+		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire
+		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80		# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
+		ascension_civics.82		# Renounce the Shroud
+		ascension_civics.83		# Unrenounce the Shroud
+		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
+		ascension_civics.85		# Remove Half-Virtual trait for non-Cyberspacial Hives
+		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
+		ascension_governments.44		# Removes heir trait from current heir if Imperial Clones and creates new clone
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
+		ascension_governments.1041		# Remove Vessel traits if no longer Imperial Vessel Auth
+	}
+}
+
+# Executed when a ruler has been removed
+# From = Previous Ruler
+# This = Country
+on_ruler_removed = {
+	events = {
+		ascension_civics.64		# Add Programmed Loyalty trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
+	}
+}
+
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
+	events = {
+		ascension_civics.63		# Add Programmed Loyalty trait
+		ascension_governments.42		# Adds Genetically Superior Trait
+		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
+	}
+}
+
+on_ship_destroyed_perp = {
+	events = {
+		ascension_civics.50		# On ship destroyed machine crusader traits.
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		ascension_governments.1025		# Killing Dimensional Horror Restores Sanity
+	}
+}
+
+# This = starbase being disabled (not ship!)
+# From = fleet that disabled the starbase
+on_starbase_disabled = {
+	events = {
+		ascension_civics.214		# Destroy starbase and add shroud breach
+	}
+}
+
+# Executed when a country picks any tradition (including starters and finishers)
+# THIS = country
+on_tradition_picked = {
+	events = {
+		ascension_governments.0		# Genetic situation start
+		ascension_governments.1000		# Psionic situation start
+		ascension_civics.52		# Leaders gain machine crusader trait if synth traditions finished
+		ascension_civics.53		# Adds Hyper Relays as tech option if Bandwidth empire and virtual traditions finished
+		ascension_civics.60		# Send event to subjects to gain Programmed Loyalty trait
+		ascension_civics.200		# Setup variables for doomseeker shroud incursion
+		ascension_civics.55		# Limited Psionic trait for Soul Searcher empires
+		ascension_civics.80		# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
+		ascension_civics.82		# Renounce the Shroud
+		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
+	}
+}
+
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+		ascension_civics.67		# Subject effects for Sovereign Circuitry
+	}
+}
+
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		ascension_governments.40		# Democratic Hyperequality edict assimilate pops to main species
+		ascension_governments.102		# Assimilator Hive edict doubles assimilation
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		ascension_civics.210		# Set random convergence location for 50% of avatars
+		ascension_governments.1040		# Adds Vessel traits if Imperial Vessel auth and now has Patron
+		ascension_governments.47		# Mutant trait Evolving gains experience
+		ascension_governments.200		# Existing Save Compatibility Genetic Authority event chain
+		ascension_governments.1200		# Existing Save Compatibility Psionic Authority event chain
+	}
+}
+
+on_five_year_pulse_country = {
+	events = {
+		ascension_governments.1022		# Harrower of Time grants a Psionic Avatar
+	}
+}
+
+# This = subject
+# From = subject's overlord
+on_becoming_subject = {
+	events = {
+		ascension_civics.68		# Add new traits/effects to if Sovereign Ciruitry overlord
+	}
+}
+
+# fires when a country finishes being integrated
+# This = overlord
+# From = subject
+on_subject_integrated = {
+	events = {
+		# Remove Soveriegn Circuitry traits
+	}
+}
+
+# fires when a country releases a sector as a vassal
+# This = released vassal
+# From = overlord
+on_released_as_vassal = {
+	events = {
+		ascension_civics.67		# Subject effects for Sovereign Circuitry
+	}
+}
+
+# This = Country
+on_relic_received = {
+	events = {
+		ascension_governments.101		# Initialize variables for the Assimilation Engine
+	}
+}
+
+# Genetic Event Pool 1 | Fired by ascension_governments.7
+# This = Country
+on_ac_genetic_shock_chain_event_pool_one_list = {
+	random_events = {
+		5 = ascension_governments.9		# Preserved Loved Ones
+		5 = ascension_governments.10		# Celebrity Impersonators
+		5 = ascension_governments.11		# Mutant Amalgamations
+		5 = ascension_governments.12		# Employee Gene Mods
+	}
+}
+
+# Genetic Event Pool 2 | Fired by ascension_governments.8
+# This = Country
+on_ac_genetic_shock_chain_event_pool_two_list = {
+	random_events = {
+		5 = ascension_governments.20		# Cloned Descendants
+		5 = ascension_governments.21		# Innate Safety Instincts
+		5 = ascension_governments.22		# Limit Breaker
+		5 = ascension_governments.23		# Leaving Pain Behind
+	}
+}
+
+# Psionic Event Pool 1 | Fired by ascension_governments.1007
+# This = Country
+on_ac_psionic_shock_chain_event_pool_one_list = {
+	random_events = {
+		5 = ascension_governments.1009		# Ritualistic Sacrifices
+		5 = ascension_governments.1010		# Nether Calling
+		5 = ascension_governments.1011		# Telepathic Health
+	}
+}
+
+# Psionic Event Pool 2 | Fired by ascension_governments.1008
+# This = Country
+on_ac_psionic_shock_chain_event_pool_two_list = {
+	random_events = {
+		2 = ascension_governments.1020		# Chosen Sovereignty
+		5 = ascension_governments.1021		# A Request
+		5 = ascension_governments.1023		# Mass Psychosis -> Horrors of the Mind
+	}
+}

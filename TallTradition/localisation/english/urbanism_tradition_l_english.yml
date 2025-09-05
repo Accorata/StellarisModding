@@ -1,0 +1,21 @@
+﻿l_english:
+# Tradition Names + Descriptions + Toottips
+  tradition_urbanism:0 "Urbanism"
+  tradition_urbanism_desc:0 "Our planets must be prepared to deal with the new reality of expanding populations."
+  tr_urbanism_adopt:0 "Urbanism Traditions"
+  tr_urbanism_city_life:0 "City Life"
+  tr_urbanism_city_life_delayed:0 "Our people have come to value the appeal of living in largely populated areas."
+  tr_urbanism_local_bureaucracy:0 "Local Bureaucracy"
+  #tr_urbanism_local_bureaucracy:0 "Local Bureaucracy" gestalt
+  tr_urbanism_local_bureaucracy_delayed:0 "Our clerks have taken on the load of managing our industry."
+  #tr_urbanism_local_bureaucracy_delayed:0 "Our clerks have taken on the load of managing our industry." gestalt
+  tr_urbanism_planetwide_infrastruture:0 "Planetwide Infrastructure"
+  tr_urbanism_planetwide_infrastruture_delayed:0 "Its time our planets bent their nature to our will, and our construction teams are up for the challenge."
+  tr_urbanism_highrises:0 "Sprouting Highrises" 
+  tr_urbanism_highrises_delayed:0 "Grand concentrations of people often allow for the elite to prosper... and to show off their wealth."
+  tr_urbanism_galactic_centers:0 "Galactic Centers"
+  tr_urbanism_galactic_centers_delayed:0 "Rerouting exports and imports as well as redesigning central architecture should boost the efficiency of our crucial planets."
+  tr_urbanism_galactic_centers_desc:1 "§YUnlocks Decision:§! Create Galactic Center$TABBED_NEW_LINE$- Pop Job Production §G+25%§! $TABBED_NEW_LINE$- Pop Job Upkeep §R+15%§!"
+
+
+ 

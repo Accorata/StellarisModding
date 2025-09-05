@@ -1,0 +1,214 @@
+### NEEDS 4.0 UPDATES ###
+
+building_sm_conduction_nexus = {
+	base_buildtime = @b2_time
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			AND = {
+				exists = owner
+				owner = {
+					is_ai = yes
+				}
+				has_any_generator_district_or_building = no
+			}
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+		OR = {
+			NOT = { is_planet_class = pc_habitat }
+			AND = {
+				is_planet_class = pc_habitat
+				check_modifier_value = {
+					modifier = district_hab_energy_max
+					value > 0
+				}
+			}
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_generator_district_or_building = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = 2
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_physics_research_produces_add = 2
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = 1
+	}
+
+	prerequisites = {
+		tech_sm_conduction_nexus
+	}
+}
+
+building_sm_replication_nexus = {
+	base_buildtime = @b2_time
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			AND = {
+				exists = owner
+				OR = {
+					owner = {
+						is_ai = yes
+						country_uses_food = no
+					}
+					AND = {
+						owner = {
+							is_ai = yes
+						}
+						has_any_farming_district_or_buildings = no
+					}
+				}
+			}
+			is_planet_class = pc_machine
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_farming_district_or_buildings = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = 2
+			volatile_motes = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_farmers_society_research_produces_add = 2
+	}
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 1
+		ANGLER_AMOUNT = 1
+	}
+
+	prerequisites = {
+		tech_sm_replication_nexus
+	}
+}
+
+building_sm_extraction_nexus = {
+	base_buildtime = @b2_time
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			AND = {
+				exists = owner
+				owner = {
+					is_ai = yes
+				}
+				has_any_mining_district = no
+			}
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+		OR = {
+			NOT = { is_planet_class = pc_habitat }
+			AND = {
+				is_planet_class = pc_habitat
+				check_modifier_value = {
+					modifier = district_hab_mining_max
+					value > 0
+				}
+			}
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_mining_district = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = 2
+			volatile_motes = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_miners_engineering_research_produces_add = 2
+	}
+
+	inline_script = {
+		script = jobs/miners_add
+		AMOUNT = 1
+	}
+
+	prerequisites = {
+		tech_sm_extraction_nexus
+	}
+}

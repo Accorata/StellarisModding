@@ -1,0 +1,4 @@
+# Mod compatability check
+@has_stellaris_ascended = 1
+
+# END OF FILE

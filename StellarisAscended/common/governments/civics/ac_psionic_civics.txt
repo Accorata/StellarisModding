@@ -1,0 +1,311 @@
+# civic_beyond_the_veil = {
+# 	modification = yes
+# 	icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+# 	pickable_at_start = no
+# 	possible = {
+# 		has_tradition = tr_psionics_finish
+# 		ethics = {
+# 			OR = {
+# 				value = ethic_fanatic_spiritualist
+# 				value = ethic_spiritualist
+# 			}
+# 		}
+# 	}
+# 	random_weight = {
+# 		base = 0
+# 	}
+# 	description = civic_tooltip_beyond_the_veil_effects
+# 	hide_modifiers = yes
+# 	modifier = {
+# 		shroud_delve_cooldown = -0.25
+# 		planet_researchers_society_research_produces_add = 2
+# 		planet_researchers_physics_research_produces_add = -1
+# 		planet_researchers_engineering_research_produces_add = -1
+# 	}
+# 	# swap_type = {
+# 	# 	trigger = {
+# 	# 		has_relic = r_zro_crystal
+# 	# 	}
+# 	# 	modifier = {
+# 	# 		shroud_delve_cooldown = -0.125
+# 	# 		planet_researchers_society_research_produces_add = 2
+# 	# 		planet_researchers_physics_research_produces_add = -1
+# 	# 		planet_researchers_engineering_research_produces_add = -1
+# 	# 	}
+# 	# }
+# }
+civic_telepathic_empire = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_corporation
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_empire.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_telepathic_empire_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_telepathic_empire_effects
+		modifier = {
+			planet_stability_add = 5
+			pop_non_psionic_happiness = -0.15
+		}
+	}
+}
+
+civic_telepathic_corporation = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_telepathic_empire
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_corporation.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_telepathic_corporation_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_telepathic_corporation_effects
+		modifier = {
+			planet_executives_produces_mult = 0.1
+			pop_non_psionic_happiness = -0.15
+		}
+	}
+}
+
+civic_doomseekers = {
+	# temporary icon to avoid error
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+			# temporarily removed
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+	}
+	modification = yes
+	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	description = civic_tooltip_doomseekers_effects
+	hide_modifiers = yes
+	modifier = {
+	}
+}
+
+civic_shroud_renouncers = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_shroud_divestment
+			}
+		}
+	}
+	modification = {
+		add = {
+			custom_tooltip = {
+				fail_text = AC_CIVIC_NO_PATRON
+				ac_has_confirmed_shroud_patron = no
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
+	alternate_civic_version = civic_shroud_divestment
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_shroud_renouncers_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_shroud_renouncers_effects
+		modifier = {
+			shroud_delve_cost = 99
+			planet_telepaths_unity_produces_add = 9
+			planet_psionic_jobs_produces_mult = 0.25
+			damage_vs_country_type_shroud_spirits_mult = 0.5
+		}
+	}
+}
+
+civic_shroud_divestment = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_shroud_renouncers
+			}
+		}
+	}
+	modification = {
+		add = {
+			custom_tooltip = {
+				fail_text = AC_CIVIC_NO_PATRON
+				ac_has_confirmed_shroud_patron = no
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
+	alternate_civic_version = civic_shroud_renouncers
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_divestment.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_shroud_renouncers_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_shroud_renouncers_effects
+		modifier = {
+			shroud_delve_cost = 99
+			planet_telepaths_unity_produces_add = 9
+			planet_psionic_jobs_produces_mult = 0.25
+			damage_vs_country_type_shroud_spirits_mult = 0.5
+		}
+	}
+}

@@ -1,0 +1,185 @@
+namespace = cw_anomaly
+
+ship_event = {
+	id = cw_anomaly.1
+	title = cw_anomaly.1.name
+	desc = cw_anomaly.1.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_excavation_team
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.1.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier1materialreward
+				min = @tier1materialmin
+				max = @tier1materialmax
+			}
+		}
+	}
+	option = {
+		name = cw_anomaly.1.b
+		trigger = { 
+			owner = { 
+				OR = { 
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				} 
+			} 
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier1materialreward
+				min = @tier1materialmin
+				max = @tier1materialmax
+			}
+			add_modifier = {
+				modifier = "cw_executed_criminals"
+				days = 3600
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.2
+	title = cw_anomaly.2.name
+	desc = cw_anomaly.2.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_excavation_team
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.2.a
+		leader = {
+			add_trait = {
+				trait = leader_trait_lawless
+			}
+		}
+	}
+	option = {
+		name = cw_anomaly.2.b
+		leader = {
+			add_trait = {
+				trait = leader_trait_corrupt
+			}
+		}
+		owner = {
+			add_resource = { 
+				energy = 1000
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.3
+	title = cw_anomaly.3.name
+	desc = cw_anomaly.3.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_alien_planet
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = { owner = { country_event = { id = story.5 days = 30 } } }
+
+	option = {
+		name = cw_anomaly.3.a
+		from = {
+			add_modifier = {
+				modifier = cw_ruined_undercity
+				days = -1
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.4
+	title = cw_anomaly.4.name
+	desc = cw_anomaly.4.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_unspeakable_horror
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.4.a
+		from = {
+			add_modifier = {
+				modifier = cw_dark_whispers
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = cw_anomaly.4.b
+		trigger = {
+			leader = {
+				OR = {
+					has_trait = leader_trait_psionic
+					has_trait = leader_trait_chosen
+					has_trait = leader_trait_expertise_psionics
+					has_trait = leader_trait_expertise_psionics_2
+					has_trait = leader_trait_expertise_psionics_3
+				}
+			}
+		}
+		from = {
+			add_modifier = {
+				modifier = cw_dark_whispers
+				days = -1
+			}
+		}
+		leader = {
+			add_trait = {
+				trait = leader_trait_maniacal
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = cw_anomaly.5
+	title = cw_anomaly.5.name
+	desc = cw_anomaly.5.desc
+	show_sound = event_ship_bridge
+	picture = GFX_evt_surreal_visions
+	location = FROM
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_anomaly.5.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+		}
+	}
+}
+

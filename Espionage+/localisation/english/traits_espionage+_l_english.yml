@@ -1,0 +1,10 @@
+﻿l_english:
+## Espionage Traits
+# Install Backdoor
+  leader_trait_active_backdoor:0 "Active Backdoor"
+  leader_trait_active_backdoor_desc:1 "Antiviral detection protocols have noticed a backdoor in use by §R<<ERROR: DATA BLOCK CORRUPTED>>§!!"
+  leader_trait_active_backdoor_tooltip:1 "When defending against espionage operations carried out by §R<<ERROR: DATA BLOCK CORRUPTED>>§! we will recieve a §R-3§! to our Encryption."
+# Corrupt Loyalties
+  leader_trait_questionable_loyalties:0 "Questionable Loyalties"
+  leader_trait_questionable_loyalties_desc:0 "This leader doesn't seem to support the interests of the nation, as we've noticed them embezzling our income to enemy nations."
+  leader_trait_questionable_loyalties_tooltip:1 "While on the council, this leader is taking §R5%§! of monthly energy credits and giving them to a different country."

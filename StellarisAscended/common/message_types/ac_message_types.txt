@@ -1,0 +1,10 @@
+message_type = {
+	key = "MESSAGE_AC_SHROUD_BREACH"
+	icon = "GFX_message_ac_shroud_breach"
+	icon_frame = 1
+	auto_opens = None
+	name = "MESSAGE_AC_SHROUD_BREACH_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+	category = fleets
+}

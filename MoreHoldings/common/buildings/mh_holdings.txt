@@ -1,0 +1,398 @@
+mh_synaptic_packager = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_synaptic_packager
+	base_cap_amount = 1
+	category = research
+	allow = {
+		custom_tooltip = {
+			fail_text = is_capital
+			exists = planet
+			planet = {
+				is_capital = yes
+			}
+		}
+	}
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	planet_modifier = {
+		monthly_loyalty = -1.5
+	}
+	potential = {
+		exists = planet.owner.overlord
+		owner.overlord = {
+			has_ascension_perk = ap_cosmogenesis
+		}
+	}
+	triggered_desc = {
+		text = holding_mh_synaptic_packager_desc
+	}
+}
+
+mh_interstellar_embassy = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_interstellar_embassy
+	base_cap_amount = 1
+	category = government
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = overlord_is_homicidal
+			exists = owner.overlord
+			owner.overlord = {
+				is_homicidal = no
+			}
+		}
+	}
+	country_modifier = {
+		country_trust_cap_add = 10
+		country_trust_growth = 0.05
+	}
+	planet_modifier = {
+		monthly_loyalty = 0.25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_politician_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		text = job_politician_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_coordinator_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = yes
+			}
+		}
+		text = job_coordinator_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = no
+			}
+		}
+		modifier = {
+			job_synapse_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_machine_empire = no
+			}
+		}
+		text = job_synapse_drone_effect_desc
+	}
+}
+
+mh_telepathic_outpost = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_telepathic_outpost
+	base_cap_amount = 1
+	category = government
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	potential = {
+		exists = planet.owner
+		owner = {
+			is_gestalt = no
+		}
+		exists = planet.owner.overlord
+		owner.overlord = {
+			has_tradition = tr_psionics_psi_corps
+		}
+	}
+	country_modifier = {
+		shroud_delve_cooldown = -0.05
+	}
+	planet_modifier = {
+		job_mh_overlord_telepath_add = 2
+		pop_ethic_spiritualist_attraction_mult = 0.05
+	}
+	triggered_desc = {
+		text = holding_mh_telepathic_outpost_desc
+	}
+	triggered_desc = {
+		text = job_mh_overlord_telepath_effect_desc
+	}
+}
+
+mh_offworld_refinery = {
+	base_buildtime = @b2_time
+	owner_type = subject_holding
+	icon = holding_mh_offworld_refinery
+	base_cap_amount = 1
+	category = manufacturing
+	allow = {
+		custom_tooltip = {
+			fail_text = subject_is_prospectorium
+			exists = planet.owner
+			planet.owner = {
+				is_specialist_subject_type = {
+					TYPE = prospectorium
+				}
+			}
+		}
+	}
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+	planet_modifier = {
+		monthly_loyalty = -1.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_mh_overlord_refiner_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_catalytic_empire = no
+			}
+		}
+		text = job_mh_overlord_refiner_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_mh_overlord_refiner_effect_catalytic_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_mh_overlord_refiner_drone_add = 2
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_catalytic_empire = no
+			}
+		}
+		text = job_mh_overlord_refiner_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_mh_overlord_refiner_drone_effect_catalytic_desc
+	}
+	destroy_trigger = {
+		exists = planet.owner
+		planet.owner = {
+			NOT = {
+				is_specialist_subject_type = {
+					TYPE = prospectorium
+				}
+			}
+		}
+	}
+}
+
+mh_mission_holding = {
+	base_buildtime = @b1_time
+	owner_type = subject_holding
+	icon = holding_mh_mission_holding
+	base_cap_amount = 1
+	category = amenity
+	resources = {
+		category = planet_holdings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_lithoid = yes
+				}
+			}
+			minerals = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					OR = {
+						is_machine_empire = yes
+						is_mechanical_empire = yes
+					}
+				}
+			}
+			energy = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = planet.owner
+				planet.owner = {
+					is_lithoid = no
+					is_machine_empire = no
+					is_mechanical_empire = no
+				}
+			}
+			food = 10
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = overlord_is_homicidal
+			exists = owner.overlord
+			owner.overlord = {
+				is_homicidal = no
+			}
+		}
+	}
+	potential = {
+		exists = planet.owner
+		owner = {
+			is_gestalt = no
+		}
+		exists = planet.owner.overlord
+		owner.overlord = {
+			is_spiritualist = yes
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = {
+				is_gestalt = no
+			}
+		}
+		job_aid_worker_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = {
+				is_gestalt = yes
+			}
+		}
+		job_aid_worker_drone_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = {
+				is_materialist = yes
+			}
+		}
+		monthly_loyalty = -0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = {
+				is_spiritualist = yes
+			}
+		}
+		monthly_loyalty = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet.owner
+			planet.owner = {
+				is_spiritualist = no
+				is_gestalt = no
+			}
+		}
+		pop_ethic_spiritualist_attraction_mult = 0.5
+	}
+
+	triggered_desc = {
+		text = job_aid_worker_effect_desc
+	}
+}

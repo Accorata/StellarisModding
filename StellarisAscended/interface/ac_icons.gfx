@@ -1,0 +1,105 @@
+spriteTypes = {
+	# ASCENSION PERKS -----------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ap_ac_ascended_society"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_ac_ascended_society.dds"
+		alwaystransparent = yes
+	}
+
+	# LEADER TRAITS --------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_leader_trait_programmed_loyalty"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_programmed_loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_machine_crusader"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_machine_crusader.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_genetically_superior"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_genetically_superior.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_brilliance"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_brilliant.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_tetrochromat"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_tetrochromat.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_evolving"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_evolving.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_enigmatic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_enigmatic.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_mutant_shapeshifter"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_mutant_shapeshifter.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_end_vessel"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_end_vessel.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_visions_of_doom"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_visions_of_doom.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_restored_sanity"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_restored_sanity.dds"
+	}
+	
+	# STARBASE MODULES -----------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ac_bandwidth_router_sb"
+		texturefile = "gfx/interface/icons/modules/sb_ac_bandwidth_router.dds"
+	}
+
+	# COLONY TYPES ---------------------------------------------------------------------------
+	# testing:
+	spriteType = {
+		name = "GFX_ac_city_template"
+		textureFile = "gfx/interface/planetview/ac_coloy_types/ac_city_template.dds"
+	}
+
+	# COUNCIL AGENDAS ------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_council_agenda_icon_ac_shroud_invocation" 
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_ac_shroud_invocation.dds"
+	}
+
+	# RELICS ---------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_relic_ac_assimilation_engine"
+		texturefile = "gfx/interface/icons/relics/r_ac_assimilation_engine.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_ac_assimilation_engine_shine_core.dds"
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 0			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 6				# in seconds
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"      # add, multiply, overlay
+			animationtype = "pulsing"      	# scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_ac_assimilation_engine_shine_tubes.dds"
+			animationtexturefile = "gfx/interface/icons/relics/shine_overlay_02.dds" 	# <- the animated file
+			animationrotation = 0			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 6				# in seconds
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"      # add, multiply, overlay
+			animationtype = "scrolling"     # scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

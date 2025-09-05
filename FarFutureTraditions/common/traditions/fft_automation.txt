@@ -1,0 +1,105 @@
+tr_fft_automation_adopt = {
+	possible = {
+		OR = {
+			has_technology = tech_binary_motivators
+			has_technology = tech_robomodding_points_1
+		}
+	}
+	# unlocks_agenda = agenda_???
+	modifier = {
+		planet_pop_assembly_mult = 0.1
+	}
+}
+
+tr_fft_automation_finish = {
+	modifier = {
+
+		ascension_perks_add = 1
+	}
+}
+
+tr_fft_automation_overloaded_synthesis = {
+	modifier = {
+		planet_buildings_produces_mult = 0.15
+		starbase_constructions_produces_mult = 0.15
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_automation_prefabricated_assembly = {
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.1
+		planet_building_build_speed_mult = 0.1
+		planet_decision_enact_speed_mult = 0.1
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_automation_artificial_eclipse = {
+	possible = {
+		has_tradition = tr_fft_automation_overloaded_synthesis
+		has_tradition = tr_fft_automation_prefabricated_assembly
+	}
+	modifier = {
+		planet_jobs_robotic_produces_mult = 0.25
+		planet_pop_assemblers_unity_produces_add = 1
+	}
+	tradition_swap = {
+		name = tr_fft_automation_artificial_eclipse_machine
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_individual_machine = yes
+		}
+		modifier = {
+			planet_jobs_produces_mult = 0.5
+			planet_pop_assemblers_unity_produces_add = 1
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_automation_extravagant_abundance = {
+	possible = {
+		has_tradition = tr_fft_automation_artificial_eclipse
+	}
+	custom_tooltip = tr_fft_automation_extravagant_abundance_tooltip
+	tradition_swap = {
+		name = tr_fft_automation_extravagant_abundance_gestalt
+		inherit_icon = yes
+		trigger = {
+			is_gestalt = yes
+		}
+		modifier = {
+			planet_jobs_unity_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	ai_weight = {
+		factor = 750
+	}
+}
+
+tr_fft_automation_comfortable_living = {
+	possible = {
+		has_tradition = tr_fft_automation_artificial_eclipse
+	}
+	modifier = {
+		pop_citizen_happiness = 0.025
+		planet_pops_upkeep_mult = -0.10
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}

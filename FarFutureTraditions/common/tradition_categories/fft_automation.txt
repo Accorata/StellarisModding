@@ -1,0 +1,33 @@
+tradition_fft_automation = {
+	tree_template = "tree_21_12"
+	adoption_bonus = "tr_fft_automation_adopt"
+	finish_bonus = "tr_fft_automation_finish"
+	traditions = {
+		"tr_fft_automation_overloaded_synthesis"
+		"tr_fft_automation_prefabricated_assembly"
+		"tr_fft_automation_artificial_eclipse"
+		"tr_fft_automation_extravagant_abundance"
+		"tr_fft_automation_comfortable_living"
+	}
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 2
+			OR = {
+				is_machine_empire = yes
+				is_individual_machine = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_machine_astromining_drones
+		}
+		modifier = {
+			factor = 5
+			has_tradition = tr_nanotech_finish
+		}
+	}
+	potential = {
+		is_hive_empire = no
+	}
+}

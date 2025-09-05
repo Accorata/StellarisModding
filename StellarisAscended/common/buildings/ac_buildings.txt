@@ -1,0 +1,611 @@
+# Telepathic Empire (required for update 4.0)
+building_ac_psi_tower = {
+	base_buildtime = @b2_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_telepathic_empire = yes
+		}
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		has_ac_major_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_telepathic_empire = no
+		}
+	}
+	planet_modifier = {
+		job_telepath_per_pop = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
+		job_politician_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_authority = auth_corporate
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_authority = auth_corporate
+				}
+				is_regular_empire = yes
+			}
+		}
+		text = job_politician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_megacorp = yes
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}
+
+# Renouncers of the Shroud
+building_ac_renouncer_sanctum = {
+	base_buildtime = @b3_time
+	category = government
+	empire_limit = {
+		base = 1
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_shroud_renouncer = yes
+		}
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		has_ac_major_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_shroud_renouncer = no
+		}
+	}
+	planet_modifier = {
+		job_telepath_add = 3
+	}
+	country_modifier = {
+		pop_happiness = 0.05
+		planet_jobs_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+	}
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}
+
+# Blossoming Worlds
+building_ac_grand_sapling = {
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		has_ac_upgraded_capital = yes
+		OR = {
+			is_planet_class = pc_hive
+			pd_is_planet_class_gaia = yes
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+	planet_modifier = {
+		job_ac_content_terraformer_add = 1
+		planet_farmers_food_produces_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_councilor = {
+					COUNCILOR = "councilor_blossoming_worlds"
+				}
+			}
+		}
+		pop_happiness = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		pop_happiness = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = @b2_minerals
+		}
+		upkeep = {
+			food = @b2_upkeep
+		}
+	}
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+building_ac_hanging_cities = {
+	base_buildtime = @b1_time
+	category = government
+	base_cap_amount = 1
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = yes
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	allow = {
+		has_ac_upgraded_capital = yes
+		OR = {
+			is_planet_class = pc_hive
+			pd_is_planet_class_gaia = yes
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_blossoming = no
+		}
+	}
+	planet_modifier = {
+		job_ac_content_terraformer_add = 1
+		planet_housing_add = 8
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_councilor = {
+					COUNCILOR = "councilor_blossoming_worlds"
+				}
+			}
+		}
+		planet_jobs_produces_mult = 0.02
+		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		planet_jobs_produces_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			minerals = @b2_upkeep
+		}
+	}
+	triggered_desc = {
+		text = job_solarpunk_anarchist_effect_desc
+	}
+}
+
+# Xanadu Retreats
+building_ac_xanadu = {
+	base_buildtime = @b2_time
+	category = amenity
+	base_cap_amount = 1
+	potential = {
+		NOT = {
+			has_modifier = slave_colony
+		}
+		exists = owner
+		owner = {
+			is_ac_xanadu = yes
+		}
+	}
+	allow = {
+		pd_is_planet_class_gaia = yes
+		has_ac_upgraded_capital = yes
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_xanadu = no
+		}
+	}
+	country_modifier = {
+		pop_growth_from_immigration = 0.1
+		planet_immigration_pull_mult = 0.1
+	}
+	planet_modifier = {
+		job_resort_worker_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			job_steward_add = 2
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = no
+			}
+		}
+		text = job_executive_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_worker_coop_empire = yes
+			}
+		}
+		text = job_steward_effect_desc
+	}
+	triggered_desc = {
+		text = job_resort_worker_effect_desc
+	}
+}
+
+# Cybergladiation
+building_ac_undercity_arena = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = amenity
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator = yes
+		}
+	}
+	allow = {
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator = no
+		}
+	}
+	country_modifier = {
+		army_damage_mult = 0.1
+	}
+	planet_modifier = {
+		job_cyberdome_duelist_add = 2
+		job_cyberdome_spectator_add = 2
+		army_starting_experience_add = 50
+		planet_crime_add = 10
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	# triggered_desc = {
+	# 	text = job_cyberdome_duelist_effect_desc
+	# }
+	# triggered_desc = {
+	# 	text = job_cyberdome_spectator_effect_desc
+	# }
+}
+
+building_ac_cybernetics_stadium = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = research
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator_machine = yes
+		}
+	}
+	allow = {
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_cybergladiator_machine = no
+		}
+	}
+	planet_modifier = {
+		# job_ac_cybergladiator_drone_add = 2
+		# ...
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	triggered_desc = {
+		text = job_ac_cybergladiator_drone_effect_desc
+	}
+}
+
+# Synthetic Celestials
+building_ac_mega_forge = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	category = manufacturing
+	allow = {
+		has_ac_major_upgraded_capital = yes
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_world_builders = yes
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			is_ac_world_builders = no
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			alloys = 80
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_ac_world_builders = yes
+			}
+		}
+		job_ac_grand_synthesizer_add = 2
+	}
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_ac_world_builders = yes
+			}
+		}
+		job_ac_grand_synthesizer_per_pop = 0.04
+	}
+	triggered_desc = {
+		text = job_ac_grand_synthesizer_effect_desc
+	}
+}
+
+# Oligarchic Order Authority
+building_ac_order_hall = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	category = government
+	allow = {
+		has_ac_major_upgraded_capital = yes
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_oligarchic_authority = yes
+			has_country_flag = ac_psionic_divine
+			NOT = {
+				has_origin = origin_toxic_knights
+			}
+		}
+	}
+	destroy_trigger = {
+		OR = {
+			NOT = {
+				exists = owner
+				owner = {
+					is_oligarchic_authority = yes
+					has_country_flag = ac_psionic_divine
+				}
+			}
+			AND = {
+				exists = owner
+				owner = {
+					has_origin = origin_toxic_knights
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_ac_normal_knight_add = 2
+		job_ac_normal_knight_per_pop = 0.05
+		planet_amenities_add = 10
+	}
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+		category = planet_buildings
+	}
+	triggered_desc = {
+		text = job_ac_normal_knight_effect_desc
+	}
+}
+
+building_ac_order_hall_knights = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	empire_limit = 1
+	icon = building_ac_order_hall
+	category = government
+	allow = {
+		has_ac_major_upgraded_capital = yes
+	}
+	potential = {
+		exists = owner
+		owner = {
+			is_oligarchic_authority = yes
+			has_country_flag = ac_psionic_divine
+			has_origin = origin_toxic_knights
+		}
+	}
+	destroy_trigger = {
+		NOT = {
+			exists = owner
+			owner = {
+				is_oligarchic_authority = yes
+				has_country_flag = ac_psionic_divine
+				has_origin = origin_toxic_knights
+			}
+		}
+	}
+	planet_modifier = {
+		job_knight_add = 2
+		job_knight_per_pop = 0.05
+		planet_amenities_add = 10
+	}
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+		category = planet_buildings
+	}
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+}

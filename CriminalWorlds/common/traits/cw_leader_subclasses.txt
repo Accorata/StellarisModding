@@ -1,0 +1,157 @@
+@ai_selection_high = 5
+@ai_selection_low = 0.1
+
+subclass_cw_official_racketeer = {
+	custom_subtitle = official_subclass
+	leader_trait_type = subclass
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = official_cw_racketeer
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = cw_racketeer_subclass_tt
+
+	planet_modifier = {
+		pop_category_criminals_produces_mult = 0.2
+		pop_category_criminals_upkeep_mult = 0.2
+	}
+	sector_modifier = {
+		pop_category_criminals_produces_mult = 0.1
+		pop_category_criminals_upkeep_mult = 0.1
+	}
+
+	leader_potential_add = {
+		is_heir = no
+		owner = {
+			OR = {
+				has_tradition = tr_cw_criminality_finish
+				has_tradition = tr_cw_deviancy_finish
+			}
+		}
+	}
+
+	leader_class = { official }
+
+	ai_weight = {
+		modifier = {
+			is_councilor = yes
+			factor = @ai_selection_low
+		}
+		modifier = {
+			is_councilor = no
+			factor = @ai_selection_high
+		}
+		modifier = {
+			exists =  planet
+			factor = @ai_selection_high
+		}
+		modifier = {
+			NOT = { exists = planet }
+			factor = @ai_selection_low
+		}
+	}
+
+	background_icon = "GFX_leader_subclass_official_cw_racketeer_background"
+}
+
+subclass_cw_commander_privateer = {
+	custom_subtitle = commander_subclass
+	leader_trait_type = subclass
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = commander_cw_privateer
+		COUNCIL = no
+	}
+	custom_tooltip_with_modifiers = cw_privateer_subclass_tt
+	triggered_modifier = {
+		potential = {
+			cw_has_stealing_ship_dlc = yes
+		}
+		ship_steal_defeated_ship_chance = 0.05
+		ship_speed_mult = 0.05
+	}
+	triggered_modifier = {
+		potential = {
+			cw_has_stealing_ship_dlc = no
+		}
+		create_debris_chance = 0.50
+		ship_speed_mult = 0.05
+	}
+	leader_potential_add = {
+		is_heir = no
+		owner = {
+			OR = {
+				has_tradition = tr_cw_criminality_finish
+				has_tradition = tr_cw_deviancy_finish
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			is_councilor = yes
+			factor = @ai_selection_low
+		}
+		modifier = {
+			is_councilor = no
+			factor = @ai_selection_high
+		}
+		modifier = {
+			exists = fleet
+			NOT = {
+				fleet = {
+					is_ship_class = shipclass_transport
+				}
+			}
+			factor = @ai_selection_high
+		}
+		modifier = {
+			NOT = {
+				exists = fleet
+			}
+			factor = @ai_selection_low
+		}
+	}
+	leader_class = {
+		commander
+	}
+	background_icon = "GFX_leader_subclass_commander_cw_privateer_background"
+}
+
+subclass_cw_scientist_hacker = {
+	custom_subtitle = councilor_subclass_scientist
+	leader_trait_type = subclass
+	inline_script = {
+		script = trait/icon_subclass
+		SUBCLASS = scientist_cw_hacker
+		COUNCIL = yes
+	}
+	custom_tooltip_with_modifiers = cw_hacker_subclass_tt
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		add_base_country_intel = 10
+	}
+	leader_potential_add = {
+		owner = {
+			has_tradition = tr_cw_criminality_finish
+		}
+	}
+	ai_weight = {
+		modifier = {
+			is_councilor = yes
+			factor = @ai_selection_high
+		}
+		modifier = {
+			is_councilor = no
+			factor = @ai_selection_low
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	background_icon = "GFX_leader_subclass_scientist_cw_hacker_background"
+}

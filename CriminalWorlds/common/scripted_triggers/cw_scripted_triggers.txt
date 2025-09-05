@@ -1,0 +1,130 @@
+cw_has_stealing_ship_dlc = {
+	has_grand_archive_dlc = yes
+}
+
+cw_has_confusion_dlc = {
+	has_biogenesis_dlc = yes
+}
+
+cw_is_criminal_planet = {
+	OR = {
+		has_modifier = criminal_underworld
+		has_modifier = drone_deviancy
+		has_modifier = drone_corruption
+		has_modifier = gang_wars
+		has_modifier = center_of_drug_trade
+		has_modifier = mob_rule
+		has_modifier = crime_lord_deal_broken
+	}
+}
+
+has_cw_underworld_slums = {
+	OR = {
+		has_modifier = cw_underground_slums_1
+		has_modifier = cw_underground_slums_2
+		has_modifier = cw_underground_slums_1_robot
+		has_modifier = cw_underground_slums_2_robot
+		has_modifier = cw_underground_slums_1_hive
+		has_modifier = cw_underground_slums_2_hive
+		has_modifier = cw_underground_slums_1_machine
+		has_modifier = cw_underground_slums_2_machine
+	}
+}
+
+has_cw_galactic_criminal_presense = {
+	exists = event_target:cw_criminal_enterprise
+}
+
+has_cw_criminal_enclave_event = {
+	has_active_event = {
+		# Main Menus
+		cw_enclave.302		# Racketeers
+		cw_enclave.303		# Privateers
+		cw_enclave.304		# Hackers
+		# Racketeers
+		cw_enclave.400		# Smuggled Arms 
+		cw_enclave.401		# Illegal Drugs 
+		cw_enclave.403		# Smuggled Arms Renewal
+		cw_enclave.404		# Illegal Drugs Renewal
+		cw_enclave.402		# Hire Leader
+		cw_enclave.407		# Slaves
+		cw_enclave.409		# Bribery
+		# Privateers
+		cw_enclave.503		# Harass Rivals Menu
+		cw_enclave.504		# Harass Rivals Confirmation
+		cw_enclave.505		# Harass Denied
+		# Hackers
+		cw_enclave.600		# Skeleton Key
+		cw_enclave.601		# Skeleton Key Renewal
+		cw_enclave.602		# Hack Rivals Menu
+		cw_enclave.603		# Hack Rivals Selection
+		cw_enclave.604		# Hack Denied
+		cw_enclave.608		# Hire Leader
+	}
+}
+
+has_met_cw_criminal_enclave = {
+	OR = {
+		has_country_flag = cw_met_racketeer_enclave
+		has_country_flag = cw_met_privateer_enclave
+		has_country_flag = cw_met_hacker_enclave
+	}
+}
+
+cw_can_be_enslaved = {
+	NOR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+		has_modifier = cw_bribed_racketeers
+	}
+}
+
+cw_can_be_harassed = {
+	NOR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+		has_modifier = cw_bribed_privateers
+		# Pirate Warlords are also protected
+		has_tradition = tr_cw_criminality_pirate_warlord
+		has_tradition = tr_cw_deviancy_pirate_warlord
+	}
+}
+
+cw_can_be_hacked = {
+	NOR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+		has_modifier = cw_bribed_hackers
+	}
+}
+
+has_cw_hacker_focus = {
+	OR = {
+		has_trait_tier1or2or3 = {
+			TRAIT = leader_trait_cw_infiltration_focus
+		}
+		has_trait_tier1or2or3 = {
+			TRAIT = leader_trait_cw_manipulation_focus
+		}
+		has_trait_tier1or2or3 = {
+			TRAIT = leader_trait_cw_provocation_focus
+		}
+		has_trait_tier1or2or3 = {
+			TRAIT = leader_trait_cw_sabotage_focus
+		}
+		has_trait_tier1or2or3 = {
+			TRAIT = leader_trait_cw_subterfuge_focus
+		}
+	}
+}
+
+has_any_cw_privateer_speciality = {
+	OR = {
+		has_trait = leader_trait_cw_rocketry_specialization
+		has_trait = leader_trait_cw_gunship_specialization
+		has_trait = leader_trait_cw_stealth_specialization
+		has_trait = leader_trait_cw_rocketry_specialization_2
+		has_trait = leader_trait_cw_gunship_specialization_2
+		has_trait = leader_trait_cw_stealth_specialization_2
+	}
+}

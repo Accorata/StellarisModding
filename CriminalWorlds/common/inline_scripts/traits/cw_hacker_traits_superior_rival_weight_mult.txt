@@ -1,0 +1,12 @@
+modifier = {
+	owner = {
+		is_rival_$FIELD$_superior = yes
+	}
+	factor = @job_weight_mult
+}
+modifier = {
+	owner = {
+		is_rival_$FIELD$_superior = no
+	}
+	factor = @job_weight_opp_mult
+}

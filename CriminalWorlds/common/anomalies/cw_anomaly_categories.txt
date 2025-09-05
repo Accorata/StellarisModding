@@ -1,0 +1,67 @@
+# Criminal Stockpile (Asteroid)
+cw_criminal_stockpile_cat = {
+	picture = GFX_evt_ice_asteroids
+	level = 3
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			is_asteroid = yes
+		}
+		modifier = {
+			factor = 3
+			has_cw_galactic_criminal_presense = yes
+		}
+	}
+
+	on_success = {
+		1 = cw_anomaly.1
+		1 = cw_anomaly.2
+	}
+}
+
+# Ruined Undercity
+cw_ruined_undercity_cat = {
+	picture = GFX_evt_habitable_dig_site
+	level = 4
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			habitable_planet = yes
+		}
+		modifier = {
+			factor = 0
+			from.owner = { 
+				is_gestalt = yes 
+			}
+		}
+	}
+
+	on_success = cw_anomaly.3
+}
+
+# Sinister Dreams
+cw_sinister_dreams_cat = {
+	picture = GFX_evt_zro_2
+	level = 3
+
+	spawn_chance = {
+		modifier = {
+			add = 3
+			habitable_planet = yes
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				from.owner = { is_gestalt = yes }
+				is_artificial = yes
+			}
+		}
+	}
+
+	on_success = {
+		1 = cw_anomaly.4
+		1 = cw_anomaly.5
+	}
+}

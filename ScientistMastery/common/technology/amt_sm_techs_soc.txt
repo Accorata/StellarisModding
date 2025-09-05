@@ -1,0 +1,665 @@
+tech_sm_replication_nexus = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { biology }
+	tier = 3
+	prerequisites = { "tech_gene_crops" "tech_food_processing_2" }
+	is_custom_tech_2 = yes
+
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_biology
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_neuron_revitalizers = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { biology }
+	tier = 3
+	prerequisites = { "tech_frontier_hospital" "tech_vitality_boosters" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		leader_lifespan_add = 5
+	}
+	weight = @sm_leader_insight_weight
+
+	potential = {
+		is_natural_design_empire = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_biology
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			has_valid_civic = civic_private_healthcare_corporate
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_genetic_memory = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { biology }
+	tier = 4
+	prerequisites = { "tech_galactic_administration" "tech_gene_tailoring" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		country_scientist_cap_add = 1
+		leaders_upkeep_mult = -0.025
+	}
+	weight = @sm_leader_insight_weight
+
+	potential = {
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_individual_machine = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_biology
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_modular_taxonomy = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { biology }
+	tier = 3
+	prerequisites = { "tech_alien_life_studies" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_researchers_society_research_produces_mult = 0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_biology
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_limited_shapeshifting = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "tech_gene_tailoring" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		spy_network_daily_value_mult = 0.10
+		army_morale_damage_mult = 0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	potential = {
+		NOR = {
+			has_authority = auth_machine_intelligence
+			is_individual_machine = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_statecraft
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_biomimetic_disguises = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "tech_biomechanics" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		spy_network_daily_value_mult = 0.10
+		army_morale_damage_mult = 0.05
+	}
+	weight = @sm_leader_insight_weight
+
+	potential = {
+		OR = {
+			has_authority = auth_machine_intelligence
+			is_individual_machine = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_statecraft
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_neural_identities = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { statecraft }
+	tier = 3
+	prerequisites = { "tech_slave_colonies" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		pop_cat_slave_happiness = 0.1
+		pop_cat_slave_political_power = -0.25
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.0
+			OR = {
+				allows_slavery = no
+				NOT = { any_owned_pop = { is_enslaved = yes } }
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_statecraft
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			count_owned_pop = {
+				limit = {
+					is_enslaved = yes
+				}
+				count > 9
+			}
+		}
+		modifier = {
+			factor = 2
+			count_owned_pop = {
+				limit = {
+					is_enslaved = yes
+				}
+				count > 19
+			}
+		}
+		modifier = {
+			factor = 2
+			count_owned_pop = {
+				limit = {
+					is_enslaved = yes
+				}
+				count > 29
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_dynamic_heat_shielding = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { new_worlds }
+	tier = 3
+	prerequisites = { "tech_colonization_3" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		pc_desert_habitability = 0.1
+		pc_arid_habitability = 0.1
+		pc_savannah_habitability = 0.1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_new_worlds
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					OR = {
+						is_planet_class = pc_desert
+						is_planet_class = pc_arid
+						is_planet_class = pc_savannah
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_mastery_of_nature
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_predictive_hydrodynamics = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { new_worlds }
+	tier = 3
+	prerequisites = { "tech_colonization_3" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		pc_tropical_habitability = 0.1
+		pc_continental_habitability = 0.1
+		pc_ocean_habitability = 0.1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_new_worlds
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					OR = {
+						is_planet_class = pc_tropical
+						is_planet_class = pc_continental
+						is_planet_class = pc_ocean
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_mastery_of_nature
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_subdermal_living = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { new_worlds }
+	tier = 3
+	prerequisites = { "tech_colonization_3" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		pc_tundra_habitability = 0.1
+		pc_arctic_habitability = 0.1
+		pc_alpine_habitability = 0.1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_new_worlds
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					OR = {
+						is_planet_class = pc_tundra
+						is_planet_class = pc_arctic
+						is_planet_class = pc_alpine
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_mastery_of_nature
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_unified_spirit = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { new_worlds }
+	tier = 4
+	prerequisites = { "tech_unity_of_purpose" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planetary_ascension_cost_mult = -0.05	
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_new_worlds
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_esoteric_strategies = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { military_theory }
+	tier = 5
+	prerequisites = { "tech_doctrine_fleet_size_5" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		command_limit_add = 10
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_military_theory
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 2
+			is_xenophile = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_strategos_refinement = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { military_theory }
+	tier = 5
+	prerequisites = { "tech_galactic_administration" "tech_global_defense_grid" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		country_commander_cap_add = 1
+		army_damage_mult = 0.1
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_military_theory
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_omnigravitational_warfare = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { military_theory }
+	tier = 4
+	prerequisites = { "tech_combat_training" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		army_damage_taken_mult = -0.10
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_military_theory
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_intrasolar_positioning = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { military_theory }
+	tier = 3
+	prerequisites = { "tech_interstellar_fleet_traditions" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		ship_friendly_territory_fire_rate_mult = 0.1
+		ship_community_territory_speed_mult = 0.1 #test...
+	}
+	weight = @sm_leader_insight_weight
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_military_theory
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_telepathic_shielding = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { psionics }
+	tier = 4
+	prerequisites = { "tech_telepathy" }
+	is_custom_tech_2 = yes
+	is_rare = yes
+
+	modifier = {
+		army_morale_damage_taken_mult = -0.1
+	}
+	weight = @sm_leader_insight_weight_psionic
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_psionics
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_mental_manipulation = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { psionics }
+	tier = 3
+	prerequisites = { "tech_psionic_theory" }
+	is_custom_tech_2 = yes
+	is_rare = yes
+
+	modifier = {
+		espionage_operation_difficulty_add = -1
+	}
+	weight = @sm_leader_insight_weight_psionic
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_psionics
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+tech_sm_ancient_secrets = {
+	cost = @sm_leader_insight_cost
+	area = society
+	category = { archaeostudies }
+	tier = 3
+	prerequisites = { "tech_arcane_deciphering" }
+	is_custom_tech_2 = yes
+	is_rare = yes
+
+	modifier = {
+		all_technology_research_speed = 0.03
+		planet_researchers_upkeep_mult = 0.03
+	}
+	weight = @sm_leader_insight_weight_archeo
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_trait_in_council = { 
+					TRAIT = leader_trait_sm_mastery_archaeostudies
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}

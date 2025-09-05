@@ -1,0 +1,486 @@
+namespace = criminal_worlds
+# Criminal Worlds Crime Gatekeeper
+event = {
+	id = criminal_worlds.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+				any_owned_planet = {
+					OR = {
+						cw_is_criminal_planet = yes
+						has_modifier = crime_lord_deal
+					}
+					NOT = {
+						has_planet_flag = planet_cw_crime_flag
+					}
+				}
+			}
+			country_event = {
+				id = criminal_worlds.2
+			}
+		}
+	}
+}
+
+# Criminal Worlds Crime Gatekeeper (Non-Gestalt)
+country_event = {
+	id = criminal_worlds.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				OR = {
+					cw_is_criminal_planet = yes
+					has_modifier = crime_lord_deal
+				}
+				NOT = {
+					has_planet_flag = planet_cw_crime_flag
+				}
+			}
+			random_list = {
+				70 = {
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_corruption_1
+					}
+					planet_event = {
+						id = criminal_worlds.10
+						days = 1
+						random = 300
+					}
+				}
+				15 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_corruption_1
+						}
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							num_assigned_jobs = {
+								job = enforcer
+								value >= 1
+							}
+							has_available_jobs = enforcer
+						}
+					}
+					planet_event = {
+						id = criminal_worlds.11
+						days = 1
+						random = 300
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_corruption_2
+						}
+					}
+					modifier = {
+						factor = 0
+						NOR = {
+							num_assigned_jobs = {
+								job = politician
+								value >= 1
+							}
+							has_available_jobs = politician
+						}
+					}
+					modifier = {
+						factor = 2.5
+						has_modifier = mob_rule
+					}
+					planet_event = {
+						id = criminal_worlds.12
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_illegal_freeports
+					}
+					planet_event = {
+						id = criminal_worlds.20
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_shipyards
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+						}						
+					}
+					planet_event = {
+						id = criminal_worlds.21
+						days = 1
+						random = 300
+					}
+				}
+				15 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							has_modifier = cw_criminal_shipyards
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+						}						
+					}
+					planet_event = {
+						id = criminal_worlds.22
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_modifier = cw_mercenary_fighters
+							has_modifier = crime_lord_deal
+						}
+					}
+					planet_event = {
+						id = criminal_worlds.32
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_modifier = cw_open_crime
+							has_modifier = crime_lord_deal
+						}
+					}
+					planet_event = {
+						id = criminal_worlds.33
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_global_flag = cw_encountered_black_market_relic
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}						
+					}
+					planet_event = {
+						id = criminal_worlds.34
+						days = 1
+						random = 300
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_criminal_world_1
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.40
+						days = 1
+						random = 300
+					}
+				}
+				15 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_planet_flag = cw_recent_criminal_world_increase
+							NOT = {
+								has_modifier = cw_criminal_world_1
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.41
+						days = 1
+						random = 300
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_planet_flag = cw_recent_criminal_world_increase
+							NOT = {
+								has_modifier = cw_criminal_world_2
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.42
+						days = 1
+						random = 300
+					}
+				}
+				35 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_planet_flag = cw_recent_criminal_world_increase
+							NOT = {
+								has_modifier = cw_criminal_world_3
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.43
+						days = 1
+						random = 300
+					}
+				}
+				50 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_planet_flag = cw_recent_criminal_world_increase
+							NOT = {
+								has_modifier = cw_criminal_world_4
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.44
+						days = 1
+						random = 300
+					}
+				}
+				50 = {
+					modifier = {
+						factor = 0
+						OR = {
+							has_planet_flag = cw_recent_criminal_world_increase
+							NOT = {
+								has_modifier = cw_criminal_world_5
+							}
+						}
+					}
+					modifier = {
+						factor = 3
+						OR = {
+							has_modifier = mob_rule
+							has_modifier = crime_lord_deal
+							has_modifier = crime_lord_deal_broken
+						}
+					}
+					modifier = {
+						factor = 5
+						has_modifier = cw_corruption_3
+					}
+					planet_event = {
+						id = criminal_worlds.51
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_freedom_fighters
+					}
+					modifier = {
+						factor = 0
+						count_owned_pop_amount = {
+							limit = {
+								is_enslaved = yes
+								is_sapient = yes
+								pop_has_happiness = yes
+							}
+							count = 0
+						}
+					}
+					planet_event = {
+						id = criminal_worlds.45
+						days = 1
+						random = 300
+					}
+				}
+				5 = {
+					modifier = {
+						factor = 0
+						owner = {
+							has_country_flag = cw_illegal_slave_event_fired
+						}
+					}
+					modifier = {
+						factor = 3
+						has_cw_galactic_criminal_presense = yes
+					}
+					planet_event = {
+						id = criminal_worlds.48
+						days = 1
+						random = 300
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_modifier = cw_radical_media
+					}
+					planet_event = {
+						id = criminal_worlds.50
+						days = 1
+						random = 300
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = criminal_worlds.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_subterranean_empire = no
+		any_owned_planet = {
+			free_housing < -50
+			NOT = {
+				is_planet_class = pc_cosmogenesis_world
+			}
+		}
+	}
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				free_housing < -50
+			}
+			random_list = {
+				10 = {
+				}
+				10 = {
+					planet_event = {
+						id = criminal_worlds.6
+					}
+				}
+			}
+		}
+	}
+}
+
+event = {
+	id = criminal_worlds.46
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+				any_owned_planet = {
+					has_modifier = cw_freedom_fighters
+				}
+			}
+			random_owned_planet = {
+				limit = {
+					has_modifier = cw_freedom_fighters
+				}
+				random_list = {
+					40 = {
+					}
+					10 = {
+						planet_event = {
+							id = criminal_worlds.47
+							days = 1
+							random = 300
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+concept_ac_modular_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_modularity.dds"
+}
+
+concept_ac_nanotech_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_nanotech.dds"
+}
+
+concept_ac_virtual_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_virtuality.dds"
+}

@@ -1,0 +1,65 @@
+﻿l_english:
+  ac_mutated_trait:0 "Mutation: "
+
+# Common Traits
+  leader_trait_genetically_superior:0 "Genetically Superior"
+  leader_trait_genetically_superior_desc:0 "Our great ruler has defeated their competitors in the Games of Succession! Their genetics have been tested by natural selection and proven worthy."
+  leader_trait_ac_restored_sanity:0 "Restored Sanity"
+  leader_trait_ac_restored_sanity_desc:0 "Upon defeating the Dimensional Horror the terrible dreams ended replaced with a sense of renewed mental vigor."
+
+# Official Traits
+  
+# Commander traits
+## Bioform Eliminators
+  EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT:0 "For Every Enemy Biological Army Killed in Combat"
+# to be implemented
+  leader_trait_machine_crusader:0 "Machine Crusader"
+  leader_trait_machine_crusader_desc:0 "This leader is willing to do anything to reform organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
+  leader_trait_machine_crusader_2:0 "$leader_trait_machine_crusader$ II"
+  leader_trait_machine_crusader_2_desc:0 "$leader_trait_machine_crusader_desc$"
+  leader_trait_machine_crusader_3:0 "$leader_trait_machine_crusader$ III"
+  leader_trait_machine_crusader_3_desc:0 "$leader_trait_machine_crusader_desc$"
+  leader_trait_machine_crusader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+5§!\n$tt$$r_unity$: §G+25§!"
+  leader_trait_machine_crusader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
+  leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
+
+# Mutant Traits
+  # leader_trait_ac_mutant_plane_shifter:0 "$ac_mutated_trait$Planar Shifter"
+  # leader_trait_ac_mutant_plane_shifter_desc:0 "..."
+  leader_trait_ac_mutant_brilliance:0 "$ac_mutated_trait$Brilliance"
+  leader_trait_ac_mutant_brilliance_desc:0 "This leader's mutation has granted immense intelligence allowing this leader incredible success in their field."
+  leader_trait_ac_mutant_tetrochromat:0 "$ac_mutated_trait$Tetrochromat"
+  leader_trait_ac_mutant_tetrochromat_desc:0 "This leader's mutation allows them to see light wavelengths outside of the normal spectrum of our species's visibility."
+  leader_trait_ac_mutant_evolving:0 "$ac_mutated_trait$Auto-Evolving"
+  leader_trait_ac_mutant_evolving_desc:0 "This leader's mutation makes their genetics constantly rewrite themselves, granting new skills and abilities as time progresses."
+  leader_trait_ac_mutant_evolving_tooltip:0 "$t$Gains §G300§! Experience Each Year"
+  leader_trait_ac_mutant_shapeshifter:0 "$ac_mutated_trait$Shapeshifter"
+  leader_trait_ac_mutant_shapeshifter_desc:0 "This leader's mutation grants them the ability to shapeshift between forms, bestowing increased flexibility as well as adabtable (or threatening) xeno relations."
+  leader_trait_ac_mutant_shapeshifter_tooltip:0 "\n$PLANET_EFFECTS_TXT$:\n$t$Increase £stability£§YStability§! by §G1§! per Species on the Planet\n\n$SECTOR_EFFECTS_TXT$:\n$t$Increase £stability£§YStability§! by §G0.5§! per Species on the Planet"
+  leader_trait_ac_mutant_enigmatic:0 "$ac_mutated_trait$Enigmatic"
+  leader_trait_ac_mutant_enigmatic_desc:0 "This leader's mutation is poorly understood and serves as a study in itself, as researchers hope to glean the genetic processes behind their identity."
+  leader_trait_ac_mutant_enigmatic_tooltip:0 "§E$PLANET_EFFECTS_TXT$ per Skill Level:§!\n$t$$mod_planet_jobs_society_research_produces_mult$: §G+3%§!\n\n§E$SECTOR_EFFECTS_TXT$ per Skill Level:§!\n$t$$mod_planet_jobs_society_research_produces_mult$: §G+1.5%§!"
+
+# Negative Traits
+  leader_trait_ac_visions_of_doom:0 "Visions of Doom"
+  leader_trait_ac_visions_of_doom_desc:0 "An eldritch horror dances in this leaders dreams. Their sanity frays under the mental duress."
+  leader_trait_programmed_loyalty:0 "Programmed Loyalty"
+  leader_trait_programmed_loyalty_desc:0 "..."
+  leader_trait_programmed_loyalty_effect:0 "$t$§RThis leader will die if we are at war against our overlord.§!"
+  leader_trait_programmed_loyalty_gestalt:0 "$leader_trait_programmed_loyalty$"
+  leader_trait_programmed_loyalty_gestalt_desc:0 "$leader_trait_programmed_loyalty_desc$"
+  leader_trait_programmed_loyalty_gestalt_effect:0 "$t$§RThis leader will gain a terrible negative trait if we are at war against our overlord.§!"
+  leader_trait_corrupted_logic:0 "Corrupted Processes"
+  leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord as retribution for our retaliation."
+
+# Destiny Traits
+  leader_trait_ac_composer_vessel:0 "Vessel of the Composer"
+  leader_trait_ac_composer_vessel_desc:0 "Our ruler has been possessed by the Composer of Strands, granting great power to the empire."
+  leader_trait_ac_whisperers_vessel:0 "Vessel of the Whisperers"
+  leader_trait_ac_whisperers_vessel_desc:0 "Our ruler has been possessed by the Whisperers of the Void, granting great power to the empire."
+  leader_trait_ac_eater_vessel:0 "Vessel of the Eater"
+  leader_trait_ac_eater_vessel_desc:0 "Our ruler has been possessed by the Eater of Worlds, granting great power to the empire."
+  leader_trait_ac_instrument_vessel:0 "Vessel of the Instrument"
+  leader_trait_ac_instrument_vessel_desc:0 "Our ruler has been possessed by the Instrument of Desire, granting great power to the empire."
+  leader_trait_ac_end_vessel:0 "Vessel of the End"
+  leader_trait_ac_end_vessel_desc:0 "Our ruler has been possessed by the End of the Cycle, granting great power to the empire."

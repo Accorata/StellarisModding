@@ -1,0 +1,661 @@
+auth_democratic = {
+	advanced_authority_swap = {
+		name = "auth_ac_psi_teacher_democratic"
+		description = "auth_ac_psi_teacher_democratic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psi_teacher_advanced_government
+		}
+		modifier = {
+			pop_ethic_spiritualist_attraction_mult = 0.2
+			pop_citizen_happiness = 0.15
+			shroud_delve_cooldown = -0.1
+			planet_jobs_unity_produces_mult = 0.1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_democratic_divine"
+		description = "auth_ac_psionic_democratic_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+			pop_job_amenities_mult = 0.15
+			pop_category_workers_unity_produces_add = 0.5
+			pop_category_specialists_unity_produces_add = 0.25
+			pop_cat_worker_political_power = 1
+			pop_cat_specialist_political_power = 0.5
+			country_hostile_claim_influence_cost_mult = 0.1
+			country_war_exhaustion_mult = 0.5
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_democratic_eldritch"
+		description = "auth_ac_psionic_democratic_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+			pop_job_amenities_mult = 0.15
+			pop_factions_produces_mult = 1
+			faction_approval = -0.1
+			election_term_variance_add = 5
+			country_election_cost_mult = 1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_democratic_perfect"
+		description = "auth_ac_genetic_democratic_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			pop_citizen_happiness = 0.2
+			planet_pops_upkeep_mult = 0.1
+			custom_tooltip = auth_ac_genetic_democratic_perfect_effects
+			show_only_custom_tooltip = no
+			tradition_cost_empire_size_mult = -0.2
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_democratic_chaotic"
+		description = "auth_ac_genetic_democratic_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			pop_citizen_happiness = 0.2
+			planet_pops_upkeep_mult = 0.1
+			custom_tooltip = auth_ac_genetic_democratic_chaotic_effects
+			show_only_custom_tooltip = no
+			planet_immigration_pull_mult = 0.25
+		}
+	}
+}
+
+auth_oligarchic = {
+	advanced_authority_swap = {
+		name = "auth_ac_psi_teacher_oligarchic"
+		description = "auth_ac_psi_teacher_oligarchic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psi_teacher_advanced_government
+		}
+		modifier = {
+			pop_ethic_spiritualist_attraction_mult = 0.2
+			pop_citizen_happiness = 0.15
+			shroud_delve_cooldown = -0.1
+			planet_jobs_unity_produces_mult = 0.1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_divine"
+		description = "auth_ac_psionic_oligarchic_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+			NOT = {
+				has_origin = origin_toxic_knights
+			}
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			planet_stability_add = 5
+			custom_tooltip = auth_ac_psionic_oligarchic_divine_effects
+			show_only_custom_tooltip = no
+			pop_cat_worker_happiness = -0.1
+			empire_size_colonies_mult = 0.25
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_divine_toxic_god"
+		description = "auth_ac_psionic_oligarchic_divine_toxic_god_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+			has_origin = origin_toxic_knights
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			planet_stability_add = 5
+			custom_tooltip = auth_ac_psionic_oligarchic_divine_toxic_god_effects
+			show_only_custom_tooltip = no
+			pop_cat_worker_happiness = -0.1
+			empire_size_colonies_mult = 0.25
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch"
+		description = "auth_ac_psionic_oligarchic_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			NOR = {
+				has_modifier = covenant_composer_of_strands_0
+				has_modifier = covenant_eater_of_worlds_0
+				has_modifier = covenant_instrument_of_desire_0
+				has_modifier = covenant_whisperers_in_the_void_0
+				has_modifier = covenant_end_of_the_cycle
+			}
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = auth_ac_psionic_oligarchic_eldritch_effects
+			show_only_custom_tooltip = no
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_composer"
+		description = "auth_ac_psionic_oligarchic_eldritch_composer_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_composer_of_strands_0
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			pop_growth_speed = 0.1
+			pop_decline_speed = 0.1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_eater"
+		description = "auth_ac_psionic_oligarchic_eldritch_eater_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_eater_of_worlds_0
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			ship_orbital_bombardment_mult = 1
+			army_collateral_damage_mult = 1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_instrument"
+		description = "auth_ac_psionic_oligarchic_eldritch_instrument_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_instrument_of_desire_0
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			faction_approval = 0.25
+			country_trust_cap_add = -10
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_whisperer"
+		description = "auth_ac_psionic_oligarchic_eldritch_whisperer_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_whisperers_in_the_void_0
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			num_tech_alternatives_add = 2
+			planet_stability_add = -5
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_oligarchic_eldritch_end"
+		description = "auth_ac_psionic_oligarchic_eldritch_end_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+			has_modifier = covenant_end_of_the_cycle
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			custom_tooltip = unlocks_ac_ac_shroud_invocation
+			show_only_custom_tooltip = no
+			station_gatherers_produces_mult = 0.5
+			station_researchers_produces_mult = 0.5
+			planet_jobs_produces_mult = 0.5
+			country_naval_cap_mult = 0.5
+			country_starbase_capacity_add = 5
+			country_covenant_influence_produces_add = 2.5
+			planet_stability_add = -25
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_oligarchic_perfect"
+		description = "auth_ac_genetic_oligarchic_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			councilor_skill_add = 3
+			pop_government_ethic_attraction = -0.25
+			planet_researchers_produces_mult = 0.15
+			pop_cat_specialist_political_power = 0.5
+			species_leader_exp_gain = 0.25
+			country_leader_pool_size = -2
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_oligarchic_chaotic"
+		description = "auth_ac_genetic_oligarchic_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			councilor_skill_add = 3
+			pop_government_ethic_attraction = -0.25
+			custom_tooltip = auth_ac_genetic_oligarchic_chaotic_effects
+			show_only_custom_tooltip = no
+			country_leader_pool_size = 2
+			leaders_cost_mult = 0.25
+		}
+	}
+}
+
+auth_dictatorial = {
+	advanced_authority_swap = {
+		name = "auth_ac_psi_teacher_dictatorial"
+		description = "auth_ac_psi_teacher_dictatorial_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psi_teacher_advanced_government
+		}
+		modifier = {
+			pop_ethic_spiritualist_attraction_mult = 0.2
+			pop_citizen_happiness = 0.15
+			shroud_delve_cooldown = -0.1
+			planet_jobs_unity_produces_mult = 0.1
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_DICTATORIAL_SUCCESSION
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_dictatorial_divine"
+		description = "auth_ac_psionic_dictatorial_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+			empire_size_colonies_mult = -0.15
+			country_claim_influence_cost_mult = -0.1
+			pop_cat_ruler_happiness = 0.25
+			pop_cat_ruler_political_power = 0.5
+			pop_cat_specialist_happiness = -0.2
+			ruler_skill_add = 2
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_DICTATORIAL_SUCCESSION
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_dictatorial_eldritch"
+		description = "auth_ac_psionic_dictatorial_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+			empire_size_colonies_mult = -0.15
+			pop_government_ethic_attraction = 0.5
+			pop_ethics_shift_speed_mult = 0.5
+			planet_jobs_unity_produces_mult = -0.1
+			planet_stability_add = 5
+			edicts_upkeep_mult = -0.4
+			edicts_cost_mult = 1
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_DICTATORIAL_SUCCESSION
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_dictatorial_perfect"
+		description = "auth_ac_genetic_dictatorial_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			country_edict_fund_mult = 0.25
+			pop_cat_specialist_happiness = -0.15
+			pop_cat_ruler_political_power = 2
+			pop_cat_specialist_political_power = -0.5
+			pop_cat_worker_political_power = -0.75
+			planet_jobs_worker_produces_mult = 0.25
+			pop_demotion_time_mult = 0.5
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_DICTATORIAL_SUCCESSION
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_dictatorial_chaotic"
+		description = "auth_ac_genetic_dictatorial_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			country_edict_fund_mult = 0.25
+			pop_cat_specialist_happiness = -0.15
+			custom_tooltip = auth_ac_genetic_dictatorial_chaotic_effects
+			show_only_custom_tooltip = no
+			planet_soldiers_unity_produces_add = 1
+			army_morale = 0.15
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_DICTATORIAL_SUCCESSION
+		}
+	}
+}
+
+auth_imperial = {
+	advanced_authority_swap = {
+		name = "auth_ac_psi_teacher_imperial"
+		description = "auth_ac_psi_teacher_imperial_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psi_teacher_advanced_government
+		}
+		modifier = {
+			pop_ethic_spiritualist_attraction_mult = 0.2
+			pop_citizen_happiness = 0.15
+			shroud_delve_cooldown = -0.1
+			planet_jobs_unity_produces_mult = 0.1
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_HAS_HEIR
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_imperial_divine"
+		description = "auth_ac_psionic_imperial_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		ruler_council_position = councilor_ruler_imperial_ac_psionic_divine
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+			job_high_priest_per_pop = 0.04 #hmm...
+			planet_crime_add = -10
+			pop_ethic_spiritualist_attraction_mult = 0.5
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_HAS_HEIR
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_imperial_eldritch"
+		description = "auth_ac_psionic_imperial_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		ruler_council_position = councilor_ruler_imperial_ac_psionic_eldritch
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+			job_high_priest_per_pop = 0.04 #hmm...
+			planet_crime_add = -10
+			custom_tooltip = auth_ac_psionic_imperial_eldritch_effects
+			show_only_custom_tooltip = no
+			shroud_delve_cooldown = -0.1
+			pop_government_ethic_attraction = -0.25
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_HAS_HEIR
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_imperial_perfect"
+		description = "auth_ac_genetic_imperial_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		ruler_council_position = councilor_ruler_imperial_ac_genetic
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			country_edict_fund_mult = 0.4
+			pop_happiness = -0.1
+			custom_tooltip = auth_ac_genetic_imperial_perfect_effects
+			show_only_custom_tooltip = no
+			pop_cat_ruler_happiness = 0.1
+			all_technology_research_speed = -0.05
+			country_war_exhaustion_mult = -0.25
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_AC_CLONED
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_imperial_chaotic"
+		description = "auth_ac_genetic_imperial_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		ruler_council_position = councilor_ruler_imperial_ac_genetic
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			country_edict_fund_mult = 0.4
+			pop_happiness = -0.1
+			planet_jobs_ruler_produces_mult = 0.25
+			pop_cat_ruler_happiness = 0.25
+			pop_cat_ruler_political_power = 1
+			pop_cat_worker_political_power = -0.5
+			pop_category_workers_society_research_produces_add = 1
+			ship_orbital_bombardment_mult = 0.25
+		}
+		tags = {
+			AUTHORITY_SUCCESSION_TYPE
+			AUTHORITY_HAS_HEIR
+		}
+	}
+}
+
+auth_corporate = {
+	advanced_authority_swap = {
+		name = "auth_ac_psi_teacher_corporate"
+		description = "auth_ac_psi_teacher_corporate_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psi_teacher_advanced_government
+		}
+		modifier = {
+			pop_ethic_spiritualist_attraction_mult = 0.2
+			pop_citizen_happiness = 0.15
+			shroud_delve_cooldown = -0.1
+			planet_jobs_unity_produces_mult = 0.1
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_corporate_divine"
+		description = "auth_ac_psionic_corporate_divine_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_divine
+		}
+		modifier = {
+			country_trade_fee = -0.05
+			country_unity_produces_mult = -0.05
+			planet_branch_offices_cost_mult = -0.5
+			branch_office_value_mult = 0.25
+			pop_lifestyle_trade_value_mult = -0.5
+			pop_cat_ruler_political_power = 0.25
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_psionic_corporate_eldritch"
+		description = "auth_ac_psionic_corporate_eldritch_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_psionic_eldritch
+		}
+		modifier = {
+			country_trade_fee = -0.05
+			country_unity_produces_mult = -0.05
+			custom_tooltip = auth_ac_psionic_corporate_eldritch_effects
+			show_only_custom_tooltip = no
+			add_base_country_intel = 5
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_corporate_perfect"
+		description = "auth_ac_genetic_corporate_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			BIOLOGICAL_species_trait_points_add = 1
+			living_standard_trade_value_rulers_add = 3 #wait...
+			election_term_years_mult = 1
+			leader_lifespan_add = 20
+			leader_commanders_energy_upkeep_add = 2
+			leader_scientists_energy_upkeep_add = 2
+			leader_officials_energy_upkeep_add = 2
+			custom_tooltip = auth_ac_genetic_corporate_perfect_effects
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_corporate_chaotic"
+		description = "auth_ac_genetic_corporate_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			BIOLOGICAL_species_trait_points_add = 1
+			num_tech_alternatives_add = 1
+			country_unity_produces_mult = -0.1
+			planet_jobs_specialist_produces_mult = 0.15
+			planet_jobs_upkeep_mult = 0.15
+			empire_size_branch_office_mult = -0.5
+			empire_size_penalty_mult = 0.5
+		}
+	}
+}
+
+auth_hive_mind = {
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_hive_perfect"
+		description = "auth_ac_genetic_hive_perfect_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_perfect
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			species_leader_exp_gain = -0.1
+			planet_jobs_complex_drone_produces_mult = 0.2
+			BIOLOGICAL_species_trait_points_add = 1
+			num_tech_alternatives_add = -1
+			edicts_upkeep_mult = -0.25
+		}
+	}
+	advanced_authority_swap = {
+		name = "auth_ac_genetic_hive_chaotic"
+		description = "auth_ac_genetic_hive_chaotic_desc"
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = ac_genetic_chaotic
+		}
+		modifier = {
+			empire_size_pops_mult = -0.15
+			species_leader_exp_gain = -0.1
+			custom_tooltip = auth_ac_genetic_hive_chaotic_effects
+			show_only_custom_tooltip = no
+			planet_jobs_simple_drone_produces_mult = 0.2
+			station_observers_society_research_produces_add = 3
+			diplo_weight_mult = -0.15
+		}
+	}
+}

@@ -1,0 +1,310 @@
+civic_bioform_upgrader = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_fanatic_purifiers
+				value = civic_machine_assimilator
+				value = civic_bio_replacer
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bioform_upgrader.dds"
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_bioform_upgrader_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_synthetics_finish
+		}
+		description = civic_tooltip_bioform_upgrader_effects
+		modifier = {
+			ship_weapon_damage = 0.1
+			country_naval_cap_mult = 0.15
+			country_synthetic_trust_cap_add = 10
+			country_organic_trust_cap_add = -10
+		}
+	}
+}
+
+civic_bio_replacer = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_fanatic_purifiers
+				value = civic_machine_assimilator
+				value = civic_bioform_upgrader
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bio_replacer.dds"
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_bio_replacer_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_synthetics_finish
+		}
+		description = civic_tooltip_bio_replacer_effects
+		modifier = {
+			country_synthetic_trust_cap_add = 10
+			country_organic_trust_cap_add = -10
+		}
+	}
+}
+
+civic_soul_seekers = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+			# temporarily removed
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		# civics = {
+		# 	NOR = {
+		# 		value = civic_machine_terminator
+		# 		value = civic_fanatic_purifiers
+		# 		value = civic_machine_assimilator
+		# 		value = civic_bioform_upgrader
+		# 	}
+		# }
+	}
+	modification = yes	# Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_soul_seekers.dds"
+	# alternate_civic_version = (Corporate version because unremovable)
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_soul_seekers_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_synthetics_finish
+		}
+		modifier = {
+			# TO DO
+		}
+	}
+}
+
+civic_synthetic_celestials = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_world_commissioners
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_synthetic_celestials.dds"
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_synthetic_celestials_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_synthetics_finish
+		}
+		description = civic_tooltip_synthetic_celestials_effects
+		modifier = {
+			megastructures_cost_mult = -0.1
+		}
+	}
+}
+
+civic_world_commissioners = {
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_synthetic_celestials
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_world_commissioners.dds"
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_synthetics_finish
+		}
+	}
+	description = civic_tooltip_synthetic_celestials_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_synthetics_finish
+		}
+		description = civic_tooltip_synthetic_celestials_effects
+		modifier = {
+			megastructures_cost_mult = -0.1
+		}
+	}
+}

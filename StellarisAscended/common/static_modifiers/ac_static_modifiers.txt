@@ -1,0 +1,160 @@
+# Genetic Legacy Situation
+ac_alleles_of_the_dead = {
+	country_unity_produces_mult = 0.075
+}
+
+ac_preserved_genetic_form = {
+	pop_government_ethic_attraction = 0.1
+	planet_amenities_mult = 0.1
+}
+
+ac_identity_merchants = {
+	pop_lifestyle_trade_value_add = 0.1
+}
+
+ac_ideal_society = {
+	pop_citizen_happiness = 0.1
+	pop_ethic_xenophobe_attraction_mult = 0.15
+}
+
+ac_genetic_freedoms = {
+	pop_happiness = 0.1
+	pop_ethic_egalitarian_attraction_mult = 0.1
+}
+
+ac_genetic_specialization = {
+	auto_mod_monthly_add = 2
+}
+
+ac_corporate_genetics = {
+	planet_jobs_specialist_produces_mult = 0.05
+	pop_cat_specialist_happiness = -0.05
+}
+
+ac_cloned_population = {
+	planet_buildings_clone_vats_upkeep_mult = -0.15
+}
+
+ac_evolving_population = {
+	modify_species_cost_mult = -0.15
+}
+
+ac_innate_abilities = {
+	leaders_cost_mult = -0.25
+	planet_researchers_upkeep_mult = -0.1
+}
+
+ac_natural_education = {
+	country_leader_pool_size = 1
+	planet_researchers_produces_mult = 0.05
+}
+
+ac_reproductive_installations = {
+	pop_ethic_egalitarian_attraction_mult = 0.15
+	pop_cat_worker_political_power = 0.25
+}
+
+ac_genetic_athletes = {
+	icon = "gfx/interface/icons/modifiers/mod_society_research_produces_add.dds"
+	planet_entertainers_society_research_produces_add = 2
+}
+
+ac_genetic_athlete_leagues = {
+	icon = "gfx/interface/icons/modifiers/mod_faction_approval.dds"
+	faction_approval = 0.05
+}
+
+ac_limited_genetic_athletes = {
+	icon = "gfx/interface/icons/modifiers/mod_unity_produces_add.dds"
+	planet_entertainers_unity_produces_add = 1
+}
+
+ac_painless_labor = {
+	planet_jobs_worker_produces_mult = 0.05
+	pop_cat_worker_happiness = 0.1
+	army_health = 0.1
+}
+
+ac_united_in_pain = {
+	country_war_exhaustion_mult = -0.1
+	army_morale = 0.1
+}
+
+# Psionic Destiny Situation
+ac_holy_minds = {
+	pop_ethic_spiritualist_attraction_mult = 0.15
+}
+
+ac_dark_rituals = {
+	country_unity_produces_mult = 0.15
+	planet_stability_add = -3
+}
+
+ac_abstaining_from_darkness = {
+	planet_stability_add = 5
+	shroud_delve_cooldown = 0.1
+}
+
+ac_mind_body_soul = {
+	species_leader_exp_gain = 0.1
+	leader_lifespan_mult = 0.1
+	leaders_upkeep_mult = -0.1
+}
+
+ac_eldritch_mind = {
+	planet_telepaths_produces_mult = 0.15
+	pop_cat_specialist_political_power = 0.1
+	modify_species_cost_mult = 0.25
+}
+
+ac_sanity_peddlers = {
+	planet_doctors_unity_produces_add = 1
+	pop_lifestyle_trade_value_add = 0.1
+}
+
+ac_pact_of_the_harrower = {
+	icon = "gfx/interface/icons/modifiers/mod_empire_build_speed_add.dds"
+	country_energy_produces_mult = -0.03
+	country_minerals_produces_mult = -0.03
+	country_food_produces_mult = -0.03
+	country_physics_research_produces_mult = -0.03
+	country_society_research_produces_mult = -0.03
+	country_engineering_research_produces_mult = -0.03
+	country_influence_produces_mult = -0.03
+	country_unity_produces_mult = -0.03
+	country_consumer_goods_produces_mult = -0.03
+	country_alloys_produces_mult = -0.03
+	country_volatile_motes_produces_mult = -0.03
+	country_exotic_gases_produces_mult = -0.03
+	country_rare_crystals_produces_mult = -0.03
+	country_sr_living_metal_produces_mult = -0.03
+	country_sr_zro_produces_mult = -0.03
+	country_sr_dark_matter_produces_mult = -0.03
+	country_nanites_produces_mult = -0.03
+	country_minor_artifacts_produces_mult = -0.03
+	country_astral_threads_produces_mult = -0.03
+	pop_growth_speed = -0.03
+	planet_pop_assembly_mult = -0.03
+	leader_lifespan_mult = 0.06
+	custom_tooltip = ac_pact_of_the_harrower_effects
+	show_only_custom_tooltip = yes
+}
+
+ac_psychic_shields = {
+	intel_decryption_add = 1
+	negative_traits_leader = -1
+}
+
+# Other
+ac_modification_unity_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_unity_upkeep_add.dds"
+}
+
+ac_manipulation_network_modifier = {
+	branch_office_value_mult = 0.25
+	planet_pops_consumer_goods_upkeep_mult = 0.25
+}
+
+# ac_despotic_eugenics = {
+#  Governmental ethics attraction - from Killing relatives for Kratocracy event
+# }

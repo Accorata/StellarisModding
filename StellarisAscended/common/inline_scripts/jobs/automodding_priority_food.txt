@@ -1,0 +1,11 @@
+auto_trait_prio = {
+	#Farmers
+	trait_agrarian
+	trait_farm_hands
+	trait_robot_harvesters
+	trait_cyborg_harvesters
+	trait_malleable_food
+	trait_adaptive_food
+	trait_ac_robot_harvesters
+	trait_ac_bio_agrarian
+}

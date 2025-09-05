@@ -1,0 +1,12 @@
+# This file will be overwritten if ACOT is enabled
+has_fully_upgraded_capital = {
+	always = no
+}
+
+has_enigmatic_capital = {
+	always = no
+}
+
+has_ascended_capital = {
+	always = no
+}

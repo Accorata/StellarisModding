@@ -1,0 +1,16 @@
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		scientist_mastery.1          # Imperial Feedback government harvests Mastery traits
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		scientist_mastery.5			# Grant 5% of mega engineering for Dreams Beyond Scale
+	}
+}

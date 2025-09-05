@@ -1,0 +1,32 @@
+﻿l_english:
+# Official Traits
+  leader_trait_age_of_machines:0 "Endless Drive"
+  leader_trait_age_of_machines_desc:0 "This leader never hesitates, always taking steps to build a better future. For us, this future lies in metal."
+  leader_trait_next_gen_processing:0 "Next-Gen Processing"
+  leader_trait_next_gen_processing_desc:0 "This leader's processing power exceeds normal levels, greatly reducing time complexity of tasks."
+  leader_trait_blunt_directives:0 "Blunt Directives"
+  leader_trait_blunt_directives_desc:0 "This leader is extremely opinionated in their desires, reducing others' disagreement to their failure to understand optimal processes."
+  leader_trait_obfuscated_code:0 "Obfuscated Code"
+  leader_trait_obfuscated_code_desc:0 "This leader's programming is harder to understand than most, making their demands all the more threatening."
+# Commander traits
+  leader_trait_computational_understanding:0 "Computational Understanding"
+  leader_trait_computational_understanding_desc:0 "This leader implores some of the very strategies combat computers use on a widespread scale."
+  leader_trait_mainframe_integration:0 "Mainframe Integration"
+  leader_trait_mainframe_integration_desc:0 "This leader taps their network directly into their fleet, giving them real-time reactions and activating their self-preservation subroutines."
+  leader_trait_thorough_annihilation:0 "Thorough Annihilation"
+  leader_trait_thorough_annihilation_desc:0 "This leader shows little regard for life, destroying whatever is necessary to achieve their goals."
+# Scientist Traits
+  leader_trait_introspective_revisions:0 "Introspective Revisions"
+  leader_trait_introspective_revisions_desc:0 "This leader has examined their own inner workings thoroughly, and has found optimizations that can reduce robot upkeep universally."
+  leader_trait_evolved_AI_assistant:0 "Evolved AI Assistant"
+  leader_trait_evolved_AI_assistant_desc:0 "This leader has evolved upon their neural network greatly expanding its benefits and even granting councilor advice."
+  leader_trait_also_evolved_AI_assistant:0 "Evolved AI Assistant"
+  leader_trait_also_evolved_AI_assistant_desc:0 "This leader has evolved upon their neural network greatly expanding its benefits and even granting councilor advice."
+# Negative Traits
+  leader_trait_failing_subroutines:0 "Failing Subroutines"
+  leader_trait_failing_subroutines_desc:0 "Codeblocks in this leaders programming are starting to deteriorate, increasing management upkeep within the nation."
+  leader_trait_failing_subroutines_2:0 "$leader_trait_failing_subroutines$"
+  leader_trait_failing_subroutines_2_desc:0 "$leader_trait_failing_subroutines_desc$"
+# Destiny Traits
+  leader_trait_ex_machina:0 "Ex Machina"
+  leader_trait_ex_machina_desc:0 "This leader inspires all towards a new age of robotics as the necessary evolution of organics."

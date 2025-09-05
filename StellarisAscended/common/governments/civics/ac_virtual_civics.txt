@@ -1,0 +1,314 @@
+civic_bandwidth_enhancers = {
+	playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_bandwidth_incorporated
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_enhancers.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
+	}
+	description = civic_tooltip_bandwidth_enhancers_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_bandwidth_enhancers_effects
+		modifier = {
+			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.1
+		}
+	}
+}
+
+civic_bandwidth_incorporated = {
+	playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_bandwidth_enhancers
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_incorporated.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
+	}
+	description = civic_tooltip_bandwidth_incorporated_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_bandwidth_incorporated_effects
+		modifier = {
+			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.1
+		}
+	}
+}
+
+civic_bandwidth_optimization = {
+	playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	ai_playable = {
+		host_has_dlc = "Overlord"
+		has_machine_age_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_optimization.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0		# AI can't build new starbase buildings without reworking starbase build AI which would likely cause mod conflicts
+	}
+	description = civic_tooltip_bandwidth_optimization_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_bandwidth_optimization_effects
+		modifier = {
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+			empire_size_systems_mult = -0.25
+			tradition_cost_empire_size_mult = -0.1
+		}
+	}
+}
+
+civic_concurrent_command = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_executive_militarization
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_concurrent_command.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_virtuality_finish
+		}
+	}
+	description = civic_tooltip_concurrent_command_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_concurrent_command_effects
+		triggered_modifier = {
+			potential = {
+				always = yes
+			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
+		}
+	}
+}
+
+civic_executive_militarization = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			value = MACHINE
+		}
+		civics = {
+			NOT = {
+				value = civic_concurrent_command
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_executive_militarization.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_virtuality_finish
+		}
+	}
+	description = civic_tooltip_concurrent_command_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_concurrent_command_effects
+		triggered_modifier = {
+			potential = {
+				always = yes
+			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
+		}
+	}
+}
+
+civic_nodal_command = {
+	playable = { has_machine_age_dlc = yes }
+	ai_playable = { has_machine_age_dlc = yes }
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_nodal_command.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_virtuality_finish
+		}
+	}
+	description = civic_tooltip_nodal_command_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_virtuality_finish
+		}
+		description = civic_tooltip_nodal_command_effects
+		triggered_modifier = {
+			potential = {
+				always = yes
+			}
+			ship_fire_rate_mult = 0.03
+			ship_disengage_opportunities_add = 0.2
+			army_damage_mult = 0.05
+			mult = value:ac_effective_ruler_level
+		}
+		modifier = {
+			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}

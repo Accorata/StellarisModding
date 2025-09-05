@@ -1,0 +1,3 @@
+concept_cw_tech_penal_colonies = {
+	icon = "gfx/interface/icons/technologies/tech_penal_colonies.dds"
+}

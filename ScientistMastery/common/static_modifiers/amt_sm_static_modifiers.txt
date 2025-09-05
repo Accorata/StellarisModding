@@ -1,0 +1,51 @@
+sm_computing_scientist_memory = {
+	category_computing_research_speed_mult = 0.05
+}
+
+sm_field_manipulation_scientist_memory = {
+	category_field_manipulation_research_speed_mult = 0.05
+}
+
+sm_particles_scientist_memory = {
+	category_particles_research_speed_mult = 0.05
+}
+
+sm_biology_scientist_memory = {
+	category_biology_research_speed_mult = 0.05
+}
+
+sm_military_theory_scientist_memory = {
+	category_military_theory_research_speed_mult = 0.05
+}
+
+sm_new_worlds_scientist_memory = {
+	category_new_worlds_research_speed_mult = 0.05
+}
+
+sm_statecraft_scientist_memory = {
+	category_statecraft_research_speed_mult = 0.05
+}
+
+sm_archaeostudies_scientist_memory = {
+	category_archaeostudies_research_speed_mult = 0.05
+}
+
+sm_psionics_scientist_memory = {
+	category_psionics_research_speed_mult = 0.05
+}
+
+sm_industry_scientist_memory = {
+	category_industry_research_speed_mult = 0.05
+}
+
+sm_materials_scientist_memory = {
+	category_materials_research_speed_mult = 0.05
+}
+
+sm_propulsion_scientist_memory = {
+	category_propulsion_research_speed_mult = 0.05
+}
+
+sm_voidcraft_scientist_memory = {
+	category_voidcraft_research_speed_mult = 0.05
+}

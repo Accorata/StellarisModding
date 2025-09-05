@@ -1,0 +1,75 @@
+special_project = {
+	key = "cw_smuggled_relic_project_1"
+	cost = 1000
+	tech_department = society_technology
+	picture = GFX_evt_black_market
+	event_chain = cw_smuggled_relic_chain
+	location = yes
+	event_scope = planet_event
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+	}
+
+	on_success = {
+		planet_event = {
+			id = criminal_worlds.35
+		}
+	}
+}
+
+special_project = {
+	key = "cw_smuggled_relic_project_2"
+	cost = 1000
+	# days_to_research = 80
+	tech_department = engineering_technology
+	picture = GFX_evt_victorious_army
+	event_chain = cw_smuggled_relic_chain
+	location = yes
+	timelimit = 360
+
+	event_scope = planet_event
+
+	# requirements = {
+	# 	shipclass_transport = 2
+	# }
+
+	on_success = {
+		planet_event = {
+			id = criminal_worlds.36
+		}
+	}
+
+	on_fail = {
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+		}
+	}
+}
+
+special_project = {
+	key = "cw_smuggled_relic_project_3"
+	cost = 5000
+	tech_department = society_technology
+	picture = GFX_evt_analyzing_artifacts
+	event_chain = cw_smuggled_relic_chain
+	location = yes
+
+	event_scope = planet_event
+
+	on_success = {
+		random_list = {
+			10 = { 
+				planet_event = { 
+					id = criminal_worlds.37
+				} 
+			}
+			10 = {
+				planet_event = {
+					id = criminal_worlds.38
+				} 
+			}
+		}
+	}
+}

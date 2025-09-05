@@ -1,0 +1,82 @@
+tr_fft_social_media_adopt = {
+	possible = {
+		has_technology = tech_ansible
+	}
+	# unlocks_agenda = agenda_???
+	modifier = {
+		edicts_upkeep_mult = -0.15
+	}
+}
+
+tr_fft_social_media_finish = {
+	modifier = {
+		country_unity_produces_mult = 0.1
+		planet_amenities_mult = 0.1
+		ascension_perks_add = 1
+	}
+}
+
+tr_fft_social_media_collective_participation = {
+	modifier = {
+		pop_category_rulers_unity_produces_add = 0.05
+		pop_category_specialists_unity_produces_add = 0.05
+		pop_category_workers_unity_produces_add = 0.05
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_social_media_administrative_networks = {
+	possible = {
+		has_tradition = tr_fft_social_media_collective_participation
+	}
+	modifier = {
+	}
+	custom_tooltip = tr_fft_social_media_administrative_networks_modifier_desc
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_social_media_media_influencers = {
+	possible = {
+		has_tradition = tr_fft_social_media_collective_participation
+	}
+	modifier = {
+		country_leader_pool_size = 1
+	}
+	hidden_effect = {
+		modifier = {
+			job_culture_worker_add = 1
+		}
+	}
+	custom_tooltip_with_modifiers = tr_fft_social_media_media_influencers_modifier_desc
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_social_media_galactic_collective = {
+	modifier = {
+		pop_growth_from_immigration = 0.1
+		research_sharing_mult = 0.1
+		commercial_pact_mult = 0.1
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_fft_social_media_data_surveillance = {
+	possible = {
+		has_tradition = tr_fft_social_media_galactic_collective
+	}
+	modifier = {
+		planet_crime_add = -10
+		add_base_country_intel = 10
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}

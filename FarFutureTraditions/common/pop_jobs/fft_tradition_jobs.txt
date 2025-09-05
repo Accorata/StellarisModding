@@ -1,0 +1,38 @@
+fft_hedonist = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_hyper_entertainment_forum
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			unity = 4
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	pop_modifier = {
+		pop_happiness = 0.3
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+	}
+}

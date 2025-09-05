@@ -1,0 +1,26 @@
+spriteTypes = {
+	# THRUSTER COMPONENTS --------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ship_part_thruster_4_grav"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_thruster_4_grav.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_thruster_5_grav"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_thruster_5_grav.dds"
+	}
+
+	# UTILITY COMPONENTS ---------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ship_part_sm_reactor_booster_4"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_sm_reactor_booster_4.dds"
+	}
+
+	# STARBASE MODULES -----------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_sm_interstellar_ecology_sb"
+		texturefile = "gfx/interface/icons/modules/sb_sm_interstellar_ecology.dds"
+	}
+}
+
+

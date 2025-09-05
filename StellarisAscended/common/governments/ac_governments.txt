@@ -1,0 +1,406 @@
+### Genetic Governments
+# Genetic Democracy Perfect
+gov_ac_genetic_democratic_perfect = {
+	ruler_title = RT_PRESIDENT
+	ruler_title_female = RT_PRESIDENT_FEMALE
+	possible = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Democracy Chaotic
+gov_ac_genetic_democratic_chaotic = {
+	ruler_title = RT_PRESIDENT
+	ruler_title_female = RT_PRESIDENT_FEMALE
+	possible = {
+		is_democratic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Oligarchy Perfect
+gov_ac_genetic_oligarchic_perfect = {
+	ruler_title = RT_CHIEF_PRECENTOR
+	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
+	possible = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Oligarchy Chaotic
+gov_ac_genetic_oligarchic_chaotic = {
+	ruler_title = RT_CHIEF_PRECENTOR
+	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
+	possible = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Dictatorship Perfect
+gov_ac_genetic_dictatorial_perfect = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Dictatorship Chaotic
+gov_ac_genetic_dictatorial_chaotic = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Imperial Perfect
+gov_ac_genetic_imperial_perfect = {
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_AC_CLONED_EMPEROR
+	heir_title_female = HT_AC_CLONED_EMPRESS
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Imperial Chaotic
+gov_ac_genetic_imperial_chaotic = {
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		is_imperial_authority = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Corporate Perfect
+gov_ac_genetic_corporate_perfect = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_megacorp = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Corporate Chaotic
+gov_ac_genetic_corporate_chaotic = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_megacorp = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Ancestral Hive
+auth_ac_genetic_hive_perfect = {
+	ruler_title = RT_HIVE_MIND
+	ruler_title_female = RT_HIVE_MIND_FEMALE
+	possible = {
+		is_hive_empire = yes
+		has_country_flag = ac_genetic_perfect
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Genetic Assimilator Hive
+auth_ac_genetic_hive_chaotic = {
+	ruler_title = RT_HIVE_MIND
+	ruler_title_female = RT_HIVE_MIND_FEMALE
+	possible = {
+		is_hive_empire = yes
+		has_country_flag = ac_genetic_chaotic
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+### Psionic Governments
+# Psionic Democracy Divine
+gov_ac_psionic_democratic_divine = {
+	ruler_title = RT_PRESIDENT
+	ruler_title_female = RT_PRESIDENT_FEMALE
+	possible = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Democracy Eldritch
+gov_ac_psionic_democratic_eldritch = {
+	ruler_title = RT_PRESIDENT
+	ruler_title_female = RT_PRESIDENT_FEMALE
+	possible = {
+		is_democratic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Oligarchy Divine
+gov_ac_psionic_oligarchic_divine = {
+	ruler_title = RT_CHIEF_PRECENTOR
+	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
+	possible = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Oligarchy Eldritch
+gov_ac_psionic_oligarchic_eldritch = {
+	ruler_title = RT_CHIEF_PRECENTOR
+	ruler_title_female = RT_CHIEF_PRECENTOR_FEMALE
+	possible = {
+		is_oligarchic_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Dictatorship Divine
+gov_ac_psionic_dictatorial_divine = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Dictatorship Eldritch
+gov_ac_psionic_dictatorial_eldritch = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_dictatorial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Imperial Divine
+gov_ac_psionic_imperial_divine = {
+	ruler_title = RT_GOD_EMPEROR
+	ruler_title_female = RT_GOD_EMPRESS
+	heir_title = HT_AC_DEMIGOD
+	heir_title_female = HT_AC_DEMIGODDESS
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_divine
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Imperial Eldritch
+gov_ac_psionic_imperial_eldritch = {
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		is_imperial_authority = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Corporate Divine
+gov_ac_psionic_corporate_divine = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_megacorp = yes
+		has_country_flag = ac_psionic_divine
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Corporate Eldritch
+gov_ac_psionic_corporate_eldritch = {
+	ruler_title = RT_EXECUTOR
+	ruler_title_female = RT_EXECUTOR_FEMALE
+	possible = {
+		is_megacorp = yes
+		has_country_flag = ac_psionic_eldritch
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+## Psionic Teacher Governments
+# Psionic Teacher Imperial
+gov_ac_psi_teacher_monarchy = {
+	ruler_title = RT_GOD_EMPEROR
+	ruler_title_female = RT_GOD_EMPRESS
+	heir_title = HT_SAINT
+	heir_title_female = HT_SAINT_FEMALE
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_imperial_authority = yes
+		is_spiritualist = yes
+	}
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Dictatorship
+gov_ac_psi_teacher_dictatorship = {
+	ruler_title = RT_GRAND_ARBITER
+	ruler_title_female = RT_GRAND_ARBITER_FEMALE
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_dictatorial_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Oligarchy
+gov_ac_psi_teacher_oligarchy = {
+	ruler_title = RT_HIGH_PRIEST
+	ruler_title_female = RT_HIGH_PRIESTESS
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_oligarchic_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Democracy
+gov_ac_psi_teacher_democracy = {
+	ruler_title = RT_FIRST_SPEAKER
+	ruler_title_female = RT_FIRST_SPEAKER_FEMALE
+
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_democratic_authority = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher MegaCorp
+gov_ac_psi_teacher_megacorp = {
+	ruler_title = RT_HIGH_PRIEST
+	ruler_title_female = RT_HIGH_PRIESTESS
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_megacorp = yes
+		is_spiritualist = yes
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+	}
+}
+
+# Psionic Teacher Criminal MegaCorp
+gov_ac_psi_teacher_criminal_megacorp = {
+	ruler_title = RT_ORACLE
+	ruler_title_female = RT_ORACLE
+	possible = {
+		has_country_flag = ac_psi_teacher_advanced_government
+		is_megacorp = yes
+		is_spiritualist = yes
+		has_valid_civic = civic_criminal_heritage
+	}
+
+	weight = {
+		base = @gov_authority_swap_weight
+		add = @gov_civic_override_weight
+		modifier = {
+			factor = 2
+			has_valid_civic = civic_criminal_heritage
+		}
+	}
+}

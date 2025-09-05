@@ -1,0 +1,450 @@
+﻿l_english:
+## Planet Events ##
+# Corruption 1-3
+  criminal_worlds.10.name:0 "Bribed Enforcers on [Root.GetName]"
+  criminal_worlds.10.desc:0 "The number of arrests on [Root.GetName] have dropped off even as crime rises. It wouldn't be unreasonable to assume that some of our enforcers tasked with taking down these criminal networks have fallen into the pockets of the very organizations they were supposed to fight.\n\nClearly they need a return to their moral principles and a larger force may be needed to root out this problem."
+  criminal_worlds.11.name:0 "Extended Corruption on [Root.GetName]"
+  criminal_worlds.11.desc:0 "Whether these are new developments or have always been the case, it appears the system of bribery on [Root.GetName] is much larger than originally assumed. We hoped these corrupt enforcers would be brought to justice upon discovery, but after throughly reviewing their internal documents, it seems even their superiors are also upon the payroll of the criminal networks and are happy to cover up the corruption.\n\nIt's even unclear whether the arrests we originally made when we discovered this corruption were legitimate or just innocent enforcers thrown under the bus by the higher ups."
+  criminal_worlds.12.name:0 "Political Corruption on [Root.GetName]"
+  criminal_worlds.12.desc:0 "The sources of our crime troubles have become clear.\n\nIts not just an internalized system of corruption within our enforcers, the corruption goes all the way to the top. The very politicians that we've put in place have abandoned our population, turning to the pursuit of profit over justice. This corruption is far larger than any of our estimates and is going to take a true effort to take it down."
+# Illegal Freeports
+  criminal_worlds.20.name:0 "Illegal Freeports appear on [Root.GetName]"
+  criminal_worlds.20.desc:0 "Our local enforcers on [Root.GetName] have begun to encover a number of criminal safe havens, which would explain the increase in local traffic to [Root.GetName]. However estimates on the number of these freeports puts the number far higher than have been shutdown."
+# Criminal Shipyards - x3 by Crime Lord Deal
+  criminal_worlds.21.name:0 "$cw_criminal_shipyards$ on [Root.GetName]"
+	criminal_worlds.21.desc:0 "It seems that for the criminal organizations, control of [Root.GetName] is not enough. Enforcers have discovered multiple cases of stolen alloy transports. They suspect weapons are being maunfactured elsewhere on [Root.GetName].\n\nA number of planetside rogue shipyards are now building the criminals a new fleet. We better hope they are just as interested in protecting [Root.GetName] as we are."
+  criminal_worlds.22.name:0 "$cw_criminal_shipyards_2$ on [Root.GetName]"
+	criminal_worlds.22.desc:0 "The operations have expanded. No longer do the organizations rely purely on stolen alloys: now entire factories are under their control for this purpose alone. Shipyards of real size can now be found, and their influence is beyond the control of local authority.\n\nFurther enforcement seems to be the only  way to regain our own sovereignity over [Root.GetName] and reclaim ship construction."
+  criminal_worlds.22.a:0 "Arrest them all!"
+  criminal_worlds.22.b:0 "At least they're not harming anyone."
+# Criminal Fleet Appears
+  criminal_worlds.26.name:0 "Syndicate Fleet constructed above [Root.GetName]"
+  criminal_worlds.26.desc:0 "The rogue shipbuilders on [Root.GetName] have constructed their first batch of ships, that now occupy the airspace above the planet. At the moment, they remain passive in stance and action, but we are unsure of what may happen next.\n\nThey are at the moment only a small force, but as long as the operations on [Root.GetName] continue, who knows how large they'll get."
+  criminal_worlds.26.a:0 "Concerning."
+# Underground Slums
+  criminal_worlds.30.name:0 "Underground Slums appear on [Root.GetName]"
+	criminal_worlds.30.desc:0 "The housing crisis on [Root.GetName] have forced some of our population belowground, into sewars and abandoned tunnels. This should lessen the problems of the homelessness, however these areas are beyond the reach of society or enforcement, and will likely remain a lawless zone."
+  criminal_worlds.31.name:0 "Underground Slums increase on [Root.GetName]"
+	criminal_worlds.31.desc:0 "The underground slums have grown in popularity as more and more people turn to the depths for housing. They shouldn't pose too large of a problem, however it is unfortunate to lose more and more promising individuals who might otherwise bring great positive impact to society."
+# Mercenary Fighters - Prevented by Crime Lord Deal
+  criminal_worlds.32.name:0 "Mercenary Fighters on [Root.GetName]"
+	criminal_worlds.32.desc:0 "Mercenary groups have taken up hold on [Root.GetName], recruiting any able-bodied they can find under the promise of wealth. These warriors are causing problems across the planet as they perform jobs for the high paying and as they carelessly practice. All minor problems, but distressing for any locals nonetheless.\n\nHowever, if we happen to need an army, these mercenaries should provide a quick and cheap solution without too many drawbacks compared to drafting militias."
+  criminal_worlds.32.a:0 "$WORRYING$"
+# Infamous Criminal - Prevented by Crime Lord Deal
+  criminal_worlds.33.name:0 "Infamous Criminals on [Root.GetName]"
+	criminal_worlds.33.desc:0 "A number of terrible personalities of the streets of [Root.GetName] have become well known across our empire. Their brazeness towards our authority has inspired others that are lacking a cause to cause trouble.\n\nClearly the problem has gotten out of hand if our enforcers can't even capture notorious individuals who are making a spectacle out of this."
+  criminal_worlds.33.a:0 "This needs to stop."
+# Black Market Relic - x3 by Crime Lord Deal
+  criminal_worlds.34.name:0 "Rumored Dealings on [Root.GetName]"
+	criminal_worlds.34.desc:0 "Within the network of black markets on [Root.GetName], local authorities have recieved an anonymous tip from someone who claims to have heard of a powerful item up for sale. Details are incredibly sparse, and it's unclear how legitimate this source is.\n\nOur enforcers are already tied up with the regular criminal dealings, but passed this up the chain if we are interested in deploying our own efforts to confirm or deny this tip."
+  criminal_worlds.34.a:0 "Survey local rumors on [Root.GetName]."
+  criminal_worlds.34.b:0 "There are more important things than this."
+  criminal_worlds.35.name:0 "Surveys Complete!"
+	criminal_worlds.35.desc:0 "The anonymous tip was correct. Multiple new reports came back when futher investigation began confirming the tip and giving new insights as to possible locations. The contraband is believed to be made up of a collection of small ancient artifacts that a collector somehow came into possession of.\n\nNow the small collection is being passed through the highest bidding tables as various crime lords pay higher and higher amounts."
+  criminal_worlds.35.a:0 "Retrieve this contraband!"
+  criminal_worlds.36.name:0 "Artifacts Seized!"
+	criminal_worlds.36.desc:0 "It took multiple covert operations into multiple crime rings on [Root.GetName], but the collection is now in our possession. These small trinkets are confirmed to be of ancient age, but initial analysis hasn't found anything special that would lead to such high market prices for the crime lords."
+  criminal_worlds.36.a:0 "Analyze what we've confiscated."
+  criminal_worlds.37.name:0 "Relic Found!"
+	criminal_worlds.37.desc:0 "Upon investigating the stash of artifacts further, one medallion stood out. Its foreign green metal is inscribed with ancient runes and attached to a bare chain. It continued to attract the attention of our scientists, as if it was calling out.\n\nFurther analysis revealed it to be a relic of great power, one that contains powerful psionic energy. It's origins and purpose are unknown, but our lead researcher on the project began to hear a name in the dreams: 'Etrioki'. Our archeology team has concluded the the runes most likely depict a king above subjects, and the psionic power of this relic clearly holds much weight over the weakened mind. Now it is ours, for whatever use we wish of it."
+  criminal_worlds.37.a:0 "Wonderful."
+  criminal_worlds.38.name:0 "Artifacts Analyzed"
+	criminal_worlds.38.desc:0 "Among these trinkets is something of greater value: a precursor artifact that helps explain the origins of our universe. Initial analyses missed the artifact as it had been split up into four parts during the seizure from the crime lords, but now that it has been reconstructed, we know even more about the mysteries of what came before."
+  criminal_worlds.38.a:0 "$criminal_worlds.37.a$"
+  criminal_worlds.38.b:0 "Unfortunately Redundant."
+# Criminal Worlds
+  criminal_worlds.40.name:0 "Criminal Influence over [Root.GetName]"
+	criminal_worlds.40.desc:0 "Criminal organizations on [Root.GetName] have begun to consolidate their operations, wrestling planet control further away from our control. Now more and more planetside businesses lie within their sphere, and [Root.GetName] has begun to operate somewhat independently."
+  criminal_worlds.40.a:0 "$UNFORTUNATE$"
+  criminal_worlds.41.name:0 "Criminals Increase on [Root.GetName]"
+	criminal_worlds.41.desc:0 "Futher quiet expansions of power lie in the shadows on [Root.GetName]. The low lives have always craved for greater control and now, new criminal leadership is granting them oppurtunity.\n\nIf we do not act quickly, this planet's loyalties may never lie with us again. At least these organizations have reduced our own need for planetary management and upkeep."
+  criminal_worlds.41.a:0 "$UNFORTUNATE$"
+  criminal_worlds.42.name:0 "Criminal Consolidation on [Root.GetName]"
+	criminal_worlds.42.desc:0 "The criminal organizations are now united under a single syndicate that has continued to wrestle power away from our authority. At this point, the criminal networks are so entrenched in life on [Root.GetName] that their removal would disrupt the entire flow of society.\n\nWe can only hope that enforcers can prevent the situation from getting any worse. However, judging by past action, that future does not seem likely."
+  criminal_worlds.42.a:0 "Terrible."
+  criminal_worlds.43.name:0 "Criminal Control of [Root.GetName]"
+	criminal_worlds.43.desc:0 "Loyalties are gone. To call [Root.GetName] a planet of our nation would make others laugh. Rather, [Root.GetName] is a place of the syndicate where crime looms and shady deals take place. Local industry swears allegiance to the criminals, claiming that they now take care of [Root.GetName] far more than we ever had or ever would."
+  criminal_worlds.43.a:0 "Terrible."
+  criminal_worlds.44.name:0 "[Root.GetName] is a Criminal World"
+	criminal_worlds.44.desc:0 "[Root.GetName] has fallen into the hands of criminals. National sovereignity is all but unheard of and [Root.GetName] shows only its allegiance in name.\n\nThe word 'criminal' has lost all meaning there. Now there is no distinction between those who hope for a better future and those who hope for quick reward: all life is bound up, one way or another, in the great syndicate that holds power here."
+  criminal_worlds.44.a:0 "Terrible."
+  criminal_worlds.51.name:0 "[Root.GetName] remains a Criminal World"
+	criminal_worlds.51.desc:0 "After over numerous years of [Root.GetName] being controlled by criminal factions, progress seems extremely bleak. The syndicate that controls this planet shows no signs of weakening, and criminal experts say that it will continue to terrorize our people for at least ten more years and likely more if we refuse to take action.\n\nTo call [Root.GetName] a planet of the [Root.Owner.GetName] would be an exaggeration."
+  criminal_worlds.51.a:0 "Terrible."
+# Freedom fighters
+  criminal_worlds.45.name:0 "Freedom Fighters on [Root.GetName]"
+	criminal_worlds.45.desc:0 "It seems there are opponents to our methods of slavery present on [Root.GetName]. So much so that an underground organization has sprung up, dedicated to freeing the oppressed. If we do not crack down on these pathetic rebels, they just might have some success."
+  criminal_worlds.45.a:0 "$UNFORTUNATE$"
+  criminal_worlds.47.name:0 "Slaves Escape from [Root.GetName]"
+	criminal_worlds.47.desc:0 "The rebel freedom fighters have finally managed to achieve something of note: they were able to hijack a shipping vessel and use it to aid slaves in their escape. Arrests have been made but without further enforcement this tragedy may repeat."
+  criminal_worlds.47.a:0 "$UNFORTUNATE$"
+  criminal_worlds.47.a.tooltip:0 "100 Enslaved Pops on [Root.GetName] have escaped to another country."
+# Unlicensed Slave Trade
+  criminal_worlds.48.name:0 "Unlicensed Slave Trade"
+	criminal_worlds.48.desc:0 "Local authorities on [Root.GetName] have uncovered a large slave trade masterminded by criminal forces. The slaves had been captured in the [cw_enslaved_species_owner.GetName] before being transported here. What started as minor investigations into unexplained alien appearances quickly revealed the sinister operations. Fortunately, the enslaved have been freed, and now the decision of what to do with them is ours."
+  criminal_worlds.48.a:0 "Return them to the [cw_enslaved_species_owner.GetName]."
+  criminal_worlds.48.b:0 "Free them on [Root.GetName]."
+  criminal_worlds.48.c:0 "We could use some more slaves."
+  criminal_worlds.48.d:0 "Kill them all."
+  criminal_worlds.48.e:0 "Tasty."
+  criminal_worlds.48.evopred:0 "Delicious."
+# Freed Slaves (Fired from 48 if empire returns them)
+  criminal_worlds.49.name:0 "Slaves Returned"
+	criminal_worlds.49.desc:0 "We've received reports from the [From.Owner.GetName] that they encountered a number of our population who had been enslaved and smuggled onto one of their planets. The ships carrying our freed citizens are just now reaching our border and we welcome them back with great joy. Many of them had been reported dead or been missing for such an extended period of time that it seemed they'd never return. Across our planets there is much gratitude for the [From.Owner.GetName]."
+  criminal_worlds.49.a:0 "Wonderful."
+  opinion_cw_freed_slaves:0 "Freed Slaves"
+# Radical Media
+  criminal_worlds.50.name:0 "..."
+	criminal_worlds.50.desc:0 "..."
+  criminal_worlds.50.a:0 "..."
+
+## Anomalies ##
+# Criminal Stockpile Anomoly
+  cw_criminal_stockpile_cat:0 "Radio Chatter"
+  cw_criminal_stockpile_cat_desc:0 "Our sensors have picked up some radio chatter on [Root.GetName]. It appears to be in our own language."
+  cw_anomaly.1.name:0 "Criminal Hideout"
+  cw_anomaly.1.desc:0 "It appears a small band of pirates have been hiding out here, using this asteriod as a stockpile for their gains. They offered little resistance when discovered as they clearly weren't expecting anyone to find them.\n\nWe've arrested them and confiscated their resources."
+  cw_anomaly.1.a:0 "$EXCELLENT$"
+  cw_anomaly.1.b:0 "Broadcast their Executions."
+  cw_anomaly.2.name:0 "Nothing Amiss"
+  cw_anomaly.2.desc:0 "After investigating the signal further, §Y[Root.GetLeaderName]§! has reported that there was nothing amiss on the asteroid. Rather, it appears some malfunction was causing our radio signal to have been picking up our own ships' internal messages.\n\nHowever, another crew member claims our sensors were operating without error and is confident that §Y[Root.GetLeaderName]§! is hiding whatever they found down there."
+  cw_anomaly.2.a:0 "They'd Never!"
+  cw_anomaly.2.b:0 "Seize Everything!"
+# Ruined Undercity Anomaly
+  cw_ruined_undercity_cat:0 "Subterranean Readings"
+  cw_ruined_undercity_cat_desc:0 "Our sensors have detected underground areas beneath the crust of [Root.GetName]. Further investigations is needed."
+  cw_anomaly.3.name:0 "Ruined Undercity"
+  cw_anomaly.3.desc:0 "Below the surface level of §Y[Root.GetName]§!, our explorers have uncovered an ancient city that lies submerged under years of material deposition. The city seems to be the remains of a non-space faring civilization that died off for unknown reasons. However these remains aren't primitive and still in decent conditions, creating a network of tunnels beneath the surface of §Y[Root.GetName]§!."
+  cw_anomaly.3.a:0 "$INTERESTING$"
+# Sinister Dreams Anomaly
+  cw_sinister_dreams_cat:0 "Sinister Dreams"
+  cw_sinister_dreams_cat_desc:0 "The crew of our science ship have reported sinister dreams that refuse to diminish. Continual visions that showed them their pasts and even more interestingly, perhaps their futures.\n\nThey swear [Root.GetName] is haunted by spirits of some evil nature, or that there is some great evil that lurks within. Further analysis might shine a brighter light on their experiences."
+  cw_anomaly.4.name:0 "Dark Whispers"
+  cw_anomaly.4.desc:0 "The crew wasn't wrong. While [Root.GetLeaderName] isn't sure what, they do feel the same evil, and it doesn't show any signs of stopping.\n\nUpon this news reaching the scientific body of the nation, some call for further study and a research base on §Y[Root.GetName]§!. Others say they'll never step near."
+  cw_anomaly.4.a:0 "$DISTURBING$"
+  cw_anomaly.4.b:0 "Further Psionic Knowledge."
+  cw_anomaly.5.name:0 "Mental Illusions"
+  cw_anomaly.5.desc:0 "It seems §Y[Root.GetLeaderName]§! was experiencing a wave of strong psionic dreams. There seems to be no correlation to [Root.GetName]. However, this psionic experience has helped our scientists delve into this interesting field of research. Hopefully further advancements will explain the crews' visions."
+  cw_anomaly.5.a:0 "$FASCINATING$"
+
+## Espionage Events ##
+# Fleet Gains Confusion
+  criminal_worlds.102.name:0 "[fleet name...] hacked..."
+  criminal_worlds.102.desc:0 "Upon engagement with the enemy fleet, all ships within the §Y[name...]§! have begun to fire at each other. Our admirals describe a terrifying picture: all weapon systems have been locked to fire and sensor data has been scrambled to prevent distinction between friend and foe. ... ...(sensor confusion)... around 30 days before..."
+# Hack Fleet - Step 1
+  criminal_worlds.103.name:0 "..."
+  criminal_worlds.103.desc:0 "..."
+# Hack Fleet - Step 2
+  criminal_worlds.104.name:0 "..."
+  criminal_worlds.104.desc:0 "..."
+# Hack Fleet - Step 3
+  criminal_worlds.105.name:0 "..."
+  criminal_worlds.105.desc:0 "..."
+# Hack Fleet - Success
+  criminal_worlds.106.name:0 "Enemy Fleet Hacked"
+  criminal_worlds.106.desc:0 "Our custom malware package has been deployed inside an enemy ship's system  within the §Y[fleet name...]§!. Every time the ship computers communicate with each other for navigation data, there is a small chance the virus will be attached to the transimission. Given the rapid communications between modern warcraft, within moments the virus will have found its way into every ship computer in the fleet. Upon the fleets next naval involvement, the virus will activate, rewritting sensor data to remove the distinctions between enemy and ally and wreak havoc until thoroughly purged by antiviral programs."
+
+## Criminal Enclaves ##
+# Construction ship  - x3 by Crime Lord Deal
+  cw_enclave.1.name:0 "Criminal Constructions" # Temp
+  cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
+  cw_enclave.1.a:0 "Moniter the Situation." #change
+# Outpost built
+  cw_enclave.2.name:0 "Criminal Outpost"
+  cw_enclave.2.desc:0 "..."
+  cw_enclave.2.a:0 "Open Comms."
+
+# Criminal Enclave has New Offers
+  cw_enclave.301.name:0 "..."
+  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations. ... We have new offers you may wish to check out..."
+  cw_enclave.301.a:0 "..." # check them out
+  cw_enclave.301.b:0 "$GOODBYE$" # Exit
+
+# Hacker Aura Announcement
+  cw_enclave.298.name:0 "Unresponsive Weaponry!"
+  cw_enclave.298.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't extreme and our fleet should still prove effective, even if less so than we originally anticipated."
+  cw_enclave.298.a:0 "Destroy them and put an end to this."
+  # reporting shield fluctuations and weapons being unresponsive
+
+## Racketeers
+# Main Menu
+  cw_enclave.302.name:0 "Greetings"
+  cw_enclave.302.desc:0 "Your reputation proceeds you, [Root.GetSpeciesNamePlural].\n\nWe are glad to welcome you to our headquarters, and we hope to build a profitable relationship together. We have contacts throughout the galaxy, criminal organizations that understand what good business looks like. We're sure you do as well. In exchange for your credits, there are numerous benefits us and our associaties can offer. How can we best be of service?"
+  cw_enclave.302.a:0 "We are interested in smuggled arms."
+  cw_enclave.302.a.tooltip:0 "Purchase monthly shipments of §Y$alloys_with_icon$§!."
+  cw_enclave.302.a.has_deal:0 "Criminal Racketeers are already selling us §Y$alloys_with_icon$§!."
+  cw_enclave.302.b:0 "We are interested in illicit drugs."
+  cw_enclave.302.b.tooltip:0 "Purchase monthly shipments of §Y$consumer_goods_with_icon$§!."
+  cw_enclave.302.b.has_deal:0 "Criminal Racketeers are already selling us §Y$consumer_goods_with_icon$§!."
+  cw_enclave.302.c:0 "We'd like to hire one of your best Racketeers."
+  cw_enclave.302.c.has_leader:0 "We may only employ §Yone§! §HEnclave Racketeer§! at a time."
+  cw_enclave.302.d:0 "We are interested in purchasing slaves."
+  cw_enclave.302.d.slave_planet:0 "This enclave has no viable planet from which to enslave pops."
+  cw_enclave.302.d.cooldown:0 "This enclave has too recently enslaved pops."
+  cw_enclave.302.e:0 "We come seeking protection from your slavers."
+
+# Trade Deals (Alloys & Consumer Goods)
+  cw_enclave.400.name:0 "Purchase Smuggled Arms"
+  cw_enclave.400.desc:0 "Well, well. We can't say we're surprised. The arms trade always brings in new customers in this warring galaxy. Now, please don't be alarmed if you recognize any of your own weaponry up for sale; we cannot afford to pick favorites. We assure that all assets are in prime condition rivalling the quality of that which is newly forged.\n\nNow, of course these will come under the condition that they are not to be used against our operation here. Any and all purchases will be immediately voided should one of your admirals decide to pick a fight."
+  cw_enclave.400.a:0 "We'll take a shipment." # 1
+  cw_enclave.400.b:0 "We'll take a couple shipments." # 2
+  cw_enclave.400.c:0 "We'll take a moderate amount." # 5
+  cw_enclave.400.d:0 "We'll take a large amount." # 10
+  cw_enclave.400.e:0 "We'll take the lot." # 15
+  cw_enclave.400.response:0 "Pleasure doing business. We're sure you'll come again."
+  cw_enclave.400.f:0 "Never mind." # Main Menu
+  cw_enclave.400.g:0 "$GOODBYE$" # Exit
+  cw_enclave.401.name:0 "Purchase Illegal Drugs"
+  cw_enclave.401.desc:0 "..."
+  cw_enclave.401.a:0 "$cw_enclave.400.a$" # 2
+  cw_enclave.401.b:0 "$cw_enclave.400.b$" # 5
+  cw_enclave.401.c:0 "$cw_enclave.400.c$" # 10
+  cw_enclave.401.d:0 "$cw_enclave.400.d$" # 20
+  cw_enclave.401.e:0 "$cw_enclave.400.e$" # 30
+  cw_enclave.401.response:0 "$cw_enclave.400.response$"
+  cw_enclave.401.f:0 "Never mind." # Main Menu
+  cw_enclave.401.g:0 "$GOODBYE$" # Exit
+# Renew Trade Deals
+  cw_enclave.403.name:0 "Renew Arms Purchase"
+  cw_enclave.403.desc:0 "Our records indicate that our previous arms deal has expired. We hope to continue to do business with you, and we have this extended ..."
+  cw_enclave.403.a:0 "$cw_enclave.400.a$" # 1
+  cw_enclave.403.b:0 "$cw_enclave.400.b$" # 2
+  cw_enclave.403.c:0 "$cw_enclave.400.c$" # 5
+  cw_enclave.403.d:0 "$cw_enclave.400.d$" # 10
+  cw_enclave.403.e:0 "$cw_enclave.400.e$" # 15
+  cw_enclave.403.response:0 "$cw_enclave.400.response$"
+  cw_enclave.403.f:0 "What else do you offer?" # Main Menu
+  cw_enclave.403.g:0 "No thank you." # Exit
+  cw_enclave.404.name:0 "Renew Drugs Purchase"
+  cw_enclave.404.desc:0 "..."
+  cw_enclave.404.a:0 "$cw_enclave.401.a$" # 2
+  cw_enclave.404.b:0 "$cw_enclave.401.b$" # 5
+  cw_enclave.404.c:0 "$cw_enclave.401.c$" # 10
+  cw_enclave.404.d:0 "$cw_enclave.401.d$" # 20
+  cw_enclave.404.e:0 "$cw_enclave.401.e$" # 30
+  cw_enclave.404.response:0 "$cw_enclave.401.response$"
+  cw_enclave.404.f:0 "What else do you offer?" # Main Menu
+  cw_enclave.404.g:0 "No thank you." # Exit
+
+# Leader Purchase 
+  cw_enclave.402.name:0 "Hire Racketeer" 
+  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations..."
+  cw_enclave.402.a:0 "..." 
+  cw_racketeer_leader_explanation:0 "We will hire a Level 4 Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
+  cw_enclave.402.b:0 "Never mind." # Main Menu
+  cw_enclave.402.c:0 "$GOODBYE$" # Exit
+
+# Purchase Slaves
+  cw_enclave.407.name:0 "Purchase Slaves" 
+  cw_enclave.407.desc:0 "A newer enterprise of ours, the slave trade is. It's very difficult smuggling such large concentrations of aliens throughout the galaxy. Has to be done in small loads if you want to blend in with local traffic. But as we're sure you've guessed, the pay is good.\n\nNow, we only have one requirement here and that is that we get our credits. After that, the slaves are yours, and you're free to do whatever you wish with them. Send them into your mines, free them as citizens, or kill them for sport, the choice is all yours. If there is to be any order in this galaxy, the laws of ownership must be respected."
+  cw_enclave.407.a:0 "We'll take the minimum amount." # 100
+  cw_enclave.407.a.tooltip:0 "§Y100§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion10$"
+  cw_enclave.407.b:0 "We'll take a moderate shipment." # 200
+  cw_enclave.407.b.tooltip:0 "§Y200§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion15$"
+  cw_enclave.407.c:0 "We'll take as much as you can get." # 300
+  cw_enclave.407.c.tooltip:0 "§Y300§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion20$"
+  cw_enclave.407.d:0 "Never mind." # Main Menu
+  cw_enclave.407.e:0 "$GOODBYE$" # Exit
+  # Enslaved Pops Event
+  cw_enclave.408.name:0 "Pops Enslaved on [cw_enslaved_planet.GetName]" 
+  cw_enclave.408.desc:0 "On §Y[cw_enslaved_planet.GetName]§!, a coordinated criminal operation has led to the capture and enslaving of numerous pops.By the time local authorities understood the scale of the operation, the victims had already been transported off planet, likely sold to a foreign empire. As a result of this criminal activity, §Y[CW_GetNumSlaves] Pops§! have disappeared.\n\nAt this point, we can only take steps to ensure this doesn't happen again. Such a large operation is unlikely these criminal organizations working alone. Most likely the slaves were purchased by another empire through dealing with a §YRacketeer Enclave§!. We must either reduce crime levels on our planets, eliminate the enclave that caused this, or bribe such a enclave to guarantee we are not the targets."
+  cw_enclave.408.a:0 "Outrageous!"
+
+# Bribery
+  cw_enclave.409.name:0 "Bribe Racketeers" 
+  cw_enclave.409.desc:0 "..."
+  cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ ..."
+  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
+  cw_enclave.racketeer_bribery:0 "..."
+  cw_enclave.409.a:0 "Never mind." # Main Menu
+  cw_enclave.409.b:0 "We don't negotiate with criminals." # Exit
+
+## Privateers
+# Main Menu
+  cw_enclave.303.name:0 "$cw_enclave.302.name$"
+  cw_enclave.303.desc:0 "...303..."
+  # cw_enclave.303.a:0 "..."
+  cw_enclave.303.b:0 "..."
+  cw_enclave.303.b.cooldown:0 "This enclave has too recently participated in a raid."
+  cw_enclave.303.b.need_rivals:0 "$marauder.20.need_rivals$"
+  cw_enclave.303.c:0 "We'd like to hire one of your best Privateers."
+  cw_enclave.303.c.has_leader:0 "We may only employ §Yone§! §HEnclave Privateer§! at a time."
+  cw_enclave.303.d:0 "We are interested in stolen specimens."
+  cw_enclave.303.d.no_stealing_system:0 "This enclave has no viable system from which to steal specimens."
+  cw_enclave.303.d.cooldown:0 "This enclave has too recently raided specimens."
+  cw_enclave.303.d.no_archive:0 "We are interested in stolen resources."
+  cw_enclave.303.d.no_raidable_system:0 "This enclave has no viable system to raid for resources."
+  cw_enclave.303.d.no_archive_cooldown:0 "This enclave has too recently raided resources."
+
+# Harass Rivals Menu
+  cw_enclave.503.name:0 "Harass Rivals"
+  cw_enclave.503.desc:0 "..."
+  cw_enclave.503.a:0 "§YThe [cw_pirate_target_1.GetName].§!"
+  cw_enclave.503.b:0 "§YThe [cw_pirate_target_2.GetName].§!"
+  cw_enclave.503.c:0 "§YThe [cw_pirate_target_3.GetName].§!"
+  cw_enclave.503.d:0 "§YThe [cw_pirate_target_4.GetName].§!"
+  cw_enclave.503.e:0 "Actually, never mind." # Main Menu
+  cw_enclave.503.f:0 "$GOODBYE$" # Exit
+# Harass Confirmation
+  cw_enclave.504.name:0 "$cw_enclave.503.name$"
+  cw_enclave.504.desc:0 "..."
+  cw_enclave.504.a:0 "..."
+  cw_enclave.pirate_harass:0 "...\n$opinion20$"
+  cw_enclave.504.b:0 "We have a different target in mind."
+  cw_enclave.504.c:0 "Let us reconsider." # Main Menu
+  cw_enclave.504.d:0 "$GOODBYE$" # Exit
+  cw_enclave.504.response:0 "Our fleets mobilize as we speak."
+# Harass Denied
+  cw_enclave.505.name:0 "$cw_enclave.503.name$"
+  cw_enclave.505.desc:0 "... §Y[cw_pirate_confirmed_target.GetName]§! ..."
+  cw_enclave.505.a:0 "Useless." # Exit
+  cw_enclave.505.b:0 "We have another target in mind."
+  cw_enclave.505.c:0 "What else do you offer?" # Main Menu
+# Empire Harassed
+  cw_enclave.507.name:0 "..."
+  cw_enclave.507.desc:0 "..."
+  cw_enclave.507.a:0 "..." # Exit
+  cw_enclave.507.b:0 "..."
+  cw_enclave.507.b.response:0 "..."
+
+# Leader Purchase 
+  cw_enclave.509.name:0 "Hire Privateer"
+  cw_enclave.509.desc:0 "..."
+  cw_enclave.509.a:0 "..." 
+  cw_privateer_leader_explanation:0 "We will hire a Level 4 Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
+  cw_enclave.509.b:0 "Never mind." # Main Menu
+  cw_enclave.509.c:0 "$GOODBYE$" # Exit
+
+# Purchase Stolen Specimens
+  cw_enclave.510.name:0 "..."
+  cw_enclave.510.desc:0 "..."
+  cw_enclave.510.a:0 "..." 
+  cw_steals_aesthetic_wonder:0 "We will obtain a §YAesthetic Wonders§! Specimen from a random empire."
+  cw_enclave.510.a.no_aesthetic_wonder:0 "..."
+  cw_enclave.510.b:0 "..." 
+  cw_steals_historical_item:0 "We will obtain a §YGalactic History§! Specimen from a random empire."
+  cw_enclave.510.b.no_historical_item:0 "..."
+  cw_enclave.510.c:0 "..." 
+  cw_steals_xeno_geology:0 "..."
+  cw_enclave.510.c.no_xeno_geology:0 "We will obtain a §YXeno Geology§! Specimen from a random empire."
+  cw_enclave.510.d:0 "Never mind." # Main Menu
+  cw_enclave.510.e:0 "$GOODBYE$" # Exit
+# Purchase Stolen Resources (No Grand Archive)
+  cw_enclave.511.name:0 "..."
+  cw_enclave.511.desc:0 "..."
+  cw_enclave.511.a:0 "..." 
+  cw_enclave.511.b:0 "Never mind." # Main Menu
+  cw_enclave.511.c:0 "$GOODBYE$" # Exit
+
+# Bribery
+  # ...
+
+## Hackers
+# Main Menu
+  cw_enclave.304.name:0 "$cw_enclave.302.name$"
+  cw_enclave.304.desc:0 "Connecting...\nVerifying...\n---- CONNECTION ESTABLISHED ----\n\nWelcome to the [cw_criminal_enclave_country.GetName]. Here, a number of hacker guilds have come together to offer our services to those who can pay the price. While our span of physical space is quite limited, our members wield influence throughout galactic cyberspace. We're sure there are offers you'd like to take up."
+  cw_enclave.304.a:0 "How can you help our Espionage efforts?"
+  cw_enclave.304.a.has_key:0 "Criminal Hackers are already providing Espionage help."
+  cw_enclave.304.b:0 "We'd like you to hack our rivals."
+  cw_enclave.304.b.cooldown:0 "This enclave has too recently participated in a hack."
+  cw_enclave.304.b.need_rivals:0 "$marauder.20.need_rivals$"
+  cw_enclave.304.c:0 "We'd like to hire one of your best Hackers."
+  cw_enclave.304.c.has_leader:0 "We may only employ §Yone§! §HEnclave Hacker§! at a time."
+  cw_enclave.304.c.gestalt:0 "We'd like to integrate your methods."
+  cw_enclave.304.c.has_assimilated:0 "We've already assimilated §Y$leader_trait_cw_hacker_node$§!."
+  cw_enclave.304.d:0 "We'd like to buy a custom virus."
+  cw_enclave.304.d.has_hack:0 "We already have a Hacker Virus to deploy."
+  cw_enclave.304.e:0 "We come seeking protection from your hackers."
+
+# Skeleton Key
+  cw_enclave.600.name:0 "Skeleton Key"
+  cw_enclave.600.desc:0 "Here we offer the finest exploits and backdoors our  hackers have developed. For a reasonable cost, this wealth of information can be yours to do with as you wish. Additionally, for the next §Y10 Years§!, we will keep these files updated to include the most recent codes, exploits, and backdoors ensuring that your intelligence operatives will always be working with up to date information."
+  cw_enclave.600.a:0 "Wonderful."
+  cw_enclave.600.b:0 "What else do you offer?" # Main Menu
+  cw_enclave.600.c:0 "$GOODBYE$" # Exit
+# Skeleton Key Renewal
+  cw_enclave.601.name:0 "Renew Skeleton Key"
+  cw_enclave.601.desc:0 "<Automated Voice>\nDear [Root.GetSpeciesNamePlural], as the artificial assistant of the [cw_criminal_enclave_country.GetName], I am here to notify you that your subscription of our skeleton key service has expired. If not renewed, we will cease providing our exploits and your current tools will quickly become outdated. I recommend renewing your subscription as soon as possible and will connect you to an appropriate contact now.\n</Automated Voice>\n\nWelcome again [Root.GetSpeciesNamePlural]! As we're sure you were just informed, the 10 years in our previous contract has transpired. We are happy to renew it for another 10 years pending a credit transaction."
+  cw_enclave.601.a:0 "Transferring payment now."
+  cw_enclave.601.b:0 "What else can you offer?" # Main Menu
+  cw_enclave.601.c:0 "No thanks." # Exit
+
+# Hacking Rivals Menu
+  cw_enclave.602.name:0 "Hack Rivals"
+  cw_enclave.602.desc:0 "..."
+  cw_enclave.602.a:0 "§YThe [cw_hack_target_1.GetName].§!"
+  cw_enclave.602.b:0 "§YThe [cw_hack_target_2.GetName].§!"
+  cw_enclave.602.c:0 "§YThe [cw_hack_target_3.GetName].§!"
+  cw_enclave.602.d:0 "§YThe [cw_hack_target_4.GetName].§!"
+  cw_enclave.602.e:0 "Actually, never mind." # Main Menu
+  cw_enclave.602.f:0 "$GOODBYE$" # Exit
+# Hack Selection
+  cw_enclave.603.name:0 "$cw_enclave.602.name$"
+  cw_enclave.603.desc:0 "Our hackers have located vulnerabilities within the [cw_hack_confirmed_target.GetName]'s cybersecurity allowing for an attack on any one of their §Ymilitary§!, §Yeconomic§!, or §Ypolitical§! assets.\n\nWe could launch a coordinated attack at their military maintenance drones forcing them to utilize additional supplies to keep their fleets combat-ready. We could collapse their supply chain databases and strand their freight ships in deep space, far from their desired destinations. We could reveal confidential files to their public and display them across the capital, sowing distrust of their government.\n\nOf course, performing any of these actions would come at a cost."
+  cw_enclave.603.a:0 "Cripple their military maintenance drones." # Military
+  cw_enclave.military_hack:0 "Slightly increases the §Y[cw_hack_confirmed_target.GetName]'s§! ship logistics upkeep costs.\n$opinion10$"
+  cw_enclave.603.b:0 "Disable their infrastructure and supply chains." # Economic
+  cw_enclave.economic_hack:0 "Slightly increases the §Y[cw_hack_confirmed_target.GetName]'s§! job upkeep costs.\n$opinion10$"
+  cw_enclave.603.c:0 "Reveal their confidential files to their public." # Political
+  cw_enclave.political_hack:0 "Slightly decreases the §Y[cw_hack_confirmed_target.GetName]'s§! unity and government ethics attraction.\n$opinion10$"
+  cw_enclave.603.d:0 "We have a different target in mind."
+  cw_enclave.603.e:0 "Let us reconsider." # Main Menu
+  cw_enclave.603.f:0 "$GOODBYE$" # Exit
+  cw_enclave.603.response:0 "Consider it done."
+# Hack Denied
+  cw_enclave.604.name:0 "$cw_enclave.602.name$"
+  cw_enclave.604.desc:0 "Unfortunately, due to the military and political strength of the §Y[cw_hack_confirmed_target.GetName]§!, our organization has deemed that any cyberwarfare against them would likely result in unprofitable outcomes.\nWe apologize, and we hope we can find another way to do business."
+  cw_enclave.604.a:0 "Useless." # Exit
+  cw_enclave.604.b:0 "We have another target in mind."
+  cw_enclave.604.c:0 "What else do you offer?" # Main Menu
+# Hack Received
+  cw_hack_enclave_culprit:0 "Our head of cybersecurity has traced the hack as far back as they can, but any conclusive evidence has evaded us. Counterintelligence believes such an operation must have required connections to the dark net, beyond the level of any major power. Rather this appears to be the work of independent hackers, likely hired by one of our rivals to perform this attack."
+  # Military
+  cw_enclave.605.name:0 "Military Logistics Hacked" 
+  cw_enclave.605.desc:0 "Another of our military maintenance drones has exploded without explanation, marking the fourth this week. This latest loss confirms our already held worries that these explosions are no mere coincidence nor are they attributable to faulty tech, but rather they're the results of a coordinated attack by foreign hackers. No major damage has been dealt to our warships, but these attacks have made crucial maintanence difficult. Until effective firewalls can be put in place, additional supplies are needed to keep our fleets combat-ready.\n\n$cw_hack_enclave_culprit$"
+  cw_enclave.605.a:0 "$UNFORTUNATE$"
+  # Economic
+  cw_enclave.606.name:0 "Economic Databases Hacked" 
+  cw_enclave.606.desc:0 "Logistics databases on [capital_scope.GetName] have suddenly collapsed, creating shortages across the nation. Freight ships find themselves traveling to random coordinates, only to end up stranded far from their intended destination. Our administrators are overwhelmed with the manual work required to reroute our collective logistics without the help of the compromised artificial systems. It will be a while until the effects of this hack have passed.\n\n$cw_hack_enclave_culprit$"
+  cw_enclave.606.a:0 "$UNFORTUNATE$"
+  # Political
+  cw_enclave.607.name:0 "Political Secrets Hacked"
+  cw_enclave.607.desc:0 "Confidential secrets are currently being displayed throughout [capital_scope.GetName] on our official displays. Administrators are rushing to deactive the screens and prevent any further information from reaching the public, but the damage has already been done. If they havn't already, these secrets will soon have spread to the furthest colonies. Distrust of the government is bound to mount within our populace, and we must make sure to navigate the coming months carefully.\n\n$cw_hack_enclave_culprit$"
+  cw_enclave.607.a:0 "$UNFORTUNATE$"
+
+# Leader Purchase 
+  cw_enclave.608.name:0 "Hire Hacker" 
+  cw_enclave.608.desc:0 "Our hackers here are extremely talented, but such talent does warrant a large price. Under the assumption that they'll be well paid and appropriately taken care of, there are a number of us who are willing to serve your empire. Furthermore, us hackers are not known to be kind to authority and our methods are different from those with 'proper' training. However, if you're willing to meet these accomadations they will be of great help."
+  cw_enclave.608.a:0 "We welcome your hacker to our team." 
+  cw_hacker_leader_explanation:0 "We will hire a Level 4 Scientist with the §Y$subclass_cw_scientist_hacker$§! Subclass.\n$opinion20$"
+  cw_enclave.608.b:0 "Never mind." # Main Menu
+  cw_enclave.608.c:0 "$GOODBYE$" # Exit
+# Integrate Methods
+  cw_enclave.616.name:0 "Integrate Methods" 
+  cw_enclave.616.desc:0 "An unusual request. But then again, we're not used to dealing with your gestalt types. Loners by nature we are, preferring to meet only anonymously in cyberspace. However, if paid appropriately, we're willing to assemble a data package of our various techniques. These will necessarily be limited, as we can't give our most precious secrets away, but will provide you with strengthened espionage abilities."
+  cw_enclave.616.a:0 "We'll take the data."
+  cw_enclave.616.b:0 "Never mind." # Main Menu
+  cw_enclave.616.c:0 "$GOODBYE$" # Exit
+
+# Tech Virus
+  cw_enclave.611.name:0 "Purchase Virus" 
+  cw_enclave.611.desc:0 "Our hackers here at the [cw_criminal_enclave_country.GetName] greatly value your patronage, and without it, we would never have been able to build our operations to their current levels.\n\nAs such, we are proud to present you with our newest creation: a virus that will steal your rivals' technological secrets as they obtain them. With this active in another empire, every technology that they research will grant you §Y10%§! progress in that technology.\n\nHowever, installing the virus isn't as easy. Preliminary software, which as an extra gift will be included with your purchase, will also need to be installed beforehand through the completion of any espionage action. This will deactivate antagonist antiviral protections, and allow our software to do its beautiful work for five years before being renewed."
+  cw_enclave.611.a:0 "We will take the virus." 
+  cw_enclave.611.response:0 "Wonderful. We must add that the virus is a one-time use, but we will happily provide more for your credits."
+  cw_enclave.611.b:0 "Never mind." # Main Menu
+  cw_enclave.611.c:0 "$GOODBYE$" # Exit
+  # Activate Virus
+  cw_enclave.613.name:0 "Hacker Virus Primed" 
+  cw_enclave.613.desc:0 "Upon the completion of our espionage actions against the §Y[FromFrom.GetName]§!, our spymaster reports that the virus we purchased from the Hacker Enclave is ready to be activated. Our operatives were able to install the preliminary software, as per the instructions, which should take down any antiviral protections against the viral package.\n\nAll that remains to be done is to transmit the virus or to save it for another target, as once we use this we will need to purchase another copy from the Hackers. The antiviral software will only be down for a moment, so we must act now if we wish to act at all."
+  cw_enclave.613.a:0 "Transmit the package." 
+  cw_enclave.613.b:0 "Save it for another target."
+  cw_hacker_virus_effects:0 "For §Y5§! Years we will receive §Y10%§! Progress in every Technology that §Y[FromFrom.GetName]§! Researches."
+
+# Bribery 
+  cw_enclave.615.name:0 "Bribe Hackers" 
+  cw_enclave.615.desc:0 "We're not surprised. Our hackers are highly skilled and have found numerous vulnerabilities in your cybersecurity. We would offer to patch them, but that would put us out of business so we'll leave your 'experts' to that.\n\nHowever, we can promise to no longer take out deals against you, though a fair amount of credits would have to come our way to make such a deal worthwhile."
+  cw_enclave.615.desc.medium:0 "$cw_enclave.615.desc$ That said, your navy is impressible. We'd prefer to smooth things over with a mutually profitable so we'll only ask for 75% of what we'd normally."
+  cw_enclave.615.desc.strong:0 "$cw_enclave.615.desc$ That said, we are also highly aware of the strength of your fleets. While cyberspace is ours to command, our physical stronghold is vulnerable. We'd greatly prefer to avoid such a confrontation and will discount this deal appropriately."
+  cw_enclave.hacker_bribery:0 "As you wish."
+  cw_enclave.615.a:0 "Never mind." # Main Menu
+  cw_enclave.615.b:0 "We don't negotiate with criminals." # Exit

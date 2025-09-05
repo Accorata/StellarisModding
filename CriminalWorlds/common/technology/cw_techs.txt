@@ -1,0 +1,20 @@
+tech_cw_mafia_estate = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	weight = @tier3weight1
+
+	potential = {
+		is_megacorp = yes
+		is_illegal_criminal = yes
+	}
+
+	weight_modifier = {
+
+	}
+
+	ai_weight = {
+		
+	}
+}

@@ -1,0 +1,35 @@
+# ac_cybergladiator_drone = {
+# 	category = complex_drone
+# 	condition_string = DRONE_JOB_TRIGGER
+# 	building_icon = building_ac_cybernetics_stadium
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_enslaved = no
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+# 	possible_precalc = can_fill_drone_job
+# 	possible = { 
+# 		can_think = yes 
+# 		# cyborg...
+# 	}
+# 	resources = {
+# 		category = planet_ac_cybergladiator_drone
+# 		produces = {
+# 			unity = 2
+# 			society_research = 2 
+# 		}
+# 		upkeep = {
+# 			alloys = 1
+# 		}
+# 	}
+# 	planet_modifier = {
+# 		pop_happiness = 0.02 # Planet happiness
+# 	}
+# 	weight = {
+# 		weight = @complex_drone_job_weight
+# 		mult = 3
+# 	}
+# 	inline_script = "jobs/automodding_priority_research"
+# }

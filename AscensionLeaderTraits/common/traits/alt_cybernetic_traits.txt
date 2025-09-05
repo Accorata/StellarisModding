@@ -1,0 +1,405 @@
+leader_trait_city_interfaces = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_city_interfaces.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_governor_subclass = yes
+		}
+	}
+	planet_modifier = {
+		empire_size_districts_mult = -0.4
+	}
+	sector_modifier = {
+		empire_size_districts_mult = -0.2
+	}
+	leader_class = {
+		official
+		scientist
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_one_with_the_machine = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_one_with_the_machine.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_official_economy_councilor
+		}
+	}
+	councilor_modifier = {
+		planet_pop_assembly_mult = 0.05
+		planet_building_build_speed_mult = 0.15
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_predictive_algorithms = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = offical
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_predictive_algorithms.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_official_diplomacy_councilor
+		}
+	}
+	councilor_modifier = {
+		country_trade_fee = -0.03
+	}
+	leader_class = {
+		official
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_economic_projections = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_economic_projections.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		diplo_weight_economy_mult = 0.2
+	}
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		federation_experience_add = 0.5
+	}
+	leader_potential_add = {
+		OR = {
+			has_trait = leader_trait_cyborg
+			has_trait = leader_trait_ritualistic_implants_cyborg
+		}
+		has_trait = subclass_official_delegate
+	}
+	leader_class = {
+		official
+	}
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/galcom_weight_mult
+	}
+}
+
+leader_trait_organic_synthetic_materials = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_organo_synthetic_materials.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_commander_councilor
+		}
+	}
+	councilor_modifier = {
+		ship_armor_mult = 0.1
+		ship_armor_hardening_add = 0.1
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_built_in_calculator = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_built_in_calculator.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_commander_admiral
+		}
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.05
+		ship_tracking_mult = 0.05
+		ship_accuracy_mult = 0.05
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_terrain_retrofitting = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_terrain_retrofitting.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_commander_general
+		}
+	}
+	self_modifier = {
+		planet_combat_width_add = 2
+	}
+	leader_class = {
+		commander
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/army_weight_mult
+	}
+}
+
+leader_trait_generalized_learning_algorithms = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_generalized_learning_algorithms.dds"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.02
+		species_leader_exp_gain = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_electronic_mind_meld = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_electronic_mind_meld.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_speed_mult = 0.2
+		ship_anomaly_generation_chance_mult = 0.1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_scientist_explorer
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_multi_tool_appendages = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "gfx/interface/icons/traits/leader_trait_icons/alt_multi_tool_appendages.dds"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_archaeological_site_excavation_speed_mult = 0.1
+		ship_archaeological_site_clues_add = 1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			has_trait = subclass_scientist_scholar
+		}
+	}
+	leader_class = {
+		scientist
+	}
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+# Negative Traits #
+
+
+# Destiny Traits #
+leader_trait_endlessly_adaptive = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_cyborg"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = { 
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	councilor_modifier = {
+		pop_environment_tolerance = 0.1
+		pop_amenities_usage_mult = -0.1
+		pop_housing_usage_mult = -0.1
+	}
+	leader_potential_add = {
+		AND = {
+			OR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_ritualistic_implants_cyborg
+			}
+			is_councilor = yes
+		}
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+	randomized = yes
+	notify_on_gained = yes
+	selectable_weight = {
+		weight = 250
+		inline_script = alt/cybernetic_ritualistic_implants_weight_mult
+		inline_script = paragon/council_weight_mult
+	}
+}

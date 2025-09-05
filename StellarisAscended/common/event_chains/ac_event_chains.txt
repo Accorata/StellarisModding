@@ -1,0 +1,14 @@
+ac_genetic_shock_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_overtuned
+}
+
+ac_psionic_shock_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_zro_2
+}
+
+ac_kill_horror_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_dimensional_horror
+}

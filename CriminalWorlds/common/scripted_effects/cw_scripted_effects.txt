@@ -1,0 +1,189 @@
+cw_create_normal_criminal_enterprise = {
+	if = {
+		limit = {
+			has_cw_galactic_criminal_presense = no
+		}
+		create_country = {
+			name = "NAME_cw_criminal_enterprise"
+			type = cw_criminal_enterprise
+			flag = {
+				icon = {
+					category = "special"
+					file = "the_empire.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			save_global_event_target_as = cw_criminal_enterprise
+		}
+		every_country = {
+			establish_communications_no_message = last_created_country
+		}
+	}
+	else = {
+		event_target:cw_criminal_enterprise = {
+			set_faction_hostility = {
+				set_hostile = no
+				set_neutral = yes
+				target = root
+			}
+		}
+	}
+}
+
+cw_post_enclave_purchase_effects = {
+	# Add traded with this enclave flag
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = cw_traded_with_@event_target:cw_criminal_enclave_country
+			}
+		}
+		set_country_flag = cw_traded_with_@event_target:cw_criminal_enclave_country
+	}
+	# Add trust and recent deal flag for upgrade situation
+	event_target:cw_criminal_enclave_country = {
+		add_trust = {
+			who = root
+			amount = $TRUST$
+		}
+		if = {
+			limit = {
+				has_country_flag = cw_recent_deal
+			}
+			remove_country_flag = cw_recent_deal
+		}
+		set_timed_country_flag = {
+			flag = cw_recent_deal
+			days = $DEAL_LENGTH$
+		}
+	}
+}
+
+cw_create_small_privateer_fleet = {
+	create_fleet = {
+		name = "NAME_CW_Privateer_Fleet"
+		effect = {
+			create_ship_design = {
+				design = $CORVETTE_SHIP$
+			}
+			while = {
+				count = $NUMBER$
+				create_ship = {
+					name = random
+					design = last_created_design
+					graphical_culture = "pirate_01"
+				}
+			}
+			# Add an Advanced Destroyer
+			create_ship_design = {
+				design = NAME_Corsair
+			}
+			create_ship = {
+				name = random
+				design = last_created_design
+				graphical_culture = "pirate_01"
+			}
+			set_owner = prev
+			set_location = {
+				target = event_target:cw_privateer_spawn
+				distance = 15
+				angle = random
+			}
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 100
+		}
+	}
+}
+
+cw_create_large_privateer_fleet = {
+	# Add 10 Advanced Corvettes
+	cw_create_small_privateer_fleet = {
+		CORVETTE_SHIP = NAME_Skull
+		NUMBER = 10
+	}
+	last_created_fleet = {
+		# Add 2 more Advanced Destroyers (total of 3)
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = last_created_design
+				graphical_culture = "pirate_01"
+			}
+		}
+		# Add Cruiser 
+		create_ship_design = {
+			design = NAME_Black_Earl
+		}
+		create_ship = {
+			name = random
+			design = last_created_design
+			graphical_culture = "pirate_01"
+		}
+	}
+}
+
+cw_save_as_raid_target = {
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:cw_pirate_raid_target_1
+			}
+		}
+		save_event_target_as = cw_pirate_raid_target_1
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				exists = event_target:cw_pirate_raid_target_2
+			}
+		}
+		save_event_target_as = cw_pirate_raid_target_2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				exists = event_target:cw_pirate_raid_target_3
+			}
+		}
+		save_event_target_as = cw_pirate_raid_target_3
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				exists = event_target:cw_pirate_raid_target_4
+			}
+		}
+		save_event_target_as = cw_pirate_raid_target_4
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				exists = event_target:cw_pirate_raid_target_5
+			}
+		}
+		save_event_target_as = cw_pirate_raid_target_5
+	}
+}
+
+# cw_build_outpost = {
+# 	event_target:owner_of_the_planet = {
+# 		event_target:target_planet_for_building = {
+# 			planet_event = {
+# 				id = cw_enclave.2
+# 			}
+# 		}
+# 	}
+# }

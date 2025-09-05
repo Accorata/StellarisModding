@@ -1,0 +1,119 @@
+﻿l_english:
+# Cybernetic
+  mod_planet_cyberdome_duelist_engineering_research_produces_add:0 "£engineering_research£ $engineering_research$ from £job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
+  mod_planet_cyberdome_duelist_unity_produces_add:0 "£unity£ $unity$ from £job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
+
+  building_ac_undercity_arena:0 "Undercity Arena"
+  building_ac_undercity_arena_plural:0 "Undercity Arenas"
+  building_ac_undercity_arena_desc:0 "In the backstreets of the underworld, cage matches between cybernetically enhanced athletes are commonplace. Some leave rich, and some leave dead."
+
+  holding_ac_undercity_arena:0 "Offworld Colloseum"
+  holding_ac_undercity_arena_plural:0 "Offworld Colloseums"
+  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's armies duel to provide spectacles for our peoples."
+
+  building_ac_cybernetics_stadium:0 "Cybernetic Stadium"
+  building_ac_cybernetics_stadium_plural:0 "Cybernetic Stadiums"
+  building_ac_cybernetics_stadium_desc:0 "..."
+
+  job_ac_cybergladiator_drone:0 "Gladiator Drone"
+  job_ac_cybergladiator_drone_plural:0 "Gladiator Drones"
+  job_ac_cybergladiator_drone_desc:0 "..."
+  # ...
+  job_ac_cybergladiator_drone_effect_desc:0 "..."
+  mod_job_ac_cybergladiator_drone_add:0 "$job_ac_cybergladiator_drone$ Jobs" # icon needed
+
+  planet_ac_cybergladiator_drone:0 "$job_ac_cybergladiator_drone_plural$"
+
+# Synthetic
+  holding_ac_robotics_plant:0 "Robotics Plant"
+  holding_ac_robotics_plant_plural:0 "Robotics Plants"
+  holding_ac_robotics_plant_desc:0 "Building Robotics facillities within other nations allow for witness the wonders of synth so we can profit off our technological progress."
+
+  building_ac_mega_forge:0 "Mega-Forge"
+  building_ac_mega_forge_desc:0 "This collosal structure provides the metals needed to build dreams beyond scale."
+  job_ac_grand_synthesizer:0 "Grand Synthesizer"
+  job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
+  job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
+  job_ac_grand_synthesizer_desc:0 "The gods of the material plane, Grand Synthesizers forge the resources from which our wonders are formed."
+  job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
+  mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
+  mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
+  mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
+  concept_ac_grand_synthesizer: "$job_ac_grand_synthesizer_plural$"
+  concept_ac_grand_synthesizer_desc: "$job_ac_grand_synthesizer_plural$ turn $i_minerals$ into $i_alloys$ and §YMegastructure build speed§!.\n\n§L$job_ac_grand_synthesizer_desc$§!"
+
+# Psionic
+  building_ac_order_hall:0 "Order's Hall"
+  building_ac_order_hall_desc:0 "Within this great hall, the Knights of the Order convene on matters of divine importance."
+  concept_building_ac_order_hall:0 "$building_ac_order_hall$"
+  building_ac_order_hall_knights:0 "$building_ac_order_hall$"
+  building_ac_order_hall_knights_desc:0 "$building_ac_order_hall_desc$"
+  concept_building_ac_order_hall_knights:0 "$building_ac_order_hall_knights$"
+
+  job_ac_normal_knight:0 "$job_knight$"
+  job_ac_normal_knight_plural:0 "$job_knight_plural$"
+  job_ac_normal_knight_desc:0 "Trained for combat; psionically gifted; well educated; virtuous. These knights represent the very best of our society, and they have dedicated their lives to the prosperity of the Order."
+  job_ac_normal_knight_effect_desc:3 "£job_knight£ $job_knight_plural$ turn $r_alloys$ into $r_unity$ and $r_research$, increase £mod_country_naval_cap_add£ §YNaval Capacity§! and spawn £defense_army£ §YDefense Armies§!."
+  mod_job_ac_normal_knight_add:0 "$job_knight$ Jobs"
+  mod_job_ac_normal_knight_per_pop:0 "§G+1§! $job_knight$ Job per $VALUE$ Pops"
+  mod_job_ac_normal_knight_per_pop_short:0 "\n§G+1§! £mod_job_knight_add£ per $VALUE$ £pop£"
+  planet_ac_normal_knights:0 "$planet_knights$"
+  mod_planet_ac_normal_knights_produces_mult:1 "£job_knight£ $job_knight_plural$ Output"
+  concept_ac_normal_knight: "$job_knight_plural$"
+  concept_ac_normal_knight_desc: "$job_knight_plural$ turn $i_alloys$ into $i_unity$ and $i_research$, increase $i_naval_capacity$ and spawn $i_defense_armies$.\n\n§L$job_ac_normal_knight_desc$§!"
+
+  holding_ac_manipulation_network:0 "Manipulation Network"
+  holding_ac_manipulation_network_desc:0 "Hidden deep within this corporate temple, their telepaths promote consumerism in our populace through subliminal telepathy."
+  holding_ac_manipulation_network_fail_tt:0 "$TRIGGER_FAIL$We already have an §Y$holding_ac_manipulation_network$§! in the §Y[Planet.Owner.GetName]§!"
+  ac_manipulation_network_modifier:0 "$holding_ac_manipulation_network$"
+  ac_manipulation_network_modifier_desc:0 "A Megacorporation has built a $holding_ac_manipulation_network$ holding on one of our planets, in which their telepaths promote consumerism in our populace through subliminal telepathy."
+  ac_manipulation_network_tt: "Non-Stacking Modifier for this Planet's Owner: $TABBED_NEW_LINE$Branch Office Value: §Y+25%§! $TABBED_NEW_LINE$$mod_planet_pops_consumer_goods_upkeep_mult$: §R+25%§!"
+  concept_holding_ac_manipulation_network:0 "$holding_ac_manipulation_network$"
+
+  building_ac_psi_tower:0 "Psionic Tower"
+  building_ac_psi_tower_plural:0 "Psionic Towers"
+  building_ac_psi_tower_desc:0 "High in these towers telepaths commune with the people below, uniting our mind and wielding our future."
+
+  building_ac_renouncer_sanctum:0 "Sanctum of Transcendence"
+  building_ac_renouncer_sanctum_desc:0 "The Sanctum is a place free from the horrors of the Shroud. Here, our collective enlightenment can be witnessed firsthand."
+
+  sm_ac_avatar_caller:0 "Beacon of the End"
+  sm_ac_avatar_caller_plural:0 "Beacons of the End"
+  sm_ac_avatar_caller_desc:0 "This mini tear into the fabric of the Shroud allows for a clearer path through the chaos, drawing the great end ever closer."
+  sm_ac_avatar_caller_desc_modifier:0 "..."
+
+# Genetic
+  building_ac_grand_sapling:0 "Grand Sapling"
+  building_ac_grand_sapling_plural:0 "Grand Saplings"
+  building_ac_grand_sapling_desc:0 "$building_solarpunk_sapling_desc$"
+
+  building_ac_hanging_cities:0 "Hanging Cities"
+  building_ac_hanging_cities_plural:0 "$building_ac_hanging_cities$"
+  building_ac_hanging_cities_desc:0 "$building_solarpunk_organic_paradise_desc$"
+
+  mod_job_solarpunk_anarchist_add:0 "$job_solarpunk_anarchist$ Jobs" # Vanilla Override to fix bug
+  job_solarpunk_anarchist_effect_desc:0 "£job_solarpunk_anarchist£ $job_solarpunk_anarchist_plural$ increase £stability£ §YStability§!, increase £amenities£ §YAmenities§!, and produce £unity£ §Y$unity$§!."
+  
+  job_ac_content_terraformer:0 "$job_solarpunk_anarchist$"
+  job_ac_content_terraformer_plural:0 "$job_solarpunk_anarchist_plural$"
+  job_ac_content_terraformer_desc:0 "$job_solarpunk_anarchist_desc$"
+  job_ac_content_terraformer_effect_desc:3 "$job_solarpunk_anarchist_effect_desc$"
+  mod_job_ac_content_terraformer_add:0 "$mod_job_solarpunk_anarchist_add$"
+
+  building_ac_xanadu:0 "Xanadu"
+  building_ac_xanadu_plural:0 "Xanadus"
+  building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten. Nothing else will ever even begin to compare."
+
+# Virtual
+  sm_ac_bandwidth_router:0 "Omni-band Router"
+  sm_ac_bandwidth_router_plural:0 "Omni-band Routers"
+  sm_ac_bandwidth_router_desc:0 "Modular quantum CPUs coordinating immense transfer of information from the nearby hyper relay, transmitting the data that is our entire being."
+  sm_ac_bandwidth_router_desc_modifier:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_planet_jobs_produces_mult$ §G+15%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
+  sm_ac_bandwidth_router_corporate:0 "$sm_ac_bandwidth_router$"
+  sm_ac_bandwidth_router_corporate_plural:0 "$sm_ac_bandwidth_router_plural$"
+  sm_ac_bandwidth_router_corporate_desc:0 "$sm_ac_bandwidth_router_desc$"
+  sm_ac_bandwidth_router_desc_modifier_corporate:0 "If this £system£ System has an active Hyper-Relay:\n$t$System Modifier:\n$t$$t$$mod_pop_job_trade_mult$ §G+30%§!\n$t$Empire Modifier:\n$t$$t$$mod_megastructures_hyper_relay_unity_produces_add$ §G+1§!"
+
+  holding_ac_external_router:0 "External Router Core"
+  holding_ac_external_router_plural:0 "External Router Cores"
+  holding_ac_external_router_desc:0 "Massive computers processing the immense load of data of our Overlord's virtual lifestyle."

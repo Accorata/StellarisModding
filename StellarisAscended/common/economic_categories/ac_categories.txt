@@ -1,0 +1,126 @@
+planet_ac_normal_knights = {
+	parent = planet_jobs_productive
+	modifier_category = pop
+	generate_mult_modifiers = {
+		produces
+	}
+	
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_researchers
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_physicists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_physicists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_biologists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_biologists
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_engineers
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_engineers
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_produces_modifier = {
+		key = planet_bureaucrats
+		modifier_types = {
+			mult
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+	triggered_upkeep_modifier = {
+		key = planet_bureaucrats
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
+}
+
+# Override for Cyber Gladiator Civics
+planet_cyberdome_duelist = {
+	parent = planet_jobs_productive
+	modifier_category = pop
+	generate_add_modifiers = {
+		produces
+	}
+}
+
+# test
+pop_category_ac_droid_drone = {
+	parent = planet_pops
+}

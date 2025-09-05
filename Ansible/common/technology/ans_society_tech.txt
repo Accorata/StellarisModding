@@ -1,0 +1,197 @@
+tech_ansible_comms = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = {
+		statecraft
+	}
+	prerequisites = {
+		"tech_ansible"
+		"tech_xeno_relations"
+	}
+	weight = @tier4cost1
+	potential = {
+		is_gestalt = no
+	}
+	modifier = {
+		diplo_weight_mult = 0.1
+		envoy_improve_relations_mult = 0.5
+		envoy_harm_relations_mult = 0.5
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait_in_council = {
+					TRAIT = leader_trait_expertise_statecraft
+				}
+				has_trait_in_council = {
+					TRAIT = leader_trait_curator
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 1.1
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.2
+			has_ethic = ethic_fanatic_xenophile
+		}
+	}
+	ai_weight = {
+	}
+}
+
+# Doctrine: Ansible Communications
+tech_doctrine_navy_size_5 = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_doctrine_navy_size_4"
+		"tech_ansible"
+	}
+	weight = @tier4weight3
+	modifier = {
+		country_naval_cap_add = 25
+	}
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+}
+
+tech_galactic_propaganda = {
+	cost = @tier4cost2
+	area = society
+	category = {
+		military_theory
+	}
+	tier = 4
+	weight = @tier4weight2
+	prerequisites = {
+		"tech_galactic_campaigns"
+		"tech_ansible"
+	}
+	modifier = {
+		country_war_exhaustion_mult = -0.2
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			OR = {
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+			}
+		}
+		modifier = {
+			factor = 2
+			num_communications > 2
+		}
+		modifier = {
+			factor = 2
+			num_communications > 3
+		}
+		modifier = {
+			factor = 2
+			num_communications > 4
+		}
+		modifier = {
+			factor = 0
+			num_communications < 1
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 1.1
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 1.2
+			has_ethic = ethic_fanatic_authoritarian
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_radicalized_factions = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = {
+		statecraft
+	}
+	prerequisites = {
+		"tech_living_state"
+		"tech_collective_self"
+		"tech_ansible"
+	}
+	weight = @tier4weight1
+	potential = {
+		NOT = {
+			has_ethic = ethic_gestalt_consciousness
+		}
+	}
+	modifier = {
+		pop_factions_unity_produces_mult = 1
+		faction_approval = -0.1
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			num_owned_planets < 5
+		}
+		modifier = {
+			factor = 2
+			num_owned_planets > 6
+		}
+		modifier = {
+			factor = 2
+			num_owned_planets > 8
+		}
+		modifier = {
+			factor = 2
+			num_owned_planets > 10
+		}
+	}
+	ai_weight = {
+	}
+}

@@ -1,0 +1,251 @@
+namespace = advanced_leader_traits
+# On army killed in combat.
+country_event = {
+	id = advanced_leader_traits.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROMFROM = {
+			# Planet where ground combat is taking place.
+			# Check if dead army is a defensive army.
+			if = {
+				limit = {
+					any_ground_combat_defender = {
+						is_same_value = ROOT.FROM
+					}
+				}
+				# Check if attacking army has general with Desecrator trait.
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_desecrator
+								has_trait = leader_trait_desecrator_2
+								has_trait = leader_trait_desecrator_3
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+				# Select the defeated army
+				random_ground_combat_defender = {
+					limit = {
+						is_same_value = ROOT.FROM
+					}
+					save_event_target_as = army_defeated
+				}
+			}
+		}
+		# If attacking army has a leader with Desecraor trait, award food/minerals/energy.
+		if = {
+			limit = {
+				exists = event_target:attacking_general
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:attacking_general = {
+							has_trait = leader_trait_desecrator
+						}
+					}
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = yes
+							}
+						}
+						add_resource = {
+							energy = 40						# Tier 1
+						}
+					}
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = no
+								is_lithoid = yes
+							}
+						}
+						add_resource = {
+							minerals = 40						# Tier 1
+						}
+					}
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = no
+								is_lithoid = no
+							}
+						}
+						add_resource = {
+							food = 40						# Tier 1
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = yes
+							}
+						}
+						add_resource = {
+							energy = 75						# Tier 2
+						}
+					}
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = no
+								is_lithoid = yes
+							}
+						}
+						add_resource = {
+							minerals = 75						# Tier 2
+						}
+					}
+					if = {
+						limit = {
+							event_target:army_defeated = {
+								is_robotic = no
+								is_lithoid = no
+							}
+						}
+						add_resource = {
+							food = 75						# Tier 2
+						}
+					}
+				}
+			}
+		}
+	}
+}
+# On army killed in combat.
+country_event = {
+	id = advanced_leader_traits.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		FROMFROMFROM = {
+			# Planet where ground combat is taking place.
+			# Check if attacking army has general with Recalibrator trait.
+			if = {
+				limit = {
+					any_ground_combat_attacker = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_recalibrator
+								has_trait = leader_trait_recalibrator_2
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+					}
+				}
+				# Select the defeated army
+				random_ground_combat_attacker = {
+					limit = {
+						is_same_value = ROOT.FROM
+					}
+					save_event_target_as = army_defeated
+				}
+				random_ground_combat_defender = {
+					limit = {
+						is_same_value = ROOT.FROM
+					}
+					save_event_target_as = army_defeated
+				}
+				# Save general
+				random_ground_combat_attacker = {
+					limit = {
+						exists = leader
+						leader = {
+							OR = {
+								has_trait = leader_trait_recalibrator
+								has_trait = leader_trait_recalibrator_2
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+					}
+					leader = {
+						save_event_target_as = attacking_general
+					}
+				}
+			}
+		}
+		# If defeated army was a robot, chance to spawn another
+		if = {
+			limit = {
+				exists = event_target:army_defeated
+			}
+			FROMFROM = {
+				if = {
+					limit = {
+						event_target:army_defeated = {
+							is_robotic = yes
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator
+							}
+						}
+						random_list = {
+							9 = { }
+							1 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator_2
+							}
+						}
+						random_list = {
+							8 = { }
+							2 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							event_target:attacking_general = {
+								has_trait = leader_trait_recalibrator_3
+							}
+						}
+						random_list = {
+							7 = { }
+							3 = {
+								fromfromfrom = {
+									create_army = {
+										owner = root.fromfrom
+										type = machine_assault_1
+										species = root.from.species
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

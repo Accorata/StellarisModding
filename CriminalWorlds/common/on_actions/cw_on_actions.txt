@@ -1,0 +1,129 @@
+### Planet Crime Events ###
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		criminal_worlds.1		# Criminal Worlds Crime Events
+		criminal_worlds.46		# Checks for freedom fighters
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		criminal_worlds.5		# Criminal Worlds Housing Events
+		criminal_worlds.24		# Checks for Criminal Shipbuilders
+	}
+}
+
+### Criminal Enclaves ###
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		cw_enclave.100		# Criminal Enclave greetings
+		# criminal_worlds.52		# White Flower Hostage
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		cw_enclave.3		# Criminal Enclave dies
+	}
+}
+
+# THIS = Espionage operation
+# FROM = Operation target
+on_operation_finished = {
+	events = {
+		cw_enclave.612		 # Activate Hacker Virus
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		cw_enclave.614		 # Hacker Virus Steals tech
+	}
+}
+
+### Leader Traits ###
+# A leader is added to the leader pool, available for recruitment
+# scope: country, from: leader
+on_added_to_leader_pool = {
+	events = {
+		criminal_worlds.111		# Pool Leaders gain Criminal Traits
+	}
+}
+
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+		criminal_worlds.100		# Effects for Privateer's Material Liberator + Juryrigger
+	}
+}
+
+# this = country
+on_yearly_pulse_country = {
+	events = {
+		criminal_worlds.113		# Web of Connections grants random assets
+	}
+}
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+		cw_enclave.297			# Criminal Enclave Attcked
+		criminal_worlds.102 	# Hacked Fleets Becomes Confused for 30 Days
+	}
+}
+
+### Civics ###
+on_game_start_country = {
+	events = {
+		criminal_worlds.101		# Prison State gets Penal Colony research option
+	}
+}
+
+# Executed just as country is changing its government, after the new one is applied
+# THIS = country
+on_post_government_changed = {
+	events = {
+		criminal_worlds.101		# Prison State gets Penal Colony research option
+	}
+}
+
+### Traditions ###
+# A country is created via create_country or create_rebels
+# This = created country
+# From = root of context where create_country/create_rebels happens
+on_country_created = {
+	events = {
+		criminal_worlds.107		# Pirates become neutral to Pirate Warlords (criminality tradition)
+	}
+}
+
+# THIS = country
+on_tradition_picked = {
+	events = {
+		criminal_worlds.109		# Pirates become neutral to Pirate Warlords (criminality tradition)
+	}
+}
+
+# this = country
+on_pirate_spawn = {
+	events = {
+		criminal_worlds.110		# Increases pirate spawn chance for Pirate Warlord neighbors
+	}
+}

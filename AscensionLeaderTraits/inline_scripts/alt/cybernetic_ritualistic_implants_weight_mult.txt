@@ -1,0 +1,4 @@
+modifier = {
+	has_trait = leader_trait_ritualistic_implants_cyborg
+	factor = 0.5
+}

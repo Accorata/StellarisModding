@@ -1,0 +1,129 @@
+# Centrapolis
+decision_centrapolis = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	prerequisites = {
+		"tech_centrapolis"
+	}
+	resources = {
+		category = decisions
+		cost = {
+			unity = 1000
+		}
+	}
+	potential = {
+		is_planet_class = pc_city
+	}
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					is_ai = no
+				}
+			}
+			custom_tooltip = {
+				fail_text = decision_centrapolis_requirements
+				num_districts = {
+					type = district_arcology_arms_industry
+					value < 1
+				}
+				num_districts = {
+					type = district_arcology_civilian_industry
+					value < 1
+				}
+				num_districts = {
+					type = district_arcology_leisure
+					value < 1
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_centrapolis_effects
+		hidden_effect = {
+			change_pc = pc_central
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_housing
+				DISTRICT_2 = district_arcology_housing_central
+			}
+				ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_organic_housing
+				DISTRICT_2 = district_arcology_organic_housing_central
+			}
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_administrative
+				DISTRICT_2 = district_arcology_administrative_central
+			}
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_religious
+				DISTRICT_2 = district_arcology_religious_central
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_uncentrapolis = {
+	owned_planets_only = yes
+	icon = decision_arcology_project
+	resources = {
+		category = decisions
+		cost = {
+			unity = 1000
+		}
+	}
+	potential = {
+		is_planet_class = pc_central
+	}
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					is_ai = no
+				}
+			}
+			custom_tooltip = {
+				fail_text = decision_uncentrapolis_requirements
+				num_districts = {
+					type = district_arcology_coordination
+					value < 1
+				}
+				num_districts = {
+					type = district_arcology_culture
+					value < 1
+				}
+				num_districts = {
+					type = district_arcology_media
+					value < 1
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_uncentrapolis_effects
+		hidden_effect = {
+			change_pc = pc_city
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_housing_central
+				DISTRICT_2 = district_arcology_housing
+			}
+				ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_organic_housing_central
+				DISTRICT_2 = district_arcology_organic_housing
+			}
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_administrative_central
+				DISTRICT_2 = district_arcology_administrative
+			}
+			ans_replace_district_effect = {
+				DISTRICT_1 = district_arcology_religious_central
+				DISTRICT_2 = district_arcology_religious
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

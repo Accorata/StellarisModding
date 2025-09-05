@@ -1,0 +1,15 @@
+ans_replace_district_effect = {
+	export_trigger_value_to_variable = {
+		trigger = num_districts
+		parameters = {
+			type = $DISTRICT_1$
+		}
+		variable = num_districts_being_replaced
+	}
+	while = {
+		count = num_districts_being_replaced
+		remove_district = $DISTRICT_1$
+		add_district = $DISTRICT_2$
+	}
+	clear_variable = num_districts_being_replaced
+}

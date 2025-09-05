@@ -1,0 +1,16 @@
+﻿l_english:
+# Centrapolis jobs
+  job_mass_entertainer:0 "Media Producer"
+  job_mass_entertainer_plural:0 "Media Producers"
+  job_mass_entertainer_name_plural_with_icon:0 "£job_mass_entertainer£ $job_mass_entertainer_plural$"
+  job_mass_entertainer_desc:0 "These visionaries create the newest virtual entertainment that our entire nation can enjoy."
+
+  job_ansible_coordinator:0 "Optimizer"
+  job_ansible_coordinator_plural:0 "Optimizers"
+  job_ansible_coordinator_name_plural_with_icon:0 "£job_ansible_coordinator£ $job_ansible_coordinator_plural$"
+  job_ansible_coordinator_desc:0 "The bureaucrat's necessary evolution, managing the ins and outs of the entire nation from the gleaming towers of this centrapolis."
+# Job descriptions for arcologies
+  job_mass_entertainer_effect_desc:1 "£job_mass_entertainer£ $job_mass_entertainer_plural$ turn $r_consumer_goods$ into $r_unity$ and empire-wide $r_amenities$."
+  mod_job_mass_entertainer_add:0 "$job_mass_entertainer$ Jobs"
+  job_ansible_coordinator_effect_desc:0 "£job_ansible_coordinator£ $job_ansible_coordinator_plural$ turn $r_consumer_goods$ into empire-wide production bonuses."
+  mod_job_ansible_coordinator_add:0 "$job_ansible_coordinator$ Jobs"

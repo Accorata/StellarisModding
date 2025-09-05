@@ -1,0 +1,114 @@
+option = {
+	name = cw_enclave.$ENCLAVE_TYPE$_bribery
+	trigger = {
+		fleet_power < 15000
+	}
+	inline_script = {
+		script = events/resource_cost_with_allow
+		RESOURCE = trade
+		AMOUNT = value:cw_$ENCLAVE_TYPE$_purchase_cost|COST|10000|
+	}
+	if = {
+		limit = {
+			is_gestalt = no
+			NOT = {
+				has_modifier = cw_criminal_elite
+			}
+		}
+		add_modifier = {
+			modifier = cw_criminal_elite
+		}
+	}
+	add_modifier = {
+		modifier = cw_bribed_$ENCLAVE_TYPE$s
+	}
+	custom_tooltip = opinion20
+	hidden_effect = {
+		event_target:cw_criminal_enclave_country = {
+			add_trust = {
+				who = root
+				amount = 20
+			}
+		}
+		country_event = {
+			id = cw_enclave.300
+		}
+	}
+}
+
+option = {
+	name = cw_enclave.$ENCLAVE_TYPE$_bribery
+	trigger = {
+		fleet_power > 15000
+		fleet_power < 25000
+	}
+	inline_script = {
+		script = events/resource_cost_with_allow
+		RESOURCE = trade
+		AMOUNT = value:cw_$ENCLAVE_TYPE$_purchase_cost|COST|7500|
+	}
+	if = {
+		limit = {
+			is_gestalt = no
+			NOT = {
+				has_modifier = cw_criminal_elite
+			}
+		}
+		add_modifier = {
+			modifier = cw_criminal_elite
+		}
+	}
+	add_modifier = {
+		modifier = cw_bribed_$ENCLAVE_TYPE$s
+	}
+	custom_tooltip = opinion15
+	hidden_effect = {
+		event_target:cw_criminal_enclave_country = {
+			add_trust = {
+				who = root
+				amount = 15
+			}
+		}
+		country_event = {
+			id = cw_enclave.300
+		}
+	}
+}
+
+option = {
+	name = cw_enclave.$ENCLAVE_TYPE$_bribery
+	trigger = {
+		fleet_power > 25000
+	}
+	inline_script = {
+		script = events/resource_cost_with_allow
+		RESOURCE = trade
+		AMOUNT = value:cw_$ENCLAVE_TYPE$_purchase_cost|COST|2500|
+	}
+	if = {
+		limit = {
+			is_gestalt = no
+			NOT = {
+				has_modifier = cw_criminal_elite
+			}
+		}
+		add_modifier = {
+			modifier = cw_criminal_elite
+		}
+	}
+	add_modifier = {
+		modifier = cw_bribed_$ENCLAVE_TYPE$s
+	}
+	custom_tooltip = opinion10
+	hidden_effect = {
+		event_target:cw_criminal_enclave_country = {
+			add_trust = {
+				who = root
+				amount = 10
+			}
+		}
+		country_event = {
+			id = cw_enclave.300
+		}
+	}
+}

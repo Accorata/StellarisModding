@@ -1,0 +1,26 @@
+﻿l_english:
+## Official Traits
+
+## Commander traits
+# Xenophobic
+  leader_trait_desecrator:0 "Desecrator"
+  leader_trait_desecrator_desc:0 "..."
+  leader_trait_desecrator_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$If organic: $r_food$: §G+40§!\n$tt$If lithoid: $r_minerals$: §G+40§!"\n$tt$If machine: $r_energy$: §G+40§!"
+  leader_trait_desecrator_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_ARMY_KILLED_TXT$:\n$tt$If organic: $r_food$: §G+75§!\n$tt$If lithoid: $r_minerals$: §G+75§!\n$tt$If machine: $r_energy$: §G+75§!"
+# Materialist
+  leader_trait_recalibrator:0 "Recalibrator"
+  leader_trait_recalibrator_desc:0 "..."
+  leader_trait_recalibrator_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y10%§! to spawn a Hunter Killer Army of that species"
+  leader_trait_recalibrator_2_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y20%§! to spawn a Hunter Killer Army of that species"
+  leader_trait_recalibrator_3_effect:0 "$ARMY_EFFECTS_TXT$:\n$t$$EVERY_MACHINE_ARMY_KILLED_TXT$:\n$tt$§Y30%§! to spawn a Hunter Killer Army of that species"
+# Militarist
+  leader_trait_invader:0 "Invader"
+  leader_trait_invader_desc:0 "..."
+  leader_trait_invader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+10%§!"
+  leader_trait_invader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+15%§!\n$t$Damage vs Starbases: §G+5%§!"
+  leader_trait_invader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$Enemy Territory Fire Rate: §G+15%§!\n$t$Damage vs Starbases: §G+25%§!"
+## Scientist Traits
+
+
+# Other
+  EVERY_MACHINE_ARMY_KILLED_TXT: "For Every Machine Army Killed or Lost in Combat"

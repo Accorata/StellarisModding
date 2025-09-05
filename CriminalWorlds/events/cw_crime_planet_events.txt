@@ -1,0 +1,1583 @@
+namespace = criminal_worlds
+# Bribed Enforcer
+planet_event = {
+	id = criminal_worlds.10
+	title = criminal_worlds.10.name
+	desc = criminal_worlds.10.desc
+	picture = GFX_evt_bribery
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_corruption_1
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			add_modifier = {
+				modifier = cw_corruption_1
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.11
+	title = criminal_worlds.11.name
+	desc = criminal_worlds.11.desc
+	picture = GFX_evt_bribery
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+		has_modifier = cw_corruption_1
+	}
+	immediate = {
+		remove_modifier = cw_corruption_1
+		add_modifier = {
+			modifier = cw_corruption_2
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			remove_modifier = cw_corruption_1
+			add_modifier = {
+				modifier = cw_corruption_2
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.12
+	title = criminal_worlds.12.name
+	desc = criminal_worlds.12.desc
+	picture = GFX_evt_bribery
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+		has_modifier = cw_corruption_2
+	}
+	immediate = {
+		remove_modifier = cw_corruption_2
+		add_modifier = {
+			modifier = cw_corruption_3
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			remove_modifier = cw_corruption_2
+			add_modifier = {
+				modifier = cw_corruption_3
+				days = 3600
+			}
+		}
+	}
+}
+
+# Illegal Freeports
+planet_event = {
+	id = criminal_worlds.20
+	title = criminal_worlds.20.name
+	desc = criminal_worlds.20.desc
+	picture = GFX_evt_busy_spaceport
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_illegal_freeports
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			add_modifier = {
+				modifier = cw_illegal_freeports
+				days = 3600
+			}
+		}
+	}
+}
+
+# Criminal Shipyards
+planet_event = {
+	id = criminal_worlds.21
+	title = criminal_worlds.21.name
+	desc = criminal_worlds.21.desc
+	picture = GFX_evt_ship_offloading_cargo
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_criminal_shipyards
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			add_modifier = {
+				modifier = cw_criminal_shipyards
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.22
+	title = criminal_worlds.22.name
+	desc = criminal_worlds.22.desc
+	picture = GFX_evt_ship_offloading_cargo
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = criminal_underworld
+		has_modifier = cw_criminal_shipyards
+	}
+	immediate = {
+		remove_modifier = cw_criminal_shipyards
+		add_modifier = {
+			modifier = cw_criminal_shipyards_2
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = criminal_worlds.22.a
+		tooltip = {
+			remove_modifier = cw_criminal_shipyards
+			add_modifier = {
+				modifier = cw_criminal_shipyards_2
+				days = 3600
+			}
+		}
+	}
+	option = {
+		name = criminal_worlds.22.b
+		tooltip = {
+			remove_modifier = cw_criminal_shipyards
+			add_modifier = {
+				modifier = cw_criminal_shipyards_2
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		free_housing < -50
+		NOT = {
+			is_planet_class = pc_cosmogenesis_world
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = cw_slum_progress
+				}
+			}
+			set_variable = {
+				which = cw_slum_progress
+				value = 1
+			}
+		}
+		else = {
+			change_variable = {
+				which = cw_slum_progress
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable_arithmetic = {
+					which = cw_slum_progress
+					value >= 5
+				}
+			}
+			if = {
+				limit = {
+					has_cw_underworld_slums = no
+				}
+				planet_event = {
+					id = criminal_worlds.30
+					days = 1
+					random = 10
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_modifier = cw_underground_slums_1
+						has_modifier = cw_underground_slums_1_robot
+						has_modifier = cw_underground_slums_1_hive
+						has_modifier = cw_underground_slums_1_machine
+					}
+				}
+				planet_event = {
+					id = criminal_worlds.31
+					days = 1
+					random = 10
+				}
+			}
+			subtract_variable = {
+				which = cw_slum_progress
+				value = 5
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.30
+	title = criminal_worlds.30.name
+	desc = criminal_worlds.30.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					is_gestalt = no
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						is_individual_machine = no
+					}
+				}
+				add_modifier = {
+					modifier = cw_underground_slums_1
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = cw_underground_slums_1_robot
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			add_modifier = {
+				modifier = cw_underground_slums_1_hive
+			}
+		}
+		else = {
+			add_modifier = {
+				modifier = cw_underground_slums_1_machine
+			}
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			if = {
+				limit = {
+					owner = {
+						is_gestalt = no
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							is_individual_machine = no
+						}
+					}
+					add_modifier = {
+						modifier = cw_underground_slums_1
+					}
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = cw_underground_slums_1_robot
+				}
+			}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						is_hive_empire = yes
+					}
+				}
+				add_modifier = {
+					modifier = cw_underground_slums_1_hive
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = cw_underground_slums_1_machine
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.31
+	title = criminal_worlds.31.name
+	desc = criminal_worlds.31.desc
+	picture = GFX_evt_underground_city
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		OR = {
+			has_modifier = cw_underground_slums_1
+			has_modifier = cw_underground_slums_1_hive
+			has_modifier = cw_underground_slums_1_machine
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					is_gestalt = no
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						is_individual_machine = no
+					}
+				}
+				remove_modifier = cw_underground_slums_1
+				add_modifier = {
+					modifier = cw_underground_slums_2
+				}
+			}
+			else = {
+				remove_modifier = cw_underground_slums_1_robot
+				add_modifier = {
+					modifier = cw_underground_slums_2_robot
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			remove_modifier = cw_underground_slums_1_hive
+			add_modifier = {
+				modifier = cw_underground_slums_2_hive
+			}
+		}
+		else = {
+			remove_modifier = cw_underground_slums_1_machine
+			add_modifier = {
+				modifier = cw_underground_slums_2_machine
+			}
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		tooltip = {
+			if = {
+				limit = {
+					owner = {
+						is_gestalt = no
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							is_individual_machine = no
+						}
+					}
+					remove_modifier = cw_underground_slums_1
+					add_modifier = {
+						modifier = cw_underground_slums_2
+					}
+				}
+				else = {
+					remove_modifier = cw_underground_slums_1_robot
+					add_modifier = {
+						modifier = cw_underground_slums_2_robot
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						is_hive_empire = yes
+					}
+				}
+				remove_modifier = cw_underground_slums_1_hive
+				add_modifier = {
+					modifier = cw_underground_slums_2_hive
+				}
+			}
+			else = {
+				remove_modifier = cw_underground_slums_1_machine
+				add_modifier = {
+					modifier = cw_underground_slums_2_machine
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.32
+	title = criminal_worlds.32.name
+	desc = criminal_worlds.32.desc
+	picture = GFX_evt_surrender
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_mercenary_fighters
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = criminal_worlds.32.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_mercenary_fighters
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.33
+	title = criminal_worlds.33.name
+	desc = criminal_worlds.33.desc
+	picture = GFX_evt_grand_speech
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_open_crime
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 180
+		}
+	}
+	option = {
+		name = criminal_worlds.33.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_open_crime
+				days = 3600
+			}
+		}
+	}
+}
+
+# Smuggled Relic Chain
+planet_event = {
+	id = criminal_worlds.34
+	title = criminal_worlds.34.name
+	desc = criminal_worlds.34.desc
+	picture = GFX_evt_black_market
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_global_flag = cw_encountered_black_market_relic
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 60
+		}
+	}
+	option = {
+		name = criminal_worlds.34.a
+		begin_event_chain = {
+			event_chain = cw_smuggled_relic_chain
+			target = root
+		}
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_1"
+			location = this
+			owner = root
+		}
+	}
+	option = {
+		name = criminal_worlds.34.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2materialreward
+				min = @tier2materialmin
+				max = @tier2materialmax
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.35
+	title = criminal_worlds.35.name
+	desc = criminal_worlds.35.desc
+	picture = GFX_evt_cover_blown
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+	option = {
+		name = criminal_worlds.35.a
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_2"
+			location = this
+			owner = root
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.36
+	title = criminal_worlds.36.name
+	desc = criminal_worlds.36.desc
+	picture = GFX_evt_ancient_artifact
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+	option = {
+		name = criminal_worlds.36.a
+		owner = {
+			if = {
+				limit = {
+					has_ancrel = yes
+				}
+				add_resource = {
+					minor_artifacts = 20
+				}
+			}
+		}
+		enable_special_project = {
+			name = "cw_smuggled_relic_project_3"
+			location = this
+			owner = root
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.37
+	title = criminal_worlds.37.name
+	desc = criminal_worlds.37.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+	option = {
+		name = criminal_worlds.37.a
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+			add_relic = r_cw_medallion
+			add_research_option = tech_arcane_deciphering
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.38
+	title = criminal_worlds.38.name
+	desc = criminal_worlds.38.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_alien_signal
+	location = root
+	event_chain = cw_smuggled_relic_chain
+	is_triggered_only = yes
+	option = {
+		trigger = {
+			owner = {
+				OR = {
+					AND = {
+						has_event_chain = "vultaum_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = vultaum_chain
+								counter = vultaum_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "yuht_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = yuht_chain
+								counter = yuht_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "first_league_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = first_league_chain
+								counter = first_league_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "irassian_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = irassian_chain
+								counter = irassian_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "cybrex_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = cybrex_chain
+								counter = cybrex_artifacts
+							}
+						}
+					}
+				}
+			}
+		}
+		name = criminal_worlds.38.a
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+			add_research_option = tech_arcane_deciphering
+			collector_surrenders_artifact = yes
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				NOR = {
+					AND = {
+						has_event_chain = "vultaum_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = vultaum_chain
+								counter = vultaum_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "yuht_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = yuht_chain
+								counter = yuht_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "first_league_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = first_league_chain
+								counter = first_league_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "irassian_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = irassian_chain
+								counter = irassian_artifacts
+							}
+						}
+					}
+					AND = {
+						has_event_chain = "cybrex_chain"
+						NOT = {
+							has_completed_event_chain_counter = {
+								event_chain = cybrex_chain
+								counter = cybrex_artifacts
+							}
+						}
+					}
+				}
+			}
+		}
+		name = criminal_worlds.38.b
+		owner = {
+			end_event_chain = cw_smuggled_relic_chain
+			add_research_option = tech_arcane_deciphering
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.40
+	title = criminal_worlds.40.name
+	desc = criminal_worlds.40.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_criminal_world_1
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.40.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_criminal_world_1
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.41
+	title = criminal_worlds.41.name
+	desc = criminal_worlds.41.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_criminal_world_1
+	}
+	immediate = {
+		remove_modifier = cw_criminal_world_1
+		add_modifier = {
+			modifier = cw_criminal_world_2
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.41.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_1
+			add_modifier = {
+				modifier = cw_criminal_world_2
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.42
+	title = criminal_worlds.42.name
+	desc = criminal_worlds.42.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_criminal_world_2
+	}
+	immediate = {
+		remove_modifier = cw_criminal_world_2
+		add_modifier = {
+			modifier = cw_criminal_world_3
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.42.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_2
+			add_modifier = {
+				modifier = cw_criminal_world_3
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.43
+	title = criminal_worlds.43.name
+	desc = criminal_worlds.43.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_criminal_world_3
+	}
+	immediate = {
+		remove_modifier = cw_criminal_world_3
+		add_modifier = {
+			modifier = cw_criminal_world_4
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.43.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_3
+			add_modifier = {
+				modifier = cw_criminal_world_4
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.44
+	title = criminal_worlds.44.name
+	desc = criminal_worlds.44.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_criminal_world_4
+	}
+	immediate = {
+		remove_modifier = cw_criminal_world_4
+		add_modifier = {
+			modifier = cw_criminal_world_5
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.44.a
+		tooltip = {
+			remove_modifier = cw_criminal_world_4
+			add_modifier = {
+				modifier = cw_criminal_world_5
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.51
+	title = criminal_worlds.51.name
+	desc = criminal_worlds.51.desc
+	picture = GFX_evt_one_sided_deal
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_criminal_world_5
+	}
+	immediate = {
+		remove_modifier = cw_criminal_world_5
+		add_modifier = {
+			modifier = cw_criminal_world_5
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+		set_timed_planet_flag = {
+			flag = cw_recent_criminal_world_increase
+			days = 1800
+		}
+	}
+	option = {
+		name = criminal_worlds.51.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_criminal_world_5
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.45
+	title = criminal_worlds.45.name
+	desc = criminal_worlds.45.desc
+	picture = GFX_evt_broken_shackles
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_freedom_fighters
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+	}
+	option = {
+		name = criminal_worlds.45.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_freedom_fighters
+				days = 3600
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.47
+	title = criminal_worlds.47.name
+	desc = criminal_worlds.47.desc
+	picture = GFX_evt_broken_shackles
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		has_modifier = cw_freedom_fighters
+		NOT = {
+			count_owned_pop_amount = {
+				limit = {
+					is_enslaved = yes
+					is_sapient = yes
+					pop_has_happiness = yes
+				}
+				count = 0
+			}
+		}
+	}
+	immediate = {
+		weighted_random_owned_pop_group = {
+			limit = {
+				is_enslaved = yes
+				is_sapient = yes
+				pop_has_happiness = yes
+			}
+			save_event_target_as = escaped_pops
+		}
+		random_playable_country = {
+			limit = {
+				is_homicidal = no
+				is_gestalt = no
+			}
+			save_event_target_as = target_country
+		}
+		event_target:target_country = {
+			random_owned_planet = {
+				save_event_target_as = target_planet
+			}
+		}
+		resettle_pop_group = {
+			POP_GROUP = event_target:escaped_pops
+			PLANET = event_target:target_planet
+			AMOUNT = 100
+		}
+	}
+	option = {
+		name = criminal_worlds.47.a
+		custom_tooltip = criminal_worlds.47.a.tooltip
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.48
+	title = criminal_worlds.48.name
+	desc = criminal_worlds.48.desc
+	picture = GFX_evt_slaver_empire
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	trigger = {
+		owner = {
+			any_system_within_border = {
+				any_country_neighbor_to_system = {
+					has_communications = root.owner
+					is_country_type = default
+					is_gestalt = no
+					is_individual_machine = no
+				}
+			}
+		}
+	}
+	immediate = {
+		owner = {
+			random_system_within_border = {
+				limit = {
+					any_country_neighbor_to_system = {
+						has_communications = root.owner
+						is_country_type = default
+						is_gestalt = no
+						is_individual_machine = no
+					}
+				}
+				random_country_neighbor_to_system = {
+					limit = {
+						has_communications = root.owner
+						is_country_type = default
+						is_gestalt = no
+						is_individual_machine = no
+					}
+					save_event_target_as = cw_enslaved_species_owner
+					owner_main_species = {
+						save_event_target_as = enslaved_species
+					}
+				}
+			}
+			set_country_flag = cw_illegal_slave_event_fired
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				is_homicidal = no
+			}
+		}
+		name = criminal_worlds.48.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier2influencereward
+				min = @tier2influencemin
+				max = @tier2influencemax
+			}
+		}
+		hidden_effect = {
+			event_target:cw_enslaved_species_owner = {
+				capital_scope = {
+					planet_event = {
+						id = criminal_worlds.49
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				is_homicidal = no
+			}
+		}
+		name = criminal_worlds.48.b
+		create_pop_group = {
+			species = event_target:enslaved_species
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				is_homicidal = no
+				OR = {
+					is_xenophobe = yes
+					is_authoritarian = yes
+				}
+			}
+		}
+		name = criminal_worlds.48.c
+		create_pop_group = {
+			species = event_target:enslaved_species
+			effect = {
+				set_citizenship_type = {
+					type = citizenship_slavery
+					cooldown = yes
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				is_homicidal = yes
+				NOT = {
+					has_valid_civic = civic_hive_devouring_swarm
+				}
+			}
+		}
+		name = criminal_worlds.48.d
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier2unityreward
+				min = @tier2unitymin
+				max = @tier2unitymax
+			}
+		}
+	}
+	option = {
+		trigger = {
+			owner = {
+				is_homicidal = yes
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+		name = criminal_worlds.48.e
+		owner = {
+			add_resource = {
+				food = 500
+			}
+		}
+	}
+	option = {
+		exclusive_trigger = {
+			owner = {
+				has_origin = origin_evolutionary_predators
+			}
+		}
+		name = criminal_worlds.48.evopred
+		owner = {
+			add_resource = {
+				food = 500
+			}
+			event_target:enslaved_species = {
+				switch = {
+					trigger = is_species_class
+					HUM = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = humanoid } }
+					}
+					MAM = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = mammalian } }
+					}
+					REP = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = reptilian } }
+					}
+					AVI = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = avian } }
+					}
+					ART = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = arthropoid } }
+					}
+					MOL = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = molluscoid } }
+					}
+					FUN = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = fungoid } }
+					}
+					PLANT = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = plantoid } }
+					}
+					LITHOID = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = lithoid } }
+					}
+					NECROID = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = necroid } }
+					}
+					AQUATIC = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = aquatic } }
+					}
+					TOX = {
+						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = toxoid } }
+					}
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.49
+	title = criminal_worlds.49.name
+	desc = criminal_worlds.49.desc
+	picture = GFX_evt_happy_reunion
+	show_sound = event_default
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		create_pop_group = {
+			species = owner_main_species
+		}
+	}
+	option = {
+		name = criminal_worlds.49.a
+		tooltip = {
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+		owner = {
+			add_opinion_modifier = {
+				modifier = opinion_cw_freed_slaves
+				who = from.owner
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.50
+	title = criminal_worlds.50.name
+	desc = criminal_worlds.50.desc
+	picture = GFX_evt_announcement
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		add_modifier = {
+			modifier = cw_radical_media
+			days = 3600
+		}
+		set_timed_planet_flag = {
+			flag = planet_cw_crime_flag
+			days = 360
+		}
+	}
+	option = {
+		name = criminal_worlds.50.a
+		tooltip = {
+			add_modifier = {
+				modifier = cw_radical_media
+				days = 3600
+			}
+		}
+	}
+}
+
+### Rogue Shipbuilding Events ###
+
+@rogue_ship_progress_needed = 30
+# On monthly pulse
+country_event = {
+	id = criminal_worlds.24
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		AND = {
+			NOT = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+			any_owned_planet = {
+				OR = {
+					has_modifier = cw_criminal_shipyards
+					has_modifier = cw_criminal_shipyards_2
+				}
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					is_variable_set = cw_rogue_ship_progress
+				}
+			}
+			set_variable = {
+				which = cw_rogue_ship_progress
+				value = 0
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				# num_assigned_jobs = {
+				# 	job = cw_rogue_shipbuilder
+				# 	value >= 1
+				# }
+				OR = {
+					has_modifier = cw_criminal_shipyards
+					has_modifier = cw_criminal_shipyards_2
+				}
+			}
+			# export_trigger_value_to_variable = {
+			# 	trigger = num_assigned_jobs
+			# 	parameters = {
+			# 		job = cw_rogue_shipbuilder
+			# 	}
+			# 	variable = cw_rogue_shipbuilder_job_num
+			# }
+			if = {
+				limit = {
+					has_modifier = cw_criminal_shipyards_2
+				}
+				owner = {
+					change_variable = {
+						which = cw_rogue_ship_progress
+						value = 2						#cw_rogue_shipbuilder_job_num
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = cw_rogue_ship_progress
+					value = 1					#cw_rogue_shipbuilder_job_num
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable_arithmetic = {
+					which = cw_rogue_ship_progress
+					value >= @rogue_ship_progress_needed
+				}
+			}
+			cw_create_normal_criminal_enterprise = yes
+			random_owned_planet = {
+				limit = {
+					OR = {
+						has_modifier = cw_criminal_shipyards
+						has_modifier = cw_criminal_shipyards_2
+					}
+				}
+				planet_event = {
+					id = criminal_worlds.25
+				}
+			}
+			subtract_variable = {
+				which = cw_rogue_ship_progress
+				value = @rogue_ship_progress_needed
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = criminal_worlds.25
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				exists = event_target:criminal_fleet_of_@root
+			}
+			event_target:criminal_fleet_of_@root = {
+				create_ship_design = {
+					design = "NAME_Reaver"
+				}
+				while = {
+					count = 5
+					create_ship = {
+						name = random
+						design = last_created_design
+						graphical_culture = "pirate_01"
+					}
+				}
+			}
+		}
+		else = {
+			create_fleet = {
+				name = "NAME_Pirate_Fleet"
+				effect = {
+					set_owner = event_target:cw_criminal_enterprise
+					create_pirate_ships_0 = yes
+					set_location = root
+					save_global_event_target_as = criminal_fleet_of_@root
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 100
+					auto_move_to_planet = {
+						target = root
+						clear_auto_move_on_arrival = no
+					}
+				}
+			}
+		}
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = cw_criminal_fleet_on_@root
+					}
+				}
+				set_country_flag = cw_criminal_fleet_on_@root
+				root = {
+					planet_event = {
+						id = criminal_worlds.26
+					}
+				}
+			}
+		}
+	}
+}
+
+# Notification of Criminal Fleet
+planet_event = {
+	id = criminal_worlds.26
+	title = criminal_worlds.26.name
+	desc = criminal_worlds.26.desc
+	picture = GFX_evt_pirate_armada
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		owner = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = cw_has_met_criminal_enterprise
+					}
+				}
+				set_country_flag = cw_has_met_criminal_enterprise
+			}
+		}
+	}
+	option = {
+		name = criminal_worlds.26.a
+	}
+}

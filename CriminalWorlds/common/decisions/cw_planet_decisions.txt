@@ -1,0 +1,207 @@
+decision_uplift_slums = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_arcology_project
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = cw_underground_slums_1
+			has_modifier = cw_underground_slums_2
+		}
+	}
+	allow = {
+		free_housing > 1000
+	}
+	effect = {
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_1
+			}
+			remove_modifier = cw_underground_slums_1
+		}
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_2
+			}
+			remove_modifier = cw_underground_slums_2
+		}
+		set_variable = {
+			which = cw_slum_progress
+			value = 0
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_uplift_slums_hive = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_arcology_project
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = cw_underground_slums_1_hive
+			has_modifier = cw_underground_slums_2_hive
+		}
+	}
+	allow = {
+		free_housing > 1000
+	}
+	effect = {
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_1_hive
+			}
+			remove_modifier = cw_underground_slums_1_hive
+		}
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_2_hive
+			}
+			remove_modifier = cw_underground_slums_2_hive
+		}
+		set_variable = {
+			which = cw_slum_progress
+			value = 0
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_uplift_slums_machine = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_arcology_project
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		exists = owner
+		OR = {
+			has_modifier = cw_underground_slums_1_machine
+			has_modifier = cw_underground_slums_2_machine
+		}
+	}
+	allow = {
+		free_housing > 1000
+	}
+	effect = {
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_1_machine
+			}
+			remove_modifier = cw_underground_slums_1_machine
+		}
+		if = {
+			limit = {
+				has_modifier = cw_underground_slums_2_machine
+			}
+			remove_modifier = cw_underground_slums_2_machine
+		}
+		set_variable = {
+			which = cw_slum_progress
+			value = 0
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# redo like Cellaris nest civic decisions !
+# decision_cw_undercity_expansion = {
+# 	owned_planets_only = yes
+# 	sound = event_administrative_work
+# 	icon = decision_arcology_project
+# 	enactment_time = 180
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			minerals = 500
+# 			alloys = 100
+# 			influence = 10
+# 		}
+# 	}
+# 	potential = {
+# 		exists = owner
+# 		OR = {
+# 			is_planet_class = pc_city
+# 			has_modifier = cw_ruined_undercity
+# 			# For possible modders
+# 			uses_district_set = city_world
+# 		}
+# 	}
+# 	allow = {
+# 		count_deposits = {
+# 			type = d_cw_lower_level
+# 			count < 5
+# 		}
+# 	}
+# 	effect = {
+# 		add_deposit = d_cw_lower_level
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 		modifier = {
+# 			add = 100
+# 			num_free_districts = {
+# 				type = any
+# 				value = 0
+# 			}
+# 		}
+# 	}
+# }
+
+# decision_cw_collapse_lower_level = {
+# 	owned_planets_only = yes
+# 	sound = event_structural_collapse
+# 	icon = decision_arcology_project
+# 	enactment_time = 30
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			minerals = 500
+# 			unity = 500
+# 		}
+# 	}
+# 	potential = {
+# 		exists = owner
+# 		has_deposit = d_cw_lower_level
+# 	}
+# 	allow = {
+# 		num_free_districts = {
+# 			type = any
+# 			value >= 1
+# 		}
+# 		has_deposit = d_cw_lower_level
+# 	}
+# 	effect = {
+# 		remove_deposit = d_cw_lower_level
+# 		add_planet_devastation = 10
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 	}
+# }

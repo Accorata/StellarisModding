@@ -1,0 +1,122 @@
+@crime_floor_from_legal_crime = 5
+
+building_cw_mafia_estate = {
+	base_buildtime = @b2_time
+	planet_limit = 1
+
+	owner_type = corporate
+
+	category = government
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_illegal_criminal = yes
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	prerequisites = {
+		"tech_cw_mafia_estate"
+	}
+
+	inline_script = {
+		script = "jobs/politician_add"
+		AMOUNT = 100
+	}
+
+	triggered_planet_modifier = {
+		planet_crime_add = 25
+		mult = branch_office_owner.value:scripted_modifier_mult|MODIFIER|branch_office_holding_crime_mult|
+	}
+
+	planet_modifier = {
+		planet_crime_floor_add = @crime_floor_from_legal_crime
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_jobs_trade_produces_mult = 0.02
+		mult = value:num_jobs_with_tag|TAG|trade|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = {
+				has_valid_civic = civic_brand_loyalty
+			}
+		}
+		planet_jobs_trade_produces_mult = 0.02
+		mult = value:num_jobs_with_tag|TAG|trade|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = {
+				has_valid_civic = civic_corporate_guided_sapience
+			}
+		}
+		planet_jobs_trade_produces_mult = 0.02
+		mult = value:num_jobs_with_tag|TAG|trade|
+	}
+
+	#Trader Jobs from civics
+	triggered_country_modifier = {
+		potential = {
+			branch_office_owner = {
+				has_valid_civic = civic_brand_loyalty
+			}
+		}
+		job_capital_trader_add = @traders_from_civic
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			branch_office_owner = {
+				has_valid_civic = civic_corporate_guided_sapience
+			}
+		}
+		job_capital_trader_add = @traders_from_civic
+	}
+
+	custom_tooltip = trade_value_from_traders
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			influence = 30
+			minerals = @b3_minerals
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+			influence = 30
+		}
+		produces = {
+			influence = 0.5
+			mult = value:branch_office_value_for_buildings
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		branch_office_owner = {
+			is_legit_or_legal_criminal = yes
+		}
+	}
+
+	ai_weight = {
+		weight = 150
+	}
+}

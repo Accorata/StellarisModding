@@ -1,0 +1,47 @@
+spriteTypes = {
+	# ?
+	# spriteType = {
+	# 	name = "GFX_tradition_hex_bg_tradition_fft_social_media"
+	# 	textureFile = "gfx/interface/traditions/tradition_hex_bg_fft_social_media.dds"
+	# }
+	# Background Art
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_fft_social_media"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_fft_social_media.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_fft_social_media"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_fft_social_media.dds"
+		borderSize = {
+			x = 140
+			y = 140
+		}
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	# Main Icon
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_fft_social_media"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_fft_social_media.dds"
+	}
+	# Tradition Arts
+	spriteType = {
+		name = "GFX_tr_fft_social_media_collective_participation"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_collective_participation.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_social_media_administrative_networks"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_administrative_networks.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_social_media_media_influencers"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_media_influencers.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_social_media_galactic_collective"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_galactic_collective.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_fft_social_media_data_surveillance"
+		textureFile = "gfx/interface/icons/traditions/tradition_fft_social_media_data_surveillance.dds"
+	}
+}
