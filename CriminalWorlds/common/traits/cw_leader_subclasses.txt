@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_cw_official_racketeer = {
 	custom_subtitle = official_subclass
 	leader_trait_type = subclass
@@ -10,16 +9,14 @@ subclass_cw_official_racketeer = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = cw_racketeer_subclass_tt
-
 	planet_modifier = {
 		pop_category_criminals_produces_mult = 0.2
-		pop_category_criminals_upkeep_mult = 0.2
+		pop_category_criminals_upkeep_mult = -0.2
 	}
 	sector_modifier = {
 		pop_category_criminals_produces_mult = 0.1
-		pop_category_criminals_upkeep_mult = 0.1
+		pop_category_criminals_upkeep_mult = -0.1
 	}
-
 	leader_potential_add = {
 		is_heir = no
 		owner = {
@@ -29,9 +26,9 @@ subclass_cw_official_racketeer = {
 			}
 		}
 	}
-
-	leader_class = { official }
-
+	leader_class = {
+		official
+	}
 	ai_weight = {
 		modifier = {
 			is_councilor = yes
@@ -42,15 +39,16 @@ subclass_cw_official_racketeer = {
 			factor = @ai_selection_high
 		}
 		modifier = {
-			exists =  planet
+			exists = planet
 			factor = @ai_selection_high
 		}
 		modifier = {
-			NOT = { exists = planet }
+			NOT = {
+				exists = planet
+			}
 			factor = @ai_selection_low
 		}
 	}
-
 	background_icon = "GFX_leader_subclass_official_cw_racketeer_background"
 }
 
@@ -74,7 +72,7 @@ subclass_cw_commander_privateer = {
 		potential = {
 			cw_has_stealing_ship_dlc = no
 		}
-		create_debris_chance = 0.50
+		create_debris_chance = 0.5
 		ship_speed_mult = 0.05
 	}
 	leader_potential_add = {

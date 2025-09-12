@@ -152,14 +152,20 @@ leader_trait_cw_ill_gotten_gains = {
 	sector_modifier = {
 		job_criminal_add = 100
 	}
-	leader_class = { official commander scientist }
+	leader_class = {
+		official
+		commander
+		scientist
+	}
 	initial = no
 	randomized = no
 }
 
 leader_trait_cw_ill_gotten_gains_2 = {
 	leader_trait_type = negative
-	replace_traits = { "leader_trait_cw_ill_gotten_gains" }
+	replace_traits = {
+		"leader_trait_cw_ill_gotten_gains"
+	}
 	inline_script = {
 		script = trait/icon_negative
 		ICON = "GFX_leader_trait_cw_ill_gotten_gains"
@@ -172,7 +178,11 @@ leader_trait_cw_ill_gotten_gains_2 = {
 	sector_modifier = {
 		job_criminal_add = 200
 	}
-	leader_class = { official commander scientist }
+	leader_class = {
+		official
+		commander
+		scientist
+	}
 	opposites = {
 		leader_trait_righteous
 		leader_trait_righteous_2
@@ -213,6 +223,9 @@ leader_trait_cw_cyber_fraud = {
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/governor_weight_mult
+		modifier = {
+			factor = 2
+		}
 	}
 }
 
@@ -304,6 +317,9 @@ leader_trait_cw_organ_harvesting = {
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/governor_weight_mult
+		modifier = {
+			factor = 2
+		}
 	}
 }
 
@@ -395,6 +411,9 @@ leader_trait_cw_restricted_cybernetics = {
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/governor_weight_mult
+		modifier = {
+			factor = 2
+		}
 	}
 }
 
@@ -461,7 +480,7 @@ leader_trait_cw_paramilitary_groups = {
 	inline_script = {
 		script = trait/icon
 		CLASS = official
-		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"		# change
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 1
@@ -473,7 +492,7 @@ leader_trait_cw_paramilitary_groups = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
 		GESTALT_JOB = warrior_drone
-		MULT = 1
+		MULT = 100
 	}
 	leader_class = {
 		official
@@ -481,6 +500,9 @@ leader_trait_cw_paramilitary_groups = {
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/governor_weight_mult
+		modifier = {
+			factor = 2
+		}
 	}
 }
 
@@ -492,7 +514,7 @@ leader_trait_cw_paramilitary_groups_2 = {
 	inline_script = {
 		script = trait/icon
 		CLASS = official
-		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"		# change
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 2
@@ -501,7 +523,7 @@ leader_trait_cw_paramilitary_groups_2 = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
 		GESTALT_JOB = warrior_drone
-		MULT = 2
+		MULT = 200
 	}
 	leader_class = {
 		official
@@ -516,7 +538,7 @@ leader_trait_cw_paramilitary_groups_3 = {
 	inline_script = {
 		script = trait/icon
 		CLASS = official
-		ICON = "GFX_leader_trait_cw_restricted_cybernetics" # change
+		ICON = "GFX_leader_trait_cw_restricted_cybernetics"		# change
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 3
@@ -525,7 +547,7 @@ leader_trait_cw_paramilitary_groups_3 = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
 		GESTALT_JOB = warrior_drone
-		MULT = 3
+		MULT = 300
 	}
 	leader_class = {
 		official
@@ -549,7 +571,7 @@ leader_trait_cw_hedonistic_pleasures = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
 		GESTALT_JOB = maintenance_drone
-		MULT = 1
+		MULT = 100
 	}
 	leader_class = {
 		official
@@ -557,6 +579,9 @@ leader_trait_cw_hedonistic_pleasures = {
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/governor_weight_mult
+		modifier = {
+			factor = 2
+		}
 	}
 }
 
@@ -577,7 +602,7 @@ leader_trait_cw_hedonistic_pleasures_2 = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
 		GESTALT_JOB = maintenance_drone
-		MULT = 2
+		MULT = 200
 	}
 	leader_class = {
 		official
@@ -601,7 +626,7 @@ leader_trait_cw_hedonistic_pleasures_3 = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
 		GESTALT_JOB = maintenance_drone
-		MULT = 3
+		MULT = 300
 	}
 	leader_class = {
 		official
@@ -613,7 +638,7 @@ leader_trait_cw_arbiter = {
 	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
-		CLASS = commander
+		CLASS = official
 		ICON = "GFX_leader_trait_arbiter"
 		RARITY = paragon
 		COUNCIL = no
@@ -621,7 +646,10 @@ leader_trait_cw_arbiter = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	leader_potential_add = {
@@ -668,7 +696,9 @@ leader_trait_cw_arbiter = {
 		pop_happiness = -0.05
 		planet_pop_assembly_mult = -0.025
 	}
-	leader_class = { official }
+	leader_class = {
+		official
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/governor_weight_mult
@@ -680,7 +710,7 @@ leader_trait_cw_criminal_enterprise = {
 	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
-		CLASS = commander
+		CLASS = official
 		ICON = "GFX_leader_trait_cw_enterprising"
 		RARITY = paragon
 		COUNCIL = no
@@ -688,7 +718,10 @@ leader_trait_cw_criminal_enterprise = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	leader_potential_add = {
@@ -704,9 +737,11 @@ leader_trait_cw_criminal_enterprise = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = criminal
 		GESTALT_JOB = deviant_drone
-		MULT = 2
+		MULT = 200
 	}
-	leader_class = { official }
+	leader_class = {
+		official
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/governor_weight_mult
@@ -918,7 +953,7 @@ leader_trait_cw_underdog = {
 		has_trait = subclass_cw_commander_privateer
 	}
 	fleet_modifier = {
-		damage_vs_superior_empires_mult = 0.20
+		damage_vs_superior_empires_mult = 0.2
 		ship_evasion_mult = 0.05
 	}
 	leader_class = {
@@ -944,8 +979,8 @@ leader_trait_cw_underdog_2 = {
 		TIER = 2
 	}
 	fleet_modifier = {
-		damage_vs_superior_empires_mult = 0.40
-		ship_evasion_mult = 0.10
+		damage_vs_superior_empires_mult = 0.4
+		ship_evasion_mult = 0.1
 	}
 	leader_class = {
 		commander
@@ -966,7 +1001,7 @@ leader_trait_cw_underdog_3 = {
 		TIER = 3
 	}
 	fleet_modifier = {
-		damage_vs_superior_empires_mult = 0.60
+		damage_vs_superior_empires_mult = 0.6
 		ship_evasion_mult = 0.15
 	}
 	leader_class = {
@@ -997,7 +1032,9 @@ leader_trait_cw_rocketry_specialization = {
 	prerequisites = {
 		tech_missiles_1
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = explosive
 	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
 	selectable_weight = {
@@ -1008,7 +1045,9 @@ leader_trait_cw_rocketry_specialization = {
 
 leader_trait_cw_rocketry_specialization_2 = {
 	leader_trait_type = veteran
-	replace_traits = { leader_trait_cw_rocketry_specialization }
+	replace_traits = {
+		leader_trait_cw_rocketry_specialization
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1024,7 +1063,9 @@ leader_trait_cw_rocketry_specialization_2 = {
 	prerequisites = {
 		tech_missiles_1
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = explosive
 	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
 }
@@ -1050,7 +1091,9 @@ leader_trait_cw_gunship_specialization = {
 		has_trait = subclass_cw_commander_privateer
 		has_any_cw_privateer_speciality = no
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = gunship
 	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
 	selectable_weight = {
@@ -1061,7 +1104,9 @@ leader_trait_cw_gunship_specialization = {
 
 leader_trait_cw_gunship_specialization_2 = {
 	leader_trait_type = veteran
-	replace_traits = { leader_trait_cw_gunship_specialization }
+	replace_traits = {
+		leader_trait_cw_gunship_specialization
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1076,7 +1121,9 @@ leader_trait_cw_gunship_specialization_2 = {
 		m_slot_weapon_fire_rate_mult = 0.25
 		m_slot_weapon_damage_mult = 0.25
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = gunship
 	custom_tooltip_with_modifiers = only_one_cw_privateer_focus
 }
@@ -1102,7 +1149,9 @@ leader_trait_cw_stealth_specialization = {
 	prerequisites = {
 		tech_cloaking_1
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = gunship_stealth
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
@@ -1112,7 +1161,9 @@ leader_trait_cw_stealth_specialization = {
 
 leader_trait_cw_stealth_specialization_2 = {
 	leader_trait_type = veteran
-	replace_traits = { leader_trait_cw_stealth_specialization }
+	replace_traits = {
+		leader_trait_cw_stealth_specialization
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -1128,7 +1179,9 @@ leader_trait_cw_stealth_specialization_2 = {
 	prerequisites = {
 		tech_cloaking_1
 	}
-	leader_class = { commander }
+	leader_class = {
+		commander
+	}
 	fleet_specialization_tag = gunship_stealth
 }
 
@@ -1143,9 +1196,12 @@ leader_trait_cw_guerilla_tactics = {
 		COUNCIL = no
 		TIER = none
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	triggered_fleet_modifier = {
@@ -1190,9 +1246,12 @@ leader_trait_cw_pirate_lord = {
 		COUNCIL = no
 		TIER = none
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	fleet_modifier = {
@@ -1223,15 +1282,20 @@ leader_trait_cw_wolfpack = {
 		COUNCIL = no
 		TIER = none
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	triggered_fleet_modifier = {
-		potential = { always = yes }
+		potential = {
+			always = yes
+		}
 		ship_weapon_damage = 0.01
-		mult = trigger:num_ships
+		mult = value:cw_num_ships_fleet
 	}
 	leader_class = {
 		commander
@@ -1263,7 +1327,9 @@ leader_trait_cw_ambassador_ear_to_the_ground = {
 	councilor_modifier = {
 		intel_gain_speed = 0.25
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1272,7 +1338,9 @@ leader_trait_cw_ambassador_ear_to_the_ground = {
 
 leader_trait_cw_ambassador_ear_to_the_ground_2 = {
 	leader_trait_type = veteran
-	replace_traits = { "leader_trait_cw_ambassador_ear_to_the_ground" }
+	replace_traits = {
+		"leader_trait_cw_ambassador_ear_to_the_ground"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -1282,14 +1350,18 @@ leader_trait_cw_ambassador_ear_to_the_ground_2 = {
 		TIER = 2
 	}
 	councilor_modifier = {
-		intel_gain_speed = 0.50
+		intel_gain_speed = 0.5
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 leader_trait_cw_ambassador_ear_to_the_ground_3 = {
 	leader_trait_type = veteran
-	replace_traits = { "leader_trait_cw_ambassador_ear_to_the_ground_2" }
+	replace_traits = {
+		"leader_trait_cw_ambassador_ear_to_the_ground_2"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -1299,9 +1371,11 @@ leader_trait_cw_ambassador_ear_to_the_ground_3 = {
 		TIER = 3
 	}
 	councilor_modifier = {
-		intel_gain_speed = 1.0
+		intel_gain_speed = 1
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 leader_trait_cw_shadow_broker = {
@@ -1322,7 +1396,9 @@ leader_trait_cw_shadow_broker = {
 		has_paragon_dlc = yes
 		has_trait = subclass_cw_scientist_hacker
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1331,7 +1407,9 @@ leader_trait_cw_shadow_broker = {
 
 leader_trait_cw_shadow_broker_2 = {
 	leader_trait_type = veteran
-	replace_traits = { "leader_trait_cw_shadow_broker" }
+	replace_traits = {
+		"leader_trait_cw_shadow_broker"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
@@ -1344,7 +1422,9 @@ leader_trait_cw_shadow_broker_2 = {
 		intel_decryption_add = 2
 		intel_encryption_add = 2
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 leader_trait_cw_military_espionage = {
@@ -1352,7 +1432,7 @@ leader_trait_cw_military_espionage = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 1
@@ -1365,14 +1445,15 @@ leader_trait_cw_military_espionage = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_military
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_military_espionage_effect
 	leader_potential_add = {
 		has_trait = subclass_cw_scientist_hacker
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1384,12 +1465,14 @@ leader_trait_cw_military_espionage = {
 }
 
 leader_trait_cw_military_espionage_2 = {
-	replace_traits = { "leader_trait_cw_military_espionage" }
+	replace_traits = {
+		"leader_trait_cw_military_espionage"
+	}
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 2
@@ -1402,11 +1485,12 @@ leader_trait_cw_military_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_military
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_military_espionage_effect
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 leader_trait_cw_tech_espionage = {
@@ -1414,7 +1498,7 @@ leader_trait_cw_tech_espionage = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 1
@@ -1427,14 +1511,15 @@ leader_trait_cw_tech_espionage = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_tech
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_tech_espionage_effect
 	leader_potential_add = {
 		has_trait = subclass_cw_scientist_hacker
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1446,12 +1531,14 @@ leader_trait_cw_tech_espionage = {
 }
 
 leader_trait_cw_tech_espionage_2 = {
-	replace_traits = { "leader_trait_cw_tech_espionage" }
+	replace_traits = {
+		"leader_trait_cw_tech_espionage"
+	}
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 2
@@ -1464,11 +1551,12 @@ leader_trait_cw_tech_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_tech
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_tech_espionage_effect
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 leader_trait_cw_economy_espionage = {
@@ -1476,7 +1564,7 @@ leader_trait_cw_economy_espionage = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 1
@@ -1489,14 +1577,15 @@ leader_trait_cw_economy_espionage = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_economy
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_economy_espionage_effect
 	leader_potential_add = {
 		has_trait = subclass_cw_scientist_hacker
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1508,12 +1597,14 @@ leader_trait_cw_economy_espionage = {
 }
 
 leader_trait_cw_economy_espionage_2 = {
-	replace_traits = { "leader_trait_cw_economy_espionage" }
+	replace_traits = {
+		"leader_trait_cw_economy_espionage"
+	}
 	leader_trait_type = veteran
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker" # change
+		ICON = "GFX_leader_trait_shadow_broker"		# change
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 2
@@ -1526,11 +1617,12 @@ leader_trait_cw_economy_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_economy
-
 		# ....
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_economy_espionage_effect
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 }
 
 @focus_benefit_1 = 2
@@ -1923,7 +2015,10 @@ leader_trait_cw_spymaster = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	councilor_modifier = {
@@ -1935,7 +2030,9 @@ leader_trait_cw_spymaster = {
 		has_paragon_dlc = yes
 		has_trait = subclass_cw_scientist_hacker
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1955,7 +2052,10 @@ leader_trait_cw_deadly_saboteur = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	force_councilor_trait = yes
@@ -1971,7 +2071,9 @@ leader_trait_cw_deadly_saboteur = {
 			}
 		}
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -1991,8 +2093,14 @@ leader_trait_cw_web_of_connections = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
-			country_event = { id = tutorial.2010 } #Tutorial: Assigning Assets
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
+			country_event = {
+				id = tutorial.2010
+			}
+			#Tutorial: Assigning Assets
 		}
 	}
 	force_councilor_trait = yes
@@ -2008,7 +2116,9 @@ leader_trait_cw_web_of_connections = {
 			}
 		}
 	}
-	leader_class = { scientist }
+	leader_class = {
+		scientist
+	}
 	selectable_weight = {
 		weight = @subclass_trait_weight
 		inline_script = paragon/council_weight_mult
@@ -2032,6 +2142,8 @@ leader_trait_cw_hacker_node = {
 	}
 	initial = no
 	randomized = no
-	leader_class = { official }
+	leader_class = {
+		official
+	}
 	ai_weight = 100
 }

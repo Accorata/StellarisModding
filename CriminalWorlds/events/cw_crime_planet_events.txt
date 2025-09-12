@@ -368,12 +368,11 @@ planet_event = {
 						modifier = cw_underground_slums_1
 					}
 				}
-			}
-			else = {
-				add_modifier = {
-					modifier = cw_underground_slums_1_robot
+				else = {
+					add_modifier = {
+						modifier = cw_underground_slums_1_robot
+					}
 				}
-			}
 			}
 			else_if = {
 				limit = {
@@ -1293,40 +1292,100 @@ planet_event = {
 				switch = {
 					trigger = is_species_class
 					HUM = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = humanoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = humanoid
+							}
+						}
 					}
 					MAM = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = mammalian } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = mammalian
+							}
+						}
 					}
 					REP = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = reptilian } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = reptilian
+							}
+						}
 					}
 					AVI = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = avian } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = avian
+							}
+						}
 					}
 					ART = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = arthropoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = arthropoid
+							}
+						}
 					}
 					MOL = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = molluscoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = molluscoid
+							}
+						}
 					}
 					FUN = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = fungoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = fungoid
+							}
+						}
 					}
 					PLANT = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = plantoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = plantoid
+							}
+						}
 					}
 					LITHOID = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = lithoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = lithoid
+							}
+						}
 					}
 					NECROID = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = necroid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = necroid
+							}
+						}
 					}
 					AQUATIC = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = aquatic } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = aquatic
+							}
+						}
 					}
 					TOX = {
-						root.owner = { give_evolutionary_predator_situation_progress_and_dna = { AMOUNT = small TYPE = toxoid } }
+						root.owner = {
+							give_evolutionary_predator_situation_progress_and_dna = {
+								AMOUNT = small
+								TYPE = toxoid
+							}
+						}
 					}
 				}
 			}
@@ -1399,7 +1458,6 @@ planet_event = {
 }
 
 ### Rogue Shipbuilding Events ###
-
 @rogue_ship_progress_needed = 30
 # On monthly pulse
 country_event = {

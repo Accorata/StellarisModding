@@ -554,7 +554,7 @@
   leader_trait_cw_deadly_saboteur_tooltip:0 "$EMPIRE_EFFECTS_TXT$\n$t$§HUnlocks Espionage Operation:§! $operation_cw_hack_fleet$" # make game concept out of operation
   leader_trait_cw_web_of_connections:0 "Master Puppeteer"
   leader_trait_cw_web_of_connections_desc:0 "This leader is an expert of manipulating cyberspace to turn even the most loyal citizens into ammunition for our cause."
-  leader_trait_cw_web_of_connections_tooltip:0 "$EMPIRE_EFFECTS_TXT$\n$t$Every Year, Gain a Random Asset in Each Spy Network"
+  leader_trait_cw_web_of_connections_tooltip:0 "$EMPIRE_EFFECTS_TXT$\n$t$Every Year, Gain a Random §YAsset§! in Each Spy Network"
 
 # Generic
   leader_trait_cw_medallion_blessed:0 "Medallion's Blessing"

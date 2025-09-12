@@ -145,6 +145,7 @@
   criminal_worlds.106.desc:0 "Our custom malware package has been deployed inside an enemy ship's system  within the §Y[fleet name...]§!. Every time the ship computers communicate with each other for navigation data, there is a small chance the virus will be attached to the transimission. Given the rapid communications between modern warcraft, within moments the virus will have found its way into every ship computer in the fleet. Upon the fleets next naval involvement, the virus will activate, rewritting sensor data to remove the distinctions between enemy and ally and wreak havoc until thoroughly purged by antiviral programs."
 
 ## Criminal Enclaves ##
+  cw_opinion30:0 "Opinion: £opinion£ §G+30§!"
 # Construction ship  - x3 by Crime Lord Deal
   cw_enclave.1.name:0 "Criminal Constructions" # Temp
   cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
@@ -230,7 +231,7 @@
   cw_enclave.402.name:0 "Hire Racketeer" 
   cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations..."
   cw_enclave.402.a:0 "..." 
-  cw_racketeer_leader_explanation:0 "We will hire a Level 4 Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
+  cw_racketeer_leader_explanation:0 "We will hire a Level §Y4§! Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
   cw_enclave.402.b:0 "Never mind." # Main Menu
   cw_enclave.402.c:0 "$GOODBYE$" # Exit
 
@@ -263,10 +264,11 @@
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
   cw_enclave.303.desc:0 "...303..."
-  # cw_enclave.303.a:0 "..."
-  cw_enclave.303.b:0 "..."
-  cw_enclave.303.b.cooldown:0 "This enclave has too recently participated in a raid."
-  cw_enclave.303.b.need_rivals:0 "$marauder.20.need_rivals$"
+  cw_enclave.303.a:0 "..."
+  cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
+  cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
+  cw_enclave.303.b:0 "We'd like to support your operation."
+  cw_enclave.303.b.cooldown:0 "We have too recently supplied this enclave with weaponry."
   cw_enclave.303.c:0 "We'd like to hire one of your best Privateers."
   cw_enclave.303.c.has_leader:0 "We may only employ §Yone§! §HEnclave Privateer§! at a time."
   cw_enclave.303.d:0 "We are interested in stolen specimens."
@@ -307,11 +309,18 @@
   cw_enclave.507.b:0 "..."
   cw_enclave.507.b.response:0 "..."
 
+# Supply Weaponry
+  cw_enclave.513.name:0 "Supply Weaponry"
+  cw_enclave.513.desc:0 "..."
+  cw_enclave.513.a:0 "..." 
+  cw_enclave.513.b:0 "Never mind." # Main Menu
+  cw_enclave.513.c:0 "$GOODBYE$" # Exit
+
 # Leader Purchase 
   cw_enclave.509.name:0 "Hire Privateer"
   cw_enclave.509.desc:0 "..."
   cw_enclave.509.a:0 "..." 
-  cw_privateer_leader_explanation:0 "We will hire a Level 4 Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
+  cw_privateer_leader_explanation:0 "We will hire a Level §Y4§! Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
   cw_enclave.509.b:0 "Never mind." # Main Menu
   cw_enclave.509.c:0 "$GOODBYE$" # Exit
 
@@ -416,7 +425,7 @@
   cw_enclave.608.name:0 "Hire Hacker" 
   cw_enclave.608.desc:0 "Our hackers here are extremely talented, but such talent does warrant a large price. Under the assumption that they'll be well paid and appropriately taken care of, there are a number of us who are willing to serve your empire. Furthermore, us hackers are not known to be kind to authority and our methods are different from those with 'proper' training. However, if you're willing to meet these accomadations they will be of great help."
   cw_enclave.608.a:0 "We welcome your hacker to our team." 
-  cw_hacker_leader_explanation:0 "We will hire a Level 4 Scientist with the §Y$subclass_cw_scientist_hacker$§! Subclass.\n$opinion20$"
+  cw_hacker_leader_explanation:0 "We will hire a Level §Y4§! Scientist with the §Y$subclass_cw_scientist_hacker$§! Subclass.\n$opinion20$"
   cw_enclave.608.b:0 "Never mind." # Main Menu
   cw_enclave.608.c:0 "$GOODBYE$" # Exit
 # Integrate Methods

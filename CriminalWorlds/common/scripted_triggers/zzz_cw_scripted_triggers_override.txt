@@ -1,0 +1,36 @@
+has_council_subclass = {
+	OR = {
+		has_trait = subclass_commander_councilor
+		has_trait = subclass_official_diplomacy_councilor
+		has_trait = subclass_official_economy_councilor
+		has_trait = subclass_scientist_councilor
+		# Added Line Below
+		has_trait = subclass_cw_scientist_hacker
+	}
+}
+
+has_governor_subclass = {
+	OR = {
+		has_trait = subclass_commander_governor
+		has_trait = subclass_official_governor
+		has_trait = subclass_scientist_governor
+		# Added Line Below
+		has_trait = subclass_cw_official_racketeer
+	}
+}
+
+has_non_council_subclass = {
+	OR = {
+		has_trait = subclass_commander_admiral
+		has_trait = subclass_commander_general
+		has_trait = subclass_commander_governor
+		has_trait = subclass_official_delegate
+		has_trait = subclass_official_governor
+		has_trait = subclass_scientist_explorer
+		has_trait = subclass_scientist_scholar
+		has_trait = subclass_scientist_governor
+		# Added 2 Lines Below
+		has_trait = subclass_cw_official_racketeer
+		has_trait = subclass_cw_commander_privateer
+	}
+}

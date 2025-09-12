@@ -1,7 +1,7 @@
 cw_racketeer_purchase_cost = {
 	base = 1
 	modifier = {
-		add = -0.20
+		add = -0.2
 		has_trait_in_council = {
 			TRAIT = leader_trait_cw_underworld_connections
 		}
@@ -18,7 +18,7 @@ cw_racketeer_purchase_cost = {
 cw_privateer_purchase_cost = {
 	base = 1
 	modifier = {
-		add = -0.20
+		add = -0.2
 		has_trait_in_council = {
 			TRAIT = leader_trait_cw_raider_connections
 		}
@@ -35,7 +35,7 @@ cw_privateer_purchase_cost = {
 cw_hacker_purchase_cost = {
 	base = 1
 	modifier = {
-		add = -0.20
+		add = -0.2
 		has_trait_in_council = {
 			TRAIT = leader_trait_cw_darknet_connections
 		}
@@ -47,4 +47,13 @@ cw_hacker_purchase_cost = {
 		}
 	}
 	mult = $COST$
+}
+
+cw_num_ships_fleet = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_ships
+		trigger_scope = fleet
+		mode = add
+	}
 }

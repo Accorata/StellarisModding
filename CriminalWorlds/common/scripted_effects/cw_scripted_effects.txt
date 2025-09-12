@@ -74,6 +74,7 @@ cw_create_small_privateer_fleet = {
 	create_fleet = {
 		name = "NAME_CW_Privateer_Fleet"
 		effect = {
+			set_owner = prev
 			create_ship_design = {
 				design = $CORVETTE_SHIP$
 			}
@@ -94,7 +95,6 @@ cw_create_small_privateer_fleet = {
 				design = last_created_design
 				graphical_culture = "pirate_01"
 			}
-			set_owner = prev
 			set_location = {
 				target = event_target:cw_privateer_spawn
 				distance = 15

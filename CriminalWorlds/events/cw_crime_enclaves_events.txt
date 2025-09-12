@@ -284,31 +284,33 @@ country_event = {
 			# }
 		}
 		name = cw_enclave.302.d
-		# allow = { ...
-		# 	# Check how this works / displays...
-		# 	AND = {
-		# 		custom_tooltip = {
-		# 			fail_text = cw_enclave.302.d.slave_planet
-		# 			any_planet = {
-		# 				cw_is_criminal_planet = yes
-		# 				owner = {
-		# 					NOR = {
-		# 						is_same_value = root
-		# 						cw_can_be_enslaved = yes
-		# 					}
-		# 				}
-		# 			}
-		# 		}
-		# 		custom_tooltip = {
-		# 			fail_text = cw_enclave.302.d.cooldown
-		# 			event_target:cw_criminal_enclave_country = {
-		# 				NOT = {
-		# 					has_country_flag = cw_slave_cooldown
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# }
+		allow = {
+			# Check how this works / displays...
+			AND = {
+				custom_tooltip = {
+					fail_text = cw_enclave.302.d.slave_planet
+					any_playable_country = {
+						any_planet_within_border = {
+							cw_is_criminal_planet = yes
+							owner = {
+								NOR = {
+									is_same_value = root
+									cw_can_be_enslaved = yes
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = {
+					fail_text = cw_enclave.302.d.cooldown
+					event_target:cw_criminal_enclave_country = {
+						NOT = {
+							has_country_flag = cw_slave_cooldown
+						}
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = {
 				id = cw_enclave.407
@@ -472,7 +474,7 @@ country_event = {
 			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
 		}
 		response_text = cw_enclave.400.response
-		custom_tooltip = opinion30
+		custom_tooltip = cw_opinion30
 		add_modifier = {
 			modifier = cw_enclave_smuggled_alloys_5
 			days = @traderDealDuration
@@ -642,7 +644,7 @@ country_event = {
 			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
 		}
 		response_text = cw_enclave.401.response
-		custom_tooltip = opinion30
+		custom_tooltip = cw_opinion30
 		add_modifier = {
 			modifier = cw_enclave_smuggled_consumer_goods_5
 			days = @traderDealDuration
@@ -683,7 +685,6 @@ country_event = {
 	id = cw_enclave.405
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		any_country = {
 			is_country_type = cw_criminal_enclave
@@ -693,7 +694,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -855,7 +855,7 @@ country_event = {
 			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
 		}
 		response_text = cw_enclave.400.response
-		custom_tooltip = opinion30
+		custom_tooltip = cw_opinion30
 		add_modifier = {
 			modifier = cw_enclave_smuggled_alloys_5
 			days = @traderDealDuration
@@ -896,7 +896,6 @@ country_event = {
 	id = cw_enclave.406
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		any_country = {
 			is_country_type = cw_criminal_enclave
@@ -906,7 +905,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -1068,7 +1066,7 @@ country_event = {
 			AMOUNT = value:cw_racketeer_purchase_cost|COST|3000|
 		}
 		response_text = cw_enclave.401.response
-		custom_tooltip = opinion30
+		custom_tooltip = cw_opinion30
 		add_modifier = {
 			modifier = cw_enclave_smuggled_consumer_goods_5
 			days = @traderDealDuration
@@ -1152,7 +1150,7 @@ country_event = {
 				skip_background_generation = yes
 				custom_description = cw_hired_racketeer_desc
 				custom_catch_phrase = cw_hired_racketeer_catch_phrase
-				skill = 5
+				skill = 4
 				event_leader = yes
 				traits = {
 					0 = subclass_cw_official_racketeer
@@ -1204,22 +1202,35 @@ country_event = {
 	}
 	location = event_target:cw_criminal_enclave_location
 	immediate = {
-		random_planet = {
+		random_playable_country = {
 			limit = {
-				cw_is_criminal_planet = yes
-				owner = {
-					NOT = {
-						is_same_value = root
-					}
-				}
-				count_owned_pop_amount = {
-					count >= 200
-					limit = {
-						can_be_smuggled = yes
+				any_planet_within_border = {
+					cw_is_criminal_planet = yes
+					owner = {
+						NOR = {
+							is_same_value = root
+							cw_can_be_enslaved = yes
+						}
 					}
 				}
 			}
-			save_event_target_as = cw_enslaved_planet
+			random_planet_within_border = {
+				limit = {
+					cw_is_criminal_planet = yes
+					owner = {
+						NOT = {
+							is_same_value = root
+						}
+					}
+					count_owned_pop_amount = {
+						count >= 200
+						limit = {
+							can_be_smuggled = yes
+						}
+					}
+				}
+				save_event_target_as = cw_enslaved_planet
+			}
 		}
 	}
 	# 100 Pops
@@ -1263,7 +1274,7 @@ country_event = {
 					}
 					resettle_pop_group = {
 						POP_GROUP = this
-						PLANET = capital_scope
+						PLANET = root.capital_scope
 						AMOUNT = 100
 					}
 				}
@@ -1324,7 +1335,7 @@ country_event = {
 					}
 					resettle_pop_group = {
 						POP_GROUP = this
-						PLANET = capital_scope
+						PLANET = root.capital_scope
 						AMOUNT = 100
 					}
 				}
@@ -1397,7 +1408,7 @@ country_event = {
 					}
 					resettle_pop_group = {
 						POP_GROUP = this
-						PLANET = capital_scope
+						PLANET = root.capital_scope
 						AMOUNT = 100
 					}
 				}
@@ -1453,7 +1464,6 @@ country_event = {
 	show_sound = event_criminal_activity
 	location = event_target:cw_enslaved_planet
 	is_triggered_only = yes
-
 	option = {
 		name = cw_enclave.408.a
 		default_hide_option = yes
@@ -1569,8 +1579,37 @@ country_event = {
 		}
 		default_hide_option = yes
 	}
-	# ???
 	# Harass Rivals
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		name = cw_enclave.303.a
+		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.a.cooldown
+				event_target:cw_criminal_enclave_country = {
+					NOT = {
+						has_country_flag = cw_harass_cooldown
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = cw_enclave.303.a.need_rivals
+				any_relation = {
+					root = {
+						is_rival = prev
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.506
+			}
+		}
+	}
+	# Fund Operations
 	option = {
 		trigger = {
 			is_homicidal = no
@@ -1581,20 +1620,14 @@ country_event = {
 				fail_text = cw_enclave.303.b.cooldown
 				event_target:cw_criminal_enclave_country = {
 					NOT = {
-						has_country_flag = cw_harass_cooldown
+						has_country_flag = cw_supply_cooldown_by_@root
 					}
-				}
-			}
-			custom_tooltip = {
-				fail_text = cw_enclave.303.b.need_rivals
-				any_relation = {
-					root = { is_rival = prev }
 				}
 			}
 		}
 		hidden_effect = {
 			country_event = {
-				id = cw_enclave.506
+				id = cw_enclave.513
 			}
 		}
 	}
@@ -1659,7 +1692,7 @@ country_event = {
 						owner = {
 							NOR = {
 								is_same_value = root
-								cw_can_be_harrassed = yes
+								cw_can_be_harassed = yes
 							}
 						}
 					}
@@ -1715,7 +1748,7 @@ country_event = {
 						owner = {
 							NOR = {
 								is_same_value = root
-								cw_can_be_harrassed = yes
+								cw_can_be_harassed = yes
 							}
 						}
 					}
@@ -2185,6 +2218,67 @@ country_event = {
 	}
 }
 
+# Supply Resources
+country_event = {
+	id = cw_enclave.513
+	title = cw_enclave.513.name
+	desc = cw_enclave.513.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Supply Alloys
+	option = {
+		name = cw_enclave.513.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = alloys
+			AMOUNT = value:cw_privateer_purchase_cost|COST|50|
+		}
+		add_resource = {
+			trade = 1000
+		}
+		custom_tooltip = opinion10
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
+			}
+			event_target:cw_criminal_enclave_country = {
+				set_timed_country_flag = {
+					flag = cw_supply_cooldown_by_@root
+					days = 180
+				}
+				random_situation = {
+					limit = {
+						is_situation_type = situation_cw_privateer_fleets
+					}
+					add_situation_progress = 6
+				}
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.513.b
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.513.c
+		default_hide_option = yes
+	}
+}
+
 # Hire Privateer Veteran
 country_event = {
 	id = cw_enclave.509
@@ -2233,7 +2327,7 @@ country_event = {
 				skip_background_generation = yes
 				custom_description = cw_hired_privateer_desc
 				custom_catch_phrase = cw_hired_privateer_catch_phrase
-				skill = 5
+				skill = 4
 				event_leader = yes
 				traits = {
 					0 = subclass_cw_commander_privateer
@@ -2306,7 +2400,7 @@ country_event = {
 				owner = {
 					NOR = {
 						is_same_value = root
-						cw_can_be_harrassed = yes
+						cw_can_be_harassed = yes
 					}
 				}
 			}
@@ -2347,11 +2441,11 @@ country_event = {
 				who = event_target:cw_specimen_stealing_target
 				category = aesthetic_wonder
 				count = 1
-				show_notification = yes # maybe no...
+				show_notification = yes				# maybe no...
 			}
 			event_target:cw_specimen_stealing_target = {
 				country_event = {
-					id = cw_enclave.512 # to do... (also how do we know which specimen?)
+					id = cw_enclave.512					# to do... (also how do we know which specimen?)
 				}
 			}
 			country_event = {
@@ -2525,7 +2619,9 @@ country_event = {
 			custom_tooltip = {
 				fail_text = cw_enclave.304.b.need_rivals
 				any_relation = {
-					root = { is_rival = prev }
+					root = {
+						is_rival = prev
+					}
 				}
 			}
 		}
@@ -2702,7 +2798,6 @@ country_event = {
 	id = cw_enclave.610
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		any_country = {
 			is_country_type = cw_criminal_enclave
@@ -2712,7 +2807,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -2776,21 +2870,9 @@ country_event = {
 				id = cw_enclave.610
 				days = 3600
 			}
-			event_target:cw_criminal_enclave_country = {
-				add_trust = {
-					who = root
-					amount = 10
-				}
-				if = {
-					limit = {
-						has_country_flag = cw_recent_deal
-					}
-					remove_country_flag = cw_recent_deal
-				}
-				set_timed_country_flag = {
-					flag = cw_recent_deal
-					days = 180
-				}
+			cw_post_enclave_purchase_effects = {
+				TRUST = 10
+				DEAL_LENGTH = 180
 			}
 		}
 	}
@@ -3158,7 +3240,6 @@ country_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	immediate = {
 		add_modifier = {
 			modifier = cw_military_hacked
@@ -3185,7 +3266,6 @@ country_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	immediate = {
 		add_modifier = {
 			modifier = cw_economy_hacked
@@ -3212,7 +3292,6 @@ country_event = {
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
-
 	immediate = {
 		add_modifier = {
 			modifier = cw_politics_hacked
@@ -3278,7 +3357,7 @@ country_event = {
 				skip_background_generation = yes
 				custom_description = cw_hired_hacker_desc
 				custom_catch_phrase = cw_hired_hacker_catch_phrase
-				skill = 5
+				skill = 4
 				event_leader = yes
 				traits = {
 					0 = subclass_cw_scientist_hacker
@@ -3437,7 +3516,6 @@ espionage_operation_event = {
 	id = cw_enclave.612
 	hide_window = yes
 	is_triggered_only = yes
-	
 	trigger = {
 		owner = {
 			has_modifier = cw_purchased_hacker_virus
@@ -3446,7 +3524,6 @@ espionage_operation_event = {
 			is_primitive = no
 		}
 	}
-	
 	immediate = {
 		owner = {
 			country_event = {
@@ -3461,11 +3538,10 @@ country_event = {
 	id = cw_enclave.613
 	title = cw_enclave.613.name
 	desc = cw_enclave.613.desc
-	picture = GFX_evt_announcement # change
-	show_sound = event_criminal_activity # change
+	picture = GFX_evt_announcement	# change
+	show_sound = event_criminal_activity	# change
 	location = fromfrom.capital_scope
 	is_triggered_only = yes
-
 	option = {
 		name = cw_enclave.613.a
 		custom_tooltip = cw_hacker_virus_effects
@@ -3496,7 +3572,6 @@ country_event = {
 		}
 		default_hide_option = yes
 	}
-
 	option = {
 		name = cw_enclave.613.b
 	}
@@ -3507,22 +3582,21 @@ country_event = {
 	id = cw_enclave.614
 	hide_window = yes
 	is_triggered_only = yes
-
 	# trigger = {
 	# 	has_country_flag = cw_hacker_virus_activated
 	# }
-
 	immediate = {
-		every_playable_country = {
-			# limit = {
-			# 	has_country_flag = cw_hacker_virus_activate_on_@root
-			# }
-			add_tech_progress = {
-				tech = last_increased_tech
-				progress = 0.10
-			}
-			# Maybe fire a message too... (only if owner doesn't have that tech)
-		}
+		# every_playable_country = {
+		# 	limit = {
+		# 		has_country_flag = cw_hacker_virus_activate_on_@root
+		# 	}
+		# 	add_tech_progress = {
+		# 		tech = last_increased_tech
+		# 		progress = 0.1
+		# 	}
+		# 	# to do...
+		# 	# Maybe fire a message too... (only if owner doesn't have that tech)
+		# }
 	}
 }
 
@@ -3640,6 +3714,7 @@ planet_event = {
 					graphical_culture = root.owner
 					upgradable = no
 				}
+				set_fleet_flag = cw_enclave_constructor
 				set_location = root
 				auto_move_to_planet = {
 					target = event_target:target_planet_for_building
@@ -3863,6 +3938,11 @@ planet_event = {
 				save_event_target_as = cw_criminal_enclave_country
 				# Uses default ships
 				set_country_flag = use_default_ships
+				# Prevents Alien Life Event from firing
+				set_timed_country_flag = {
+					flag = day_0
+					days = 10
+				}
 			}
 		}
 		root.solar_system = {
@@ -3870,7 +3950,15 @@ planet_event = {
 				limit = {
 					is_owned_by = event_target:cw_criminal_enterprise
 				}
-				set_owner = last_created_country
+				if = {
+					limit = {
+						has_fleet_flag = cw_enclave_constructor
+					}
+					delete_fleet = this
+				}
+				else = {
+					set_owner = last_created_country
+				}
 			}
 		}
 		every_country = {
@@ -4335,7 +4423,6 @@ country_event = {
 	id = cw_enclave.297
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		from = {
 			is_country_type = cw_criminal_enclave
@@ -4344,7 +4431,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		from = {
 			switch = {
@@ -4397,7 +4483,6 @@ country_event = {
 							remove_modifier = cw_enclave_smuggled_consumer_goods_5
 						}
 					}
-				
 				}
 				cw_criminal_enclave_privateers = {
 					root = {
@@ -4443,11 +4528,10 @@ country_event = {
 	id = cw_enclave.298
 	title = cw_enclave.298.name
 	desc = cw_enclave.298.desc
-	picture = GFX_evt_sabotaged_ship # change...
-	show_sound = event_criminal_activity #...
+	picture = GFX_evt_sabotaged_ship	# change...
+	show_sound = event_criminal_activity	#...
 	location = fromfromfrom
 	is_triggered_only = yes
-
 	option = {
 		name = cw_enclave.298.a
 	}
