@@ -246,7 +246,7 @@
   cw_enclave.407.c.tooltip:0 "§Y300§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion20$"
   cw_enclave.407.d:0 "Never mind." # Main Menu
   cw_enclave.407.e:0 "$GOODBYE$" # Exit
-  # Enslaved Pops Event
+# Enslaved Pops Event
   cw_enclave.408.name:0 "Pops Enslaved on [cw_enslaved_planet.GetName]" 
   cw_enclave.408.desc:0 "On §Y[cw_enslaved_planet.GetName]§!, a coordinated criminal operation has led to the capture and enslaving of numerous pops.By the time local authorities understood the scale of the operation, the victims had already been transported off planet, likely sold to a foreign empire. As a result of this criminal activity, §Y[CW_GetNumSlaves] Pops§! have disappeared.\n\nAt this point, we can only take steps to ensure this doesn't happen again. Such a large operation is unlikely these criminal organizations working alone. Most likely the slaves were purchased by another empire through dealing with a §YRacketeer Enclave§!. We must either reduce crime levels on our planets, eliminate the enclave that caused this, or bribe such a enclave to guarantee we are not the targets."
   cw_enclave.408.a:0 "Outrageous!"
@@ -341,12 +341,36 @@
 # Purchase Stolen Resources (No Grand Archive)
   cw_enclave.511.name:0 "..."
   cw_enclave.511.desc:0 "..."
-  cw_enclave.511.a:0 "..." 
+  cw_enclave.511.a:0 "..." # Energy
+  cw_enclave.511.b:0 "..." # Minerals
+  cw_enclave.511.c:0 "..." # Food
   cw_enclave.511.b:0 "Never mind." # Main Menu
   cw_enclave.511.c:0 "$GOODBYE$" # Exit
+# Resources Stolen
+  cw_plunder_enclave_culprit:0 "..."
+  # Energy
+  cw_enclave.514.name:0 "Energy Convoy Plundered!"
+  cw_enclave.514.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.514.a:0 "Outrageous!"
+  # Minerals
+  cw_enclave.515.name:0 "Mineral Convoy Plundered!"
+  cw_enclave.515.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.515.a:0 "Outrageous!"
+  # Food
+  cw_enclave.516.name:0 "Food Convoy Plundered!"
+  cw_enclave.516.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.516.a:0 "Outrageous!"
 
 # Bribery
-  # ...
+  cw_enclave.517.name:0 "Bribe Privateers" 
+  cw_enclave.517.desc:0 "..."
+  cw_enclave.517.desc.medium:0 "$cw_enclave.517.desc$ ..."
+  cw_enclave.517.desc.strong:0 "$cw_enclave.517.desc$ ..."
+  cw_enclave.517.desc.warlord:0 "..."
+  cw_enclave.privateer_bribery:0 "..."
+  cw_enclave.517.warlord:0 "..."
+  cw_enclave.517.a:0 "Never mind." # Main Menu
+  cw_enclave.517.b:0 "We don't negotiate with criminals." # Exit
 
 ## Hackers
 # Main Menu
@@ -373,7 +397,7 @@
   cw_enclave.600.c:0 "$GOODBYE$" # Exit
 # Skeleton Key Renewal
   cw_enclave.601.name:0 "Renew Skeleton Key"
-  cw_enclave.601.desc:0 "<Automated Voice>\nDear [Root.GetSpeciesNamePlural], as the artificial assistant of the [cw_criminal_enclave_country.GetName], I am here to notify you that your subscription of our skeleton key service has expired. If not renewed, we will cease providing our exploits and your current tools will quickly become outdated. I recommend renewing your subscription as soon as possible and will connect you to an appropriate contact now.\n</Automated Voice>\n\nWelcome again [Root.GetSpeciesNamePlural]! As we're sure you were just informed, the 10 years in our previous contract has transpired. We are happy to renew it for another 10 years pending a credit transaction."
+  cw_enclave.601.desc:0 "<Automated Voice>\nDear [Root.GetSpeciesNamePlural], as the artificial assistant of the [cw_criminal_enclave_country.GetName], I am here to notify you that your subscription of our skeleton key service has expired. If not renewed, we will cease providing our exploits and your current tools will quickly become outdated. I recommend renewing your subscription as soon as possible and will connect you to an appropriate contact now.\n</Automated Voice>\n\nWelcome again [Root.GetSpeciesNamePlural]! As we're sure you were just informed, the 10 years in our previous contract have transpired. We are happy to renew it for another 10 years pending a credit transaction."
   cw_enclave.601.a:0 "Transferring payment now."
   cw_enclave.601.b:0 "What else can you offer?" # Main Menu
   cw_enclave.601.c:0 "No thanks." # Exit
@@ -442,7 +466,7 @@
   cw_enclave.611.response:0 "Wonderful. We must add that the virus is a one-time use, but we will happily provide more for your credits."
   cw_enclave.611.b:0 "Never mind." # Main Menu
   cw_enclave.611.c:0 "$GOODBYE$" # Exit
-  # Activate Virus
+# Activate Virus
   cw_enclave.613.name:0 "Hacker Virus Primed" 
   cw_enclave.613.desc:0 "Upon the completion of our espionage actions against the §Y[FromFrom.GetName]§!, our spymaster reports that the virus we purchased from the Hacker Enclave is ready to be activated. Our operatives were able to install the preliminary software, as per the instructions, which should take down any antiviral protections against the viral package.\n\nAll that remains to be done is to transmit the virus or to save it for another target, as once we use this we will need to purchase another copy from the Hackers. The antiviral software will only be down for a moment, so we must act now if we wish to act at all."
   cw_enclave.613.a:0 "Transmit the package." 

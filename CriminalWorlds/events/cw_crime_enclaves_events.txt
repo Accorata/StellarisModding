@@ -1769,6 +1769,27 @@ country_event = {
 			}
 		}
 	}
+	# Bribery
+	option = {
+		trigger = {
+			is_homicidal = no
+			# Enclave is Level 3
+			# event_target:cw_criminal_enclave_country = {
+			# 	#has_modifier = cw_lvl_3
+			# }
+		}
+		name = cw_enclave.303.e
+		allow = {
+			NOT = {
+				has_modifier = cw_bribed_privateers
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.517
+			}
+		}
+	}
 }
 
 # Setup Harass Targets (Not called when one chooses a new target)
@@ -2443,11 +2464,11 @@ country_event = {
 				count = 1
 				show_notification = yes				# maybe no...
 			}
-			event_target:cw_specimen_stealing_target = {
-				country_event = {
-					id = cw_enclave.512					# to do... (also how do we know which specimen?)
-				}
-			}
+			# event_target:cw_specimen_stealing_target = {
+			# 	country_event = {
+			# 		id = cw_enclave.512					# to do... (also how do we know which specimen?)
+			# 	}
+			# }
 			country_event = {
 				id = cw_enclave.300
 			}
@@ -2485,19 +2506,46 @@ country_event = {
 	}
 	location = event_target:cw_criminal_enclave_location
 	immediate = {
-		event_target:cw_criminal_enclave_country = {
-			owner_species = {
-				save_event_target_as = pirate_species
+		random_system = {
+			limit = {
+				has_owner = yes
+				# Check for pirates
+				OR = {
+					any_fleet_in_system = {
+						owner = {
+							is_country_type = pirate
+						}
+					}
+					any_neighbor_system = {
+						any_fleet_in_system = {
+							owner = {
+								is_country_type = pirate
+							}
+						}
+					}
+				}
+				owner = {
+					NOR = {
+						is_same_value = root
+						cw_can_be_harassed = yes
+					}
+				}
+			}
+			owner = {
+				save_event_target_as = cw_resource_stealing_target
 			}
 		}
 	}
-	# Purchase
+	# Purchase Energy
 	option = {
 		name = cw_enclave.511.a
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
 			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+		}
+		add_resource = {
+			energy = 5000
 		}
 		hidden_effect = {
 			cw_post_enclave_purchase_effects = {
@@ -2506,6 +2554,73 @@ country_event = {
 			}
 			country_event = {
 				id = cw_enclave.300
+			}
+			event_target:cw_resource_stealing_target = {
+				country_event = {
+					id = cw_enclave.514
+				}
+			}
+		}
+	}
+	# Purchase Minerals
+	option = {
+		name = cw_enclave.511.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+		}
+		add_resource = {
+			minerals = 5000
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+			event_target:cw_resource_stealing_target = {
+				country_event = {
+					id = cw_enclave.515
+				}
+			}
+		}
+	}
+	# Purchase Food
+	option = {
+		name = cw_enclave.511.a
+		inline_script = {
+			script = events/resource_cost_with_allow
+			RESOURCE = trade
+			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+		}
+		add_resource = {
+			food = 5000
+		}
+		hidden_effect = {
+			cw_post_enclave_purchase_effects = {
+				TRUST = 20
+				DEAL_LENGTH = 360
+			}
+			country_event = {
+				id = cw_enclave.300
+			}
+			event_target:cw_resource_stealing_target = {
+				if = {
+					limit = {
+						is_individual_machine = no
+						OR = {
+							is_machine_empire = no
+							has_civic = civic_machine_servitor
+							has_civic = civic_machine_assimilator
+						}
+					}
+					country_event = {
+						id = cw_enclave.516
+					}
+				}
 			}
 		}
 	}
@@ -2521,6 +2636,167 @@ country_event = {
 	# Exit
 	option = {
 		name = cw_enclave.511.c
+		default_hide_option = yes
+	}
+}
+
+# Stolen Energy
+country_event = {
+	id = cw_enclave.514
+	title = cw_enclave.514.name
+	desc = cw_enclave.514.desc
+	picture = GFX_evt_sabotaged_ship	# change...
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			energy = -5000
+		}
+	}
+	option = {
+		name = cw_enclave.514.a
+		tooltip = {
+			add_resource = {
+				energy = -5000
+			}
+		}
+	}
+}
+
+# Stolen Minerals
+country_event = {
+	id = cw_enclave.515
+	title = cw_enclave.515.name
+	desc = cw_enclave.515.desc
+	picture = GFX_evt_sabotaged_ship	# change...
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			minerals = -5000
+		}
+	}
+	option = {
+		name = cw_enclave.515.a
+		tooltip = {
+			add_resource = {
+				minerals = -5000
+			}
+		}
+	}
+}
+
+# Stolen Food
+country_event = {
+	id = cw_enclave.516
+	title = cw_enclave.516.name
+	desc = cw_enclave.516.desc
+	picture = GFX_evt_sabotaged_ship	# change...
+	show_sound = event_criminal_activity
+	location = root
+	is_triggered_only = yes
+	immediate = {
+		add_resource = {
+			food = -5000
+		}
+	}
+	option = {
+		name = cw_enclave.516.a
+		tooltip = {
+			add_resource = {
+				food = -5000
+			}
+		}
+	}
+}
+
+# Bribery
+country_event = {
+	id = cw_enclave.517
+	title = cw_enclave.517.name
+	desc = {
+		text = cw_enclave.517.desc
+		trigger = {
+			fleet_power < 15000
+			NOR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+	desc = {
+		text = cw_enclave.517.desc.medium
+		trigger = {
+			fleet_power > 15000
+			fleet_power < 25000
+			NOR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+	desc = {
+		text = cw_enclave.517.desc.strong
+		trigger = {
+			fleet_power > 25000
+			NOR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+	desc = {
+		text = cw_enclave.517.desc.warlord
+		trigger = {
+			OR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+	}
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "cw_criminal_enclave_window"
+	custom_gui_option = "cw_criminal_enclave_option"
+	picture_event_data = {
+		portrait = event_target:cw_criminal_enclave_country
+		room = event_target:cw_criminal_enclave_country
+	}
+	location = event_target:cw_criminal_enclave_location
+	# Bribery
+	inline_script = {
+		script = enclaves/cw_enclave_bribery
+		ENCLAVE_TYPE = privateer
+	}
+	# Warlords don't need to bribe
+	option = {
+		exclusive_trigger = {
+			OR = {
+				has_tradition = tr_cw_criminality_pirate_warlord
+				has_tradition = tr_cw_deviancy_pirate_warlord
+			}
+		}
+		name = cw_enclave.517.warlord
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Main Menu
+	option = {
+		name = cw_enclave.517.a
+		hidden_effect = {
+			country_event = {
+				id = cw_enclave.300
+			}
+		}
+	}
+	# Exit
+	option = {
+		name = cw_enclave.517.b
 		default_hide_option = yes
 	}
 }
