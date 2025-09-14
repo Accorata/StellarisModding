@@ -207,7 +207,7 @@
   cw_enclave.401.g:0 "$GOODBYE$" # Exit
 # Renew Trade Deals
   cw_enclave.403.name:0 "Renew Arms Purchase"
-  cw_enclave.403.desc:0 "Our records indicate that our previous arms deal has expired. We hope to continue to do business with you, and we have this extended ..."
+  cw_enclave.403.desc:0 "Our records indicate that our previous arms deal has expired. However, our illegal arms trade remains quite profitable and we have many more to offer. We hope to continue to do business with you and renew this deal for another 10 years. ..."
   cw_enclave.403.a:0 "$cw_enclave.400.a$" # 1
   cw_enclave.403.b:0 "$cw_enclave.400.b$" # 2
   cw_enclave.403.c:0 "$cw_enclave.400.c$" # 5
@@ -229,7 +229,7 @@
 
 # Leader Purchase 
   cw_enclave.402.name:0 "Hire Racketeer" 
-  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations..."
+  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations. We trust that they'll have control over their work and must not be bothered by your [root.CW_GetEnforcerName_Plural_Lower] who can only interfere. ..."
   cw_enclave.402.a:0 "..." 
   cw_racketeer_leader_explanation:0 "We will hire a Level §Y4§! Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
   cw_enclave.402.b:0 "Never mind." # Main Menu
@@ -254,8 +254,9 @@
 # Bribery
   cw_enclave.409.name:0 "Bribe Racketeers" 
   cw_enclave.409.desc:0 "..."
+  cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ ..."
-  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
+  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.racketeer_bribery:0 "..."
   cw_enclave.409.a:0 "Never mind." # Main Menu
   cw_enclave.409.b:0 "We don't negotiate with criminals." # Exit
@@ -311,7 +312,7 @@
 
 # Supply Weaponry
   cw_enclave.513.name:0 "Supply Weaponry"
-  cw_enclave.513.desc:0 "..."
+  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which "
   cw_enclave.513.a:0 "..." 
   cw_enclave.513.b:0 "Never mind." # Main Menu
   cw_enclave.513.c:0 "$GOODBYE$" # Exit
@@ -339,18 +340,18 @@
   cw_enclave.510.d:0 "Never mind." # Main Menu
   cw_enclave.510.e:0 "$GOODBYE$" # Exit
 # Purchase Stolen Resources (No Grand Archive)
-  cw_enclave.511.name:0 "..."
+  cw_enclave.511.name:0 "Purchase Stolen Resources"
   cw_enclave.511.desc:0 "..."
-  cw_enclave.511.a:0 "..." # Energy
-  cw_enclave.511.b:0 "..." # Minerals
-  cw_enclave.511.c:0 "..." # Food
+  cw_enclave.511.a:0 "Raid an Energy Convoy." # Energy
+  cw_enclave.511.b:0 "Raid a Mineral Convoy." # Minerals
+  cw_enclave.511.c:0 "Raid a Food Convoy." # Food
   cw_enclave.511.b:0 "Never mind." # Main Menu
   cw_enclave.511.c:0 "$GOODBYE$" # Exit
 # Resources Stolen
   cw_plunder_enclave_culprit:0 "..."
   # Energy
   cw_enclave.514.name:0 "Energy Convoy Plundered!"
-  cw_enclave.514.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.514.desc:0 "While transporting ...$cw_plunder_enclave_culprit$"
   cw_enclave.514.a:0 "Outrageous!"
   # Minerals
   cw_enclave.515.name:0 "Mineral Convoy Plundered!"
@@ -363,10 +364,10 @@
 
 # Bribery
   cw_enclave.517.name:0 "Bribe Privateers" 
-  cw_enclave.517.desc:0 "..."
-  cw_enclave.517.desc.medium:0 "$cw_enclave.517.desc$ ..."
-  cw_enclave.517.desc.strong:0 "$cw_enclave.517.desc$ ..."
-  cw_enclave.517.desc.warlord:0 "..."
+  cw_enclave.517.desc:0 "Was it the harassing fleets or the raids on your convoys that brought you to this cowardice? Or maybe you're just scared of what we might do to you?\n\nWe would humiliate you further, if we were not servants of the coin ourselves. Guaranteeing your safety will be costly."
+  cw_enclave.517.desc.medium:0 "$cw_enclave.517.desc$ $cw_enclave.bribery_reduced$"
+  cw_enclave.517.desc.strong:0 "$cw_enclave.517.desc$ That said, we must ask why you throw yourselves before us. Your fleets are mighty, your admirals brave and your weapons deadly. It is with much admiration that we view your navy. As such, we ask for much less than normal in exchange for our protection."
+  cw_enclave.517.desc.warlord:0 "Our fellow pirate, you do not belong kneeling at our feet. You have no need to fear us. ..."
   cw_enclave.privateer_bribery:0 "..."
   cw_enclave.517.warlord:0 "..."
   cw_enclave.517.a:0 "Never mind." # Main Menu
@@ -476,7 +477,7 @@
 # Bribery 
   cw_enclave.615.name:0 "Bribe Hackers" 
   cw_enclave.615.desc:0 "We're not surprised. Our hackers are highly skilled and have found numerous vulnerabilities in your cybersecurity. We would offer to patch them, but that would put us out of business so we'll leave your 'experts' to that.\n\nHowever, we can promise to no longer take out deals against you, though a fair amount of credits would have to come our way to make such a deal worthwhile."
-  cw_enclave.615.desc.medium:0 "$cw_enclave.615.desc$ That said, your navy is impressible. We'd prefer to smooth things over with a mutually profitable so we'll only ask for 75% of what we'd normally."
+  cw_enclave.615.desc.medium:0 "$cw_enclave.615.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.615.desc.strong:0 "$cw_enclave.615.desc$ That said, we are also highly aware of the strength of your fleets. While cyberspace is ours to command, our physical stronghold is vulnerable. We'd greatly prefer to avoid such a confrontation and will discount this deal appropriately."
   cw_enclave.hacker_bribery:0 "As you wish."
   cw_enclave.615.a:0 "Never mind." # Main Menu

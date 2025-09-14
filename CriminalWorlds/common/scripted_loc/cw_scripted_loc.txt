@@ -1,4 +1,28 @@
 defined_text = {
+	name = CW_GetEnforcerName_Plural_Lower
+	text = {
+		trigger = {
+			has_valid_civic = civic_civil_education
+		}
+		localization_key = "'educators'"
+	}
+	text = {
+		trigger = {
+			is_gestalt = yes
+			is_wilderness_empire = no
+		}
+		localization_key = "hunter-seeker drones"
+	}
+	text = {
+		trigger = {
+			is_wilderness_empire = yes
+		}
+		localization_key = "immunosymbionts"
+	}
+	default = "enforcers"
+}
+
+defined_text = {
 	name = CW_GetNumSlaves
 	random = no
 	text = {
