@@ -152,6 +152,16 @@ spriteTypes = {
 		name = "GFX_leader_trait_cw_subterfuge_focus"
 		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_subterfuge_focus.dds"
 	}
+	# Maximum Clearance
+	spriteType = {
+		name = "GFX_leader_trait_cw_maximum_clearance"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_maximum_clearance.dds"
+	}
+	# Codebreaker
+	spriteType = {
+		name = "GFX_leader_trait_cw_codebreaker"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_codebreaker.dds"
+	}
 	# Deadly Saboteur
 	spriteType = {
 		name = "GFX_leader_trait_cw_deadly_saboteur"

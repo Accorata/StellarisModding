@@ -177,7 +177,7 @@
   cw_criminal_elite:0 "Criminal Elite"
   cw_criminal_elite_desc:0 "Increases the Chances of Pool Leaders having Criminal Traits."
   cw_enclave_smuggled_alloys:0 "Smuggled Arms Trade"
-  cw_enclave_smuggled_alloys_desc:0 "..."
+  cw_enclave_smuggled_alloys_desc:0 "Shipments of smuggled weapons are being routinely sent to our weapons facilities from Criminal Racketeers."
   cw_enclave_smuggled_alloys_2:0 "$cw_enclave_smuggled_alloys$"
   cw_enclave_smuggled_alloys_2_desc:0 "$cw_enclave_smuggled_alloys_desc$"
   cw_enclave_smuggled_alloys_3:0 "$cw_enclave_smuggled_alloys$"
@@ -187,7 +187,7 @@
   cw_enclave_smuggled_alloys_5:0 "$cw_enclave_smuggled_alloys$"
   cw_enclave_smuggled_alloys_5_desc:0 "$cw_enclave_smuggled_alloys_desc$"
   cw_enclave_smuggled_consumer_goods:0 "Illicit Drugs Trade"
-  cw_enclave_smuggled_consumer_goods_desc:0 "..."
+  cw_enclave_smuggled_consumer_goods_desc:0 "Discrete dealers distribute pleasure inducing drugs throughout our pops all supplied by Criminal Racketeers."
   cw_enclave_smuggled_consumer_goods_2:0 "$cw_enclave_smuggled_consumer_goods$"
   cw_enclave_smuggled_consumer_goods_2_desc:0 "$cw_enclave_smuggled_consumer_goods_desc$"
   cw_enclave_smuggled_consumer_goods_3:0 "$cw_enclave_smuggled_consumer_goods$"
@@ -410,7 +410,7 @@
   cw_hired_racketeer_catch_phrase:0 "§L"It has come to my attention that you require my... services."§!"
 # Privateer
   subclass_cw_commander_privateer:0 "$CW_PRIVATEER$"
-  subclass_cw_commander_privateer_desc:0 "..."
+  subclass_cw_commander_privateer_desc:0 "The free sailors of the stars, $CW_PRIVATEER_PLURAL$ apply a unique set of skills to interstellar dogfights."
   cw_privateer_subclass_tt:0 "§GVeteran Class focused on battle rewards and small ships§!"
   cw_hired_privateer_desc:0 "This leader hails from an enclave of criminal privateers. $subclass_cw_commander_privateer_desc$"
   cw_hired_privateer_catch_phrase:0 "§L"..."§!"
@@ -510,7 +510,7 @@
   leader_trait_cw_guerilla_tactics:0 "$leader_trait_guerilla_tactics$"
   leader_trait_cw_guerilla_tactics_desc:0 "$leader_trait_guerilla_tactics_desc$"
   leader_trait_cw_pirate_lord:0 "Pirate Lord"
-  leader_trait_cw_pirate_lord_desc:0 "Years of skulduggery and outlandish exploits have created a leader who never leaves with less than they came for."
+  leader_trait_cw_pirate_lord_desc:0 "Years of skulduggery and outlandish exploits have created a leader who never leaves with less than [root.GetHerHim] came for."
   leader_trait_cw_wolfpack:0 "Wolfpack Tactics" # needs testing + maybe tooltip?...
   leader_trait_cw_wolfpack_desc:0 "..."
 
@@ -519,17 +519,17 @@
   leader_trait_cw_ambassador_ear_to_the_ground_desc: "$leader_trait_ambassador_ear_to_the_ground_desc$"
   leader_trait_cw_shadow_broker:0 "$leader_trait_shadow_broker$"
   leader_trait_cw_shadow_broker_desc:0 "$leader_trait_shadow_broker_desc$"
-  leader_trait_cw_military_espionage:0 "Military Espionage" # icon + trait needed...
-  leader_trait_cw_military_espionage_desc:0 "..."
+  leader_trait_cw_military_espionage:0 "Maximum Clearance" # icon needed...
+  leader_trait_cw_military_espionage_desc:0 "This leader has no difficulty obtaining top secret clearance levels in enemy powers."
   leader_trait_cw_military_espionage_effect:0 "[CW_GetHackerMilitaryEffect]"
   cw_hacker_superior_military:0 "§EEffects apply while Militarily weaker than a Rival.§!"
   cw_hacker_no_superior_military:0 "§RThis trait has no effect while not Militarily weaker than a Rival.§!"
-  leader_trait_cw_tech_espionage:0 "Technology Espionage" # icon + trait needed...
-  leader_trait_cw_tech_espionage_desc:0 "..."
+  leader_trait_cw_tech_espionage:0 "Codebreaker" # icon needed...
+  leader_trait_cw_tech_espionage_desc:0 "This leader is a master of cryptography, especially the codes used to protect top secret breakthroughs."
   leader_trait_cw_tech_espionage_effect:0 "[CW_GetHackerTechEffect]"
   cw_hacker_superior_tech:0 "§EEffects apply while Technologically weaker than a Rival.§!"
   cw_hacker_no_superior_tech:0 "§RThis trait has no effect while not Technologically weaker than a Rival.§!"
-  leader_trait_cw_economy_espionage:0 "Economic Espionage" # icon + trait needed...
+  leader_trait_cw_economy_espionage:0 "Industrial Espionage" # icon needed...
   leader_trait_cw_economy_espionage_desc:0 "..."
   leader_trait_cw_economy_espionage_effect:0 "[CW_GetHackerEconomyEffect]"
   cw_hacker_superior_economy:0 "§EEffects apply while Economically weaker than a Rival.§!"
@@ -610,3 +610,7 @@
   mod_monthly_trades_trade_produces_add:0 "$mod_country_trade_produces_mult$"
   mod_monthly_trades_consumer_goods_produces_add:0 "$mod_country_consumer_goods_produces_mult$"
   mod_monthly_trades_alloys_produces_add:0 "$mod_country_alloys_produces_mult$"
+# Espionage Modifiers
+  mod_operation_arm_privateers_difficulty_add:0 "$operation_arm_privateers$ Operation Difficulty"
+  mod_operation_steal_technology_difficulty_add:0 "$operation_steal_technology$ Operation Difficulty"
+  mod_operation_extort_favors_difficulty_add:0 "$operation_extort_favors$ Operation Difficulty"

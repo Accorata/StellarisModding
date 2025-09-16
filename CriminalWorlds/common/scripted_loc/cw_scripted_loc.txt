@@ -1,5 +1,5 @@
 defined_text = {
-	name = CW_GetEnforcerName_Plural_Lower
+	name = CW_GetEnforcerName_Plural_Lowercase
 	text = {
 		trigger = {
 			has_valid_civic = civic_civil_education

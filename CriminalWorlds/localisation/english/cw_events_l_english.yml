@@ -165,24 +165,23 @@
   cw_enclave.298.name:0 "Unresponsive Weaponry!"
   cw_enclave.298.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't extreme and our fleet should still prove effective, even if less so than we originally anticipated."
   cw_enclave.298.a:0 "Destroy them and put an end to this."
-  # reporting shield fluctuations and weapons being unresponsive
 
 ## Racketeers
 # Main Menu
   cw_enclave.302.name:0 "Greetings"
   cw_enclave.302.desc:0 "Your reputation proceeds you, [Root.GetSpeciesNamePlural].\n\nWe are glad to welcome you to our headquarters, and we hope to build a profitable relationship together. We have contacts throughout the galaxy, criminal organizations that understand what good business looks like. We're sure you do as well. In exchange for your credits, there are numerous benefits us and our associaties can offer. How can we best be of service?"
-  cw_enclave.302.a:0 "We are interested in smuggled arms."
+  cw_enclave.302.a:0 "We are interested in §YSmuggled Arms§!."
   cw_enclave.302.a.tooltip:0 "Purchase monthly shipments of §Y$alloys_with_icon$§!."
   cw_enclave.302.a.has_deal:0 "Criminal Racketeers are already selling us §Y$alloys_with_icon$§!."
-  cw_enclave.302.b:0 "We are interested in illicit drugs."
+  cw_enclave.302.b:0 "We are interested in §YIllicit Drugs§!."
   cw_enclave.302.b.tooltip:0 "Purchase monthly shipments of §Y$consumer_goods_with_icon$§!."
   cw_enclave.302.b.has_deal:0 "Criminal Racketeers are already selling us §Y$consumer_goods_with_icon$§!."
-  cw_enclave.302.c:0 "We'd like to hire one of your best Racketeers."
+  cw_enclave.302.c:0 "We'd like to hire one of your best §YRacketeers§!."
   cw_enclave.302.c.has_leader:0 "We may only employ §Yone§! §HEnclave Racketeer§! at a time."
-  cw_enclave.302.d:0 "We are interested in purchasing slaves."
+  cw_enclave.302.d:0 "We are interested in purchasing §YSlaves§!."
   cw_enclave.302.d.slave_planet:0 "This enclave has no viable planet from which to enslave pops."
   cw_enclave.302.d.cooldown:0 "This enclave has too recently enslaved pops."
-  cw_enclave.302.e:0 "We come seeking protection from your slavers."
+  cw_enclave.302.e:0 "We come seeking §YProtection§! from your slavers."
 
 # Trade Deals (Alloys & Consumer Goods)
   cw_enclave.400.name:0 "Purchase Smuggled Arms"
@@ -229,7 +228,7 @@
 
 # Leader Purchase 
   cw_enclave.402.name:0 "Hire Racketeer" 
-  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations. We trust that they'll have control over their work and must not be bothered by your [root.CW_GetEnforcerName_Plural_Lower] who can only interfere. ..."
+  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations. We trust that they'll have control over their work and must not be bothered by your [root.CW_GetEnforcerName_Plural_Lowercase] who will only interfere. ..."
   cw_enclave.402.a:0 "..." 
   cw_racketeer_leader_explanation:0 "We will hire a Level §Y4§! Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
   cw_enclave.402.b:0 "Never mind." # Main Menu
@@ -255,8 +254,8 @@
   cw_enclave.409.name:0 "Bribe Racketeers" 
   cw_enclave.409.desc:0 "..."
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
-  cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ ..."
-  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
+  cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
+  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
   cw_enclave.racketeer_bribery:0 "..."
   cw_enclave.409.a:0 "Never mind." # Main Menu
   cw_enclave.409.b:0 "We don't negotiate with criminals." # Exit
@@ -264,20 +263,21 @@
 ## Privateers
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
-  cw_enclave.303.desc:0 "...303..."
-  cw_enclave.303.a:0 "..."
+  cw_enclave.303.desc:0 "..."
+  cw_enclave.303.a:0 "We'd like you to §YHarass our Rivals§!."
   cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
   cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
-  cw_enclave.303.b:0 "We'd like to support your operation."
+  cw_enclave.303.b:0 "We'd like to §YSupport§! your operation."
   cw_enclave.303.b.cooldown:0 "We have too recently supplied this enclave with weaponry."
-  cw_enclave.303.c:0 "We'd like to hire one of your best Privateers."
+  cw_enclave.303.c:0 "We'd like to hire one of your best §YPrivateers§!."
   cw_enclave.303.c.has_leader:0 "We may only employ §Yone§! §HEnclave Privateer§! at a time."
-  cw_enclave.303.d:0 "We are interested in stolen specimens."
+  cw_enclave.303.d:0 "We are interested in §YStolen Specimens§!."
   cw_enclave.303.d.no_stealing_system:0 "This enclave has no viable system from which to steal specimens."
   cw_enclave.303.d.cooldown:0 "This enclave has too recently raided specimens."
-  cw_enclave.303.d.no_archive:0 "We are interested in stolen resources."
+  cw_enclave.303.d.no_archive:0 "We are interested in §YStolen Resources§!."
   cw_enclave.303.d.no_raidable_system:0 "This enclave has no viable system to raid for resources."
   cw_enclave.303.d.no_archive_cooldown:0 "This enclave has too recently raided resources."
+  cw_enclave.303.e:0 "We come seeking §YProtection§! from your raiders."
 
 # Harass Rivals Menu
   cw_enclave.503.name:0 "Harass Rivals"
@@ -377,18 +377,18 @@
 # Main Menu
   cw_enclave.304.name:0 "$cw_enclave.302.name$"
   cw_enclave.304.desc:0 "Connecting...\nVerifying...\n---- CONNECTION ESTABLISHED ----\n\nWelcome to the [cw_criminal_enclave_country.GetName]. Here, a number of hacker guilds have come together to offer our services to those who can pay the price. While our span of physical space is quite limited, our members wield influence throughout galactic cyberspace. We're sure there are offers you'd like to take up."
-  cw_enclave.304.a:0 "How can you help our Espionage efforts?"
+  cw_enclave.304.a:0 "How can you help our §YEspionage§! efforts?"
   cw_enclave.304.a.has_key:0 "Criminal Hackers are already providing Espionage help."
-  cw_enclave.304.b:0 "We'd like you to hack our rivals."
+  cw_enclave.304.b:0 "We'd like you to §YHack our Rivals§!."
   cw_enclave.304.b.cooldown:0 "This enclave has too recently participated in a hack."
   cw_enclave.304.b.need_rivals:0 "$marauder.20.need_rivals$"
-  cw_enclave.304.c:0 "We'd like to hire one of your best Hackers."
+  cw_enclave.304.c:0 "We'd like to hire one of your best §YHackers§!."
   cw_enclave.304.c.has_leader:0 "We may only employ §Yone§! §HEnclave Hacker§! at a time."
-  cw_enclave.304.c.gestalt:0 "We'd like to integrate your methods."
+  cw_enclave.304.c.gestalt:0 "We'd like to §YIntegrate§! your methods."
   cw_enclave.304.c.has_assimilated:0 "We've already assimilated §Y$leader_trait_cw_hacker_node$§!."
-  cw_enclave.304.d:0 "We'd like to buy a custom virus."
+  cw_enclave.304.d:0 "We'd like to buy a §YCustom Virus§!."
   cw_enclave.304.d.has_hack:0 "We already have a Hacker Virus to deploy."
-  cw_enclave.304.e:0 "We come seeking protection from your hackers."
+  cw_enclave.304.e:0 "We come seeking §YProtection§! from your hackers."
 
 # Skeleton Key
   cw_enclave.600.name:0 "Skeleton Key"

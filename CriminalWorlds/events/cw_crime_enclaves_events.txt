@@ -2146,12 +2146,45 @@ country_event = {
 				}
 			}
 		}
-		# Send fleets to those systems
+		# Create Raiding Country
+		create_country = {
+			name = event_target:cw_criminal_enclave_country
+			type = "marauder_raiders"			# Keep as Marauder Raiders for damage modifiers
+			flag = event_target:cw_criminal_enclave_country
+			effect = {
+				save_event_target_as = cw_raiders
+				set_faction_hostility = {
+					target = root
+					set_hostile = yes
+					set_neutral = no
+					set_friendly = no
+				}
+				# End Harassing after 2 years
+				country_event = {
+					id = cw_enclave.518
+					days = 720
+				}
+			}
+		}
+		every_country = {
+			establish_communications_no_message = event_target:cw_raiders
+		}
+		event_target:cw_criminal_enclave_country = {
+			set_country_flag = cw_owners_of_@event_target:cw_criminal_enclave_country
+			set_faction_hostility = {
+				target = event_target:cw_raiders
+				set_hostile = no
+				set_neutral = no
+				set_friendly = yes
+			}
+		}
+		# Send Fleets to those Systems
 		event_target:cw_criminal_enclave_country = {
 			every_owned_fleet = {
 				limit = {
 					is_mobile = yes
 				}
+				set_owner = event_target:cw_raiders
 				random_list = {
 					1 = {
 						auto_move_to_planet = {
@@ -4703,7 +4736,7 @@ country_event = {
 		from = {
 			is_country_type = cw_criminal_enclave
 			NOT = {
-				is_hostile = this
+				is_hostile = root
 			}
 		}
 	}
