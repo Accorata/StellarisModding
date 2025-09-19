@@ -161,10 +161,25 @@
   cw_enclave.301.a:0 "..." # check them out
   cw_enclave.301.b:0 "$GOODBYE$" # Exit
 
+# Criminal Enclave Destroyed
+  # Normal
+  cw_enclave.211.name:0 "..."
+  cw_enclave.211.desc:0 "..."
+  cw_enclave.211.a:0 "Such is the nature of the galaxy."
+  # Killer
+  cw_enclave.214.name:0 "..."
+  cw_enclave.214.desc:0 "..."
+  cw_enclave.214.a:0 "Mission success."
+  # Host
+  cw_enclave.213.name:0 "..."
+  cw_enclave.213.desc:0 "..."
+  cw_enclave.213.a:0 "Good riddance."
+  cw_enclave.213.b:0 "Encourage development of another enclave."
+
 # Hacker Aura Announcement
-  cw_enclave.298.name:0 "Unresponsive Weaponry!"
-  cw_enclave.298.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't extreme and our fleet should still prove effective, even if less so than we originally anticipated."
-  cw_enclave.298.a:0 "Destroy them and put an end to this."
+  cw_enclave.201.name:0 "Unresponsive Weaponry!"
+  cw_enclave.201.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't extreme and our fleet should still prove effective, even if less so than we originally anticipated."
+  cw_enclave.201.a:0 "Destroy them and put an end to this."
 
 ## Racketeers
 # Main Menu
@@ -228,8 +243,8 @@
 
 # Leader Purchase 
   cw_enclave.402.name:0 "Hire Racketeer" 
-  cw_enclave.402.desc:0 "...One of our skilled officials is willing to work for you who specializes in managing criminal organizations. We trust that they'll have control over their work and must not be bothered by your [root.CW_GetEnforcerName_Plural_Lowercase] who will only interfere. ..."
-  cw_enclave.402.a:0 "..." 
+  cw_enclave.402.desc:0 "You're in luck. One of our skilled officials who specializes in managing criminal organizations is willing to work for you. Their specialties are not what you may be accustomed too, but they gaurantee results. You must ensure that they'll have control over their work and will not be bothered by your [root.CW_GetEnforcerName_Plural_Lowercase] who will only interfere. Of course, we will only let them go for a price."
+  cw_enclave.402.a:0 "Your racketeer will get what they need." 
   cw_racketeer_leader_explanation:0 "We will hire a Level §Y4§! Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
   cw_enclave.402.b:0 "Never mind." # Main Menu
   cw_enclave.402.c:0 "$GOODBYE$" # Exit
@@ -252,7 +267,7 @@
 
 # Bribery
   cw_enclave.409.name:0 "Bribe Racketeers" 
-  cw_enclave.409.desc:0 "..."
+  cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can protect you from our slave trade and that of other racketeer enclaves, but beyond them, you will be on your own.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
@@ -325,23 +340,23 @@
   cw_enclave.509.b:0 "Never mind." # Main Menu
   cw_enclave.509.c:0 "$GOODBYE$" # Exit
 
-# Purchase Stolen Specimens
-  cw_enclave.510.name:0 "..."
-  cw_enclave.510.desc:0 "..."
-  cw_enclave.510.a:0 "..." 
-  cw_steals_aesthetic_wonder:0 "We will obtain a §YAesthetic Wonders§! Specimen from a random empire."
-  cw_enclave.510.a.no_aesthetic_wonder:0 "..."
-  cw_enclave.510.b:0 "..." 
-  cw_steals_historical_item:0 "We will obtain a §YGalactic History§! Specimen from a random empire."
-  cw_enclave.510.b.no_historical_item:0 "..."
-  cw_enclave.510.c:0 "..." 
-  cw_steals_xeno_geology:0 "..."
-  cw_enclave.510.c.no_xeno_geology:0 "We will obtain a §YXeno Geology§! Specimen from a random empire."
-  cw_enclave.510.d:0 "Never mind." # Main Menu
-  cw_enclave.510.e:0 "$GOODBYE$" # Exit
-# Purchase Stolen Resources (No Grand Archive)
+# Purchase Stolen Specimens (With Grand Archive)
+  # cw_enclave.510.name:0 "..."
+  # cw_enclave.510.desc:0 "..."
+  # cw_enclave.510.a:0 "..." 
+  # cw_steals_aesthetic_wonder:0 "We will obtain a §YAesthetic Wonders§! Specimen from a random empire."
+  # cw_enclave.510.a.no_aesthetic_wonder:0 "..."
+  # cw_enclave.510.b:0 "..." 
+  # cw_steals_historical_item:0 "We will obtain a §YGalactic History§! Specimen from a random empire."
+  # cw_enclave.510.b.no_historical_item:0 "..."
+  # cw_enclave.510.c:0 "..." 
+  # cw_steals_xeno_geology:0 "..."
+  # cw_enclave.510.c.no_xeno_geology:0 "We will obtain a §YXeno Geology§! Specimen from a random empire."
+  # cw_enclave.510.d:0 "Never mind." # Main Menu
+  # cw_enclave.510.e:0 "$GOODBYE$" # Exit
+# Purchase Stolen Resources
   cw_enclave.511.name:0 "Purchase Stolen Resources"
-  cw_enclave.511.desc:0 "..."
+  cw_enclave.511.desc:0 "You've found yourselves a little light on resources? If so, you're in luck. Your fellow empires have fallen behind on clearing our their rebel pirates, pirates who are eager to carry out a raid. With our help and guidance, they can provide whatever you may need."
   cw_enclave.511.a:0 "Raid an Energy Convoy." # Energy
   cw_enclave.511.b:0 "Raid a Mineral Convoy." # Minerals
   cw_enclave.511.c:0 "Raid a Food Convoy." # Food

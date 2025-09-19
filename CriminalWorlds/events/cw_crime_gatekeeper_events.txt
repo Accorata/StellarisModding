@@ -128,7 +128,7 @@ country_event = {
 						OR = {
 							has_modifier = mob_rule
 							has_modifier = crime_lord_deal
-						}						
+						}
 					}
 					planet_event = {
 						id = criminal_worlds.21
@@ -148,7 +148,7 @@ country_event = {
 						OR = {
 							has_modifier = mob_rule
 							has_modifier = crime_lord_deal
-						}						
+						}
 					}
 					planet_event = {
 						id = criminal_worlds.22
@@ -194,7 +194,7 @@ country_event = {
 						OR = {
 							has_modifier = crime_lord_deal
 							has_modifier = crime_lord_deal_broken
-						}						
+						}
 					}
 					planet_event = {
 						id = criminal_worlds.34
@@ -478,6 +478,44 @@ event = {
 							days = 1
 							random = 300
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Enclaves!
+country_event = {
+	id = cw_enclave.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		any_owned_planet = {
+			OR = {
+				cw_is_criminal_planet = yes
+				has_modifier = crime_lord_deal
+			}
+		}
+	}
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				OR = {
+					cw_is_criminal_planet = yes
+					has_modifier = crime_lord_deal
+				}
+			}
+			random_list = {
+				20 = {
+				}
+				10 = {
+					modifier = {
+						factor = 2
+						has_planet_flag = cw_encouraged_crime_enclave
+					}
+					planet_event = {
+						id = cw_enclave.3
 					}
 				}
 			}

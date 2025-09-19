@@ -157,6 +157,11 @@ spriteTypes = {
 		name = "GFX_leader_trait_cw_maximum_clearance"
 		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_maximum_clearance.dds"
 	}
+	# Industrial Espionage
+	spriteType = {
+		name = "GFX_leader_trait_cw_industrial_espionage"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_industrial_espionage.dds"
+	}
 	# Codebreaker
 	spriteType = {
 		name = "GFX_leader_trait_cw_codebreaker"
@@ -280,29 +285,35 @@ spriteTypes = {
 	}
 	## COUNCIL AGENDAS ------------------------------------------------------------------------
 	spriteType = {
-		name = "GFX_council_agenda_icon_cw_criminality" 
+		name = "GFX_council_agenda_icon_cw_criminality"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
 	}
 	spriteType = {
-		name = "GFX_council_agenda_icon_cw_deviancy" 
+		name = "GFX_council_agenda_icon_cw_deviancy"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
 	}
 	## RELICS ---------------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_relic_cw_medallion"
-		texturefile = "gfx/interface/icons/relics/r_cw_medallion.dds"			
+		texturefile = "gfx/interface/icons/relics/r_cw_medallion.dds"
 		effectFile = "gfx/FX/buttonstate.shader"
 		animation = {
-			animationmaskfile = "gfx/interface/icons/relics/r_cw_medallion_shine.dds"			
+			animationmaskfile = "gfx/interface/icons/relics/r_cw_medallion_shine.dds"
 			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
-			animationrotation = 90.0
+			animationrotation = 90
 			animationlooping = yes
 			animationtime = 5
 			animationdelay = 0
 			animationblendmode = "add"
 			animationtype = "pulsing"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
 		}
 		legacy_lazy_load = no
 	}

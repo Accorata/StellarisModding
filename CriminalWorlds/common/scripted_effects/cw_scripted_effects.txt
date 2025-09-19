@@ -178,6 +178,59 @@ cw_save_as_raid_target = {
 	}
 }
 
+cw_remove_racketeer_trades = {
+	if = {
+		limit = {
+			OR = {
+				has_modifier = cw_enclave_smuggled_alloys
+				has_modifier = cw_enclave_smuggled_alloys_2
+				has_modifier = cw_enclave_smuggled_alloys_3
+				has_modifier = cw_enclave_smuggled_alloys_4
+				has_modifier = cw_enclave_smuggled_alloys_5
+			}
+			from = {
+				has_country_flag = cw_arms_supplier_of_@root
+			}
+		}
+		remove_modifier = cw_enclave_smuggled_alloys
+		remove_modifier = cw_enclave_smuggled_alloys_2
+		remove_modifier = cw_enclave_smuggled_alloys_3
+		remove_modifier = cw_enclave_smuggled_alloys_4
+		remove_modifier = cw_enclave_smuggled_alloys_5
+	}
+	if = {
+		limit = {
+			OR = {
+				has_modifier = cw_enclave_smuggled_consumer_goods
+				has_modifier = cw_enclave_smuggled_consumer_goods_2
+				has_modifier = cw_enclave_smuggled_consumer_goods_3
+				has_modifier = cw_enclave_smuggled_consumer_goods_4
+				has_modifier = cw_enclave_smuggled_consumer_goods_5
+			}
+			from = {
+				has_country_flag = cw_drugs_supplier_of_@root
+			}
+		}
+		remove_modifier = cw_enclave_smuggled_consumer_goods
+		remove_modifier = cw_enclave_smuggled_consumer_goods_2
+		remove_modifier = cw_enclave_smuggled_consumer_goods_3
+		remove_modifier = cw_enclave_smuggled_consumer_goods_4
+		remove_modifier = cw_enclave_smuggled_consumer_goods_5
+	}
+}
+
+cw_remove_hacker_trades = {
+	if = {
+		limit = {
+			has_modifier = cw_skeleton_key
+			from = {
+				has_country_flag = cw_key_supplier_of_@root
+			}
+		}
+		remove_modifier = cw_skeleton_key
+	}
+}
+
 # cw_build_outpost = {
 # 	event_target:owner_of_the_planet = {
 # 		event_target:target_planet_for_building = {

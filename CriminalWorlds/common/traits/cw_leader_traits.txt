@@ -1486,7 +1486,7 @@ leader_trait_cw_military_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_military
-		country_naval_cap_mult = 0.10
+		country_naval_cap_mult = 0.1
 		operation_arm_privateers_difficulty_add = -3
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_military_espionage_effect
@@ -1554,7 +1554,7 @@ leader_trait_cw_tech_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_tech
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.1
 		operation_steal_technology_difficulty_add = -3
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_tech_espionage_effect
@@ -1568,7 +1568,7 @@ leader_trait_cw_economy_espionage = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker"		# change
+		ICON = "GFX_leader_trait_cw_industrial_espionage"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 1
@@ -1609,7 +1609,7 @@ leader_trait_cw_economy_espionage_2 = {
 	inline_script = {
 		script = trait/icon
 		CLASS = scientist
-		ICON = "GFX_leader_trait_shadow_broker"		# change
+		ICON = "GFX_leader_trait_cw_industrial_espionage"
 		RARITY = veteran
 		COUNCIL = yes
 		TIER = 2
@@ -1622,7 +1622,7 @@ leader_trait_cw_economy_espionage_2 = {
 		}
 		show_if_not_potential = yes
 		not_potential_override_text_key = cw_hacker_no_superior_economy
-		country_trade_produces_mult = 0.20
+		country_trade_produces_mult = 0.2
 		operation_extort_favors_difficulty_add = -3
 	}
 	custom_tooltip_with_modifiers = leader_trait_cw_economy_espionage_effect
