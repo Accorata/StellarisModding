@@ -4,6 +4,7 @@ modifier = {
 	}
 	factor = @job_weight_mult
 }
+
 modifier = {
 	owner = {
 		is_rival_$FIELD$_superior = no

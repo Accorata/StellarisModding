@@ -2,7 +2,7 @@ triggered_planet_modifier = {
 	potential = {
 		trait_is_gestalt_check = no
 	}
-	job_$JOB$_per_crime = 0.03
+	pop_category_criminals_$RESOURCE$_produces_add = 1
 	mult = $MULT$
 }
 
@@ -10,7 +10,7 @@ triggered_planet_modifier = {
 	potential = {
 		trait_is_hive_check = yes
 	}
-	job_$HIVE_JOB$_per_crime = 0.03
+	pop_category_deviant_drones_$RESOURCE$_produces_add = 1
 	mult = $MULT$
 }
 
@@ -18,7 +18,7 @@ triggered_planet_modifier = {
 	potential = {
 		trait_is_machine_check = yes
 	}
-	job_$MACHINE_JOB$_per_crime = 0.03
+	pop_category_corrupt_drones_$RESOURCE$_produces_add = 1
 	mult = $MULT$
 }
 
@@ -26,7 +26,7 @@ triggered_sector_modifier = {
 	potential = {
 		trait_is_gestalt_check = no
 	}
-	job_$JOB$_per_crime = 0.015
+	pop_category_criminals_$RESOURCE$_produces_add = 0.5
 	mult = $MULT$
 }
 
@@ -34,7 +34,7 @@ triggered_sector_modifier = {
 	potential = {
 		trait_is_hive_check = yes
 	}
-	job_$HIVE_JOB$_per_crime = 0.015
+	pop_category_deviant_drones_$RESOURCE$_produces_add = 0.5
 	mult = $MULT$
 }
 
@@ -42,6 +42,6 @@ triggered_sector_modifier = {
 	potential = {
 		trait_is_machine_check = yes
 	}
-	job_$MACHINE_JOB$_per_crime = 0.015
+	pop_category_corrupt_drones_$RESOURCE$_produces_add = 0.5
 	mult = $MULT$
 }

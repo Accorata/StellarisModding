@@ -1,5 +1,4 @@
 @base_tradition_agenda_cost = 7000
-
 cw_criminality = {
 	agenda_cost = @base_tradition_agenda_cost
 	allow = {
@@ -18,6 +17,7 @@ cw_deviancy = {
 	agenda_cost = @base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_cw_deviancy_adopt
+		is_hive_empire = yes
 	}
 	potential = {
 		has_paragon_dlc = yes
@@ -26,4 +26,19 @@ cw_deviancy = {
 		job_deviant_drone_per_pop = 0.05
 	}
 	finish_modifier = agenda_cw_deviancy_finish
+}
+
+cw_deviancy_machine = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_cw_deviancy_adopt
+		is_machine_empire = yes
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifier = {
+		job_corrupt_drone_per_pop = 0.05
+	}
+	finish_modifier = agenda_cw_deviancy_machine_finish
 }

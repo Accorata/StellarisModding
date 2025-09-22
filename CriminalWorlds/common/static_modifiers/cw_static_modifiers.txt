@@ -1,9 +1,7 @@
 ## Planet Modifiers ##
-
 cw_corruption_1 = {
 	job_enforcer_add = -100
 	job_cw_bribed_enforcer_add = 100
-	
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
 	icon_frame = 2
 }
@@ -11,7 +9,6 @@ cw_corruption_1 = {
 cw_corruption_2 = {
 	job_enforcer_add = -200
 	job_cw_bribed_enforcer_add = 200
-	
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
 	icon_frame = 2
 }
@@ -21,7 +18,6 @@ cw_corruption_3 = {
 	job_cw_bribed_politician_add = 100
 	job_enforcer_add = -200
 	job_cw_bribed_enforcer_add = 200
-	
 	icon = "gfx/interface/icons/planet_modifiers/pm_luxuries.dds"
 	icon_frame = 2
 }
@@ -29,29 +25,25 @@ cw_corruption_3 = {
 cw_illegal_freeports = {
 	planet_resettlement_unemployed_destination_mult = 0.25
 	job_criminal_add = 200
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_smugglers_in_bar.dds"
 	icon_frame = 2
 }
 
 cw_criminal_shipyards = {
 	job_cw_rogue_shipbuilder_add = 200
-
-	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds" #test - change these...
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"	#test - change these...
 	icon_frame = 2
 }
 
 cw_criminal_shipyards_2 = {
 	job_cw_rogue_shipbuilder_add = 500
-
-	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds" #test
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"	#test
 	icon_frame = 2
 }
 
 cw_ruined_undercity = {
 	planet_max_districts_add = 2
 	job_cw_underworlder_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_city_ruins.dds"
 	icon_frame = 2
 }
@@ -59,7 +51,6 @@ cw_ruined_undercity = {
 cw_underground_slums_1 = {
 	planet_housing_add = 500
 	job_cw_underworlder_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -67,7 +58,6 @@ cw_underground_slums_1 = {
 cw_underground_slums_2 = {
 	planet_housing_add = 1000
 	job_cw_underworlder_add = 200
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -75,7 +65,6 @@ cw_underground_slums_2 = {
 cw_underground_slums_1_robot = {
 	planet_housing_add = 500
 	job_cw_underworlder_robot_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -83,7 +72,6 @@ cw_underground_slums_1_robot = {
 cw_underground_slums_2_robot = {
 	planet_housing_add = 1000
 	job_cw_underworlder_robot_add = 200
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -91,7 +79,6 @@ cw_underground_slums_2_robot = {
 cw_underground_slums_1_hive = {
 	planet_housing_add = 500
 	job_cw_drone_underworlder_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -99,7 +86,6 @@ cw_underground_slums_1_hive = {
 cw_underground_slums_2_hive = {
 	planet_housing_add = 1000
 	job_cw_drone_underworlder_add = 200
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -107,7 +93,6 @@ cw_underground_slums_2_hive = {
 cw_underground_slums_1_machine = {
 	planet_housing_add = 500
 	job_cw_drone_underworlder_robot_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
@@ -115,15 +100,13 @@ cw_underground_slums_1_machine = {
 cw_underground_slums_2_machine = {
 	planet_housing_add = 1000
 	job_cw_drone_underworlder_robot_add = 200
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
 	icon_frame = 2
 }
 
 cw_dark_whispers = {
 	planet_crime_add = 10
-	planet_jobs_society_research_produces_mult = 0.10
-
+	planet_jobs_society_research_produces_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_dead_god.dds"
 	icon_frame = 2
 }
@@ -132,7 +115,6 @@ cw_mercenary_fighters = {
 	planet_stability_add = -5
 	custom_tooltip = cw_mercenary_fighters_tooltip
 	show_only_custom_tooltip = no
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
 	icon_frame = 2
 }
@@ -142,24 +124,21 @@ cw_open_crime = {
 	custom_tooltip = cw_open_crime_tooltip
 	show_only_custom_tooltip = no
 	apply_modifier_to_other_planets = cw_open_crime_other_planets
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
 
 cw_open_crime_other_planets = {
 	planet_crime_add = 5
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
 
 cw_criminal_world_1 = {
-	planet_jobs_produces_mult = -0.10
+	planet_jobs_produces_mult = -0.1
 	planet_jobs_upkeep_mult = -0.1
 	planet_pops_upkeep_mult = -0.1
 	species_empire_size_mult = -0.1
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
@@ -169,7 +148,6 @@ cw_criminal_world_2 = {
 	planet_jobs_upkeep_mult = -0.15
 	planet_pops_upkeep_mult = -0.15
 	species_empire_size_mult = -0.15
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
@@ -180,7 +158,6 @@ cw_criminal_world_3 = {
 	planet_jobs_upkeep_mult = -0.25
 	planet_pops_upkeep_mult = -0.25
 	species_empire_size_mult = -0.25
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
@@ -191,38 +168,33 @@ cw_criminal_world_4 = {
 	planet_jobs_upkeep_mult = -0.5
 	planet_pops_upkeep_mult = -0.5
 	species_empire_size_mult = -0.5
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
 
 cw_criminal_world_5 = {
-	pop_cat_criminal_political_power = 3 #to be tested...
+	pop_cat_criminal_political_power = 3	#to be tested...
 	planet_jobs_produces_mult = -0.75
 	planet_jobs_upkeep_mult = -0.75
 	planet_pops_upkeep_mult = -0.75
 	species_empire_size_mult = -0.75
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_crime.dds"
 	icon_frame = 3
 }
 
 cw_freedom_fighters = {
 	job_cw_freedom_fighter_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_free_at_last.dds"
 	icon_frame = 3
-} 	
+}
 
 cw_radical_media = {
 	job_cw_demagogue_add = 100
-
 	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
 	icon_frame = 3
 }
 
 ## Country Modifiers ##
-
 cw_medallion_triumph = {
 	ruler_skill_add = 3
 	pop_ethic_authoritarian_attraction_mult = 0.5
@@ -238,8 +210,13 @@ agenda_cw_criminality_finish = {
 }
 
 agenda_cw_deviancy_finish = {
-	pop_category_criminals_produces_mult = 0.5
+	pop_category_deviant_drones_produces_mult = 0.5
 	job_deviant_drone_per_pop = 0.05
+}
+
+agenda_cw_deviancy_machine_finish = {
+	pop_category_corrupt_drones_produces_mult = 0.5
+	job_corrupt_drone_per_pop = 0.05
 }
 
 cw_enclave_smuggled_alloys = {
@@ -340,9 +317,11 @@ cw_purchased_hacker_virus = {
 }
 
 cw_bribed_racketeers = {
+	# tooltip...
 }
 
 cw_bribed_privateers = {
+	# tooltip...
 }
 
 cw_bribed_hackers = {
@@ -350,6 +329,7 @@ cw_bribed_hackers = {
 }
 
 cw_criminal_elite = {
+	# tooltip...
 }
 
 cw_stealth_specialization_modifier = {
@@ -363,7 +343,6 @@ cw_stealth_specialization_2_modifier = {
 }
 
 ## Fleet Modifiers ##
-
 cw_large_privateer_fleet = {
 	ship_damage_against_starbases_mult = 0.25
 }

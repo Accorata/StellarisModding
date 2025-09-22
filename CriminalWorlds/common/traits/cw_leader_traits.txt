@@ -206,11 +206,10 @@ leader_trait_cw_cyber_fraud = {
 	leader_potential_add = {
 		has_trait = subclass_cw_official_racketeer
 	}
-	planet_modifier = {
-		pop_category_criminals_physics_research_produces_add = 1
-	}
-	sector_modifier = {
-		pop_category_criminals_physics_research_produces_add = 0.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = physics_research
+		MULT = 1
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -242,11 +241,10 @@ leader_trait_cw_cyber_fraud_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	planet_modifier = {
-		pop_category_criminals_physics_research_produces_add = 2
-	}
-	sector_modifier = {
-		pop_category_criminals_physics_research_produces_add = 1
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = physics_research
+		MULT = 2
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -271,11 +269,10 @@ leader_trait_cw_cyber_fraud_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	planet_modifier = {
-		pop_category_criminals_physics_research_produces_add = 3
-	}
-	sector_modifier = {
-		pop_category_criminals_physics_research_produces_add = 1.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = physics_research
+		MULT = 3
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -300,11 +297,10 @@ leader_trait_cw_organ_harvesting = {
 	leader_potential_add = {
 		has_trait = subclass_cw_official_racketeer
 	}
-	planet_modifier = {
-		pop_category_criminals_society_research_produces_add = 1
-	}
-	sector_modifier = {
-		pop_category_criminals_society_research_produces_add = 0.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = society_research
+		MULT = 1
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -336,11 +332,10 @@ leader_trait_cw_organ_harvesting_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	planet_modifier = {
-		pop_category_criminals_society_research_produces_add = 2
-	}
-	sector_modifier = {
-		pop_category_criminals_society_research_produces_add = 1
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = society_research
+		MULT = 2
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -365,11 +360,10 @@ leader_trait_cw_organ_harvesting_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	planet_modifier = {
-		pop_category_criminals_society_research_produces_add = 3
-	}
-	sector_modifier = {
-		pop_category_criminals_society_research_produces_add = 1.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = society_research
+		MULT = 3
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -394,11 +388,10 @@ leader_trait_cw_restricted_cybernetics = {
 	leader_potential_add = {
 		has_trait = subclass_cw_official_racketeer
 	}
-	planet_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 1
-	}
-	sector_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 0.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = engineering_research
+		MULT = 1
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -430,11 +423,10 @@ leader_trait_cw_restricted_cybernetics_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	planet_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 2
-	}
-	sector_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 1
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = engineering_research
+		MULT = 2
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -459,11 +451,10 @@ leader_trait_cw_restricted_cybernetics_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	planet_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 3
-	}
-	sector_modifier = {
-		pop_category_criminals_engineering_research_produces_add = 1.5
+	inline_script = {
+		script = traits/cw_racketeer_criminals_resource_produces_add
+		RESOURCE = engineering_research
+		MULT = 3
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_add_crime
@@ -491,7 +482,8 @@ leader_trait_cw_paramilitary_groups = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
-		GESTALT_JOB = warrior_drone
+		HIVE_JOB = warrior_drone
+		MACHINE_JOB = warrior_drone
 		MULT = 100
 	}
 	leader_class = {
@@ -522,7 +514,8 @@ leader_trait_cw_paramilitary_groups_2 = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
-		GESTALT_JOB = warrior_drone
+		HIVE_JOB = warrior_drone
+		MACHINE_JOB = warrior_drone
 		MULT = 200
 	}
 	leader_class = {
@@ -546,7 +539,8 @@ leader_trait_cw_paramilitary_groups_3 = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = soldier
-		GESTALT_JOB = warrior_drone
+		HIVE_JOB = warrior_drone
+		MACHINE_JOB = warrior_drone
 		MULT = 300
 	}
 	leader_class = {
@@ -570,7 +564,8 @@ leader_trait_cw_hedonistic_pleasures = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
-		GESTALT_JOB = maintenance_drone
+		HIVE_JOB = maintenance_drone
+		MACHINE_JOB = maintenance_drone
 		MULT = 100
 	}
 	leader_class = {
@@ -601,7 +596,8 @@ leader_trait_cw_hedonistic_pleasures_2 = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
-		GESTALT_JOB = maintenance_drone
+		HIVE_JOB = maintenance_drone
+		MACHINE_JOB = maintenance_drone
 		MULT = 200
 	}
 	leader_class = {
@@ -625,7 +621,8 @@ leader_trait_cw_hedonistic_pleasures_3 = {
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = entertainer
-		GESTALT_JOB = maintenance_drone
+		HIVE_JOB = maintenance_drone
+		MACHINE_JOB = maintenance_drone
 		MULT = 300
 	}
 	leader_class = {
@@ -727,16 +724,15 @@ leader_trait_cw_criminal_enterprise = {
 	leader_potential_add = {
 		has_trait = subclass_cw_official_racketeer
 	}
-	planet_modifier = {
-		pop_category_criminals_produces_mult = 0.5
-	}
-	sector_modifier = {
-		pop_category_criminals_produces_mult = 0.25
+	inline_script = {
+		script = traits/cw_racketeer_criminals_produces_mult
+		MULT = 0.5
 	}
 	inline_script = {
 		script = traits/cw_racketeer_traits_jobs_per_crime
 		JOB = criminal
-		GESTALT_JOB = deviant_drone
+		HIVE_JOB = deviant_drone
+		MACHINE_JOB = corrupt_drone
 		MULT = 200
 	}
 	leader_class = {

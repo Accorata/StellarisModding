@@ -17,7 +17,6 @@ tr_cw_criminality_finish = {
 
 tr_cw_criminality_smugglers_cartel = {
 	custom_tooltip = tr_cw_criminality_smugglers_cartel_tooltip
-
 	ai_weight = {
 		factor = 1000
 	}
@@ -27,12 +26,10 @@ tr_cw_criminality_black_markets = {
 	possible = {
 		has_tradition = tr_cw_criminality_smugglers_cartel
 	}
-
 	modifier = {
-		country_trade_fee = -0.10
+		country_trade_fee = -0.1
 		planet_crime_mult = 0.15
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
@@ -42,9 +39,7 @@ tr_cw_criminality_galactic_lawlessness = {
 	possible = {
 		has_tradition = tr_cw_criminality_smugglers_cartel
 	}
-
 	custom_tooltip = tr_cw_criminality_galactic_lawlessness_tooltip
-
 	triggered_modifier = {
 		# Happiness when violating galactic community law
 		potential = {
@@ -54,9 +49,8 @@ tr_cw_criminality_galactic_lawlessness = {
 				has_modifier = resolution_denounced
 			}
 		}
-		pop_happiness = 0.10
+		pop_happiness = 0.1
 	}
-
 	# -50% Effects from Sanctions
 	inline_script = {
 		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
@@ -74,25 +68,21 @@ tr_cw_criminality_galactic_lawlessness = {
 		script = traditions/tr_cw_criminality_galactic_lawlessness_sanctions
 		CATEGORY = administrative
 	}
-
 	tradition_swap = {
 		name = tr_cw_criminality_war_crimes
 		inherit_icon = no
 		trigger = {
 			is_homicidal = yes
 		}
-
 		modifier = {
 			ship_orbital_bombardment_mult = 0.3
 			army_collateral_damage_mult = 0.3
 			pop_purge_speed = 0.3
 		}
-
 		weight = {
 			factor = 1
 		}
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
@@ -103,24 +93,20 @@ tr_cw_criminality_plundered_assets = {
 		ship_steal_defeated_ship_chance = 0.05
 		rivalries_trade_produces_add = 10
 	}
-
 	tradition_swap = {
 		inherit_name = yes
 		inherit_icon = yes
 		trigger = {
 			cw_has_stealing_ship_dlc = no
 		}
-
 		modifier = {
-			create_debris_chance = 0.50
+			create_debris_chance = 0.5
 			rivalries_trade_produces_add = 10
 		}
-
 		weight = {
 			factor = 1
 		}
 	}
-
 	ai_weight = {
 		factor = 1000
 	}
@@ -130,9 +116,7 @@ tr_cw_criminality_pirate_warlord = {
 	possible = {
 		has_tradition = tr_cw_criminality_plundered_assets
 	}
-
 	custom_tooltip = tr_cw_criminality_pirate_warlord_tooltip
-
 	ai_weight = {
 		factor = 5000
 	}

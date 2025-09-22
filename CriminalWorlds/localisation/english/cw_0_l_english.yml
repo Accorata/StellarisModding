@@ -1,5 +1,7 @@
 ﻿l_english:
-  CW_CRIMINALS:0 "Criminals" # Maybe add an icon later... + swap to Deviant Drones for gestalt
+  CW_CRIMINALS:0 "Criminals"
+  CW_D_DRONES:0 "Deviant Drones"
+  CW_C_DRONES:0 "Corrupt Drones"
 
   CW_RACKETEER: "Racketeer"
   CW_RACKETEER_PLURAL: "Racketeers"
@@ -278,7 +280,7 @@
   tr_cw_deviancy_finish_tooltip:0 "Unlocks £official£ §Y$CW_RACKETEER$§! and £commander£ §Y$CW_PRIVATEER$§! Veteran Classes"
   tr_cw_deviancy_smugglers_cartel:0 "$tr_cw_criminality_smugglers_cartel$"
   tr_cw_deviancy_smugglers_cartel_delayed:0 "..."
-  tr_cw_deviancy_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Deviant Drones"
+  tr_cw_deviancy_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy_hive$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Deviant Drones"
   tr_cw_deviancy_black_markets:0 "$tr_cw_criminality_black_markets$"
   tr_cw_deviancy_black_markets_delayed:0 "..."
   tr_cw_deviancy_galactic_lawlessness:0 "$tr_cw_criminality_galactic_lawlessness$"
@@ -293,27 +295,33 @@
   tr_cw_deviancy_pirate_warlord_tooltip:0 "$tr_cw_criminality_pirate_warlord_tooltip$"
 
 ## Agendas
-  council_agenda_cw_criminality_name:0 "..." # Loosen Enforcement
-  council_agenda_cw_criminality_desc:0 "..." # loosen the enforcement of ...
+  council_agenda_cw_criminality_name:0 "Crime Wave"
+  council_agenda_cw_criminality_desc:0 "By loosening the enforcement of lesser crimes, we can foster greater criminal development within our colonies. Such practices are risky, but can be quite profitable if managed well."
   agenda_cw_criminality_finish:0 "$council_agenda_cw_criminality_name$ $agenda_ref$"
   agenda_cw_criminality_finish_desc:0 "$council_agenda_cw_criminality_desc$"
   council_agenda_cw_deviancy_name:0 "Loosen Regulations?..."
   council_agenda_cw_deviancy_desc:0 "..." # loosen the enforcement of ...
   agenda_cw_deviancy_finish:0 "$council_agenda_cw_deviancy_name$ $agenda_ref$"
   agenda_cw_deviancy_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
+  agenda_cw_deviancy_machine_finish:0 "$council_agenda_cw_deviancy_name$"
+  agenda_cw_deviancy_machine_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
 
 ## Policies
   policy_cw_smuggler_policy:0 "Criminal Smuggling"
   policy_cw_smuggler_policy_desc:0 "$tr_cw_criminality_smugglers_cartel_delayed$"
+  policy_cw_smuggler_policy_hive:0 "$policy_cw_smuggler_policy$"
+  policy_cw_smuggler_policy_hive_desc:0 "$policy_cw_smuggler_policy_desc$"
+  policy_cw_smuggler_policy_machine:0 "$policy_cw_smuggler_policy$"
+  policy_cw_smuggler_policy_machine_desc:0 "$policy_cw_smuggler_policy_desc$"
   cw_arms_smuggling_name:0 "Illegal Weapons Focus"
   cw_arms_smuggling:0 "$cw_arms_smuggling_name$"
-  cw_arms_smuggling_desc:0 "The illegal weapons trade can supplement our mega forges, provided we handle these new assets carefully.\n\n$EFFECTS_HEADER$ $NEW_LINE$- $mod_pop_category_criminals_alloys_produces_add$: §G+2§!"
+  cw_arms_smuggling_desc:0 "The illegal weapons trade can supplement our mega forges, provided we handle these new assets carefully.\n\n$EFFECTS_HEADER$" # $NEW_LINE$- $mod_pop_category_criminals_alloys_produces_add$: §G+2§!"
   cw_balanced_smuggling_name:0 "Balanced Focus"
   cw_balanced_smuggling:0 "$cw_balanced_smuggling_name$"
-  cw_balanced_smuggling_desc:0 "Our smugglers cartel allows for the extortion of smuggled goods passing through our space.\n\n$EFFECTS_HEADER$ $NEW_LINE$- $mod_pop_category_criminals_alloys_produces_add$: §G+1§!$NEW_LINE$- $mod_pop_category_criminals_consumer_goods_produces_add$: §G+1§!"
+  cw_balanced_smuggling_desc:0 "Our smugglers cartel allows for the extortion of smuggled goods passing through our space.\n\n$EFFECTS_HEADER$" # $NEW_LINE$- $mod_pop_category_criminals_alloys_produces_add$: §G+1§!$NEW_LINE$- $mod_pop_category_criminals_consumer_goods_produces_add$: §G+1§!"
   cw_drugs_smuggling_name:0 "Illegal Narcotics Focus"
   cw_drugs_smuggling:0 "$cw_drugs_smuggling_name$"
-  cw_drugs_smuggling_desc:0 "Narcotics provide another way to sedate the masses, provided we can control the spread of drugs.\n\n$EFFECTS_HEADER$ $NEW_LINE$- $mod_pop_category_criminals_consumer_goods_produces_add$: §G+2§!"
+  cw_drugs_smuggling_desc:0 "Narcotics provide another way to sedate the masses, provided we can control the spread of drugs.\n\n$EFFECTS_HEADER$" # $NEW_LINE$- $mod_pop_category_criminals_consumer_goods_produces_add$: §G+2§!"
 
 ## Civics
   civic_cw_invisible_shareholders:0 "Invisible Shareholders" # icon needed...
@@ -413,7 +421,7 @@
   subclass_cw_commander_privateer_desc:0 "The free sailors of the stars, $CW_PRIVATEER_PLURAL$ apply a unique set of skills to interstellar dogfights."
   cw_privateer_subclass_tt:0 "§GVeteran Class focused on battle rewards and small ships§!"
   cw_hired_privateer_desc:0 "This leader hails from an enclave of criminal privateers. $subclass_cw_commander_privateer_desc$"
-  cw_hired_privateer_catch_phrase:0 "§L"..."§!"
+  cw_hired_privateer_catch_phrase:0 "§L"Fortune favors the bold!"§!"
 # Hacker
   subclass_cw_scientist_hacker:0 "$CW_HACKER$"
   subclass_cw_scientist_hacker_desc:0 "Masters of cyberspace, $CW_HACKER_PLURAL$ excell at exposing and weaponizing information."
@@ -424,7 +432,7 @@
 ## Leader Traits
 # Racketeer
   leader_trait_cw_cyber_fraud:0 "Cyber Fraud"
-  leader_trait_cw_cyber_fraud_desc:0 "..."
+  leader_trait_cw_cyber_fraud_desc:0 "Advances in virtual reality tech have made fabrication of the real an easy exercise."
   leader_trait_cw_cyber_fraud_machine:0 "Power Grid Tapping"
   leader_trait_cw_cyber_fraud_machine_desc:0 "This units drones hack into the power grid in order to provide adequate energy for their operations."
   leader_trait_cw_cyber_fraud_hive:0 "$leader_trait_cw_cyber_fraud_machine$"
@@ -450,7 +458,7 @@
   leader_trait_cw_paramilitary_groups_machine:0 "Deviant Weaponry"
   leader_trait_cw_paramilitary_groups_machine_desc:0 "This units deviant drones are well equipped for modern warfare."
   leader_trait_cw_paramilitary_groups_hive:0 "$leader_trait_cw_paramilitary_groups_machine$"
-  leader_trait_cw_paramilitary_groups_hive_desc:0 ""This [owner.GetIndividualName]s deviant drones are well equipped for modern warfare."
+  leader_trait_cw_paramilitary_groups_hive_desc:0 "This [owner.GetIndividualName]s deviant drones are well equipped for modern warfare."
   leader_trait_cw_hedonistic_pleasures:0 "Hedonistic Pleasures"
   leader_trait_cw_hedonistic_pleasures_desc:0 "Drugs, sex, violence - the pleasures of the flesh are desired among corrupt elites, and this leader excells in providing for such needs."
   leader_trait_cw_hedonistic_pleasures_machine:0 "Excessive Maintenance"
@@ -460,10 +468,10 @@
 
   leader_trait_cw_arbiter:0 "$leader_trait_arbiter$"
   leader_trait_cw_arbiter_desc:0 "$leader_trait_arbiter_desc$"
-  leader_trait_cw_criminal_enterprise:0 "Enterprising" # icon needed...
+  leader_trait_cw_criminal_enterprise:0 "Enterprising"
   leader_trait_cw_criminal_enterprise_desc:0 "This leader has proven to be extremely talented at running organized crime, and the numbers speak for themselves."
-  leader_trait_cw_criminal_enterprise_hive_desc:0 "..."
-  leader_trait_cw_criminal_enterprise_machine_desc:0 "..."
+  leader_trait_cw_criminal_enterprise_hive_desc:0 "This [owner.GetIndividualName] has proven to be extremely talented at running deviant drones, and the numbers speak for themselves."
+  leader_trait_cw_criminal_enterprise_machine_desc:0 "This unit has proven to be extremely talented at running corrupt drones, and the numbers speak for themselves."
 
 # Privateer
   leader_trait_cw_corsair:0 "$leader_trait_corsair$"
@@ -590,7 +598,7 @@
 
 ## Modifier Localisations
 # Criminal Production Modifiers
-  mod_pop_category_criminals_energy_produces_add:0 "$energy_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
+  # Criminals
   mod_pop_category_criminals_alloys_produces_add:0 "$alloys_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
   mod_pop_category_criminals_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
   mod_pop_category_criminals_physics_research_produces_add:0 "$physics_research_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
@@ -598,8 +606,25 @@
   mod_pop_category_criminals_engineering_research_produces_add:0 "$engineering_research_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
   mod_pop_category_criminals_produces_mult:0 "Resources from $CW_CRIMINALS$"
   mod_pop_category_criminals_upkeep_mult:0 "Upkeep from $CW_CRIMINALS$"
+  # Deviant Drones
+  mod_pop_category_deviant_drones_alloys_produces_add:0 "$alloys_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_physics_research_produces_add:0 "$physics_research_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_society_research_produces_add:0 "$society_research_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_engineering_research_produces_add:0 "$engineering_research_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_produces_mult:0 "Resources from $CW_D_DRONES$"
+  mod_pop_category_deviant_drones_upkeep_mult:0 "Upkeep from $CW_D_DRONES$"
+  # Corrupt Drones
+  mod_pop_category_corrupt_drones_alloys_produces_add:0 "$alloys_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_ccorrupt_drones_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_physics_research_produces_add:0 "$physics_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_society_research_produces_add:0 "$society_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_engineering_research_produces_add:0 "$engineering_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_produces_mult:0 "Resources from $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_upkeep_mult:0 "Upkeep from $CW_C_DRONES$"
 # Criminal Job Modifiers
   mod_job_deviant_drone_per_pop:0 "§R+1§! $job_deviant_drone$ Job per $VALUE$ Planet £pop£ §YPops§!"
+  mod_job_corrupt_drone_per_pop:0 "§R+1§! $job_corrupt_drone$ Job per $VALUE$ Planet £pop£ §YPops§!"
   mod_job_entertainer_per_crime:0 "§G+1§! $job_entertainer$ Job per $VALUE$ Planet £crime£ §YCrime§!"
   mod_job_maintenance_drone_per_crime:0 "§G+1§! $job_maintenance_drone$ Job per $VALUE$ Planet £crime£ §YCrime§!"
   mod_job_soldier_per_crime:0 "§G+1§! $job_soldier$ Job per $VALUE$ Planet £crime£ §YCrime§!"

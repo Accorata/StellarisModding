@@ -4,6 +4,7 @@ tradition_cw_deviancy = {
 	finish_bonus = "tr_cw_deviancy_finish"
 	potential = {
 		is_gestalt = yes
+		is_wilderness_empire = no
 	}
 	traditions = {
 		"tr_cw_deviancy_smugglers_cartel"

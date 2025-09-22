@@ -9,13 +9,13 @@ subclass_cw_official_racketeer = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = cw_racketeer_subclass_tt
-	planet_modifier = {
-		pop_category_criminals_produces_mult = 0.2
-		pop_category_criminals_upkeep_mult = -0.2
+	inline_script = {
+		script = traits/cw_racketeer_criminals_produces_mult
+		MULT = 0.2
 	}
-	sector_modifier = {
-		pop_category_criminals_produces_mult = 0.1
-		pop_category_criminals_upkeep_mult = -0.1
+	inline_script = {
+		script = traits/cw_racketeer_criminals_upkeep_mult
+		MULT = -0.2
 	}
 	leader_potential_add = {
 		is_heir = no

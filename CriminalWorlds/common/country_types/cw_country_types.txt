@@ -1,5 +1,5 @@
 cw_criminal_enterprise = {
-	blocks_piracy = yes
+	blocks_piracy = no
 	attack_unarmed_orbital_stations = yes
 	government = no
 	observable = no
@@ -7,7 +7,6 @@ cw_criminal_enterprise = {
 	ai = {
 		enabled = no
 	}
-
 	faction = {
 		hostile = no
 		needs_border_access = no
@@ -15,19 +14,22 @@ cw_criminal_enterprise = {
 		needs_colony = no
 	}
 	modules = {
-		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
-		all_technology_module = {}
-		standard_event_module = {}
+		exclusive_diplomacy_module = {
+		}		# Nothing is allowed, but we need this for relationships.
+		all_technology_module = {
+		}
+		standard_event_module = {
+		}
 	}
 }
 
 cw_criminal_enclave = {
-	blocks_piracy = yes
+	blocks_piracy = no
 	show_in_contacts_list = yes
 	can_have_their_comms_shared = yes
 	government = yes
 	is_enclave = yes
-	randomize_ethos = yes #test
+	randomize_ethos = yes	#test
 	observable = no
 	ai = {
 		enabled = no
@@ -41,8 +43,11 @@ cw_criminal_enclave = {
 	custom_diplomacy = yes
 	custom_opinion = yes
 	modules = {
-		basic_technology_module = {}
-		standard_event_module = {}
-		exclusive_diplomacy_module = { } # Nothing is allowed, but we need this for relationships.
+		basic_technology_module = {
+		}
+		standard_event_module = {
+		}
+		exclusive_diplomacy_module = {
+		}		# Nothing is allowed, but we need this for relationships.
 	}
 }

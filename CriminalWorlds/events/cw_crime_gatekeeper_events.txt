@@ -7,9 +7,7 @@ event = {
 	immediate = {
 		every_playable_country = {
 			limit = {
-				NOT = {
-					has_ethic = ethic_gestalt_consciousness
-				}
+				is_gestalt = no
 				any_owned_planet = {
 					OR = {
 						cw_is_criminal_planet = yes
@@ -458,9 +456,7 @@ event = {
 	immediate = {
 		every_playable_country = {
 			limit = {
-				NOT = {
-					has_ethic = ethic_gestalt_consciousness
-				}
+				is_gestalt = no
 				any_owned_planet = {
 					has_modifier = cw_freedom_fighters
 				}
@@ -491,6 +487,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
+		is_gestalt = no
 		any_owned_planet = {
 			OR = {
 				cw_is_criminal_planet = yes

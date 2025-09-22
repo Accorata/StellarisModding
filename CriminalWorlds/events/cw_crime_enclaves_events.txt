@@ -252,6 +252,7 @@ country_event = {
 	option = {
 		trigger = {
 			is_homicidal = no
+			is_wilderness_empire = no
 			# Enclave is Level 2 or 3
 			# event_target:cw_criminal_enclave_country = {
 			# 	#has_modifier = cw_lvl_2
@@ -274,6 +275,8 @@ country_event = {
 			}
 		}
 	}
+	# Hire Leader - Wilderness
+	#...
 	# Purchase Slaves
 	option = {
 		trigger = {
@@ -4878,18 +4881,15 @@ country_event = {
 					remove_planet_flag = cw_criminal_enclave_planet
 					save_event_target_as = cw_dead_enclave_location
 				}
-				if = {
-					limit = {
-						owner = exists
-						owner = {
+				owner = {
+					if = {
+						limit = {
 							is_ai = no
 							# Not if killer
 							NOT = {
 								is_same_value = root.from
 							}
 						}
-					}
-					owner = {
 						# Host Receives Notification
 						country_event = {
 							id = cw_enclave.213
