@@ -1,9 +1,8 @@
-version="4.0.*"
+version="4.1.*"
 tags={
 	"Gameplay"
 	"Leaders"
 }
-name="[4.0] Ascension Leader Traits"
-picture="thumbnail.png"
-supported_version="v4.0.*"
+name="[4.1] Ascension Leader Traits"
+supported_version="v4.1.*"
 remote_file_id="3250905886"

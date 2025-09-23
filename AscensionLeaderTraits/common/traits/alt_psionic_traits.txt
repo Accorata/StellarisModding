@@ -64,8 +64,7 @@ leader_trait_shroud_empath = {
 		}
 	}
 	councilor_modifier = {
-		shroud_delve_cooldown = -0.1
-		shroud_delve_cost = -0.2
+		shroud_delve_cooldown = -0.15
 	}
 	leader_class = {
 		official
@@ -247,7 +246,9 @@ leader_trait_one_with_space = {
 		ship_ftl_jumpdrive_range_mult = 0.1
 		ship_jumpdrive_cooldown_mult = -0.1
 	}
-	prerequisites = { tech_psi_jump_drive_1 }
+	prerequisites = {
+		tech_psi_jump_drive_1
+	}
 	leader_potential_add = {
 		AND = {
 			OR = {
@@ -318,7 +319,9 @@ leader_trait_mind_body_mastery = {
 		ship_astral_rift_clues_add = 1
 		ship_anomaly_generation_chance_mult = 0.1
 	}
-	prerequisites = { tech_rift_sphere }
+	prerequisites = {
+		tech_rift_sphere
+	}
 	leader_potential_add = {
 		has_astral_planes_dlc = yes
 		AND = {
@@ -459,9 +462,11 @@ leader_trait_psionic_being = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}			# Timeline First Leader with Destiny Trait
 		}
 	}
 	councilor_modifier = {
