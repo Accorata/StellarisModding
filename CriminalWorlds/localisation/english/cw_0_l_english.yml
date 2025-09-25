@@ -220,21 +220,12 @@
   cw_large_privateer_fleet_desc:0 "N/A"
 
 ## Decisions
-  decision_uplift_slums:0 "Uplift Slums"
-  decision_uplift_slums_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into our local society."
-  decision_uplift_slums_hive:0 "$decision_uplift_slums$"
-  decision_uplift_slums_hive_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into the collective."
-  decision_uplift_slums_machine:0 "$decision_uplift_slums$"
-  decision_uplift_slums_machine_desc:0 "$decision_uplift_slums_hive_desc$"
-
-  # decision_cw_undercity_expansion:0 "Undercity Expansion"
-  # decision_cw_undercity_expansion_desc:0 "By tunneling futher into the planet we could expand our infrastucture ever downwards. However, it is worth noting that some individuals will utilize our weakened ability to patrol these depths."
-  # decision_cw_collapse_lower_level:0 "Collapse Lower Level"
-  # decision_cw_collapse_lower_level_desc:0 "The lower levels are only a problematic mess which must be removed."
-
-## Deposits
-  # d_cw_lower_level:0 "Lower Level"
-  # d_cw_lower_level_desc:0 "The cities stretch futher and futher into the core of this planet."
+  decision_cw_uplift_slums:0 "Uplift Slums"
+  decision_cw_uplift_slums_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into our local society."
+  decision_cw_uplift_slums_hive:0 "$decision_cw_uplift_slums$"
+  decision_cw_uplift_slums_hive_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into the collective."
+  decision_cw_uplift_slums_machine:0 "$decision_cw_uplift_slums$"
+  decision_cw_uplift_slums_machine_desc:0 "$decision_cw_uplift_slums_hive_desc$"
 
 ## Armies
   cw_mercenary_army:0 "Mercenary Army"
@@ -527,17 +518,17 @@
   leader_trait_cw_ambassador_ear_to_the_ground_desc: "$leader_trait_ambassador_ear_to_the_ground_desc$"
   leader_trait_cw_shadow_broker:0 "$leader_trait_shadow_broker$"
   leader_trait_cw_shadow_broker_desc:0 "$leader_trait_shadow_broker_desc$"
-  leader_trait_cw_military_espionage:0 "Maximum Clearance" # icon needed...
+  leader_trait_cw_military_espionage:0 "Maximum Clearance"
   leader_trait_cw_military_espionage_desc:0 "This leader has no difficulty obtaining top secret clearance levels in enemy powers."
   leader_trait_cw_military_espionage_effect:0 "[CW_GetHackerMilitaryEffect]"
   cw_hacker_superior_military:0 "§EEffects apply while Militarily weaker than a Rival.§!"
   cw_hacker_no_superior_military:0 "§RThis trait has no effect while not Militarily weaker than a Rival.§!"
-  leader_trait_cw_tech_espionage:0 "Codebreaker" # icon needed...
+  leader_trait_cw_tech_espionage:0 "Codebreaker"
   leader_trait_cw_tech_espionage_desc:0 "This leader is a master of cryptography, especially the codes used to protect top secret breakthroughs."
   leader_trait_cw_tech_espionage_effect:0 "[CW_GetHackerTechEffect]"
   cw_hacker_superior_tech:0 "§EEffects apply while Technologically weaker than a Rival.§!"
   cw_hacker_no_superior_tech:0 "§RThis trait has no effect while not Technologically weaker than a Rival.§!"
-  leader_trait_cw_economy_espionage:0 "Industrial Espionage" # icon needed...
+  leader_trait_cw_economy_espionage:0 "Industrial Espionage"
   leader_trait_cw_economy_espionage_desc:0 "..."
   leader_trait_cw_economy_espionage_effect:0 "[CW_GetHackerEconomyEffect]"
   cw_hacker_superior_economy:0 "§EEffects apply while Economically weaker than a Rival.§!"

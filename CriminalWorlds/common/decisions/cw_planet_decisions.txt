@@ -1,4 +1,4 @@
-decision_uplift_slums = {
+decision_cw_uplift_slums = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_arcology_project
@@ -42,7 +42,7 @@ decision_uplift_slums = {
 	}
 }
 
-decision_uplift_slums_hive = {
+decision_cw_uplift_slums_hive = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_arcology_project
@@ -86,7 +86,7 @@ decision_uplift_slums_hive = {
 	}
 }
 
-decision_uplift_slums_machine = {
+decision_cw_uplift_slums_machine = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_arcology_project
@@ -129,79 +129,3 @@ decision_uplift_slums_machine = {
 		weight = 100
 	}
 }
-
-# redo like Cellaris nest civic decisions !
-# decision_cw_undercity_expansion = {
-# 	owned_planets_only = yes
-# 	sound = event_administrative_work
-# 	icon = decision_arcology_project
-# 	enactment_time = 180
-# 	resources = {
-# 		category = decisions
-# 		cost = {
-# 			minerals = 500
-# 			alloys = 100
-# 			influence = 10
-# 		}
-# 	}
-# 	potential = {
-# 		exists = owner
-# 		OR = {
-# 			is_planet_class = pc_city
-# 			has_modifier = cw_ruined_undercity
-# 			# For possible modders
-# 			uses_district_set = city_world
-# 		}
-# 	}
-# 	allow = {
-# 		count_deposits = {
-# 			type = d_cw_lower_level
-# 			count < 5
-# 		}
-# 	}
-# 	effect = {
-# 		add_deposit = d_cw_lower_level
-# 	}
-# 	ai_weight = {
-# 		weight = 0
-# 		modifier = {
-# 			add = 100
-# 			num_free_districts = {
-# 				type = any
-# 				value = 0
-# 			}
-# 		}
-# 	}
-# }
-
-# decision_cw_collapse_lower_level = {
-# 	owned_planets_only = yes
-# 	sound = event_structural_collapse
-# 	icon = decision_arcology_project
-# 	enactment_time = 30
-# 	resources = {
-# 		category = decisions
-# 		cost = {
-# 			minerals = 500
-# 			unity = 500
-# 		}
-# 	}
-# 	potential = {
-# 		exists = owner
-# 		has_deposit = d_cw_lower_level
-# 	}
-# 	allow = {
-# 		num_free_districts = {
-# 			type = any
-# 			value >= 1
-# 		}
-# 		has_deposit = d_cw_lower_level
-# 	}
-# 	effect = {
-# 		remove_deposit = d_cw_lower_level
-# 		add_planet_devastation = 10
-# 	}
-# 	ai_weight = {
-# 		weight = 0
-# 	}
-# }

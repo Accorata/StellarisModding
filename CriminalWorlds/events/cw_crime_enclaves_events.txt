@@ -228,6 +228,11 @@ country_event = {
 	option = {
 		trigger = {
 			is_homicidal = no
+			OR = {
+				is_gestalt = no
+				has_valid_civic = civic_machine_servitor # One way to keep those pops happy
+				# Obsessive Directives can use CGs but the flavor makes no sense
+			}
 		}
 		allow = {
 			custom_tooltip = {
@@ -1148,6 +1153,7 @@ country_event = {
 			create_leader = {
 				name = random
 				class = official
+				tier = leader_tier_renowned
 				species = event_target:pirate_species
 				background_ethic = ethic_authoritarian
 				skip_background_generation = yes
@@ -1161,7 +1167,6 @@ country_event = {
 				randomize_traits = yes
 				effect = {
 					set_leader_flag = cw_racketeer_leader
-					set_leader_flag = renowned_leader
 				}
 			}
 			last_created_leader = {
@@ -2395,6 +2400,7 @@ country_event = {
 			create_leader = {
 				name = random
 				class = commander
+				tier = leader_tier_renowned
 				species = event_target:pirate_species
 				background_ethic = ethic_militarist
 				skip_background_generation = yes
@@ -2408,7 +2414,6 @@ country_event = {
 				randomize_traits = yes
 				effect = {
 					set_leader_flag = cw_privateer_leader
-					set_leader_flag = renowned_leader
 				}
 			}
 			last_created_leader = {
@@ -3679,6 +3684,7 @@ country_event = {
 			create_leader = {
 				name = random
 				class = scientist
+				tier = leader_tier_renowned
 				species = event_target:pirate_species
 				background_ethic = ethic_materialist
 				skip_background_generation = yes
@@ -3692,7 +3698,6 @@ country_event = {
 				randomize_traits = yes
 				effect = {
 					set_leader_flag = cw_hacker_leader
-					set_leader_flag = renowned_leader
 				}
 			}
 			last_created_leader = {

@@ -156,8 +156,8 @@
   cw_enclave.2.a:0 "Open Comms."
 
 # Criminal Enclave has New Offers
-  cw_enclave.301.name:0 "..."
-  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations. ... We have new offers you may wish to check out..."
+  cw_enclave.301.name:0 "New Offers Available"
+  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations here at [name]. ... We have new offers you may wish to check out..."
   cw_enclave.301.a:0 "..." # check them out
   cw_enclave.301.b:0 "$GOODBYE$" # Exit
 
@@ -167,7 +167,7 @@
   cw_enclave.211.desc:0 "..."
   cw_enclave.211.a:0 "Such is the nature of the galaxy."
   # Killer
-  cw_enclave.214.name:0 "..."
+  cw_enclave.214.name:0 "Criminal Enclave Destroyed"
   cw_enclave.214.desc:0 "..."
   cw_enclave.214.a:0 "Mission success."
   # Host
@@ -210,7 +210,7 @@
   cw_enclave.400.f:0 "Never mind." # Main Menu
   cw_enclave.400.g:0 "$GOODBYE$" # Exit
   cw_enclave.401.name:0 "Purchase Illegal Drugs"
-  cw_enclave.401.desc:0 "..."
+  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keeping your people's needs met.  you'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
   cw_enclave.401.a:0 "$cw_enclave.400.a$" # 2
   cw_enclave.401.b:0 "$cw_enclave.400.b$" # 5
   cw_enclave.401.c:0 "$cw_enclave.400.c$" # 10
@@ -221,7 +221,7 @@
   cw_enclave.401.g:0 "$GOODBYE$" # Exit
 # Renew Trade Deals
   cw_enclave.403.name:0 "Renew Arms Purchase"
-  cw_enclave.403.desc:0 "Our records indicate that our previous arms deal has expired. However, our illegal arms trade remains quite profitable and we have many more to offer. We hope to continue to do business with you and renew this deal for another 10 years. ..."
+  cw_enclave.403.desc:0 "Our records indicate that our previous arms deal has expired. However, our illegal arms trade remains quite profitable and we still have much more to offer. Assuming this arrangement has been to your liking, we'd hope to continue to do business and renew this deal for another 10 years.\n\nOf course, let us know if there's anything else we can provide you with."
   cw_enclave.403.a:0 "$cw_enclave.400.a$" # 1
   cw_enclave.403.b:0 "$cw_enclave.400.b$" # 2
   cw_enclave.403.c:0 "$cw_enclave.400.c$" # 5
@@ -231,7 +231,7 @@
   cw_enclave.403.f:0 "What else do you offer?" # Main Menu
   cw_enclave.403.g:0 "No thank you." # Exit
   cw_enclave.404.name:0 "Renew Drugs Purchase"
-  cw_enclave.404.desc:0 "..."
+  cw_enclave.404.desc:0 "Our records indicate that our previous drug deal has expired. Which is such a same, because our newest strain has taken off and is much better than any of the product you've received. However, if this deal were to continue, well then you could have access to our entire catalog. We'd prefer to continue to do business, and we're sure you'd like to as well. So let's renew this deal for another 10 years.\n\nOf course, let us know if there's anything else we can provide you with."
   cw_enclave.404.a:0 "$cw_enclave.401.a$" # 2
   cw_enclave.404.b:0 "$cw_enclave.401.b$" # 5
   cw_enclave.404.c:0 "$cw_enclave.401.c$" # 10
@@ -271,14 +271,14 @@
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
-  cw_enclave.racketeer_bribery:0 "..."
+  cw_enclave.racketeer_bribery:0 "Only because we keep our people safe."
   cw_enclave.409.a:0 "Never mind." # Main Menu
   cw_enclave.409.b:0 "We don't negotiate with criminals." # Exit
 
 ## Privateers
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
-  cw_enclave.303.desc:0 "..."
+  cw_enclave.303.desc:0 "Welcome, welcome, ..."
   cw_enclave.303.a:0 "We'd like you to §YHarass our Rivals§!."
   cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
   cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
@@ -341,16 +341,16 @@
   cw_enclave.509.c:0 "$GOODBYE$" # Exit
 
 # Purchase Stolen Specimens (With Grand Archive)
-  # cw_enclave.510.name:0 "..."
-  # cw_enclave.510.desc:0 "..."
-  # cw_enclave.510.a:0 "..." 
+  # cw_enclave.510.name:0 "REPLACE_ME"
+  # cw_enclave.510.desc:0 "REPLACE_ME"
+  # cw_enclave.510.a:0 "REPLACE_ME" 
   # cw_steals_aesthetic_wonder:0 "We will obtain a §YAesthetic Wonders§! Specimen from a random empire."
-  # cw_enclave.510.a.no_aesthetic_wonder:0 "..."
-  # cw_enclave.510.b:0 "..." 
+  # cw_enclave.510.a.no_aesthetic_wonder:0 "REPLACE_ME"
+  # cw_enclave.510.b:0 "REPLACE_ME" 
   # cw_steals_historical_item:0 "We will obtain a §YGalactic History§! Specimen from a random empire."
-  # cw_enclave.510.b.no_historical_item:0 "..."
-  # cw_enclave.510.c:0 "..." 
-  # cw_steals_xeno_geology:0 "..."
+  # cw_enclave.510.b.no_historical_item:0 "REPLACE_ME"
+  # cw_enclave.510.c:0 "REPLACE_ME" 
+  # cw_steals_xeno_geology:0 REPLACE_ME"
   # cw_enclave.510.c.no_xeno_geology:0 "We will obtain a §YXeno Geology§! Specimen from a random empire."
   # cw_enclave.510.d:0 "Never mind." # Main Menu
   # cw_enclave.510.e:0 "$GOODBYE$" # Exit
@@ -382,16 +382,16 @@
   cw_enclave.517.desc:0 "Was it the harassing fleets or the raids on your convoys that brought you to this cowardice? Or maybe you're just scared of what we might do to you?\n\nWe would humiliate you further, if we were not servants of the coin ourselves. Guaranteeing your safety will be costly."
   cw_enclave.517.desc.medium:0 "$cw_enclave.517.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.517.desc.strong:0 "$cw_enclave.517.desc$ That said, we must ask why you throw yourselves before us. Your fleets are mighty, your admirals brave and your weapons deadly. It is with much admiration that we view your navy. As such, we ask for much less than normal in exchange for our protection."
-  cw_enclave.517.desc.warlord:0 "Our fellow pirate, you do not belong kneeling at our feet. You have no need to fear us. ..."
-  cw_enclave.privateer_bribery:0 "..."
-  cw_enclave.517.warlord:0 "..."
+  cw_enclave.517.desc.warlord:0 "Our fellow pirate, you do not belong kneeling at our feet. You have no need to fear us. However lawless you may see us, we'd like to believe we respects the universal laws of honor. The code of brigandry embraces all who turn to its way, and the great warlords of the galaxy are no exception."
+  cw_enclave.privateer_bribery:0 "You better keep this promise."
+  cw_enclave.517.warlord:0 "To the free sailors of space!"
   cw_enclave.517.a:0 "Never mind." # Main Menu
   cw_enclave.517.b:0 "We don't negotiate with criminals." # Exit
 
 ## Hackers
 # Main Menu
   cw_enclave.304.name:0 "$cw_enclave.302.name$"
-  cw_enclave.304.desc:0 "Connecting...\nVerifying...\n---- CONNECTION ESTABLISHED ----\n\nWelcome to the [cw_criminal_enclave_country.GetName]. Here, a number of hacker guilds have come together to offer our services to those who can pay the price. While our span of physical space is quite limited, our members wield influence throughout galactic cyberspace. We're sure there are offers you'd like to take up."
+  cw_enclave.304.desc:0 "Connecting...\nVerifying...\nCONNECTION ESTABLISHED\n\nWelcome to the [cw_criminal_enclave_country.GetName]. Here, a number of hacker guilds have come together to offer our services to those who can pay the price. While our span of physical space is quite limited, our members wield influence throughout galactic cyberspace. We're sure there are offers you'd like to take up."
   cw_enclave.304.a:0 "How can you help our §YEspionage§! efforts?"
   cw_enclave.304.a.has_key:0 "Criminal Hackers are already providing Espionage help."
   cw_enclave.304.b:0 "We'd like you to §YHack our Rivals§!."
@@ -414,13 +414,13 @@
 # Skeleton Key Renewal
   cw_enclave.601.name:0 "Renew Skeleton Key"
   cw_enclave.601.desc:0 "<Automated Voice>\nDear [Root.GetSpeciesNamePlural], as the artificial assistant of the [cw_criminal_enclave_country.GetName], I am here to notify you that your subscription of our skeleton key service has expired. If not renewed, we will cease providing our exploits and your current tools will quickly become outdated. I recommend renewing your subscription as soon as possible and will connect you to an appropriate contact now.\n</Automated Voice>\n\nWelcome again [Root.GetSpeciesNamePlural]! As we're sure you were just informed, the 10 years in our previous contract have transpired. We are happy to renew it for another 10 years pending a credit transaction."
-  cw_enclave.601.a:0 "Transferring payment now."
+  cw_enclave.601.a:0 "We'll transfer the payment now."
   cw_enclave.601.b:0 "What else can you offer?" # Main Menu
   cw_enclave.601.c:0 "No thanks." # Exit
 
 # Hacking Rivals Menu
   cw_enclave.602.name:0 "Hack Rivals"
-  cw_enclave.602.desc:0 "..."
+  cw_enclave.602.desc:0 "You've come to the right place. Our hackers are exceptional, rivaled by no other. We can target any of your rivals in numerous places, whether military, economic or political. All you have to do is say the word - and pay us appropriately, of course.\n\nWho would you like us to hack?"
   cw_enclave.602.a:0 "§YThe [cw_hack_target_1.GetName].§!"
   cw_enclave.602.b:0 "§YThe [cw_hack_target_2.GetName].§!"
   cw_enclave.602.c:0 "§YThe [cw_hack_target_3.GetName].§!"
@@ -429,7 +429,7 @@
   cw_enclave.602.f:0 "$GOODBYE$" # Exit
 # Hack Selection
   cw_enclave.603.name:0 "$cw_enclave.602.name$"
-  cw_enclave.603.desc:0 "Our hackers have located vulnerabilities within the [cw_hack_confirmed_target.GetName]'s cybersecurity allowing for an attack on any one of their §Ymilitary§!, §Yeconomic§!, or §Ypolitical§! assets.\n\nWe could launch a coordinated attack at their military maintenance drones forcing them to utilize additional supplies to keep their fleets combat-ready. We could collapse their supply chain databases and strand their freight ships in deep space, far from their desired destinations. We could reveal confidential files to their public and display them across the capital, sowing distrust of their government.\n\nOf course, performing any of these actions would come at a cost."
+  cw_enclave.603.desc:0 "Our hackers have located vulnerabilities within the [cw_hack_confirmed_target.GetName]'s cybersecurity allowing for an attack on any one of their §Ymilitary§!, §Yeconomic§!, or §Ypolitical§! assets.\n\nWe could launch a coordinated attack at their military maintenance drones forcing them to utilize additional supplies to keep their fleets combat-ready. We could collapse their supply chain databases and strand their freight ships in deep space, far from their desired destinations. We could reveal confidential files to their public and display them across the capital, sowing distrust of their government.\n\nOf course, performing any of these actions will come at a cost."
   cw_enclave.603.a:0 "Cripple their military maintenance drones." # Military
   cw_enclave.military_hack:0 "Slightly increases the §Y[cw_hack_confirmed_target.GetName]'s§! ship logistics upkeep costs.\n$opinion10$"
   cw_enclave.603.b:0 "Disable their infrastructure and supply chains." # Economic
