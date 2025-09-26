@@ -519,3 +519,130 @@ country_event = {
 		}
 	}
 }
+
+# AI Empires Hire Enclaves - Gatekeeper - No scope
+event = {
+	id = cw_enclave.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		years_passed >= 20
+		any_country = {
+			is_country_type = default
+			is_ai = yes
+			is_homicidal = no
+			# Have some money to pay for things
+			resource_stockpile_compare = {
+				resource = trade
+				value >= 2000
+			}
+			any_relation = {
+				is_country_type = cw_criminal_enclave
+				has_communications = prev
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				is_ai = yes
+				is_homicidal = no
+				# Have some money to pay for things
+				resource_stockpile_compare = {
+					resource = trade
+					value >= 2500
+				}
+				any_relation = {
+					is_country_type = cw_criminal_enclave
+					has_communications = prev
+				}
+			}
+			random_list = {
+				# Nothing
+				10 = {}
+				# Try to hire Racketeers
+				0 = {
+					modifier = {
+						add = 10
+						any_relation = {
+							is_country_type = cw_criminal_enclave
+							has_communications = prev
+							# Racketeer With Available Event
+							AND = {
+								has_country_flag = cw_criminal_enclave_racketeers
+								# Slave Trade Available
+								has_modifier = cw_lvl_3
+								NOT = {
+									has_country_flag = cw_slave_cooldown
+								}
+							}
+						}
+					}
+					country_event = {
+						id = cw_enclave.250
+					}
+				}
+				# Try to hire Privateers
+				0 = {
+					modifier = {
+						add = 10
+						any_relation = {
+							is_country_type = cw_criminal_enclave
+							has_communications = prev
+							# Privateer With Available Event
+							has_country_flag = cw_criminal_enclave_privateers
+							OR = {
+								# Harass Available
+								AND = {
+									NOT = {
+										has_country_flag = cw_harass_cooldown
+									}
+									prev = {
+										any_rival_country = {
+											cw_can_be_harassed = yes
+										}
+									}
+								}
+								# Raid Available
+								AND = {
+									has_modifier = cw_lvl_3
+									NOT = {
+										has_country_flag = cw_raid_cooldown
+									}
+								}
+							}
+						}
+					}
+					country_event = {
+						id = cw_enclave.251
+					}
+				}
+				# Try to hire Hackers
+				0 = {
+					modifier = {
+						add = 10
+						any_relation = {
+							is_country_type = cw_criminal_enclave
+							has_communications = prev
+							# Hacker With Available Event
+							has_country_flag = cw_criminal_enclave_hackers
+							# Hack Available
+							NOT = {
+								has_country_flag = cw_hack_cooldown
+							}
+						}
+						any_rival_country = {
+							cw_can_be_hacked = yes
+						}
+					}
+					country_event = {
+						id = cw_enclave.252
+					}
+				}
+			}
+		}
+	}
+}

@@ -301,9 +301,9 @@ country_event = {
 						any_planet_within_border = {
 							cw_is_criminal_planet = yes
 							owner = {
-								NOR = {
+								cw_can_be_enslaved = yes
+								NOT = {
 									is_same_value = root
-									cw_can_be_enslaved = yes
 								}
 							}
 						}
@@ -1215,9 +1215,9 @@ country_event = {
 				any_planet_within_border = {
 					cw_is_criminal_planet = yes
 					owner = {
-						NOR = {
+						cw_can_be_enslaved = yes
+						NOT = {
 							is_same_value = root
-							cw_can_be_enslaved = yes
 						}
 					}
 				}
@@ -1321,30 +1321,32 @@ country_event = {
 		}
 		custom_tooltip = cw_enclave.407.b.tooltip
 		hidden_effect = {
-			while = {
-				count = 2
-				random_owned_pop_group = {
-					limit = {
-						can_be_smuggled = yes
-					}
-					weights = {
-						base = 1
-						modifier = {
-							OR = {
-								is_pop_category = worker
-								is_pop_category = slave
+			event_target:cw_enslaved_planet = {
+				while = {
+					count = 2
+					random_owned_pop_group = {
+						limit = {
+							can_be_smuggled = yes
+						}
+						weights = {
+							base = 1
+							modifier = {
+								OR = {
+									is_pop_category = worker
+									is_pop_category = slave
+								}
+								factor = 5
 							}
-							factor = 5
+							modifier = {
+								is_pop_category = ruler
+								factor = 0.1
+							}
 						}
-						modifier = {
-							is_pop_category = ruler
-							factor = 0.1
+						resettle_pop_group = {
+							POP_GROUP = this
+							PLANET = root.capital_scope
+							AMOUNT = 100
 						}
-					}
-					resettle_pop_group = {
-						POP_GROUP = this
-						PLANET = root.capital_scope
-						AMOUNT = 100
 					}
 				}
 			}
@@ -1394,30 +1396,32 @@ country_event = {
 		}
 		custom_tooltip = cw_enclave.407.c.tooltip
 		hidden_effect = {
-			while = {
-				count = 3
-				random_owned_pop_group = {
-					limit = {
-						can_be_smuggled = yes
-					}
-					weights = {
-						base = 1
-						modifier = {
-							OR = {
-								is_pop_category = worker
-								is_pop_category = slave
+			event_target:cw_enslaved_planet = {
+				while = {
+					count = 3
+					random_owned_pop_group = {
+						limit = {
+							can_be_smuggled = yes
+						}
+						weights = {
+							base = 1
+							modifier = {
+								OR = {
+									is_pop_category = worker
+									is_pop_category = slave
+								}
+								factor = 5
 							}
-							factor = 5
+							modifier = {
+								is_pop_category = ruler
+								factor = 0.1
+							}
 						}
-						modifier = {
-							is_pop_category = ruler
-							factor = 0.1
+						resettle_pop_group = {
+							POP_GROUP = this
+							PLANET = root.capital_scope
+							AMOUNT = 100
 						}
-					}
-					resettle_pop_group = {
-						POP_GROUP = this
-						PLANET = root.capital_scope
-						AMOUNT = 100
 					}
 				}
 			}
@@ -1698,10 +1702,10 @@ country_event = {
 	# 						}
 	# 					}
 	# 					owner = {
-	# 						NOR = {
-	# 							is_same_value = root
-	# 							cw_can_be_harassed = yes
-	# 						}
+	# 						cw_can_be_harassed = yes
+							# NOT = {
+							# 	is_same_value = root
+							# }
 	# 					}
 	# 				}
 	# 			}
@@ -1753,9 +1757,9 @@ country_event = {
 							}
 						}
 						owner = {
-							NOR = {
+							cw_can_be_harassed = yes
+							NOT = {
 								is_same_value = root
-								cw_can_be_harassed = yes
 							}
 						}
 					}
@@ -2476,10 +2480,10 @@ country_event = {
 # 					}
 # 				}
 # 				owner = {
-# 					NOR = {
-# 						is_same_value = root
-# 						cw_can_be_harassed = yes
-# 					}
+# 					cw_can_be_harassed = yes
+					# NOT = {
+					# 	is_same_value = root
+					# }
 # 				}
 # 			}
 # 			owner = {
@@ -2581,9 +2585,9 @@ country_event = {
 					}
 				}
 				owner = {
-					NOR = {
+					cw_can_be_harassed = yes
+					NOT = {
 						is_same_value = root
-						cw_can_be_harassed = yes
 					}
 				}
 			}
@@ -2598,7 +2602,7 @@ country_event = {
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
-			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+			AMOUNT = value:cw_privateer_purchase_cost|COST|2500|
 		}
 		add_resource = {
 			energy = 5000
@@ -2624,7 +2628,7 @@ country_event = {
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
-			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+			AMOUNT = value:cw_privateer_purchase_cost|COST|2500|
 		}
 		add_resource = {
 			minerals = 5000
@@ -2650,7 +2654,7 @@ country_event = {
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
-			AMOUNT = value:cw_privateer_purchase_cost|COST|5000|
+			AMOUNT = value:cw_privateer_purchase_cost|COST|2500|
 		}
 		add_resource = {
 			food = 5000
@@ -5152,5 +5156,540 @@ country_event = {
 	}
 	after = {
 		destroy_country = yes
+	}
+}
+
+## AI Enclave Events
+# Racketeer Options - fired from gatekeeper cw_enclave.7
+country_event = {
+	id = cw_enclave.250
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_playable_country = {
+			any_planet_within_border = {
+				cw_is_criminal_planet = yes
+				owner = {
+					cw_can_be_enslaved = yes
+					NOT = {
+						is_same_value = root
+					}
+				}
+				count_owned_pop_amount = {
+					count >= 200
+					limit = {
+						can_be_smuggled = yes
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_playable_country = {
+			limit = {
+				any_planet_within_border = {
+					cw_is_criminal_planet = yes
+					owner = {
+						cw_can_be_enslaved = yes
+						NOT = {
+							is_same_value = root
+						}
+					}
+				}
+			}
+			random_planet_within_border = {
+				limit = {
+					cw_is_criminal_planet = yes
+					owner = {
+						NOT = {
+							is_same_value = root
+						}
+					}
+					count_owned_pop_amount = {
+						count >= 200
+						limit = {
+							can_be_smuggled = yes
+						}
+					}
+				}
+				save_event_target_as = cw_enslaved_planet
+			}
+		}
+		if = {
+			limit = {
+				exists = event_target:cw_enslaved_planet
+			}
+			random_country = {
+				limit = {
+					is_country_type = cw_criminal_enclave
+					has_communications = root
+					has_country_flag = cw_criminal_enclave_racketeers
+					# Slave Trade Available
+					has_modifier = cw_lvl_3
+					NOT = {
+						has_country_flag = cw_slave_cooldown
+					}
+				}
+				save_event_target_as = cw_criminal_enclave_country
+			}
+			random_list = {
+				10 = {
+					event_target:cw_criminal_enclave_country = {
+						add_trust = {
+							who = root
+							amount = 10
+						}
+						set_timed_country_flag = {
+							flag = cw_slave_cooldown
+							days = 120
+						}
+					}
+					event_target:cw_enslaved_planet = {
+						random_owned_pop_group = {
+							limit = {
+								can_be_smuggled = yes
+							}
+							weights = {
+								base = 1
+								modifier = {
+									OR = {
+										is_pop_category = worker
+										is_pop_category = slave
+									}
+									factor = 5
+								}
+								modifier = {
+									is_pop_category = ruler
+									factor = 0.1
+								}
+							}
+							resettle_pop_group = {
+								POP_GROUP = this
+								PLANET = root.capital_scope
+								AMOUNT = 100
+							}
+						}
+						owner = {
+							set_timed_country_flag = {
+								flag = cw_100_enslaved
+								days = 10
+							}
+							country_event = {
+								id = cw_enclave.408
+							}
+						}
+					}
+					add_resource = {
+    					trade = -1
+						mult = value:cw_racketeer_purchase_cost|COST|2500|
+					}
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							event_target:cw_enslaved_planet = {
+								count_owned_pop_amount = {
+									count >= 300
+									limit = {
+										can_be_smuggled = yes
+									}
+								}
+							}
+							root = {
+								resource_stockpile_compare = {
+									resource = trade
+									value >= 5000
+								}
+							}
+						}
+					}
+					event_target:cw_enslaved_planet = {
+						while = {
+							count = 2
+							random_owned_pop_group = {
+								limit = {
+									can_be_smuggled = yes
+								}
+								weights = {
+									base = 1
+									modifier = {
+										OR = {
+											is_pop_category = worker
+											is_pop_category = slave
+										}
+										factor = 5
+									}
+									modifier = {
+										is_pop_category = ruler
+										factor = 0.1
+									}
+								}
+								resettle_pop_group = {
+									POP_GROUP = this
+									PLANET = root.capital_scope
+									AMOUNT = 100
+								}
+							}
+						}
+					}
+					event_target:cw_criminal_enclave_country = {
+						add_trust = {
+							who = root
+							amount = 15
+						}
+						set_timed_country_flag = {
+							flag = cw_slave_cooldown
+							days = 240
+						}
+					}
+					event_target:cw_enslaved_planet = {
+						owner = {
+							set_timed_country_flag = {
+								flag = cw_200_enslaved
+								days = 10
+							}
+							country_event = {
+								id = cw_enclave.408
+							}
+						}
+					}
+					add_resource = {
+    					trade = -2
+						mult = value:cw_racketeer_purchase_cost|COST|2500|
+					}
+				}
+				30 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							event_target:cw_enslaved_planet = {
+								count_owned_pop_amount = {
+									count >= 400
+									limit = {
+										can_be_smuggled = yes
+									}
+								}
+							}
+							root = {
+								resource_stockpile_compare = {
+									resource = trade
+									value >= 7500
+								}
+							}
+						}
+					}
+					event_target:cw_enslaved_planet = {
+						while = {
+							count = 3
+							random_owned_pop_group = {
+								limit = {
+									can_be_smuggled = yes
+								}
+								weights = {
+									base = 1
+									modifier = {
+										OR = {
+											is_pop_category = worker
+											is_pop_category = slave
+										}
+										factor = 5
+									}
+									modifier = {
+										is_pop_category = ruler
+										factor = 0.1
+									}
+								}
+								resettle_pop_group = {
+									POP_GROUP = this
+									PLANET = root.capital_scope
+									AMOUNT = 100
+								}
+							}
+						}
+					}
+					event_target:cw_criminal_enclave_country = {
+						add_trust = {
+							who = root
+							amount = 20
+						}
+						set_timed_country_flag = {
+							flag = cw_slave_cooldown
+							days = 360
+						}
+					}
+					event_target:cw_enslaved_planet = {
+						owner = {
+							set_timed_country_flag = {
+								flag = cw_300_enslaved
+								days = 10
+							}
+							country_event = {
+								id = cw_enclave.408
+							}
+						}
+					}
+					add_resource = {
+    					trade = -3
+						mult = value:cw_racketeer_purchase_cost|COST|2500|
+					}
+				}
+			}
+		}
+	}
+}
+
+# Privateer Options - fired from gatekeeper cw_enclave.7
+country_event = {
+	id = cw_enclave.251
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = cw_criminal_enclave
+				has_communications = root
+				has_country_flag = cw_criminal_enclave_privateers
+				OR = {
+					# Harass Available
+					AND = {
+						NOT = {
+							has_country_flag = cw_harass_cooldown
+						}
+						prev = {
+							any_rival_country = {
+								cw_can_be_harassed = yes
+							}
+						}
+					}
+					# Raid Available
+					AND = {
+						has_modifier = cw_lvl_3
+						NOT = {
+							has_country_flag = cw_raid_cooldown
+						}
+					}
+				}
+			}
+			save_event_target_as = cw_criminal_enclave_country
+		}
+		random_list = {
+			# Harass Rival
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						event_target:cw_criminal_enclave_country = {
+							has_country_flag = cw_harass_cooldown
+						}
+						NOT = {
+							any_rival_country = {
+								cw_can_be_harassed = yes
+							}
+						}
+					}
+				}
+				random_rival_country = {
+					limit = {
+						cw_can_be_harassed = yes
+					}
+					save_event_target_as = cw_rival_to_harass
+				}
+				cw_post_enclave_purchase_effects = {
+					TRUST = 20
+					DEAL_LENGTH = 180
+				}
+				event_target:cw_criminal_enclave_country = {
+					set_timed_country_flag = {
+						flag = cw_harass_cooldown
+						days = 180
+					}
+					country_event = {
+						id = cw_enclave.508
+						days = 120
+					}
+				}
+				event_target:cw_rival_to_harass = {
+					country_event = {
+						id = cw_enclave.507
+					}
+				}
+				add_resource = {
+    				trade = -1
+					mult = value:cw_privateer_purchase_cost|COST|2000|
+				}
+			}
+			# Raid Empire
+			10 = {
+				modifier = {
+					factor = 0
+					event_target:cw_criminal_enclave_country = { 
+						OR = {
+							has_country_flag = cw_raid_cooldown
+							NOT = {
+								has_modifier = cw_lvl_3
+							}
+						}
+					}
+				}
+				random_system = {
+					limit = {
+						has_owner = yes
+						OR = {
+							any_fleet_in_system = {
+								owner = {
+									is_country_type = pirate
+								}
+							}
+							any_neighbor_system = {
+								any_fleet_in_system = {
+									owner = {
+										is_country_type = pirate
+									}
+								}
+							}
+						}
+						owner = {
+							cw_can_be_harassed = yes
+							NOT = {
+								is_same_value = root
+							}
+						}
+					}
+					owner = {
+						save_event_target_as = cw_resource_stealing_target
+					}
+				}
+				if = {
+					limit = {
+						exists = event_target:cw_resource_stealing_target
+					}
+					random_list = {
+						10 = {
+							add_resource = {
+								energy = 5000
+							}
+							event_target:cw_resource_stealing_target = {
+								country_event = {
+									id = cw_enclave.514
+								}
+							}
+						}
+						10 = {
+							add_resource = {
+								minerals = 5000
+							}
+							event_target:cw_resource_stealing_target = {
+								country_event = {
+									id = cw_enclave.515
+								}
+							}
+						}
+						10 = {
+							modifier = {
+								factor = 0
+								OR = {
+									is_individual_machine = yes
+									AND = {
+										is_machine_empire = yes
+										NOR = {
+											has_civic = civic_machine_servitor
+											has_civic = civic_machine_assimilator
+										}
+									}
+								}
+							}
+							add_resource = {
+								food = 5000
+							}
+							event_target:cw_resource_stealing_target = {
+								if = {
+									limit = {
+										is_individual_machine = no
+										OR = {
+											is_machine_empire = no
+											has_civic = civic_machine_servitor
+											has_civic = civic_machine_assimilator
+										}
+									}
+									country_event = {
+										id = cw_enclave.516
+									}
+								}
+							}
+						}
+					}
+					cw_post_enclave_purchase_effects = {
+						TRUST = 20
+						DEAL_LENGTH = 360
+					}
+					add_resource = {
+    					trade = -1
+						mult = value:cw_privateer_purchase_cost|COST|2500|
+					}
+				}
+			}
+		}
+	}
+}
+
+# Hacker Options - fired from gatekeeper cw_enclave.7
+country_event = {
+	id = cw_enclave.252
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = cw_criminal_enclave
+				has_communications = root
+				has_country_flag = cw_criminal_enclave_hackers
+				# Hack Available
+				NOT = {
+					has_country_flag = cw_hack_cooldown
+				}
+			}
+			save_event_target_as = cw_criminal_enclave_country
+		}
+		random_rival_country = {
+			save_event_target_as = cw_rival_to_hack
+		}
+		cw_post_enclave_purchase_effects = {
+			TRUST = 10
+			DEAL_LENGTH = 180
+		}
+		event_target:cw_criminal_enclave_country = {
+			set_timed_country_flag = {
+				flag = cw_hack_cooldown
+				days = 180
+			}
+		}
+		add_resource = {
+    		trade = -1
+			mult = value:cw_hacker_purchase_cost|COST|@cw_hack_cost|
+		}
+		event_target:cw_rival_to_hack = {
+			random_list = {
+				10 = {
+					country_event = {
+						id = cw_enclave.605
+					}
+				}
+				10 = {
+					country_event = {
+						id = cw_enclave.606
+					}
+				}
+				10 = {
+					country_event = {
+						id = cw_enclave.607
+					}
+				}
+			}
+		}
 	}
 }

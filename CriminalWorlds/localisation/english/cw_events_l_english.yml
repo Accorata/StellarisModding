@@ -210,7 +210,7 @@
   cw_enclave.400.f:0 "Never mind." # Main Menu
   cw_enclave.400.g:0 "$GOODBYE$" # Exit
   cw_enclave.401.name:0 "Purchase Illegal Drugs"
-  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keeping your people's needs met.  you'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
+  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keep your peoples' needs met.  you'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
   cw_enclave.401.a:0 "$cw_enclave.400.a$" # 2
   cw_enclave.401.b:0 "$cw_enclave.400.b$" # 5
   cw_enclave.401.c:0 "$cw_enclave.400.c$" # 10
@@ -314,7 +314,7 @@
   cw_enclave.504.response:0 "Our fleets mobilize as we speak."
 # Harass Denied
   cw_enclave.505.name:0 "$cw_enclave.503.name$"
-  cw_enclave.505.desc:0 "... §Y[cw_pirate_confirmed_target.GetName]§! ..."
+  cw_enclave.505.desc:0 "We hate to turn down a target, but the §Y[cw_pirate_confirmed_target.GetName]§! is off limits. Honor prevents us from engaging with such a foe. We hope you have someone else to go after instead."
   cw_enclave.505.a:0 "Useless." # Exit
   cw_enclave.505.b:0 "We have another target in mind."
   cw_enclave.505.c:0 "What else do you offer?" # Main Menu
@@ -327,7 +327,7 @@
 
 # Supply Weaponry
   cw_enclave.513.name:0 "Supply Weaponry"
-  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which "
+  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which we can help ..."
   cw_enclave.513.a:0 "..." 
   cw_enclave.513.b:0 "Never mind." # Main Menu
   cw_enclave.513.c:0 "$GOODBYE$" # Exit
