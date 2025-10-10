@@ -26,15 +26,15 @@
   job_cw_bribed_executive:0 "$cw_bribed_executive$"
   job_cw_bribed_executive_plural:0 "$cw_bribed_executive$s"
   cw_bribed_head_researcher:0 "Bribed $head_researcher$"
-  job_cw_bribed_head_researcher_desc:0 "..."
+  job_cw_bribed_head_researcher_desc:0 "These researchers no longer protect the integrity of science. Now they funnel their resources into helping criminals."
   job_cw_bribed_head_researcher:0 "$cw_bribed_head_researcher$"
   job_cw_bribed_head_researcher_plural:0 "$cw_bribed_head_researcher$s"
   cw_bribed_noble:0 "Bribed $noble$"
-  job_cw_bribed_noble_desc:0 "..."
+  job_cw_bribed_noble_desc:0 "The honorable code of the noblemen is lacking in these pops who have turned to criminal profits."
   job_cw_bribed_noble:0 "$cw_bribed_noble$"
   job_cw_bribed_noble_plural:0 "$cw_bribed_noble$s"
   cw_bribed_merchant:0 "Bribed $merchant$"
-  job_cw_bribed_merchant_desc:0 "..."
+  job_cw_bribed_merchant_desc:0 "Merchants always seek wealth, but these merchants have turned to the criminal underworld for their profits."
   job_cw_bribed_merchant:0 "$cw_bribed_merchant$"
   job_cw_bribed_merchant_plural:0 "$cw_bribed_merchant$s"
   cw_bribed_high_priest:0 "Bribed $high_priest$"
@@ -50,15 +50,15 @@
   job_cw_bribed_warden:0 "$cw_bribed_warden$"
   job_cw_bribed_warden_plural:0 "$cw_bribed_warden$s"
   cw_bribed_noble_researcher:0 "Bribed $job_noble_researcher$"
-  job_cw_bribed_noble_researcher_desc:0 "..."
+  job_cw_bribed_noble_researcher_desc:0 "These nobles no longer exhibit the honor of science. Now they funnel their resources into helping criminals."
   job_cw_bribed_noble_researcher:0 "$cw_bribed_noble_researcher$"
   job_cw_bribed_noble_researcher_plural:0 "$cw_bribed_noble_researcher$s"
   cw_bribed_sacred_noble:0 "Bribed $sacred_noble$"
-  job_cw_bribed_sacred_noble_desc:0 "..."
+  job_cw_bribed_sacred_noble_desc:0 "These nobles have abandoned the faith, turning to the pursuit of profits over honor."
   job_cw_bribed_sacred_noble:0 "$cw_bribed_sacred_noble$"
   job_cw_bribed_sacred_noble_plural:0 "$cw_bribed_sacred_noble$s"
   cw_bribed_augmentation_merchant:0 "Bribed $augmentation_merchant$"
-  job_cw_bribed_augmentation_merchant_desc:0 "..."
+  job_cw_bribed_augmentation_merchant_desc:0 "$job_cw_bribed_merchant_desc$"
   job_cw_bribed_augmentation_merchant:0 "$cw_bribed_augmentation_merchant$"
   job_cw_bribed_augmentation_merchant_plural:0 "$cw_bribed_augmentation_merchant$s"
   cw_rogue_shipbuilder:0 "Rogue Shipbuilder"
@@ -250,7 +250,7 @@
   tr_cw_criminality_smugglers_cartel_delayed:0 "Preventing the illegal transport of goods is a near impossible task. But controlling these very operations ensures our criminal operations benefit."
   tr_cw_criminality_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Criminal Pops"
   tr_cw_criminality_black_markets:0 "Black Markets"
-  tr_cw_criminality_black_markets_delayed:0 "..."
+  tr_cw_criminality_black_markets_delayed:0 "Tapping into the many markets that aren't 'officially' sanctioned greatly expands our options."
   tr_cw_criminality_galactic_lawlessness:0 "Galactic Lawlessness"
   tr_cw_criminality_galactic_lawlessness_delayed:0 "If the galaxy wishes to enact its own restrictions over the free peoples, then they too must be disobeyed."
   tr_cw_criminality_galactic_lawlessness_tooltip:0 "While in breach of §YGalactic Law§!:\n$t$$MOD_POP_HAPPINESS$: §G+10%§!\n$t$Effects from Sanctions: §G-50%§!"
@@ -273,7 +273,7 @@
   tr_cw_deviancy_smugglers_cartel_delayed:0 "..."
   tr_cw_deviancy_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy_hive$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Deviant Drones"
   tr_cw_deviancy_black_markets:0 "$tr_cw_criminality_black_markets$"
-  tr_cw_deviancy_black_markets_delayed:0 "..."
+  tr_cw_deviancy_black_markets_delayed:0 "$tr_cw_criminality_black_markets_delayed$"
   tr_cw_deviancy_galactic_lawlessness:0 "$tr_cw_criminality_galactic_lawlessness$"
   tr_cw_deviancy_galactic_lawlessness_delayed:0 "If the galaxy wishes to enact its own restrictions over the collective, then they too must be disobeyed."
   tr_cw_deviancy_galactic_lawlessness_tooltip:0 "$tr_cw_criminality_galactic_lawlessness_tooltip$"
@@ -290,12 +290,12 @@
   council_agenda_cw_criminality_desc:0 "By loosening the enforcement of lesser crimes, we can foster greater criminal development within our colonies. Such practices are risky, but can be quite profitable if managed well."
   agenda_cw_criminality_finish:0 "$council_agenda_cw_criminality_name$ $agenda_ref$"
   agenda_cw_criminality_finish_desc:0 "$council_agenda_cw_criminality_desc$"
-  council_agenda_cw_deviancy_name:0 "Loosen Regulations?..."
-  council_agenda_cw_deviancy_desc:0 "..." # loosen the enforcement of ...
+  council_agenda_cw_deviancy_name:0 "Relax Protocols"
+  council_agenda_cw_deviancy_desc:0 "By allowing for greater deviations from the hive, ..." # loosen the enforcement of ...
   agenda_cw_deviancy_finish:0 "$council_agenda_cw_deviancy_name$ $agenda_ref$"
   agenda_cw_deviancy_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
   agenda_cw_deviancy_machine_finish:0 "$council_agenda_cw_deviancy_name$"
-  agenda_cw_deviancy_machine_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
+  agenda_cw_deviancy_machine_finish_desc:0 "..."
 
 ## Policies
   policy_cw_smuggler_policy:0 "Criminal Smuggling"
@@ -315,17 +315,18 @@
   cw_drugs_smuggling_desc:0 "Narcotics provide another way to sedate the masses, provided we can control the spread of drugs.\n\n$EFFECTS_HEADER$" # $NEW_LINE$- $mod_pop_category_criminals_consumer_goods_produces_add$: §G+2§!"
 
 ## Civics
-  civic_cw_invisible_shareholders:0 "Invisible Shareholders" # icon needed...
-  civic_cw_invisible_shareholders_desc:0 "..."
-  # councilor needed...
+  civic_cw_invisible_shareholders:0 "Invisible Shareholders"
+  civic_cw_invisible_shareholders_desc:0 "The elites who control this megacorporation prefer to stay away from the public sphere. ..."
+  councilor_cw_invisible_shareholders:0 "Majority Holder"
+  councilor_cw_invisible_shareholders_desc:0 "The $TITLE$ represents the interests of the hidden elites, ..."
   civic_cw_prison_state:0 "Prison State"
-  civic_cw_prison_state_desc:0 "..."
-  civic_cw_prison_state_effects:0 "- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_cw_tech_penal_colonies', £society_research£ $tech_penal_colonies$]"
+  civic_cw_prison_state_desc:0 "This megacorporation heavily relies on prison labor, often relaxing the standards of incarceration to increase the number of imprisoned laborors."
+  civic_cw_prison_state_effects:0 "- Grants Technology: ['concept_cw_tech_penal_colonies', £society_research£ $tech_penal_colonies$]"
   concept_cw_tech_penal_colonies:0 "$tech_penal_colonies$"
   concept_cw_tech_penal_colonies_desc:0 "§HUnlocks Decision:§! $decision_penal_colony$" # Could be §S/K (depends on shade of orange)...
   councilor_cw_prison_state:0 "Head Warden"
   councilor_cw_prison_state_female:0 "$councilor_cw_prison_state$"
-  councilor_cw_prison_state_desc:0 "The $TITLE$ ensures all of our private prisons are completely staffed and especially productive."
+  councilor_cw_prison_state_desc:0 "The $TITLE$ ensures all of our private prisons are maximally filled and productive."
 
 ## Country Names
   NAME_cw_criminal_enterprise:0 "Criminal Enterprises"
@@ -477,7 +478,7 @@
   leader_trait_cw_juryrigger_hive_desc:0 "$leader_trait_juryrigger_hive_desc$"
   leader_trait_cw_juryrigger_machine:0 "$leader_trait_juryrigger_machine$"
   leader_trait_cw_juryrigger_machine_desc:0 "$leader_trait_juryrigger_machine_desc$"
-  leader_trait_cw_boarding_parties:0 "Boarding Parties" # icon needed...
+  leader_trait_cw_boarding_parties:0 "Boarding Parties"
   leader_trait_cw_boarding_parties_desc:0 "A true privateer always makes sure that nothing usable is left behind."
   leader_trait_cw_boarding_parties_hive:0 "Boarding Drones"
   leader_trait_cw_boarding_parties_hive_desc:0 "This [owner.GetIndividualName] has developed invasion drones which board enemy ships and capture strategic commanders."
@@ -511,7 +512,7 @@
   leader_trait_cw_pirate_lord:0 "Pirate Lord"
   leader_trait_cw_pirate_lord_desc:0 "Years of skulduggery and outlandish exploits have created a leader who never leaves with less than [root.GetHerHim] came for."
   leader_trait_cw_wolfpack:0 "Wolfpack Tactics" # needs testing + maybe tooltip?...
-  leader_trait_cw_wolfpack_desc:0 "..."
+  leader_trait_cw_wolfpack_desc:0 "This leader knows best how to maneuver smaller ships into and out of formations, strategically hitting weak points of enemy battleships."
 
 # Hacker
   leader_trait_cw_ambassador_ear_to_the_ground: "$leader_trait_ambassador_ear_to_the_ground$"
@@ -529,7 +530,7 @@
   cw_hacker_superior_tech:0 "§EEffects apply while Technologically weaker than a Rival.§!"
   cw_hacker_no_superior_tech:0 "§RThis trait has no effect while not Technologically weaker than a Rival.§!"
   leader_trait_cw_economy_espionage:0 "Industrial Espionage"
-  leader_trait_cw_economy_espionage_desc:0 "..."
+  leader_trait_cw_economy_espionage_desc:0 "This leader is highly experienced in stealing trade secrets."
   leader_trait_cw_economy_espionage_effect:0 "[CW_GetHackerEconomyEffect]"
   cw_hacker_superior_economy:0 "§EEffects apply while Economically weaker than a Rival.§!"
   cw_hacker_no_superior_economy:0 "§RThis trait has no effect while not Economically weaker than a Rival.§!"
@@ -620,8 +621,6 @@
   mod_job_maintenance_drone_per_crime:0 "§G+1§! $job_maintenance_drone$ Job per $VALUE$ Planet £crime£ §YCrime§!"
   mod_job_soldier_per_crime:0 "§G+1§! $job_soldier$ Job per $VALUE$ Planet £crime£ §YCrime§!"
   mod_job_warrior_drone_per_crime:0 "§G+1§! $job_warrior_drone$ Job per $VALUE$ Planet £crime£ §YCrime§!"
-# Tradition Modifiers
-  mod_rivalries_trade_produces_add:0 "£trade£ $trade$ from Rivalries"
 # Enclave Deal Modifiers
   mod_monthly_trades_trade_produces_add:0 "$mod_country_trade_produces_mult$"
   mod_monthly_trades_consumer_goods_produces_add:0 "$mod_country_consumer_goods_produces_mult$"
@@ -630,3 +629,6 @@
   mod_operation_arm_privateers_difficulty_add:0 "$operation_arm_privateers$ Operation Difficulty"
   mod_operation_steal_technology_difficulty_add:0 "$operation_steal_technology$ Operation Difficulty"
   mod_operation_extort_favors_difficulty_add:0 "$operation_extort_favors$ Operation Difficulty"
+# Others
+  mod_pop_category_rulers_trade_produces_add:0 "$trade_with_icon$ per $pop_group_unit$ $RULERS$"
+  mod_rivalries_trade_produces_add:0 "£trade£ $trade$ from Rivalries"

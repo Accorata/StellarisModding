@@ -320,14 +320,14 @@
   cw_enclave.505.c:0 "What else do you offer?" # Main Menu
 # Empire Harassed
   cw_enclave.507.name:0 "..."
-  cw_enclave.507.desc:0 "..."
+  cw_enclave.507.desc:0 "There are some assets of yours that seem quite interesting, ..."
   cw_enclave.507.a:0 "..." # Exit
   cw_enclave.507.b:0 "..."
   cw_enclave.507.b.response:0 "..."
 
 # Supply Weaponry
   cw_enclave.513.name:0 "Supply Weaponry"
-  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which we can help ..."
+  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which you can call upon to raid your foes in this hostile galaxy. ..."
   cw_enclave.513.a:0 "..." 
   cw_enclave.513.b:0 "Never mind." # Main Menu
   cw_enclave.513.c:0 "$GOODBYE$" # Exit
@@ -363,18 +363,19 @@
   cw_enclave.511.b:0 "Never mind." # Main Menu
   cw_enclave.511.c:0 "$GOODBYE$" # Exit
 # Resources Stolen
-  cw_plunder_enclave_culprit:0 "..."
+  cw_plunder_enclave_culprit:0 "While the attack was carried out by local pirates, such a coordinated attack is unlike their types. Our military defense experts attribute the raid to a §YPrivateer Enclave§!, stealing resources for another empire. We must either eliminate the pirates near our territory, eliminate the enclave that caused this, or bribe such a enclave for protection."
+
   # Energy
   cw_enclave.514.name:0 "Energy Convoy Plundered!"
-  cw_enclave.514.desc:0 "While transporting ...$cw_plunder_enclave_culprit$"
+  cw_enclave.514.desc:0 "While transporting energy supplies between planets, a large convoy was attacked by a small, but effective group of pirate ships. While some of the smaller ships managed to escape the attack, the raiders made out with a large supply of critical resources.\n\n$cw_plunder_enclave_culprit$"
   cw_enclave.514.a:0 "Outrageous!"
   # Minerals
   cw_enclave.515.name:0 "Mineral Convoy Plundered!"
-  cw_enclave.515.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.515.desc:0 "While transporting building materials between planets, a large convoy was attacked by a small, but effective group of pirate ships. While some of the smaller ships managed to escape the attack, the raiders made out with a large supply of critical resources.\n\n$cw_plunder_enclave_culprit$"
   cw_enclave.515.a:0 "Outrageous!"
   # Food
   cw_enclave.516.name:0 "Food Convoy Plundered!"
-  cw_enclave.516.desc:0 "...$cw_plunder_enclave_culprit$"
+  cw_enclave.516.desc:0 "While transporting critical food supplies between planets, a large convoy was attacked by a small, but effective group of pirate ships. While some of the smaller ships managed to escape the attack, the raiders made out with a large supply of critical resources.\n\n$cw_plunder_enclave_culprit$"
   cw_enclave.516.a:0 "Outrageous!"
 
 # Bribery

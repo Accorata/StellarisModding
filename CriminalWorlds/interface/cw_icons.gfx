@@ -15,8 +15,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_leader_subclass_official_cw_racketeer_background"
-		# Change below...
-		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_commander_admiral.dds"
+		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_official_cw_racketeer.dds"
 	}
 	# Privateer
 	spriteType = {
@@ -99,6 +98,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_leader_trait_cw_hedonistic_pleasures"
 		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_hedonistic_pleasures.dds"
+	}
+	# Paramilitary Groups
+	spriteType = {
+		name = "GFX_leader_trait_cw_paramilitary_groups"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/cw_paramilitary_groups.dds"
 	}
 	# Enterprising
 	spriteType = {
