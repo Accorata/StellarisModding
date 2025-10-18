@@ -88,7 +88,9 @@ mh_telepathic_outpost = {
 		exists = planet.owner
 		owner = {
 			OR = {
-				is_machine_empire = no
+				is_synthetic_empire = no
+				has_origin = origin_shroud_forged
+				is_chosen_empire = yes
 			}
 		}
 		exists = planet.owner.overlord
