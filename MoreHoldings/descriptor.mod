@@ -1,9 +1,8 @@
-version="3.14.*"
+version="4.1.*"
 tags={
 	"Buildings"
 	"Gameplay"
 }
-name="More Holdings"
-picture="thumbnail.png"
-supported_version="v3.14.1"
+name="[4.1] More Holdings"
+supported_version="v34.1.*"
 remote_file_id="3277756953"

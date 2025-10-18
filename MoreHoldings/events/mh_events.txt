@@ -1,5 +1,5 @@
 namespace = more_holdings
-# Bi-yearly resettle pop to lathe
+# Bi-yearly resettle pops to lathe
 country_event = {
 	id = more_holdings.1
 	hide_window = yes
@@ -13,11 +13,6 @@ country_event = {
 		}
 	}
 	immediate = {
-		capital_scope = {
-			random_owned_pop = {
-				save_event_target_as = abducted_pop
-			}
-		}
 		overlord = {
 			random_owned_planet = {
 				limit = {
@@ -30,9 +25,14 @@ country_event = {
 			limit = {
 				exists = event_target:overlord_lathe
 			}
-			resettle_pop = {
-				pop = event_target:abducted_pop
-				planet = event_target:overlord_lathe
+			capital_scope = {
+				weighted_random_owned_pop_group = {
+					resettle_pop_group = {
+						POP_GROUP = this
+						PLANET = event_target:overlord_lathe
+						AMOUNT = 50
+					}
+				}
 			}
 		}
 	}

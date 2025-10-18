@@ -23,17 +23,16 @@ The list of holdings and their effects is as follows:
   -1.5 Loyalty
 
 [b]Synaptic Packager[/b] (Requires Cosmogenesis AP and can only be built on capital)
-  Resettles one pop from subjects capital to the overlord's Synaptic Lathe every two years.
+  Resettles 50 pops from subjects capital to the overlord's Synaptic Lathe every year.
   -2 Loyalty
 
-[b]Psionic Monastery[/b] (Requires Psi Corps tradition and Subject must not be Gestalt)
+[b]Psionic Monastery[/b] (Requires Psi Corps and Subject must be able to pursue psionic ascension)
   Overlord receieves a -5% shroud delve cooldown
-  Provides 2 Psionic Adept jobs that provide unity and production from jobs (along with inheriting some bonuses from covenants) for the subject
+  Provides 2 Psionic Adept jobs that provide unity and job efficiency (along with inheriting some bonuses from covenants) for the subject and unity for the overlord
   Grants 5% Spiritualist ethics attraction to planet
 
 [b]Interstellar Embassy[/b] (Unavailable for genocidal empires)
   Overlord recieves +10 to Trust Cap and 5% to Trust Growth for all empires
-  Provides 1 Politican job (or Gestalt equivalents)
   +0.25 Loyalty
 
 [b]Mission Holding[/b] (Requires Spiritualist and Unavailable for genocidal empires)
@@ -43,4 +42,5 @@ The list of holdings and their effects is as follows:
 
 [h2] Contact [/h2]
 
-Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately there or ping me on either the [url=https://discord.gg/stellarisofficial]Official Stellaris Discord[/url] or the [url=https://discord.gg/phVF6NXSE5]Stellaris Modding Den[/url].
+Please notify me with any bug reports, suggestions, and/or questions. I’d love all the feedback and the easiest way to contact me is via my discord @Accorata. Feel free to message me privately or check out the "accorata-mods" channel on the [url=https://discord.gg/phVF6NXSE5]Stellaris Modding Den[/url].
+[url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]
