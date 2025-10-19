@@ -219,6 +219,10 @@
   cw_large_privateer_fleet:0 "Large $CW_PRIVATEER$ Fleet"
   cw_large_privateer_fleet_desc:0 "N/A"
 
+## Messages
+  MESSAGE_CW_HACK_TECH_TITLE: "New Technology Stolen"
+  MESSAGE_CW_HACK_TECH_DESC: "Our hacker virus has given us the secrets to another technology. A new research option is available."
+
 ## Decisions
   decision_cw_uplift_slums:0 "Uplift Slums"
   decision_cw_uplift_slums_desc:0 "Given the recent increases in housing, new work can be done to rehabilitate the underdwellers back into our local society."

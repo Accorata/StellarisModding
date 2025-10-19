@@ -230,7 +230,7 @@ country_event = {
 			is_homicidal = no
 			OR = {
 				is_gestalt = no
-				has_valid_civic = civic_machine_servitor # One way to keep those pops happy
+				has_valid_civic = civic_machine_servitor				# One way to keep those pops happy
 				# Obsessive Directives can use CGs but the flavor makes no sense
 			}
 		}
@@ -1703,9 +1703,9 @@ country_event = {
 	# 					}
 	# 					owner = {
 	# 						cw_can_be_harassed = yes
-							# NOT = {
-							# 	is_same_value = root
-							# }
+	# NOT = {
+	# 	is_same_value = root
+	# }
 	# 					}
 	# 				}
 	# 			}
@@ -2481,9 +2481,9 @@ country_event = {
 # 				}
 # 				owner = {
 # 					cw_can_be_harassed = yes
-					# NOT = {
-					# 	is_same_value = root
-					# }
+# NOT = {
+# 	is_same_value = root
+# }
 # 				}
 # 			}
 # 			owner = {
@@ -3922,17 +3922,23 @@ country_event = {
 	# 	has_country_flag = cw_hacker_virus_activated
 	# }
 	immediate = {
-		# every_playable_country = {
-		# 	limit = {
-		# 		has_country_flag = cw_hacker_virus_activate_on_@root
-		# 	}
-		# 	add_tech_progress = {
-		# 		tech = last_increased_tech
-		# 		progress = 0.1
-		# 	}
-		# 	# to do...
-		# 	# Maybe fire a message too... (only if owner doesn't have that tech)
-		# }
+		every_playable_country = {
+			limit = {
+				# has_country_flag = cw_hacker_virus_activate_on_@root
+				can_copy_random_tech_from = {
+					who = root
+				}
+			}
+			copy_random_tech_from = {
+				who = root
+				progress = 0.1
+			}
+			create_message = {
+				type = CW_HACK_TECH
+				localization = MESSAGE_CW_HACK_TECH_DESC
+				days = @toast_message_days
+			}
+		}
 	}
 }
 
@@ -5165,7 +5171,6 @@ country_event = {
 	id = cw_enclave.250
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		any_playable_country = {
 			any_planet_within_border = {
@@ -5185,7 +5190,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_playable_country = {
 			limit = {
@@ -5282,7 +5286,7 @@ country_event = {
 						}
 					}
 					add_resource = {
-    					trade = -1
+						trade = -1
 						mult = value:cw_racketeer_purchase_cost|COST|2500|
 					}
 				}
@@ -5357,7 +5361,7 @@ country_event = {
 						}
 					}
 					add_resource = {
-    					trade = -2
+						trade = -2
 						mult = value:cw_racketeer_purchase_cost|COST|2500|
 					}
 				}
@@ -5432,7 +5436,7 @@ country_event = {
 						}
 					}
 					add_resource = {
-    					trade = -3
+						trade = -3
 						mult = value:cw_racketeer_purchase_cost|COST|2500|
 					}
 				}
@@ -5446,7 +5450,6 @@ country_event = {
 	id = cw_enclave.251
 	hide_window = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -5518,7 +5521,7 @@ country_event = {
 					}
 				}
 				add_resource = {
-    				trade = -1
+					trade = -1
 					mult = value:cw_privateer_purchase_cost|COST|2000|
 				}
 			}
@@ -5526,7 +5529,7 @@ country_event = {
 			10 = {
 				modifier = {
 					factor = 0
-					event_target:cw_criminal_enclave_country = { 
+					event_target:cw_criminal_enclave_country = {
 						OR = {
 							has_country_flag = cw_raid_cooldown
 							NOT = {
@@ -5627,7 +5630,7 @@ country_event = {
 						DEAL_LENGTH = 360
 					}
 					add_resource = {
-    					trade = -1
+						trade = -1
 						mult = value:cw_privateer_purchase_cost|COST|2500|
 					}
 				}
@@ -5641,7 +5644,6 @@ country_event = {
 	id = cw_enclave.252
 	hide_window = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -5669,7 +5671,7 @@ country_event = {
 			}
 		}
 		add_resource = {
-    		trade = -1
+			trade = -1
 			mult = value:cw_hacker_purchase_cost|COST|@cw_hack_cost|
 		}
 		event_target:cw_rival_to_hack = {

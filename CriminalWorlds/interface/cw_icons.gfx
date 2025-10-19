@@ -321,4 +321,9 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	## MESSAGES --------------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_message_cw_hack_tech"
+		texturefile = "gfx/interface/icons/message/message_cw_hack_tech.dds"
+	}
 }

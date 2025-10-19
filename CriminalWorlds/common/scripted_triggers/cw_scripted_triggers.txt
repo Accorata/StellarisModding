@@ -1,5 +1,8 @@
 cw_has_stealing_ship_dlc = {
-	has_grand_archive_dlc = yes
+	OR = {
+		has_grand_archive_dlc = yes
+		has_shroud_dlc = yes
+	}
 }
 
 cw_has_confusion_dlc = {

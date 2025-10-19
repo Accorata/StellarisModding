@@ -267,7 +267,7 @@
 
 # Bribery
   cw_enclave.409.name:0 "Bribe Racketeers" 
-  cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can protect you from our slave trade and that of other racketeer enclaves, but beyond them, you will be on your own.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
+  cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can protect you from our slave trade and other racketeer enclaves, but beyond that, you will be on your own.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
@@ -296,7 +296,7 @@
 
 # Harass Rivals Menu
   cw_enclave.503.name:0 "Harass Rivals"
-  cw_enclave.503.desc:0 "..."
+  cw_enclave.503.desc:0 "What sort of pirates would we be if we couldn't raid our enemies? We are born to be free, born to engage in the thrill of battle. Our fleets may not be as mighty as the empires of this galaxy, but we make up for it in cunning and bravado! Point us at your enemies, and let us show them what we're worth. Who do you wish for us to attack?"
   cw_enclave.503.a:0 "§YThe [cw_pirate_target_1.GetName].§!"
   cw_enclave.503.b:0 "§YThe [cw_pirate_target_2.GetName].§!"
   cw_enclave.503.c:0 "§YThe [cw_pirate_target_3.GetName].§!"
@@ -305,13 +305,13 @@
   cw_enclave.503.f:0 "$GOODBYE$" # Exit
 # Harass Confirmation
   cw_enclave.504.name:0 "$cw_enclave.503.name$"
-  cw_enclave.504.desc:0 "..."
+  cw_enclave.504.desc:0 "...Our fleets mobilize as we speak"
   cw_enclave.504.a:0 "..."
-  cw_enclave.pirate_harass:0 "...\n$opinion20$"
+  cw_enclave.pirate_harass:0 "[cw_criminal_enclave_country.GetName] Fleets will attack border systems of [cw_pirate_confirmed_target.GetName].\n$opinion20$"
   cw_enclave.504.b:0 "We have a different target in mind."
   cw_enclave.504.c:0 "Let us reconsider." # Main Menu
   cw_enclave.504.d:0 "$GOODBYE$" # Exit
-  cw_enclave.504.response:0 "Our fleets mobilize as we speak."
+  cw_enclave.504.response:0 "Glory waits for no one!"
 # Harass Denied
   cw_enclave.505.name:0 "$cw_enclave.503.name$"
   cw_enclave.505.desc:0 "We hate to turn down a target, but the §Y[cw_pirate_confirmed_target.GetName]§! is off limits. Honor prevents us from engaging with such a foe. We hope you have someone else to go after instead."

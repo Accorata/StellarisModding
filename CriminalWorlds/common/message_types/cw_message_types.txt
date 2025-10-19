@@ -1,0 +1,9 @@
+message_type = {
+	key = "CW_HACK_TECH"
+	icon = "GFX_message_cw_hack_tech"
+	icon_frame = 1
+	sound = "notification"
+	ping = "ping_notification_yellow"
+	default_toast = yes
+	category = science
+}
