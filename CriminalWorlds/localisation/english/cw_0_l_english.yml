@@ -177,7 +177,7 @@
   cw_lvl_3:0 "Maxed Criminal Enclave"
   cw_lvl_3_desc:0 "This enclave has completed 2 situations which upgrade its defenses and unlock new diplomacy options."
   cw_criminal_elite:0 "Criminal Elite"
-  cw_criminal_elite_desc:0 "Increases the Chances of Pool Leaders having Criminal Traits."
+  cw_criminal_elite_tt:0 "Increased Chance of Pool Leaders having §YCriminal Traits§!."
   cw_enclave_smuggled_alloys:0 "Smuggled Arms Trade"
   cw_enclave_smuggled_alloys_desc:0 "Shipments of smuggled weapons are being routinely sent to our weapons facilities from Criminal Racketeers."
   cw_enclave_smuggled_alloys_2:0 "$cw_enclave_smuggled_alloys$"
@@ -199,9 +199,9 @@
   cw_enclave_smuggled_consumer_goods_5:0 "$cw_enclave_smuggled_consumer_goods$"
   cw_enclave_smuggled_consumer_goods_5_desc:0 "$cw_enclave_smuggled_consumer_goods_desc$"
   cw_bribed_racketeers:0 "Bribed $CW_RACKETEER_PLURAL$"
-  cw_bribed_racketeers_desc:0 "Guarantees protection from $CW_RACKETEER$ Enclaves."
+  cw_bribed_racketeers_tt:0 "Guarantees protection from §Y$CW_RACKETEER$ Enclaves§!."
   cw_bribed_privateers:0 "Bribed $CW_PRIVATEER_PLURAL$"
-  cw_bribed_privateers_desc:0 "Guarantees protection from $CW_PRIVATEER$ Enclaves."
+  cw_bribed_privateers_tt:0 "Guarantees protection from §Y$CW_PRIVATEER$ Enclaves§!."
   cw_skeleton_key:0 "Skeleton Key"
   cw_skeleton_key_desc:0 "Provided by criminal hackers, these numerous security codes and backdoors provide an important espionage advantage."
   cw_military_hacked:0 "Military Logistics Hacked"
@@ -211,9 +211,10 @@
   cw_politics_hacked:0 "Political Secrets Hacked"
   cw_politics_hacked_desc:0 "Under payment by our rivals, rogue hacker guilds have revealed confidential secrets to the public, sowing distruct among our people. Our public relations teams are in full swing, but only time will tell if the damage can be repaired."
   cw_purchased_hacker_virus:0 "$CW_HACKER$ Virus Package"
+  cw_purchased_hacker_virus_tt:0 "§G+1§! Hacker Virus"
   cw_purchased_hacker_virus_desc:0 "We've purchased a technology virus from a $CW_HACKER$ Enclave which will steal tech from another empire once we complete an espionage operation against them."
-  cw_bribed_hackers:0 "Bribed $CW_HACKER_PLURAL$" # needs a bribery event
-  cw_bribed_hackers_desc:0 "Guarantees protection from $CW_HACKER$ Enclaves."
+  cw_bribed_hackers:0 "Bribed $CW_HACKER_PLURAL$"
+  cw_bribed_hackers_tt:0 "Guarantees protection from §Y$CW_HACKER$ Enclaves§!."
 
 ## Fleet Modifiers
   cw_large_privateer_fleet:0 "Large $CW_PRIVATEER$ Fleet"
@@ -295,11 +296,13 @@
   agenda_cw_criminality_finish:0 "$council_agenda_cw_criminality_name$ $agenda_ref$"
   agenda_cw_criminality_finish_desc:0 "$council_agenda_cw_criminality_desc$"
   council_agenda_cw_deviancy_name:0 "Relax Protocols"
-  council_agenda_cw_deviancy_desc:0 "By allowing for greater deviations from the hive, ..." # loosen the enforcement of ...
+  council_agenda_cw_deviancy_desc:0 "By allowing for greater deviations from the hive, ..."
   agenda_cw_deviancy_finish:0 "$council_agenda_cw_deviancy_name$ $agenda_ref$"
   agenda_cw_deviancy_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
-  agenda_cw_deviancy_machine_finish:0 "$council_agenda_cw_deviancy_name$"
-  agenda_cw_deviancy_machine_finish_desc:0 "..."
+  council_agenda_cw_deviancy_machine_name:0 "$council_agenda_cw_deviancy_name$"
+  council_agenda_cw_deviancy_machine_desc:0 "..."
+  agenda_cw_deviancy_machine_finish:0 "$council_agenda_cw_deviancy_machine_name$"
+  agenda_cw_deviancy_machine_finish_desc:0 "$council_agenda_cw_deviancy_machine_desc$"
 
 ## Policies
   policy_cw_smuggler_policy:0 "Criminal Smuggling"
@@ -322,7 +325,7 @@
   civic_cw_invisible_shareholders:0 "Invisible Shareholders"
   civic_cw_invisible_shareholders_desc:0 "The elites who control this megacorporation prefer to stay away from the public sphere. ..."
   councilor_cw_invisible_shareholders:0 "Majority Holder"
-  councilor_cw_invisible_shareholders_desc:0 "The $TITLE$ represents the interests of the hidden elites, ..."
+  councilor_cw_invisible_shareholders_desc:0 "The $TITLE$ represents the interests of the hidden elites, orchestrating the will of the company in their names."
   civic_cw_prison_state:0 "Prison State"
   civic_cw_prison_state_desc:0 "This megacorporation heavily relies on prison labor, often relaxing the standards of incarceration to increase the number of imprisoned laborors."
   civic_cw_prison_state_effects:0 "- Grants Technology: ['concept_cw_tech_penal_colonies', £society_research£ $tech_penal_colonies$]"
@@ -341,11 +344,24 @@
   # NAME_White_flower_species_adj:0 "Aeruo"
   # NAME_White_flower_ship:0 "Dancing Needle"
   # NAME_White_flower_ship_design:0 "Needle"
-# Pirate Names
+# Racketeer Names
+  CW_Shadow_Cabal:0 "Shadow Cabal"
+  CW_Undercity_Conglomerate:0 "Undercity Conglomerate"
+  CW_Dark_Branch:0 "Dark Branch"
+  CW_Slaver_Cartel:0 "Slaver Cartel"
+  CW_High_Families:0 "High Families"
+# Privateer Names
   CW_Soul_Liberators:0 "Soul Liberators"
-  CW_Lips_of_Death:0 "Lips of Death"
-  CW_The_Forgotten:0 "The Forgotten"
-  CW_Final_Dance:0 "Final Dance"
+  CW_Glory_Riders:0 "Glory_Riders"
+  CW_Free_Peoples_of_Space:0 "Free Peoples of Space"
+# Hacker Names
+  CW_Cyberlords:0 "Cyberlords"
+  CW_Netrunners:0 "Netrunners"
+  # CW_Administrator_Zero:0 "Administrator Zero"
+  CW_Null_Source:0 "Null Source"
+  CW_Positronic_Brain:0 "Positronic Brain"
+  CW_Terror_of_the_Net:0 "Terror of the Net"
+  CW_Cyber_Mind:0 "Cyber Mind"
 
 ## Situations
   situation_cw_enclave_upgrade: "Expanding Operations"
@@ -449,7 +465,7 @@
   leader_trait_cw_restricted_cybernetics_machine_desc:0 "This unit has discovered modifications which provide deviant drones with additional protections against reintegration."
   leader_trait_cw_restricted_cybernetics_hive:0 "$leader_trait_cw_restricted_cybernetics$"
   leader_trait_cw_restricted_cybernetics_hive_desc:0 "This [owner.GetIndividualName] creates untested cybernetic modifications which grant deviant drones increased combat capabilities."
-  leader_trait_cw_paramilitary_groups:0 "Paramilitary Groups" #icon needed...
+  leader_trait_cw_paramilitary_groups:0 "Paramilitary Groups"
   leader_trait_cw_paramilitary_groups_desc:0 "This leader is highly capable of supplying their criminal operations with the armed forces they require."
   leader_trait_cw_paramilitary_groups_machine:0 "Deviant Weaponry"
   leader_trait_cw_paramilitary_groups_machine_desc:0 "This units deviant drones are well equipped for modern warfare."
@@ -577,6 +593,8 @@
   leader_trait_cw_darknet_connections_2_tooltip:0 "$EMPIRE_EFFECTS_TXT$\n$t$- Purchases from §H$CW_HACKER$ Enclaves§!: §G-35%§!"
   leader_trait_cw_ill_gotten_gains:0 "Ill-Gotten Gains"
   leader_trait_cw_ill_gotten_gains_desc:0 "This leaders wealth and power came about through unsightly means, and they continue to run such operations."
+  leader_trait_cw_righteous:0 "$leader_trait_righteous$"
+  leader_trait_cw_righteous_desc:0 "$leader_trait_righteous_desc$"
 
 # Hacker Gestalt
   leader_trait_cw_hacker_node:0 "Hacker Protocols"
@@ -590,7 +608,6 @@
   operation_cw_hack_fleet:0 "Hack Fleet"
   operation_cw_hack_fleet_desc:0 "..."
   operation_cw_hack_fleet_on_success:0 "Upon entering its next battle, all ships in the target fleet will be confused for around §Y30§! days, causing each ship to attack one other instead of the enemy."
-  # need a on_success_no_confusion effect and tooltip ???
 
 ## Modifier Localisations
 # Criminal Production Modifiers

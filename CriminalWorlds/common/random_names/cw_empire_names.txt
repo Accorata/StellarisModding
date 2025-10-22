@@ -1,25 +1,31 @@
-# Expanded Pirate Name List
+# Racketeer Name List
 empire_name_parts_list = {
-	key = "pirate_names"
+	key = "cw_racketeer_names"
+	parts = {
+		CW_Shadow_Cabal = 10
+		CW_Undercity_Conglomerate = 10
+		CW_Dark_Branch = 10
+		CW_Slaver_Cartel = 10
+		CW_High_Families = 10
+	}
+}
+
+# Privateer Name List - Includes Some Pirate Names
+empire_name_parts_list = {
+	key = "cw_privateer_names"
 	parts = {
 		Peoples_Navy = 10
 		Black_Guild = 10
 		Death_Merchants = 10
-		Skullcrushers = 10
 		Fortune_Seekers = 10
-		Skull_Clan = 10
 		Red_Corsairs = 10
-		Blood_Brigade = 10
 		Fleet_of_the_Damned = 10
 		Star_Raiders = 10
 		Furious_Freebooters = 10
 		Dread_Fiends = 10
 		Bloody_Cutthroats = 10
-		Blood_Clan = 10
 		Storm_Lords = 10
-		Cursed_Ones = 10
 		Outcast_Armada = 10
-		Merry_Marauders = 10
 		Void_Roamers = 10
 		Crimson_Commando = 10
 		Doom_Pact = 10
@@ -32,55 +38,46 @@ empire_name_parts_list = {
 		Lost_Fleet = 10
 		Brazen_Band = 10
 		Ghost_Flotilla = 10
-		Blood_Host = 10
-		Stellar_Marauders = 10
 		Fallen_Legion = 10
-		Screaming_Marauders = 10
 		Fell_Company = 10
 		Black_Flotilla = 10
 		Void_Serpents = 10
 		Silver_Fangs = 10
 		Steel_Claws = 10
-		Sons_of_Wrath = 10
 		Iron_Talons = 10
 		Phantom_Armada = 10
-		Dread_Suns = 10
 		White_Reavers = 10
 		Vengeful_Legion = 10
 		Red_Captaincy = 10
-		Immortal_Cabal = 10
 		Sons_of_the_Night = 10
-		Death_Cabal = 10
 		Star_Reapers = 10
 		Void_Pact = 10
-		Screaming_Demons = 10
-		Fallen_Ones = 10
 		Void_Hunters = 10
 		Death_Pact = 10
 		Vagabonds = 10
-		Tormentors = 10
-		Fire_Reavers = 10
-		Cold_Ones = 10
 		Brotherhood_of_the_Void = 10
-		Blood_Companions = 10
-		Astral_Hunters = 10
-		Bleeding_Corsairs = 10
-		Smiling_Disciples = 10
-		Feral_Grin = 10
 		Outriders = 10
 		Cabal_of_the_Captains = 10
-		Desolators = 10
-		Star_Wretches = 10
 		Fallen_Stars = 10
 		Wild_Riders = 10
 		Free_Admiralty = 10
 		Burning_Brigands = 10
-		Grim_Souls = 10
-		# New Ones
-		CW_Soul_Liberators = 0
-		CW_Lips_of_Death = 0
-		CW_The_Forgotten = 0
-		CW_Final_Dance = 0
+		CW_Soul_Liberators = 10
+		CW_Glory_Riders = 10
+		CW_Free_Peoples_of_Space = 10
+	}
+}
+
+# Hacker Name List
+empire_name_parts_list = {
+	key = "cw_hacker_names"
+	parts = {
+		CW_Cyberlords = 10
+		CW_Netrunners = 10
+		CW_Null_Source = 10
+		CW_Positronic_Brain = 10
+		CW_Terror_of_the_Net = 10
+		CW_Cyber_Mind = 10
 	}
 }
 
@@ -91,8 +88,35 @@ empire_name_format = {
 		modifier = {
 			add = 100
 			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_criminal_enclave_racketeers
 		}
 	}
-	format = "{<pirate_names>}"
-	noun = "{<pirate_names>}"
+	format = "{<cw_racketeer_names>}"
+	noun = "{<cw_racketeer_names>}"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_criminal_enclave_privateers
+		}
+	}
+	format = "{<cw_privateer_names>}"
+	noun = "{<cw_privateer_names>}"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_country_type = cw_criminal_enclave
+			has_country_flag = cw_criminal_enclave_hackers
+		}
+	}
+	format = "{<cw_hacker_names>}"
+	noun = "{<cw_hacker_names>}"
 }

@@ -23,6 +23,46 @@ leader_trait_cw_medallion_blessed = {
 	randomized = no
 }
 
+leader_trait_cw_righteous = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_righteous"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		planet_crime_add = -25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+		}
+		planet_crime_no_happiness_add = -25
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		planet_crime_add = -10
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+		}
+		planet_crime_no_happiness_add = -10
+	}
+	leader_class = {
+		scientist
+	}
+	initial = no
+	randomized = no
+}
+
 # Underworld Connections
 leader_trait_cw_underworld_connections = {
 	inline_script = {

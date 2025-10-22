@@ -94,7 +94,7 @@
   criminal_worlds.49.a:0 "Wonderful."
   opinion_cw_freed_slaves:0 "Freed Slaves"
 # Radical Media
-  criminal_worlds.50.name:0 "..."
+  criminal_worlds.50.name:0 "Demagoguery Throughout [Root.GetName]"
 	criminal_worlds.50.desc:0 "..."
   criminal_worlds.50.a:0 "..."
 
@@ -129,27 +129,27 @@
 
 ## Espionage Events ##
 # Fleet Gains Confusion
-  criminal_worlds.102.name:0 "[fleet name...] hacked..."
-  criminal_worlds.102.desc:0 "Upon engagement with the enemy fleet, all ships within the §Y[name...]§! have begun to fire at each other. Our admirals describe a terrifying picture: all weapon systems have been locked to fire and sensor data has been scrambled to prevent distinction between friend and foe. ... ...(sensor confusion)... around 30 days before..."
+  criminal_worlds.102.name:0 "[fromfrom.GetName] Hacked!"
+  criminal_worlds.102.desc:0 "Upon engagement with the enemy fleet, all ships within the §Y[fromfrom.GetName]§! have begun to fire at each other. Our admirals describe a terrifying picture: all weapon systems have been locked to fire and sensor data has been scrambled to prevent distinction between friend and foe. Entire ship systems are on autopilot and have completely locked out any new inputs.\n\nSuch an attack is likely the result of a cyberattack from another nation, though the skill required to manufacture and deliver such a virus is extraordinary. Our cybersecurity experts believe it may take §Y30§! days before our software can regain full control over the fleet."
 # Hack Fleet - Step 1
-  criminal_worlds.103.name:0 "..."
-  criminal_worlds.103.desc:0 "..."
+  criminal_worlds.103.name:0 "Identifying Target"
+  criminal_worlds.103.desc:0 "In order to hack an enemy fleet, we must find a ship which we are able to inject malware into. Once attached to a ship it will spread to the rest of the fleet, but we must be careful in selecting the initial target. Amongst other things, the target must be sufficiatently vulnerable to viruses and must be recieving numerous messages for ours to slip in. Our operatives have been combing through our intel to make this crucial choice, and finally, an opportunity has presented itself."
 # Hack Fleet - Step 2
-  criminal_worlds.104.name:0 "..."
+  criminal_worlds.104.name:0 "Bypassing Firewall..."
   criminal_worlds.104.desc:0 "..."
 # Hack Fleet - Step 3
-  criminal_worlds.105.name:0 "..."
+  criminal_worlds.105.name:0 "Transmitting File..."
   criminal_worlds.105.desc:0 "..."
 # Hack Fleet - Success
   criminal_worlds.106.name:0 "Enemy Fleet Hacked"
-  criminal_worlds.106.desc:0 "Our custom malware package has been deployed inside an enemy ship's system  within the §Y[fleet name...]§!. Every time the ship computers communicate with each other for navigation data, there is a small chance the virus will be attached to the transimission. Given the rapid communications between modern warcraft, within moments the virus will have found its way into every ship computer in the fleet. Upon the fleets next naval involvement, the virus will activate, rewritting sensor data to remove the distinctions between enemy and ally and wreak havoc until thoroughly purged by antiviral programs."
+  criminal_worlds.106.desc:0 "Our custom malware package has been deployed inside an enemy ship's system within the §Y[from.target.GetName]§!. Every time the ship computers communicate with each other for navigation data, there is a small chance the virus will be attached to the transimission. Given the rapid communications between modern warcraft, within moments the virus will have found its way into every ship computer in the fleet. Upon the fleets next naval involvement, the virus will activate, rewritting sensor data to remove the distinctions between enemy and ally and wreak havoc until thoroughly purged by antiviral programs."
 
 ## Criminal Enclaves ##
   cw_opinion30:0 "Opinion: £opinion£ §G+30§!"
 # Construction ship  - x3 by Crime Lord Deal
   cw_enclave.1.name:0 "Criminal Constructions" # Temp
   cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
-  cw_enclave.1.a:0 "Moniter the Situation." #change
+  cw_enclave.1.a:0 "Moniter the Situation." #change...
 # Outpost built
   cw_enclave.2.name:0 "Criminal Outpost"
   cw_enclave.2.desc:0 "..."
@@ -157,22 +157,22 @@
 
 # Criminal Enclave has New Offers
   cw_enclave.301.name:0 "New Offers Available"
-  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations here at [name]. ... We have new offers you may wish to check out..."
+  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations here at [cw_criminal_enclave_country.GetName]. ... We have new offers you may wish to check out..."
   cw_enclave.301.a:0 "..." # check them out
   cw_enclave.301.b:0 "$GOODBYE$" # Exit
 
 # Criminal Enclave Destroyed
   # Normal
-  cw_enclave.211.name:0 "..."
-  cw_enclave.211.desc:0 "..."
+  cw_enclave.211.name:0 "Criminal Enclave Destroyed"
+  cw_enclave.211.desc:0 "Fleets from the [fromfrom.GetName] have succesfully attacked the [from.GetName]'s stronghold, causing the enclave to collapse. All trades to and from the [from.GetName] have ceased, and they will no longer cause problems for our nation. Criminals continue to exist throughout the galaxy, but they have lost one of their main holdings today."
   cw_enclave.211.a:0 "Such is the nature of the galaxy."
   # Killer
-  cw_enclave.214.name:0 "Criminal Enclave Destroyed"
-  cw_enclave.214.desc:0 "..."
+  cw_enclave.214.name:0 "Criminal Enclave Defeated"
+  cw_enclave.214.desc:0 "Our fleets have destroyed the [from.GetName]'s main center of operations, scattering the enclave's members throughout the galaxy. They will no longer terrorize the galaxy under that name. Today is a great day for all the law abiding nations."
   cw_enclave.214.a:0 "Mission success."
   # Host
-  cw_enclave.213.name:0 "..."
-  cw_enclave.213.desc:0 "..."
+  cw_enclave.213.name:0 "$cw_enclave.211.name$"
+  cw_enclave.213.desc:0 "$cw_enclave.211.desc$"
   cw_enclave.213.a:0 "Good riddance."
   cw_enclave.213.b:0 "Encourage development of another enclave."
 
@@ -210,7 +210,7 @@
   cw_enclave.400.f:0 "Never mind." # Main Menu
   cw_enclave.400.g:0 "$GOODBYE$" # Exit
   cw_enclave.401.name:0 "Purchase Illegal Drugs"
-  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keep your peoples' needs met.  you'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
+  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keep your peoples' needs met. You'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
   cw_enclave.401.a:0 "$cw_enclave.400.a$" # 2
   cw_enclave.401.b:0 "$cw_enclave.400.b$" # 5
   cw_enclave.401.c:0 "$cw_enclave.400.c$" # 10
@@ -267,7 +267,7 @@
 
 # Bribery
   cw_enclave.409.name:0 "Bribe Racketeers" 
-  cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can protect you from our slave trade and other racketeer enclaves, but beyond that, you will be on your own.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
+  cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can only shield you from our slave trade and other racketeer enclaves.Beyond that, you will be on your own so don't come to us if your own people form their criminal organizations.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
@@ -278,7 +278,7 @@
 ## Privateers
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
-  cw_enclave.303.desc:0 "Welcome, welcome, ..."
+  cw_enclave.303.desc:0 "Welcome, welcome. We are the [cw_criminal_enclave_country.GetName], the sailors of the   ..."
   cw_enclave.303.a:0 "We'd like you to §YHarass our Rivals§!."
   cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
   cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
@@ -305,8 +305,8 @@
   cw_enclave.503.f:0 "$GOODBYE$" # Exit
 # Harass Confirmation
   cw_enclave.504.name:0 "$cw_enclave.503.name$"
-  cw_enclave.504.desc:0 "...Our fleets mobilize as we speak"
-  cw_enclave.504.a:0 "..."
+  cw_enclave.504.desc:0 "...Our fleets mobilize as we speak."
+  cw_enclave.504.a:0 "Give them a good fight."
   cw_enclave.pirate_harass:0 "[cw_criminal_enclave_country.GetName] Fleets will attack border systems of [cw_pirate_confirmed_target.GetName].\n$opinion20$"
   cw_enclave.504.b:0 "We have a different target in mind."
   cw_enclave.504.c:0 "Let us reconsider." # Main Menu
@@ -319,11 +319,11 @@
   cw_enclave.505.b:0 "We have another target in mind."
   cw_enclave.505.c:0 "What else do you offer?" # Main Menu
 # Empire Harassed
-  cw_enclave.507.name:0 "..."
-  cw_enclave.507.desc:0 "There are some assets of yours that seem quite interesting, ..."
-  cw_enclave.507.a:0 "..." # Exit
-  cw_enclave.507.b:0 "..."
-  cw_enclave.507.b.response:0 "..."
+  cw_enclave.507.name:0 "Privateer Raids"
+  cw_enclave.507.desc:0 "One of your rivals has made it quite clear that you would prove a worthy target. Any opportunity to showcase our prowess in battle is welcomed, especially when paid to do so. Additionally, your empire does possess some beautiful treasures.\n\nAs the [cw_criminal_enclave_country.GetName], we are bound by duty to inform you of our raid beforehand so that our battle can be a fair representation of each side. Our fleets set sail at dawn. For glory!"
+  cw_enclave.507.a:0 "Our fleets will easily dispell your attack." # Exit
+  cw_enclave.507.b:0 "Who hired you?"
+  cw_enclave.507.b.response:0 "Honor does not permit us to share that information."
 
 # Supply Weaponry
   cw_enclave.513.name:0 "Supply Weaponry"
@@ -334,7 +334,7 @@
 
 # Leader Purchase 
   cw_enclave.509.name:0 "Hire Privateer"
-  cw_enclave.509.desc:0 "..."
+  cw_enclave.509.desc:0 "... We will only let them go if they can prove their merits to [Root.GetSpeciesAdj]-kind. ..."
   cw_enclave.509.a:0 "..." 
   cw_privateer_leader_explanation:0 "We will hire a Level §Y4§! Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
   cw_enclave.509.b:0 "Never mind." # Main Menu
@@ -478,7 +478,7 @@
 
 # Tech Virus
   cw_enclave.611.name:0 "Purchase Virus" 
-  cw_enclave.611.desc:0 "Our hackers here at the [cw_criminal_enclave_country.GetName] greatly value your patronage, and without it, we would never have been able to build our operations to their current levels.\n\nAs such, we are proud to present you with our newest creation: a virus that will steal your rivals' technological secrets as they obtain them. With this active in another empire, every technology that they research will grant you §Y10%§! progress in that technology.\n\nHowever, installing the virus isn't as easy. Preliminary software, which as an extra gift will be included with your purchase, will also need to be installed beforehand through the completion of any espionage action. This will deactivate antagonist antiviral protections, and allow our software to do its beautiful work for five years before being renewed."
+  cw_enclave.611.desc:0 "Our hackers here at the [cw_criminal_enclave_country.GetName] greatly value your patronage, and without it, we would never have been able to build our operations to their current levels.\n\nAs such, we are proud to present you with our newest creation: a virus that will steal your rivals' technological secrets as they obtain them. With this active in another empire, every time they reseach a new technology this will grant you §Y10%§! progress in a random technology they know.\n\nHowever, installing the virus isn't as easy. Preliminary software, which as an extra gift will be included with your purchase, will also need to be installed beforehand through the completion of any espionage action. This will deactivate antagonist antiviral protections, and allow our software to do its beautiful work for five years before being renewed."
   cw_enclave.611.a:0 "We will take the virus." 
   cw_enclave.611.response:0 "Wonderful. We must add that the virus is a one-time use, but we will happily provide more for your credits."
   cw_enclave.611.b:0 "Never mind." # Main Menu
@@ -488,7 +488,7 @@
   cw_enclave.613.desc:0 "Upon the completion of our espionage actions against the §Y[FromFrom.GetName]§!, our spymaster reports that the virus we purchased from the Hacker Enclave is ready to be activated. Our operatives were able to install the preliminary software, as per the instructions, which should take down any antiviral protections against the viral package.\n\nAll that remains to be done is to transmit the virus or to save it for another target, as once we use this we will need to purchase another copy from the Hackers. The antiviral software will only be down for a moment, so we must act now if we wish to act at all."
   cw_enclave.613.a:0 "Transmit the package." 
   cw_enclave.613.b:0 "Save it for another target."
-  cw_hacker_virus_effects:0 "For §Y5§! Years we will receive §Y10%§! Progress in every Technology that §Y[FromFrom.GetName]§! Researches."
+  cw_hacker_virus_effects:0 "For §Y5§! Years whenever §Y[FromFrom.GetName]§! Researches a new Technology, we will receive §Y10%§! Progress in a random Technology."
 
 # Bribery 
   cw_enclave.615.name:0 "Bribe Hackers" 

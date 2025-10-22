@@ -1,11 +1,10 @@
-[h1] Criminal Worlds [/h1]
+[h1] Criminal Worlds [/h1] (more to do...)
 
-Across Science Fiction there are numerous examples of worlds that fall to criminal organizations: Tatooine for example. Here scum and villany are abundant and authorities struggle to keep the law in check. While Stellaris has a host of criminal events that try to build this atmosphere, I've always felt some missing immersion. This helps to cover some of those gaps, increasing a whole host of events that can occur, from crime organizations building fleets to corrupting your enforcers.
+Across Science Fiction there are numerous examples of worlds that are controlled by criminal organizations: Tatooine, for example. On these planets, scum and villany are abundant, and authorities struggle to keep the law in check. While Stellaris has a host of criminal events that try to build this atmosphere, I've always felt they lack immersion. This helps to cover those gaps by adding a whole host of events that can occur, from crime organizations building fleets to corrupting your enforcers.
 
-This mod does make crime more punishing as there are more events that can cause problems and they are more likely, however it also adds a number of positive benefits/events that can make having a crime world or two not the worst thing and maybe worth considering. Afterall, a number of existing governments use the criminal organizations within them to their advantage. ([i]Maybe the local mercenaries might come in handy in this next war[/i])
+This mod does make crime more punishing as there are more events that can cause problems and they are more likely. However, it also adds a number of positive benefits/events that can make having a crime world or two maybe worth considering. Afterall, a number of existing governments use the criminal organizations within them to their advantage. ([i]Maybe the local mercenaries might come in handy in this next war[/i])
 
-The mod is currently only available in English and German (thanks NeXon!).
-(translators welcome)
+The mod is currently only available in English. (translators welcome)
 
 [h2] Compatibility [/h2]
 

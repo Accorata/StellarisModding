@@ -173,7 +173,7 @@ cw_criminal_world_4 = {
 }
 
 cw_criminal_world_5 = {
-	pop_cat_criminal_political_power = 3	#to be tested...
+	pop_cat_criminal_political_power = 3
 	planet_jobs_produces_mult = -0.75
 	planet_jobs_upkeep_mult = -0.75
 	planet_pops_upkeep_mult = -0.75
@@ -313,23 +313,23 @@ cw_lvl_3 = {
 }
 
 cw_purchased_hacker_virus = {
-	# tooltip...
+	custom_tooltip = cw_purchased_hacker_virus_tt
 }
 
 cw_bribed_racketeers = {
-	# tooltip...
+	custom_tooltip = cw_bribed_racketeers_tt
 }
 
 cw_bribed_privateers = {
-	# tooltip...
+	custom_tooltip = cw_bribed_privateers_tt
 }
 
 cw_bribed_hackers = {
-	# tooltip...
+	custom_tooltip = cw_bribed_hackers_tt
 }
 
 cw_criminal_elite = {
-	# tooltip...
+	custom_tooltip = cw_criminal_elite_tt
 }
 
 cw_stealth_specialization_modifier = {
