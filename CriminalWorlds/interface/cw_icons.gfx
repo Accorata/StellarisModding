@@ -296,6 +296,10 @@ spriteTypes = {
 		name = "GFX_council_agenda_icon_cw_deviancy"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
 	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_cw_deviancy_machine"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_cw_criminality.dds"
+	}
 	## RELICS ---------------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_relic_cw_medallion"

@@ -8,11 +8,9 @@
 @diff_t7 = 11
 @diff_t8 = 12
 @diff_t9 = 13
-
 # this = operation
 # from = operation target
 operation_cw_hack_fleet = {
-	target = none
 	categories = {
 		op_cat_sabotage
 		op_cat_military
@@ -29,12 +27,10 @@ operation_cw_hack_fleet = {
 			energy = 10
 		}
 	}
-
-	spy_power_cost = 0	#45
+	spy_power_cost = 0	#45...
 	target = fleet
-
 	potential = {
-		# + has hacker destiny trait on council - leader_trait_cw_deadly_saboteur
+		# + has hacker destiny trait on council - leader_trait_cw_deadly_saboteur...
 		target = {
 			owner = {
 				is_country_type = default
@@ -48,19 +44,19 @@ operation_cw_hack_fleet = {
 		}
 	}
 	stage = {
-		# ...
+		# Identifying Target
 		difficulty = @diff_t5
 		icon = GFX_espionage_chapter_icon_motion
 		event = criminal_worlds.103
 	}
 	stage = {
-		# ...
+		# Bypassing Firewall
 		difficulty = @diff_t5
 		icon = GFX_espionage_chapter_icon_target
 		event = criminal_worlds.104
 	}
 	stage = {
-		# Result: Virus Package Installed
+		# Trasmitting File
 		difficulty = @diff_t5
 		icon = GFX_espionage_chapter_icon_success
 		event = criminal_worlds.105

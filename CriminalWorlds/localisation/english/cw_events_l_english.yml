@@ -135,30 +135,31 @@
   criminal_worlds.103.name:0 "Identifying Target"
   criminal_worlds.103.desc:0 "In order to hack an enemy fleet, we must find a ship which we are able to inject malware into. Once attached to a ship it will spread to the rest of the fleet, but we must be careful in selecting the initial target. Amongst other things, the target must be sufficiatently vulnerable to viruses and must be recieving numerous messages for ours to slip in. Our operatives have been combing through our intel to make this crucial choice, and finally, an opportunity has presented itself."
 # Hack Fleet - Step 2
-  criminal_worlds.104.name:0 "Bypassing Firewall..."
+  criminal_worlds.104.name:0 "Bypassing Firewall"
   criminal_worlds.104.desc:0 "..."
 # Hack Fleet - Step 3
-  criminal_worlds.105.name:0 "Transmitting File..."
-  criminal_worlds.105.desc:0 "..."
+  criminal_worlds.105.name:0 "Transmitting File"
+  criminal_worlds.105.desc:0 "With the target ship's defenses finally down, we now can strike. Our operatives have located themselves within reasonable distance of the fleet to prevent the transmition from being immediately flagged. A small civilian ship is now close enough that any messages sent will appear like normal navigational data. We're ready to transmit."
 # Hack Fleet - Success
   criminal_worlds.106.name:0 "Enemy Fleet Hacked"
   criminal_worlds.106.desc:0 "Our custom malware package has been deployed inside an enemy ship's system within the §Y[from.target.GetName]§!. Every time the ship computers communicate with each other for navigation data, there is a small chance the virus will be attached to the transimission. Given the rapid communications between modern warcraft, within moments the virus will have found its way into every ship computer in the fleet. Upon the fleets next naval involvement, the virus will activate, rewritting sensor data to remove the distinctions between enemy and ally and wreak havoc until thoroughly purged by antiviral programs."
 
 ## Criminal Enclaves ##
+  CW_NEVERMIND:0 "Never mind."
   cw_opinion30:0 "Opinion: £opinion£ §G+30§!"
 # Construction ship  - x3 by Crime Lord Deal
   cw_enclave.1.name:0 "Criminal Constructions" # Temp
-  cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown and the situation should be monitered further."
+  cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown, and the situation should be monitered further. ..."
   cw_enclave.1.a:0 "Moniter the Situation." #change...
 # Outpost built
   cw_enclave.2.name:0 "Criminal Outpost"
-  cw_enclave.2.desc:0 "..."
+  cw_enclave.2.desc:0 "The criminal enterprise's construction is complete. The system is now home to a large station orbiting [Root.GetName]. Within this station lies a new enclave, formed from the criminals of the galaxy. They state that this station only exists for these new operations and do not wish to lay any claim to the system. Additionally, the enclave offers to provide any nation their services, for a cost."
   cw_enclave.2.a:0 "Open Comms."
 
 # Criminal Enclave has New Offers
   cw_enclave.301.name:0 "New Offers Available"
   cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations here at [cw_criminal_enclave_country.GetName]. ... We have new offers you may wish to check out..."
-  cw_enclave.301.a:0 "..." # check them out
+  cw_enclave.301.a:0 "Let's see what might be of interest."
   cw_enclave.301.b:0 "$GOODBYE$" # Exit
 
 # Criminal Enclave Destroyed
@@ -178,8 +179,8 @@
 
 # Hacker Aura Announcement
   cw_enclave.201.name:0 "Unresponsive Weaponry!"
-  cw_enclave.201.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't extreme and our fleet should still prove effective, even if less so than we originally anticipated."
-  cw_enclave.201.a:0 "Destroy them and put an end to this."
+  cw_enclave.201.desc:0 "Upon attacking the Hacker Enclave, our fleet was immediately the subject of numerous cyber attacks. We're receiving reports of shield fluctuations and jammed weapons. However, overall the impacts aren't too extreme. Our fleet should still prove effective, even if less so than we originally anticipated."
+  cw_enclave.201.a:0 "Destroy them, and put an end to this."
 
 ## Racketeers
 # Main Menu
@@ -207,17 +208,17 @@
   cw_enclave.400.d:0 "We'll take a large amount." # 10
   cw_enclave.400.e:0 "We'll take the lot." # 15
   cw_enclave.400.response:0 "Pleasure doing business. We're sure you'll come again."
-  cw_enclave.400.f:0 "Never mind." # Main Menu
+  cw_enclave.400.f:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.400.g:0 "$GOODBYE$" # Exit
   cw_enclave.401.name:0 "Purchase Illegal Drugs"
-  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keep your peoples' needs met. You'd be surprised what one can make with a few exotic gases mixed with tiyanki excretion. ..."
+  cw_enclave.401.desc:0 "You may be wondering what a large supply of illicit substances would help with. Well, for the right price, we'll supply various underlings within your empire and help keep your peoples' needs met. You'd be surprised what one can make with a few exotic gases mixed with Tiyanki excretion. Or maybe you'd prefer distilled zro with ...? Either way, we're willing to provide anything you need."
   cw_enclave.401.a:0 "$cw_enclave.400.a$" # 2
   cw_enclave.401.b:0 "$cw_enclave.400.b$" # 5
   cw_enclave.401.c:0 "$cw_enclave.400.c$" # 10
   cw_enclave.401.d:0 "$cw_enclave.400.d$" # 20
   cw_enclave.401.e:0 "$cw_enclave.400.e$" # 30
   cw_enclave.401.response:0 "$cw_enclave.400.response$"
-  cw_enclave.401.f:0 "Never mind." # Main Menu
+  cw_enclave.401.f:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.401.g:0 "$GOODBYE$" # Exit
 # Renew Trade Deals
   cw_enclave.403.name:0 "Renew Arms Purchase"
@@ -246,7 +247,7 @@
   cw_enclave.402.desc:0 "You're in luck. One of our skilled officials who specializes in managing criminal organizations is willing to work for you. Their specialties are not what you may be accustomed too, but they gaurantee results. You must ensure that they'll have control over their work and will not be bothered by your [root.CW_GetEnforcerName_Plural_Lowercase] who will only interfere. Of course, we will only let them go for a price."
   cw_enclave.402.a:0 "Your racketeer will get what they need." 
   cw_racketeer_leader_explanation:0 "We will hire a Level §Y4§! Official with the §Y$subclass_cw_official_racketeer$§! Subclass.\n$opinion20$"
-  cw_enclave.402.b:0 "Never mind." # Main Menu
+  cw_enclave.402.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.402.c:0 "$GOODBYE$" # Exit
 
 # Purchase Slaves
@@ -258,7 +259,7 @@
   cw_enclave.407.b.tooltip:0 "§Y200§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion15$"
   cw_enclave.407.c:0 "We'll take as much as you can get." # 300
   cw_enclave.407.c.tooltip:0 "§Y300§! Pops from [cw_enslaved_planet.GetName] will be resettled to our capital.\n$opinion20$"
-  cw_enclave.407.d:0 "Never mind." # Main Menu
+  cw_enclave.407.d:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.407.e:0 "$GOODBYE$" # Exit
 # Enslaved Pops Event
   cw_enclave.408.name:0 "Pops Enslaved on [cw_enslaved_planet.GetName]" 
@@ -270,15 +271,15 @@
   cw_enclave.409.desc:0 "Well, here you are. Protection from our work is highly sought after. Now, we can only shield you from our slave trade and other racketeer enclaves.Beyond that, you will be on your own so don't come to us if your own people form their criminal organizations.\n\nYou must understand that slave trade is quite profitable, and we don't give up our picking grounds freely. This will cost you."
   cw_enclave.bribery_reduced:0 "That said, your navy is impressive. We'd prefer to smooth things over with a mutually profitable deal so we'll only ask for 75% of what we would've normally."
   cw_enclave.409.desc.medium:0 "$cw_enclave.409.desc$ $cw_enclave.bribery_reduced$"
-  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ ..."
+  cw_enclave.409.desc.strong:0 "$cw_enclave.409.desc$ That said, our operations are mainly planetary in nature. When it comes to fleets, ours are not nearly as numerous as yours. Having an ally with your naval strength would be a useful asset. In order to encourage that this deal goes through, we'll offer our protection at half price."
   cw_enclave.racketeer_bribery:0 "Only because we keep our people safe."
-  cw_enclave.409.a:0 "Never mind." # Main Menu
+  cw_enclave.409.a:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.409.b:0 "We don't negotiate with criminals." # Exit
 
 ## Privateers
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
-  cw_enclave.303.desc:0 "Welcome, welcome. We are the [cw_criminal_enclave_country.GetName], the sailors of the   ..."
+  cw_enclave.303.desc:0 "Welcome, welcome. We are the [cw_criminal_enclave_country.GetName], sailors of the void and warriors of the brave stars. ..."
   cw_enclave.303.a:0 "We'd like you to §YHarass our Rivals§!."
   cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
   cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
@@ -301,11 +302,11 @@
   cw_enclave.503.b:0 "§YThe [cw_pirate_target_2.GetName].§!"
   cw_enclave.503.c:0 "§YThe [cw_pirate_target_3.GetName].§!"
   cw_enclave.503.d:0 "§YThe [cw_pirate_target_4.GetName].§!"
-  cw_enclave.503.e:0 "Actually, never mind." # Main Menu
+  cw_enclave.503.e:0 "Actually, $CW_NEVERMIND$" # Main Menu
   cw_enclave.503.f:0 "$GOODBYE$" # Exit
 # Harass Confirmation
   cw_enclave.504.name:0 "$cw_enclave.503.name$"
-  cw_enclave.504.desc:0 "...Our fleets mobilize as we speak."
+  cw_enclave.504.desc:0 "You wish for us to harass the [cw_pirate_confirmed_target.GetName]? Very well. Our fleets mobilize as we speak. We will meet them in their so-called territory, and show them what our steel is capable of. Space belongs to us all."
   cw_enclave.504.a:0 "Give them a good fight."
   cw_enclave.pirate_harass:0 "[cw_criminal_enclave_country.GetName] Fleets will attack border systems of [cw_pirate_confirmed_target.GetName].\n$opinion20$"
   cw_enclave.504.b:0 "We have a different target in mind."
@@ -327,9 +328,9 @@
 
 # Supply Weaponry
   cw_enclave.513.name:0 "Supply Weaponry"
-  cw_enclave.513.desc:0 "...\n\nSuch supplies will also aid in the development of our navy, one which you can call upon to raid your foes in this hostile galaxy. ..."
-  cw_enclave.513.a:0 "..." 
-  cw_enclave.513.b:0 "Never mind." # Main Menu
+  cw_enclave.513.desc:0 "Raiding sustains much of our upkeep, but without prefabricated military components, one can only go so far. Your empire manufactures these in abundance, and we would well compensate you for what we need.\n\nSuch supplies will also aid in the development of our navy, one which you can call upon to raid your foes in this hostile galaxy. Our brave admirals live for the thrill of battle and would be honored to be able to prove their skills."
+  cw_enclave.513.a:0 "We can spare some." 
+  cw_enclave.513.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.513.c:0 "$GOODBYE$" # Exit
 
 # Leader Purchase 
@@ -337,7 +338,7 @@
   cw_enclave.509.desc:0 "... We will only let them go if they can prove their merits to [Root.GetSpeciesAdj]-kind. ..."
   cw_enclave.509.a:0 "..." 
   cw_privateer_leader_explanation:0 "We will hire a Level §Y4§! Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
-  cw_enclave.509.b:0 "Never mind." # Main Menu
+  cw_enclave.509.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.509.c:0 "$GOODBYE$" # Exit
 
 # Purchase Stolen Specimens (With Grand Archive)
@@ -352,7 +353,7 @@
   # cw_enclave.510.c:0 "REPLACE_ME" 
   # cw_steals_xeno_geology:0 REPLACE_ME"
   # cw_enclave.510.c.no_xeno_geology:0 "We will obtain a §YXeno Geology§! Specimen from a random empire."
-  # cw_enclave.510.d:0 "Never mind." # Main Menu
+  # cw_enclave.510.d:0 "$CW_NEVERMIND$" # Main Menu
   # cw_enclave.510.e:0 "$GOODBYE$" # Exit
 # Purchase Stolen Resources
   cw_enclave.511.name:0 "Purchase Stolen Resources"
@@ -360,7 +361,7 @@
   cw_enclave.511.a:0 "Raid an Energy Convoy." # Energy
   cw_enclave.511.b:0 "Raid a Mineral Convoy." # Minerals
   cw_enclave.511.c:0 "Raid a Food Convoy." # Food
-  cw_enclave.511.b:0 "Never mind." # Main Menu
+  cw_enclave.511.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.511.c:0 "$GOODBYE$" # Exit
 # Resources Stolen
   cw_plunder_enclave_culprit:0 "While the attack was carried out by local pirates, such a coordinated attack is unlike their types. Our military defense experts attribute the raid to a §YPrivateer Enclave§!, stealing resources for another empire. We must either eliminate the pirates near our territory, eliminate the enclave that caused this, or bribe such a enclave for protection."
@@ -386,7 +387,7 @@
   cw_enclave.517.desc.warlord:0 "Our fellow pirate, you do not belong kneeling at our feet. You have no need to fear us. However lawless you may see us, we'd like to believe we respects the universal laws of honor. The code of brigandry embraces all who turn to its way, and the great warlords of the galaxy are no exception."
   cw_enclave.privateer_bribery:0 "You better keep this promise."
   cw_enclave.517.warlord:0 "To the free sailors of space!"
-  cw_enclave.517.a:0 "Never mind." # Main Menu
+  cw_enclave.517.a:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.517.b:0 "We don't negotiate with criminals." # Exit
 
 ## Hackers
@@ -426,7 +427,7 @@
   cw_enclave.602.b:0 "§YThe [cw_hack_target_2.GetName].§!"
   cw_enclave.602.c:0 "§YThe [cw_hack_target_3.GetName].§!"
   cw_enclave.602.d:0 "§YThe [cw_hack_target_4.GetName].§!"
-  cw_enclave.602.e:0 "Actually, never mind." # Main Menu
+  cw_enclave.602.e:0 "Actually, $CW_NEVERMIND$" # Main Menu
   cw_enclave.602.f:0 "$GOODBYE$" # Exit
 # Hack Selection
   cw_enclave.603.name:0 "$cw_enclave.602.name$"
@@ -467,13 +468,13 @@
   cw_enclave.608.desc:0 "Our hackers here are extremely talented, but such talent does warrant a large price. Under the assumption that they'll be well paid and appropriately taken care of, there are a number of us who are willing to serve your empire. Furthermore, us hackers are not known to be kind to authority and our methods are different from those with 'proper' training. However, if you're willing to meet these accomadations they will be of great help."
   cw_enclave.608.a:0 "We welcome your hacker to our team." 
   cw_hacker_leader_explanation:0 "We will hire a Level §Y4§! Scientist with the §Y$subclass_cw_scientist_hacker$§! Subclass.\n$opinion20$"
-  cw_enclave.608.b:0 "Never mind." # Main Menu
+  cw_enclave.608.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.608.c:0 "$GOODBYE$" # Exit
 # Integrate Methods
   cw_enclave.616.name:0 "Integrate Methods" 
   cw_enclave.616.desc:0 "An unusual request. But then again, we're not used to dealing with your gestalt types. Loners by nature we are, preferring to meet only anonymously in cyberspace. However, if paid appropriately, we're willing to assemble a data package of our various techniques. These will necessarily be limited, as we can't give our most precious secrets away, but will provide you with strengthened espionage abilities."
   cw_enclave.616.a:0 "We'll take the data."
-  cw_enclave.616.b:0 "Never mind." # Main Menu
+  cw_enclave.616.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.616.c:0 "$GOODBYE$" # Exit
 
 # Tech Virus
@@ -481,7 +482,7 @@
   cw_enclave.611.desc:0 "Our hackers here at the [cw_criminal_enclave_country.GetName] greatly value your patronage, and without it, we would never have been able to build our operations to their current levels.\n\nAs such, we are proud to present you with our newest creation: a virus that will steal your rivals' technological secrets as they obtain them. With this active in another empire, every time they reseach a new technology this will grant you §Y10%§! progress in a random technology they know.\n\nHowever, installing the virus isn't as easy. Preliminary software, which as an extra gift will be included with your purchase, will also need to be installed beforehand through the completion of any espionage action. This will deactivate antagonist antiviral protections, and allow our software to do its beautiful work for five years before being renewed."
   cw_enclave.611.a:0 "We will take the virus." 
   cw_enclave.611.response:0 "Wonderful. We must add that the virus is a one-time use, but we will happily provide more for your credits."
-  cw_enclave.611.b:0 "Never mind." # Main Menu
+  cw_enclave.611.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.611.c:0 "$GOODBYE$" # Exit
 # Activate Virus
   cw_enclave.613.name:0 "Hacker Virus Primed" 
@@ -496,5 +497,5 @@
   cw_enclave.615.desc.medium:0 "$cw_enclave.615.desc$ $cw_enclave.bribery_reduced$"
   cw_enclave.615.desc.strong:0 "$cw_enclave.615.desc$ That said, we are also highly aware of the strength of your fleets. While cyberspace is ours to command, our physical stronghold is vulnerable. We'd greatly prefer to avoid such a confrontation and will discount this deal appropriately."
   cw_enclave.hacker_bribery:0 "As you wish."
-  cw_enclave.615.a:0 "Never mind." # Main Menu
+  cw_enclave.615.a:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.615.b:0 "We don't negotiate with criminals." # Exit

@@ -77,7 +77,7 @@ country_event = {
 	}
 }
 
-# New Offers (post upgrading) - not firing...
+# New Offers (After Upgrading)
 country_event = {
 	id = cw_enclave.299
 	hide_window = yes
@@ -3918,13 +3918,13 @@ country_event = {
 	id = cw_enclave.614
 	hide_window = yes
 	is_triggered_only = yes
-	# trigger = {
-	# 	has_country_flag = cw_hacker_virus_activated
-	# }
+	trigger = {
+		has_country_flag = cw_hacker_virus_activated
+	}
 	immediate = {
 		every_playable_country = {
 			limit = {
-				# has_country_flag = cw_hacker_virus_activate_on_@root
+				has_country_flag = cw_hacker_virus_activate_on_@root
 				can_copy_random_tech_from = {
 					who = root
 				}
@@ -4070,7 +4070,7 @@ planet_event = {
 		event_target:target_planet_for_building = {
 			planet_event = {
 				id = cw_enclave.2
-				days = 10				# 180
+				days = 10				# 180 ...
 			}
 		}
 		# Remove encouragement if it exists
@@ -4090,7 +4090,7 @@ planet_event = {
 	id = cw_enclave.2
 	title = cw_enclave.2.name
 	desc = cw_enclave.2.desc
-	picture = GFX_evt_bribery	# To be changed
+	picture = GFX_evt_bribery	# To be changed...
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes

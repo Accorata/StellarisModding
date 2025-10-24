@@ -11,9 +11,6 @@ planet_event = {
 	pre_triggers = {
 		has_owner = yes
 	}
-	trigger = {
-		has_modifier = criminal_underworld
-	}
 	immediate = {
 		add_modifier = {
 			modifier = cw_corruption_1
@@ -47,7 +44,6 @@ planet_event = {
 		has_owner = yes
 	}
 	trigger = {
-		has_modifier = criminal_underworld
 		has_modifier = cw_corruption_1
 	}
 	immediate = {
@@ -85,7 +81,6 @@ planet_event = {
 		has_owner = yes
 	}
 	trigger = {
-		has_modifier = criminal_underworld
 		has_modifier = cw_corruption_2
 	}
 	immediate = {
@@ -123,9 +118,6 @@ planet_event = {
 	pre_triggers = {
 		has_owner = yes
 	}
-	trigger = {
-		has_modifier = criminal_underworld
-	}
 	immediate = {
 		add_modifier = {
 			modifier = cw_illegal_freeports
@@ -158,9 +150,6 @@ planet_event = {
 	is_triggered_only = yes
 	pre_triggers = {
 		has_owner = yes
-	}
-	trigger = {
-		has_modifier = criminal_underworld
 	}
 	immediate = {
 		add_modifier = {
@@ -195,7 +184,6 @@ planet_event = {
 		has_owner = yes
 	}
 	trigger = {
-		has_modifier = criminal_underworld
 		has_modifier = cw_criminal_shipyards
 	}
 	immediate = {

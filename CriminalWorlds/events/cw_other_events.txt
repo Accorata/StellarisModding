@@ -40,7 +40,9 @@ country_event = {
 					5 = {
 						modifier = {
 							factor = 5
-							has_modifier = cw_criminal_elite
+							owner = {
+								has_modifier = cw_criminal_elite
+							}
 						}
 						add_trait = {
 							trait = leader_trait_cw_underworld_connections
@@ -82,7 +84,9 @@ country_event = {
 					5 = {
 						modifier = {
 							factor = 5
-							has_modifier = cw_criminal_elite
+							owner = {
+								has_modifier = cw_criminal_elite
+							}
 						}
 						add_trait = {
 							trait = leader_trait_cw_raider_connections
@@ -124,7 +128,9 @@ country_event = {
 					5 = {
 						modifier = {
 							factor = 5
-							has_modifier = cw_criminal_elite
+							owner = {
+								has_modifier = cw_criminal_elite
+							}
 						}
 						add_trait = {
 							trait = leader_trait_cw_darknet_connections
@@ -141,7 +147,9 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_modifier = cw_criminal_elite
+				owner = {
+					has_modifier = cw_criminal_elite
+				}
 			}
 			from = {
 				locked_random_list = {

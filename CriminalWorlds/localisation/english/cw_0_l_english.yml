@@ -482,8 +482,8 @@
   leader_trait_cw_arbiter_desc:0 "$leader_trait_arbiter_desc$"
   leader_trait_cw_criminal_enterprise:0 "Enterprising"
   leader_trait_cw_criminal_enterprise_desc:0 "This leader has proven to be extremely talented at running organized crime, and the numbers speak for themselves."
-  leader_trait_cw_criminal_enterprise_hive_desc:0 "This [owner.GetIndividualName] has proven to be extremely talented at running deviant drones, and the numbers speak for themselves."
-  leader_trait_cw_criminal_enterprise_machine_desc:0 "This unit has proven to be extremely talented at running corrupt drones, and the numbers speak for themselves."
+  leader_trait_cw_criminal_enterprise_hive_desc:0 "This [owner.GetIndividualName] has proven to be extremely talented at running deviant drones, and the output speaks for itself."
+  leader_trait_cw_criminal_enterprise_machine_desc:0 "This unit has proven to be extremely talented at running corrupt drones, and the output speaks for itself."
 
 # Privateer
   leader_trait_cw_corsair:0 "$leader_trait_corsair$"
@@ -492,6 +492,7 @@
   leader_trait_cw_corsair_hive_desc:0 "$leader_trait_corsair_hive_desc$"
   leader_trait_cw_corsair_machine:0 "$leader_trait_corsair_machine$"
   leader_trait_cw_corsair_machine_desc:0 "$leader_trait_corsair_machine_desc$"
+  leader_trait_cw_corsair_2_effect:0 "$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_energy$: §G+$@trait_corsair_2_amt$§!" # Same as Vanilla Corsair trait except this one doesn't display incorrectly
   leader_trait_cw_juryrigger:0 "$leader_trait_juryrigger$"
   leader_trait_cw_juryrigger_desc:0 "$leader_trait_juryrigger_desc$"
   leader_trait_cw_juryrigger_hive:0 "$leader_trait_juryrigger_hive$"
@@ -530,9 +531,10 @@
   leader_trait_cw_guerilla_tactics:0 "$leader_trait_guerilla_tactics$"
   leader_trait_cw_guerilla_tactics_desc:0 "$leader_trait_guerilla_tactics_desc$"
   leader_trait_cw_pirate_lord:0 "Pirate Lord"
-  leader_trait_cw_pirate_lord_desc:0 "Years of skulduggery and outlandish exploits have created a leader who never leaves with less than [root.GetHerHim] came for."
-  leader_trait_cw_wolfpack:0 "Wolfpack Tactics" # needs testing + maybe tooltip?...
+  leader_trait_cw_pirate_lord_desc:0 "Years of skulduggery and outlandish exploits have created a leader who never leaves with less than [Root.GetHeShe] came for."
+  leader_trait_cw_wolfpack:0 "Wolfpack Tactics" # needs tooltip...
   leader_trait_cw_wolfpack_desc:0 "This leader knows best how to maneuver smaller ships into and out of formations, strategically hitting weak points of enemy battleships."
+  leader_trait_cw_wolfpack_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$For Every Ship in Fleet:\n$tt$- Ship Weapon Damage: §G+1%§!"
 
 # Hacker
   leader_trait_cw_ambassador_ear_to_the_ground: "$leader_trait_ambassador_ear_to_the_ground$"
@@ -570,7 +572,7 @@
   leader_trait_cw_spymaster:0 "$leader_trait_spymaster$"
   leader_trait_cw_spymaster_desc:0 "$leader_trait_spymaster_desc$"
   leader_trait_cw_deadly_saboteur:0 "Deadly Saboteur"
-  leader_trait_cw_deadly_saboteur_desc:0 "..."
+  leader_trait_cw_deadly_saboteur_desc:0 "This hacker develops extremely advanced viruses with the potential to cripple enemy fleets if we can deliver them."
   leader_trait_cw_deadly_saboteur_tooltip:0 "$EMPIRE_EFFECTS_TXT$\n$t$§HUnlocks Espionage Operation:§! $operation_cw_hack_fleet$" # make game concept out of operation
   leader_trait_cw_web_of_connections:0 "Master Puppeteer"
   leader_trait_cw_web_of_connections_desc:0 "This leader is an expert of manipulating cyberspace to turn even the most loyal citizens into ammunition for our cause."
@@ -606,8 +608,8 @@
 
 ## Espionage Operations
   operation_cw_hack_fleet:0 "Hack Fleet"
-  operation_cw_hack_fleet_desc:0 "..."
-  operation_cw_hack_fleet_on_success:0 "Upon entering its next battle, all ships in the target fleet will be confused for around §Y30§! days, causing each ship to attack one other instead of the enemy."
+  operation_cw_hack_fleet_desc:0 "A exceptional hacker on our council has developed a destructive ship virus that will cause an enemy fleet to turn on itself. Our operatives will need to deploy these viruses into enemy ships without detection."
+  operation_cw_hack_fleet_on_success:0 "$IF_SUCCESSFUL|E$\nUpon entering its next battle, all ships in the target fleet will be confused for around §Y30§! days, causing every ship to attack each other instead of the enemy."
 
 ## Modifier Localisations
 # Criminal Production Modifiers
@@ -629,7 +631,7 @@
   mod_pop_category_deviant_drones_upkeep_mult:0 "Upkeep from $CW_D_DRONES$"
   # Corrupt Drones
   mod_pop_category_corrupt_drones_alloys_produces_add:0 "$alloys_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
-  mod_pop_category_ccorrupt_drones_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
+  mod_pop_category_corrupt_drones_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
   mod_pop_category_corrupt_drones_physics_research_produces_add:0 "$physics_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
   mod_pop_category_corrupt_drones_society_research_produces_add:0 "$society_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"
   mod_pop_category_corrupt_drones_engineering_research_produces_add:0 "$engineering_research_with_icon$ per $pop_group_unit$ $CW_C_DRONES$"

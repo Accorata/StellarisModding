@@ -839,7 +839,7 @@ leader_trait_cw_corsair_2 = {
 	leader_class = {
 		commander
 	}
-	custom_tooltip_with_modifiers = leader_trait_corsair_2_effect
+	custom_tooltip_with_modifiers = leader_trait_cw_corsair_2_effect
 	opposites = {
 		leader_trait_corsair
 		leader_trait_corsair_2
@@ -1333,6 +1333,7 @@ leader_trait_cw_wolfpack = {
 		ship_weapon_damage = 0.01
 		mult = value:cw_num_ships_fleet
 	}
+	custom_tooltip = leader_trait_cw_wolfpack_effect
 	leader_class = {
 		commander
 	}
