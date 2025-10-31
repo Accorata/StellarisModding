@@ -18,7 +18,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -54,7 +54,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -91,7 +91,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -125,7 +125,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -158,7 +158,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -194,7 +194,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -508,7 +508,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -540,7 +540,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 180
+			days = 360
 		}
 	}
 	option = {
@@ -569,7 +569,7 @@ planet_event = {
 		set_global_flag = cw_encountered_black_market_relic
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 60
+			days = 120
 		}
 	}
 	option = {
@@ -810,7 +810,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -850,7 +850,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -891,7 +891,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -932,7 +932,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -973,7 +973,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -1014,7 +1014,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 		set_timed_planet_flag = {
 			flag = cw_recent_criminal_world_increase
@@ -1050,7 +1050,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 	}
 	option = {
@@ -1172,7 +1172,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 	}
 	option = {
@@ -1431,7 +1431,7 @@ planet_event = {
 		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
-			days = 360
+			days = 720
 		}
 	}
 	option = {
