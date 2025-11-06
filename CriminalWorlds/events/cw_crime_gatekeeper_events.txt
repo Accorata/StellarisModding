@@ -405,7 +405,10 @@ country_event = {
 				10 = {
 					modifier = {
 						factor = 0
-						has_modifier = cw_radical_media
+						OR = {
+							has_modifier = cw_radical_media
+							has_modifier = cw_suppressed_radical_media
+						}
 					}
 					planet_event = {
 						id = criminal_worlds.50
@@ -525,7 +528,6 @@ event = {
 	id = cw_enclave.7
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		years_passed >= 20
 		any_country = {
@@ -543,7 +545,6 @@ event = {
 			}
 		}
 	}
-
 	immediate = {
 		every_country = {
 			limit = {
@@ -562,7 +563,8 @@ event = {
 			}
 			random_list = {
 				# Nothing
-				10 = {}
+				10 = {
+				}
 				# Try to hire Racketeers
 				0 = {
 					modifier = {

@@ -95,8 +95,9 @@
   opinion_cw_freed_slaves:0 "Freed Slaves"
 # Radical Media
   criminal_worlds.50.name:0 "Demagoguery Throughout [Root.GetName]"
-	criminal_worlds.50.desc:0 "..."
-  criminal_worlds.50.a:0 "..."
+	criminal_worlds.50.desc:0 "Unsavory actors have begun to spout unfounded conspiracies across our media. These demagogues rely on the growing discontent on [Root.GetName], as well as its lack of current regulative enforcers. Some form of re-eduction or rehabilitation will be necessary to prevent this slander and its terrible influence."
+  criminal_worlds.50.a:0 "Unfortunate."
+  criminal_worlds.50.b:0 "Suppress their Speech."
 
 ## Anomalies ##
 # Criminal Stockpile Anomaly
@@ -136,7 +137,7 @@
   criminal_worlds.103.desc:0 "In order to hack an enemy fleet, we must find a ship which we are able to inject malware into. Once attached to a ship it will spread to the rest of the fleet, but we must be careful in selecting the initial target. Amongst other things, the target must be sufficiently vulnerable to viruses and must be receiving numerous messages for ours to slip in. Our operatives have been combing through our intel to make this crucial choice, and finally, an opportunity has presented itself."
 # Hack Fleet - Step 2
   criminal_worlds.104.name:0 "Bypassing Firewall"
-  criminal_worlds.104.desc:0 "..."
+  criminal_worlds.104.desc:0 "While we have identified a promising weak point in the fleet, a ship which should be vulnerable to our virus, every modern warship is equipped with heavy security clearances. Rather than brute force hacking the target and risking giving away our intentions, operatives will obtain up-to-date codes from military bases."
 # Hack Fleet - Step 3
   criminal_worlds.105.name:0 "Transmitting File"
   criminal_worlds.105.desc:0 "With the target ship's defenses finally down, we now can strike. Our operatives have located themselves within a reasonable distance of the fleet to prevent the transmission from being immediately flagged. A small civilian ship is now close enough that any messages sent will appear like normal navigational data. We're ready to transmit."
@@ -365,7 +366,6 @@
   cw_enclave.511.c:0 "$GOODBYE$" # Exit
 # Resources Stolen
   cw_plunder_enclave_culprit:0 "While the attack was carried out by local pirates, such a coordinated attack is unlike their types. Our military defense experts attribute the raid to a §YPrivateer Enclave§!, stealing resources for another empire. We must either eliminate the pirates near our territory, eliminate the enclave that caused this, or bribe such an enclave for protection."
-
   # Energy
   cw_enclave.514.name:0 "Energy Convoy Plundered!"
   cw_enclave.514.desc:0 "While transporting energy supplies between planets, a large convoy was attacked by a small, but effective group of pirate ships. While some of the smaller ships managed to escape the attack, the raiders made out with a large supply of critical resources.\n\n$cw_plunder_enclave_culprit$"

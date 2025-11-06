@@ -1,8 +1,12 @@
 civic_cw_invisible_shareholders = {
 	potential = {
 		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
 		}
 	}
 	possible = {
@@ -54,8 +58,12 @@ civic_cw_invisible_shareholders = {
 civic_cw_prison_state = {
 	potential = {
 		OR = {
-			authority = { value = auth_corporate }
-			civics = { value = civic_galactic_sovereign_megacorp }
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
 		}
 		ethics = {
 			NOT = {
@@ -87,13 +95,13 @@ civic_cw_prison_state = {
 	}
 	description = civic_cw_prison_state_effects
 	modifier = {
-		# ... - maybe converts into different planet with similar but different districts?
-		# or just worker output
 		planet_jobs_worker_produces_mult = 0.1
-		planet_enforcers_unity_produces_add = 1 # 4.0?
-		planet_telepaths_unity_produces_add = 1 # 4.0?
+		planet_enforcers_unity_produces_add = 1
+		planet_telepaths_unity_produces_add = 1
 	}
-	random_weight = { base = @civic_default_random_weight }
+	random_weight = {
+		base = @civic_default_random_weight
+	}
 	ai_weight = {
 		base = @ai_civic_default_base_weight
 		modifier = {

@@ -1425,10 +1425,6 @@ planet_event = {
 		has_owner = yes
 	}
 	immediate = {
-		add_modifier = {
-			modifier = cw_radical_media
-			days = 3600
-		}
 		set_timed_planet_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
@@ -1436,11 +1432,24 @@ planet_event = {
 	}
 	option = {
 		name = criminal_worlds.50.a
-		tooltip = {
-			add_modifier = {
-				modifier = cw_radical_media
-				days = 3600
+		add_modifier = {
+			modifier = cw_radical_media
+			days = 3600
+		}
+	}
+	option = {
+		name = criminal_worlds.50.b
+		trigger = {
+			owner = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
 			}
+		}
+		add_modifier = {
+			modifier = cw_suppressed_radical_media
+			days = 3600
 		}
 	}
 }

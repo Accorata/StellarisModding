@@ -293,28 +293,25 @@ country_event = {
 		}
 		name = cw_enclave.302.d
 		allow = {
-			# Check how this works / displays...
-			AND = {
-				custom_tooltip = {
-					fail_text = cw_enclave.302.d.slave_planet
-					any_playable_country = {
-						any_planet_within_border = {
-							cw_is_criminal_planet = yes
-							owner = {
-								cw_can_be_enslaved = yes
-								NOT = {
-									is_same_value = root
-								}
+			custom_tooltip = {
+				fail_text = cw_enclave.302.d.slave_planet
+				any_playable_country = {
+					any_planet_within_border = {
+						cw_is_criminal_planet = yes
+						owner = {
+							cw_can_be_enslaved = yes
+							NOT = {
+								is_same_value = root
 							}
 						}
 					}
 				}
-				custom_tooltip = {
-					fail_text = cw_enclave.302.d.cooldown
-					event_target:cw_criminal_enclave_country = {
-						NOT = {
-							has_country_flag = cw_slave_cooldown
-						}
+			}
+			custom_tooltip = {
+				fail_text = cw_enclave.302.d.cooldown
+				event_target:cw_criminal_enclave_country = {
+					NOT = {
+						has_country_flag = cw_slave_cooldown
 					}
 				}
 			}
@@ -1134,15 +1131,24 @@ country_event = {
 	# Hire Leader
 	option = {
 		name = cw_enclave.402.a
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = trade
-			AMOUNT = value:cw_racketeer_purchase_cost|COST|1000|
+		allow = {
+			resource_stockpile_compare = {
+					resource = trade
+					value >= value:cw_racketeer_purchase_cost|COST|1000|
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= value:cw_racketeer_purchase_cost|COST|50|
+				}
+			}
 		}
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = influence
-			AMOUNT = value:cw_racketeer_purchase_cost|COST|50|
+		add_resource = {
+			trade = -1
+			mult = value:cw_racketeer_purchase_cost|COST|1000|
+		}
+		add_resource = {
+			influence = -1
+			mult = value:cw_racketeer_purchase_cost|COST|50|
 		}
 		custom_tooltip = cw_racketeer_leader_explanation
 		hidden_effect = {
@@ -1681,7 +1687,6 @@ country_event = {
 	# 	}
 	# 	name = cw_enclave.303.d
 	# 	allow = {
-	# 		AND = {
 	# 			custom_tooltip = {
 	# 				fail_text = cw_enclave.303.d.no_stealing_system
 	# 				any_system = {
@@ -1717,7 +1722,6 @@ country_event = {
 	# 					}
 	# 				}
 	# 			}
-	# 		}
 	# 	}
 	# 	hidden_effect = {
 	# 		country_event = {
@@ -1736,40 +1740,38 @@ country_event = {
 		}
 		name = cw_enclave.303.d.no_archive
 		allow = {
-			AND = {
-				custom_tooltip = {
-					fail_text = cw_enclave.303.d.no_raidable_system
-					any_system = {
-						has_owner = yes
-						# Check for pirates
-						OR = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.d.no_raidable_system
+				any_system = {
+					has_owner = yes
+					# Check for pirates
+					OR = {
+						any_fleet_in_system = {
+							owner = {
+								is_country_type = pirate
+							}
+						}
+						any_neighbor_system = {
 							any_fleet_in_system = {
 								owner = {
 									is_country_type = pirate
 								}
 							}
-							any_neighbor_system = {
-								any_fleet_in_system = {
-									owner = {
-										is_country_type = pirate
-									}
-								}
-							}
 						}
-						owner = {
-							cw_can_be_harassed = yes
-							NOT = {
-								is_same_value = root
-							}
+					}
+					owner = {
+						cw_can_be_harassed = yes
+						NOT = {
+							is_same_value = root
 						}
 					}
 				}
-				custom_tooltip = {
-					fail_text = cw_enclave.303.d.no_archive_cooldown
-					event_target:cw_criminal_enclave_country = {
-						NOT = {
-							has_country_flag = cw_raid_cooldown
-						}
+			}
+			custom_tooltip = {
+				fail_text = cw_enclave.303.d.no_archive_cooldown
+				event_target:cw_criminal_enclave_country = {
+					NOT = {
+						has_country_flag = cw_raid_cooldown
 					}
 				}
 			}
@@ -2385,15 +2387,24 @@ country_event = {
 	# Hire Leader
 	option = {
 		name = cw_enclave.509.a
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = trade
-			AMOUNT = value:cw_privateer_purchase_cost|COST|1000|
+		allow = {
+			resource_stockpile_compare = {
+					resource = trade
+					value >= value:cw_privateer_purchase_cost|COST|1000|
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= value:cw_privateer_purchase_cost|COST|50|
+				}
+			}
 		}
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = influence
-			AMOUNT = value:cw_privateer_purchase_cost|COST|50|
+		add_resource = {
+			trade = -1
+			mult = value:cw_privateer_purchase_cost|COST|1000|
+		}
+		add_resource = {
+			influence = -1
+			mult = value:cw_privateer_purchase_cost|COST|50|
 		}
 		custom_tooltip = cw_privateer_leader_explanation
 		hidden_effect = {
@@ -2523,11 +2534,11 @@ country_event = {
 # 				who = event_target:cw_specimen_stealing_target
 # 				category = aesthetic_wonder
 # 				count = 1
-# 				show_notification = yes				# maybe no...
+# 				show_notification = yes				# maybe not
 # 			}
 # 			# event_target:cw_specimen_stealing_target = {
 # 			# 	country_event = {
-# 			# 		id = cw_enclave.512					# to do... (also how do we know which specimen?)
+# 			# 		id = cw_enclave.512					# to do (also how do we know which specimen?)
 # 			# 	}
 # 			# }
 # 			country_event = {
@@ -2535,7 +2546,7 @@ country_event = {
 # 			}
 # 		}
 # 	}
-# 	# b and c to do...
+# 	# b and c to do
 # 	# Main Menu
 # 	option = {
 # 		name = cw_enclave.510.d
@@ -3669,15 +3680,24 @@ country_event = {
 	# Hire Leader
 	option = {
 		name = cw_enclave.608.a
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = trade
-			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		allow = {
+			resource_stockpile_compare = {
+					resource = trade
+					value >= value:cw_hacker_purchase_cost|COST|1000|
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= value:cw_hacker_purchase_cost|COST|50|
+				}
+			}
 		}
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = influence
-			AMOUNT = value:cw_hacker_purchase_cost|COST|50|
+		add_resource = {
+			trade = -1
+			mult = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		add_resource = {
+			influence = -1
+			mult = value:cw_hacker_purchase_cost|COST|50|
 		}
 		custom_tooltip = cw_hacker_leader_explanation
 		hidden_effect = {
@@ -3747,15 +3767,24 @@ country_event = {
 	# Assimilate
 	option = {
 		name = cw_enclave.616.a
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = trade
-			AMOUNT = value:cw_hacker_purchase_cost|COST|1000|
+		allow = {
+			resource_stockpile_compare = {
+					resource = trade
+					value >= value:cw_hacker_purchase_cost|COST|1000|
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= value:cw_hacker_purchase_cost|COST|50|
+				}
+			}
 		}
-		inline_script = {
-			script = events/resource_cost_with_allow
-			RESOURCE = influence
-			AMOUNT = value:cw_hacker_purchase_cost|COST|50|
+		add_resource = {
+			trade = -1
+			mult = value:cw_hacker_purchase_cost|COST|1000|
+		}
+		add_resource = {
+			influence = -1
+			mult = value:cw_hacker_purchase_cost|COST|50|
 		}
 		random_owned_leader = {
 			limit = {
@@ -3874,8 +3903,8 @@ country_event = {
 	id = cw_enclave.613
 	title = cw_enclave.613.name
 	desc = cw_enclave.613.desc
-	picture = GFX_evt_announcement	# change
-	show_sound = event_criminal_activity	# change
+	picture = GFX_evt_rare_tech_cache
+	show_sound = event_espionage_concluded
 	location = fromfrom.capital_scope
 	is_triggered_only = yes
 	option = {
@@ -4002,7 +4031,7 @@ planet_event = {
 	id = cw_enclave.1
 	title = cw_enclave.1.name
 	desc = cw_enclave.1.desc
-	picture = GFX_evt_bribery	# To be changed
+	picture = GFX_evt_ghost_ship
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
@@ -4063,14 +4092,13 @@ planet_event = {
 				auto_move_to_planet = {
 					target = event_target:target_planet_for_building
 					clear_auto_move_on_arrival = yes
-					# arrival_effect = cw_build_outpost
 				}
 			}
 		}
 		event_target:target_planet_for_building = {
 			planet_event = {
 				id = cw_enclave.2
-				days = 10				# 180 ...
+				days = 90
 			}
 		}
 		# Remove encouragement if it exists
@@ -4090,7 +4118,7 @@ planet_event = {
 	id = cw_enclave.2
 	title = cw_enclave.2.name
 	desc = cw_enclave.2.desc
-	picture = GFX_evt_bribery	# To be changed...
+	picture = GFX_evt_pirate_base
 	show_sound = event_criminal_activity
 	location = root
 	is_triggered_only = yes
@@ -4157,7 +4185,7 @@ planet_event = {
 							background_ethic = ethic_authoritarian
 							skip_background_generation = yes
 							traits = {
-								0 = subclass_cw_scientist_hacker								#change
+								0 = subclass_cw_scientist_racketeer
 							}
 							skill = 5
 							randomize_traits = yes
@@ -4454,7 +4482,7 @@ country_event = {
 							set_owner = prev
 							create_ship = {
 								name = "NAME_Criminal_Hideout"
-								design = "NAME_CW_Criminal_Enclave_Station_Hacker_3"								# change to racketeers
+								design = "NAME_CW_Criminal_Enclave_Station_Racketeer_3"
 								graphical_culture = prev
 							}
 							set_location = {
@@ -4478,7 +4506,7 @@ country_event = {
 							set_owner = prev
 							create_ship = {
 								name = "NAME_Criminal_Hideout"
-								design = "NAME_CW_Criminal_Enclave_Station_Hacker_2"								# change to racketeers
+								design = "NAME_CW_Criminal_Enclave_Station_Racketeer_2"
 								graphical_culture = prev
 							}
 							set_location = {
@@ -4524,7 +4552,7 @@ country_event = {
 							set_owner = prev
 							create_ship = {
 								name = "NAME_Criminal_Hideout"
-								design = "NAME_CW_Criminal_Enclave_Station_Hacker_3"								# change to privateers
+								design = "NAME_CW_Criminal_Enclave_Station_Privateer_3"
 								graphical_culture = prev
 							}
 							set_location = {
@@ -4548,7 +4576,7 @@ country_event = {
 							set_owner = prev
 							create_ship = {
 								name = "NAME_Criminal_Hideout"
-								design = "NAME_CW_Criminal_Enclave_Station_Hacker_2"								# change to privateers
+								design = "NAME_CW_Criminal_Enclave_Station_Privateer_2"
 								graphical_culture = prev
 							}
 							set_location = {
@@ -4850,6 +4878,7 @@ country_event = {
 						# Fire event notifying attacker of hacker aura
 						country_event = {
 							id = cw_enclave.201
+							days = 1
 						}
 					}
 				}
@@ -4864,9 +4893,17 @@ country_event = {
 	title = cw_enclave.201.name
 	desc = cw_enclave.201.desc
 	picture = GFX_evt_ship_under_attack
-	show_sound = event_criminal_activity	#...
+	show_sound = event_espionage_concluded
 	location = fromfromfrom
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = cw_hacker_aura_fired_from_@fromfrom
+		}
+	}
+	immediate = {
+		set_country_flag = cw_hacker_aura_fired_from_@fromfrom
+	}
 	option = {
 		name = cw_enclave.201.a
 	}
@@ -4972,7 +5009,7 @@ country_event = {
 	title = cw_enclave.211.name
 	desc = cw_enclave.211.desc
 	picture = GFX_evt_large_explosion
-	show_sound = event_criminal_activity	# change...
+	show_sound = event_super_explosion
 	location = event_target:cw_dead_enclave_location
 	is_triggered_only = yes
 	immediate = {
@@ -5020,7 +5057,7 @@ country_event = {
 	title = cw_enclave.214.name
 	desc = cw_enclave.214.desc
 	picture = GFX_evt_large_explosion
-	show_sound = event_criminal_activity	# change...
+	show_sound = event_super_explosion
 	location = event_target:cw_dead_enclave_location
 	is_triggered_only = yes
 	option = {
@@ -5034,7 +5071,7 @@ country_event = {
 	title = cw_enclave.213.name
 	desc = cw_enclave.213.desc
 	picture = GFX_evt_large_explosion
-	show_sound = event_criminal_activity	# change...
+	show_sound = event_super_explosion
 	location = event_target:cw_dead_enclave_location
 	is_triggered_only = yes
 	immediate = {

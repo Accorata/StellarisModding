@@ -68,7 +68,6 @@ cw_bribed_politician = {
 	category = criminal
 	is_capped_by_modifier = yes
 	can_set_priority = no
-
 	swappable_data = {
 		default = {
 			condition_string = RULER_JOB_TRIGGER
@@ -167,12 +166,38 @@ cw_bribed_politician = {
 			desc = job_cw_bribed_augmentation_merchant_desc
 			weight = 20
 		}
+		swap_type = {
+			trigger = {
+				politician_is_superstitious_beliefs_high_priest = yes
+			}
+			name = cw_bribed_superstitious_beliefs_high_priest
+			desc = job_cw_bribed_superstitious_beliefs_high_priest_desc
+			icon = cw_bribed_superstitious_beliefs_priest
+			weight = 20
+		}
+		swap_type = {
+			trigger = {
+				politician_is_superstitious_beliefs_high_priest_corporate = yes
+			}
+			name = cw_bribed_superstitious_beliefs_high_priest_corporate
+			desc = job_cw_bribed_superstitious_beliefs_high_priest_corporate_desc
+			icon = cw_bribed_superstitious_beliefs_priest
+			weight = 20
+		}
+		swap_type = {
+			trigger = {
+				politician_is_visionary = yes
+			}
+			name = cw_bribed_visionary
+			desc = cw_bribed_visionary
+			icon = cw_bribed_executive
+			weight = 20
+		}
 	}
 	contributes_to_diplo_weight = no
 	tags = {
 		crime
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_enslaved = no
@@ -180,16 +205,13 @@ cw_bribed_politician = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
-	possible_precalc = can_fill_ruler_job # Pops still need to pretend to be rulers
-
+	possible_precalc = can_fill_ruler_job	# Pops still need to pretend to be rulers
 	resources = {
 		category = planet_politicians
 		upkeep = {
 			consumer_goods = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			always = yes
@@ -197,7 +219,6 @@ cw_bribed_politician = {
 		planet_amenities_add = 300
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			planet = {
@@ -212,14 +233,11 @@ cw_bribed_politician = {
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-
 	inline_script = "output/politician_output_modifier"
-
 	weight = {
 		weight = @criminal_job_weight
 		mult = 10
 	}
-
 	inline_script = "jobs/automodding_priority_charisma"
 }
 
