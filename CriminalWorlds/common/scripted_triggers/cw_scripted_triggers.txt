@@ -56,6 +56,10 @@ has_cw_criminal_enclave_event = {
 		cw_enclave.503		# Harass Rivals Menu
 		cw_enclave.504		# Harass Rivals Confirmation
 		cw_enclave.505		# Harass Denied
+		cw_enclave.513		# Fund Operations
+		cw_enclave.509		# Hire Leader
+		cw_enclave.511		# Purchase Stolen Resources
+		cw_enclave.517		# Bribery
 		# Hackers
 		cw_enclave.600		# Skeleton Key
 		cw_enclave.601		# Skeleton Key Renewal
@@ -63,6 +67,9 @@ has_cw_criminal_enclave_event = {
 		cw_enclave.603		# Hack Rivals Selection
 		cw_enclave.604		# Hack Denied
 		cw_enclave.608		# Hire Leader
+		cw_enclave.616		# Assimilate Hacker Protocols
+		cw_enclave.611		# Purchase Tech Virus
+		cw_enclave.615		# Bribery
 	}
 }
 

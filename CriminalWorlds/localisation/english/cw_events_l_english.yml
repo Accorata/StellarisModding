@@ -148,18 +148,18 @@
 ## Criminal Enclaves ##
   CW_NEVERMIND:0 "Never mind."
   cw_opinion30:0 "Opinion: £opinion£ §G+30§!"
-# Construction ship  - x3 by Crime Lord Deal
-  cw_enclave.1.name:0 "Criminal Constructions" # Temp
-  cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below.\n\nIt's intentions are unknown, and the situation should be monitored further. ..."
-  cw_enclave.1.a:0 "Monitor the Situation." #change...
-# Outpost built
+# Construction Ship  - x3 by Crime Lord Deal
+  cw_enclave.1.name:0 "Criminal Constructions"
+  cw_enclave.1.desc:0 "A new construction ship now lies above §Y[Root.GetName]§!, a product of the criminal enterprises below. It's intentions are unknown, and we can only speculate at its purpose.\n\nWhile it represents another expansion of criminal influence, any such intrusion into our stellar dominion must be limited, or it would be swiftly destroyed. The crime lords are well aware of this and wouldn't risk open hostilities."
+  cw_enclave.1.a:0 "Monitor the Situation."
+# Outpost Built
   cw_enclave.2.name:0 "Criminal Outpost"
   cw_enclave.2.desc:0 "The criminal enterprise's construction is complete. The system is now home to a large station orbiting [Root.GetName]. Within this station lies a new enclave, formed from the criminals of the galaxy. They state that this station only exists for these new operations and do not wish to lay any claim to the system. Additionally, the enclave offers to provide any nation their services, for a cost."
   cw_enclave.2.a:0 "Open Comms."
 
 # Criminal Enclave has New Offers
   cw_enclave.301.name:0 "New Offers Available"
-  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand operations here at [cw_criminal_enclave_country.GetName]. ... We have new offers you may wish to check out..."
+  cw_enclave.301.desc:0 "In part due to your patronage, we have been able to expand our operations here at [cw_criminal_enclave_country.GetName]. We have new offers you may wish to check out, and we hope our relationship continues to be very profitable."
   cw_enclave.301.a:0 "Let's see what might be of interest."
   cw_enclave.301.b:0 "$GOODBYE$" # Exit
 
@@ -280,7 +280,7 @@
 ## Privateers
 # Main Menu
   cw_enclave.303.name:0 "$cw_enclave.302.name$"
-  cw_enclave.303.desc:0 "Welcome, welcome. We are the [cw_criminal_enclave_country.GetName], sailors of the void and warriors of the brave stars.\n\nFreebooters and pirates, our pilots have been highly skilled from the dangers of this galaxy and aiming to strike it rich. ..."
+  cw_enclave.303.desc:0 "Welcome, welcome. We are the [cw_criminal_enclave_country.GetName], sailors of the void and warriors of the brave stars.\n\nFreebooters and pirates, our pilots have been highly trained by the dangers of this galaxy and their goals to strike it rich. However, we are not merely the pirate fanatics you encounter in this galaxy, but an honorbound collective restoring dignity to the privateer lifestyle. Our aims remain the same, but we understand the necessity of order. Our services are many, so please do find a job we can undertake."
   cw_enclave.303.a:0 "We'd like you to §YHarass our Rivals§!."
   cw_enclave.303.a.cooldown:0 "This enclave has too recently participated in a raid."
   cw_enclave.303.a.need_rivals:0 "$marauder.20.need_rivals$"
@@ -336,8 +336,8 @@
 
 # Leader Purchase 
   cw_enclave.509.name:0 "Hire Privateer"
-  cw_enclave.509.desc:0 "... We will only let them go if they can prove their merits to [Root.GetSpeciesAdj]-kind. ..."
-  cw_enclave.509.a:0 "..." 
+  cw_enclave.509.desc:0 "Our privateers are the best you'll find in this galaxy, but not without reason. They are the courageous, ready to show their foes what they're capable of. We will only let them go if they can prove their merits to [Root.GetSpeciesAdj]-kind. Only then can they achieve their honor and live up to our privateer code."
+  cw_enclave.509.a:0 "Welcome aboard." 
   cw_privateer_leader_explanation:0 "We will hire a Level §Y4§! Commander with the §Y$subclass_cw_commander_privateer$§! Subclass.\n$opinion20$"
   cw_enclave.509.b:0 "$CW_NEVERMIND$" # Main Menu
   cw_enclave.509.c:0 "$GOODBYE$" # Exit
@@ -362,8 +362,8 @@
   cw_enclave.511.a:0 "Raid an Energy Convoy." # Energy
   cw_enclave.511.b:0 "Raid a Mineral Convoy." # Minerals
   cw_enclave.511.c:0 "Raid a Food Convoy." # Food
-  cw_enclave.511.b:0 "$CW_NEVERMIND$" # Main Menu
-  cw_enclave.511.c:0 "$GOODBYE$" # Exit
+  cw_enclave.511.d:0 "$CW_NEVERMIND$" # Main Menu
+  cw_enclave.511.e:0 "$GOODBYE$" # Exit
 # Resources Stolen
   cw_plunder_enclave_culprit:0 "While the attack was carried out by local pirates, such a coordinated attack is unlike their types. Our military defense experts attribute the raid to a §YPrivateer Enclave§!, stealing resources for another empire. We must either eliminate the pirates near our territory, eliminate the enclave that caused this, or bribe such an enclave for protection."
   # Energy

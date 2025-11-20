@@ -1,7 +1,6 @@
 criminal = {
 	rank = 1
 	change_job_threshold = 2
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -37,6 +36,11 @@ criminal = {
 		key = trait_noxious
 		pop_non_noxious_happiness = @noxious_happiness_penalty
 	}
+	# Begin 1st Override
+	inline_script = {
+		script = traits/cw_racketeer_naval_cap_from_criminals
+	}
+	# End of 1st Override
 	pop_group_modifier = {
 		pop_housing_usage_base = 1
 		pop_amenities_usage_base = 1
@@ -46,7 +50,7 @@ criminal = {
 		always = no
 	}
 	resources = {
-		category = pop_category_criminals # Overriden Only Here (Used to be in the Worker category)
+		category = pop_category_criminals		# 2nd Override Here (Used to be in the Worker category)
 		upkeep = {
 			trade = 5
 		}
@@ -56,37 +60,31 @@ criminal = {
 deviant_drone = {
 	rank = 2
 	change_job_threshold = 2
-
 	pop_group_modifier = {
 		pop_housing_usage_base = 1
 		pop_amenities_usage_base = 1
 	}
-
 	# scope: pop to be resettled
 	allow_resettlement = {
 		always = no
 	}
-
 	resources = {
-		category = pop_category_deviant_drones # Overriden Only Here (Used to be in the Drones category)
+		category = pop_category_deviant_drones		# Overriden Only Here (Used to be in the Drones category)
 	}
 }
 
 corrupt_drone = {
 	rank = 2
 	change_job_threshold = 2
-
 	pop_group_modifier = {
 		pop_housing_usage_base = 1
 		pop_amenities_usage_base = 1
 	}
-
 	# scope: pop to be resettled
 	allow_resettlement = {
 		always = no
 	}
-
 	resources = {
-		category = pop_category_corrupt_drones # Overriden Only Here (Used to be in the Drones category)
+		category = pop_category_corrupt_drones		# Overriden Only Here (Used to be in the Drones category)
 	}
 }

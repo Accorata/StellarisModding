@@ -1,0 +1,9 @@
+triggered_country_modifier = {
+	potential = {
+		local_or_sector_governor_has_trait = {
+			TRAIT = leader_trait_cw_militarized_criminals
+		}
+	}
+	country_naval_cap_add = 1
+	mult = planet.modifier:job_criminal_naval_cap_add
+}

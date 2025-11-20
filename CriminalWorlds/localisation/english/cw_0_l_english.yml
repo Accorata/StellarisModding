@@ -1,7 +1,7 @@
 ﻿l_english:
-  CW_CRIMINALS:0 "Criminals"
-  CW_D_DRONES:0 "Deviant Drones"
-  CW_C_DRONES:0 "Corrupt Drones"
+  CW_CRIMINALS:0 "£crime£ Criminals"
+  CW_D_DRONES:0 "£crime£ Deviant Drones"
+  CW_C_DRONES:0 "£crime£ Corrupt Drones"
 
   CW_RACKETEER: "Racketeer"
   CW_RACKETEER_PLURAL: "Racketeers"
@@ -264,7 +264,7 @@
   tradition_cw_criminality_desc:0 "The law can only take you so far."
   tr_cw_criminality_adopt:0 "Criminality Traditions"
   tr_cw_criminality_finish:0 "Criminality Traditions Finished"
-  tr_cw_criminality_finish_tooltip:0 "Unlocks £official£ §Y$CW_RACKETEER$§!, £commander£ §Y$CW_PRIVATEER$§!, and £scientist£ §Y$CW_HACKER$§! Veteran Classes" # Should make game concepts for these classes
+  tr_cw_criminality_finish_tooltip:0 "Unlocks the £official£ §Y$CW_RACKETEER$§!, £commander£ §Y$CW_PRIVATEER$§!, and £scientist£ §Y$CW_HACKER$§! Veteran Classes" # Should make game concepts for these classes
   tr_cw_criminality_smugglers_cartel:0 "Smugglers Cartel"
   tr_cw_criminality_smugglers_cartel_delayed:0 "Preventing the illegal transport of goods is a near impossible task. But controlling these very operations ensures our criminal operations benefit."
   tr_cw_criminality_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Criminal Pops"
@@ -287,9 +287,9 @@
   tradition_cw_deviancy_desc:0 "Malfunctions of the collective are only errors if treated as such."
   tr_cw_deviancy_adopt:0 "Deviancy Traditions"
   tr_cw_deviancy_finish:0 "Deviancy Traditions Finished"
-  tr_cw_deviancy_finish_tooltip:0 "Unlocks £official£ §Y$CW_RACKETEER$§! and £commander£ §Y$CW_PRIVATEER$§! Veteran Classes"
-  tr_cw_deviancy_smugglers_cartel:0 "$tr_cw_criminality_smugglers_cartel$"
-  tr_cw_deviancy_smugglers_cartel_delayed:0 "..."
+  tr_cw_deviancy_finish_tooltip:0 "Unlocks the £official£ §Y$CW_RACKETEER$§! and £commander£ §Y$CW_PRIVATEER$§! Veteran Classes"
+  tr_cw_deviancy_smugglers_cartel:0 "Smuggling Operations"
+  tr_cw_deviancy_smugglers_cartel_delayed:0 "Allowing greater deviations in drone behavior allows us to capitalize on galactic smuggling business."
   tr_cw_deviancy_smugglers_cartel_tooltip:0 "Unlocks the §Y$policy_cw_smuggler_policy_hive$§! Policies, which provide §Y$alloys_with_icon$§! and/or §Y$consumer_goods_with_icon$§! from Deviant Drones"
   tr_cw_deviancy_black_markets:0 "$tr_cw_criminality_black_markets$"
   tr_cw_deviancy_black_markets_delayed:0 "$tr_cw_criminality_black_markets_delayed$"
@@ -310,11 +310,11 @@
   agenda_cw_criminality_finish:0 "$council_agenda_cw_criminality_name$ $agenda_ref$"
   agenda_cw_criminality_finish_desc:0 "$council_agenda_cw_criminality_desc$"
   council_agenda_cw_deviancy_name:0 "Relax Protocols"
-  council_agenda_cw_deviancy_desc:0 "By allowing for greater deviations from the hive, ..."
+  council_agenda_cw_deviancy_desc:0 "By allowing for greater deviations from the hive, we can cultivate the profitable individualistic behavior of other races."
   agenda_cw_deviancy_finish:0 "$council_agenda_cw_deviancy_name$ $agenda_ref$"
   agenda_cw_deviancy_finish_desc:0 "$council_agenda_cw_deviancy_desc$"
   council_agenda_cw_deviancy_machine_name:0 "$council_agenda_cw_deviancy_name$"
-  council_agenda_cw_deviancy_machine_desc:0 "..."
+  council_agenda_cw_deviancy_machine_desc:0 "By allowing for greater deviations from the intelligence, we can cultivate the profitable individualistic behavior of organic species."
   agenda_cw_deviancy_machine_finish:0 "$council_agenda_cw_deviancy_machine_name$"
   agenda_cw_deviancy_machine_finish_desc:0 "$council_agenda_cw_deviancy_machine_desc$"
 
@@ -337,7 +337,7 @@
 
 ## Civics
   civic_cw_invisible_shareholders:0 "Invisible Shareholders"
-  civic_cw_invisible_shareholders_desc:0 "The elites who control this megacorporation prefer to stay away from the public sphere. ..."
+  civic_cw_invisible_shareholders_desc:0 "The elites who control this megacorporation prefer to stay away from the public sphere. They command through the market, creating a very literal invisible hand."
   councilor_cw_invisible_shareholders:0 "Majority Holder"
   councilor_cw_invisible_shareholders_desc:0 "The $TITLE$ represents the interests of the hidden elites, orchestrating the will of the company in their names."
   civic_cw_prison_state:0 "Prison State"
@@ -351,30 +351,25 @@
 
 ## Country Names
   NAME_cw_criminal_enterprise:0 "Criminal Enterprises"
-# White Orchid
-  # NAME_cw_criminal_white_flower:0 "White Orchid"
-  # NAME_White_flower_species:0 "Aeruo"
-  # NAME_White_flower_species_plural:0 "Aeruoan"
-  # NAME_White_flower_species_adj:0 "Aeruo"
-  # NAME_White_flower_ship:0 "Dancing Needle"
-  # NAME_White_flower_ship_design:0 "Needle"
 # Racketeer Names
   CW_Shadow_Cabal:0 "Shadow Cabal"
   CW_Undercity_Conglomerate:0 "Undercity Conglomerate"
   CW_Dark_Branch:0 "Dark Branch"
   CW_Slaver_Cartel:0 "Slaver Cartel"
   CW_High_Families:0 "High Families"
+  CW_Crime_Lords:0 "Criminal Lords"
+  CW_Stellar_Syndicate:0 "Stellar Syndicate"
 # Privateer Names
   CW_Soul_Liberators:0 "Soul Liberators"
-  CW_Glory_Riders:0 "Glory_Riders"
-  CW_Free_Peoples_of_Space:0 "Free Peoples of Space"
+  CW_Glory_Riders:0 "Glory Riders"
+  CW_Free_Sailors:0 "Free Sailors"
 # Hacker Names
   CW_Cyberlords:0 "Cyberlords"
   CW_Netrunners:0 "Netrunners"
   # CW_Administrator_Zero:0 "Administrator Zero"
   CW_Null_Source:0 "Null Source"
   CW_Positronic_Brain:0 "Positronic Brain"
-  CW_Terror_of_the_Net:0 "Terror of the Net"
+  CW_Net_Terrors:0 "Net Terrors"
   CW_Cyber_Mind:0 "Cyber Mind"
 
 ## Situations
@@ -496,8 +491,10 @@
   leader_trait_cw_arbiter_desc:0 "$leader_trait_arbiter_desc$"
   leader_trait_cw_criminal_enterprise:0 "Enterprising"
   leader_trait_cw_criminal_enterprise_desc:0 "This leader has proven to be extremely talented at running organized crime, and the numbers speak for themselves."
-  leader_trait_cw_criminal_enterprise_hive_desc:0 "This [owner.GetIndividualName] has proven to be extremely talented at running deviant drones, and the output speaks for itself."
-  leader_trait_cw_criminal_enterprise_machine_desc:0 "This unit has proven to be extremely talented at running corrupt drones, and the output speaks for itself."
+  # leader_trait_cw_criminal_enterprise_hive_desc:0 "This [owner.GetIndividualName] has proven to be extremely talented at running deviant drones, and the output speaks for itself."
+  # leader_trait_cw_criminal_enterprise_machine_desc:0 "This unit has proven to be extremely talented at running corrupt drones, and the output speaks for itself."
+  leader_trait_cw_militarized_criminals:0 "Militia Elite"
+  leader_trait_cw_militarized_criminals_desc:0 "This leader mobilizes criminal operations to aid in galatic wars."
 
 # Privateer
   leader_trait_cw_corsair:0 "$leader_trait_corsair$"
@@ -637,6 +634,8 @@
   mod_pop_category_criminals_engineering_research_produces_add:0 "$engineering_research_with_icon$ per $pop_group_unit$ $CW_CRIMINALS$"
   mod_pop_category_criminals_produces_mult:0 "Resources from $CW_CRIMINALS$"
   mod_pop_category_criminals_upkeep_mult:0 "Upkeep from $CW_CRIMINALS$"
+   mod_job_criminal_naval_cap_add: "£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$ per $pop_group_unit$ $CW_CRIMINALS$"
+
   # Deviant Drones
   mod_pop_category_deviant_drones_alloys_produces_add:0 "$alloys_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"
   mod_pop_category_deviant_drones_consumer_goods_produces_add:0 "$consumer_goods_with_icon$ per $pop_group_unit$ $CW_D_DRONES$"

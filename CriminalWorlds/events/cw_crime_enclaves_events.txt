@@ -1133,13 +1133,12 @@ country_event = {
 		name = cw_enclave.402.a
 		allow = {
 			resource_stockpile_compare = {
-					resource = trade
-					value >= value:cw_racketeer_purchase_cost|COST|1000|
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= value:cw_racketeer_purchase_cost|COST|50|
-				}
+				resource = trade
+				value >= value:cw_racketeer_purchase_cost|COST|1000|
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= value:cw_racketeer_purchase_cost|COST|50|
 			}
 		}
 		add_resource = {
@@ -2389,13 +2388,12 @@ country_event = {
 		name = cw_enclave.509.a
 		allow = {
 			resource_stockpile_compare = {
-					resource = trade
-					value >= value:cw_privateer_purchase_cost|COST|1000|
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= value:cw_privateer_purchase_cost|COST|50|
-				}
+				resource = trade
+				value >= value:cw_privateer_purchase_cost|COST|1000|
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= value:cw_privateer_purchase_cost|COST|50|
 			}
 		}
 		add_resource = {
@@ -2635,7 +2633,7 @@ country_event = {
 	}
 	# Purchase Minerals
 	option = {
-		name = cw_enclave.511.a
+		name = cw_enclave.511.b
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
@@ -2661,7 +2659,7 @@ country_event = {
 	}
 	# Purchase Food
 	option = {
-		name = cw_enclave.511.a
+		name = cw_enclave.511.c
 		inline_script = {
 			script = events/resource_cost_with_allow
 			RESOURCE = trade
@@ -2697,7 +2695,7 @@ country_event = {
 	}
 	# Main Menu
 	option = {
-		name = cw_enclave.511.b
+		name = cw_enclave.511.d
 		hidden_effect = {
 			country_event = {
 				id = cw_enclave.300
@@ -2706,7 +2704,7 @@ country_event = {
 	}
 	# Exit
 	option = {
-		name = cw_enclave.511.c
+		name = cw_enclave.511.e
 		default_hide_option = yes
 	}
 }
@@ -3682,13 +3680,12 @@ country_event = {
 		name = cw_enclave.608.a
 		allow = {
 			resource_stockpile_compare = {
-					resource = trade
-					value >= value:cw_hacker_purchase_cost|COST|1000|
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= value:cw_hacker_purchase_cost|COST|50|
-				}
+				resource = trade
+				value >= value:cw_hacker_purchase_cost|COST|1000|
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= value:cw_hacker_purchase_cost|COST|50|
 			}
 		}
 		add_resource = {
@@ -3769,13 +3766,12 @@ country_event = {
 		name = cw_enclave.616.a
 		allow = {
 			resource_stockpile_compare = {
-					resource = trade
-					value >= value:cw_hacker_purchase_cost|COST|1000|
-				}
-				resource_stockpile_compare = {
-					resource = influence
-					value >= value:cw_hacker_purchase_cost|COST|50|
-				}
+				resource = trade
+				value >= value:cw_hacker_purchase_cost|COST|1000|
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= value:cw_hacker_purchase_cost|COST|50|
 			}
 		}
 		add_resource = {
@@ -4185,7 +4181,7 @@ planet_event = {
 							background_ethic = ethic_authoritarian
 							skip_background_generation = yes
 							traits = {
-								0 = subclass_cw_scientist_racketeer
+								0 = subclass_cw_official_racketeer
 							}
 							skill = 5
 							randomize_traits = yes
@@ -4302,7 +4298,8 @@ planet_event = {
 					}
 				}
 				set_leader = last_created_leader
-				set_custom_capital_location = root				# event_target:cw_criminal_enclave_starbase
+				set_custom_capital_location = root
+				set_name = random
 				# Copy Techs
 				copy_techs_from = {
 					target = root.solar_system.owner

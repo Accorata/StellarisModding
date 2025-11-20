@@ -1576,7 +1576,29 @@ planet_event = {
 			create_fleet = {
 				name = "NAME_Pirate_Fleet"
 				effect = {
-					set_owner = event_target:cw_criminal_enterprise
+					if = {
+						limit = {
+							root.solar_system = {
+								has_star_flag = cw_active_criminal_enclave
+							}
+						}
+						root.solar_system = {
+							random_fleet_in_system = {
+								limit = {
+									owner = {
+										is_country_type = cw_criminal_enclave
+									}
+								}
+								owner = {
+									save_event_target_as = cw_criminal_enclave
+								}
+							}
+						}
+						set_owner = event_target:cw_criminal_enclave
+					}
+					else = {
+						set_owner = event_target:cw_criminal_enterprise
+					}
 					create_pirate_ships_0 = yes
 					set_location = root
 					save_global_event_target_as = criminal_fleet_of_@root

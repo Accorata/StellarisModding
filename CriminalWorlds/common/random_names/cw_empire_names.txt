@@ -7,10 +7,12 @@ empire_name_parts_list = {
 		CW_Dark_Branch = 10
 		CW_Slaver_Cartel = 10
 		CW_High_Families = 10
+		CW_Crime_Lords = 10
+		CW_Stellar_Syndicate = 10
 	}
 }
 
-# Privateer Name List - Includes Some Pirate Names
+# Privateer Name List - Includes Many Pirate Names
 empire_name_parts_list = {
 	key = "cw_privateer_names"
 	parts = {
@@ -64,7 +66,7 @@ empire_name_parts_list = {
 		Burning_Brigands = 10
 		CW_Soul_Liberators = 10
 		CW_Glory_Riders = 10
-		CW_Free_Peoples_of_Space = 10
+		CW_Free_Sailors = 10
 	}
 }
 
@@ -76,7 +78,7 @@ empire_name_parts_list = {
 		CW_Netrunners = 10
 		CW_Null_Source = 10
 		CW_Positronic_Brain = 10
-		CW_Terror_of_the_Net = 10
+		CW_Net_Terrors = 10
 		CW_Cyber_Mind = 10
 	}
 }
@@ -91,7 +93,7 @@ empire_name_format = {
 			has_country_flag = cw_criminal_enclave_racketeers
 		}
 	}
-	format = "{<cw_racketeer_names>}"
+	format = "{<cw_racketeer_names> of [This.GetSpeciesAdj]}"
 	noun = "{<cw_racketeer_names>}"
 }
 
@@ -101,10 +103,10 @@ empire_name_format = {
 		modifier = {
 			add = 100
 			is_country_type = cw_criminal_enclave
-			has_country_flag = cw_criminal_enclave_privateers
+			# has_country_flag = cw_criminal_enclave_privateers
 		}
 	}
-	format = "{<cw_privateer_names>}"
+	format = "{<cw_privateer_names>} of [This.GetSpeciesAdj]"
 	noun = "{<cw_privateer_names>}"
 }
 
@@ -117,6 +119,6 @@ empire_name_format = {
 			has_country_flag = cw_criminal_enclave_hackers
 		}
 	}
-	format = "{<cw_hacker_names>}"
+	format = "{<cw_hacker_names>} of [This.GetSpeciesAdj]"
 	noun = "{<cw_hacker_names>}"
 }
