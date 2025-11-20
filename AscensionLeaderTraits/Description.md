@@ -4,7 +4,7 @@ Ascension Leader Traits adds many new veteran, negative, and destiny traits that
 
 These leader traits are weighted to be somewhat rare and balanced to be slightly more powerful than an average trait, however like any leader trait, their effectiveness will vary on one's current strategy and build.
 
-The mod is available in English, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3254340455]Korean[/url] (thanks 재프jeff!), and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3255625917]Japanese[/url] (thanks akito0158!). Translators welcome.
+The mod is available in English, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3254340455]Korean[/url] (thanks 재프jeff!), [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3255625917]Japanese[/url] (thanks akito0158!), and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3585984784]Russian[/url] (thanks superakk32299). Translators welcome.
 
 [h2] Compatibility [/h2]
 

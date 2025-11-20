@@ -8,6 +8,8 @@
 @diff_t7 = 11
 @diff_t8 = 12
 @diff_t9 = 13
+@operationTargetedByTimer = 10800
+# 30 years, during which the effects of an operation may be felt by select Spy Network events
 # this = operation
 # from = operation target
 operation_cw_hack_fleet = {
@@ -27,10 +29,11 @@ operation_cw_hack_fleet = {
 			energy = 10
 		}
 	}
-	spy_power_cost = 0	#45...
-	target = fleet
+	spy_power_cost = 45
 	potential = {
-		# + has hacker destiny trait on council - leader_trait_cw_deadly_saboteur...
+		has_trait_in_council = {
+			TRAIT = leader_trait_cw_deadly_saboteur
+		}
 		target = {
 			owner = {
 				is_country_type = default

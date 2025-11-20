@@ -4775,12 +4775,14 @@ country_event = {
 				}
 			}
 			else = {
-				# Choose a random small fleet and add a couple ships
-				random_owned_fleet = {
+				# Choose the weakest fleet and add a couple ships
+				ordered_owned_fleet = {
+					position = 0
+					inverse = yes
+					order_by = trigger:fleet_power
 					limit = {
-						NOR = {
+						NOT = {
 							is_ship_size = enclave_station
-							has_modifier = cw_large_privateer_fleet
 						}
 					}
 					# Add advanced 1/2 corvettes depending on lvl

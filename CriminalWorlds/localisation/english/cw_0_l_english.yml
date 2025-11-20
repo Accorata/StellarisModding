@@ -622,7 +622,7 @@
 ## Espionage Operations
   operation_cw_hack_fleet:0 "Hack Fleet"
   operation_cw_hack_fleet_desc:0 "An exceptional hacker on our council has developed a destructive ship virus that will cause an enemy fleet to turn on itself. Our operatives will need to deploy these viruses into enemy ships without detection."
-  operation_cw_hack_fleet_on_success:0 "$IF_SUCCESSFUL|E$\nUpon entering its next battle, all ships in the target fleet will be confused for around §Y30§! days, causing every ship to attack each other instead of the enemy."
+  operation_cw_hack_fleet_on_success:0 "$IF_SUCCESSFUL|E$\nUpon entering its next Battle, all ships in the §Y[This.Target.GetName]'s§! Strongest Fleet will be §YConfused§! for around §Y50§! days, causing every ship to attack each other instead of the enemy."
 
 ## Modifier Localisations
 # Criminal Production Modifiers
