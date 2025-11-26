@@ -4135,6 +4135,8 @@ planet_event = {
 			species = event_target:pirate_species
 			ignore_initial_colony_error = yes
 			effect = {
+				set_graphical_culture = root.solar_system.owner
+				set_custom_capital_location = root
 				random_list = {
 					1 = {
 						# Becomes Racketeer Syndicate
@@ -4240,10 +4242,6 @@ planet_event = {
 							skill = 5
 							randomize_traits = yes
 						}
-						# Spawn a small privateer fleet
-						country_event = {
-							id = cw_enclave.501
-						}
 					}
 					1 = {
 						# Becomes Hacker Guild
@@ -4298,7 +4296,6 @@ planet_event = {
 					}
 				}
 				set_leader = last_created_leader
-				set_custom_capital_location = root
 				set_name = random
 				# Copy Techs
 				copy_techs_from = {
@@ -4318,6 +4315,16 @@ planet_event = {
 				set_timed_country_flag = {
 					flag = day_0
 					days = 10
+				}
+				# Needs to happen after name is randomly generated
+				if = {
+					limit = {
+						has_country_flag = cw_criminal_enclave_privateers
+					}
+					# Spawn a small privateer fleet
+					country_event = {
+						id = cw_enclave.501
+					}
 				}
 			}
 		}

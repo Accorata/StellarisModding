@@ -15,7 +15,8 @@ cw_criminal_enterprise = {
 	}
 	modules = {
 		exclusive_diplomacy_module = {
-		}		# Nothing is allowed, but we need this for relationships.
+		}
+		# Nothing is allowed, but we need this for relationships.
 		all_technology_module = {
 		}
 		standard_event_module = {
@@ -29,7 +30,7 @@ cw_criminal_enclave = {
 	can_have_their_comms_shared = yes
 	government = yes
 	is_enclave = yes
-	randomize_ethos = yes	#test
+	randomize_ethos = yes
 	observable = no
 	ai = {
 		enabled = no
@@ -48,6 +49,7 @@ cw_criminal_enclave = {
 		standard_event_module = {
 		}
 		exclusive_diplomacy_module = {
-		}		# Nothing is allowed, but we need this for relationships.
+		}
+		# Nothing is allowed, but we need this for relationships.
 	}
 }

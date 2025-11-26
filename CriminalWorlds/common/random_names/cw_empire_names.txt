@@ -93,7 +93,7 @@ empire_name_format = {
 			has_country_flag = cw_criminal_enclave_racketeers
 		}
 	}
-	format = "{<cw_racketeer_names> of [This.GetSpeciesAdj]}"
+	format = "{AofB{<cw_racketeer_names> [This.GetCapitalSystemNameOrRandom]}}"	#This.GetSpeciesAdj
 	noun = "{<cw_racketeer_names>}"
 }
 
@@ -103,10 +103,10 @@ empire_name_format = {
 		modifier = {
 			add = 100
 			is_country_type = cw_criminal_enclave
-			# has_country_flag = cw_criminal_enclave_privateers
+			has_country_flag = cw_criminal_enclave_privateers
 		}
 	}
-	format = "{<cw_privateer_names>} of [This.GetSpeciesAdj]"
+	format = "{AofB{<cw_privateer_names> [This.GetCapitalSystemNameOrRandom]}}"
 	noun = "{<cw_privateer_names>}"
 }
 
@@ -119,6 +119,6 @@ empire_name_format = {
 			has_country_flag = cw_criminal_enclave_hackers
 		}
 	}
-	format = "{<cw_hacker_names>} of [This.GetSpeciesAdj]"
+	format = "{AofB{<cw_hacker_names> [This.GetCapitalSystemNameOrRandom]}}"
 	noun = "{<cw_hacker_names>}"
 }

@@ -49,7 +49,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_leader_subclass_scientist_cw_hacker_background"
-		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_cw_hacker.dds"
+		texturefile = "gfx/interface/leaders/subclass_bgs/background_subclass_scientist_cw_hacker.dds"
 	}
 	## LEADER TRAITS --------------------------------------------------------------------------
 	## Generic
