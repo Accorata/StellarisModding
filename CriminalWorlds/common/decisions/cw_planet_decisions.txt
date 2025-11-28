@@ -32,6 +32,8 @@ decision_cw_uplift_slums = {
 			}
 			remove_modifier = cw_underground_slums_2
 		}
+	}
+	hidden_effect = {
 		set_variable = {
 			which = cw_slum_progress
 			value = 0
@@ -76,6 +78,8 @@ decision_cw_uplift_slums_hive = {
 			}
 			remove_modifier = cw_underground_slums_2_hive
 		}
+	}
+	hidden_effect = {
 		set_variable = {
 			which = cw_slum_progress
 			value = 0
@@ -120,6 +124,8 @@ decision_cw_uplift_slums_machine = {
 			}
 			remove_modifier = cw_underground_slums_2_machine
 		}
+	}
+	hidden_effect = {
 		set_variable = {
 			which = cw_slum_progress
 			value = 0

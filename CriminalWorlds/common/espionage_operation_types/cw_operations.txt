@@ -31,8 +31,10 @@ operation_cw_hack_fleet = {
 	}
 	spy_power_cost = 45
 	potential = {
-		has_trait_in_council = {
-			TRAIT = leader_trait_cw_deadly_saboteur
+		owner = {
+			has_trait_in_council = {
+				TRAIT = leader_trait_cw_deadly_saboteur
+			}
 		}
 		target = {
 			owner = {

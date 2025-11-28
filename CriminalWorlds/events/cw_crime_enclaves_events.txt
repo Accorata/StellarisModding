@@ -4371,12 +4371,6 @@ planet_event = {
 				has_star_flag = enclave
 				has_star_flag = cw_active_criminal_enclave
 			}
-			any_system_planet = {
-				OR = {
-					is_asteroid = yes
-					is_moon = yes
-				}
-			}
 		}
 	}
 	immediate = {
@@ -4401,7 +4395,19 @@ planet_event = {
 			limit = {
 				check_variable_arithmetic = {
 					which = cw_enclave_progress
-					value >= 15
+					value >= 35
+				}
+				solar_system = {
+					NOR = {
+						has_star_flag = enclave
+						has_star_flag = cw_active_criminal_enclave
+					}
+					any_system_planet = {
+						OR = {
+							is_asteroid = yes
+							is_moon = yes
+						}
+					}
 				}
 			}
 			# Create Enclave!

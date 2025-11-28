@@ -536,8 +536,8 @@
   leader_trait_cw_stealth_specialization_desc:0 "This leader favors stealth attacks, uncloaking only to deliver a close range alpha strike."
   leader_trait_cw_stealth_specialization_hive_desc:0 "This [owner.GetIndividualName] specializes in stealth attacks."
   leader_trait_cw_stealth_specialization_machine_desc:0 "This unit specializes in stealth attacks."
-  leader_trait_cw_stealth_specialization_effect:0 "For §Y30§! Days after Uncloaking:\n$t$$mod_ship_fire_rate_mult$: §G+15%§!\n$t$$mod_ship_weapon_damage$: §G+15%§!\n$only_one_cw_privateer_focus$"
-  leader_trait_cw_stealth_specialization_effect_2:0 "For §Y30§! Days after Uncloaking:\n$t$$mod_ship_fire_rate_mult$: §G+25%§!\n$t$$mod_ship_weapon_damage$: §G+25%§!\n$only_one_cw_privateer_focus$"
+  leader_trait_cw_stealth_specialization_effect:0 "For §Y30§! Days after Uncloaking:\n$tt$- Ship Fire Rate: §G+15%§!\n$tt$- Ship Weapons Damage: §G+15%§!\n$t$- $only_one_cw_privateer_focus$"
+  leader_trait_cw_stealth_specialization_effect_2:0 "For §Y30§! Days after Uncloaking:\n$tt$- Ship Fire Rate: §G+25%§!\n$tt$- Ship Weapons Damage: §G+25%§!\n$t$- $only_one_cw_privateer_focus$"
   cw_stealth_specialization_modifier:0 "$leader_trait_cw_stealth_specialization$"
   cw_stealth_specialization_2_modifier:0 "$leader_trait_cw_stealth_specialization$ II"
 

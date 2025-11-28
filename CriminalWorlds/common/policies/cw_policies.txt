@@ -52,7 +52,7 @@ cw_smuggler_policy_hive = {
 			cw_arms_smuggling
 		}
 		modifier = {
-			pop_category_deviant_drones_alloys_produces_add = 2
+			pop_category_deviant_drones_alloys_produces_add = 4
 		}
 		AI_weight = {
 			weight = 1
@@ -64,8 +64,8 @@ cw_smuggler_policy_hive = {
 			cw_balanced_smuggling
 		}
 		modifier = {
-			pop_category_deviant_drones_alloys_produces_add = 1
-			pop_category_deviant_drones_consumer_goods_produces_add = 1
+			pop_category_deviant_drones_alloys_produces_add = 2
+			pop_category_deviant_drones_consumer_goods_produces_add = 2
 		}
 		AI_weight = {
 			weight = 2
@@ -77,7 +77,7 @@ cw_smuggler_policy_hive = {
 			cw_drugs_smuggling
 		}
 		modifier = {
-			pop_category_deviant_drones_consumer_goods_produces_add = 2
+			pop_category_deviant_drones_consumer_goods_produces_add = 4
 		}
 		AI_weight = {
 			weight = 1
@@ -96,7 +96,7 @@ cw_smuggler_policy_machine = {
 			cw_arms_smuggling
 		}
 		modifier = {
-			pop_category_corrupt_drones_alloys_produces_add = 2
+			pop_category_corrupt_drones_alloys_produces_add = 4
 		}
 		AI_weight = {
 			weight = 1
@@ -108,8 +108,8 @@ cw_smuggler_policy_machine = {
 			cw_balanced_smuggling
 		}
 		modifier = {
-			pop_category_corrupt_drones_alloys_produces_add = 1
-			pop_category_corrupt_drones_consumer_goods_produces_add = 1
+			pop_category_corrupt_drones_alloys_produces_add = 2
+			pop_category_corrupt_drones_consumer_goods_produces_add = 2
 		}
 		AI_weight = {
 			weight = 2
@@ -121,7 +121,7 @@ cw_smuggler_policy_machine = {
 			cw_drugs_smuggling
 		}
 		modifier = {
-			pop_category_corrupt_drones_consumer_goods_produces_add = 2
+			pop_category_corrupt_drones_consumer_goods_produces_add = 4
 		}
 		AI_weight = {
 			weight = 1
