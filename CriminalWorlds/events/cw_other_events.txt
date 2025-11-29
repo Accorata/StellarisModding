@@ -1,4 +1,14 @@
 namespace = criminal_worlds
+# Mod compatability check
+event = {
+	id = criminal_worlds.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = criminal_worlds_active
+	}
+}
+
 ### Leader Trait Events ###
 # Fired by on_added_to_leader_pool - Add connection traits
 country_event = {

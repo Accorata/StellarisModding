@@ -259,12 +259,21 @@ country_event = {
 			is_homicidal = no
 			is_wilderness_empire = no
 			# Enclave is Level 2 or 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_2
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_2
+			}
 		}
 		name = cw_enclave.302.c
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.c.leader_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 30
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.302.c.has_leader
 				NOT = {
@@ -281,18 +290,26 @@ country_event = {
 		}
 	}
 	# Hire Leader - Wilderness
-	#...
 	# Purchase Slaves
 	option = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.302.d
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.d.unique_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 50
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.302.d.slave_planet
 				any_playable_country = {
@@ -327,12 +344,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.302.e
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.302.e.bribery_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 80
+					}
+				}
+			}
 			NOT = {
 				has_modifier = cw_bribed_racketeers
 			}
@@ -1653,12 +1679,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 2 or 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_2
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_2
+			}
 		}
 		name = cw_enclave.303.c
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.c.leader_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 30
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.303.c.has_leader
 				NOT = {
@@ -1680,12 +1715,21 @@ country_event = {
 	# 		has_grand_archive_dlc = yes
 	# 		is_homicidal = no
 	# 		# Enclave is Level 3
-	# 		# event_target:cw_criminal_enclave_country = {
-	# 		# 	#has_modifier = cw_lvl_3
-	# 		# }
+	# 		event_target:cw_criminal_enclave_country = {
+	# 			has_modifier = cw_lvl_3
+	# 		}
 	# 	}
 	# 	name = cw_enclave.303.d
 	# 	allow = {
+	# custom_tooltip = {
+	# 	fail_text = cw_enclave.303.d.unique_opinion_req
+	# 	event_target:cw_criminal_enclave_country = {
+	# 		trust = {
+	# 			who = root
+	# 			value >= 50
+	# 		}
+	# 	}
+	# }
 	# 			custom_tooltip = {
 	# 				fail_text = cw_enclave.303.d.no_stealing_system
 	# 				any_system = {
@@ -1733,12 +1777,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.303.d.no_archive
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.d.unique_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 50
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.303.d.no_raidable_system
 				any_system = {
@@ -1786,12 +1839,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.303.e
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.303.e.bribery_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 80
+					}
+				}
+			}
 			NOT = {
 				has_modifier = cw_bribed_privateers
 			}
@@ -2982,12 +3044,21 @@ country_event = {
 			is_homicidal = no
 			is_gestalt = no
 			# Enclave is Level 2 or 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_2
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_2
+			}
 		}
 		name = cw_enclave.304.c
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.c.leader_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 30
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.304.c.has_leader
 				NOT = {
@@ -3010,11 +3081,20 @@ country_event = {
 			is_homicidal = no
 			is_gestalt = yes
 			# Enclave is Level 2 or 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_2
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_2
+			}
 		}
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.c.leader_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 30
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.304.c.has_assimilated
 				NOT = {
@@ -3035,12 +3115,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.304.d
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.d.unique_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 50
+					}
+				}
+			}
 			custom_tooltip = {
 				fail_text = cw_enclave.304.d.has_hack
 				NOT = {
@@ -3059,12 +3148,21 @@ country_event = {
 		trigger = {
 			is_homicidal = no
 			# Enclave is Level 3
-			# event_target:cw_criminal_enclave_country = {
-			# 	#has_modifier = cw_lvl_3
-			# }
+			event_target:cw_criminal_enclave_country = {
+				has_modifier = cw_lvl_3
+			}
 		}
 		name = cw_enclave.304.e
 		allow = {
+			custom_tooltip = {
+				fail_text = cw_enclave.304.e.bribery_opinion_req
+				event_target:cw_criminal_enclave_country = {
+					trust = {
+						who = root
+						value >= 80
+					}
+				}
+			}
 			NOT = {
 				has_modifier = cw_bribed_hackers
 			}

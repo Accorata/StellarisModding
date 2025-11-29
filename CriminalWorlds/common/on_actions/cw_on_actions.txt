@@ -128,3 +128,10 @@ on_pirate_spawn = {
 		criminal_worlds.110		# Increases pirate spawn chance for Pirate Warlord neighbors
 	}
 }
+
+### Other ###
+on_game_start = {
+	events = {
+		criminal_worlds.0		# Declares this mod active for any future modders
+	}
+}

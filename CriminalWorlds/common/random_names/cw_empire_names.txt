@@ -9,6 +9,11 @@ empire_name_parts_list = {
 		CW_High_Families = 10
 		CW_Crime_Lords = 10
 		CW_Stellar_Syndicate = 10
+		CW_Esteemed_Mafia = 10
+		CW_Midnight_Gang = 10
+		CW_Great_Clan = 10
+		CW_Mafiosos = 10
+		CW_Criminal_Consortium = 10
 	}
 }
 
@@ -21,7 +26,6 @@ empire_name_parts_list = {
 		Death_Merchants = 10
 		Fortune_Seekers = 10
 		Red_Corsairs = 10
-		Fleet_of_the_Damned = 10
 		Star_Raiders = 10
 		Furious_Freebooters = 10
 		Dread_Fiends = 10
@@ -51,15 +55,10 @@ empire_name_parts_list = {
 		White_Reavers = 10
 		Vengeful_Legion = 10
 		Red_Captaincy = 10
-		Sons_of_the_Night = 10
 		Star_Reapers = 10
 		Void_Pact = 10
 		Void_Hunters = 10
 		Death_Pact = 10
-		Vagabonds = 10
-		Brotherhood_of_the_Void = 10
-		Outriders = 10
-		Cabal_of_the_Captains = 10
 		Fallen_Stars = 10
 		Wild_Riders = 10
 		Free_Admiralty = 10
@@ -80,6 +79,9 @@ empire_name_parts_list = {
 		CW_Positronic_Brain = 10
 		CW_Net_Terrors = 10
 		CW_Cyber_Mind = 10
+		CW_Whisper_Network = 10
+		CW_Mind_Reapers = 10
+		CW_Galactic_Botnet = 10
 	}
 }
 
@@ -93,7 +95,7 @@ empire_name_format = {
 			has_country_flag = cw_criminal_enclave_racketeers
 		}
 	}
-	format = "{AofB{<cw_racketeer_names> [This.GetCapitalSystemNameOrRandom]}}"	#This.GetSpeciesAdj
+	format = "{AofB{<cw_racketeer_names> [This.GetCapitalSystemNameOrRandom]}}"
 	noun = "{<cw_racketeer_names>}"
 }
 

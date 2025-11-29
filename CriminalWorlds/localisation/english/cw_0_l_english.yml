@@ -359,18 +359,25 @@
   CW_High_Families:0 "High Families"
   CW_Crime_Lords:0 "Criminal Lords"
   CW_Stellar_Syndicate:0 "Stellar Syndicate"
+  CW_Esteemed_Mafia:0 "Esteemed Mafia"
+	CW_Midnight_Gang:0 "Midnight Gang"
+	CW_Great_Clan:0 "Great Clan"
+  CW_Mafiosos:0 "Mafiosos"
+  CW_Criminal_Consortium:0 "Criminal Consortium"
 # Privateer Names
   CW_Soul_Liberators:0 "Soul Liberators"
   CW_Glory_Riders:0 "Glory Riders"
   CW_Free_Sailors:0 "Free Sailors"
 # Hacker Names
-  CW_Cyberlords:0 "Cyberlords"
+  CW_Cyberlords:0 "Cyber Lords"
   CW_Netrunners:0 "Netrunners"
-  # CW_Administrator_Zero:0 "Administrator Zero"
   CW_Null_Source:0 "Null Source"
   CW_Positronic_Brain:0 "Positronic Brain"
   CW_Net_Terrors:0 "Net Terrors"
   CW_Cyber_Mind:0 "Cyber Mind"
+  CW_Whisper_Network:0 "Whisper Network"
+  CW_Mind_Reapers:0 "Mind Reapers"
+  CW_Galactic_Botnet:0 "Galactic Botnet"
 
 ## Situations
   situation_cw_enclave_upgrade: "Expanding Operations"

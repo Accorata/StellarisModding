@@ -44,6 +44,8 @@ has_cw_criminal_enclave_event = {
 		cw_enclave.302		# Racketeers
 		cw_enclave.303		# Privateers
 		cw_enclave.304		# Hackers
+		# New Offers
+		cw_enclave.301
 		# Racketeers
 		cw_enclave.400		# Smuggled Arms 
 		cw_enclave.401		# Illegal Drugs 

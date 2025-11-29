@@ -4,6 +4,9 @@ tags={
 	"Leaders"
 	"Events"
 	"Economy"
+	"Military"
+	"Diplomacy"
+	"Overhaul"
 }
 name="[4.0+] Criminal Worlds"
 supported_version="v4.*"
