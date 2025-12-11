@@ -1,0 +1,76 @@
+# ac_virulent_cysts = {
+# 	type = aux
+# 	icon = "GFX_mutation_virulent_cysts"
+# 	ship_components = {
+# 		small = "VIRULENT_CYSTS_SMALL"
+# 		medium = "VIRULENT_CYSTS_MEDIUM"
+# 		large = "VIRULENT_CYSTS_LARGE"
+# 		extra_large = "VIRULENT_CYSTS_EXTRA_LARGE"
+# 	}
+# 	upgrades_to = "ac_virulent_cysts_2"
+# 	is_unique = yes
+# }
+# ac_virulent_cysts_2 = {
+# 	type = aux
+# 	icon = "GFX_mutation_ac_virulent_cysts_2"
+# 	ship_components = {
+# 		small = "VIRULENT_CYSTS_SMALL"
+# 		medium = "VIRULENT_CYSTS_MEDIUM"
+# 		large = "VIRULENT_CYSTS_LARGE"
+# 		extra_large = "VIRULENT_CYSTS_EXTRA_LARGE"
+# 	}
+# 	is_unique = yes
+# }
+# leechcraft = {
+# 	type = offensive
+# 	icon = "GFX_mutation_leechcraft"
+# 	ship_components = {
+# 		small = "LEECHCRAFT_SMALL"
+# 		large = "LEECHCRAFT_LARGE"
+# 	}
+# 	is_unique = yes
+# }
+# herdsong_chords = {
+# 	type = aux
+# 	icon = "GFX_mutation_herdsong_chords"
+# 	ship_components = {
+# 		small = "HERDSONG_CHORDS_SMALL"
+# 		medium = "HERDSONG_CHORDS_MEDIUM"
+# 		large = "HERDSONG_CHORDS_LARGE"
+# 		extra_large = "HERDSONG_CHORDS_EXTRA_LARGE"
+# 	}
+# 	is_unique = yes
+# }
+# gastric_fountain = {
+# 	type = offensive
+# 	icon = "GFX_mutation_gastric_fountain"
+# 	ship_components = {
+# 		medium = "GASTRIC_FOUNTAIN_MEDIUM"
+# 		large = "GASTRIC_FOUNTAIN_LARGE"
+# 		extra_large = "GASTRIC_FOUNTAIN_EXTRA_LARGE"
+# 	}
+# 	is_unique = yes
+# 	component_slot_size_to_disable = engulf
+# }
+ac_fissile_cores = {
+	type = aux
+	icon = "GFX_mutation_fissile_cores"
+	ship_components = {
+		small = "FISSILE_CORES_SMALL"
+		medium = "FISSILE_CORES_MEDIUM"
+		large = "FISSILE_CORES_LARGE"
+	}
+	upgrades_to = "ac_fissile_cores_2"
+	is_unique = yes
+}
+
+ac_fissile_cores_2 = {
+	type = aux
+	icon = "GFX_mutation_ac_fissile_cores_2"
+	ship_components = {
+		small = "FISSILE_CORES_SMALL"
+		medium = "FISSILE_CORES_MEDIUM"
+		large = "FISSILE_CORES_LARGE"
+	}
+	is_unique = yes
+}

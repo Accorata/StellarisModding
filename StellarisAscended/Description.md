@@ -2,7 +2,7 @@
 
 Doesn’t it feel that society might change a bit if we were suddenly all immortal robots or had telepathic capabilities? This mod aims to capture the empire transformations that could occur after empire ascendancy. Each combination of Ascension Path and Empire Type has access to Two Civics unique to them, all which aim to be flavorful role playing wise and provide unique powerful benefits. However, each of these Civics only activates if its corresponding Ascension Path is completed. Additionally, Psionic and Genetic Ascensions are given their own authorities, each with an accompanying edict.
 
-This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited (and additionally psionic/genetic didn’t get any love). This mod aims to mend that gap, adding Psionic and Genetic authorities, edicts, events, and governments which can be unlocked after ascending and completing an event chain (modelled after Cybernetic and Synthetic authorities in the Machine Age). Hopefully this should also contribute to a more excited midgame as new strategies come online.
+This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited (and additionally psionic/genetic didn’t get any love). This mod aims to mend that gap, adding Psionic and Genetic authorities, edicts, events, and governments which can be unlocked after ascending and completing an event chain (modelled after Cybernetic and Synthetic authorities in the Machine Age). Hopefully this should also contribute to a more exciting midgame as new strategies come online.
 
 * Currently the Hive/Machine Intelligence Cybergladiator Civics aren't complete, but they will be added shortly
 
@@ -18,6 +18,8 @@ I'd love to delve into all the content within, but that would take way too much 
 - 1 New Relic and 1 New Ascension Perk
 - And More...
 
+All code, text and art was made entirely by me. AI was not used in any way in creating this mod.
+
 The mod is currently only available in English and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3420883204]Russian[/url] (thanks Xsio!).
 (translators welcome)
 
@@ -25,7 +27,7 @@ The mod is currently only available in English and [url=https://steamcommunity.c
 
 No DLC requirements.
 
-Minimal Base Game Overrides (Should be compatible with almost every mod)
+Minimal Base Game Overrides (Should be very compatible with other mods)
 
 Completely Compatible With Existing Saves ([i]Ignore my previous comments, this mod has since been updated[/i])
 
@@ -37,7 +39,7 @@ Please notify me with any bug reports, suggestions, and/or questions. I’d love
 [url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]
 
 [h2] Modding Information [/h2]
-(Including some additional information for any mod savvy people who are worried about compatibility and/or modders who wish to interact with this one, as well as any intentional references I included.)
+(Including some additional information for any mod savvy people who are worried about compatibility and/or modders who wish to have their mods interact with this one, as well as any intentional references I included.)
 
 Additional Thanks To:
 - @TTFTCUTS (For post-launch bug identification and fixes)

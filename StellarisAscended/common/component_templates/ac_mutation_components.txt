@@ -1,0 +1,48 @@
+### Fissile Cores
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_mutation
+		SIZE_CAP = SMALL
+		SIZE = small
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_mutation
+		SIZE_CAP = MEDIUM
+		SIZE = medium
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_mutation
+		SIZE_CAP = LARGE
+		SIZE = large
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_2_mutation
+		SIZE_CAP = SMALL
+		SIZE = small
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_2_mutation
+		SIZE_CAP = MEDIUM
+		SIZE = medium
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = mutations/ac_fissile_cores_2_mutation
+		SIZE_CAP = LARGE
+		SIZE = large
+	}
+}

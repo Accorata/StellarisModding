@@ -773,6 +773,73 @@ country_event = {
 	}
 }
 
+# On post government change
+country_event = {
+	id = ascension_civics.86
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_mutated_fauna = yes
+	}
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = tiyanki_clone_threshold_reached
+				}
+			}
+			set_country_flag = tiyanki_clone_threshold_reached
+			give_technology = {
+				tech = tech_unique_mutation_tiyanki
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = space_amoeba_clone_threshold_reached
+				}
+			}
+			set_country_flag = space_amoeba_clone_threshold_reached
+			give_technology = {
+				tech = tech_unique_mutation_space_amoeba
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = voidworm_clone_threshold_reached
+				}
+			}
+			set_country_flag = voidworm_clone_threshold_reached
+			give_technology = {
+				tech = tech_unique_mutation_voidworm
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cutholoid_clone_threshold_reached
+				}
+			}
+			set_country_flag = cutholoid_clone_threshold_reached
+			give_technology = {
+				tech = tech_unique_mutation_cutholoid
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = crystalline_entity_clone_threshold_reached
+				}
+			}
+			set_country_flag = crystalline_entity_clone_threshold_reached
+			give_technology = {
+				tech = tech_unique_mutation_crystalline_entity
+			}
+		}
+	}
+}
+
 # testing event
 planet_event = {
 	id = ascension_civics.199

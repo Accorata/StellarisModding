@@ -82,6 +82,7 @@ is_ac_cybermachine = {
 }
 
 ac_has_confirmed_shroud_patron = {
+	# edit
 	OR = {
 		has_country_flag = composer_covenant_confirmed
 		has_country_flag = eater_covenant_confirmed
@@ -101,15 +102,34 @@ is_ac_shroud_renouncer = {
 
 is_ac_blossoming = {
 	OR = {
-		has_valid_civic = civic_blossoming_worlds
-		has_valid_civic = civic_blossoming_hives
+		AND = {
+			OR = {
+				has_valid_civic = civic_ac_gen_blossoming_worlds
+				has_valid_civic = civic_ac_gen_blossoming_hives
+			}
+			has_tradition = tr_genetics_finish
+		}
+		AND = {
+			OR = {
+				has_valid_civic = civic_blossoming_worlds
+				has_valid_civic = civic_blossoming_hives
+			}
+			has_tradition = tr_purity_finish
+		}
 	}
-	has_tradition = tr_genetics_finish
 }
 
 is_ac_xanadu = {
-	has_valid_civic = civic_xanadu_retreats
-	has_tradition = tr_genetics_finish
+	OR = {
+		AND = {
+			has_valid_civic = civic_ac_gen_xanadu_retreats
+			has_tradition = tr_genetics_finish
+		}
+		AND = {
+			has_valid_civic = civic_xanadu_retreats
+			has_tradition = tr_purity_finish
+		}
+	}
 }
 
 is_ac_specialized = {
@@ -133,11 +153,23 @@ can_do_ac_specialized_robo_modding = {
 
 is_ac_diversified = {
 	OR = {
-		has_valid_civic = civic_hyper_diversification
-		has_valid_civic = civic_employee_diversification
-		has_valid_civic = civic_hyper_diversified
+		AND = {
+			OR = {
+				has_valid_civic = civic_ac_gen_hyper_diversification
+				has_valid_civic = civic_ac_gen_employee_diversification
+				has_valid_civic = civic_ac_gen_hyper_diversified
+			}
+			has_tradition = tr_genetics_finish
+		}
+		AND = {
+			OR = {
+				has_valid_civic = civic_hyper_diversification
+				has_valid_civic = civic_employee_diversification
+				has_valid_civic = civic_hyper_diversified
+			}
+			has_tradition = tr_mutation_finish
+		}
 	}
-	has_tradition = tr_genetics_finish
 }
 
 #this = species, from = country
@@ -201,6 +233,13 @@ is_ac_numbered_stars = {
 	has_tradition = tr_nanotech_finish
 }
 
+is_ac_mutated_fauna = {
+	OR = {
+		has_valid_civic = civic_ac_monstrous_fauna
+	}
+	has_tradition = tr_mutation_finish
+}
+
 # Auth Scripted Triggers
 trait_ac_has_edict_unholy_possession = {
 	OR = {
@@ -221,7 +260,6 @@ trait_ac_has_edict_unholy_possession = {
 }
 
 # Building Scripted Triggers
-
 has_ac_upgraded_capital = {
 	OR = {
 		has_upgraded_capital = yes

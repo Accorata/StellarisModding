@@ -120,7 +120,6 @@ on_pop_assembled = {
 # 		ascension_governments.50	 # Prevent Imperial Clones from getting extra heirs
 # 	}
 # }
-
 on_post_government_changed = {
 	events = {
 		# ascension_civics.10			# Add ascendant psionic to psionic pops
@@ -136,6 +135,7 @@ on_post_government_changed = {
 		ascension_civics.83		# Unrenounce the Shroud
 		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
 		ascension_civics.85		# Remove Half-Virtual trait for non-Cyberspacial Hives
+		ascension_civics.86		# Give Unique Mutation techs to Mutated Fauna empires
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current heir if Imperial Clones and creates new clone
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth

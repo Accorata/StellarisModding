@@ -1,6 +1,10 @@
 civic_blossoming_worlds = {
-	playable = { has_biogenesis_dlc = yes }
-	ai_playable = { has_biogenesis_dlc = yes }
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
 	potential = {
 		ethics = {
 			NOT = {
@@ -38,7 +42,7 @@ civic_blossoming_worlds = {
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_genetics_finish
+			has_tradition = tr_purity_finish
 		}
 		description = civic_tooltip_blossoming_worlds_effects
 		modifier = {
@@ -49,8 +53,12 @@ civic_blossoming_worlds = {
 }
 
 civic_xanadu_retreats = {
-	playable = { has_biogenesis_dlc = yes }
-	ai_playable = { has_biogenesis_dlc = yes }
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
 	potential = {
 		ethics = {
 			NOT = {
@@ -88,14 +96,14 @@ civic_xanadu_retreats = {
 		base = 0
 		modifier = {
 			add = 100
-			has_tradition = tr_genetics_finish
+			has_tradition = tr_purity_finish
 		}
 	}
 	description = civic_tooltip_xanadu_retreats_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_genetics_finish
+			has_tradition = tr_purity_finish
 		}
 		description = civic_tooltip_xanadu_retreats_effects
 		modifier = {
@@ -106,8 +114,12 @@ civic_xanadu_retreats = {
 }
 
 civic_blossoming_hives = {
-	playable = { has_biogenesis_dlc = yes }
-	ai_playable = { has_biogenesis_dlc = yes }
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
 	potential = {
 		ethics = {
 			value = ethic_gestalt_consciousness
@@ -129,7 +141,7 @@ civic_blossoming_hives = {
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_genetics_finish
+			has_tradition = tr_purity_finish
 		}
 		description = civic_tooltip_blossoming_hives_effects
 		modifier = {

@@ -72,6 +72,28 @@
   trait_ac_bio_intelligent:0 "Brilliant"
   trait_ac_bio_intelligent_desc:0 "An ingenious mutation developed by our scientists called Anton's Key has allowed for intelligence never seen before."
 
+  civic_ac_monstrous_fauna:0 "Monstrous Fauna"
+  civic_ac_monstrous_fauna_desc:0 "..."
+  civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$- ...\n\n§EModifiers:§!\n$mutation_ascension_required$- ..."
+  civic_tooltip_ac_monstrous_fauna_effects:0 "-...\n\n§EModifiers:§!\n- ..."
+  # councilor needed ...
+
+
+  tech_ac_unique_mutation_crystalline_entity:0 "$tech_unique_mutation_crystalline_entity"
+  tech_ac_unique_mutation_crystalline_entity_desc:0 "$tech_unique_mutation_crystalline_entity_desc"
+  tech_ac_unique_mutation_crystalline_entity_2:0 "..."
+  tech_ac_unique_mutation_crystalline_entity_2_desc:0 "..."
+  AC_FISSILE_CORES: "$FISSILE_CORES$"
+  AC_FISSILE_CORES_DESC: "$FISSILE_CORES_DESC$"
+  AC_FISSILE_CORES_SMALL: "$FISSILE_CORES$"
+  AC_FISSILE_CORES_MEDIUM: "$FISSILE_CORES$"
+  AC_FISSILE_CORES_LARGE: "$FISSILE_CORES$"
+  AC_FISSILE_CORES_2: "Scissle Cores"
+  AC_FISSILE_CORES_2_DESC: "..."
+  AC_FISSILE_CORES_2_SMALL: "$AC_FISSILE_CORES_2$"
+  AC_FISSILE_CORES_2_MEDIUM: "$AC_FISSILE_CORES_2$"
+  AC_FISSILE_CORES_2_LARGE: "$AC_FISSILE_CORES_2$"
+
 # Cloning ---------------------------------------------------------------------------------------------
   cloning_ascension_required:0 "If §YCloning§! Ascension completed:\n"
 

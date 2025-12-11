@@ -178,6 +178,12 @@ civic_doomseekers = {
 }
 
 civic_shroud_renouncers = {
+	playable = {
+		has_shroud_dlc = no
+	}
+	ai_playable = {
+		has_shroud_dlc = no
+	}
 	potential = {
 		ethics = {
 			NOT = {
@@ -243,6 +249,12 @@ civic_shroud_renouncers = {
 }
 
 civic_shroud_divestment = {
+	playable = {
+		has_shroud_dlc = no
+	}
+	ai_playable = {
+		has_shroud_dlc = no
+	}
 	potential = {
 		ethics = {
 			NOT = {
