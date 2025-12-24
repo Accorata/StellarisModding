@@ -1,7 +1,7 @@
-### Fissile Cores
+### Infectous Cysts (Virulent Cysts)
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_mutation
+		script = grand_archive/mutations/ac_virulent_cysts_2_mutation
 		SIZE_CAP = SMALL
 		SIZE = small
 	}
@@ -9,7 +9,7 @@ utility_component_template = {
 
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_mutation
+		script = grand_archive/mutations/ac_virulent_cysts_2_mutation
 		SIZE_CAP = MEDIUM
 		SIZE = medium
 	}
@@ -17,7 +17,7 @@ utility_component_template = {
 
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_mutation
+		script = grand_archive/mutations/ac_virulent_cysts_2_mutation
 		SIZE_CAP = LARGE
 		SIZE = large
 	}
@@ -25,7 +25,137 @@ utility_component_template = {
 
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_2_mutation
+		script = grand_archive/mutations/ac_virulent_cysts_2_mutation
+		SIZE_CAP = EXTRA_LARGE
+		SIZE = extra_large
+	}
+}
+
+### Vampiric Spawn (Leechcraft)
+strike_craft_component_template = {
+	key = "AC_LEECHCRAFT_2_SMALL"
+	entity = "space_amoeba_small_entity"
+	size = small
+	weapon_type = instant
+	icon = "GFX_mutation_ac_leechcraft_2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_ac_unique_mutation_space_amoeba_2"
+	}
+	potential = {
+		OR = {
+			is_ship_size = space_amoeba
+			is_ship_size = space_amoeba_mother
+		}
+	}
+	component_set = "LEECHCRAFT"
+	projectile_gfx = "small_space_amoeba_weapon"
+	tags = {
+		weapon_type_strike_craft
+		weapon_type_space_fauna
+	}
+	ai_tags = {
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		inline_script = {
+			script = "grand_archive/mutations/component_dynamic_cost"
+			COST = 120
+		}
+	}
+	ship_modifier = {
+		component_lifesteal_add = 1
+	}
+	count = 2
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+	damage = {
+		min = 40
+		max = 50
+	}
+	cooldown = 5
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 0.7
+	tracking = 0.5
+	health = 30
+	armor = 10
+	shield = 0
+	evasion = 0.5
+	speed = 600
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1.5
+	ship_behavior = "bombers_behavior"
+}
+
+strike_craft_component_template = {
+	key = "AC_LEECHCRAFT_2_LARGE"
+	entity = "space_amoeba_small_entity"
+	size = large
+	weapon_type = instant
+	icon = "GFX_mutation_ac_leechcraft_2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_ac_unique_mutation_space_amoeba_2"
+	}
+	potential = {
+		OR = {
+			is_ship_size = space_amoeba
+			is_ship_size = space_amoeba_mother
+		}
+	}
+	component_set = "LEECHCRAFT"
+	projectile_gfx = "small_space_amoeba_weapon"
+	tags = {
+		weapon_type_strike_craft
+		weapon_type_space_fauna
+	}
+	ai_tags = {
+		weapon_role_anti_shield
+	}
+	resources = {
+		category = ship_components
+		inline_script = {
+			script = "grand_archive/mutations/component_dynamic_cost"
+			COST = 480
+		}
+	}
+	ship_modifier = {
+		component_lifesteal_add = 1
+	}
+	count = 8
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+	damage = {
+		min = 40
+		max = 50
+	}
+	cooldown = 5
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 0.7
+	tracking = 0.5
+	health = 30
+	armor = 10
+	shield = 0
+	evasion = 0.5
+	speed = 600
+	rotation_speed = 0.8
+	acceleration = 1
+	shield_damage = 1
+	shield_penetration = 1
+	armor_damage = 1.5
+	ship_behavior = "bombers_behavior"
+}
+
+### Scissle Cores (Fissile Cores)
+utility_component_template = {
+	inline_script = {
+		script = grand_archive/mutations/ac_fissile_cores_2_mutation
 		SIZE_CAP = SMALL
 		SIZE = small
 	}
@@ -33,7 +163,7 @@ utility_component_template = {
 
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_2_mutation
+		script = grand_archive/mutations/ac_fissile_cores_2_mutation
 		SIZE_CAP = MEDIUM
 		SIZE = medium
 	}
@@ -41,7 +171,7 @@ utility_component_template = {
 
 utility_component_template = {
 	inline_script = {
-		script = mutations/ac_fissile_cores_2_mutation
+		script = grand_archive/mutations/ac_fissile_cores_2_mutation
 		SIZE_CAP = LARGE
 		SIZE = large
 	}

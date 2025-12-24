@@ -68,6 +68,10 @@ spriteTypes = {
 	}
 	# MUTATIONS ------------------------------------------------------------------------------
 	spriteType = {
+		name = "GFX_mutation_ac_leechcraft_2"
+		textureFile = "gfx/interface/icons/mutations/ac_vampiric_spawn.dds"
+	}
+	spriteType = {
 		name = "GFX_mutation_ac_fissile_cores_2"
 		textureFile = "gfx/interface/icons/mutations/ac_scissile_cores.dds"
 	}

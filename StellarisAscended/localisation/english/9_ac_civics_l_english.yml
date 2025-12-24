@@ -74,25 +74,33 @@
 
   civic_ac_monstrous_fauna:0 "Monstrous Fauna"
   civic_ac_monstrous_fauna_desc:0 "..."
-  civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$- ...\n\n§EModifiers:§!\n$mutation_ascension_required$- ..."
-  civic_tooltip_ac_monstrous_fauna_effects:0 "-...\n\n§EModifiers:§!\n- ..."
-  # councilor needed ...
+  civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$- ...\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
+  civic_tooltip_ac_monstrous_fauna_effects:0 "-...\n\n§EModifiers:§!\n- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
+  # councilor needed ... (biology+military ops reseach speed?)
 
+  AC_VIRULENT_CYSTS_2: "Infectous Cysts"
+  AC_VIRULENT_CYSTS_2_DESC: "..."
+  AC_VIRULENT_CYSTS_2_SMALL: "$AC_VIRULENT_CYSTS_2$"
+  AC_VIRULENT_CYSTS_2_MEDIUM: "$AC_VIRULENT_CYSTS_2$"
+  AC_VIRULENT_CYSTS_2_LARGE: "$AC_VIRULENT_CYSTS_2$"
+  AC_VIRULENT_CYSTS_2_EXTRA_LARGE: "$AC_VIRULENT_CYSTS_2$"
+  tech_ac_unique_mutation_voidworm_2:0 "$AC_VIRULENT_CYSTS_2$"
+  tech_ac_unique_mutation_voidworm_2_desc:0 "$AC_VIRULENT_CYSTS_2_DESC$"
 
-  tech_ac_unique_mutation_crystalline_entity:0 "$tech_unique_mutation_crystalline_entity"
-  tech_ac_unique_mutation_crystalline_entity_desc:0 "$tech_unique_mutation_crystalline_entity_desc"
-  tech_ac_unique_mutation_crystalline_entity_2:0 "..."
-  tech_ac_unique_mutation_crystalline_entity_2_desc:0 "..."
-  AC_FISSILE_CORES: "$FISSILE_CORES$"
-  AC_FISSILE_CORES_DESC: "$FISSILE_CORES_DESC$"
-  AC_FISSILE_CORES_SMALL: "$FISSILE_CORES$"
-  AC_FISSILE_CORES_MEDIUM: "$FISSILE_CORES$"
-  AC_FISSILE_CORES_LARGE: "$FISSILE_CORES$"
+  AC_LEECHCRAFT_2: "Vampiric Spawn"
+  AC_LEECHCRAFT_2_DESC: "..."
+  AC_LEECHCRAFT_2_SMALL: "$AC_LEECHCRAFT_2$"
+  AC_LEECHCRAFT_2_LARGE: "$AC_LEECHCRAFT_2$"
+  tech_ac_unique_mutation_space_amoeba_2:0 "$AC_LEECHCRAFT_2$"
+  tech_ac_unique_mutation_space_amoeba_2_desc:0 "$AC_LEECHCRAFT_2_DESC$"
+
   AC_FISSILE_CORES_2: "Scissle Cores"
   AC_FISSILE_CORES_2_DESC: "..."
   AC_FISSILE_CORES_2_SMALL: "$AC_FISSILE_CORES_2$"
   AC_FISSILE_CORES_2_MEDIUM: "$AC_FISSILE_CORES_2$"
   AC_FISSILE_CORES_2_LARGE: "$AC_FISSILE_CORES_2$"
+  tech_ac_unique_mutation_crystalline_entity_2:0 "$AC_FISSILE_CORES_2$"
+  tech_ac_unique_mutation_crystalline_entity_2_desc:0 "$AC_FISSILE_CORES_2_DESC$"
 
 # Cloning ---------------------------------------------------------------------------------------------
   cloning_ascension_required:0 "If §YCloning§! Ascension completed:\n"

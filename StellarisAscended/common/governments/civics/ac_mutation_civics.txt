@@ -212,7 +212,8 @@ civic_ac_monstrous_fauna = {
 		}
 		description = civic_tooltip_ac_monstrous_fauna_effects
 		modifier = {
-			# ...
+			space_fauna_ship_damage_mult = 0.25
+			space_fauna_monthly_increased_breeding_chance_add = 1
 		}
 	}
 }

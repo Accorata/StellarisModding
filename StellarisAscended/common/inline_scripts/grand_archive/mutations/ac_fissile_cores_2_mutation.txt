@@ -1,4 +1,4 @@
-key = "FISSILE_CORES_$SIZE_CAP$_2"
+key = "AC_FISSILE_CORES_2_$SIZE_CAP$"
 size = $SIZE$
 icon = "GFX_mutation_ac_fissile_cores_2"
 icon_frame = 1
@@ -11,7 +11,7 @@ potential = {
 	is_ship_category = crystalline_entity
 }
 
-component_set = "AC_FISSILE_CORES_2"
+component_set = "FISSILE_CORES"
 resources = {
 	category = ship_components
 	inline_script = {

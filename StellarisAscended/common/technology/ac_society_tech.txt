@@ -74,77 +74,42 @@
 # 		}
 # 	}
 # }
-tech_ac_unique_mutation_space_amoeba = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	icon = "tech_unique_mutation_space_amoeba"
-	category = {
-		biology
-	}
-	weight = 0
+inline_script = {
+	script = "technologies/ac_upgraded_mutation_tech"
+	SPACE_FAUNA = voidworm
 }
 
-tech_ac_unique_mutation_tiyanki = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	icon = "tech_unique_mutation_tiyanki"
-	category = {
-		biology
-	}
-	weight = 0
+inline_script = {
+	script = "technologies/ac_upgraded_mutation_tech"
+	SPACE_FAUNA = voidworm
 }
 
-tech_ac_unique_mutation_voidworm = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	icon = "tech_unique_mutation_voidworm"
-	category = {
-		biology
-	}
-	weight = 0
+inline_script = {
+	script = "technologies/ac_upgraded_mutation_tech"
+	SPACE_FAUNA = space_amoeba
 }
 
-tech_ac_unique_mutation_cutholoid = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	icon = "tech_unique_mutation_cutholoid"
-	category = {
-		biology
-	}
-	weight = 0
-}
-
-tech_ac_unique_mutation_crystalline_entity = {
-	cost = @tier3cost1
-	area = society
-	tier = 3
-	icon = "tech_unique_mutation_crystalline_entity"
-	category = {
-		biology
-	}
-	weight = 0
-}
-
-tech_ac_unique_mutation_crystalline_entity_2 = {
-	cost = @tier4cost2
-	area = society
-	tier = 4
-	category = {
-		biology
-	}
-	weight = @tier4cost2
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_ac_mutated_fauna = no
-		}
-	}
-	prerequisites = {
-		tech_controlled_mutations_2
-		tech_ac_unique_mutation_crystalline_entity
-	}
+# tech_ac_unique_mutation_tiyanki = {
+# 	cost = @tier3cost1
+# 	area = society
+# 	tier = 3
+# 	icon = "tech_unique_mutation_tiyanki"
+# 	category = {
+# 		biology
+# 	}
+# 	weight = 0
+# }
+# tech_ac_unique_mutation_cutholoid = {
+# 	cost = @tier3cost1
+# 	area = society
+# 	tier = 3
+# 	icon = "tech_unique_mutation_cutholoid"
+# 	category = {
+# 		biology
+# 	}
+# 	weight = 0
+# }
+inline_script = {
+	script = "technologies/ac_upgraded_mutation_tech"
+	SPACE_FAUNA = crystalline_entity
 }
