@@ -113,6 +113,10 @@ building_ac_psi_tower = {
 building_ac_renouncer_sanctum = {
 	base_buildtime = @b3_time
 	category = government
+	building_sets = {
+		government
+		unity
+	}
 	empire_limit = {
 		base = 1
 	}
@@ -135,8 +139,9 @@ building_ac_renouncer_sanctum = {
 			is_ac_shroud_renouncer = no
 		}
 	}
-	planet_modifier = {
-		job_telepath_add = 3
+	inline_script = {
+		script = jobs/telepaths_add
+		AMOUNT = 300
 	}
 	country_modifier = {
 		pop_happiness = 0.05
@@ -146,15 +151,12 @@ building_ac_renouncer_sanctum = {
 		category = planet_buildings
 		cost = {
 			minerals = @b3_minerals
-			exotic_gases = @b3_rare_cost
+			sr_zro = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b3_upkeep
-			exotic_gases = @b3_rare_upkeep
+			sr_zro = @b2_rare_upkeep
 		}
-	}
-	triggered_desc = {
-		text = job_telepath_effect_desc
 	}
 }
 
@@ -200,6 +202,18 @@ building_ac_grand_sapling = {
 		}
 		pop_happiness = 0.02
 		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_councilor = {
+					COUNCILOR = "councilor_ac_gen_blossoming_worlds"
+				}
+			}
+		}
+		pop_happiness = 0.02
+		mult = value:councilor_level|TYPE|councilor_ac_gen_blossoming_worlds|
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -265,6 +279,18 @@ building_ac_hanging_cities = {
 		}
 		planet_jobs_produces_mult = 0.02
 		mult = value:councilor_level|TYPE|councilor_blossoming_worlds|
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_councilor = {
+					COUNCILOR = "councilor_blossoming_worlds"
+				}
+			}
+		}
+		planet_jobs_produces_mult = 0.02
+		mult = value:councilor_level|TYPE|councilor_ac_gen_blossoming_worlds|
 	}
 	triggered_planet_modifier = {
 		potential = {

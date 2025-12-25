@@ -62,7 +62,7 @@
   trait_ac_bio_industrious:0 "Vigorous"
   trait_ac_bio_industrious_desc:0 "Unparalleled determination matched with physical prowess."
   trait_ac_bio_agrarian:0 "Cultivating"
-  trait_ac_bio_agrarian_desc:0 "Green's thumb would be an understatement. All life flourishes around those who are in tune with the natural environment."
+  trait_ac_bio_agrarian_desc:0 "'Green thumb' is an understatement. All life flourishes around those who are in tune with the natural environment."
   trait_ac_bio_thrifty:0 "Mercantile"
   trait_ac_bio_thrifty_desc:0 "Savvy in all xeno relations, this species knows best how to sell a deal."
   trait_ac_bio_charismatic:0 "Extraordinary"
@@ -86,9 +86,8 @@
   AC_VIRULENT_CYSTS_2_EXTRA_LARGE: "$AC_VIRULENT_CYSTS_2$"
   tech_ac_unique_mutation_voidworm_2:0 "$AC_VIRULENT_CYSTS_2$"
   tech_ac_unique_mutation_voidworm_2_desc:0 "$AC_VIRULENT_CYSTS_2_DESC$"
-
   AC_LEECHCRAFT_2: "Vampiric Spawn"
-  AC_LEECHCRAFT_2_DESC: "..."
+  AC_LEECHCRAFT_2_DESC: "Insatiable ..."
   AC_LEECHCRAFT_2_SMALL: "$AC_LEECHCRAFT_2$"
   AC_LEECHCRAFT_2_LARGE: "$AC_LEECHCRAFT_2$"
   tech_ac_unique_mutation_space_amoeba_2:0 "$AC_LEECHCRAFT_2$"
@@ -106,7 +105,6 @@
   cloning_ascension_required:0 "If §YCloning§! Ascension completed:\n"
 
 # Genetic ---------------------------------------------------------------------------------------------
-# (Need to add these "ac_gen" versions to the scripted triggers)...
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
 
   civic_ac_gen_blossoming_worlds:0 "$civic_blossoming_worlds$"
@@ -242,17 +240,17 @@
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
   civic_shroud_renouncers_desc:0 "This society belives psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
   AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
-  civic_tooltip_shroud_renouncers_incomplete_effects:0 "$psionic_ascension_required$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
-  civic_tooltip_shroud_renouncers_effects:0 "- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n- $mod_planet_psionic_jobs_produces_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
+  civic_tooltip_shroud_renouncers_incomplete_effects:0 "$psionic_ascension_required$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_psionic_pop_bonus_workforce_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
+  civic_tooltip_shroud_renouncers_effects:0 "- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n- $mod_psionic_pop_bonus_workforce_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   councilor_shroud_renouncers:0 "Warden of Consciousness"
   councilor_shroud_renouncers_female:0 "$councilor_shroud_renouncers$"
   councilor_shroud_renouncers_desc:0 "The $TITLE$ ensures the entities of the Shroud have no place in our minds and deploys telepaths to guard against insanity."
 
-  civic_shroud_divestment:0 "Shroud Divestment"
-  civic_shroud_divestment_desc:0 "This Megacorporation sees the Shroud as a hunger for power that cares not for profit and wishes only to control them for its own ends."
+  civic_shroud_divestment:0 "Commercialized Sanity"
+  civic_shroud_divestment_desc:0 "This Megacorporation understand that the entities of the Shroud corrupt mortal minds. As such, it offer a service to free people from these evils - for a price."
   councilor_shroud_divestment:0 "Sanity Monetization Officer"
   councilor_shroud_divestment_female:0 "$councilor_shroud_divestment$"
-  councilor_shroud_divestment_desc:0 "Insanity is a great evil. And people pay a lot to rid themselves of evil. The $TITLE$ exploits these needs for our profit."
+  councilor_shroud_divestment_desc:0 "Insanity is the ultimate threat to one's mind. And people pay a lot to protect their mind. The $TITLE$ exploits these needs for our profit."
   mod_planet_telepaths_energy_produces_add:0 "£energy£ $energy$ from £job_telepath£ $job_telepath_plural$"
 
   # Future Addition
