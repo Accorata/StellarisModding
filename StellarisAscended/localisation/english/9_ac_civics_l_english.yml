@@ -93,6 +93,13 @@
   tech_ac_unique_mutation_space_amoeba_2:0 "$AC_LEECHCRAFT_2$"
   tech_ac_unique_mutation_space_amoeba_2_desc:0 "$AC_LEECHCRAFT_2_DESC$"
 
+  AC_GASTRIC_FOUNTAIN_2: "Gastric Deluge"
+  AC_GASTRIC_FOUNTAIN_2_DESC: "..."
+  AC_GASTRIC_FOUNTAIN_2_MEDIUM: "$AC_GASTRIC_FOUNTAIN_2$"
+  AC_GASTRIC_FOUNTAIN_2_LARGE: "$AC_GASTRIC_FOUNTAIN_2$"
+  AC_GASTRIC_FOUNTAIN_2_EXTRA_LARGE: "$AC_GASTRIC_FOUNTAIN_2$"
+  tech_ac_unique_mutation_cutholoid_2:0 "$AC_GASTRIC_FOUNTAIN_2$"
+  tech_ac_unique_mutation_cutholoid_2_desc:0 "$AC_GASTRIC_FOUNTAIN_2_DESC$"
   AC_FISSILE_CORES_2: "Scissle Cores"
   AC_FISSILE_CORES_2_DESC: "..."
   AC_FISSILE_CORES_2_SMALL: "$AC_FISSILE_CORES_2$"

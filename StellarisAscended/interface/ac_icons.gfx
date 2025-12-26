@@ -68,8 +68,17 @@ spriteTypes = {
 	}
 	# MUTATIONS ------------------------------------------------------------------------------
 	spriteType = {
+		name = "GFX_mutation_ac_virulent_cysts_2"
+		textureFile = "gfx/interface/icons/mutations/ac_infectous_cysts.dds"
+	}
+	spriteType = {
 		name = "GFX_mutation_ac_leechcraft_2"
 		textureFile = "gfx/interface/icons/mutations/ac_vampiric_spawn.dds"
+	}
+	#...
+	spriteType = {
+		name = "GFX_mutation_ac_gastric_fountain_2"
+		textureFile = "gfx/interface/icons/mutations/ac_gastric_deluge.dds"
 	}
 	spriteType = {
 		name = "GFX_mutation_ac_fissile_cores_2"

@@ -81,12 +81,12 @@ inline_script = {
 
 inline_script = {
 	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = voidworm
+	SPACE_FAUNA = space_amoeba
 }
 
 inline_script = {
 	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = space_amoeba
+	SPACE_FAUNA = cutholoid
 }
 
 # tech_ac_unique_mutation_tiyanki = {
@@ -94,16 +94,6 @@ inline_script = {
 # 	area = society
 # 	tier = 3
 # 	icon = "tech_unique_mutation_tiyanki"
-# 	category = {
-# 		biology
-# 	}
-# 	weight = 0
-# }
-# tech_ac_unique_mutation_cutholoid = {
-# 	cost = @tier3cost1
-# 	area = society
-# 	tier = 3
-# 	icon = "tech_unique_mutation_cutholoid"
 # 	category = {
 # 		biology
 # 	}

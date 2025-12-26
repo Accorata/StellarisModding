@@ -152,6 +152,123 @@ strike_craft_component_template = {
 	ship_behavior = "bombers_behavior"
 }
 
+### Gastric Deluge (Gastric Fountain)
+weapon_component_template = {
+	key = "AC_GASTRIC_FOUNTAIN_2_MEDIUM"
+	size = medium
+	type = instant
+	icon = "GFX_mutation_ac_gastric_fountain_2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_ac_unique_mutation_cutholoid_2"
+	}
+	potential = {
+		OR = {
+			is_ship_size = cutholoids_hatchling
+			is_ship_size = cutholoids_juvenile
+			is_ship_size = cutholoids
+		}
+	}
+	component_set = "GASTRIC_FOUNTAIN"
+	projectile_gfx = "gastric_fountain_s"
+	tags = {
+		weapon_type_energy
+		m_slot
+		weapon_type_space_fauna
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		gunship
+	}
+	target_focus = spread
+	firing_arc = 15
+	min_range = 45
+	resources = {
+		category = ship_components
+		inline_script = {
+			script = "grand_archive/mutations/component_dynamic_cost"
+			COST = 240
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "AC_GASTRIC_FOUNTAIN_2_LARGE"
+	size = large
+	type = instant
+	icon = "GFX_mutation_ac_gastric_fountain_2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_ac_unique_mutation_cutholoid_2"
+	}
+	potential = {
+		OR = {
+			is_ship_size = cutholoids_hatchling
+			is_ship_size = cutholoids_juvenile
+			is_ship_size = cutholoids
+		}
+	}
+	component_set = "GASTRIC_FOUNTAIN"
+	projectile_gfx = "gastric_fountain_m"
+	tags = {
+		weapon_type_energy
+		l_slot
+		weapon_type_space_fauna
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		gunship
+	}
+	firing_arc = 15
+	min_range = 45
+	resources = {
+		category = ship_components
+		inline_script = {
+			script = "grand_archive/mutations/component_dynamic_cost"
+			COST = 480
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "AC_GASTRIC_FOUNTAIN_2_EXTRA_LARGE"
+	size = extra_large
+	type = instant
+	icon = "GFX_mutation_ac_gastric_fountain_2"
+	icon_frame = 1
+	prerequisites = {
+		"tech_ac_unique_mutation_cutholoid_2"
+	}
+	potential = {
+		OR = {
+			is_ship_size = cutholoids_hatchling
+			is_ship_size = cutholoids_juvenile
+			is_ship_size = cutholoids
+		}
+	}
+	component_set = "GASTRIC_FOUNTAIN"
+	projectile_gfx = "gastric_fountain_l"
+	tags = {
+		weapon_type_energy
+		x_slot
+		weapon_type_space_fauna
+	}
+	ai_tags = {
+		weapon_role_anti_armor
+		gunship
+	}
+	firing_arc = 15
+	min_range = 45
+	resources = {
+		category = ship_components
+		inline_script = {
+			script = "grand_archive/mutations/component_dynamic_cost"
+			COST = 960
+		}
+	}
+}
+
+#...
 ### Scissle Cores (Fissile Cores)
 utility_component_template = {
 	inline_script = {

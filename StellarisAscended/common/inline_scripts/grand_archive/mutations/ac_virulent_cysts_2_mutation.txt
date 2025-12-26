@@ -1,6 +1,6 @@
 key = "AC_VIRULENT_CYSTS_2_$SIZE_CAP$"
 size = $SIZE$
-icon = "GFX_mutation_virulent_cysts"
+icon = "GFX_mutation_ac_virulent_cysts_2"
 icon_frame = 1
 prerequisites = {
 	"tech_ac_unique_mutation_voidworm_2"
