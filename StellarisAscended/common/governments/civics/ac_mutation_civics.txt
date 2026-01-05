@@ -163,9 +163,11 @@ civic_hyper_diversified = {
 civic_ac_monstrous_fauna = {
 	playable = {
 		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
 	}
 	ai_playable = {
 		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
 	}
 	potential = {
 		ethics = {
@@ -185,14 +187,13 @@ civic_ac_monstrous_fauna = {
 				value = MACHINE
 			}
 		}
-		# civics = { 
-		# 	NOT = { 
-		# 		value = 
-		# 	} 
-		# }
+		civics = {
+			NOT = {
+				value = civic_ac_bioengineered_fauna
+			}
+		}
 	}
 	modification = yes
-	icon = "gfx/interface/icons/governments/civics/civic_ac_hyper_diversification.dds"	# change...
 	pickable_at_start = yes
 	random_weight = {
 		base = 0
@@ -214,6 +215,112 @@ civic_ac_monstrous_fauna = {
 		modifier = {
 			space_fauna_ship_damage_mult = 0.25
 			space_fauna_monthly_increased_breeding_chance_add = 1
+		}
+	}
+}
+
+civic_ac_bioengineered_fauna = {
+	playable = {
+		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_monstrous_fauna
+			}
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_mutation_finish
+		}
+	}
+	description = civic_tooltip_ac_monstrous_fauna_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_mutation_finish
+		}
+		description = civic_tooltip_ac_monstrous_fauna_effects
+		modifier = {
+			space_fauna_ship_damage_mult = 0.25
+			space_fauna_monthly_increased_breeding_chance_add = 1
+		}
+	}
+}
+
+civic_ac_tendrils_of_mutation = {
+	playable = {
+		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+		has_grand_archive_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_mutation_finish
+		}
+	}
+	description = civic_tooltip_ac_tendrils_of_mutation_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_mutation_finish
+		}
+		description = civic_tooltip_ac_tendrils_of_mutation_effects
+		modifier = {
+			space_fauna_ship_damage_mult = 0.25
+			space_fauna_monthly_increased_breeding_chance_add = 1
+			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }

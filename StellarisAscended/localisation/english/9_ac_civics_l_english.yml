@@ -77,6 +77,13 @@
   civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$- ...\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   civic_tooltip_ac_monstrous_fauna_effects:0 "-...\n\n§EModifiers:§!\n- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   # councilor needed ... (biology+military ops reseach speed?)
+  civic_ac_bioengineered_fauna:0 "Bioengineered Fauna"
+  civic_ac_bioengineered_fauna_desc:0 "..."
+  # councilor needed ...
+  civic_ac_tendrils_of_mutation:0 "Tendrils of Mutation"
+  civic_ac_tendrils_of_mutation_desc:0 "..."
+  civic_tooltip_ac_tendrils_of_mutation_incomplete_effects:0 "$civic_tooltip_ac_monstrous_fauna_incomplete_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_tendrils_of_mutation_effects:0 "$civic_tooltip_ac_monstrous_fauna_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   AC_VIRULENT_CYSTS_2: "Infectous Cysts"
   AC_VIRULENT_CYSTS_2_DESC: "..."
@@ -92,7 +99,7 @@
   AC_LEECHCRAFT_2_LARGE: "$AC_LEECHCRAFT_2$"
   tech_ac_unique_mutation_space_amoeba_2:0 "$AC_LEECHCRAFT_2$"
   tech_ac_unique_mutation_space_amoeba_2_desc:0 "$AC_LEECHCRAFT_2_DESC$"
-
+  # ...
   AC_GASTRIC_FOUNTAIN_2: "Gastric Deluge"
   AC_GASTRIC_FOUNTAIN_2_DESC: "..."
   AC_GASTRIC_FOUNTAIN_2_MEDIUM: "$AC_GASTRIC_FOUNTAIN_2$"

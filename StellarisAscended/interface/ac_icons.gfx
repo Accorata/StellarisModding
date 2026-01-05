@@ -55,6 +55,10 @@ spriteTypes = {
 		name = "GFX_ac_bandwidth_router_sb"
 		texturefile = "gfx/interface/icons/modules/sb_ac_bandwidth_router.dds"
 	}
+	spriteType = {
+		name = "GFX_ac_mitosis_chamber_sb"
+		texturefile = "gfx/interface/icons/modules/sb_ac_mitosis_chamber.dds"
+	}
 	# COLONY TYPES ---------------------------------------------------------------------------
 	# testing:
 	spriteType = {
