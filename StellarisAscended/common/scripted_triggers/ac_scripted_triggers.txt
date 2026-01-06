@@ -234,13 +234,23 @@ is_ac_numbered_stars = {
 }
 
 is_ac_mutated_fauna = {
-	AND = {
-		OR = {
-			has_valid_civic = civic_ac_monstrous_fauna
-			has_valid_civic = civic_ac_bioengineered_fauna
-			has_valid_civic = civic_ac_tendrils_of_mutation
+	OR = {
+		AND = {
+			OR = {
+				has_valid_civic = civic_ac_monstrous_fauna
+				has_valid_civic = civic_ac_bioengineered_fauna
+				has_valid_civic = civic_ac_tendrils_of_mutation
+			}
+			has_tradition = tr_mutation_finish
 		}
-		has_tradition = tr_mutation_finish
+		# AND = {
+		# 	OR = {
+		# 		has_valid_civic = civic_ac_gen_monstrous_fauna
+		# 		has_valid_civic = civic_ac_gen_bioengineered_fauna
+		# 		has_valid_civic = civic_ac_gen_tendrils_of_mutation
+		# 	}
+		# 	has_tradition = tr_genetics_finish
+		# }
 	}
 }
 
