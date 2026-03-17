@@ -89,16 +89,11 @@ inline_script = {
 	SPACE_FAUNA = cutholoid
 }
 
-# tech_ac_unique_mutation_tiyanki = {
-# 	cost = @tier3cost1
-# 	area = society
-# 	tier = 3
-# 	icon = "tech_unique_mutation_tiyanki"
-# 	category = {
-# 		biology
-# 	}
-# 	weight = 0
-# }
+inline_script = {
+	script = "technologies/ac_upgraded_mutation_tech"
+	SPACE_FAUNA = tiyanki
+}
+
 inline_script = {
 	script = "technologies/ac_upgraded_mutation_tech"
 	SPACE_FAUNA = crystalline_entity

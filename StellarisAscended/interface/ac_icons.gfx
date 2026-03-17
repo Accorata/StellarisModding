@@ -79,7 +79,10 @@ spriteTypes = {
 		name = "GFX_mutation_ac_leechcraft_2"
 		textureFile = "gfx/interface/icons/mutations/ac_vampiric_spawn.dds"
 	}
-	#...
+	spriteType = {
+		name = "GFX_mutation_ac_herdsong_chords_2"
+		textureFile = "gfx/interface/icons/mutations/ac_vibrant_chords.dds"
+	}
 	spriteType = {
 		name = "GFX_mutation_ac_gastric_fountain_2"
 		textureFile = "gfx/interface/icons/mutations/ac_gastric_deluge.dds"
