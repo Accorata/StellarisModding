@@ -7,6 +7,15 @@ trait_ac_auto_mod_robotic = {
 		ROBOT
 		MACHINE
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		automod
+		special
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -34,6 +43,19 @@ trait_ac_robot_power_drills = {
 		ROBOT
 		MACHINE
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		mineral
+		special
+	}
+	modifier = {
+		miner_jobs_bonus_workforce_mult = 0.2
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -45,9 +67,6 @@ trait_ac_robot_power_drills = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		planet_jobs_minerals_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -74,6 +93,19 @@ trait_ac_robot_harvesters = {
 		ROBOT
 		MACHINE
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		food
+		special
+	}
+	modifier = {
+		farmer_jobs_bonus_workforce_mult = 0.2
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -85,9 +117,6 @@ trait_ac_robot_harvesters = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		planet_jobs_food_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -123,6 +152,19 @@ trait_ac_robot_superconductive = {
 		ROBOT
 		MACHINE
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		energy
+		special
+	}
+	modifier = {
+		technician_jobs_bonus_workforce_mult = 0.2
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -134,9 +176,6 @@ trait_ac_robot_superconductive = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		planet_jobs_energy_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -169,7 +208,20 @@ trait_ac_robot_trading_algorithms = {
 		ROBOT
 		MACHINE
 	}
-	# Droid, Synth, or Individualist Machine
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		trade
+		special
+	}
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.25
+	}
+	# Individualist Machine
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 		owner_is_machine_intelligence = no
@@ -183,9 +235,6 @@ trait_ac_robot_trading_algorithms = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		pop_job_trade_mult = 0.3
-	}
 	slave_cost = {
 		energy = 500
 	}
@@ -195,11 +244,24 @@ trait_ac_robot_emotion_emulators = {
 	cost = 1
 	category = advanced_genetic
 	opposites = {
-		"trait_robot_uncanny"
+		trait_robot_uncanny
 	}
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
+	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		amenities
+		special
+	}
+	modifier = {
+		influential_jobs_bonus_workforce_mult = 0.25
 	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
@@ -212,9 +274,6 @@ trait_ac_robot_emotion_emulators = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		pop_job_amenities_mult = 0.25
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -224,11 +283,24 @@ trait_ac_robot_propaganda_machines = {
 	cost = 1
 	category = advanced_genetic
 	opposites = {
-		"trait_robot_quarrelsome"
+		trait_robot_quarrelsome
 	}
 	allowed_archetypes = {
 		ROBOT
 		MACHINE
+	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		unity
+		special
+	}
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.2
 	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
@@ -241,10 +313,6 @@ trait_ac_robot_propaganda_machines = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		planet_jobs_unity_produces_mult = 0.2
-		planet_jobs_unity_upkeep_mult = -0.15
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -265,6 +333,19 @@ trait_ac_robot_logic_engines = {
 		ROBOT
 		MACHINE
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_LIVING_FRAMES
+	}
+	tags = {
+		machine
+		positive
+		pop_output
+		research
+		special
+	}
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.15
+	}
 	species_potential_add = {
 		can_do_ac_specialized_robo_modding = yes
 	}
@@ -276,11 +357,6 @@ trait_ac_robot_logic_engines = {
 	}
 	initial = no
 	randomized = no
-	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.15
-		planet_jobs_society_research_produces_mult = 0.15
-		planet_jobs_engineering_research_produces_mult = 0.15
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -303,6 +379,15 @@ trait_ac_auto_mod_biological = {
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
+	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		automod
+		positive
+		special
 	}
 	initial = no
 	randomized = no
@@ -332,6 +417,19 @@ trait_ac_bio_industrious = {
 		BIOLOGICAL
 		LITHOID
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		mineral
+		special
+	}
+	modifier = {
+		miner_jobs_bonus_workforce_mult = 0.2
+	}
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -344,9 +442,6 @@ trait_ac_bio_industrious = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	modifier = {
-		planet_jobs_minerals_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -373,6 +468,19 @@ trait_ac_bio_agrarian = {
 		BIOLOGICAL
 		LITHOID
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		food
+		special
+	}
+	modifier = {
+		farmer_jobs_bonus_workforce_mult = 0.2
+	}
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -385,9 +493,6 @@ trait_ac_bio_agrarian = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	modifier = {
-		planet_jobs_food_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -414,6 +519,19 @@ trait_ac_bio_ingenious = {
 		BIOLOGICAL
 		LITHOID
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		energy
+		special
+	}
+	modifier = {
+		technician_jobs_bonus_workforce_mult = 0.2
+	}
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -426,9 +544,6 @@ trait_ac_bio_ingenious = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	modifier = {
-		planet_jobs_energy_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -455,12 +570,23 @@ trait_ac_bio_thrifty = {
 		BIOLOGICAL
 		LITHOID
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		trade
+		special
+	}
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.25
+	}
 	initial = no
 	randomized = no
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
-		owner_is_machine_intelligence = no
-		owner_is_hive_empire = no
 	}
 	species_possible_remove = {
 		always = yes
@@ -469,15 +595,6 @@ trait_ac_bio_thrifty = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	opposites = {
-		"trait_hive_mind"
-	}
-	forbidden_ethics = {
-		ethic_gestalt_consciousness
-	}
-	modifier = {
-		pop_job_trade_mult = 0.3
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -500,6 +617,19 @@ trait_ac_bio_charismatic = {
 	}
 	initial = no
 	randomized = no
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		amenities
+		special
+	}
+	modifier = {
+		influential_jobs_bonus_workforce_mult = 0.25
+	}
 	species_potential_add = {
 		can_do_ac_diversified_bio_modding = yes
 	}
@@ -510,9 +640,6 @@ trait_ac_bio_charismatic = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	modifier = {
-		pop_job_amenities_mult = 0.25
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -524,6 +651,19 @@ trait_ac_bio_traditional = {
 	allowed_archetypes = {
 		BIOLOGICAL
 		LITHOID
+	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		unity
+		special
+	}
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.2
 	}
 	initial = no
 	randomized = no
@@ -537,9 +677,6 @@ trait_ac_bio_traditional = {
 		always = yes
 	}
 	potential_crossbreeding_chance = 1
-	modifier = {
-		planet_jobs_unity_produces_mult = 0.2
-	}
 	slave_cost = {
 		energy = 750
 	}
@@ -566,6 +703,19 @@ trait_ac_bio_intelligent = {
 		BIOLOGICAL
 		LITHOID
 	}
+	localized_tags = {
+		SPECIES_TRAIT_AC_EVOLVING_NICHES
+	}
+	tags = {
+		organic
+		positive
+		pop_output
+		research
+		special
+	}
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.15
+	}
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -580,13 +730,7 @@ trait_ac_bio_intelligent = {
 	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_nerve_stapled"
-		"trait_erudite"
 		"trait_enigmatic_intelligence_poor"
-	}
-	modifier = {
-		planet_jobs_physics_research_produces_mult = 0.15
-		planet_jobs_society_research_produces_mult = 0.15
-		planet_jobs_engineering_research_produces_mult = 0.15
 	}
 	slave_cost = {
 		energy = 750
@@ -632,6 +776,13 @@ trait_ac_auto_analgesic = {
 		BIOLOGICAL
 		LITHOID
 	}
+	tags = {
+		organic
+		positive
+		happiness
+		army
+		special
+	}
 	modifier = {
 		pop_happiness = 0.05
 		army_health = 0.05
@@ -653,6 +804,14 @@ trait_ac_hive_digital = {
 		BIOLOGICAL
 		LITHOID
 	}
+	tags = {
+		organic
+		positive
+		habitability
+		housing
+		upkeep
+		special
+	}
 	species_potential_add = {
 		can_modify_ac_hive_digital_trait = yes
 	}
@@ -662,7 +821,6 @@ trait_ac_hive_digital = {
 	modifier = {
 		habitability_floor_add = 0.15
 		pop_housing_usage_mult = -0.5
-		# planet_pops_energy_upkeep_mult = 0.5		# test (prefered over pop upkeep increase)
 		planet_pops_upkeep_mult = 0.25
 	}
 	triggered_pop_modifier = {
@@ -678,6 +836,7 @@ trait_ac_hive_digital = {
 	}
 }
 
+### UNUSED AND UNUPDATED ###
 trait_ascendant_psionic = {
 	cost = 0
 	potential_crossbreeding_chance = 0
