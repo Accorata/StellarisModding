@@ -50,6 +50,10 @@ spriteTypes = {
 		name = "GFX_leader_trait_ac_restored_sanity"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_restored_sanity.dds"
 	}
+	spriteType = {
+		name = "GFX_leader_trait_ac_vessel"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/ac_vessel.dds"
+	}
 	# STARBASE MODULES -----------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_ac_bandwidth_router_sb"
