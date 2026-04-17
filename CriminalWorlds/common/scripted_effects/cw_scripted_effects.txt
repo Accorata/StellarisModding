@@ -230,13 +230,3 @@ cw_remove_hacker_trades = {
 		remove_modifier = cw_skeleton_key
 	}
 }
-
-# cw_build_outpost = {
-# 	event_target:owner_of_the_planet = {
-# 		event_target:target_planet_for_building = {
-# 			planet_event = {
-# 				id = cw_enclave.2
-# 			}
-# 		}
-# 	}
-# }
