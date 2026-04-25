@@ -15,10 +15,10 @@ leader_trait_age_of_machines = {
 		}
 	}
 	planet_modifier = {
-		planet_metallurgists_produces_mult = 0.15
+		planet_metallurgists_alloys_produces_add = 0.1
 	}
 	sector_modifier = {
-		planet_metallurgists_produces_mult = 0.075
+		planet_metallurgists_alloys_produces_add = 0.05
 	}
 	leader_class = {
 		official
@@ -85,7 +85,7 @@ leader_trait_blunt_directives = {
 		}
 	}
 	councilor_modifier = {
-		country_claim_influence_cost_mult = -0.2
+		country_claim_influence_cost_mult = -0.15
 	}
 	leader_class = {
 		official
@@ -430,9 +430,12 @@ leader_trait_ex_machina = {
 		pop_category_specialists_unity_produces_add = 0.25
 		pop_category_rulers_unity_produces_add = 0.25
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	leader_potential_add = {

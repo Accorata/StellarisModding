@@ -411,12 +411,14 @@ leader_trait_unbound_intellect = {
 	}
 	councilor_modifier = {
 		all_technology_research_speed = 0.05
-		planet_jobs_produces_mult = 0.05
+		pop_bonus_workforce_mult = 0.05
 		starbase_shipyard_build_cost_mult = -0.05
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}			# Timeline First Leader with Destiny Trait
 		}
 	}
 	leader_potential_add = {

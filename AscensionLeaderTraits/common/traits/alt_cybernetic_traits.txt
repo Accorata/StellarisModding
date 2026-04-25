@@ -18,10 +18,10 @@ leader_trait_city_interfaces = {
 		}
 	}
 	planet_modifier = {
-		empire_size_districts_mult = -0.4
+		empire_size_districts_mult = -0.3
 	}
 	sector_modifier = {
-		empire_size_districts_mult = -0.2
+		empire_size_districts_mult = -0.15
 	}
 	leader_class = {
 		official
@@ -357,8 +357,6 @@ leader_trait_multi_tool_appendages = {
 }
 
 # Negative Traits #
-
-
 # Destiny Traits #
 leader_trait_endlessly_adaptive = {
 	leader_trait_type = destiny
@@ -370,9 +368,11 @@ leader_trait_endlessly_adaptive = {
 		COUNCIL = yes
 		TIER = none
 	}
-	on_gained_effect = { 
+	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = {
+				id = timeline.50
+			}			# Timeline First Leader with Destiny Trait
 		}
 	}
 	councilor_modifier = {

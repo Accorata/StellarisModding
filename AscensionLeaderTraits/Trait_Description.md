@@ -6,12 +6,12 @@ The list of traits and their effects is as follows:
 [h2] Psionic Leader Traits [/h2]
 
 [b]Mind of the People[/b] (Available to Advisors, Commissioners, Urbanists, and Analysts)
-  Councilor: -3% empire size from pops
-  Planet: -10% empire size from pops
-  Sector: -5% empire size from pops
+  Councilor: -2% empire size from pops
+  Planet: -6% empire size from pops
+  Sector: -3% empire size from pops
 
 [b]Shroud Empath[/b] (Available to Ambassadors)
-  Councilor: 10% shroud delve cooldown, -20% shroud delve cost
+  Councilor: -15% shroud delve cooldown
 
 [b]Conduit of the People[/b] (Available to Delegates)
   GalCom: +20% diplomatic weight from pops
@@ -55,8 +55,8 @@ The list of traits and their effects is as follows:
 [h2] Cybernetic Leader Traits [/h2]
 
 [b]City Interfaces[/b] (Available to Commissioners, Urbanists, and Analysts)
-  Planet: -40% empire size from districts
-  Sector: -20% empire size from districts
+  Planet: -30% empire size from districts
+  Sector: -15% empire size from districts
 
 [b]One with the Machine[/b] (Available to Advisors)
   Councilor: +5% pop assembly speed, +15% planetary build speed
@@ -92,8 +92,8 @@ The list of traits and their effects is as follows:
 [h2] Virtual Leader Traits [/h2]
 
 [b]Uploaded Architect[/b] (Available to Commissioners, Urbanists, and Analysts)
-  Planet: -15% empire size from districts, -10% district/building cost
-  Sector: -7.5% empire size from districts, -5% district/building cost
+  Planet: -10% empire size from districts, district cost, & building cost
+  Sector: -5% empire size from districts, district cost, & building cost
 
 [b]Virtual Reality Specialist[/b] (Available to Advisors)
   Councilor: -5% pop amenities usage
@@ -115,7 +115,7 @@ The list of traits and their effects is as follows:
   Fleet: +100% orbital bombardment damage to pops
 
 [b]Computational Introspection[/b] (Available to Statisticians)
-  Councilor: +15% computing research speed, +15% computing draw chance
+  Councilor: +5% physics research speed, +15% computing draw chance
 
 [b]Deepcode Traveler[/b] (Available to Explorers)
   Leader: -10% upkeep
@@ -136,14 +136,14 @@ The list of traits and their effects is as follows:
 [h2] Synthetic Leader Traits [/h2]
 
 [b]Endless Drive[/b] (Available to Commissioners, Urbanists, and Analysts)
-  Planet: +15% production from metallurgists
-  Sector: +7.5% production from metallurgists
+  Planet: +0.1 alloys from metallurgists
+  Sector: +0.05 alloys from metallurgists
 
 [b]Next-Gen Processing[/b] (Available to Advisors)
   Councilor: -10 empire size
 
 [b]Blunt Directives[/b] (Available to Ambassadors)
-  Councilor: -20% claim influence cost
+  Councilor: -15% claim influence cost
 
 [b]Obfuscated Code[/b] (Available to Delegates)
   GalCom: +10% diplomatic weight from fleets
@@ -216,4 +216,4 @@ The list of traits and their effects is as follows:
   Councilor: -25% agenda duration
 
 [b]Unbound Intellect[/b] (Destiny trait - more common if leader has Hyper-Focused, Reformer, or Military Pioneer)
-  Councilor: +5% research speed, +5% resources from jobs, -5% ship build cost
+  Councilor: +5% research speed, +5% job efficiency, -5% ship build cost

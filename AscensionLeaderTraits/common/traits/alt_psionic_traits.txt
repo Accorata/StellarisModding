@@ -21,13 +21,13 @@ leader_trait_mind_of_the_people = {
 		}
 	}
 	planet_modifier = {
-		empire_size_pops_mult = -0.1
+		empire_size_pops_mult = -0.06
 	}
 	sector_modifier = {
-		empire_size_pops_mult = -0.05
+		empire_size_pops_mult = -0.03
 	}
 	councilor_modifier = {
-		empire_size_pops_mult = -0.03
+		empire_size_pops_mult = -0.02
 	}
 	leader_class = {
 		official
@@ -466,7 +466,8 @@ leader_trait_psionic_being = {
 		owner = {
 			country_event = {
 				id = timeline.50
-			}			# Timeline First Leader with Destiny Trait
+			}
+			# Timeline First Leader with Destiny Trait
 		}
 	}
 	councilor_modifier = {
@@ -479,10 +480,8 @@ leader_trait_psionic_being = {
 		pop_ethic_spiritualist_attraction_mult = 0.5
 	}
 	leader_potential_add = {
-		OR = {
-			has_trait = leader_trait_psionic
-			has_trait = leader_trait_chosen
-		}
+		has_trait = leader_trait_psionic
+		is_immortal = no		# No need to check for chosen since that grants immortality
 	}
 	leader_class = {
 		commander
