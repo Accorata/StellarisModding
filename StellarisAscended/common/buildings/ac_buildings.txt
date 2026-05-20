@@ -2,7 +2,11 @@
 building_ac_psi_tower = {
 	base_buildtime = @b2_time
 	category = government
-	base_cap_amount = 1
+	building_sets = {
+		government
+		urban
+	}
+	planet_limit = 1
 	potential = {
 		exists = owner
 		owner = {
@@ -164,7 +168,11 @@ building_ac_renouncer_sanctum = {
 building_ac_grand_sapling = {
 	base_buildtime = @b1_time
 	category = government
-	base_cap_amount = 1
+	building_sets = {
+		government
+		urban
+	}
+	planet_limit = 1
 	potential = {
 		exists = owner
 		owner = {
@@ -241,7 +249,11 @@ building_ac_grand_sapling = {
 building_ac_hanging_cities = {
 	base_buildtime = @b1_time
 	category = government
-	base_cap_amount = 1
+	building_sets = {
+		government
+		urban
+	}
+	planet_limit = 1
 	potential = {
 		exists = owner
 		owner = {
@@ -319,7 +331,13 @@ building_ac_hanging_cities = {
 building_ac_xanadu = {
 	base_buildtime = @b2_time
 	category = amenity
-	base_cap_amount = 1
+	building_sets = {
+		government
+		urban
+		entertainment
+		resort
+	}
+	planet_limit = 1
 	potential = {
 		NOT = {
 			has_modifier = slave_colony
@@ -403,7 +421,13 @@ building_ac_xanadu = {
 # Cybergladiation
 building_ac_undercity_arena = {
 	base_buildtime = @b2_time
-	base_cap_amount = 1
+	planet_limit = 1
+	building_sets = {
+		government
+		urban
+		entertainment
+		resort
+	}
 	category = amenity
 	potential = {
 		exists = owner
@@ -445,47 +469,51 @@ building_ac_undercity_arena = {
 	# }
 }
 
-building_ac_cybernetics_stadium = {
-	base_buildtime = @b2_time
-	base_cap_amount = 1
-	category = research
-	potential = {
-		exists = owner
-		owner = {
-			is_ac_cybergladiator_machine = yes
-		}
-	}
-	allow = {
-	}
-	destroy_trigger = {
-		exists = owner
-		owner = {
-			is_ac_cybergladiator_machine = no
-		}
-	}
-	planet_modifier = {
-		# job_ac_cybergladiator_drone_add = 2
-		# ...
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
-		}
-		upkeep = {
-			energy = 2
-		}
-	}
-	triggered_desc = {
-		text = job_ac_cybergladiator_drone_effect_desc
-	}
-}
-
+# building_ac_cybernetics_stadium = {
+# 	base_buildtime = @b2_time
+# 	planet_limit = 1
+# 	category = research
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			is_ac_cybergladiator_machine = yes
+# 		}
+# 	}
+# 	allow = {
+# 	}
+# 	destroy_trigger = {
+# 		exists = owner
+# 		owner = {
+# 			is_ac_cybergladiator_machine = no
+# 		}
+# 	}
+# 	planet_modifier = {
+# 		# job_ac_cybergladiator_drone_add = 2
+# 		# ...
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = @b2_minerals
+# 		}
+# 		upkeep = {
+# 			energy = 2
+# 		}
+# 	}
+# 	triggered_desc = {
+# 		text = job_ac_cybergladiator_drone_effect_desc
+# 	}
+# }
 # Synthetic Celestials
 building_ac_mega_forge = {
 	base_buildtime = @b3_time
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
+	building_sets = {
+		industrial
+		factory
+		foundry
+	}
 	category = manufacturing
 	allow = {
 		has_ac_major_upgraded_capital = yes
@@ -538,8 +566,12 @@ building_ac_mega_forge = {
 # Oligarchic Order Authority
 building_ac_order_hall = {
 	base_buildtime = @b3_time
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
+	building_sets = {
+		government
+		urban
+	}
 	category = government
 	allow = {
 		has_ac_major_upgraded_capital = yes
@@ -592,8 +624,11 @@ building_ac_order_hall = {
 
 building_ac_order_hall_knights = {
 	base_buildtime = @b3_time
-	base_cap_amount = 1
+	planet_limit = 1
 	empire_limit = 1
+	building_sets = {
+		knights
+	}
 	icon = building_ac_order_hall
 	category = government
 	allow = {

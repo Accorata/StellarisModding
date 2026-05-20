@@ -74,27 +74,23 @@
 # 		}
 # 	}
 # }
-inline_script = {
-	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = voidworm
-}
-
-inline_script = {
-	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = space_amoeba
-}
-
-inline_script = {
-	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = cutholoid
-}
-
-inline_script = {
-	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = tiyanki
-}
-
-inline_script = {
-	script = "technologies/ac_upgraded_mutation_tech"
-	SPACE_FAUNA = crystalline_entity
-}
+# inline_script = {
+# 	script = "technologies/ac_upgraded_mutation_tech"
+# 	SPACE_FAUNA = voidworm
+# }
+# inline_script = {
+# 	script = "technologies/ac_upgraded_mutation_tech"
+# 	SPACE_FAUNA = space_amoeba
+# }
+# inline_script = {
+# 	script = "technologies/ac_upgraded_mutation_tech"
+# 	SPACE_FAUNA = cutholoid
+# }
+# inline_script = {
+# 	script = "technologies/ac_upgraded_mutation_tech"
+# 	SPACE_FAUNA = tiyanki
+# }
+# inline_script = {
+# 	script = "technologies/ac_upgraded_mutation_tech"
+# 	SPACE_FAUNA = crystalline_entity
+# }

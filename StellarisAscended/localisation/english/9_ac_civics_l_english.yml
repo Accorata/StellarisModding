@@ -39,7 +39,7 @@
   civic_tooltip_hyper_diversification_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
   councilor_hyper_diversification:0 "Phenotype Designer"
   councilor_hyper_diversification_female:0 "$councilor_hyper_diversification$"
-  councilor_hyper_diversification_desc:0 "The $TITLE$ engineers the newest modifications for optimal efficiency. Adaptability mustn't be compromised in specialization."
+  councilor_hyper_diversification_desc:0 "The $TITLE$ engineers the newest modifications for planatary adaptation. Diversity must not be compromised in specialization."
 
   civic_employee_diversification:0 "Employee Diversification"
   civic_employee_diversification_desc:0 "This Megacorporation seeks to optimize their employees productivity, enforcing contracts that involve tuning each's genetic makeup as their job description requires."
@@ -80,12 +80,14 @@
   ac_monstrous_fauna_tech_unlocks:0 "- ..."
   civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   civic_tooltip_ac_monstrous_fauna_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
-  # councilor needed ... (biology+military ops reseach speed?)
+  councilor_ac_monstrous_fauna:0 "War Breeder"
+  councilor_ac_monstrous_fauna_female:0 "$councilor_ac_monstrous_fauna$"
+  councilor_ac_monstrous_fauna_desc:0 "The $TITLE$ oversees the breeding of our space fauna, ensuring they are ready to ravage our enemies."
   civic_ac_bioengineered_fauna:0 "Bioengineered Fauna"
   civic_ac_bioengineered_fauna_desc:0 "..."
   civic_tooltip_ac_bioengineered_fauna_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_culling_reward_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   civic_tooltip_ac_bioengineered_fauna_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $mod_space_fauna_culling_reward_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
-  # councilor needed ...
+  # councilor needed ... (Corporate Xenozoologist)
   civic_ac_tendrils_of_mutation:0 "Tendrils of Mutation"
   civic_ac_tendrils_of_mutation_desc:0 "..."
   civic_tooltip_ac_tendrils_of_mutation_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+10%§!\n- $mod_space_fauna_culling_reward_mult$: §G+10%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
@@ -130,6 +132,8 @@
 
 # Cloning ---------------------------------------------------------------------------------------------
   cloning_ascension_required:0 "If §YCloning§! Ascension completed:\n"
+
+
 
 # Genetic ---------------------------------------------------------------------------------------------
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"
@@ -236,17 +240,6 @@
 
 # Psionic ---------------------------------------------------------------------------------------------
   psionic_ascension_required:0 "If §YPsionic§! Ascension completed:\n"
-
-  # Future Addition
-  civic_beyond_the_veil:0 "Beyond the Veil"
-  civic_beyond_the_veil_desc:0 "This society belives those that see the entrance of the Shroud as the goal are weakminded. They push to ascend beyond all others, embracing their true psionic duality and casting off all material desire for the sake of pure enlightenment!" #needs change...
-  civic_tooltip_beyond_the_veil_effects:0 "$psionic_ascension_required$- All §Y$trait_psionic$§! pops will gain the §Y$trait_ascendant_psionic$§! trait granting complete happiness\n- Unlocks §Y$living_standard_ac_ascetic$§! Living Standard, greatly reducing pop §RHappiness§!, §YAmenity Usage§!, and §YConsumer Goods Upkeep§!"
-  # councilor needed
-  trait_ascendant_psionic:0 "Ascendant Psionic"
-  trait_ascendant_psionic_desc:0 "..."
-  living_standard_ac_ascetic:0 "Ascetic"
-  living_standard_ac_ascetic_tooltip:0 "These pops live a life of little material pleasure.\n\n§YPops§! have massively decreased £happiness£ §RHappiness§!, £amenities£ §YAmenity Usage§!, and £consumer_goods£ §YConsumer Goods Upkeep§!.\n\nThis living standard provides no £trade_value£ §YTrade Value§! per pop." # more specifics needed
-  living_standard_ac_ascetic_tooltip_delayed:0 "§LSome may consider this material abstinence torturous, but for the gifted it is the only way of life.§!"
 
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expressed of individuality."

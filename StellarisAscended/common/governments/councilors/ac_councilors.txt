@@ -292,7 +292,6 @@ councilor_shroud_divestment = {
 # 		inline_script = councilor_leader_weights
 # 	}
 # }
-
 # Purity
 councilor_blossoming_worlds = {
 	leader_class = {
@@ -316,7 +315,6 @@ councilor_xanadu_retreats = {
 		leader_class = official
 	}
 	civic = civic_xanadu_retreats
-
 	modifier = {
 		planet_entertainers_energy_produces_add = 0.5
 	}
@@ -328,6 +326,7 @@ councilor_xanadu_retreats = {
 # Mutation
 councilor_hyper_diversification = {
 	leader_class = {
+		official
 		scientist
 	}
 	is_leader_possible = {
@@ -335,8 +334,7 @@ councilor_hyper_diversification = {
 	}
 	civic = civic_hyper_diversification
 	modifier = {
-		category_biology_research_speed_mult = 0.05
-		category_biology_draw_chance_mult = 0.1
+		pop_environment_tolerance = 0.02
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -358,6 +356,23 @@ councilor_employee_diversification = {
 	modifier = {
 		country_councilor_society_research_produces_add = 5
 		auto_mod_monthly_mult = 0.1
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_monstrous_fauna = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_ac_monstrous_fauna
+	modifier = {
+		category_biology_research_speed_mult = 0.025
+		category_military_theory_research_speed_mult = 0.025
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

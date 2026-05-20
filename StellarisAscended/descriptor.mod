@@ -1,13 +1,12 @@
-version="3.14.*"
+version="2.0"
 tags={
 	"Gameplay"
 	"Events"
 	"Leaders"
-	"Species"
 	"Buildings"
 	"Economy"
 	"Overhaul"
 }
-name="Stellaris Ascended"
-supported_version="v3.14.15926"
+name="[4.0+] Stellaris Ascended"
+supported_version="v4.*"
 remote_file_id="3393552523"

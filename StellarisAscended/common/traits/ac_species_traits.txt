@@ -400,7 +400,6 @@ trait_ac_auto_mod_biological = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 1250
 	}
@@ -441,7 +440,6 @@ trait_ac_bio_industrious = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -492,7 +490,6 @@ trait_ac_bio_agrarian = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -543,7 +540,6 @@ trait_ac_bio_ingenious = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -594,7 +590,6 @@ trait_ac_bio_thrifty = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -639,7 +634,6 @@ trait_ac_bio_charismatic = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -676,7 +670,6 @@ trait_ac_bio_traditional = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	slave_cost = {
 		energy = 750
 	}
@@ -727,7 +720,6 @@ trait_ac_bio_intelligent = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	potential_crossbreeding_chance = 1
 	opposites = {
 		"trait_nerve_stapled"
 		"trait_enigmatic_intelligence_poor"
@@ -755,7 +747,6 @@ trait_ac_bio_intelligent = {
 # Leaving Pain Behind - Perfect Trait
 trait_ac_auto_analgesic = {
 	cost = 0
-	potential_crossbreeding_chance = 0.5
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -837,64 +828,11 @@ trait_ac_hive_digital = {
 }
 
 ### UNUSED AND UNUPDATED ###
-trait_ascendant_psionic = {
-	cost = 0
-	potential_crossbreeding_chance = 0
-	initial = no
-	randomized = no
-	forced_happiness = yes
-	species_potential_add = {
-		always = no
-	}
-	species_possible_remove = {
-		always = no
-	}
-	species_possible_merge_add = {
-		always = no
-	}
-	allowed_archetypes = {
-		BIOLOGICAL
-		LITHOID
-	}
-	modifier = {
-		# planet_jobs_physics_research_produces_mult = 0.1
-		# planet_jobs_society_research_produces_mult = 0.1
-		# planet_jobs_engineering_research_produces_mult = 0.1
-		planet_jobs_unity_produces_mult = 0.2
-		species_leader_exp_gain = 0.1
-	}
-	slave_cost = {
-		energy = 2000
-	}
-	assembly_score = {
-		base = 1.5
-		modifier = {
-			add = 0.5
-			from = {
-				has_research_designation = yes
-			}
-		}
-		modifier = {
-			add = 0.5
-			from = {
-				has_unity_designation = yes
-			}
-		}
-		modifier = {
-			add = 0.5
-			from = {
-				has_building = building_order_keep
-			}
-		}
-	}
-}
-
 # need to add it to pops gained after (place in assimilation) for above trait
 trait_infectious = {
 	cost = -3
 	initial = no
 	randomized = no
-	potential_crossbreeding_chance = 0.9
 	species_potential_add = {
 		always = no
 	}
@@ -922,7 +860,6 @@ trait_ac_cyberform = {
 	cost = 0
 	initial = no
 	randomized = no
-	potential_crossbreeding_chance = 1
 	species_potential_add = {
 		always = no
 	}

@@ -273,7 +273,7 @@ trait_ac_has_edict_unholy_possession = {
 	}
 }
 
-# Building Scripted Triggers
+# Building Scripted Triggers 
 has_ac_upgraded_capital = {
 	OR = {
 		has_upgraded_capital = yes
@@ -284,8 +284,8 @@ has_ac_upgraded_capital = {
 has_ac_major_upgraded_capital = {
 	OR = {
 		has_major_upgraded_capital = yes
-		# ACOT Compatibility:
 		has_fully_upgraded_capital = yes
+		# ACOT Compatibility:
 		has_enigmatic_capital = yes
 		has_ascended_capital = yes
 	}

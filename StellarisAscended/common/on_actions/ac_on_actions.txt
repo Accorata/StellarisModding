@@ -163,6 +163,12 @@ on_ruler_set = {
 	}
 }
 
+on_ship_built = {
+	events = {
+		# ascension_civics.2000		# On ship built, duplicate (test...)
+	}
+}
+
 on_ship_destroyed_perp = {
 	events = {
 		ascension_civics.50		# On ship destroyed machine crusader traits.

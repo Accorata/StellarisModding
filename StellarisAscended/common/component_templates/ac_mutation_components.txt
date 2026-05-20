@@ -32,6 +32,10 @@ utility_component_template = {
 }
 
 ### Vampiric Spawn (Leechcraft)
+@attack_range = 10
+@engagement_range = 100
+@launch_time = 2
+@regen = 0.5
 strike_craft_component_template = {
 	key = "AC_LEECHCRAFT_2_SMALL"
 	entity = "space_amoeba_small_entity"

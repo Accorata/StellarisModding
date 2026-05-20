@@ -1,0 +1,99 @@
+produces = {
+	alloys = 9
+}
+produces = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = yes
+	}
+	alloys = 2.25
+}
+produces = {
+	trigger = {
+		exists = owner
+		owner = {
+			is_robot_empire = yes
+		}
+	}
+	alloys = 3
+}
+produces = {
+	trigger = {
+		exists = owner
+		owner = {
+			is_robot_empire = yes
+		}
+		industrial_jobs_are_catalytic_trigger = yes
+	}
+	alloys = 0.75
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = no
+	}
+	minerals = 18
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = no
+		exists = owner
+		owner = {
+			is_robot_empire = yes
+		}
+	}
+	minerals = 6
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = yes
+	}
+	food = 27
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = yes
+		exists = owner
+		owner = {
+			is_robot_empire = yes
+		}
+	}
+	food = 9
+}
+# Councilor adds Trade
+produces = {
+	trigger = {
+		exists = owner
+		owner = {
+			has_councilor = {
+				COUNCILOR = "councilor_world_commissioners"
+			}
+		}
+	}
+	trade = value:councilor_level|TYPE|councilor_world_commissioners|
+}
+# Overlord Holdings
+produces = {
+	trigger = {
+		planet = {
+			has_planet_flag = has_material_requisitorium
+		}
+	}
+	alloys = @requisitorium_alloys_reduction
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = no
+		planet = {
+			has_planet_flag = has_material_requisitorium
+		}
+	}
+	minerals = 2
+}
+upkeep = {
+	trigger = {
+		industrial_jobs_are_catalytic_trigger = yes
+		planet = {
+			has_planet_flag = has_material_requisitorium
+		}
+	}
+	food = 3
+}

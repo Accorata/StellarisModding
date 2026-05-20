@@ -36,6 +36,8 @@
   job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
   job_ac_grand_synthesizer_desc:0 "The gods of the material plane, Grand Synthesizers forge the resources from which our wonders are formed."
   job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
+  ac_grand_synthesizer_catalytic:0 "Grand Catalyst"
+  ac_grand_synthesizer_catalytic_desc:0 "..."
   mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
   mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
   mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
