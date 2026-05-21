@@ -20,6 +20,15 @@ is_ac_bandwidth_corporate = {
 	has_tradition = tr_virtuality_finish
 }
 
+is_ac_concurrent_command = {
+	has_tradition = tr_virtuality_finish
+	OR = {
+		has_valid_civic = civic_concurrent_command
+		has_valid_civic = civic_executive_militarization
+		has_valid_civic = civic_nodal_command
+	}
+}
+
 is_ac_doomseeker = {
 	has_valid_civic = civic_doomseekers
 	has_tradition = tr_psionics_finish

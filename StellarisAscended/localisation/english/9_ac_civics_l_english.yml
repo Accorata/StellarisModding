@@ -7,7 +7,7 @@
   purity_ascension_required:0 "If §YPurity§! Ascension completed:\n"
 
   civic_blossoming_worlds:0 "Blossoming Worlds"
-  civic_blossoming_worlds_desc:0 "This society preserves the natural beauty through genetically engineered fauna and flora. Their citizens thrive in harmony with the perfect environment."
+  civic_blossoming_worlds_desc:0 "This society perfects the natural beauty through genetically engineered fauna and flora. Their citizens thrive in harmony with the pristine environment."
   civic_tooltip_blossoming_worlds_incomplete_effects:0 "$purity_ascension_required$- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n$purity_ascension_required$- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   civic_tooltip_blossoming_worlds_effects:0 "- Can build £building£ §Y$building_ac_grand_sapling_plural$§! on Gaia worlds\n- Can build £building£ §Y$building_ac_hanging_cities_plural$§! on Gaia worlds\n\n§EModifiers:§!\n- $mod_terraforming_cost_mult$: §G-25%§!\n- Terraforming Speed: §G+25%§!"
   councilor_blossoming_worlds:0 "Terrestrial Cultivator"
@@ -53,7 +53,7 @@
   civic_tooltip_hyper_diversified_effects:0 "$civic_tooltip_hyper_diversification_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   trait_ac_auto_mod_biological:0 "Evolving Niches"
-  trait_ac_auto_mod_biological_desc:0 "This species has been modified to excell at their niche, mutating their own genetic makeup to ensure maximum productivity."
+  trait_ac_auto_mod_biological_desc:0 "This species has been modified to excell at their niche, mutating their genetic makeup to ensure maximum productivity."
   automodding_trait_ac_bio_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_biological$§! picks modifiers from the ['concept_ac_automodding_bio']"
   concept_ac_automodding_bio: "Diversified Auto-Mod Trait List"
   concept_ac_automodding_bio_desc: "- ['trait:trait_ac_bio_traditional']\n- ['trait:trait_ac_bio_thrifty']\n- ['trait:trait_ac_bio_intelligent']\n- ['trait:trait_ac_bio_industrious']\n- ['trait:trait_ac_bio_agrarian']\n- ['trait:trait_ac_bio_ingenious']\n- ['trait:trait_ac_bio_charismatic']"
@@ -316,14 +316,14 @@
   civic_tooltip_cyberspacial_effects:0 "- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   trait_ac_hive_digital:0 "Half-Virtual"
   trait_ac_hive_digital_desc:0 "$trait_robot_digital_1_desc$"
-  trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\nResources From Jobs: §G+100%§! (§R-15%§! per Colony)\n$mod_planet_pops_upkeep_mult$: §R+25%§!"
+  trait_ac_hive_digital_effects: "Pop Housing Usage: §G-50%§!\nSpecies Minimum Habitability: §G+15%§!\n$MOD_POP_BONUS_WORKFORCE_MULT$: §G+75%§! (§R-10%§! per Colony)\nPop Upkeep: §R+0.2§! £energy£ §YEnergy§!"
   concept_trait_ac_hive_digital:0 "$trait_ac_hive_digital$"
   concept_trait_ac_hive_digital_desc:0 "$trait_ac_hive_digital_desc$"
 
   civic_uploaded_mind:0 "Uploaded Mind"
   civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
-  civic_tooltip_uploaded_mind_incomplete_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
-  civic_tooltip_uploaded_mind_effects:0 "- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YUnemployed Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_uploaded_mind_incomplete_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YMaintenance Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_uploaded_mind_effects:0 "- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YMaintenance Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   living_standard_ac_cyberlife:0 "CyberLife"
   living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G+20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! by unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
@@ -395,8 +395,8 @@
 
   civic_concurrent_command:0 "Concurrent Command"
   civic_concurrent_command_desc:0 "This society splits its strategic planning between its ruler and its operatives in the field. Its virtual existence allows all teams to work in unison as if they were one, regardless of distance."
-  civic_tooltip_concurrent_command_incomplete_effects:0 "$virtual_ascension_required$- Gain §Y$commander_with_icon$§! Benefits scaling with Effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
-  civic_tooltip_concurrent_command_effects:0 "- Gain §Y$commander_with_icon$§! Benefits scaling with Effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
+  civic_tooltip_concurrent_command_incomplete_effects:0 "$virtual_ascension_required$- £leader£ §YRuler§! gains the §Y$trait_leader_concurrent_command$§! trait, which provides §Y$commander_with_icon$§! Benefits scaling with Effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
+  civic_tooltip_concurrent_command_effects:0 "- £leader£ §YRuler§! gains the §Y$trait_leader_concurrent_command$§! trait, which provides §Y$commander_with_icon$§! Benefits scaling with Effective £leader£ §YRuler§! skill:\n$t$- $MOD_SHIP_FIRE_RATE_MULT$: §G+3%§!\n$t$- $MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD$: §G+0.2§!\n$t$- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!"
   councilor_concurrent_command:0 "Duo Processor"
   councilor_concurrent_command_female:0 "$councilor_concurrent_command$"
   councilor_concurrent_command_desc:0 "The $TITLE$ serves as backup processing power for the ruler as well as executing routine computational tasks for the nation."
@@ -540,3 +540,19 @@
   ac_droid:0 "Droid"
   trait_ac_cyberform:0 "CyberForm"
   trait_ac_cyberform_desc:0 "..."
+
+### ORIGINS ### - IN PROGRESS
+  origin_ac_born_of_code: "Born of Code"
+  origin_ac_born_of_code_desc: "§RWARNING: Blocks all Ascension Paths except for ['concept_ac_virtual_ascension'].§!\n\n...\n\n...."
+  origin_tooltip_ac_born_of_code_effects: "-..."
+  origin_tooltip_ac_born_of_code_negative_effects: "- ..." 
+  START_SCREEN_AC_BORN_OF_CODE: "..."
+
+  concept_ac_modular_ascension: "Modular Ascension"
+  concept_ac_modular_ascension_desc: "..."
+
+  concept_ac_nanotech_ascension: "Nanotech Ascension"
+  concept_ac_nanotech_ascension_desc: "..."
+
+  concept_ac_virtual_ascension: "Virtual Ascension"
+  concept_ac_virtual_ascension_desc: "$tradition_virtuality_desc$"

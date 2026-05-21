@@ -1,3 +1,20 @@
+# ac_create_situation_host = {
+# 	if = {
+# 		limit = {
+# 			NOT = {
+# 				exists = event_target:ac_situation_host
+# 			}
+# 		}
+# 		create_country = {
+# 			name = "NAME_ac_situation_host"
+# 			type = ac_situation_host
+# 			effect = {
+# 				save_global_event_target_as = ac_situation_host
+# 			}
+# 		}
+# 	}
+# } # Targeted modifiers only apply to planets :(
+
 ac_hyperequality_assimilation_effect = {
 	random_owned_pop = {
 		limit = {

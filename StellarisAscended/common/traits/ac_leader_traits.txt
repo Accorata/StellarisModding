@@ -124,6 +124,36 @@ leader_trait_corrupted_logic = {
 	randomized = no
 }
 
+leader_trait_ac_concurrent_command = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_ac_concurrent_command"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_ac_concurrent_command = yes
+			}
+		}
+		ship_fire_rate_mult = 0.03
+		ship_disengage_opportunities_add = 0.2
+		army_damage_mult = 0.05
+		mult = value:owner.ac_effective_ruler_level
+	}
+	leader_class = {
+		scientist
+		commander
+		official
+	}
+	initial = no
+	randomized = no
+}
+
 leader_trait_genetically_superior = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -261,7 +291,7 @@ leader_trait_ac_eater_vessel = {
 		ship_weapon_damage = 0.15
 		army_damage_mult = 0.15
 		pop_happiness = -0.05
-		pop_growth_speed = -0.05
+		logistic_growth_mult = -0.05
 	}
 	triggered_councilor_modifier = {
 		potential = {
@@ -270,7 +300,7 @@ leader_trait_ac_eater_vessel = {
 		ship_weapon_damage = 0.225
 		army_damage_mult = 0.225
 		pop_happiness = -0.1
-		pop_growth_speed = -0.1
+		logistic_growth_mult = -0.1
 	}
 	leader_class = {
 		commander

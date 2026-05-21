@@ -195,15 +195,6 @@ civic_concurrent_command = {
 			has_tradition = tr_virtuality_finish
 		}
 		description = civic_tooltip_concurrent_command_effects
-		triggered_modifier = {
-			potential = {
-				always = yes
-			}
-			ship_fire_rate_mult = 0.03
-			ship_disengage_opportunities_add = 0.2
-			army_damage_mult = 0.05
-			mult = value:ac_effective_ruler_level
-		}
 	}
 }
 
@@ -255,15 +246,6 @@ civic_executive_militarization = {
 			has_tradition = tr_virtuality_finish
 		}
 		description = civic_tooltip_concurrent_command_effects
-		triggered_modifier = {
-			potential = {
-				always = yes
-			}
-			ship_fire_rate_mult = 0.03
-			ship_disengage_opportunities_add = 0.2
-			army_damage_mult = 0.05
-			mult = value:ac_effective_ruler_level
-		}
 	}
 }
 
@@ -298,15 +280,6 @@ civic_nodal_command = {
 			has_tradition = tr_virtuality_finish
 		}
 		description = civic_tooltip_nodal_command_effects
-		triggered_modifier = {
-			potential = {
-				always = yes
-			}
-			ship_fire_rate_mult = 0.03
-			ship_disengage_opportunities_add = 0.2
-			army_damage_mult = 0.05
-			mult = value:ac_effective_ruler_level
-		}
 		modifier = {
 			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
 		}

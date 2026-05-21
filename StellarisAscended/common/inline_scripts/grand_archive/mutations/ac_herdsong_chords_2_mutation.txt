@@ -18,7 +18,7 @@ potential = {
 	}
 }
 
-component_set = "HERDSONG_CHORDS"
+component_set = "AC_HERDSONG_CHORDS_2"
 resources = {
 	category = ship_components
 	inline_script = {
@@ -34,9 +34,10 @@ friendly_aura = {
 		id = ac_friendly_herdsong_chords_2
 	}
 	modifier = {
+		space_fauna_ship_hull_mult = 0.1
 		space_fauna_ship_armor_mult = 0.1
 		space_fauna_ship_shield_mult = 0.1
-		#change
+		space_fauna_ship_speed_mult = 0.1
 	}
 	graphics = {
 		area_effect = {

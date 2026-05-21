@@ -16,7 +16,7 @@ potential = {
 	}
 }
 
-component_set = "VIRULENT_CYSTS"
+component_set = "AC_VIRULENT_CYSTS_2"
 resources = {
 	category = ship_components
 	inline_script = {

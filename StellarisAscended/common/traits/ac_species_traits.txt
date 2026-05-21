@@ -800,7 +800,7 @@ trait_ac_hive_digital = {
 		positive
 		habitability
 		housing
-		upkeep
+		pop_output
 		special
 	}
 	species_potential_add = {
@@ -814,12 +814,19 @@ trait_ac_hive_digital = {
 		pop_housing_usage_mult = -0.5
 		planet_pops_upkeep_mult = 0.25
 	}
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 		}
-		planet_jobs_produces_mult = 1
+		pop_bonus_workforce_mult = 1
 		mult = value:ac_hive_virtuality_concentrated_production_mult
+	}
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			energy = 0.2
+		}
 	}
 	custom_tooltip = trait_ac_hive_digital_effects
 	slave_cost = {
@@ -849,7 +856,7 @@ trait_infectious = {
 	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
 	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
 	modifier = {
-		pop_growth_speed = -0.2
+		logistic_growth_mult = -0.2
 	}
 	slave_cost = {
 		energy = -3000
@@ -876,7 +883,7 @@ trait_ac_cyberform = {
 	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
 	#custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
 	modifier = {
-		pop_growth_speed = -1
+		logistic_growth_mult = -1
 	}
 	slave_cost = {
 		energy = -500

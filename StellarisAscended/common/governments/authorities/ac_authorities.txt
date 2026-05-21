@@ -82,7 +82,7 @@ auth_democratic = {
 			planet_pops_upkeep_mult = 0.1
 			custom_tooltip = auth_ac_genetic_democratic_chaotic_effects
 			show_only_custom_tooltip = no
-			planet_immigration_pull_mult = 0.25
+			refugee_attraction = 0.25
 		}
 	}
 }
@@ -180,7 +180,7 @@ auth_oligarchic = {
 			empire_size_pops_mult = -0.15
 			custom_tooltip = unlocks_ac_ac_shroud_invocation
 			show_only_custom_tooltip = no
-			pop_growth_speed = 0.1
+			logistic_growth_mult = 0.1
 			pop_decline_speed = 0.1
 		}
 	}

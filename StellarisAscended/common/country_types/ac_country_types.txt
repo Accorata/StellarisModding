@@ -1,0 +1,19 @@
+# ac_situation_host = { 
+# 	government = no
+# 	observable = no
+# 	share_communications = no
+# 	ai = {
+# 		enabled = no
+# 	}
+# 	faction = {
+# 		needs_border_access = no
+# 		generate_borders = no
+# 		needs_colony = no
+# 		auto_delete = no
+# 	}
+# 	modules = {
+# 		exclusive_diplomacy_module = { # Nothing is allowed, but we need this for relationships.
+# 		}
+# 		basic_technology_module = {}
+# 	}
+# }

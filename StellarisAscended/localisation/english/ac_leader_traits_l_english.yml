@@ -2,6 +2,8 @@
   ac_mutated_trait:0 "Mutation: "
 
 # Common Traits
+  leader_trait_ac_concurrent_command:0 "Concurrent Commander"
+  leader_trait_ac_concurrent_command_desc:0 "..."
   leader_trait_genetically_superior:0 "Genetically Superior"
   leader_trait_genetically_superior_desc:0 "Our great ruler has defeated their competitors in the Games of Succession! Their genetics have been tested by natural selection and proven worthy."
   leader_trait_ac_restored_sanity:0 "Restored Sanity"
@@ -12,7 +14,6 @@
 # Commander traits
 ## Bioform Eliminators
   EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT:0 "For Every Enemy Biological Army Killed in Combat"
-# to be implemented
   leader_trait_machine_crusader:0 "Machine Crusader"
   leader_trait_machine_crusader_desc:0 "This leader is willing to do anything to reform organic life. [Root.GetHisHerCap] dedication to the cause is unwavering."
   leader_trait_machine_crusader_2:0 "$leader_trait_machine_crusader$ II"

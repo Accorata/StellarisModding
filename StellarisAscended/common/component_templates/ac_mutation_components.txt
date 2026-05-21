@@ -52,7 +52,7 @@ strike_craft_component_template = {
 			is_ship_size = space_amoeba_mother
 		}
 	}
-	component_set = "LEECHCRAFT"
+	component_set = "AC_LEECHCRAFT_2"
 	projectile_gfx = "small_space_amoeba_weapon"
 	tags = {
 		weapon_type_strike_craft
@@ -112,7 +112,7 @@ strike_craft_component_template = {
 			is_ship_size = space_amoeba_mother
 		}
 	}
-	component_set = "LEECHCRAFT"
+	component_set = "AC_LEECHCRAFT_2"
 	projectile_gfx = "small_space_amoeba_weapon"
 	tags = {
 		weapon_type_strike_craft
@@ -173,7 +173,7 @@ weapon_component_template = {
 			is_ship_size = cutholoids
 		}
 	}
-	component_set = "GASTRIC_FOUNTAIN"
+	component_set = "AC_GASTRIC_FOUNTAIN_2"
 	projectile_gfx = "gastric_fountain_s"
 	tags = {
 		weapon_type_energy
@@ -212,7 +212,7 @@ weapon_component_template = {
 			is_ship_size = cutholoids
 		}
 	}
-	component_set = "GASTRIC_FOUNTAIN"
+	component_set = "AC_GASTRIC_FOUNTAIN_2"
 	projectile_gfx = "gastric_fountain_m"
 	tags = {
 		weapon_type_energy
@@ -250,7 +250,7 @@ weapon_component_template = {
 			is_ship_size = cutholoids
 		}
 	}
-	component_set = "GASTRIC_FOUNTAIN"
+	component_set = "AC_GASTRIC_FOUNTAIN_2"
 	projectile_gfx = "gastric_fountain_l"
 	tags = {
 		weapon_type_energy
@@ -272,7 +272,40 @@ weapon_component_template = {
 	}
 }
 
-#...
+### Vibrant Chords (Herdsong Chords)
+
+utility_component_template = {
+	inline_script = {
+		script = grand_archive/mutations/ac_herdsong_chords_2_mutation
+		SIZE_CAP = SMALL
+		SIZE = small
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = grand_archive/mutations/ac_herdsong_chords_2_mutation
+		SIZE_CAP = MEDIUM
+		SIZE = medium
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = grand_archive/mutations/ac_herdsong_chords_2_mutation
+		SIZE_CAP = LARGE
+		SIZE = large
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = grand_archive/mutations/ac_herdsong_chords_2_mutation
+		SIZE_CAP = EXTRA_LARGE
+		SIZE = extra_large
+	}
+}
+
 ### Scissle Cores (Fissile Cores)
 utility_component_template = {
 	inline_script = {

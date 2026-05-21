@@ -68,7 +68,8 @@ produces = {
 			}
 		}
 	}
-	trade = value:councilor_level|TYPE|councilor_world_commissioners|
+	trade = 1
+	mult = value:councilor_level|TYPE|councilor_world_commissioners|
 }
 # Overlord Holdings
 produces = {

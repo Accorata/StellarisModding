@@ -11,7 +11,7 @@ potential = {
 	is_ship_category = crystalline_entity
 }
 
-component_set = "FISSILE_CORES"
+component_set = "AC_FISSILE_CORES_2"
 resources = {
 	category = ship_components
 	inline_script = {

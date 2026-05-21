@@ -39,6 +39,7 @@ event = {
 # 		}
 # 	}
 # }
+
 # A leader is added to the leader pool, available for recruitment
 country_event = {
 	id = ascension_civics.100
@@ -60,7 +61,10 @@ country_event = {
 				}
 			}
 			from = {
-				add_trait_no_notify = leader_trait_machine_crusader
+				add_trait = {
+					trait = leader_trait_machine_crusader
+					show_message = no
+				}
 			}
 		}
 		# Oligrachic Mutants
@@ -80,7 +84,10 @@ country_event = {
 				1 = {
 					from = {
 						ac_add_mutant_trait = yes
-						add_trait_no_notify = random_negative
+						add_trait = {
+							trait = random_negative
+							show_message = no
+						}
 					}
 				}
 			}
@@ -88,60 +95,13 @@ country_event = {
 	}
 }
 
-# On post government change (needs to also include on new tradition for psionic finish)
-# country_event = {
-# 	id = ascension_civics.10
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		has_valid_civic = civic_beyond_the_veil
-# 	}
-# 	immediate = {
-# 		every_owned_pop = {
-# 			limit = {
-# 				species = {
-# 					has_trait = trait_psionic
-# 				}
-# 			}
-# 			modify_species = {
-# 				species = this
-# 				add_trait = trait_ascendant_psionic
-# 				add_traits_at_start_of_list = yes
-# 			}
-# 		}
-# 	}
-# }
-# On post government change
-# country_event = {
-# 	id = ascension_civics.11
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		NOT = {
-# 			has_valid_civic = civic_beyond_the_veil
-# 		}
-# 	}
-# 	immediate = {
-# 		every_owned_pop = {
-# 			limit = {
-# 				species = {
-# 					has_trait = trait_ascendant_psionic
-# 				}
-# 			}
-# 			modify_species = {
-# 				species = this
-# 				remove_trait = trait_ascendant_psionic
-# 			}
-# 		}
-# 	}
-# }
 # ... (For future testing)
 # country_event = {
 # 	id = ascension_civics.20
 # 	hide_window = yes
 # 	is_triggered_only = yes
 # 	immediate = {
-# 		every_owned_pop = {
+# 		every_owned_pop_group = {
 # 			limit = {
 # 				species = {
 # 					has_trait = trait_infectious
@@ -149,7 +109,7 @@ country_event = {
 # 			}
 # 			planet = {
 # 				#save_event_target_as = infected_planet
-# 				random_owned_pop = {
+# 				random_owned_pop_group = {
 # 					limit = {
 # 						NOT = {
 # 							has_trait = trait_infectious
@@ -297,7 +257,10 @@ country_event = {
 					has_leader_flag = renowned_leader
 				}
 			}
-			add_trait_no_notify = leader_trait_machine_crusader
+			add_trait = {
+				trait = leader_trait_machine_crusader
+				show_message = no
+			}
 		}
 	}
 }
@@ -789,7 +752,7 @@ country_event = {
 	}
 	immediate = {
 		remove_country_flag = ac_half_virtual_hive
-		every_owned_pop = {
+		every_owned_pop_group = {
 			limit = {
 				species = {
 					has_trait = trait_ac_hive_digital
@@ -865,6 +828,59 @@ country_event = {
 			set_country_flag = crystalline_entity_clone_threshold_reached
 			give_technology = {
 				tech = tech_unique_mutation_crystalline_entity
+			}
+		}
+	}
+}
+
+# Concurrent Command ruler trait 
+country_event = {
+	id = ascension_civics.301
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_concurrent_command = yes
+		ruler = {
+			NOT = {
+				has_trait = leader_trait_ac_concurrent_command
+			}
+		}
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				ruler = no
+				has_trait = leader_trait_ac_concurrent_command
+			}
+			remove_trait = {
+				trait = leader_trait_ac_concurrent_command
+				show_message = no
+			}
+		}
+		ruler = {
+			add_trait = {
+				trait = leader_trait_ac_concurrent_command
+				show_message = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.302
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_concurrent_command = no
+	}
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_trait = leader_trait_ac_concurrent_command
+			}
+			remove_trait = {
+				trait = leader_trait_ac_concurrent_command
+				show_message = no
 			}
 		}
 	}
