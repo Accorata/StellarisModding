@@ -11,8 +11,8 @@ component_set = {
 }
 
 component_set = {
-	key = "AC_HERDSONG_CHORDS"
-	icon = "GFX_mutation_ac_herdsong_chords"
+	key = "AC_HERDSONG_CHORDS_2"
+	icon = "GFX_mutation_ac_herdsong_chords_2"
 	is_space_fauna_component_set = yes
 }
 
