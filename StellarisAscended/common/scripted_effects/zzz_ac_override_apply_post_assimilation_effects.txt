@@ -16,7 +16,7 @@ apply_post_assimilation_effects = {
 		}		# scripted effect
 	}
 	# START OF OVERRIDE 2 -------------------------------------------------------------------------
-	if = {
+	else_if = {
 		# assimilator empire with Uploaded Mind civic
 		limit = {
 			root.owner = {
@@ -162,7 +162,7 @@ apply_post_assimilation_effects = {
 			# set citizenship
 			limit = {
 				root.owner = {
-					has_authority = auth_machine_intelligence
+					is_machine_empire = yes
 				}
 			}
 			set_citizenship_type = {
@@ -189,17 +189,30 @@ apply_post_assimilation_effects = {
 			}
 		}
 	}
-	if = {
-		# Handle assimilation of spiritualists into cybernetic empires
+	if = { # Handle assimilation of spiritualists into cybernetic empires
 		limit = {
-			root.owner = {
-				has_policy_flag = cyberization_standards_limited
-			}
+			root.owner = { has_policy_flag = cyberization_standards_limited }
 			is_spiritualist = yes
 			has_trait = trait_cybernetic
 		}
-		convert_to_limited_cybernetic_effect = {
-			CYBER_SPECIES = event_target:convert_to_species
+		convert_to_limited_cybernetic_effect = yes
+	}
+
+	if = { # Handle Purity Authority effects
+		limit = {
+			root.owner = {
+				is_purity_authority = yes
+			}
+			species = {
+				OR = {
+					is_archetype = PRESAPIENT
+					is_archetype = BIOLOGICAL
+					is_archetype = LITHOID
+				}
+			}
+		}
+		species = {
+			set_species_traits_purity_count_variable = yes
 		}
 	}
 }

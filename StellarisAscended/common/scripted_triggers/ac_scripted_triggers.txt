@@ -46,7 +46,7 @@ is_ac_cyber_overlord = {
 	OR = {
 		has_valid_civic = civic_sovereign_circuitry
 	}
-	# has_tradition = tr_cybernetics_finish
+	# has_tradition = tr_cybernetics_finish ...
 }
 
 is_ac_bio_upgrader = {
@@ -54,12 +54,18 @@ is_ac_bio_upgrader = {
 		has_valid_civic = civic_bioform_upgrader
 		has_valid_civic = civic_bio_replacer
 	}
-	has_tradition = tr_synthetics_finish
+	OR = {
+		has_tradition = tr_synthetics_finish
+		has_country_flag = ac_upgrader_imposed
+	}
 }
 
 is_ac_bio_upgrader_corporate = {
 	has_valid_civic = civic_bio_replacer
-	has_tradition = tr_synthetics_finish
+	OR = {
+		has_tradition = tr_synthetics_finish
+		has_country_flag = ac_upgrader_imposed
+	}
 }
 
 is_ac_cyberlife = {

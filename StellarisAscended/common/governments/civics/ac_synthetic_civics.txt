@@ -50,7 +50,10 @@ civic_bioform_upgrader = {
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_synthetics_finish
+			OR = {
+				has_tradition = tr_synthetics_finish
+				has_country_flag = ac_upgrader_imposed
+			}
 		}
 		description = civic_tooltip_bioform_upgrader_effects
 		modifier = {
@@ -117,7 +120,10 @@ civic_bio_replacer = {
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_synthetics_finish
+			OR = {
+				has_tradition = tr_synthetics_finish
+				has_country_flag = ac_upgrader_imposed
+			}
 		}
 		description = civic_tooltip_bio_replacer_effects
 		modifier = {

@@ -15,6 +15,45 @@
 # 	}
 # } # Targeted modifiers only apply to planets :(
 
+ac_impose_synthetic_ideology_effect = {
+	impose_ideology_effect = yes
+	force_remove_civic = 1
+	if = {
+		limit = {
+			is_megacorp = yes
+		}
+		force_add_civic = civic_bio_replacer
+	}
+	else = {
+		force_add_civic = civic_bioform_upgrader
+	}
+	set_country_flag = ac_upgrader_imposed
+	if = {
+		limit = {
+			OR = {
+				has_policy_flag = ai_servitude
+				has_policy_flag = ai_outlawed
+			}
+		}
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_full_rights
+			cooldown = yes
+		}
+	}
+	if = {
+		limit = {
+			has_policy_flag = robots_outlawed
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = yes
+		}
+	}
+}
+
+
 ac_hyperequality_assimilation_effect = {
 	random_owned_pop = {
 		limit = {
@@ -47,19 +86,34 @@ ac_hyperequality_assimilation_effect = {
 ac_add_mutant_trait = {
 	random_list = {
 		1 = {
-			add_trait_no_notify = leader_trait_ac_mutant_brilliance
+			add_trait = {
+				trait = leader_trait_ac_mutant_brilliance
+				show_message = no
+			}
 		}
 		1 = {
-			add_trait_no_notify = leader_trait_ac_mutant_tetrochromat
+			add_trait = {
+				trait = leader_trait_ac_mutant_tetrochromat
+				show_message = no
+			}
 		}
 		1 = {
-			add_trait_no_notify = leader_trait_ac_mutant_evolving
+			add_trait = {
+				trait = leader_trait_ac_mutant_evolving
+				show_message = no
+			}
 		}
 		1 = {
-			add_trait_no_notify = leader_trait_ac_mutant_shapeshifter
+			add_trait = {
+				trait = leader_trait_ac_mutant_shapeshifter
+				show_message = no
+			}
 		}
 		1 = {
-			add_trait_no_notify = leader_trait_ac_mutant_enigmatic
+			add_trait = {
+				trait = leader_trait_ac_mutant_enigmatic
+				show_message = no
+			}
 		}
 	}
 }

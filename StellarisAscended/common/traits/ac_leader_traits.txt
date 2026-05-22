@@ -143,7 +143,7 @@ leader_trait_ac_concurrent_command = {
 		ship_fire_rate_mult = 0.03
 		ship_disengage_opportunities_add = 0.2
 		army_damage_mult = 0.05
-		mult = value:owner.ac_effective_ruler_level
+		mult = value:ac_effective_ruler_level
 	}
 	leader_class = {
 		scientist
@@ -695,14 +695,14 @@ leader_trait_ac_mutant_enigmatic = {
 			always = yes
 		}
 		planet_jobs_society_research_produces_mult = 0.03
-		mult = trigger:has_skill
+		mult = trigger:has_total_skill
 	}
 	triggered_sector_modifier = {
 		potential = {
 			always = yes
 		}
 		planet_jobs_society_research_produces_mult = 0.015
-		mult = trigger:has_skill
+		mult = trigger:has_total_skill
 	}
 	custom_tooltip = leader_trait_ac_mutant_enigmatic_tooltip
 	leader_class = {

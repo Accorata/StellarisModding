@@ -1,7 +1,7 @@
 ac_effective_ruler_level = {
 	complex_trigger_modifier = {
 		trigger = has_total_skill
-		trigger_scope = ruler
+		trigger_scope = owner.ruler
 		mode = add
 	}
 }
