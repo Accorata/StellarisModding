@@ -55,14 +55,11 @@ ac_impose_synthetic_ideology_effect = {
 
 
 ac_hyperequality_assimilation_effect = {
-	random_owned_pop = {
+	weighted_random_owned_pop_group = {
 		limit = {
+			is_organic_species = yes
 			NOR = {
 				is_same_species = root.owner
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-			}
-			NOT = {
 				root = {
 					is_planet_class = pc_cosmogenesis_world
 				}

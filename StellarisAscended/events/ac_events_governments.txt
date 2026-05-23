@@ -1179,7 +1179,7 @@ planet_event = {
 				while = {
 					count = 1
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOT = {
 								is_same_species = root.owner
 							}
@@ -1201,7 +1201,7 @@ planet_event = {
 				while = {
 					count = 2
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOT = {
 								is_same_species = root.owner
 							}
@@ -1223,7 +1223,7 @@ planet_event = {
 				while = {
 					count = 3
 					limit = {
-						any_owned_pop = {
+						any_owned_pop_group = {
 							NOT = {
 								is_same_species = root.owner
 							}
@@ -1950,11 +1950,6 @@ event = {
 					}
 				}
 			}
-			every_owned_planet = {
-				planet_event = {
-					id = action.65
-				}
-			}
 		}
 		set_update_modifiers_batch = end
 	}
@@ -2367,8 +2362,12 @@ country_event = {
 			}
 		}
 		capital_scope = {
-			random_owned_pop = {
-				kill_pop = yes
+			random_owned_pop_group = {
+				limit = {
+					is_sapient = yes
+					is_robot_pop_group = no
+				}
+				kill_single_pop = yes
 			}
 			set_planetary_ascension_tier = value:add_planet_ascension_tier
 		}

@@ -96,7 +96,7 @@ ac_bandwidth_router = {
 				is_megacorp = yes
 			}
 		}
-		pop_job_trade_mult = 0.3
+		planet_jobs_trade_produces_mult = 0.3
 	}
 	custom_tooltip = sm_ac_bandwidth_router_desc_modifier
 	ai_weight = {
@@ -166,7 +166,7 @@ ac_bandwidth_router_corporate = {
 				is_megacorp = yes
 			}
 		}
-		pop_job_trade_mult = 0.3
+		planet_jobs_trade_produces_mult = 0.3
 	}
 	custom_tooltip = sm_ac_bandwidth_router_desc_modifier_corporate
 	ai_weight = {

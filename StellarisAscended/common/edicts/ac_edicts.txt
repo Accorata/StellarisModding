@@ -20,7 +20,7 @@ ac_clone_overdrive = {
 		has_country_flag = ac_genetic_perfect
 	}
 	modifier = {
-		planet_pop_assembly_organic_mult = 0.15
+		bonus_pop_growth_mult = 0.15
 		planet_buildings_clone_vats_upkeep_mult = 0.25
 	}
 	allow = {
@@ -288,7 +288,7 @@ ac_ruthless_competition = {
 	modifier = {
 		branch_office_value_mult = 0.3
 		pop_demotion_time_mult = -1
-		pop_growth_speed = -0.1
+		logistic_growth_mult = -0.1
 	}
 	allow = {
 	}
@@ -328,7 +328,7 @@ ac_mind_spawn = {
 	}
 }
 
-ac_all_with_be_one = {
+ac_all_will_be_one = {
 	length = @EdictDuration
 	icon = "GFX_edict_type_time"
 	resources = {
@@ -347,7 +347,7 @@ ac_all_with_be_one = {
 		has_country_flag = ac_genetic_chaotic
 	}
 	modifier = {
-		custom_tooltip = edict_ac_all_with_be_one_effect
+		custom_tooltip = edict_ac_all_will_be_one_effect
 	}
 	allow = {
 	}

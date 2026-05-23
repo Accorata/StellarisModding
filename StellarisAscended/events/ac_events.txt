@@ -379,7 +379,10 @@ country_event = {
 	option = {
 		name = ascension_civics.61.a
 		owner = {
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				add_trait = leader_trait_programmed_loyalty
 			}
 			set_country_flag = ac_accepted_sovereign_circuitry
@@ -410,7 +413,10 @@ country_event = {
 		has_country_flag = ac_accepted_sovereign_circuitry
 	}
 	immediate = {
-		ruler = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = yes
+			}
 			add_trait = leader_trait_programmed_loyalty
 		}
 	}
@@ -443,14 +449,20 @@ country_event = {
 			limit = {
 				is_gestalt = no
 			}
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				kill_leader = {
 					show_notification = yes
 				}
 			}
 		}
 		else = {
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				remove_trait = leader_trait_programmed_loyalty_gestalt
 				add_trait = leader_trait_corrupted_logic
 			}
@@ -473,7 +485,10 @@ country_event = {
 	option = {
 		name = ascension_civics.66.a
 		owner = {
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				add_trait = leader_trait_programmed_loyalty_gestalt
 			}
 			set_country_flag = ac_accepted_sovereign_circuitry
@@ -499,12 +514,18 @@ country_event = {
 			limit = {
 				is_gestalt = no
 			}
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				add_trait = leader_trait_programmed_loyalty
 			}
 		}
 		else = {
-			ruler = {
+			random_owned_leader = {
+				limit = {
+					is_ruler = yes
+				}
 				add_trait = leader_trait_programmed_loyalty_gestalt
 			}
 		}
@@ -840,7 +861,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_ac_concurrent_command = yes
-		ruler = {
+		any_owned_leader = {
+			is_ruler = yes
 			NOT = {
 				has_trait = leader_trait_ac_concurrent_command
 			}
@@ -849,15 +871,15 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				ruler = no
+				is_ruler = no
 				has_trait = leader_trait_ac_concurrent_command
 			}
-			remove_trait = {
-				trait = leader_trait_ac_concurrent_command
-				show_message = no
-			}
+			remove_trait = leader_trait_ac_concurrent_command
 		}
-		ruler = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = yes
+			}
 			add_trait = {
 				trait = leader_trait_ac_concurrent_command
 				show_message = no
@@ -878,10 +900,7 @@ country_event = {
 			limit = {
 				has_trait = leader_trait_ac_concurrent_command
 			}
-			remove_trait = {
-				trait = leader_trait_ac_concurrent_command
-				show_message = no
-			}
+			remove_trait = leader_trait_ac_concurrent_command
 		}
 	}
 }

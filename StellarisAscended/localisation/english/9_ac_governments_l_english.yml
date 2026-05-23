@@ -811,7 +811,7 @@
   ascension_governments.100.a: "Duplicate perfection."
   ascension_governments.100.a.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_hive_perfect']\n$unlock_edict_ac_mind_spawn$"
   ascension_governments.100.b: "All children will be our own."
-  ascension_governments.100.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_hive_chaotic']\n$create_r_ac_assimilation_engine$\n$unlock_edict_ac_all_with_be_one$"
+  ascension_governments.100.b.tt: "$change_auth_tt$ ['concept_auth_ac_genetic_hive_chaotic']\n$create_r_ac_assimilation_engine$\n$unlock_edict_ac_all_will_be_one$"
   ascension_governments.100.c: "$ac_genetic_keep_auth_option$"
   ascension_governments.100.c.tt: "$keep_auth_tt$ ['concept_auth_hive_mind']"
 
@@ -821,8 +821,8 @@
   concept_edict_ac_mind_spawn:0 "$edict_ac_mind_spawn$"
   unlock_edict_ac_mind_spawn:0 "$unlock_edict_tt$['concept_edict_ac_mind_spawn']"
 
-  edict_ac_all_with_be_one:0 "All Will Be One"
-  edict_ac_all_with_be_one_desc:0 "Puny individuals, your ascension has just begun."
-  concept_edict_ac_all_with_be_one:0 "$edict_ac_all_with_be_one$"
-  unlock_edict_ac_all_with_be_one:0 "$unlock_edict_tt$['concept_edict_ac_all_with_be_one']"
-  edict_ac_all_with_be_one_effect:0 "Doubles Rate of Assimilation."
+  edict_ac_all_will_be_one:0 "All Will Be One"
+  edict_ac_all_will_be_one_desc:0 "Puny individuals, your ascension has just begun."
+  concept_edict_ac_all_will_be_one:0 "$edict_ac_all_will_be_one$"
+  unlock_edict_ac_all_will_be_one:0 "$unlock_edict_tt$['concept_edict_ac_all_will_be_one']"
+  edict_ac_all_will_be_one_effect:0 "Doubles Rate of Assimilation."

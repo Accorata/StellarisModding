@@ -136,9 +136,9 @@ concept_edict_ac_mind_spawn = {
 	tooltip_override = "edict:ac_mind_spawn"
 }
 
-concept_edict_ac_all_with_be_one = {
+concept_edict_ac_all_will_be_one = {
 	icon = "gfx/interface/icons/concepts/concept_edicts.dds"
-	tooltip_override = "edict:ac_all_with_be_one"
+	tooltip_override = "edict:ac_all_will_be_one"
 }
 
 # Psionic Authorities

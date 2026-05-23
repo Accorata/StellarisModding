@@ -139,7 +139,7 @@ holding_ac_external_router = {
 		megastructures_hyper_relay_unity_produces_add = 2
 	}
 	planet_modifier = {
-		trade_value_mult = 0.1
+		planet_jobs_trade_produces_mult = 0.1
 	}
 	triggered_planet_modifier = {
 		potential = {
