@@ -1,0 +1,28 @@
+# Vessel Portrait
+
+entity = {
+	name = "portrait_ac_vessel_entity"
+	pdxmesh = "portrait_ac_vessel_entity_mesh"
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+		chance = 3.0
+		looping = no
+		next_state = idle 
+		# start_event = {
+		# 	node = "head_effect" - need a node for this...
+		# 	particle = "ac_vessel_glow_effect"
+		# 	keep_particle = yes 
+		# }
+	}
+
+	scale = 0.9
+}
+
+animation = {
+	name = "ac_vessel_idle_animation"
+	file = "ac_vessel_idle.anim"
+}

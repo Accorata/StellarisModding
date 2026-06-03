@@ -940,6 +940,19 @@ planet_event = {
 	}
 }
 
+#test
+country_event = {
+	id = ascension_civics.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_leader = {
+			change_leader_portrait = ac_vessel
+		}
+	}
+}
+
 # owner_main_species = {
 # 	create_species = {
 # 		is_mod = yes

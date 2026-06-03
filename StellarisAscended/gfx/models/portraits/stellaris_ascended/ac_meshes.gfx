@@ -1,0 +1,10 @@
+objectTypes = {
+	# Vessel
+	pdxmesh = {
+		name = "portrait_ac_vessel_entity_mesh"
+		file = "gfx/models/portraits/stellaris_ascended/ac_vessel_portrait.mesh"
+		animation = { id = "idle"	type = "ac_vessel_idle_animation" }
+		
+		scale = 1.0
+	}	
+}
