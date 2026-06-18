@@ -194,6 +194,7 @@ cw_bribed_politician = {
 			weight = 20
 		}
 	}
+	# politician_is_fire_oracle, politician_is_blazewright, politician_is_radiant_priest, politician_is_pyrocrat, politician_is_ashbroker, politician_is_blazing_harbinger, politician_is_sacred_path_elite
 	contributes_to_diplo_weight = no
 	tags = {
 		crime
@@ -233,7 +234,6 @@ cw_bribed_politician = {
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
 	}
-	inline_script = "output/politician_output_modifier"
 	weight = {
 		weight = @criminal_job_weight
 		mult = 10

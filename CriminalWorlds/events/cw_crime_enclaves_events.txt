@@ -25,7 +25,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_location
 					}
@@ -92,7 +92,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_location
 					}
@@ -740,7 +740,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_location
 					}
@@ -951,7 +951,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_location
 					}
@@ -1302,12 +1302,12 @@ country_event = {
 						modifier = {
 							OR = {
 								is_pop_category = worker
-								is_pop_category = slave
+								is_enslaved = yes
 							}
 							factor = 5
 						}
 						modifier = {
-							is_pop_category = ruler
+							is_elite_category = yes
 							factor = 0.1
 						}
 					}
@@ -1364,12 +1364,12 @@ country_event = {
 							modifier = {
 								OR = {
 									is_pop_category = worker
-									is_pop_category = slave
+									is_enslaved = yes
 								}
 								factor = 5
 							}
 							modifier = {
-								is_pop_category = ruler
+								is_elite_category = yes
 								factor = 0.1
 							}
 						}
@@ -1439,12 +1439,12 @@ country_event = {
 							modifier = {
 								OR = {
 									is_pop_category = worker
-									is_pop_category = slave
+									is_enslaved = yes
 								}
 								factor = 5
 							}
 							modifier = {
-								is_pop_category = ruler
+								is_elite_category = yes
 								factor = 0.1
 							}
 						}
@@ -2342,7 +2342,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_planet
 					}
@@ -3265,7 +3265,7 @@ country_event = {
 				solar_system = {
 					random_system_planet = {
 						limit = {
-							has_planet_flag = cw_criminal_enclave_planet
+							has_carrier_flag = cw_criminal_enclave_planet
 						}
 						save_event_target_as = cw_criminal_enclave_location
 					}
@@ -4121,7 +4121,7 @@ country_event = {
 
 ## Spawning & Maintenance Events 
 # Spawn Criminal Enclave
-planet_event = {
+carrier_event = {
 	id = cw_enclave.1
 	title = cw_enclave.1.name
 	desc = cw_enclave.1.desc
@@ -4190,7 +4190,7 @@ planet_event = {
 			}
 		}
 		event_target:target_planet_for_building = {
-			planet_event = {
+			carrier_event = {
 				id = cw_enclave.2
 				days = 90
 			}
@@ -4198,9 +4198,9 @@ planet_event = {
 		# Remove encouragement if it exists
 		if = {
 			limit = {
-				has_planet_flag = cw_encouraged_crime_enclave
+				has_carrier_flag = cw_encouraged_crime_enclave
 			}
-			remove_planet_flag = cw_encouraged_crime_enclave
+			remove_carrier_flag = cw_encouraged_crime_enclave
 		}
 	}
 	option = {
@@ -4208,7 +4208,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = cw_enclave.2
 	title = cw_enclave.2.name
 	desc = cw_enclave.2.desc
@@ -4218,7 +4218,7 @@ planet_event = {
 	is_triggered_only = yes
 	immediate = {
 		save_event_target_as = cw_criminal_enclave_location
-		set_planet_flag = cw_criminal_enclave_planet
+		set_carrier_flag = cw_criminal_enclave_planet
 		root.solar_system.owner = {
 			owner_species = {
 				save_event_target_as = pirate_species
@@ -4459,7 +4459,7 @@ planet_event = {
 }
 
 # Criminal enclave progress
-planet_event = {
+carrier_event = {
 	id = cw_enclave.3
 	hide_window = yes
 	is_triggered_only = yes
@@ -4509,7 +4509,7 @@ planet_event = {
 				}
 			}
 			# Create Enclave!
-			planet_event = {
+			carrier_event = {
 				id = cw_enclave.1
 				days = 1
 				random = 30
@@ -4566,7 +4566,7 @@ country_event = {
 			solar_system = {
 				random_system_planet = {
 					limit = {
-						has_planet_flag = cw_criminal_enclave_planet
+						has_carrier_flag = cw_criminal_enclave_planet
 					}
 					save_event_target_as = cw_criminal_enclave_planet
 				}
@@ -4808,7 +4808,7 @@ country_event = {
 			solar_system = {
 				random_system_planet = {
 					limit = {
-						has_planet_flag = cw_criminal_enclave_planet
+						has_carrier_flag = cw_criminal_enclave_planet
 					}
 					save_event_target_as = cw_privateer_spawn
 				}
@@ -5038,9 +5038,9 @@ country_event = {
 				remove_star_flag = cw_active_criminal_enclave
 				random_system_planet = {
 					limit = {
-						has_planet_flag = cw_criminal_enclave_planet
+						has_carrier_flag = cw_criminal_enclave_planet
 					}
-					remove_planet_flag = cw_criminal_enclave_planet
+					remove_carrier_flag = cw_criminal_enclave_planet
 					save_event_target_as = cw_dead_enclave_location
 				}
 				owner = {
@@ -5226,7 +5226,7 @@ country_event = {
 		default_hide_option = yes
 		trigger = {
 			event_target:cw_dead_enclave_location = {
-				any_system_colony = {
+				any_system_planet_colony = {
 					OR = {
 						cw_is_criminal_planet = yes
 						has_modifier = crime_lord_deal
@@ -5236,14 +5236,14 @@ country_event = {
 		}
 		hidden_effect = {
 			event_target:cw_dead_enclave_location = {
-				every_system_colony = {
+				every_system_planet_colony = {
 					limit = {
 						OR = {
 							cw_is_criminal_planet = yes
 							has_modifier = crime_lord_deal
 						}
 					}
-					set_timed_planet_flag = {
+					set_timed_carrier_flag = {
 						flag = cw_encouraged_crime_enclave
 						years = 10
 					}
@@ -5407,12 +5407,12 @@ country_event = {
 								modifier = {
 									OR = {
 										is_pop_category = worker
-										is_pop_category = slave
+										is_enslaved = yes
 									}
 									factor = 5
 								}
 								modifier = {
-									is_pop_category = ruler
+									is_elite_category = yes
 									factor = 0.1
 								}
 							}
@@ -5469,12 +5469,12 @@ country_event = {
 									modifier = {
 										OR = {
 											is_pop_category = worker
-											is_pop_category = slave
+											is_enslaved = yes
 										}
 										factor = 5
 									}
 									modifier = {
-										is_pop_category = ruler
+										is_elite_category = yes
 										factor = 0.1
 									}
 								}
@@ -5544,12 +5544,12 @@ country_event = {
 									modifier = {
 										OR = {
 											is_pop_category = worker
-											is_pop_category = slave
+											is_enslaved = yes
 										}
 										factor = 5
 									}
 									modifier = {
-										is_pop_category = ruler
+										is_elite_category = yes
 										factor = 0.1
 									}
 								}

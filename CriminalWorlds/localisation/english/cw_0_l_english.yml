@@ -112,6 +112,7 @@
   pop_category_criminals:0 "$pop_cat_criminal_plural$"
   pop_category_deviant_drones:0 "$job_deviant_drone_plural$"
   pop_category_corrupt_drones:0 "$job_corrupt_drone_plural$"
+  planet_jobs_criminal:0 "$pop_category_criminals$"
   planet_criminals:0 "$job_criminal_plural$"
   planet_cw_shipbuilders:0 "$job_cw_rogue_shipbuilder_plural$"
   planet_cw_freedom_fighters:0 "$job_cw_freedom_fighter_plural$"

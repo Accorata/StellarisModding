@@ -8,13 +8,13 @@ event = {
 		every_playable_country = {
 			limit = {
 				is_gestalt = no
-				any_owned_planet = {
+				any_owned_colony = {
 					OR = {
 						cw_is_criminal_planet = yes
 						has_modifier = crime_lord_deal
 					}
 					NOT = {
-						has_planet_flag = planet_cw_crime_flag
+						has_carrier_flag = planet_cw_crime_flag
 					}
 				}
 			}
@@ -31,14 +31,14 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		random_owned_planet = {
+		random_owned_colony = {
 			limit = {
 				OR = {
 					cw_is_criminal_planet = yes
 					has_modifier = crime_lord_deal
 				}
 				NOT = {
-					has_planet_flag = planet_cw_crime_flag
+					has_carrier_flag = planet_cw_crime_flag
 				}
 			}
 			random_list = {
@@ -49,7 +49,7 @@ country_event = {
 						factor = 0
 						has_modifier = cw_corruption_1
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.10
 						days = 1
 						random = 300
@@ -72,7 +72,7 @@ country_event = {
 							has_available_jobs = enforcer
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.11
 						days = 1
 						random = 300
@@ -99,7 +99,7 @@ country_event = {
 						factor = 2.5
 						has_modifier = mob_rule
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.12
 						days = 1
 						random = 300
@@ -110,7 +110,7 @@ country_event = {
 						factor = 0
 						has_modifier = cw_illegal_freeports
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.20
 						days = 1
 						random = 300
@@ -128,7 +128,7 @@ country_event = {
 							has_modifier = crime_lord_deal
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.21
 						days = 1
 						random = 300
@@ -148,7 +148,7 @@ country_event = {
 							has_modifier = crime_lord_deal
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.22
 						days = 1
 						random = 300
@@ -162,7 +162,7 @@ country_event = {
 							has_modifier = crime_lord_deal
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.32
 						days = 1
 						random = 300
@@ -176,7 +176,7 @@ country_event = {
 							has_modifier = crime_lord_deal
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.33
 						days = 1
 						random = 300
@@ -194,7 +194,7 @@ country_event = {
 							has_modifier = crime_lord_deal_broken
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.34
 						days = 1
 						random = 300
@@ -217,7 +217,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.40
 						days = 1
 						random = 300
@@ -227,7 +227,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_planet_flag = cw_recent_criminal_world_increase
+							has_carrier_flag = cw_recent_criminal_world_increase
 							NOT = {
 								has_modifier = cw_criminal_world_1
 							}
@@ -245,7 +245,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.41
 						days = 1
 						random = 300
@@ -255,7 +255,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_planet_flag = cw_recent_criminal_world_increase
+							has_carrier_flag = cw_recent_criminal_world_increase
 							NOT = {
 								has_modifier = cw_criminal_world_2
 							}
@@ -273,7 +273,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.42
 						days = 1
 						random = 300
@@ -283,7 +283,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_planet_flag = cw_recent_criminal_world_increase
+							has_carrier_flag = cw_recent_criminal_world_increase
 							NOT = {
 								has_modifier = cw_criminal_world_3
 							}
@@ -301,7 +301,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.43
 						days = 1
 						random = 300
@@ -311,7 +311,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_planet_flag = cw_recent_criminal_world_increase
+							has_carrier_flag = cw_recent_criminal_world_increase
 							NOT = {
 								has_modifier = cw_criminal_world_4
 							}
@@ -329,7 +329,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.44
 						days = 1
 						random = 300
@@ -339,7 +339,7 @@ country_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							has_planet_flag = cw_recent_criminal_world_increase
+							has_carrier_flag = cw_recent_criminal_world_increase
 							NOT = {
 								has_modifier = cw_criminal_world_5
 							}
@@ -357,7 +357,7 @@ country_event = {
 						factor = 5
 						has_modifier = cw_corruption_3
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.51
 						days = 1
 						random = 300
@@ -379,7 +379,7 @@ country_event = {
 							count = 0
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.45
 						days = 1
 						random = 300
@@ -396,7 +396,7 @@ country_event = {
 						factor = 3
 						has_cw_galactic_criminal_presense = yes
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.48
 						days = 1
 						random = 300
@@ -410,7 +410,7 @@ country_event = {
 							has_modifier = cw_suppressed_radical_media
 						}
 					}
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.50
 						days = 1
 						random = 300
@@ -427,7 +427,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_subterranean_empire = no
-		any_owned_planet = {
+		any_owned_colony = {
 			free_housing < -50
 			NOT = {
 				is_planet_class = pc_cosmogenesis_world
@@ -435,7 +435,7 @@ country_event = {
 		}
 	}
 	immediate = {
-		random_owned_planet = {
+		random_owned_colony = {
 			limit = {
 				free_housing < -50
 			}
@@ -443,7 +443,7 @@ country_event = {
 				10 = {
 				}
 				10 = {
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.6
 					}
 				}
@@ -460,11 +460,11 @@ event = {
 		every_playable_country = {
 			limit = {
 				is_gestalt = no
-				any_owned_planet = {
+				any_owned_colony = {
 					has_modifier = cw_freedom_fighters
 				}
 			}
-			random_owned_planet = {
+			random_owned_colony = {
 				limit = {
 					has_modifier = cw_freedom_fighters
 				}
@@ -472,7 +472,7 @@ event = {
 					40 = {
 					}
 					10 = {
-						planet_event = {
+						carrier_event = {
 							id = criminal_worlds.47
 							days = 1
 							random = 300
@@ -491,7 +491,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_gestalt = no
-		any_owned_planet = {
+		is_nomadic = no # We can't have an arkship with criminals spawning enclaves all over the place
+		any_owned_colony = {
 			OR = {
 				cw_is_criminal_planet = yes
 				has_modifier = crime_lord_deal
@@ -499,7 +500,7 @@ country_event = {
 		}
 	}
 	immediate = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
 				OR = {
 					cw_is_criminal_planet = yes
@@ -512,9 +513,9 @@ country_event = {
 				10 = {
 					modifier = {
 						factor = 2
-						has_planet_flag = cw_encouraged_crime_enclave
+						has_carrier_flag = cw_encouraged_crime_enclave
 					}
-					planet_event = {
+					carrier_event = {
 						id = cw_enclave.3
 					}
 				}

@@ -11,7 +11,7 @@ pop_category_criminals = {
 }
 
 pop_category_deviant_drones = {
-	parent = planet_pops
+	parent = pop_category_drones
 	generate_mult_modifiers = {
 		upkeep
 		produces
@@ -23,7 +23,7 @@ pop_category_deviant_drones = {
 }
 
 pop_category_corrupt_drones = {
-	parent = planet_pops
+	parent = pop_category_drones
 	generate_mult_modifiers = {
 		upkeep
 		produces
@@ -34,22 +34,27 @@ pop_category_corrupt_drones = {
 	modifier_category = pop_group
 }
 
-planet_criminals = {
+planet_jobs_criminal = {
 	parent = pop_category_criminals
-	modifier_category = pop_job
+	modifier_category = colony
+}
+
+planet_criminals = {
+	parent = planet_jobs_criminal
+	modifier_category = colony
 }
 
 planet_cw_shipbuilders = {
-	parent = pop_category_criminals
-	modifier_category = pop_job
+	parent = planet_jobs_criminal
+	modifier_category = colony
 }
 
 planet_cw_freedom_fighters = {
-	parent = pop_category_criminals
-	modifier_category = pop_job
+	parent = planet_jobs_criminal
+	modifier_category = colony
 }
 
 planet_cw_demagogues = {
-	parent = pop_category_criminals
-	modifier_category = pop_job
+	parent = planet_jobs_criminal
+	modifier_category = colony
 }

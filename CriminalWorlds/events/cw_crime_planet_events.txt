@@ -1,6 +1,6 @@
 namespace = criminal_worlds
 # Bribed Enforcer
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.10
 	title = criminal_worlds.10.name
 	desc = criminal_worlds.10.desc
@@ -16,7 +16,7 @@ planet_event = {
 			modifier = cw_corruption_1
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -32,7 +32,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.11
 	title = criminal_worlds.11.name
 	desc = criminal_worlds.11.desc
@@ -52,7 +52,7 @@ planet_event = {
 			modifier = cw_corruption_2
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -69,7 +69,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.12
 	title = criminal_worlds.12.name
 	desc = criminal_worlds.12.desc
@@ -89,7 +89,7 @@ planet_event = {
 			modifier = cw_corruption_3
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -107,7 +107,7 @@ planet_event = {
 }
 
 # Illegal Freeports
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.20
 	title = criminal_worlds.20.name
 	desc = criminal_worlds.20.desc
@@ -123,7 +123,7 @@ planet_event = {
 			modifier = cw_illegal_freeports
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -140,7 +140,7 @@ planet_event = {
 }
 
 # Criminal Shipyards
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.21
 	title = criminal_worlds.21.name
 	desc = criminal_worlds.21.desc
@@ -151,12 +151,15 @@ planet_event = {
 	pre_triggers = {
 		has_owner = yes
 	}
+	trigger = {
+		is_nomadic = no # Nomads cannot spawn criminal fleets as they would have no stationary base
+	}
 	immediate = {
 		add_modifier = {
 			modifier = cw_criminal_shipyards
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -172,7 +175,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.22
 	title = criminal_worlds.22.name
 	desc = criminal_worlds.22.desc
@@ -192,7 +195,7 @@ planet_event = {
 			modifier = cw_criminal_shipyards_2
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -219,7 +222,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.6
 	hide_window = yes
 	is_triggered_only = yes
@@ -258,7 +261,7 @@ planet_event = {
 				limit = {
 					has_cw_underworld_slums = no
 				}
-				planet_event = {
+				carrier_event = {
 					id = criminal_worlds.30
 					days = 1
 					random = 10
@@ -273,7 +276,7 @@ planet_event = {
 						has_modifier = cw_underground_slums_1_machine
 					}
 				}
-				planet_event = {
+				carrier_event = {
 					id = criminal_worlds.31
 					days = 1
 					random = 10
@@ -287,7 +290,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.30
 	title = criminal_worlds.30.name
 	desc = criminal_worlds.30.desc
@@ -381,7 +384,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.31
 	title = criminal_worlds.31.name
 	desc = criminal_worlds.31.desc
@@ -490,7 +493,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.32
 	title = criminal_worlds.32.name
 	desc = criminal_worlds.32.desc
@@ -506,7 +509,7 @@ planet_event = {
 			modifier = cw_mercenary_fighters
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -522,7 +525,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.33
 	title = criminal_worlds.33.name
 	desc = criminal_worlds.33.desc
@@ -538,7 +541,7 @@ planet_event = {
 			modifier = cw_open_crime
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 360
 		}
@@ -555,7 +558,7 @@ planet_event = {
 }
 
 # Smuggled Relic Chain
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.34
 	title = criminal_worlds.34.name
 	desc = criminal_worlds.34.desc
@@ -567,7 +570,7 @@ planet_event = {
 	fire_only_once = yes
 	immediate = {
 		set_global_flag = cw_encountered_black_market_relic
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 120
 		}
@@ -597,7 +600,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.35
 	title = criminal_worlds.35.name
 	desc = criminal_worlds.35.desc
@@ -616,7 +619,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.36
 	title = criminal_worlds.36.name
 	desc = criminal_worlds.36.desc
@@ -645,7 +648,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.37
 	title = criminal_worlds.37.name
 	desc = criminal_worlds.37.desc
@@ -664,7 +667,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.38
 	title = criminal_worlds.38.name
 	desc = criminal_worlds.38.desc
@@ -792,7 +795,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.40
 	title = criminal_worlds.40.name
 	desc = criminal_worlds.40.desc
@@ -808,11 +811,11 @@ planet_event = {
 			modifier = cw_criminal_world_1
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -828,7 +831,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.41
 	title = criminal_worlds.41.name
 	desc = criminal_worlds.41.desc
@@ -848,11 +851,11 @@ planet_event = {
 			modifier = cw_criminal_world_2
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -869,7 +872,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.42
 	title = criminal_worlds.42.name
 	desc = criminal_worlds.42.desc
@@ -889,11 +892,11 @@ planet_event = {
 			modifier = cw_criminal_world_3
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -910,7 +913,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.43
 	title = criminal_worlds.43.name
 	desc = criminal_worlds.43.desc
@@ -930,11 +933,11 @@ planet_event = {
 			modifier = cw_criminal_world_4
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -951,7 +954,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.44
 	title = criminal_worlds.44.name
 	desc = criminal_worlds.44.desc
@@ -971,11 +974,11 @@ planet_event = {
 			modifier = cw_criminal_world_5
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -992,7 +995,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.51
 	title = criminal_worlds.51.name
 	desc = criminal_worlds.51.desc
@@ -1012,11 +1015,11 @@ planet_event = {
 			modifier = cw_criminal_world_5
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = cw_recent_criminal_world_increase
 			days = 1800
 		}
@@ -1032,7 +1035,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.45
 	title = criminal_worlds.45.name
 	desc = criminal_worlds.45.desc
@@ -1048,7 +1051,7 @@ planet_event = {
 			modifier = cw_freedom_fighters
 			days = 3600
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
@@ -1064,7 +1067,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.47
 	title = criminal_worlds.47.name
 	desc = criminal_worlds.47.desc
@@ -1121,7 +1124,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.48
 	title = criminal_worlds.48.name
 	desc = criminal_worlds.48.desc
@@ -1170,7 +1173,7 @@ planet_event = {
 			}
 			set_country_flag = cw_illegal_slave_event_fired
 		}
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
@@ -1193,7 +1196,7 @@ planet_event = {
 		hidden_effect = {
 			event_target:cw_enslaved_species_owner = {
 				capital_scope = {
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.49
 					}
 				}
@@ -1381,7 +1384,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.49
 	title = criminal_worlds.49.name
 	desc = criminal_worlds.49.desc
@@ -1413,7 +1416,7 @@ planet_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.50
 	title = criminal_worlds.50.name
 	desc = criminal_worlds.50.desc
@@ -1425,7 +1428,7 @@ planet_event = {
 		has_owner = yes
 	}
 	immediate = {
-		set_timed_planet_flag = {
+		set_timed_carrier_flag = {
 			flag = planet_cw_crime_flag
 			days = 720
 		}
@@ -1526,7 +1529,7 @@ country_event = {
 						has_modifier = cw_criminal_shipyards_2
 					}
 				}
-				planet_event = {
+				carrier_event = {
 					id = criminal_worlds.25
 				}
 			}
@@ -1538,7 +1541,7 @@ country_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.25
 	hide_window = yes
 	is_triggered_only = yes
@@ -1668,7 +1671,7 @@ planet_event = {
 				}
 				set_country_flag = cw_criminal_fleet_on_@root
 				root = {
-					planet_event = {
+					carrier_event = {
 						id = criminal_worlds.26
 					}
 				}
@@ -1678,7 +1681,7 @@ planet_event = {
 }
 
 # Notification of Criminal Fleet
-planet_event = {
+carrier_event = {
 	id = criminal_worlds.26
 	title = criminal_worlds.26.name
 	desc = criminal_worlds.26.desc
