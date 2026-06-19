@@ -834,6 +834,43 @@ trait_ac_hive_digital = {
 	}
 }
 
+trait_ac_cloned = {
+	icon = "gfx/interface/icons/traits/trait_clone_soldier.dds"
+	cost = 0
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive happiness edict_fund drawbacks special }
+	custom_tooltip_with_modifiers = trait_ac_cloned_effect # testing this...
+	modifier = {
+		species_empire_size_mult = -0.1
+	}
+	triggered_pop_group_modifier = {
+		pop_happiness = 0.00001
+		mult = planet.value:ac_counter_cloned
+	}
+	country_modifier = {
+		country_edict_fund_add = 0.0025
+	}
+	infertile = yes
+	slave_cost = {
+		trade = 1500
+	}
+
+	assembly_score = {
+		base = 1
+	}
+}
+
 ### UNUSED AND UNUPDATED ###
 # need to add it to pops gained after (place in assimilation) for above trait
 trait_infectious = {

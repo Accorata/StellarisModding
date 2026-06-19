@@ -5,6 +5,6 @@ objectTypes = {
 		file = "gfx/models/portraits/stellaris_ascended/ac_vessel_portrait.mesh"
 		animation = { id = "idle"	type = "ac_vessel_idle_animation" }
 		
-		scale = 1.0
+		scale = 3.0 #test value...
 	}	
 }

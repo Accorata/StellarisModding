@@ -45,6 +45,19 @@ ac_hive_virtuality_concentrated_production_mult = {
 	}
 }
 
+ac_counter_cloned = {
+	complex_trigger_modifier = {
+		trigger = count_owned_pop_amount
+		parameters = {
+			limit = {
+				has_trait = trait_ac_cloned
+			}
+		}
+		mode = add
+	}
+	max = 50000
+}
+
 # Future Usage:
 # value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
 ac_districts_arcology_jobs = {

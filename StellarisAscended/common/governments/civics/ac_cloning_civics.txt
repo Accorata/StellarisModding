@@ -1,0 +1,131 @@
+civic_ac_mitotic_assembly = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_parallel_development
+			}
+		}
+		graphical_culture = {
+			NOR = {
+				text = graphical_culture_tooltip_not_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_mitotic_assembly.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cloning_finish
+		}
+	}
+	description = civic_tooltip_ac_mitotic_assembly_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_mitotic_assembly_effects
+		modifier = {
+			#...
+		}
+	}
+}
+
+civic_ac_parallel_development = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_mitotic_assembly
+			}
+		}
+		graphical_culture = {
+			NOR = {
+				text = graphical_culture_tooltip_not_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_parallel_development.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cloning_finish
+		}
+	}
+	description = civic_tooltip_ac_mitotic_assembly_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_mitotic_assembly_effects
+		modifier = {
+			#...
+		}
+	}
+}

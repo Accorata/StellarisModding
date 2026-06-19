@@ -155,7 +155,30 @@
 ### Cloning ---------------------------------------------------------------------------------------------
   cloning_ascension_required:0 "If §YCloning§! Ascension completed:\n"
 
+## Mitotic Assembly
+  civic_ac_mitotic_assembly:0 "Mitotic Assembly"
+  civic_ac_mitotic_assembly_desc:0 "..."
+  civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "..."
+  civic_tooltip_ac_mitotic_assembly_effects:0 "..."
+  # councilor needed...
 
+  civic_ac_parallel_development:0 "Parallel Development"
+  civic_ac_parallel_development_desc:0 "..."
+  # councilor needed...
+
+  # ...
+
+  sm_ac_mitosis_chamber:0 "Mitosis Chamber"
+  sm_ac_mitosis_chamber_desc:0 "..."
+  sm_ac_mitosis_chamber_desc_modifier:0 "..."
+  ac_cloned_ship:0 "Cloned Ship"
+
+## Cloned Population
+  # ...
+
+  trait_ac_cloned:0 "Cloned"
+  trait_ac_cloned_desc:0 "..."
+  trait_ac_cloned_effect:0 "- $EMPIRE_SIZE$ from Pops: §G-10%§!\nEvery $pop_group_unit$ £pop£ §HPops§! with this trait:\n$t$- §G0.1%§! Happiness for Cloned Pops on Planet\n$t$- §G+0.25§! $MOD_COUNTRY_EDICT_FUND_ADD$"
 
 ### Genetic ---------------------------------------------------------------------------------------------
   genetic_ascension_required:0 "If §YGenetic§! Ascension completed:\n"

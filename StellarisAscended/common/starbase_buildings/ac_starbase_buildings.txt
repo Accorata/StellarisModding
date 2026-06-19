@@ -174,35 +174,40 @@ ac_bandwidth_router_corporate = {
 	}
 }
 
-# ac_mitosis_chamber = {
-# 	icon = "GFX_ac_bandwidth_router_sb" # change
-# 	construction_days = 180
-# 	potential = {
-# 		exists = owner
-# 		owner = {
-# 			is_ac_bandwidth_non_corporate = yes # change
-# 		}
-# 		is_normal_starbase = yes
-# 	}
-# 	possible = {
-# 		custom_tooltip = {
-# 			fail_text = "requires_starport" # higher...
-# 			has_starbase_size >= starbase_starport
-# 		}
-# reqs shipyard...
-# 	}
-# 	resources = {
-# 		category = starbase_buildings
-# 		cost = {
-# 			alloys = 150
-# 		}
-# 		upkeep = {
-# 			energy = 2
-# 			sr_dark_matter = 1 # change
-# 		}
-# 	}
-# 	custom_tooltip = sm_ac_bandwidth_router_desc_modifier #change
-# 	ai_weight = {
-# 		weight = 100
-# 	}
-# }
+ac_mitosis_chamber = {
+	icon = "GFX_ac_mitosis_chamber_sb"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = {
+			is_ac_cloned_ships = yes
+		}
+		is_normal_starbase = yes
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = ac_mitosis_chamber
+			}
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 150
+		}
+		upkeep = {
+			food = 10
+		}
+	}
+	custom_tooltip = sm_ac_mitosis_chamber_desc_modifier
+	ai_weight = {
+		weight = 100
+	}
+}

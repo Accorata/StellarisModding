@@ -9,36 +9,40 @@ event = {
 	}
 }
 
-# testing...
+# testing... - works just needs to give a name
 # Called from on_ship_built
 # This = ship
 # From = planet
-# ship_event = {
-# 	id = ascension_civics.2000
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	trigger = {
-# 		exists = controller
-# 		NOT = {
-# 			has_ship_flag = ac_cloned_ship
-# 		}
-# 	}
-# 	immediate = {
-# 		controller = {
-# 			create_ship_design = {
-# 				design = prev
-# 			}
-# 		}
-# 		fleet = {
-# 			create_ship = {
-# 				design = last_created_design
-# 			}
-# 		}
-# 		last_created_ship = {
-# 			set_ship_flag = ac_cloned_ship
-# 		}
-# 	}
-# }
+ship_event = {
+	id = ascension_civics.2000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = controller
+		NOT = {
+			has_modifier = ac_cloned_ship
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = ac_cloned_ship
+			days = -1
+		}
+		fleet = {
+			create_ship = {
+				name = random
+				design = root
+				graphical_culture = root.owner
+			}
+		}
+		last_created_ship = {
+			add_modifier = {
+				modifier = ac_cloned_ship
+				days = -1
+			}
+		}
+	}
+}
 
 # A leader is added to the leader pool, available for recruitment
 country_event = {
