@@ -52,7 +52,7 @@ ac_bandwidth_router = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
 			solar_system = {
-				any_system_colony = {
+				any_system_planet_colony = {
 					is_owned_by = from
 				}
 			}
@@ -122,7 +122,7 @@ ac_bandwidth_router_corporate = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
 			solar_system = {
-				any_system_colony = {
+				any_system_planet_colony = {
 					is_owned_by = from
 				}
 			}

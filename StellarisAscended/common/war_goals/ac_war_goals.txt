@@ -1,7 +1,6 @@
 wg_ac_bio_upgrades = {
 	casus_belli = cb_ac_bio_upgrades
 
-	hide_if_no_cb = no
 	release_occupied_systems_on_status_quo = yes
 
 	surrender_acceptance = -100
@@ -65,7 +64,7 @@ wg_ac_bio_upgrades = {
 			last_created_country = { add_opinion_modifier = { modifier = opinion_liberated_us who = root } }
 
 			last_created_country = {
-				set_origin_effect = yes
+				set_origin_effect = { SOURCE_COUNTRY = from }
 			}
 
 			if = {
@@ -184,6 +183,7 @@ wg_ac_bio_upgrades = {
 				leave_alliance = { override_requirements = yes }
 			}
 		}
+		inline_script = events/khan_war_loss_handler
 	}
 
 	ai_weight = {

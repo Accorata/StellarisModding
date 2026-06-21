@@ -45,15 +45,6 @@ living_standard_ac_cyberlife = {
 		pop_cat_worker_political_power = 0.5
 		pop_cat_civilian_political_power = 0.5
 	}
-	triggered_pop_group_modifier = {
-		# Triggered to hide from the auto-generated tooltip
-		potential = {
-			always = yes
-		}
-		pop_cat_ruler_unemployment_political_power = 3
-		pop_cat_specialist_unemployment_political_power = 1
-		pop_cat_worker_unemployment_political_power = 0.5
-	}
 	allow = {
 		hidden_trigger = {
 			exists = from
@@ -142,15 +133,6 @@ living_standard_ac_computational_matrix = {
 		pop_cat_specialist_political_power = 0.5
 		pop_cat_worker_political_power = 0.5
 		pop_cat_civilian_political_power = 0.5
-	}
-	triggered_pop_group_modifier = {
-		# Triggered to hide from the auto-generated tooltip
-		potential = {
-			always = yes
-		}
-		pop_cat_ruler_unemployment_political_power = 0.5
-		pop_cat_specialist_unemployment_political_power = 0.5
-		pop_cat_worker_unemployment_political_power = 0.5
 	}
 	allow = {
 		hidden_trigger = {

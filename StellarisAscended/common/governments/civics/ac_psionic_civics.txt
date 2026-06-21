@@ -12,6 +12,7 @@ civic_telepathic_empire = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE
@@ -67,6 +68,7 @@ civic_telepathic_corporation = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE

@@ -20,6 +20,7 @@ civic_bandwidth_enhancers = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			value = MACHINE
 		}
@@ -77,6 +78,7 @@ civic_bandwidth_incorporated = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			value = MACHINE
 		}
@@ -125,6 +127,9 @@ civic_bandwidth_optimization = {
 		authority = {
 			value = auth_machine_intelligence
 		}
+	}
+	possible = {
+		is_nomadic = no
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_optimization.dds"

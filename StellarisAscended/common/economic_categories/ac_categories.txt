@@ -1,6 +1,6 @@
 planet_ac_normal_knights = {
 	parent = planet_jobs_specialist
-	modifier_category = pop_job
+	modifier_category = planet_jobs_specialist
 	generate_mult_modifiers = {
 		produces
 	}
@@ -32,7 +32,7 @@ planet_ac_normal_knights = {
 # Override for Cyber Gladiator Civics
 planet_cyberdome_duelist = {
 	parent = planet_jobs_productive
-	modifier_category = pop_job
+	modifier_category = planet_jobs_specialist
 	generate_add_modifiers = {
 		produces
 	}

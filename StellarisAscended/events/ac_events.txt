@@ -685,9 +685,8 @@ planet_event = {
 					value = 5
 				}
 				capital_scope = {
-					create_pop = {
+					create_pop_group = {
 						species = owner_main_species
-						ethos = random
 					}
 				}
 			}
@@ -938,7 +937,7 @@ planet_event = {
 				}
 			}
 		}
-		create_pop = {
+		create_pop_group = {
 			species = event_target:ac_cyberform_species
 		}
 	}

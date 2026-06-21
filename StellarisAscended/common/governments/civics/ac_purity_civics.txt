@@ -18,6 +18,7 @@ civic_blossoming_worlds = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE
@@ -75,6 +76,7 @@ civic_xanadu_retreats = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE
@@ -127,6 +129,9 @@ civic_blossoming_hives = {
 		authority = {
 			value = auth_hive_mind
 		}
+	}
+	possible = {
+		is_nomadic = no
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_hives.dds"

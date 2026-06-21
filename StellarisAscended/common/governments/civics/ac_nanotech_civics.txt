@@ -173,6 +173,7 @@ civic_microscopic_life = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			value = MACHINE
 		}
@@ -231,6 +232,7 @@ civic_minicorp = {
 		}
 	}
 	possible = {
+		is_nomadic = no
 		species_archetype = {
 			value = MACHINE
 		}
@@ -280,6 +282,9 @@ civic_microscopic = {
 		authority = {
 			value = auth_machine_intelligence
 		}
+	}
+	possible = {
+		is_nomadic = no
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_microscopic.dds"

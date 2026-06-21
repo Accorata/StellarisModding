@@ -9,7 +9,7 @@ ac_shroud_invocation = {
 		has_country_flag = ac_psionic_eldritch
 	}
 	modifier = {
-		planet_psionic_jobs_produces_mult = 0.05
+		psionic_pop_bonus_workforce_mult = 0.05
 	}
 	effect = {
 		custom_tooltip = council_agenda_ac_shroud_invocation_effect

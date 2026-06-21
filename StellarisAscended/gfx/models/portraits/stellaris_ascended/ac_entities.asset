@@ -13,7 +13,7 @@ entity = {
 		looping = no
 		next_state = idle 
 		# start_event = {
-		# 	node = "head_effect" - need a node for this...
+		# 	node = "ac_glow_effect" #- need a node for this...
 		# 	particle = "ac_vessel_glow_effect"
 		# 	keep_particle = yes 
 		# }
