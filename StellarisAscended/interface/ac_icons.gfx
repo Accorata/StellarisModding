@@ -83,6 +83,11 @@ spriteTypes = {
 		name = "GFX_wg_ac_bio_upgrades"
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_ac_force_synth_ideology.dds"
 	}
+	# SHIP COMPONENTS ------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_ship_part_ac_exemplary_genetics"
+		textureFile = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+	}
 	# MUTATIONS ------------------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_mutation_ac_virulent_cysts_2"

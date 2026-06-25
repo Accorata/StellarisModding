@@ -48,6 +48,30 @@
   decision_ac_more_resort_colony:0 "$decision_resort_colony$"
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
+## Shared Perfection
+  ac_shared_perfection_base_desc:0 "By imbuing our genetic excellence into our fleets,"
+
+  civic_ac_shared_perfection_hum:0 "Shared Pefection"
+  civic_ac_shared_perfection_hum_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  # councilor needed...
+  civic_ac_shared_perfection_mam:0 "$civic_ac_shared_perfection_hum$"
+  civic_ac_shared_perfection_mam_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+
+  civic_ac_shared_perfection_hum_corp:0 "..."
+  civic_ac_shared_perfection_hum_corp_desc:0 "..."
+  # councilor needed...
+  #...
+
+  civic_ac_shared_perfection_hum_hive:0 "..."
+  civic_ac_shared_perfection_hum_hive_desc:0 "..."
+  #...
+
+  AC_EXEMPLARY_GENETICS_HUM:0 "Exemplary Humanoid Genetics"
+  AC_EXEMPLARY_GENETICS_HUM_DESC:0 "..."
+  #...
+  
+
 ### Mutation ---------------------------------------------------------------------------------------------
   mutation_ascension_required:0 "If §YMutation§! Ascension completed:\n"
 

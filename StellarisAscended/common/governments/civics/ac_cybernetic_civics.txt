@@ -49,8 +49,8 @@ civic_sovereign_circuitry = {
 		hide_modifiers = yes
 		modifier = {
 			divided_patrongage_max_subjects = 1
-			planet_jobs_slave_produces_mult = 0.25
-			pop_cat_slave_political_power = -0.25
+			#planet_jobs_slave_produces_mult = 0.25
+			#pop_cat_slave_political_power = -0.25
 		}
 	}
 }

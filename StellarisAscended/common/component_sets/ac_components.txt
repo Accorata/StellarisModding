@@ -1,3 +1,15 @@
+### Utilities ###
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_HUM"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+#...
+
+### Mutations ###
+
 component_set = {
 	key = "AC_VIRULENT_CYSTS_2"
 	icon = "GFX_mutation_ac_virulent_cysts_2"

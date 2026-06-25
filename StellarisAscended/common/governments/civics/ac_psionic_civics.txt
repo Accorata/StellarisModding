@@ -101,7 +101,7 @@ civic_telepathic_corporation = {
 		}
 		description = civic_tooltip_telepathic_corporation_effects
 		modifier = {
-			planet_executives_produces_mult = 0.1
+			planet_politicians_produces_mult = 0.1
 			pop_non_psionic_happiness = -0.15
 		}
 	}

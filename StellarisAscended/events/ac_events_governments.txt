@@ -1151,7 +1151,7 @@ event = {
 			# 	}
 			# }
 			every_owned_planet = {
-				planet_event = {
+				carrier_event = {
 					id = ascension_governments.41
 				}
 			}
@@ -1159,7 +1159,7 @@ event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = ascension_governments.41
 	hide_window = yes
 	is_triggered_only = yes

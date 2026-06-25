@@ -657,7 +657,7 @@ country_event = {
 }
 
 # on pop assembled - increase counter and spawn pop if counter reaches 5
-planet_event = {
+carrier_event = {
 	id = ascension_civics.81
 	hide_window = yes
 	is_triggered_only = yes
@@ -909,7 +909,7 @@ country_event = {
 }
 
 # testing event
-planet_event = {
+carrier_event = {
 	id = ascension_civics.199
 	hide_window = yes
 	is_triggered_only = yes

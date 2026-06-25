@@ -1,3 +1,44 @@
+### Utilities ###
+
+utility_component_template = {
+	key = "AC_EXEMPLARY_GENETICS_HUM"
+	size = aux
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5 # to do
+		}
+	}
+
+	potential = {
+		from = {
+			has_valid_civic = civic_ac_shared_perfection_hum
+			has_tradition = tr_purity_finish 
+		}
+	}
+	component_set = "AC_EXEMPLARY_GENETICS_HUM"
+	#(all the above as an inline script)...
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		# to do: ...
+		ship_shield_add = 1
+		#mult = from.
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#...
+
+### Mutations ###
+
 ### Infectous Cysts (Virulent Cysts)
 utility_component_template = {
 	inline_script = {

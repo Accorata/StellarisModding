@@ -156,3 +156,13 @@ civic_blossoming_hives = {
 		}
 	}
 }
+
+inline_script = {
+	script = "civics/ac_shared_perfection_civic"
+	SPECIES = HUM
+}
+
+inline_script = {
+	script = "civics/ac_shared_perfection_civic"
+	SPECIES = MAM
+}

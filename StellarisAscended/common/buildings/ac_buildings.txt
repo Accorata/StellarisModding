@@ -358,10 +358,10 @@ building_ac_xanadu = {
 		}
 	}
 	country_modifier = {
-		pop_growth_from_immigration = 0.1
-		planet_immigration_pull_mult = 0.1
+		refugee_attraction = 0.05
 	}
 	planet_modifier = {
+		planet_resettlement_unemployed_destination_mult = 0.1
 		job_resort_worker_add = 4
 	}
 	triggered_planet_modifier = {
