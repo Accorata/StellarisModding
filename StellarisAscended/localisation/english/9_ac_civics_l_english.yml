@@ -50,12 +50,13 @@
 
 ## Shared Perfection
   ac_shared_perfection_base_desc:0 "By imbuing our genetic excellence into our fleets,"
+  ac_exemplary_genetics_base_desc:0 "amplified a thousandfold."
 
   civic_ac_shared_perfection_hum:0 "Shared Pefection"
   civic_ac_shared_perfection_hum_desc:0 "$ac_shared_perfection_base_desc$ ..."
   # councilor needed...
   civic_ac_shared_perfection_mam:0 "$civic_ac_shared_perfection_hum$"
-  civic_ac_shared_perfection_mam_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  civic_ac_shared_perfection_mam_desc:0 "$ac_shared_perfection_base_desc$ they will learn how we defend our young."
   #...
 
   civic_ac_shared_perfection_hum_corp:0 "..."
@@ -68,8 +69,31 @@
   #...
 
   AC_EXEMPLARY_GENETICS_HUM:0 "Exemplary Humanoid Genetics"
-  AC_EXEMPLARY_GENETICS_HUM_DESC:0 "..."
-  #...
+  AC_EXEMPLARY_GENETICS_HUM_DESC:0 "Adaptive learning and ..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_MAM:0 "Exemplary Mammalian Genetics"
+  AC_EXEMPLARY_GENETICS_MAM_DESC:0 "Motherly instincts to defend our people and territory, $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_REP:0 "Exemplary Reptilian Genetics"
+  AC_EXEMPLARY_GENETICS_REP_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_AVI:0 "Exemplary Avian Genetics"
+  AC_EXEMPLARY_GENETICS_AVI_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_ART:0 "Exemplary Arthropoid Genetics"
+  AC_EXEMPLARY_GENETICS_ART_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_MOL:0 "Exemplary Molluscoid Genetics"
+  AC_EXEMPLARY_GENETICS_MOL_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_FUN:0 "Exemplary Fungoid Genetics"
+  AC_EXEMPLARY_GENETICS_FUN_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_PLANT:0 "Exemplary Plantoid Genetics"
+  AC_EXEMPLARY_GENETICS_PLANT_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_LITHOID:0 "Exemplary Lithoid Genetics"
+  AC_EXEMPLARY_GENETICS_LITHOID_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_NECROID:0 "Exemplary Necroid Genetics"
+  AC_EXEMPLARY_GENETICS_NECROID_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_AQUATIC:0 "Exemplary Aquatic Genetics"
+  AC_EXEMPLARY_GENETICS_AQUATIC_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_TOX:0 "Exemplary Toxoid Genetics"
+  AC_EXEMPLARY_GENETICS_TOX_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_INF:0 "Exemplary Infernal Genetics"
+  AC_EXEMPLARY_GENETICS_INF_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
   
 
 ### Mutation ---------------------------------------------------------------------------------------------
@@ -281,12 +305,12 @@
   leader_trait_machine_crusader_2_desc:0 "$leader_trait_machine_crusader_desc$"
   leader_trait_machine_crusader_3:0 "$leader_trait_machine_crusader$ III"
   leader_trait_machine_crusader_3_desc:0 "$leader_trait_machine_crusader_desc$"
-  leader_trait_machine_crusader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+5§!\n$tt$$r_unity$: §G+25§!"
-  leader_trait_machine_crusader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
+  leader_trait_machine_crusader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+5§!\n$tt$$r_unity$: §G+25§!"
+  leader_trait_machine_crusader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
   leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
   holding_ac_robotics_plant:0 "Robotics Plant"
   holding_ac_robotics_plant_plural:0 "Robotics Plants"
-  holding_ac_robotics_plant_desc:0 "Building Robotics facillities within other nations allow for witness the wonders of synth so we can profit off our technological progress."
+  holding_ac_robotics_plant_desc:0 "Building robotics facilities within other nations allows for them to witness the wonders of synthetics and further spread their usage."
 
   # Future Addition
   civic_soul_seekers:0 "Soul Seekers"

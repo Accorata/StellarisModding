@@ -1,0 +1,24 @@
+key = "AC_EXEMPLARY_GENETICS_$SPECIES$"
+size = aux
+icon = "GFX_ship_part_ac_exemplary_genetics"
+icon_frame = 1
+resources = {
+	category = ship_components
+	cost = {
+		alloys = 5
+		food = 35
+	}
+}
+
+potential = {
+	from = {
+		has_valid_civic = civic_ac_shared_perfection_$SPECIES$
+		has_tradition = tr_purity_finish 
+	}
+}
+
+component_set = "AC_EXEMPLARY_GENETICS_$SPECIES$"
+
+ai_weight = {
+	weight = 10
+}

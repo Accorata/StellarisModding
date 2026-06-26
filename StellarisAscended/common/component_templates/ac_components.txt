@@ -1,41 +1,213 @@
 ### Utilities ###
 
 utility_component_template = {
-	key = "AC_EXEMPLARY_GENETICS_HUM"
-	size = aux
-	icon = "GFX_ship_part_ac_exemplary_genetics"
-	icon_frame = 1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 5 # to do
-		}
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = HUM
 	}
-
-	potential = {
-		from = {
-			has_valid_civic = civic_ac_shared_perfection_hum
-			has_tradition = tr_purity_finish 
-		}
-	}
-	component_set = "AC_EXEMPLARY_GENETICS_HUM"
-	#(all the above as an inline script)...
 
 	triggered_ship_design_modifier = {
 		potential = {
 			always = yes
 		}
-		# to do: ...
-		ship_shield_add = 1
-		#mult = from.
-	}
-
-	ai_weight = {
-		weight = 10
+		ship_experience_gain_mult = 0.03
+		ship_accuracy_add = 1
+		mult = from.species.species_traits_purity_count
 	}
 }
 
-#...
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = MAM
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_friendly_territory_fire_rate_mult = 0.03
+		ship_friendly_territory_accuracy_mult = 0.03
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = REP
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		weapon_type_mandible_weapon_damage_mult = 0.03
+		ship_armor_hardening_add = 0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = AVI
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_speed_mult = 0.03
+		ship_tracking_add = 1
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = ART
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_armor_mult = 0.02
+		ship_evasion_mult = 0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = MOL
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_armor_mult = 0.02
+		ship_disengage_chance_mult = 0.04
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = FUN
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		weapon_type_strike_craft_weapon_damage_mult = 0.03
+		ship_hull_regen_add_perc = 0.10
+		ship_armor_regen_add_perc = 0.20
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = PLANT
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_orbit_upkeep_mult = -0.02
+		ship_weapon_range_mult = 0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = LITHOID
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		weapon_type_kinetic_weapon_damage_mult = 0.03
+		ship_hull_mult = 0.04
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = NECROID
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		weapon_type_energy_weapon_damage_mult = 0.03
+		ship_starting_experience_add = 25
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = AQUATIC
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_shield_mult = 0.02
+		ship_emergency_ftl_mult = -0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = TOX
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_orbital_bombardment_mult = 0.03
+		ship_shield_penetration_add = 0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
+
+utility_component_template = {
+	inline_script = {
+		script = ship_components/ac_exemplary_genetics
+		SPECIES = INF
+	}
+
+	triggered_ship_design_modifier = {
+		potential = {
+			always = yes
+		}
+		weapon_type_explosive_weapon_damage_mult = 0.03
+		ship_armor_penetration_add = 0.02
+		mult = from.species.species_traits_purity_count
+	}
+}
 
 ### Mutations ###
 

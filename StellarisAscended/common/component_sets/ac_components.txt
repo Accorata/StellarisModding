@@ -6,7 +6,77 @@ component_set = {
 	icon_frame = 1
 }
 
-#...
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_MAM"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_REP"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_AVI"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_ART"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_MOL"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_FUN"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_PLANT"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_LITHOID"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_NECROID"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_AQUATIC"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_TOX"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AC_EXEMPLARY_GENETICS_INF"
+	icon = "GFX_ship_part_ac_exemplary_genetics"
+	icon_frame = 1
+}
 
 ### Mutations ###
 

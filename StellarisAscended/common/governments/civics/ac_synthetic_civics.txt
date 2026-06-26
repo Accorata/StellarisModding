@@ -139,7 +139,7 @@ civic_soul_seekers = {
 			NOT = {
 				value = ethic_gestalt_consciousness
 			}
-			# temporarily removed
+			# temporarily removed - need to play through zroforged and see how robots can talk to the Animator 
 			value = ethic_gestalt_consciousness
 		}
 		authority = {

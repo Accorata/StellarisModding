@@ -157,17 +157,21 @@ country_event = {
 								}
 								add_resource = {
 									unity = @trait_crusader_fleet_amt
+									mult = value:trait_kill_naval_cap_scaling|MULT|1|
 								}
 								add_resource = {
 									alloys = @trait_shipbreaker_amt
+									mult = value:trait_kill_naval_cap_scaling|MULT|1|
 								}
 							}
 							else = {
 								add_resource = {
-									unity = @trait_crusader_2_fleet_amt									#Tier 2/3
+									unity = @trait_crusader_2_fleet_amt	
+									mult = value:trait_kill_naval_cap_scaling|MULT|1|								#Tier 2/3
 								}
 								add_resource = {
-									alloys = @trait_shipbreaker_2_amt									#Tier 2/3
+									alloys = @trait_shipbreaker_2_amt	
+									mult = value:trait_kill_naval_cap_scaling|MULT|1|								#Tier 2/3
 								}
 							}
 						}
