@@ -45,7 +45,7 @@ civic_telepathic_empire = {
 		}
 		description = civic_tooltip_telepathic_empire_effects
 		modifier = {
-			planet_stability_add = 5
+			planet_stability_add = 3
 			pop_non_psionic_happiness = -0.15
 		}
 	}

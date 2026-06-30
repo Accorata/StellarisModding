@@ -12,8 +12,10 @@ resources = {
 
 potential = {
 	from = {
-		has_valid_civic = civic_ac_shared_perfection_$SPECIES$
-		has_tradition = tr_purity_finish 
+		is_ac_shared_perfection = yes
+		species = {
+			is_species_class = $SPECIES$
+		}
 	}
 }
 

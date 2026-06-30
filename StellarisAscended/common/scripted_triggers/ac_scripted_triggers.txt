@@ -147,6 +147,15 @@ is_ac_xanadu = {
 	}
 }
 
+is_ac_shared_perfection = {
+	OR = {
+		has_valid_civic = civic_ac_shared_perfection
+		has_valid_civic = civic_ac_shared_perfection_corp
+		has_valid_civic = civic_ac_shared_perfection_hive
+	}
+	has_tradition = tr_purity_finish
+}
+
 is_ac_specialized = {
 	OR = {
 		has_valid_civic = civic_hyper_specialization

@@ -157,12 +157,275 @@ civic_blossoming_hives = {
 	}
 }
 
-inline_script = {
-	script = "civics/ac_shared_perfection_civic"
-	SPECIES = HUM
+civic_ac_shared_perfection = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_shared_perfection_corp
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shared_perfection_mam.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	hide_modifiers = yes
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = HUM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MAM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = REP
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AVI
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = ART
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MOL
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = FUN
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = PLANT
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = LITHOID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = NECROID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AQUATIC
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = TOX
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = INF
+	}
 }
 
-inline_script = {
-	script = "civics/ac_shared_perfection_civic"
-	SPECIES = MAM
+
+civic_ac_shared_perfection_corp = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_shared_perfection
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shared_perfection_mam_corp.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	hide_modifiers = yes
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = HUM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MAM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = REP
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AVI
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = ART
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MOL
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = FUN
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = PLANT
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = LITHOID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = NECROID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AQUATIC
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = TOX
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = INF
+	}
+}
+
+civic_ac_shared_perfection_hive = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_shared_perfection_mam_hive.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	hide_modifiers = yes
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = HUM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MAM
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = REP
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AVI
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = ART
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = MOL
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = FUN
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = PLANT
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = LITHOID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = NECROID
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = AQUATIC
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = TOX
+	}
+	inline_script = {
+		script = civics/ac_shared_perfection_civic_swaps
+		SPECIES = INF
+	}
 }

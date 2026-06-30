@@ -49,31 +49,114 @@
   decision_ac_more_resort_colony_desc:0 "$decision_resort_colony_desc$"
 
 ## Shared Perfection
+  civic_ac_shared_perfection:0 "Shared Pefection"
   ac_shared_perfection_base_desc:0 "By imbuing our genetic excellence into our fleets,"
+  civic_ac_shared_perfection_HUM:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_HUM_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  civic_tooltip_ac_shared_perfection_HUM_effects:0 "Unlocks ship component $AC_EXEMPLARY_GENETICS_HUM$ which ..."
+  civic_tooltip_ac_shared_perfection_HUM_incomplete_effects:0 "$purity_ascension_required$$civic_tooltip_ac_shared_perfection_HUM_effects$"
+  civic_ac_shared_perfection_MAM:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_MAM_desc:0 "$ac_shared_perfection_base_desc$ they will learn how we defend our young."
+  #...
+  civic_ac_shared_perfection_REP:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_REP_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_AVI:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_AVI_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_ART:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_ART_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_MOL:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_MOL_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_FUN:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_FUN_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_PLANT:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_PLANT_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_LITHOID:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_LITHOID_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_NECROID:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_NECROID_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_AQUATIC:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_AQUATIC_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_TOX:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_TOX_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  civic_ac_shared_perfection_INF:0 "$civic_ac_shared_perfection$"
+  civic_ac_shared_perfection_INF_desc:0 "$ac_shared_perfection_base_desc$ ..."
+  #...
+  # councilor needed...
+
+  civic_ac_shared_perfection_corp:0 "Shared Excellence"
+  civic_ac_shared_perfection_HUM_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_HUM_corp_desc:0 "$civic_ac_shared_perfection_HUM_desc$"
+  civic_ac_shared_perfection_MAM_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_MAM_corp_desc:0 "$civic_ac_shared_perfection_MAM_desc$"
+  civic_ac_shared_perfection_REP_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_REP_corp_desc:0 "$civic_ac_shared_perfection_REP_desc$"
+  civic_ac_shared_perfection_AVI_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_AVI_corp_desc:0 "$civic_ac_shared_perfection_AVI_desc$"
+  civic_ac_shared_perfection_ART_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_ART_corp_desc:0 "$civic_ac_shared_perfection_ART_desc$"
+  civic_ac_shared_perfection_MOL_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_MOL_corp_desc:0 "$civic_ac_shared_perfection_MOL_desc$"
+  civic_ac_shared_perfection_FUN_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_FUN_corp_desc:0 "$civic_ac_shared_perfection_FUN_desc$"
+  civic_ac_shared_perfection_PLANT_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_PLANT_corp_desc:0 "$civic_ac_shared_perfection_PLANT_desc$"
+  civic_ac_shared_perfection_LITHOID_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_LITHOID_corp_desc:0 "$civic_ac_shared_perfection_LITHOID_desc$"
+  civic_ac_shared_perfection_NECROID_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_NECROID_corp_desc:0 "$civic_ac_shared_perfection_NECROID_desc$"
+  civic_ac_shared_perfection_AQUATIC_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_AQUATIC_corp_desc:0 "$civic_ac_shared_perfection_AQUATIC_desc$"
+  civic_ac_shared_perfection_TOX_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_TOX_corp_desc:0 "$civic_ac_shared_perfection_TOX_desc$"
+  civic_ac_shared_perfection_INF_corp:0 "$civic_ac_shared_perfection_corp$"
+  civic_ac_shared_perfection_INF_corp_desc:0 "$civic_ac_shared_perfection_INF_desc$"
+  # councilor needed...
+
+  civic_ac_shared_perfection_hive:0 "Shared Purity"
+  civic_ac_shared_perfection_HUM_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_HUM_hive_desc:0 "$civic_ac_shared_perfection_HUM_desc$"
+  civic_ac_shared_perfection_MAM_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_MAM_hive_desc:0 "$civic_ac_shared_perfection_MAM_desc$"
+  civic_ac_shared_perfection_REP_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_REP_hive_desc:0 "$civic_ac_shared_perfection_REP_desc$"
+  civic_ac_shared_perfection_AVI_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_AVI_hive_desc:0 "$civic_ac_shared_perfection_AVI_desc$"
+  civic_ac_shared_perfection_ART_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_ART_hive_desc:0 "$civic_ac_shared_perfection_ART_desc$"
+  civic_ac_shared_perfection_MOL_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_MOL_hive_desc:0 "$civic_ac_shared_perfection_MOL_desc$"
+  civic_ac_shared_perfection_FUN_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_FUN_hive_desc:0 "$civic_ac_shared_perfection_FUN_desc$"
+  civic_ac_shared_perfection_PLANT_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_PLANT_hive_desc:0 "$civic_ac_shared_perfection_PLANT_desc$"
+  civic_ac_shared_perfection_LITHOID_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_LITHOID_hive_desc:0 "$civic_ac_shared_perfection_LITHOID_desc$"
+  civic_ac_shared_perfection_NECROID_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_NECROID_hive_desc:0 "$civic_ac_shared_perfection_NECROID_desc$"
+  civic_ac_shared_perfection_AQUATIC_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_AQUATIC_hive_desc:0 "$civic_ac_shared_perfection_AQUATIC_desc$"
+  civic_ac_shared_perfection_TOX_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_TOX_hive_desc:0 "$civic_ac_shared_perfection_TOX_desc$"
+  civic_ac_shared_perfection_INF_hive:0 "$civic_ac_shared_perfection_hive$"
+  civic_ac_shared_perfection_INF_hive_desc:0 "$civic_ac_shared_perfection_INF_desc$"
+
   ac_exemplary_genetics_base_desc:0 "amplified a thousandfold."
-
-  civic_ac_shared_perfection_hum:0 "Shared Pefection"
-  civic_ac_shared_perfection_hum_desc:0 "$ac_shared_perfection_base_desc$ ..."
-  # councilor needed...
-  civic_ac_shared_perfection_mam:0 "$civic_ac_shared_perfection_hum$"
-  civic_ac_shared_perfection_mam_desc:0 "$ac_shared_perfection_base_desc$ they will learn how we defend our young."
-  #...
-
-  civic_ac_shared_perfection_hum_corp:0 "..."
-  civic_ac_shared_perfection_hum_corp_desc:0 "..."
-  # councilor needed...
-  #...
-
-  civic_ac_shared_perfection_hum_hive:0 "..."
-  civic_ac_shared_perfection_hum_hive_desc:0 "..."
-  #...
-
   AC_EXEMPLARY_GENETICS_HUM:0 "Exemplary Humanoid Genetics"
-  AC_EXEMPLARY_GENETICS_HUM_DESC:0 "Adaptive learning and ..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_HUM_DESC:0 "Adaptive learning and natural talent, $ac_exemplary_genetics_base_desc$"
   AC_EXEMPLARY_GENETICS_MAM:0 "Exemplary Mammalian Genetics"
   AC_EXEMPLARY_GENETICS_MAM_DESC:0 "Motherly instincts to defend our people and territory, $ac_exemplary_genetics_base_desc$"
   AC_EXEMPLARY_GENETICS_REP:0 "Exemplary Reptilian Genetics"
-  AC_EXEMPLARY_GENETICS_REP_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
+  AC_EXEMPLARY_GENETICS_REP_DESC:0 "Hardened scales and deadly bites, $ac_exemplary_genetics_base_desc$"
   AC_EXEMPLARY_GENETICS_AVI:0 "Exemplary Avian Genetics"
   AC_EXEMPLARY_GENETICS_AVI_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
   AC_EXEMPLARY_GENETICS_ART:0 "Exemplary Arthropoid Genetics"
@@ -94,7 +177,6 @@
   AC_EXEMPLARY_GENETICS_TOX_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
   AC_EXEMPLARY_GENETICS_INF:0 "Exemplary Infernal Genetics"
   AC_EXEMPLARY_GENETICS_INF_DESC:0 "..., $ac_exemplary_genetics_base_desc$"
-  
 
 ### Mutation ---------------------------------------------------------------------------------------------
   mutation_ascension_required:0 "If §YMutation§! Ascension completed:\n"
@@ -172,7 +254,7 @@
   tech_ac_unique_mutation_voidworm_2:0 "$AC_VIRULENT_CYSTS_2$"
   tech_ac_unique_mutation_voidworm_2_desc:0 "$AC_VIRULENT_CYSTS_2_DESC$"
   AC_LEECHCRAFT_2: "Vampiric Spawn"
-  AC_LEECHCRAFT_2_DESC: "Insatiable ..."
+  AC_LEECHCRAFT_2_DESC: "Insatiable larvae ..."
   AC_LEECHCRAFT_2_SMALL: "$AC_LEECHCRAFT_2$"
   AC_LEECHCRAFT_2_LARGE: "$AC_LEECHCRAFT_2$"
   tech_ac_unique_mutation_space_amoeba_2:0 "$AC_LEECHCRAFT_2$"
@@ -354,7 +436,7 @@
   job_ac_grand_synthesizer_desc:0 "The gods of the material plane, Grand Synthesizers forge the resources from which our wonders are formed."
   job_ac_grand_synthesizer_effect_desc:0 "$job_ac_grand_synthesizer_plural_with_icon$ turn £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! and increase §YMegastructure build speed§!."
   job_ac_grand_synthesizer_catalytic:0 "Grand Catalyst"
-  job_ac_grand_synthesizer_catalytic_desc:0 "..."
+  job_ac_grand_synthesizer_catalytic_desc:0 "Masters of catalytic processing, Grand Catalysts forge the resources from which our wonders are formed."
   mod_job_ac_grand_synthesizer_add:0 "$job_ac_grand_synthesizer$ Jobs"
   mod_job_ac_grand_synthesizer_per_pop:0 "§G+1§! $job_ac_grand_synthesizer$ Job per $VALUE$ Pops"
   mod_job_ac_grand_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_ac_grand_synthesizer_add£ per $VALUE$ £pop£"
@@ -367,8 +449,8 @@
 ## Telepathic
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expressed of individuality."
-  civic_tooltip_telepathic_empire_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+5§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
-  civic_tooltip_telepathic_empire_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- Stability: §G+5§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
+  civic_tooltip_telepathic_empire_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
+  civic_tooltip_telepathic_empire_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_female:0 "$councilor_telepathic_empire$"
   councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before dispersing once more."
@@ -582,7 +664,7 @@
   councilor_concurrent_command:0 "Duo Processor"
   councilor_concurrent_command_female:0 "$councilor_concurrent_command$"
   councilor_concurrent_command_desc:0 "The $TITLE$ serves as backup processing power for the ruler as well as executing routine computational tasks for the nation."
-  councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-2.5%§!"
+  councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-1%§!"
 
   civic_executive_militarization:0 "Executive Militarization"
   civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with military protocols, ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
@@ -597,7 +679,7 @@
   civic_tooltip_nodal_command_effects:0 "$civic_tooltip_concurrent_command_effects$\n\n§EModifiers:§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   leader_trait_ac_concurrent_command:0 "Concurrent Commander"
-  leader_trait_ac_concurrent_command_desc:0 "..."
+  leader_trait_ac_concurrent_command_desc:0 "This ruler projects virtual copies of themselves onto the battlefield, aiding our military leaders in their every engagement."
 
 ### Modularity --------------------------------------------------------------------------------------
   modular_ascension_required:0 "If §YModularity§! Ascension completed:\n"
