@@ -13,20 +13,12 @@
 # 			}
 # 		}
 # 	}
-# } # Targeted modifiers only apply to planets :(
+# } # Targeted modifiers only apply to planets...
 
 ac_impose_synthetic_ideology_effect = {
 	impose_ideology_effect = yes
-	force_remove_civic = 1
-	if = {
-		limit = {
-			is_megacorp = yes
-		}
-		force_add_civic = civic_bio_replacer
-	}
-	else = {
-		force_add_civic = civic_bioform_upgrader
-	}
+	force_remove_civic_by_index = 1
+	force_add_civic = civic_bioform_upgrader
 	set_country_flag = ac_upgrader_imposed
 	if = {
 		limit = {

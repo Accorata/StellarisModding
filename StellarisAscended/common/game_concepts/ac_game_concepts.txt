@@ -19,6 +19,10 @@ concept_ac_normal_knight = {
 	icon = "gfx/interface/icons/jobs/job_knight.dds"
 }
 
+concept_ac_genetic_purity = {
+
+}
+
 # Genetic Authorities
 concept_auth_ac_genetic_imperial_perfect = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_genetic_imperial_perfect_35x35.dds"

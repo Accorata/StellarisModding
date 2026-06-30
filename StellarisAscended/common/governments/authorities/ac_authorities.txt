@@ -381,7 +381,7 @@ auth_dictatorial = {
 			pop_cat_specialist_political_power = -0.5
 			pop_cat_worker_political_power = -0.75
 			planet_jobs_worker_produces_mult = 0.25
-			pop_demotion_time_mult = 0.5
+			auto_mod_monthly_mult = -0.25
 		}
 		tags = {
 			AUTHORITY_SUCCESSION_TYPE

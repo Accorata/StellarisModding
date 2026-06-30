@@ -49,16 +49,6 @@ ac_grand_synthesizer = {
 	}
 
 	inline_script = "jobs/automodding_priority_alloys"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = ruler
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ac_normal_knight = {
@@ -115,16 +105,6 @@ ac_normal_knight = {
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ac_content_terraformer = {
@@ -173,14 +153,4 @@ ac_content_terraformer = {
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = ruler
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }

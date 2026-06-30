@@ -44,6 +44,23 @@ ship_event = {
 	}
 }
 
+country_event = {
+	id = ascension_civics.2001
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				NOT = {
+					is_variable_set = species_traits_purity_count
+				}
+			}
+			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
 # A leader is added to the leader pool, available for recruitment
 country_event = {
 	id = ascension_civics.100

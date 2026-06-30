@@ -512,8 +512,8 @@ councilor_corporate_remodeling = {
 	}
 	civic = civic_corporate_remodeling
 	modifier = {
+		ships_logistics_mult = -0.02
 		ship_speed_mult = 0.02
-		local_trade_protection_add = 2
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

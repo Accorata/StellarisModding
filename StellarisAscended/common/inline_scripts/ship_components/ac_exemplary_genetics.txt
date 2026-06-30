@@ -12,12 +12,14 @@ resources = {
 
 potential = {
 	from = {
-		is_ac_shared_perfection = yes
+		#is_ac_shared_perfection = yes
 		species = {
 			is_species_class = $SPECIES$
 		}
 	}
 }
+
+custom_tooltip = tt_AC_EXEMPLARY_GENETICS_$SPECIES$
 
 component_set = "AC_EXEMPLARY_GENETICS_$SPECIES$"
 

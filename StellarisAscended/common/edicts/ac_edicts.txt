@@ -140,7 +140,7 @@ ac_privileged_intellectualism = {
 	modifier = {
 		country_scientist_cap_add = 1
 		scientist_exp_gain = 0.1
-		pop_demotion_time_mult = 0.50
+		pop_category_rulers_upkeep_mult = 0.2
 	}
 	allow = {
 	}
@@ -287,7 +287,7 @@ ac_ruthless_competition = {
 	}
 	modifier = {
 		branch_office_value_mult = 0.3
-		pop_demotion_time_mult = -1
+		pop_category_rulers_upkeep_mult = -0.3
 		logistic_growth_mult = -0.1
 	}
 	allow = {
