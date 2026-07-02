@@ -11,7 +11,6 @@ civic_ac_mitotic_assembly = {
 				value = ethic_gestalt_consciousness
 			}
 		}
-
 		authority = {
 			NOT = {
 				value = auth_corporate
@@ -24,16 +23,16 @@ civic_ac_mitotic_assembly = {
 				value = MACHINE
 			}
 		}
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
 		civics = {
 			NOT = {
 				value = civic_ac_parallel_development
-			}
-		}
-		graphical_culture = {
-			NOR = {
-				text = graphical_culture_tooltip_not_biological
-				value = biogenesis_01
-				value = biogenesis_02
 			}
 		}
 	}
@@ -91,16 +90,16 @@ civic_ac_parallel_development = {
 				value = MACHINE
 			}
 		}
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
 		civics = {
 			NOT = {
 				value = civic_ac_mitotic_assembly
-			}
-		}
-		graphical_culture = {
-			NOR = {
-				text = graphical_culture_tooltip_not_biological
-				value = biogenesis_01
-				value = biogenesis_02
 			}
 		}
 	}
@@ -126,6 +125,53 @@ civic_ac_parallel_development = {
 		description = civic_tooltip_ac_mitotic_assembly_effects
 		modifier = {
 			#...
+		}
+	}
+}
+
+civic_ac_duplicated_horde = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	possible = {
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_duplicated_horde.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	description = civic_tooltip_ac_mitotic_assembly_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_mitotic_assembly_effects
+		modifier = {
+			#...
+			councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }

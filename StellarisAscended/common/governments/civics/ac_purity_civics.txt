@@ -182,6 +182,13 @@ civic_ac_shared_perfection = {
 				value = MACHINE
 			}
 		}
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
 		civics = {
 			NOT = {
 				value = civic_ac_shared_perfection_corp
@@ -281,6 +288,13 @@ civic_ac_shared_perfection_corp = {
 				value = MACHINE
 			}
 		}
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
 		civics = {
 			NOT = {
 				value = civic_ac_shared_perfection
@@ -364,6 +378,15 @@ civic_ac_shared_perfection_hive = {
 		}
 		authority = {
 			value = auth_hive_mind
+		}
+	}
+	possible = {
+		graphical_culture = {
+			OR = {
+				text = graphical_culture_tooltip_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
 		}
 	}
 	modification = yes

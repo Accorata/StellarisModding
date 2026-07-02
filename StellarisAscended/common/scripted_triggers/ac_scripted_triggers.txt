@@ -279,11 +279,11 @@ is_ac_mutated_fauna = {
 }
 
 is_ac_cloned_ships = {
-	# OR = {
-	# 	has_valid_civic = civic_ac_mitotic_assembly
-	# 	has_valid_civic = civic_ac_parallel_development
-	# 	has_valid_civic = civic_ac_great_ooze #change...
-	# }
+	OR = {
+		has_valid_civic = civic_ac_mitotic_assembly
+		has_valid_civic = civic_ac_parallel_development
+		has_valid_civic = civic_ac_duplicated_horde
+	}
 	has_tradition = tr_cloning_finish
 }
 

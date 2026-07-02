@@ -9,58 +9,6 @@ event = {
 	}
 }
 
-# testing... - works just needs to give a name
-# Called from on_ship_built
-# This = ship
-# From = planet
-ship_event = {
-	id = ascension_civics.2000
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		exists = controller
-		NOT = {
-			has_modifier = ac_cloned_ship
-		}
-	}
-	immediate = {
-		add_modifier = {
-			modifier = ac_cloned_ship
-			days = -1
-		}
-		fleet = {
-			create_ship = {
-				name = random
-				design = root
-				graphical_culture = root.owner
-			}
-		}
-		last_created_ship = {
-			add_modifier = {
-				modifier = ac_cloned_ship
-				days = -1
-			}
-		}
-	}
-}
-
-country_event = {
-	id = ascension_civics.2001
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		every_owned_species = {
-			limit = {
-				NOT = {
-					is_variable_set = species_traits_purity_count
-				}
-			}
-			set_species_traits_purity_count_variable = yes
-		}
-	}
-}
-
 # A leader is added to the leader pool, available for recruitment
 country_event = {
 	id = ascension_civics.100
@@ -929,7 +877,44 @@ country_event = {
 	}
 }
 
-# testing event
+# Called from on_ship_built
+# This = ship
+# From = planet
+ship_event = {
+	id = ascension_civics.350
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		exists = controller
+		NOT = {
+			has_modifier = ac_cloned_ship
+		}
+		from = {
+			has_starbase_building = ac_mitosis_chamber
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = ac_cloned_ship
+			days = -1
+		}
+		fleet = {
+			create_ship = {
+				name = random
+				design = root
+				graphical_culture = root.owner
+			}
+		}
+		last_created_ship = {
+			add_modifier = {
+				modifier = ac_cloned_ship
+				days = -1
+			}
+		}
+	}
+}
+
+### Test Events ###
 carrier_event = {
 	id = ascension_civics.199
 	hide_window = yes
@@ -964,7 +949,6 @@ carrier_event = {
 	}
 }
 
-#test
 country_event = {
 	id = ascension_civics.400
 	hide_window = yes
@@ -973,6 +957,23 @@ country_event = {
 	immediate = {
 		random_owned_leader = {
 			change_leader_portrait = ac_vessel
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.2001
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				NOT = {
+					is_variable_set = species_traits_purity_count
+				}
+			}
+			set_species_traits_purity_count_variable = yes
 		}
 	}
 }

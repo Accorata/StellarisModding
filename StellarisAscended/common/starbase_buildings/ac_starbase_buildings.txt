@@ -179,9 +179,9 @@ ac_mitosis_chamber = {
 	construction_days = 180
 	potential = {
 		exists = owner
-		owner = {
-			is_ac_cloned_ships = yes
-		}
+		#owner = {
+		#	is_ac_cloned_ships = yes
+		#}
 		is_normal_starbase = yes
 	}
 	possible = {

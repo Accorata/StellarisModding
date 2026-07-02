@@ -19,8 +19,61 @@ concept_ac_normal_knight = {
 	icon = "gfx/interface/icons/jobs/job_knight.dds"
 }
 
-concept_ac_genetic_purity = {
+# Shared Perfection Civics
 
+concept_ac_genetic_purity = {
+}
+
+concept_ac_exemplary_genetics_HUM = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_MAM = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_REP = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_AVI = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_ART = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_MOL = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_FUN = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_PLANT = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_LITHOID = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_NECROID = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_AQUATIC = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_TOX = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
+}
+
+concept_ac_exemplary_genetics_INF = {
+	icon = "gfx/interface/icons/ship_parts/ac_exemplary_genetics.dds"
 }
 
 # Genetic Authorities

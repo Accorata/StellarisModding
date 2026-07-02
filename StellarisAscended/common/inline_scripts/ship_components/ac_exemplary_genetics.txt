@@ -12,7 +12,7 @@ resources = {
 
 potential = {
 	from = {
-		#is_ac_shared_perfection = yes
+		is_ac_shared_perfection = yes
 		species = {
 			is_species_class = $SPECIES$
 		}
