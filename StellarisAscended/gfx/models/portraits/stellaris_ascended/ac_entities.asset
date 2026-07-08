@@ -12,17 +12,22 @@ entity = {
 		chance = 3.0
 		looping = no
 		next_state = idle 
-		# start_event = {
-		# 	node = "ac_glow_effect" #- need a node for this...
-		# 	particle = "ac_vessel_glow_effect"
-		# 	keep_particle = yes 
-		# }
+		start_event = {
+			node = "ac_body_glow_effect"
+			particle = "ac_vessel_body_glow_effect"
+			keep_particle = yes 
+		}
+		#start_event = {
+		#	node = "ac_head_glow_effect"
+		#	particle = "ac_vessel_body_glow_effect"
+		#	keep_particle = yes 
+		#}
 	}
 
-	scale = 1.0
+	scale = 0.75
 }
 
 animation = {
 	name = "ac_vessel_idle_animation"
-	file = "ac_vessel_idle.anim"
+	file = "ac_vessel_idle_2.anim"
 }

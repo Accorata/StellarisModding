@@ -7,5 +7,7 @@ portraits = {
 		character_textures = {
 			"gfx/models/portraits/stellaris_ascended/ac_vessel_portrait.dds"
 	 	}
+		custom_close_up_scale = 1.2
+		custom_close_up_position_offset  = { x = 0 y = 80 }
 	}
 }
