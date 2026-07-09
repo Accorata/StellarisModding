@@ -280,7 +280,7 @@
   trait_ac_bio_intelligent:0 "Brilliant"
   trait_ac_bio_intelligent_desc:0 "An ingenious mutation developed by our scientists called Anton's Key has allowed for intelligence never seen before."
 
-## Monstrous Fauna
+## Monstrous Fauna (Only with Grand Archive)
   civic_ac_monstrous_fauna:0 "Monstrous Fauna"
   civic_ac_monstrous_fauna_desc:0 "..."
   ac_monstrous_fauna_tech_unlocks:0 "- ..."
@@ -526,7 +526,21 @@
   building_ac_psi_tower_plural:0 "Psionic Towers"
   building_ac_psi_tower_desc:0 "High in these towers telepaths commune with the people below, uniting our mind and wielding our future."
 
-## Renouncers
+## Vessel (Only with Shadows of the Shroud)
+  civic_ac_eldritch_possession:0 "Eldritch Possession"
+  civic_ac_eldritch_possession_desc:0 "This society has called its Patron into its ruler, ..."
+  civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$-..."
+  civic_tooltip_ac_eldritch_possession_effects:0 "..."
+  #...
+  civic_ac_eldritch_shareholders:0 "Eldritch Shareholders"
+  civic_ac_eldritch_shareholders_desc:0 "..."
+  #...
+
+  leader_trait_ac_shroud_vessel:0 "Patron's Presence"
+  leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
+  mod_ac_double_envoy_chance_add:0 "Chance to Double Gained Favors"
+
+## Renouncers (Only without Shadows of the Shroud)
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
   civic_shroud_renouncers_desc:0 "This society belives psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
   AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
@@ -545,24 +559,6 @@
 
   building_ac_renouncer_sanctum:0 "Sanctum of Transcendence"
   building_ac_renouncer_sanctum_desc:0 "The Sanctum is a place free from the horrors of the Shroud. Here, our collective enlightenment can be witnessed firsthand."
-
-  # Future Addition
-  civic_doomseekers:0 "Doomseekers"
-  civic_doomseekers_desc:0 "There are those who believe that our connection to the Shroud spells the end for the material universe. This society embraces that end, that Great End!"
-  civic_tooltip_doomseekers_effects:0 "..."
-  councilor_doomseekers:0 "Seer of the Great End"
-  councilor_doomseekers_female:0 "Seeress of the Great End"
-  councilor_doomseekers_desc:0 "..."
-
-  tech_ac_doom_foretold:0 "Doom Foretold"
-  tech_ac_doom_foretold_desc:0 "..."
-  tech_ac_doom_foretold_effect:0 "$sm_ac_avatar_caller_plural$ provide an additional §Y-5§! Stability\nIncreases the rate of summoned §YPsionic Avatars§! by §Y2§! per year\nRaises the chance of §Rdangerous§! events!"
-  MESSAGE_SHROUD_BREACH_TITLE:0 "Shroud Avatar Called"
-  MESSAGE_SHROUD_BREACH_DESC:0 "..."
-  sm_ac_avatar_caller:0 "Beacon of the End"
-  sm_ac_avatar_caller_plural:0 "Beacons of the End"
-  sm_ac_avatar_caller_desc:0 "This mini tear into the fabric of the Shroud allows for a clearer path through the chaos, drawing the great end ever closer."
-  sm_ac_avatar_caller_desc_modifier:0 "..."
 
 ### Cybernetic ---------------------------------------------------------------------------------------------
   cybernetic_ascension_required:0 "If §YCybernetic§! Ascension completed:\n"

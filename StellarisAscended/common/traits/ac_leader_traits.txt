@@ -154,6 +154,36 @@ leader_trait_ac_concurrent_command = {
 	randomized = no
 }
 
+leader_trait_ac_shroud_vessel = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_ac_vessel"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			#... composer
+		}
+
+		#mult
+	}
+	leader_class = {
+		commander
+		scientist
+		official
+	}
+	initial = no
+	randomized = no
+}
+
 leader_trait_genetically_superior = {
 	leader_trait_type = veteran
 	inline_script = {

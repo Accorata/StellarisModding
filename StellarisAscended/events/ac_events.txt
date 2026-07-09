@@ -914,6 +914,35 @@ ship_event = {
 	}
 }
 
+# Called from on_favor_gained
+# This = Country that receives a favor
+# From = Country a favor is from
+country_event = {
+	id = ascension_civics.352
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = ac_doubled_favor_from_@from
+		}
+	}
+
+	immediate = {
+		random = {
+			chance = modifier:ac_double_favor_chance_add
+			set_timed_country_flag = {
+				flag = ac_doubled_favor_from_@from
+				days = 5
+			}
+			add_favors = {
+				target = from
+				value = 1
+			}
+		}
+	}
+}
+
 ### Test Events ###
 carrier_event = {
 	id = ascension_civics.199

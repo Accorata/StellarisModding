@@ -21,23 +21,26 @@ is_ac_bandwidth_corporate = {
 }
 
 is_ac_concurrent_command = {
-	has_tradition = tr_virtuality_finish
 	OR = {
 		has_valid_civic = civic_concurrent_command
 		has_valid_civic = civic_executive_militarization
 		has_valid_civic = civic_nodal_command
 	}
-}
-
-is_ac_doomseeker = {
-	has_valid_civic = civic_doomseekers
-	has_tradition = tr_psionics_finish
+	has_tradition = tr_virtuality_finish
 }
 
 is_ac_telepathic_empire = {
 	OR = {
 		has_valid_civic = civic_telepathic_empire
 		has_valid_civic = civic_telepathic_corporation
+	}
+	has_tradition = tr_psionics_finish
+}
+
+is_ac_possessed = {
+	OR = {
+		has_valid_civic = civic_ac_eldritch_possession
+		has_valid_civic = civic_ac_eldritch_shareholders
 	}
 	has_tradition = tr_psionics_finish
 }
@@ -96,8 +99,8 @@ is_ac_cybermachine = {
 	has_tradition = tr_cybernetics_assimilator_finish
 }
 
+# Without Shadows of the Shroud
 ac_has_confirmed_shroud_patron = {
-	# edit
 	OR = {
 		has_country_flag = composer_covenant_confirmed
 		has_country_flag = eater_covenant_confirmed

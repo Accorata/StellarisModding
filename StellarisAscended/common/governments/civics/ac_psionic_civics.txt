@@ -107,16 +107,18 @@ civic_telepathic_corporation = {
 	}
 }
 
-civic_doomseekers = {
-	# temporary icon to avoid error
-	icon = "gfx/interface/icons/governments/civics/civic_ac_shroud_renouncer.dds"
+civic_ac_eldritch_possession = {
+	playable = {
+		has_shroud_dlc = yes
+	}
+	ai_playable = {
+		has_shroud_dlc = yes
+	}
 	potential = {
 		ethics = {
 			NOT = {
 				value = ethic_gestalt_consciousness
 			}
-			# temporarily removed
-			value = ethic_gestalt_consciousness
 		}
 		authority = {
 			NOT = {
@@ -130,16 +132,123 @@ civic_doomseekers = {
 				value = MACHINE
 			}
 		}
+		civics = {
+			NOT = {
+				value = civic_ac_eldritch_shareholders
+			}
+		}
 	}
-	modification = yes
-	# icon = "gfx/interface/icons/governments/civics/civic_psionic_sovereign.dds"
+	modification = {
+		add = {
+			OR = {
+				has_covenant = the_instrument_of_desire
+				has_covenant = the_eater_of_worlds
+				has_covenant = the_composer_of_strands
+				has_covenant = the_cradle_of_souls
+				has_covenant = whisperers_in_the_void
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
+	alternate_civic_version = civic_ac_eldritch_shareholders
+	icon = "gfx/interface/icons/governments/civics/civic_ac_eldritch_possession.dds"
 	pickable_at_start = yes
 	random_weight = {
 		base = 0
 	}
-	description = civic_tooltip_doomseekers_effects
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_ac_eldritch_possession_incomplete_effects
 	hide_modifiers = yes
-	modifier = {
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_ac_eldritch_possession_effects
+		modifier = {
+			#...
+		}
+	}
+}
+
+civic_ac_eldritch_shareholders = {
+	playable = {
+		has_shroud_dlc = yes
+	}
+	ai_playable = {
+		has_shroud_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_eldritch_possession
+			}
+		}
+	}
+	modification = {
+		add = {
+			OR = {
+				has_covenant = the_instrument_of_desire
+				has_covenant = the_eater_of_worlds
+				has_covenant = the_composer_of_strands
+				has_covenant = the_cradle_of_souls
+				has_covenant = whisperers_in_the_void
+			}
+		}
+		remove = {
+			always = yes
+		}
+	}
+	alternate_civic_version = civic_ac_eldritch_possession
+	icon = "gfx/interface/icons/governments/civics/civic_ac_eldritch_shareholders.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_finish
+		}
+	}
+	description = civic_tooltip_ac_eldritch_possession_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_finish
+		}
+		description = civic_tooltip_ac_eldritch_possession_effects
+		modifier = {
+			#...
+		}
 	}
 }
 

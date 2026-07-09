@@ -1,0 +1,5 @@
+ac_double_envoy_chance_add = {
+	good = yes
+	category = country
+	percentage = yes
+}

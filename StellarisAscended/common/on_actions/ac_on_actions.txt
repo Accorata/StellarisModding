@@ -63,6 +63,12 @@ on_entering_war = {
 	}
 }
 
+on_favor_gained = {
+	events = {
+		ascension_civics.352	# Chance to double favors according to ac_double_favor_chance_add modifier
+	}
+}
+
 on_game_start = {
 	events = {
 		ascension_civics.1		# Declares this mod active for any future modders
