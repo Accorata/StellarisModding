@@ -34,6 +34,25 @@ ac_counter_cloned = {
 	max = 50000
 }
 
+ac_get_weighted_attunement_points = {
+	base = 20
+	complex_trigger_modifier = {
+		trigger = get_attunement_points_for
+		parameters = {
+			patron = $PATRON$
+		}
+		mode = add
+	}
+	divide = 100
+	min = $INTERVAL$
+	round_to = $INTERVAL$
+}
+
+ac_country_double_envoy_chance = {
+	add = modifier:ac_double_envoy_chance_add
+	mult = 100
+}
+
 # Future Usage:
 # value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
 ac_districts_arcology_jobs = {

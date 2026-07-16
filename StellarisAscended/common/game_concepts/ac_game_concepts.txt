@@ -374,3 +374,16 @@ concept_auth_ac_psi_teacher_corporate = {
 	icon = "gfx/interface/icons/governments/authorities/auth_ac_psi_teacher_corporate_35x35.dds"
 	tooltip_override = "authority:auth_corporate:auth_ac_psi_teacher_corporate"
 }
+
+# Unused
+concept_ac_modular_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_modularity.dds"
+}
+
+concept_ac_nanotech_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_nanotech.dds"
+}
+
+concept_ac_virtual_ascension = {
+	icon =  "gfx/interface/icons/traditions/tree_icons/tradition_icon_virtuality.dds"
+}

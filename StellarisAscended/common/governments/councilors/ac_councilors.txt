@@ -371,8 +371,8 @@ councilor_ac_monstrous_fauna = {
 	}
 	civic = civic_ac_monstrous_fauna
 	modifier = {
-		category_biology_research_speed_mult = 0.025
-		category_military_theory_research_speed_mult = 0.025
+		category_biology_research_speed_mult = 0.03
+		category_military_theory_research_speed_mult = 0.03
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights

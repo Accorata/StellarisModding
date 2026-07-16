@@ -168,12 +168,104 @@ leader_trait_ac_shroud_vessel = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
+	# Instrument of Desire
 	triggered_councilor_modifier = {
 		potential = {
-			#... composer
+			owner = {
+				has_covenant = the_instrument_of_desire
+			}
 		}
-
-		#mult
+		planetary_ascension_effect_mult = 0.02
+		pop_entertainer_bonus_workforce_mult = 0.03
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_instrument_of_desire|INTERVAL|0.5|
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_instrument_of_desire
+			}
+		}
+		planet_pops_upkeep_mult = 0.03
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_composer_of_strands|INTERVAL|0.5|
+	}
+	# Cradle of Souls
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_cradle_of_souls
+			}
+		}
+		ac_double_envoy_chance_add = 0.02
+		envoy_improve_relations_mult = 0.05
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_cradle_of_souls|INTERVAL|0.5|
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_cradle_of_souls
+			}
+		}
+		country_naval_cap_mult = -0.02
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|0.5|
+	}
+	# Composer of Strands
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_composer_of_strands
+			}
+		}
+		# to do...
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_composer_of_strands|INTERVAL|0.5|
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_composer_of_strands
+			}
+		}
+		# to do...
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_instrument_of_desire|INTERVAL|0.5|
+	}
+	# Eater of Worlds
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_eater_of_worlds
+			}
+		}
+		pop_happiness = -0.015
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_cradle_of_souls|INTERVAL|1|
+	}
+	triggered_desc = {
+		trigger = {
+			owner = {
+				has_covenant = the_eater_of_worlds
+			}
+		}
+		text = leader_trait_ac_shroud_vessel_eater_effects
+	}
+	# Whisperers in the Void
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_whisperers_in_the_void
+			}
+		}
+		pc_relic_max_districts_add = 0.5
+		all_technology_research_speed = 1
+		mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_whisperers_in_the_void|INTERVAL|2|
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = {
+				has_covenant = the_whisperers_in_the_void
+			}
+		}
+		leader_lifespan_add = -10
+	}
+	triggered_desc = {
+		text = leader_trait_ac_shroud_vessel_scaling
 	}
 	leader_class = {
 		commander

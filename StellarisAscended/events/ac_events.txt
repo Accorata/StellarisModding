@@ -930,7 +930,7 @@ country_event = {
 
 	immediate = {
 		random = {
-			chance = modifier:ac_double_favor_chance_add
+			chance = value:ac_country_double_envoy_chance
 			set_timed_country_flag = {
 				flag = ac_doubled_favor_from_@from
 				days = 5
@@ -938,6 +938,48 @@ country_event = {
 			add_favors = {
 				target = from
 				value = 1
+			}
+		}
+	}
+}
+
+# Called from on_attunement_gained & on_monthly_pulse & previous events 
+country_event = {
+	id = ascension_civics.353
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_fleet = {
+			has_fleet_flag = eater_fleet
+		}
+	}
+
+	immediate = {
+		every_owned_fleet = {
+			limit = {
+				has_fleet_flag = eater_fleet
+			}
+			if = {
+				limit = { 
+					has_modifier = ac_eater_fleet_strength
+				}
+				remove_modifier = ac_eater_fleet_strength
+			}
+			if = {
+				limit = {
+					root = {
+						has_covenant = the_eater_of_worlds
+						any_owned_leader = {
+							is_ruler = yes
+							has_trait = leader_trait_ac_shroud_vessel
+						}
+					}
+				}
+			}
+			add_modifier = {
+				modifier = ac_eater_fleet_strength
+				mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|0.5|
 			}
 		}
 	}
