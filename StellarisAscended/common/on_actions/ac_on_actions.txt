@@ -131,9 +131,10 @@ on_post_government_changed = {
 		ascension_civics.83		# Unrenounce the Shroud
 		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
 		ascension_civics.85		# Remove Half-Virtual trait for non-Cyberspacial Hives
-		ascension_civics.86		# Give Unique Mutation techs to Mutated Fauna empires
+		ascension_civics.86		# Add Unique Mutation techs as research options for Mutated Fauna empires
 		ascension_civics.301		#  Add ruler trait if Concurrent Command
 		ascension_civics.302		#  Removes ruler trait if not Concurrent Command
+		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire
 		ascension_governments.43		# Adds Genetically Superior trait to leader if Dictatorial Kraterocracy
 		ascension_governments.44		# Removes heir trait from current heir if Imperial Clones and creates new clone
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
@@ -164,7 +165,7 @@ on_ruler_set = {
 
 on_ship_built = {
 	events = {
-		ascension_civics.350		# Duplicate ships for cloned
+		ascension_civics.330		# Duplicate ships for cloned
 	}
 }
 
@@ -197,7 +198,9 @@ on_tradition_picked = {
 		ascension_civics.80		# Sets nanite assembled variable for Numbered Beyond Stars or Unending Swarm
 		ascension_civics.82		# Renounce the Shroud
 		ascension_civics.84		# Add Half-Virtual trait to Cyberspacial Hives
+		ascension_civics.86		# Add Unique Mutation techs as research options for Mutated Fauna empires
 		ascension_civics.301		#  Add ruler trait if Concurrent Command
+		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire	
 	}
 }
 
@@ -263,6 +266,15 @@ on_released_as_vassal = {
 on_relic_received = {
 	events = {
 		ascension_governments.101		# Initialize variables for the Assimilation Engine
+	}
+}
+
+# Executed when a ruler is created. Called after the leader is set as ruler of the country
+# This = Country
+# FROM = Leader
+on_ruler_created = {
+	events = {
+		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire
 	}
 }
 

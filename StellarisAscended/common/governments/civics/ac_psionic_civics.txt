@@ -173,6 +173,7 @@ civic_ac_eldritch_possession = {
 		}
 		description = civic_tooltip_ac_eldritch_possession_effects
 		modifier = {
+			attunement_mult = 0.20
 			#...
 		}
 	}
@@ -247,6 +248,7 @@ civic_ac_eldritch_shareholders = {
 		}
 		description = civic_tooltip_ac_eldritch_possession_effects
 		modifier = {
+			attunement_mult = 0.20
 			#...
 		}
 	}

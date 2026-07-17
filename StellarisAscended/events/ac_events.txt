@@ -766,8 +766,12 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_ac_mutated_fauna = yes
+		NOT = {
+			has_country_flag = ac_mutated_fauna_unique_techs_given
+		}
 	}
 	immediate = {
+		set_country_flag = ac_mutated_fauna_unique_techs_given
 		if = {
 			limit = {
 				NOT = {
@@ -775,9 +779,7 @@ country_event = {
 				}
 			}
 			set_country_flag = tiyanki_clone_threshold_reached
-			give_technology = {
-				tech = tech_unique_mutation_tiyanki
-			}
+			add_research_option = tech_unique_mutation_tiyanki
 		}
 		if = {
 			limit = {
@@ -786,9 +788,7 @@ country_event = {
 				}
 			}
 			set_country_flag = space_amoeba_clone_threshold_reached
-			give_technology = {
-				tech = tech_unique_mutation_space_amoeba
-			}
+			add_research_option = tech_unique_mutation_space_amoeba
 		}
 		if = {
 			limit = {
@@ -797,9 +797,7 @@ country_event = {
 				}
 			}
 			set_country_flag = voidworm_clone_threshold_reached
-			give_technology = {
-				tech = tech_unique_mutation_voidworm
-			}
+			add_research_option = tech_unique_mutation_voidworm
 		}
 		if = {
 			limit = {
@@ -808,9 +806,7 @@ country_event = {
 				}
 			}
 			set_country_flag = cutholoid_clone_threshold_reached
-			give_technology = {
-				tech = tech_unique_mutation_cutholoid
-			}
+			add_research_option = tech_unique_mutation_cutholoid
 		}
 		if = {
 			limit = {
@@ -819,9 +815,7 @@ country_event = {
 				}
 			}
 			set_country_flag = crystalline_entity_clone_threshold_reached
-			give_technology = {
-				tech = tech_unique_mutation_crystalline_entity
-			}
+			add_research_option = tech_unique_mutation_crystalline_entity
 		}
 	}
 }
@@ -877,11 +871,8 @@ country_event = {
 	}
 }
 
-# Called from on_ship_built
-# This = ship
-# From = planet
 ship_event = {
-	id = ascension_civics.350
+	id = ascension_civics.330
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
@@ -914,9 +905,109 @@ ship_event = {
 	}
 }
 
-# Called from on_favor_gained
-# This = Country that receives a favor
-# From = Country a favor is from
+
+country_event = {
+	id = ascension_civics.340
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ac_possessed = yes
+		any_owned_leader = {
+			is_ruler = yes
+			NOT = {
+				has_trait = leader_trait_ac_shroud_vessel
+			}
+		}
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = yes
+			}
+			leader_event = {
+				id = ascension_civics.342
+				days = 5
+				random = 10
+			}
+		}
+	}
+}
+
+leader_event = {
+	id = ascension_civics.342
+	title = ascension_civics.342.name
+	desc = ascension_civics.342.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_default # change
+	is_triggered_only = yes
+
+	trigger = {
+		is_ruler = yes
+		owner = {
+			is_ac_possessed = yes
+		}
+	}
+
+	immediate = {
+		change_leader_portrait = ac_vessel
+	}
+
+	event_window_type = leader_story
+	event_picture_background = "GFX_leader_recruitment_bg_legendary_beholder"
+
+	picture_event_data = {
+		portrait = root # maybe ac_vessel
+	}
+
+	option = {
+		trigger = {
+			owner = {
+				has_covenant = the_instrument_of_desire
+			}
+		}
+		name = ascension_civics.342.instrument
+		add_trait = leader_trait_ac_shroud_vessel
+	}
+	option = {
+		trigger = {
+			owner = {
+				has_covenant = the_cradle_of_souls
+			}
+		}
+		name = ascension_civics.342.cradle
+		add_trait = leader_trait_ac_shroud_vessel
+	}
+	option = {
+		trigger = {
+			owner = {
+				has_covenant = the_composer_of_strands
+			}
+		}
+		name = ascension_civics.342.composer
+		add_trait = leader_trait_ac_shroud_vessel
+	}
+	option = {
+		trigger = {
+			owner = {
+				has_covenant = the_eater_of_worlds
+			}
+		}
+		name = ascension_civics.342.eater
+		add_trait = leader_trait_ac_shroud_vessel
+	}
+	option = {
+		trigger = {
+			owner = {
+				has_covenant = the_whisperers_in_the_void
+			}
+		}
+		name = ascension_civics.342.whisperers
+		add_trait = leader_trait_ac_shroud_vessel
+	}
+}
+
 country_event = {
 	id = ascension_civics.352
 	hide_window = yes
