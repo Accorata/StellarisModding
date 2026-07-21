@@ -166,6 +166,12 @@ ac_cloned_ship = {
 	ship_weapon_damage = -0.6
 }
 
+ac_genetic_uniformity = {
+	pop_citizen_happiness = 0.1
+	country_edict_fund_mult = 0.2
+	tradition_cost_empire_size_mult = -0.1
+}
+
 ac_eater_fleet_strength = {
 	# to do...
 }

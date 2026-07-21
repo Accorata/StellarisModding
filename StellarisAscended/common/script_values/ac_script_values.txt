@@ -21,6 +21,46 @@ ac_hive_virtuality_concentrated_production_mult = {
 	}
 }
 
+ac_num_cloning_vats = {
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		trigger_scope = owner
+		parameters = {
+			limit = {
+				is_colony = yes
+				has_active_building = building_clone_vats
+			}
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		trigger_scope = owner
+		parameters = {
+			limit = {
+				is_colony = yes
+				has_active_building = building_clone_army_clone_vat
+			}
+		}
+		mult = 2
+		mode = add
+	}
+}
+
+ac_empire_size_traditions_reduction = {
+	base = 1
+	add = modifier:empire_size_penalty_mult
+	add = modifier:tradition_cost_empire_size_mult
+	min = 1
+}
+
+ac_empire_size_tradition_effect = {
+	add = value:negative_empire_size_percent
+	mult = value:ac_empire_size_traditions_reduction
+	min = 0.2
+	max = 1
+}
+
 ac_counter_cloned = {
 	complex_trigger_modifier = {
 		trigger = count_owned_pop_amount

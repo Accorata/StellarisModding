@@ -871,18 +871,137 @@ country_event = {
 	}
 }
 
+# Cloned population situation 
+country_event = {
+	id = ascension_civics.303
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ac_cloned_population = yes
+	}
+	immediate = {
+		start_situation = {
+			situation = situation_ac_cloned_population
+		}
+	}
+}
+
+# On post government changed + tradition picked
+country_event = {
+	id = ascension_civics.304
+	title = ascension_civics.304.name
+	desc =  ascension_civics.304.desc
+	picture = GFX_evt_relic_world_street # change
+	show_sound = event_worrying_signal # change
+	is_triggered_only = yes
+
+	trigger = {
+		is_ac_cloned_population = yes
+		NOT = {
+			has_country_flag = ac_has_become_cloned_population
+		}
+	}
+
+	immediate = {
+		set_country_flag = ac_has_become_cloned_population
+		create_saved_leader = {
+			creator = this
+			name = "Backup Portrait"
+			key = "ac_cloned_population_main_species_generic_portrait"
+			species = owner_main_species
+		}
+		owner_main_species = {
+			change_species_characteristics = {
+				portrait = prev.ruler
+				gender = prev.ruler
+				can_change_leader = yes
+			}
+		}
+	}
+
+	option = {
+		name = ascension_civics.304.a
+		start_situation = {
+			situation = situation_ac_cloned_population
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.305
+	title = ascension_civics.305.name
+	desc =  ascension_civics.305.desc
+	picture = GFX_evt_relic_world_street # change
+	show_sound = event_worrying_signal # change
+
+	is_triggered_only = yes
+
+	option = {
+		name = ascension_civics.305.a
+		add_modifier = {
+			modifier = ac_genetic_uniformity
+			days = 900
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3unityreward
+			min = @tier3unitymin
+			max = @tier3unitymax
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = ascension_civics.303
+				days = 30
+			}
+		}
+	}
+}
+
+# On post government changed
+country_event = {
+	id = ascension_civics.306
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = ac_has_become_cloned_population
+		is_ac_cloned_population = no
+	}
+	immediate = {
+		remove_country_flag = ac_has_become_cloned_population
+		activate_saved_leader = {
+			key = "ac_cloned_population_main_species_generic_portrait"
+			add_to_owned = yes
+			effect = {
+				save_event_target_as = ac_cloned_population_generic_portrait
+			}
+		}
+		owner_main_species = {
+			change_species_characteristics = {
+				portrait = event_target:ac_cloned_population_generic_portrait
+				gender = any
+			}
+		}
+		event_target:ac_cloned_population_generic_portrait = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+	}
+}
+
 ship_event = {
 	id = ascension_civics.330
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		exists = controller
-		NOT = {
-			has_modifier = ac_cloned_ship
-		}
 		from = {
 			has_starbase_building = ac_mitosis_chamber
 		}
+		ac_can_be_cloned = yes
 	}
 	immediate = {
 		add_modifier = {

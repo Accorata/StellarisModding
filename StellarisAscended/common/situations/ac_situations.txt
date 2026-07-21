@@ -1,9 +1,97 @@
-situation_ac_soul_seeking = {
-	picture = GFX_evt_machine_sapience
+situation_ac_cloned_population = {
+	picture = GFX_evt_machine_sapience # change
 	fail_icon_frame = GFX_situation_outcome_frame_blue
 	fail_icon = GFX_situation_outcome_unknown
-	category = positive
-	start_value = 0
+	situation_log_category = urgent_matters
+	stages = {
+		situation_ac_cloned_population_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1000
+		}
+	}
+	approach = {
+		name = situation_ac_cloned_population_large_commitment
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		modifier = {
+			country_society_tech_produces_mult = -0.25
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	approach = {
+		name = situation_ac_cloned_population_medium_commitment
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		modifier = {
+			country_society_tech_produces_mult = -0.15
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	approach = {
+		name = situation_ac_cloned_population_low_commitment
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		modifier = {
+			country_society_tech_produces_mult = -0.05
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	monthly_progress = {
+		base = 5
+		modifier = {
+			add = owner.value:percent_monthly_resource_income|society_research|minerals|2.5|
+			desc = situation_ac_cloned_population_society_research_add
+			current_situation_approach = situation_ac_cloned_population_large_commitment
+		}
+		modifier = {
+			add = owner.value:percent_monthly_resource_income|society_research|minerals|1.5|
+			desc = situation_ac_cloned_population_society_research_add
+			current_situation_approach = situation_ac_cloned_population_medium_commitment
+		}
+		modifier = {
+			add = owner.value:percent_monthly_resource_income|society_research|minerals|0.5|
+			desc = situation_ac_cloned_population_society_research_add
+			current_situation_approach = situation_ac_cloned_population_small_commitment
+		}
+		modifier = {
+			add = owner.value:ac_num_cloning_vats
+			desc = situation_ac_cloned_population_cloning_vats_add
+		}
+		modifier = {
+			mult = owner.value:ac_empire_size_tradition_effect
+			desc = situation_ac_cloned_population_empire_size_mult
+			owner = {
+				empire_size > 100 
+			}
+		}
+		modifier = {
+			mult = 1.2
+			desc = situation_ac_cloned_population_gene_seed_mult
+			owner = {
+				has_technology = tech_gene_seed_purification
+			}
+		}
+	}
+
+	abort_trigger = {
+		owner = {
+			is_ac_cloned_population = no
+		}
+	}
+}
+
+situation_ac_soul_seeking = {
+	picture = GFX_evt_machine_sapience # maybe zroforged image instead
+	fail_icon_frame = GFX_situation_outcome_frame_blue
+	fail_icon = GFX_situation_outcome_unknown
+	situation_log_category = urgent_matters
 	stages = {
 		situation_ac_soul_seeking_stage_1 = {
 			icon = GFX_situation_stage_1

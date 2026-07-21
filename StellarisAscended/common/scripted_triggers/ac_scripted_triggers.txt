@@ -290,6 +290,28 @@ is_ac_cloned_ships = {
 	has_tradition = tr_cloning_finish
 }
 
+ac_can_be_cloned = {
+	is_designable = yes
+	is_civilian = no
+	has_ship_flag = ac_cannot_be_cloned # Unused, here for mod compatability
+	NOR = {
+		has_modifier = ac_cloned_ship
+		is_ship_class = shipclass_military_special
+		is_ship_size = titan
+		is_ship_size = bio_titan
+		is_ship_size = juggernaut
+	}
+}
+
+is_ac_cloned_population = {
+	OR = {
+		has_valid_civic = civic_ac_society_of_one
+		has_valid_civic = civic_ac_indistinguishable_employment
+		has_valid_civic = civic_ac_identical_drones
+	}
+	has_tradition = tr_cloning_finish
+}
+
 # Auth Scripted Triggers
 trait_ac_has_edict_unholy_possession = {
 	OR = {

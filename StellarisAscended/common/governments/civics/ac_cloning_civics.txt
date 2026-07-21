@@ -175,3 +175,158 @@ civic_ac_duplicated_horde = {
 		}
 	}
 }
+
+civic_ac_society_of_one = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		authority = {
+			NOT = {
+				value = auth_corporate
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_indistinguishable_employment
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_society_of_one.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cloning_finish
+		}
+	}
+	description = civic_tooltip_ac_society_of_one_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_society_of_one_effects
+		modifier = {
+			#...
+		}
+	}
+}
+
+civic_ac_indistinguishable_employment = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		OR = {
+			authority = {
+				value = auth_corporate
+			}
+			civics = {
+				value = civic_galactic_sovereign_megacorp
+			}
+		}
+	}
+	possible = {
+		species_archetype = {
+			NOT = {
+				value = MACHINE
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_ac_society_of_one
+			}
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_indistinguishable_employment.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_cloning_finish
+		}
+	}
+	description = civic_tooltip_ac_society_of_one_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_society_of_one_effects
+		modifier = {
+			#...
+		}
+	}
+}
+
+civic_ac_identical_drones = {
+	playable = {
+		has_biogenesis_dlc = yes
+	}
+	ai_playable = {
+		has_biogenesis_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_identical_drones.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+	}
+	description = civic_tooltip_ac_identical_drones_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_cloning_finish
+		}
+		description = civic_tooltip_ac_identical_drones_effects
+		modifier = {
+			#...
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
