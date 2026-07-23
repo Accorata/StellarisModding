@@ -1,0 +1,41 @@
+defined_text = {
+	name = AC_GetPatron
+	random = no
+	text = {
+		trigger = {
+			has_covenant = the_eater_of_worlds
+		}
+		localization_key = the_eater_of_worlds
+	}
+	text = {
+		trigger = {
+			has_covenant = the_composer_of_strands
+		}
+		localization_key = the_composer_of_strands
+	}
+	text = {
+		trigger = {
+			has_covenant = the_cradle_of_souls
+		}
+		localization_key = the_cradle_of_souls
+	}
+	text = {
+		trigger = {
+			has_covenant = the_instrument_of_desire
+		}
+		localization_key = the_instrument_of_desire
+	}
+	text = {
+		trigger = {
+			has_covenant = whisperers_in_the_void
+		}
+		localization_key = whisperers_in_the_void
+	}
+	text = {
+		trigger = {
+			has_covenant = end_of_the_cycle
+		}
+		localization_key = end_of_the_cycle
+	}
+	default = BLANK_STRING
+}

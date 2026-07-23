@@ -881,7 +881,8 @@ country_event = {
 	}
 	immediate = {
 		start_situation = {
-			situation = situation_ac_cloned_population
+			type = situation_ac_cloned_population
+			target = this
 		}
 	}
 }
@@ -922,7 +923,8 @@ country_event = {
 	option = {
 		name = ascension_civics.304.a
 		start_situation = {
-			situation = situation_ac_cloned_population
+			type = situation_ac_cloned_population
+			target = this
 		}
 	}
 }
@@ -1032,6 +1034,9 @@ country_event = {
 
 	trigger = {
 		is_ac_possessed = yes
+		NOT = {
+			has_country_flag = ac_choosing_possessed
+		}
 		any_owned_leader = {
 			is_ruler = yes
 			NOT = {
@@ -1041,14 +1046,66 @@ country_event = {
 	}
 
 	immediate = {
+		set_country_flag = ac_choosing_possessed
 		random_owned_leader = {
 			limit = {
 				is_ruler = yes
 			}
-			leader_event = {
-				id = ascension_civics.342
-				days = 5
-				random = 10
+			random_list = {
+				5 = {
+					modifier = {
+						factor = 0
+						is_immortal = yes
+					}
+					modifier = {
+						factor = 4
+						NOT = {
+							has_trait = leader_trait_psionic
+						}
+					}
+					leader_event = {
+						id = ascension_civics.343
+						days = 5
+						random = 10
+					}
+				}
+				10 = {
+					modifier = {
+						factor = root.ac_get_weighted_attunement_points|PATRON|the_instrument_of_desire|INTERVAL|1|
+						root = {
+							has_covenant = the_instrument_of_desire
+						}
+					}
+					modifier = {
+						factor = root.ac_get_weighted_attunement_points|PATRON|the_cradle_of_souls|INTERVAL|1|
+						root = {
+							has_covenant = the_cradle_of_souls
+						}
+					}
+					modifier = {
+						factor = root.ac_get_weighted_attunement_points|PATRON|the_composer_of_strands|INTERVAL|1|
+						root = {
+							has_covenant = the_composer_of_strands
+						}
+					}
+					modifier = {
+						factor = root.ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|1|
+						root = {
+							has_covenant = the_eater_of_worlds
+						}
+					}
+					modifier = {
+						factor = root.ac_get_weighted_attunement_points|PATRON|whisperers_in_the_void|INTERVAL|1|
+						root = {
+							has_covenant = whisperers_in_the_void
+						}
+					}
+					leader_event = {
+						id = ascension_civics.342
+						days = 5
+						random = 10
+					}
+				}
 			}
 		}
 	}
@@ -1071,13 +1128,16 @@ leader_event = {
 
 	immediate = {
 		change_leader_portrait = ac_vessel
+		owner = {
+			remove_country_flag = ac_choosing_possessed
+		}
 	}
 
 	event_window_type = leader_story
-	event_picture_background = "GFX_leader_recruitment_bg_legendary_beholder"
+	event_picture_background = "GFX_leader_recruitment_bg_renowned" #_legendary_beholder"
 
 	picture_event_data = {
-		portrait = root # maybe ac_vessel
+		portrait = root
 	}
 
 	option = {
@@ -1119,11 +1179,45 @@ leader_event = {
 	option = {
 		trigger = {
 			owner = {
-				has_covenant = the_whisperers_in_the_void
+				has_covenant = whisperers_in_the_void
 			}
 		}
 		name = ascension_civics.342.whisperers
 		add_trait = leader_trait_ac_shroud_vessel
+	}
+}
+
+leader_event = {
+	id = ascension_civics.343
+	title = ascension_civics.343.name
+	desc = ascension_civics.343.desc
+	picture = GFX_evt_zro_2
+	show_sound = event_default # change
+	is_triggered_only = yes
+
+	trigger = {
+		is_ruler = yes
+		owner = {
+			is_ac_possessed = yes
+		}
+	}
+
+	immediate = {
+		owner = {
+			remove_country_flag = ac_choosing_possessed
+		}
+	}
+
+	event_window_type = leader_story
+	event_picture_background = "GFX_leader_recruitment_bg_renowned"
+
+	picture_event_data = {
+		portrait = root
+	}
+
+	option = {
+		name = ascension_civics.343.a
+		kill_leader = { show_notification = no }
 	}
 }
 
@@ -1186,10 +1280,10 @@ country_event = {
 						}
 					}
 				}
-			}
-			add_modifier = {
-				modifier = ac_eater_fleet_strength
-				mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|0.5|
+				add_modifier = {
+					modifier = ac_eater_fleet_strength
+					mult = owner.value:ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|0.5|
+				}
 			}
 		}
 	}
@@ -1255,6 +1349,21 @@ country_event = {
 				}
 			}
 			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.2002
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				is_ruler = yes
+			}
+			remove_trait = leader_trait_ac_shroud_vessel
 		}
 	}
 }

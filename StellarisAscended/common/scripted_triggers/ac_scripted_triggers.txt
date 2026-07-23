@@ -42,7 +42,7 @@ is_ac_possessed = {
 		has_valid_civic = civic_ac_eldritch_possession
 		has_valid_civic = civic_ac_eldritch_shareholders
 	}
-	has_tradition = tr_psionics_finish
+	#has_tradition = tr_psionics_finish
 }
 
 is_ac_cyber_overlord = {

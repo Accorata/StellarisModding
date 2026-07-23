@@ -15,7 +15,7 @@ situation_ac_cloned_population = {
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_green
 		modifier = {
-			country_society_tech_produces_mult = -0.25
+			country_society_research_produces_mult = -0.25
 		}
 		ai_weight = {
 			base = 0
@@ -26,7 +26,7 @@ situation_ac_cloned_population = {
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_green
 		modifier = {
-			country_society_tech_produces_mult = -0.15
+			country_society_research_produces_mult = -0.15
 		}
 		ai_weight = {
 			base = 0
@@ -37,7 +37,7 @@ situation_ac_cloned_population = {
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_green
 		modifier = {
-			country_society_tech_produces_mult = -0.05
+			country_society_research_produces_mult = -0.05
 		}
 		ai_weight = {
 			base = 0
@@ -46,19 +46,19 @@ situation_ac_cloned_population = {
 	monthly_progress = {
 		base = 5
 		modifier = {
-			add = owner.value:percent_monthly_resource_income|society_research|minerals|2.5|
+			add = owner.value:percent_monthly_resource_income|RESOURCE|society_research|PERCENT|2.5|
 			desc = situation_ac_cloned_population_society_research_add
 			current_situation_approach = situation_ac_cloned_population_large_commitment
 		}
 		modifier = {
-			add = owner.value:percent_monthly_resource_income|society_research|minerals|1.5|
+			add = owner.value:percent_monthly_resource_income|RESOURCE|society_research|PERCENT|1.5|
 			desc = situation_ac_cloned_population_society_research_add
 			current_situation_approach = situation_ac_cloned_population_medium_commitment
 		}
 		modifier = {
-			add = owner.value:percent_monthly_resource_income|society_research|minerals|0.5|
+			add = owner.value:percent_monthly_resource_income|RESOURCE|society_research|PERCENT|0.5|
 			desc = situation_ac_cloned_population_society_research_add
-			current_situation_approach = situation_ac_cloned_population_small_commitment
+			current_situation_approach = situation_ac_cloned_population_low_commitment
 		}
 		modifier = {
 			add = owner.value:ac_num_cloning_vats

@@ -381,7 +381,7 @@
 
   civic_ac_indistinguishable_employment:0 "Indistinguishable Employment"
   civic_ac_indistinguishable_employment_desc:0 "..."
-  # ...
+  # councilor needed...
 
   civic_ac_identical_drones:0 "Identical Drones"
   civic_ac_identical_drones_desc:0 "..."
@@ -397,12 +397,11 @@
   situation_ac_cloned_population_stage_1:0 "Months Left"
   situation_ac_cloned_population_large_commitment:0 "Large Investments"
   situation_ac_cloned_population_medium_commitment:0 "Moderate Investments"
-  situation_ac_cloned_population_small_commitment:0 "Small Investments"
+  situation_ac_cloned_population_low_commitment:0 "Small Investments"
   situation_ac_cloned_population_society_research_add:0 "Society Research"
   situation_ac_cloned_population_cloning_vats_add:0 "$building_clone_vats$"
   situation_ac_cloned_population_empire_size_mult:0 "Empire Size"
   situation_ac_cloned_population_gene_seed_mult:0 "$tech_gene_seed_purification$"
-  # if all traditions done then unity instead - or just only unity?
   ascension_civics.304.name:0 "..." # Start
   ascension_civics.304.desc:0 "..."
   ascension_civics.304.a:0 "..."
@@ -571,7 +570,7 @@
 
 ## Vessel (Only with Shadows of the Shroud)
   civic_ac_eldritch_possession:0 "Eldritch Possession"
-  civic_ac_eldritch_possession_desc:0 "This society has called its Patron into its ruler, ..."
+  civic_ac_eldritch_possession_desc:0 "This society has called the [AC_GetPatron] into its ruler, ..."
   civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$-... $mod_attunement_mult$: +20%" # green or yellow?
   civic_tooltip_ac_eldritch_possession_effects:0 "..."
   councilor_ac_eldritch_possession:0 "High Cultist"
@@ -583,18 +582,22 @@
   #...
 
   ascension_civics.342.name:0 "A Welcoming Vessel"
-  ascension_civics.342.desc:0 "..."
-  ascension_civics.342.instrument:0 "[Root.GetLeaderName] is gone. The Instrument remains."
-  ascension_civics.342.cradle:0 "[Root.GetLeaderName] is gone. The Cradle remains."
-  ascension_civics.342.composer:0 "[Root.GetLeaderName] is gone. The Composer remains."
-  ascension_civics.342.eater:0 "[Root.GetLeaderName] is gone. The Eater remains."
-  ascension_civics.342.whisperers:0 "[Root.GetLeaderName] is gone. The Whisperers remains."
+  ascension_civics.342.desc:0 "We have called upon our patron, and we have received an answer. §Y[Root.GetTitle] [Root.GetName]§! has offered [Root.GetHimselfHerself] to the Shroud, relinquishing [Root.GetHimHer] physical form to the §Y[Owner.AC_GetPatron]§!. Our Patron has §Yaccepted§!, imbuing [Root.GetName] with a new form from beyond our world Their eldritch power now flows through our empire like never before.\n\n Staying in good favor with our patron will increase these benefits, while lowering favor will increase the drawbacks."
+  ascension_civics.342.instrument:0 "[Root.GetName] is gone. The Instrument remains."
+  ascension_civics.342.cradle:0 "[Root.GetName] is gone. The Cradle remains."
+  ascension_civics.342.composer:0 "[Root.GetName] is gone. The Composer remains."
+  ascension_civics.342.eater:0 "[Root.GetName] is gone. The Eater remains."
+  ascension_civics.342.whisperers:0 "[Root.GetName] is gone. The Whisperers remains."
+  ascension_civics.343.name:0 "Rejection"
+  ascension_civics.343.desc:0 "..."
+  ascension_civics.343.a:0 "Our next ruler will hopefully fair better."
   leader_trait_ac_shroud_vessel:0 "Patron's Presence"
   leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
-  leader_trait_ac_shroud_vessel_scaling:0 "\n§YThis Trait scales with our Attunement to our Patron.§!"
+  leader_trait_ac_shroud_vessel_scaling:0 "§YThis Trait scales with our Attunement to the [Owner.AC_GetPatron].§!"
   leader_trait_ac_shroud_vessel_eater_effects:0 "\n$t$- The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- ..."
   mod_ac_double_envoy_chance_add:0 "Chance to Double Gained Favors"
   ac_eater_fleet_strength:0 "$leader_trait_ac_shroud_vessel$"
+  mod_pc_relic_max_districts_add:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$ (Relic worlds only)"
 
 ## Renouncers (Only without Shadows of the Shroud)
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
@@ -625,6 +628,14 @@
   civic_tooltip_sovereign_circuitry_effects:0 "- ..."
   # councilor
 
+  # Implants on Ruler
+  ascension_civics.61.name:0 "Sovereign Circuitry"
+  ascension_civics.61.desc:0 ""
+  ascension_civics.61.a:0 "Unfortunate"
+  # Gestalt Version
+  ascension_civics.66.name:0 "Sovereign Circuitry"
+  ascension_civics.66.desc:0 ""
+  ascension_civics.66.a:0 "Unfortunate"
   leader_trait_programmed_loyalty:0 "Programmed Loyalty"
   leader_trait_programmed_loyalty_desc:0 "..."
   leader_trait_programmed_loyalty_effect:0 "$t$§RThis leader will die if we are at war against our overlord.§!"

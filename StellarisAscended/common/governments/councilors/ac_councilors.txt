@@ -674,7 +674,7 @@ councilor_numbered_among_stars = {
 	}
 	civic = civic_numbered_among_stars
 	modifier = {
-		unemployment_resources_nanites_produces_add = 0.25
+		pop_category_civilians_nanites_produces_add = 0.25
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
