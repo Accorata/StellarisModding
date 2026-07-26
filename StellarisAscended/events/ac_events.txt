@@ -1202,12 +1202,6 @@ leader_event = {
 		}
 	}
 
-	immediate = {
-		owner = {
-			remove_country_flag = ac_choosing_possessed
-		}
-	}
-
 	event_window_type = leader_story
 	event_picture_background = "GFX_leader_recruitment_bg_renowned"
 
@@ -1218,6 +1212,40 @@ leader_event = {
 	option = {
 		name = ascension_civics.343.a
 		kill_leader = { show_notification = no }
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = ascension_civics.344
+					days = 180
+					random = 90
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = ascension_civics.344
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ac_possessed = yes
+		has_country_flag = ac_choosing_possessed
+		any_owned_leader = {
+			is_ruler = yes
+			NOT = {
+				has_trait = leader_trait_ac_shroud_vessel
+			}
+		}
+	}
+
+	immediate = {
+		remove_country_flag = ac_choosing_possessed
+		country_event = {
+			id = ascension_civics.340
+		}
 	}
 }
 

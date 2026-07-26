@@ -160,6 +160,7 @@ ac_manipulation_network_modifier = {
 # }
 
 ac_cloned_ship = {
+	mod_ship_naval_cap_usage_mult = -0.5
 	ship_hull_mult = -0.6
 	ship_armor_mult = -0.6
 	ship_shield_mult = -0.6

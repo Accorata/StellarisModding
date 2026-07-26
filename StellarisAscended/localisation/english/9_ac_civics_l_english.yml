@@ -283,7 +283,7 @@
 
 ## Monstrous Fauna (Only with Grand Archive)
   civic_ac_monstrous_fauna:0 "Monstrous Fauna"
-  civic_ac_monstrous_fauna_desc:0 "..."
+  civic_ac_monstrous_fauna_desc:0 "This society applies their mutagenic mastery to the natural inhabitants of space, modifying space fauna beyond previous limits."
   ac_monstrous_fauna_tech_unlocks:0 "- Adds ['concept_ac_special_mutation_techs'] as Permanent Research Options\n- Adds ['concept_ac_monstrous_fauna_techs'] to Research Pool"
   civic_tooltip_ac_monstrous_fauna_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   civic_tooltip_ac_monstrous_fauna_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $mod_space_fauna_ship_damage_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
@@ -292,13 +292,13 @@
   councilor_ac_monstrous_fauna_desc:0 "The $TITLE$ oversees the breeding of our space fauna, ensuring they are always ready to destroy our enemies."
 
   civic_ac_bioengineered_fauna:0 "Bioengineered Fauna"
-  civic_ac_bioengineered_fauna_desc:0 "..."
+  civic_ac_bioengineered_fauna_desc:0 "This Megacorporation develops mutations for the natural space fauna, hoping to profit off these improved organisms."
   civic_tooltip_ac_bioengineered_fauna_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_culling_reward_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   civic_tooltip_ac_bioengineered_fauna_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $mod_space_fauna_culling_reward_mult$: §G+25%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!"
   # councilor needed ... (Head Xenozoologist)
 
   civic_ac_tendrils_of_mutation:0 "Tendrils of Mutation"
-  civic_ac_tendrils_of_mutation_desc:0 "..."
+  civic_ac_tendrils_of_mutation_desc:0 "This Hive Mind brings all life into its mutating grasp. The fauna that emerge are forever transformed."
   civic_tooltip_ac_tendrils_of_mutation_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+10%§!\n- $mod_space_fauna_culling_reward_mult$: §G+10%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_ac_tendrils_of_mutation_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $mod_space_fauna_ship_damage_mult$: §G+10%§!\n- $mod_space_fauna_culling_reward_mult$: §G+10%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
@@ -348,52 +348,52 @@
 
 ## Mitotic Assembly
   civic_ac_mitotic_assembly:0 "Mitotic Assembly"
-  civic_ac_mitotic_assembly_desc:0 "..."
-  civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "$cloning_ascension_required$- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n$cloning_ascension_required$§EModifiers:§!\n- Cloned Ships Recieve:\n$tt$- Ship Weapon Damage: §R-60%§!\n$tt$- Hull, Shield & Armor Hit Points: §R-60%§!"
-  civic_tooltip_ac_mitotic_assembly_effects:0 "- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n§EModifiers:§!\n- Cloned Ships Recieve:\n$tt$- Ship Weapon Damage: §R-60%§!\n$tt$- Hull, Shield & Armor Hit Points: §R-60%§!"
+  civic_ac_mitotic_assembly_desc:0 "This society has learned how to clone entire warships, dramatically increasing their naval strength."
+  civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "$cloning_ascension_required$- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n$cloning_ascension_required$§EModifiers:§!\n- Cloned Ships Recieve:\n$tt$- Naval Capacity Usage: §G-50%§!\n$tt$- Ship Weapon Damage: §R-60%§!\n$tt$- Hull, Shield & Armor Hit Points: §R-60%§!"
+  civic_tooltip_ac_mitotic_assembly_effects:0 "- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n§EModifiers:§!\n- Cloned Ships Recieve:\n$tt$- Naval Capacity Usage: §G-50%§!\n$tt$- Ship Weapon Damage: §R-60%§!\n$tt$- Hull, Shield & Armor Hit Points: §R-60%§!"
   councilor_ac_mitotic_assembly:0 "Chief of Replication" # does nothing atm...
   councilor_ac_mitotic_assembly_female:0 "$councilor_ac_mitotic_assembly$"
   councilor_ac_mitotic_assembly_desc:0 "..."
 
   civic_ac_parallel_development:0 "Parallel Development"
-  civic_ac_parallel_development_desc:0 "..."
+  civic_ac_parallel_development_desc:0 "This Megacorporation breeds bioships that are primed to split in two, doubling their fleet sizes."
   councilor_ac_parallel_development:0 "Chief Growth Officer"
   councilor_ac_parallel_development_female:0 "$councilor_ac_parallel_development$"
   councilor_ac_parallel_development_desc:0 "..."
 
   civic_ac_duplicated_horde:0 "Duplicated Horde"
-  civic_ac_duplicated_horde_desc:0 "..."
+  civic_ac_duplicated_horde_desc:0 "This Hive Mind clones each of its bioships, doubling its military might."
   civic_tooltip_ac_duplicated_horde_incomplete_effects:0 "$civic_tooltip_ac_mitotic_assembly_incomplete_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_ac_duplicated_horde_effects:0 "$civic_tooltip_ac_mitotic_assembly_effects$\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   sm_ac_mitosis_chamber:0 "Mitosis Chamber"
   sm_ac_mitosis_chamber_plural:0 "$sm_ac_mitosis_chamber$s"
-  sm_ac_mitosis_chamber_desc:0 "..."
-  sm_ac_mitosis_chamber_desc_modifier:0 "Every §YBiological Ship§! built is Cloned\nCloned Ships Recieve:\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
+  sm_ac_mitosis_chamber_desc:0 "Extra mass is allocated to ships being grown and their development is altered to create multiple critical organs. These ships can then split into   ..."
+  sm_ac_mitosis_chamber_desc_modifier:0 "Every §YBiological Ship§! built is Cloned\nCloned Ships Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
   ac_cloned_ship:0 "Cloned Ship"
 
 ## Cloned Population
   civic_ac_society_of_one:0 "Society of One"
-  civic_ac_society_of_one_desc:0 "..."
-  civic_tooltip_ac_society_of_one_incomplete_effects:0 "$cloning_ascension_required$- ...\n\n$cloning_ascension_required$§EModifiers:§!\n- ..."
-  civic_tooltip_ac_society_of_one_effects:0 "- ...\n\n§EModifiers:§!\n- ..."
+  civic_ac_society_of_one_desc:0 "This society models its clones after a singular representative. Genetic resequencing technology is applied to those already living."
+  civic_tooltip_ac_society_of_one_incomplete_effects:0 "$cloning_ascension_required$- Starts the Recurring §Y$situation_ac_cloned_population$§! Situation, which provides £unity£ §YUnity§! in return for £society£ §YSociety Research§! and building £building£ §YCloning Vats§!\n\n$cloning_ascension_required$§EModifiers:§!\n- ..."
+  civic_tooltip_ac_society_of_one_effects:0 "- Starts the Recurring §Y$situation_ac_cloned_population$§! Situation, which provides £unity£ §YUnity§! in return for £society£ §YSociety Research§! and building £building£ §YCloning Vats§!\n\n§EModifiers:§!\n- ..."
   # councilor needed...
 
   civic_ac_indistinguishable_employment:0 "Indistinguishable Employment"
-  civic_ac_indistinguishable_employment_desc:0 "..."
+  civic_ac_indistinguishable_employment_desc:0 "This Megacorporation ensures all employees are genetically identical. Its very difficult to ask for a raise when your peers are carbon copies of you."
   # councilor needed...
 
   civic_ac_identical_drones:0 "Identical Drones"
-  civic_ac_identical_drones_desc:0 "..."
-  civic_tooltip_ac_identical_drones_incomplete_effects:0 "..."
-  civic_tooltip_ac_identical_drones_effects:0 "..."
+  civic_ac_identical_drones_desc:0 "Having found what it deems to be the optimal drone, this Hive Mind turns all its drones into perfect clones of that specimen."
+  civic_tooltip_ac_identical_drones_incomplete_effects:0 "$civic_tooltip_ac_society_of_one_incomplete_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_identical_drones_effects:0 "$civic_tooltip_ac_society_of_one_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   # starts situation below... -5% empire size from pops, ...
 
   situation_ac_cloned_population:0 "Unified Populace"  
   situation_ac_cloned_population_type:0 "$situation_ac_cloned_population$"
-  situation_ac_cloned_population_monthly_change_tooltip:0 "Increase [icon] Society Research and Build Cloning Vats to... Increased Empire Size will slow down the situation.\n\nResearching the $tech_gene_seed_purification$ Technology will also increase the situation speed..."
-  situation_ac_cloned_population_desc:0 "In order to maintain genetic uniformity, our biologists must devote... (later part)..."
+  situation_ac_cloned_population_monthly_change_tooltip:0 "Increase £society£ §YSociety Research§! and build £building£ §YCloning Vats§! to speed up the Situation. Different approaches will allot different percentages of our £society£ §YSociety Research§!, speeding up the Situation accordingly. Increased £empire_sprawl£ §YEmpire Size§! will slow down the Situation.\n\nResearching the $tech_gene_seed_purification$ Technology will also provide a boost to Situation speed."
+  situation_ac_cloned_population_desc:0 "Social progress now primarily depends on our collective alignment with the prime clone. Once united in body, we will easily be united in mind."
   situation_ac_cloned_population_stage_1:0 "Months Left"
   situation_ac_cloned_population_large_commitment:0 "Large Investments"
   situation_ac_cloned_population_medium_commitment:0 "Moderate Investments"
@@ -402,12 +402,12 @@
   situation_ac_cloned_population_cloning_vats_add:0 "$building_clone_vats$"
   situation_ac_cloned_population_empire_size_mult:0 "Empire Size"
   situation_ac_cloned_population_gene_seed_mult:0 "$tech_gene_seed_purification$"
-  ascension_civics.304.name:0 "..." # Start
-  ascension_civics.304.desc:0 "..."
-  ascension_civics.304.a:0 "..."
+  ascension_civics.304.name:0 "Genetic Maintenance" # Start
+  ascension_civics.304.desc:0 "In order to ensure that our population is (and remains) genetically identical, much research must be devoted to genome maintenance and genetic resequencing. Without these efforts, the prime clone would tarnish and our population would stray into a variety of phenotypes. Uniformity would collapse, and the great benefits of our cloned society would be no more.\n\nOnce united in body, we will easily be united in mind."
+  ascension_civics.304.a:0 "As is necessary."
   ascension_civics.305.name:0 "..." # Success
   ascension_civics.305.desc:0 "..."
-  ascension_civics.305.a:0 "..."
+  ascension_civics.305.a:0 "Only temporarily."
   ac_genetic_uniformity: "Genetic Uniformity"
   ac_genetic_uniformity_desc: "..."
 
@@ -566,11 +566,11 @@
 
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
-  building_ac_psi_tower_desc:0 "High in these towers telepaths commune with the people below, uniting our mind and wielding our future."
+  building_ac_psi_tower_desc:0 "High in these towers, telepaths commune with the people below, uniting our mind and wielding our future."
 
 ## Vessel (Only with Shadows of the Shroud)
   civic_ac_eldritch_possession:0 "Eldritch Possession"
-  civic_ac_eldritch_possession_desc:0 "This society has called the [AC_GetPatron] into its ruler, ..."
+  civic_ac_eldritch_possession_desc:0 "This society has called the [AC_GetPatron] into its ruler..." # risk of death in tooltip below
   civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$-... $mod_attunement_mult$: +20%" # green or yellow?
   civic_tooltip_ac_eldritch_possession_effects:0 "..."
   councilor_ac_eldritch_possession:0 "High Cultist"
@@ -582,14 +582,14 @@
   #...
 
   ascension_civics.342.name:0 "A Welcoming Vessel"
-  ascension_civics.342.desc:0 "We have called upon our patron, and we have received an answer. §Y[Root.GetTitle] [Root.GetName]§! has offered [Root.GetHimselfHerself] to the Shroud, relinquishing [Root.GetHimHer] physical form to the §Y[Owner.AC_GetPatron]§!. Our Patron has §Yaccepted§!, imbuing [Root.GetName] with a new form from beyond our world Their eldritch power now flows through our empire like never before.\n\n Staying in good favor with our patron will increase these benefits, while lowering favor will increase the drawbacks."
+  ascension_civics.342.desc:0 "We have called upon our patron, and we have received an answer. §Y[Root.GetTitle] [Root.GetName]§! has offered [Root.GetHimselfHerself] to the Shroud, relinquishing [Root.GetHisHer] physical form to the §Y[Owner.AC_GetPatron]§!. Our Patron has §Yaccepted§!, imbuing [Root.GetName] with a new form from beyond our world. Their eldritch power now flows through our empire like never before.\n\n Staying in good favor with our patron will increase these benefits, while lowering favor will increase the drawbacks."
   ascension_civics.342.instrument:0 "[Root.GetName] is gone. The Instrument remains."
   ascension_civics.342.cradle:0 "[Root.GetName] is gone. The Cradle remains."
   ascension_civics.342.composer:0 "[Root.GetName] is gone. The Composer remains."
   ascension_civics.342.eater:0 "[Root.GetName] is gone. The Eater remains."
   ascension_civics.342.whisperers:0 "[Root.GetName] is gone. The Whisperers remains."
   ascension_civics.343.name:0 "Rejection"
-  ascension_civics.343.desc:0 "..."
+  ascension_civics.343.desc:0 "We have called upon our patron to the physical plane, to merge with our [Root.GetTitle], §Y[Root.GetName]§!, and strengthen our connection to the Shroud.\n\nUnfortunately, when the §Y[Owner.AC_GetPatron]§! manifested into our leader, our patron rejected the host, destroying [Root.GetHisHer] mind before returning back through the veil. §Y[Root.GetTitle] [Root.GetName]§! is no more.\n\nOur patron will return §Ywithin the year§!. We shall increase our favor with them before then."
   ascension_civics.343.a:0 "Our next ruler will hopefully fair better."
   leader_trait_ac_shroud_vessel:0 "Patron's Presence"
   leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
