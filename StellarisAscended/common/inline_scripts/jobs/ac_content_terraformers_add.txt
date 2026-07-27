@@ -1,0 +1,23 @@
+# Regular Empires
+triggered_planet_modifier = {
+	potential = {
+		owner? = {
+			is_gestalt = no
+		}
+	}
+	modifier = {
+		job_ac_content_terraformer_add = $AMOUNT$
+	}
+}
+
+# Gestalt Empires
+triggered_planet_modifier = {
+	potential = {
+		owner? = {
+			is_gestalt = yes
+		}
+	}
+	modifier = {
+		job_ac_content_terraformer_drone_add = $AMOUNT$
+	}
+}

@@ -130,7 +130,7 @@ ac_content_terraformer = {
 	possible_precalc = can_fill_ruler_job
 
 	resources = {
-		category = planet_politicians
+		category = planet_jobs
 		produces = {
 			unity = 3
 		}

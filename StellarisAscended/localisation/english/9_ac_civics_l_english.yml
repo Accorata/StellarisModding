@@ -42,6 +42,11 @@
   job_ac_content_terraformer_desc:0 "$job_solarpunk_anarchist_desc$"
   job_ac_content_terraformer_effect_desc:3 "$job_solarpunk_anarchist_effect_desc$"
   mod_job_ac_content_terraformer_add:0 "$mod_job_solarpunk_anarchist_add$"
+  job_ac_content_terraformer_drone:0 "$job_solarpunk_anarchist$ Drone"
+  job_ac_content_terraformer_drone_plural:0 "$job_solarpunk_anarchist$ Drones"
+  job_ac_content_terraformer_drone_desc:0 "$job_solarpunk_anarchist_desc$"
+  job_ac_content_terraformer_drone_effect_desc:3 "£job_solarpunk_anarchist£ $job_solarpunk_anarchist_drone_plural$ increase £stability£ §YStability§!, increase £amenities£ §YAmenities§!, and produce £unity£ §Y$unity$§!."
+  mod_job_ac_content_terraformer_add:0 "$job_ac_content_terraformer_drone$ Jobs"
   building_ac_xanadu:0 "Xanadu"
   building_ac_xanadu_plural:0 "Xanadus"
   building_ac_xanadu_desc:0 "The ultimate paradise, a dream world that will never be forgotten. Nothing else will ever even begin to compare."
@@ -564,10 +569,10 @@
   councilor_telepathic_corporation_female:0 "$councilor_telepathic_corporation$"
   councilor_telepathic_corporation_desc:0 "The $TITLE$ oversees mental communication among the top executives, increasing optimization and bureaucratic oversight."
 
-  civic_telepathic_hive:0 "Telepathic Consciousness"
-  civic_telepathic_hive_desc:0 "This Hive Mind sees telepathy as further proof of its gestalt unity. All other forms of communication have been discarded."
-  civic_tooltip_telepathic_hive_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
-  civic_tooltip_telepathic_hive_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_ac_telepathic_hive:0 "Telepathic Consciousness"
+  civic_ac_telepathic_hive_desc:0 "This Hive Mind sees telepathy as further proof of its gestalt unity. All other forms of communication have been discarded."
+  civic_tooltip_ac_telepathic_hive_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_telepathic_hive_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
@@ -586,6 +591,8 @@
   civic_ac_eldritch_shareholders_desc:0 "This Megacorporation contracts with the entities of the Shroud, allowing ..."
   #...
 
+  ac_has_covenant_success:0 "$TRIGGER_PASS$Has made a Covenant"
+  ac_has_covenant_fail:0 "$TRIGGER_FAIL$Has made a Covenant"
   ascension_civics.342.name:0 "A Welcoming Vessel"
   ascension_civics.342.desc:0 "We have called upon our patron, and we have received an answer. §Y[Root.GetTitle] [Root.GetName]§! has offered [Root.GetHimselfHerself] to the Shroud, relinquishing [Root.GetHisHer] physical form to the §Y[Owner.AC_GetPatron]§!. Our Patron has §Yaccepted§!, imbuing [Root.GetName] with a new form from beyond our world. Their eldritch power now flows through our empire like never before.\n\n Staying in good favor with our patron will increase these benefits, while lowering favor will increase the drawbacks."
   ascension_civics.342.instrument:0 "[Root.GetName] is gone. The Instrument remains."
@@ -621,6 +628,8 @@
   councilor_shroud_divestment_desc:0 "Insanity is the ultimate threat to one's mind. And people pay a lot to protect their mind. The $TITLE$ exploits these needs for our profit."
   mod_planet_telepaths_energy_produces_add:0 "£energy£ $energy$ from £job_telepath£ $job_telepath_plural$"
 
+  ac_no_patron_success:0 "$TRIGGER_PASS$Has NOT confirmed a Covenant"
+  ac_no_patron_fail:0 "$TRIGGER_FAIL$Has NOT confirmed a Covenant"
   building_ac_renouncer_sanctum:0 "Sanctum of Transcendence"
   building_ac_renouncer_sanctum_desc:0 "The Sanctum is a place free from the horrors of the Shroud. Here, our collective enlightenment can be witnessed firsthand."
 

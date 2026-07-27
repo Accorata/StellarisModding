@@ -136,7 +136,7 @@ is_ac_blossoming = {
 				has_valid_civic = civic_blossoming_worlds
 				has_valid_civic = civic_blossoming_hives
 			}
-			has_tradition = tr_purity_finish
+			# has_tradition = tr_purity_finish
 		}
 	}
 }
@@ -160,7 +160,7 @@ is_ac_shared_perfection = {
 		has_valid_civic = civic_ac_shared_perfection_corp
 		has_valid_civic = civic_ac_shared_perfection_hive
 	}
-	has_tradition = tr_purity_finish
+	# has_tradition = tr_purity_finish
 }
 
 is_ac_specialized = {

@@ -174,8 +174,11 @@ building_ac_grand_sapling = {
 			is_ac_blossoming = no
 		}
 	}
+	inline_script = {
+		script = jobs/ac_content_terraformer_add
+		AMOUNT = 100
+	}
 	planet_modifier = {
-		job_ac_content_terraformer_add = 100
 		planet_farmers_food_produces_add = 2
 	}
 	triggered_planet_modifier = {
@@ -216,12 +219,31 @@ building_ac_grand_sapling = {
 		cost = {
 			food = @b2_minerals
 		}
+		cost = {
+			trigger = {
+				owner = { is_wilderness_empire = yes }
+			}
+			biomass = @b2_biomass
+		}
 		upkeep = {
 			food = @b2_upkeep
 		}
 	}
 	triggered_desc = {
+		trigger = {
+			owner = {
+				is_gestalt = no
+			}
+		}
 		text = job_solarpunk_anarchist_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_ac_content_terraformer_drone_effect_desc
 	}
 }
 
@@ -255,9 +277,12 @@ building_ac_hanging_cities = {
 			is_ac_blossoming = no
 		}
 	}
+	inline_script = {
+		script = jobs/ac_content_terraformer_add
+		AMOUNT = 100
+	}
 	planet_modifier = {
-		job_ac_content_terraformer_add = 1
-		planet_housing_add = 8
+		planet_housing_add = 800
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -301,12 +326,31 @@ building_ac_hanging_cities = {
 			COST = @b2_minerals
 			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
+		cost = {
+			trigger = {
+				owner = { is_wilderness_empire = yes }
+			}
+			biomass = @b2_biomass
+		}
 		upkeep = {
 			minerals = @b2_upkeep
 		}
 	}
 	triggered_desc = {
+		trigger = {
+			owner = {
+				is_gestalt = no
+			}
+		}
 		text = job_solarpunk_anarchist_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_ac_content_terraformer_drone_effect_desc
 	}
 }
 
