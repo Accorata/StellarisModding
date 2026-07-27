@@ -1,4 +1,4 @@
-# Telepathic Empire (required for update 4.0)
+# Telepathic Empire
 building_ac_psi_tower = {
 	base_buildtime = @b2_time
 	category = government
@@ -12,11 +12,15 @@ building_ac_psi_tower = {
 		owner = {
 			is_ac_telepathic_empire = yes
 		}
-		NOT = {
-			has_modifier = resort_colony
-		}
-		NOT = {
-			has_modifier = slave_colony
+		OR = {
+			NOR = {
+				has_modifier = resort_colony
+				has_modifier = slave_colony
+			}
+			AND = { # Also allowed on pleasure worlds
+				has_modifier = resort_colony
+				has_designation = col_pleasure
+			}
 		}
 	}
 	allow = {
@@ -28,88 +32,57 @@ building_ac_psi_tower = {
 			is_ac_telepathic_empire = no
 		}
 	}
-	planet_modifier = {
-		job_telepath_per_pop = 0.1
-	}
+
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
+			owner? = {
+				is_gestalt = no
 				NOT = {
-					has_authority = auth_corporate
+					has_valid_civic = civic_dystopian_society
 				}
-				is_regular_empire = yes
 			}
 		}
-		job_politician_add = 1
+		job_telepath_per_pop = 0.05
 	}
+
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-				is_worker_coop_empire = no
+			owner? = {
+				is_gestalt = no
+				has_valid_civic = civic_dystopian_society
 			}
 		}
-		modifier = {
-			job_executive_add = 1
-		}
+		job_dystopian_telepath_per_pop = 0.05
 	}
+
+	inline_script = {
+		script = jobs/politician_add
+		AMOUNT = 100
+	}
+
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-				is_worker_coop_empire = yes
+			has_shroud_dlc = yes
+			owner? = {
+				is_gestalt = yes
 			}
 		}
-		modifier = {
-			job_steward_add = 2
-		}
+		job_telepath_drone_per_pop = 0.05
+		job_coordinator_add = 100
 	}
+	
 	resources = {
 		category = planet_buildings
-		cost = {
-			minerals = 1000
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 1000
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			energy = @b2_upkeep
 		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = {
-					has_authority = auth_corporate
-				}
-				is_regular_empire = yes
-			}
-		}
-		text = job_politician_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = yes
-				is_worker_coop_empire = no
-			}
-		}
-		text = job_executive_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_megacorp = yes
-				is_worker_coop_empire = yes
-			}
-		}
-		text = job_steward_effect_desc
-	}
-	triggered_desc = {
-		text = job_telepath_effect_desc
 	}
 }
 
@@ -153,8 +126,14 @@ building_ac_renouncer_sanctum = {
 	}
 	resources = {
 		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = @b3_minerals
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
+		}
 		cost = {
-			minerals = @b3_minerals
 			sr_zro = @b2_rare_cost
 		}
 		upkeep = {
@@ -196,7 +175,7 @@ building_ac_grand_sapling = {
 		}
 	}
 	planet_modifier = {
-		job_ac_content_terraformer_add = 1
+		job_ac_content_terraformer_add = 100
 		planet_farmers_food_produces_add = 2
 	}
 	triggered_planet_modifier = {
@@ -315,8 +294,12 @@ building_ac_hanging_cities = {
 	}
 	resources = {
 		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = @b2_minerals
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			minerals = @b2_upkeep
@@ -362,7 +345,7 @@ building_ac_xanadu = {
 	}
 	planet_modifier = {
 		planet_resettlement_unemployed_destination_mult = 0.1
-		job_resort_worker_add = 4
+		job_resort_worker_add = 400
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -388,30 +371,19 @@ building_ac_xanadu = {
 	}
 	resources = {
 		category = planet_buildings
-		cost = {
-			minerals = 1000
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 1000
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			energy = @b2_upkeep
 		}
 	}
 	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_worker_coop_empire = no
-			}
-		}
-		text = job_executive_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_worker_coop_empire = yes
-			}
-		}
-		text = job_steward_effect_desc
+		text = job_politician_effect_desc
 	}
 	triggered_desc = {
 		text = job_resort_worker_effect_desc
@@ -447,26 +419,30 @@ building_ac_undercity_arena = {
 		army_damage_mult = 0.1
 	}
 	planet_modifier = {
-		job_cyberdome_duelist_add = 2
-		job_cyberdome_spectator_add = 2
+		job_cyberdome_duelist_add = 200
+		job_cyberdome_spectator_add = 200
 		army_starting_experience_add = 50
 		planet_crime_add = 10
 	}
 	resources = {
 		category = planet_buildings
-		cost = {
-			minerals = @b2_minerals
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = @b2_mineralss
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			energy = 2
 		}
 	}
-	# triggered_desc = {
-	# 	text = job_cyberdome_duelist_effect_desc
-	# }
-	# triggered_desc = {
-	# 	text = job_cyberdome_spectator_effect_desc
-	# }
+	triggered_desc = {
+		text = job_cyberdome_duelist_effect_desc
+	}
+	triggered_desc = {
+		text = job_cyberdome_spectator_effect_desc
+	}
 }
 
 # building_ac_cybernetics_stadium = {
@@ -532,8 +508,14 @@ building_ac_mega_forge = {
 	}
 	resources = {
 		category = planet_buildings
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = @b3_minerals
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
+		}
 		cost = {
-			minerals = @b3_minerals
 			alloys = 80
 		}
 		upkeep = {
@@ -547,7 +529,7 @@ building_ac_mega_forge = {
 				is_ac_world_builders = yes
 			}
 		}
-		job_ac_grand_synthesizer_add = 2
+		job_ac_grand_synthesizer_add = 200
 	}
 	triggered_country_modifier = {
 		potential = {
@@ -604,13 +586,17 @@ building_ac_order_hall = {
 		}
 	}
 	planet_modifier = {
-		job_ac_normal_knight_add = 2
+		job_ac_normal_knight_add = 200
 		job_ac_normal_knight_per_pop = 0.05
 		planet_amenities_add = 10
 	}
 	resources = {
-		cost = {
-			minerals = 1000
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 1000
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			energy = 5
@@ -653,13 +639,17 @@ building_ac_order_hall_knights = {
 		}
 	}
 	planet_modifier = {
-		job_knight_add = 2
+		job_knight_add = 200
 		job_knight_per_pop = 0.05
 		planet_amenities_add = 10
 	}
 	resources = {
-		cost = {
-			minerals = 1000
+		inline_script = {
+			script = buildings/nomadic_cost_switcher
+			REGULAR_RESOURCE = minerals
+			NOMADIC_RESOURCE = alloys
+			COST = 1000
+			NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
 		}
 		upkeep = {
 			energy = 5

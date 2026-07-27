@@ -550,23 +550,28 @@
 ## Telepathic
   civic_telepathic_empire:0 "Telepathic Empire"
   civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expressed of individuality."
-  civic_tooltip_telepathic_empire_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
-  civic_tooltip_telepathic_empire_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
+  civic_tooltip_telepathic_empire_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n $mod_country_trade_fee$: §R+5%§!"
+  civic_tooltip_telepathic_empire_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n $mod_country_trade_fee$: §R+5%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
   councilor_telepathic_empire_female:0 "$councilor_telepathic_empire$"
   councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before dispersing once more."
 
   civic_telepathic_corporation:0 "Telepathic Enterprise"
   civic_telepathic_corporation_desc:0 "This Megacorporation looks down on verbal speech. The aspiring elite quickly learn the langauge of the mind, and its many advantages."
-  civic_tooltip_telepathic_corporation_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
-  civic_tooltip_telepathic_corporation_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!"
+  civic_tooltip_telepathic_corporation_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n $mod_country_trade_fee$: §R+5%§!"
+  civic_tooltip_telepathic_corporation_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n $mod_country_trade_fee$: §R+5%§!"
   councilor_telepathic_corporation:0 "Chief Telepathic Officer"
   councilor_telepathic_corporation_female:0 "$councilor_telepathic_corporation$"
   councilor_telepathic_corporation_desc:0 "The $TITLE$ oversees mental communication among the top executives, increasing optimization and bureaucratic oversight."
 
+  civic_telepathic_hive:0 "Telepathic Consciousness"
+  civic_telepathic_hive_desc:0 "This Hive Mind sees telepathy as further proof of its gestalt unity. All other forms of communication have been discarded."
+  civic_tooltip_telepathic_hive_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_telepathic_hive_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
-  building_ac_psi_tower_desc:0 "High in these towers, telepaths commune with the people below, uniting our mind and wielding our future."
+  building_ac_psi_tower_desc:0 "High in these towers, telepaths commune with those below, uniting our minds and wielding our future."
 
 ## Vessel (Only with Shadows of the Shroud)
   civic_ac_eldritch_possession:0 "Eldritch Possession"

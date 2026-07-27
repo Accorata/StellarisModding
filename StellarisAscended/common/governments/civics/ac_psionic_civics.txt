@@ -12,7 +12,6 @@ civic_telepathic_empire = {
 		}
 	}
 	possible = {
-		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE
@@ -34,19 +33,26 @@ civic_telepathic_empire = {
 		base = 0
 		modifier = {
 			add = 100
-			has_tradition = tr_psionics_finish
+			OR = {
+				has_tradition = tr_psionics_finish
+				has_tradition = tr_psionics_shroud_finish
+			}
 		}
 	}
 	description = civic_tooltip_telepathic_empire_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_psionics_finish
+			OR = {
+				has_tradition = tr_psionics_finish
+				has_tradition = tr_psionics_shroud_finish
+			}
 		}
 		description = civic_tooltip_telepathic_empire_effects
 		modifier = {
 			planet_stability_add = 3
 			pop_non_psionic_happiness = -0.15
+			country_trade_fee = 0.05
 		}
 	}
 }
@@ -68,7 +74,6 @@ civic_telepathic_corporation = {
 		}
 	}
 	possible = {
-		is_nomadic = no
 		species_archetype = {
 			NOT = {
 				value = MACHINE
@@ -90,19 +95,70 @@ civic_telepathic_corporation = {
 		base = 0
 		modifier = {
 			add = 100
-			has_tradition = tr_psionics_finish
+			OR = {
+				has_tradition = tr_psionics_finish
+				has_tradition = tr_psionics_shroud_finish
+			}
 		}
 	}
 	description = civic_tooltip_telepathic_corporation_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_psionics_finish
+			OR = {
+				has_tradition = tr_psionics_finish
+				has_tradition = tr_psionics_shroud_finish
+			}
 		}
 		description = civic_tooltip_telepathic_corporation_effects
 		modifier = {
 			planet_politicians_produces_mult = 0.1
 			pop_non_psionic_happiness = -0.15
+			country_trade_fee = 0.05
+		}
+	}
+}
+
+civic_ac_telepathic_hive = {
+	playable = {
+		has_shroud_dlc = yes
+	}
+	ai_playable = {
+		has_shroud_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_hive_mind
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_hive.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_shroud_finish
+		}
+	}
+	description = civic_tooltip_telepathic_hive_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_shroud_finish
+		}
+		description = civic_tooltip_telepathic_hive_effects
+		modifier = {
+			empire_size_penalty_mult = -0.05
+			ships_logistics_mult = 0.10
+			country_trade_fee = 0.05
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 		}
 	}
 }
@@ -162,14 +218,14 @@ civic_ac_eldritch_possession = {
 		base = 0
 		modifier = {
 			add = 100
-			has_tradition = tr_psionics_finish
+			has_tradition = tr_psionics_shroud_finish
 		}
 	}
 	description = civic_tooltip_ac_eldritch_possession_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_psionics_finish
+			has_tradition = tr_psionics_shroud_finish
 		}
 		description = civic_tooltip_ac_eldritch_possession_effects
 		modifier = {
@@ -237,14 +293,14 @@ civic_ac_eldritch_shareholders = {
 		base = 0
 		modifier = {
 			add = 100
-			has_tradition = tr_psionics_finish
+			has_tradition = tr_psionics_shroud_finish
 		}
 	}
 	description = civic_tooltip_ac_eldritch_possession_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
-			has_tradition = tr_psionics_finish
+			has_tradition = tr_psionics_shroud_finish
 		}
 		description = civic_tooltip_ac_eldritch_possession_effects
 		modifier = {
