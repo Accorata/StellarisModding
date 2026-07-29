@@ -24,10 +24,9 @@ civic_blossoming_worlds = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_xanadu_retreats
-			}
+		inline_script = {
+			script = civics/ac_purity_ascension_limits
+			SISTER_CIVIC = civic_xanadu_retreats
 		}
 	}
 	modification = yes
@@ -82,10 +81,9 @@ civic_xanadu_retreats = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_blossoming_worlds
-			}
+		inline_script = {
+			script = civics/ac_purity_ascension_limits
+			SISTER_CIVIC = civic_blossoming_worlds
 		}
 	}
 	modification = yes
@@ -132,6 +130,9 @@ civic_blossoming_hives = {
 	}
 	possible = {
 		is_nomadic = no
+		inline_script = {
+			script = civics/ac_purity_ascension_limits_hive
+		}
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_blossoming_hives.dds"
@@ -189,10 +190,9 @@ civic_ac_shared_perfection = {
 				value = biogenesis_02
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_shared_perfection_corp
-			}
+		inline_script = {
+			script = civics/ac_purity_ascension_limits
+			SISTER_CIVIC = civic_ac_shared_perfection_corp
 		}
 	}
 	modification = yes
@@ -295,10 +295,9 @@ civic_ac_shared_perfection_corp = {
 				value = biogenesis_02
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_shared_perfection
-			}
+		inline_script = {
+			script = civics/ac_purity_ascension_limits
+			SISTER_CIVIC = civic_ac_shared_perfection
 		}
 	}
 	modification = yes
@@ -388,6 +387,9 @@ civic_ac_shared_perfection_hive = {
 				value = biogenesis_02
 			}
 		}
+		inline_script = {
+			script = civics/ac_purity_ascension_limits_hive
+		}
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_shared_perfection_mam_hive.dds"
@@ -400,55 +402,55 @@ civic_ac_shared_perfection_hive = {
 	}
 	hide_modifiers = yes
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = HUM
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = MAM
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = REP
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = AVI
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = ART
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = MOL
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = FUN
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = PLANT
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = LITHOID
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = NECROID
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = AQUATIC
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = TOX
 	}
 	inline_script = {
-		script = civics/ac_shared_perfection_civic_swaps
+		script = civics/ac_shared_perfection_civic_swaps_hive
 		SPECIES = INF
 	}
 }

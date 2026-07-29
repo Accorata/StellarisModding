@@ -1,0 +1,5 @@
+civics = {
+	NOT = {
+		value = civic_machine_chosen
+	}
+}

@@ -24,10 +24,9 @@ civic_bandwidth_enhancers = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_bandwidth_incorporated
-			}
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits
+			SISTER_CIVIC = civic_bandwidth_incorporated
 		}
 	}
 	modification = yes
@@ -82,10 +81,9 @@ civic_bandwidth_incorporated = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_bandwidth_enhancers
-			}
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits
+			SISTER_CIVIC = civic_bandwidth_enhancers
 		}
 	}
 	modification = yes
@@ -130,6 +128,9 @@ civic_bandwidth_optimization = {
 	}
 	possible = {
 		is_nomadic = no
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits_machine
+		}
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_bandwidth_optimization.dds"
@@ -174,10 +175,9 @@ civic_concurrent_command = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_executive_militarization
-			}
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits
+			SISTER_CIVIC = civic_executive_militarization
 		}
 	}
 	modification = yes
@@ -225,10 +225,9 @@ civic_executive_militarization = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_concurrent_command
-			}
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits
+			SISTER_CIVIC = civic_concurrent_command
 		}
 	}
 	modification = yes
@@ -263,6 +262,11 @@ civic_nodal_command = {
 		}
 		authority = {
 			value = auth_machine_intelligence
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_virtual_ascension_limits_machine
 		}
 	}
 	modification = yes

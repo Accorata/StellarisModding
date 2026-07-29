@@ -17,10 +17,9 @@ civic_hyper_specialization = {
 		species_archetype = { 
 			value = MACHINE 
 		}
-		civics = { 
-			NOT = { 
-				value = civic_employee_specialization
-			} 
+		inline_script = {
+			script = civics/ac_modular_ascension_limits
+			SISTER_CIVIC = civic_employee_specialization
 		}
 	}
 
@@ -75,10 +74,9 @@ civic_employee_specialization = {
 		species_archetype = { 
 			value = MACHINE 
 		}
-		civics = { 
-			NOT = { 
-				value = civic_hyper_specialization
-			} 
+		inline_script = {
+			script = civics/ac_modular_ascension_limits
+			SISTER_CIVIC = civic_hyper_specialization
 		}
 	}
 
@@ -120,6 +118,11 @@ civic_hyper_specialized = {
 		}
 		authority = { 
 			value = auth_machine_intelligence  
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_modular_ascension_limits_machine
 		}
 	}
 
@@ -172,10 +175,9 @@ civic_metallic_repurposing = {
 		species_archetype = { 
 			value = MACHINE 
 		}
-		civics = { 
-			NOT = { 
-				value = civic_corporate_remodeling
-			} 
+		inline_script = {
+			script = civics/ac_modular_ascension_limits
+			SISTER_CIVIC = civic_corporate_remodeling
 		}
 	}
 
@@ -229,10 +231,9 @@ civic_corporate_remodeling = {
 		species_archetype = { 
 			value = MACHINE 
 		}
-		civics = { 
-			NOT = { 
-				value = civic_metallic_repurposing
-			} 
+		inline_script = {
+			script = civics/ac_modular_ascension_limits
+			SISTER_CIVIC = civic_metallic_repurposing
 		}
 	}
 
@@ -273,6 +274,11 @@ civic_omnirecyclers = {
 		}
 		authority = { 
 			value = auth_machine_intelligence  
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_modular_ascension_limits_machine
 		}
 	}
 

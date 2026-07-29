@@ -1,0 +1,12 @@
+origin = {
+	NOR = {
+		value = origin_evolutionary_predators
+		value = origin_wilderness
+	}
+}
+
+civics = {
+	NOT = {
+		value = civic_hive_chosen
+	}
+}

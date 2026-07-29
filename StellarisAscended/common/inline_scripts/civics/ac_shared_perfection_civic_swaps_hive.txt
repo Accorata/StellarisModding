@@ -1,0 +1,27 @@
+swap_type = {
+	trigger = {
+		species = {
+			is_species_class = $SPECIES$
+		}
+		NOT = {
+			has_tradition = tr_purity_finish
+		}
+	}
+	name = civic_ac_shared_perfection_$SPECIES$
+	description = civic_tooltip_ac_shared_perfection_$SPECIES$_hive_incomplete_effects
+}
+swap_type = {
+	trigger = {
+		species = {
+			is_species_class = $SPECIES$
+		}
+		has_tradition = tr_purity_finish
+	}
+	name = civic_ac_shared_perfection_$SPECIES$
+	description = civic_tooltip_ac_shared_perfection_$SPECIES$_hive_effects
+	modifier = {
+		terraforming_cost_mult = -0.25
+		terraform_speed_mult = 0.25
+		councilor_gestalt_legion_exp_gain = @gestalt_civic_node_xp_rate
+	}
+}

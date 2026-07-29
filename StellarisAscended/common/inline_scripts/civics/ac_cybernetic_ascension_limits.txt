@@ -1,0 +1,16 @@
+origin = {
+	NOR = {
+		value = origin_endbringers
+		value = origin_shroudwalker_apprentice
+		value = origin_synthetic_fertility
+		value = origin_evolutionary_predators
+	}
+}
+
+civics = {
+	NOR = {
+		value = SISTER_CIVIC
+		value = civic_chosen
+		value = civic_corporate_chosen
+	}
+}

@@ -17,10 +17,9 @@ civic_numbered_among_stars = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_stellar_monopoly
-			}
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits
+			SISTER_CIVIC = civic_stellar_monopoly
 		}
 	}
 	modification = yes
@@ -73,10 +72,9 @@ civic_stellar_monopoly = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_numbered_among_stars
-			}
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits
+			SISTER_CIVIC = civic_numbered_among_stars
 		}
 	}
 	modification = yes
@@ -122,6 +120,11 @@ civic_unending_swarm = {
 		}
 		authority = {
 			value = auth_machine_intelligence
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits_machine
 		}
 	}
 	modification = yes
@@ -177,10 +180,9 @@ civic_microscopic_life = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_minicorp
-			}
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits
+			SISTER_CIVIC = civic_minicorp
 		}
 	}
 	modification = yes
@@ -236,10 +238,9 @@ civic_minicorp = {
 		species_archetype = {
 			value = MACHINE
 		}
-		civics = {
-			NOT = {
-				value = civic_microscopic_life
-			}
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits
+			SISTER_CIVIC = civic_microscopic_life
 		}
 	}
 	modification = yes
@@ -285,6 +286,9 @@ civic_microscopic = {
 	}
 	possible = {
 		is_nomadic = no
+		inline_script = {
+			script = civics/ac_nanotech_ascension_limits_machine
+		}
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_microscopic.dds"

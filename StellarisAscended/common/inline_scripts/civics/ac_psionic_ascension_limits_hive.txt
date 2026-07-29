@@ -1,0 +1,6 @@
+origin = {
+	NOR = {
+		value = origin_evolutionary_predators
+		value = origin_wilderness
+	}
+}

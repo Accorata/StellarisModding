@@ -30,10 +30,9 @@ civic_ac_mitotic_assembly = {
 				value = biogenesis_02
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_parallel_development
-			}
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits
+			SISTER_CIVIC = civic_ac_parallel_development
 		}
 	}
 	modification = yes
@@ -97,10 +96,9 @@ civic_ac_parallel_development = {
 				value = biogenesis_02
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_mitotic_assembly
-			}
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits
+			SISTER_CIVIC = civic_ac_mitotic_assembly
 		}
 	}
 	modification = yes
@@ -152,6 +150,9 @@ civic_ac_duplicated_horde = {
 				value = biogenesis_02
 			}
 		}
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits_hive
+		}
 	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_duplicated_horde.dds"
@@ -201,10 +202,9 @@ civic_ac_society_of_one = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_indistinguishable_employment
-			}
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits
+			SISTER_CIVIC = civic_ac_indistinguishable_employment
 		}
 	}
 	modification = yes
@@ -261,10 +261,9 @@ civic_ac_indistinguishable_employment = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_society_of_one
-			}
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits
+			SISTER_CIVIC = civic_ac_society_of_one
 		}
 	}
 	modification = yes
@@ -306,6 +305,11 @@ civic_ac_identical_drones = {
 		}
 		authority = {
 			value = auth_hive_mind
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_cloning_ascension_limits_hive
 		}
 	}
 	modification = yes

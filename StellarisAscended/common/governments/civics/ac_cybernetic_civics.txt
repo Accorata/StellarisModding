@@ -74,10 +74,9 @@ civic_cyberlife = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_cybernet
-			}
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits
+			SISTER_CIVIC = civic_cybernet
 		}
 	}
 	modification = yes
@@ -129,10 +128,9 @@ civic_cybernet = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_cyberlife
-			}
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits
+			SISTER_CIVIC = civic_cyberlife
 		}
 	}
 	modification = yes
@@ -171,6 +169,11 @@ civic_cyberspacial = {
 			value = auth_hive_mind
 		}
 	}
+	possible = {
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits_hive
+		}
+	}
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_cyberspacial.dds"
 	pickable_at_start = yes
@@ -205,6 +208,11 @@ civic_uploaded_mind = {
 		}
 		authority = {
 			value = auth_machine_intelligence
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits_machine
 		}
 	}
 	modification = yes
@@ -253,10 +261,9 @@ civic_cybergladiators = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_underworld_bloodsports
-			}
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits
+			SISTER_CIVIC = civic_underworld_bloodsports
 		}
 	}
 	modification = yes
@@ -308,10 +315,9 @@ civic_underworld_bloodsports = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_cybergladiators
-			}
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits
+			SISTER_CIVIC = civic_cybergladiators
 		}
 	}
 	modification = yes
@@ -352,6 +358,11 @@ civic_cybersports = {
 		}
 		authority = {
 			value = auth_machine_intelligence
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_cybernetic_ascension_limits_machine
 		}
 	}
 	modification = yes

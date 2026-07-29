@@ -17,10 +17,9 @@ civic_telepathic_empire = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_telepathic_corporation
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_telepathic_corporation
 		}
 	}
 	modification = yes
@@ -79,10 +78,9 @@ civic_telepathic_corporation = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_telepathic_empire
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_telepathic_empire
 		}
 	}
 	modification = yes
@@ -132,6 +130,11 @@ civic_ac_telepathic_hive = {
 		}
 		authority = {
 			value = auth_hive_mind
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits_hive
 		}
 	}
 	modification = yes
@@ -188,10 +191,9 @@ civic_ac_eldritch_possession = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_eldritch_shareholders
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_ac_eldritch_shareholders
 		}
 	}
 	modification = {
@@ -271,10 +273,9 @@ civic_ac_eldritch_shareholders = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_eldritch_possession
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_ac_eldritch_possession
 		}
 	}
 	modification = {
@@ -352,10 +353,9 @@ civic_shroud_renouncers = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_shroud_divestment
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_shroud_divestment
 		}
 	}
 	modification = {
@@ -427,10 +427,9 @@ civic_shroud_divestment = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_shroud_renouncers
-			}
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits
+			SISTER_CIVIC = civic_shroud_renouncers
 		}
 	}
 	modification = {

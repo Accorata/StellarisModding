@@ -23,10 +23,9 @@ civic_hyper_diversification = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_employee_diversification
-			}
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits
+			SISTER_CIVIC = civic_employee_diversification
 		}
 	}
 	modification = yes
@@ -84,10 +83,9 @@ civic_employee_diversification = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_hyper_diversification
-			}
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits
+			SISTER_CIVIC = civic_hyper_diversification
 		}
 	}
 	modification = yes
@@ -130,6 +128,11 @@ civic_hyper_diversified = {
 		}
 		authority = {
 			value = auth_hive_mind
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits_hive
 		}
 	}
 	modification = yes
@@ -187,10 +190,9 @@ civic_ac_monstrous_fauna = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_bioengineered_fauna
-			}
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits
+			SISTER_CIVIC = civic_ac_bioengineered_fauna
 		}
 	}
 	modification = yes
@@ -249,10 +251,9 @@ civic_ac_bioengineered_fauna = {
 				value = MACHINE
 			}
 		}
-		civics = {
-			NOT = {
-				value = civic_ac_monstrous_fauna
-			}
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits
+			SISTER_CIVIC = civic_ac_monstrous_fauna
 		}
 	}
 	modification = yes
@@ -296,6 +297,11 @@ civic_ac_tendrils_of_mutation = {
 		}
 		authority = {
 			value = auth_hive_mind
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_mutation_ascension_limits_hive
 		}
 	}
 	modification = yes
