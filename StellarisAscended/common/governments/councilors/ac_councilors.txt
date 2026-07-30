@@ -442,6 +442,38 @@ councilor_ac_parallel_development = {
 	}
 }
 
+councilor_ac_society_of_one = {
+	leader_class = {
+		scientist
+	}
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_ac_society_of_one
+	modifier = {
+		planet_buildings_clone_vats_upkeep_mult = -0.03
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_indistinguishable_employment = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_ac_indistinguishable_employment
+	modifier = {
+		planet_doctors_trade_produces_add = 0.5
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Genetic
 councilor_ac_gen_blossoming_worlds = {
 	leader_class = {

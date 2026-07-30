@@ -229,22 +229,6 @@ building_ac_grand_sapling = {
 			food = @b2_upkeep
 		}
 	}
-	triggered_desc = {
-		trigger = {
-			owner = {
-				is_gestalt = no
-			}
-		}
-		text = job_solarpunk_anarchist_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		text = job_ac_content_terraformer_drone_effect_desc
-	}
 }
 
 building_ac_hanging_cities = {
@@ -336,22 +320,6 @@ building_ac_hanging_cities = {
 			minerals = @b2_upkeep
 		}
 	}
-	triggered_desc = {
-		trigger = {
-			owner = {
-				is_gestalt = no
-			}
-		}
-		text = job_solarpunk_anarchist_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		text = job_ac_content_terraformer_drone_effect_desc
-	}
 }
 
 # Xanadu Retreats
@@ -425,12 +393,6 @@ building_ac_xanadu = {
 		upkeep = {
 			energy = @b2_upkeep
 		}
-	}
-	triggered_desc = {
-		text = job_politician_effect_desc
-	}
-	triggered_desc = {
-		text = job_resort_worker_effect_desc
 	}
 }
 
@@ -575,9 +537,6 @@ building_ac_mega_forge = {
 		}
 		job_ac_grand_synthesizer_per_pop = 0.04
 	}
-	triggered_desc = {
-		text = job_ac_grand_synthesizer_effect_desc
-	}
 }
 
 # Oligarchic Order Authority
@@ -638,9 +597,6 @@ building_ac_order_hall = {
 		}
 		category = planet_buildings
 	}
-	triggered_desc = {
-		text = job_ac_normal_knight_effect_desc
-	}
 }
 
 building_ac_order_hall_knights = {
@@ -690,8 +646,5 @@ building_ac_order_hall_knights = {
 			energy = 5
 		}
 		category = planet_buildings
-	}
-	triggered_desc = {
-		text = job_knight_effect_desc
 	}
 }

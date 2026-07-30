@@ -113,12 +113,17 @@ apply_post_assimilation_effects = {
 			}
 		}
 	}
-	# Unity for Democratic Hyperequality Authority
+	# Unity for Democratic Hyperequality Authority and Cloned Populace Civics 
 	if = {
 		limit = {
 			root.owner = {
-				is_democratic_authority = yes
-				has_country_flag = ac_genetic_perfect
+				OR = {
+					AND = {
+						is_democratic_authority = yes
+						has_country_flag = ac_genetic_perfect
+					}
+					is_ac_cloned_population = yes
+				}
 			}
 		}
 		root.owner = {

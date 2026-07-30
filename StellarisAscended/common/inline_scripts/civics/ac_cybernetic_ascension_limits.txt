@@ -9,7 +9,7 @@ origin = {
 
 civics = {
 	NOR = {
-		value = SISTER_CIVIC
+		value = $SISTER_CIVIC$
 		value = civic_chosen
 		value = civic_corporate_chosen
 	}

@@ -892,8 +892,8 @@ country_event = {
 	id = ascension_civics.304
 	title = ascension_civics.304.name
 	desc =  ascension_civics.304.desc
-	picture = GFX_evt_relic_world_street # change
-	show_sound = event_worrying_signal # change
+	picture = GFX_evt_genetic_ascention_cloning
+	show_sound = event_administrative_work_04
 	is_triggered_only = yes
 
 	trigger = {
@@ -933,8 +933,8 @@ country_event = {
 	id = ascension_civics.305
 	title = ascension_civics.305.name
 	desc =  ascension_civics.305.desc
-	picture = GFX_evt_relic_world_street # change
-	show_sound = event_worrying_signal # change
+	picture = GFX_evt_genetic_modification
+	show_sound = event_celebration
 
 	is_triggered_only = yes
 
@@ -1116,7 +1116,7 @@ leader_event = {
 	title = ascension_civics.342.name
 	desc = ascension_civics.342.desc
 	picture = GFX_evt_zro_2
-	show_sound = event_default # change
+	show_sound = event_psionic
 	is_triggered_only = yes
 
 	trigger = {
@@ -1134,7 +1134,7 @@ leader_event = {
 	}
 
 	event_window_type = leader_story
-	event_picture_background = "GFX_leader_recruitment_bg_renowned" #_legendary_beholder"
+	event_picture_background = "GFX_leader_recruitment_bg_renowned"
 
 	picture_event_data = {
 		portrait = root
@@ -1192,7 +1192,7 @@ leader_event = {
 	title = ascension_civics.343.name
 	desc = ascension_civics.343.desc
 	picture = GFX_evt_zro_2
-	show_sound = event_default # change
+	show_sound = event_bad_omen
 	is_triggered_only = yes
 
 	trigger = {
