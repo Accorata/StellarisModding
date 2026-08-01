@@ -820,6 +820,152 @@ country_event = {
 	}
 }
 
+# On post government change and game start
+country_event = {
+	id = ascension_civics.87
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		could_be_ac_shared_perfection = yes
+		NOT = {
+			has_country_flag = ac_track_species_traits_purity_count
+		}
+	}
+
+	immediate = {
+		set_country_flag = ac_track_species_traits_purity_count
+		every_owned_species = {
+			limit = {
+				NOT = {
+					is_variable_set = species_traits_purity_count
+				}
+			}
+			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
+# On uplift completed
+carrier_event = {
+	id = ascension_civics.88
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		owner? = {
+			could_be_ac_shared_perfection = yes
+		}
+		from = {
+			OR = {
+				is_archetype = PRESAPIENT
+				is_archetype = BIOLOGICAL
+				is_archetype = LITHOID
+			}
+			NOT = {
+				is_variable_set = species_traits_purity_count
+			}
+		}
+	}
+
+	immediate = {
+		carrier_event = {
+			id = ascension_civics.89
+			days = 5
+		}
+	}
+}
+
+# On above and colony transfer
+carrier_event = {
+	id = ascension_civics.89
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		owner? = {
+			could_be_ac_shared_perfection = yes
+		}
+		any_owned_species = {
+			OR = {
+				is_archetype = PRESAPIENT
+				is_archetype = BIOLOGICAL
+				is_archetype = LITHOID
+			}
+			NOT = {
+				is_variable_set = species_traits_purity_count
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				NOT = {
+					is_variable_set = species_traits_purity_count
+				}
+			}
+			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
+# On Species modification
+country_event = {
+	id = ascension_civics.90
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		could_be_ac_shared_perfection = yes
+		from = {
+			OR = {
+				is_archetype = PRESAPIENT
+				is_archetype = BIOLOGICAL
+				is_archetype = LITHOID
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
+# On monthly pulse country
+country_event = {
+	id = ascension_civics.91
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		could_be_ac_shared_perfection = yes
+		any_owned_species = {
+			OR = {
+				is_archetype = PRESAPIENT
+				is_archetype = BIOLOGICAL
+				is_archetype = LITHOID
+			}
+			NOT = {
+				is_variable_set = species_traits_purity_count
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				NOT = {
+					is_variable_set = species_traits_purity_count
+				}
+			}
+			set_species_traits_purity_count_variable = yes
+		}
+	}
+}
+
 # Concurrent Command ruler trait 
 country_event = {
 	id = ascension_civics.301
@@ -1360,23 +1506,6 @@ country_event = {
 	immediate = {
 		random_owned_leader = {
 			change_leader_portrait = ac_vessel
-		}
-	}
-}
-
-country_event = {
-	id = ascension_civics.2001
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		every_owned_species = {
-			limit = {
-				NOT = {
-					is_variable_set = species_traits_purity_count
-				}
-			}
-			set_species_traits_purity_count_variable = yes
 		}
 	}
 }

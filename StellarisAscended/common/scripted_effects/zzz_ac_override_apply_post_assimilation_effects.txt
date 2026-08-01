@@ -206,7 +206,14 @@ apply_post_assimilation_effects = {
 	if = { # Handle Purity Authority effects
 		limit = {
 			root.owner = {
+				# START OF OVERRIDE 3 -------------------------------------------------------------------------
+				OR = {
+				# END OF OVERRIDE 3 -------------------------------------------------------------------------
 				is_purity_authority = yes
+				# START OF OVERRIDE 4 -------------------------------------------------------------------------
+					could_be_ac_shared_perfection = yes
+				}
+				# END OF OVERRIDE 4 -------------------------------------------------------------------------
 			}
 			species = {
 				OR = {

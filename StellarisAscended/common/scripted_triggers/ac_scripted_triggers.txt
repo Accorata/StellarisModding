@@ -163,6 +163,15 @@ is_ac_shared_perfection = {
 	has_tradition = tr_purity_finish
 }
 
+could_be_ac_shared_perfection = {
+	OR = {
+		has_country_flag = ac_track_species_traits_purity_count
+		has_valid_civic = civic_ac_shared_perfection
+		has_valid_civic = civic_ac_shared_perfection_corp
+		has_valid_civic = civic_ac_shared_perfection_hive
+	}
+}
+
 is_ac_specialized = {
 	OR = {
 		has_valid_civic = civic_hyper_specialization

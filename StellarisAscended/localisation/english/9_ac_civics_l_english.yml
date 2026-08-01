@@ -109,7 +109,9 @@
   civic_ac_shared_perfection_INF_desc:0 "$civic_ac_shared_perfection_desc$ our flames will melt even the strongest of steels."
   civic_tooltip_ac_shared_perfection_INF_effects:0 "- Unlocks ship component ['concept_ac_exemplary_genetics_INF'] which provides benefits that scale with ['concept_genetic_purity']\n\n$civic_ac_shared_perfection_alternative_effects$"
   civic_tooltip_ac_shared_perfection_INF_incomplete_effects:0 "$purity_ascension_required$$civic_tooltip_ac_shared_perfection_INF_effects$"
-  # councilor needed...
+  councilor_ac_shared_perfection:0 "Immaculate Admiral"
+  councilor_ac_shared_perfection_female:0 "$councilor_ac_shared_perfection$"
+  councilor_ac_shared_perfection_desc:0 "The $TITLE$ is the best of the best, perfect in genetics and in strategic command."
 
   civic_ac_shared_perfection_corp:0 "Shared Excellence"
   civic_ac_shared_perfection_corp_desc:0 "$civic_ac_shared_perfection_desc$"
@@ -139,7 +141,9 @@
   civic_ac_shared_perfection_TOX_corp_desc:0 "$civic_ac_shared_perfection_TOX_desc$"
   civic_ac_shared_perfection_INF_corp:0 "$civic_ac_shared_perfection_corp$"
   civic_ac_shared_perfection_INF_corp_desc:0 "$civic_ac_shared_perfection_INF_desc$"
-  # councilor needed...
+  councilor_ac_shared_perfection_corp:0 "Immaculate Executive"
+  councilor_ac_shared_perfection_corp_female:0 "$councilor_ac_shared_perfection_corp$"
+  councilor_ac_shared_perfection_corp_desc:0 "The $TITLE$ is the best of the best, perfect in genetics and in corporate strategy."
 
   civic_ac_shared_perfection_hive:0 "Shared Purity"
   civic_ac_shared_perfection_hive_desc:0 "$civic_ac_shared_perfection_desc$"
@@ -326,12 +330,14 @@
   civic_ac_bioengineered_fauna_desc:0 "This Megacorporation develops mutations for the natural space fauna, hoping to profit off these improved organisms."
   civic_tooltip_ac_bioengineered_fauna_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $MOD_SPACE_FAUNA_CULLING_REWARD_MULT$: §G+25%§!\n- $MOD_SPACE_FAUNA_MONTHLY_INCREASED_BREEDING_CHANCE_ADD$: §G+100%§!"
   civic_tooltip_ac_bioengineered_fauna_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $MOD_SPACE_FAUNA_CULLING_REWARD_MULT$: §G+25%§!\n- $MOD_SPACE_FAUNA_MONTHLY_INCREASED_BREEDING_CHANCE_ADD$: §G+100%§!"
-  # councilor needed ... (Head Xenozoologist)
+  councilor_ac_bioengineered_fauna:0 "Head Xenozoologist"
+  councilor_ac_bioengineered_fauna_female:0 "$councilor_ac_bioengineered_fauna$"
+  councilor_ac_bioengineered_fauna_desc:0 "The $TITLE$ is our leading expert on altered space fauna, from bringing in samples to enhancing their abilities."
 
   civic_ac_tendrils_of_mutation:0 "Tendrils of Mutation"
   civic_ac_tendrils_of_mutation_desc:0 "This Hive Mind brings all life into its mutating grasp. The fauna that emerge are forever transformed."
-  civic_tooltip_ac_tendrils_of_mutation_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+10%§!\n- $mod_space_fauna_culling_reward_mult$: §G+10%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
-  civic_tooltip_ac_tendrils_of_mutation_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $MOD_SPACE_FAUNA_SHIP_DAMAGE_MULT$: §G+10%§!\n- $MOD_SPACE_FAUNA_CULLING_REWARD_MULT$: §G+10%§!\n- $MOD_SPACE_FAUNA_MONTHLY_INCREASED_BREEDING_CHANCE_ADD$: §G+100%§!\n- $mod_councilor_gestalt_legion_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_tendrils_of_mutation_incomplete_effects:0 "$mutation_ascension_required$$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n$mutation_ascension_required$- $mod_space_fauna_ship_damage_mult$: §G+10%§!\n- $mod_space_fauna_culling_reward_mult$: §G+10%§!\n- $mod_space_fauna_monthly_increased_breeding_chance_add$: §G+100%§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_tendrils_of_mutation_effects:0 "$ac_monstrous_fauna_tech_unlocks$\n\n§EModifiers:§!\n- $MOD_SPACE_FAUNA_SHIP_DAMAGE_MULT$: §G+10%§!\n- $MOD_SPACE_FAUNA_CULLING_REWARD_MULT$: §G+10%§!\n- $MOD_SPACE_FAUNA_MONTHLY_INCREASED_BREEDING_CHANCE_ADD$: §G+100%§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   concept_ac_special_mutation_techs: "Special Mutation Technologies"
   concept_ac_special_mutation_techs_desc: "- ['technology:tech_unique_mutation_voidworm']\n- ['technology:tech_unique_mutation_space_amoeba']\n- ['technology:tech_unique_mutation_cutholoid']\n- ['technology:tech_unique_mutation_tiyanki']\n- ['technology:tech_unique_mutation_crystalline_entity']"
@@ -382,15 +388,15 @@
   civic_ac_mitotic_assembly_desc:0 "This society has learned how to clone entire warships, dramatically increasing their naval strength."
   civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "$cloning_ascension_required$- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n$cloning_ascension_required$§EModifiers:§!\n- Cloned Ships Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
   civic_tooltip_ac_mitotic_assembly_effects:0 "- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n§EModifiers:§!\n- Cloned Ships Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
-  councilor_ac_mitotic_assembly:0 "Chief of Replication" # does nothing atm...
+  councilor_ac_mitotic_assembly:0 "Marshal of Replication"
   councilor_ac_mitotic_assembly_female:0 "$councilor_ac_mitotic_assembly$"
-  councilor_ac_mitotic_assembly_desc:0 "..."
+  councilor_ac_mitotic_assembly_desc:0 "The $TITLE$ heads cloning efforts throughout the military, from cloning personel to cloning bioweapons."
 
   civic_ac_parallel_development:0 "Parallel Development"
   civic_ac_parallel_development_desc:0 "This Megacorporation breeds bioships that are primed to split in two, doubling their fleet sizes."
   councilor_ac_parallel_development:0 "Chief Growth Officer"
   councilor_ac_parallel_development_female:0 "$councilor_ac_parallel_development$"
-  councilor_ac_parallel_development_desc:0 "..."
+  councilor_ac_parallel_development_desc:0 "The $TITLE$ oversees our fleets growth from after they've left the shipyards to when they arrive on the battlefield."
 
   civic_ac_duplicated_horde:0 "Duplicated Horde"
   civic_ac_duplicated_horde_desc:0 "This Hive Mind clones each of its bioships, doubling its military might."
@@ -534,15 +540,15 @@
   civic_tooltip_soul_seekers_effects:0 "(Will be done)"
   councilor_soul_seekers:0 "Final Preacher"
   councilor_soul_seekers_female:0 "$councilor_soul_seekers$"
-  councilor_soul_seekers_desc:0 "..."
+  councilor_soul_seekers_desc:0 "(Will be done)"
   situation_ac_soul_seeking:0 "Search for our Soul"  
-  situation_ac_soul_seeking_desc:0 "..."
+  situation_ac_soul_seeking_desc:0 "(Will be done)"
   situation_ac_soul_seeking_type:0 "$situation_ac_soul_seeking$" #???
-  situation_ac_soul_seeking_monthly_change_tooltip:0 "situation_ac_soul_seeking_monthly_change_tooltip..."
-  situation_ac_soul_seeking_stage_1:0 "...Stage 1"
-  situation_ac_soul_seeking_all_ahead:0 ""
-  situation_ac_soul_seeking_all_ahead_tooltip:0 "..."
-  situation_ac_soul_seeking_steady:0 ""
+  situation_ac_soul_seeking_monthly_change_tooltip:0 "(Will be done)"
+  situation_ac_soul_seeking_stage_1:0 "(Will be done)"
+  situation_ac_soul_seeking_all_ahead:0 "(Will be done)"
+  situation_ac_soul_seeking_all_ahead_tooltip:0 "(Will be done)
+  situation_ac_soul_seeking_steady:0 "(Will be done)"
   situation_ac_soul_seeking_paused:0 "Paused"
   situation_ac_soul_seeking_needed_psionic_theory_desc:0 "£trigger_no£ Has technology $tech_psionic_theory$"
 
@@ -613,13 +619,15 @@
   civic_ac_eldritch_possession_desc:0 "This society has called the [AC_GetPatron] into its ruler..." # risk of death in tooltip below
   civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$-... $mod_attunement_mult$: +20%" # green or yellow?
   civic_tooltip_ac_eldritch_possession_effects:0 "..."
-  councilor_ac_eldritch_possession:0 "High Cultist"
+  councilor_ac_eldritch_possession:0 "High Speaker"
   councilor_ac_eldritch_possession_female:0 "$councilor_ac_eldritch_possession$"
-  councilor_ac_eldritch_possession_desc:0 "..."
+  councilor_ac_eldritch_possession_desc:0 "The $TITLE$ is the first of the speakers, a group of enlightened prophets who interpret the wishes of our Patron from our ruler."
 
   civic_ac_eldritch_shareholders:0 "Eldritch Shareholders"
   civic_ac_eldritch_shareholders_desc:0 "This Megacorporation contracts with the entities of the Shroud, allowing ..."
-  #...
+  councilor_ac_eldritch_shareholders:0 "Chairman of the Board"
+  councilor_ac_eldritch_shareholders_female:0 "Chairwoman of the Board"
+  councilor_ac_eldritch_shareholders_desc:0 "The $TITLE$ heads our new Board of the Shroud, ensuring our Patron's influence is found throughout the company."
 
   ac_has_covenant_success:0 "$TRIGGER_PASS$Has made a Covenant"
   ac_has_covenant_fail:0 "$TRIGGER_FAIL$Has made a Covenant"
@@ -668,8 +676,8 @@
 
   # Future Addition
   civic_sovereign_circuitry:0 "Sovereign Implants"
-  civic_sovereign_circuitry_desc:0 "..."
-  civic_tooltip_sovereign_circuitry_effects:0 "- ..."
+  civic_sovereign_circuitry_desc:0 "(Will be done)"
+  civic_tooltip_sovereign_circuitry_effects:0 "(Will be done)"
   # councilor
 
   # Implants on Ruler
@@ -681,7 +689,7 @@
   ascension_civics.66.desc:0 ""
   ascension_civics.66.a:0 "Unfortunate"
   leader_trait_programmed_loyalty:0 "Programmed Loyalty"
-  leader_trait_programmed_loyalty_desc:0 "..."
+  leader_trait_programmed_loyalty_desc:0 "(Will be done)"
   leader_trait_programmed_loyalty_effect:0 "$t$§RThis leader will die if we are at war against our overlord.§!"
   leader_trait_programmed_loyalty_gestalt:0 "$leader_trait_programmed_loyalty$"
   leader_trait_programmed_loyalty_gestalt_desc:0 "$leader_trait_programmed_loyalty_desc$"
@@ -759,21 +767,20 @@
   holding_ac_undercity_arena_plural:0 "Offworld Colloseums"
   holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's armies duel to provide spectacles for our peoples."
 
-  # Hive Cybergladiator Civic ...
+  # Hive Cybergladiator Civic (Future Addition)
 
   civic_cybersports:0 "CyberSports"
-  civic_cybersports_desc:0 "..."
-  civic_tooltip_cybersports_incomplete_effects:0 "...(to do)"
-  civic_tooltip_cybersports_effects:0 "...(to do)"
+  civic_cybersports_desc:0 (Will be done)
+  civic_tooltip_cybersports_incomplete_effects:0 "(Will be done)"
+  civic_tooltip_cybersports_effects:0 "(Will be done)"
 
   building_ac_cybernetics_stadium:0 "Cybernetic Stadium"
   building_ac_cybernetics_stadium_plural:0 "Cybernetic Stadiums"
-  building_ac_cybernetics_stadium_desc:0 "..."
+  building_ac_cybernetics_stadium_desc:0 "(Will be done)"
   job_ac_cybergladiator_drone:0 "Gladiator Drone"
   job_ac_cybergladiator_drone_plural:0 "Gladiator Drones"
-  job_ac_cybergladiator_drone_desc:0 "..."
-  # ...
-  job_ac_cybergladiator_drone_effect_desc:0 "..."
+  job_ac_cybergladiator_drone_desc:0 "(Will be done)"
+  job_ac_cybergladiator_drone_effect_desc:0 "(Will be done)"
   mod_job_ac_cybergladiator_drone_add:0 "$job_ac_cybergladiator_drone$ Jobs" # icon needed
   planet_ac_cybergladiator_drone:0 "$job_ac_cybergladiator_drone_plural$"
 
@@ -781,9 +788,9 @@
   # Neon Stars
   # councilor
   col_ac_city_of_lights:0 "City of Lights"
-  col_ac_city_of_lights_desc:0 "..."
+  col_ac_city_of_lights_desc:0 "(Will be done)"
   col_ac_city_of_embers:0 "City of Embers"
-  col_ac_city_of_embers_desc:0 "..."
+  col_ac_city_of_embers_desc:0 "(Will be done)"
 
 ### Virtual ---------------------------------------------------------------------------------------------
   virtual_ascension_required:0 "If §YVirtual§! Ascension completed:\n"
@@ -972,23 +979,25 @@
   pop_category_ac_droid_drone:0 "Droid"
   pop_cat_ac_droid:0 "Droid"
   pop_cat_ac_droid_plural:0 "Droids"
-  pop_cat_ac_droid_desc:0 "...Almost entirely mindless, these CyberForms ... are connected directly to the core node of our hive mind."
+  pop_cat_ac_droid_desc:0 "Almost entirely mindless, these CyberForms are connected directly to the core node of our hive mind."
   ac_droid:0 "Droid"
   trait_ac_cyberform:0 "CyberForm"
-  trait_ac_cyberform_desc:0 "..."
+  trait_ac_cyberform_desc:0 "(Will be done)"
 
 ### ORIGINS ### - IN PROGRESS
   origin_ac_born_of_code: "Born of Code"
-  origin_ac_born_of_code_desc: "§RWARNING: Blocks all Ascension Paths except for ['concept_ac_virtual_ascension'].§!\n\n...\n\n...."
-  origin_tooltip_ac_born_of_code_effects: "-..."
-  origin_tooltip_ac_born_of_code_negative_effects: "- ..." 
-  START_SCREEN_AC_BORN_OF_CODE: "..."
+  origin_ac_born_of_code_desc: "§RWARNING: Blocks all Ascension Paths except for ['concept_ac_virtual_ascension'].§!\n\n(Will be done)\n\n(Will be done)"
+  origin_tooltip_ac_born_of_code_effects: "- (Will be done)"
+  origin_tooltip_ac_born_of_code_negative_effects: "- (Will be done)" 
+  START_SCREEN_AC_BORN_OF_CODE: "(Will be done)"
 
   concept_ac_modular_ascension: "Modular Ascension"
-  concept_ac_modular_ascension_desc: "..."
+  concept_ac_modular_ascension_desc: "(Will be done)"
 
   concept_ac_nanotech_ascension: "Nanotech Ascension"
-  concept_ac_nanotech_ascension_desc: "..."
+  concept_ac_nanotech_ascension_desc: "(Will be done)"
 
   concept_ac_virtual_ascension: "Virtual Ascension"
   concept_ac_virtual_ascension_desc: "$tradition_virtuality_desc$"
+
+  # synthetic_age_tooltip_machine_age (could be overriden)

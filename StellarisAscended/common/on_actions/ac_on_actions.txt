@@ -21,6 +21,16 @@ on_army_killed_in_combat = {
 	}
 }
 
+# Fired whenever a new owner is set for a planet, following a war or through trade
+# This = Colony scope
+# From = Country scope (new owner)
+# FromFrom = Country scope (previous owner, if any)
+on_colony_transfer = {
+	events = {
+		ascension_civics.89			# Regulates species perfection for Shared Perfection civics
+	}
+}
+
 # Fired when a science ship succesfully analyzed or scavenged debris
 # this = country
 # from = debris
@@ -71,6 +81,7 @@ on_favor_gained = {
 on_game_start = {
 	events = {
 		ascension_civics.1		# Declares this mod active for any future modders
+		ascension_civics.87			# Sets up species perfection for Shared Perfection civics
 	}
 }
 
@@ -90,6 +101,7 @@ on_heir_promoted_to_ruler = {
 # From = Species ( Post Modification )
 on_modification_complete = {
 	events = {
+		ascension_civics.90				# Regulates species perfection for Shared Perfection civics
 		ascension_governments.48		# Unity on modifying species for Democratic Expression
 	}
 }
@@ -97,6 +109,7 @@ on_modification_complete = {
 # this = country
 on_monthly_pulse_country = {
 	events = {
+		ascension_civics.91			# Regulates species perfection for Shared Perfection civics
 		ascension_civics.353		# Eater Vessel buffs Eater fleet
 	}
 }
@@ -132,6 +145,7 @@ on_post_government_changed = {
 		ascension_civics.84			# Add Half-Virtual trait to Cyberspacial Hives
 		ascension_civics.85			# Remove Half-Virtual trait for non-Cyberspacial Hives
 		ascension_civics.86			# Add Unique Mutation techs as research options for Mutated Fauna empires
+		ascension_civics.87			# Sets up species perfection for Shared Perfection civics
 		ascension_civics.301		#  Add ruler trait if Concurrent Command
 		ascension_civics.302		#  Removes ruler trait if not Concurrent Command
 		ascension_civics.304		#  Cloned population situation start
@@ -278,6 +292,15 @@ on_relic_received = {
 on_ruler_created = {
 	events = {
 		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire
+	}
+}
+
+# Scope = colony_event
+# This = Colony scope
+# From = uplifted species (pre-modification)
+on_uplift_completion = {
+	events = {
+		ascension_civics.88			# Regulates species perfection for Shared Perfection civics
 	}
 }
 

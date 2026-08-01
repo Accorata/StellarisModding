@@ -244,17 +244,30 @@ councilor_telepathic_corporation = {
 councilor_ac_eldritch_possession = {
 	leader_class = {
 		official
-		commander
 	}
 	is_leader_possible = {
-		OR = {
-			leader_class = official
-			leader_class = commander
-		}
+		leader_class = official
 	}
 	civic = civic_ac_eldritch_possession
 	modifier = {
-		# ...
+		country_edict_fund_mult = 0.05
+		psionic_aura_effectiveness_mult = 0.01
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_eldritch_shareholders = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_ac_eldritch_shareholders
+	modifier = {
+		pop_politician_bonus_workforce_mult = 0.05
 		psionic_aura_effectiveness_mult = 0.01
 	}
 	ai_hiring_weight = {
@@ -345,6 +358,46 @@ councilor_xanadu_retreats = {
 	}
 }
 
+councilor_ac_shared_perfection = {
+	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_ac_shared_perfection
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_capacountry_naval_cap_add = 1
+		mult = species.species_traits_purity_count
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_shared_perfection_corp = {
+	leader_class = {
+		official
+	}
+	is_leader_possible = {
+		leader_class = official
+	}
+	civic = civic_ac_shared_perfection_corp
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_edict_fund_add = 1
+		mult = species.species_traits_purity_count
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
 # Mutation
 councilor_hyper_diversification = {
 	leader_class = {
@@ -386,15 +439,32 @@ councilor_employee_diversification = {
 
 councilor_ac_monstrous_fauna = {
 	leader_class = {
+		commander
+	}
+	is_leader_possible = {
+		leader_class = commander
+	}
+	civic = civic_ac_monstrous_fauna
+	modifier = {
+		space_fauna_growth_rate_mult = 0.02
+		space_fauna_ship_damage_mult = 0.03
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_ac_bioengineered_fauna = {
+	leader_class = {
 		scientist
 	}
 	is_leader_possible = {
 		leader_class = scientist
 	}
-	civic = civic_ac_monstrous_fauna
+	civic = civic_ac_bioengineered_fauna
 	modifier = {
+		country_capture_chance_add = 0.03
 		category_biology_research_speed_mult = 0.03
-		category_military_theory_research_speed_mult = 0.03
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
@@ -405,17 +475,13 @@ councilor_ac_monstrous_fauna = {
 councilor_ac_mitotic_assembly = {
 	leader_class = {
 		commander
-		scientist
 	}
 	is_leader_possible = {
-		OR = {
-			leader_class = commander
-			leader_class = scientist
-		}
+		leader_class = commander
 	}
 	civic = civic_ac_mitotic_assembly
 	modifier = {
-		# ...
+		pop_soldier_bonus_workforce_mult = 0.01
 	}
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
