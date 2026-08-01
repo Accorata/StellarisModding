@@ -370,7 +370,7 @@ councilor_ac_shared_perfection = {
 		potential = {
 			always = yes
 		}
-		country_capacountry_naval_cap_add = 1
+		country_naval_cap_add = 1
 		mult = species.species_traits_purity_count
 	}
 	ai_hiring_weight = {
