@@ -39,3 +39,8 @@ defined_text = {
 	}
 	default = BLANK_STRING
 }
+
+defined_text = {
+ 	name = AC_GetEaterFleetBenefits
+ 	value = value:ac_eater_fleet_benefits
+}

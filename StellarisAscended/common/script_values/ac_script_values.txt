@@ -93,6 +93,12 @@ ac_country_double_envoy_chance = {
 	mult = 100
 }
 
+ac_eater_fleet_benefits = {
+	add = value:ac_get_weighted_attunement_points
+	mult = 2
+	round_to = 1
+}
+
 # Future Usage:
 # value:ac_districts_arcology_jobs|TYPE|<district>|FACTOR|2|
 ac_districts_arcology_jobs = {

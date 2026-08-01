@@ -529,7 +529,7 @@
   leader_trait_machine_crusader_3_desc:0 "$leader_trait_machine_crusader_desc$"
   leader_trait_machine_crusader_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n$tt$$r_unity$: §G+$@trait_crusader_fleet_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+5§!\n$tt$$r_unity$: §G+25§!"
   leader_trait_machine_crusader_2_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!$PER_5_NAVAL_CAP_TXT$\n\n$ARMY_EFFECTS_TXT$:\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
-  leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$mod_ship_weapon_damage$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
+  leader_trait_machine_crusader_3_effect:0 "$FLEET_EFFECTS_TXT$:\n$t$$MOD_SHIP_WEAPON_DAMAGE$: §G+10%§!\nt$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$EVERY_ENEMY_SHIP_DESTROYED_TXT$:\n$tt$$r_alloys$: §G+$@trait_shipbreaker_2_amt|0$§!\n$tt$$r_unity$: §G+$@trait_crusader_2_fleet_amt|0$§!\n\n$ARMY_EFFECTS_TXT$:\n$t$$MOD_SHIP_WEAPON_DAMAGE$: §G+10%§!\n$t$$mod_ship_fire_rate_mult$: §G+10%§!\n$t$$MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §G+50%§!\n$t$$EVERY_AC_BIOLOGIC_ARMY_KILLED_TXT$:\n$tt$$r_alloys$: §G+8§!\n$tt$$r_unity$: §G+40§!"
   holding_ac_robotics_plant:0 "Robotics Plant"
   holding_ac_robotics_plant_plural:0 "Robotics Plants"
   holding_ac_robotics_plant_desc:0 "Building robotics facilities within other nations allows them to witness the wonders of synthetics and further spread their usage."
@@ -605,8 +605,11 @@
 
   civic_ac_telepathic_hive:0 "Telepathic Consciousness"
   civic_ac_telepathic_hive_desc:0 "This Hive Mind sees telepathy as further proof of its gestalt unity. All other forms of communication have been discarded."
-  civic_tooltip_ac_telepathic_hive_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
-  civic_tooltip_ac_telepathic_hive_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_telepathic_gestalt_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_ac_telepathic_gestalt_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $mod_country_trade_fee$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+
+  civic_ac_telepathic_machine:0 "Telepathic Intelligence"
+  civic_ac_telepathic_machine_desc:0 "Positronic transmittors can only go so far. This Machine Intelligence has replaced all previous communication with telepathy."
 
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
@@ -644,7 +647,7 @@
   leader_trait_ac_shroud_vessel:0 "Patron's Presence"
   leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
   leader_trait_ac_shroud_vessel_scaling:0 "§YThis Trait scales with our Attunement to the [Owner.AC_GetPatron].§!"
-  leader_trait_ac_shroud_vessel_eater_effects:0 "\n$t$- The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- ..."
+  leader_trait_ac_shroud_vessel_eater_effects:0 "\n$t$- The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- $MOD_SHIP_WEAPON_DAMAGE$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_DAMAGE_AGAINST_STARBASES_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_ORBITAL_BOMBARDMENT_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!"
   mod_ac_double_envoy_chance_add:0 "Chance to Double Gained Favors"
   ac_eater_fleet_strength:0 "$leader_trait_ac_shroud_vessel$"
   mod_pc_relic_max_districts_add:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$ (Relic Worlds)"

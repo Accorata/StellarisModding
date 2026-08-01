@@ -150,13 +150,62 @@ civic_ac_telepathic_hive = {
 			has_tradition = tr_psionics_shroud_finish
 		}
 	}
-	description = civic_tooltip_ac_telepathic_hive_incomplete_effects
+	description = civic_tooltip_ac_telepathic_gestalt_incomplete_effects
 	hide_modifiers = yes
 	swap_type = {
 		trigger = {
 			has_tradition = tr_psionics_shroud_finish
 		}
-		description = civic_tooltip_ac_telepathic_hive_effects
+		description = civic_tooltip_ac_telepathic_gestalt_effects
+		modifier = {
+			empire_size_penalty_mult = -0.05
+			ships_logistics_mult = 0.10
+			country_trade_fee = 0.05
+			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
+		}
+	}
+}
+
+civic_ac_telepathic_machine = {
+	playable = {
+		has_shroud_dlc = yes
+	}
+	ai_playable = {
+		has_shroud_dlc = yes
+	}
+	potential = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+	possible = {
+		inline_script = {
+			script = civics/ac_psionic_ascension_limits_machine
+		}
+	}
+	modification = yes
+	icon = "gfx/interface/icons/governments/civics/civic_ac_telepathic_machine.dds"
+	pickable_at_start = yes
+	random_weight = {
+		base = 0
+	}
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			has_tradition = tr_psionics_shroud_finish
+		}
+	}
+	description = civic_tooltip_ac_telepathic_gestalt_incomplete_effects
+	hide_modifiers = yes
+	swap_type = {
+		trigger = {
+			has_tradition = tr_psionics_shroud_finish
+		}
+		description = civic_tooltip_ac_telepathic_gestalt_effects
 		modifier = {
 			empire_size_penalty_mult = -0.05
 			ships_logistics_mult = 0.10

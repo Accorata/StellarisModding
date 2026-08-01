@@ -174,5 +174,7 @@ ac_genetic_uniformity = {
 }
 
 ac_eater_fleet_strength = {
-	# to do...
+	ship_weapon_damage = 0.02
+	ship_damage_against_starbases_mult = 0.02
+	ship_orbital_bombardment_mult = 0.02
 }
