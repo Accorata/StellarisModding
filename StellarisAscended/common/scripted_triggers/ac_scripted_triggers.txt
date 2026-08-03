@@ -34,6 +34,7 @@ is_ac_telepathic_empire = {
 		has_valid_civic = civic_telepathic_empire
 		has_valid_civic = civic_telepathic_corporation
 		has_valid_civic = civic_ac_telepathic_hive
+		has_valid_civic = civic_ac_telepathic_machine
 	}
 	OR = {
 		has_tradition = tr_psionics_finish

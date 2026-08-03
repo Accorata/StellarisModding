@@ -94,7 +94,8 @@ ac_country_double_envoy_chance = {
 }
 
 ac_eater_fleet_benefits = {
-	add = value:ac_get_weighted_attunement_points
+	base = 0.5
+	add = value:ac_get_weighted_attunement_points|PATRON|the_eater_of_worlds|INTERVAL|0.5|
 	mult = 2
 	round_to = 1
 }

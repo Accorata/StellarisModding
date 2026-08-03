@@ -820,7 +820,26 @@ country_event = {
 	}
 }
 
-# On post government change and game start
+# On game start
+event = {
+	id = ascension_civics.92
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				could_be_ac_shared_perfection = yes
+			}
+			country_event = {
+				id = ascension_civics.87
+			}
+		}
+	}
+}
+
+
+# On post government change and above
 country_event = {
 	id = ascension_civics.87
 	is_triggered_only = yes
@@ -1039,7 +1058,7 @@ country_event = {
 	title = ascension_civics.304.name
 	desc =  ascension_civics.304.desc
 	picture = GFX_evt_genetic_ascention_cloning
-	show_sound = event_administrative_work_04
+	show_sound = event_administrative_work
 	is_triggered_only = yes
 
 	trigger = {
@@ -1195,6 +1214,19 @@ country_event = {
 		set_country_flag = ac_choosing_possessed
 		random_owned_leader = {
 			limit = {
+				is_ruler = no
+				has_trait = leader_trait_ac_shroud_vessel
+			}
+			save_event_target_as = ac_old_vessel
+			root = {
+				country_event = {
+					id = ascension_civics.345
+					days = 1
+				}
+			}
+		}
+		random_owned_leader = {
+			limit = {
 				is_ruler = yes
 			}
 			random_list = {
@@ -1276,6 +1308,12 @@ leader_event = {
 		change_leader_portrait = ac_vessel
 		owner = {
 			remove_country_flag = ac_choosing_possessed
+		}
+		if = {
+			limit = {
+				has_trait = leader_trait_ac_broken_vessel
+			}
+			remove_trait = leader_trait_ac_broken_vessel
 		}
 	}
 
@@ -1370,7 +1408,6 @@ leader_event = {
 	}
 }
 
-
 country_event = {
 	id = ascension_civics.344
 	hide_window = yes
@@ -1391,6 +1428,67 @@ country_event = {
 		remove_country_flag = ac_choosing_possessed
 		country_event = {
 			id = ascension_civics.340
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.345
+	title = ascension_civics.345.name
+	desc = {
+		trigger = {
+			is_ac_possessed = yes
+		}
+		text = ascension_civics.345.desc.changed_ruler
+	}
+	desc = {
+		trigger = {
+			is_ac_possessed = no
+		}
+		text = ascension_civics.345.desc.changed_civic
+	}
+	picture = GFX_evt_zro_4
+	show_sound = event_psionic
+	is_triggered_only = yes
+
+	option = {
+		name = ascension_civics.345.a
+		event_target:ac_old_vessel = {
+			if = {
+				limit = {
+					is_immortal = no
+				}
+				kill_leader = { show_notification = no }
+			}
+			else = {
+				remove_trait = leader_trait_ac_shroud_vessel
+				add_trait = leader_trait_ac_broken_vessel
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ascension_civics.346
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ac_possessed = no
+		any_owned_leader = {
+			has_trait = leader_trait_ac_shroud_vessel
+		}
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_trait = leader_trait_ac_shroud_vessel
+			}
+			save_event_target_as = ac_old_vessel
+		}
+		country_event = {
+			id = ascension_civics.345
 		}
 	}
 }

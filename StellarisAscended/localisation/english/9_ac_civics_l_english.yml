@@ -547,7 +547,7 @@
   situation_ac_soul_seeking_monthly_change_tooltip:0 "(Will be done)"
   situation_ac_soul_seeking_stage_1:0 "(Will be done)"
   situation_ac_soul_seeking_all_ahead:0 "(Will be done)"
-  situation_ac_soul_seeking_all_ahead_tooltip:0 "(Will be done)
+  situation_ac_soul_seeking_all_ahead_tooltip:0 "(Will be done)"
   situation_ac_soul_seeking_steady:0 "(Will be done)"
   situation_ac_soul_seeking_paused:0 "Paused"
   situation_ac_soul_seeking_needed_psionic_theory_desc:0 "£trigger_no£ Has technology $tech_psionic_theory$"
@@ -647,10 +647,16 @@
   leader_trait_ac_shroud_vessel:0 "Patron's Presence"
   leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
   leader_trait_ac_shroud_vessel_scaling:0 "§YThis Trait scales with our Attunement to the [Owner.AC_GetPatron].§!"
-  leader_trait_ac_shroud_vessel_eater_effects:0 "\n$t$- The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- $MOD_SHIP_WEAPON_DAMAGE$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_DAMAGE_AGAINST_STARBASES_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_ORBITAL_BOMBARDMENT_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!"
+  leader_trait_ac_shroud_vessel_eater_effects:0 "The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- $MOD_SHIP_WEAPON_DAMAGE$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_DAMAGE_AGAINST_STARBASES_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_ORBITAL_BOMBARDMENT_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!"
   mod_ac_double_envoy_chance_add:0 "Chance to Double Gained Favors"
   ac_eater_fleet_strength:0 "$leader_trait_ac_shroud_vessel$"
   mod_pc_relic_max_districts_add:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$ (Relic Worlds)"
+  ascension_civics.345.name:0 "Our Patron Retreats"
+  ascension_civics.345.desc.changed_ruler:0 "[ac_old_vessel.GetName]..."
+  ascension_civics.345.desc.changed_civic:0 "After [ac_old_vessel.GetName]..."
+  ascension_civics.345.a:0 "Unfortunate."
+  leader_trait_ac_broken_vessel:0 "Patron's Rejection"
+  leader_trait_ac_broken_vessel_desc:0 "After falling from [Root.GetHisHer] place as our Shroud infused ruler, [Owner.AC_GetPatron] has retreated from this leader. Any mortal would have been immediately killed."
 
 ## Renouncers (Only without Shadows of the Shroud)
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
@@ -773,7 +779,7 @@
   # Hive Cybergladiator Civic (Future Addition)
 
   civic_cybersports:0 "CyberSports"
-  civic_cybersports_desc:0 (Will be done)
+  civic_cybersports_desc:0 "(Will be done)"
   civic_tooltip_cybersports_incomplete_effects:0 "(Will be done)"
   civic_tooltip_cybersports_effects:0 "(Will be done)"
 
