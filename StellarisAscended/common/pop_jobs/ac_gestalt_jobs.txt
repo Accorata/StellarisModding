@@ -65,7 +65,7 @@ ac_content_terraformer_drone = {
 # 	possible_precalc = can_fill_drone_job
 # 	possible = { 
 # 		can_think = yes 
-# 		# cyborg...
+# 		# cyborg
 # 	}
 # 	resources = {
 # 		category = planet_ac_cybergladiator_drone

@@ -1,0 +1,12 @@
+soundeffect = {
+	name = ac_vessel_01_greetings
+	sounds = {
+		sound = molluscoid_greetings_02
+		sound = molluscoid_greetings_04
+		sound = molluscoid_greetings_07
+		sound = reptilian_greetings_05
+		sound = fungoid_greetings_01
+		sound = fungoid_greetings_02
+	}
+	volume = 0.75
+}

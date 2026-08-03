@@ -54,7 +54,7 @@ is_ac_cyber_overlord = {
 	OR = {
 		has_valid_civic = civic_sovereign_circuitry
 	}
-	# has_tradition = tr_cybernetics_finish ...
+	# has_tradition = tr_cybernetics_finish
 }
 
 is_ac_bio_upgrader = {
@@ -342,23 +342,5 @@ trait_ac_has_edict_unholy_possession = {
 				has_edict = ac_unholy_possession
 			}
 		}
-	}
-}
-
-# Building Scripted Triggers 
-has_ac_upgraded_capital = {
-	OR = {
-		has_upgraded_capital = yes
-		has_ac_major_upgraded_capital = yes
-	}
-}
-
-has_ac_major_upgraded_capital = {
-	OR = {
-		has_major_upgraded_capital = yes
-		has_fully_upgraded_capital = yes
-		# ACOT Compatibility:
-		has_enigmatic_capital = yes
-		has_ascended_capital = yes
 	}
 }

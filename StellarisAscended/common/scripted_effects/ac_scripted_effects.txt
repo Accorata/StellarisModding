@@ -13,7 +13,7 @@
 # 			}
 # 		}
 # 	}
-# } # Targeted modifiers only apply to planets...
+# } # Targeted modifiers only apply to planets
 
 ac_impose_synthetic_ideology_effect = {
 	impose_ideology_effect = yes

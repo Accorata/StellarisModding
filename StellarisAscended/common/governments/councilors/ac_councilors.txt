@@ -366,6 +366,7 @@ councilor_ac_shared_perfection = {
 		leader_class = commander
 	}
 	civic = civic_ac_shared_perfection
+	custom_tooltip = "councilor_ac_shared_perfection_custom_modifier_desc"
 	triggered_country_modifier = {
 		potential = {
 			always = yes
@@ -386,6 +387,7 @@ councilor_ac_shared_perfection_corp = {
 		leader_class = official
 	}
 	civic = civic_ac_shared_perfection_corp
+	custom_tooltip = "councilor_ac_shared_perfection_corp_custom_modifier_desc"
 	triggered_country_modifier = {
 		potential = {
 			always = yes

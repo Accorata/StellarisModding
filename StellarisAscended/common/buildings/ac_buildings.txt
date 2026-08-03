@@ -24,7 +24,9 @@ building_ac_psi_tower = {
 		}
 	}
 	allow = {
-		has_ac_major_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_major_upgraded_capital
+		}
 	}
 	destroy_trigger = {
 		exists = owner
@@ -108,7 +110,9 @@ building_ac_renouncer_sanctum = {
 		}
 	}
 	allow = {
-		has_ac_major_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_major_upgraded_capital
+		}
 	}
 	destroy_trigger = {
 		exists = owner
@@ -162,7 +166,9 @@ building_ac_grand_sapling = {
 		}
 	}
 	allow = {
-		has_ac_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_upgraded_capital
+		}
 		OR = {
 			is_planet_class = pc_hive
 			pd_is_planet_class_gaia = yes
@@ -249,7 +255,9 @@ building_ac_hanging_cities = {
 		}
 	}
 	allow = {
-		has_ac_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_upgraded_capital
+		}
 		OR = {
 			is_planet_class = pc_hive
 			pd_is_planet_class_gaia = yes
@@ -344,7 +352,9 @@ building_ac_xanadu = {
 	}
 	allow = {
 		pd_is_planet_class_gaia = yes
-		has_ac_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_upgraded_capital
+		}
 	}
 	destroy_trigger = {
 		exists = owner
@@ -465,7 +475,7 @@ building_ac_undercity_arena = {
 # 	}
 # 	planet_modifier = {
 # 		# job_ac_cybergladiator_drone_add = 2
-# 		# ...
+# 		# 
 # 	}
 # 	resources = {
 # 		category = planet_buildings
@@ -489,7 +499,9 @@ building_ac_mega_forge = {
 	}
 	category = manufacturing
 	allow = {
-		has_ac_major_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_major_upgraded_capital
+		}
 	}
 	potential = {
 		exists = owner
@@ -550,7 +562,9 @@ building_ac_order_hall = {
 	}
 	category = government
 	allow = {
-		has_ac_major_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_major_upgraded_capital
+		}
 	}
 	potential = {
 		exists = owner
@@ -609,7 +623,9 @@ building_ac_order_hall_knights = {
 	icon = building_ac_order_hall
 	category = government
 	allow = {
-		has_ac_major_upgraded_capital = yes
+		inline_script = {
+			script = buildings/ac_has_major_upgraded_capital
+		}
 	}
 	potential = {
 		exists = owner

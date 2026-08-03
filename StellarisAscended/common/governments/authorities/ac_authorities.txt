@@ -444,7 +444,7 @@ auth_imperial = {
 			has_country_flag = ac_psionic_divine
 		}
 		modifier = {
-			job_high_priest_per_pop = 0.04 #hmm...
+			job_high_priest_per_pop = 0.04
 			planet_crime_add = -10
 			pop_ethic_spiritualist_attraction_mult = 0.5
 		}
@@ -464,7 +464,7 @@ auth_imperial = {
 			has_country_flag = ac_psionic_eldritch
 		}
 		modifier = {
-			job_high_priest_per_pop = 0.04 #hmm...
+			job_high_priest_per_pop = 0.04
 			planet_crime_add = -10
 			custom_tooltip = auth_ac_psionic_imperial_eldritch_effects
 			show_only_custom_tooltip = no
@@ -590,7 +590,7 @@ auth_corporate = {
 		}
 		modifier = {
 			BIOLOGICAL_species_trait_points_add = 1
-			living_standard_trade_value_rulers_add = 3 #wait...
+			living_standard_trade_value_rulers_add = 3
 			election_term_years_mult = 1
 			leader_lifespan_add = 20
 			leader_commanders_energy_upkeep_add = 2

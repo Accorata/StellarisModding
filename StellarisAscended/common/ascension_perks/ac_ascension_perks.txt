@@ -10,24 +10,118 @@ ap_ac_ascended_society = {
 			num_ascension_perks > 1
 		}
 		OR = {
+			if = {
+				limit = {
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_cybernetics_finish
+			}
+			if = {
+				limit = {
+					has_civic = civic_machine_assimilator
+				}
+				has_tradition = tr_cybernetics_assimilator_finish
+			}
 			custom_tooltip = {
-				fail_text = "requires_ac_cybernetic_finish"
+				fail_text = "requires_ac_psionic_finish_fail"
 				OR = {
-					has_tradition = tr_cybernetics_finish
-					has_tradition = tr_cybernetics_assimilator_finish
+					has_tradition = tr_psionics_finish
+					has_tradition = tr_psionics_shroud_finish
 				}
 			}
-			has_tradition = tr_psionics_finish
-			has_tradition = tr_synthetics_finish
-			has_tradition = tr_modularity_finish
-			has_tradition = tr_nanotech_finish
-			has_tradition = tr_virtuality_finish
-			# Not Biogenesis
-			has_tradition = tr_genetics_finish
-			# Biogenesis (would love a trigger to detect this...) - could also split into two separate perks
-			has_tradition = tr_purity_finish
-			has_tradition = tr_cloning_finish
-			has_tradition = tr_mutation_finish
+			if = {
+				limit = {
+					has_machine_age_dlc = no
+					OR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_synthetics_finish
+			}
+			if = {
+				limit = {
+					has_machine_age_dlc = yes
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_synthetics_finish
+			}
+			if = {
+				limit = {
+					has_machine_age_dlc = yes
+					OR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_modularity_finish
+			}
+			if = {
+				limit = {
+					has_machine_age_dlc = yes
+					OR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_nanotech_finish
+			}
+			if = {
+				limit = {
+					has_machine_age_dlc = yes
+					OR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_virtuality_finish
+			}
+			if = {
+				limit = {
+					has_biogenesis_dlc = no
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_genetics_finish
+			}
+			if = {
+				limit = {
+					has_biogenesis_dlc = yes
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_purity_finish
+			}
+			if = {
+				limit = {
+					has_biogenesis_dlc = yes
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_cloning_finish
+			}
+			if = {
+				limit = {
+					has_biogenesis_dlc = yes
+					NOR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+				}
+				has_tradition = tr_mutation_finish
+			}
 		}
 	}
 	modifier = {

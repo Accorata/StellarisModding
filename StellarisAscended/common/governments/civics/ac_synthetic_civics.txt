@@ -176,7 +176,7 @@ civic_soul_seekers = {
 		# 	}
 		# }
 	}
-	modification = yes	# Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed...
+	modification = yes	# Change to cant be removed # !!! Triggers event when added to government or if in government and tradition completed
 	pickable_at_start = yes
 	icon = "gfx/interface/icons/governments/civics/civic_ac_soul_seekers.dds"
 	# alternate_civic_version = (Corporate version because unremovable)

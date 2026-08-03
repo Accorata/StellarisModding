@@ -25,7 +25,7 @@
 #	}
 #
 #	modifier = {
-#		# ...
+#		
 #	}
 #
 #	advanced_start = yes

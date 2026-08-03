@@ -64,7 +64,7 @@ country_event = {
 	}
 }
 
-# ... (For future testing)
+# (For future testing)
 # country_event = {
 # 	id = ascension_civics.20
 # 	hide_window = yes
