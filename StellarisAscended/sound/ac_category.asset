@@ -1,0 +1,6 @@
+category = {
+	name = "Effects"
+	soundeffects = {
+		ac_vessel_01_greetings
+	}
+}

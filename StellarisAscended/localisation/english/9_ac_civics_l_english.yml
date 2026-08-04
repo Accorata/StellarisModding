@@ -567,11 +567,11 @@
   civic_world_commissioners_desc:0 "This Megacorporation well understands the benefit of scale. For them, megastructures are the future which will yield unprecedented rates of return."
   councilor_world_commissioners:0 "Head Celestial Marketer"
   councilor_world_commissioners_female:0 "$councilor_world_commissioners$"
-  councilor_world_commissioners_desc:0 "The $TITLE$ serves as an ambassador to properous worlds, offering our corporate services in the construction of wonders."
+  councilor_world_commissioners_desc:0 "The $TITLE$ serves as an ambassador to prosperous worlds, offering our corporate services in the construction of wonders."
   councilor_world_commissioners_custom_modifier_desc:1 "- £trade_value£ Trade Value from $job_ac_grand_synthesizer_plural_with_icon$: §G+1§!"
 
   building_ac_mega_forge:0 "Mega-Forge"
-  building_ac_mega_forge_desc:0 "This collosal structure provides the metals needed to build dreams beyond scale."
+  building_ac_mega_forge_desc:0 "This colossal structure provides the metals needed to build dreams beyond scale."
   job_ac_grand_synthesizer:0 "Grand Synthesizer"
   job_ac_grand_synthesizer_plural:0 "Grand Synthesizers"
   job_ac_grand_synthesizer_plural_with_icon:0 "£job_ac_grand_synthesizer£ $job_ac_grand_synthesizer_plural$"
@@ -590,7 +590,7 @@
 
 ## Telepathic
   civic_telepathic_empire:0 "Telepathic Empire"
-  civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expressed of individuality."
+  civic_telepathic_empire_desc:0 "This society has discarded all verbal communications, instead favoring pure telepathic communion, believing it to be the only honest expression of individuality."
   civic_tooltip_telepathic_empire_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n- $MOD_COUNTRY_TRADE_FEE$: §R+5%§!"
   civic_tooltip_telepathic_empire_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_politician£ §Y$job_politician$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- Stability: §G+3§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n- $MOD_COUNTRY_TRADE_FEE$: §R+5%§!"
   councilor_telepathic_empire:0 "Prime Conduit"
@@ -598,7 +598,7 @@
   councilor_telepathic_empire_desc:0 "Through the $TITLE$ all telepathic communication flows, united in one mind for a moment, before dispersing once more."
 
   civic_telepathic_corporation:0 "Telepathic Enterprise"
-  civic_telepathic_corporation_desc:0 "This Megacorporation looks down on verbal speech. The aspiring elite quickly learn the langauge of the mind, and its many advantages."
+  civic_telepathic_corporation_desc:0 "This Megacorporation looks down on verbal speech. The aspiring elite quickly learn the language of the mind, and its many advantages."
   civic_tooltip_telepathic_corporation_incomplete_effects:0 "$psionic_ascension_required$- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n- $MOD_COUNTRY_TRADE_FEE$: §R+5%§!"
   civic_tooltip_telepathic_corporation_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_executive£ §Y$job_executive$§! jobs and £job_telepath£ §Y$job_telepath$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $mod_planet_executives_produces_mult$: §G+10%§!\n- $mod_pop_non_psionic_happiness$: §R-15%§!\n- $MOD_COUNTRY_TRADE_FEE$: §R+5%§!"
   councilor_telepathic_corporation:0 "Chief Telepathic Officer"
@@ -611,7 +611,7 @@
   civic_tooltip_ac_telepathic_gestalt_effects:0 "- Can build £building£ §Y$building_ac_psi_tower$§! buildings \n\n£building£ §Y$building_ac_psi_tower_plural$§! grant £job_coordinator£ §Y$job_coordinator$§! jobs and £job_telepath_drone£ §Y$job_telepath_drone$§! jobs scalling with pops.\n\n§EModifiers:§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-5%§!\n- $mod_ships_logistics_mult$: §R+10%§!\n- $MOD_COUNTRY_TRADE_FEE$: §R+5%§!\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   civic_ac_telepathic_machine:0 "Telepathic Intelligence"
-  civic_ac_telepathic_machine_desc:0 "Positronic transmittors can only go so far. This Machine Intelligence has replaced all previous communication with telepathy."
+  civic_ac_telepathic_machine_desc:0 "Positronic transmitters can only go so far. This Machine Intelligence has replaced all previous communication with telepathy."
 
   building_ac_psi_tower:0 "Psionic Tower"
   building_ac_psi_tower_plural:0 "Psionic Towers"
@@ -621,19 +621,22 @@
 
 ## Vessel (Only with Shadows of the Shroud)
   civic_ac_eldritch_possession:0 "Eldritch Possession"
-  civic_ac_eldritch_possession_desc:0 "This society has called the [This.AC_GetPatron] into its ruler, corrupting body and mind to further serve their patron."
-  civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$- £leader£ §YRuler§! gains the §Y$leader_trait_ac_shroud_vessel$§! trait, which provides different benefits based on our §YCovenant§! and scaling with our §YAttunement§!\n\n§RThis may prove fatal for our Ruler§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!..."
-  civic_tooltip_ac_eldritch_possession_effects:0 "..."
+  civic_ac_eldritch_possession_desc:0 "§RWARNING: This may prove Fatal for our Ruler§!\nThis society has called their Patron into its ruler, corrupting body and mind to further serve the Shroud."
+  civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$$ac_eldritch_possession_ruler_effects$\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_country_base_influence_produces_add$: §G+0.5§!\n- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!\n- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §R-15%§!"
+  civic_tooltip_ac_eldritch_possession_effects:0 "$ac_eldritch_possession_ruler_effects$\n\n§EModifiers:§!\n- $mod_country_base_influence_produces_add$: §G+0.5§!\n- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!\n- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §R-15%§!"
   councilor_ac_eldritch_possession:0 "High Speaker"
   councilor_ac_eldritch_possession_female:0 "$councilor_ac_eldritch_possession$"
   councilor_ac_eldritch_possession_desc:0 "The $TITLE$ is the first of the speakers, a group of enlightened prophets who interpret the wishes of our Patron from our ruler."
 
   civic_ac_eldritch_shareholders:0 "Eldritch Shareholders"
-  civic_ac_eldritch_shareholders_desc:0 "This Megacorporation contracts with the entities of the Shroud, allowing them to manifest in their CEO and influence the company directly."
+  civic_ac_eldritch_shareholders_desc:0 "§RWARNING: This may prove Fatal for our Ruler§!\nThis Megacorporation contracts with the entities of the Shroud, allowing them to manifest in their CEO and influence the company directly."
+  civic_tooltip_ac_eldritch_shareholders_incomplete_effects:0 "$psionic_ascension_required$$ac_eldritch_possession_ruler_effects$\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_planet_telepaths_trade_produces_add$: §G+1§!\n- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!\n- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §R-15%§!"
+  civic_tooltip_ac_eldritch_shareholders_effects:0 "$ac_eldritch_possession_ruler_effects$\n\n§EModifiers:§!\n- $mod_planet_telepaths_trade_produces_add$: §G+1§!\n- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!\n- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §R-15%§!"
   councilor_ac_eldritch_shareholders:0 "Chairman of the Board"
   councilor_ac_eldritch_shareholders_female:0 "Chairwoman of the Board"
   councilor_ac_eldritch_shareholders_desc:0 "The $TITLE$ heads our new Board of the Shroud, ensuring our Patron's influence is found throughout the company."
 
+  ac_eldritch_possession_ruler_effects:0 "- £leader£ §YRuler§! gains the §Y$leader_trait_ac_shroud_vessel$§! trait, which provides different benefits based on our §YCovenant§! and scaling with our §YAttunement§!"
   ac_has_covenant_success:0 "$TRIGGER_PASS$Has made a Covenant"
   ac_has_covenant_fail:0 "$TRIGGER_FAIL$Has made a Covenant"
   ascension_civics.342.name:0 "A Welcoming Vessel"
@@ -642,12 +645,12 @@
   ascension_civics.342.cradle:0 "[Root.GetName] is gone. The Cradle remains."
   ascension_civics.342.composer:0 "[Root.GetName] is gone. The Composer remains."
   ascension_civics.342.eater:0 "[Root.GetName] is gone. The Eater remains."
-  ascension_civics.342.whisperers:0 "[Root.GetName] is gone. The Whisperers remains."
+  ascension_civics.342.whisperers:0 "[Root.GetName] is gone. The Whisperers remain."
   ascension_civics.343.name:0 "Rejection"
   ascension_civics.343.desc:0 "We have called upon our patron to the physical plane, to merge with our [Root.GetTitle], §Y[Root.GetName]§!, and strengthen our connection to the Shroud.\n\nUnfortunately, when the §Y[Owner.AC_GetPatron]§! manifested into our leader, our patron rejected the host, destroying [Root.GetHisHer] mind before returning back through the veil. §Y[Root.GetTitle] [Root.GetName]§! is no more.\n\nOur patron will return §Ywithin the year§!. We shall increase our favor with them before then."
   ascension_civics.343.a:0 "Our next ruler will hopefully fair better."
   leader_trait_ac_shroud_vessel:0 "Patron's Presence"
-  leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physcial plane through this leader. Whoever they once were is no more."
+  leader_trait_ac_shroud_vessel_desc:0 "The entities of the Shroud have manifested into the physical plane through this leader. Whoever they once were is no more."
   leader_trait_ac_shroud_vessel_scaling:0 "§YThis Trait scales with our Attunement to the [Owner.AC_GetPatron].§!"
   leader_trait_ac_shroud_vessel_eater_effects:0 "The §Y$Name_Doom_Eater_Fleet$§! fleet gains:\n$tt$- $MOD_SHIP_WEAPON_DAMAGE$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_DAMAGE_AGAINST_STARBASES_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!\n$tt$- $MOD_SHIP_ORBITAL_BOMBARDMENT_MULT$: §G+[Owner.AC_GetEaterFleetBenefits]%§!"
   mod_ac_double_envoy_chance_add:0 "Chance to Double Gained Favors"
@@ -655,17 +658,18 @@
   mod_pc_relic_max_districts_add:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$ (Relic Worlds)"
   ascension_civics.345.name:0 "Our Patron Retreats"
   ascension_civics.345.desc.changed_ruler:0 "After §Y[ac_old_vessel.GetName]§! lost [ac_old_vessel.GetHisHer] position as our [Root.GetRulerTitle], the [Root.AC_GetPatron] no longer needs their body. It has returned back into the Shroud for now, but will soon return for our current [Root.GetRulerTitle], §Y[Root.GetRulerName]§!.\n\nThis may initially appear as a blessing for [ac_old_vessel.GetName], but the effects of eldritch possession are not lightly felt on the mind."
-  ascension_civics.345.desc.changed_civic:0 "Following the rejection of our previous methods of calling our patron into our [Root.GetRulerTitle], the §Y[Root.AC_GetPatron]§! has returned to back to the Shroud.\n\n\n\nWhile this may initially appear as a blessing for §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]§!, the effects of eldritch possession are not lightly felt on the mind."
-  ascension_civics.345.name.new_patron:0 "A New Master"
-  ascension_civics.345.desc.whisperers:0 "Following our confirmation of the Whisperers of the Void, §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]§! begins to quickly deteriorate. Our former patron has been banished, and the eldritch forces that sustained them have unravelled. Within moments they are no more.\n\nThe Whisperers will come §Yshortly§!. When they arrive, we will welcome them into [ac_old_vessel.GetName]'s replacement."
-  ascension_civics.345.desc.end:0 "Following our confirmation of the End of the Cycle, a voice fills §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]'s§! head:\n\n§RYou should not be here. The End must replace you.§!\n\n[ac_old_vessel.GetName] has only a moment to realize our new patron is speaking to our former before they fade from existence.\n\nAnyone who replaces them will not be able to bear the End of the Cycle within them. We must change our ways."
+  ascension_civics.345.desc.changed_civic:0 "Following the rejection of our previous methods of calling our patron into our [Root.GetRulerTitle], the §Y[Root.AC_GetPatron]§! has returned back to the Shroud.\n\nWhile this may initially appear as a blessing for §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]§!, the effects of eldritch possession are not lightly felt on the mind."
   ascension_civics.345.a:0 "Unfortunate."
+  ascension_civics.348.name:0 "A New Master"
+  ascension_civics.348.desc.whisperers:0 "Following our confirmation of the Whisperers of the Void, §Y[Root.GetRulerTitle] [Root.GetRulerName]§! begins to quickly deteriorate. Our former patron has been banished, and the eldritch forces that sustained them have unravelled. Within moments they are no more.\n\nThe Whisperers will come §Yshortly§!. When they arrive, we will welcome them into [Root.GetRulerName]'s replacement."
+  ascension_civics.348.desc.end:0 "Following our confirmation of the End of the Cycle, a voice fills §Y[Root.GetRulerTitle] [Root.GetRulerName]'s§! head:\n\n§RYou should not be here. The End must replace you.§!\n\n[Root.GetRulerName] has only a moment to realize our new patron is speaking to our former before they fade from existence.\n\nAnyone who replaces them will not be able to bear the End of the Cycle within them. We must change our ways."
+  ascension_civics.348.a:0 "Times change. Leaders must too."
   leader_trait_ac_broken_vessel:0 "Patron's Rejection"
   leader_trait_ac_broken_vessel_desc:0 "After falling from [Root.GetHisHer] place as our Shroud infused ruler, the [Owner.AC_GetPatron] has retreated from this leader. Any mortal would have been immediately killed."
 
 ## Renouncers (Only without Shadows of the Shroud)
   civic_shroud_renouncers:0 "Renouncers of the Shroud"
-  civic_shroud_renouncers_desc:0 "This society belives psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
+  civic_shroud_renouncers_desc:0 "This society believes psionic powers stems not from the Shroud but rather from the enlightened collective. For their own sake, they've vowed not to return to the horrible place."
   AC_CIVIC_NO_PATRON:0 "§RThis Civic cannot be manually added if a Shroud Covenant has been Confirmed.§!"
   civic_tooltip_shroud_renouncers_incomplete_effects:0 "$psionic_ascension_required$- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $mod_psionic_pop_bonus_workforce_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
   civic_tooltip_shroud_renouncers_effects:0 "- £job_telepath£ $job_telepath_plural$ produce double their normal £unity£ §Y$unity$§!\n- Can build unique £building£ §Y$building_ac_renouncer_sanctum$§! building\n\n§RRemoves all benefits from Shroud Covenants and massively increases Shroud Delve cost§!\n\n§EModifiers:§!\n- $mod_psionic_pop_bonus_workforce_mult$: §G+25%§!\n- $mod_damage_vs_country_type_shroud_spirits_mult$: §G+50%§!"
@@ -674,7 +678,7 @@
   councilor_shroud_renouncers_desc:0 "The $TITLE$ ensures the entities of the Shroud have no place in our minds and deploys telepaths to guard against insanity."
 
   civic_shroud_divestment:0 "Commercialized Sanity"
-  civic_shroud_divestment_desc:0 "This Megacorporation understand that the entities of the Shroud corrupt mortal minds. As such, it offer a service to free people from these evils - for a price."
+  civic_shroud_divestment_desc:0 "This Megacorporation understands that the entities of the Shroud corrupt mortal minds. As such, it offers a service to free people from these evils - for a price."
   councilor_shroud_divestment:0 "Sanity Monetization Officer"
   councilor_shroud_divestment_female:0 "$councilor_shroud_divestment$"
   councilor_shroud_divestment_desc:0 "Insanity is the ultimate threat to one's mind. And people pay a lot to protect their mind. The $TITLE$ exploits these needs for our profit."
@@ -709,7 +713,7 @@
   leader_trait_programmed_loyalty_gestalt_desc:0 "$leader_trait_programmed_loyalty_desc$"
   leader_trait_programmed_loyalty_gestalt_effect:0 "$t$§RThis leader will gain a terrible negative trait if we are at war against our overlord.§!"
   leader_trait_corrupted_logic:0 "Corrupted Processes"
-  leader_trait_corrupted_logic_desc:0 "Immense nuerological damage has been inflicted by our overlord as retribution for our retaliation."
+  leader_trait_corrupted_logic_desc:0 "Immense neurological damage has been inflicted by our overlord as retribution for our retaliation."
 
 ## Cyberlife
   civic_cyberlife:0 "CyberReality"
@@ -718,10 +722,10 @@
   civic_tooltip_cyberlife_effects:0 "- Unlocks §Y$living_standard_ac_cyberlife$§! Living Standard, which has §Y$r_energy$ Upkeep§! and increases pop §YHappiness§!, decreases §YAmenity Usage§! and §Y$r_consumer_goods$ Upkeep§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- Pop Housing Usage: §G-10%§!"
   councilor_cyberlife:0 "OmniPresent Influencer"
   councilor_cyberlife_female:0 "$councilor_cyberlife$"
-  councilor_cyberlife_desc:0 "The $TITLE$ has gained much popularity within our cyberspace. So much so that their avatar now accompanies most of our people in their virtuals lives."
+  councilor_cyberlife_desc:0 "The $TITLE$ has gained much popularity within our cyberspace. So much so that their avatar now accompanies most of our people in their virtual lives."
 
   civic_cybernet:0 "CyberNet"
-  civic_cybernet_desc:0 "This Megacorporation deploys a massive cybernet across its planets, allowing for virtaul jobs, luxury lifestyles, as well as instantaneous executive meetings."
+  civic_cybernet_desc:0 "This Megacorporation deploys a massive cybernet across its planets, allowing for virtual jobs, luxury lifestyles, as well as instantaneous executive meetings."
   councilor_cybernet:0 "Cyberasset Manager"
   councilor_cybernet_female:0 "$councilor_cybernet$"
   councilor_cybernet_desc:0 "The $TITLE$ oversees the transfer of corporate assets along the net, the selling of digital real estate, and numerous other profitable cyberspace ventures."
@@ -732,17 +736,17 @@
   civic_tooltip_cyberspacial_effects:0 "- Main Species gains the ['concept_trait_ac_hive_digital'] Trait\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_growth_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   civic_uploaded_mind:0 "Uploaded Mind"
-  civic_uploaded_mind_desc:0 "This Machine Intelliegence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
+  civic_uploaded_mind_desc:0 "This Machine Intelligence uploads those assimilated to a virtual space, where they can join with the Intelligence itself."
   civic_tooltip_uploaded_mind_incomplete_effects:0 "$cybernetic_ascension_required$- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YMaintenance Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n$cybernetic_ascension_required$- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_uploaded_mind_effects:0 "- Assimilating §YOrganic £pop£ Pops§! provides £physics_research£ §YPhysics Research§! instead of £engineering_research£ §YEngineering Research§!\n- Unlocks §Y$living_standard_ac_computational_matrix$§! Living Standard, which grants £physics£ £society£ £engineering£ §YResearch Points§! and £unity£ §YUnity§! from §YMaintenance Cyborg £pop£ Pops§!\n\n§EModifiers:§!\n- Operation Difficulty: §G-1§!\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   living_standard_ac_cyberlife:0 "CyberLife"
-  living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G+20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! by unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
+  living_standard_ac_cyberlife_tooltip:0 "Spending most of their lives in a virtual reality, these pops live in a world of our own design.\n\n§YPops§! have §G+20%§! £happiness£ §YHappiness§! and §G-30%§! £amenities£ §YAmenity Usage§! unless there is a £consumer_goods£ §YConsumer Goods§! deficit or an £energy£ §YEnergy Credits§! deficit."
   living_standard_ac_cyberlife_tooltip_delayed:0 "§LParadise is easily achievable in the abstract.§!"
   living_standard_ac_computational_matrix:0 "Computational Matrix"
   living_standard_ac_computational_matrix_tooltip:0 "These cyborg pops lie in a semi-conscious state and are fused with our Machine Intelligence, providing enlightening insights.\n\n§YUnemployed Cyborg Pops§! have §G+15%§! £happiness£ §YHappiness§! and produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch Points§!.\n\n§YEmployed Cyborg Pops§! have §R-15%§! £happiness£ §YHappiness§!."
   living_standard_ac_computational_matrix_tooltip_delayed:0 "§LThey too, will share in our minds divinity.§!"
-  AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must be have the §Y$trait_cybernetic$§! trait."
+  AC_SPECIES_NOT_CYBORG:0 "$TRIGGER_FAIL$Species must have the §Y$trait_cybernetic$§! trait."
   mod_pop_category_rulers_energy_upkeep_add:0 "£energy£ Upkeep for $RULERS$"
   mod_pop_category_specialists_energy_upkeep_add:0 "£energy£ Upkeep for $SPECIALISTS$"
   mod_pop_category_workers_energy_upkeep_add:0 "£energy£ Upkeep for $WORKERS$"
@@ -761,7 +765,7 @@
   civic_tooltip_cybergladiators_effects:0 "- Can build £building£ §Y$building_ac_undercity_arena$§! buildings \n\n£building£ §Y$building_ac_undercity_arena_plural$§! grant £job_cyberdome_duelist£ §Y$job_cyberdome_duelist$§! jobs and £job_cyberdome_spectator£ §Y$job_cyberdome_spectator$§! jobs while increasing army benefits but increasing planetary £mod_planet_crime_add£ §YCrime§!.\n\n§EModifiers:§!\n- $mod_planet_cyberdome_duelist_engineering_research_produces_add$: §G+3§!\n- $mod_planet_cyberdome_duelist_unity_produces_add$: §G+3§!"
   councilor_cybergladiators:0 "Gladiator Champion"
   councilor_cybergladiators_female:0 "$councilor_cybergladiators$"
-  councilor_cybergladiators_desc:0 "The $TITLE$ is the elitest of the Cybergladiators, inspiring immense nationalism through their physical prowess."
+  councilor_cybergladiators_desc:0 "The $TITLE$ is the elitist of the Cybergladiators, inspiring immense nationalism through their physical prowess."
 
   civic_underworld_bloodsports:0 "Underworld Bloodsports"
   civic_underworld_bloodsports_desc:0 "Corporate work has its stressors, and how better to relive the workday tension than betting fortunes on gladiatorial duels to the death?"
@@ -777,9 +781,9 @@
   building_ac_undercity_arena:0 "Undercity Arena"
   building_ac_undercity_arena_plural:0 "Undercity Arenas"
   building_ac_undercity_arena_desc:0 "In the backstreets of the underworld, cage matches between cybernetically enhanced athletes are commonplace. Some leave rich, and some leave dead."
-  holding_ac_undercity_arena:0 "Offworld Colloseum"
-  holding_ac_undercity_arena_plural:0 "Offworld Colloseums"
-  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitest of our subject's armies duel to provide spectacles for our peoples."
+  holding_ac_undercity_arena:0 "Offworld Colosseum"
+  holding_ac_undercity_arena_plural:0 "Offworld Colosseums"
+  holding_ac_undercity_arena_desc:0 "Within these stadiums, the elitist of our subject's armies duel to provide spectacles for our peoples."
 
   # Hive Cybergladiator Civic (Future Addition)
 
@@ -827,7 +831,7 @@
   councilor_bandwidth_incorporated_desc:0 "The $TITLE$ ensures all customers are kept up to date on the fastest speeds and newest bundled deals!"
 
   civic_bandwidth_optimization:0 "Bandwidth Optimization"
-  civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It's repurposed the hyper relay network to transmit data at greater quantity than ever before."
+  civic_bandwidth_optimization_desc:0 "The Machine Intelligence is greatly invested in ensuring the speeds of its virtual existence. It has repurposed the hyper relay network to transmit data at greater quantities than ever before."
   civic_tooltip_bandwidth_optimization_incomplete_effects:0 "$civic_tooltip_bandwidth_enhancers_incomplete_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
   civic_tooltip_bandwidth_optimization_effects:0 "$civic_tooltip_bandwidth_enhancers_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
@@ -854,7 +858,7 @@
   councilor_concurrent_command_tooltip:0 "- Effective Ruler Skill: §G+0.5§!\n- $MOD_EMPIRE_SIZE_PENALTY_MULT$: §G-1%§!"
 
   civic_executive_militarization:0 "Executive Militarization"
-  civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equiped with military protocols, ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
+  civic_executive_militarization_desc:0 "This Megacorporation's executive council has been equipped with military protocols, ranging from fleet logistics to enemy weaknesses, and they are ready to transfer their presence onto the battlefield whenever is needed."
   councilor_executive_militarization:0 "Intelligence Databank"
   councilor_executive_militarization_female:0 "$councilor_executive_militarization$"
   councilor_executive_militarization_desc:0 "The $TITLE$ stores our tactical knowledge within their virtual memory, providing an ultimate library for all operations with the enemy."
@@ -873,7 +877,7 @@
 
 ## Specialized
   civic_hyper_specialization:0 "Hyper Specialization"
-  civic_hyper_specialization_desc:0 "The incredibly verstalile properties of living metal have granted this society specialization beyond their wildest dreams, and with minimal re-modelling costs."
+  civic_hyper_specialization_desc:0 "The incredibly versatile properties of living metal have granted this society specialization beyond their wildest dreams, and with minimal re-modelling costs."
   civic_tooltip_hyper_specialization_incomplete_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
   civic_tooltip_hyper_specialization_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
   councilor_hyper_specialization:0 "Dynamistic Coordinator"
@@ -892,7 +896,7 @@
   civic_tooltip_hyper_specialized_effects:0 "$civic_tooltip_hyper_specialization_effects$\n- $mod_councilor_gestalt_regulatory_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
   trait_ac_auto_mod_robotic:0 "Living Frames"
-  trait_ac_auto_mod_robotic_desc:0 "Living metal interiors adapting to every circumstances, allowing adaptable and versatile specialization."
+  trait_ac_auto_mod_robotic_desc:0 "Living metal interiors adapting to every circumstance, allowing quick and versatile specialization."
   automodding_trait_ac_robotic_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_ac_auto_mod_robotic$§! picks modifiers from the ['concept_ac_automodding_robotic']"
   concept_ac_automodding_robotic: "Specialized Auto-Mod Trait List"
   concept_ac_automodding_robotic_desc: "- ['trait:trait_ac_robot_propaganda_machines']\n- ['trait:trait_ac_robot_trading_algorithms']\n- ['trait:trait_ac_robot_logic_engines']\n- ['trait:trait_ac_robot_power_drills']\n- ['trait:trait_ac_robot_harvesters']\n- ['trait:trait_ac_robot_superconductive']\n- ['trait:trait_ac_robot_emotion_emulators']"
@@ -910,7 +914,7 @@
   trait_ac_robot_emotion_emulators:0 "Life Emulators"
   trait_ac_robot_emotion_emulators_desc:0 "Living metal shaping unique and motivating identities."
   trait_ac_robot_propaganda_machines:0 "Reality Machines"
-  trait_ac_robot_propaganda_machines_desc:0 "Metallic mirages of pristine beauty forming whatever realities we deam most viable."
+  trait_ac_robot_propaganda_machines_desc:0 "Metallic mirages of pristine beauty forming whatever realities we deem most viable."
   trait_ac_robot_logic_engines:0 "Epistemological Engines"
   trait_ac_robot_logic_engines_desc:0 "Quantum possibility engines computing all possible logical outcomes."
 
@@ -919,13 +923,12 @@
   civic_metallic_repurposing_desc:0 "This society believes all metal serves a purpose, that none should go to waste. Their living metal technology is able to grow on metallic remains, greatly enhancing their recycling capabilities."
   civic_tooltip_metallic_repurposing_incomplete_effects:0 "$modular_ascension_required$- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
   civic_tooltip_metallic_repurposing_effects:0 "- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
-  # maybe change to show job? - instead of just "Metallurgist"
   councilor_metallic_repurposing:0 "Metallic Growth Specialist"
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
-  councilor_metallic_repurposing_desc:0 "Using metallic scraps as food for living metal is a difficult task. The $TITLE$ ensures this process is runnig smoothly throughout our forges."
+  councilor_metallic_repurposing_desc:0 "Using metallic scraps as food for living metal is a difficult task. The $TITLE$ ensures this process is running smoothly throughout our forges."
 
   civic_corporate_remodeling:0 "Corporate Remodeling"
-  civic_corporate_remodeling_desc:0 "This Megacorporation seeks towards a zero loss economy, in which margins are the totallity of the sold price and revenue is equivalent to profit."
+  civic_corporate_remodeling_desc:0 "This Megacorporation seeks towards a zero loss economy, in which margins are the totality of the sold price and revenue is equivalent to profit."
   councilor_corporate_remodeling:0 "Lead Efficiency Manager"
   councilor_corporate_remodeling_female:0 "$councilor_corporate_remodeling$"
   councilor_corporate_remodeling_desc:0 "The $TITLE$ coordinates all shipping routes within our corporation, minimalizing any costs that may accrue."
@@ -948,12 +951,12 @@
   councilor_numbered_among_stars_desc:0 "The $TITLE$ manages individual duplication, encouraging many to design a life of duplicating their nanite bodies for the nation."
 
   civic_stellar_monopoly:0 "Stellar Monopoly"
-  civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monpolozing the galaxy's riches."
+  civic_stellar_monopoly_desc:0 "This nanite Megacorporation has mastered managing themselves as a collective of minute pieces. Now, they seek to apply that expertise to monopolizing the galaxy's riches."
   civic_tooltip_stellar_monopoly_incomplete_effects:0 "$nanotech_ascension_required$- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- §GDoubles Output§! from §YMining Stations§! and §YResearch Stations§!\n- §GHalves Cost§! to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
   civic_tooltip_stellar_monopoly_effects:0 "- Increases §YDyson Swarm§! and §YArc Furnace§! Capacity by §G+1§!\n- §GDoubles Output§! from §YMining Stations§! and §YResearch Stations§!\n- §GHalves Cost§! to build §YMining Stations§! and §YResearch Stations§!\n\n§EModifiers:§!\n- $EMPIRE_SIZE$ from Systems: §G-50%§!\n- $mod_starbase_outpost_cost_mult$: §G-25%§!\n- $mod_starbases_upkeep_mult$: §G-15%§!"
   councilor_stellar_monopoly:0 "Chief Accumulation Officer"
   councilor_stellar_monopoly_female:0 "$councilor_stellar_monopoly$"
-  councilor_stellar_monopoly_desc:0 "The $TITLE$ oversees our wonderous systems and extracts nanites wherever possible."
+  councilor_stellar_monopoly_desc:0 "The $TITLE$ oversees our wondrous systems and extracts nanites wherever possible."
 
   civic_unending_swarm:0 "Unending Swarm"
   civic_unending_swarm_desc:0 "The swarm is eternal. All matter must be consumed."
@@ -967,18 +970,18 @@
   mod_shipsize_nanite_interdictor_hull_mult:0 ""
   mod_shipsize_nanite_interdictor_disengage_chance_mult:0 ""
 
-## Microsopic 
+## Microscopic 
   civic_microscopic_life:0 "Microscopic Life"
   civic_microscopic_life_desc:0 "This machine society has embraced the world of nanites, shrinking their bodies to microscopic sizes to increase the productivity of their planets."
   civic_tooltip_microscopic_life_incomplete_effects:0 "$nanotech_ascension_required$- Increases District Capacity by §G+50%§!\n- §GHalves Cost§! of §YColony Ships§!\n\n§EModifiers:§!\n$nanotech_ascension_required$- $MOD_POP_HOUSING_USAGE_MULT$: §G-50%§!\n- $mod_planet_pops_upkeep_mult$: §G-20%§!\n- $MOD_ARMY_HEALTH$: §R-50%§!"
   civic_tooltip_microscopic_life_effects:0 "- Increases District Capacity by §G+50%§!\n- §GHalves Cost§! of §YColony Ships§!\n\n§EModifiers:§!\n- $mod_pop_housing_usage_mult$: §G-50%§!\n- $MOD_POP_HOUSING_USAGE_MULT$: §G-50%§!\n- $mod_planet_pops_upkeep_mult$: §G-20%§!\n- $MOD_ARMY_HEALTH$: §R-50%§!"
   councilor_microscopic_life:0 "Microreplication Expert"
   councilor_microscopic_life_female:0 "$councilor_microscopic_life$"
-  councilor_microscopic_life_desc:0 "Miniturizing our facilities is no easy task, but has come with great benefits. The $TITlE$ designs new bodies for our miniture world."
+  councilor_microscopic_life_desc:0 "Miniaturizing our facilities is no easy task, but has come with great benefits. The $TITlE$ designs new bodies for our miniature world."
 
   civic_minicorp:0 "MiniCorp"
-  civic_minicorp_desc:0 "The corporation has created entire economies of scale in tiny spaces by miniturizing their entire society, from production lines to product demand."
-  councilor_minicorp:0 "Micro Innvestor"
+  civic_minicorp_desc:0 "The corporation has created entire economies of scale in tiny spaces by miniaturizing their entire society, from production lines to product demand."
+  councilor_minicorp:0 "Investor Investor"
   councilor_minicorp_female:0 "$councilor_minicorp$"
   councilor_minicorp_desc:0 "The $TITLE$ invests in blossoming new industries supporting mega factories that are smaller than houses."
 
@@ -1014,4 +1017,4 @@
   concept_ac_virtual_ascension: "Virtual Ascension"
   concept_ac_virtual_ascension_desc: "$tradition_virtuality_desc$"
 
-  # synthetic_age_tooltip_machine_age (could be overriden)
+  # synthetic_age_tooltip_machine_age (could be overridden)
