@@ -621,15 +621,15 @@
 
 ## Vessel (Only with Shadows of the Shroud)
   civic_ac_eldritch_possession:0 "Eldritch Possession"
-  civic_ac_eldritch_possession_desc:0 "This society has called the [AC_GetPatron] into its ruler..." # risk of death in tooltip below
-  civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$-... $mod_attunement_mult$: +20%" # green or yellow?
+  civic_ac_eldritch_possession_desc:0 "This society has called the [This.AC_GetPatron] into its ruler, corrupting body and mind to further serve their patron."
+  civic_tooltip_ac_eldritch_possession_incomplete_effects:0 "$psionic_ascension_required$- £leader£ §YRuler§! gains the §Y$leader_trait_ac_shroud_vessel$§! trait, which provides different benefits based on our §YCovenant§! and scaling with our §YAttunement§!\n\n§RThis may prove fatal for our Ruler§!\n\n§EModifiers:§!\n$psionic_ascension_required$- $MOD_ENVOY_ATTUNEMENT_MULT$: §G+20%§!..."
   civic_tooltip_ac_eldritch_possession_effects:0 "..."
   councilor_ac_eldritch_possession:0 "High Speaker"
   councilor_ac_eldritch_possession_female:0 "$councilor_ac_eldritch_possession$"
   councilor_ac_eldritch_possession_desc:0 "The $TITLE$ is the first of the speakers, a group of enlightened prophets who interpret the wishes of our Patron from our ruler."
 
   civic_ac_eldritch_shareholders:0 "Eldritch Shareholders"
-  civic_ac_eldritch_shareholders_desc:0 "This Megacorporation contracts with the entities of the Shroud, allowing ..."
+  civic_ac_eldritch_shareholders_desc:0 "This Megacorporation contracts with the entities of the Shroud, allowing them to manifest in their CEO and influence the company directly."
   councilor_ac_eldritch_shareholders:0 "Chairman of the Board"
   councilor_ac_eldritch_shareholders_female:0 "Chairwoman of the Board"
   councilor_ac_eldritch_shareholders_desc:0 "The $TITLE$ heads our new Board of the Shroud, ensuring our Patron's influence is found throughout the company."
@@ -654,11 +654,14 @@
   ac_eater_fleet_strength:0 "$leader_trait_ac_shroud_vessel$"
   mod_pc_relic_max_districts_add:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$ (Relic Worlds)"
   ascension_civics.345.name:0 "Our Patron Retreats"
-  ascension_civics.345.desc.changed_ruler:0 "[ac_old_vessel.GetName]..."
-  ascension_civics.345.desc.changed_civic:0 "After [ac_old_vessel.GetName]..."
+  ascension_civics.345.desc.changed_ruler:0 "After §Y[ac_old_vessel.GetName]§! lost [ac_old_vessel.GetHisHer] position as our [Root.GetRulerTitle], the [Root.AC_GetPatron] no longer needs their body. It has returned back into the Shroud for now, but will soon return for our current [Root.GetRulerTitle], §Y[Root.GetRulerName]§!.\n\nThis may initially appear as a blessing for [ac_old_vessel.GetName], but the effects of eldritch possession are not lightly felt on the mind."
+  ascension_civics.345.desc.changed_civic:0 "Following the rejection of our previous methods of calling our patron into our [Root.GetRulerTitle], the §Y[Root.AC_GetPatron]§! has returned to back to the Shroud.\n\n\n\nWhile this may initially appear as a blessing for §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]§!, the effects of eldritch possession are not lightly felt on the mind."
+  ascension_civics.345.name.new_patron:0 "A New Master"
+  ascension_civics.345.desc.whisperers:0 "Following our confirmation of the Whisperers of the Void, §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]§! begins to quickly deteriorate. Our former patron has been banished, and the eldritch forces that sustained them have unravelled. Within moments they are no more.\n\nThe Whisperers will come §Yshortly§!. When they arrive, we will welcome them into [ac_old_vessel.GetName]'s replacement."
+  ascension_civics.345.desc.end:0 "Following our confirmation of the End of the Cycle, a voice fills §Y[Root.GetRulerTitle] [ac_old_vessel.GetName]'s§! head:\n\n§RYou should not be here. The End must replace you.§!\n\n[ac_old_vessel.GetName] has only a moment to realize our new patron is speaking to our former before they fade from existence.\n\nAnyone who replaces them will not be able to bear the End of the Cycle within them. We must change our ways."
   ascension_civics.345.a:0 "Unfortunate."
   leader_trait_ac_broken_vessel:0 "Patron's Rejection"
-  leader_trait_ac_broken_vessel_desc:0 "After falling from [Root.GetHisHer] place as our Shroud infused ruler, [Owner.AC_GetPatron] has retreated from this leader. Any mortal would have been immediately killed."
+  leader_trait_ac_broken_vessel_desc:0 "After falling from [Root.GetHisHer] place as our Shroud infused ruler, the [Owner.AC_GetPatron] has retreated from this leader. Any mortal would have been immediately killed."
 
 ## Renouncers (Only without Shadows of the Shroud)
   civic_shroud_renouncers:0 "Renouncers of the Shroud"

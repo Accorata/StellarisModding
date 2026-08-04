@@ -122,6 +122,14 @@ on_new_heir = {
 	}
 }
 
+# Fired when a country completes a patron's first contact
+# This = Country
+on_patron_contact_completed = {
+	events = {
+		ascension_civics.347	#  Eldritch powers leave if new covenant with Whisperers or End of the Cycle
+	}
+}
+
 # A pop has finished assembling
 # This = Planet scope
 # From = Country
@@ -175,6 +183,7 @@ on_ruler_set = {
 	events = {
 		ascension_civics.63			# Add Programmed Loyalty trait
 		ascension_civics.301		#  Add ruler trait if Concurrent Command
+		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire
 		ascension_governments.42		# Adds Genetically Superior Trait
 		ascension_governments.1040		# Add Vessel traits if Imperial Vessel Auth
 	}
@@ -284,15 +293,6 @@ on_released_as_vassal = {
 on_relic_received = {
 	events = {
 		ascension_governments.101		# Initialize variables for the Assimilation Engine
-	}
-}
-
-# Executed when a ruler is created. Called after the leader is set as ruler of the country
-# This = Country
-# FROM = Leader
-on_ruler_created = {
-	events = {
-		ascension_civics.340		#  Eldritch possession of ruler if Possessed Empire
 	}
 }
 

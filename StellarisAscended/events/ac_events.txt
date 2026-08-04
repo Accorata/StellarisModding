@@ -1435,17 +1435,63 @@ country_event = {
 country_event = {
 	id = ascension_civics.345
 	title = ascension_civics.345.name
+	name = {
+		trigger = {
+			NOT = {
+				has_country_flag = ac_broken_covenant
+			}
+		}
+		text = ascension_civics.345.name
+	}
+	name = {
+		trigger = {
+			has_country_flag = ac_broken_covenant
+		}
+		text = ascension_civics.345.name.new_patron
+	}
 	desc = {
 		trigger = {
 			is_ac_possessed = yes
+			NOT = {
+				has_country_flag = ac_broken_covenant
+			}
 		}
 		text = ascension_civics.345.desc.changed_ruler
 	}
 	desc = {
 		trigger = {
 			is_ac_possessed = no
+			NOT = {
+				has_country_flag = ac_broken_covenant
+			}
 		}
 		text = ascension_civics.345.desc.changed_civic
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ac_broken_covenant
+			NOT = {
+				has_country_flag = ac_broken_covenant_revenge
+			}
+			has_patron_relation = {
+				patron = whisperers_in_the_void
+				contact = completed
+			}
+		}
+		text = ascension_civics.345.desc.whisperers
+	}
+	desc = {
+		trigger = {
+			has_country_flag = ac_broken_covenant
+			NOT = {
+				has_country_flag = ac_broken_covenant_revenge
+			}
+			has_patron_relation = {
+				patron = end_of_the_cycle
+				contact = completed
+			}
+		}
+		text = ascension_civics.345.desc.end
 	}
 	picture = GFX_evt_zro_4
 	show_sound = event_psionic
@@ -1456,13 +1502,29 @@ country_event = {
 		event_target:ac_old_vessel = {
 			if = {
 				limit = {
-					is_immortal = no
+					OR = {
+						is_immortal = no
+						root = {
+							has_country_flag = ac_broken_covenant
+						}
+					}
 				}
 				kill_leader = { show_notification = no }
 			}
 			else = {
 				remove_trait = leader_trait_ac_shroud_vessel
 				add_trait = leader_trait_ac_broken_vessel
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = ac_broken_covenant
+					NOT = {
+						has_country_flag = ac_broken_covenant_revenge
+					}
+				}
+				set_country_flag = ac_broken_covenant_revenge
 			}
 		}
 	}
@@ -1484,6 +1546,43 @@ country_event = {
 		random_owned_leader = {
 			limit = {
 				has_trait = leader_trait_ac_shroud_vessel
+			}
+			save_event_target_as = ac_old_vessel
+		}
+		country_event = {
+			id = ascension_civics.345
+		}
+	}
+}
+
+# on patron contact completed
+country_event = {
+	id = ascension_civics.347
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ac_possessed = yes
+		OR = {
+			has_patron_relation = {
+				patron = whisperers_in_the_void
+				contact = completed
+			}
+			has_patron_relation = {
+				patron = end_of_the_cycle
+				contact = completed
+			}
+		}
+		NOT = {
+			has_country_flag = ac_broken_covenant_revenge
+		}
+	}
+
+	immediate = {
+		set_country_flag = ac_broken_covenant
+		random_owned_leader = {
+			limit = {
+				is_ruler = yes
 			}
 			save_event_target_as = ac_old_vessel
 		}
