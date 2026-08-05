@@ -2,11 +2,11 @@
 
 Doesn’t it feel that society might change a bit if we were suddenly all immortal robots or had telepathic capabilities? This mod aims to capture the empire transformations that could occur after empire ascendancy. Each combination of Ascension Path and Empire Type has access to Two Civics unique to them, all which aim to be flavorful role playing wise and provide unique powerful benefits. However, each of these Civics only activates if its corresponding Ascension Path is completed. Additionally, Psionic and Genetic Ascensions are given their own authorities, each with an accompanying edict.
 
-This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited (and additionally psionic/genetic didn’t get any love). This mod aims to mend that gap, adding Psionic and Genetic authorities, edicts, events, and governments which can be unlocked after ascending and completing an event chain (modelled after Cybernetic and Synthetic authorities in the Machine Age). Hopefully this should also contribute to a more exciting midgame as new strategies come online.
+This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited (and additionally psionic/genetic didn’t get any love). This mod aims to mend that gap, adding Psionic and Genetic authorities, edicts, events, and governments which can be unlocked after ascending and completing an event chain (modeled after Cybernetic and Synthetic authorities in the Machine Age). Hopefully this should also contribute to a more exciting midgame as new strategies come online.
 
 * Currently the Hive/Machine Intelligence Cybergladiator Civics aren't complete, but they will be added shortly
 
-Check out the Names, Abilities, and Edicts of the [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377286/]Psionic[/url] and [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377298/]Genetic[/url] Authorities. 
+Check out the Names, Abilities, and Edicts of the [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377286/]Psionic[/url] and [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377298/]Genetic[/url] Authorities.
 
 I'd love to delve into all the content within, but that would take way too much space, so here are some highlights:
 - 40 New Civics

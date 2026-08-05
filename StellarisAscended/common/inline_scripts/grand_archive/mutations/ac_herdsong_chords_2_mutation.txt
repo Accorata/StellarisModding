@@ -1,7 +1,6 @@
 key = "AC_HERDSONG_CHORDS_2_$SIZE_CAP$"
 size = $SIZE$
-icon = "GFX_mutation_herdsong_chords"
-# change
+icon = "GFX_mutation_ac_herdsong_chords_2"
 icon_frame = 1
 prerequisites = {
 	"tech_ac_unique_mutation_tiyanki_2"

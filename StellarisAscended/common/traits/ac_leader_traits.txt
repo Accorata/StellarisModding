@@ -139,6 +139,7 @@ leader_trait_ac_concurrent_command = {
 			owner = {
 				is_ac_concurrent_command = yes
 			}
+			is_ruler = yes
 		}
 		ship_fire_rate_mult = 0.03
 		ship_disengage_opportunities_add = 0.2

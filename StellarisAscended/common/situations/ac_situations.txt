@@ -1,8 +1,10 @@
 situation_ac_cloned_population = {
-	picture = GFX_evt_machine_sapience # change
-	fail_icon_frame = GFX_situation_outcome_frame_blue
-	fail_icon = GFX_situation_outcome_unknown
-	situation_log_category = urgent_matters
+	picture = GFX_evt_genetic_modification
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_unknown
+	category = positive
+	initial_progress = 0
+	situation_log_category = empire_concerns
 	stages = {
 		situation_ac_cloned_population_stage_1 = {
 			icon = GFX_situation_stage_1
@@ -10,9 +12,32 @@ situation_ac_cloned_population = {
 			end = 1000
 		}
 	}
+	on_progress_complete = {
+		tooltip = {
+			owner = {
+				add_modifier = {
+					modifier = ac_genetic_uniformity
+					days = 900
+				}
+				add_monthly_resource_mult = {
+					resource = unity
+					value = @tier3unityreward
+					min = @tier3unitymin
+					max = @tier3unitymax
+				}
+			}
+		}
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = ascension_civics.305
+				}
+			}
+		}
+	}
 	approach = {
 		name = situation_ac_cloned_population_large_commitment
-		icon = GFX_situation_approach_balance_sheet
+		icon = GFX_situation_icon_cloning
 		icon_background = GFX_situation_approach_bg_green
 		modifier = {
 			country_society_research_produces_mult = -0.25
@@ -24,18 +49,19 @@ situation_ac_cloned_population = {
 	approach = {
 		name = situation_ac_cloned_population_medium_commitment
 		icon = GFX_situation_approach_balance_sheet
-		icon_background = GFX_situation_approach_bg_green
+		icon_background = GFX_situation_approach_bg_yellow
 		modifier = {
 			country_society_research_produces_mult = -0.15
 		}
 		ai_weight = {
 			base = 0
 		}
+		default = yes
 	}
 	approach = {
 		name = situation_ac_cloned_population_low_commitment
-		icon = GFX_situation_approach_balance_sheet
-		icon_background = GFX_situation_approach_bg_green
+		icon = GFX_situation_approach_society
+		icon_background = GFX_situation_approach_bg_red
 		modifier = {
 			country_society_research_produces_mult = -0.05
 		}
