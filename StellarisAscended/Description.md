@@ -1,21 +1,23 @@
 [h1] Stellaris Ascended [/h1]
 
-Doesn’t it feel that society might change a bit if we were suddenly all immortal robots or had telepathic capabilities? This mod aims to capture the empire transformations that could occur after empire ascendancy. Each combination of Ascension Path and Empire Type has access to Two Civics unique to them, all which aim to be flavorful role playing wise and provide unique powerful benefits. However, each of these Civics only activates if its corresponding Ascension Path is completed. Additionally, Psionic and Genetic Ascensions are given their own authorities, each with an accompanying edict.
+Doesn’t it feel that society might change a bit if we were suddenly all immortal robots or had telepathic capabilities? This mod aims to capture the empire transformations that could occur after empire ascendancy. Each combination of Ascension Path and Empire Type has access to Two Civics unique to them, all which aim to be flavorful role playing options and provide unique powerful benefits. However, each of these Civics only activates if its corresponding Ascension Path is completed.
 
-This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited (and additionally psionic/genetic didn’t get any love). This mod aims to mend that gap, adding Psionic and Genetic authorities, edicts, events, and governments which can be unlocked after ascending and completing an event chain (modeled after Cybernetic and Synthetic authorities in the Machine Age). Hopefully this should also contribute to a more exciting midgame as new strategies come online.
+This project was originally started before The Machine Age DLC was announced and thus before Paradox had expanded on the original ascension paths. While that DLC added wonderful features to ascensions, I still feel that their impacts are limited. This mod expands the implications of ascending, adding numerous civics that correspond to each ascension and provide new and unique benefits. 
 
-* Currently the Hive/Machine Intelligence Cybergladiator Civics aren't complete, but they will be added shortly
+Additionally, for those without Biogenesis and/or Shadows of the Shroud, this mod adds Genetic and Psionic authorities, complete with event chains, edicts and governments to match (all modeled after the Cybernetic and Synthetic authorities introduced by The Machine Age). Hopefully all these new options should contribute to a more exciting midgame as new strategies come online.
+
+This mod also recieved a large expansion when updated to version 4.3, including new Psionic, Purity, Cloning and Mutation ascension civics, ensuring each ascension path has multiple unique options to choose from.
 
 Check out the Names, Abilities, and Edicts of the [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377286/]Psionic[/url] and [url=https://steamcommunity.com/workshop/filedetails/discussion/3393552523/596262543227377298/]Genetic[/url] Authorities.
 
 I'd love to delve into all the content within, but that would take way too much space, so here are some highlights:
-- 40 New Civics
+- 54 New Civics
 - 27 New Authorities (Along with 27 Accompanying Edicts)
-- 40 New Events
+- 45 New Events
 - 28 New Governments
-- 20 New Species Traits and 15 New Leader Traits
-- 13 New Buildings / Holdings / Starbase Modules
-- 1 New Relic and 1 New Ascension Perk
+- 20 New Species Traits and 18 New Leader Traits
+- New Buildings / Holdings / Starbase Modules / Ship Components
+- New Relic and New Ascension Perk
 - And More...
 
 All code, text and art was made entirely by me. AI was not used in any way in creating this mod.
@@ -29,9 +31,11 @@ No DLC requirements.
 
 Minimal Base Game Overrides (Should be very compatible with other mods)
 
-Completely Compatible With Existing Saves ([i]Ignore my previous comments, this mod has since been updated[/i])
+Completely Compatible With Existing Saves
 
 NOT achievement compatible ([i]Only UI mods that don't change features can be[/i])
+
+A legacy version for 3.14 can be found [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3777772187]here[/url].
 
 [h2] Contact [/h2]
 
