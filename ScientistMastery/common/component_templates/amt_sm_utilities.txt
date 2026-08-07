@@ -39,11 +39,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_corvette_components = yes
+	}
 	upgrades_to = "SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -66,11 +71,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_destroyer_components = yes
+	}
 	upgrades_to = "DESTROYER_SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -93,11 +103,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser offspring_cruiser nanite_interdictor }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_cruiser_components = yes
+	}
 	upgrades_to = "CRUISER_SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -120,11 +135,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_battleship_thrusters = yes
+	}
 	upgrades_to = "BATTLESHIP_SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -147,11 +167,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { titan cosmo_crisis_titan }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_titan_thrusters = yes
+	}
 	upgrades_to = "TITAN_SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -174,11 +199,19 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { colossus juggernaut star_eater }
+	potential = {
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
+		}
+		ship_uses_colossus_thrusters = yes
+	}
 	upgrades_to = "COLOSSUS_SHIP_THRUSTER_5_GRAV"
 
 	ai_weight = {
-		weight = 4
+		weight = 4.5
 	}
 }
 
@@ -203,10 +236,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer}
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_corvette_components = yes
+	}
 
 	ai_weight = {
-		weight = 5
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -238,10 +276,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_destroyer_components = yes
+	}
 
 	ai_weight = {
-		weight = 5
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -273,10 +316,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser offspring_cruiser nanite_interdictor }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_cruiser_components = yes
+	}
 
 	ai_weight = {
-		weight = 5
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -308,10 +356,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_battleship_thrusters = yes
+	}
 
 	ai_weight = {
-		weight = 5
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -343,10 +396,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { titan cosmo_crisis_titan }
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		ship_uses_titan_thrusters = yes
+	}
 
 	ai_weight = {
-		weight = 5
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -378,11 +436,18 @@ utility_component_template = {
 
 	prerequisites = { "tech_sm_graviton_propulsion" }
 	component_set = "thruster_components"
-	size_restriction = { colossus juggernaut star_eater synth_queen_titan }
+	potential = {
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
+		}
+		ship_uses_colossus_thrusters = yes
+	}
 
 	ai_weight = {
-		weight = 5
-
+		weight = 5.5
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -401,18 +466,22 @@ utility_component_template = {
 	size = aux
 	icon = "GFX_ship_part_sm_reactor_booster_4"
 	icon_frame = 1
-	power = 150
 	resources = {
 		category = ship_components
 		cost = {
 			alloys = 20
+			sr_dark_matter = 1
 		}
 	}
 
 	prerequisites = { "tech_sm_reactor_boosters_4" }
 	component_set = "SM_REACTOR_BOOSTER_4"
 
+	modifier = {
+		ship_reactor_power_mult = 0.66
+	}
+
 	ai_weight = {
-		weight = 5
+		weight = 6
 	}
 }

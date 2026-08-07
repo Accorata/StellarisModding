@@ -1,4 +1,4 @@
-### NEEDS 4.0 UPDATES ###
+### NEEDS 4.0 UPDATES ### (should be only thing left)
 
 building_sm_conduction_nexus = {
 	base_buildtime = @b2_time

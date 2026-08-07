@@ -1,3 +1,4 @@
+### Biology ###
 tech_sm_replication_nexus = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -9,13 +10,9 @@ tech_sm_replication_nexus = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_biology
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = biology
 		}
 	}
 	
@@ -42,13 +39,9 @@ tech_sm_neuron_revitalizers = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_biology
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = biology
 		}
 		modifier = {
 			factor = 4
@@ -83,13 +76,9 @@ tech_sm_genetic_memory = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_biology
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = biology
 		}
 	}
 	
@@ -107,18 +96,14 @@ tech_sm_modular_taxonomy = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		planet_researchers_society_research_produces_mult = 0.05
+		planet_biologists_produces_mult = 0.05
 	}
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_biology
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = biology
 		}
 	}
 
@@ -127,6 +112,7 @@ tech_sm_modular_taxonomy = {
 	}
 }
 
+### Statecraft ###
 tech_sm_limited_shapeshifting = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -149,13 +135,9 @@ tech_sm_limited_shapeshifting = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_statecraft
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = statecraft
 		}
 	}
 	
@@ -186,13 +168,9 @@ tech_sm_biomimetic_disguises = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_statecraft
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = statecraft
 		}
 	}
 	
@@ -210,12 +188,16 @@ tech_sm_neural_identities = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		pop_cat_slave_happiness = 0.1
-		pop_cat_slave_political_power = -0.25
+		pop_slave_happiness = 0.1
+		pop_slave_political_power = -0.25
 	}
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = statecraft
+		}
 		modifier = {
 			factor = 0.0
 			OR = {
@@ -224,38 +206,30 @@ tech_sm_neural_identities = {
 			}
 		}
 		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_statecraft
-				}
-			}
-		}
-		modifier = {
 			factor = 1.5
-			count_owned_pop = {
+			count_owned_pop_amount = {
+				count >= 1000
 				limit = {
 					is_enslaved = yes
 				}
-				count > 9
 			}
 		}
 		modifier = {
 			factor = 2
-			count_owned_pop = {
+			count_owned_pop_amount = {
+				count >= 2000
 				limit = {
 					is_enslaved = yes
 				}
-				count > 19
 			}
 		}
 		modifier = {
 			factor = 2
-			count_owned_pop = {
+			count_owned_pop_amount = {
+				count >= 3000
 				limit = {
 					is_enslaved = yes
 				}
-				count > 29
 			}
 		}
 	}
@@ -265,6 +239,7 @@ tech_sm_neural_identities = {
 	}
 }
 
+### New Worlds ###
 tech_sm_dynamic_heat_shielding = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -281,13 +256,9 @@ tech_sm_dynamic_heat_shielding = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_new_worlds
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = new_worlds
 		}
 		modifier = {
 			factor = 0
@@ -332,13 +303,9 @@ tech_sm_predictive_hydrodynamics = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_new_worlds
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = new_worlds
 		}
 		modifier = {
 			factor = 0
@@ -383,13 +350,9 @@ tech_sm_subdermal_living = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_new_worlds
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = new_worlds
 		}
 		modifier = {
 			factor = 0
@@ -432,13 +395,9 @@ tech_sm_unified_spirit = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_new_worlds
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = new_worlds
 		}
 	}
 	
@@ -447,6 +406,7 @@ tech_sm_unified_spirit = {
 	}
 }
 
+### Military Theory ###
 tech_sm_esoteric_strategies = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -461,13 +421,9 @@ tech_sm_esoteric_strategies = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_military_theory
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = military_theory
 		}
 		modifier = {
 			factor = 2
@@ -499,13 +455,9 @@ tech_sm_strategos_refinement = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_military_theory
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = military_theory
 		}
 	}
 	
@@ -528,13 +480,9 @@ tech_sm_omnigravitational_warfare = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_military_theory
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = military_theory
 		}
 	}
 	
@@ -558,13 +506,9 @@ tech_sm_intrasolar_positioning = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_military_theory
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = military_theory
 		}
 	}
 	
@@ -573,6 +517,7 @@ tech_sm_intrasolar_positioning = {
 	}
 }
 
+### Psionics ###
 tech_sm_telepathic_shielding = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -588,13 +533,9 @@ tech_sm_telepathic_shielding = {
 	weight = @sm_leader_insight_weight_psionic
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_psionics
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = psionics
 		}
 	}
 	
@@ -618,13 +559,9 @@ tech_sm_mental_manipulation = {
 	weight = @sm_leader_insight_weight_psionic
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_psionics
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = psionics
 		}
 	}
 	
@@ -633,6 +570,7 @@ tech_sm_mental_manipulation = {
 	}
 }
 
+### Archaeostudies ###
 tech_sm_ancient_secrets = {
 	cost = @sm_leader_insight_cost
 	area = society
@@ -649,13 +587,9 @@ tech_sm_ancient_secrets = {
 	weight = @sm_leader_insight_weight_archeo
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_archaeostudies
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = archaeostudies
 		}
 	}
 	

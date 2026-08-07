@@ -1,3 +1,4 @@
+### Propulsion ###
 tech_sm_graviton_propulsion = {
 	cost = @sm_leader_insight_cost
 	area = engineering
@@ -57,13 +58,9 @@ tech_sm_dark_matter_gravatics = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_propulsion
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = propulsion
 		}
 	}
 	
@@ -72,6 +69,8 @@ tech_sm_dark_matter_gravatics = {
 	}
 }
 
+
+### Voidcraft ###
 tech_sm_dreams_beyond_scale = {
 	cost = @sm_leader_insight_cost
 	area = engineering
@@ -93,13 +92,9 @@ tech_sm_dreams_beyond_scale = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_voidcraft
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = voidcraft
 		}
 		modifier = {
 			factor = 0
@@ -122,13 +117,9 @@ tech_sm_interstellar_ecologies = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_voidcraft
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = voidcraft
 		}
 	}
 	
@@ -137,6 +128,7 @@ tech_sm_interstellar_ecologies = {
 	}
 }
 
+### Industry ###
 tech_sm_extraction_nexus = {
 	cost = @sm_leader_insight_cost
 	area = engineering
@@ -148,13 +140,9 @@ tech_sm_extraction_nexus = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_industry
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = industry
 		}
 	}
 	
@@ -180,13 +168,9 @@ tech_sm_graviton_reflectors = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_industry
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = industry
 		}
 		modifier = {
 			factor = 2
@@ -222,13 +206,9 @@ tech_sm_positronic_love = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_industry
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = industry
 		}
 		modifier = {
 			factor = 2
@@ -244,6 +224,7 @@ tech_sm_positronic_love = {
 	}
 }
 
+### Materials ###
 tech_sm_fractal_catalysts = {
 	cost = @sm_leader_insight_cost
 	area = engineering
@@ -253,18 +234,15 @@ tech_sm_fractal_catalysts = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		planet_translucers_produces_mult = 0.25
+		planet_metallurgists_rare_crystals_produces_mult = 0.25
+		planet_artisans_rare_crystals_produces_mult = 0.25
 	}
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_materials
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = materials
 		}
 	}
 

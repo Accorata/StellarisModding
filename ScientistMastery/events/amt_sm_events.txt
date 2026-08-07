@@ -19,96 +19,57 @@ country_event = {
 		from = {
 			switch = {
 				trigger = has_trait
-				leader_trait_sm_mastery_materials = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_materials_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = materials
 				}
-				leader_trait_sm_mastery_propulsion = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_propulsion_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = propulsion
 				}
-				leader_trait_sm_mastery_voidcraft = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_voidcraft_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = voidcraft
 				}
-				leader_trait_sm_mastery_industry = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_industry_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = industry
 				}
-				leader_trait_sm_mastery_field_manipulation = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_field_manipulation_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = field_manipulation
 				}
-				leader_trait_sm_mastery_particles = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_particles_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = particles
 				}
-				leader_trait_sm_mastery_computing = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_computing_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = computing
 				}
-				leader_trait_sm_mastery_psionics = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_psionics_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = psionics
 				}
-				leader_trait_sm_mastery_new_worlds = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_new_worlds_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = new_worlds
 				}
-				leader_trait_sm_mastery_statecraft = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_statecraft_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = statecraft
 				}
-				leader_trait_sm_mastery_biology = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_biology_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = biology
 				}
-				leader_trait_sm_mastery_military_theory = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_military_theory_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = military_theory
 				}
-				leader_trait_sm_mastery_archaeostudies = {
-					owner = {
-						add_modifier = {
-							modifier = "sm_archaeostudies_scientist_memory"
-						}
-					}
+				inline_script = {
+					script = events/amt_sm_add_memory
+					FIELD = archaeostudies
 				}
 			}
 		}

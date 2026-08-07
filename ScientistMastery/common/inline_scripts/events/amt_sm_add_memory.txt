@@ -1,0 +1,7 @@
+leader_trait_sm_mastery_$FIELD$ = {
+	owner = {
+		add_modifier = {
+			modifier = "sm_$FIELD$_scientist_memory"
+		}
+	}
+}

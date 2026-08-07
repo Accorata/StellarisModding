@@ -1,0 +1,8 @@
+modifier = {
+	factor = 0
+	NOT = {
+		has_trait_in_council = { 
+			TRAIT = leader_trait_sm_mastery_$FIELD$
+		}
+	}
+}

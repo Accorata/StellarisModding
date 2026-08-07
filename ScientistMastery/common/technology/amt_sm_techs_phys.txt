@@ -1,3 +1,4 @@
+### Computing ###
 tech_sm_proto_gravity_analysis = {
 	cost = @sm_leader_insight_cost
 	area = physics
@@ -11,13 +12,9 @@ tech_sm_proto_gravity_analysis = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_computing 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = computing
 		}
 	}
 
@@ -35,18 +32,14 @@ tech_sm_synthetic_data = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		planet_researchers_physics_research_produces_mult = 0.05
+		planet_physicists_produces_mult = 0.05
 	}
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_computing 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = computing
 		}
 	}
 
@@ -69,13 +62,9 @@ tech_sm_regenerative_firewalls = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_computing 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = computing
 		}
 		modifier = {
 			factor = 5
@@ -103,13 +92,9 @@ tech_sm_n_body_abstractions = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_computing 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = computing
 		}
 	}
 
@@ -118,6 +103,7 @@ tech_sm_n_body_abstractions = {
 	}
 }
 
+### Particles ###
 tech_sm_reactor_boosters_4 = {
 	cost = @sm_leader_insight_cost
 	area = physics
@@ -129,13 +115,9 @@ tech_sm_reactor_boosters_4 = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_particles 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = particles
 		}
 	}
 
@@ -153,18 +135,15 @@ tech_sm_microchemistry = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		planet_chemists_produces_mult = 0.25
+		planet_metallurgists_volatile_motes_produces_mult = 0.25
+		planet_artisans_volatile_motes_produces_mult = 0.25
 	}
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_particles 
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = particles
 		}
 	}
 
@@ -173,6 +152,7 @@ tech_sm_microchemistry = {
 	}
 }
 
+### Field Manipulation ###
 tech_sm_conduction_nexus = {
 	cost = @sm_leader_insight_cost
 	area = physics
@@ -184,13 +164,9 @@ tech_sm_conduction_nexus = {
 	weight = @sm_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_field_manipulation
-				}
-			}
+		inline_script = {
+			script = technologies/amt_sm_requires_trait
+			FIELD = field_manipulation
 		}
 	}
 	

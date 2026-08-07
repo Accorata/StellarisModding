@@ -1,3 +1,5 @@
+@expertise_tier_4_mult = 0.75
+
 leader_trait_sm_mastery_materials = {
 	replace_traits = {
 		"leader_trait_expertise_materials_3"
@@ -13,7 +15,7 @@ leader_trait_sm_mastery_materials = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_materials_research_speed_mult = 0.25
+		category_materials_research_speed_mult = @expertise_tier_4_mult
 		category_materials_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -42,7 +44,7 @@ leader_trait_sm_mastery_propulsion  = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_propulsion_research_speed_mult = 0.25
+		category_propulsion_research_speed_mult = @expertise_tier_4_mult
 		category_propulsion_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -71,7 +73,7 @@ leader_trait_sm_mastery_voidcraft  = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_voidcraft_research_speed_mult = 0.25
+		category_voidcraft_research_speed_mult = @expertise_tier_4_mult
 		category_voidcraft_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -100,7 +102,7 @@ leader_trait_sm_mastery_industry = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_industry_research_speed_mult = 0.25
+		category_industry_research_speed_mult = @expertise_tier_4_mult
 		category_industry_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -129,7 +131,7 @@ leader_trait_sm_mastery_field_manipulation = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_field_manipulation_research_speed_mult = 0.25
+		category_field_manipulation_research_speed_mult = @expertise_tier_4_mult
 		category_field_manipulation_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -158,7 +160,7 @@ leader_trait_sm_mastery_particles = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_particles_research_speed_mult = 0.25
+		category_particles_research_speed_mult = @expertise_tier_4_mult
 		category_particles_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -187,7 +189,7 @@ leader_trait_sm_mastery_computing = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_computing_research_speed_mult = 0.25
+		category_computing_research_speed_mult = @expertise_tier_4_mult
 		category_computing_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -216,8 +218,8 @@ leader_trait_sm_mastery_psionics = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_psionics_research_speed_mult = 0.5
-		category_psionics_draw_chance_mult = 2.5
+		category_psionics_research_speed_mult = @expertise_tier_4_mult
+		category_psionics_draw_chance_mult = 3.00
 	}
 	inline_script = {
 		script = traits/technocracy_expertise_effects
@@ -245,7 +247,7 @@ leader_trait_sm_mastery_new_worlds = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_new_worlds_research_speed_mult = 0.25
+		category_new_worlds_research_speed_mult = @expertise_tier_4_mult
 		category_new_worlds_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -274,7 +276,7 @@ leader_trait_sm_mastery_statecraft = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_statecraft_research_speed_mult = 0.25
+		category_statecraft_research_speed_mult = @expertise_tier_4_mult
 		category_statecraft_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -303,7 +305,7 @@ leader_trait_sm_mastery_biology = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_biology_research_speed_mult = 0.25
+		category_biology_research_speed_mult = @expertise_tier_4_mult
 		category_biology_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -332,7 +334,7 @@ leader_trait_sm_mastery_military_theory = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_military_theory_research_speed_mult = 0.25
+		category_military_theory_research_speed_mult = @expertise_tier_4_mult
 		category_military_theory_draw_chance_mult = 1
 	}
 	inline_script = {
@@ -361,7 +363,7 @@ leader_trait_sm_mastery_archaeostudies = {
 	}
 	custom_tooltip_with_modifiers = sm_mastery_trait_effect
 	councilor_modifier = {
-		category_archaeostudies_research_speed_mult = 0.25
+		category_archaeostudies_research_speed_mult = @expertise_tier_4_mult
 		category_archaeostudies_draw_chance_mult = 0.50
 		starbase_shipyard_build_minor_artifacts_cost_mult = -0.15
 	}

@@ -28,9 +28,7 @@ sm_interstellar_ecology = {
 		}
 	}
 
-	# Purely testing:
 	station_modifier = {
-		# country_starbase_upkeep_mult = -0.25
 		starbases_upkeep_mult = -0.25
 		starbase_constructions_produces_mult = 0.25
 	}
