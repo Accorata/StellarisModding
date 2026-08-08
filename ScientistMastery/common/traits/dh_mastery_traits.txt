@@ -1,6 +1,6 @@
 @expertise_tier_4_mult = 0.75
 
-leader_trait_sm_mastery_materials = {
+leader_trait_dh_mastery_materials = {
 	replace_traits = {
 		"leader_trait_expertise_materials_3"
 	}
@@ -13,7 +13,7 @@ leader_trait_sm_mastery_materials = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_materials_research_speed_mult = @expertise_tier_4_mult
 		category_materials_draw_chance_mult = 1
@@ -29,7 +29,7 @@ leader_trait_sm_mastery_materials = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_propulsion  = {
+leader_trait_dh_mastery_propulsion  = {
 	replace_traits = {
 		"leader_trait_expertise_propulsion_3"
 	}
@@ -42,7 +42,7 @@ leader_trait_sm_mastery_propulsion  = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_propulsion_research_speed_mult = @expertise_tier_4_mult
 		category_propulsion_draw_chance_mult = 1
@@ -58,7 +58,7 @@ leader_trait_sm_mastery_propulsion  = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_voidcraft  = {
+leader_trait_dh_mastery_voidcraft  = {
 	replace_traits = {
 		"leader_trait_expertise_voidcraft_3"
 	}
@@ -71,7 +71,7 @@ leader_trait_sm_mastery_voidcraft  = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_voidcraft_research_speed_mult = @expertise_tier_4_mult
 		category_voidcraft_draw_chance_mult = 1
@@ -87,7 +87,7 @@ leader_trait_sm_mastery_voidcraft  = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_industry = {
+leader_trait_dh_mastery_industry = {
 	replace_traits = {
 		"leader_trait_expertise_industry_3"
 	}
@@ -100,7 +100,7 @@ leader_trait_sm_mastery_industry = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_industry_research_speed_mult = @expertise_tier_4_mult
 		category_industry_draw_chance_mult = 1
@@ -116,7 +116,7 @@ leader_trait_sm_mastery_industry = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_field_manipulation = {
+leader_trait_dh_mastery_field_manipulation = {
 	replace_traits = {
 		"leader_trait_expertise_field_manipulation_3"
 	}
@@ -129,7 +129,7 @@ leader_trait_sm_mastery_field_manipulation = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_field_manipulation_research_speed_mult = @expertise_tier_4_mult
 		category_field_manipulation_draw_chance_mult = 1
@@ -145,7 +145,7 @@ leader_trait_sm_mastery_field_manipulation = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_particles = {
+leader_trait_dh_mastery_particles = {
 	replace_traits = {
 		"leader_trait_expertise_particles_3"
 	}
@@ -158,7 +158,7 @@ leader_trait_sm_mastery_particles = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_particles_research_speed_mult = @expertise_tier_4_mult
 		category_particles_draw_chance_mult = 1
@@ -174,7 +174,7 @@ leader_trait_sm_mastery_particles = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_computing = {
+leader_trait_dh_mastery_computing = {
 	replace_traits = {
 		"leader_trait_expertise_computing_3"
 	}
@@ -187,7 +187,7 @@ leader_trait_sm_mastery_computing = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_computing_research_speed_mult = @expertise_tier_4_mult
 		category_computing_draw_chance_mult = 1
@@ -203,7 +203,7 @@ leader_trait_sm_mastery_computing = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_psionics = {
+leader_trait_dh_mastery_psionics = {
 	replace_traits = {
 		"leader_trait_expertise_psionics_3"
 	}
@@ -216,7 +216,7 @@ leader_trait_sm_mastery_psionics = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_psionics_research_speed_mult = @expertise_tier_4_mult
 		category_psionics_draw_chance_mult = 3.00
@@ -232,7 +232,7 @@ leader_trait_sm_mastery_psionics = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_new_worlds = {
+leader_trait_dh_mastery_new_worlds = {
 	replace_traits = {
 		"leader_trait_expertise_new_worlds_3"
 	}
@@ -245,7 +245,7 @@ leader_trait_sm_mastery_new_worlds = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_new_worlds_research_speed_mult = @expertise_tier_4_mult
 		category_new_worlds_draw_chance_mult = 1
@@ -261,7 +261,7 @@ leader_trait_sm_mastery_new_worlds = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_statecraft = {
+leader_trait_dh_mastery_statecraft = {
 	replace_traits = {
 		"leader_trait_expertise_statecraft_3"
 	}
@@ -274,7 +274,7 @@ leader_trait_sm_mastery_statecraft = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_statecraft_research_speed_mult = @expertise_tier_4_mult
 		category_statecraft_draw_chance_mult = 1
@@ -290,7 +290,7 @@ leader_trait_sm_mastery_statecraft = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_biology = {
+leader_trait_dh_mastery_biology = {
 	replace_traits = {
 		"leader_trait_expertise_biology_3"
 	}
@@ -303,7 +303,7 @@ leader_trait_sm_mastery_biology = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_biology_research_speed_mult = @expertise_tier_4_mult
 		category_biology_draw_chance_mult = 1
@@ -319,7 +319,7 @@ leader_trait_sm_mastery_biology = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_military_theory = {
+leader_trait_dh_mastery_military_theory = {
 	replace_traits = {
 		"leader_trait_expertise_military_theory_3"
 	}
@@ -332,7 +332,7 @@ leader_trait_sm_mastery_military_theory = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_military_theory_research_speed_mult = @expertise_tier_4_mult
 		category_military_theory_draw_chance_mult = 1
@@ -348,7 +348,7 @@ leader_trait_sm_mastery_military_theory = {
 	ai_weight = 1000
 }
 
-leader_trait_sm_mastery_archaeostudies = {
+leader_trait_dh_mastery_archaeostudies = {
 	replace_traits = {
 		"leader_trait_expertise_archaeostudies_3"
 	}
@@ -361,7 +361,7 @@ leader_trait_sm_mastery_archaeostudies = {
 		COUNCIL = yes
 		TIER = none
 	}
-	custom_tooltip_with_modifiers = sm_mastery_trait_effect
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
 	councilor_modifier = {
 		category_archaeostudies_research_speed_mult = @expertise_tier_4_mult
 		category_archaeostudies_draw_chance_mult = 0.50

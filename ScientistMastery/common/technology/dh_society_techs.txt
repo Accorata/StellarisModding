@@ -1,17 +1,17 @@
 ### Biology ###
-tech_sm_replication_nexus = {
-	cost = @sm_leader_insight_cost
+tech_dh_replication_nexus = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
 	prerequisites = { "tech_gene_crops" "tech_food_processing_2" }
 	is_custom_tech_2 = yes
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = biology
 		}
 	}
@@ -21,8 +21,8 @@ tech_sm_replication_nexus = {
 	}
 }
 
-tech_sm_neuron_revitalizers = {
-	cost = @sm_leader_insight_cost
+tech_dh_neuron_revitalizers = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
@@ -32,7 +32,7 @@ tech_sm_neuron_revitalizers = {
 	modifier = {
 		leader_lifespan_add = 5
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	potential = {
 		is_natural_design_empire = no
@@ -40,7 +40,7 @@ tech_sm_neuron_revitalizers = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = biology
 		}
 		modifier = {
@@ -54,8 +54,8 @@ tech_sm_neuron_revitalizers = {
 	}
 }
 
-tech_sm_genetic_memory = {
-	cost = @sm_leader_insight_cost
+tech_dh_genetic_memory = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 4
@@ -66,7 +66,7 @@ tech_sm_genetic_memory = {
 		country_scientist_cap_add = 1
 		leaders_upkeep_mult = -0.025
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	potential = {
 		NOR = {
@@ -77,7 +77,7 @@ tech_sm_genetic_memory = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = biology
 		}
 	}
@@ -87,8 +87,8 @@ tech_sm_genetic_memory = {
 	}
 }
 
-tech_sm_modular_taxonomy = {
-	cost = @sm_leader_insight_cost
+tech_dh_modular_taxonomy = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
@@ -98,11 +98,11 @@ tech_sm_modular_taxonomy = {
 	modifier = {
 		planet_biologists_produces_mult = 0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = biology
 		}
 	}
@@ -113,8 +113,8 @@ tech_sm_modular_taxonomy = {
 }
 
 ### Statecraft ###
-tech_sm_limited_shapeshifting = {
-	cost = @sm_leader_insight_cost
+tech_dh_limited_shapeshifting = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { statecraft }
 	tier = 4
@@ -125,7 +125,7 @@ tech_sm_limited_shapeshifting = {
 		spy_network_daily_value_mult = 0.10
 		army_morale_damage_mult = 0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	potential = {
 		NOR = {
@@ -136,7 +136,7 @@ tech_sm_limited_shapeshifting = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = statecraft
 		}
 	}
@@ -146,8 +146,8 @@ tech_sm_limited_shapeshifting = {
 	}
 }
 
-tech_sm_biomimetic_disguises = {
-	cost = @sm_leader_insight_cost
+tech_dh_biomimetic_disguises = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { statecraft }
 	tier = 4
@@ -158,7 +158,7 @@ tech_sm_biomimetic_disguises = {
 		spy_network_daily_value_mult = 0.10
 		army_morale_damage_mult = 0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	potential = {
 		OR = {
@@ -169,7 +169,7 @@ tech_sm_biomimetic_disguises = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = statecraft
 		}
 	}
@@ -179,8 +179,8 @@ tech_sm_biomimetic_disguises = {
 	}
 }
 
-tech_sm_neural_identities = {
-	cost = @sm_leader_insight_cost
+tech_dh_neural_identities = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { statecraft }
 	tier = 3
@@ -191,11 +191,11 @@ tech_sm_neural_identities = {
 		pop_slave_happiness = 0.1
 		pop_slave_political_power = -0.25
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = statecraft
 		}
 		modifier = {
@@ -240,8 +240,8 @@ tech_sm_neural_identities = {
 }
 
 ### New Worlds ###
-tech_sm_dynamic_heat_shielding = {
-	cost = @sm_leader_insight_cost
+tech_dh_dynamic_heat_shielding = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
@@ -253,11 +253,11 @@ tech_sm_dynamic_heat_shielding = {
 		pc_arid_habitability = 0.1
 		pc_savannah_habitability = 0.1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -287,8 +287,8 @@ tech_sm_dynamic_heat_shielding = {
 	}
 }
 
-tech_sm_predictive_hydrodynamics = {
-	cost = @sm_leader_insight_cost
+tech_dh_predictive_hydrodynamics = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
@@ -300,11 +300,11 @@ tech_sm_predictive_hydrodynamics = {
 		pc_continental_habitability = 0.1
 		pc_ocean_habitability = 0.1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -334,8 +334,8 @@ tech_sm_predictive_hydrodynamics = {
 	}
 }
 
-tech_sm_subdermal_living = {
-	cost = @sm_leader_insight_cost
+tech_dh_subdermal_living = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
@@ -347,11 +347,11 @@ tech_sm_subdermal_living = {
 		pc_arctic_habitability = 0.1
 		pc_alpine_habitability = 0.1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -381,8 +381,8 @@ tech_sm_subdermal_living = {
 	}
 }
 
-tech_sm_unified_spirit = {
-	cost = @sm_leader_insight_cost
+tech_dh_unified_spirit = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 4
@@ -392,11 +392,11 @@ tech_sm_unified_spirit = {
 	modifier = {
 		planetary_ascension_cost_mult = -0.05	
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = new_worlds
 		}
 	}
@@ -407,8 +407,8 @@ tech_sm_unified_spirit = {
 }
 
 ### Military Theory ###
-tech_sm_esoteric_strategies = {
-	cost = @sm_leader_insight_cost
+tech_dh_esoteric_strategies = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 5
@@ -418,11 +418,11 @@ tech_sm_esoteric_strategies = {
 	modifier = {
 		command_limit_add = 10
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = military_theory
 		}
 		modifier = {
@@ -440,8 +440,8 @@ tech_sm_esoteric_strategies = {
 	}
 }
 
-tech_sm_strategos_refinement = {
-	cost = @sm_leader_insight_cost
+tech_dh_strategos_refinement = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 5
@@ -452,11 +452,11 @@ tech_sm_strategos_refinement = {
 		country_commander_cap_add = 1
 		army_damage_mult = 0.1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = military_theory
 		}
 	}
@@ -466,8 +466,8 @@ tech_sm_strategos_refinement = {
 	}
 }
 
-tech_sm_omnigravitational_warfare = {
-	cost = @sm_leader_insight_cost
+tech_dh_omnigravitational_warfare = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 4
@@ -477,11 +477,11 @@ tech_sm_omnigravitational_warfare = {
 	modifier = {
 		army_damage_taken_mult = -0.10
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = military_theory
 		}
 	}
@@ -491,8 +491,8 @@ tech_sm_omnigravitational_warfare = {
 	}
 }
 
-tech_sm_intrasolar_positioning = {
-	cost = @sm_leader_insight_cost
+tech_dh_intrasolar_positioning = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 3
@@ -503,11 +503,11 @@ tech_sm_intrasolar_positioning = {
 		ship_friendly_territory_fire_rate_mult = 0.1
 		ship_community_territory_speed_mult = 0.1 #test...
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = military_theory
 		}
 	}
@@ -518,8 +518,8 @@ tech_sm_intrasolar_positioning = {
 }
 
 ### Psionics ###
-tech_sm_telepathic_shielding = {
-	cost = @sm_leader_insight_cost
+tech_dh_telepathic_shielding = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { psionics }
 	tier = 4
@@ -530,11 +530,11 @@ tech_sm_telepathic_shielding = {
 	modifier = {
 		army_morale_damage_taken_mult = -0.1
 	}
-	weight = @sm_leader_insight_weight_psionic
+	weight = @dh_leader_insight_weight_psionic
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = psionics
 		}
 	}
@@ -544,8 +544,8 @@ tech_sm_telepathic_shielding = {
 	}
 }
 
-tech_sm_mental_manipulation = {
-	cost = @sm_leader_insight_cost
+tech_dh_mental_manipulation = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { psionics }
 	tier = 3
@@ -556,11 +556,11 @@ tech_sm_mental_manipulation = {
 	modifier = {
 		espionage_operation_difficulty_add = -1
 	}
-	weight = @sm_leader_insight_weight_psionic
+	weight = @dh_leader_insight_weight_psionic
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = psionics
 		}
 	}
@@ -571,8 +571,8 @@ tech_sm_mental_manipulation = {
 }
 
 ### Archaeostudies ###
-tech_sm_ancient_secrets = {
-	cost = @sm_leader_insight_cost
+tech_dh_ancient_secrets = {
+	cost = @dh_leader_insight_cost
 	area = society
 	category = { archaeostudies }
 	tier = 3
@@ -584,11 +584,11 @@ tech_sm_ancient_secrets = {
 		all_technology_research_speed = 0.03
 		planet_researchers_upkeep_mult = 0.03
 	}
-	weight = @sm_leader_insight_weight_archeo
+	weight = @dh_leader_insight_weight_archeo
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = archaeostudies
 		}
 	}

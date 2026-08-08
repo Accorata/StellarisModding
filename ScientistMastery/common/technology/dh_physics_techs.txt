@@ -1,6 +1,6 @@
 ### Computing ###
-tech_sm_proto_gravity_analysis = {
-	cost = @sm_leader_insight_cost
+tech_dh_proto_gravity_analysis = {
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
@@ -9,11 +9,11 @@ tech_sm_proto_gravity_analysis = {
 	modifier = {
 		planet_buildings_cost_mult = -0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = computing
 		}
 	}
@@ -23,8 +23,8 @@ tech_sm_proto_gravity_analysis = {
 	}
 }
 
-tech_sm_synthetic_data = {
-	cost = @sm_leader_insight_cost
+tech_dh_synthetic_data = {
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
@@ -34,11 +34,11 @@ tech_sm_synthetic_data = {
 	modifier = {
 		planet_physicists_produces_mult = 0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = computing
 		}
 	}
@@ -48,8 +48,8 @@ tech_sm_synthetic_data = {
 	}
 }
 
-tech_sm_regenerative_firewalls = {
-	ost = @sm_leader_insight_cost
+tech_dh_regenerative_firewalls = {
+	ost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
@@ -59,11 +59,11 @@ tech_sm_regenerative_firewalls = {
 	modifier = {
 		intel_encryption_add = 1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = computing
 		}
 		modifier = {
@@ -77,8 +77,8 @@ tech_sm_regenerative_firewalls = {
 	}
 }
 
-tech_sm_n_body_abstractions = {
-	ost = @sm_leader_insight_cost
+tech_dh_n_body_abstractions = {
+	ost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
@@ -89,11 +89,11 @@ tech_sm_n_body_abstractions = {
 		station_researchers_produces_mult = 0.05
 		shipclass_research_station_build_cost_mult = -0.25
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = computing
 		}
 	}
@@ -104,19 +104,19 @@ tech_sm_n_body_abstractions = {
 }
 
 ### Particles ###
-tech_sm_reactor_boosters_4 = {
-	cost = @sm_leader_insight_cost
+tech_dh_reactor_boosters_4 = {
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { particles }
 	tier = 5
 	prerequisites = { "tech_dark_matter_power_core" "tech_reactor_boosters_3" }
 	is_custom_tech_2 = yes
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = particles
 		}
 	}
@@ -126,8 +126,8 @@ tech_sm_reactor_boosters_4 = {
 	}
 }
 
-tech_sm_microchemistry = {
-	cost = @sm_leader_insight_cost
+tech_dh_microchemistry = {
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { particles }
 	tier = 3
@@ -138,11 +138,11 @@ tech_sm_microchemistry = {
 		planet_metallurgists_volatile_motes_produces_mult = 0.25
 		planet_artisans_volatile_motes_produces_mult = 0.25
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = particles
 		}
 	}
@@ -153,19 +153,19 @@ tech_sm_microchemistry = {
 }
 
 ### Field Manipulation ###
-tech_sm_conduction_nexus = {
-	cost = @sm_leader_insight_cost
+tech_dh_conduction_nexus = {
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { field_manipulation }
 	tier = 3
 	prerequisites = { "tech_power_plant_2" "tech_power_hub_2" }
 	is_custom_tech_2 = yes
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = field_manipulation
 		}
 	}

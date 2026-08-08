@@ -1,4 +1,4 @@
-building_sm_conduction_nexus = {
+building_dh_conduction_nexus = {
 	base_buildtime = @b2_time
 	category = resource
 	empire_limit = {
@@ -11,7 +11,7 @@ building_sm_conduction_nexus = {
 
 	allow = {
 		inline_script = {
-			script = buildings/amt_has_upgraded_capital
+			script = buildings/dh_has_upgraded_capital
 		}
 	}
 	destroy_trigger = {
@@ -76,11 +76,11 @@ building_sm_conduction_nexus = {
 	}
 
 	prerequisites = {
-		tech_sm_conduction_nexus
+		tech_dh_conduction_nexus
 	}
 }
 
-building_sm_replication_nexus = {
+building_dh_replication_nexus = {
 	base_buildtime = @b2_time
 	category = resource
 	empire_limit = {
@@ -93,7 +93,7 @@ building_sm_replication_nexus = {
 
 	allow = {
 		inline_script = {
-			script = buildings/amt_has_upgraded_capital
+			script = buildings/dh_has_upgraded_capital
 		}
 	}
 	destroy_trigger = {
@@ -158,11 +158,11 @@ building_sm_replication_nexus = {
 	}
 
 	prerequisites = {
-		tech_sm_replication_nexus
+		tech_dh_replication_nexus
 	}
 }
 
-building_sm_extraction_nexus = {
+building_dh_extraction_nexus = {
 	base_buildtime = @b2_time
 	category = resource
 	empire_limit = {
@@ -175,7 +175,7 @@ building_sm_extraction_nexus = {
 
 	allow = {
 		inline_script = {
-			script = buildings/amt_has_upgraded_capital
+			script = buildings/dh_has_upgraded_capital
 		}
 	}
 	destroy_trigger = {
@@ -240,6 +240,6 @@ building_sm_extraction_nexus = {
 	}
 
 	prerequisites = {
-		tech_sm_extraction_nexus
+		tech_dh_extraction_nexus
 	}
 }

@@ -1,11 +1,11 @@
-sm_interstellar_ecology = {
-	icon = "GFX_sm_interstellar_ecology_sb"
+dh_interstellar_ecology = {
+	icon = "GFX_dh_interstellar_ecology_sb"
 	construction_days = 180
 
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_sm_interstellar_ecologies
+			has_technology = tech_dh_interstellar_ecologies
 		}
 		is_normal_starbase = yes
 	}

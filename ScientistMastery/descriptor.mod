@@ -1,7 +1,7 @@
-version="3.12.5"
+version="1.0"
 tags={
 	"Leaders"
-	"Technologies"
+	"Technologies" # more to be added
 }
-name="Scientist Mastery"
-supported_version="v3.12.5"
+name="Dangerous Horizons"
+supported_version="v4.*"

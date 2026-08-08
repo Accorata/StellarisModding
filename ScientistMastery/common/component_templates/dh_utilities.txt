@@ -37,7 +37,7 @@ utility_component_template = {
 		ship_evasion_add = 15
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -69,7 +69,7 @@ utility_component_template = {
 		ship_evasion_add = 12
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -101,7 +101,7 @@ utility_component_template = {
 		ship_evasion_add = 9
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -133,7 +133,7 @@ utility_component_template = {
 		ship_evasion_add = 6
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -165,7 +165,7 @@ utility_component_template = {
 		ship_evasion_add = 3
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -197,7 +197,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.75
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		OR = {
@@ -234,7 +234,7 @@ utility_component_template = {
 		ship_evasion_add = 20
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -274,7 +274,7 @@ utility_component_template = {
 		ship_evasion_add = 16
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -314,7 +314,7 @@ utility_component_template = {
 		ship_evasion_add = 12
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -354,7 +354,7 @@ utility_component_template = {
 		ship_evasion_add = 8
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -394,7 +394,7 @@ utility_component_template = {
 		ship_evasion_add = 4
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		from = {
@@ -434,7 +434,7 @@ utility_component_template = {
 		ship_base_speed_mult = 1.25
 	}
 
-	prerequisites = { "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dh_graviton_propulsion" }
 	component_set = "thruster_components"
 	potential = {
 		OR = {
@@ -462,9 +462,9 @@ utility_component_template = {
 ## Dark Matter Reactor Booster
 
 utility_component_template = {
-	key = "SM_REACTOR_BOOSTER_4"
+	key = "dh_REACTOR_BOOSTER_4"
 	size = aux
-	icon = "GFX_ship_part_sm_reactor_booster_4"
+	icon = "GFX_ship_part_dh_reactor_booster_4"
 	icon_frame = 1
 	resources = {
 		category = ship_components
@@ -474,8 +474,8 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_sm_reactor_boosters_4" }
-	component_set = "SM_REACTOR_BOOSTER_4"
+	prerequisites = { "tech_dh_reactor_boosters_4" }
+	component_set = "dh_REACTOR_BOOSTER_4"
 
 	modifier = {
 		ship_reactor_power_mult = 0.66

@@ -20,55 +20,55 @@ country_event = {
 			switch = {
 				trigger = has_trait
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = materials
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = propulsion
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = voidcraft
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = industry
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = field_manipulation
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = particles
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = computing
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = psionics
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = new_worlds
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = statecraft
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = biology
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = military_theory
 				}
 				inline_script = {
-					script = events/amt_sm_add_memory
+					script = events/dh_add_memory
 					FIELD = archaeostudies
 				}
 			}
@@ -82,7 +82,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		last_increased_tech = "tech_sm_dreams_beyond_scale"
+		last_increased_tech = "tech_dh_dreams_beyond_scale"
 		NOT = {
 			has_technology = tech_mega_engineering
 		}

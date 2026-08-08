@@ -1,6 +1,6 @@
 ### Propulsion ###
-tech_sm_graviton_propulsion = {
-	cost = @sm_leader_insight_cost
+tech_dh_graviton_propulsion = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 5
@@ -10,22 +10,22 @@ tech_sm_graviton_propulsion = {
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		custom = {
-			title = "TECH_UNLOCK_SM_GRAV_THRUSTERS_TITLE"
-			desc = "TECH_UNLOCK_SM_GRAV_THRUSTERS_DESC"
+			title = "TECH_UNLOCK_dh_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_dh_GRAV_THRUSTERS_DESC"
 		}
 	}
 
 	modifier = {
 		ship_landing_time_mult = -0.2
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		modifier = {
 			factor = 0
 			NOT = {
 				has_trait_in_council = { 
-					TRAIT = leader_trait_sm_mastery_propulsion
+					TRAIT = leader_trait_dh_mastery_propulsion
 				}
 			}
 		}
@@ -36,30 +36,30 @@ tech_sm_graviton_propulsion = {
 	}
 }
 
-tech_sm_dark_matter_gravatics = {
-	cost = @sm_leader_insight_cost
+tech_dh_dark_matter_gravatics = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 5
-	prerequisites = { "tech_dark_matter_propulsion" "tech_sm_graviton_propulsion" }
+	prerequisites = { "tech_dark_matter_propulsion" "tech_dh_graviton_propulsion" }
 	is_custom_tech_2 = yes
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		custom = {
-			title = "TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_TITLE"
-			desc = "TECH_UNLOCK_SM_DARK_GRAV_THRUSTERS_DESC"
+			title = "TECH_UNLOCK_dh_DARK_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_dh_DARK_GRAV_THRUSTERS_DESC"
 		}
 	}
 
 	modifier = {
 		ship_speed_mult = 0.1
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = propulsion
 		}
 	}
@@ -71,8 +71,8 @@ tech_sm_dark_matter_gravatics = {
 
 
 ### Voidcraft ###
-tech_sm_dreams_beyond_scale = {
-	cost = @sm_leader_insight_cost
+tech_dh_dreams_beyond_scale = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { voidcraft }
 	tier = 4
@@ -81,19 +81,19 @@ tech_sm_dreams_beyond_scale = {
 
 	prereqfor_desc = {
 		custom = {
-			title = "TECH_UNLOCK_SM_MEGA_TITLE"
-			desc = "TECH_UNLOCK_SM_MEGA_DESC"
+			title = "TECH_UNLOCK_dh_MEGA_TITLE"
+			desc = "TECH_UNLOCK_dh_MEGA_DESC"
 		}
 	}
 
 	modifier = {
 		megastructure_build_speed_mult = 0.05
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = voidcraft
 		}
 		modifier = {
@@ -107,18 +107,18 @@ tech_sm_dreams_beyond_scale = {
 	}
 }
 
-tech_sm_interstellar_ecologies = {
-	cost = @sm_leader_insight_cost
+tech_dh_interstellar_ecologies = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { voidcraft }
 	tier = 3 # ?
 	is_custom_tech_2 = yes
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = voidcraft
 		}
 	}
@@ -129,19 +129,19 @@ tech_sm_interstellar_ecologies = {
 }
 
 ### Industry ###
-tech_sm_extraction_nexus = {
-	cost = @sm_leader_insight_cost
+tech_dh_extraction_nexus = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 3
 	prerequisites = { "tech_mining_2" "tech_mineral_purification_2" }
 	is_custom_tech_2 = yes
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = industry
 		}
 	}
@@ -151,8 +151,8 @@ tech_sm_extraction_nexus = {
 	}
 }
 
-tech_sm_graviton_reflectors = {
-	cost = @sm_leader_insight_cost
+tech_dh_graviton_reflectors = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 4
@@ -165,11 +165,11 @@ tech_sm_graviton_reflectors = {
 		planet_structures_rare_crystals_upkeep_mult = -0.10
 	}
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = industry
 		}
 		modifier = {
@@ -191,8 +191,8 @@ tech_sm_graviton_reflectors = {
 	}
 }
 
-tech_sm_positronic_love = {
-	cost = @sm_leader_insight_cost
+tech_dh_positronic_love = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 5
@@ -203,11 +203,11 @@ tech_sm_positronic_love = {
 		ROBOT_pop_happiness = 0.1
 	}
 
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = industry
 		}
 		modifier = {
@@ -225,8 +225,8 @@ tech_sm_positronic_love = {
 }
 
 ### Materials ###
-tech_sm_fractal_catalysts = {
-	cost = @sm_leader_insight_cost
+tech_dh_fractal_catalysts = {
+	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { materials }
 	tier = 3
@@ -237,11 +237,11 @@ tech_sm_fractal_catalysts = {
 		planet_metallurgists_rare_crystals_produces_mult = 0.25
 		planet_artisans_rare_crystals_produces_mult = 0.25
 	}
-	weight = @sm_leader_insight_weight
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/amt_sm_requires_trait
+			script = technologies/dh_requires_trait
 			FIELD = materials
 		}
 	}

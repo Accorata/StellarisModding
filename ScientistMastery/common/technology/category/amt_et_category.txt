@@ -1,3 +1,0 @@
-sm_chronology = {
-	icon = "gfx/interface/icons/technologies/categories/category_sm_chronology.dds"
-}
