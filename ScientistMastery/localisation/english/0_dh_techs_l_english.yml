@@ -1,10 +1,12 @@
 ﻿l_english:
-  TECH_IS_CUSTOM_TECH_2:0 "§dMastery Insight§!"
+  TECH_IS_CUSTOM_TECH_2:0 "§DMastery Insight§!"
 
 ## Society ##
 # Biology
-  tech_dh_replication_nexus:0 "Replication Nexus"
+  tech_dh_replication_nexus:0 "$building_dh_replication_nexus$"
   tech_dh_replication_nexus_desc:0 "$building_dh_replication_nexus_desc$"
+  tech_dh_replication_nexus_wilderness:0 "$building_dh_replication_nexus_wilderness$"
+  tech_dh_replication_nexus_wilderness_desc:0 "$building_dh_replication_nexus_wilderness_desc$"
 
   tech_dh_neuron_revitalizers:0 "Neuron Revitalizers"
   tech_dh_neuron_revitalizers_desc:0 "..."
@@ -18,10 +20,10 @@
 
 # New Worlds
   tech_dh_dynamic_heat_shielding:0 "Dynamic Heat Shielding"
-  tech_dh_dynamic_heat_shielding_desc:0 "Designed for keeping the heat out during the day and keeping it in during the cold nights."
+  tech_dh_dynamic_heat_shielding_desc:0 "Designed to keep the heat out during the day and keep it in during the cold nights."
 
   tech_dh_predictive_hydrodynamics:0 "Predictive Hydrodynamics"
-  tech_dh_predictive_hydrodynamics_desc:0 "..."
+  tech_dh_predictive_hydrodynamics_desc:0 "Large oceans produce turbulent weather patterns. Understanding them is key to successful settlements."
 
   tech_dh_subdermal_living:0 "Subdermal Living"
   tech_dh_subdermal_living_desc:0 "..."
@@ -36,7 +38,7 @@
   tech_dh_biomimetic_disguises_desc:0 "..."
 
   tech_dh_neural_identities:0 "Neural Identities"
-  tech_dh_neural_identities_desc:0 "Through advanced algorithms, slave implants could provide their wearers entirely fictional lives to keep them subservient and functional."
+  tech_dh_neural_identities_desc:0 "Through advanced algorithms, slave implants could provide their wearers with entirely fictional lives to keep them subservient and functional."
 
 # Military Theory
   tech_dh_esoteric_strategies:0 "Doctrine: Esoteric Strategies"
@@ -75,6 +77,7 @@
 
   tech_dh_n_body_abstractions:0 "n-Body Abstractions"
   tech_dh_n_body_abstractions_desc:0 "..."
+  dh_n_body_abstractions_nomads_tt:0 "$tech_space_science_nomads_mult$: §G+5%§!"
 
 # Particles
   tech_dh_reactor_boosters_4:0 "Dark Reactor Boosters"
@@ -84,16 +87,27 @@
   tech_dh_microchemistry_desc:0 "..."
 
 # Field Manipulation
-  tech_dh_conduction_nexus:0 "Conduction Nexus"
+  tech_dh_conduction_nexus:0 "$building_dh_conduction_nexus$"
   tech_dh_conduction_nexus_desc:0 "$building_dh_conduction_nexus_desc$"
+  tech_dh_conduction_nexus_wilderness:0 "$building_dh_conduction_nexus_wilderness$"
+  tech_dh_conduction_nexus_wilderness_desc:0 "$building_dh_conduction_nexus_wilderness_desc$"
+
+  tech_dh_storm_warding:0 "Storm Warding"
+  tech_dh_storm_warding_desc:0 "Planetary storm repellors that keep the worst effects away."
 
 ## Engineering ##
 # Industry
-  tech_dh_extraction_nexus:0 "Extraction Nexus"
+  tech_dh_extraction_nexus:0 "$building_dh_extraction_nexus$"
   tech_dh_extraction_nexus_desc:0 "$building_dh_extraction_nexus_desc$"
+  tech_dh_extraction_nexus_wilderness:0 "$building_dh_extraction_nexus_wilderness$"
+  tech_dh_extraction_nexus_wilderness_desc:0 "$building_dh_extraction_nexus_wilderness_desc$"
 
   tech_dh_graviton_reflectors:0 "Graviton Reflectors"
   tech_dh_graviton_reflectors_desc:0 "..."
+
+  tech_dh_asteroid_stabilisation:0 "Asteroid Stabilisation"
+  tech_dh_asteroid_stabilisation_desc:0 "..."
+  dh_asteroid_stabilisation_nomads_tt:0 "$tech_space_mining_nomads_mult$: §G+5%§!"
 
   tech_dh_positronic_love:0 "Positronic Love"
   tech_dh_positronic_love_desc:0 "..."

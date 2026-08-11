@@ -9,6 +9,7 @@ tech_dh_proto_gravity_analysis = {
 	modifier = {
 		planet_buildings_cost_mult = -0.05
 	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -19,7 +20,7 @@ tech_dh_proto_gravity_analysis = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -34,6 +35,7 @@ tech_dh_synthetic_data = {
 	modifier = {
 		planet_physicists_produces_mult = 0.05
 	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -44,7 +46,7 @@ tech_dh_synthetic_data = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -59,6 +61,7 @@ tech_dh_regenerative_firewalls = {
 	modifier = {
 		intel_encryption_add = 1
 	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -73,7 +76,7 @@ tech_dh_regenerative_firewalls = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -89,6 +92,19 @@ tech_dh_n_body_abstractions = {
 		station_researchers_produces_mult = 0.05
 		shipclass_research_station_build_cost_mult = -0.25
 	}
+
+	technology_swap = {
+		name = tech_dh_n_body_abstractions
+		inherit_icon = yes
+		trigger = {
+			is_nomadic = yes
+		}
+		modifier = {
+			custom_tooltip = dh_n_body_abstractions_nomads_tt
+			tech_space_science_nomads_mult = 0.05
+		}
+	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -99,7 +115,7 @@ tech_dh_n_body_abstractions = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -122,7 +138,7 @@ tech_dh_reactor_boosters_4 = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -138,6 +154,7 @@ tech_dh_microchemistry = {
 		planet_metallurgists_volatile_motes_produces_mult = 0.25
 		planet_artisans_volatile_motes_produces_mult = 0.25
 	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -148,7 +165,7 @@ tech_dh_microchemistry = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -161,6 +178,15 @@ tech_dh_conduction_nexus = {
 	prerequisites = { "tech_power_plant_2" "tech_power_hub_2" }
 	is_custom_tech_2 = yes
 
+	technology_swap = { # Wilderness icon swap
+		name = tech_dh_conduction_nexus_wilderness
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			is_wilderness_empire = yes
+		}
+	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -171,6 +197,44 @@ tech_dh_conduction_nexus = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
+	}
+}
+
+tech_dh_storm_warding = {
+	cost = {
+		factor = @dh_leader_insight_cost
+		inline_script = {
+			script = technologies/cosmic_storms_technologies_cost_modifiers
+		}
+	}
+	area = physics
+	category = { field_manipulation }
+	tier = 3
+	prerequisites = { "tech_storm_manipulation" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_storm_devastation_mult = -0.15
+	}
+
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = field_manipulation
+		}
+		inline_script = {
+			script = technologies/cosmic_storms_technologies_weight_modifiers
+		}
+		modifier = {
+			factor = 1.5
+			num_cosmic_storms_encountered >= 3
+		}
+	}
+
+	ai_weight = {
+		weight = @dh_leader_ai_weight
 	}
 }

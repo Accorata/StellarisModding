@@ -61,7 +61,7 @@ building_dh_conduction_nexus = {
 			rare_crystals = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 2
+			energy = @b1_upkeep
 			rare_crystals = @b2_rare_upkeep
 		}
 	}
@@ -77,6 +77,9 @@ building_dh_conduction_nexus = {
 
 	prerequisites = {
 		tech_dh_conduction_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
 	}
 }
 
@@ -143,7 +146,7 @@ building_dh_replication_nexus = {
 			exotic_gases = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 2
+			energy = @b1_upkeep
 			exotic_gases = @b2_rare_upkeep
 		}
 	}
@@ -159,6 +162,9 @@ building_dh_replication_nexus = {
 
 	prerequisites = {
 		tech_dh_replication_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
 	}
 }
 
@@ -225,7 +231,7 @@ building_dh_extraction_nexus = {
 			volatile_motes = @b2_rare_cost
 		}
 		upkeep = {
-			energy = 2
+			energy = @b1_upkeep
 			volatile_motes = @b2_rare_upkeep
 		}
 	}
@@ -241,5 +247,8 @@ building_dh_extraction_nexus = {
 
 	prerequisites = {
 		tech_dh_extraction_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
 	}
 }

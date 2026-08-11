@@ -7,6 +7,15 @@ tech_dh_replication_nexus = {
 	prerequisites = { "tech_gene_crops" "tech_food_processing_2" }
 	is_custom_tech_2 = yes
 
+	technology_swap = { # Wilderness icon swap
+		name = tech_dh_replication_nexus_wilderness
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			is_wilderness_empire = yes
+		}
+	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -17,7 +26,7 @@ tech_dh_replication_nexus = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -29,14 +38,15 @@ tech_dh_neuron_revitalizers = {
 	prerequisites = { "tech_frontier_hospital" "tech_vitality_boosters" }
 	is_custom_tech_2 = yes
 
-	modifier = {
-		leader_lifespan_add = 5
-	}
-	weight = @dh_leader_insight_weight
-
 	potential = {
 		is_natural_design_empire = no
 	}
+
+	modifier = {
+		leader_lifespan_add = 5
+	}
+	
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
@@ -50,7 +60,7 @@ tech_dh_neuron_revitalizers = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -62,18 +72,19 @@ tech_dh_genetic_memory = {
 	prerequisites = { "tech_galactic_administration" "tech_gene_tailoring" }
 	is_custom_tech_2 = yes
 
-	modifier = {
-		country_scientist_cap_add = 1
-		leaders_upkeep_mult = -0.025
-	}
-	weight = @dh_leader_insight_weight
-
 	potential = {
 		NOR = {
 			has_authority = auth_machine_intelligence
 			is_individual_machine = yes
 		}
 	}
+
+	modifier = {
+		country_scientist_cap_add = 1
+		leaders_upkeep_mult = -0.025
+	}
+
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
@@ -83,7 +94,7 @@ tech_dh_genetic_memory = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -98,6 +109,7 @@ tech_dh_modular_taxonomy = {
 	modifier = {
 		planet_biologists_produces_mult = 0.05
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -108,7 +120,7 @@ tech_dh_modular_taxonomy = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -121,18 +133,19 @@ tech_dh_limited_shapeshifting = {
 	prerequisites = { "tech_gene_tailoring" }
 	is_custom_tech_2 = yes
 
-	modifier = {
-		spy_network_daily_value_mult = 0.10
-		army_morale_damage_mult = 0.05
-	}
-	weight = @dh_leader_insight_weight
-
 	potential = {
 		NOR = {
 			has_authority = auth_machine_intelligence
 			is_individual_machine = yes
 		}
 	}
+
+	modifier = {
+		spy_network_daily_value_mult = 0.10
+		army_morale_damage_mult = 0.05
+	}
+	
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
@@ -142,7 +155,7 @@ tech_dh_limited_shapeshifting = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -154,18 +167,19 @@ tech_dh_biomimetic_disguises = {
 	prerequisites = { "tech_biomechanics" }
 	is_custom_tech_2 = yes
 
-	modifier = {
-		spy_network_daily_value_mult = 0.10
-		army_morale_damage_mult = 0.05
-	}
-	weight = @dh_leader_insight_weight
-
 	potential = {
 		OR = {
 			has_authority = auth_machine_intelligence
 			is_individual_machine = yes
 		}
 	}
+
+	modifier = {
+		spy_network_daily_value_mult = 0.10
+		army_morale_damage_mult = 0.05
+	}
+	
+	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
 		inline_script = {
@@ -175,7 +189,7 @@ tech_dh_biomimetic_disguises = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -191,6 +205,7 @@ tech_dh_neural_identities = {
 		pop_slave_happiness = 0.1
 		pop_slave_political_power = -0.25
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -235,7 +250,7 @@ tech_dh_neural_identities = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -253,6 +268,7 @@ tech_dh_dynamic_heat_shielding = {
 		pc_arid_habitability = 0.1
 		pc_savannah_habitability = 0.1
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -283,7 +299,7 @@ tech_dh_dynamic_heat_shielding = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -300,6 +316,7 @@ tech_dh_predictive_hydrodynamics = {
 		pc_continental_habitability = 0.1
 		pc_ocean_habitability = 0.1
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -330,7 +347,7 @@ tech_dh_predictive_hydrodynamics = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -347,6 +364,7 @@ tech_dh_subdermal_living = {
 		pc_arctic_habitability = 0.1
 		pc_alpine_habitability = 0.1
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -377,7 +395,7 @@ tech_dh_subdermal_living = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -392,6 +410,7 @@ tech_dh_unified_spirit = {
 	modifier = {
 		planetary_ascension_cost_mult = -0.05	
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -402,7 +421,7 @@ tech_dh_unified_spirit = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -416,8 +435,9 @@ tech_dh_esoteric_strategies = {
 	is_custom_tech_2 = yes
 
 	modifier = {
-		command_limit_add = 10
+		command_limit_add = 20
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -436,7 +456,7 @@ tech_dh_esoteric_strategies = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -452,6 +472,7 @@ tech_dh_strategos_refinement = {
 		country_commander_cap_add = 1
 		army_damage_mult = 0.1
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -462,7 +483,7 @@ tech_dh_strategos_refinement = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -477,6 +498,7 @@ tech_dh_omnigravitational_warfare = {
 	modifier = {
 		army_damage_taken_mult = -0.10
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -487,7 +509,7 @@ tech_dh_omnigravitational_warfare = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -503,6 +525,7 @@ tech_dh_intrasolar_positioning = {
 		ship_friendly_territory_fire_rate_mult = 0.1
 		ship_community_territory_speed_mult = 0.1 #test...
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -513,7 +536,7 @@ tech_dh_intrasolar_positioning = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -530,6 +553,7 @@ tech_dh_telepathic_shielding = {
 	modifier = {
 		army_morale_damage_taken_mult = -0.1
 	}
+	
 	weight = @dh_leader_insight_weight_psionic
 
 	weight_modifier = {
@@ -540,7 +564,7 @@ tech_dh_telepathic_shielding = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -556,6 +580,7 @@ tech_dh_mental_manipulation = {
 	modifier = {
 		espionage_operation_difficulty_add = -1
 	}
+	
 	weight = @dh_leader_insight_weight_psionic
 
 	weight_modifier = {
@@ -566,7 +591,7 @@ tech_dh_mental_manipulation = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -584,6 +609,7 @@ tech_dh_ancient_secrets = {
 		all_technology_research_speed = 0.03
 		planet_researchers_upkeep_mult = 0.03
 	}
+	
 	weight = @dh_leader_insight_weight_archeo
 
 	weight_modifier = {
@@ -594,6 +620,6 @@ tech_dh_ancient_secrets = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }

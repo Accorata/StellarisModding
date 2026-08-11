@@ -38,12 +38,23 @@
   leader_trait_dh_mastery_archaeostudies_desc:0 "$dh_trait_description$ Archaeostudies."
 
 # Buildings
+  dh_nexus_description:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our"
+  dh_core_description:0 "localised here for further exploration of our symbiotic relationship with the planet."
+
   building_dh_conduction_nexus:0 "Conduction Nexus"
-  building_dh_conduction_nexus_desc:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our energy production."
+  building_dh_conduction_nexus_desc:0 "$dh_nexus_description$ energy production."
+  building_dh_conduction_nexus_wilderness:0 "Conductive Core"
+  building_dh_conduction_nexus_wilderness_desc:0 "High static electric energies, $dh_core_description$"
+
   building_dh_replication_nexus:0 "Replication Nexus"
-  building_dh_replication_nexus_desc:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our food production."
+  building_dh_replication_nexus_desc:0 "$dh_nexus_description$ food production."
+  building_dh_replication_nexus_wilderness:0 "Revitalising Core"
+  building_dh_replication_nexus_wilderness_desc:0 "The wonders of natures restoration, $dh_core_description$"
+
   building_dh_extraction_nexus:0 "Extraction Nexus"
-  building_dh_extraction_nexus_desc:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our mineral production."
+  building_dh_extraction_nexus_desc:0 "$dh_nexus_description$ mineral production."
+  building_dh_extraction_nexus_wilderness:0 "Tectonic Core"
+  building_dh_extraction_nexus_wilderness_desc:0 "Natural formation of mountains, $dh_core_description$"
 
 # Starbase Modules
   sm_dh_interstellar_ecology:0 "Interstellar Ecology"

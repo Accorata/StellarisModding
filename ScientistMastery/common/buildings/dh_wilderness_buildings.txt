@@ -1,0 +1,179 @@
+building_dh_conduction_nexus_wilderness = {
+	icon = "building_dh_conductive_core"
+	ruined_icon = "wilderness_building_ruined"
+	base_buildtime = @buildtime_2
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	building_sets = {
+		generator
+	}
+
+	allow = {
+		inline_script = {
+			script = buildings/dh_has_upgraded_capital
+		}
+	}
+	destroy_trigger = {
+		owner? = {
+			is_wilderness_empire = no
+		}
+	}
+
+	potential = {
+		owner? = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			biomass = @b2_biomass
+			rare_crystals = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			rare_crystals = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_physics_research_produces_add = 0.5
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = @building_static_jobs
+	}
+
+	prerequisites = {
+		tech_dh_conduction_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = yes
+	}
+}
+
+building_dh_replication_nexus_wilderness = {
+	icon = "building_dh_revitalising_core"
+	ruined_icon = "wilderness_building_ruined"
+	base_buildtime = @buildtime_2
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	building_sets = {
+		farming
+	}
+
+	allow = {
+		inline_script = {
+			script = buildings/dh_has_upgraded_capital
+		}
+	}
+	destroy_trigger = {
+		owner? = {
+			is_wilderness_empire = no
+		}
+	}
+
+	potential = {
+		owner? = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			biomass = @b2_biomass
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_farmers_society_research_produces_add = 0.5
+	}
+
+	inline_script = {
+		script = jobs/farmers_add
+		AMOUNT = @building_static_jobs
+	}
+
+	prerequisites = {
+		tech_dh_replication_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = yes
+	}
+}
+
+building_dh_extraction_nexus_wilderness = {
+	icon = "building_dh_tectonic_core"
+	ruined_icon = "wilderness_building_ruined"
+	base_buildtime = @buildtime_2
+	category = resource
+	empire_limit = {
+		base = 1
+	}
+
+	building_sets = {
+		mining
+	}
+
+	allow = {
+		inline_script = {
+			script = buildings/dh_has_upgraded_capital
+		}
+	}
+	destroy_trigger = {
+		owner? = {
+			is_wilderness_empire = no
+		}
+	}
+
+	potential = {
+		owner? = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			biomass = @b2_biomass
+			volatile_motes = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			volatile_motes = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_miners_engineering_research_produces_add = 0.5
+	}
+
+	inline_script = {
+		script = jobs/miners_add
+		AMOUNT = @building_static_jobs
+	}
+
+	prerequisites = {
+		tech_dh_extraction_nexus
+	}
+	show_tech_unlock_if = {
+		is_wilderness_empire = yes
+	}
+}

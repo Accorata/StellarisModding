@@ -18,21 +18,18 @@ tech_dh_graviton_propulsion = {
 	modifier = {
 		ship_landing_time_mult = -0.2
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_trait_in_council = { 
-					TRAIT = leader_trait_dh_mastery_propulsion
-				}
-			}
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = propulsion
 		}
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -55,6 +52,7 @@ tech_dh_dark_matter_gravatics = {
 	modifier = {
 		ship_speed_mult = 0.1
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -65,7 +63,7 @@ tech_dh_dark_matter_gravatics = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -89,6 +87,7 @@ tech_dh_dreams_beyond_scale = {
 	modifier = {
 		megastructure_build_speed_mult = 0.05
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -103,7 +102,7 @@ tech_dh_dreams_beyond_scale = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -124,7 +123,7 @@ tech_dh_interstellar_ecologies = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -137,6 +136,19 @@ tech_dh_extraction_nexus = {
 	prerequisites = { "tech_mining_2" "tech_mineral_purification_2" }
 	is_custom_tech_2 = yes
 
+	potential = {
+		is_nomadic = no
+	}
+
+	technology_swap = { # Wilderness icon swap
+		name = tech_dh_extraction_nexus_wilderness
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			is_wilderness_empire = yes
+		}
+	}
+
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -147,7 +159,7 @@ tech_dh_extraction_nexus = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -187,7 +199,46 @@ tech_dh_graviton_reflectors = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
+	}
+}
+
+tech_dh_asteroid_stabilisation = {
+	ost = @dh_leader_insight_cost
+	area = engineering
+	category = { industry }
+	tier = 3
+	prerequisites = { "tech_space_mining_4" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		station_gatherers_produces_mult = 0.05
+		shipclass_mining_station_build_cost_mult = -0.25
+	}
+
+	technology_swap = {
+		name = tech_dh_asteroid_stabilisation
+		inherit_icon = yes
+		trigger = {
+			is_nomadic = yes
+		}
+		modifier = {
+			custom_tooltip = dh_asteroid_stabilisation_nomads_tt
+			tech_space_mining_nomads_mult = 0.05
+		}
+	}
+
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = industry
+		}
+	}
+
+	ai_weight = {
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -220,7 +271,7 @@ tech_dh_positronic_love = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
 
@@ -237,6 +288,7 @@ tech_dh_fractal_catalysts = {
 		planet_metallurgists_rare_crystals_produces_mult = 0.25
 		planet_artisans_rare_crystals_produces_mult = 0.25
 	}
+	
 	weight = @dh_leader_insight_weight
 
 	weight_modifier = {
@@ -247,6 +299,6 @@ tech_dh_fractal_catalysts = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		weight = @dh_leader_ai_weight
 	}
 }
