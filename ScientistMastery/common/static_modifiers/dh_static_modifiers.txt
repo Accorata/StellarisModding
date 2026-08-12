@@ -1,3 +1,8 @@
+dh_planet_study_the_ancients = {
+	icon = "gfx/interface/icons/planet_modifiers/dh_pm_study_the_ancients.dds
+	planet_biologists_produces_mult = 0.20
+}
+
 dh_computing_scientist_memory = {
 	category_computing_research_speed_mult = 0.05
 }

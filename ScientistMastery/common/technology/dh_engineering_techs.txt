@@ -223,7 +223,7 @@ tech_dh_asteroid_stabilisation = {
 			is_nomadic = yes
 		}
 		modifier = {
-			custom_tooltip = dh_asteroid_stabilisation_nomads_tt
+			custom_tooltip = tech_dh_asteroid_stabilisation_nomads_tt
 			tech_space_mining_nomads_mult = 0.05
 		}
 	}

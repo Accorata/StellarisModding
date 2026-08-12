@@ -1,0 +1,28 @@
+leader_trait_dh_mastery_$FIELD$ = {
+	replace_traits = {
+		"leader_trait_expertise_$FIELD$_3"
+	}
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_$RESEARCH_TYPE$
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_$FIELD$"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = dh_mastery_trait_effect
+	councilor_modifier = {
+		category_$FIELD$_research_speed_mult = @dh_expertise_tier_4_mult
+		category_$FIELD$_draw_chance_mult = 1
+	}
+	inline_script = {
+		script = traits/technocracy_expertise_effects
+		FIELD = $RESEARCH_TYPE$
+		TIER = 4
+	}
+	leader_class = {
+		scientist
+	}
+	ai_weight = 1000
+}

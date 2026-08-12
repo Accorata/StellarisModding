@@ -1,4 +1,4 @@
-namespace = scientist_mastery
+namespace = dangerous_horizons
 
 # Synth Imperial physical swap, leader dies and gives research modifier if has any mastery trait
 # Executed as a leader has died
@@ -6,7 +6,7 @@ namespace = scientist_mastery
 #	From = Leader
 # Fired by: on_leader_death
 country_event = {
-	id = scientist_mastery.1
+	id = dangerous_horizons.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -77,7 +77,7 @@ country_event = {
 }
 
 country_event = {
-	id = scientist_mastery.5
+	id = dangerous_horizons.5
 	hide_window = yes
 	is_triggered_only = yes
 

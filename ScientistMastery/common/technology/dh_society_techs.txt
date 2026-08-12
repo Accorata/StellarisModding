@@ -623,3 +623,28 @@ tech_dh_ancient_secrets = {
 		weight = @dh_leader_ai_weight
 	}
 }
+
+tech_dh_graphed_antiquity = {
+	cost = @dh_leader_insight_cost
+	area = society
+	category = { archaeostudies }
+	tier = 3
+	prerequisites = { "tech_arcane_deciphering" } # change ...
+	is_custom_tech_2 = yes
+	is_rare = yes
+
+	custom_tooltip = tech_dh_graphed_antiquity_tt 
+	
+	weight = @dh_leader_insight_weight_archeo
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = archaeostudies
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+	}
+}

@@ -1,0 +1,56 @@
+@minor_artifact_decision_cost = 100
+@minor_artifact_decision_duration = 3600
+
+dh_decision_study_the_ancients = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = dh_decision_study_the_ancients
+
+	potential = {
+		owner = {
+			has_technology = tech_dh_graphed_antiquity
+		}
+	}
+
+	allow = {
+		NOT = {
+			has_modifier = "dh_planet_study_the_ancients"
+		}
+		if = {
+			limit = {
+				is_gestalt = no
+			}
+			num_assigned_jobs = {
+				job = biologist
+				value >= 100
+			}
+		}
+		if = {
+			limit = {
+				is_gestalt = yes
+			}
+			num_assigned_jobs = {
+				job = calculator_biologist
+				value >= 100
+			}
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			minor_artifacts = @minor_artifact_decision_cost
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = "dh_planet_study_the_ancients"
+			days = @minor_artifact_decision_duration
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

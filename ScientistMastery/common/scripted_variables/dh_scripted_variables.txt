@@ -2,4 +2,6 @@
 @dh_leader_insight_weight = 50
 @dh_leader_insight_weight_archeo = 37 # 3/4 of @dh_leader_insight_weight
 @dh_leader_insight_weight_psionic = 25 # 1/2 of @dh_leader_insight_weight
-dh_leader_ai_weight = 3 # Bonus chance to ensure AI countries get these while they can
+@dh_leader_ai_weight = 3 # Bonus chance to ensure AI countries get these while they can
+
+@dh_expertise_tier_4_mult = 0.75

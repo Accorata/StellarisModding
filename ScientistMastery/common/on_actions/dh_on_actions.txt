@@ -3,7 +3,7 @@
 # From = Leader
 on_leader_death = {
 	events = {
-		scientist_mastery.1          # Imperial Feedback government harvests Mastery traits
+		dangerous_horizons.1          # Imperial Feedback government harvests Mastery traits
 	}
 }
 
@@ -11,6 +11,6 @@ on_leader_death = {
 # This = Country
 on_tech_increased = {
 	events = {
-		scientist_mastery.5			# Grant 5% of mega engineering for Dreams Beyond Scale
+		dangerous_horizons.5			# Grant 5% of mega engineering for Dreams Beyond Scale
 	}
 }

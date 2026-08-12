@@ -100,7 +100,7 @@ tech_dh_n_body_abstractions = {
 			is_nomadic = yes
 		}
 		modifier = {
-			custom_tooltip = dh_n_body_abstractions_nomads_tt
+			custom_tooltip = tech_dh_n_body_abstractions_nomads_tt
 			tech_space_science_nomads_mult = 0.05
 		}
 	}
