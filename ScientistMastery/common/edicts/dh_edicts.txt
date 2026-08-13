@@ -1,0 +1,29 @@
+dh_touch_beyond_touch = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			sr_zro = 0.5
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			sr_zro = 0.5
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	#prerequisites = {
+	#	"tech_doctrine_fleet_size_1"
+	#}
+
+	modifier = {
+		ship_cloaking_detection_add = 1
+		army_morale_damage_mult = 0.15
+		ship_psionic_aura_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

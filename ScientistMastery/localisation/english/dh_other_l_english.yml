@@ -3,10 +3,13 @@
   dh_chronology:0 "Chronology"
   dh_chronology_desc:0 "..."
 
-
 # Modifiers
   mod_starbase_constructions_produces_mult:0 "Resources from Starbase Constructions"
 
+# Edicts
+  edict_dh_touch_beyond_touch:0 "Touch Beyond Touch"
+  edict_dh_touch_beyond_touch_desc:0 "Small amounts of Zro amplify our telekinetic abilities, granting strength wherever our psionic presence is felt."
+ 
 # Traits
   dh_trait_description:0 "This leader is, following a lifetime of study, considered a master of the field of"
   dh_mastery_trait_effect: "$t$Provides the Opportunity to Draw Unique Technologies."
@@ -68,7 +71,7 @@
 # Ship Components
   DH_REACTOR_BOOSTER_4:0 "Dark Reactor Booster"
   DH_REACTOR_BOOSTER_4_DESC:0 "Through the wonders of Dark Matter, we can create the ultimate boosters that transform our ship reactor capabilities."
-  
+
   DH_SHIP_THRUSTER_4_GRAV:0 "Impulse Grav-Thrusters"
   DH_SHIP_THRUSTER_4_GRAV_DESC:0 "These highly advanced graviton based thrusters provide ships with unmatched maneuverability and speed under sublight conditions."
   DESTROYER_DH_SHIP_THRUSTER_4_GRAV:0 "$DH_SHIP_THRUSTER_4_GRAV$"

@@ -27,6 +27,7 @@ tech_dh_graviton_propulsion = {
 			country_uses_bio_ships = yes
 		}
 		prereqfor_desc = {
+			hide_prereq_for_desc = component
 			custom = {
 				title = "TECH_UNLOCK_DH_BIOSHIP_GRAV_THRUSTERS_TITLE"
 				desc = "TECH_UNLOCK_DH_BIOSHIP_GRAV_THRUSTERS_DESC"
@@ -79,6 +80,7 @@ tech_dh_dark_matter_gravatics = {
 			country_uses_bio_ships = yes
 		}
 		prereqfor_desc = {
+			hide_prereq_for_desc = component
 			custom = {
 				title = "TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_TITLE"
 				desc = "TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_DESC"
@@ -110,8 +112,22 @@ tech_dh_dreams_beyond_scale = {
 	area = engineering
 	category = { voidcraft }
 	tier = 4
-	prerequisites = { "tech_starbase_4" "tech_cruisers" "tech_antimatter_power" }
+	prerequisites = {
+		OR = {
+			tech_starbase_4
+			tech_arkship_tier_2
+		}
+		tech_antimatter_power
+		OR = {
+			tech_cruisers
+			tech_harbingers
+		}
+	}
 	is_custom_tech_2 = yes
+
+	potential = {
+		has_technology = tech_mega_engineering
+	}
 
 	prereqfor_desc = {
 		custom = {
@@ -131,10 +147,6 @@ tech_dh_dreams_beyond_scale = {
 			script = technologies/dh_requires_trait
 			FIELD = voidcraft
 		}
-		modifier = {
-			factor = 0
-			has_technology = tech_mega_engineering
-		}
 	}
 	
 	ai_weight = {
@@ -146,8 +158,12 @@ tech_dh_interstellar_ecologies = {
 	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { voidcraft }
-	tier = 3 # ?
+	tier = 3
 	is_custom_tech_2 = yes
+
+	potential = {
+		is_nomadic = no
+	}
 
 	weight = @dh_leader_insight_weight
 

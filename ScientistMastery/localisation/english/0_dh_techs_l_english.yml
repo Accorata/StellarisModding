@@ -1,5 +1,6 @@
 ﻿l_english:
   TECH_IS_CUSTOM_TECH_2:0 "§DMastery Insight§!"
+  dh_partial_tech_progress:0 "§HGrants 5% of Tech:§!"
 
 ## Society ##
 # Biology
@@ -10,6 +11,7 @@
 
   tech_dh_neuron_revitalizers:0 "Neuron Revitalizers"
   tech_dh_neuron_revitalizers_desc:0 "..."
+  # Needs Machine Counterpart...
 
   tech_dh_genetic_memory:0 "Genetic Memory"
   tech_dh_genetic_memory_desc:0 "One of our leaders has proposed a clever way of storing additional knowledge outside the brain using redundant genetic structures. Further research is required."
@@ -20,20 +22,20 @@
 
 # New Worlds
   tech_dh_dynamic_heat_shielding:0 "Dynamic Heat Shielding"
-  tech_dh_dynamic_heat_shielding_desc:0 "Designed to keep the heat out during the day and keep it in during the cold nights."
+  tech_dh_dynamic_heat_shielding_desc:0 "Designed to keep the heat out during the day and in during the cold nights."
 
   tech_dh_predictive_hydrodynamics:0 "Predictive Hydrodynamics"
   tech_dh_predictive_hydrodynamics_desc:0 "Large oceans produce turbulent weather patterns. Understanding them is key to successful settlements."
 
   tech_dh_subdermal_living:0 "Subdermal Living"
-  tech_dh_subdermal_living_desc:0 "..."
+  tech_dh_subdermal_living_desc:0 "Every planets core radiates heat. The closer we can get to the center, the better protected we are against the cold."
 
   tech_dh_unified_spirit:0 "Unified Spirit"
   tech_dh_unified_spirit_desc:0 "..."
 
 # Statecraft
   tech_dh_limited_shapeshifting:0 "Limited Shapeshifting"
-  tech_dh_limited_shapeshifting_desc:0 "..."
+  tech_dh_limited_shapeshifting_desc:0 "A few scales here, a feather there. However minute, the right modifications will let us operate just that much more in the open."
   tech_dh_biomimetic_disguises:0 "Biomimetic Disguises"
   tech_dh_biomimetic_disguises_desc:0 "..."
 
@@ -51,18 +53,18 @@
   tech_dh_omnigravitational_warfare_desc:0 "The enemy's gate is down." # Ender's Game
 
   tech_dh_intrasolar_positioning:0 "Intrasolar Positioning"
-  tech_dh_intrasolar_positioning_desc:0 "..."
+  tech_dh_intrasolar_positioning_desc:0 "The home territory has long given defenders a crucial advantage. Better mapping and positioning within our space will provide similar benefits."
 
 # Psionics
   tech_dh_telepathic_shielding:0 "Telepathic Shielding"
   tech_dh_telepathic_shielding_desc:0 "..." # Foundation?
 
   tech_dh_mental_manipulation:0 "Mental Manipulation"
-  tech_dh_mental_manipulation_desc:0 "..."
+  tech_dh_mental_manipulation_desc:0 "Moving minds may be harder than moving objects, but it is far more effective."
 
 # Archaeostudies
   tech_dh_ancient_secrets:0 "Ancient Secrets"
-  tech_dh_ancient_secrets_desc:0 "..."
+  tech_dh_ancient_secrets_desc:0 "The past is an infinite well of knowledge. We just need to know where to look."
 
   tech_dh_graphed_antiquity:0 "Graphed Antiquity"
   tech_dh_graphed_antiquity_desc:0 "A partial timeline of important events allows for greater exploration of the artifacts we recover."
@@ -75,7 +77,7 @@
   tech_dh_proto_gravity_analysis_desc:0 "..."
 
   tech_dh_synthetic_data:0 "Synthetic Data"
-  tech_dh_synthetic_data_desc:0 "..."
+  tech_dh_synthetic_data_desc:0 "Real-world data is a difficult bottleneck for many a scientist. With the right formulas, we will simply make our own."
 
   tech_dh_regenerative_firewalls:0 "Regenerative Firewalls"
   tech_dh_regenerative_firewalls_desc:0 "..."
@@ -98,7 +100,7 @@
   tech_dh_conduction_nexus_wilderness_desc:0 "$building_dh_conduction_nexus_wilderness_desc$"
 
   tech_dh_storm_warding:0 "Storm Warding"
-  tech_dh_storm_warding_desc:0 "Planetary storm repellors that keep the worst effects away."
+  tech_dh_storm_warding_desc:0 "Planetary storm repellors that keep the worst effects away from critical infrasture."
 
 ## Engineering ##
 # Industry
@@ -108,7 +110,7 @@
   tech_dh_extraction_nexus_wilderness_desc:0 "$building_dh_extraction_nexus_wilderness_desc$"
 
   tech_dh_graviton_reflectors:0 "Graviton Reflectors"
-  tech_dh_graviton_reflectors_desc:0 "..."
+  tech_dh_graviton_reflectors_desc:0 "By redirecting gravity at crucial points, these reflectors promise to lower costs of anti-gravity architecture."
 
   tech_dh_asteroid_stabilisation:0 "Asteroid Stabilisation"
   tech_dh_asteroid_stabilisation_desc:0 "..."
@@ -116,6 +118,7 @@
 
   tech_dh_positronic_love:0 "Positronic Love"
   tech_dh_positronic_love_desc:0 "..."
+  # Needs Machine Counterpart...
 
 # Propulsion
   tech_dh_graviton_propulsion:0 "Graviton Propulsion"
@@ -138,12 +141,12 @@
 
 # Voidcraft
   tech_dh_dreams_beyond_scale:0 "Dreams Beyond Scale"
-  tech_dh_dreams_beyond_scale_desc:0 "..."
-  TECH_UNLOCK_DH_MEGA_TITLE:0 "§HGrants 5% of Tech:§! $tech_mega_engineering$"
+  tech_dh_dreams_beyond_scale_desc:0 "This leader has a vision for something greater, something larger, something scaled beyond anything previously constructed... a megastructure."
+  TECH_UNLOCK_DH_MEGA_TITLE:0 "$dh_partial_tech_progress$ $tech_mega_engineering$"
   TECH_UNLOCK_DH_MEGA_DESC:0 "§H$tech_mega_engineering$§!\n$tech_mega_engineering_desc$"
 
   tech_dh_interstellar_ecologies:0 "Interstellar Ecologies"
-  tech_dh_interstellar_ecologies_desc:0 "..."
+  tech_dh_interstellar_ecologies_desc:0 "Increasing life-support on our starbases promises to increase efficiency and make them a vital part of our economy."
 
 # Materials
   tech_dh_fractal_catalysts:0 "Fractal Catalysts"

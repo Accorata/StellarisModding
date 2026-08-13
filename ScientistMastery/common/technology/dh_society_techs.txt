@@ -130,53 +130,29 @@ tech_dh_limited_shapeshifting = {
 	area = society
 	category = { statecraft }
 	tier = 4
-	prerequisites = { "tech_gene_tailoring" }
-	is_custom_tech_2 = yes
-
-	potential = {
-		NOR = {
-			has_authority = auth_machine_intelligence
-			is_individual_machine = yes
-		}
-	}
-
-	modifier = {
-		spy_network_daily_value_mult = 0.10
-		army_morale_damage_mult = 0.05
-	}
-	
-	weight = @dh_leader_insight_weight
-
-	weight_modifier = {
-		inline_script = {
-			script = technologies/dh_requires_trait
-			FIELD = statecraft
-		}
-	}
-	
-	ai_weight = {
-		weight = @dh_leader_ai_weight
-	}
-}
-
-tech_dh_biomimetic_disguises = {
-	cost = @dh_leader_insight_cost
-	area = society
-	category = { statecraft }
-	tier = 4
-	prerequisites = { "tech_biomechanics" }
-	is_custom_tech_2 = yes
-
-	potential = {
+	prerequisites = {
 		OR = {
-			has_authority = auth_machine_intelligence
-			is_individual_machine = yes
+			tech_gene_tailoring
+			tech_biomechanics
 		}
 	}
+	is_custom_tech_2 = yes
 
 	modifier = {
 		spy_network_daily_value_mult = 0.10
 		army_morale_damage_mult = 0.05
+	}
+
+	technology_swap = {
+		name = tech_dh_biomimetic_disguises
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				is_individual_machine = yes
+			}
+		}
 	}
 	
 	weight = @dh_leader_insight_weight
