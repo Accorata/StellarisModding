@@ -1,5 +1,5 @@
 component_set = {
-	key = "dh_REACTOR_BOOSTER_4"
+	key = "DH_REACTOR_BOOSTER_4"
 
 	icon = "GFX_ship_part_dh_reactor_booster_4"
 	icon_frame = 1

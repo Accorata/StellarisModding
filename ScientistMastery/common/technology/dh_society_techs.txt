@@ -561,6 +561,10 @@ tech_dh_telepathic_shielding = {
 			script = technologies/dh_requires_trait
 			FIELD = psionics
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_telepathic_shielding
+		}
 	}
 	
 	ai_weight = {
@@ -587,6 +591,10 @@ tech_dh_mental_manipulation = {
 		inline_script = {
 			script = technologies/dh_requires_trait
 			FIELD = psionics
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_mental_manipulation
 		}
 	}
 	
@@ -617,6 +625,10 @@ tech_dh_ancient_secrets = {
 			script = technologies/dh_requires_trait
 			FIELD = archaeostudies
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_ancient_secrets
+		}
 	}
 	
 	ai_weight = {
@@ -629,11 +641,16 @@ tech_dh_graphed_antiquity = {
 	area = society
 	category = { archaeostudies }
 	tier = 3
-	prerequisites = { "tech_arcane_deciphering" } # change ...
+	prerequisites = { "tech_archaeostudies" }
 	is_custom_tech_2 = yes
 	is_rare = yes
 
-	custom_tooltip = tech_dh_graphed_antiquity_tt 
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DH_STUDY_THE_ANCIENTS_TITLE"
+			desc = "TECH_UNLOCK_DH_STUDY_THE_ANCIENTS_DESC"
+		}
+	}
 	
 	weight = @dh_leader_insight_weight_archeo
 
@@ -641,6 +658,10 @@ tech_dh_graphed_antiquity = {
 		inline_script = {
 			script = technologies/dh_requires_trait
 			FIELD = archaeostudies
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_graphed_antiquity
 		}
 	}
 	

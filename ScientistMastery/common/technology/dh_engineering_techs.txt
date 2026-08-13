@@ -10,13 +10,31 @@ tech_dh_graviton_propulsion = {
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		custom = {
-			title = "TECH_UNLOCK_dh_GRAV_THRUSTERS_TITLE"
-			desc = "TECH_UNLOCK_dh_GRAV_THRUSTERS_DESC"
+			title = "TECH_UNLOCK_DH_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_DH_GRAV_THRUSTERS_DESC"
 		}
 	}
 
 	modifier = {
 		ship_landing_time_mult = -0.2
+	}
+
+	technology_swap = {
+		name = tech_dh_graviton_propulsion_bioship
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		prereqfor_desc = {
+			custom = {
+				title = "TECH_UNLOCK_DH_BIOSHIP_GRAV_THRUSTERS_TITLE"
+				desc = "TECH_UNLOCK_DH_BIOSHIP_GRAV_THRUSTERS_DESC"
+			}
+		}
+		modifier = {
+			ship_landing_time_mult = -0.2
+		}
 	}
 	
 	weight = @dh_leader_insight_weight
@@ -44,13 +62,31 @@ tech_dh_dark_matter_gravatics = {
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		custom = {
-			title = "TECH_UNLOCK_dh_DARK_GRAV_THRUSTERS_TITLE"
-			desc = "TECH_UNLOCK_dh_DARK_GRAV_THRUSTERS_DESC"
+			title = "TECH_UNLOCK_DH_DARK_GRAV_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_DH_DARK_GRAV_THRUSTERS_DESC"
 		}
 	}
 
 	modifier = {
-		ship_speed_mult = 0.1
+		fleet_mia_time_mult = -0.1
+	}
+
+	technology_swap = {
+		name = tech_dh_dark_matter_gravatics_bioship
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		prereqfor_desc = {
+			custom = {
+				title = "TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_TITLE"
+				desc = "TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_DESC"
+			}
+		}
+		modifier = {
+			fleet_mia_time_mult = -0.1
+		}
 	}
 	
 	weight = @dh_leader_insight_weight
@@ -79,8 +115,8 @@ tech_dh_dreams_beyond_scale = {
 
 	prereqfor_desc = {
 		custom = {
-			title = "TECH_UNLOCK_dh_MEGA_TITLE"
-			desc = "TECH_UNLOCK_dh_MEGA_DESC"
+			title = "TECH_UNLOCK_DH_MEGA_TITLE"
+			desc = "TECH_UNLOCK_DH_MEGA_DESC"
 		}
 	}
 
@@ -287,6 +323,33 @@ tech_dh_fractal_catalysts = {
 	modifier = {
 		planet_metallurgists_rare_crystals_produces_mult = 0.25
 		planet_artisans_rare_crystals_produces_mult = 0.25
+	}
+	
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = materials
+		}
+	}
+
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+	}
+}
+
+tech_dh_lossless_refinement = {
+	cost = @dh_leader_insight_cost
+	area = engineering
+	category = { materials }
+	tier = 3
+	prerequisites = { "tech_exotic_gases" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		planet_metallurgists_exotic_gases_produces_mult = 0.25
+		planet_artisans_exotic_gases_produces_mult = 0.25
 	}
 	
 	weight = @dh_leader_insight_weight
