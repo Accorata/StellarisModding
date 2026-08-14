@@ -12,5 +12,6 @@ on_leader_death = {
 on_tech_increased = {
 	events = {
 		dangerous_horizons.5			# Grant 5% of mega engineering for Dreams Beyond Scale
+		dangerous_horizons.6			# Grant 5% of existential campaigns for Unending Ambition
 	}
 }

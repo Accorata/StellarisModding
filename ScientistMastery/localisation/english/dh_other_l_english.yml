@@ -5,6 +5,8 @@
 
 # Modifiers
   mod_starbase_constructions_produces_mult:0 "Resources from Starbase Constructions"
+  mod_weapon_type_explosive_weapon_speed_mult:0 "Explosive Weapon Flight Speed"
+  mod_weapon_type_kinetic_weapon_speed_mult:0 "Kinetic Weapon Flight Speed"
 
 # Edicts
   edict_dh_touch_beyond_touch:0 "Touch Beyond Touch"

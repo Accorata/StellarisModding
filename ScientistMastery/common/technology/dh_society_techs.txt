@@ -402,16 +402,29 @@ tech_dh_unified_spirit = {
 }
 
 ### Military Theory ###
-tech_dh_esoteric_strategies = {
+tech_dh_unending_ambition = {
 	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
-	tier = 5
-	prerequisites = { "tech_doctrine_fleet_size_5" }
+	tier = 4
+	prerequisites = { "tech_galactic_campaigns" }
 	is_custom_tech_2 = yes
 
+	potential = {
+		NOT = {
+			has_technology = tech_existential_campaigns
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DH_EXISTENTIAL_TITLE"
+			desc = "TECH_UNLOCK_DH_EXISTENTIAL_DESC"
+		}
+	}
+
 	modifier = {
-		command_limit_add = 20
+		country_war_exhaustion_mult = -0.05
 	}
 	
 	weight = @dh_leader_insight_weight
@@ -421,20 +434,46 @@ tech_dh_esoteric_strategies = {
 			script = technologies/dh_requires_trait
 			FIELD = military_theory
 		}
-		modifier = {
-			factor = 2
-			is_militarist = yes
-		}
-		modifier = {
-			factor = 2
-			is_xenophile = yes
-		}
 	}
 	
 	ai_weight = {
 		weight = @dh_leader_ai_weight
 	}
 }
+
+#tech_dh_esoteric_strategies = {
+#	cost = @dh_leader_insight_cost
+#	area = society
+#	category = { military_theory }
+#	tier = 5
+#	prerequisites = { "tech_doctrine_fleet_size_5" }
+#	is_custom_tech_2 = yes
+#
+#	modifier = {
+#		command_limit_add = 20
+#	}
+#	
+#	weight = @dh_leader_insight_weight
+#
+#	weight_modifier = {
+#		inline_script = {
+#			script = technologies/dh_requires_trait
+#			FIELD = military_theory
+#		}
+#		modifier = {
+#			factor = 2
+#			is_militarist = yes
+#		}
+#		modifier = {
+#			factor = 2
+#			is_xenophile = yes
+#		}
+#	}
+#	
+#	ai_weight = {
+#		weight = @dh_leader_ai_weight
+#	}
+#}
 
 tech_dh_strategos_refinement = {
 	cost = @dh_leader_insight_cost

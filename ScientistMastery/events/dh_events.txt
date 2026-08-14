@@ -88,9 +88,27 @@ country_event = {
 		}
 	}
 	immediate = {
-		add_research_option = tech_mega_engineering
 		add_tech_progress = {
 			tech = tech_mega_engineering
+			progress = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = dangerous_horizons.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_increased_tech = "tech_dh_unending_ambition"
+		NOT = {
+			has_technology = tech_existential_campaigns
+		}
+	}
+	immediate = {
+		add_tech_progress = {
+			tech = tech_existential_campaigns
 			progress = 0.05
 		}
 	}

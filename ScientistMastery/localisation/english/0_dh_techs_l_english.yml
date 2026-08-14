@@ -43,8 +43,10 @@
   tech_dh_neural_identities_desc:0 "Through advanced algorithms, slave implants could provide their wearers with entirely fictional lives to keep them subservient and functional."
 
 # Military Theory
-  tech_dh_esoteric_strategies:0 "Doctrine: Esoteric Strategies"
-  tech_dh_esoteric_strategies_desc:0 "..."
+  tech_dh_unending_ambition:0 "Unending Ambition"
+  tech_dh_unending_ambition_desc:0 "Destiny awaits us. The galaxy is ours to take."
+  TECH_UNLOCK_DH_EXISTENTIAL_TITLE:0 "$dh_partial_tech_progress$ $tech_existential_campaigns$"
+  TECH_UNLOCK_DH_EXISTENTIAL_DESC:0 "§H$tech_existential_campaigns$§!\n$tech_existential_campaigns_desc$"
 
   tech_dh_strategos_refinement:0 "Strategos Refinement"
   tech_dh_strategos_refinement_desc:0 "..."
@@ -138,6 +140,12 @@
   tech_dh_dark_matter_gravatics_bioship_desc:0 "$DH_SHIP_THRUSTER_5_GRAV_DESC$"
   TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_TITLE:0 "§HUnlocks Component:§! $DH_BIO_SHIP_THRUSTER_5_GRAV$"
   TECH_UNLOCK_DH_BIOSHIP_DARK_GRAV_THRUSTERS_DESC:0 "§H$DH_BIO_SHIP_THRUSTER_5_GRAV$§!\n$DH_BIO_SHIP_THRUSTER_5_GRAV_DESC$"
+
+  tech_dh_streamlined_munitions:0 "Streamlined Munitions"
+  tech_dh_streamlined_munitions_desc:0 "..."
+
+  tech_dh_aerodynamic_warheads:0 "Aerodynamic Warheads"
+  tech_dh_aerodynamic_warheads_desc:0 "..."
 
 # Voidcraft
   tech_dh_dreams_beyond_scale:0 "Dreams Beyond Scale"

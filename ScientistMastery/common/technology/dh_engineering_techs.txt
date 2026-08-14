@@ -105,6 +105,73 @@ tech_dh_dark_matter_gravatics = {
 	}
 }
 
+tech_dh_streamlined_munitions = {
+	cost = @dh_leader_insight_cost
+	area = engineering
+	category = { propulsion }
+	tier = 3
+	prerequisites = { "tech_mass_drivers_3" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		weapon_type_kinetic_weapon_speed_mult = 0.25
+	}
+	
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = propulsion
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_kinetic }
+		}
+	}
+}
+
+tech_dh_aerodynamic_warheads = {
+	cost = @dh_leader_insight_cost
+	area = engineering
+	category = { propulsion }
+	tier = 3
+	prerequisites = { "tech_missiles_3" }
+	is_custom_tech_2 = yes
+
+	modifier = {
+		weapon_type_explosive_weapon_speed_mult = 0.25
+	}
+	
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = propulsion
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+}
 
 ### Voidcraft ###
 tech_dh_dreams_beyond_scale = {
@@ -126,7 +193,9 @@ tech_dh_dreams_beyond_scale = {
 	is_custom_tech_2 = yes
 
 	potential = {
-		has_technology = tech_mega_engineering
+		NOT = {
+			has_technology = tech_mega_engineering
+		}
 	}
 
 	prereqfor_desc = {
