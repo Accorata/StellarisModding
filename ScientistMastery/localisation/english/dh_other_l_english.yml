@@ -159,3 +159,8 @@
   dh_propulsion_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
   dh_voidcraft_scientist_memory:0 "$dh_memory_archives$ Voidcraft"
   dh_voidcraft_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
+
+# Events
+  dangerous_horizons.3.name:0 "Scientific Mastery"
+  dangerous_horizons.3.desc:0 "..."
+  dangerous_horizons.3.a:0 "Wonderful."

@@ -652,6 +652,35 @@ tech_dh_mental_manipulation = {
 	}
 }
 
+tech_dh_martial_telekinetics = {
+	area = society
+	category = { psionics }
+	tier = 4
+	prerequisites = { "tech_psionic_theory" }
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
+	is_rare = yes
+	
+	weight = @dh_leader_insight_weight_psionic
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = psionics
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_martial_telekinetics
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+	}
+}
+
 ### Archaeostudies ###
 tech_dh_ancient_secrets = {
 	area = society

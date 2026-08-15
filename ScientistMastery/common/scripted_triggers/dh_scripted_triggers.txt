@@ -1,0 +1,17 @@
+dh_has_level_3_expertise_trait = {
+	OR = {
+		has_trait = leader_trait_expertise_materials_3
+		has_trait = leader_trait_expertise_propulsion_3
+		has_trait = leader_trait_expertise_voidcraft_3
+		has_trait = leader_trait_expertise_industry_3
+		has_trait = leader_trait_expertise_field_manipulation_3
+		has_trait = leader_trait_expertise_particles_3
+		has_trait = leader_trait_expertise_computing_3
+		has_trait = leader_trait_expertise_new_worlds_3
+		has_trait = leader_trait_expertise_statecraft_3
+		has_trait = leader_trait_expertise_biology_3
+		has_trait = leader_trait_expertise_military_theory_3
+		has_trait = leader_trait_expertise_archaeostudies_3
+		has_trait = leader_trait_expertise_psionics_3
+	}
+}

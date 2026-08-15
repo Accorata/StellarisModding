@@ -1,9 +1,16 @@
+# this = country
+on_decade_pulse_country = {
+	events = {
+		dangerous_horizons.1			# Random leader events
+	}
+}
+
 # Executed as a leader has died
 # This = Country
 # From = Leader
 on_leader_death = {
 	events = {
-		dangerous_horizons.1          # Imperial Feedback government harvests Mastery traits
+		dangerous_horizons.10          # Imperial Feedback government harvests Mastery traits
 	}
 }
 

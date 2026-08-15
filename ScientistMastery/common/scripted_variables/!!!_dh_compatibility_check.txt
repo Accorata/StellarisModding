@@ -1,0 +1,4 @@
+# Mod compatability check
+@has_dangerous_horizons = 1
+
+# END OF FILE

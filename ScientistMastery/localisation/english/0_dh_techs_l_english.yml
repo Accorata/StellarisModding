@@ -64,6 +64,9 @@
   tech_dh_mental_manipulation:0 "Mental Manipulation"
   tech_dh_mental_manipulation_desc:0 "Moving minds may be harder than moving objects, but it is far more effective."
 
+  tech_dh_martial_telekinetics:0 "Martial Telekinetics"
+  tech_dh_martial_telekinetics_desc:0 "..."
+
 # Archaeostudies
   tech_dh_ancient_secrets:0 "Ancient Secrets"
   tech_dh_ancient_secrets_desc:0 "The past is an infinite well of knowledge. We just need to know where to look."

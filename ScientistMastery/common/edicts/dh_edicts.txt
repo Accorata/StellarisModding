@@ -13,9 +13,9 @@ dh_touch_beyond_touch = {
 		}
 	}
 
-	#prerequisites = {
-	#	"tech_doctrine_fleet_size_1"
-	#}
+	prerequisites = {
+		"tech_dh_martial_telekinetics"
+	}
 
 	modifier = {
 		ship_cloaking_detection_add = 1

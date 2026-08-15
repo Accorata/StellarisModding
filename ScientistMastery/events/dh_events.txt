@@ -1,12 +1,96 @@
 namespace = dangerous_horizons
 
+# Fires from on_decade_pulse_country
+country_event = {
+	id = dangerous_horizons.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		NOT = {
+			has_country_flag = dh_upgraded_to_mastery
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = dangerous_horizons.2
+			days = 1
+			random = 1800
+		}
+	}
+}
+
+country_event = {
+	id = dangerous_horizons.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_leader = {
+			NOT = { has_leader_flag = beholder }
+			has_base_skill >= 3
+			leader_years_of_service >= 10
+			dh_has_level_3_expertise_trait = yes
+		}
+	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				NOT = { has_leader_flag = beholder }
+				has_base_skill >= 3
+				leader_years_of_service >= 10
+				dh_has_level_3_expertise_trait = yes
+			}
+			random_list = {
+				15 = { leader_event = { id = dangerous_horizons.3 } }
+				85 = { }
+			}
+		}
+	}
+}
+
+leader_event = {
+	id = dangerous_horizons.3
+	title = dangerous_horizons.3.name
+	desc = dangerous_horizons.3.desc
+	picture = GFX_evt_board_meeting # change...
+	show_sound = event_default
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		dh_has_level_3_expertise_trait = yes
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = dh_upgraded_to_mastery
+		}
+	}
+
+	event_window_type = leader_story
+	event_picture_background = "GFX_leader_recruitment_bg_renowned"
+
+	picture_event_data = {
+		portrait = root
+	}
+
+	option = {
+		name = dangerous_horizons.3.a
+		dh_upgrade_to_mastery = yes
+	}
+}
+
 # Synth Imperial physical swap, leader dies and gives research modifier if has any mastery trait
 # Executed as a leader has died
 #	This = Country
 #	From = Leader
 # Fired by: on_leader_death
 country_event = {
-	id = dangerous_horizons.1
+	id = dangerous_horizons.10
 	hide_window = yes
 	is_triggered_only = yes
 
