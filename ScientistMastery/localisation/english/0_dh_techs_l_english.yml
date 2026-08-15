@@ -18,7 +18,7 @@
   # Needs Machine Counterpart...
 
   tech_dh_modular_taxonomy:0 "Modular Taxonomy"
-  tech_dh_modular_taxonomy_desc:0 "Precise and adaptable systems that can easily accompany any new discovery and apply changes retroactively."
+  tech_dh_modular_taxonomy_desc:0 "Precise and adaptable systems that can easily accomodate any new discovery and apply changes retroactively."
 
 # New Worlds
   tech_dh_dynamic_heat_shielding:0 "Dynamic Heat Shielding"
@@ -155,6 +155,9 @@
 
   tech_dh_interstellar_ecologies:0 "Interstellar Ecologies"
   tech_dh_interstellar_ecologies_desc:0 "Increasing life-support on our starbases promises to increase efficiency and make them a vital part of our economy."
+
+  tech_dh_standardized_defense_patterns:0 "Standardized Defense Patterns"
+  tech_dh_standardized_defense_patterns_desc:0 "Establishing new standards for the modeling and construction of defense platforms greatly improves the efficiency of the production pipeline."
 
 # Materials
   tech_dh_fractal_catalysts:0 "Fractal Catalysts"

@@ -1,0 +1,10 @@
+cost = @dh_leader_insight_cost
+
+is_custom_tech_2 = yes
+
+weight_groups = {
+	ac_mastery
+}
+mod_weight_if_group_picked = {
+	ac_mastery = 0.01
+}

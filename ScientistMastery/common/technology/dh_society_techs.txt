@@ -1,11 +1,13 @@
 ### Biology ###
 tech_dh_replication_nexus = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
 	prerequisites = { "tech_gene_crops" "tech_food_processing_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	technology_swap = { # Wilderness icon swap
 		name = tech_dh_replication_nexus_wilderness
@@ -31,12 +33,14 @@ tech_dh_replication_nexus = {
 }
 
 tech_dh_neuron_revitalizers = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
-	prerequisites = { "tech_frontier_hospital" "tech_vitality_boosters" }
-	is_custom_tech_2 = yes
+	prerequisites = { "tech_vitality_boosters" }
+
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	potential = {
 		is_natural_design_empire = no
@@ -65,12 +69,14 @@ tech_dh_neuron_revitalizers = {
 }
 
 tech_dh_genetic_memory = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 4
 	prerequisites = { "tech_galactic_administration" "tech_gene_tailoring" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	potential = {
 		NOR = {
@@ -99,12 +105,14 @@ tech_dh_genetic_memory = {
 }
 
 tech_dh_modular_taxonomy = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { biology }
 	tier = 3
 	prerequisites = { "tech_alien_life_studies" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_biologists_produces_mult = 0.05
@@ -126,7 +134,6 @@ tech_dh_modular_taxonomy = {
 
 ### Statecraft ###
 tech_dh_limited_shapeshifting = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { statecraft }
 	tier = 4
@@ -136,7 +143,10 @@ tech_dh_limited_shapeshifting = {
 			tech_biomechanics
 		}
 	}
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		spy_network_daily_value_mult = 0.10
@@ -170,12 +180,14 @@ tech_dh_limited_shapeshifting = {
 }
 
 tech_dh_neural_identities = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { statecraft }
 	tier = 3
 	prerequisites = { "tech_slave_colonies" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		pop_slave_happiness = 0.1
@@ -232,12 +244,14 @@ tech_dh_neural_identities = {
 
 ### New Worlds ###
 tech_dh_dynamic_heat_shielding = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
 	prerequisites = { "tech_colonization_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		pc_desert_habitability = 0.1
@@ -280,12 +294,14 @@ tech_dh_dynamic_heat_shielding = {
 }
 
 tech_dh_predictive_hydrodynamics = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
 	prerequisites = { "tech_colonization_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		pc_tropical_habitability = 0.1
@@ -328,12 +344,14 @@ tech_dh_predictive_hydrodynamics = {
 }
 
 tech_dh_subdermal_living = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 3
 	prerequisites = { "tech_colonization_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		pc_tundra_habitability = 0.1
@@ -376,12 +394,14 @@ tech_dh_subdermal_living = {
 }
 
 tech_dh_unified_spirit = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { new_worlds }
 	tier = 4
 	prerequisites = { "tech_unity_of_purpose" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planetary_ascension_cost_mult = -0.05	
@@ -403,12 +423,13 @@ tech_dh_unified_spirit = {
 
 ### Military Theory ###
 tech_dh_unending_ambition = {
-	cost = @dh_leader_insight_cost
-	area = society
 	category = { military_theory }
 	tier = 4
 	prerequisites = { "tech_galactic_campaigns" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	potential = {
 		NOT = {
@@ -441,13 +462,16 @@ tech_dh_unending_ambition = {
 	}
 }
 
-#tech_dh_esoteric_strategies = {
+#tech_dh_doctrine_esoteric_strategies = {
 #	cost = @dh_leader_insight_cost
 #	area = society
 #	category = { military_theory }
 #	tier = 5
 #	prerequisites = { "tech_doctrine_fleet_size_5" }
-#	is_custom_tech_2 = yes
+#	
+#	inline_script = {
+#		script = technologies/dh_mastery_tech
+#	}
 #
 #	modifier = {
 #		command_limit_add = 20
@@ -476,12 +500,14 @@ tech_dh_unending_ambition = {
 #}
 
 tech_dh_strategos_refinement = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 5
 	prerequisites = { "tech_galactic_administration" "tech_global_defense_grid" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		country_commander_cap_add = 1
@@ -503,12 +529,14 @@ tech_dh_strategos_refinement = {
 }
 
 tech_dh_omnigravitational_warfare = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 4
 	prerequisites = { "tech_combat_training" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		army_damage_taken_mult = -0.10
@@ -529,12 +557,14 @@ tech_dh_omnigravitational_warfare = {
 }
 
 tech_dh_intrasolar_positioning = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { military_theory }
 	tier = 3
 	prerequisites = { "tech_interstellar_fleet_traditions" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		ship_friendly_territory_fire_rate_mult = 0.1
@@ -557,12 +587,14 @@ tech_dh_intrasolar_positioning = {
 
 ### Psionics ###
 tech_dh_telepathic_shielding = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { psionics }
 	tier = 4
 	prerequisites = { "tech_telepathy" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 	is_rare = yes
 
 	modifier = {
@@ -588,12 +620,14 @@ tech_dh_telepathic_shielding = {
 }
 
 tech_dh_mental_manipulation = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { psionics }
 	tier = 3
 	prerequisites = { "tech_psionic_theory" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 	is_rare = yes
 
 	modifier = {
@@ -620,12 +654,14 @@ tech_dh_mental_manipulation = {
 
 ### Archaeostudies ###
 tech_dh_ancient_secrets = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { archaeostudies }
 	tier = 3
 	prerequisites = { "tech_arcane_deciphering" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 	is_rare = yes
 
 	modifier = {
@@ -652,12 +688,14 @@ tech_dh_ancient_secrets = {
 }
 
 tech_dh_graphed_antiquity = {
-	cost = @dh_leader_insight_cost
 	area = society
 	category = { archaeostudies }
 	tier = 3
 	prerequisites = { "tech_archaeostudies" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 	is_rare = yes
 
 	prereqfor_desc = {

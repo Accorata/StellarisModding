@@ -1,11 +1,13 @@
 ### Propulsion ###
 tech_dh_graviton_propulsion = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 5
 	prerequisites = { "tech_thrusters_4" "tech_housing_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
@@ -53,12 +55,14 @@ tech_dh_graviton_propulsion = {
 }
 
 tech_dh_dark_matter_gravatics = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 5
 	prerequisites = { "tech_dark_matter_propulsion" "tech_dh_graviton_propulsion" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
@@ -106,12 +110,14 @@ tech_dh_dark_matter_gravatics = {
 }
 
 tech_dh_streamlined_munitions = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 3
 	prerequisites = { "tech_mass_drivers_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		weapon_type_kinetic_weapon_speed_mult = 0.25
@@ -140,12 +146,14 @@ tech_dh_streamlined_munitions = {
 }
 
 tech_dh_aerodynamic_warheads = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { propulsion }
 	tier = 3
 	prerequisites = { "tech_missiles_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		weapon_type_explosive_weapon_speed_mult = 0.25
@@ -175,7 +183,6 @@ tech_dh_aerodynamic_warheads = {
 
 ### Voidcraft ###
 tech_dh_dreams_beyond_scale = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { voidcraft }
 	tier = 4
@@ -190,7 +197,10 @@ tech_dh_dreams_beyond_scale = {
 			tech_harbingers
 		}
 	}
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	potential = {
 		NOT = {
@@ -224,14 +234,13 @@ tech_dh_dreams_beyond_scale = {
 }
 
 tech_dh_interstellar_ecologies = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { voidcraft }
 	tier = 3
-	is_custom_tech_2 = yes
-
-	potential = {
-		is_nomadic = no
+	prerequisites = { "tech_starbase_2" }
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
 	}
 
 	weight = @dh_leader_insight_weight
@@ -248,14 +257,47 @@ tech_dh_interstellar_ecologies = {
 	}
 }
 
+tech_dh_standardized_defense_patterns = {
+	area = engineering
+	category = { voidcraft }
+	tier = 3
+	prerequisites = { "tech_defense_platform_hull_1" }
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
+
+	modifier = {
+		shipclass_military_station_build_cost_mult = -0.05
+		shipclass_military_station_build_speed_mult = 0.25
+	}
+
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = voidcraft
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+	}
+}
+
+# megastructure_hyper_relay_build_speed_mult ?
+
 ### Industry ###
 tech_dh_extraction_nexus = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 3
 	prerequisites = { "tech_mining_2" "tech_mineral_purification_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	potential = {
 		is_nomadic = no
@@ -285,12 +327,14 @@ tech_dh_extraction_nexus = {
 }
 
 tech_dh_graviton_reflectors = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 4
 	prerequisites = { "tech_housing_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_structures_volatile_motes_upkeep_mult = -0.10
@@ -330,7 +374,10 @@ tech_dh_asteroid_stabilisation = {
 	category = { industry }
 	tier = 3
 	prerequisites = { "tech_space_mining_4" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		station_gatherers_produces_mult = 0.05
@@ -364,12 +411,14 @@ tech_dh_asteroid_stabilisation = {
 }
 
 tech_dh_positronic_love = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { industry }
 	tier = 5
 	prerequisites = { "tech_synthetic_leaders" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		ROBOT_pop_happiness = 0.1
@@ -398,12 +447,14 @@ tech_dh_positronic_love = {
 
 ### Materials ###
 tech_dh_fractal_catalysts = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { materials }
 	tier = 3
 	prerequisites = { "tech_rare_crystals" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_metallurgists_rare_crystals_produces_mult = 0.25
@@ -425,12 +476,14 @@ tech_dh_fractal_catalysts = {
 }
 
 tech_dh_lossless_refinement = {
-	cost = @dh_leader_insight_cost
 	area = engineering
 	category = { materials }
 	tier = 3
 	prerequisites = { "tech_exotic_gases" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_metallurgists_exotic_gases_produces_mult = 0.25

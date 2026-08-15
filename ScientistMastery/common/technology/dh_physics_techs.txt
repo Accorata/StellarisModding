@@ -1,10 +1,12 @@
 ### Computing ###
 tech_dh_proto_gravity_analysis = {
-	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_buildings_cost_mult = -0.05
@@ -25,12 +27,14 @@ tech_dh_proto_gravity_analysis = {
 }
 
 tech_dh_synthetic_data = {
-	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
 	prerequisites = { "tech_self_aware_logic" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_physicists_produces_mult = 0.05
@@ -56,7 +60,10 @@ tech_dh_regenerative_firewalls = {
 	category = { computing }
 	tier = 3
 	prerequisites = { "tech_encryption_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		intel_encryption_add = 1
@@ -86,7 +93,10 @@ tech_dh_n_body_abstractions = {
 	category = { computing }
 	tier = 3
 	prerequisites = { "tech_space_science_4" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		station_researchers_produces_mult = 0.05
@@ -121,12 +131,14 @@ tech_dh_n_body_abstractions = {
 
 ### Particles ###
 tech_dh_reactor_boosters_4 = {
-	cost = @dh_leader_insight_cost
 	area = physics
 	category = { particles }
 	tier = 5
 	prerequisites = { "tech_dark_matter_power_core" "tech_reactor_boosters_3" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	weight = @dh_leader_insight_weight
 
@@ -143,12 +155,14 @@ tech_dh_reactor_boosters_4 = {
 }
 
 tech_dh_microchemistry = {
-	cost = @dh_leader_insight_cost
 	area = physics
 	category = { particles }
 	tier = 3
 	prerequisites = { "tech_volatile_motes" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_metallurgists_volatile_motes_produces_mult = 0.25
@@ -171,12 +185,14 @@ tech_dh_microchemistry = {
 
 ### Field Manipulation ###
 tech_dh_conduction_nexus = {
-	cost = @dh_leader_insight_cost
 	area = physics
 	category = { field_manipulation }
 	tier = 3
 	prerequisites = { "tech_power_plant_2" "tech_power_hub_2" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	technology_swap = { # Wilderness icon swap
 		name = tech_dh_conduction_nexus_wilderness
@@ -212,7 +228,10 @@ tech_dh_storm_warding = {
 	category = { field_manipulation }
 	tier = 3
 	prerequisites = { "tech_storm_manipulation" }
-	is_custom_tech_2 = yes
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
 
 	modifier = {
 		planet_storm_devastation_mult = -0.15
