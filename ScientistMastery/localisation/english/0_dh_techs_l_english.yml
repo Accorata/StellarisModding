@@ -11,7 +11,8 @@
 
   tech_dh_neuron_revitalizers:0 "Neuron Revitalizers"
   tech_dh_neuron_revitalizers_desc:0 "..."
-  # Needs Machine Counterpart...
+  tech_dh_induced_happiness:0 "Induced Happiness"
+  tech_dh_induced_happiness_desc:0 "Our biological counterparts seem to be particularly vulnerable to certain chemicals. If we can find the right drugs, we should be able to improve their well-being."
 
   tech_dh_genetic_memory:0 "Genetic Memory"
   tech_dh_genetic_memory_desc:0 "One of our leaders has proposed a clever way of storing additional knowledge outside the brain using redundant genetic structures. Further research is required."
@@ -123,7 +124,8 @@
 
   tech_dh_positronic_love:0 "Positronic Love"
   tech_dh_positronic_love_desc:0 "..."
-  # Needs Machine Counterpart...
+  tech_dh_positron_revitalizers:0 "Positron Revitalizers"
+  tech_dh_positron_revitalizers_desc:0 "..."
 
 # Propulsion
   tech_dh_graviton_propulsion:0 "Graviton Propulsion"

@@ -43,7 +43,10 @@ tech_dh_neuron_revitalizers = {
 	}
 
 	potential = {
-		is_natural_design_empire = no
+		NOR = {
+			is_machine_empire = yes
+			is_individual_machine = yes
+		}
 	}
 
 	modifier = {
@@ -60,6 +63,41 @@ tech_dh_neuron_revitalizers = {
 		modifier = {
 			factor = 4
 			has_valid_civic = civic_private_healthcare_corporate
+		}
+	}
+	
+	ai_weight = {
+		weight = @dh_leader_ai_weight
+	}
+}
+
+tech_dh_induced_happiness = {
+	area = society
+	category = { biology }
+	tier = 5
+	
+	inline_script = {
+		script = technologies/dh_mastery_tech
+	}
+
+	potential = {
+		OR = {
+			is_individual_machine = yes
+			has_civic = civic_machine_assimilator
+			has_civic = civic_machine_servitor
+		}
+	}
+
+	modifier = {
+		biological_pop_happiness = 0.1
+	}
+
+	weight = @dh_leader_insight_weight
+
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_trait
+			FIELD = biology
 		}
 	}
 	
@@ -655,7 +693,7 @@ tech_dh_mental_manipulation = {
 tech_dh_martial_telekinetics = {
 	area = society
 	category = { psionics }
-	tier = 4
+	tier = 5
 	prerequisites = { "tech_psionic_theory" }
 	
 	inline_script = {
