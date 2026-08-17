@@ -119,6 +119,9 @@
 
 ## Engineering ##
 # Industry
+  tech_dh_centrapolis:0 "Ecumenical Coordination"
+  tech_dh_centrapolis_desc:0 "..."
+
   tech_dh_extraction_nexus:0 "$building_dh_extraction_nexus$"
   tech_dh_extraction_nexus_desc:0 "$building_dh_extraction_nexus_desc$"
   tech_dh_extraction_nexus_wilderness:0 "$building_dh_extraction_nexus_wilderness$"

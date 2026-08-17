@@ -291,6 +291,49 @@ tech_dh_standardized_defense_patterns = {
 # megastructure_hyper_relay_build_speed_mult ?
 
 ### Industry ###
+## Ansible
+tech_dh_centrapolis = {
+	cost = @tier5cost1
+	area = engineering
+	category = { industry }
+	tier = 5
+	prerequisites = { "tech_dh_ansible" "tech_housing_2" }
+
+	is_rare = yes
+	
+	weight = @tier5weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					is_planet_class = pc_city
+				}
+			}
+		}
+		inline_script = {
+			script = technologies/dh_requires_expertise
+			FIELD = industry
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dh_centrapolis
+		}
+		modifier = {
+			factor = 3
+			num_owned_planets > 10
+		}
+		modifier = {
+			factor = 3
+			num_owned_planets > 15
+		}
+	}
+
+	ai_weight = {
+	}
+}
+
 ## Leader Insights
 tech_dh_extraction_nexus = {
 	area = engineering

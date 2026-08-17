@@ -157,10 +157,10 @@ tech_dh_ansible = {
 		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_ansible
+			TECHNOLOGY = tech_dh_ansible
 		}
 	}
-	
+
 	ai_weight = {
 	}
 }

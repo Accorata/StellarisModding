@@ -1,0 +1,56 @@
+dh_district_arcology_coordination = {
+	overlay_icon = GFX_district_government
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	triggered_name = {
+		text = city_industrial_1 #change...
+	}
+}
+
+dh_district_arcology_culture = {
+	overlay_icon = GFX_district_unity
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	triggered_name = {
+		text = city_foundry_1 #change...
+	}
+}
+
+dh_district_arcology_media = {
+	overlay_icon = GFX_district_amenities
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	triggered_name = {
+		text = city_factory_1 #change...
+	}
+}

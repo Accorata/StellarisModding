@@ -33,6 +33,12 @@ spriteTypes = {
 		name = "GFX_dh_interstellar_ecology_sb"
 		texturefile = "gfx/interface/icons/modules/sb_dh_interstellar_ecology.dds"
 	}
+
+	# DISTRICT SPECIALIZATIONS ---------------------------------------------------------------
+	spriteType = {
+		name = "GFX_dh_district_specialization_coordination"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/dh_district_specialization_coordination.dds"
+	}
 }
 
 
