@@ -1,4 +1,5 @@
 ### Propulsion ###
+## Leader Insights
 tech_dh_graviton_propulsion = {
 	area = engineering
 	category = { propulsion }
@@ -44,7 +45,7 @@ tech_dh_graviton_propulsion = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = propulsion
 		}
 	}
@@ -99,7 +100,7 @@ tech_dh_dark_matter_gravatics = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = propulsion
 		}
 	}
@@ -127,7 +128,7 @@ tech_dh_streamlined_munitions = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = propulsion
 		}
 	}
@@ -163,7 +164,7 @@ tech_dh_aerodynamic_warheads = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = propulsion
 		}
 	}
@@ -182,6 +183,7 @@ tech_dh_aerodynamic_warheads = {
 }
 
 ### Voidcraft ###
+## Leader Insights
 tech_dh_dreams_beyond_scale = {
 	area = engineering
 	category = { voidcraft }
@@ -223,7 +225,7 @@ tech_dh_dreams_beyond_scale = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = voidcraft
 		}
 	}
@@ -247,7 +249,7 @@ tech_dh_interstellar_ecologies = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = voidcraft
 		}
 	}
@@ -276,7 +278,7 @@ tech_dh_standardized_defense_patterns = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = voidcraft
 		}
 	}
@@ -289,6 +291,7 @@ tech_dh_standardized_defense_patterns = {
 # megastructure_hyper_relay_build_speed_mult ?
 
 ### Industry ###
+## Leader Insights
 tech_dh_extraction_nexus = {
 	area = engineering
 	category = { industry }
@@ -316,7 +319,7 @@ tech_dh_extraction_nexus = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = industry
 		}
 	}
@@ -346,7 +349,7 @@ tech_dh_graviton_reflectors = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = industry
 		}
 		modifier = {
@@ -400,7 +403,7 @@ tech_dh_asteroid_stabilisation = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = industry
 		}
 	}
@@ -428,7 +431,7 @@ tech_dh_positronic_love = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = industry
 		}
 		modifier = {
@@ -463,7 +466,7 @@ tech_dh_positron_revitalizers = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = industry
 		}
 	}
@@ -474,6 +477,7 @@ tech_dh_positron_revitalizers = {
 }
 
 ### Materials ###
+## Leader Insights
 tech_dh_fractal_catalysts = {
 	area = engineering
 	category = { materials }
@@ -493,7 +497,7 @@ tech_dh_fractal_catalysts = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = materials
 		}
 	}
@@ -522,7 +526,7 @@ tech_dh_lossless_refinement = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = materials
 		}
 	}

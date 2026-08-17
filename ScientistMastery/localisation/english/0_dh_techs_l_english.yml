@@ -32,9 +32,12 @@
   tech_dh_subdermal_living_desc:0 "Every planets core radiates heat. The closer we can get to the center, the better protected we are against the cold."
 
   tech_dh_unified_spirit:0 "Unified Spirit"
-  tech_dh_unified_spirit_desc:0 "..."
+  tech_dh_unified_spirit_desc:0 "Many have given their lives so that we can call our worlds home. We will endeavor to make these homes into what our forebearers dreamed of."
 
 # Statecraft
+  tech_dh_galactic_envoys:0 "Galactic Envoys"
+  tech_dh_galactic_envoys_desc:0 "Through the development of the portable ansible, our envoys can easily transmit our deepest feelings to other nations."
+
   tech_dh_limited_shapeshifting:0 "Limited Shapeshifting"
   tech_dh_limited_shapeshifting_desc:0 "A few scales here, a feather there. However minute, the right modifications will let us operate just that much more in the open."
   tech_dh_biomimetic_disguises:0 "Biomimetic Disguises"
@@ -44,6 +47,9 @@
   tech_dh_neural_identities_desc:0 "Through advanced algorithms, slave implants could provide their wearers with entirely fictional lives to keep them subservient and functional."
 
 # Military Theory
+  tech_dh_doctrine_navy_size_5:0 "Doctrine: Ansible Communication"
+  tech_dh_doctrine_navy_size_5_desc:0 "Instantaneaos orders allow our navy to be expanded further with minimal cost to logistical command."
+
   tech_dh_unending_ambition:0 "Unending Ambition"
   tech_dh_unending_ambition_desc:0 "Destiny awaits us. The galaxy is ours to take."
   TECH_UNLOCK_DH_EXISTENTIAL_TITLE:0 "$dh_partial_tech_progress$ $tech_existential_campaigns$"
@@ -56,7 +62,7 @@
   tech_dh_omnigravitational_warfare_desc:0 "The enemy's gate is down." # Ender's Game
 
   tech_dh_intrasolar_positioning:0 "Intrasolar Positioning"
-  tech_dh_intrasolar_positioning_desc:0 "The home territory has long given defenders a crucial advantage. Better mapping and positioning within our space will provide similar benefits."
+  tech_dh_intrasolar_positioning_desc:0 "The home territory has long given defenders a crucial advantage. More strategic positioning within our space will provide similar benefits."
 
 # Psionics
   tech_dh_telepathic_shielding:0 "Telepathic Shielding"
@@ -73,7 +79,7 @@
   tech_dh_ancient_secrets_desc:0 "The past is an infinite well of knowledge. We just need to know where to look."
 
   tech_dh_graphed_antiquity:0 "Graphed Antiquity"
-  tech_dh_graphed_antiquity_desc:0 "A partial timeline of important events allows for greater exploration of the artifacts we recover."
+  tech_dh_graphed_antiquity_desc:0 "A partial timeline of important precursor events allows for greater exploration of the artifacts we recover."
   TECH_UNLOCK_DH_STUDY_THE_ANCIENTS_TITLE:0 "§HUnlocks Decision:§! $dh_decision_study_the_ancients$"
   TECH_UNLOCK_DH_STUDY_THE_ANCIENTS_DESC:0 "§H$dh_decision_study_the_ancients$§!\n$dh_decision_study_the_ancients_desc$"
 
@@ -93,6 +99,9 @@
   tech_dh_n_body_abstractions_nomads_tt:0 "$tech_space_science_nomads_mult$: §G+5%§!"
 
 # Particles
+  tech_dh_ansible:0 "Ansible Theory"
+  tech_dh_ansible_desc:0 "Further understanding of quantum coupling interactions may allow us to realize our dream of an ansible, a machine allowing instantaneous communication regardless of distance."
+
   tech_dh_reactor_boosters_4:0 "Dark Reactor Boosters"
   tech_dh_reactor_boosters_4_desc:0 "$dh_REACTOR_BOOSTER_4_DESC$"
 
@@ -123,9 +132,9 @@
   tech_dh_asteroid_stabilisation_nomads_tt:0 "$tech_space_mining_nomads_mult$: §G+5%§!"
 
   tech_dh_positronic_love:0 "Positronic Love"
-  tech_dh_positronic_love_desc:0 "..."
+  tech_dh_positronic_love_desc:0 "Our machine counterparts could benefit greatly from feelings of love. Recent developments could make those emotions a reality."
   tech_dh_positron_revitalizers:0 "Positron Revitalizers"
-  tech_dh_positron_revitalizers_desc:0 "..."
+  tech_dh_positron_revitalizers_desc:0 "Positronic brains are a difficult beast to modify once up and running. However, nanite repair bots could breathe new life into deteriorating structures."
 
 # Propulsion
   tech_dh_graviton_propulsion:0 "Graviton Propulsion"

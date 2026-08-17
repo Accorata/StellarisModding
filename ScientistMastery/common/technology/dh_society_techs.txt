@@ -1,4 +1,5 @@
 ### Biology ###
+## Leader Insights
 tech_dh_replication_nexus = {
 	area = society
 	category = { biology }
@@ -22,7 +23,7 @@ tech_dh_replication_nexus = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = biology
 		}
 	}
@@ -57,7 +58,7 @@ tech_dh_neuron_revitalizers = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = biology
 		}
 		modifier = {
@@ -96,7 +97,7 @@ tech_dh_induced_happiness = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = biology
 		}
 	}
@@ -132,7 +133,7 @@ tech_dh_genetic_memory = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = biology
 		}
 	}
@@ -160,7 +161,7 @@ tech_dh_modular_taxonomy = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = biology
 		}
 	}
@@ -171,6 +172,30 @@ tech_dh_modular_taxonomy = {
 }
 
 ### Statecraft ###
+## Ansible
+tech_dh_galactic_envoys = { # icon needed...
+	cost = @tier4cost1
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "tech_dh_ansible" "tech_xeno_relations" }
+
+	modifier = {
+		diplo_weight_mult = 0.1
+		envoy_improve_relations_mult = 0.5
+		envoy_harm_relations_mult = 0.5
+	}
+
+	weight = @tier4cost1
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+	}
+}
+
+## Leader Insights
 tech_dh_limited_shapeshifting = {
 	area = society
 	category = { statecraft }
@@ -207,7 +232,7 @@ tech_dh_limited_shapeshifting = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = statecraft
 		}
 	}
@@ -236,7 +261,7 @@ tech_dh_neural_identities = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = statecraft
 		}
 		modifier = {
@@ -281,6 +306,7 @@ tech_dh_neural_identities = {
 }
 
 ### New Worlds ###
+## Leader Insights
 tech_dh_dynamic_heat_shielding = {
 	area = society
 	category = { new_worlds }
@@ -301,7 +327,7 @@ tech_dh_dynamic_heat_shielding = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -351,7 +377,7 @@ tech_dh_predictive_hydrodynamics = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -401,7 +427,7 @@ tech_dh_subdermal_living = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = new_worlds
 		}
 		modifier = {
@@ -449,7 +475,7 @@ tech_dh_unified_spirit = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = new_worlds
 		}
 	}
@@ -460,7 +486,34 @@ tech_dh_unified_spirit = {
 }
 
 ### Military Theory ###
+## Ansible
+tech_dh_doctrine_navy_size_5 = {
+	cost = @tier5cost3
+	area = society
+	category = { military_theory }
+	tier = 5
+	prerequisites = { "tech_doctrine_navy_size_4" "tech_dh_ansible" }
+
+	modifier = {
+		country_naval_cap_add = 125
+	}
+
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+
+	ai_weight = {
+	}
+}
+
+## Leader Insights
 tech_dh_unending_ambition = {
+	area = society
 	category = { military_theory }
 	tier = 4
 	prerequisites = { "tech_galactic_campaigns" }
@@ -490,7 +543,7 @@ tech_dh_unending_ambition = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = military_theory
 		}
 	}
@@ -499,43 +552,6 @@ tech_dh_unending_ambition = {
 		weight = @dh_leader_ai_weight
 	}
 }
-
-#tech_dh_doctrine_esoteric_strategies = {
-#	cost = @dh_leader_insight_cost
-#	area = society
-#	category = { military_theory }
-#	tier = 5
-#	prerequisites = { "tech_doctrine_fleet_size_5" }
-#	
-#	inline_script = {
-#		script = technologies/dh_mastery_tech
-#	}
-#
-#	modifier = {
-#		command_limit_add = 20
-#	}
-#	
-#	weight = @dh_leader_insight_weight
-#
-#	weight_modifier = {
-#		inline_script = {
-#			script = technologies/dh_requires_trait
-#			FIELD = military_theory
-#		}
-#		modifier = {
-#			factor = 2
-#			is_militarist = yes
-#		}
-#		modifier = {
-#			factor = 2
-#			is_xenophile = yes
-#		}
-#	}
-#	
-#	ai_weight = {
-#		weight = @dh_leader_ai_weight
-#	}
-#}
 
 tech_dh_strategos_refinement = {
 	area = society
@@ -556,7 +572,7 @@ tech_dh_strategos_refinement = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = military_theory
 		}
 	}
@@ -584,7 +600,7 @@ tech_dh_omnigravitational_warfare = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = military_theory
 		}
 	}
@@ -613,7 +629,7 @@ tech_dh_intrasolar_positioning = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = military_theory
 		}
 	}
@@ -624,6 +640,7 @@ tech_dh_intrasolar_positioning = {
 }
 
 ### Psionics ###
+## Leader Insights
 tech_dh_telepathic_shielding = {
 	area = society
 	category = { psionics }
@@ -643,7 +660,7 @@ tech_dh_telepathic_shielding = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = psionics
 		}
 		inline_script = {
@@ -676,7 +693,7 @@ tech_dh_mental_manipulation = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = psionics
 		}
 		inline_script = {
@@ -705,7 +722,7 @@ tech_dh_martial_telekinetics = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = psionics
 		}
 		inline_script = {
@@ -720,6 +737,7 @@ tech_dh_martial_telekinetics = {
 }
 
 ### Archaeostudies ###
+## Leader Insights
 tech_dh_ancient_secrets = {
 	area = society
 	category = { archaeostudies }
@@ -740,7 +758,7 @@ tech_dh_ancient_secrets = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = archaeostudies
 		}
 		inline_script = {
@@ -776,7 +794,7 @@ tech_dh_graphed_antiquity = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = archaeostudies
 		}
 		inline_script = {

@@ -1,4 +1,5 @@
 ### Computing ###
+## Leader Insights
 tech_dh_proto_gravity_analysis = {
 	area = physics
 	category = { computing }
@@ -16,7 +17,7 @@ tech_dh_proto_gravity_analysis = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = computing
 		}
 	}
@@ -44,7 +45,7 @@ tech_dh_synthetic_data = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = computing
 		}
 	}
@@ -73,7 +74,7 @@ tech_dh_regenerative_firewalls = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = computing
 		}
 		modifier = {
@@ -119,7 +120,7 @@ tech_dh_n_body_abstractions = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = computing
 		}
 	}
@@ -130,6 +131,41 @@ tech_dh_n_body_abstractions = {
 }
 
 ### Particles ###
+## Ansible
+tech_dh_ansible = {
+	cost = @tier3cost1
+	area = physics
+	category = { particles }
+	tier = 3
+	prerequisites = { "tech_physics_2" "tech_colonial_bureaucracy" }
+
+	is_rare = yes
+
+	# gateway = dh_ansible ...
+
+	modifier = {
+		empire_size_colonies_mult = -0.05
+		edicts_upkeep_mult = -0.1
+	}
+
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		inline_script = {
+			script = technologies/dh_requires_expertise
+			FIELD = particles
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_ansible
+		}
+	}
+	
+	ai_weight = {
+	}
+}
+
+## Leader Insights
 tech_dh_reactor_boosters_4 = {
 	area = physics
 	category = { particles }
@@ -144,7 +180,7 @@ tech_dh_reactor_boosters_4 = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = particles
 		}
 	}
@@ -173,7 +209,7 @@ tech_dh_microchemistry = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = particles
 		}
 	}
@@ -184,6 +220,7 @@ tech_dh_microchemistry = {
 }
 
 ### Field Manipulation ###
+## Leader Insights
 tech_dh_conduction_nexus = {
 	area = physics
 	category = { field_manipulation }
@@ -207,7 +244,7 @@ tech_dh_conduction_nexus = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = field_manipulation
 		}
 	}
@@ -241,7 +278,7 @@ tech_dh_storm_warding = {
 
 	weight_modifier = {
 		inline_script = {
-			script = technologies/dh_requires_trait
+			script = technologies/dh_requires_mastery
 			FIELD = field_manipulation
 		}
 		inline_script = {

@@ -1,0 +1,15 @@
+modifier = {
+	factor = 0.5
+	NOT = {
+		any_owned_leader = {
+			is_councilor = yes
+			OR = {
+				has_trait = leader_trait_curator
+				has_trait = leader_trait_expertise_$FIELD$
+				has_trait = leader_trait_expertise_$FIELD$_2
+				has_trait = leader_trait_expertise_$FIELD$_3
+				has_trait = leader_trait_dh_mastery_$FIELD$
+			}
+		}
+	}
+}
