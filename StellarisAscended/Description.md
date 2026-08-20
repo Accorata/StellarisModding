@@ -52,7 +52,7 @@ Additional Thanks To:
 
 Overrides:
 - Scripted Effect: apply_post_assimilation_effects
-- Economic Category: planet_cyberdome_duelist
+- Job: Hyper-Gladiator (cyberdome_duelist)
 
 Mod Interaction:
 - Sets Global Flag "stellaris_ascended_active" on Game Start

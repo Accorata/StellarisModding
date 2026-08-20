@@ -154,3 +154,57 @@ ac_content_terraformer = {
 
 	inline_script = "jobs/automodding_priority_unity"
 }
+
+cyberdome_duelist = {
+	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_cyberdome
+		}
+	}
+
+	tags = { unity amenities }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		# START OF OVERRIDE 1 -------------------------------------------------------------------------
+		category = planet_ac_cyberdome_duelist
+		# END OF OVERRIDE 1 -------------------------------------------------------------------------
+		produces = {
+			unity = 1
+		}
+		upkeep = {
+			alloys = 1
+		}
+	}
+
+	planet_modifier = {
+		pop_happiness = 0.02 # Planet happiness
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner? = { NOT = { has_valid_civic = civic_dystopian_society } }
+		}
+		planet_amenities_add = 1000
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	inline_script = "jobs/automodding_priority_charisma"
+
+}

@@ -244,27 +244,20 @@ civic_ac_eldritch_possession = {
 			script = civics/ac_psionic_ascension_limits
 			SISTER_CIVIC = civic_ac_eldritch_shareholders
 		}
-	}
-	modification = {
-		add = {
-			custom_tooltip = {
-				success_text = ac_has_covenant_success
-				fail_text = ac_has_covenant_fail
-				OR = {
-					has_covenant = the_instrument_of_desire
-					has_covenant = the_eater_of_worlds
-					has_covenant = the_composer_of_strands
-					has_covenant = the_cradle_of_souls
-					has_covenant = whisperers_in_the_void
-					has_covenant = end_of_the_cycle
-				}
-			}
-			NOT = {
+		custom_tooltip = {
+			success_text = ac_has_covenant_success
+			fail_text = ac_has_covenant_fail
+			OR = {
+				has_covenant = the_instrument_of_desire
+				has_covenant = the_eater_of_worlds
+				has_covenant = the_composer_of_strands
+				has_covenant = the_cradle_of_souls
+				has_covenant = whisperers_in_the_void
 				has_covenant = end_of_the_cycle
 			}
 		}
-		remove = {
-			always = yes
+		NOT = {
+			has_covenant = end_of_the_cycle
 		}
 	}
 	alternate_civic_version = civic_ac_eldritch_shareholders
@@ -327,27 +320,20 @@ civic_ac_eldritch_shareholders = {
 			script = civics/ac_psionic_ascension_limits
 			SISTER_CIVIC = civic_ac_eldritch_possession
 		}
-	}
-	modification = {
-		add = {
-			custom_tooltip = {
-				success_text = ac_has_covenant_success
-				fail_text = ac_has_covenant_fail
-				OR = {
-					has_covenant = the_instrument_of_desire
-					has_covenant = the_eater_of_worlds
-					has_covenant = the_composer_of_strands
-					has_covenant = the_cradle_of_souls
-					has_covenant = whisperers_in_the_void
-					has_covenant = end_of_the_cycle
-				}
-			}
-			NOT = {
+		custom_tooltip = {
+			success_text = ac_has_covenant_success
+			fail_text = ac_has_covenant_fail
+			OR = {
+				has_covenant = the_instrument_of_desire
+				has_covenant = the_eater_of_worlds
+				has_covenant = the_composer_of_strands
+				has_covenant = the_cradle_of_souls
+				has_covenant = whisperers_in_the_void
 				has_covenant = end_of_the_cycle
 			}
 		}
-		remove = {
-			always = yes
+		NOT = {
+			has_covenant = end_of_the_cycle
 		}
 	}
 	alternate_civic_version = civic_ac_eldritch_possession

@@ -287,8 +287,8 @@ civic_cybergladiators = {
 		}
 		description = civic_tooltip_cybergladiators_effects
 		modifier = {
-			planet_cyberdome_duelist_engineering_research_produces_add = 3
-			planet_cyberdome_duelist_unity_produces_add = 3
+			planet_ac_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_ac_cyberdome_duelist_unity_produces_add = 3
 		}
 	}
 }
@@ -341,8 +341,8 @@ civic_underworld_bloodsports = {
 		}
 		description = civic_tooltip_underworld_bloodsports_effects
 		modifier = {
-			planet_cyberdome_duelist_engineering_research_produces_add = 3
-			planet_cyberdome_duelist_unity_produces_add = 3
+			planet_ac_cyberdome_duelist_engineering_research_produces_add = 3
+			planet_ac_cyberdome_duelist_unity_produces_add = 3
 		}
 	}
 }

@@ -29,8 +29,7 @@ planet_ac_normal_knights = {
 	}
 }
 
-# Override for Cyber Gladiator Civics
-planet_cyberdome_duelist = {
+planet_ac_cyberdome_duelist = {
 	parent = planet_jobs_productive
 	modifier_category = colony
 	generate_add_modifiers = {
