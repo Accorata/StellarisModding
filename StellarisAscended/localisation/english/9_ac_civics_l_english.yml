@@ -388,7 +388,7 @@
 ## Mitotic Assembly
   civic_ac_mitotic_assembly:0 "Mitotic Assembly"
   civic_ac_mitotic_assembly_desc:0 "This society has learned how to clone entire warships, dramatically increasing their naval strength."
-  civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "$cloning_ascension_required$- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n$cloning_ascension_required$§EModifiers:§!\n- §YCloned Ships§! Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
+  civic_tooltip_ac_mitotic_assembly_incomplete_effects:0 "$cloning_ascension_required$- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n§EModifiers:§!\n$cloning_ascension_required$- §YCloned Ships§! Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
   civic_tooltip_ac_mitotic_assembly_effects:0 "- Unlocks the §Y$sm_ac_mitosis_chamber$§! Starbase Building\n\n§Y$sm_ac_mitosis_chamber_plural$§! duplicate newly constructed §YBiological Ships§!.\n\n§EModifiers:§!\n- §YCloned Ships§! Recieve:\n$t$- Naval Capacity Usage: §G-50%§!\n$t$- Ship Weapon Damage: §R-60%§!\n$t$- Hull, Shield & Armor Hit Points: §R-60%§!"
   councilor_ac_mitotic_assembly:0 "Marshal of Replication"
   councilor_ac_mitotic_assembly_female:0 "$councilor_ac_mitotic_assembly$"
@@ -414,7 +414,7 @@
 ## Cloned Population
   civic_ac_society_of_one:0 "Society of One"
   civic_ac_society_of_one_desc:0 "This society models its clones after a singular representative. Genetic resequencing technology is applied to those already living."
-  civic_tooltip_ac_society_of_one_incomplete_effects:0 "$cloning_ascension_required$- Starts the Recurring §Y$situation_ac_cloned_population$§! Situation, which provides £unity£ §YUnity§! in return for £society£ §YSociety Research§! and building £building£ §YCloning Vats§!\n- Gains £unity£ §YUnity§! from Assimilating £pop£ §YPops§!\n\n$cloning_ascension_required$§EModifiers:§!\n- $MOD_BONUS_POP_GROWTH_MULT$: §G+10%§!\n- $influential_jobs_bonus_workforce_mult$: §R-15%§!"
+  civic_tooltip_ac_society_of_one_incomplete_effects:0 "$cloning_ascension_required$- Starts the Recurring §Y$situation_ac_cloned_population$§! Situation, which provides £unity£ §YUnity§! in return for £society£ §YSociety Research§! and building £building£ §YCloning Vats§!\n- Gains £unity£ §YUnity§! from Assimilating £pop£ §YPops§!\n\n§EModifiers:§!\n$cloning_ascension_required$- $MOD_BONUS_POP_GROWTH_MULT$: §G+10%§!\n- $influential_jobs_bonus_workforce_mult$: §R-15%§!"
   civic_tooltip_ac_society_of_one_effects:0 "- Starts the Recurring §Y$situation_ac_cloned_population$§! Situation, which provides £unity£ §YUnity§! in return for £society£ §YSociety Research§! and building £building£ §YCloning Vats§!\n- Gains £unity£ §YUnity§! from Assimilating £pop£ §YPops§!\n\n§EModifiers:§!\n- $MOD_BONUS_POP_GROWTH_MULT$: §G+10%§!\n- $influential_jobs_bonus_workforce_mult$: §R-15%§!"
   councilor_ac_society_of_one:0 "Genome Architect"
   councilor_ac_society_of_one_female:0 "$councilor_ac_society_of_one$"
