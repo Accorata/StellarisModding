@@ -505,6 +505,7 @@ councilor_ac_parallel_development = {
 	modifier = {
 		bioship_growth_progress_add = 0.03
 	}
+	custom_tooltip = "councilor_ac_parallel_development_custom_modifier_desc"
 	ai_hiring_weight = {
 		inline_script = councilor_leader_weights
 	}

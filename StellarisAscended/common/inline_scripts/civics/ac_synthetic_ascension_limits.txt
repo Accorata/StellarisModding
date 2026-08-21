@@ -13,5 +13,7 @@ civics = {
 		value = civic_chosen
 		value = civic_corporate_chosen
 		value = civic_augmentation_bazaars
+		value = civic_galvanic_symbiosis
+		value = civic_corporate_galvanic_symbiosis
 	}
 }
