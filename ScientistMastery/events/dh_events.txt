@@ -197,3 +197,126 @@ country_event = {
 		}
 	}
 }
+
+## Extradimensional Scouts ##
+
+country_event = {
+	id = dangerous_horizons.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		dh_increased_danger = yes
+		dh_just_researched_jump_drives = yes
+		NOT = {
+			has_global_flag = dh_extradimensional_scouts_available
+		}
+	}
+
+	immediate = {
+		set_global_flag = dh_extradimensional_scouts_available
+		create_species = {
+			name = "NAME_Unbidden"
+			class = EXD
+			namelist = Extradimensional
+			portrait = exd1_leader
+			traits = random
+			effect = {
+				save_event_target_as = extradimensional_species
+			}
+		}
+		create_country = {
+			name = "NAME_Unbidden" # change...
+			type = "dh_extradimensional_scout"
+			species = event_target:extradimensional_species
+			name_list = "Extradimensional"
+			flag = {
+				icon= {
+					category = "special"
+					file = "extradimensional_01.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors = { # change...
+					"indigo"
+					"blue"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target = dh_extradimensional_scouts
+				set_variable = {
+					which = dh_extradimensional_scouting
+					value = 0
+				}
+				if = {
+					limit = {
+						end_game_years_passed >= 0
+					}
+					set_global_flag = dh_extradimensional_scouting_increased
+					change_variable = {
+						which = dh_extradimensional_scouting
+						value = 20
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = dangerous_horizons.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = dh_extradimensional_scouts_available
+		fleet = {
+			NOT = {
+				has_fleet_flag = dh_recent_jump_extra
+			}
+		}
+	}
+
+	immediate = {
+		fleet = {
+			set_timed_fleet_flag = {
+				flag = dh_recent_jump_extra
+				days = 360
+			}
+		}
+		event_target:dh_extradimensional_scouts = {
+			change_variable = {
+				which = dh_extradimensional_scouting
+				value = 1
+			}
+		}
+	}
+}
+
+event = {
+	id = dangerous_horizons.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		end_game_years_passed >= 0
+		has_global_flag = dh_extradimensional_scouts_available
+		NOT = {
+			has_global_flag = dh_extradimensional_scouting_increased
+		}
+	}
+
+	immediate = {
+		set_global_flag = dh_extradimensional_scouting_increased
+		event_target:dh_extradimensional_scouts = {
+			change_variable = {
+				which = dh_extradimensional_scouting
+				value = 20
+			}
+		}
+	}
+}

@@ -39,6 +39,11 @@ spriteTypes = {
 		name = "GFX_dh_district_specialization_coordination"
 		texturefile = "gfx/interface/icons/districts/district_specialization_icons/dh_district_specialization_coordination.dds"
 	}
-}
 
+	# LEADER TRAITS ---------------------------------------------------------------------------
+	spriteType = {
+		name = "GFX_leader_trait_dh_disintegrating"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/dh_disintegrating.dds"
+	}
+}
 

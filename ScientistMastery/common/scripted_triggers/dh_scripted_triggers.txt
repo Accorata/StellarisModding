@@ -1,3 +1,7 @@
+dh_increased_danger = {
+	always = yes
+}
+
 dh_has_level_3_expertise_trait = {
 	OR = {
 		has_trait = leader_trait_expertise_materials_3
@@ -13,5 +17,19 @@ dh_has_level_3_expertise_trait = {
 		has_trait = leader_trait_expertise_military_theory_3
 		has_trait = leader_trait_expertise_archaeostudies_3
 		has_trait = leader_trait_expertise_psionics_3
+	}
+}
+
+dh_just_researched_jump_drives = {
+	OR = {
+		last_increased_tech = tech_jump_drive_1
+		last_increased_tech = tech_psi_jump_drive_1
+	}
+}
+
+dh_has_researched_jump_drives = {
+	OR = {
+		has_technology = tech_jump_drive_1
+		has_technology = tech_psi_jump_drive_1
 	}
 }

@@ -1,3 +1,22 @@
+leader_trait_dh_disintegrating = {
+	inline_script = {
+		script = trait/icon_negative
+		CLASS = commander
+		ICON = "GFX_leader_trait_dh_disintegrating"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		ship_shield_mult = -0.2
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+### Mastery Traits ###
+
 ## Engineering
 
 inline_script = {

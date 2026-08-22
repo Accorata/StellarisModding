@@ -62,6 +62,9 @@
   leader_trait_dh_mastery_archaeostudies:0 "Mastery: Archaeostudies"
   leader_trait_dh_mastery_archaeostudies_desc:0 "$dh_trait_description$ Archaeostudies."
 
+  leader_trait_dh_disintegrating:0 "Disintegrating"
+  leader_trait_dh_disintegrating_desc:0 "Unaccostumed to this dimension, this leader and their fleet appear unable to grasp a firm hold in our reality."
+
 # Buildings
   dh_nexus_description:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our"
   dh_core_description:0 "localised here for further exploration of our symbiotic relationship with the planet."

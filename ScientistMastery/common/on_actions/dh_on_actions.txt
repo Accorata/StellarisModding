@@ -1,7 +1,21 @@
+# No scope, like on_game_start
+on_decade_pulse = {
+	events = {
+		dangerous_horizons.102			# Reaching End Game Year increases Extradimensional Scouting
+	}
+}
+
 # this = country
 on_decade_pulse_country = {
 	events = {
 		dangerous_horizons.1			# Random leader events
+	}
+}
+
+# THIS = Ship
+on_jump_drive = {
+	events = {
+		dangerous_horizons.101			# Using Jump Drives increases Extradimensional Scouting
 	}
 }
 
@@ -20,5 +34,6 @@ on_tech_increased = {
 	events = {
 		dangerous_horizons.5			# Grant 5% of mega engineering for Dreams Beyond Scale
 		dangerous_horizons.6			# Grant 5% of existential campaigns for Unending Ambition
+		dangerous_horizons.100			# Researching Jump Drives starts Extradimensional Scouting
 	}
 }

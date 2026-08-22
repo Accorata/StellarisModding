@@ -1,0 +1,182 @@
+dh_upgrade_to_mastery = {	
+	if = {
+		limit = {
+			has_trait = leader_trait_expertise_materials_3
+		}
+		remove_trait = leader_trait_expertise_materials_3
+		add_trait = leader_trait_dh_mastery_materials
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_propulsion_3
+		}
+		remove_trait = leader_trait_expertise_propulsion_3
+		add_trait = leader_trait_dh_mastery_propulsion
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_voidcraft_3
+		}
+		remove_trait = leader_trait_expertise_voidcraft_3
+		add_trait = leader_trait_dh_mastery_voidcraft
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_industry_3
+		}
+		remove_trait = leader_trait_expertise_industry_3
+		add_trait = leader_trait_dh_mastery_industry
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_field_manipulation_3
+		}
+		remove_trait = leader_trait_expertise_field_manipulation_3
+		add_trait = leader_trait_dh_mastery_field_manipulation
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_particles_3
+		}
+		remove_trait = leader_trait_expertise_particles_3
+		add_trait = leader_trait_dh_mastery_particles
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_computing_3
+		}
+		remove_trait = leader_trait_expertise_computing_3
+		add_trait = leader_trait_dh_mastery_computing
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_new_worlds_3
+		}
+		remove_trait = leader_trait_expertise_new_worlds_3
+		add_trait = leader_trait_dh_mastery_new_worlds
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_statecraft_3
+		}
+		remove_trait = leader_trait_expertise_statecraft_3
+		add_trait = leader_trait_dh_mastery_statecraft
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_biology_3
+		}
+		remove_trait = leader_trait_expertise_biology_3
+		add_trait = leader_trait_dh_mastery_biology
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_military_theory_3
+		}
+		remove_trait = leader_trait_expertise_military_theory_3
+		add_trait = leader_trait_dh_mastery_military_theory
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_archaeostudies_3
+		}
+		remove_trait = leader_trait_expertise_archaeostudies_3
+		add_trait = leader_trait_dh_mastery_archaeostudies
+	}
+	else_if = {
+		limit = {
+			has_trait = leader_trait_expertise_psionics_3
+		}
+		remove_trait = leader_trait_expertise_psionics_3
+		add_trait = leader_trait_dh_mastery_psionics
+	}
+}
+
+dh_create_scouting_fleet = {
+	event_target:dh_extradimensional_scouts = {
+		random_list = {
+			15 = {
+				create_leader = {
+					class = commander
+					species = event_target:extradimensional_species
+					name = random
+					skill = 3
+					traits = {
+						trait = leader_trait_ethereal
+					}
+				}
+			}
+			15 = {
+				create_leader = {
+					class = commander
+					species = event_target:extradimensional_species
+					name = random
+					skill = 3
+					traits = {
+						trait = leader_trait_dimensional_stutter
+					}
+				}
+			}
+			30 = {
+				create_leader = {
+					class = commander
+					species = event_target:extradimensional_species
+					name = random
+					skill = 3
+				}
+			}
+			40 = {
+				create_leader = {
+					class = commander
+					species = event_target:extradimensional_species
+					name = random
+					skill = 3
+					traits = {
+						trait = leader_trait_dh_disintegrating
+					}
+				}
+			}
+		}
+		create_fleet = {
+			effect = {
+				set_owner = PREV
+				create_ship = {
+					name = random
+					design = "NAME_Revenant"
+					graphical_culture = "extra_dimensional_01"
+				}
+				assign_leader = last_created_leader
+				create_ship = {
+					name = random
+					design = "NAME_Revenant"
+					graphical_culture = "extra_dimensional_01"
+				}
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_Phantom"
+						graphical_culture = "extra_dimensional_01"
+					}
+				}
+				while = {
+					count = 6
+					create_ship = {
+						name = random
+						design = "NAME_Wraith"
+						graphical_culture = "extra_dimensional_01"
+					}
+				}
+				set_location = {
+					target = ROOT
+					distance = 2
+					angle = random
+				}
+				set_fleet_stance = aggressive
+				set_aggro_range = 200
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
+			}
+		}
+	}
+}
