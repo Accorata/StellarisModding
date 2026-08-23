@@ -9,6 +9,12 @@ dh_zone_coordination_arcology = {
 		script = zones/dh_ansible_arcology
 	}
 
+	potential = {
+		owner? = {
+			# has_technology = tech_dh_centrapolis ...
+		}
+	}
+
 	swap_type = dh_district_arcology_coordination
 	swap_type_weight = 5
 
@@ -34,6 +40,12 @@ dh_zone_culture_arcology = {
 
 	inline_script = {
 		script = zones/dh_ansible_arcology
+	}
+
+	potential = {
+		owner? = {
+			# has_technology = tech_dh_centrapolis ...
+		}
 	}
 
 	swap_type = dh_district_arcology_culture
@@ -64,11 +76,26 @@ dh_zone_media_arcology = {
 	icon = GFX_district_specialization_industrial #icon needed...
 	
 	triggered_district_planet_modifier = {
-		job_culture_worker_add = 600 #change...
+		job_dh_media_add = 600
 	}
 
 	inline_script = {
 		script = zones/dh_ansible_arcology
+	}
+
+	potential = {
+		owner? = {
+			# has_technology = tech_dh_centrapolis ...
+			NOT = {
+				has_valid_civic = civic_dystopian_society
+			}
+		}
+	}
+
+	show_tech_unlock_if = {
+		NOT = {
+			has_valid_civic = civic_dystopian_society
+		}
 	}
 
 	swap_type = dh_district_arcology_media

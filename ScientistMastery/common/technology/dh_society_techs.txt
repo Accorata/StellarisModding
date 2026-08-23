@@ -173,7 +173,7 @@ tech_dh_modular_taxonomy = {
 
 ### Statecraft ###
 ## Ansible
-tech_dh_galactic_envoys = { # icon needed...
+tech_dh_galactic_envoys = {
 	cost = @tier4cost1
 	area = society
 	category = { statecraft }

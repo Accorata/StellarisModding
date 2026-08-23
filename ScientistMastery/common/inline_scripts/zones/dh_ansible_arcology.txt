@@ -11,12 +11,6 @@ planet_modifier = {
 	zone_building_slots_add = 3
 }
 
-potential = {
-	owner? = {
-		has_technology = tech_dh_centrapolis
-	}
-}
-
 show_in_tech = tech_dh_centrapolis
 
 convert_to = {
@@ -26,6 +20,7 @@ convert_to = {
 }
 
 zone_sets = {
+	urban # ...
 	arcology
 }
 
