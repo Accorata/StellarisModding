@@ -20,8 +20,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/biogenesis/ship_part_dh_bioship_thruster_5_grav.dds"
 	}
 
-	GFX_ship_part_dh_bioship_thruster_5_grav
-
 	# UTILITY COMPONENTS ---------------------------------------------------------------------
 	spriteType = {
 		name = "GFX_ship_part_dh_reactor_booster_4"

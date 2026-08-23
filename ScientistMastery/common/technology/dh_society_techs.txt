@@ -268,7 +268,7 @@ tech_dh_neural_identities = {
 			factor = 0.0
 			OR = {
 				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
+				NOT = { any_owned_pop_group = { is_enslaved = yes } }
 			}
 		}
 		modifier = {
@@ -318,6 +318,7 @@ tech_dh_dynamic_heat_shielding = {
 	}
 
 	modifier = {
+		custom_tooltip = tech_dh_dynamic_heat_shielding_tt
 		pc_desert_habitability = 0.1
 		pc_arid_habitability = 0.1
 		pc_savannah_habitability = 0.1
@@ -368,6 +369,7 @@ tech_dh_predictive_hydrodynamics = {
 	}
 
 	modifier = {
+		custom_tooltip = tech_dh_predictive_hydrodynamics_tt
 		pc_tropical_habitability = 0.1
 		pc_continental_habitability = 0.1
 		pc_ocean_habitability = 0.1
@@ -418,6 +420,7 @@ tech_dh_subdermal_living = {
 	}
 
 	modifier = {
+		custom_tooltip = tech_dh_subdermal_living_tt
 		pc_tundra_habitability = 0.1
 		pc_arctic_habitability = 0.1
 		pc_alpine_habitability = 0.1
@@ -650,7 +653,6 @@ tech_dh_telepathic_shielding = {
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
-	is_rare = yes
 
 	modifier = {
 		army_morale_damage_taken_mult = -0.1
@@ -662,10 +664,6 @@ tech_dh_telepathic_shielding = {
 		inline_script = {
 			script = technologies/dh_requires_mastery
 			FIELD = psionics
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_dh_telepathic_shielding
 		}
 	}
 	
@@ -683,7 +681,6 @@ tech_dh_mental_manipulation = {
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
-	is_rare = yes
 
 	modifier = {
 		espionage_operation_difficulty_add = -1
@@ -695,10 +692,6 @@ tech_dh_mental_manipulation = {
 		inline_script = {
 			script = technologies/dh_requires_mastery
 			FIELD = psionics
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_dh_mental_manipulation
 		}
 	}
 	
@@ -716,7 +709,6 @@ tech_dh_martial_telekinetics = {
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
-	is_rare = yes
 	
 	weight = @dh_leader_insight_weight_psionic
 
@@ -724,10 +716,6 @@ tech_dh_martial_telekinetics = {
 		inline_script = {
 			script = technologies/dh_requires_mastery
 			FIELD = psionics
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_dh_martial_telekinetics
 		}
 	}
 	
@@ -747,7 +735,6 @@ tech_dh_ancient_secrets = {
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
-	is_rare = yes
 
 	modifier = {
 		all_technology_research_speed = 0.03
@@ -760,10 +747,6 @@ tech_dh_ancient_secrets = {
 		inline_script = {
 			script = technologies/dh_requires_mastery
 			FIELD = archaeostudies
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_dh_ancient_secrets
 		}
 	}
 	
@@ -781,7 +764,6 @@ tech_dh_graphed_antiquity = {
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
-	is_rare = yes
 
 	prereqfor_desc = {
 		custom = {
@@ -796,10 +778,6 @@ tech_dh_graphed_antiquity = {
 		inline_script = {
 			script = technologies/dh_requires_mastery
 			FIELD = archaeostudies
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_dh_graphed_antiquity
 		}
 	}
 	

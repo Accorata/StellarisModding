@@ -56,7 +56,7 @@ tech_dh_synthetic_data = {
 }
 
 tech_dh_regenerative_firewalls = {
-	ost = @dh_leader_insight_cost
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3
@@ -89,7 +89,7 @@ tech_dh_regenerative_firewalls = {
 }
 
 tech_dh_n_body_abstractions = {
-	ost = @dh_leader_insight_cost
+	cost = @dh_leader_insight_cost
 	area = physics
 	category = { computing }
 	tier = 3

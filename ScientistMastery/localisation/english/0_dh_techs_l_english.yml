@@ -1,5 +1,5 @@
 ﻿l_english:
-  TECH_IS_CUSTOM_TECH_2:0 "§DMastery Insight§!"
+  TECH_IS_CUSTOM_TECH_2:0 "§BMastery Insight§!"
   dh_partial_tech_progress:0 "§HGrants 5% of Tech:§!"
 
 ## Society ##
@@ -24,12 +24,15 @@
 # New Worlds
   tech_dh_dynamic_heat_shielding:0 "Dynamic Heat Shielding"
   tech_dh_dynamic_heat_shielding_desc:0 "Designed to keep the heat out during the day and in during the cold nights."
+  tech_dh_dynamic_heat_shielding_tt:0 "Dry Climate Habitability: §G+5%§!"
 
   tech_dh_predictive_hydrodynamics:0 "Predictive Hydrodynamics"
   tech_dh_predictive_hydrodynamics_desc:0 "Large oceans produce turbulent weather patterns. Understanding them is key to successful settlements."
+  tech_dh_predictive_hydrodynamics_tt:0 "Wet Climate Habitability: §G+5%§!"
 
   tech_dh_subdermal_living:0 "Subdermal Living"
   tech_dh_subdermal_living_desc:0 "Every planets core radiates heat. The closer we can get to the center, the better protected we are against the cold."
+  tech_dh_subdermal_living_tt:0 "Cold Climate Habitability: §G+5%§!"
 
   tech_dh_unified_spirit:0 "Unified Spirit"
   tech_dh_unified_spirit_desc:0 "Many have given their lives so that we can call our worlds home. We will endeavor to make these homes into what our forebearers dreamed of."
@@ -129,6 +132,7 @@
 
   tech_dh_graviton_reflectors:0 "Graviton Reflectors"
   tech_dh_graviton_reflectors_desc:0 "By redirecting gravity at crucial points, these reflectors promise to lower costs of anti-gravity architecture."
+  tech_dh_graviton_reflectors_tt:0 "Building and District £rare_crystals£ £exotic_gases£ £volatile_motes£ Strategic Resource Upkeep: §G-10%§!"
 
   tech_dh_asteroid_stabilisation:0 "Asteroid Stabilisation"
   tech_dh_asteroid_stabilisation_desc:0 "..."

@@ -1,3 +1,5 @@
+@buildtime_2 = 240 # From 21_wilderness_buildings.txt
+
 building_dh_conduction_nexus_wilderness = {
 	icon = "building_dh_conductive_core"
 	ruined_icon = "wilderness_building_ruined"

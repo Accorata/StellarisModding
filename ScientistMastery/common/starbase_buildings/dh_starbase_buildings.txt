@@ -17,6 +17,8 @@ dh_interstellar_ecology = {
 		}
 	}
 
+	show_in_tech = "tech_dh_interstellar_ecologies"
+
 	resources = {
 		category = starbase_buildings
 		cost = {

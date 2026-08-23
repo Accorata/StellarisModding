@@ -35,7 +35,7 @@ building_dh_conduction_nexus = {
 			AND = {
 				is_planet_class = pc_habitat
 				check_modifier_value = {
-					modifier = district_hab_energy_max
+					modifier = district_hab_energy_max_add
 					value > 0
 				}
 			}
@@ -112,7 +112,7 @@ building_dh_replication_nexus = {
 						owner = {
 							is_ai = yes
 						}
-						has_any_farming_district_or_buildings = no
+						has_any_farming_district_or_building = no
 					}
 				}
 			}
@@ -129,7 +129,7 @@ building_dh_replication_nexus = {
 			owner = {
 				is_ai = no
 			}
-			has_any_farming_district_or_buildings = yes
+			has_any_farming_district_or_building = yes
 		}
 	}
 
@@ -191,7 +191,7 @@ building_dh_extraction_nexus = {
 				owner = {
 					is_ai = yes
 				}
-				has_any_mining_district = no
+				has_any_mining_district_or_building = no
 			}
 		}
 	}
@@ -205,7 +205,7 @@ building_dh_extraction_nexus = {
 			AND = {
 				is_planet_class = pc_habitat
 				check_modifier_value = {
-					modifier = district_hab_mining_max
+					modifier = district_hab_mining_max_add
 					value > 0
 				}
 			}
@@ -214,7 +214,7 @@ building_dh_extraction_nexus = {
 			owner = {
 				is_ai = no
 			}
-			has_any_mining_district = yes
+			has_any_mining_district_or_building = yes
 		}
 	}
 

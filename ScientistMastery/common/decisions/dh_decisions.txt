@@ -18,7 +18,9 @@ dh_decision_study_the_ancients = {
 		}
 		if = {
 			limit = {
-				is_gestalt = no
+				owner = {
+					is_gestalt = no
+				}
 			}
 			num_assigned_jobs = {
 				job = biologist
@@ -27,7 +29,9 @@ dh_decision_study_the_ancients = {
 		}
 		if = {
 			limit = {
-				is_gestalt = yes
+				owner = {
+					is_gestalt = yes
+				}
 			}
 			num_assigned_jobs = {
 				job = calculator_biologist

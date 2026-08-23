@@ -247,7 +247,7 @@ country_event = {
 				}
 			}
 			effect = {
-				save_global_event_target = dh_extradimensional_scouts
+				save_global_event_target_as = dh_extradimensional_scouts
 				set_variable = {
 					which = dh_extradimensional_scouting
 					value = 0

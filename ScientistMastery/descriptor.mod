@@ -1,7 +1,10 @@
 version="1.0"
 tags={
-	"Leaders"
-	"Technologies" # more to be added
+	"Technologies"
+	"Gameplay"
+	"Buildings"
+	"Events"
+	"Economy"
 }
-name="Dangerous Horizons"
+name="[4.0+] Dangerous Horizons"
 supported_version="v4.*"
