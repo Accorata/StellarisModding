@@ -20,7 +20,6 @@ convert_to = {
 }
 
 zone_sets = {
-	urban # ...
 	arcology
 }
 

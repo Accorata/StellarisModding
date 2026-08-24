@@ -49,23 +49,20 @@
   leader_trait_dh_disintegrating_desc:0 "Unaccostumed to this dimension, this leader and their fleet appear unable to grasp a firm hold in our reality."
 
 # Zones
-  dh_zone_coordination_arcology:0 "$dh_district_arcology_coordination_plural$" # Job Efficiency Specialization
+  dh_zone_coordination_arcology:0 "Productive Core" # Job Production Specialization
   dh_zone_coordination_arcology_desc:0 "$dh_district_arcology_coordination_desc$"
-  dh_zone_culture_arcology:0 "$dh_district_arcology_culture_plural$" # Cultural Specialization
-  dh_zone_culture_arcology_desc:0 "$dh_district_arcology_culture_desc$"
-  dh_zone_media_arcology:0 "$dh_district_arcology_media_plural$" # Amenity Usage Specialization
+  dh_zone_media_arcology:0 "Entertainment Center" # Amenity Usage Specialization
   dh_zone_media_arcology_desc:0 "$dh_district_arcology_media_desc$"
 
 # Districts
-  dh_district_arcology_coordination:0 "Synchronization Arcology"
+  dh_district_arcology_coordination:0 "Synchronization Arcology" # District Icon & Background Needed...
   dh_district_arcology_coordination_plural:0 "Synchronization Arcologies"
   dh_district_arcology_coordination_desc:0 "These hubs of ansible communication connect to all reaches of the empire, allowing officials to best coordinate our production chains."
-  dh_district_arcology_culture:0 "Aesthetic Arcology"
-  dh_district_arcology_culture_plural:0 "Aesthetic Arcologies"
-  dh_district_arcology_culture_desc:0 "Here, new cultural identities are born, shaping our nation for centuries to come."
+  dh_city_coordination_1:0 "Galactic Heart"
   dh_district_arcology_media:0 "Media Arcology"
   dh_district_arcology_media_plural:0 "Media Arcologies"
   dh_district_arcology_media_desc:0 "Along the ansible networks is an endless stream of entertainment content, all originating from these spires."
+  dh_city_media_1:0 "Aesthetic Mecca"
 
 # Buildings
   dh_nexus_description:0 "This on-site facility allows for real-time analysis of the hurdles and corresponding solutions that come with expanding our"
@@ -91,7 +88,7 @@
   job_dh_media_plural:0 "Media Producers"
   job_dh_media_name_plural_with_icon:0 "£job_dh_media£ $job_dh_media_plural$"
   job_dh_media_desc:0 "These visionaries create the newest virtual entertainment that our entire nation can enjoy."
-  job_dh_media_effect_desc:0 "$job_dh_media_name_plural_with_icon$ turn $r_consumer_goods$ into $r_unity$ and empire-wide $r_amenities$."
+  # job_dh_media_effect_desc:0 "$job_dh_media_name_plural_with_icon$ turn $r_consumer_goods$ into $r_unity$ and empire-wide $r_amenities$."
 
 # Decisions
   dh_decision_study_the_ancients:0 "Uncover the Past"

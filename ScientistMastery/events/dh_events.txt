@@ -1,5 +1,32 @@
 namespace = dangerous_horizons
 
+
+planet_event = {
+	id = dangerous_horizons.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		save_deposits = yes
+			clear_deposits = yes
+			restore_saved_deposits = yes
+			change_pc = pc_city
+			relic_world_conversion_effect = {
+				DISTRICT = district_arcology_housing
+				VARIABLE = num_housing_districts
+			}
+			set_planet_entity = {
+				entity = "city_planet_entity"
+				graphical_culture = owner
+			}
+			carrier_event = { id = action.68 }
+			owner = {
+				country_event = { id = distar.201 } # port for living planet distar.197, triggers in event
+			}
+			carrier_event = { id = mega.200 }
+	}
+}
+
 # Fires from on_decade_pulse_country
 country_event = {
 	id = dangerous_horizons.1

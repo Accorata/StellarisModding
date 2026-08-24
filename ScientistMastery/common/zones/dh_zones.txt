@@ -11,7 +11,7 @@ dh_zone_coordination_arcology = {
 
 	potential = {
 		owner? = {
-			# has_technology = tech_dh_centrapolis ...
+			has_technology = tech_dh_centrapolis
 		}
 	}
 
@@ -31,49 +31,8 @@ dh_zone_coordination_arcology = {
 	ai_priority = 10
 }
 
-dh_zone_culture_arcology = {
-	icon = GFX_district_specialization_industrial #icon needed...
-	
-	triggered_district_planet_modifier = {
-		job_culture_worker_add = 600
-	}
-
-	inline_script = {
-		script = zones/dh_ansible_arcology
-	}
-
-	potential = {
-		owner? = {
-			# has_technology = tech_dh_centrapolis ...
-		}
-	}
-
-	swap_type = dh_district_arcology_culture
-	swap_type_weight = 5
-
-	included_building_sets = {
-		unity
-		origin
-		urban_automation_arcology
-	}
-
-	excluded_building_sets = {
-		urban_automation
-	}
-
-	ai_resource_production = {
-		unity = 15
-
-		trigger = {
-			has_any_unity_zone = yes
-		}
-	}
-
-	ai_priority = 12
-}
-
 dh_zone_media_arcology = {
-	icon = GFX_district_specialization_industrial #icon needed...
+	icon = GFX_dh_district_specialization_media
 	
 	triggered_district_planet_modifier = {
 		job_dh_media_add = 600
@@ -85,7 +44,7 @@ dh_zone_media_arcology = {
 
 	potential = {
 		owner? = {
-			# has_technology = tech_dh_centrapolis ...
+			has_technology = tech_dh_centrapolis
 			NOT = {
 				has_valid_civic = civic_dystopian_society
 			}
@@ -102,7 +61,7 @@ dh_zone_media_arcology = {
 	swap_type_weight = 5
 
 	included_building_sets = {
-		amenities
+		resort
 		origin
 		urban_automation_arcology
 	}

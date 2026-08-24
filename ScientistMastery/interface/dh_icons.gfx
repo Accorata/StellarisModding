@@ -32,10 +32,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/sb_dh_interstellar_ecology.dds"
 	}
 
-	# DISTRICT SPECIALIZATIONS ---------------------------------------------------------------
+	# DISTRICTS -------------------------------------------------------------------------------
+
+	# District Specializations
+	
 	spriteType = {
 		name = "GFX_dh_district_specialization_coordination"
 		texturefile = "gfx/interface/icons/districts/district_specialization_icons/dh_district_specialization_coordination.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dh_district_specialization_media"
+		texturefile = "gfx/interface/icons/districts/district_specialization_icons/dh_district_specialization_media.dds"
+	}
+
+	# District Boxes
+
+	spriteType = { 
+		name = "GFX_dh_district_arcology_coordination_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/dh_district_arcology_coordination_rectangle.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/districts/grid_box/default_animated_mask.dds"
+			animationtexturefile = "gfx/interface/icons/districts/grid_box/default_animated_texture.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 2.0
+			animationdelay = 0.0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			#animationframes = { 1 2 3 }
+		}
 	}
 
 	# LEADER TRAITS ---------------------------------------------------------------------------
