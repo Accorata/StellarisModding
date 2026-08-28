@@ -111,22 +111,27 @@ tech_dh_genetic_memory = {
 	area = society
 	category = { biology }
 	tier = 4
-	prerequisites = { "tech_galactic_administration" "tech_gene_tailoring" }
+	prerequisites = { "tech_galactic_administration" "tech_society_2" }
 	
 	inline_script = {
 		script = technologies/dh_mastery_tech
 	}
 
-	potential = {
-		NOR = {
-			has_authority = auth_machine_intelligence
-			is_individual_machine = yes
-		}
-	}
-
 	modifier = {
 		country_scientist_cap_add = 1
 		leaders_upkeep_mult = -0.025
+	}
+
+	technology_swap = {
+		name = tech_dh_artificial_curiosity
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				is_individual_machine = yes
+			}
+		}
 	}
 
 	weight = @dh_leader_insight_weight
@@ -763,6 +768,10 @@ tech_dh_graphed_antiquity = {
 	
 	inline_script = {
 		script = technologies/dh_mastery_tech
+	}
+
+	modifier = {
+		category_archaeostudies_draw_chance_mult = 0.05
 	}
 
 	prereqfor_desc = {

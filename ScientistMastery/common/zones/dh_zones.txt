@@ -2,7 +2,7 @@ dh_zone_coordination_arcology = {
 	icon = GFX_dh_district_specialization_coordination
 	
 	triggered_district_planet_modifier = {
-		job_culture_worker_add = 600 #change...
+		job_dh_optimizer_add = 600
 	}
 
 	inline_script = {
@@ -62,6 +62,7 @@ dh_zone_media_arcology = {
 
 	included_building_sets = {
 		resort
+		unity
 		origin
 		urban_automation_arcology
 	}

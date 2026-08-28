@@ -49,7 +49,7 @@ dh_media = {
 		weight = @high_prio_specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		modifier = {
-			factor = 100
+			factor = 10
 		}
 		modifier = {
 			factor = 0.2
@@ -58,4 +58,49 @@ dh_media = {
 	}
 
 	inline_script = "jobs/automodding_priority_charisma"
+}
+
+dh_optimizer = {
+	category = specialist
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
+
+	tags = { }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_administrators
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	country_modifier = {
+		planet_jobs_produces_mult = 0.01
+	}
+
+	weight = {
+		weight = @high_prio_specialist_job_weight
+		modifier = {
+			factor = 10
+		}
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+		}
+	}
 }

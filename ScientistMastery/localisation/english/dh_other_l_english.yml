@@ -9,6 +9,7 @@
   #mod_weapon_type_explosive_weapon_speed_mult:0 "Explosive Weapon Flight Speed"
   #mod_weapon_type_kinetic_weapon_speed_mult:0 "Kinetic Weapon Flight Speed"
   mod_job_dh_media_add:0 "$job_dh_media$ Jobs"
+  mod_job_dh_optimizer_add:0 "$job_dh_optimizer$ Jobs"
 
 # Edicts
   edict_dh_touch_beyond_touch:0 "Touch Beyond Touch"
@@ -89,6 +90,11 @@
   job_dh_media_name_plural_with_icon:0 "£job_dh_media£ $job_dh_media_plural$"
   job_dh_media_desc:0 "These visionaries create the newest virtual entertainment that our entire nation can enjoy."
   # job_dh_media_effect_desc:0 "$job_dh_media_name_plural_with_icon$ turn $r_consumer_goods$ into $r_unity$ and empire-wide $r_amenities$."
+
+  job_dh_optimizer:0 "Optimizer"
+  job_dh_optimizer_plural:0 "Optimizers"
+  job_dh_optimizer_name_plural_with_icon:0 "£job_dh_optimizer£ $job_dh_optimizer_plural$"
+  job_dh_optimizer_desc:0 "The bureaucrat's ultimate evolution, capable of managing the ins and outs of the entire empire from the gleaming towers of this planet."
 
 # Decisions
   dh_decision_study_the_ancients:0 "Uncover the Past"

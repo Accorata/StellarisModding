@@ -16,7 +16,8 @@
 
   tech_dh_genetic_memory:0 "Genetic Memory"
   tech_dh_genetic_memory_desc:0 "One of our leaders has proposed a clever way of storing additional knowledge outside the brain using redundant genetic structures. Further research is required."
-  # Needs Machine Counterpart...
+  tech_dh_artificial_curiosity:0 "Artificial Curiosity"
+  tech_dh_artificial_curiosity_desc:0 "..."
 
   tech_dh_modular_taxonomy:0 "Modular Taxonomy"
   tech_dh_modular_taxonomy_desc:0 "Precise and adaptable systems that can easily accomodate any new discovery and apply changes retroactively."
