@@ -28,10 +28,8 @@ situation_ac_cloned_population = {
 			}
 		}
 		hidden_effect = {
-			owner = {
-				country_event = {
-					id = ascension_civics.305
-				}
+			situation_event = {
+				id = ascension_civics.305
 			}
 		}
 	}

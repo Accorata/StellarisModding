@@ -1094,7 +1094,7 @@ country_event = {
 	}
 }
 
-country_event = {
+situation_event = {
 	id = ascension_civics.305
 	title = ascension_civics.305.name
 	desc =  ascension_civics.305.desc
@@ -1105,25 +1105,28 @@ country_event = {
 
 	option = {
 		name = ascension_civics.305.a
-		add_modifier = {
-			modifier = ac_genetic_uniformity
-			days = 900
-		}
-		add_monthly_resource_mult = {
-			resource = unity
-			value = @tier3unityreward
-			min = @tier3unitymin
-			max = @tier3unitymax
+		owner = {
+			add_modifier = {
+				modifier = ac_genetic_uniformity
+				days = 900
+			}
+			add_monthly_resource_mult = {
+				resource = unity
+				value = @tier3unityreward
+				min = @tier3unitymin
+				max = @tier3unitymax
+			}
 		}
 	}
 
 	after = {
-		hidden_effect = {
+		owner = {
 			country_event = {
 				id = ascension_civics.303
 				days = 30
 			}
 		}
+		destroy_situation = this
 	}
 }
 
