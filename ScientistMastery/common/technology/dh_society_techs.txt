@@ -200,6 +200,28 @@ tech_dh_galactic_envoys = {
 	}
 }
 
+tech_dh_radicalized_factions = {
+	cost = @tier4cost1
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "tech_dh_ansible" "tech_living_state" }
+
+	modifier = {
+		pop_factions_produces_mult = 1
+		faction_approval = -0.1
+	}
+
+	weight = @tier4weight1
+	
+	weight_modifier = {
+	}
+
+	ai_weight = {
+	}
+}
+
+
 ## Leader Insights
 tech_dh_limited_shapeshifting = {
 	area = society

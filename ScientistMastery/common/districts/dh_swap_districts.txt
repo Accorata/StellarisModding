@@ -1,5 +1,5 @@
 dh_district_arcology_coordination = {
-	#icon needed too
+	icon = dh_district_arcology_coordination
 	overlay_icon = GFX_district_government # change...
 	zone_slots = {
 		slot_empty

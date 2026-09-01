@@ -17,7 +17,7 @@
   tech_dh_genetic_memory:0 "Genetic Memory"
   tech_dh_genetic_memory_desc:0 "One of our leaders has proposed a clever way of storing additional knowledge outside the brain using redundant genetic structures. Further research is required."
   tech_dh_artificial_curiosity:0 "Artificial Curiosity"
-  tech_dh_artificial_curiosity_desc:0 "..."
+  tech_dh_artificial_curiosity_desc:0 "'Curiosity' is a innate urge for knowledge that biologicals possess. Once better understood, we will replicate the benefits for ourselves."
 
   tech_dh_modular_taxonomy:0 "Modular Taxonomy"
   tech_dh_modular_taxonomy_desc:0 "Precise and adaptable systems that can easily accomodate any new discovery and apply changes retroactively."
@@ -41,6 +41,9 @@
 # Statecraft
   tech_dh_galactic_envoys:0 "Galactic Envoys"
   tech_dh_galactic_envoys_desc:0 "Through the development of the portable ansible, our envoys can easily transmit our deepest feelings to other nations."
+
+  tech_dh_radicalized_factions:0 "Radicalized Factions"
+  tech_dh_radicalized_factions_desc:0 "Increased engagement to news brought about by our ansible networks has radicalized our factions, increasing their centralization but making their demands harder to meet."
 
   tech_dh_limited_shapeshifting:0 "Limited Shapeshifting"
   tech_dh_limited_shapeshifting_desc:0 "A few scales here, a feather there. However minute, the right modifications will let us operate just that much more in the open."
@@ -140,7 +143,7 @@
   tech_dh_asteroid_stabilisation_nomads_tt:0 "$tech_space_mining_nomads_mult$: §G+5%§!"
 
   tech_dh_positronic_love:0 "Positronic Love"
-  tech_dh_positronic_love_desc:0 "Our machine counterparts could benefit greatly from feelings of love. Recent developments could make those emotions a reality."
+  tech_dh_positronic_love_desc:0 "Our machine counterparts could benefit greatly from the experiences of love. Recent developments could make those emotions a reality."
   tech_dh_positron_revitalizers:0 "Positron Revitalizers"
   tech_dh_positron_revitalizers_desc:0 "Positronic brains are a difficult beast to modify once up and running. However, nanite repair bots could breathe new life into deteriorating structures."
 
