@@ -1,6 +1,8 @@
 ac_bandwidth_router = {
 	icon = "GFX_ac_bandwidth_router_sb"
 	construction_days = 180
+	category = sm_economy_cat
+	
 	potential = {
 		exists = owner
 		owner = {
@@ -71,6 +73,8 @@ ac_bandwidth_router = {
 ac_bandwidth_router_corporate = {
 	icon = "GFX_ac_bandwidth_router_sb"
 	construction_days = 180
+	category = sm_economy_cat
+
 	potential = {
 		exists = owner
 		owner = {
@@ -141,11 +145,13 @@ ac_bandwidth_router_corporate = {
 ac_mitosis_chamber = {
 	icon = "GFX_ac_mitosis_chamber_sb"
 	construction_days = 180
+	category = sm_naval_support_cat
+
 	potential = {
 		exists = owner
-		#owner = {
-		#	is_ac_cloned_ships = yes
-		#}
+		owner = {
+			is_ac_cloned_ships = yes
+		}
 		is_normal_starbase = yes
 	}
 	possible = {
