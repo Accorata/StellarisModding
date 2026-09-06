@@ -278,8 +278,8 @@
 ## Diversified
   civic_hyper_diversification:0 "Hyper Diversification"
   civic_hyper_diversification_desc:0 "This society embraces genetic specialization in full, designing individual genetic designs for each niche."
-  civic_tooltip_hyper_diversification_incomplete_effects:0 "$mutation_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$mutation_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
-  civic_tooltip_hyper_diversification_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
+  civic_tooltip_hyper_diversification_incomplete_effects:0 "$mutation_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$mutation_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+200§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
+  civic_tooltip_hyper_diversification_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+200§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
   councilor_hyper_diversification:0 "Phenotype Designer"
   councilor_hyper_diversification_female:0 "$councilor_hyper_diversification$"
   councilor_hyper_diversification_desc:0 "The $TITLE$ engineers the newest modifications for planatary adaptation. Diversity must not be compromised in specialization."
@@ -481,7 +481,7 @@
 ## Diversified (Genetic)
   civic_ac_gen_hyper_diversification:0 "$civic_hyper_diversification$"
   civic_ac_gen_hyper_diversification_desc:0 "$civic_hyper_diversification_desc$"
-  civic_tooltip_ac_gen_hyper_diversification_incomplete_effects:0 "$genetic_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$genetic_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
+  civic_tooltip_ac_gen_hyper_diversification_incomplete_effects:0 "$genetic_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_biological$§! Trait which picks modifiers from the ['concept_ac_automodding_bio']\n- Grants access to each trait in the ['concept_ac_automodding_bio']\n\n§EModifiers:§!\n$genetic_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+200§!\n- $mod_BIOLOGICAL_species_trait_points_add$: §G+1§!"
   civic_tooltip_ac_gen_hyper_diversification_effects:0 "$civic_tooltip_hyper_diversification_effects$"
   councilor_ac_gen_hyper_diversification:0 "$councilor_hyper_diversification$"
   councilor_ac_gen_hyper_diversification_female:0 "$councilor_hyper_diversification_female$"
@@ -880,8 +880,8 @@
 ## Specialized
   civic_hyper_specialization:0 "Hyper Specialization"
   civic_hyper_specialization_desc:0 "The incredibly versatile properties of living metal have granted this society specialization beyond their wildest dreams, and with minimal re-modelling costs."
-  civic_tooltip_hyper_specialization_incomplete_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
-  civic_tooltip_hyper_specialization_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+2§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
+  civic_tooltip_hyper_specialization_incomplete_effects:0 "$modular_ascension_required$- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n$modular_ascension_required$- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+200§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
+  civic_tooltip_hyper_specialization_effects:0 "- Grants access to the Auto-Modding §Y$trait_ac_auto_mod_robotic$§! Trait which picks modifiers from the ['concept_ac_automodding_robotic']\n- Grants access to each trait in the ['concept_ac_automodding_robotic']\n\n§EModifiers:§!\n- $MOD_AUTO_MOD_MONTHLY_ADD$: §G+200§!\n- $mod_MACHINE_species_trait_picks_add$: §G+1§!"
   councilor_hyper_specialization:0 "Dynamistic Coordinator"
   councilor_hyper_specialization_female:0 "$councilor_hyper_specialization$"
   councilor_hyper_specialization_desc:0 "The $TITLE$ is master of all things to do with supply chains. To accord with our new forms, such systems must be flexible."

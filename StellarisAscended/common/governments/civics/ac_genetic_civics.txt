@@ -209,7 +209,7 @@ civic_ac_gen_hyper_diversification = {
 		}
 		description = civic_tooltip_ac_gen_hyper_diversification_effects
 		modifier = {
-			auto_mod_monthly_add = 2
+			auto_mod_monthly_add = 200
 			BIOLOGICAL_species_trait_points_add = 1
 		}
 	}
@@ -270,7 +270,7 @@ civic_ac_gen_employee_diversification = {
 		}
 		description = civic_tooltip_ac_gen_hyper_diversification_effects
 		modifier = {
-			auto_mod_monthly_add = 2
+			auto_mod_monthly_add = 200
 			BIOLOGICAL_species_trait_points_add = 1
 		}
 	}
@@ -312,7 +312,7 @@ civic_ac_gen_hyper_diversified = {
 		}
 		description = civic_tooltip_ac_gen_hyper_diversified_effects
 		modifier = {
-			auto_mod_monthly_add = 2
+			auto_mod_monthly_add = 200
 			BIOLOGICAL_species_trait_points_add = 1
 			councilor_gestalt_regulatory_exp_gain = @gestalt_civic_node_xp_rate
 		}
