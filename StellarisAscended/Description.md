@@ -49,6 +49,7 @@ Additional Thanks To:
 - @TTFTCUTS (For post-launch bug identification and fixes)
 - @Trap of Charlemagne (For post-launch bug identification and fixes)
 - @Darrow O' Lykos (For post-launch typo-spotting)
+- @Aphyxia (For post-2.0 update bug identification)
 
 Overrides:
 - Scripted Effect: apply_post_assimilation_effects

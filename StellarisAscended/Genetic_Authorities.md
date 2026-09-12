@@ -1,6 +1,6 @@
 [h2] Genetic Authorities [/h2]
 
-A few months after completing the Genetic ascension path, an event chain called "Genetic Legacy" will begin. Through a starting event and then two more follow up events, your nation will choose between the perfect or the chaotic. The final event will allow your nation to reform its authority into the perfect version, chaotic version, or remain as is. Whether the perfect option, chaotic option, or both is/are available will depend on your decisions in the event chain. 
+A few months after completing the Genetic ascension path, an event chain called "Genetic Legacy" will begin. Through a starting event and then two more follow up events, your nation will choose between the perfect or the chaotic. The final event will allow your nation to reform its authority into the perfect version, chaotic version, or remain as is. Whether the perfect option, chaotic option, or both is/are available will depend on your decisions in the event chain.
 
 [h1] Perfect Authorities [/h1]
 
@@ -52,7 +52,7 @@ Edict: Clone Overdrive
 - Organic Pop Assembly Speed: +15%
 - Clone Vats Upkeep: +25%
 
-[b]Corporate Cryosleep[/b] [i] ... [/i]
+[b]Corporate Cryosleep[/b]
 - Biological Trait Points: +1
 - Trade Value from Rulers Living Standards: +3
 - Term Length: +100%

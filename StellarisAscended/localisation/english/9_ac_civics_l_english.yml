@@ -923,8 +923,9 @@
 ## Metal Recycler
   civic_metallic_repurposing:0 "Metallic Repurposing"
   civic_metallic_repurposing_desc:0 "This society believes all metal serves a purpose, that none should go to waste. Their living metal technology is able to grow on metallic remains, greatly enhancing their recycling capabilities."
-  civic_tooltip_metallic_repurposing_incomplete_effects:0 "$modular_ascension_required$- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n$modular_ascension_required$- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
-  civic_tooltip_metallic_repurposing_effects:0 "- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris\n\n§EModifiers:§!\n- $mod_planet_metallurgists_upkeep_mult$: §G-20%§!"
+  civic_metallic_repurposing_salvaging_effects:0 "- §GDoubles Chance§! of Salvaging Ships\n- §GGain§! §Y£sr_living_metal£ Living Metal§! on Salvaging or Researching Debris"
+  civic_tooltip_metallic_repurposing_incomplete_effects:0 "$modular_ascension_required$$civic_metallic_repurposing_salvaging_effects$\n\n§EModifiers:§!\n$modular_ascension_required$- Upkeep from $job_foundry_swap_plural_with_icon$: §G-20%§!"
+  civic_tooltip_metallic_repurposing_effects:0 "$civic_metallic_repurposing_salvaging_effects$\n\n§EModifiers:§!\n- Upkeep from $job_foundry_swap_plural_with_icon$: §G-20%§!"
   councilor_metallic_repurposing:0 "Metallic Growth Specialist"
   councilor_metallic_repurposing_female:0 "$councilor_metallic_repurposing$"
   councilor_metallic_repurposing_desc:0 "Using metallic scraps as food for living metal is a difficult task. The $TITLE$ ensures this process is running smoothly throughout our forges."
@@ -937,8 +938,8 @@
 
   civic_omnirecyclers:0 "Omnirecyclers"
   civic_omnirecyclers_desc:0 "This Machine Intelligence seeks for perfect conservation of resources, placing them in a cyclical loop ad infinitum."
-  civic_tooltip_omnirecyclers_incomplete_effects:0 "$civic_tooltip_metallic_repurposing_incomplete_effects$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
-  civic_tooltip_omnirecyclers_effects:0 "$civic_tooltip_metallic_repurposing_effects$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_omnirecyclers_incomplete_effects:0 "$modular_ascension_required$$civic_metallic_repurposing_salvaging_effects$\n\n§EModifiers:§!\n$modular_ascension_required$- Upkeep from $job_fabricator_swap_plural_with_icon$: §G-20%§!$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
+  civic_tooltip_omnirecyclers_effects:0 "$civic_metallic_repurposing_salvaging_effects$\n\n§EModifiers:§!\n- Upkeep from $job_fabricator_swap_plural_with_icon$: §G-20%§!$\n- $mod_councilor_gestalt_cognitive_exp_gain$: §G+$@gestalt_civic_node_xp_rate|%0$§!"
 
 ### Nanotech -----------------------------------------------------------------------------------------
   nanotech_ascension_required:0 "If §YNanotech§! Ascension completed:\n"
