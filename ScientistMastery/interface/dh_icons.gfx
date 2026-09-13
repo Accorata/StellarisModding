@@ -35,7 +35,7 @@ spriteTypes = {
 	# DISTRICTS -------------------------------------------------------------------------------
 
 	# District Specializations
-	
+
 	spriteType = {
 		name = "GFX_dh_district_specialization_coordination"
 		texturefile = "gfx/interface/icons/districts/district_specialization_icons/dh_district_specialization_coordination.dds"
@@ -69,7 +69,7 @@ spriteTypes = {
 	}
 
 	# District Backgrounds
-	
+
 	spriteType = {
 		name = "GFX_dh_district_arcology_coordination_bg"
 		textureFile = "gfx/interface/planetview/district_backgrounds/dh_district_arcology_coordination.dds"

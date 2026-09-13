@@ -141,7 +141,7 @@ tech_dh_ansible = {
 
 	is_rare = yes
 
-	# gateway = dh_ansible ...
+	gateway = dh_ansible
 
 	modifier = {
 		empire_size_colonies_mult = -0.05
