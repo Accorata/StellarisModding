@@ -155,21 +155,14 @@ apply_post_assimilation_effects = {
 			NOT = {
 				owner = {
 					any_owned_pop_group = {
-						is_exact_same_species = event_target:convert_to_species
-						NOT = {
-							is_same_value = prevprev
-						}
+						is_exact_same_species = event_target:target_species
+						NOT = { is_same_value = prevprev }
 					}
 				}
 			}
 		}
-		if = {
-			# set citizenship
-			limit = {
-				root.owner = {
-					is_machine_empire = yes
-				}
-			}
+		if = { # set citizenship
+			limit = { root.owner = { is_machine_empire = yes } }
 			set_citizenship_type = {
 				type = citizenship_full_machine
 				country = root.owner
@@ -181,26 +174,14 @@ apply_post_assimilation_effects = {
 				country = root.owner
 			}
 		}
-		if = {
-			# set citizenship
-			limit = {
-				root.owner = {
-					has_ethic = ethic_gestalt_consciousness
-				}
-			}
+
+		if = { # set citizenship
+			limit = { root.owner = { has_ethic = ethic_gestalt_consciousness } }
 			set_living_standard = {
 				type = living_standard_hive_mind
 				country = root.owner
 			}
 		}
-	}
-	if = { # Handle assimilation of spiritualists into cybernetic empires
-		limit = {
-			root.owner = { has_policy_flag = cyberization_standards_limited }
-			is_spiritualist = yes
-			has_trait = trait_cybernetic
-		}
-		convert_to_limited_cybernetic_effect = yes
 	}
 
 	if = { # Handle Purity Authority effects

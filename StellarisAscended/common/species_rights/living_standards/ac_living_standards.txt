@@ -85,10 +85,7 @@ living_standard_ac_cyberlife = {
 		}
 		custom_tooltip = {
 			fail_text = AC_SPECIES_NOT_CYBORG
-			OR = {
-				has_trait = trait_cybernetic
-				has_trait = trait_limited_cybernetic
-			}
+			has_trait = trait_cybernetic
 		}
 	}
 	ai_will_do = {
@@ -174,10 +171,7 @@ living_standard_ac_computational_matrix = {
 		}
 		custom_tooltip = {
 			fail_text = AC_SPECIES_NOT_CYBORG
-			OR = {
-				has_trait = trait_cybernetic
-				has_trait = trait_limited_cybernetic
-			}
+			has_trait = trait_cybernetic
 		}
 	}
 	ai_will_do = {

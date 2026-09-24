@@ -1,6 +1,5 @@
 defined_text = {
 	name = AC_GetPatron
-	random = no
 	text = {
 		trigger = {
 			has_covenant = the_eater_of_worlds
