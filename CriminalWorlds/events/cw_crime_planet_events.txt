@@ -152,7 +152,9 @@ carrier_event = {
 		has_owner = yes
 	}
 	trigger = {
-		is_nomadic = no # Nomads cannot spawn criminal fleets as they would have no stationary base
+		owner = {
+			is_nomadic = no # Nomads cannot spawn criminal fleets as they would have no stationary base
+		}
 	}
 	immediate = {
 		add_modifier = {
