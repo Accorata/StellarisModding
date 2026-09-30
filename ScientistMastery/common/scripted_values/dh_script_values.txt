@@ -1,0 +1,16 @@
+dh_num_fallen_empire_buildings = {
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		trigger_scope = owner
+		parameters = {
+			limit = {
+				is_colony = yes
+				OR = {
+					has_active_building = $BUILDING$
+					has_active_building = $BUILDING_2$
+				}
+			}
+		}
+		mode = add
+	}
+}

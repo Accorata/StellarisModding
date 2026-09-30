@@ -252,3 +252,70 @@ building_dh_extraction_nexus = {
 		is_wilderness_empire = no
 	}
 }
+
+building_dh_unstabilized_singularity = {
+	base_buildtime = @b3_time
+	can_build = no
+	can_demolish = no
+
+	category = resource
+
+	building_sets = {
+		fallen_empire
+		fallen_empire_generator
+	}
+
+	destroy_trigger = {
+		always = no
+	}
+
+	inline_script = {
+		script = jobs/technicians_add
+		AMOUNT = @fe_jobs
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		job_fe_acolyte_generator_automated_workforce_mult = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_wilderness_empire = no }
+		}
+		job_technician_automated_workforce_mult = 0.10
+		job_technician_drone_automated_workforce_mult = 0.10
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = -0.10
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			alloys = @b2_alloy_upkeep
+			rare_crystals = @fe_sr_upkeep_2
+			sr_dark_matter = @fe_sr_upkeep_2
+		}
+		produces = {
+			energy = 50
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_wilderness_empire = yes
+				has_tradition = tr_purity_finish
+			}
+		}
+		planet_building_build_speed_mult = 0.03
+		planet_decision_enact_speed_mult = 0.03
+	}
+}

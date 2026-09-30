@@ -1,0 +1,30 @@
+﻿l_english:
+# Events
+  dangerous_horizons.3.name:0 "Scientific Mastery"
+  dangerous_horizons.3.desc:0 "..."
+  dangerous_horizons.3.a:0 "Wonderful."
+
+  dangerous_horizons.1100.name:0 "Abundant Reactor"
+  dangerous_horizons.1100.desc:0 "The §Y[Root.DH_GetSingularity]§! ..."
+  dangerous_horizons.1100.a:0 "Investigate the situation."
+  dangerous_horizons.1100.b:0 "Shut it down."
+
+  dangerous_horizons.1102.name:0 "Repaired Singularity"
+  dangerous_horizons.1102.desc:0 "Investigations into the §Yabnormal energy§! provided by the §Y[Root.DH_GetSingularity]§! on [Root.GetName] have identified the culprit: a §Yweakening containment field§! due to improper routing of power. The waning field was amplifying the effects of the singularity, however it would only hold for so long.\n\nFortunately, our investigations identified the flaw before it could get out of hand. It is unknown what exactly would have happened had we not §Yfixed the containment field§!, but we are sure it would have been bad. We are fortunate to have caught this in time and will be §Ysure to check§! for these types of mistakes in the future."
+  dangerous_horizons.1102.a:0 "A good catch."
+
+  dangerous_horizons.1103.name:0 "Unstable Singularity"
+  dangerous_horizons.1103.desc:0 "Our §Y[Root.DH_GetSingularity]§! on [Root.GetName] is §Ycollapsing§!! It has become clear that the extra energy it was providing was the result of a faulty containment field, ..."
+  dangerous_horizons.1103.a:0 "..."
+
+  dangerous_horizons.1104.name:0 "Kabloom!"
+  dangerous_horizons.1104.desc:0 "Our experts established a wide perimter around the unstable singularity, clearing the area of people and explosive equipment. Next, they erected massive durasteel barriers to shield the rest of the planet. Finally they navigated into the core of the singularity via remote drones and strategically released the final containment fields.\n\nAs the calculations predicted, instead of replacing [Root.GetName] with a black hole, the singularity §Yfolded in on itself§! before passing into another dimension. This interdimensional travel resulted in a large explosion which left much debris where previously our infrastructure had stood. Repairs will be long, but manageable."
+  dangerous_horizons.1104.a:0 "An unfortunate necessity."
+  
+  dangerous_horizons.1105.name:0 "Singularity Operational"
+  dangerous_horizons.1105.desc:0 "After much hard work by our field manipulation experts, the faulty containment fields of the Singularity on [Root.GetName] have been §Yreparied§!. While there has been much damage done and much repair is necessary, the singularity is §Ystable§! and all predictions show it will remain so. This affair has come to an end.\n\nOur energy specialists will ensure that nothing of this sort happens again."
+  dangerous_horizons.1105.a:0 "Wonderful."
+
+  dangerous_horizons.1106.name:0 "Unsuccessful Repairs"
+  dangerous_horizons.1106.desc:0 "..."
+  dangerous_horizons.1106.a:0 "..."

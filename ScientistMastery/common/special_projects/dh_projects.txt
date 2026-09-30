@@ -1,0 +1,63 @@
+special_project = {
+	key = "DH_UNSTABILIZED_SINGULARITY_1_PROJECT"
+	event_chain = "dh_unstable_singularity_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nuclear_explosion
+
+	event_scope = planet_event
+
+	on_success = {
+		carrier_event = {
+			id = dangerous_horizons.1104
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "DH_UNSTABILIZED_SINGULARITY_2_PROJECT"
+	event_chain = "dh_unstable_singularity_chain"
+	cost = 50000
+	tech_department = physics_technology
+	picture = GFX_evt_nuclear_explosion # change...
+
+	same_option_group_as = { DH_UNSTABILIZED_SINGULARITY_1_PROJECT }
+
+	event_scope = planet_event
+
+	on_success = {
+		random_list = {
+			25 = {
+				id = dangerous_horizons.1106
+			}
+			75 = {
+				id = dangerous_horizons.1105
+			}
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+special_project = {
+	key = "DH_UNSTABILIZED_SINGULARITY_3_PROJECT"
+	event_chain = "dh_unstable_singularity_chain"
+	cost = 10000
+	tech_department = engineering_technology
+	picture = GFX_evt_nuclear_explosion
+
+	event_scope = planet_event
+
+	on_success = {
+		carrier_event = {
+			id = dangerous_horizons.1104
+		}
+	}
+
+	on_fail = {
+	}
+}

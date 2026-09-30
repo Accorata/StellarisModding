@@ -1,0 +1,22 @@
+defined_text = {
+	name = DH_GetSingularity
+	text = {
+		trigger = {
+			OR = {
+				has_active_building = building_class_3_singularity
+				has_planet_flag = dh_had_class_3_singularity
+			}
+		}
+		localization_key = building_class_3_singularity
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_active_building = building_class_4_singularity
+				has_planet_flag = dh_had_class_4_singularity
+			}
+		}
+		localization_key = building_class_4_singularity
+	}
+	default = building_class_3_singularity
+}

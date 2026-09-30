@@ -1,3 +1,9 @@
+on_yearly_pulse_country = {
+	events = {
+		dangerous_horizons.1000			# Fallen Empire building dangerous event gatekeeper 
+	}
+}
+
 # No scope, like on_game_start
 on_decade_pulse = {
 	events = {

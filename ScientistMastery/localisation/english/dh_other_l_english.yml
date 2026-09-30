@@ -84,6 +84,13 @@
   building_dh_extraction_nexus_wilderness:0 "Tectonic Core"
   building_dh_extraction_nexus_wilderness_desc:0 "Natural formation of mountains, $dh_core_description$"
 
+  building_dh_unstabilized_singularity:0 "Unstabilized Singularity"
+  building_dh_unstabilized_singularity_desc:0 "..."
+
+# Event Chains
+  dh_unstable_singularity_chain_title:0 "Unusual Singularity Reactor"
+  dh_unstable_singularity_chain_desc:0 "On [Root.GetName], our advanced [Root.DH_GetSingularity] has been operating in unexpected ways. Our experts are intensively monitering the situation."
+
 # Jobs
   job_dh_media:0 "Media Producer"
   job_dh_media_plural:0 "Media Producers"
@@ -100,6 +107,14 @@
   dh_decision_study_the_ancients:0 "Uncover the Past"
   dh_decision_study_the_ancients_desc:0 "Greater understanding of the past gives these artifacts new meanings."
 
+# Special Projects
+  DH_UNSTABILIZED_SINGULARITY_1_PROJECT:0 "Controlled Explosion"
+  DH_UNSTABILIZED_SINGULARITY_1_PROJECT_DESC:0 "The unstabilized singularity must be demolished before too much damage is done to our colony. We should be able to control some of the blast if we act now."
+  DH_UNSTABILIZED_SINGULARITY_2_PROJECT:0 "Attempt Repairs"
+  DH_UNSTABILIZED_SINGULARITY_2_PROJECT_DESC:0 "If we can set up alternative containment fields around the singularity, we may be able to restore it without further damage. May being the operative word; this is a risky maneuver that could cost us."
+  DH_UNSTABILIZED_SINGULARITY_3_PROJECT:0 "$DH_UNSTABILIZED_SINGULARITY_1_PROJECT$"
+  DH_UNSTABILIZED_SINGULARITY_3_PROJECT_DESC:0 "Attempts at repairing the unstabilized singularity were unsuccessful. It must be demolished before the situation escalates."
+  
 # Starbase Modules
   sm_dh_interstellar_ecology:0 "Interstellar Ecology"
   sm_dh_interstellar_ecology_desc:0 "..."
@@ -164,6 +179,9 @@
   dh_planet_study_the_ancients:0 "Ancient Studies"
   dh_planet_study_the_ancients_desc:0 "$dh_decision_study_the_ancients_desc$"
 
+  dh_planet_radiant_singularity:0 "Radiant Singularity"
+  dh_planet_radiant_singularity_desc:0 "For unknown reasons, the contained singularity on this planet is proving extra output."
+
   dh_memory_archives:0 "Memory Archives:"
   dh_fallen_leader_insight:0 "The stored memories of a once great scientist continue to provide new insights for the empire."
 
@@ -193,8 +211,3 @@
   dh_propulsion_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
   dh_voidcraft_scientist_memory:0 "$dh_memory_archives$ Voidcraft"
   dh_voidcraft_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
-
-# Events
-  dangerous_horizons.3.name:0 "Scientific Mastery"
-  dangerous_horizons.3.desc:0 "..."
-  dangerous_horizons.3.a:0 "Wonderful."

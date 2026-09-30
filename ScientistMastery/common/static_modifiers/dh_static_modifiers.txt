@@ -3,6 +3,11 @@ dh_planet_study_the_ancients = {
 	planet_biologists_produces_mult = 0.20
 }
 
+dh_planet_radiant_singularity = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds" #change...
+	technician_jobs_bonus_workforce_mult = 0.10
+}
+
 dh_computing_scientist_memory = {
 	category_computing_research_speed_mult = 0.05
 }
