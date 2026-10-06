@@ -4,8 +4,18 @@ dh_planet_study_the_ancients = {
 }
 
 dh_planet_radiant_singularity = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds" #change...
+	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 	technician_jobs_bonus_workforce_mult = 0.10
+}
+
+dh_singularity_collapsed = {
+	planet_stability_add = -10
+	pop_government_ethic_attraction = -0.25
+	all_technology_research_speed = -0.1
+}
+
+dh_cautious_research = {
+	all_technology_research_speed = -0.1
 }
 
 dh_computing_scientist_memory = {

@@ -92,6 +92,19 @@ dh_upgrade_to_mastery = {
 	}
 }
 
+dh_add_cautious_research = {
+	if = {
+		limit = {
+			has_modifier = dh_cautious_research
+		}
+		remove_modifier = dh_cautious_research
+	}
+	add_modifier = {
+		modifier = dh_cautious_research
+		days = 1800
+	}
+}
+
 dh_create_scouting_fleet = {
 	event_target:dh_extradimensional_scouts = {
 		random_list = {

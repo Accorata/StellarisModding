@@ -236,6 +236,14 @@ carrier_event = {
 			owner = root
 		}
 	}
+
+	after = {
+		carrier_event = {
+			id = dangerous_horizons.1107
+			days = 90
+			random = 90
+		}
+	}
 }
 
 carrier_event = {
@@ -369,6 +377,170 @@ carrier_event = {
 			name = "DH_UNSTABILIZED_SINGULARITY_3_PROJECT" # Controlled Explosion (Round 2)
 			location = this
 			owner = root
+		}
+	}
+}
+
+carrier_event = {
+	id = dangerous_horizons.1107
+	title = dangerous_horizons.1107.name
+	desc = dangerous_horizons.1107.desc
+	picture = GFX_evt_nuclear_explosion # change...?
+	show_sound = event_default
+	is_triggered_only = yes
+
+	event_chain = dh_unstable_singularity_chain
+
+	trigger = {
+		has_active_building = building_dh_unstabilized_singularity
+	}
+
+	immediate = {
+		add_planet_devastation = 25
+		random_owned_pop_group = {
+			kill_single_pop = yes
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1107.a
+		tooltip = {
+			add_planet_devastation = 25
+			random_owned_pop_group = {
+				kill_single_pop = yes
+			}
+		}
+	}
+
+	after = {
+		carrier_event = {
+			id = dangerous_horizons.1108
+			days = 90
+			random = 90
+		}
+	}
+}
+
+carrier_event = {
+	id = dangerous_horizons.1108
+	title = dangerous_horizons.1108.name
+	desc = dangerous_horizons.1108.desc
+	picture = GFX_evt_nuclear_explosion # change...?
+	show_sound = event_default
+	is_triggered_only = yes
+
+	event_chain = dh_unstable_singularity_chain
+
+	trigger = {
+		has_active_building = building_dh_unstabilized_singularity
+	}
+
+	immediate = {
+		add_planet_devastation = 25
+		random_owned_pop_group = {
+			kill_single_pop = yes
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1108.a
+		tooltip = {
+			add_planet_devastation = 25
+			random_owned_pop_group = {
+				kill_single_pop = yes
+			}
+		}
+	}
+
+	after = {
+		carrier_event = {
+			id = dangerous_horizons.1109
+			days = 90
+			random = 90
+		}
+	}
+}
+
+carrier_event = {
+	id = dangerous_horizons.1109
+	title = dangerous_horizons.1109.name
+	desc = dangerous_horizons.1109.desc
+	picture = GFX_evt_supernova
+	show_sound = event_default
+	is_triggered_only = yes
+
+	event_chain = dh_unstable_singularity_chain
+
+	trigger = {
+		has_active_building = building_dh_unstabilized_singularity
+	}
+
+	immediate = {
+		destroy_star_system = yes
+		every_playable_country = {
+			limit = {
+				has_communications = root.owner
+				NOT = {
+					is_same_value = root.owner
+				}
+			}
+			add_opinion_modifier = {
+				who = root.owner
+				modifier = dh_opinion_reckless_technology
+			}
+			if = {
+				limit = {
+					intel_level = {
+						system = root.system
+						level > none
+					}
+				}
+				country_event = { id = dangerous_horizons.1110 }
+			}
+		}
+		owner = {
+			end_event_chain = dh_unstable_singularity_chain # does this cancel special projects...
+			add_modifier = {
+				modifier = dh_singularity_collapsed
+				days = 3600
+			}
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1109.a
+		tooltip = {
+			destroy_star_system = yes
+			owner = {
+				end_event_chain = dh_unstable_singularity_chain
+				add_modifier = {
+					modifier = dh_singularity_collapsed
+					days = 3600
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dangerous_horizons.1110
+	title = dangerous_horizons.1110.name
+	desc = dangerous_horizons.1110.desc
+	picture = GFX_evt_supernova
+	show_sound = event_default
+	is_triggered_only = yes
+
+	immediate = {
+		dh_add_cautious_research = yes
+	}
+
+	option = {
+		name = dangerous_horizons.1110.a
+		tooltip = {
+			add_modifier = {
+				modifier = dh_cautious_research
+				days = 1800
+			}
 		}
 	}
 }

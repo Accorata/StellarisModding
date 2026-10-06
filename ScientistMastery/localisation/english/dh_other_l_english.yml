@@ -182,6 +182,12 @@
   dh_planet_radiant_singularity:0 "Radiant Singularity"
   dh_planet_radiant_singularity_desc:0 "For unknown reasons, the contained singularity on this planet is proving extra output."
 
+  dh_cautious_research:0 "Paranoid Research"
+  dh_cautious_research_desc:0 "Given that the disasterous recent events resulted from advanced technology, our researchers are understandably paranoid about what their work will bring about."
+
+  dh_singularity_collapsed:0 "Echoes of our Failure"
+  dh_singularity_collapsed_desc:0 "Following the annihilation of our planet by a faulty singularity reactor, the populace of our empire no longer trusts our leadership. That lost trust comes at a high price."
+
   dh_memory_archives:0 "Memory Archives:"
   dh_fallen_leader_insight:0 "The stored memories of a once great scientist continue to provide new insights for the empire."
 
@@ -211,3 +217,6 @@
   dh_propulsion_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
   dh_voidcraft_scientist_memory:0 "$dh_memory_archives$ Voidcraft"
   dh_voidcraft_scientist_memory_desc:0 "$dh_fallen_leader_insight$"
+
+# Opinion Modifiers
+  dh_opinion_reckless_technology:0 "Reckless Usage of Technology"
