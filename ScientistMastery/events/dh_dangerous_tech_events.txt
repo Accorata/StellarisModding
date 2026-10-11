@@ -95,9 +95,11 @@ carrier_event = {
 			modifier = dh_planet_radiant_singularity
 			days = 1800
 		}
-		begin_event_chain = {
-			event_chain = dh_unstable_singularity_chain
-			target = root
+		owner = {
+			begin_event_chain = {
+				event_chain = dh_unstable_singularity_chain
+				target = root
+			}
 		}
 		hidden = {
 			carrier_event = {
@@ -320,6 +322,9 @@ carrier_event = {
 				building = building_class_4_singularity
 			}
 		}
+		dh_add_esoteric_debris = {
+			NUMBER = 2
+		}
 		owner = {
 			end_event_chain = dh_unstable_singularity_chain
 		}
@@ -347,6 +352,9 @@ carrier_event = {
 					building = building_class_4_singularity
 				}
 			}
+			dh_add_esoteric_debris = {
+				NUMBER = 2
+			}
 			owner = {
 				end_event_chain = dh_unstable_singularity_chain
 			}
@@ -366,12 +374,18 @@ carrier_event = {
 
 	immediate = {
 		add_planet_devastation = 25
+		dh_add_esoteric_debris = {
+			NUMBER = 1
+		}
 	}
 
 	option = {
 		name = dangerous_horizons.1106.a
 		tooltip = {
 			add_planet_devastation = 25
+			dh_add_esoteric_debris = {
+				NUMBER = 1
+			}
 		}
 		enable_special_project = {
 			name = "DH_UNSTABILIZED_SINGULARITY_3_PROJECT" # Controlled Explosion (Round 2)
@@ -540,6 +554,214 @@ country_event = {
 			add_modifier = {
 				modifier = dh_cautious_research
 				days = 1800
+			}
+		}
+	}
+}
+
+# Rampaging Invaders
+
+carrier_event = {
+	id = dangerous_horizons.1200
+	title = dangerous_horizons.1200.name
+	desc = dangerous_horizons.1200.desc
+	picture = GFX_evt_alien_nature # change...
+	show_sound = event_air_raid_siren # change...
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	event_chain = dh_rampaging_invaders_chain
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = dh_rampaging_invaders_event
+			}
+		}
+		OR = {
+			has_active_building = building_dimensional_replicator
+			has_active_building = building_dimensional_fabricator
+		}
+	}
+	
+	immediate = {
+		owner = {
+			set_country_flag = dh_rampaging_invaders_event
+		}
+		set_planet_flag = dh_rampaging_invasion
+		create_country = {
+			name = "NAME_DH_Rampaging_Invaders"
+			type = faction
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+				save_event_target_as = dh_rampaging_invaders_country
+			}
+		}
+		create_species = {
+			name = "NAME_DH_Extradimensional"
+			class = EXD
+			namelist = Extradimensional
+			portrait = exd3_leader
+			traits = random
+			effect = { save_event_target_as = dh_rampaging_invaders_species }
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1200.a
+		owner = {
+			begin_event_chain = {
+				event_chain = dh_rampaging_invaders_chain
+				target = root
+			}
+		}
+		while = {
+			count = 8
+			create_army = {
+				name = "NAME_DH_Rampaging_Invaders"
+				owner = dh_rampaging_invaders_country
+				species = event_target:dh_rampaging_invaders_species
+				type = "dh_extradimensional_invader_army"
+			}
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1200.b
+		owner = {
+			begin_event_chain = {
+				event_chain = dh_rampaging_invaders_chain
+				target = root
+			}
+		}
+		if = {
+			limit = {
+				has_active_building = building_dimensional_replicator
+			}
+			remove_building = building_dimensional_replicator
+		}
+		if = {
+			limit = {
+				has_active_building = building_dimensional_fabricator
+			}
+			remove_building = building_dimensional_fabricator
+		}
+		while = {
+			count = 3
+			create_army = {
+				name = "NAME_DH_Rampaging_Invaders"
+				owner = dh_rampaging_invaders_country
+				species = event_target:dh_rampaging_invaders_species
+				type = "dh_extradimensional_invader_army"
+			}
+		}
+	}
+
+	after = {
+		owner = {
+			country_event = {
+				id = dangerous_horizons.1201
+				days = 5
+				random = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dangerous_horizons.1201
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_planet = {
+			OR = {
+				has_active_building = building_dimensional_replicator
+				has_active_building = building_dimensional_fabricator
+			}
+			NOT = {
+				has_planet_flag = dh_rampaging_invasion
+			}
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = {
+				OR = {
+					has_active_building = building_dimensional_replicator
+					has_active_building = building_dimensional_fabricator
+				}
+				NOT = {
+					has_planet_flag = dh_rampaging_invasion
+				}
+			}
+			carrier_event = {
+				id = dangerous_horizons.1202
+			}
+		}
+	}
+}
+
+carrier_event = {
+	id = dangerous_horizons.1202
+	title = dangerous_horizons.1202.name
+	desc = dangerous_horizons.1202.desc
+	picture = GFX_evt_alien_nature # change...
+	show_sound = event_air_raid_siren # change...
+	is_triggered_only = yes
+
+	event_chain = dh_rampaging_invaders_chain
+
+	trigger = {
+		NOT = {
+			has_planet_flag = dh_rampaging_invasion
+		}
+		OR = {
+			has_active_building = building_dimensional_replicator
+			has_active_building = building_dimensional_fabricator
+		}
+	}
+	
+	immediate = {
+		set_planet_flag = dh_rampaging_invasion
+	}
+
+	option = {
+		name = dangerous_horizons.1202.a
+		while = {
+			count = 5
+			create_army = {
+				name = "NAME_DH_Rampaging_Invaders"
+				owner = dh_rampaging_invaders_country
+				species = event_target:dh_rampaging_invaders_species
+				type = "dh_extradimensional_invader_army"
+			}
+		}
+	}
+
+	option = {
+		name = dangerous_horizons.1202.b
+		if = {
+			limit = {
+				has_active_building = building_dimensional_replicator
+			}
+			remove_building = building_dimensional_replicator
+		}
+		if = {
+			limit = {
+				has_active_building = building_dimensional_fabricator
+			}
+			remove_building = building_dimensional_fabricator
+		}
+		while = {
+			count = 2
+			create_army = {
+				name = "NAME_DH_Rampaging_Invaders"
+				owner = dh_rampaging_invaders_country
+				species = event_target:dh_rampaging_invaders_species
+				type = "dh_extradimensional_invader_army"
 			}
 		}
 	}

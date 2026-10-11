@@ -1,0 +1,13 @@
+dh_extradimensional_invader_army = {
+	defensive = yes
+	damage = 2.0
+	morale_damage = 3.0
+	health = 5.0
+	has_morale = no
+	icon = GFX_army_type_xenomorph
+	has_species = no
+
+	potential_country = {
+		always = no
+	}
+}

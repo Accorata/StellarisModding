@@ -26,6 +26,7 @@ planet_event = {
 			carrier_event = { id = mega.200 }
 	}
 }
+# end of testing area
 
 # Fires from on_decade_pulse_country
 country_event = {

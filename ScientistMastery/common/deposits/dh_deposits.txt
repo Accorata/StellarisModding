@@ -1,0 +1,30 @@
+dh_d_esoteric_debris = {
+	time = 360
+	icon = d_metal_boneyard
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	# prerequisites = { "tech_volcano" }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 750
+			alloys = 250
+		}
+	}
+
+	potential = { always = no }
+
+	on_cleared = {
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}

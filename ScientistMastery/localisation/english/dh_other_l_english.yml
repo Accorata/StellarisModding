@@ -11,6 +11,10 @@
   mod_job_dh_media_add:0 "$job_dh_media$ Jobs"
   mod_job_dh_optimizer_add:0 "$job_dh_optimizer$ Jobs"
 
+# Armies
+  dh_extradimensional_invader_army:0 "Rampaging Invaders"
+  dh_extradimensional_invader_army_desc:0 "Angered by our dimensional tunneling, these extradimensionals have come to take their revenge."
+
 # Edicts
   edict_dh_touch_beyond_touch:0 "Touch Beyond Touch"
   edict_dh_touch_beyond_touch_desc:0 "Small amounts of Zro amplify our telekinetic abilities, granting strength wherever our psionic presence is felt."
@@ -87,9 +91,16 @@
   building_dh_unstabilized_singularity:0 "Unstabilized Singularity"
   building_dh_unstabilized_singularity_desc:0 "..."
 
+# Blockers
+  dh_d_esoteric_debris:0 "Esoteric Debris"
+  dh_d_esoteric_debris_desc:0 "..."
+
 # Event Chains
   dh_unstable_singularity_chain_title:0 "Unusual Singularity Reactor"
   dh_unstable_singularity_chain_desc:0 "On [Root.GetName], our advanced [Root.DH_GetSingularity] has been operating in unexpected ways. Our experts are intensively monitering the situation."
+
+  dh_rampaging_invaders_chain_title:0 "Rampaging Invaders"
+  dh_rampaging_invaders_chain_desc:0 "..."
 
 # Jobs
   job_dh_media:0 "Media Producer"
@@ -220,3 +231,7 @@
 
 # Opinion Modifiers
   dh_opinion_reckless_technology:0 "Reckless Usage of Technology"
+
+# Names
+  NAME_DH_Rampaging_Invaders:0 "Vengeful Extradimensionals"
+  NAME_DH_Extradimensional:0 "Extradimensional"

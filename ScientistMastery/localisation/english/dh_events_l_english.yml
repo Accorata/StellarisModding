@@ -1,9 +1,11 @@
 ﻿l_english:
-# Events
+### Events 
+
   dangerous_horizons.3.name:0 "Scientific Mastery"
   dangerous_horizons.3.desc:0 "..."
   dangerous_horizons.3.a:0 "Wonderful."
 
+# Unstable Singularity (Class-3 Singularity)
   dangerous_horizons.1100.name:0 "Abundant Reactor"
   dangerous_horizons.1100.desc:0 "The §Y[Root.DH_GetSingularity]§! ..."
   dangerous_horizons.1100.a:0 "Investigate the situation."
@@ -44,3 +46,17 @@
   dangerous_horizons.1110.name:0 "[From.Root.System.GetName] System Destroyed!"
   dangerous_horizons.1110.desc:0 "In a terrible series of events, ...\n\nThe final result was the varporization of the entire [From.Root.System.GetName] system. Countless souls lost to hubris."
   dangerous_horizons.1110.a:0 "We will do better."
+
+# Rampaging Invaders (Dimensional Replicator)
+  dangerous_horizons.1200.name:0 "Extradimensional Invaders!"
+  dangerous_horizons.1200.desc:0 "Our fabricators normally tunnel into dimensional fabric to provide us with an endless stream of resources. Today they ripped beyond that fabric, §Ypuncturing§! another dimension.\n\nThe inhabitants are clearly outraged by this result and §Y[Root.GetName]§! is quickly being §Roverrun§! by extradimensional armies pouring through the tunnelers portal."
+  dangerous_horizons.1200.a:0 "Mobilize our forces."
+  dangerous_horizons.1200.b:0 "Quick! Close the portal."
+
+  dangerous_horizons.1202.name:0 "Second Breach"
+  dangerous_horizons.1202.desc:0 "The invaders have detected another fabricator on §Y[Root.GetName]§! and used it as a second point of attack! Their armies now spill onto both planets with terrifying ferrocity.\n\nThe inhabitants are clearly outraged by this result and §Y[Root.GetName]§! is quickly being §Roverrun§! by extradimensional armies pouring through the tunnelers portal."
+  dangerous_horizons.1202.a:0 "Mobilize our forces."
+  dangerous_horizons.1202.b:0 "Deactive."
+
+  dangerous_horizons.1203.name:0 "Fabricator Destroyed"
+  dangerous_horizons.1203.desc:0 "Soon after our defensive forces on [Root.GetName] fell, the extradimensional invaders launched themselves at the fabricator which had ruptered the space between our worlds. Within moments, crucial machinery had been torn asunder, and the rest of fabricator went up in a large explosion.   ..."
