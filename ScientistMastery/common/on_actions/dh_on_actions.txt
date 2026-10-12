@@ -43,3 +43,33 @@ on_tech_increased = {
 		dangerous_horizons.100			# Researching Jump Drives starts Extradimensional Scouting
 	}
 }
+
+# Triggers country_event for the defender upon victory
+# Root = country, colony owner
+# From = country, attack leader
+# FromFrom = colony
+on_colony_defenders_win = {
+	events = {
+		dangerous_horizons.1206			# Defended against Rampaging Invaders
+	}
+}
+
+# Triggers country_event for the defender upon defeat
+# This = country, colony owner
+# From = country, attack leader
+# FromFrom = colony
+on_colony_defenders_lose = {
+	events = {
+		dangerous_horizons.1203			# Failed to repel Rampaging Invaders
+	}
+}
+
+# Triggers country_event for the attacker upon victory (before controller is switched)
+# This = country, lead attacker
+# From = country, colony owner
+# FromFrom = colony
+on_colony_attackers_win = {
+	events = {
+		dangerous_horizons.1207			# Second try defeeated Rampaging Invaders
+	}
+}

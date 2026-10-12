@@ -58,5 +58,18 @@
   dangerous_horizons.1202.a:0 "Mobilize our forces."
   dangerous_horizons.1202.b:0 "Deactive."
 
-  dangerous_horizons.1203.name:0 "Fabricator Destroyed"
-  dangerous_horizons.1203.desc:0 "Soon after our defensive forces on [Root.GetName] fell, the extradimensional invaders launched themselves at the fabricator which had ruptered the space between our worlds. Within moments, crucial machinery had been torn asunder, and the rest of fabricator went up in a large explosion.   ..."
+  dangerous_horizons.1204.name:0 "Fabricator Destroyed"
+  dangerous_horizons.1204.desc:0 "Soon after our defensive forces on [Root.GetName] fell, the extradimensional invaders launched themselves at the fabricator which had ruptered the space between our worlds. Within moments, critical machinery had been torn asunder, and the rest of fabricator went up in a large explosion.   ..."
+  dangerous_horizons.1204.a:0 "Terrible."
+
+  dangerous_horizons.1205.name:0 "[Root.GetName] Overrun"
+  dangerous_horizons.1205.desc:0 "Our forces have failed to stop the invaders on [Root.GetName]. ..."
+  dangerous_horizons.1205.a:0 "Terrible."
+
+  dangerous_horizons.1206.name:0 "[Root.GetName] Defended"
+  dangerous_horizons.1206.desc:0 "Our forces have successfully protected [Root.GetName] from the invaders' attack force. A few stragglers remain and the planet remains on high alert, but they are being hunted down and wiped out. [Root.GetName] will soon be safe.  ..."
+  dangerous_horizons.1206.a:0 "Well done."
+
+  dangerous_horizons.1206.name:0 "[Root.GetName] Retaken"
+  dangerous_horizons.1206.desc:0 "Our newest battalion has been able to finally repel the extradimensional invaders who attacked [Root.GetName] not that long ago.   ..."
+  dangerous_horizons.1206.a:0 "At last."
